@@ -163,7 +163,8 @@ WITH launch_lines AS (
          (li.{li['price']} - li.{li['discount']} / NULLIF(li.{li['qty']}, 0)) * li.{li['qty']}
            * COALESCE(li.{li['fx']}, 1) AS NET_LINE,
          o.{o['order_id']} AS ORDER_ID, o.{o['customer_id']} AS CUSTOMER_ID,
-         CAST(o.{o['order_date']} AS DATE) AS ORDER_DAY
+         CAST(o.{o['order_date']} AS DATE) AS ORDER_DAY,
+         CASE WHEN o.ORIGINAL_CURRENCY = 'CAD' THEN 'CA' ELSE 'US' END AS REGION
   FROM {SRC_DB}.{li['table']} li
   JOIN {SRC_DB}.{o['table']} o ON o.{o['order_id']} = li.{li['order_id']}
   WHERE li.{li['sku']} IN ({sku_list_sql(skus)})
@@ -185,7 +186,14 @@ SELECT
   SUM(ll.QTY)                                         AS UNITS,
   COUNT(DISTINCT ll.ORDER_ID)                         AS ORDERS,
   COUNT(DISTINCT ll.CUSTOMER_ID)                      AS TOTAL_CUSTOMERS,
-  COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY >= %(launch_date)s THEN ll.CUSTOMER_ID END) AS NEW_CUSTOMERS
+  COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY >= %(launch_date)s THEN ll.CUSTOMER_ID END) AS NEW_CUSTOMERS,
+  SUM(CASE WHEN fo.FIRST_ORDER_DAY >= %(launch_date)s THEN ll.NET_LINE ELSE 0 END) AS NEW_NET_SALES,
+  SUM(CASE WHEN ll.REGION = 'US' THEN ll.QTY ELSE 0 END)      AS US_UNITS,
+  SUM(CASE WHEN ll.REGION = 'CA' THEN ll.QTY ELSE 0 END)      AS CA_UNITS,
+  SUM(CASE WHEN ll.REGION = 'US' THEN ll.NET_LINE ELSE 0 END) AS US_NET_SALES,
+  SUM(CASE WHEN ll.REGION = 'CA' THEN ll.NET_LINE ELSE 0 END) AS CA_NET_SALES,
+  COUNT(DISTINCT CASE WHEN ll.REGION = 'US' THEN ll.ORDER_ID END) AS US_ORDERS,
+  COUNT(DISTINCT CASE WHEN ll.REGION = 'CA' THEN ll.ORDER_ID END) AS CA_ORDERS
 FROM launch_lines ll
 LEFT JOIN first_orders fo ON fo.CUSTOMER_ID = ll.CUSTOMER_ID
 """
@@ -205,7 +213,9 @@ SELECT ll.SKU,
        SUM(ll.QTY)                    AS UNITS,
        COUNT(DISTINCT ll.ORDER_ID)    AS ORDERS,
        COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY >= %(launch_date)s THEN ll.CUSTOMER_ID END) AS NEW_CUSTOMERS,
-       COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY <  %(launch_date)s THEN ll.CUSTOMER_ID END) AS RET_CUSTOMERS
+       COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY <  %(launch_date)s THEN ll.CUSTOMER_ID END) AS RET_CUSTOMERS,
+       SUM(CASE WHEN ll.REGION = 'US' THEN ll.QTY ELSE 0 END) AS US_UNITS,
+       SUM(CASE WHEN ll.REGION = 'CA' THEN ll.QTY ELSE 0 END) AS CA_UNITS
 FROM launch_lines ll
 LEFT JOIN first_orders fo ON fo.CUSTOMER_ID = ll.CUSTOMER_ID
 GROUP BY 1 ORDER BY NET_SALES DESC
@@ -317,7 +327,8 @@ GROUP BY 1, 2 ORDER BY PAIRS DESC LIMIT 10
 def q_subs(skus):
     c = COLS["subs"]
     return f"""
-SELECT COUNT(DISTINCT {c['order_id']}) AS SUB_ORDERS, SUM({c['qty']}) AS SUB_UNITS
+SELECT COUNT(DISTINCT {c['order_id']}) AS SUB_ORDERS, SUM({c['qty']}) AS SUB_UNITS,
+       SUM(UNIT_PRICE * {c['qty']}) AS SUB_REVENUE
 FROM {SRC_DB}.{c['table']}
 WHERE {c['sku']} IN ({sku_list_sql(skus)})
   AND COALESCE({c['onetime_flag']}, FALSE) = FALSE
@@ -325,13 +336,15 @@ WHERE {c['sku']} IN ({sku_list_sql(skus)})
 
 
 def q_plan(skus):
+    # Daily grain: per-SKU totals AND the cumulative plan curve both derive
+    # from this one result.
     c = COLS["plan"]
     return f"""
-SELECT {c['sku']} AS SKU, SUM({c['units']}) AS PLAN_UNITS
+SELECT {c['sku']} AS SKU, CAST({c['date']} AS DATE) AS D, SUM({c['units']}) AS PLAN_UNITS
 FROM {SRC_DB}.{c['table']}
 WHERE {c['sku']} IN ({sku_list_sql(skus)})
   AND CAST({c['date']} AS DATE) BETWEEN %(launch_date)s AND %(cutoff)s
-GROUP BY 1
+GROUP BY 1, 2 ORDER BY 2
 """
 
 
@@ -431,20 +444,20 @@ def f2(v):
 _PLAN_FALLBACK = None
 
 
-def plan_from_fallback(skus, launch_date, cutoff):
-    """Per-SKU plan units summed from the committed GSHEETS snapshot
-    (config/plan_fallback.json), for when the workflow's Snowflake user has
-    no grant on the GSHEETS schema. The live query takes precedence."""
+def plan_detail_from_fallback(skus, launch_date, cutoff):
+    """Per-SKU daily plan rows [(sku, date, units)] from the committed GSHEETS
+    snapshot (config/plan_fallback.json), for when the workflow's Snowflake
+    user has no grant on the GSHEETS schema. The live query takes precedence."""
     global _PLAN_FALLBACK
     if _PLAN_FALLBACK is None:
         path = ROOT / "config" / "plan_fallback.json"
         _PLAN_FALLBACK = (json.loads(path.read_text()) if path.exists() else {})
     by_sku = _PLAN_FALLBACK.get("plan_units_by_sku_date", {})
-    out = {}
+    out = []
     for sku in skus:
-        total = sum(u for d, u in by_sku.get(sku, {}).items() if launch_date <= d <= cutoff)
-        if total:
-            out[sku] = total
+        for d, u in by_sku.get(sku, {}).items():
+            if launch_date <= d <= cutoff:
+                out.append((sku, d, u))
     return out
 
 
@@ -513,16 +526,25 @@ def build_launch(cur, lc, cutoff):
     pdp_rows = safe_fetch(f"{lid}.pdp (UTS)", lambda: rows(cur, q_pdp(skus), params), [], key="uts")
     cross_rows = safe_fetch(f"{lid}.cross_sell (DRP)", lambda: rows(cur, q_cross_sell(skus), params), [], key="drp")
     subs_row = safe_fetch(f"{lid}.subscriptions (USS)", lambda: rows(cur, q_subs(skus), {})[0],
-                          {"SUB_ORDERS": 0, "SUB_UNITS": 0}, key="uss")
-    plan_rows = safe_fetch(f"{lid}.plan (GSHEETS)",
-                           lambda: {r["SKU"]: int(r["PLAN_UNITS"] or 0) for r in rows(cur, q_plan(skus), params)},
-                           {}, key="gsheets")
-    if not plan_rows:
-        plan_rows = plan_from_fallback(skus, launch_date, cutoff)
-        if plan_rows:
+                          {"SUB_ORDERS": 0, "SUB_UNITS": 0, "SUB_REVENUE": None}, key="uss")
+    plan_detail = safe_fetch(f"{lid}.plan (GSHEETS)",
+                             lambda: [(r["SKU"], str(r["D"]), int(r["PLAN_UNITS"] or 0))
+                                      for r in rows(cur, q_plan(skus), params)],
+                             [], key="gsheets")
+    if not plan_detail:
+        plan_detail = plan_detail_from_fallback(skus, launch_date, cutoff)
+        if plan_detail:
             SOURCE_STATUS["gsheets"] = "fallback"
             print(f"NOTE: {lid}.plan using committed config/plan_fallback.json "
                   f"(GSHEETS snapshot) instead of a live query.")
+    plan_rows, plan_daily = {}, {}
+    for sku, d, u in plan_detail:
+        plan_rows[sku] = plan_rows.get(sku, 0) + u
+        plan_daily[d] = plan_daily.get(d, 0) + u
+    plan_curve, _cum = [], 0
+    for d in sorted(plan_daily):
+        _cum += plan_daily[d]
+        plan_curve.append({"date": d, "cumPlanUnits": _cum})
 
     cat_patterns = lc.get("category_type_patterns") or []
     cc = None
@@ -559,6 +581,8 @@ def build_launch(cur, lc, cutoff):
             "orders": int(r["ORDERS"] or 0),
             "newCustomers": int(r["NEW_CUSTOMERS"] or 0),
             "retCustomers": int(r["RET_CUSTOMERS"] or 0),
+            "usUnits": int(r["US_UNITS"] or 0),
+            "caUnits": int(r["CA_UNITS"] or 0),
             "planUnits": plan,
             "pctToPlanUnits": round(units / plan * 100, 1) if plan else None,
         })
@@ -609,10 +633,20 @@ def build_launch(cur, lc, cutoff):
             "pctToPlanUnits": round(total_units / plan_total * 100, 1) if plan_total else None,
             "subscriptionOrders": int(subs_row["SUB_ORDERS"] or 0),
             "subscriptionUnits": int(subs_row["SUB_UNITS"] or 0),
+            "subscriptionRevenue": f2(subs_row["SUB_REVENUE"]) if subs_row.get("SUB_REVENUE") is not None else None,
+            "newCustomerRevenue": f2(summary_row["NEW_NET_SALES"]),
+            "retCustomerRevenue": round(net_sales - f2(summary_row["NEW_NET_SALES"]), 2),
             "pdpViews": total_pdp_views,
             "pdpAtcRate": round(total_atc / total_pdp_views * 100, 1) if total_pdp_views else 0,
             "pdpCvr": round(total_purch / total_pdp_views * 100, 1) if total_pdp_views else 0,
         },
+        "regions": {
+            "us": {"units": int(summary_row["US_UNITS"] or 0), "netSales": f2(summary_row["US_NET_SALES"]),
+                   "orders": int(summary_row["US_ORDERS"] or 0)},
+            "ca": {"units": int(summary_row["CA_UNITS"] or 0), "netSales": f2(summary_row["CA_NET_SALES"]),
+                   "orders": int(summary_row["CA_ORDERS"] or 0)},
+        },
+        "planCurve": plan_curve,
         "byVariant": by_variant,
         "dailySales": daily,
         "pdp": pdp,
@@ -630,7 +664,8 @@ def pending_launch(lc):
         "internalDate": lc.get("internal_date"), "status": "LIVE",
         "category": lc.get("category"), "subtitle": lc.get("subtitle", ""),
         "accent": lc.get("accent", "#8B5CF6"), "skusPending": not lc["skus"],
-        "summary": None, "byVariant": [], "dailySales": [], "pdp": [],
+        "summary": None, "regions": None, "planCurve": [],
+        "byVariant": [], "dailySales": [], "pdp": [],
         "crossSell": [], "categoryCustomers": None,
     }
 

@@ -171,13 +171,40 @@
       "category_type_patterns": [
         "%shadow%"
       ]
+    },
+    {
+      "id": "beb-hoda-mila",
+      "name": "BEB Extension: Hoda & Mila",
+      "subtitle": "2 Shades · Slate Grey · Brilliant Eye Brightener™",
+      "accent": "#6B7A8D",
+      "launch_date": "2026-06-17",
+      "internal_date": "2026-05-29",
+      "category": "Eyeshadow",
+      "skus": [
+        {
+          "sku": "TVG6640",
+          "name": "Hoda",
+          "shade": "Slate Grey Matte",
+          "color": "#4A5568"
+        },
+        {
+          "sku": "TVG4770",
+          "name": "Mila",
+          "shade": "Slate Grey Metallic",
+          "color": "#94A3B8"
+        }
+      ],
+      "category_type_patterns": [
+        "%shadow%"
+      ]
     }
   ],
   "upcoming": [
     {
       "name": "BEB Extension: Hoda & Mila",
       "launch_date": "2026-06-17",
-      "internal_date": "2026-05-29"
+      "internal_date": "2026-05-29",
+      "tracked_id": "beb-hoda-mila"
     },
     {
       "name": "Summer Promo",

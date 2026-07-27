@@ -204,9 +204,9 @@
         <table>
           <thead><tr>
             <th>Shade / Product</th><th class="r">Units</th><th class="r">Net Sales</th>
-            <th class="r">AOV</th><th class="r">New Cust.</th><th class="r">Returning</th><th class="r">% to Plan</th>
+            <th class="r">AOV</th><th class="r">New Cust.</th><th class="r">Returning</th><th class="r">US / CA Units</th><th class="r">% to Plan</th>
           </tr></thead>
-          <tbody id="tbl-body"><tr><td colspan="7" style="text-align:center;padding:28px;color:var(--muted)">Loading&hellip;</td></tr></tbody>
+          <tbody id="tbl-body"><tr><td colspan="8" style="text-align:center;padding:28px;color:var(--muted)">Loading&hellip;</td></tr></tbody>
         </table>
       </div>
     </div>
@@ -392,7 +392,7 @@ function renderKPIs(d) {
     <div class="kpi-card c-teal">
       <div class="kpi-label">Net Sales</div>
       <div class="kpi-value">${fmt.cur(s.netSales)}</div>
-      <div class="kpi-sub">${fmt.num(s.orders)} orders</div>
+      <div class="kpi-sub">${fmt.num(s.orders)} orders${d.regions ? ' · US ' + fmt.cur(d.regions.us.netSales) + ' / CA ' + fmt.cur(d.regions.ca.netSales) : ''}</div>
     </div>
     <div class="kpi-card c-gold">
       <div class="kpi-label">Units Sold</div>
@@ -471,9 +471,9 @@ function renderDonut(d) {
     options:{ responsive:true, cutout:'68%', plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+fmt.num(c.raw)+' ('+(c.raw/(s.totalCustomers||1)*100).toFixed(1)+'%)'}}}} ,
   });
   document.getElementById('nvr-legend').innerHTML = [
-    {label:'New Customers',val:s.newCustomers,pct:s.newPct,color:'#3A9E98'},
-    {label:'Returning',    val:s.retCustomers,pct:s.retPct,color:'#C9A84C'},
-  ].map(it=>`<div class="nvr-item"><div class="nvr-left"><div class="nvr-dot" style="background:${it.color}"></div>${it.label}</div><div><span class="nvr-val">${fmt.num(it.val)}</span><span class="nvr-pct">${it.pct.toFixed(1)}%</span></div></div>`).join('');
+    {label:'New Customers',val:s.newCustomers,pct:s.newPct,rev:s.newCustomerRevenue,color:'#3A9E98'},
+    {label:'Returning',    val:s.retCustomers,pct:s.retPct,rev:s.retCustomerRevenue,color:'#C9A84C'},
+  ].map(it=>`<div class="nvr-item"><div class="nvr-left"><div class="nvr-dot" style="background:${it.color}"></div>${it.label}</div><div><span class="nvr-val">${fmt.num(it.val)}</span><span class="nvr-pct">${it.pct.toFixed(1)}%${it.rev != null ? ' · ' + fmt.cur(it.rev) : ''}</span></div></div>`).join('');
 }
 
 function renderNvrShade(d) {
@@ -498,11 +498,13 @@ function renderTable(d) {
       <td><span class="dot" style="background:${v.color||'#3A9E98'}"></span><strong>${v.name}</strong>${v.shade?'<br><span style="margin-left:18px;font-size:11px;color:var(--muted)">'+v.shade+'</span>':''}</td>
       <td class="r">${fmt.num(v.units)}</td><td class="r">${fmt.cur(v.netSales)}</td><td class="r">${fmt.cur2(aov)}</td>
       <td class="r">${fmt.num(v.newCustomers)}</td><td class="r">${fmt.num(v.retCustomers)}</td>
+      <td class="r">${v.usUnits != null ? fmt.num(v.usUnits) + ' / ' + fmt.num(v.caUnits) : '—'}</td>
       <td class="r"><div class="ptp-cell"><div class="ptp-mini"><div class="ptp-mini-fill" style="width:${ptpW}%;background:${ptpC}"></div></div><span style="color:${ptpC};font-weight:600">${v.pctToPlanUnits!=null?v.pctToPlanUnits.toFixed(1)+'%':'—'}</span></div></td>
     </tr>`;
   });
   const s = d.summary, tc = ptpColor(s.pctToPlanUnits), taov = s.orders > 0 ? s.netSales / s.orders : 0;
-  rows.push(`<tr class="tot"><td>Total / Avg</td><td class="r">${fmt.num(s.units)}</td><td class="r">${fmt.cur(s.netSales)}</td><td class="r">${fmt.cur2(taov)}</td><td class="r">${fmt.num(s.newCustomers)}</td><td class="r">${fmt.num(s.retCustomers)}</td><td class="r" style="color:${tc}">${s.pctToPlanUnits!=null?s.pctToPlanUnits.toFixed(1)+'%':'—'}</td></tr>`);
+  const totUsCa = d.regions ? fmt.num(d.regions.us.units) + ' / ' + fmt.num(d.regions.ca.units) : '—';
+  rows.push(`<tr class="tot"><td>Total / Avg</td><td class="r">${fmt.num(s.units)}</td><td class="r">${fmt.cur(s.netSales)}</td><td class="r">${fmt.cur2(taov)}</td><td class="r">${fmt.num(s.newCustomers)}</td><td class="r">${fmt.num(s.retCustomers)}</td><td class="r">${totUsCa}</td><td class="r" style="color:${tc}">${s.pctToPlanUnits!=null?s.pctToPlanUnits.toFixed(1)+'%':'—'}</td></tr>`);
   document.getElementById('tbl-body').innerHTML = rows.join('');
 }
 
@@ -519,10 +521,15 @@ function renderTrend(d) {
       plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+fmt.cur(c.raw)}}},
       scales:{ x:{grid:{display:false},ticks:{maxTicksLimit:14,maxRotation:45,font:{size:11}}}, y:{ticks:{callback:v=>'$'+(v>=1000?(v/1000).toFixed(0)+'k':v)},grid:{color:'#E2E8EF'}} } },
   });
+  const cumDatasets = [{label:'Actual Cum. Units',data:d.dailySales.map(r=>r.cumUnits),borderColor:'#C9A84C',backgroundColor:'rgba(201,168,76,.12)',fill:true,tension:0.3,pointRadius:2}];
+  if (d.planCurve && d.planCurve.length) {
+    const planMap = Object.fromEntries(d.planCurve.map(p => [p.date, p.cumPlanUnits]));
+    cumDatasets.push({label:'Plan Cum. Units',data:d.dailySales.map(r=>planMap[r.date] ?? null),borderColor:'#6B7A8D',borderDash:[6,4],backgroundColor:'transparent',fill:false,tension:0.2,pointRadius:0});
+  }
   _ch.cu = new Chart(document.getElementById('chart-cum'), {
     type:'line',
-    data:{labels, datasets:[{label:'Cum. Units',data:d.dailySales.map(r=>r.cumUnits),borderColor:'#C9A84C',backgroundColor:'rgba(201,168,76,.12)',fill:true,tension:0.3,pointRadius:2}]},
-    options:{ responsive:true, plugins:{legend:{display:false}},
+    data:{labels, datasets:cumDatasets},
+    options:{ responsive:true, plugins:{legend:{display:cumDatasets.length > 1,position:'top',labels:{boxWidth:12,font:{size:11}}}},
       scales:{ x:{grid:{display:false},ticks:{maxTicksLimit:14,maxRotation:45,font:{size:11}}}, y:{ticks:{callback:v=>v.toLocaleString()},grid:{color:'#E2E8EF'}} } },
   });
 }
@@ -742,7 +749,7 @@ function renderCrossSells(d) {
       <div class="kpi-card c-teal"><div class="kpi-label">Top Cross-Sell</div><div class="kpi-value" style="font-size:14px">${rows[0] ? rows[0].product.split('™')[0]+'™' : '—'}</div><div class="kpi-sub">${fmt.num(rows[0]?.pairs||0)} paired orders</div></div>
       <div class="kpi-card c-gold"><div class="kpi-label">Unique Pairings Found</div><div class="kpi-value">${rows.length}</div><div class="kpi-sub">Distinct co-purchase products</div></div>
       <div class="kpi-card c-navy"><div class="kpi-label">Total Pair Events</div><div class="kpi-value">${fmt.num(rows.reduce((s,r)=>s+r.pairs,0))}</div><div class="kpi-sub">Orders with cross-sell</div></div>
-      <div class="kpi-card c-green"><div class="kpi-label">Subscriptions</div><div class="kpi-value">${fmt.num(d.summary.subscriptionOrders)}</div><div class="kpi-sub">${fmt.num(d.summary.subscriptionUnits)} sub units (all-time)</div></div>
+      <div class="kpi-card c-green"><div class="kpi-label">Subscriptions</div><div class="kpi-value">${fmt.num(d.summary.subscriptionOrders)}</div><div class="kpi-sub">${fmt.num(d.summary.subscriptionUnits)} sub units${d.summary.subscriptionRevenue != null ? ' · ' + fmt.cur(d.summary.subscriptionRevenue) : ''} (all-time)</div></div>
     </div>
     <div class="table-card">
       <div class="table-hdr"><h3>Top Products Paired with ${d.name}</h3></div>
