@@ -123,6 +123,19 @@
     .tag-good { display:inline-block; background:rgba(34,160,107,.1); color:#166534; border-radius:4px; padding:1px 7px; font-size:11px; font-weight:600; }
     .tag-warn { display:inline-block; background:rgba(245,158,11,.1); color:#92400E; border-radius:4px; padding:1px 7px; font-size:11px; font-weight:600; }
     .tag-bad  { display:inline-block; background:rgba(239,68,68,.1);  color:#991B1B; border-radius:4px; padding:1px 7px; font-size:11px; font-weight:600; }
+    .filter-bar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; background:var(--card); border:1px solid var(--border); border-radius:var(--r); padding:10px 16px; margin-bottom:18px; }
+    .fb-label { font-size:10px; font-weight:700; letter-spacing:.8px; text-transform:uppercase; color:var(--muted); }
+    .fb-seg { display:inline-flex; border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+    .fb-btn { border:none; background:var(--card); padding:6px 12px; font-size:12px; color:var(--muted); cursor:pointer; }
+    .fb-btn.on { background:var(--tc-teal); color:#fff; font-weight:600; }
+    .fb-btn + .fb-btn { border-left:1px solid var(--border); }
+    .fb-chips { display:flex; gap:6px; flex-wrap:wrap; }
+    .fb-chip { display:inline-flex; align-items:center; gap:5px; border:1px solid var(--border); background:var(--card); border-radius:16px; padding:4px 10px; font-size:12px; color:var(--muted); cursor:pointer; }
+    .fb-chip.on { border-color:var(--tc-teal); color:var(--tc-teal-dark); background:var(--tc-teal-light); font-weight:600; }
+    .fb-note { font-size:10px; color:var(--muted); margin-left:auto; max-width:340px; line-height:1.4; }
+    thead th { cursor:pointer; }
+    thead th[data-dir="asc"]::after { content:" ▲"; font-size:8px; }
+    thead th[data-dir="desc"]::after { content:" ▼"; font-size:8px; }
     @media(max-width:1100px) { .row-2-1 { grid-template-columns:1fr; } .guide-grid { grid-template-columns:1fr; } .guide-card.full { grid-column:auto; } }
     @media(max-width:900px)  { .kpi-row1,.kpi-row2 { grid-template-columns:repeat(2,1fr); } }
     @media(max-width:768px)  { .row-1-1 { grid-template-columns:1fr; } .hdr,.tabs-wrap { padding-left:16px; padding-right:16px; } .main { padding:16px 14px 80px; } .hdr-right { display:none; } }
@@ -170,6 +183,7 @@
 
   <!-- OVERVIEW -->
   <div id="panel-overview">
+    <div class="filter-bar" id="filter-bar" style="display:none"></div>
     <div class="kpi-row1" id="kpi-row1"></div>
     <div class="kpi-row2" id="kpi-row2"></div>
     <div class="row-2-1">
@@ -222,6 +236,15 @@
         <div class="chart-title">Cumulative Units Sold</div>
         <div class="chart-sub" id="cs-cum-sub"></div>
         <canvas id="chart-cum" height="240"></canvas>
+      </div>
+    </div>
+    <div class="table-card">
+      <div class="table-hdr"><h3>Daily Sales Detail</h3></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Date</th><th class="r">Units</th><th class="r">Net Sales</th><th class="r">US Units</th><th class="r">CA Units</th><th class="r">Cum. Units</th><th class="r">Cum. Net Sales</th></tr></thead>
+          <tbody id="tbl-daily"></tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -312,13 +335,16 @@
 
 <script>
 /* ── FORMATTERS ── */
+/* Date-only strings get T00:00:00 appended so they parse as LOCAL midnight —
+   bare YYYY-MM-DD parses as UTC and renders one day early in US timezones. */
+const parseDay = v => { const s = String(v).replace(' ', 'T'); return new Date(/^\d{4}-\d{2}-\d{2}$/.test(s) ? s + 'T00:00:00' : s); };
 const fmt = {
   cur:  v => '$' + Number(v||0).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0}),
   cur2: v => '$' + Number(v||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}),
   num:  v => Number(v||0).toLocaleString('en-US'),
   pct:  v => v == null ? '—' : Number(v).toFixed(1) + '%',
-  day:  v => { if (!v) return ''; const d = new Date(String(v).replace(' ','T')); return d.toLocaleDateString('en-US',{month:'short',day:'numeric'}); },
-  date: v => { if (!v) return ''; const d = new Date(String(v).replace(' ','T')); return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}); },
+  day:  v => v ? parseDay(v).toLocaleDateString('en-US',{month:'short',day:'numeric'}) : '',
+  date: v => v ? parseDay(v).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : '',
 };
 function ptpColor(v) { return v == null ? '#9CA3AF' : v >= 100 ? '#22A06B' : v >= 85 ? '#F59E0B' : '#EF4444'; }
 
@@ -393,7 +419,7 @@ function renderKPIs(d) {
     <div class="kpi-card c-teal">
       <div class="kpi-label">Net Sales</div>
       <div class="kpi-value">${fmt.cur(s.netSales)}</div>
-      <div class="kpi-sub">${fmt.num(s.orders)} orders${d.regions ? ' · US ' + fmt.cur(d.regions.us.netSales) + ' / CA ' + fmt.cur(d.regions.ca.netSales) : ''}</div>
+      <div class="kpi-sub">${fmt.num(s.orders)} orders${d.regionLabel ? ' · ' + d.regionLabel : (d.regions ? ' · US ' + fmt.cur(d.regions.us.netSales) + ' / CA ' + fmt.cur(d.regions.ca.netSales) : '')}</div>
     </div>
     <div class="kpi-card c-gold">
       <div class="kpi-label">Units Sold</div>
@@ -437,6 +463,124 @@ function renderKPIs(d) {
 /* ── OVERVIEW CHARTS ── */
 const _ch = {};
 function kill(id) { if (_ch[id]) { _ch[id].destroy(); delete _ch[id]; } }
+
+/* ── OVERVIEW FILTERS (region + variant) ── */
+let LOADED = null;
+const FILTER = { region: 'ALL', skus: new Set() };
+
+function hasRegionData(d) {
+  return !!(d.regions && d.byVariant[0] && d.byVariant[0].usNetSales != null
+            && d.dailySales[0] && d.dailySales[0].usNetSales != null);
+}
+
+/* Derive a filtered copy of the launch for the Overview renderers. Sales
+   figures (KPI row 1, variant charts/tables, daily trend) respect the
+   filters; customer, plan and PDP metrics stay launch-wide. */
+function filteredView(d) {
+  const region = hasRegionData(d) ? FILTER.region : 'ALL';
+  let variants = d.byVariant.filter(x => !FILTER.skus.size || FILTER.skus.has(x.sku));
+  let daily = d.dailySales, summary = d.summary, planCurve = d.planCurve;
+  let unitsPerOrder = d.unitsPerOrder, regionLabel = null;
+  if (region !== 'ALL') {
+    const us = region === 'US';
+    variants = variants.map(x => ({...x, units: us ? x.usUnits : x.caUnits,
+      netSales: us ? x.usNetSales : x.caNetSales, orders: null, planUnits: null, pctToPlanUnits: null}));
+    let cu = 0, cs = 0;
+    daily = d.dailySales.map(r => {
+      const u = us ? r.usUnits : r.caUnits, s = us ? r.usNetSales : r.caNetSales;
+      cu += u; cs = Math.round((cs + s) * 100) / 100;
+      return {...r, units: u, netSales: s, cumUnits: cu, cumSales: cs};
+    });
+    const rg = d.regions[us ? 'us' : 'ca'];
+    summary = {...d.summary, netSales: rg.netSales, units: rg.units, orders: rg.orders,
+      aov: rg.orders ? Math.round(rg.netSales / rg.orders * 100) / 100 : 0,
+      planUnits: null, pctToPlanUnits: null};
+    unitsPerOrder = rg.orders ? rg.units / rg.orders : 0;
+    planCurve = [];
+    regionLabel = us ? 'US (.com) only' : 'CA (.ca) only';
+  }
+  return {...d, byVariant: variants, dailySales: daily, summary, planCurve, unitsPerOrder, regionLabel};
+}
+
+function buildFilterBar(d) {
+  const bar = document.getElementById('filter-bar');
+  const hasRegion = hasRegionData(d), many = d.byVariant.length > 1;
+  if (!bar || !d.summary || (!hasRegion && !many)) return;
+  bar.style.display = '';
+  let html = '';
+  if (hasRegion) {
+    html += '<span class="fb-label">Region</span><div class="fb-seg">' +
+      ['ALL','US','CA'].map(rg => `<button class="fb-btn${FILTER.region === rg ? ' on' : ''}" data-region="${rg}">${rg === 'ALL' ? 'All' : rg === 'US' ? 'US (.com)' : 'CA (.ca)'}</button>`).join('') + '</div>';
+  }
+  if (many) {
+    html += '<span class="fb-label">Variants</span><div class="fb-chips">' +
+      d.byVariant.map(x => `<button class="fb-chip${FILTER.skus.has(x.sku) ? ' on' : ''}" data-sku="${x.sku}"><span class="dot" style="background:${x.color || '#3A9E98'}"></span>${x.name}</button>`).join('') +
+      '<button class="fb-chip" data-all="1">All</button></div>';
+  }
+  html += '<span class="fb-note">Filters apply to sales KPIs, variant charts &amp; tables, and the daily trend. Customer, plan &amp; PDP metrics stay launch-wide.</span>';
+  bar.innerHTML = html;
+  const rerender = () => { buildFilterBar(LOADED); renderOverview(LOADED); };
+  bar.querySelectorAll('[data-region]').forEach(b => b.onclick = () => { FILTER.region = b.dataset.region; rerender(); });
+  bar.querySelectorAll('[data-sku]').forEach(b => b.onclick = () => {
+    const s = b.dataset.sku;
+    if (FILTER.skus.has(s)) { if (FILTER.skus.size > 1) FILTER.skus.delete(s); } else FILTER.skus.add(s);
+    rerender();
+  });
+  const all = bar.querySelector('[data-all]');
+  if (all) all.onclick = () => { FILTER.skus = new Set(LOADED.byVariant.map(x => x.sku)); rerender(); };
+}
+
+function renderOverview(d) {
+  const v = filteredView(d);
+  renderKPIs(v);
+  renderSales(v);
+  renderUnits(v);
+  renderNvrShade(v);
+  renderTable(v);
+  renderTrend(v);
+  renderDailyTable(v);
+}
+
+function renderDailyTable(d) {
+  const body = document.getElementById('tbl-daily');
+  body.innerHTML = d.dailySales.map(r => `<tr>
+    <td data-sort="${r.date}">${fmt.day(r.date)}</td>
+    <td class="r">${fmt.num(r.units)}</td>
+    <td class="r">${fmt.cur(r.netSales)}</td>
+    <td class="r">${r.usUnits != null ? fmt.num(r.usUnits) : '—'}</td>
+    <td class="r">${r.caUnits != null ? fmt.num(r.caUnits) : '—'}</td>
+    <td class="r">${fmt.num(r.cumUnits)}</td>
+    <td class="r">${fmt.cur(r.cumSales)}</td>
+  </tr>`).join('') || '<tr><td colspan="7" style="text-align:center;padding:20px;color:var(--muted)">No daily data</td></tr>';
+}
+
+/* ── SORTABLE TABLES (all tables, any column; totals row stays pinned) ── */
+function sortCellVal(td) {
+  if (td.dataset.sort != null) { const n = +td.dataset.sort; return isNaN(n) ? td.dataset.sort : n; }
+  const t = td.textContent.trim().replace(/[$,%]/g, '').replace(/,/g, '');
+  const n = parseFloat(t);
+  return isNaN(n) ? td.textContent.trim().toLowerCase() : n;
+}
+document.addEventListener('click', e => {
+  const th = e.target.closest('thead th');
+  if (!th) return;
+  const table = th.closest('table'), tbody = table && table.querySelector('tbody');
+  if (!tbody) return;
+  const idx = Array.from(th.parentNode.children).indexOf(th);
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const dataRows = rows.filter(r => !r.classList.contains('tot') && r.children.length > 1);
+  if (dataRows.length < 2) return;
+  const dir = th.dataset.dir === 'desc' ? 'asc' : 'desc';
+  table.querySelectorAll('thead th').forEach(h => h.removeAttribute('data-dir'));
+  th.dataset.dir = dir;
+  dataRows.sort((a, b) => {
+    const va = sortCellVal(a.children[idx]), vb = sortCellVal(b.children[idx]);
+    const c = (typeof va === 'number' && typeof vb === 'number') ? va - vb : String(va).localeCompare(String(vb));
+    return dir === 'asc' ? c : -c;
+  });
+  dataRows.forEach(r => tbody.appendChild(r));
+  rows.filter(r => r.classList.contains('tot')).forEach(r => tbody.appendChild(r));
+});
 
 function renderSales(d) {
   document.getElementById('cs-revenue-sub').textContent = fmt.cur(d.summary.netSales) + ' total across ' + d.byVariant.length + ' variants';
@@ -497,7 +641,7 @@ function renderTable(d) {
     const ptpW = Math.min(v.pctToPlanUnits||0, 120), ptpC = ptpColor(v.pctToPlanUnits);
     return `<tr>
       <td><span class="dot" style="background:${v.color||'#3A9E98'}"></span><strong>${v.name}</strong>${v.shade?'<br><span style="margin-left:18px;font-size:11px;color:var(--muted)">'+v.shade+'</span>':''}</td>
-      <td class="r">${fmt.num(v.units)}</td><td class="r">${fmt.cur(v.netSales)}</td><td class="r">${fmt.cur2(aov)}</td>
+      <td class="r">${fmt.num(v.units)}</td><td class="r">${fmt.cur(v.netSales)}</td><td class="r">${v.orders ? fmt.cur2(aov) : '—'}</td>
       <td class="r">${fmt.num(v.newCustomers)}</td><td class="r">${fmt.num(v.retCustomers)}</td>
       <td class="r">${v.usUnits != null ? fmt.num(v.usUnits) + ' / ' + fmt.num(v.caUnits) : '—'}</td>
       <td class="r"><div class="ptp-cell"><div class="ptp-mini"><div class="ptp-mini-fill" style="width:${ptpW}%;background:${ptpC}"></div></div><span style="color:${ptpC};font-weight:600">${v.pctToPlanUnits!=null?v.pctToPlanUnits.toFixed(1)+'%':'—'}</span></div></td>
@@ -626,31 +770,39 @@ function renderTraffic() {
 }
 
 /* ── LANDING PAGE TAB ── */
+let LP_REGION = 'ALL';
 function renderLanding() {
   if (!landingData.length) {
     document.getElementById('panel-landing').innerHTML =
       '<p class="data-note">Landing page data was not available in the latest refresh (GA4_BQ_STG.BASE_LANDING_PAGE_STG2 not accessible to the refresh credentials).</p>';
     return;
   }
-  const totalSessions = landingData.reduce((s,r)=>s+r.sessions,0);
-  const totalTxns = landingData.reduce((s,r)=>s+r.txns,0);
-  const totalRev = landingData.reduce((s,r)=>s+r.rev,0);
-  const bestCvr = landingData.reduce((best,r)=>(!best || r.cvr > best.cvr) ? r : best, null);
+  const isCA = r => (r.page || '').includes('.ca');
+  const rows = landingData.filter(r => LP_REGION === 'ALL' || (LP_REGION === 'CA' ? isCA(r) : !isCA(r)));
+  const totalSessions = rows.reduce((s,r)=>s+r.sessions,0);
+  const totalTxns = rows.reduce((s,r)=>s+r.txns,0);
+  const totalRev = rows.reduce((s,r)=>s+r.rev,0);
+  const bestCvr = rows.reduce((best,r)=>(!best || r.cvr > best.cvr) ? r : best, null);
 
   const panel = document.getElementById('panel-landing');
   panel.innerHTML = `
     <div class="section-title">Launch Landing Pages · ${fmt.date(META.trafficStart)} – ${fmt.date(META.gaCutoff)} (GA4)</div>
+    <div class="filter-bar">
+      <span class="fb-label">Store</span>
+      <div class="fb-seg">${['ALL','US','CA'].map(rg => `<button class="fb-btn${LP_REGION === rg ? ' on' : ''}" data-lp-region="${rg}">${rg === 'ALL' ? 'All' : rg === 'US' ? 'US (.com)' : 'CA (.ca)'}</button>`).join('')}</div>
+      <span class="fb-note">Toggles the landing-page KPIs and table between the US and CA stores.</span>
+    </div>
     <div class="kpi-row1" style="margin-bottom:18px">
-      <div class="kpi-card c-teal"><div class="kpi-label">Top Page Sessions</div><div class="kpi-value">${fmt.num(landingData[0]?.sessions)}</div><div class="kpi-sub">${landingData[0]?.label || '—'}</div></div>
-      <div class="kpi-card c-gold"><div class="kpi-label">Top Page Revenue</div><div class="kpi-value">${fmt.cur(landingData[0]?.rev)}</div><div class="kpi-sub">${landingData[0]?.label || '—'}</div></div>
+      <div class="kpi-card c-teal"><div class="kpi-label">Top Page Sessions</div><div class="kpi-value">${fmt.num(rows[0]?.sessions)}</div><div class="kpi-sub">${rows[0]?.label || '—'}</div></div>
+      <div class="kpi-card c-gold"><div class="kpi-label">Top Page Revenue</div><div class="kpi-value">${fmt.cur(rows[0]?.rev)}</div><div class="kpi-sub">${rows[0]?.label || '—'}</div></div>
       <div class="kpi-card c-navy"><div class="kpi-label">Best CVR</div><div class="kpi-value">${bestCvr ? bestCvr.cvr.toFixed(2) + '%' : '—'}</div><div class="kpi-sub">${bestCvr?.label || '—'}</div></div>
-      <div class="kpi-card c-green"><div class="kpi-label">Total Landing Rev.</div><div class="kpi-value">${fmt.cur(totalRev)}</div><div class="kpi-sub">Across top ${landingData.length} pages</div></div>
+      <div class="kpi-card c-green"><div class="kpi-label">Total Landing Rev.</div><div class="kpi-value">${fmt.cur(totalRev)}</div><div class="kpi-sub">Across ${rows.length} page${rows.length !== 1 ? 's' : ''}${LP_REGION !== 'ALL' ? ' · ' + (LP_REGION === 'US' ? 'US (.com)' : 'CA (.ca)') : ''}</div></div>
     </div>
     <div class="table-card">
       <div class="table-hdr"><h3>Top Landing Pages — Launch SKUs</h3></div>
       <div class="table-wrap"><table>
         <thead><tr><th>Page</th><th class="r">Page Views</th><th class="r">Sessions</th><th class="r">Transactions</th><th class="r">Revenue</th><th class="r">Eng. Rate</th><th class="r">CVR</th></tr></thead>
-        <tbody>${landingData.map(r=>`<tr>
+        <tbody>${rows.map(r=>`<tr>
           <td><strong>${r.label}</strong><br><span style="font-size:11px;color:var(--muted)">${r.page}</span></td>
           <td class="r">${fmt.num(r.pageviews)}</td>
           <td class="r">${fmt.num(r.sessions)}</td>
@@ -662,6 +814,7 @@ function renderLanding() {
       </table></div>
     </div>
     <p class="data-note">Source: GA4_BQ_STG.BASE_LANDING_PAGE_STG2 via Snowflake DAASITY_DB · Filtered to pages containing launch product names/SKUs. Engagement rate = engaged sessions ÷ total sessions (GA4 definition).</p>`;
+  panel.querySelectorAll('[data-lp-region]').forEach(b => b.onclick = () => { LP_REGION = b.dataset.lpRegion; renderLanding(); });
 }
 
 /* ── PDP HEALTH TAB ── */
@@ -921,13 +1074,12 @@ function init() {
     renderLanding();
 
     if (d.state === 'live') {
-      renderKPIs(d);
-      renderSales(d);
-      renderUnits(d);
+      LOADED = d;
+      FILTER.region = 'ALL';
+      FILTER.skus = new Set(d.byVariant.map(x => x.sku));
+      buildFilterBar(d);
+      renderOverview(d);
       renderDonut(d);
-      renderNvrShade(d);
-      renderTable(d);
-      renderTrend(d);
       renderSkuTable(d);
       renderPDP(d);
       renderCrossSells(d);

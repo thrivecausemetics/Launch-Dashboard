@@ -215,7 +215,9 @@ SELECT ll.SKU,
        COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY >= %(launch_date)s THEN ll.CUSTOMER_ID END) AS NEW_CUSTOMERS,
        COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY <  %(launch_date)s THEN ll.CUSTOMER_ID END) AS RET_CUSTOMERS,
        SUM(CASE WHEN ll.REGION = 'US' THEN ll.QTY ELSE 0 END) AS US_UNITS,
-       SUM(CASE WHEN ll.REGION = 'CA' THEN ll.QTY ELSE 0 END) AS CA_UNITS
+       SUM(CASE WHEN ll.REGION = 'CA' THEN ll.QTY ELSE 0 END) AS CA_UNITS,
+       SUM(CASE WHEN ll.REGION = 'US' THEN ll.NET_LINE ELSE 0 END) AS US_NET_SALES,
+       SUM(CASE WHEN ll.REGION = 'CA' THEN ll.NET_LINE ELSE 0 END) AS CA_NET_SALES
 FROM launch_lines ll
 LEFT JOIN first_orders fo ON fo.CUSTOMER_ID = ll.CUSTOMER_ID
 GROUP BY 1 ORDER BY NET_SALES DESC
@@ -224,7 +226,11 @@ GROUP BY 1 ORDER BY NET_SALES DESC
 
 def q_daily(skus):
     return q_launch_lines_cte(skus) + """
-SELECT ORDER_DAY AS D, SUM(QTY) AS UNITS, SUM(NET_LINE) AS NET_SALES
+SELECT ORDER_DAY AS D, SUM(QTY) AS UNITS, SUM(NET_LINE) AS NET_SALES,
+       SUM(CASE WHEN REGION = 'US' THEN QTY ELSE 0 END)      AS US_UNITS,
+       SUM(CASE WHEN REGION = 'CA' THEN QTY ELSE 0 END)      AS CA_UNITS,
+       SUM(CASE WHEN REGION = 'US' THEN NET_LINE ELSE 0 END) AS US_NET_SALES,
+       SUM(CASE WHEN REGION = 'CA' THEN NET_LINE ELSE 0 END) AS CA_NET_SALES
 FROM launch_lines GROUP BY 1 ORDER BY 1
 """
 
@@ -583,6 +589,8 @@ def build_launch(cur, lc, cutoff):
             "retCustomers": int(r["RET_CUSTOMERS"] or 0),
             "usUnits": int(r["US_UNITS"] or 0),
             "caUnits": int(r["CA_UNITS"] or 0),
+            "usNetSales": f2(r["US_NET_SALES"]),
+            "caNetSales": f2(r["CA_NET_SALES"]),
             "planUnits": plan,
             "pctToPlanUnits": round(units / plan * 100, 1) if plan else None,
         })
@@ -593,6 +601,8 @@ def build_launch(cur, lc, cutoff):
         cum_u += u
         cum_s = round(cum_s + s, 2)
         daily.append({"date": str(r["D"]), "units": u, "netSales": s,
+                      "usUnits": int(r["US_UNITS"] or 0), "caUnits": int(r["CA_UNITS"] or 0),
+                      "usNetSales": f2(r["US_NET_SALES"]), "caNetSales": f2(r["CA_NET_SALES"]),
                       "cumUnits": cum_u, "cumSales": cum_s})
 
     pdp = []
