@@ -1,0 +1,12 @@
+node_modules
+.env
+.env.*
+.git
+.github
+scripts
+config
+__pycache__
+*.pyc
+README.md
+.gitignore
+.dockerignore
