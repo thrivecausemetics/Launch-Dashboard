@@ -4,7 +4,8 @@
   "description": "Thrive Causemetics Launch Intelligence Hub — static dashboard refreshed daily from Snowflake DAASITY_DB",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "trigger-refresh": "node trigger-refresh.js"
   },
   "engines": {
     "node": ">=20"
