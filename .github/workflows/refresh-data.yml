@@ -2,9 +2,13 @@ name: Refresh dashboard data
 
 on:
   schedule:
-    # Daily at 13:00 UTC (6:00am PT / 9:00am ET) — data is refreshed and
-    # committed before the workday starts, after Daasity's overnight loads.
-    - cron: '0 13 * * *'
+    # 6:05am America/Los_Angeles year-round, after Daasity's overnight loads.
+    # GitHub cron is UTC-only and DST-unaware, so both offsets are listed and
+    # the "Check schedule window" step drops whichever one is out of season.
+    # Deliberately off the top of the hour — GitHub delays scheduled runs
+    # hardest at :00, and this workflow has been landing 1.5-2.75h late.
+    - cron: '5 13 * * *' # 6:05am PDT (UTC-7)
+    - cron: '5 14 * * *' # 6:05am PST (UTC-8)
   workflow_dispatch: {}
 
 permissions:
@@ -18,8 +22,33 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
+      # Keeps the refresh on Los Angeles time without maintaining two
+      # workflows: both DST offsets are scheduled above, and the out-of-season
+      # one exits here. Every later step already gates on steps.creds, so
+      # skipping the creds step below skips the whole refresh.
+      - name: Check schedule window
+        id: window
+        env:
+          FIRED_CRON: ${{ github.event.schedule }}
+        run: |
+          # Match the cron expression that fired, NOT the current clock time.
+          # GitHub can start a scheduled run hours after its slot, so an
+          # "is it 6am in LA right now?" check would discard late runs — which
+          # is most of them.
+          if [ "$(TZ=America/Los_Angeles date +%z)" = "-0700" ]; then
+            want='5 13 * * *' # PDT
+          else
+            want='5 14 * * *' # PST
+          fi
+          if [ -n "$FIRED_CRON" ] && [ "$FIRED_CRON" != "$want" ]; then
+            echo "Cron '$FIRED_CRON' belongs to the other DST offset (in season: '$want') — skipping."
+          else
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Check Snowflake secrets
         id: creds
+        if: steps.window.outputs.proceed == 'true'
         env:
           SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
         run: |
