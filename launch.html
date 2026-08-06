@@ -419,21 +419,21 @@ function renderKPIs(d) {
     <div class="kpi-card c-teal">
       <div class="kpi-label">Net Sales</div>
       <div class="kpi-value">${fmt.cur(s.netSales)}</div>
-      <div class="kpi-sub">${fmt.num(s.orders)} orders${d.regionLabel ? ' · ' + d.regionLabel : (d.regions ? ' · US ' + fmt.cur(d.regions.us.netSales) + ' / CA ' + fmt.cur(d.regions.ca.netSales) : '')}</div>
+      <div class="kpi-sub">${s.orders != null ? fmt.num(s.orders) + ' orders' : 'orders n/a for this filter'}${d.regionLabel ? ' · ' + d.regionLabel : (d.regions ? ' · US ' + fmt.cur(d.regions.us.netSales) + ' / CA ' + fmt.cur(d.regions.ca.netSales) : '')}</div>
     </div>
     <div class="kpi-card c-gold">
       <div class="kpi-label">Units Sold</div>
       <div class="kpi-value">${fmt.num(s.units)}</div>
-      <div class="kpi-sub">${d.byVariant.length} variants tracked</div>
+      <div class="kpi-sub">${d.byVariant.length} variant${d.byVariant.length !== 1 ? 's' : ''} tracked</div>
     </div>
     <div class="kpi-card c-navy">
       <div class="kpi-label">Avg Order Value</div>
-      <div class="kpi-value">${fmt.cur2(s.aov)}</div>
+      <div class="kpi-value">${s.aov != null ? fmt.cur2(s.aov) : '—'}</div>
       <div class="kpi-sub">Per transaction</div>
     </div>
     <div class="kpi-card c-sky">
       <div class="kpi-label">Units / Order</div>
-      <div class="kpi-value">${d.unitsPerOrder.toFixed(2)}</div>
+      <div class="kpi-value">${d.unitsPerOrder != null ? d.unitsPerOrder.toFixed(2) : '—'}</div>
       <div class="kpi-sub">Avg items per order</div>
     </div>`;
   document.getElementById('kpi-row2').innerHTML = `
@@ -499,6 +499,38 @@ function filteredView(d) {
     planCurve = [];
     regionLabel = us ? 'US (.com) only' : 'CA (.ca) only';
   }
+
+  // Variant subset: recompute every KPI from the selected variants. Orders
+  // and customers are per-variant sums, so buyers of multiple selected
+  // variants count once per variant (noted in the filter bar).
+  const variantFiltered = FILTER.skus.size && FILTER.skus.size < d.byVariant.length;
+  if (variantFiltered && d.summary) {
+    const sel = d.byVariant.filter(x => FILTER.skus.has(x.sku));
+    const regionOn = region !== 'ALL', us = region === 'US';
+    const units = sel.reduce((a, x) => a + (regionOn ? (us ? x.usUnits : x.caUnits) : x.units), 0);
+    const net = Math.round(sel.reduce((a, x) => a + (regionOn ? (us ? x.usNetSales : x.caNetSales) : x.netSales), 0) * 100) / 100;
+    const orders = regionOn ? null : sel.reduce((a, x) => a + (x.orders || 0), 0);
+    const newC = sel.reduce((a, x) => a + (x.newCustomers || 0), 0);
+    const retC = sel.reduce((a, x) => a + (x.retCustomers || 0), 0);
+    const plan = regionOn ? null : (sel.reduce((a, x) => a + (x.planUnits || 0), 0) || null);
+    const pdpSel = (d.pdp || []).filter(r => FILTER.skus.has(r.sku));
+    const pv = pdpSel.reduce((a, r) => a + r.pdpViews, 0);
+    const atc = pdpSel.reduce((a, r) => a + r.atc, 0);
+    const purch = pdpSel.reduce((a, r) => a + r.purch, 0);
+    summary = {...summary,
+      netSales: net, units, orders,
+      aov: orders ? Math.round(net / orders * 100) / 100 : null,
+      newCustomers: newC, retCustomers: retC, totalCustomers: newC + retC,
+      newPct: (newC + retC) ? newC / (newC + retC) * 100 : 0,
+      retPct: (newC + retC) ? retC / (newC + retC) * 100 : 0,
+      newCustomerRevenue: null, retCustomerRevenue: null,
+      planUnits: plan,
+      pctToPlanUnits: plan ? Math.round(units / plan * 1000) / 10 : null,
+      pdpViews: pv,
+      pdpAtcRate: pv ? Math.round(atc / pv * 1000) / 10 : 0,
+      pdpCvr: pv ? Math.round(purch / pv * 1000) / 10 : 0};
+    unitsPerOrder = orders ? units / orders : null;
+  }
   return {...d, byVariant: variants, dailySales: daily, summary, planCurve, unitsPerOrder, regionLabel};
 }
 
@@ -517,7 +549,7 @@ function buildFilterBar(d) {
       d.byVariant.map(x => `<button class="fb-chip${FILTER.skus.has(x.sku) ? ' on' : ''}" data-sku="${x.sku}"><span class="dot" style="background:${x.color || '#3A9E98'}"></span>${x.name}</button>`).join('') +
       '<button class="fb-chip" data-all="1">All</button></div>';
   }
-  html += '<span class="fb-note">Filters apply to sales KPIs, variant charts &amp; tables, and the daily trend. Customer, plan &amp; PDP metrics stay launch-wide.</span>';
+  html += '<span class="fb-note">Filters apply to all KPI cards, variant charts &amp; tables, and the daily trend (daily trend follows the region filter only). With a variant subset, orders &amp; customers are per-variant sums, so multi-variant buyers count in each selected variant.</span>';
   bar.innerHTML = html;
   const rerender = () => { buildFilterBar(LOADED); renderOverview(LOADED); };
   bar.querySelectorAll('[data-region]').forEach(b => b.onclick = () => { FILTER.region = b.dataset.region; rerender(); });
@@ -535,6 +567,7 @@ function renderOverview(d) {
   renderKPIs(v);
   renderSales(v);
   renderUnits(v);
+  renderDonut(v);
   renderNvrShade(v);
   renderTable(v);
   renderTrend(v);
@@ -1079,7 +1112,6 @@ function init() {
       FILTER.skus = new Set(d.byVariant.map(x => x.sku));
       buildFilterBar(d);
       renderOverview(d);
-      renderDonut(d);
       renderSkuTable(d);
       renderPDP(d);
       renderCrossSells(d);
