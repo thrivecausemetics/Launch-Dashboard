@@ -9,11 +9,13 @@ window.DASHBOARD_DATA = {
     "mode": "automated",
     "sourceDb": "DAASITY_DB",
     "retentionDays": 122,
+    "oosWindowDays": 7,
     "sourceStatus": {
       "uos": "live",
       "uts": "live",
       "drp": "live",
       "uss": "live",
+      "uos_inventory": "live",
       "gsheets": "live",
       "uos_products": "live",
       "ga4_api": "live",
@@ -473,7 +475,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 440779.68,
           "caNetSales": 14209.08,
           "planUnits": 12220,
-          "pctToPlanUnits": 148.5
+          "pctToPlanUnits": 148.5,
+          "inventoryUnits": 2701,
+          "runRateUnitsPerDay": 53.29,
+          "daysToOOS": 50,
+          "estOOSDate": "2026-09-25"
         },
         {
           "sku": "TVG5880",
@@ -490,7 +496,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 292049.91,
           "caNetSales": 9240.17,
           "planUnits": 6841,
-          "pctToPlanUnits": 175.3
+          "pctToPlanUnits": 175.3,
+          "inventoryUnits": 262,
+          "runRateUnitsPerDay": 16.43,
+          "daysToOOS": 15,
+          "estOOSDate": "2026-08-21"
         },
         {
           "sku": "TVG5960",
@@ -507,7 +517,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 219053.54,
           "caNetSales": 9198.46,
           "planUnits": 8200,
-          "pctToPlanUnits": 110.9
+          "pctToPlanUnits": 110.9,
+          "inventoryUnits": 3798,
+          "runRateUnitsPerDay": 24.86,
+          "daysToOOS": 152,
+          "estOOSDate": "2027-01-05"
         },
         {
           "sku": "TVG5890",
@@ -524,7 +538,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 217862.77,
           "caNetSales": 4514.56,
           "planUnits": 4094,
-          "pctToPlanUnits": 214.2
+          "pctToPlanUnits": 214.2,
+          "inventoryUnits": 0,
+          "runRateUnitsPerDay": 0.0,
+          "daysToOOS": 0,
+          "estOOSDate": "2026-08-06"
         },
         {
           "sku": "TVG5920",
@@ -541,7 +559,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 166065.32,
           "caNetSales": 8804.53,
           "planUnits": 8173,
-          "pctToPlanUnits": 85.3
+          "pctToPlanUnits": 85.3,
+          "inventoryUnits": 7418,
+          "runRateUnitsPerDay": 23.43,
+          "daysToOOS": 316,
+          "estOOSDate": "2027-06-18"
         },
         {
           "sku": "TVG5900",
@@ -558,7 +580,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 150390.3,
           "caNetSales": 2728.85,
           "planUnits": 2978,
-          "pctToPlanUnits": 200.8
+          "pctToPlanUnits": 200.8,
+          "inventoryUnits": 2704,
+          "runRateUnitsPerDay": 12.43,
+          "daysToOOS": 217,
+          "estOOSDate": "2027-03-11"
         },
         {
           "sku": "TVG5940",
@@ -575,7 +601,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 56295.77,
           "caNetSales": 2490.73,
           "planUnits": 4581,
-          "pctToPlanUnits": 51.2
+          "pctToPlanUnits": 51.2,
+          "inventoryUnits": 7349,
+          "runRateUnitsPerDay": 7.71,
+          "daysToOOS": 953,
+          "estOOSDate": "2029-03-16"
         },
         {
           "sku": "TVG5910",
@@ -592,7 +622,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 52700.69,
           "caNetSales": 1548.15,
           "planUnits": 3515,
-          "pctToPlanUnits": 60.9
+          "pctToPlanUnits": 60.9,
+          "inventoryUnits": 6878,
+          "runRateUnitsPerDay": 6.43,
+          "daysToOOS": 1069,
+          "estOOSDate": "2029-07-10"
         },
         {
           "sku": "TVG5930",
@@ -609,7 +643,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 50991.41,
           "caNetSales": 2481.28,
           "planUnits": 3311,
-          "pctToPlanUnits": 64.8
+          "pctToPlanUnits": 64.8,
+          "inventoryUnits": 6746,
+          "runRateUnitsPerDay": 7.14,
+          "daysToOOS": 944,
+          "estOOSDate": "2029-03-07"
         },
         {
           "sku": "TVG5970",
@@ -626,7 +664,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 37199.1,
           "caNetSales": 932.55,
           "planUnits": 6615,
-          "pctToPlanUnits": 23.0
+          "pctToPlanUnits": 23.0,
+          "inventoryUnits": 7960,
+          "runRateUnitsPerDay": 6.0,
+          "daysToOOS": 1326,
+          "estOOSDate": "2030-03-24"
         }
       ],
       "dailySales": [
@@ -639,7 +681,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1029.09,
           "caNetSales": 157.66,
           "cumUnits": 47,
-          "cumSales": 1186.75
+          "cumSales": 1186.75,
+          "planUnits": null,
+          "cumPlanUnits": 0
         },
         {
           "date": "2026-05-01",
@@ -650,7 +694,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 44805.47,
           "caNetSales": 1728.78,
           "cumUnits": 1866,
-          "cumSales": 47721.0
+          "cumSales": 47721.0,
+          "planUnits": 2254,
+          "cumPlanUnits": 2254
         },
         {
           "date": "2026-05-02",
@@ -661,7 +707,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 64651.46,
           "caNetSales": 1284.23,
           "cumUnits": 4395,
-          "cumSales": 113656.69
+          "cumSales": 113656.69,
+          "planUnits": 2278,
+          "cumPlanUnits": 4532
         },
         {
           "date": "2026-05-03",
@@ -672,7 +720,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 40950.95,
           "caNetSales": 1149.42,
           "cumUnits": 6025,
-          "cumSales": 155757.06
+          "cumSales": 155757.06,
+          "planUnits": 2043,
+          "cumPlanUnits": 6575
         },
         {
           "date": "2026-05-04",
@@ -683,7 +733,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 32130.21,
           "caNetSales": 1453.62,
           "cumUnits": 7337,
-          "cumSales": 189340.89
+          "cumSales": 189340.89,
+          "planUnits": 1160,
+          "cumPlanUnits": 7735
         },
         {
           "date": "2026-05-05",
@@ -694,7 +746,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 42487.68,
           "caNetSales": 1067.73,
           "cumUnits": 9026,
-          "cumSales": 232896.3
+          "cumSales": 232896.3,
+          "planUnits": 961,
+          "cumPlanUnits": 8696
         },
         {
           "date": "2026-05-06",
@@ -705,7 +759,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 32721.43,
           "caNetSales": 1329.27,
           "cumUnits": 10355,
-          "cumSales": 266947.0
+          "cumSales": 266947.0,
+          "planUnits": 883,
+          "cumPlanUnits": 9579
         },
         {
           "date": "2026-05-07",
@@ -716,7 +772,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 36809.55,
           "caNetSales": 1440.49,
           "cumUnits": 11847,
-          "cumSales": 305197.04
+          "cumSales": 305197.04,
+          "planUnits": 1045,
+          "cumPlanUnits": 10624
         },
         {
           "date": "2026-05-08",
@@ -727,7 +785,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 40160.78,
           "caNetSales": 1291.92,
           "cumUnits": 13469,
-          "cumSales": 346649.74
+          "cumSales": 346649.74,
+          "planUnits": 900,
+          "cumPlanUnits": 11524
         },
         {
           "date": "2026-05-09",
@@ -738,7 +798,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 40487.19,
           "caNetSales": 2092.77,
           "cumUnits": 15168,
-          "cumSales": 389229.7
+          "cumSales": 389229.7,
+          "planUnits": 1293,
+          "cumPlanUnits": 12817
         },
         {
           "date": "2026-05-10",
@@ -749,7 +811,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 48424.7,
           "caNetSales": 1841.07,
           "cumUnits": 17152,
-          "cumSales": 439495.47
+          "cumSales": 439495.47,
+          "planUnits": 1267,
+          "cumPlanUnits": 14084
         },
         {
           "date": "2026-05-11",
@@ -760,7 +824,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 36261.3,
           "caNetSales": 917.13,
           "cumUnits": 18601,
-          "cumSales": 476673.9
+          "cumSales": 476673.9,
+          "planUnits": 617,
+          "cumPlanUnits": 14701
         },
         {
           "date": "2026-05-12",
@@ -771,7 +837,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 29156.25,
           "caNetSales": 1779.4,
           "cumUnits": 19836,
-          "cumSales": 507609.55
+          "cumSales": 507609.55,
+          "planUnits": 540,
+          "cumPlanUnits": 15241
         },
         {
           "date": "2026-05-13",
@@ -782,7 +850,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 32466.17,
           "caNetSales": 1172.48,
           "cumUnits": 21161,
-          "cumSales": 541248.2
+          "cumSales": 541248.2,
+          "planUnits": 539,
+          "cumPlanUnits": 15780
         },
         {
           "date": "2026-05-14",
@@ -793,7 +863,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 30375.96,
           "caNetSales": 1906.03,
           "cumUnits": 22452,
-          "cumSales": 573530.19
+          "cumSales": 573530.19,
+          "planUnits": 667,
+          "cumPlanUnits": 16447
         },
         {
           "date": "2026-05-15",
@@ -804,7 +876,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 28489.72,
           "caNetSales": 1387.52,
           "cumUnits": 23643,
-          "cumSales": 603407.43
+          "cumSales": 603407.43,
+          "planUnits": 612,
+          "cumPlanUnits": 17059
         },
         {
           "date": "2026-05-16",
@@ -815,7 +889,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 33503.84,
           "caNetSales": 2022.37,
           "cumUnits": 25069,
-          "cumSales": 638933.64
+          "cumSales": 638933.64,
+          "planUnits": 712,
+          "cumPlanUnits": 17771
         },
         {
           "date": "2026-05-17",
@@ -826,7 +902,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 34422.23,
           "caNetSales": 1896.21,
           "cumUnits": 26504,
-          "cumSales": 675252.08
+          "cumSales": 675252.08,
+          "planUnits": 733,
+          "cumPlanUnits": 18504
         },
         {
           "date": "2026-05-18",
@@ -837,7 +915,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 29320.48,
           "caNetSales": 1251.03,
           "cumUnits": 27726,
-          "cumSales": 705823.59
+          "cumSales": 705823.59,
+          "planUnits": 486,
+          "cumPlanUnits": 18990
         },
         {
           "date": "2026-05-19",
@@ -848,7 +928,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 30432.18,
           "caNetSales": 1359.64,
           "cumUnits": 28991,
-          "cumSales": 737615.41
+          "cumSales": 737615.41,
+          "planUnits": 439,
+          "cumPlanUnits": 19429
         },
         {
           "date": "2026-05-20",
@@ -859,7 +941,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 30055.57,
           "caNetSales": 920.68,
           "cumUnits": 30207,
-          "cumSales": 768591.66
+          "cumSales": 768591.66,
+          "planUnits": 454,
+          "cumPlanUnits": 19883
         },
         {
           "date": "2026-05-21",
@@ -870,7 +954,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 27657.72,
           "caNetSales": 1109.42,
           "cumUnits": 31362,
-          "cumSales": 797358.8
+          "cumSales": 797358.8,
+          "planUnits": 572,
+          "cumPlanUnits": 20455
         },
         {
           "date": "2026-05-22",
@@ -881,7 +967,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 34054.41,
           "caNetSales": 1598.75,
           "cumUnits": 32780,
-          "cumSales": 833011.96
+          "cumSales": 833011.96,
+          "planUnits": 536,
+          "cumPlanUnits": 20991
         },
         {
           "date": "2026-05-23",
@@ -892,7 +980,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 32808.68,
           "caNetSales": 1410.23,
           "cumUnits": 34146,
-          "cumSales": 867230.87
+          "cumSales": 867230.87,
+          "planUnits": 636,
+          "cumPlanUnits": 21627
         },
         {
           "date": "2026-05-24",
@@ -903,7 +993,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 37242.12,
           "caNetSales": 1499.7,
           "cumUnits": 35675,
-          "cumSales": 905972.69
+          "cumSales": 905972.69,
+          "planUnits": 664,
+          "cumPlanUnits": 22291
         },
         {
           "date": "2026-05-25",
@@ -914,7 +1006,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 47714.36,
           "caNetSales": 890.85,
           "cumUnits": 37584,
-          "cumSales": 954577.9
+          "cumSales": 954577.9,
+          "planUnits": 445,
+          "cumPlanUnits": 22736
         },
         {
           "date": "2026-05-26",
@@ -925,7 +1019,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 21722.57,
           "caNetSales": 807.77,
           "cumUnits": 38491,
-          "cumSales": 977108.24
+          "cumSales": 977108.24,
+          "planUnits": 406,
+          "cumPlanUnits": 23142
         },
         {
           "date": "2026-05-27",
@@ -936,7 +1032,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 18308.68,
           "caNetSales": 700.25,
           "cumUnits": 39258,
-          "cumSales": 996117.17
+          "cumSales": 996117.17,
+          "planUnits": 427,
+          "cumPlanUnits": 23569
         },
         {
           "date": "2026-05-28",
@@ -947,7 +1045,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 20233.2,
           "caNetSales": 388.04,
           "cumUnits": 40086,
-          "cumSales": 1016738.41
+          "cumSales": 1016738.41,
+          "planUnits": 542,
+          "cumPlanUnits": 24111
         },
         {
           "date": "2026-05-29",
@@ -958,7 +1058,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 19758.29,
           "caNetSales": 681.7,
           "cumUnits": 40912,
-          "cumSales": 1037178.4
+          "cumSales": 1037178.4,
+          "planUnits": 511,
+          "cumPlanUnits": 24622
         },
         {
           "date": "2026-05-30",
@@ -969,7 +1071,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 16659.52,
           "caNetSales": 701.46,
           "cumUnits": 41611,
-          "cumSales": 1054539.38
+          "cumSales": 1054539.38,
+          "planUnits": 611,
+          "cumPlanUnits": 25233
         },
         {
           "date": "2026-05-31",
@@ -980,7 +1084,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 14711.14,
           "caNetSales": 712.26,
           "cumUnits": 42221,
-          "cumSales": 1069962.78
+          "cumSales": 1069962.78,
+          "planUnits": 642,
+          "cumPlanUnits": 25875
         },
         {
           "date": "2026-06-01",
@@ -991,7 +1097,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 19443.02,
           "caNetSales": 391.69,
           "cumUnits": 43022,
-          "cumSales": 1089797.49
+          "cumSales": 1089797.49,
+          "planUnits": 429,
+          "cumPlanUnits": 26304
         },
         {
           "date": "2026-06-02",
@@ -1002,7 +1110,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 18571.43,
           "caNetSales": 436.38,
           "cumUnits": 43797,
-          "cumSales": 1108805.3
+          "cumSales": 1108805.3,
+          "planUnits": 396,
+          "cumPlanUnits": 26700
         },
         {
           "date": "2026-06-03",
@@ -1013,7 +1123,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 19186.34,
           "caNetSales": 790.37,
           "cumUnits": 44616,
-          "cumSales": 1128782.01
+          "cumSales": 1128782.01,
+          "planUnits": 415,
+          "cumPlanUnits": 27115
         },
         {
           "date": "2026-06-04",
@@ -1024,7 +1136,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 17299.3,
           "caNetSales": 308.08,
           "cumUnits": 45343,
-          "cumSales": 1146389.39
+          "cumSales": 1146389.39,
+          "planUnits": 530,
+          "cumPlanUnits": 27645
         },
         {
           "date": "2026-06-05",
@@ -1035,7 +1149,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 17586.71,
           "caNetSales": 319.64,
           "cumUnits": 46059,
-          "cumSales": 1164295.74
+          "cumSales": 1164295.74,
+          "planUnits": 500,
+          "cumPlanUnits": 28145
         },
         {
           "date": "2026-06-06",
@@ -1046,7 +1162,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 12630.49,
           "caNetSales": 417.38,
           "cumUnits": 46583,
-          "cumSales": 1177343.61
+          "cumSales": 1177343.61,
+          "planUnits": 778,
+          "cumPlanUnits": 28923
         },
         {
           "date": "2026-06-07",
@@ -1057,7 +1175,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 14880.0,
           "caNetSales": 446.74,
           "cumUnits": 47186,
-          "cumSales": 1192670.35
+          "cumSales": 1192670.35,
+          "planUnits": 820,
+          "cumPlanUnits": 29743
         },
         {
           "date": "2026-06-08",
@@ -1068,7 +1188,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 21813.76,
           "caNetSales": 514.09,
           "cumUnits": 48070,
-          "cumSales": 1214998.2
+          "cumSales": 1214998.2,
+          "planUnits": 423,
+          "cumPlanUnits": 30166
         },
         {
           "date": "2026-06-09",
@@ -1079,7 +1201,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 11292.74,
           "caNetSales": 350.24,
           "cumUnits": 48546,
-          "cumSales": 1226641.18
+          "cumSales": 1226641.18,
+          "planUnits": 390,
+          "cumPlanUnits": 30556
         },
         {
           "date": "2026-06-10",
@@ -1090,7 +1214,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9081.93,
           "caNetSales": 181.2,
           "cumUnits": 48919,
-          "cumSales": 1235904.31
+          "cumSales": 1235904.31,
+          "planUnits": 408,
+          "cumPlanUnits": 30964
         },
         {
           "date": "2026-06-11",
@@ -1101,7 +1227,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 11453.14,
           "caNetSales": 320.6,
           "cumUnits": 49384,
-          "cumSales": 1247678.05
+          "cumSales": 1247678.05,
+          "planUnits": 524,
+          "cumPlanUnits": 31488
         },
         {
           "date": "2026-06-12",
@@ -1112,7 +1240,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 14037.15,
           "caNetSales": 304.22,
           "cumUnits": 49950,
-          "cumSales": 1262019.42
+          "cumSales": 1262019.42,
+          "planUnits": 497,
+          "cumPlanUnits": 31985
         },
         {
           "date": "2026-06-13",
@@ -1123,7 +1253,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 24189.7,
           "caNetSales": 788.04,
           "cumUnits": 50987,
-          "cumSales": 1286997.16
+          "cumSales": 1286997.16,
+          "planUnits": 594,
+          "cumPlanUnits": 32579
         },
         {
           "date": "2026-06-14",
@@ -1134,7 +1266,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 30409.0,
           "caNetSales": 677.31,
           "cumUnits": 52270,
-          "cumSales": 1318083.47
+          "cumSales": 1318083.47,
+          "planUnits": 626,
+          "cumPlanUnits": 33205
         },
         {
           "date": "2026-06-15",
@@ -1145,7 +1279,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10076.56,
           "caNetSales": 569.32,
           "cumUnits": 52700,
-          "cumSales": 1328729.35
+          "cumSales": 1328729.35,
+          "planUnits": 419,
+          "cumPlanUnits": 33624
         },
         {
           "date": "2026-06-16",
@@ -1156,7 +1292,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7578.84,
           "caNetSales": 473.57,
           "cumUnits": 53032,
-          "cumSales": 1336781.76
+          "cumSales": 1336781.76,
+          "planUnits": 387,
+          "cumPlanUnits": 34011
         },
         {
           "date": "2026-06-17",
@@ -1167,7 +1305,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8714.04,
           "caNetSales": 404.55,
           "cumUnits": 53403,
-          "cumSales": 1345900.35
+          "cumSales": 1345900.35,
+          "planUnits": 405,
+          "cumPlanUnits": 34416
         },
         {
           "date": "2026-06-18",
@@ -1178,7 +1318,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9123.39,
           "caNetSales": 458.84,
           "cumUnits": 53788,
-          "cumSales": 1355482.58
+          "cumSales": 1355482.58,
+          "planUnits": 522,
+          "cumPlanUnits": 34938
         },
         {
           "date": "2026-06-19",
@@ -1189,7 +1331,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 11264.88,
           "caNetSales": 261.79,
           "cumUnits": 54231,
-          "cumSales": 1367009.25
+          "cumSales": 1367009.25,
+          "planUnits": 494,
+          "cumPlanUnits": 35432
         },
         {
           "date": "2026-06-20",
@@ -1200,7 +1344,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 15912.05,
           "caNetSales": 476.4,
           "cumUnits": 54875,
-          "cumSales": 1383397.7
+          "cumSales": 1383397.7,
+          "planUnits": 766,
+          "cumPlanUnits": 36198
         },
         {
           "date": "2026-06-21",
@@ -1211,7 +1357,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 17971.78,
           "caNetSales": 416.84,
           "cumUnits": 55586,
-          "cumSales": 1401786.32
+          "cumSales": 1401786.32,
+          "planUnits": 809,
+          "cumPlanUnits": 37007
         },
         {
           "date": "2026-06-22",
@@ -1222,7 +1370,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8930.73,
           "caNetSales": 98.66,
           "cumUnits": 55944,
-          "cumSales": 1410815.71
+          "cumSales": 1410815.71,
+          "planUnits": 416,
+          "cumPlanUnits": 37423
         },
         {
           "date": "2026-06-23",
@@ -1233,7 +1383,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7997.33,
           "caNetSales": 269.63,
           "cumUnits": 56282,
-          "cumSales": 1419082.67
+          "cumSales": 1419082.67,
+          "planUnits": 385,
+          "cumPlanUnits": 37808
         },
         {
           "date": "2026-06-24",
@@ -1244,7 +1396,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5758.63,
           "caNetSales": 138.99,
           "cumUnits": 56522,
-          "cumSales": 1424980.29
+          "cumSales": 1424980.29,
+          "planUnits": 403,
+          "cumPlanUnits": 38211
         },
         {
           "date": "2026-06-25",
@@ -1255,7 +1409,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5609.54,
           "caNetSales": 204.95,
           "cumUnits": 56760,
-          "cumSales": 1430794.78
+          "cumSales": 1430794.78,
+          "planUnits": 521,
+          "cumPlanUnits": 38732
         },
         {
           "date": "2026-06-26",
@@ -1266,7 +1422,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3697.46,
           "caNetSales": 159.37,
           "cumUnits": 56925,
-          "cumSales": 1434651.61
+          "cumSales": 1434651.61,
+          "planUnits": 492,
+          "cumPlanUnits": 39224
         },
         {
           "date": "2026-06-27",
@@ -1277,7 +1435,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5515.1,
           "caNetSales": 212.03,
           "cumUnits": 57148,
-          "cumSales": 1440378.74
+          "cumSales": 1440378.74,
+          "planUnits": 588,
+          "cumPlanUnits": 39812
         },
         {
           "date": "2026-06-28",
@@ -1288,7 +1448,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6173.73,
           "caNetSales": 190.64,
           "cumUnits": 57390,
-          "cumSales": 1446743.11
+          "cumSales": 1446743.11,
+          "planUnits": 620,
+          "cumPlanUnits": 40432
         },
         {
           "date": "2026-06-29",
@@ -1299,7 +1461,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4498.53,
           "caNetSales": 222.11,
           "cumUnits": 57585,
-          "cumSales": 1451463.75
+          "cumSales": 1451463.75,
+          "planUnits": 415,
+          "cumPlanUnits": 40847
         },
         {
           "date": "2026-06-30",
@@ -1310,7 +1474,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6188.16,
           "caNetSales": 105.44,
           "cumUnits": 57834,
-          "cumSales": 1457757.35
+          "cumSales": 1457757.35,
+          "planUnits": 385,
+          "cumPlanUnits": 41232
         },
         {
           "date": "2026-07-01",
@@ -1321,7 +1487,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9767.55,
           "caNetSales": 465.14,
           "cumUnits": 58281,
-          "cumSales": 1467990.04
+          "cumSales": 1467990.04,
+          "planUnits": 403,
+          "cumPlanUnits": 41635
         },
         {
           "date": "2026-07-02",
@@ -1332,7 +1500,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9492.74,
           "caNetSales": 126.97,
           "cumUnits": 58693,
-          "cumSales": 1477609.75
+          "cumSales": 1477609.75,
+          "planUnits": 518,
+          "cumPlanUnits": 42153
         },
         {
           "date": "2026-07-03",
@@ -1343,7 +1513,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 11086.68,
           "caNetSales": 316.37,
           "cumUnits": 59184,
-          "cumSales": 1489012.8
+          "cumSales": 1489012.8,
+          "planUnits": 637,
+          "cumPlanUnits": 42790
         },
         {
           "date": "2026-07-04",
@@ -1354,7 +1526,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10675.25,
           "caNetSales": 255.65,
           "cumUnits": 59649,
-          "cumSales": 1499943.7
+          "cumSales": 1499943.7,
+          "planUnits": 762,
+          "cumPlanUnits": 43552
         },
         {
           "date": "2026-07-05",
@@ -1365,7 +1539,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 17591.33,
           "caNetSales": 302.84,
           "cumUnits": 60409,
-          "cumSales": 1517837.87
+          "cumSales": 1517837.87,
+          "planUnits": 805,
+          "cumPlanUnits": 44357
         },
         {
           "date": "2026-07-06",
@@ -1376,7 +1552,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6945.63,
           "caNetSales": 151.62,
           "cumUnits": 60692,
-          "cumSales": 1524935.12
+          "cumSales": 1524935.12,
+          "planUnits": 414,
+          "cumPlanUnits": 44771
         },
         {
           "date": "2026-07-07",
@@ -1387,7 +1565,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6958.49,
           "caNetSales": 127.8,
           "cumUnits": 60970,
-          "cumSales": 1532021.41
+          "cumSales": 1532021.41,
+          "planUnits": 384,
+          "cumPlanUnits": 45155
         },
         {
           "date": "2026-07-08",
@@ -1398,7 +1578,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9446.25,
           "caNetSales": 128.13,
           "cumUnits": 61336,
-          "cumSales": 1541595.79
+          "cumSales": 1541595.79,
+          "planUnits": 401,
+          "cumPlanUnits": 45556
         },
         {
           "date": "2026-07-09",
@@ -1409,7 +1591,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7821.15,
           "caNetSales": 124.83,
           "cumUnits": 61645,
-          "cumSales": 1549541.77
+          "cumSales": 1549541.77,
+          "planUnits": 518,
+          "cumPlanUnits": 46074
         },
         {
           "date": "2026-07-10",
@@ -1420,7 +1604,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10308.89,
           "caNetSales": 170.13,
           "cumUnits": 62048,
-          "cumSales": 1560020.79
+          "cumSales": 1560020.79,
+          "planUnits": 490,
+          "cumPlanUnits": 46564
         },
         {
           "date": "2026-07-11",
@@ -1431,7 +1617,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10975.43,
           "caNetSales": 53.0,
           "cumUnits": 62472,
-          "cumSales": 1571049.22
+          "cumSales": 1571049.22,
+          "planUnits": 586,
+          "cumPlanUnits": 47150
         },
         {
           "date": "2026-07-12",
@@ -1442,7 +1630,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9286.43,
           "caNetSales": 123.3,
           "cumUnits": 62831,
-          "cumSales": 1580458.95
+          "cumSales": 1580458.95,
+          "planUnits": 618,
+          "cumPlanUnits": 47768
         },
         {
           "date": "2026-07-13",
@@ -1453,7 +1643,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7196.65,
           "caNetSales": 230.09,
           "cumUnits": 63124,
-          "cumSales": 1587885.69
+          "cumSales": 1587885.69,
+          "planUnits": 413,
+          "cumPlanUnits": 48181
         },
         {
           "date": "2026-07-14",
@@ -1464,7 +1656,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6246.41,
           "caNetSales": 84.81,
           "cumUnits": 63385,
-          "cumSales": 1594216.91
+          "cumSales": 1594216.91,
+          "planUnits": 383,
+          "cumPlanUnits": 48564
         },
         {
           "date": "2026-07-15",
@@ -1475,7 +1669,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4913.99,
           "caNetSales": 103.26,
           "cumUnits": 63580,
-          "cumSales": 1599234.16
+          "cumSales": 1599234.16,
+          "planUnits": 400,
+          "cumPlanUnits": 48964
         },
         {
           "date": "2026-07-16",
@@ -1486,7 +1682,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5317.94,
           "caNetSales": 57.63,
           "cumUnits": 63793,
-          "cumSales": 1604609.73
+          "cumSales": 1604609.73,
+          "planUnits": 517,
+          "cumPlanUnits": 49481
         },
         {
           "date": "2026-07-17",
@@ -1497,7 +1695,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6842.05,
           "caNetSales": 129.0,
           "cumUnits": 64098,
-          "cumSales": 1611580.78
+          "cumSales": 1611580.78,
+          "planUnits": 490,
+          "cumPlanUnits": 49971
         },
         {
           "date": "2026-07-18",
@@ -1508,7 +1708,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7885.41,
           "caNetSales": 162.2,
           "cumUnits": 64410,
-          "cumSales": 1619628.39
+          "cumSales": 1619628.39,
+          "planUnits": 760,
+          "cumPlanUnits": 50731
         },
         {
           "date": "2026-07-19",
@@ -1519,7 +1721,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7858.46,
           "caNetSales": 109.5,
           "cumUnits": 64717,
-          "cumSales": 1627596.35
+          "cumSales": 1627596.35,
+          "planUnits": 803,
+          "cumPlanUnits": 51534
         },
         {
           "date": "2026-07-20",
@@ -1530,7 +1734,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7527.34,
           "caNetSales": 88.2,
           "cumUnits": 65013,
-          "cumSales": 1635211.89
+          "cumSales": 1635211.89,
+          "planUnits": 413,
+          "cumPlanUnits": 51947
         },
         {
           "date": "2026-07-21",
@@ -1541,7 +1747,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7724.83,
           "caNetSales": 140.83,
           "cumUnits": 65323,
-          "cumSales": 1643077.55
+          "cumSales": 1643077.55,
+          "planUnits": 383,
+          "cumPlanUnits": 52330
         },
         {
           "date": "2026-07-22",
@@ -1552,7 +1760,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7512.18,
           "caNetSales": 138.43,
           "cumUnits": 65624,
-          "cumSales": 1650728.16
+          "cumSales": 1650728.16,
+          "planUnits": 519,
+          "cumPlanUnits": 52849
         },
         {
           "date": "2026-07-23",
@@ -1563,7 +1773,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7949.89,
           "caNetSales": 156.04,
           "cumUnits": 65942,
-          "cumSales": 1658834.09
+          "cumSales": 1658834.09,
+          "planUnits": 516,
+          "cumPlanUnits": 53365
         },
         {
           "date": "2026-07-24",
@@ -1574,7 +1786,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7801.65,
           "caNetSales": 196.6,
           "cumUnits": 66253,
-          "cumSales": 1666832.34
+          "cumSales": 1666832.34,
+          "planUnits": 489,
+          "cumPlanUnits": 53854
         },
         {
           "date": "2026-07-25",
@@ -1585,7 +1799,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9160.32,
           "caNetSales": 314.8,
           "cumUnits": 66623,
-          "cumSales": 1676307.46
+          "cumSales": 1676307.46,
+          "planUnits": 585,
+          "cumPlanUnits": 54439
         },
         {
           "date": "2026-07-26",
@@ -1596,7 +1812,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8707.43,
           "caNetSales": 172.01,
           "cumUnits": 66960,
-          "cumSales": 1685186.9
+          "cumSales": 1685186.9,
+          "planUnits": 617,
+          "cumPlanUnits": 55056
         },
         {
           "date": "2026-07-27",
@@ -1607,7 +1825,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6610.0,
           "caNetSales": 90.32,
           "cumUnits": 67221,
-          "cumSales": 1691887.22
+          "cumSales": 1691887.22,
+          "planUnits": 413,
+          "cumPlanUnits": 55469
         },
         {
           "date": "2026-07-28",
@@ -1618,7 +1838,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8995.02,
           "caNetSales": 160.05,
           "cumUnits": 67589,
-          "cumSales": 1701042.29
+          "cumSales": 1701042.29,
+          "planUnits": 383,
+          "cumPlanUnits": 55852
         },
         {
           "date": "2026-07-29",
@@ -1629,7 +1851,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6988.28,
           "caNetSales": 122.41,
           "cumUnits": 67866,
-          "cumSales": 1708152.98
+          "cumSales": 1708152.98,
+          "planUnits": 400,
+          "cumPlanUnits": 56252
         },
         {
           "date": "2026-07-30",
@@ -1640,7 +1864,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3263.3,
           "caNetSales": 36.73,
           "cumUnits": 67996,
-          "cumSales": 1711453.01
+          "cumSales": 1711453.01,
+          "planUnits": 516,
+          "cumPlanUnits": 56768
         },
         {
           "date": "2026-07-31",
@@ -1651,7 +1877,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4509.64,
           "caNetSales": 36.01,
           "cumUnits": 68174,
-          "cumSales": 1715998.66
+          "cumSales": 1715998.66,
+          "planUnits": 488,
+          "cumPlanUnits": 57256
         },
         {
           "date": "2026-08-01",
@@ -1662,7 +1890,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3715.51,
           "caNetSales": 111.22,
           "cumUnits": 68324,
-          "cumSales": 1719825.39
+          "cumSales": 1719825.39,
+          "planUnits": 759,
+          "cumPlanUnits": 58015
         },
         {
           "date": "2026-08-02",
@@ -1673,7 +1903,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5927.78,
           "caNetSales": 83.72,
           "cumUnits": 68559,
-          "cumSales": 1725836.89
+          "cumSales": 1725836.89,
+          "planUnits": 802,
+          "cumPlanUnits": 58817
         },
         {
           "date": "2026-08-03",
@@ -1684,7 +1916,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2987.94,
           "caNetSales": 18.22,
           "cumUnits": 68676,
-          "cumSales": 1728843.05
+          "cumSales": 1728843.05,
+          "planUnits": 413,
+          "cumPlanUnits": 59230
         },
         {
           "date": "2026-08-04",
@@ -1695,7 +1929,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3650.55,
           "caNetSales": 35.64,
           "cumUnits": 68824,
-          "cumSales": 1732529.24
+          "cumSales": 1732529.24,
+          "planUnits": 383,
+          "cumPlanUnits": 59613
         },
         {
           "date": "2026-08-05",
@@ -1706,7 +1942,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3428.08,
           "caNetSales": 65.48,
           "cumUnits": 68961,
-          "cumSales": 1736022.8
+          "cumSales": 1736022.8,
+          "planUnits": 399,
+          "cumPlanUnits": 60012
         },
         {
           "date": "2026-08-06",
@@ -1717,7 +1955,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3413.66,
           "caNetSales": 100.36,
           "cumUnits": 69100,
-          "cumSales": 1739536.82
+          "cumSales": 1739536.82,
+          "planUnits": 516,
+          "cumPlanUnits": 60528
         }
       ],
       "pdp": [
@@ -2253,7 +2493,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 65384.06,
           "caNetSales": 2487.4,
           "planUnits": 5127,
-          "pctToPlanUnits": 60.3
+          "pctToPlanUnits": 60.3,
+          "inventoryUnits": 21067,
+          "runRateUnitsPerDay": 38.71,
+          "daysToOOS": 544,
+          "estOOSDate": "2028-02-01"
         },
         {
           "sku": "TVG6680",
@@ -2270,7 +2514,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 40723.67,
           "caNetSales": 1253.79,
           "planUnits": 3470,
-          "pctToPlanUnits": 50.6
+          "pctToPlanUnits": 50.6,
+          "inventoryUnits": 8094,
+          "runRateUnitsPerDay": 20.0,
+          "daysToOOS": 404,
+          "estOOSDate": "2027-09-14"
         },
         {
           "sku": "TVG6710",
@@ -2287,7 +2535,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 27045.5,
           "caNetSales": 532.03,
           "planUnits": 7128,
-          "pctToPlanUnits": 17.6
+          "pctToPlanUnits": 17.6,
+          "inventoryUnits": 18139,
+          "runRateUnitsPerDay": 30.57,
+          "daysToOOS": 593,
+          "estOOSDate": "2028-03-21"
         }
       ],
       "dailySales": [
@@ -2300,7 +2552,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1046.52,
           "caNetSales": 0.0,
           "cumUnits": 45,
-          "cumSales": 1046.52
+          "cumSales": 1046.52,
+          "planUnits": 244,
+          "cumPlanUnits": 244
         },
         {
           "date": "2026-06-09",
@@ -2311,7 +2565,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4066.01,
           "caNetSales": 137.92,
           "cumUnits": 256,
-          "cumSales": 5250.45
+          "cumSales": 5250.45,
+          "planUnits": 659,
+          "cumPlanUnits": 903
         },
         {
           "date": "2026-06-10",
@@ -2322,7 +2578,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4672.67,
           "caNetSales": 163.94,
           "cumUnits": 467,
-          "cumSales": 10087.06
+          "cumSales": 10087.06,
+          "planUnits": 595,
+          "cumPlanUnits": 1498
         },
         {
           "date": "2026-06-11",
@@ -2333,7 +2591,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6965.45,
           "caNetSales": 135.67,
           "cumUnits": 767,
-          "cumSales": 17188.18
+          "cumSales": 17188.18,
+          "planUnits": 489,
+          "cumPlanUnits": 1987
         },
         {
           "date": "2026-06-12",
@@ -2344,7 +2604,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4550.75,
           "caNetSales": 233.87,
           "cumUnits": 974,
-          "cumSales": 21972.8
+          "cumSales": 21972.8,
+          "planUnits": 456,
+          "cumPlanUnits": 2443
         },
         {
           "date": "2026-06-13",
@@ -2355,7 +2617,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5378.45,
           "caNetSales": 172.26,
           "cumUnits": 1213,
-          "cumSales": 27523.51
+          "cumSales": 27523.51,
+          "planUnits": 434,
+          "cumPlanUnits": 2877
         },
         {
           "date": "2026-06-14",
@@ -2366,7 +2630,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5952.19,
           "caNetSales": 183.55,
           "cumUnits": 1475,
-          "cumSales": 33659.25
+          "cumSales": 33659.25,
+          "planUnits": 393,
+          "cumPlanUnits": 3270
         },
         {
           "date": "2026-06-15",
@@ -2377,7 +2643,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3514.41,
           "caNetSales": 105.22,
           "cumUnits": 1628,
-          "cumSales": 37278.88
+          "cumSales": 37278.88,
+          "planUnits": 269,
+          "cumPlanUnits": 3539
         },
         {
           "date": "2026-06-16",
@@ -2388,7 +2656,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2691.33,
           "caNetSales": 107.06,
           "cumUnits": 1748,
-          "cumSales": 40077.27
+          "cumSales": 40077.27,
+          "planUnits": 227,
+          "cumPlanUnits": 3766
         },
         {
           "date": "2026-06-17",
@@ -2399,7 +2669,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1813.94,
           "caNetSales": 80.07,
           "cumUnits": 1832,
-          "cumSales": 41971.28
+          "cumSales": 41971.28,
+          "planUnits": 254,
+          "cumPlanUnits": 4020
         },
         {
           "date": "2026-06-18",
@@ -2410,7 +2682,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1897.66,
           "caNetSales": 140.46,
           "cumUnits": 1922,
-          "cumSales": 44009.4
+          "cumSales": 44009.4,
+          "planUnits": 237,
+          "cumPlanUnits": 4257
         },
         {
           "date": "2026-06-19",
@@ -2421,7 +2695,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1809.63,
           "caNetSales": 141.94,
           "cumUnits": 2010,
-          "cumSales": 45960.97
+          "cumSales": 45960.97,
+          "planUnits": 254,
+          "cumPlanUnits": 4511
         },
         {
           "date": "2026-06-20",
@@ -2432,7 +2708,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3779.32,
           "caNetSales": 204.06,
           "cumUnits": 2187,
-          "cumSales": 49944.35
+          "cumSales": 49944.35,
+          "planUnits": 364,
+          "cumPlanUnits": 4875
         },
         {
           "date": "2026-06-21",
@@ -2443,7 +2721,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4482.15,
           "caNetSales": 123.28,
           "cumUnits": 2387,
-          "cumSales": 54549.78
+          "cumSales": 54549.78,
+          "planUnits": 362,
+          "cumPlanUnits": 5237
         },
         {
           "date": "2026-06-22",
@@ -2454,7 +2734,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1709.3,
           "caNetSales": 16.98,
           "cumUnits": 2463,
-          "cumSales": 56276.06
+          "cumSales": 56276.06,
+          "planUnits": 245,
+          "cumPlanUnits": 5482
         },
         {
           "date": "2026-06-23",
@@ -2465,7 +2747,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1211.13,
           "caNetSales": 16.92,
           "cumUnits": 2516,
-          "cumSales": 57504.11
+          "cumSales": 57504.11,
+          "planUnits": 209,
+          "cumPlanUnits": 5691
         },
         {
           "date": "2026-06-24",
@@ -2476,7 +2760,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1856.31,
           "caNetSales": 12.72,
           "cumUnits": 2597,
-          "cumSales": 59373.14
+          "cumSales": 59373.14,
+          "planUnits": 236,
+          "cumPlanUnits": 5927
         },
         {
           "date": "2026-06-25",
@@ -2487,7 +2773,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1480.33,
           "caNetSales": 12.65,
           "cumUnits": 2660,
-          "cumSales": 60866.12
+          "cumSales": 60866.12,
+          "planUnits": 221,
+          "cumPlanUnits": 6148
         },
         {
           "date": "2026-06-26",
@@ -2498,7 +2786,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 706.71,
           "caNetSales": 76.58,
           "cumUnits": 2697,
-          "cumSales": 61649.41
+          "cumSales": 61649.41,
+          "planUnits": 241,
+          "cumPlanUnits": 6389
         },
         {
           "date": "2026-06-27",
@@ -2509,7 +2799,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 904.68,
           "caNetSales": 32.8,
           "cumUnits": 2740,
-          "cumSales": 62586.89
+          "cumSales": 62586.89,
+          "planUnits": 264,
+          "cumPlanUnits": 6653
         },
         {
           "date": "2026-06-28",
@@ -2520,7 +2812,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 727.4,
           "caNetSales": 15.89,
           "cumUnits": 2772,
-          "cumSales": 63330.18
+          "cumSales": 63330.18,
+          "planUnits": 264,
+          "cumPlanUnits": 6917
         },
         {
           "date": "2026-06-29",
@@ -2531,7 +2825,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 809.6,
           "caNetSales": 0.0,
           "cumUnits": 2807,
-          "cumSales": 64139.78
+          "cumSales": 64139.78,
+          "planUnits": 235,
+          "cumPlanUnits": 7152
         },
         {
           "date": "2026-06-30",
@@ -2542,7 +2838,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1562.9,
           "caNetSales": 28.44,
           "cumUnits": 2875,
-          "cumSales": 65731.12
+          "cumSales": 65731.12,
+          "planUnits": 198,
+          "cumPlanUnits": 7350
         },
         {
           "date": "2026-07-01",
@@ -2553,7 +2851,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2153.71,
           "caNetSales": 179.37,
           "cumUnits": 2991,
-          "cumSales": 68064.2
+          "cumSales": 68064.2,
+          "planUnits": 224,
+          "cumPlanUnits": 7574
         },
         {
           "date": "2026-07-02",
@@ -2564,7 +2864,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1917.88,
           "caNetSales": 91.9,
           "cumUnits": 3090,
-          "cumSales": 70073.98
+          "cumSales": 70073.98,
+          "planUnits": 210,
+          "cumPlanUnits": 7784
         },
         {
           "date": "2026-07-03",
@@ -2575,7 +2877,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2742.46,
           "caNetSales": 80.27,
           "cumUnits": 3228,
-          "cumSales": 72896.71
+          "cumSales": 72896.71,
+          "planUnits": 301,
+          "cumPlanUnits": 8085
         },
         {
           "date": "2026-07-04",
@@ -2586,7 +2890,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3336.11,
           "caNetSales": 205.49,
           "cumUnits": 3404,
-          "cumSales": 76438.31
+          "cumSales": 76438.31,
+          "planUnits": 328,
+          "cumPlanUnits": 8413
         },
         {
           "date": "2026-07-05",
@@ -2597,7 +2903,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3544.01,
           "caNetSales": 128.52,
           "cumUnits": 3583,
-          "cumSales": 80110.84
+          "cumSales": 80110.84,
+          "planUnits": 328,
+          "cumPlanUnits": 8741
         },
         {
           "date": "2026-07-06",
@@ -2608,7 +2916,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1473.43,
           "caNetSales": 55.94,
           "cumUnits": 3652,
-          "cumSales": 81640.21
+          "cumSales": 81640.21,
+          "planUnits": 226,
+          "cumPlanUnits": 8967
         },
         {
           "date": "2026-07-07",
@@ -2619,7 +2929,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1258.03,
           "caNetSales": 15.82,
           "cumUnits": 3710,
-          "cumSales": 82914.06
+          "cumSales": 82914.06,
+          "planUnits": 189,
+          "cumPlanUnits": 9156
         },
         {
           "date": "2026-07-08",
@@ -2630,7 +2942,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1334.23,
           "caNetSales": 116.05,
           "cumUnits": 3776,
-          "cumSales": 84364.34
+          "cumSales": 84364.34,
+          "planUnits": 215,
+          "cumPlanUnits": 9371
         },
         {
           "date": "2026-07-09",
@@ -2641,7 +2955,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1606.87,
           "caNetSales": 95.6,
           "cumUnits": 3851,
-          "cumSales": 86066.81
+          "cumSales": 86066.81,
+          "planUnits": 201,
+          "cumPlanUnits": 9572
         },
         {
           "date": "2026-07-10",
@@ -2652,7 +2968,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1274.23,
           "caNetSales": 12.74,
           "cumUnits": 3908,
-          "cumSales": 87353.78
+          "cumSales": 87353.78,
+          "planUnits": 225,
+          "cumPlanUnits": 9797
         },
         {
           "date": "2026-07-11",
@@ -2663,7 +2981,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1217.83,
           "caNetSales": 63.76,
           "cumUnits": 3967,
-          "cumSales": 88635.37
+          "cumSales": 88635.37,
+          "planUnits": 242,
+          "cumPlanUnits": 10039
         },
         {
           "date": "2026-07-12",
@@ -2674,7 +2994,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1385.86,
           "caNetSales": 31.85,
           "cumUnits": 4029,
-          "cumSales": 90053.08
+          "cumSales": 90053.08,
+          "planUnits": 243,
+          "cumPlanUnits": 10282
         },
         {
           "date": "2026-07-13",
@@ -2685,7 +3007,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1047.34,
           "caNetSales": 74.45,
           "cumUnits": 4079,
-          "cumSales": 91174.87
+          "cumSales": 91174.87,
+          "planUnits": 220,
+          "cumPlanUnits": 10502
         },
         {
           "date": "2026-07-14",
@@ -2696,7 +3020,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1157.78,
           "caNetSales": 30.04,
           "cumUnits": 4129,
-          "cumSales": 92362.69
+          "cumSales": 92362.69,
+          "planUnits": 182,
+          "cumPlanUnits": 10684
         },
         {
           "date": "2026-07-15",
@@ -2707,7 +3033,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1051.66,
           "caNetSales": 74.5,
           "cumUnits": 4179,
-          "cumSales": 93488.85
+          "cumSales": 93488.85,
+          "planUnits": 207,
+          "cumPlanUnits": 10891
         },
         {
           "date": "2026-07-16",
@@ -2718,7 +3046,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2910.37,
           "caNetSales": 89.37,
           "cumUnits": 4309,
-          "cumSales": 96488.59
+          "cumSales": 96488.59,
+          "planUnits": 194,
+          "cumPlanUnits": 11085
         },
         {
           "date": "2026-07-17",
@@ -2729,7 +3059,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2172.43,
           "caNetSales": 26.29,
           "cumUnits": 4404,
-          "cumSales": 98687.31
+          "cumSales": 98687.31,
+          "planUnits": 219,
+          "cumPlanUnits": 11304
         },
         {
           "date": "2026-07-18",
@@ -2740,7 +3072,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1593.67,
           "caNetSales": 31.8,
           "cumUnits": 4475,
-          "cumSales": 100312.78
+          "cumSales": 100312.78,
+          "planUnits": 305,
+          "cumPlanUnits": 11609
         },
         {
           "date": "2026-07-19",
@@ -2751,7 +3085,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2038.17,
           "caNetSales": 27.65,
           "cumUnits": 4563,
-          "cumSales": 102378.6
+          "cumSales": 102378.6,
+          "planUnits": 306,
+          "cumPlanUnits": 11915
         },
         {
           "date": "2026-07-20",
@@ -2762,7 +3098,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2111.56,
           "caNetSales": 0.0,
           "cumUnits": 4656,
-          "cumSales": 104490.16
+          "cumSales": 104490.16,
+          "planUnits": 214,
+          "cumPlanUnits": 12129
         },
         {
           "date": "2026-07-21",
@@ -2773,7 +3111,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2438.64,
           "caNetSales": 0.0,
           "cumUnits": 4761,
-          "cumSales": 106928.8
+          "cumSales": 106928.8,
+          "planUnits": 176,
+          "cumPlanUnits": 12305
         },
         {
           "date": "2026-07-22",
@@ -2784,7 +3124,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2051.64,
           "caNetSales": 0.0,
           "cumUnits": 4850,
-          "cumSales": 108980.44
+          "cumSales": 108980.44,
+          "planUnits": 261,
+          "cumPlanUnits": 12566
         },
         {
           "date": "2026-07-23",
@@ -2795,7 +3137,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1760.19,
           "caNetSales": 32.2,
           "cumUnits": 4928,
-          "cumSales": 110772.83
+          "cumSales": 110772.83,
+          "planUnits": 189,
+          "cumPlanUnits": 12755
         },
         {
           "date": "2026-07-24",
@@ -2806,7 +3150,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1909.44,
           "caNetSales": 78.36,
           "cumUnits": 5017,
-          "cumSales": 112760.63
+          "cumSales": 112760.63,
+          "planUnits": 215,
+          "cumPlanUnits": 12970
         },
         {
           "date": "2026-07-25",
@@ -2817,7 +3163,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2177.84,
           "caNetSales": 75.07,
           "cumUnits": 5115,
-          "cumSales": 115013.54
+          "cumSales": 115013.54,
+          "planUnits": 227,
+          "cumPlanUnits": 13197
         },
         {
           "date": "2026-07-26",
@@ -2828,7 +3176,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2003.83,
           "caNetSales": 63.49,
           "cumUnits": 5207,
-          "cumSales": 117080.86
+          "cumSales": 117080.86,
+          "planUnits": 229,
+          "cumPlanUnits": 13426
         },
         {
           "date": "2026-07-27",
@@ -2839,7 +3189,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1374.53,
           "caNetSales": 16.09,
           "cumUnits": 5269,
-          "cumSales": 118471.48
+          "cumSales": 118471.48,
+          "planUnits": 210,
+          "cumPlanUnits": 13636
         },
         {
           "date": "2026-07-28",
@@ -2850,7 +3202,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1601.2,
           "caNetSales": 12.86,
           "cumUnits": 5341,
-          "cumSales": 120085.54
+          "cumSales": 120085.54,
+          "planUnits": 172,
+          "cumPlanUnits": 13808
         },
         {
           "date": "2026-07-29",
@@ -2861,7 +3215,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1579.45,
           "caNetSales": 0.0,
           "cumUnits": 5409,
-          "cumSales": 121664.99
+          "cumSales": 121664.99,
+          "planUnits": 196,
+          "cumPlanUnits": 14004
         },
         {
           "date": "2026-07-30",
@@ -2872,7 +3228,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1477.58,
           "caNetSales": 42.66,
           "cumUnits": 5477,
-          "cumSales": 123185.23
+          "cumSales": 123185.23,
+          "planUnits": 184,
+          "cumPlanUnits": 14188
         },
         {
           "date": "2026-07-31",
@@ -2883,7 +3241,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2655.35,
           "caNetSales": 113.7,
           "cumUnits": 5600,
-          "cumSales": 125954.28
+          "cumSales": 125954.28,
+          "planUnits": 211,
+          "cumPlanUnits": 14399
         },
         {
           "date": "2026-08-01",
@@ -2894,7 +3254,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2025.29,
           "caNetSales": 65.11,
           "cumUnits": 5692,
-          "cumSales": 128044.68
+          "cumSales": 128044.68,
+          "planUnits": 289,
+          "cumPlanUnits": 14688
         },
         {
           "date": "2026-08-02",
@@ -2905,7 +3267,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3369.35,
           "caNetSales": 49.35,
           "cumUnits": 5842,
-          "cumSales": 131463.38
+          "cumSales": 131463.38,
+          "planUnits": 291,
+          "cumPlanUnits": 14979
         },
         {
           "date": "2026-08-03",
@@ -2916,7 +3280,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1247.7,
           "caNetSales": 58.52,
           "cumUnits": 5900,
-          "cumSales": 132769.6
+          "cumSales": 132769.6,
+          "planUnits": 206,
+          "cumPlanUnits": 15185
         },
         {
           "date": "2026-08-04",
@@ -2927,7 +3293,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 924.25,
           "caNetSales": 12.98,
           "cumUnits": 5941,
-          "cumSales": 133706.83
+          "cumSales": 133706.83,
+          "planUnits": 168,
+          "cumPlanUnits": 15353
         },
         {
           "date": "2026-08-05",
@@ -2938,7 +3306,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1132.8,
           "caNetSales": 48.44,
           "cumUnits": 5992,
-          "cumSales": 134888.07
+          "cumSales": 134888.07,
+          "planUnits": 192,
+          "cumPlanUnits": 15545
         },
         {
           "date": "2026-08-06",
@@ -2949,7 +3319,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2507.68,
           "caNetSales": 30.68,
           "cumUnits": 6102,
-          "cumSales": 137426.43
+          "cumSales": 137426.43,
+          "planUnits": 180,
+          "cumPlanUnits": 15725
         }
       ],
       "pdp": [
@@ -3610,7 +3982,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 695847.56,
           "caNetSales": 17382.51,
           "planUnits": 18056,
-          "pctToPlanUnits": 168.5
+          "pctToPlanUnits": 168.5,
+          "inventoryUnits": 56333,
+          "runRateUnitsPerDay": 359.29,
+          "daysToOOS": 156,
+          "estOOSDate": "2027-01-09"
         },
         {
           "sku": "TVG6370",
@@ -3627,7 +4003,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 545737.03,
           "caNetSales": 15567.16,
           "planUnits": 16419,
-          "pctToPlanUnits": 147.8
+          "pctToPlanUnits": 147.8,
+          "inventoryUnits": 10324,
+          "runRateUnitsPerDay": 91.71,
+          "daysToOOS": 112,
+          "estOOSDate": "2026-11-26"
         },
         {
           "sku": "TVG6390",
@@ -3644,7 +4024,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 478594.74,
           "caNetSales": 15359.78,
           "planUnits": 13135,
-          "pctToPlanUnits": 162.0
+          "pctToPlanUnits": 162.0,
+          "inventoryUnits": 27410,
+          "runRateUnitsPerDay": 196.0,
+          "daysToOOS": 139,
+          "estOOSDate": "2026-12-23"
         }
       ],
       "dailySales": [
@@ -3657,7 +4041,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3577.41,
           "caNetSales": 64.85,
           "cumUnits": 155,
-          "cumSales": 3642.26
+          "cumSales": 3642.26,
+          "planUnits": 30,
+          "cumPlanUnits": 30
         },
         {
           "date": "2026-04-08",
@@ -3668,7 +4054,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 76995.96,
           "caNetSales": 3233.14,
           "cumUnits": 3587,
-          "cumSales": 83871.36
+          "cumSales": 83871.36,
+          "planUnits": 1040,
+          "cumPlanUnits": 1070
         },
         {
           "date": "2026-04-09",
@@ -3679,7 +4067,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 93035.34,
           "caNetSales": 3079.26,
           "cumUnits": 7619,
-          "cumSales": 179985.96
+          "cumSales": 179985.96,
+          "planUnits": 907,
+          "cumPlanUnits": 1977
         },
         {
           "date": "2026-04-10",
@@ -3690,7 +4080,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 53866.97,
           "caNetSales": 2351.1,
           "cumUnits": 10025,
-          "cumSales": 236204.03
+          "cumSales": 236204.03,
+          "planUnits": 1189,
+          "cumPlanUnits": 3166
         },
         {
           "date": "2026-04-11",
@@ -3701,7 +4093,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 70060.87,
           "caNetSales": 3387.73,
           "cumUnits": 13199,
-          "cumSales": 309652.63
+          "cumSales": 309652.63,
+          "planUnits": 1824,
+          "cumPlanUnits": 4990
         },
         {
           "date": "2026-04-12",
@@ -3712,7 +4106,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 83814.23,
           "caNetSales": 3805.56,
           "cumUnits": 16988,
-          "cumSales": 397272.42
+          "cumSales": 397272.42,
+          "planUnits": 1727,
+          "cumPlanUnits": 6717
         },
         {
           "date": "2026-04-13",
@@ -3723,7 +4119,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 41500.97,
           "caNetSales": 1747.51,
           "cumUnits": 18851,
-          "cumSales": 440520.9
+          "cumSales": 440520.9,
+          "planUnits": 950,
+          "cumPlanUnits": 7667
         },
         {
           "date": "2026-04-14",
@@ -3734,7 +4132,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 35161.94,
           "caNetSales": 1472.62,
           "cumUnits": 20433,
-          "cumSales": 477155.46
+          "cumSales": 477155.46,
+          "planUnits": 795,
+          "cumPlanUnits": 8462
         },
         {
           "date": "2026-04-15",
@@ -3745,7 +4145,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 47613.19,
           "caNetSales": 1933.22,
           "cumUnits": 22552,
-          "cumSales": 526701.87
+          "cumSales": 526701.87,
+          "planUnits": 794,
+          "cumPlanUnits": 9256
         },
         {
           "date": "2026-04-16",
@@ -3756,7 +4158,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 52783.54,
           "caNetSales": 1959.96,
           "cumUnits": 24894,
-          "cumSales": 581445.37
+          "cumSales": 581445.37,
+          "planUnits": 698,
+          "cumPlanUnits": 9954
         },
         {
           "date": "2026-04-17",
@@ -3767,7 +4171,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 45825.13,
           "caNetSales": 1850.96,
           "cumUnits": 26916,
-          "cumSales": 629121.46
+          "cumSales": 629121.46,
+          "planUnits": 929,
+          "cumPlanUnits": 10883
         },
         {
           "date": "2026-04-18",
@@ -3778,7 +4184,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 41578.79,
           "caNetSales": 1851.13,
           "cumUnits": 28764,
-          "cumSales": 672551.38
+          "cumSales": 672551.38,
+          "planUnits": 1108,
+          "cumPlanUnits": 11991
         },
         {
           "date": "2026-04-19",
@@ -3789,7 +4197,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 47198.29,
           "caNetSales": 1780.0,
           "cumUnits": 30846,
-          "cumSales": 721529.67
+          "cumSales": 721529.67,
+          "planUnits": 1053,
+          "cumPlanUnits": 13044
         },
         {
           "date": "2026-04-20",
@@ -3800,7 +4210,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 39494.55,
           "caNetSales": 1858.29,
           "cumUnits": 32621,
-          "cumSales": 762882.51
+          "cumSales": 762882.51,
+          "planUnits": 739,
+          "cumPlanUnits": 13783
         },
         {
           "date": "2026-04-21",
@@ -3811,7 +4223,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 36910.96,
           "caNetSales": 1351.97,
           "cumUnits": 34253,
-          "cumSales": 801145.44
+          "cumSales": 801145.44,
+          "planUnits": 620,
+          "cumPlanUnits": 14403
         },
         {
           "date": "2026-04-22",
@@ -3822,7 +4236,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 40059.86,
           "caNetSales": 1038.74,
           "cumUnits": 36001,
-          "cumSales": 842244.04
+          "cumSales": 842244.04,
+          "planUnits": 622,
+          "cumPlanUnits": 15025
         },
         {
           "date": "2026-04-23",
@@ -3833,7 +4249,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 35657.22,
           "caNetSales": 995.57,
           "cumUnits": 37577,
-          "cumSales": 878896.83
+          "cumSales": 878896.83,
+          "planUnits": 550,
+          "cumPlanUnits": 15575
         },
         {
           "date": "2026-04-24",
@@ -3844,7 +4262,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 30080.72,
           "caNetSales": 566.93,
           "cumUnits": 38899,
-          "cumSales": 909544.48
+          "cumSales": 909544.48,
+          "planUnits": 741,
+          "cumPlanUnits": 16316
         },
         {
           "date": "2026-04-25",
@@ -3855,7 +4275,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 48300.38,
           "caNetSales": 1132.96,
           "cumUnits": 41054,
-          "cumSales": 958977.82
+          "cumSales": 958977.82,
+          "planUnits": 1158,
+          "cumPlanUnits": 17474
         },
         {
           "date": "2026-04-26",
@@ -3866,7 +4288,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 57736.7,
           "caNetSales": 1354.33,
           "cumUnits": 43629,
-          "cumSales": 1018068.85
+          "cumSales": 1018068.85,
+          "planUnits": 1105,
+          "cumPlanUnits": 18579
         },
         {
           "date": "2026-04-27",
@@ -3877,7 +4301,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 30281.25,
           "caNetSales": 504.07,
           "cumUnits": 44955,
-          "cumSales": 1048854.17
+          "cumSales": 1048854.17,
+          "planUnits": 589,
+          "cumPlanUnits": 19168
         },
         {
           "date": "2026-04-28",
@@ -3888,7 +4314,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 25590.76,
           "caNetSales": 297.8,
           "cumUnits": 46068,
-          "cumSales": 1074742.73
+          "cumSales": 1074742.73,
+          "planUnits": 495,
+          "cumPlanUnits": 19663
         },
         {
           "date": "2026-04-29",
@@ -3899,7 +4327,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 20372.38,
           "caNetSales": 267.72,
           "cumUnits": 46957,
-          "cumSales": 1095382.83
+          "cumSales": 1095382.83,
+          "planUnits": 499,
+          "cumPlanUnits": 20162
         },
         {
           "date": "2026-04-30",
@@ -3910,7 +4340,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 19525.54,
           "caNetSales": 330.26,
           "cumUnits": 47802,
-          "cumSales": 1115238.63
+          "cumSales": 1115238.63,
+          "planUnits": 444,
+          "cumPlanUnits": 20606
         },
         {
           "date": "2026-05-01",
@@ -3921,7 +4353,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 21273.59,
           "caNetSales": 223.17,
           "cumUnits": 48735,
-          "cumSales": 1136735.39
+          "cumSales": 1136735.39,
+          "planUnits": 603,
+          "cumPlanUnits": 21209
         },
         {
           "date": "2026-05-02",
@@ -3932,7 +4366,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 24624.09,
           "caNetSales": 268.42,
           "cumUnits": 49797,
-          "cumSales": 1161627.9
+          "cumSales": 1161627.9,
+          "planUnits": 730,
+          "cumPlanUnits": 21939
         },
         {
           "date": "2026-05-03",
@@ -3943,7 +4379,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 16530.32,
           "caNetSales": 263.14,
           "cumUnits": 50523,
-          "cumSales": 1178421.36
+          "cumSales": 1178421.36,
+          "planUnits": 697,
+          "cumPlanUnits": 22636
         },
         {
           "date": "2026-05-04",
@@ -3954,7 +4392,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8203.05,
           "caNetSales": 114.06,
           "cumUnits": 50885,
-          "cumSales": 1186738.47
+          "cumSales": 1186738.47,
+          "planUnits": 480,
+          "cumPlanUnits": 23116
         },
         {
           "date": "2026-05-05",
@@ -3965,7 +4405,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7646.85,
           "caNetSales": 143.97,
           "cumUnits": 51226,
-          "cumSales": 1194529.29
+          "cumSales": 1194529.29,
+          "planUnits": 407,
+          "cumPlanUnits": 23523
         },
         {
           "date": "2026-05-06",
@@ -3976,7 +4418,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7638.22,
           "caNetSales": 268.54,
           "cumUnits": 51581,
-          "cumSales": 1202436.05
+          "cumSales": 1202436.05,
+          "planUnits": 410,
+          "cumPlanUnits": 23933
         },
         {
           "date": "2026-05-07",
@@ -3987,7 +4431,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7465.69,
           "caNetSales": 215.0,
           "cumUnits": 51916,
-          "cumSales": 1210116.74
+          "cumSales": 1210116.74,
+          "planUnits": 366,
+          "cumPlanUnits": 24299
         },
         {
           "date": "2026-05-08",
@@ -3998,7 +4444,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5378.06,
           "caNetSales": 104.0,
           "cumUnits": 52156,
-          "cumSales": 1215598.8
+          "cumSales": 1215598.8,
+          "planUnits": 499,
+          "cumPlanUnits": 24798
         },
         {
           "date": "2026-05-09",
@@ -4009,7 +4457,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 16473.59,
           "caNetSales": 506.32,
           "cumUnits": 52901,
-          "cumSales": 1232578.71
+          "cumSales": 1232578.71,
+          "planUnits": 789,
+          "cumPlanUnits": 25587
         },
         {
           "date": "2026-05-10",
@@ -4020,7 +4470,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 15309.71,
           "caNetSales": 388.79,
           "cumUnits": 53586,
-          "cumSales": 1248277.21
+          "cumSales": 1248277.21,
+          "planUnits": 756,
+          "cumPlanUnits": 26343
         },
         {
           "date": "2026-05-11",
@@ -4031,7 +4483,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5008.95,
           "caNetSales": 110.85,
           "cumUnits": 53809,
-          "cumSales": 1253397.01
+          "cumSales": 1253397.01,
+          "planUnits": 402,
+          "cumPlanUnits": 26745
         },
         {
           "date": "2026-05-12",
@@ -4042,7 +4496,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3657.19,
           "caNetSales": 150.6,
           "cumUnits": 53983,
-          "cumSales": 1257204.8
+          "cumSales": 1257204.8,
+          "planUnits": 341,
+          "cumPlanUnits": 27086
         },
         {
           "date": "2026-05-13",
@@ -4053,7 +4509,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4336.51,
           "caNetSales": 70.94,
           "cumUnits": 54173,
-          "cumSales": 1261612.25
+          "cumSales": 1261612.25,
+          "planUnits": 345,
+          "cumPlanUnits": 27431
         },
         {
           "date": "2026-05-14",
@@ -4064,7 +4522,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3111.09,
           "caNetSales": 90.7,
           "cumUnits": 54320,
-          "cumSales": 1264814.04
+          "cumSales": 1264814.04,
+          "planUnits": 309,
+          "cumPlanUnits": 27740
         },
         {
           "date": "2026-05-15",
@@ -4075,7 +4535,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4142.4,
           "caNetSales": 55.04,
           "cumUnits": 54504,
-          "cumSales": 1269011.48
+          "cumSales": 1269011.48,
+          "planUnits": 422,
+          "cumPlanUnits": 28162
         },
         {
           "date": "2026-05-16",
@@ -4086,7 +4548,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7868.25,
           "caNetSales": 177.8,
           "cumUnits": 54850,
-          "cumSales": 1277057.53
+          "cumSales": 1277057.53,
+          "planUnits": 513,
+          "cumPlanUnits": 28675
         },
         {
           "date": "2026-05-17",
@@ -4097,7 +4561,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5540.95,
           "caNetSales": 167.09,
           "cumUnits": 55097,
-          "cumSales": 1282765.57
+          "cumSales": 1282765.57,
+          "planUnits": 492,
+          "cumPlanUnits": 29167
         },
         {
           "date": "2026-05-18",
@@ -4108,7 +4574,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6408.69,
           "caNetSales": 157.53,
           "cumUnits": 55383,
-          "cumSales": 1289331.79
+          "cumSales": 1289331.79,
+          "planUnits": 343,
+          "cumPlanUnits": 29510
         },
         {
           "date": "2026-05-19",
@@ -4119,7 +4587,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4627.17,
           "caNetSales": 70.44,
           "cumUnits": 55594,
-          "cumSales": 1294029.4
+          "cumSales": 1294029.4,
+          "planUnits": 292,
+          "cumPlanUnits": 29802
         },
         {
           "date": "2026-05-20",
@@ -4130,7 +4600,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4698.97,
           "caNetSales": 109.42,
           "cumUnits": 55804,
-          "cumSales": 1298837.79
+          "cumSales": 1298837.79,
+          "planUnits": 296,
+          "cumPlanUnits": 30098
         },
         {
           "date": "2026-05-21",
@@ -4141,7 +4613,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4629.47,
           "caNetSales": 39.03,
           "cumUnits": 56008,
-          "cumSales": 1303506.29
+          "cumSales": 1303506.29,
+          "planUnits": 266,
+          "cumPlanUnits": 30364
         },
         {
           "date": "2026-05-22",
@@ -4152,7 +4626,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 13460.94,
           "caNetSales": 465.05,
           "cumUnits": 56605,
-          "cumSales": 1317432.28
+          "cumSales": 1317432.28,
+          "planUnits": 362,
+          "cumPlanUnits": 30726
         },
         {
           "date": "2026-05-23",
@@ -4163,7 +4639,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10942.74,
           "caNetSales": 347.13,
           "cumUnits": 57090,
-          "cumSales": 1328722.15
+          "cumSales": 1328722.15,
+          "planUnits": 441,
+          "cumPlanUnits": 31167
         },
         {
           "date": "2026-05-24",
@@ -4174,7 +4652,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 11188.66,
           "caNetSales": 208.18,
           "cumUnits": 57573,
-          "cumSales": 1340118.99
+          "cumSales": 1340118.99,
+          "planUnits": 423,
+          "cumPlanUnits": 31590
         },
         {
           "date": "2026-05-25",
@@ -4185,7 +4665,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 15128.5,
           "caNetSales": 0.0,
           "cumUnits": 58209,
-          "cumSales": 1355247.49
+          "cumSales": 1355247.49,
+          "planUnits": 299,
+          "cumPlanUnits": 31889
         },
         {
           "date": "2026-05-26",
@@ -4196,7 +4678,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4054.44,
           "caNetSales": 0.0,
           "cumUnits": 58387,
-          "cumSales": 1359301.93
+          "cumSales": 1359301.93,
+          "planUnits": 254,
+          "cumPlanUnits": 32143
         },
         {
           "date": "2026-05-27",
@@ -4207,7 +4691,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3371.59,
           "caNetSales": 0.0,
           "cumUnits": 58533,
-          "cumSales": 1362673.52
+          "cumSales": 1362673.52,
+          "planUnits": 259,
+          "cumPlanUnits": 32402
         },
         {
           "date": "2026-05-28",
@@ -4218,7 +4704,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4271.68,
           "caNetSales": 0.0,
           "cumUnits": 58716,
-          "cumSales": 1366945.2
+          "cumSales": 1366945.2,
+          "planUnits": 233,
+          "cumPlanUnits": 32635
         },
         {
           "date": "2026-05-29",
@@ -4229,7 +4717,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3791.25,
           "caNetSales": 0.0,
           "cumUnits": 58883,
-          "cumSales": 1370736.45
+          "cumSales": 1370736.45,
+          "planUnits": 317,
+          "cumPlanUnits": 32952
         },
         {
           "date": "2026-05-30",
@@ -4240,7 +4730,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3724.04,
           "caNetSales": 0.0,
           "cumUnits": 59041,
-          "cumSales": 1374460.49
+          "cumSales": 1374460.49,
+          "planUnits": 384,
+          "cumPlanUnits": 33336
         },
         {
           "date": "2026-05-31",
@@ -4251,7 +4743,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3860.83,
           "caNetSales": 0.0,
           "cumUnits": 59206,
-          "cumSales": 1378321.32
+          "cumSales": 1378321.32,
+          "planUnits": 369,
+          "cumPlanUnits": 33705
         },
         {
           "date": "2026-06-01",
@@ -4262,7 +4756,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5400.31,
           "caNetSales": 0.0,
           "cumUnits": 59442,
-          "cumSales": 1383721.63
+          "cumSales": 1383721.63,
+          "planUnits": 265,
+          "cumPlanUnits": 33970
         },
         {
           "date": "2026-06-02",
@@ -4273,7 +4769,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4956.68,
           "caNetSales": 0.0,
           "cumUnits": 59659,
-          "cumSales": 1388678.31
+          "cumSales": 1388678.31,
+          "planUnits": 227,
+          "cumPlanUnits": 34197
         },
         {
           "date": "2026-06-03",
@@ -4284,7 +4782,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5686.46,
           "caNetSales": 0.0,
           "cumUnits": 59905,
-          "cumSales": 1394364.77
+          "cumSales": 1394364.77,
+          "planUnits": 231,
+          "cumPlanUnits": 34428
         },
         {
           "date": "2026-06-04",
@@ -4295,7 +4795,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3819.27,
           "caNetSales": 0.0,
           "cumUnits": 60076,
-          "cumSales": 1398184.04
+          "cumSales": 1398184.04,
+          "planUnits": 208,
+          "cumPlanUnits": 34636
         },
         {
           "date": "2026-06-05",
@@ -4306,7 +4808,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5283.38,
           "caNetSales": 0.0,
           "cumUnits": 60303,
-          "cumSales": 1403467.42
+          "cumSales": 1403467.42,
+          "planUnits": 281,
+          "cumPlanUnits": 34917
         },
         {
           "date": "2026-06-06",
@@ -4317,7 +4821,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6269.37,
           "caNetSales": 0.0,
           "cumUnits": 60568,
-          "cumSales": 1409736.79
+          "cumSales": 1409736.79,
+          "planUnits": 442,
+          "cumPlanUnits": 35359
         },
         {
           "date": "2026-06-07",
@@ -4328,7 +4834,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5265.3,
           "caNetSales": 0.0,
           "cumUnits": 60789,
-          "cumSales": 1415002.09
+          "cumSales": 1415002.09,
+          "planUnits": 425,
+          "cumPlanUnits": 35784
         },
         {
           "date": "2026-06-08",
@@ -4339,7 +4847,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8567.24,
           "caNetSales": 0.0,
           "cumUnits": 61153,
-          "cumSales": 1423569.33
+          "cumSales": 1423569.33,
+          "planUnits": 239,
+          "cumPlanUnits": 36023
         },
         {
           "date": "2026-06-09",
@@ -4350,7 +4860,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5069.7,
           "caNetSales": 0.0,
           "cumUnits": 61371,
-          "cumSales": 1428639.03
+          "cumSales": 1428639.03,
+          "planUnits": 205,
+          "cumPlanUnits": 36228
         },
         {
           "date": "2026-06-10",
@@ -4361,7 +4873,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4994.01,
           "caNetSales": 0.0,
           "cumUnits": 61591,
-          "cumSales": 1433633.04
+          "cumSales": 1433633.04,
+          "planUnits": 210,
+          "cumPlanUnits": 36438
         },
         {
           "date": "2026-06-11",
@@ -4372,7 +4886,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7267.15,
           "caNetSales": 0.0,
           "cumUnits": 61903,
-          "cumSales": 1440900.19
+          "cumSales": 1440900.19,
+          "planUnits": 188,
+          "cumPlanUnits": 36626
         },
         {
           "date": "2026-06-12",
@@ -4383,7 +4899,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5038.31,
           "caNetSales": 0.0,
           "cumUnits": 62120,
-          "cumSales": 1445938.5
+          "cumSales": 1445938.5,
+          "planUnits": 253,
+          "cumPlanUnits": 36879
         },
         {
           "date": "2026-06-13",
@@ -4394,7 +4912,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10078.16,
           "caNetSales": 0.0,
           "cumUnits": 62536,
-          "cumSales": 1456016.66
+          "cumSales": 1456016.66,
+          "planUnits": 305,
+          "cumPlanUnits": 37184
         },
         {
           "date": "2026-06-14",
@@ -4405,7 +4925,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 13871.78,
           "caNetSales": 0.0,
           "cumUnits": 63112,
-          "cumSales": 1469888.44
+          "cumSales": 1469888.44,
+          "planUnits": 294,
+          "cumPlanUnits": 37478
         },
         {
           "date": "2026-06-15",
@@ -4416,7 +4938,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 11703.1,
           "caNetSales": 0.0,
           "cumUnits": 63606,
-          "cumSales": 1481591.54
+          "cumSales": 1481591.54,
+          "planUnits": 218,
+          "cumPlanUnits": 37696
         },
         {
           "date": "2026-06-16",
@@ -4427,7 +4951,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5511.58,
           "caNetSales": 0.0,
           "cumUnits": 63843,
-          "cumSales": 1487103.12
+          "cumSales": 1487103.12,
+          "planUnits": 188,
+          "cumPlanUnits": 37884
         },
         {
           "date": "2026-06-17",
@@ -4438,7 +4964,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3110.15,
           "caNetSales": 0.0,
           "cumUnits": 63977,
-          "cumSales": 1490213.27
+          "cumSales": 1490213.27,
+          "planUnits": 193,
+          "cumPlanUnits": 38077
         },
         {
           "date": "2026-06-18",
@@ -4449,7 +4977,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2634.88,
           "caNetSales": 0.0,
           "cumUnits": 64089,
-          "cumSales": 1492848.15
+          "cumSales": 1492848.15,
+          "planUnits": 172,
+          "cumPlanUnits": 38249
         },
         {
           "date": "2026-06-19",
@@ -4460,7 +4990,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2055.9,
           "caNetSales": 0.0,
           "cumUnits": 64174,
-          "cumSales": 1494904.05
+          "cumSales": 1494904.05,
+          "planUnits": 230,
+          "cumPlanUnits": 38479
         },
         {
           "date": "2026-06-20",
@@ -4471,7 +5003,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5257.1,
           "caNetSales": 0.0,
           "cumUnits": 64396,
-          "cumSales": 1500161.15
+          "cumSales": 1500161.15,
+          "planUnits": 360,
+          "cumPlanUnits": 38839
         },
         {
           "date": "2026-06-21",
@@ -4482,7 +5016,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5090.22,
           "caNetSales": 0.0,
           "cumUnits": 64609,
-          "cumSales": 1505251.37
+          "cumSales": 1505251.37,
+          "planUnits": 346,
+          "cumPlanUnits": 39185
         },
         {
           "date": "2026-06-22",
@@ -4493,7 +5029,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2944.27,
           "caNetSales": 0.0,
           "cumUnits": 64734,
-          "cumSales": 1508195.64
+          "cumSales": 1508195.64,
+          "planUnits": 202,
+          "cumPlanUnits": 39387
         },
         {
           "date": "2026-06-23",
@@ -4504,7 +5042,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2104.57,
           "caNetSales": 0.0,
           "cumUnits": 64827,
-          "cumSales": 1510300.21
+          "cumSales": 1510300.21,
+          "planUnits": 175,
+          "cumPlanUnits": 39562
         },
         {
           "date": "2026-06-24",
@@ -4515,7 +5055,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1779.69,
           "caNetSales": 0.0,
           "cumUnits": 64905,
-          "cumSales": 1512079.9
+          "cumSales": 1512079.9,
+          "planUnits": 179,
+          "cumPlanUnits": 39741
         },
         {
           "date": "2026-06-25",
@@ -4526,7 +5068,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1828.9,
           "caNetSales": 0.0,
           "cumUnits": 64982,
-          "cumSales": 1513908.8
+          "cumSales": 1513908.8,
+          "planUnits": 160,
+          "cumPlanUnits": 39901
         },
         {
           "date": "2026-06-26",
@@ -4537,7 +5081,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1843.83,
           "caNetSales": 0.0,
           "cumUnits": 65065,
-          "cumSales": 1515752.63
+          "cumSales": 1515752.63,
+          "planUnits": 213,
+          "cumPlanUnits": 40114
         },
         {
           "date": "2026-06-27",
@@ -4548,7 +5094,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3615.84,
           "caNetSales": 0.0,
           "cumUnits": 65214,
-          "cumSales": 1519368.47
+          "cumSales": 1519368.47,
+          "planUnits": 254,
+          "cumPlanUnits": 40368
         },
         {
           "date": "2026-06-28",
@@ -4559,7 +5107,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2240.28,
           "caNetSales": 0.0,
           "cumUnits": 65309,
-          "cumSales": 1521608.75
+          "cumSales": 1521608.75,
+          "planUnits": 245,
+          "cumPlanUnits": 40613
         },
         {
           "date": "2026-06-29",
@@ -4570,7 +5120,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2615.21,
           "caNetSales": 0.0,
           "cumUnits": 65419,
-          "cumSales": 1524223.96
+          "cumSales": 1524223.96,
+          "planUnits": 190,
+          "cumPlanUnits": 40803
         },
         {
           "date": "2026-06-30",
@@ -4581,7 +5133,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2446.21,
           "caNetSales": 0.0,
           "cumUnits": 65523,
-          "cumSales": 1526670.17
+          "cumSales": 1526670.17,
+          "planUnits": 164,
+          "cumPlanUnits": 40967
         },
         {
           "date": "2026-07-01",
@@ -4592,7 +5146,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4850.53,
           "caNetSales": 0.0,
           "cumUnits": 65745,
-          "cumSales": 1531520.7
+          "cumSales": 1531520.7,
+          "planUnits": 170,
+          "cumPlanUnits": 41137
         },
         {
           "date": "2026-07-02",
@@ -4603,7 +5159,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4197.12,
           "caNetSales": 0.0,
           "cumUnits": 65939,
-          "cumSales": 1535717.82
+          "cumSales": 1535717.82,
+          "planUnits": 150,
+          "cumPlanUnits": 41287
         },
         {
           "date": "2026-07-03",
@@ -4614,7 +5172,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6159.0,
           "caNetSales": 0.0,
           "cumUnits": 66217,
-          "cumSales": 1541876.82
+          "cumSales": 1541876.82,
+          "planUnits": 258,
+          "cumPlanUnits": 41545
         },
         {
           "date": "2026-07-04",
@@ -4625,7 +5185,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5937.29,
           "caNetSales": 0.0,
           "cumUnits": 66487,
-          "cumSales": 1547814.11
+          "cumSales": 1547814.11,
+          "planUnits": 308,
+          "cumPlanUnits": 41853
         },
         {
           "date": "2026-07-05",
@@ -4636,7 +5198,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8188.14,
           "caNetSales": 0.0,
           "cumUnits": 66859,
-          "cumSales": 1556002.25
+          "cumSales": 1556002.25,
+          "planUnits": 296,
+          "cumPlanUnits": 42149
         },
         {
           "date": "2026-07-06",
@@ -4647,7 +5211,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2188.9,
           "caNetSales": 0.0,
           "cumUnits": 66953,
-          "cumSales": 1558191.15
+          "cumSales": 1558191.15,
+          "planUnits": 181,
+          "cumPlanUnits": 42330
         },
         {
           "date": "2026-07-07",
@@ -4658,7 +5224,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2024.95,
           "caNetSales": 0.0,
           "cumUnits": 67038,
-          "cumSales": 1560216.1
+          "cumSales": 1560216.1,
+          "planUnits": 156,
+          "cumPlanUnits": 42486
         },
         {
           "date": "2026-07-08",
@@ -4669,7 +5237,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2447.9,
           "caNetSales": 0.0,
           "cumUnits": 67145,
-          "cumSales": 1562664.0
+          "cumSales": 1562664.0,
+          "planUnits": 160,
+          "cumPlanUnits": 42646
         },
         {
           "date": "2026-07-09",
@@ -4680,7 +5250,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2171.37,
           "caNetSales": 0.0,
           "cumUnits": 67239,
-          "cumSales": 1564835.37
+          "cumSales": 1564835.37,
+          "planUnits": 142,
+          "cumPlanUnits": 42788
         },
         {
           "date": "2026-07-10",
@@ -4691,7 +5263,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3095.49,
           "caNetSales": 0.0,
           "cumUnits": 67374,
-          "cumSales": 1567930.86
+          "cumSales": 1567930.86,
+          "planUnits": 188,
+          "cumPlanUnits": 42976
         },
         {
           "date": "2026-07-11",
@@ -4702,7 +5276,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2930.58,
           "caNetSales": 0.0,
           "cumUnits": 67501,
-          "cumSales": 1570861.44
+          "cumSales": 1570861.44,
+          "planUnits": 222,
+          "cumPlanUnits": 43198
         },
         {
           "date": "2026-07-12",
@@ -4713,7 +5289,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2236.19,
           "caNetSales": 0.0,
           "cumUnits": 67595,
-          "cumSales": 1573097.63
+          "cumSales": 1573097.63,
+          "planUnits": 215,
+          "cumPlanUnits": 43413
         },
         {
           "date": "2026-07-13",
@@ -4724,7 +5302,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1838.91,
           "caNetSales": 0.0,
           "cumUnits": 67676,
-          "cumSales": 1574936.54
+          "cumSales": 1574936.54,
+          "planUnits": 172,
+          "cumPlanUnits": 43585
         },
         {
           "date": "2026-07-14",
@@ -4735,7 +5315,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1980.31,
           "caNetSales": 0.0,
           "cumUnits": 67763,
-          "cumSales": 1576916.85
+          "cumSales": 1576916.85,
+          "planUnits": 149,
+          "cumPlanUnits": 43734
         },
         {
           "date": "2026-07-15",
@@ -4746,7 +5328,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2391.25,
           "caNetSales": 0.0,
           "cumUnits": 67866,
-          "cumSales": 1579308.1
+          "cumSales": 1579308.1,
+          "planUnits": 154,
+          "cumPlanUnits": 43888
         },
         {
           "date": "2026-07-16",
@@ -4757,7 +5341,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2468.43,
           "caNetSales": 0.0,
           "cumUnits": 67969,
-          "cumSales": 1581776.53
+          "cumSales": 1581776.53,
+          "planUnits": 137,
+          "cumPlanUnits": 44025
         },
         {
           "date": "2026-07-17",
@@ -4768,7 +5354,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2468.96,
           "caNetSales": 0.0,
           "cumUnits": 68076,
-          "cumSales": 1584245.49
+          "cumSales": 1584245.49,
+          "planUnits": 179,
+          "cumPlanUnits": 44204
         },
         {
           "date": "2026-07-18",
@@ -4779,7 +5367,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2687.62,
           "caNetSales": 0.0,
           "cumUnits": 68191,
-          "cumSales": 1586933.11
+          "cumSales": 1586933.11,
+          "planUnits": 274,
+          "cumPlanUnits": 44478
         },
         {
           "date": "2026-07-19",
@@ -4790,7 +5380,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2505.7,
           "caNetSales": 0.0,
           "cumUnits": 68300,
-          "cumSales": 1589438.81
+          "cumSales": 1589438.81,
+          "planUnits": 264,
+          "cumPlanUnits": 44742
         },
         {
           "date": "2026-07-20",
@@ -4801,7 +5393,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2140.64,
           "caNetSales": 0.0,
           "cumUnits": 68392,
-          "cumSales": 1591579.45
+          "cumSales": 1591579.45,
+          "planUnits": 166,
+          "cumPlanUnits": 44908
         },
         {
           "date": "2026-07-21",
@@ -4812,7 +5406,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3513.48,
           "caNetSales": 0.0,
           "cumUnits": 68542,
-          "cumSales": 1595092.93
+          "cumSales": 1595092.93,
+          "planUnits": 144,
+          "cumPlanUnits": 45052
         },
         {
           "date": "2026-07-22",
@@ -4823,7 +5419,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3191.51,
           "caNetSales": 0.0,
           "cumUnits": 68679,
-          "cumSales": 1598284.44
+          "cumSales": 1598284.44,
+          "planUnits": 192,
+          "cumPlanUnits": 45244
         },
         {
           "date": "2026-07-23",
@@ -4834,7 +5432,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2808.26,
           "caNetSales": 0.0,
           "cumUnits": 68801,
-          "cumSales": 1601092.7
+          "cumSales": 1601092.7,
+          "planUnits": 132,
+          "cumPlanUnits": 45376
         },
         {
           "date": "2026-07-24",
@@ -4845,7 +5445,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3792.52,
           "caNetSales": 0.0,
           "cumUnits": 68962,
-          "cumSales": 1604885.22
+          "cumSales": 1604885.22,
+          "planUnits": 172,
+          "cumPlanUnits": 45548
         },
         {
           "date": "2026-07-25",
@@ -4856,7 +5458,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3370.77,
           "caNetSales": 0.0,
           "cumUnits": 69105,
-          "cumSales": 1608255.99
+          "cumSales": 1608255.99,
+          "planUnits": 201,
+          "cumPlanUnits": 45749
         },
         {
           "date": "2026-07-26",
@@ -4867,7 +5471,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 12208.0,
           "caNetSales": 0.0,
           "cumUnits": 69613,
-          "cumSales": 1620463.99
+          "cumSales": 1620463.99,
+          "planUnits": 195,
+          "cumPlanUnits": 45944
         },
         {
           "date": "2026-07-27",
@@ -4878,7 +5484,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10696.56,
           "caNetSales": 230.14,
           "cumUnits": 70081,
-          "cumSales": 1631390.69
+          "cumSales": 1631390.69,
+          "planUnits": 161,
+          "cumPlanUnits": 46105
         },
         {
           "date": "2026-07-28",
@@ -4889,7 +5497,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9207.55,
           "caNetSales": 513.83,
           "cumUnits": 70508,
-          "cumSales": 1641112.07
+          "cumSales": 1641112.07,
+          "planUnits": 140,
+          "cumPlanUnits": 46245
         },
         {
           "date": "2026-07-29",
@@ -4900,7 +5510,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9388.56,
           "caNetSales": 543.5,
           "cumUnits": 70936,
-          "cumSales": 1651044.13
+          "cumSales": 1651044.13,
+          "planUnits": 144,
+          "cumPlanUnits": 46389
         },
         {
           "date": "2026-07-30",
@@ -4911,7 +5523,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 11112.35,
           "caNetSales": 631.55,
           "cumUnits": 71440,
-          "cumSales": 1662788.03
+          "cumSales": 1662788.03,
+          "planUnits": 128,
+          "cumPlanUnits": 46517
         },
         {
           "date": "2026-07-31",
@@ -4922,7 +5536,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 18337.21,
           "caNetSales": 486.74,
           "cumUnits": 72245,
-          "cumSales": 1681611.98
+          "cumSales": 1681611.98,
+          "planUnits": 165,
+          "cumPlanUnits": 46682
         },
         {
           "date": "2026-08-01",
@@ -4933,7 +5549,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 14027.43,
           "caNetSales": 590.19,
           "cumUnits": 72871,
-          "cumSales": 1696229.6
+          "cumSales": 1696229.6,
+          "planUnits": 252,
+          "cumPlanUnits": 46934
         },
         {
           "date": "2026-08-02",
@@ -4944,7 +5562,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 15933.81,
           "caNetSales": 577.2,
           "cumUnits": 73577,
-          "cumSales": 1712740.61
+          "cumSales": 1712740.61,
+          "planUnits": 243,
+          "cumPlanUnits": 47177
         },
         {
           "date": "2026-08-03",
@@ -4955,7 +5575,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6064.78,
           "caNetSales": 303.14,
           "cumUnits": 73856,
-          "cumSales": 1719108.53
+          "cumSales": 1719108.53,
+          "planUnits": 157,
+          "cumPlanUnits": 47334
         },
         {
           "date": "2026-08-04",
@@ -4966,7 +5588,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6523.21,
           "caNetSales": 184.07,
           "cumUnits": 74147,
-          "cumSales": 1725815.81
+          "cumSales": 1725815.81,
+          "planUnits": 136,
+          "cumPlanUnits": 47470
         },
         {
           "date": "2026-08-05",
@@ -4977,7 +5601,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 21624.37,
           "caNetSales": 442.64,
           "cumUnits": 75078,
-          "cumSales": 1747882.82
+          "cumSales": 1747882.82,
+          "planUnits": 140,
+          "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-06",
@@ -4988,7 +5614,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 19730.4,
           "caNetSales": 875.56,
           "cumUnits": 75969,
-          "cumSales": 1768488.78
+          "cumSales": 1768488.78,
+          "planUnits": null,
+          "cumPlanUnits": 47610
         }
       ],
       "pdp": [
@@ -5229,7 +5857,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 168252.2,
           "caNetSales": 2768.84,
           "planUnits": 2764,
-          "pctToPlanUnits": 179.1
+          "pctToPlanUnits": 179.1,
+          "inventoryUnits": 4958,
+          "runRateUnitsPerDay": 226.57,
+          "daysToOOS": 21,
+          "estOOSDate": "2026-08-27"
         },
         {
           "sku": "TVG6720",
@@ -5246,7 +5878,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 153672.03,
           "caNetSales": 2906.78,
           "planUnits": 3317,
-          "pctToPlanUnits": 136.9
+          "pctToPlanUnits": 136.9,
+          "inventoryUnits": 7331,
+          "runRateUnitsPerDay": 206.43,
+          "daysToOOS": 35,
+          "estOOSDate": "2026-09-10"
         }
       ],
       "dailySales": [
@@ -5259,7 +5895,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 13372.82,
           "caNetSales": 0.0,
           "cumUnits": 406,
-          "cumSales": 13372.82
+          "cumSales": 13372.82,
+          "planUnits": 558,
+          "cumPlanUnits": 558
         },
         {
           "date": "2026-07-23",
@@ -5270,7 +5908,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 12301.77,
           "caNetSales": 0.0,
           "cumUnits": 761,
-          "cumSales": 25674.59
+          "cumSales": 25674.59,
+          "planUnits": 434,
+          "cumPlanUnits": 992
         },
         {
           "date": "2026-07-24",
@@ -5281,7 +5921,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 13506.05,
           "caNetSales": 0.0,
           "cumUnits": 1149,
-          "cumSales": 39180.64
+          "cumSales": 39180.64,
+          "planUnits": 401,
+          "cumPlanUnits": 1393
         },
         {
           "date": "2026-07-25",
@@ -5292,7 +5934,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 42358.44,
           "caNetSales": 53.39,
           "cumUnits": 2367,
-          "cumSales": 81592.47
+          "cumSales": 81592.47,
+          "planUnits": 622,
+          "cumPlanUnits": 2015
         },
         {
           "date": "2026-07-26",
@@ -5303,7 +5947,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 29688.47,
           "caNetSales": 26.66,
           "cumUnits": 3216,
-          "cumSales": 111307.6
+          "cumSales": 111307.6,
+          "planUnits": 565,
+          "cumPlanUnits": 2580
         },
         {
           "date": "2026-07-27",
@@ -5314,7 +5960,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 27261.38,
           "caNetSales": 140.63,
           "cumUnits": 4005,
-          "cumSales": 138709.61
+          "cumSales": 138709.61,
+          "planUnits": 317,
+          "cumPlanUnits": 2897
         },
         {
           "date": "2026-07-28",
@@ -5325,7 +5973,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 25764.34,
           "caNetSales": 1092.49,
           "cumUnits": 4788,
-          "cumSales": 165566.44
+          "cumSales": 165566.44,
+          "planUnits": 333,
+          "cumPlanUnits": 3230
         },
         {
           "date": "2026-07-29",
@@ -5336,7 +5986,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 38533.18,
           "caNetSales": 829.09,
           "cumUnits": 5928,
-          "cumSales": 204928.71
+          "cumSales": 204928.71,
+          "planUnits": 305,
+          "cumPlanUnits": 3535
         },
         {
           "date": "2026-07-30",
@@ -5347,7 +5999,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 17912.19,
           "caNetSales": 462.04,
           "cumUnits": 6461,
-          "cumSales": 223302.94
+          "cumSales": 223302.94,
+          "planUnits": 311,
+          "cumPlanUnits": 3846
         },
         {
           "date": "2026-07-31",
@@ -5358,7 +6012,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 18661.88,
           "caNetSales": 375.46,
           "cumUnits": 7014,
-          "cumSales": 242340.28
+          "cumSales": 242340.28,
+          "planUnits": 375,
+          "cumPlanUnits": 4221
         },
         {
           "date": "2026-08-01",
@@ -5369,7 +6025,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 14284.41,
           "caNetSales": 461.14,
           "cumUnits": 7444,
-          "cumSales": 257085.83
+          "cumSales": 257085.83,
+          "planUnits": 450,
+          "cumPlanUnits": 4671
         },
         {
           "date": "2026-08-02",
@@ -5380,7 +6038,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 22822.79,
           "caNetSales": 1026.96,
           "cumUnits": 8139,
-          "cumSales": 280935.58
+          "cumSales": 280935.58,
+          "planUnits": 410,
+          "cumPlanUnits": 5081
         },
         {
           "date": "2026-08-03",
@@ -5391,7 +6051,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 11470.0,
           "caNetSales": 389.64,
           "cumUnits": 8485,
-          "cumSales": 292795.22
+          "cumSales": 292795.22,
+          "planUnits": 231,
+          "cumPlanUnits": 5312
         },
         {
           "date": "2026-08-04",
@@ -5402,7 +6064,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 12051.48,
           "caNetSales": 239.79,
           "cumUnits": 8841,
-          "cumSales": 305086.49
+          "cumSales": 305086.49,
+          "planUnits": 245,
+          "cumPlanUnits": 5557
         },
         {
           "date": "2026-08-05",
@@ -5413,7 +6077,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10390.69,
           "caNetSales": 298.99,
           "cumUnits": 9154,
-          "cumSales": 315776.17
+          "cumSales": 315776.17,
+          "planUnits": 293,
+          "cumPlanUnits": 5850
         },
         {
           "date": "2026-08-06",
@@ -5424,7 +6090,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 11544.34,
           "caNetSales": 279.34,
           "cumUnits": 9492,
-          "cumSales": 327599.85
+          "cumSales": 327599.85,
+          "planUnits": 231,
+          "cumPlanUnits": 6081
         }
       ],
       "pdp": [
@@ -5788,7 +6456,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 188847.53,
           "caNetSales": 7433.32,
           "planUnits": 11174,
-          "pctToPlanUnits": 76.1
+          "pctToPlanUnits": 76.1,
+          "inventoryUnits": 33056,
+          "runRateUnitsPerDay": 89.86,
+          "daysToOOS": 367,
+          "estOOSDate": "2027-08-08"
         },
         {
           "sku": "TVG6640",
@@ -5805,7 +6477,11 @@ window.DASHBOARD_DATA = {
           "usNetSales": 182812.69,
           "caNetSales": 7558.92,
           "planUnits": 6194,
-          "pctToPlanUnits": 132.9
+          "pctToPlanUnits": 132.9,
+          "inventoryUnits": 15014,
+          "runRateUnitsPerDay": 67.43,
+          "daysToOOS": 222,
+          "estOOSDate": "2027-03-16"
         }
       ],
       "dailySales": [
@@ -5818,7 +6494,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 28412.31,
           "caNetSales": 1170.6,
           "cumUnits": 1244,
-          "cumSales": 29582.91
+          "cumSales": 29582.91,
+          "planUnits": 417,
+          "cumPlanUnits": 417
         },
         {
           "date": "2026-06-18",
@@ -5829,7 +6507,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 28835.03,
           "caNetSales": 692.43,
           "cumUnits": 2484,
-          "cumSales": 59110.37
+          "cumSales": 59110.37,
+          "planUnits": 484,
+          "cumPlanUnits": 901
         },
         {
           "date": "2026-06-19",
@@ -5840,7 +6520,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 13894.59,
           "caNetSales": 518.33,
           "cumUnits": 3088,
-          "cumSales": 73523.29
+          "cumSales": 73523.29,
+          "planUnits": 543,
+          "cumPlanUnits": 1444
         },
         {
           "date": "2026-06-20",
@@ -5851,7 +6533,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 20422.76,
           "caNetSales": 599.68,
           "cumUnits": 3979,
-          "cumSales": 94545.73
+          "cumSales": 94545.73,
+          "planUnits": 625,
+          "cumPlanUnits": 2069
         },
         {
           "date": "2026-06-21",
@@ -5862,7 +6546,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 19558.56,
           "caNetSales": 641.49,
           "cumUnits": 4828,
-          "cumSales": 114745.78
+          "cumSales": 114745.78,
+          "planUnits": 608,
+          "cumPlanUnits": 2677
         },
         {
           "date": "2026-06-22",
@@ -5873,7 +6559,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7782.27,
           "caNetSales": 322.67,
           "cumUnits": 5171,
-          "cumSales": 122850.72
+          "cumSales": 122850.72,
+          "planUnits": 391,
+          "cumPlanUnits": 3068
         },
         {
           "date": "2026-06-23",
@@ -5884,7 +6572,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7581.63,
           "caNetSales": 268.35,
           "cumUnits": 5506,
-          "cumSales": 130700.7
+          "cumSales": 130700.7,
+          "planUnits": 352,
+          "cumPlanUnits": 3420
         },
         {
           "date": "2026-06-24",
@@ -5895,7 +6585,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9593.2,
           "caNetSales": 299.55,
           "cumUnits": 5919,
-          "cumSales": 140593.45
+          "cumSales": 140593.45,
+          "planUnits": 332,
+          "cumPlanUnits": 3752
         },
         {
           "date": "2026-06-25",
@@ -5906,7 +6598,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8869.92,
           "caNetSales": 360.11,
           "cumUnits": 6307,
-          "cumSales": 149823.48
+          "cumSales": 149823.48,
+          "planUnits": 394,
+          "cumPlanUnits": 4146
         },
         {
           "date": "2026-06-26",
@@ -5917,7 +6611,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8491.99,
           "caNetSales": 407.01,
           "cumUnits": 6692,
-          "cumSales": 158722.48
+          "cumSales": 158722.48,
+          "planUnits": 447,
+          "cumPlanUnits": 4593
         },
         {
           "date": "2026-06-27",
@@ -5928,7 +6624,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8772.07,
           "caNetSales": 130.97,
           "cumUnits": 7061,
-          "cumSales": 167625.52
+          "cumSales": 167625.52,
+          "planUnits": 397,
+          "cumPlanUnits": 4990
         },
         {
           "date": "2026-06-28",
@@ -5939,7 +6637,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 8260.9,
           "caNetSales": 205.41,
           "cumUnits": 7415,
-          "cumSales": 176091.83
+          "cumSales": 176091.83,
+          "planUnits": 394,
+          "cumPlanUnits": 5384
         },
         {
           "date": "2026-06-29",
@@ -5950,7 +6650,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7772.16,
           "caNetSales": 129.52,
           "cumUnits": 7748,
-          "cumSales": 183993.51
+          "cumSales": 183993.51,
+          "planUnits": 336,
+          "cumPlanUnits": 5720
         },
         {
           "date": "2026-06-30",
@@ -5961,7 +6663,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7086.52,
           "caNetSales": 258.44,
           "cumUnits": 8059,
-          "cumSales": 191338.47
+          "cumSales": 191338.47,
+          "planUnits": 307,
+          "cumPlanUnits": 6027
         },
         {
           "date": "2026-07-01",
@@ -5972,7 +6676,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10772.11,
           "caNetSales": 969.23,
           "cumUnits": 8620,
-          "cumSales": 203079.81
+          "cumSales": 203079.81,
+          "planUnits": 291,
+          "cumPlanUnits": 6318
         },
         {
           "date": "2026-07-02",
@@ -5983,7 +6689,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9039.06,
           "caNetSales": 390.6,
           "cumUnits": 9058,
-          "cumSales": 212509.47
+          "cumSales": 212509.47,
+          "planUnits": 347,
+          "cumPlanUnits": 6665
         },
         {
           "date": "2026-07-03",
@@ -5994,7 +6702,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 10807.66,
           "caNetSales": 287.43,
           "cumUnits": 9571,
-          "cumSales": 223604.56
+          "cumSales": 223604.56,
+          "planUnits": 517,
+          "cumPlanUnits": 7182
         },
         {
           "date": "2026-07-04",
@@ -6005,7 +6715,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 9914.36,
           "caNetSales": 867.81,
           "cumUnits": 10080,
-          "cumSales": 234386.73
+          "cumSales": 234386.73,
+          "planUnits": 461,
+          "cumPlanUnits": 7643
         },
         {
           "date": "2026-07-05",
@@ -6016,7 +6728,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 13128.4,
           "caNetSales": 762.05,
           "cumUnits": 10723,
-          "cumSales": 248277.18
+          "cumSales": 248277.18,
+          "planUnits": 461,
+          "cumPlanUnits": 8104
         },
         {
           "date": "2026-07-06",
@@ -6027,7 +6741,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5772.18,
           "caNetSales": 317.42,
           "cumUnits": 10991,
-          "cumSales": 254366.78
+          "cumSales": 254366.78,
+          "planUnits": 304,
+          "cumPlanUnits": 8408
         },
         {
           "date": "2026-07-07",
@@ -6038,7 +6754,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5502.1,
           "caNetSales": 186.23,
           "cumUnits": 11229,
-          "cumSales": 260055.11
+          "cumSales": 260055.11,
+          "planUnits": 280,
+          "cumPlanUnits": 8688
         },
         {
           "date": "2026-07-08",
@@ -6049,7 +6767,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6684.63,
           "caNetSales": 468.02,
           "cumUnits": 11541,
-          "cumSales": 267207.76
+          "cumSales": 267207.76,
+          "planUnits": 266,
+          "cumPlanUnits": 8954
         },
         {
           "date": "2026-07-09",
@@ -6060,7 +6780,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7101.9,
           "caNetSales": 337.62,
           "cumUnits": 11856,
-          "cumSales": 274647.28
+          "cumSales": 274647.28,
+          "planUnits": 320,
+          "cumPlanUnits": 9274
         },
         {
           "date": "2026-07-10",
@@ -6071,7 +6793,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5106.51,
           "caNetSales": 211.83,
           "cumUnits": 12079,
-          "cumSales": 279965.62
+          "cumSales": 279965.62,
+          "planUnits": 367,
+          "cumPlanUnits": 9641
         },
         {
           "date": "2026-07-11",
@@ -6082,7 +6806,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5677.16,
           "caNetSales": 443.68,
           "cumUnits": 12343,
-          "cumSales": 286086.46
+          "cumSales": 286086.46,
+          "planUnits": 327,
+          "cumPlanUnits": 9968
         },
         {
           "date": "2026-07-12",
@@ -6093,7 +6819,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 6338.04,
           "caNetSales": 198.89,
           "cumUnits": 12620,
-          "cumSales": 292623.39
+          "cumSales": 292623.39,
+          "planUnits": 328,
+          "cumPlanUnits": 10296
         },
         {
           "date": "2026-07-13",
@@ -6104,7 +6832,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5549.87,
           "caNetSales": 253.86,
           "cumUnits": 12871,
-          "cumSales": 298427.12
+          "cumSales": 298427.12,
+          "planUnits": 283,
+          "cumPlanUnits": 10579
         },
         {
           "date": "2026-07-14",
@@ -6115,7 +6845,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5357.98,
           "caNetSales": 67.23,
           "cumUnits": 13103,
-          "cumSales": 303852.33
+          "cumSales": 303852.33,
+          "planUnits": 260,
+          "cumPlanUnits": 10839
         },
         {
           "date": "2026-07-15",
@@ -6126,7 +6858,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4280.64,
           "caNetSales": 343.54,
           "cumUnits": 13303,
-          "cumSales": 308476.51
+          "cumSales": 308476.51,
+          "planUnits": 248,
+          "cumPlanUnits": 11087
         },
         {
           "date": "2026-07-16",
@@ -6137,7 +6871,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4126.21,
           "caNetSales": 81.53,
           "cumUnits": 13487,
-          "cumSales": 312684.25
+          "cumSales": 312684.25,
+          "planUnits": 298,
+          "cumPlanUnits": 11385
         },
         {
           "date": "2026-07-17",
@@ -6148,7 +6884,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3711.07,
           "caNetSales": 134.47,
           "cumUnits": 13660,
-          "cumSales": 316529.79
+          "cumSales": 316529.79,
+          "planUnits": 342,
+          "cumPlanUnits": 11727
         },
         {
           "date": "2026-07-18",
@@ -6159,7 +6897,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3161.25,
           "caNetSales": 187.34,
           "cumUnits": 13807,
-          "cumSales": 319878.38
+          "cumSales": 319878.38,
+          "planUnits": 399,
+          "cumPlanUnits": 12126
         },
         {
           "date": "2026-07-19",
@@ -6170,7 +6910,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3294.86,
           "caNetSales": 148.98,
           "cumUnits": 13957,
-          "cumSales": 323322.22
+          "cumSales": 323322.22,
+          "planUnits": 400,
+          "cumPlanUnits": 12526
         },
         {
           "date": "2026-07-20",
@@ -6181,7 +6923,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3186.62,
           "caNetSales": 84.19,
           "cumUnits": 14100,
-          "cumSales": 326593.03
+          "cumSales": 326593.03,
+          "planUnits": 264,
+          "cumPlanUnits": 12790
         },
         {
           "date": "2026-07-21",
@@ -6192,7 +6936,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3181.3,
           "caNetSales": 175.0,
           "cumUnits": 14248,
-          "cumSales": 329949.33
+          "cumSales": 329949.33,
+          "planUnits": 243,
+          "cumPlanUnits": 13033
         },
         {
           "date": "2026-07-22",
@@ -6203,7 +6949,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2921.16,
           "caNetSales": 59.37,
           "cumUnits": 14378,
-          "cumSales": 332929.86
+          "cumSales": 332929.86,
+          "planUnits": 302,
+          "cumPlanUnits": 13335
         },
         {
           "date": "2026-07-23",
@@ -6214,7 +6962,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2510.33,
           "caNetSales": 121.34,
           "cumUnits": 14498,
-          "cumSales": 335561.53
+          "cumSales": 335561.53,
+          "planUnits": 279,
+          "cumPlanUnits": 13614
         },
         {
           "date": "2026-07-24",
@@ -6225,7 +6975,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5054.84,
           "caNetSales": 281.0,
           "cumUnits": 14728,
-          "cumSales": 340897.37
+          "cumSales": 340897.37,
+          "planUnits": 321,
+          "cumPlanUnits": 13935
         },
         {
           "date": "2026-07-25",
@@ -6236,7 +6988,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3537.03,
           "caNetSales": 145.45,
           "cumUnits": 14887,
-          "cumSales": 344579.85
+          "cumSales": 344579.85,
+          "planUnits": 289,
+          "cumPlanUnits": 14224
         },
         {
           "date": "2026-07-26",
@@ -6247,7 +7001,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 5392.14,
           "caNetSales": 341.82,
           "cumUnits": 15143,
-          "cumSales": 350313.81
+          "cumSales": 350313.81,
+          "planUnits": 289,
+          "cumPlanUnits": 14513
         },
         {
           "date": "2026-07-27",
@@ -6258,7 +7014,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2341.81,
           "caNetSales": 99.33,
           "cumUnits": 15247,
-          "cumSales": 352754.95
+          "cumSales": 352754.95,
+          "planUnits": 248,
+          "cumPlanUnits": 14761
         },
         {
           "date": "2026-07-28",
@@ -6269,7 +7027,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3124.85,
           "caNetSales": 66.25,
           "cumUnits": 15386,
-          "cumSales": 355946.05
+          "cumSales": 355946.05,
+          "planUnits": 227,
+          "cumPlanUnits": 14988
         },
         {
           "date": "2026-07-29",
@@ -6280,7 +7040,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2497.71,
           "caNetSales": 134.85,
           "cumUnits": 15501,
-          "cumSales": 358578.61
+          "cumSales": 358578.61,
+          "planUnits": 218,
+          "cumPlanUnits": 15206
         },
         {
           "date": "2026-07-30",
@@ -6291,7 +7053,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2841.55,
           "caNetSales": 67.92,
           "cumUnits": 15628,
-          "cumSales": 361488.08
+          "cumSales": 361488.08,
+          "planUnits": 262,
+          "cumPlanUnits": 15468
         },
         {
           "date": "2026-07-31",
@@ -6302,7 +7066,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 4454.7,
           "caNetSales": 81.21,
           "cumUnits": 15825,
-          "cumSales": 366023.99
+          "cumSales": 366023.99,
+          "planUnits": 301,
+          "cumPlanUnits": 15769
         },
         {
           "date": "2026-08-01",
@@ -6313,7 +7079,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 3510.05,
           "caNetSales": 145.14,
           "cumUnits": 15985,
-          "cumSales": 369679.18
+          "cumSales": 369679.18,
+          "planUnits": 352,
+          "cumPlanUnits": 16121
         },
         {
           "date": "2026-08-02",
@@ -6324,7 +7092,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 7218.44,
           "caNetSales": 227.78,
           "cumUnits": 16314,
-          "cumSales": 377125.4
+          "cumSales": 377125.4,
+          "planUnits": 353,
+          "cumPlanUnits": 16474
         },
         {
           "date": "2026-08-03",
@@ -6335,7 +7105,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2054.87,
           "caNetSales": 47.94,
           "cumUnits": 16405,
-          "cumSales": 379228.21
+          "cumSales": 379228.21,
+          "planUnits": 233,
+          "cumPlanUnits": 16707
         },
         {
           "date": "2026-08-04",
@@ -6346,7 +7118,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2041.06,
           "caNetSales": 67.78,
           "cumUnits": 16496,
-          "cumSales": 381337.05
+          "cumSales": 381337.05,
+          "planUnits": 213,
+          "cumPlanUnits": 16920
         },
         {
           "date": "2026-08-05",
@@ -6357,7 +7131,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2506.75,
           "caNetSales": 49.78,
           "cumUnits": 16607,
-          "cumSales": 383893.58
+          "cumSales": 383893.58,
+          "planUnits": 204,
+          "cumPlanUnits": 17124
         },
         {
           "date": "2026-08-06",
@@ -6368,7 +7144,9 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2625.11,
           "caNetSales": 133.8,
           "cumUnits": 16729,
-          "cumSales": 386652.49
+          "cumSales": 386652.49,
+          "planUnits": 244,
+          "cumPlanUnits": 17368
         }
       ],
       "pdp": [
