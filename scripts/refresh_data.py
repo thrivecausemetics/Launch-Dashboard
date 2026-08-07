@@ -49,6 +49,9 @@ CONFIG_PATH = ROOT / "config" / "launches.json"
 OUT_PATH = ROOT / "data.js"
 
 GA4_LAG_DAYS = 2  # GA4 sync lag: traffic data trails the sales cutoff
+# Trailing window behind the out-of-stock projection. Seven days smooths the
+# weekday/weekend swing without letting launch-week spikes dominate.
+OOS_WINDOW_DAYS = 7
 
 # Tables are always resolved in this database, regardless of the connection's
 # default database context (SNOWFLAKE_DATABASE).
@@ -130,6 +133,16 @@ COLS = {
         "date": "DATE",                  # daily plan rows
         "sku": "SKU",
         "units": "PLAN_UNITS",
+    },
+    "inventory": {
+        # One row per SKU per fulfillment location. AVAILABLE_QUANTITY equals
+        # INVENTORY_QUANTITY in practice; COMMITTED/IN_TRANSIT/ON_ORDER are
+        # not populated by the sync, so they are deliberately not used.
+        "table": "UOS.INVENTORY_LEVELS",
+        "sku": "SKU",
+        "location": "LOCATION_ID",
+        "available": "AVAILABLE_QUANTITY",
+        "date": "INVENTORY_DATE",
     },
 }
 
@@ -354,6 +367,41 @@ GROUP BY 1, 2 ORDER BY 2
 """
 
 
+def q_inventory(skus):
+    """Currently available units per SKU, summed across fulfillment locations.
+
+    The table holds a rolling snapshot, so keep only the newest row per
+    (SKU, location) rather than summing every snapshot ever synced.
+    """
+    c = COLS["inventory"]
+    return f"""
+SELECT SKU, SUM(AVAILABLE) AS AVAILABLE
+FROM (
+  SELECT {c['sku']} AS SKU, COALESCE({c['available']}, 0) AS AVAILABLE
+  FROM {SRC_DB}.{c['table']}
+  WHERE {c['sku']} IN ({sku_list_sql(skus)})
+  QUALIFY ROW_NUMBER() OVER (
+            PARTITION BY {c['sku']}, {c['location']}
+            ORDER BY {c['date']} DESC) = 1
+)
+GROUP BY 1
+"""
+
+
+def q_trailing_units(skus):
+    """Units sold per SKU over the trailing window ending at the cutoff.
+
+    This is the sell-through rate behind the out-of-stock projection — recent
+    demand, not launch-to-date average, which decays badly after launch week.
+    """
+    return q_launch_lines_cte(skus) + """
+SELECT SKU, SUM(QTY) AS UNITS
+FROM launch_lines
+WHERE ORDER_DAY BETWEEN %(oos_start)s AND %(cutoff)s
+GROUP BY 1
+"""
+
+
 def q_traffic_by_channel():
     c = COLS["traffic"]
     # CREATED_ON is YYYYMMDD text — compare on TO_DATE(...)
@@ -522,6 +570,12 @@ def build_launch(cur, lc, cutoff):
     skus = [s["sku"] for s in lc["skus"]]
     sku_meta = {s["sku"]: s for s in lc["skus"]}
     params = {"launch_date": launch_date, "cutoff": cutoff}
+    # Trailing window for the OOS projection, clamped to the launch date so a
+    # launch younger than the window isn't credited with pre-launch days.
+    oos_start = max(launch_date,
+                    str(dt.date.fromisoformat(cutoff) - dt.timedelta(days=OOS_WINDOW_DAYS - 1)))
+    oos_days = (dt.date.fromisoformat(cutoff) - dt.date.fromisoformat(oos_start)).days + 1
+    params["oos_start"] = oos_start
 
     lid = lc["id"]
     # Core sales data (UOS) — a failure here is a real failure.
@@ -533,6 +587,10 @@ def build_launch(cur, lc, cutoff):
     cross_rows = safe_fetch(f"{lid}.cross_sell (DRP)", lambda: rows(cur, q_cross_sell(skus), params), [], key="drp")
     subs_row = safe_fetch(f"{lid}.subscriptions (USS)", lambda: rows(cur, q_subs(skus), {})[0],
                           {"SUB_ORDERS": 0, "SUB_UNITS": 0, "SUB_REVENUE": None}, key="uss")
+    inv_rows = safe_fetch(f"{lid}.inventory (UOS.INVENTORY_LEVELS)",
+                          lambda: rows(cur, q_inventory(skus), {}), [], key="uos_inventory")
+    trail_rows = safe_fetch(f"{lid}.trailing_units (UOS)",
+                            lambda: rows(cur, q_trailing_units(skus), params), [], key="uos_inventory")
     plan_detail = safe_fetch(f"{lid}.plan (GSHEETS)",
                              lambda: [(r["SKU"], str(r["D"]), int(r["PLAN_UNITS"] or 0))
                                       for r in rows(cur, q_plan(skus), params)],
@@ -571,12 +629,29 @@ def build_launch(cur, lc, cutoff):
     total_atc = sum(int(r["ATC"] or 0) for r in pdp_rows)
     total_purch = sum(int(r["PURCH"] or 0) for r in pdp_rows)
 
+    inv_by_sku = {r["SKU"]: int(r["AVAILABLE"] or 0) for r in inv_rows}
+    trail_by_sku = {r["SKU"]: int(r["UNITS"] or 0) for r in trail_rows}
+
     by_variant = []
     for r in variant_rows:
         sku = r["SKU"]
         meta = sku_meta.get(sku, {})
         units = int(r["UNITS"] or 0)
         plan = plan_rows.get(sku)
+        # Out-of-stock projection: available units divided by the trailing
+        # sell-through rate. A straight-line estimate that assumes demand
+        # holds and ignores replenishment — the dashboard labels it as such.
+        avail = inv_by_sku.get(sku)
+        run_rate = round(trail_by_sku.get(sku, 0) / oos_days, 2) if oos_days else 0
+        if avail is None:
+            days_to_oos = est_oos = None          # inventory source unavailable
+        elif avail <= 0:
+            days_to_oos, est_oos = 0, cutoff      # already out of stock
+        elif run_rate > 0:
+            days_to_oos = int(avail // run_rate)
+            est_oos = str(dt.date.fromisoformat(cutoff) + dt.timedelta(days=days_to_oos))
+        else:
+            days_to_oos = est_oos = None          # no recent sales, no runway to project
         by_variant.append({
             "sku": sku,
             "name": meta.get("name", sku),
@@ -593,17 +668,30 @@ def build_launch(cur, lc, cutoff):
             "caNetSales": f2(r["CA_NET_SALES"]),
             "planUnits": plan,
             "pctToPlanUnits": round(units / plan * 100, 1) if plan else None,
+            "inventoryUnits": avail,
+            "runRateUnitsPerDay": run_rate,
+            "daysToOOS": days_to_oos,
+            "estOOSDate": est_oos,
         })
 
-    daily, cum_u, cum_s = [], 0, 0.0
+    # plan_daily holds the per-day plan the cumulative curve is built from;
+    # carrying it onto each row lets the dashboard show daily actual vs plan
+    # instead of only the cumulative comparison.
+    daily, cum_u, cum_s, cum_p = [], 0, 0.0, 0
     for r in daily_rows:
         u, s = int(r["UNITS"] or 0), f2(r["NET_SALES"])
+        day = str(r["D"])
+        plan_u = plan_daily.get(day)
         cum_u += u
         cum_s = round(cum_s + s, 2)
-        daily.append({"date": str(r["D"]), "units": u, "netSales": s,
+        if plan_u is not None:
+            cum_p += plan_u
+        daily.append({"date": day, "units": u, "netSales": s,
                       "usUnits": int(r["US_UNITS"] or 0), "caUnits": int(r["CA_UNITS"] or 0),
                       "usNetSales": f2(r["US_NET_SALES"]), "caNetSales": f2(r["CA_NET_SALES"]),
-                      "cumUnits": cum_u, "cumSales": cum_s})
+                      "cumUnits": cum_u, "cumSales": cum_s,
+                      "planUnits": plan_u,
+                      "cumPlanUnits": cum_p if plan_daily else None})
 
     pdp = []
     for r in pdp_rows:
@@ -800,6 +888,7 @@ def main():
             "mode": "automated",
             "sourceDb": SRC_DB,
             "retentionDays": retention,
+            "oosWindowDays": OOS_WINDOW_DAYS,
             "sourceStatus": SOURCE_STATUS,
         },
         "launches": launches,

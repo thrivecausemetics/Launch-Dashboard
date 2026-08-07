@@ -96,6 +96,15 @@
     .ptp-mini-fill { height:100%; border-radius:2px; }
     .section-title { font-size:10px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:var(--muted); margin-bottom:14px; padding-bottom:8px; border-bottom:1px solid var(--border); }
     .data-note { font-size:11px; color:var(--muted); margin-top:10px; line-height:1.5; }
+    .table-hdr.split { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .seg { display:inline-flex; border:1px solid var(--border); border-radius:6px; overflow:hidden; }
+    .seg-btn { font:500 11px inherit; padding:4px 10px; background:var(--card); border:0;
+               cursor:pointer; color:var(--muted); }
+    .seg-btn + .seg-btn { border-left:1px solid var(--border); }
+    .seg-btn.is-on { background:var(--tc-teal); color:#fff; }
+    .btn-export { font:500 11px inherit; padding:5px 11px; border:1px solid var(--border);
+                  border-radius:6px; background:var(--card); color:var(--text); cursor:pointer; }
+    .btn-export:hover { background:var(--tc-teal-light); border-color:var(--tc-teal); }
     .upcoming-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:16px; }
     .upc-card { background:var(--card); border-radius:var(--r); border:1px solid var(--border); padding:18px 20px; border-left:4px solid var(--border); }
     .upc-card.near { border-left-color:var(--warn); }
@@ -220,15 +229,23 @@
           <thead><tr>
             <th>Shade / Product</th><th class="r">Units</th><th class="r">Net Sales</th>
             <th class="r">AOV</th><th class="r">New Cust.</th><th class="r">Returning</th><th class="r">US / CA Units</th><th class="r">% to Plan</th>
+            <th class="r">Inventory</th><th class="r">Est. OOS</th>
           </tr></thead>
-          <tbody id="tbl-body"><tr><td colspan="8" style="text-align:center;padding:28px;color:var(--muted)">Loading&hellip;</td></tr></tbody>
+          <tbody id="tbl-body"><tr><td colspan="10" style="text-align:center;padding:28px;color:var(--muted)">Loading&hellip;</td></tr></tbody>
         </table>
       </div>
+      <div style="padding:0 20px 14px"><p class="data-note" id="oos-note"></p></div>
     </div>
     <div class="section-title" style="margin-top:6px">Daily Trend</div>
     <div class="row-1-1">
       <div class="chart-card">
-        <div class="chart-title">Daily Net Sales</div>
+        <div class="chart-title" style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+          <span id="cs-daily-title">Daily Units vs Plan</span>
+          <span class="seg" role="group" aria-label="Daily chart metric">
+            <button type="button" class="seg-btn is-on" data-daily-metric="units">Units</button>
+            <button type="button" class="seg-btn" data-daily-metric="sales">Net Sales</button>
+          </span>
+        </div>
         <div class="chart-sub" id="cs-daily-sub"></div>
         <canvas id="chart-daily" height="240"></canvas>
       </div>
@@ -239,10 +256,13 @@
       </div>
     </div>
     <div class="table-card">
-      <div class="table-hdr"><h3>Daily Sales Detail</h3></div>
+      <div class="table-hdr split">
+        <h3>Daily Sales Detail</h3>
+        <button type="button" class="btn-export" id="btn-export-daily">⤓ Export to Excel (CSV)</button>
+      </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>Date</th><th class="r">Units</th><th class="r">Net Sales</th><th class="r">US Units</th><th class="r">CA Units</th><th class="r">Cum. Units</th><th class="r">Cum. Net Sales</th></tr></thead>
+          <thead><tr><th>Date</th><th class="r">Units</th><th class="r">Plan Units</th><th class="r">Var.</th><th class="r">% to Plan</th><th class="r">Net Sales</th><th class="r">US Units</th><th class="r">CA Units</th><th class="r">Cum. Units</th><th class="r">Cum. Plan</th><th class="r">Cum. Net Sales</th></tr></thead>
           <tbody id="tbl-daily"></tbody>
         </table>
       </div>
@@ -283,6 +303,7 @@
           <li><strong>DRP.PRODUCT_AFFINITY_SETS</strong> — Product affinity / basket co-occurrence pairs</li>
           <li><strong>USS.ORDER_LINE_ITEMS</strong> — Recharge subscription orders</li>
           <li><strong>GSHEETS.SKU_LAUNCH_DAY_FORECAST</strong> — Daily unit plan from Google Sheets (falls back to the committed snapshot in config/plan_fallback.json when the schema isn't granted)</li>
+          <li><strong>UOS.INVENTORY_LEVELS</strong> — Available units per SKU per fulfillment location, latest sync (behind the Est. OOS projection)</li>
         </ul>
       </div>
       <div class="guide-card">
@@ -303,6 +324,7 @@
           <li><strong>ATC Rate</strong> — Add-to-Cart ÷ PDP Views</li>
           <li><strong>Site CVR</strong> — Transactions ÷ Sessions (GA4, site-wide)</li>
           <li><strong>% to Plan</strong> — Actual Units ÷ SUM of daily planned units from launch date through the data cutoff (GSHEETS.SKU_LAUNCH_DAY_FORECAST)</li>
+          <li><strong>Est. OOS</strong> — <em>An assumption, not a forecast.</em> Available inventory ÷ trailing sell-through rate, projected forward from the data cutoff: what happens if the current trend continues. Assumes demand holds and no replenishment arrives. The plan is units-only — there is no dollar forecast in the source — so the daily chart compares plan in its Units view.</li>
           <li><strong>New to Category</strong> — launch buyers with no prior purchase in the launch's category before launch date (full UOS order history, category via UOS.PRODUCTS.PRODUCT_TYPE)</li>
         </ul>
       </div>
@@ -574,17 +596,87 @@ function renderOverview(d) {
   renderDailyTable(v);
 }
 
+/* Daily and cumulative plan units keyed by date.
+   The refresh script now emits planUnits/cumPlanUnits on each daily row, but
+   older data.js snapshots only carry the cumulative planCurve — so derive the
+   daily figure by differencing that curve and let the direct fields win when
+   they are present. Keeps the dashboard working across a refresh boundary. */
+function planMaps(d) {
+  const cum = {}, daily = {};
+  let prev = 0;
+  for (const p of (d.planCurve || [])) {
+    cum[p.date] = p.cumPlanUnits;
+    daily[p.date] = p.cumPlanUnits - prev;
+    prev = p.cumPlanUnits;
+  }
+  for (const r of (d.dailySales || [])) {
+    if (r.planUnits != null) daily[r.date] = r.planUnits;
+    if (r.cumPlanUnits != null) cum[r.date] = r.cumPlanUnits;
+  }
+  return { cum, daily };
+}
+
 function renderDailyTable(d) {
   const body = document.getElementById('tbl-daily');
-  body.innerHTML = d.dailySales.map(r => `<tr>
+  const pm = planMaps(d);
+  body.innerHTML = d.dailySales.map(r => {
+    const plan = pm.daily[r.date] ?? null;
+    const varU = plan == null ? null : r.units - plan;
+    const pct  = plan ? r.units / plan * 100 : null;
+    const vc   = varU == null ? 'var(--muted)' : varU >= 0 ? 'var(--positive)' : 'var(--danger)';
+    return `<tr>
     <td data-sort="${r.date}">${fmt.day(r.date)}</td>
     <td class="r">${fmt.num(r.units)}</td>
+    <td class="r">${plan != null ? fmt.num(plan) : '—'}</td>
+    <td class="r" style="color:${vc}">${varU == null ? '—' : (varU >= 0 ? '+' : '') + fmt.num(varU)}</td>
+    <td class="r" style="color:${ptpColor(pct)}">${fmt.pct(pct)}</td>
     <td class="r">${fmt.cur(r.netSales)}</td>
     <td class="r">${r.usUnits != null ? fmt.num(r.usUnits) : '—'}</td>
     <td class="r">${r.caUnits != null ? fmt.num(r.caUnits) : '—'}</td>
     <td class="r">${fmt.num(r.cumUnits)}</td>
+    <td class="r">${pm.cum[r.date] != null ? fmt.num(pm.cum[r.date]) : '—'}</td>
     <td class="r">${fmt.cur(r.cumSales)}</td>
-  </tr>`).join('') || '<tr><td colspan="7" style="text-align:center;padding:20px;color:var(--muted)">No daily data</td></tr>';
+  </tr>`;
+  }).join('') || '<tr><td colspan="11" style="text-align:center;padding:20px;color:var(--muted)">No daily data</td></tr>';
+
+  const btn = document.getElementById('btn-export-daily');
+  if (btn && !btn.dataset.bound) {
+    btn.dataset.bound = '1';
+    btn.addEventListener('click', () => exportDailyCsv(d));
+  }
+}
+
+/* CSV rather than a real .xlsx: Excel opens it natively and it keeps this repo
+   dependency-free (a writer like SheetJS would be ~1MB of vendored JS for one
+   button). Values are raw — ISO dates, unformatted numbers, no currency
+   symbols — so Excel types the columns instead of importing them as text. */
+function csvCell(v) {
+  const s = v == null ? '' : String(v);
+  return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+
+function exportDailyCsv(d) {
+  const pm = planMaps(d);
+  const rows = [['Date', 'Units', 'Plan Units', 'Variance Units', 'Pct to Plan',
+                 'Net Sales USD', 'US Units', 'CA Units', 'Cum Units',
+                 'Cum Plan Units', 'Cum Net Sales USD']];
+  for (const r of d.dailySales) {
+    const plan = pm.daily[r.date] ?? null;
+    rows.push([r.date, r.units, plan ?? '', plan == null ? '' : r.units - plan,
+               plan ? (r.units / plan * 100).toFixed(1) : '',
+               r.netSales, r.usUnits ?? '', r.caUnits ?? '',
+               r.cumUnits, pm.cum[r.date] ?? '', r.cumSales]);
+  }
+  // Leading BOM so Excel reads it as UTF-8; CRLF for the same reason.
+  const csv = '﻿' + rows.map(r => r.map(csvCell).join(',')).join('\r\n');
+  const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8;' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${d.launchId}-daily-sales-${META.dataCutoff || 'export'}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
 }
 
 /* ── SORTABLE TABLES (all tables, any column; totals row stays pinned) ── */
@@ -678,27 +770,118 @@ function renderTable(d) {
       <td class="r">${fmt.num(v.newCustomers)}</td><td class="r">${fmt.num(v.retCustomers)}</td>
       <td class="r">${v.usUnits != null ? fmt.num(v.usUnits) + ' / ' + fmt.num(v.caUnits) : '—'}</td>
       <td class="r"><div class="ptp-cell"><div class="ptp-mini"><div class="ptp-mini-fill" style="width:${ptpW}%;background:${ptpC}"></div></div><span style="color:${ptpC};font-weight:600">${v.pctToPlanUnits!=null?v.pctToPlanUnits.toFixed(1)+'%':'—'}</span></div></td>
+      <td class="r">${v.inventoryUnits != null ? fmt.num(v.inventoryUnits) : '—'}</td>
+      ${oosCell(v)}
     </tr>`;
   });
   const s = d.summary, tc = ptpColor(s.pctToPlanUnits), taov = s.orders > 0 ? s.netSales / s.orders : 0;
   const totUsCa = d.regions ? fmt.num(d.regions.us.units) + ' / ' + fmt.num(d.regions.ca.units) : '—';
-  rows.push(`<tr class="tot"><td>Total / Avg</td><td class="r">${fmt.num(s.units)}</td><td class="r">${fmt.cur(s.netSales)}</td><td class="r">${fmt.cur2(taov)}</td><td class="r">${fmt.num(s.newCustomers)}</td><td class="r">${fmt.num(s.retCustomers)}</td><td class="r">${totUsCa}</td><td class="r" style="color:${tc}">${s.pctToPlanUnits!=null?s.pctToPlanUnits.toFixed(1)+'%':'—'}</td></tr>`);
+  const withInv = d.byVariant.filter(v => v.inventoryUnits != null);
+  const totInv = withInv.length ? withInv.reduce((a, v) => a + v.inventoryUnits, 0) : null;
+  // Totals row surfaces the SKU that runs out first — that is the one that
+  // actually constrains the launch, not the average.
+  const soonest = d.byVariant
+    .filter(v => v.estOOSDate && v.inventoryUnits > 0)
+    .sort((a, b) => a.daysToOOS - b.daysToOOS)[0] || null;
+  rows.push(`<tr class="tot"><td>Total / Avg</td><td class="r">${fmt.num(s.units)}</td><td class="r">${fmt.cur(s.netSales)}</td><td class="r">${fmt.cur2(taov)}</td><td class="r">${fmt.num(s.newCustomers)}</td><td class="r">${fmt.num(s.retCustomers)}</td><td class="r">${totUsCa}</td><td class="r" style="color:${tc}">${s.pctToPlanUnits!=null?s.pctToPlanUnits.toFixed(1)+'%':'—'}</td><td class="r">${totInv != null ? fmt.num(totInv) : '—'}</td><td class="r">${soonest ? fmt.date(soonest.estOOSDate) + ' <span style="font-weight:400;color:var(--muted)">(' + soonest.name + ')</span>' : '—'}</td></tr>`);
   document.getElementById('tbl-body').innerHTML = rows.join('');
+  renderOosNote(d);
+}
+
+/* Out-of-stock projection cell. Deliberately shows the rate it assumed, so
+   the number is auditable at a glance rather than looking authoritative. */
+function oosCell(v) {
+  if (v.inventoryUnits == null) return '<td class="r">—</td>';
+  if (v.inventoryUnits <= 0)
+    return '<td class="r" style="color:var(--danger);font-weight:600">Out of stock</td>';
+  if (v.estOOSDate == null)
+    return '<td class="r" style="color:var(--muted)">No recent sales</td>';
+  const c = v.daysToOOS <= 14 ? 'var(--danger)' : v.daysToOOS <= 30 ? 'var(--warn)' : 'var(--positive)';
+  return `<td class="r"><span style="color:${c};font-weight:600">${fmt.date(v.estOOSDate)}</span>`
+       + `<br><span style="font-size:11px;color:var(--muted)">~${fmt.num(v.daysToOOS)}d @ ${v.runRateUnitsPerDay}/day</span></td>`;
+}
+
+function renderOosNote(d) {
+  const el = document.getElementById('oos-note');
+  if (!el) return;
+  const win = META.oosWindowDays || 7;
+  const any = d.byVariant.some(v => v.inventoryUnits != null);
+  el.innerHTML = any
+    ? `<strong>Est. OOS is an assumption, not a forecast.</strong> It projects available `
+      + `inventory forward at each SKU's trailing ${win}-day sell-through rate — i.e. what happens `
+      + `<em>if the current trend continues</em>. It assumes demand holds steady and that no `
+      + `replenishment arrives, so it moves as the trend moves. Inventory is the latest `
+      + `UOS.INVENTORY_LEVELS sync, summed across fulfillment locations. Treat it as a signal `
+      + `for which shades to look at, not a committed stock-out date.`
+    : 'Inventory data was not available in the latest refresh, so estimated out-of-stock dates '
+      + 'could not be projected (UOS.INVENTORY_LEVELS not accessible to the refresh credentials).';
+}
+
+/* Daily chart metric. Units is the default because the plan is only ever
+   expressed in units — GSHEETS.SKU_LAUNCH_DAY_FORECAST has no revenue column,
+   so there is no honest dollar forecast to draw. Net Sales stays one click
+   away for the dollar view. */
+let dailyMetric = 'units';
+let _trendData = null;
+
+function buildDailyChart(d) {
+  const labels = d.dailySales.map(r => fmt.day(r.date));
+  const last = d.dailySales[d.dailySales.length - 1];
+  const isUnits = dailyMetric === 'units';
+  const pm = planMaps(d);
+  const planSeries = d.dailySales.map(r => pm.daily[r.date] ?? null);
+  const hasPlan = planSeries.some(v => v != null);
+
+  document.getElementById('cs-daily-title').textContent =
+    isUnits ? (hasPlan ? 'Daily Units vs Plan' : 'Daily Units') : 'Daily Net Sales';
+  document.getElementById('cs-daily-sub').textContent = isUnits
+    ? 'Peak: ' + fmt.num(Math.max(...d.dailySales.map(r => r.units))) + ' units  ·  Through ' + fmt.day(last.date)
+    : 'Peak: ' + fmt.cur(Math.max(...d.dailySales.map(r => r.netSales))) + '  ·  Through ' + fmt.day(last.date);
+
+  const datasets = [{
+    label: isUnits ? 'Actual Units' : 'Net Sales',
+    data: d.dailySales.map(r => isUnits ? r.units : r.netSales),
+    backgroundColor:'rgba(58,158,152,.7)', borderColor:'#3A9E98', borderRadius:3, order:2,
+  }];
+  if (isUnits && hasPlan) datasets.push({
+    type:'line', label:'Plan Units', data:planSeries, borderColor:'#6B7A8D',
+    borderDash:[6,4], backgroundColor:'transparent', fill:false, tension:0.2,
+    pointRadius:0, borderWidth:2, order:1,
+  });
+
+  kill('dl');
+  _ch.dl = new Chart(document.getElementById('chart-daily'), {
+    type:'bar',
+    data:{labels, datasets},
+    options:{ responsive:true,
+      plugins:{
+        legend:{display:datasets.length > 1, position:'top', labels:{boxWidth:12,font:{size:11}}},
+        tooltip:{callbacks:{label:c => ' ' + c.dataset.label + ': ' + (isUnits ? fmt.num(c.raw) : fmt.cur(c.raw))}},
+      },
+      scales:{ x:{grid:{display:false},ticks:{maxTicksLimit:14,maxRotation:45,font:{size:11}}},
+               y:{ticks:{callback:v => isUnits ? Number(v).toLocaleString() : '$'+(v>=1000?(v/1000).toFixed(0)+'k':v)},grid:{color:'#E2E8EF'}} } },
+  });
 }
 
 function renderTrend(d) {
   const labels = d.dailySales.map(r => fmt.day(r.date));
   const last = d.dailySales[d.dailySales.length - 1];
-  document.getElementById('cs-daily-sub').textContent = 'Peak: ' + fmt.cur(Math.max(...d.dailySales.map(r=>r.netSales))) + '  ·  Through ' + fmt.day(last.date);
   document.getElementById('cs-cum-sub').textContent  = fmt.num(last.cumUnits) + ' cumulative units through ' + fmt.day(last.date);
-  kill('dl'); kill('cu');
-  _ch.dl = new Chart(document.getElementById('chart-daily'), {
-    type:'bar',
-    data:{labels, datasets:[{label:'Net Sales',data:d.dailySales.map(r=>r.netSales),backgroundColor:'rgba(58,158,152,.7)',borderColor:'#3A9E98',borderRadius:3}]},
-    options:{ responsive:true,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+fmt.cur(c.raw)}}},
-      scales:{ x:{grid:{display:false},ticks:{maxTicksLimit:14,maxRotation:45,font:{size:11}}}, y:{ticks:{callback:v=>'$'+(v>=1000?(v/1000).toFixed(0)+'k':v)},grid:{color:'#E2E8EF'}} } },
-  });
+  kill('cu');
+  _trendData = d;
+  buildDailyChart(d);
+
+  const seg = document.querySelector('[data-daily-metric]')?.parentElement;
+  if (seg && !seg.dataset.bound) {
+    seg.dataset.bound = '1';
+    seg.addEventListener('click', e => {
+      const btn = e.target.closest('[data-daily-metric]');
+      if (!btn) return;
+      dailyMetric = btn.dataset.dailyMetric;
+      seg.querySelectorAll('.seg-btn').forEach(b => b.classList.toggle('is-on', b === btn));
+      if (_trendData) buildDailyChart(_trendData);
+    });
+  }
   const cumDatasets = [{label:'Actual Cum. Units',data:d.dailySales.map(r=>r.cumUnits),borderColor:'#C9A84C',backgroundColor:'rgba(201,168,76,.12)',fill:true,tension:0.3,pointRadius:2}];
   if (d.planCurve && d.planCurve.length) {
     const planMap = Object.fromEntries(d.planCurve.map(p => [p.date, p.cumPlanUnits]));
