@@ -96,6 +96,19 @@
     .ptp-mini-fill { height:100%; border-radius:2px; }
     .section-title { font-size:10px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:var(--muted); margin-bottom:14px; padding-bottom:8px; border-bottom:1px solid var(--border); }
     .data-note { font-size:11px; color:var(--muted); margin-top:10px; line-height:1.5; }
+    .sig-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:18px; }
+    @media (max-width:1000px) { .sig-row { grid-template-columns:1fr; } }
+    .sig-card { background:var(--card); border-radius:var(--r); padding:14px 18px;
+                border-left:4px solid var(--muted); }
+    .sig-card.attention { border-left-color:var(--danger); background:#FEF4F4; }
+    .sig-card.working   { border-left-color:var(--positive); background:#F1FAF6; }
+    .sig-card h4 { font-size:13px; font-weight:600; margin-bottom:8px; }
+    .sig-list { list-style:none; display:flex; flex-direction:column; gap:9px; }
+    .sig-list li { font-size:12px; line-height:1.55; }
+    .sig-list li strong { display:block; font-weight:600; }
+    .sig-dot { display:inline-block; width:6px; height:6px; border-radius:50%;
+               margin-right:6px; vertical-align:middle; }
+    .sig-empty { font-size:12px; color:var(--muted); }
     .table-hdr.split { display:flex; align-items:center; justify-content:space-between; gap:12px; }
     .seg { display:inline-flex; border:1px solid var(--border); border-radius:6px; overflow:hidden; }
     .seg-btn { font:500 11px inherit; padding:4px 10px; background:var(--card); border:0;
@@ -324,6 +337,7 @@
           <li><strong>ATC Rate</strong> — Add-to-Cart ÷ PDP Views</li>
           <li><strong>Site CVR</strong> — Transactions ÷ Sessions (GA4, site-wide)</li>
           <li><strong>% to Plan</strong> — Actual Units ÷ SUM of daily planned units from launch date through the data cutoff (GSHEETS.SKU_LAUNCH_DAY_FORECAST)</li>
+          <li><strong>Signals (PDP Health tab)</strong> — Rule-based, not a language model: the same data.js always yields the same signals, and each one quotes the figures it fired on. Thresholds: out of stock now, or projected within <strong>21 days</strong>; variant ATC rate below <strong>80%</strong> of the launch average with at least <strong>500</strong> estimated missed add-to-carts (ranked by views × gap, so heavy-traffic underperformers surface first); ATC above <strong>120%</strong> of average; variant below <strong>85%</strong> or above <strong>115%</strong> to plan; trailing <strong>7 days</strong> below <strong>85%</strong> of planned units. Top 4 per group, with any remainder counted.</li>
           <li><strong>Est. OOS</strong> — <em>An assumption, not a forecast.</em> Available inventory ÷ trailing sell-through rate, projected forward from the data cutoff: what happens if the current trend continues. Assumes demand holds and no replenishment arrives. The plan is units-only — there is no dollar forecast in the source — so the daily chart compares plan in its Units view.</li>
           <li><strong>New to Category</strong> — launch buyers with no prior purchase in the launch's category before launch date (full UOS order history, category via UOS.PRODUCTS.PRODUCT_TYPE)</li>
         </ul>
@@ -594,6 +608,142 @@ function renderOverview(d) {
   renderTable(v);
   renderTrend(v);
   renderDailyTable(v);
+}
+
+/* ── LAUNCH SIGNALS ──
+   Rule-based, deliberately NOT a language model. These sit beside numbers the
+   merch and finance teams act on, so they must be deterministic, reproducible
+   from the same data.js, and incapable of inventing a figure. Every signal
+   quotes the values it fired on so a reader can check it against the tables
+   below. Thresholds live here and are documented in the Data Guide. */
+const SIGNAL_RULES = {
+  oosSoonDays: 21,       // flag SKUs projected out of stock within this window
+  atcDragRatio: 0.80,    // variant ATC rate below this share of the launch average
+  atcDragMinMissed: 500, // ...and at least this many estimated missed add-to-carts
+  atcStarRatio: 1.20,    // variant ATC rate above this share of the average
+  behindPlanPct: 85,
+  aheadPlanPct: 115,
+  pacingWindowDays: 7,
+  pacingBehindPct: 85,
+  maxPerGroup: 4,
+  // Per-rule caps. Without these one rule can fire five near-identical lines
+  // and crowd every other signal type out of the group.
+  maxPerRule: 2,
+};
+
+function computeSignals(d) {
+  const R = SIGNAL_RULES, attention = [], working = [];
+  const vars = d.byVariant || [], pdp = d.pdp || [];
+
+  // ── Inventory ──────────────────────────────────────────────────────────
+  for (const v of vars.filter(v => v.inventoryUnits === 0)) {
+    attention.push({ rank: 0, title: `${v.name} is out of stock`, detail:
+      `0 units available across all fulfillment locations, at `
+      + `${v.pctToPlanUnits != null ? v.pctToPlanUnits.toFixed(1) + '% to plan' : 'unknown plan attainment'}.` });
+  }
+  for (const v of vars.filter(v => v.daysToOOS > 0 && v.daysToOOS <= R.oosSoonDays)
+                      .sort((a, b) => a.daysToOOS - b.daysToOOS).slice(0, R.maxPerRule)) {
+    attention.push({ rank: 1, title: `${v.name} projects out of stock ~${fmt.date(v.estOOSDate)}`, detail:
+      `${fmt.num(v.inventoryUnits)} units left at ${v.runRateUnitsPerDay}/day (~${v.daysToOOS} days). `
+      + `Assumes the current rate holds and no replenishment arrives.` });
+  }
+
+  // ── PDP conversion drag ────────────────────────────────────────────────
+  // Ranked by estimated missed add-to-carts (views x gap to average), not by
+  // rate alone: a weak rate on heavy traffic is the bigger opportunity.
+  const views = pdp.reduce((s, r) => s + r.pdpViews, 0);
+  const avgAtc = views > 0 ? pdp.reduce((s, r) => s + r.atc, 0) / views * 100 : 0;
+  if (avgAtc > 0) {
+    const drags = pdp
+      .map(r => ({ r, missed: Math.round(r.pdpViews * (avgAtc - r.atcRate) / 100) }))
+      .filter(x => x.r.atcRate < avgAtc * R.atcDragRatio && x.missed >= R.atcDragMinMissed)
+      .sort((a, b) => b.missed - a.missed);
+    drags.slice(0, R.maxPerRule).forEach(({ r, missed }, i) => attention.push({ rank: 2,
+      title: `${r.name} PDP converts below the launch average`, detail:
+        `${r.atcRate.toFixed(1)}% add-to-cart vs ${avgAtc.toFixed(1)}% average across `
+        + `${fmt.num(r.pdpViews)} views — roughly ${fmt.num(missed)} missed add-to-carts`
+        + `${i === 0 && drags.length > 1 ? ', the largest gap in this launch' : ''}. `
+        + `PDP creative and merchandising are the levers.` }));
+
+    const best = pdp.slice().sort((a, b) => b.atcRate - a.atcRate)[0];
+    if (best && best.atcRate >= avgAtc * R.atcStarRatio) working.push({
+      title: `${best.name} converts best on the PDP`, detail:
+        `${best.atcRate.toFixed(1)}% add-to-cart vs ${avgAtc.toFixed(1)}% average `
+        + `(${(best.atcRate / avgAtc * 100).toFixed(0)}% of it) on ${fmt.num(best.pdpViews)} views. `
+        + `Worth looking at what its page does differently.` });
+  }
+
+  // ── Plan attainment, per variant and recent pacing ─────────────────────
+  for (const v of vars.filter(v => v.pctToPlanUnits != null && v.pctToPlanUnits < R.behindPlanPct)
+                      .sort((a, b) => a.pctToPlanUnits - b.pctToPlanUnits).slice(0, R.maxPerRule)) {
+    attention.push({ rank: 3, title: `${v.name} is behind plan`, detail:
+      `${v.pctToPlanUnits.toFixed(1)}% to plan — ${fmt.num(v.units)} units against `
+      + `${fmt.num(v.planUnits)} planned.` });
+  }
+
+  const pm = planMaps(d);
+  const recent = (d.dailySales || []).slice(-R.pacingWindowDays)
+    .map(r => ({ u: r.units, p: pm.daily[r.date] }))
+    .filter(x => x.p != null);
+  if (recent.length === R.pacingWindowDays) {
+    const au = recent.reduce((s, x) => s + x.u, 0), ap = recent.reduce((s, x) => s + x.p, 0);
+    const pct = ap > 0 ? au / ap * 100 : null;
+    if (pct != null && pct < R.pacingBehindPct) attention.push({ rank: 4,
+      title: `Last ${R.pacingWindowDays} days are pacing behind plan`, detail:
+        `${fmt.num(au)} units vs ${fmt.num(ap)} planned (${pct.toFixed(0)}%). `
+        + `Cumulative attainment can stay green while recent days slip.` });
+    else if (pct != null) working.push({
+      title: `Last ${R.pacingWindowDays} days are on or above plan`, detail:
+        `${fmt.num(au)} units vs ${fmt.num(ap)} planned (${pct.toFixed(0)}%).` });
+  }
+
+  for (const v of vars.filter(v => v.pctToPlanUnits >= R.aheadPlanPct)
+                      .sort((a, b) => b.pctToPlanUnits - a.pctToPlanUnits).slice(0, R.maxPerRule)) {
+    working.push({ title: `${v.name} is ahead of plan`, detail:
+      `${v.pctToPlanUnits.toFixed(1)}% to plan — ${fmt.num(v.units)} units against `
+      + `${fmt.num(v.planUnits)} planned.` });
+  }
+
+  // ── Cross-sell and category acquisition ────────────────────────────────
+  const top = (d.crossSell || [])[0];
+  if (top && top.pairs > 0) working.push({
+    title: `Most common basket pairing: ${top.product}`, detail:
+      `${fmt.num(top.pairs)} same-cart orders. A bundle or PDP cross-sell placement is the obvious test.` });
+
+  const cc = d.categoryCustomers;
+  if (cc && cc.total > 0) {
+    const pct = cc.newToCategory / cc.total * 100;
+    working.push({ title: `${pct.toFixed(0)}% of buyers are new to ${cc.category}`, detail:
+      `${fmt.num(cc.newToCategory)} of ${fmt.num(cc.total)} buyers had not purchased this category before.` });
+  }
+
+  attention.sort((a, b) => a.rank - b.rank);
+  return { attention, working, avgAtc };
+}
+
+function signalCard(kind, heading, items, emptyText) {
+  const R = SIGNAL_RULES;
+  const shown = items.slice(0, R.maxPerGroup);
+  const hidden = items.length - shown.length;
+  const body = shown.length
+    ? `<ul class="sig-list">${shown.map(s =>
+        `<li><strong>${s.title}</strong>${s.detail}</li>`).join('')}</ul>`
+      // Never silently truncate — say what was left out.
+      + (hidden > 0 ? `<p class="sig-empty" style="margin-top:8px">+${hidden} more not shown — see the tables below.</p>` : '')
+    : `<p class="sig-empty">${emptyText}</p>`;
+  return `<div class="sig-card ${kind}"><h4>${heading}</h4>${body}</div>`;
+}
+
+function renderSignals(d) {
+  const { attention, working } = computeSignals(d);
+  return `<div class="sig-row">
+    ${signalCard('attention', 'Needs attention', attention, 'Nothing above threshold in this refresh.')}
+    ${signalCard('working', "What's working", working, 'No standout positives in this refresh.')}
+  </div>
+  <p class="data-note" style="margin:-10px 0 16px">
+    Computed from fixed rules against this refresh (data through ${fmt.date(META.dataCutoff)}) — not a language
+    model, so the same data always produces the same signals. Each one quotes the figures it fired on;
+    thresholds are listed in the Data Guide.</p>`;
 }
 
 /* Daily and cumulative plan units keyed by date.
@@ -1045,6 +1195,7 @@ function renderPDP(d) {
   const panel = document.getElementById('panel-pdp');
   panel.innerHTML = `
     <div class="section-title">PDP Health · ${d.name} · Launch – ${fmt.date(META.dataCutoff)} (UTS.PRODUCT_PAGE)</div>
+    ${renderSignals(d)}
     <div class="kpi-row1" style="margin-bottom:18px">
       <div class="kpi-card c-teal"><div class="kpi-label">Total PDP Views</div><div class="kpi-value">${fmt.num(totalViews)}</div><div class="kpi-sub">All variants combined</div></div>
       <div class="kpi-card c-gold"><div class="kpi-label">Avg ATC Rate</div><div class="kpi-value">${avgAtcRate.toFixed(1)}%</div><div class="kpi-sub">Add-to-cart ÷ views</div></div>
