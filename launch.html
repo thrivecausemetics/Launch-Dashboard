@@ -125,6 +125,9 @@
     .btn-export:active { transform:translateY(1px); }
     .btn-export:focus-visible { outline:3px solid var(--tc-gold); outline-offset:2px; }
     .btn-export svg { flex:none; }
+    .btn-export.sm { padding:5px 10px; font-size:11px; gap:5px; }
+    .chart-title.split { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+    .ct-actions { display:flex; align-items:center; gap:8px; }
     .upcoming-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:16px; }
     .upc-card { background:var(--card); border-radius:var(--r); border:1px solid var(--border); padding:18px 20px; border-left:4px solid var(--border); }
     .upc-card.near { border-left-color:var(--warn); }
@@ -217,12 +220,12 @@
     <div class="kpi-row2" id="kpi-row2"></div>
     <div class="row-2-1">
       <div class="chart-card">
-        <div class="chart-title">Revenue by Variant</div>
+        <div class="chart-title split"><span>Revenue by Variant</span><button type="button" class="btn-export sm" data-chart-export="s" title="Download this chart's data as CSV"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>CSV</button></div>
         <div class="chart-sub" id="cs-revenue-sub"></div>
         <canvas id="chart-sales"></canvas>
       </div>
       <div class="chart-card">
-        <div class="chart-title">New vs Returning Customers</div>
+        <div class="chart-title split"><span>New vs Returning Customers</span><button type="button" class="btn-export sm" data-chart-export="d" title="Download this chart's data as CSV"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>CSV</button></div>
         <div class="chart-sub" id="cs-donut-sub"></div>
         <div class="nvr-wrap">
           <canvas id="chart-donut" style="max-height:178px"></canvas>
@@ -232,12 +235,12 @@
     </div>
     <div class="row-1-1">
       <div class="chart-card">
-        <div class="chart-title">Units Sold by Variant</div>
+        <div class="chart-title split"><span>Units Sold by Variant</span><button type="button" class="btn-export sm" data-chart-export="u" title="Download this chart's data as CSV"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>CSV</button></div>
         <div class="chart-sub" id="cs-units-sub"></div>
         <canvas id="chart-units"></canvas>
       </div>
       <div class="chart-card">
-        <div class="chart-title">New vs Returning by Shade</div>
+        <div class="chart-title split"><span>New vs Returning by Shade</span><button type="button" class="btn-export sm" data-chart-export="ns" title="Download this chart's data as CSV"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>CSV</button></div>
         <div class="chart-sub" id="cs-nvr-sub"></div>
         <canvas id="chart-nvr-shade"></canvas>
       </div>
@@ -261,16 +264,19 @@
       <div class="chart-card">
         <div class="chart-title" style="display:flex;align-items:center;justify-content:space-between;gap:10px">
           <span id="cs-daily-title">Daily Units vs Plan</span>
-          <span class="seg" role="group" aria-label="Daily chart metric">
-            <button type="button" class="seg-btn is-on" data-daily-metric="units">Units</button>
-            <button type="button" class="seg-btn" data-daily-metric="sales">Net Sales</button>
+          <span class="ct-actions">
+            <span class="seg" role="group" aria-label="Daily chart metric">
+              <button type="button" class="seg-btn is-on" data-daily-metric="units">Units</button>
+              <button type="button" class="seg-btn" data-daily-metric="sales">Net Sales</button>
+            </span>
+            <button type="button" class="btn-export sm" data-chart-export="dl" title="Download this chart's data as CSV"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>CSV</button>
           </span>
         </div>
         <div class="chart-sub" id="cs-daily-sub"></div>
         <canvas id="chart-daily" height="240"></canvas>
       </div>
       <div class="chart-card">
-        <div class="chart-title">Cumulative Units Sold</div>
+        <div class="chart-title split"><span>Cumulative Units Sold</span><button type="button" class="btn-export sm" data-chart-export="cu" title="Download this chart's data as CSV"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>CSV</button></div>
         <div class="chart-sub" id="cs-cum-sub"></div>
         <canvas id="chart-cum" height="240"></canvas>
       </div>
@@ -954,12 +960,57 @@ const EXPORTS = {
   }),
 };
 
+/* Any Chart.js instance serialises the same way: the label axis becomes the
+   first column and each dataset becomes one more. One function therefore
+   covers every chart on the page — bar, line and doughnut alike — instead of
+   twelve hand-written column lists. Labels are exported exactly as the chart
+   displays them, so the file reproduces the picture; the table exports
+   alongside carry the raw ISO dates and unrounded figures. */
+const CHART_EXPORTS = {
+  s:    { title: 'Revenue by Variant',                  filters: () => overviewFilters(true) },
+  u:    { title: 'Units Sold by Variant',               filters: () => overviewFilters(true) },
+  d:    { title: 'New vs Returning Customers',          filters: () => overviewFilters(true) },
+  ns:   { title: 'New vs Returning by Shade',           filters: () => overviewFilters(true) },
+  dl:   { title: 'Daily Trend',                         filters: () => overviewFilters(false) },
+  cu:   { title: 'Cumulative Units Sold',               filters: () => overviewFilters(false) },
+  tch:  { title: 'Sessions by Channel',                 filters: LAUNCH_WIDE },
+  tmo:  { title: 'Monthly Session Trend',               filters: LAUNCH_WIDE },
+  pdpv: { title: 'PDP Views by SKU',                    filters: LAUNCH_WIDE },
+  pdpr: { title: 'ATC Rate vs Purchase Rate',           filters: LAUNCH_WIDE },
+  cd:   { title: 'New vs Existing Category Customers',  filters: LAUNCH_WIDE },
+  cv:   { title: 'Category Split by Variant',           filters: LAUNCH_WIDE },
+};
+
+const slugify = t => t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+function chartSpec(key) {
+  const chart = _ch[key], meta = CHART_EXPORTS[key];
+  if (!chart || !meta) return null;
+  const ds = chart.data.datasets || [];
+  return {
+    slug: slugify(meta.title),
+    title: meta.title + ' (chart)',
+    filters: meta.filters,
+    // A single unlabelled dataset (the doughnuts, most bars) would otherwise
+    // export as "Series 1"; the chart's own title is the useful column name.
+    columns: ['Label', ...ds.map((set, i) =>
+      set.label || (ds.length === 1 ? meta.title : `Series ${i + 1}`))],
+    rows: (chart.data.labels || []).map((l, i) => [l, ...ds.map(set => set.data[i] ?? '')]),
+  };
+}
+
+const ICON_DL = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>';
+const chartBtn = key => `<button type="button" class="btn-export sm" data-chart-export="${key}" title="Download this chart's data as CSV">${ICON_DL}CSV</button>`;
+
 const exportBtn = key => `<button type="button" class="btn-export" data-export="${key}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>Export to Excel (CSV)</button>`;
 
 document.addEventListener('click', e => {
-  const b = e.target.closest('[data-export]');
-  if (!b || !EXPORTS[b.dataset.export]) return;
-  downloadCsv(EXPORTS[b.dataset.export]());
+  const t = e.target.closest('[data-export]');
+  if (t && EXPORTS[t.dataset.export]) return downloadCsv(EXPORTS[t.dataset.export]());
+  const c = e.target.closest('[data-chart-export]');
+  if (!c) return;
+  const spec = chartSpec(c.dataset.chartExport);
+  if (spec) downloadCsv(spec);
 });
 
 /* ── SORTABLE TABLES (all tables, any column; totals row stays pinned) ── */
@@ -1216,12 +1267,12 @@ function renderTraffic() {
     </div>
     <div class="row-1-1">
       <div class="chart-card">
-        <div class="chart-title">Sessions by Channel</div>
+        <div class="chart-title split"><span>Sessions by Channel</span>${chartBtn('tch')}</div>
         <div class="chart-sub">Top 8 channels by volume</div>
         <canvas id="chart-tch" height="280"></canvas>
       </div>
       <div class="chart-card">
-        <div class="chart-title">Monthly Session Trend</div>
+        <div class="chart-title split"><span>Monthly Session Trend</span>${chartBtn('tmo')}</div>
         <div class="chart-sub">Top 5 channels Apr–Jun 2026</div>
         <canvas id="chart-tmo" height="280"></canvas>
       </div>
@@ -1336,12 +1387,12 @@ function renderPDP(d) {
     </div>
     <div class="row-1-1">
       <div class="chart-card">
-        <div class="chart-title">PDP Views by SKU</div>
+        <div class="chart-title split"><span>PDP Views by SKU</span>${chartBtn('pdpv')}</div>
         <div class="chart-sub">Product detail page views since launch</div>
         <canvas id="chart-pdp-views" height="260"></canvas>
       </div>
       <div class="chart-card">
-        <div class="chart-title">ATC Rate vs Purchase Rate</div>
+        <div class="chart-title split"><span>ATC Rate vs Purchase Rate</span>${chartBtn('pdpr')}</div>
         <div class="chart-sub">Add-to-cart vs purchase rate by SKU</div>
         <canvas id="chart-pdp-rates" height="260"></canvas>
       </div>
@@ -1451,12 +1502,12 @@ function renderCategory(d) {
     </div>
     <div class="row-1-1">
       <div class="chart-card">
-        <div class="chart-title">New vs Existing ${d.category} Customers</div>
+        <div class="chart-title split"><span>New vs Existing ${d.category} Customers</span>${chartBtn('cd')}</div>
         <div class="chart-sub">${fmt.num(total)} unique launch buyers</div>
         <div class="nvr-wrap"><canvas id="chart-cat-donut" style="max-height:220px"></canvas></div>
       </div>
       ${cc.byVariant && cc.byVariant.length ? `<div class="chart-card">
-        <div class="chart-title">Split by Variant</div>
+        <div class="chart-title split"><span>Split by Variant</span>${chartBtn('cv')}</div>
         <div class="chart-sub">New-to-category vs existing per variant</div>
         <canvas id="chart-cat-var" height="240"></canvas>
       </div>` : ''}
