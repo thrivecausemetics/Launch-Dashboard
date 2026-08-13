@@ -236,7 +236,7 @@
       </div>
     </div>
     <div class="table-card">
-      <div class="table-hdr"><h3>Variant Performance Summary</h3></div>
+      <div class="table-hdr split"><h3>Variant Performance Summary</h3><button type="button" class="btn-export" data-export="overview-variants">⤓ Export to Excel (CSV)</button></div>
       <div class="table-wrap">
         <table>
           <thead><tr>
@@ -271,7 +271,7 @@
     <div class="table-card">
       <div class="table-hdr split">
         <h3>Daily Sales Detail</h3>
-        <button type="button" class="btn-export" id="btn-export-daily">⤓ Export to Excel (CSV)</button>
+        <button type="button" class="btn-export" data-export="overview-daily">⤓ Export to Excel (CSV)</button>
       </div>
       <div class="table-wrap">
         <table>
@@ -420,6 +420,9 @@ function loadData() {
 
 const trafficData = DD ? DD.traffic : {byChannel: [], monthly: []};
 const landingData = DD ? DD.landing : [];
+/* Shared by renderLanding and the Landing Page CSV export — must not be
+   local to the renderer, or the export throws once a region is selected. */
+const isCA = r => (r.page || '').includes('.ca');
 
 /* ── HEADER ── */
 function renderHeader(d) {
@@ -789,45 +792,168 @@ function renderDailyTable(d) {
   </tr>`;
   }).join('') || '<tr><td colspan="11" style="text-align:center;padding:20px;color:var(--muted)">No daily data</td></tr>';
 
-  const btn = document.getElementById('btn-export-daily');
-  if (btn && !btn.dataset.bound) {
-    btn.dataset.bound = '1';
-    btn.addEventListener('click', () => exportDailyCsv(d));
-  }
 }
 
-/* CSV rather than a real .xlsx: Excel opens it natively and it keeps this repo
-   dependency-free (a writer like SheetJS would be ~1MB of vendored JS for one
-   button). Values are raw — ISO dates, unformatted numbers, no currency
-   symbols — so Excel types the columns instead of importing them as text. */
+/* ── CSV EXPORT ──
+   One serializer behind every download button. Each file leads with a
+   provenance block naming the launch, the data cutoff and exactly which
+   filters were in effect for THAT table.
+
+   Filters are not uniform across this dashboard, so a single global
+   "filters applied" line would mislabel most of these files: only the
+   Overview tab is filtered, its daily trend follows region but not variants,
+   the Landing Page tab has its own separate region control, and every other
+   tab is launch-wide. Each export therefore declares its own filter state.
+   A CSV outlives the screen it came from — it gets pasted into decks and
+   opened weeks later — so the caveats travel with the data.
+
+   CSV, not .xlsx: keeps the repo dependency-free (a writer like SheetJS is
+   ~1MB of vendored JS). Values are raw — ISO dates, unformatted numbers, no
+   currency symbols — so Excel types the columns rather than importing text. */
+
 function csvCell(v) {
   const s = v == null ? '' : String(v);
   return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
 }
 
-function exportDailyCsv(d) {
-  const pm = planMaps(d);
-  const rows = [['Date', 'Units', 'Plan Units', 'Variance Units', 'Pct to Plan',
-                 'Net Sales USD', 'US Units', 'CA Units', 'Cum Units',
-                 'Cum Plan Units', 'Cum Net Sales USD']];
-  for (const r of d.dailySales) {
-    const plan = pm.daily[r.date] ?? null;
-    rows.push([r.date, r.units, plan ?? '', plan == null ? '' : r.units - plan,
-               plan ? (r.units / plan * 100).toFixed(1) : '',
-               r.netSales, r.usUnits ?? '', r.caUnits ?? '',
-               r.cumUnits, pm.cum[r.date] ?? '', r.cumSales]);
+const regionName = r => r === 'US' ? 'US (.com)' : r === 'CA' ? 'CA (.ca)' : 'All regions';
+
+/* Filter descriptor for the Overview tab. includeVariants=false is the daily
+   trend, which the variant filter deliberately does not touch. */
+function overviewFilters(includeVariants) {
+  const lines = [], caveats = [], slug = [];
+  lines.push(['Region filter', regionName(FILTER.region)]);
+  if (FILTER.region !== 'ALL') {
+    slug.push('region-' + FILTER.region.toLowerCase());
+    caveats.push('Region filter active — orders, AOV and plan attainment are not split by region and are blank in this export.');
   }
+  if (includeVariants) {
+    const all = !FILTER.skus.size || FILTER.skus.size === LOADED.byVariant.length;
+    const sel = LOADED.byVariant.filter(v => !FILTER.skus.size || FILTER.skus.has(v.sku));
+    lines.push(['Variant filter', all ? 'All variants'
+      : `${sel.map(v => v.name).join(' + ')} (${sel.length} of ${LOADED.byVariant.length})`]);
+    if (!all) {
+      slug.push('variants-' + sel.length);
+      caveats.push('Variant subset active — orders and customers are per-variant sums, so a buyer of several selected variants is counted once in each.');
+    }
+  } else {
+    lines.push(['Variant filter', 'Not applied — the daily trend follows the region filter only']);
+  }
+  return { lines, caveats, slug };
+}
+
+const LAUNCH_WIDE = () => ({
+  lines: [['Filters', 'None — this tab is launch-wide and is not affected by the Overview filters']],
+  caveats: [], slug: [],
+});
+
+function downloadCsv({ slug, title, filters, columns, rows }) {
+  const f = filters();
+  const meta = [
+    ['Launch', LOADED.name],
+    ['Launch ID', LOADED.launchId],
+    ['Table', title],
+    ['Data cutoff', META.dataCutoff],
+    ['Generated at', new Date().toISOString()],
+    ...f.lines,
+    ...f.caveats.map(c => ['Caveat', c]),
+    ['Source', 'Snowflake DAASITY_DB'],
+  ];
+  const out = meta.map(r => r.map(csvCell).join(','));
+  out.push('');                       // blank row separates provenance from data
+  out.push(columns.map(csvCell).join(','));
+  for (const r of rows) out.push(r.map(csvCell).join(','));
+
   // Leading BOM so Excel reads it as UTF-8; CRLF for the same reason.
-  const csv = '﻿' + rows.map(r => r.map(csvCell).join(',')).join('\r\n');
-  const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8;' }));
+  const url = URL.createObjectURL(new Blob(['﻿' + out.join('\r\n')],
+    { type: 'text/csv;charset=utf-8;' }));
   const a = document.createElement('a');
   a.href = url;
-  a.download = `${d.launchId}-daily-sales-${META.dataCutoff || 'export'}.csv`;
+  a.download = [LOADED.launchId, slug, ...f.slug, META.dataCutoff].join('_') + '.csv';
   document.body.appendChild(a);
   a.click();
   a.remove();
   URL.revokeObjectURL(url);
 }
+
+/* Every download button carries data-export="<key>"; one delegated listener
+   dispatches here, so nothing has to be rebound as tabs re-render. */
+const EXPORTS = {
+  'overview-variants': () => {
+    const v = filteredView(LOADED);
+    return { slug: 'variant-performance', title: 'Variant Performance Summary',
+      filters: () => overviewFilters(true),
+      columns: ['SKU', 'Variant', 'Shade', 'Units', 'Net Sales USD', 'Orders', 'AOV USD',
+                'New Customers', 'Returning Customers', 'US Units', 'CA Units',
+                'Plan Units', 'Pct to Plan', 'Inventory Units', 'Run Rate Units Per Day',
+                'Days to OOS', 'Est OOS Date'],
+      rows: v.byVariant.map(x => [x.sku, x.name, x.shade, x.units, x.netSales,
+        x.orders ?? '', x.orders ? (x.netSales / x.orders).toFixed(2) : '',
+        x.newCustomers ?? '', x.retCustomers ?? '', x.usUnits ?? '', x.caUnits ?? '',
+        x.planUnits ?? '', x.pctToPlanUnits ?? '', x.inventoryUnits ?? '',
+        x.runRateUnitsPerDay ?? '', x.daysToOOS ?? '', x.estOOSDate ?? '']) };
+  },
+  'overview-daily': () => {
+    const v = filteredView(LOADED), pm = planMaps(v);
+    return { slug: 'daily-sales', title: 'Daily Sales Detail',
+      filters: () => overviewFilters(false),
+      columns: ['Date', 'Units', 'Plan Units', 'Variance Units', 'Pct to Plan',
+                'Net Sales USD', 'US Units', 'CA Units', 'Cum Units',
+                'Cum Plan Units', 'Cum Net Sales USD'],
+      rows: v.dailySales.map(r => {
+        const plan = pm.daily[r.date] ?? null;
+        return [r.date, r.units, plan ?? '', plan == null ? '' : r.units - plan,
+                plan ? (r.units / plan * 100).toFixed(1) : '', r.netSales,
+                r.usUnits ?? '', r.caUnits ?? '', r.cumUnits,
+                pm.cum[r.date] ?? '', r.cumSales];
+      }) };
+  },
+  'traffic-channels': () => ({
+    slug: 'traffic-by-channel', title: 'Channel Breakdown', filters: LAUNCH_WIDE,
+    columns: ['Channel', 'Sessions', 'Transactions', 'Revenue USD', 'CVR Pct', 'Engagement Rate Pct'],
+    rows: trafficData.byChannel.map(c => [c.ch, c.sessions, c.txns, c.rev, c.cvr, c.eng]),
+  }),
+  'landing-pages': () => {
+    const rows = landingData.filter(r => LP_REGION === 'ALL' || (LP_REGION === 'CA' ? isCA(r) : !isCA(r)));
+    return { slug: 'landing-pages', title: 'Top Landing Pages',
+      filters: () => ({
+        lines: [['Region filter (Landing Page tab)', regionName(LP_REGION)]],
+        caveats: ['This tab has its own region control, independent of the Overview filters.'],
+        slug: LP_REGION === 'ALL' ? [] : ['region-' + LP_REGION.toLowerCase()] }),
+      columns: ['Page Label', 'Page', 'Page Views', 'Sessions', 'Transactions',
+                'Revenue USD', 'Engagement Rate Pct', 'CVR Pct'],
+      rows: rows.map(r => [r.label, r.page, r.pageviews, r.sessions, r.txns, r.rev, r.eng, r.cvr]) };
+  },
+  'pdp-variants': () => ({
+    slug: 'pdp-metrics', title: 'PDP Metrics by Variant', filters: LAUNCH_WIDE,
+    columns: ['SKU', 'Variant', 'PDP Views', 'Add to Cart', 'ATC Rate Pct',
+              'Purchases', 'Purchase Rate Pct', 'Revenue USD'],
+    rows: (LOADED.pdp || []).map(r => [r.sku, r.name, r.pdpViews, r.atc, r.atcRate,
+      r.purch, r.purchRate, r.rev]),
+  }),
+  'crosssell-pairs': () => ({
+    slug: 'cross-sell-pairings', title: 'Top Products Paired', filters: LAUNCH_WIDE,
+    columns: ['Paired Product', 'SKU', 'Pair Count'],
+    rows: (LOADED.crossSell || []).map(r => [r.product, r.sku, r.pairs]),
+  }),
+  'category-variants': () => ({
+    slug: 'category-customers', title: 'Category Customers by Variant', filters: LAUNCH_WIDE,
+    columns: ['SKU', 'Variant', 'New to Category', 'Existing Category', 'Pct New to Category'],
+    rows: ((LOADED.categoryCustomers || {}).byVariant || []).map(v => {
+      const t = v.newToCategory + v.existingCategory;
+      return [v.sku, v.name, v.newToCategory, v.existingCategory,
+              t ? (v.newToCategory / t * 100).toFixed(1) : ''];
+    }),
+  }),
+};
+
+const exportBtn = key => `<button type="button" class="btn-export" data-export="${key}">⤓ Export to Excel (CSV)</button>`;
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-export]');
+  if (!b || !EXPORTS[b.dataset.export]) return;
+  downloadCsv(EXPORTS[b.dataset.export]());
+});
 
 /* ── SORTABLE TABLES (all tables, any column; totals row stays pinned) ── */
 function sortCellVal(td) {
@@ -1094,7 +1220,7 @@ function renderTraffic() {
       </div>
     </div>
     <div class="table-card">
-      <div class="table-hdr"><h3>Channel Breakdown — ${fmt.date(META.trafficStart)} to ${fmt.date(META.gaCutoff)}</h3></div>
+      <div class="table-hdr split"><h3>Channel Breakdown — ${fmt.date(META.trafficStart)} to ${fmt.date(META.gaCutoff)}</h3>${exportBtn('traffic-channels')}</div>
       <div class="table-wrap"><table>
         <thead><tr><th>Channel</th><th class="r">Sessions</th><th class="r">Transactions</th><th class="r">Revenue</th><th class="r">CVR</th><th class="r">Engagement Rate</th></tr></thead>
         <tbody>${trafficData.byChannel.map(c=>`<tr>
@@ -1143,7 +1269,6 @@ function renderLanding() {
       '<p class="data-note">Landing page data was not available in the latest refresh (GA4_BQ_STG.BASE_LANDING_PAGE_STG2 not accessible to the refresh credentials).</p>';
     return;
   }
-  const isCA = r => (r.page || '').includes('.ca');
   const rows = landingData.filter(r => LP_REGION === 'ALL' || (LP_REGION === 'CA' ? isCA(r) : !isCA(r)));
   const totalSessions = rows.reduce((s,r)=>s+r.sessions,0);
   const totalTxns = rows.reduce((s,r)=>s+r.txns,0);
@@ -1165,7 +1290,7 @@ function renderLanding() {
       <div class="kpi-card c-green"><div class="kpi-label">Total Landing Rev.</div><div class="kpi-value">${fmt.cur(totalRev)}</div><div class="kpi-sub">Across ${rows.length} page${rows.length !== 1 ? 's' : ''}${LP_REGION !== 'ALL' ? ' · ' + (LP_REGION === 'US' ? 'US (.com)' : 'CA (.ca)') : ''}</div></div>
     </div>
     <div class="table-card">
-      <div class="table-hdr"><h3>Top Landing Pages — Launch SKUs</h3></div>
+      <div class="table-hdr split"><h3>Top Landing Pages — Launch SKUs</h3>${exportBtn('landing-pages')}</div>
       <div class="table-wrap"><table>
         <thead><tr><th>Page</th><th class="r">Page Views</th><th class="r">Sessions</th><th class="r">Transactions</th><th class="r">Revenue</th><th class="r">Eng. Rate</th><th class="r">CVR</th></tr></thead>
         <tbody>${rows.map(r=>`<tr>
@@ -1215,7 +1340,7 @@ function renderPDP(d) {
       </div>
     </div>
     <div class="table-card">
-      <div class="table-hdr"><h3>PDP Metrics by Variant</h3></div>
+      <div class="table-hdr split"><h3>PDP Metrics by Variant</h3>${exportBtn('pdp-variants')}</div>
       <div class="table-wrap"><table>
         <thead><tr><th>SKU</th><th>Variant</th><th class="r">PDP Views</th><th class="r">Add-to-Cart</th><th class="r">ATC Rate</th><th class="r">Purchases</th><th class="r">Purchase Rate</th><th class="r">Revenue</th></tr></thead>
         <tbody>${rows.map(r=>`<tr>
@@ -1273,7 +1398,7 @@ function renderCrossSells(d) {
       <div class="kpi-card c-green"><div class="kpi-label">Subscriptions</div><div class="kpi-value">${fmt.num(d.summary.subscriptionOrders)}</div><div class="kpi-sub">${fmt.num(d.summary.subscriptionUnits)} sub units${d.summary.subscriptionRevenue != null ? ' · ' + fmt.cur(d.summary.subscriptionRevenue) : ''} (all-time)</div></div>
     </div>
     <div class="table-card">
-      <div class="table-hdr"><h3>Top Products Paired with ${d.name}</h3></div>
+      <div class="table-hdr split"><h3>Top Products Paired with ${d.name}</h3>${exportBtn('crosssell-pairs')}</div>
       <div class="table-wrap"><table>
         <thead><tr><th>Paired Product</th><th>SKU</th><th class="r">Pair Count</th><th>Affinity</th></tr></thead>
         <tbody>${rows.map((r,i)=>`<tr>
@@ -1307,7 +1432,10 @@ function renderCategory(d) {
   const newPct = total ? cc.newToCategory / total * 100 : 0;
   const extPct = total ? cc.existingCategory / total * 100 : 0;
   panel.innerHTML = `
-    <div class="section-title">Category Customers · ${d.name} · ${fmt.date(d.launchDate)} – ${fmt.date(META.dataCutoff)}</div>
+    <div class="section-title" style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+      <span>Category Customers · ${d.name} · ${fmt.date(d.launchDate)} – ${fmt.date(META.dataCutoff)}</span>
+      ${exportBtn('category-variants')}
+    </div>
     <div class="kpi-row1" style="margin-bottom:18px">
       <div class="kpi-card c-green"><div class="kpi-label">New to ${d.category}</div><div class="kpi-value">${fmt.num(cc.newToCategory)}</div><div class="kpi-sub">${newPct.toFixed(1)}% of launch buyers — first ${catLabel} purchase</div></div>
       <div class="kpi-card c-teal"><div class="kpi-label">Existing ${d.category} Customers</div><div class="kpi-value">${fmt.num(cc.existingCategory)}</div><div class="kpi-sub">${extPct.toFixed(1)}% bought ${catLabel} before launch</div></div>
