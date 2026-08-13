@@ -115,9 +115,16 @@
                cursor:pointer; color:var(--muted); }
     .seg-btn + .seg-btn { border-left:1px solid var(--border); }
     .seg-btn.is-on { background:var(--tc-teal); color:#fff; }
-    .btn-export { font:500 11px inherit; padding:5px 11px; border:1px solid var(--border);
-                  border-radius:6px; background:var(--card); color:var(--text); cursor:pointer; }
-    .btn-export:hover { background:var(--tc-teal-light); border-color:var(--tc-teal); }
+    /* Solid, not a ghost button: this sat as white-on-white in a white card
+       header and read as decoration — people looked straight past it. */
+    .btn-export { font:600 12px inherit; padding:8px 15px; border:0; border-radius:8px;
+                  background:var(--tc-teal); color:#fff; cursor:pointer; white-space:nowrap;
+                  display:inline-flex; align-items:center; gap:7px;
+                  box-shadow:0 1px 3px rgba(28,43,58,.18); transition:background .15s ease; }
+    .btn-export:hover { background:var(--tc-teal-dark); }
+    .btn-export:active { transform:translateY(1px); }
+    .btn-export:focus-visible { outline:3px solid var(--tc-gold); outline-offset:2px; }
+    .btn-export svg { flex:none; }
     .upcoming-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:16px; }
     .upc-card { background:var(--card); border-radius:var(--r); border:1px solid var(--border); padding:18px 20px; border-left:4px solid var(--border); }
     .upc-card.near { border-left-color:var(--warn); }
@@ -236,7 +243,7 @@
       </div>
     </div>
     <div class="table-card">
-      <div class="table-hdr split"><h3>Variant Performance Summary</h3><button type="button" class="btn-export" data-export="overview-variants">⤓ Export to Excel (CSV)</button></div>
+      <div class="table-hdr split"><h3>Variant Performance Summary</h3><button type="button" class="btn-export" data-export="overview-variants"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>Export to Excel (CSV)</button></div>
       <div class="table-wrap">
         <table>
           <thead><tr>
@@ -271,7 +278,7 @@
     <div class="table-card">
       <div class="table-hdr split">
         <h3>Daily Sales Detail</h3>
-        <button type="button" class="btn-export" data-export="overview-daily">⤓ Export to Excel (CSV)</button>
+        <button type="button" class="btn-export" data-export="overview-daily"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>Export to Excel (CSV)</button>
       </div>
       <div class="table-wrap">
         <table>
@@ -947,7 +954,7 @@ const EXPORTS = {
   }),
 };
 
-const exportBtn = key => `<button type="button" class="btn-export" data-export="${key}">⤓ Export to Excel (CSV)</button>`;
+const exportBtn = key => `<button type="button" class="btn-export" data-export="${key}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>Export to Excel (CSV)</button>`;
 
 document.addEventListener('click', e => {
   const b = e.target.closest('[data-export]');
