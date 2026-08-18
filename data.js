@@ -6101,8 +6101,8 @@ window.DASHBOARD_DATA = {
     },
     {
       "name": "Lip Stain Marker",
-      "launchDate": "2026-09-09",
-      "internalDate": "2026-09-02",
+      "launchDate": "2026-08-18",
+      "internalDate": "2026-08-18",
       "trackedId": null
     },
     {
