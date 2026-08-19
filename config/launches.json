@@ -197,6 +197,50 @@
       "category_type_patterns": [
         "%shadow%"
       ]
+    },
+    {
+      "id": "lasting-mark-lip-stain",
+      "name": "Lasting Mark™ Lip-Defining Stain",
+      "subtitle": "5 Shades · Lip Stain",
+      "accent": "#C0304A",
+      "launch_date": "2026-08-17",
+      "internal_date": "2026-08-18",
+      "category": "Lip",
+      "skus": [
+        {
+          "sku": "TVG7230",
+          "name": "Li",
+          "shade": "Baby Pink",
+          "color": "#F2A6B8"
+        },
+        {
+          "sku": "TVG7220",
+          "name": "Brandy",
+          "shade": "Spice Brown",
+          "color": "#8B5A3C"
+        },
+        {
+          "sku": "TVG7250",
+          "name": "Daniella",
+          "shade": "Toasted Rose",
+          "color": "#C4736F"
+        },
+        {
+          "sku": "TVG7260",
+          "name": "Leslie",
+          "shade": "Soft Red",
+          "color": "#C0304A"
+        },
+        {
+          "sku": "TVG7240",
+          "name": "Liliana",
+          "shade": "Deep Berry",
+          "color": "#7A1840"
+        }
+      ],
+      "category_type_patterns": [
+        "%lip%"
+      ]
     }
   ],
   "upcoming": [
@@ -223,9 +267,10 @@
       "internal_date": "2026-07-24"
     },
     {
-      "name": "Lip Stain Marker",
-      "launch_date": "2026-08-18",
-      "internal_date": "2026-08-18"
+      "name": "Lasting Mark™ Lip-Defining Stain",
+      "launch_date": "2026-08-17",
+      "internal_date": "2026-08-18",
+      "tracked_id": "lasting-mark-lip-stain"
     },
     {
       "name": "Holiday 2026 + Limited Edition",
