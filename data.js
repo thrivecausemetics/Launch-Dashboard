@@ -5702,264 +5702,21 @@ window.DASHBOARD_DATA = {
     {
       "launchId": "lasting-mark-lip-stain",
       "name": "Lasting Mark\u2122 Lip-Defining Stain",
-      "launchDate": "2026-08-17",
-      "internalDate": "2026-08-18",
+      "launchDate": "2026-08-18",
+      "internalDate": null,
       "status": "LIVE",
       "category": "Lip",
       "subtitle": "5 Shades \u00b7 Lip Stain",
       "accent": "#C0304A",
-      "summary": {
-        "netSales": 697.02,
-        "units": 29,
-        "orders": 24,
-        "aov": 29.04,
-        "newCustomers": 4,
-        "retCustomers": 20,
-        "totalCustomers": 24,
-        "newPct": 16.7,
-        "retPct": 83.3,
-        "planUnits": null,
-        "pctToPlanUnits": null,
-        "subscriptionOrders": 0,
-        "subscriptionUnits": 0,
-        "subscriptionRevenue": null,
-        "newCustomerRevenue": 97.36,
-        "retCustomerRevenue": 599.66,
-        "pdpViews": 1612,
-        "pdpAtcRate": 7.3,
-        "pdpCvr": 1.6
-      },
-      "regions": {
-        "us": {
-          "units": 28,
-          "netSales": 682.86,
-          "orders": 23
-        },
-        "ca": {
-          "units": 1,
-          "netSales": 14.16,
-          "orders": 1
-        }
-      },
+      "skusPending": false,
+      "summary": null,
+      "regions": null,
       "planCurve": [],
-      "byVariant": [
-        {
-          "sku": "TVG7250",
-          "name": "Daniella",
-          "shade": "Toasted Rose",
-          "color": "#C4736F",
-          "netSales": 457.25,
-          "units": 19,
-          "orders": 18,
-          "newCustomers": 2,
-          "retCustomers": 16,
-          "usUnits": 19,
-          "caUnits": 0,
-          "usNetSales": 457.25,
-          "caNetSales": 0.0,
-          "planUnits": null,
-          "pctToPlanUnits": null,
-          "inventoryUnits": 9950,
-          "runRateUnitsPerDay": 19.0,
-          "daysToOOS": 523,
-          "estOOSDate": "2028-01-22"
-        },
-        {
-          "sku": "TVG7240",
-          "name": "Liliana",
-          "shade": "Deep Berry",
-          "color": "#7A1840",
-          "netSales": 128.85,
-          "units": 5,
-          "orders": 5,
-          "newCustomers": 0,
-          "retCustomers": 5,
-          "usUnits": 5,
-          "caUnits": 0,
-          "usNetSales": 128.85,
-          "caNetSales": 0.0,
-          "planUnits": null,
-          "pctToPlanUnits": null,
-          "inventoryUnits": 16831,
-          "runRateUnitsPerDay": 5.0,
-          "daysToOOS": 3366,
-          "estOOSDate": "2035-11-04"
-        },
-        {
-          "sku": "TVG7260",
-          "name": "Leslie",
-          "shade": "Soft Red",
-          "color": "#C0304A",
-          "netSales": 60.96,
-          "units": 3,
-          "orders": 3,
-          "newCustomers": 2,
-          "retCustomers": 1,
-          "usUnits": 2,
-          "caUnits": 1,
-          "usNetSales": 46.8,
-          "caNetSales": 14.16,
-          "planUnits": null,
-          "pctToPlanUnits": null,
-          "inventoryUnits": 4987,
-          "runRateUnitsPerDay": 3.0,
-          "daysToOOS": 1662,
-          "estOOSDate": "2031-03-06"
-        },
-        {
-          "sku": "TVG7230",
-          "name": "Li",
-          "shade": "Baby Pink",
-          "color": "#F2A6B8",
-          "netSales": 26.0,
-          "units": 1,
-          "orders": 1,
-          "newCustomers": 0,
-          "retCustomers": 1,
-          "usUnits": 1,
-          "caUnits": 0,
-          "usNetSales": 26.0,
-          "caNetSales": 0.0,
-          "planUnits": null,
-          "pctToPlanUnits": null,
-          "inventoryUnits": 4223,
-          "runRateUnitsPerDay": 1.0,
-          "daysToOOS": 4223,
-          "estOOSDate": "2038-03-10"
-        },
-        {
-          "sku": "TVG7220",
-          "name": "Brandy",
-          "shade": "Spice Brown",
-          "color": "#8B5A3C",
-          "netSales": 23.96,
-          "units": 1,
-          "orders": 1,
-          "newCustomers": 0,
-          "retCustomers": 1,
-          "usUnits": 1,
-          "caUnits": 0,
-          "usNetSales": 23.96,
-          "caNetSales": 0.0,
-          "planUnits": null,
-          "pctToPlanUnits": null,
-          "inventoryUnits": 6772,
-          "runRateUnitsPerDay": 1.0,
-          "daysToOOS": 6772,
-          "estOOSDate": "2045-03-02"
-        }
-      ],
-      "dailySales": [
-        {
-          "date": "2026-08-17",
-          "units": 29,
-          "netSales": 697.02,
-          "usUnits": 28,
-          "caUnits": 1,
-          "usNetSales": 682.86,
-          "caNetSales": 14.16,
-          "cumUnits": 29,
-          "cumSales": 697.02,
-          "planUnits": null,
-          "cumPlanUnits": null
-        }
-      ],
-      "pdp": [
-        {
-          "sku": "TVG7230",
-          "name": "Li",
-          "pdpViews": 848,
-          "atc": 17,
-          "ckts": 3,
-          "purch": 1,
-          "rev": 26.0,
-          "atcRate": 2.0,
-          "purchRate": 0.12
-        },
-        {
-          "sku": "TVG7250",
-          "name": "Daniella",
-          "pdpViews": 232,
-          "atc": 50,
-          "ckts": 5,
-          "purch": 17,
-          "rev": 442.0,
-          "atcRate": 21.55,
-          "purchRate": 7.33
-        },
-        {
-          "sku": "TVG7240",
-          "name": "Liliana",
-          "pdpViews": 229,
-          "atc": 31,
-          "ckts": 5,
-          "purch": 5,
-          "rev": 130.0,
-          "atcRate": 13.54,
-          "purchRate": 2.18
-        },
-        {
-          "sku": "TVG7220",
-          "name": "Brandy",
-          "pdpViews": 166,
-          "atc": 15,
-          "ckts": 0,
-          "purch": 1,
-          "rev": 26.0,
-          "atcRate": 9.04,
-          "purchRate": 0.6
-        },
-        {
-          "sku": "TVG7260",
-          "name": "Leslie",
-          "pdpViews": 137,
-          "atc": 5,
-          "ckts": 3,
-          "purch": 2,
-          "rev": 52.0,
-          "atcRate": 3.65,
-          "purchRate": 1.46
-        }
-      ],
+      "byVariant": [],
+      "dailySales": [],
+      "pdp": [],
       "crossSell": [],
-      "categoryCustomers": {
-        "category": "Lip",
-        "total": 24,
-        "existingCategory": 14,
-        "newToCategory": 10,
-        "byVariant": [
-          {
-            "sku": "TVG7260",
-            "name": "Leslie",
-            "newToCategory": 2,
-            "existingCategory": 1
-          },
-          {
-            "sku": "TVG7220",
-            "name": "Brandy",
-            "newToCategory": 0,
-            "existingCategory": 1
-          },
-          {
-            "sku": "TVG7250",
-            "name": "Daniella",
-            "newToCategory": 7,
-            "existingCategory": 11
-          },
-          {
-            "sku": "TVG7240",
-            "name": "Liliana",
-            "newToCategory": 2,
-            "existingCategory": 3
-          },
-          {
-            "sku": "TVG7230",
-            "name": "Li",
-            "newToCategory": 1,
-            "existingCategory": 0
-          }
-        ]
-      }
+      "categoryCustomers": null
     }
   ],
   "traffic": {
@@ -6363,7 +6120,7 @@ window.DASHBOARD_DATA = {
     },
     {
       "name": "Lasting Mark\u2122 Lip-Defining Stain",
-      "launchDate": "2026-08-17",
+      "launchDate": "2026-08-18",
       "internalDate": "2026-08-18",
       "trackedId": "lasting-mark-lip-stain"
     },
