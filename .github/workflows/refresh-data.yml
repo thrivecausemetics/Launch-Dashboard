@@ -9,7 +9,16 @@ on:
     # hardest at :00, and this workflow has been landing 1.5-2.75h late.
     - cron: '5 13 * * *' # 6:05am PDT (UTC-7)
     - cron: '5 14 * * *' # 6:05am PST (UTC-8)
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      data_cutoff:
+        description: >-
+          Last COMPLETE day to report (YYYY-MM-DD). Leave blank on the 6:05am
+          PT schedule. Set it on manual runs after ~5pm PT: the runner's clock
+          is UTC, so it has already rolled to tomorrow and the default cutoff
+          (today - 1) picks up a partial Los Angeles day and labels it complete.
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -83,6 +92,7 @@ jobs:
           SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
           SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
           SNOWFLAKE_DATABASE: ${{ secrets.SNOWFLAKE_DATABASE }}
+          DATA_CUTOFF: ${{ inputs.data_cutoff }}
         run: python scripts/refresh_data.py
 
       - name: Commit and push if data changed
