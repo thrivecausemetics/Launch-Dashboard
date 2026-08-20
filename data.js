@@ -4,7 +4,6 @@ window.DASHBOARD_DATA = {
   "meta": {
     "dataCutoff": "2026-08-19",
     "gaCutoff": "2026-08-17",
-    "trafficStart": "2026-04-30",
     "generatedAt": "2026-08-20",
     "mode": "automated",
     "sourceDb": "DAASITY_DB",
@@ -16,10 +15,10 @@ window.DASHBOARD_DATA = {
       "drp": "live",
       "uss": "live",
       "uos_inventory": "live",
-      "gsheets": "live",
-      "uos_products": "live",
       "ga4_api": "live",
-      "ga4_bq": "live"
+      "ga4_bq": "live",
+      "gsheets": "live",
+      "uos_products": "live"
     }
   },
   "launches": [
@@ -65,6 +64,382 @@ window.DASHBOARD_DATA = {
           "orders": 2376
         }
       },
+      "trafficStart": "2026-04-30",
+      "trafficEnd": "2026-08-17",
+      "traffic": {
+        "byChannel": [
+          {
+            "ch": "Paid Social",
+            "sessions": 6406732,
+            "txns": 159147,
+            "rev": 8723719.2,
+            "cvr": 2.48,
+            "eng": 76.5
+          },
+          {
+            "ch": "Direct",
+            "sessions": 3337802,
+            "txns": 74656,
+            "rev": 4354368.51,
+            "cvr": 2.24,
+            "eng": 62.0
+          },
+          {
+            "ch": "Email",
+            "sessions": 1779168,
+            "txns": 147284,
+            "rev": 8965219.52,
+            "cvr": 8.28,
+            "eng": 74.5
+          },
+          {
+            "ch": "Paid Search",
+            "sessions": 1480446,
+            "txns": 160102,
+            "rev": 10640508.38,
+            "cvr": 10.81,
+            "eng": 83.5
+          },
+          {
+            "ch": "Paid Other",
+            "sessions": 1454005,
+            "txns": 8913,
+            "rev": 565655.55,
+            "cvr": 0.61,
+            "eng": 70.9
+          },
+          {
+            "ch": "Unassigned",
+            "sessions": 1151570,
+            "txns": 255492,
+            "rev": 10580459.7,
+            "cvr": 22.19,
+            "eng": 57.4
+          },
+          {
+            "ch": "SMS",
+            "sessions": 1071884,
+            "txns": 74566,
+            "rev": 4519358.37,
+            "cvr": 6.96,
+            "eng": 74.7
+          },
+          {
+            "ch": "Cross-network",
+            "sessions": 660047,
+            "txns": 11903,
+            "rev": 699833.02,
+            "cvr": 1.8,
+            "eng": 72.7
+          },
+          {
+            "ch": "Paid Shopping",
+            "sessions": 446367,
+            "txns": 39109,
+            "rev": 2152078.75,
+            "cvr": 8.76,
+            "eng": 84.5
+          },
+          {
+            "ch": "Organic Social",
+            "sessions": 427869,
+            "txns": 6380,
+            "rev": 368233.57,
+            "cvr": 1.49,
+            "eng": 70.2
+          },
+          {
+            "ch": "Organic Search",
+            "sessions": 327427,
+            "txns": 28964,
+            "rev": 1946570.42,
+            "cvr": 8.85,
+            "eng": 81.7
+          },
+          {
+            "ch": "Organic Shopping",
+            "sessions": 146769,
+            "txns": 54267,
+            "rev": 2687690.84,
+            "cvr": 36.97,
+            "eng": 84.8
+          },
+          {
+            "ch": "Referral",
+            "sessions": 63934,
+            "txns": 2907,
+            "rev": 194479.47,
+            "cvr": 4.55,
+            "eng": 72.2
+          },
+          {
+            "ch": "Display",
+            "sessions": 27549,
+            "txns": 33,
+            "rev": 1977.26,
+            "cvr": 0.12,
+            "eng": 75.5
+          },
+          {
+            "ch": "Paid Video",
+            "sessions": 9812,
+            "txns": 10,
+            "rev": 559.74,
+            "cvr": 0.1,
+            "eng": 70.9
+          },
+          {
+            "ch": "AI Assistant",
+            "sessions": 3294,
+            "txns": 158,
+            "rev": 8481.27,
+            "cvr": 4.8,
+            "eng": 77.4
+          },
+          {
+            "ch": "Organic Video",
+            "sessions": 871,
+            "txns": 21,
+            "rev": 1405.89,
+            "cvr": 2.41,
+            "eng": 80.5
+          },
+          {
+            "ch": "Affiliates",
+            "sessions": 39,
+            "txns": 3,
+            "rev": 148.77,
+            "cvr": 7.69,
+            "eng": 61.5
+          },
+          {
+            "ch": "Mobile Push Notifications",
+            "sessions": 5,
+            "txns": 0,
+            "rev": 0.0,
+            "cvr": 0.0,
+            "eng": 0.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "Apr 2026",
+            "chs": {
+              "Organic Video": 18,
+              "Organic Search": 3519,
+              "Email": 15099,
+              "Paid Shopping": 4435,
+              "Direct": 14567,
+              "Display": 204,
+              "Mobile Push Notifications": 1,
+              "Paid Search": 14260,
+              "SMS": 10436,
+              "Paid Video": 32,
+              "Cross-network": 5627,
+              "Unassigned": 8864,
+              "Paid Other": 15421,
+              "Paid Social": 51793,
+              "Organic Shopping": 1085,
+              "Organic Social": 2747,
+              "Referral": 719
+            }
+          },
+          {
+            "month": "May 2026",
+            "chs": {
+              "Unassigned": 387728,
+              "Paid Other": 424237,
+              "Cross-network": 193649,
+              "Display": 4120,
+              "Organic Video": 355,
+              "Email": 530117,
+              "Organic Shopping": 52647,
+              "SMS": 392780,
+              "Direct": 1836431,
+              "Paid Video": 3078,
+              "Paid Shopping": 124997,
+              "Organic Search": 102908,
+              "Paid Social": 2188680,
+              "Referral": 19213,
+              "Organic Social": 132582,
+              "Paid Search": 477762,
+              "Affiliates": 24
+            }
+          },
+          {
+            "month": "Jun 2026",
+            "chs": {
+              "Paid Social": 1454669,
+              "Paid Shopping": 112677,
+              "Email": 453056,
+              "Organic Search": 82287,
+              "Paid Other": 321863,
+              "Cross-network": 169820,
+              "Direct": 466180,
+              "Paid Search": 391238,
+              "Paid Video": 3288,
+              "Unassigned": 267603,
+              "Display": 4339,
+              "SMS": 302086,
+              "Referral": 14613,
+              "Organic Social": 130170,
+              "Organic Video": 133,
+              "Organic Shopping": 44780,
+              "Mobile Push Notifications": 4,
+              "AI Assistant": 1225,
+              "Affiliates": 3
+            }
+          },
+          {
+            "month": "Jul 2026",
+            "chs": {
+              "Organic Social": 107105,
+              "Organic Search": 89549,
+              "Display": 10350,
+              "Paid Shopping": 133682,
+              "Referral": 19681,
+              "Cross-network": 191011,
+              "Unassigned": 294263,
+              "Email": 471247,
+              "Paid Social": 1835866,
+              "Paid Video": 2219,
+              "Paid Other": 392354,
+              "Organic Video": 297,
+              "Paid Search": 392929,
+              "Organic Shopping": 31592,
+              "Direct": 652359,
+              "SMS": 237045,
+              "AI Assistant": 1111,
+              "Affiliates": 6
+            }
+          },
+          {
+            "month": "Aug 2026",
+            "chs": {
+              "Paid Search": 204257,
+              "Paid Social": 875724,
+              "Organic Social": 55265,
+              "Paid Other": 300130,
+              "Display": 8536,
+              "Direct": 368265,
+              "Paid Video": 1195,
+              "Unassigned": 193112,
+              "SMS": 129537,
+              "Referral": 9708,
+              "Organic Shopping": 16665,
+              "Organic Video": 68,
+              "Organic Search": 49164,
+              "Paid Shopping": 70576,
+              "AI Assistant": 958,
+              "Cross-network": 99940,
+              "Email": 309649,
+              "Affiliates": 6
+            }
+          }
+        ]
+      },
+      "landing": [
+        {
+          "label": "Empowershine Satin Lip Cream (com)",
+          "page": "thrivecausemetics.com/products/empowershine-satin-lip-cream",
+          "pageviews": 180175,
+          "sessions": 27877,
+          "txns": 1510,
+          "rev": 93177.78,
+          "eng": 46.1,
+          "cvr": 5.42
+        },
+        {
+          "label": "Empowershinesatinlipcream (ca)",
+          "page": "thrivecausemetics.ca/pages/empowershinesatinlipcream",
+          "pageviews": 70387,
+          "sessions": 25435,
+          "txns": 401,
+          "rev": 27260.71,
+          "eng": 1.3,
+          "cvr": 1.58
+        },
+        {
+          "label": "Empowershine Satin Lip Cream (ca)",
+          "page": "thrivecausemetics.ca/products/empowershine-satin-lip-cream",
+          "pageviews": 104237,
+          "sessions": 25413,
+          "txns": 785,
+          "rev": 55745.81,
+          "eng": 1.5,
+          "cvr": 3.09
+        },
+        {
+          "label": "Empowershine Shade Finder Quiz (com)",
+          "page": "thrivecausemetics.com/pages/empowershine-shade-finder-quiz",
+          "pageviews": 81711,
+          "sessions": 16110,
+          "txns": 83,
+          "rev": 5346.59,
+          "eng": 41.5,
+          "cvr": 0.52
+        },
+        {
+          "label": "Empowershinesatinlipcream (com)",
+          "page": "thrivecausemetics.com/pages/empowershinesatinlipcream",
+          "pageviews": 60755,
+          "sessions": 15684,
+          "txns": 649,
+          "rev": 36097.49,
+          "eng": 3.0,
+          "cvr": 4.14
+        },
+        {
+          "label": "Empowershine Shade Finder Quiz (ca)",
+          "page": "thrivecausemetics.ca/pages/empowershine-shade-finder-quiz",
+          "pageviews": 832,
+          "sessions": 217,
+          "txns": 6,
+          "rev": 552.22,
+          "eng": 0.5,
+          "cvr": 2.76
+        },
+        {
+          "label": "Empowershinesatinlipcreamquiz (ca)",
+          "page": "thrivecausemetics.ca/pages/empowershinesatinlipcreamquiz",
+          "pageviews": 3,
+          "sessions": 4,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Meet Empowershine The New Lip Cray (com)",
+          "page": "thrivecausemetics.com/blogs/blog/meet-empowershine-the-new-lip-crayon-that-can-do-it-all",
+          "pageviews": 22,
+          "sessions": 3,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Meet Empowershine\u2122 The New Lip Cra (ca)",
+          "page": "thrivecausemetics.ca/blogs/news/meet-empowershine\u2122-the-new-lip-crayon-that-can-do-it-all-nbsp",
+          "pageviews": 6,
+          "sessions": 2,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Empowershine Satin Lip Cream (hlpo64ifql2yi5i2-5822885.shopifypreview.com)",
+          "page": "hlpo64ifql2yi5i2-5822885.shopifypreview.com/products/empowershine-satin-lip-cream",
+          "pageviews": 1,
+          "sessions": 1,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        }
+      ],
       "planCurve": [
         {
           "date": "2026-05-01",
@@ -3111,6 +3486,268 @@ window.DASHBOARD_DATA = {
           "orders": 262
         }
       },
+      "trafficStart": "2026-06-08",
+      "trafficEnd": "2026-08-17",
+      "traffic": {
+        "byChannel": [
+          {
+            "ch": "Paid Social",
+            "sessions": 3857044,
+            "txns": 101542,
+            "rev": 5546160.5,
+            "cvr": 2.63,
+            "eng": 77.0
+          },
+          {
+            "ch": "Direct",
+            "sessions": 1381804,
+            "txns": 47268,
+            "rev": 2700463.36,
+            "cvr": 3.42,
+            "eng": 64.6
+          },
+          {
+            "ch": "Email",
+            "sessions": 1133534,
+            "txns": 94566,
+            "rev": 5668849.96,
+            "cvr": 8.34,
+            "eng": 75.0
+          },
+          {
+            "ch": "Paid Other",
+            "sessions": 941686,
+            "txns": 6370,
+            "rev": 400436.56,
+            "cvr": 0.68,
+            "eng": 75.1
+          },
+          {
+            "ch": "Paid Search",
+            "sessions": 897122,
+            "txns": 96226,
+            "rev": 6359470.14,
+            "cvr": 10.73,
+            "eng": 83.0
+          },
+          {
+            "ch": "Unassigned",
+            "sessions": 691831,
+            "txns": 165431,
+            "rev": 6826779.34,
+            "cvr": 23.91,
+            "eng": 63.0
+          },
+          {
+            "ch": "SMS",
+            "sessions": 603641,
+            "txns": 43549,
+            "rev": 2564626.27,
+            "cvr": 7.21,
+            "eng": 75.0
+          },
+          {
+            "ch": "Cross-network",
+            "sessions": 427600,
+            "txns": 7237,
+            "rev": 423813.6,
+            "cvr": 1.69,
+            "eng": 72.4
+          },
+          {
+            "ch": "Paid Shopping",
+            "sessions": 288744,
+            "txns": 23519,
+            "rev": 1292448.48,
+            "cvr": 8.15,
+            "eng": 84.1
+          },
+          {
+            "ch": "Organic Social",
+            "sessions": 250568,
+            "txns": 4185,
+            "rev": 243812.43,
+            "cvr": 1.67,
+            "eng": 73.5
+          },
+          {
+            "ch": "Organic Search",
+            "sessions": 201942,
+            "txns": 17544,
+            "rev": 1181688.61,
+            "cvr": 8.69,
+            "eng": 81.1
+          },
+          {
+            "ch": "Organic Shopping",
+            "sessions": 84418,
+            "txns": 34582,
+            "rev": 1726295.78,
+            "cvr": 40.97,
+            "eng": 85.8
+          },
+          {
+            "ch": "Referral",
+            "sessions": 40342,
+            "txns": 1901,
+            "rev": 122342.14,
+            "cvr": 4.71,
+            "eng": 73.1
+          },
+          {
+            "ch": "Display",
+            "sessions": 22645,
+            "txns": 26,
+            "rev": 1574.47,
+            "cvr": 0.11,
+            "eng": 76.7
+          },
+          {
+            "ch": "Paid Video",
+            "sessions": 5740,
+            "txns": 5,
+            "rev": 306.9,
+            "cvr": 0.09,
+            "eng": 71.7
+          },
+          {
+            "ch": "AI Assistant",
+            "sessions": 3172,
+            "txns": 150,
+            "rev": 8164.01,
+            "cvr": 4.73,
+            "eng": 77.4
+          },
+          {
+            "ch": "Organic Video",
+            "sessions": 460,
+            "txns": 12,
+            "rev": 785.18,
+            "cvr": 2.61,
+            "eng": 77.0
+          },
+          {
+            "ch": "Affiliates",
+            "sessions": 15,
+            "txns": 2,
+            "rev": 85.47,
+            "cvr": 13.33,
+            "eng": 80.0
+          },
+          {
+            "ch": "Mobile Push Notifications",
+            "sessions": 3,
+            "txns": 0,
+            "rev": 0.0,
+            "cvr": 0.0,
+            "eng": 0.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "Jun 2026",
+            "chs": {
+              "Paid Other": 249202,
+              "Email": 352638,
+              "Cross-network": 136649,
+              "Paid Search": 299936,
+              "Organic Social": 88198,
+              "Display": 3759,
+              "Referral": 10953,
+              "Paid Social": 1145454,
+              "Unassigned": 204456,
+              "Organic Shopping": 36161,
+              "Organic Search": 63229,
+              "Paid Video": 2326,
+              "AI Assistant": 1103,
+              "SMS": 237059,
+              "Direct": 361180,
+              "Paid Shopping": 84486,
+              "Organic Video": 95,
+              "Mobile Push Notifications": 3,
+              "Affiliates": 3
+            }
+          },
+          {
+            "month": "Jul 2026",
+            "chs": {
+              "Organic Search": 89549,
+              "Paid Search": 392929,
+              "Organic Shopping": 31592,
+              "SMS": 237045,
+              "Direct": 652359,
+              "Paid Other": 392354,
+              "Organic Social": 107105,
+              "Paid Video": 2219,
+              "Cross-network": 191011,
+              "Paid Shopping": 133682,
+              "Email": 471247,
+              "Organic Video": 297,
+              "Unassigned": 294263,
+              "Paid Social": 1835866,
+              "Referral": 19681,
+              "Display": 10350,
+              "AI Assistant": 1111,
+              "Affiliates": 6
+            }
+          },
+          {
+            "month": "Aug 2026",
+            "chs": {
+              "Organic Search": 49164,
+              "Cross-network": 99940,
+              "Organic Social": 55265,
+              "Unassigned": 193112,
+              "Display": 8536,
+              "Paid Search": 204257,
+              "Organic Shopping": 16665,
+              "Organic Video": 68,
+              "Email": 309649,
+              "Paid Other": 300130,
+              "Paid Shopping": 70576,
+              "SMS": 129537,
+              "Referral": 9708,
+              "Paid Video": 1195,
+              "Direct": 368265,
+              "Paid Social": 875724,
+              "AI Assistant": 958,
+              "Affiliates": 6
+            }
+          }
+        ]
+      },
+      "landing": [
+        {
+          "label": "Dbeccae4191D78F3D727E8199C07Ae74 (account..com)",
+          "page": "account.thrivecausemetics.com/web-pixels@585ceaccwe4738aa2pf8f14809md0785f1d/custom/web-pixel-24936538@3/sandbox/modern/orders/dbeccae4191d78f3d727e8199c07ae74",
+          "pageviews": 1,
+          "sessions": 1,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Dbeccae4191D78F3D727E8199C07Ae74 (account..com)",
+          "page": "account.thrivecausemetics.com/web-pixels@5f5c0921we198f819p6efddfcfm66c0f9a3/custom/web-pixel-24936538@3/sandbox/modern/orders/dbeccae4191d78f3d727e8199c07ae74",
+          "pageviews": 2,
+          "sessions": 1,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Authenticate (com)",
+          "page": "thrivecausemetics.com/5822885/orders/71becca7fcc627baddbb5a7a04c3129f/authenticate",
+          "pageviews": 1,
+          "sessions": 1,
+          "txns": 1,
+          "rev": 83.06,
+          "eng": 0.0,
+          "cvr": 100.0
+        }
+      ],
       "planCurve": [
         {
           "date": "2026-06-08",
@@ -4777,6 +5414,306 @@ window.DASHBOARD_DATA = {
           "orders": 314
         }
       },
+      "trafficStart": "2026-07-22",
+      "trafficEnd": "2026-08-17",
+      "traffic": {
+        "byChannel": [
+          {
+            "ch": "Paid Social",
+            "sessions": 1509985,
+            "txns": 36806,
+            "rev": 2083882.16,
+            "cvr": 2.44,
+            "eng": 77.5
+          },
+          {
+            "ch": "Direct",
+            "sessions": 647825,
+            "txns": 18728,
+            "rev": 1078883.31,
+            "cvr": 2.89,
+            "eng": 65.0
+          },
+          {
+            "ch": "Email",
+            "sessions": 498708,
+            "txns": 39841,
+            "rev": 2430922.63,
+            "cvr": 7.99,
+            "eng": 76.3
+          },
+          {
+            "ch": "Paid Other",
+            "sessions": 466445,
+            "txns": 2801,
+            "rev": 178320.5,
+            "cvr": 0.6,
+            "eng": 77.1
+          },
+          {
+            "ch": "Paid Search",
+            "sessions": 338784,
+            "txns": 36193,
+            "rev": 2426129.35,
+            "cvr": 10.68,
+            "eng": 83.4
+          },
+          {
+            "ch": "Unassigned",
+            "sessions": 293193,
+            "txns": 65119,
+            "rev": 2765947.33,
+            "cvr": 22.21,
+            "eng": 61.7
+          },
+          {
+            "ch": "SMS",
+            "sessions": 226509,
+            "txns": 19683,
+            "rev": 1157794.91,
+            "cvr": 8.69,
+            "eng": 75.7
+          },
+          {
+            "ch": "Cross-network",
+            "sessions": 166393,
+            "txns": 2718,
+            "rev": 166047.79,
+            "cvr": 1.63,
+            "eng": 71.9
+          },
+          {
+            "ch": "Paid Shopping",
+            "sessions": 106997,
+            "txns": 8582,
+            "rev": 485316.28,
+            "cvr": 8.02,
+            "eng": 84.5
+          },
+          {
+            "ch": "Organic Social",
+            "sessions": 87447,
+            "txns": 1571,
+            "rev": 94592.76,
+            "cvr": 1.8,
+            "eng": 77.1
+          },
+          {
+            "ch": "Organic Search",
+            "sessions": 78549,
+            "txns": 6596,
+            "rev": 465890.63,
+            "cvr": 8.4,
+            "eng": 82.2
+          },
+          {
+            "ch": "Organic Shopping",
+            "sessions": 26198,
+            "txns": 14641,
+            "rev": 762035.12,
+            "cvr": 55.89,
+            "eng": 86.6
+          },
+          {
+            "ch": "Referral",
+            "sessions": 16567,
+            "txns": 789,
+            "rev": 51515.17,
+            "cvr": 4.76,
+            "eng": 75.9
+          },
+          {
+            "ch": "Display",
+            "sessions": 10254,
+            "txns": 11,
+            "rev": 713.01,
+            "cvr": 0.11,
+            "eng": 74.4
+          },
+          {
+            "ch": "Paid Video",
+            "sessions": 1808,
+            "txns": 0,
+            "rev": 0.0,
+            "cvr": 0.0,
+            "eng": 70.3
+          },
+          {
+            "ch": "AI Assistant",
+            "sessions": 1254,
+            "txns": 56,
+            "rev": 3129.5,
+            "cvr": 4.47,
+            "eng": 78.6
+          },
+          {
+            "ch": "Organic Video",
+            "sessions": 182,
+            "txns": 5,
+            "rev": 247.69,
+            "cvr": 2.75,
+            "eng": 81.9
+          },
+          {
+            "ch": "Affiliates",
+            "sessions": 9,
+            "txns": 0,
+            "rev": 0.0,
+            "cvr": 0.0,
+            "eng": 77.8
+          }
+        ],
+        "monthly": [
+          {
+            "month": "Jul 2026",
+            "chs": {
+              "Organic Social": 32182,
+              "SMS": 96972,
+              "Paid Search": 134527,
+              "Paid Social": 634261,
+              "Organic Search": 29385,
+              "Organic Video": 114,
+              "Paid Shopping": 36421,
+              "Paid Video": 613,
+              "Unassigned": 100081,
+              "Display": 1718,
+              "Organic Shopping": 9533,
+              "Email": 189059,
+              "Direct": 279560,
+              "Paid Other": 166315,
+              "Cross-network": 66453,
+              "Referral": 6859,
+              "AI Assistant": 296,
+              "Affiliates": 3
+            }
+          },
+          {
+            "month": "Aug 2026",
+            "chs": {
+              "Referral": 9708,
+              "Organic Shopping": 16665,
+              "Paid Social": 875724,
+              "Paid Video": 1195,
+              "SMS": 129537,
+              "Paid Shopping": 70576,
+              "Cross-network": 99940,
+              "Display": 8536,
+              "Organic Search": 49164,
+              "Email": 309649,
+              "Paid Search": 204257,
+              "AI Assistant": 958,
+              "Organic Video": 68,
+              "Organic Social": 55265,
+              "Unassigned": 193112,
+              "Paid Other": 300130,
+              "Direct": 368265,
+              "Affiliates": 6
+            }
+          }
+        ]
+      },
+      "landing": [
+        {
+          "label": "Focus Eyeshadow Palette (com)",
+          "page": "thrivecausemetics.com/products/focus-eyeshadow-palette",
+          "pageviews": 607875,
+          "sessions": 92998,
+          "txns": 7105,
+          "rev": 469793.44,
+          "eng": 46.8,
+          "cvr": 7.64
+        },
+        {
+          "label": "Focus Eyeshadow Palette (com)",
+          "page": "thrivecausemetics.com/pages/focus-eyeshadow-palette",
+          "pageviews": 133888,
+          "sessions": 46224,
+          "txns": 1251,
+          "rev": 85557.5,
+          "eng": 0.4,
+          "cvr": 2.71
+        },
+        {
+          "label": "Eyeshadow Made Easy (com)",
+          "page": "thrivecausemetics.com/products/eyeshadow-made-easy",
+          "pageviews": 36022,
+          "sessions": 10422,
+          "txns": 422,
+          "rev": 35792.03,
+          "eng": 0.8,
+          "cvr": 4.05
+        },
+        {
+          "label": "Focus Eyeshadow Palette (ca)",
+          "page": "thrivecausemetics.ca/products/focus-eyeshadow-palette",
+          "pageviews": 18822,
+          "sessions": 6536,
+          "txns": 143,
+          "rev": 11676.24,
+          "eng": 1.7,
+          "cvr": 2.19
+        },
+        {
+          "label": "Eyeshadow (com)",
+          "page": "thrivecausemetics.com/collections/eyeshadow",
+          "pageviews": 35656,
+          "sessions": 5116,
+          "txns": 319,
+          "rev": 23386.96,
+          "eng": 4.7,
+          "cvr": 6.24
+        },
+        {
+          "label": "Eye Lift 360 Waterproof Eyeshadow  (com)",
+          "page": "thrivecausemetics.com/products/eye-lift-360-waterproof-eyeshadow-primer",
+          "pageviews": 11402,
+          "sessions": 2546,
+          "txns": 247,
+          "rev": 17368.01,
+          "eng": 1.3,
+          "cvr": 9.7
+        },
+        {
+          "label": "Focus Eyeshadow Palette Warm Cool (ca)",
+          "page": "thrivecausemetics.ca/products/focus-eyeshadow-palette-warm-cool",
+          "pageviews": 2705,
+          "sessions": 1080,
+          "txns": 22,
+          "rev": 1483.8,
+          "eng": 1.1,
+          "cvr": 2.04
+        },
+        {
+          "label": "Focus Eyeshadow Palette (ca)",
+          "page": "thrivecausemetics.ca/pages/focus-eyeshadow-palette",
+          "pageviews": 2841,
+          "sessions": 1025,
+          "txns": 24,
+          "rev": 1612.16,
+          "eng": 1.1,
+          "cvr": 2.34
+        },
+        {
+          "label": "How To Put On Eyeshadow (com)",
+          "page": "thrivecausemetics.com/blogs/blog/how-to-put-on-eyeshadow",
+          "pageviews": 1461,
+          "sessions": 733,
+          "txns": 5,
+          "rev": 366.7,
+          "eng": 0.1,
+          "cvr": 0.68
+        },
+        {
+          "label": "Focus Eyeshadow Palette Quiz (com)",
+          "page": "thrivecausemetics.com/pages/focus-eyeshadow-palette-quiz",
+          "pageviews": 3813,
+          "sessions": 557,
+          "txns": 51,
+          "rev": 3366.61,
+          "eng": 21.5,
+          "cvr": 9.16
+        }
+      ],
       "planCurve": [
         {
           "date": "2026-07-22",
@@ -5592,6 +6529,338 @@ window.DASHBOARD_DATA = {
           "orders": 812
         }
       },
+      "trafficStart": "2026-06-17",
+      "trafficEnd": "2026-08-17",
+      "traffic": {
+        "byChannel": [
+          {
+            "ch": "Paid Social",
+            "sessions": 3359001,
+            "txns": 87645,
+            "rev": 4814233.1,
+            "cvr": 2.61,
+            "eng": 78.2
+          },
+          {
+            "ch": "Direct",
+            "sessions": 1224001,
+            "txns": 40983,
+            "rev": 2343492.25,
+            "cvr": 3.35,
+            "eng": 64.5
+          },
+          {
+            "ch": "Email",
+            "sessions": 974717,
+            "txns": 82698,
+            "rev": 4940694.08,
+            "cvr": 8.48,
+            "eng": 75.3
+          },
+          {
+            "ch": "Paid Other",
+            "sessions": 834338,
+            "txns": 5750,
+            "rev": 361297.84,
+            "cvr": 0.69,
+            "eng": 76.0
+          },
+          {
+            "ch": "Paid Search",
+            "sessions": 777828,
+            "txns": 82892,
+            "rev": 5499363.14,
+            "cvr": 10.66,
+            "eng": 82.9
+          },
+          {
+            "ch": "Unassigned",
+            "sessions": 609387,
+            "txns": 144867,
+            "rev": 5978040.94,
+            "cvr": 23.77,
+            "eng": 63.3
+          },
+          {
+            "ch": "SMS",
+            "sessions": 502268,
+            "txns": 37928,
+            "rev": 2221601.26,
+            "cvr": 7.55,
+            "eng": 74.8
+          },
+          {
+            "ch": "Cross-network",
+            "sessions": 377194,
+            "txns": 6269,
+            "rev": 368717.19,
+            "cvr": 1.66,
+            "eng": 72.0
+          },
+          {
+            "ch": "Paid Shopping",
+            "sessions": 255140,
+            "txns": 20464,
+            "rev": 1124892.23,
+            "cvr": 8.02,
+            "eng": 84.0
+          },
+          {
+            "ch": "Organic Social",
+            "sessions": 201967,
+            "txns": 3557,
+            "rev": 207526.41,
+            "cvr": 1.76,
+            "eng": 75.9
+          },
+          {
+            "ch": "Organic Search",
+            "sessions": 176687,
+            "txns": 15152,
+            "rev": 1025881.09,
+            "cvr": 8.58,
+            "eng": 80.9
+          },
+          {
+            "ch": "Organic Shopping",
+            "sessions": 69281,
+            "txns": 30190,
+            "rev": 1514929.67,
+            "cvr": 43.58,
+            "eng": 85.6
+          },
+          {
+            "ch": "Referral",
+            "sessions": 35876,
+            "txns": 1707,
+            "rev": 109526.75,
+            "cvr": 4.76,
+            "eng": 73.6
+          },
+          {
+            "ch": "Display",
+            "sessions": 21662,
+            "txns": 21,
+            "rev": 1213.86,
+            "cvr": 0.1,
+            "eng": 76.5
+          },
+          {
+            "ch": "Paid Video",
+            "sessions": 4651,
+            "txns": 3,
+            "rev": 183.31,
+            "cvr": 0.06,
+            "eng": 71.0
+          },
+          {
+            "ch": "AI Assistant",
+            "sessions": 2775,
+            "txns": 132,
+            "rev": 7155.64,
+            "cvr": 4.76,
+            "eng": 77.9
+          },
+          {
+            "ch": "Organic Video",
+            "sessions": 426,
+            "txns": 12,
+            "rev": 785.18,
+            "cvr": 2.82,
+            "eng": 76.5
+          },
+          {
+            "ch": "Affiliates",
+            "sessions": 15,
+            "txns": 2,
+            "rev": 85.47,
+            "cvr": 13.33,
+            "eng": 80.0
+          },
+          {
+            "ch": "Mobile Push Notifications",
+            "sessions": 1,
+            "txns": 0,
+            "rev": 0.0,
+            "cvr": 0.0,
+            "eng": 0.0
+          }
+        ],
+        "monthly": [
+          {
+            "month": "Jun 2026",
+            "chs": {
+              "Paid Shopping": 50882,
+              "Mobile Push Notifications": 1,
+              "Paid Search": 180642,
+              "Paid Social": 647411,
+              "Email": 193821,
+              "Organic Video": 61,
+              "AI Assistant": 706,
+              "Direct": 203377,
+              "SMS": 135686,
+              "Referral": 6487,
+              "Display": 2776,
+              "Paid Video": 1237,
+              "Organic Search": 37974,
+              "Organic Social": 39597,
+              "Organic Shopping": 21024,
+              "Paid Other": 141854,
+              "Cross-network": 86243,
+              "Unassigned": 122012,
+              "Affiliates": 3
+            }
+          },
+          {
+            "month": "Jul 2026",
+            "chs": {
+              "Organic Shopping": 31592,
+              "Unassigned": 294263,
+              "Paid Search": 392929,
+              "Email": 471247,
+              "Referral": 19681,
+              "Paid Social": 1835866,
+              "Organic Social": 107105,
+              "SMS": 237045,
+              "AI Assistant": 1111,
+              "Organic Video": 297,
+              "Direct": 652359,
+              "Paid Video": 2219,
+              "Cross-network": 191011,
+              "Organic Search": 89549,
+              "Paid Other": 392354,
+              "Paid Shopping": 133682,
+              "Display": 10350,
+              "Affiliates": 6
+            }
+          },
+          {
+            "month": "Aug 2026",
+            "chs": {
+              "Email": 309649,
+              "Paid Search": 204257,
+              "Organic Shopping": 16665,
+              "Paid Social": 875724,
+              "Organic Search": 49164,
+              "AI Assistant": 958,
+              "Paid Video": 1195,
+              "Organic Video": 68,
+              "Organic Social": 55265,
+              "Display": 8536,
+              "Cross-network": 99940,
+              "SMS": 129537,
+              "Direct": 368265,
+              "Unassigned": 193112,
+              "Referral": 9708,
+              "Paid Other": 300130,
+              "Paid Shopping": 70576,
+              "Affiliates": 6
+            }
+          }
+        ]
+      },
+      "landing": [
+        {
+          "label": "Beb Shade Match Quiz (com)",
+          "page": "thrivecausemetics.com/pages/beb-shade-match-quiz",
+          "pageviews": 486061,
+          "sessions": 132015,
+          "txns": 441,
+          "rev": 29786.99,
+          "eng": 27.4,
+          "cvr": 0.33
+        },
+        {
+          "label": "Modern (account..com)",
+          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern",
+          "pageviews": 29,
+          "sessions": 11,
+          "txns": 1,
+          "rev": 40.72,
+          "eng": 0.0,
+          "cvr": 9.09
+        },
+        {
+          "label": "Orders (account..com)",
+          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders",
+          "pageviews": 47,
+          "sessions": 8,
+          "txns": 1,
+          "rev": 28.73,
+          "eng": 0.0,
+          "cvr": 12.5
+        },
+        {
+          "label": "4D23429Cb417E1C17E437B6B457F1A93 (account..com)",
+          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/4d23429cb417e1c17e437b6b457f1a93",
+          "pageviews": 8,
+          "sessions": 6,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "11509031C1Efb0A3C0C41Ab41Cc00Cce (account..com)",
+          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/11509031c1efb0a3c0c41ab41cc00cce",
+          "pageviews": 9,
+          "sessions": 6,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Information (com)",
+          "page": "thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/checkouts/cn/hwneooixx2abdrcpzhm6lnng/en/information",
+          "pageviews": 5,
+          "sessions": 5,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "8888D3242806B41Ba1C4A02B2Be3E734 (account..com)",
+          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/8888d3242806b41ba1c4a02b2be3e734",
+          "pageviews": 7,
+          "sessions": 5,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "D4B760C6Cb2850C330B9A547C4Bffc56 (account..com)",
+          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/d4b760c6cb2850c330b9a547c4bffc56",
+          "pageviews": 8,
+          "sessions": 5,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Beb Shade Match Quiz (ca)",
+          "page": "thrivecausemetics.ca/pages/beb-shade-match-quiz",
+          "pageviews": 17,
+          "sessions": 4,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "F49Ec11F40091501F43640B5E1907A43 (account..com)",
+          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/f49ec11f40091501f43640b5e1907a43",
+          "pageviews": 5,
+          "sessions": 4,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        }
+      ],
       "planCurve": [
         {
           "date": "2026-06-17",
@@ -7002,6 +8271,13 @@ window.DASHBOARD_DATA = {
           "orders": 170
         }
       },
+      "trafficStart": "2026-08-18",
+      "trafficEnd": "2026-08-17",
+      "traffic": {
+        "byChannel": [],
+        "monthly": []
+      },
+      "landing": [],
       "planCurve": [
         {
           "date": "2026-08-18",
@@ -7451,6 +8727,13 @@ window.DASHBOARD_DATA = {
           "orders": 2752
         }
       },
+      "trafficStart": "2026-04-07",
+      "trafficEnd": "2026-08-17",
+      "traffic": {
+        "byChannel": [],
+        "monthly": []
+      },
+      "landing": [],
       "planCurve": [
         {
           "date": "2026-04-07",
@@ -9806,380 +11089,6 @@ window.DASHBOARD_DATA = {
           }
         ]
       }
-    }
-  ],
-  "traffic": {
-    "byChannel": [
-      {
-        "ch": "Paid Social",
-        "sessions": 6406732,
-        "txns": 159147,
-        "rev": 8723719.2,
-        "cvr": 2.48,
-        "eng": 76.5
-      },
-      {
-        "ch": "Direct",
-        "sessions": 3337802,
-        "txns": 74656,
-        "rev": 4354368.51,
-        "cvr": 2.24,
-        "eng": 62.0
-      },
-      {
-        "ch": "Email",
-        "sessions": 1779168,
-        "txns": 147284,
-        "rev": 8965219.52,
-        "cvr": 8.28,
-        "eng": 74.5
-      },
-      {
-        "ch": "Paid Search",
-        "sessions": 1480446,
-        "txns": 160102,
-        "rev": 10640508.38,
-        "cvr": 10.81,
-        "eng": 83.5
-      },
-      {
-        "ch": "Paid Other",
-        "sessions": 1454005,
-        "txns": 8913,
-        "rev": 565655.55,
-        "cvr": 0.61,
-        "eng": 70.9
-      },
-      {
-        "ch": "Unassigned",
-        "sessions": 1151570,
-        "txns": 255492,
-        "rev": 10580459.7,
-        "cvr": 22.19,
-        "eng": 57.4
-      },
-      {
-        "ch": "SMS",
-        "sessions": 1071884,
-        "txns": 74566,
-        "rev": 4519358.37,
-        "cvr": 6.96,
-        "eng": 74.7
-      },
-      {
-        "ch": "Cross-network",
-        "sessions": 660047,
-        "txns": 11903,
-        "rev": 699833.02,
-        "cvr": 1.8,
-        "eng": 72.7
-      },
-      {
-        "ch": "Paid Shopping",
-        "sessions": 446367,
-        "txns": 39109,
-        "rev": 2152078.75,
-        "cvr": 8.76,
-        "eng": 84.5
-      },
-      {
-        "ch": "Organic Social",
-        "sessions": 427869,
-        "txns": 6380,
-        "rev": 368233.57,
-        "cvr": 1.49,
-        "eng": 70.2
-      },
-      {
-        "ch": "Organic Search",
-        "sessions": 327427,
-        "txns": 28964,
-        "rev": 1946570.42,
-        "cvr": 8.85,
-        "eng": 81.7
-      },
-      {
-        "ch": "Organic Shopping",
-        "sessions": 146769,
-        "txns": 54267,
-        "rev": 2687690.84,
-        "cvr": 36.97,
-        "eng": 84.8
-      },
-      {
-        "ch": "Referral",
-        "sessions": 63934,
-        "txns": 2907,
-        "rev": 194479.47,
-        "cvr": 4.55,
-        "eng": 72.2
-      },
-      {
-        "ch": "Display",
-        "sessions": 27549,
-        "txns": 33,
-        "rev": 1977.26,
-        "cvr": 0.12,
-        "eng": 75.5
-      },
-      {
-        "ch": "Paid Video",
-        "sessions": 9812,
-        "txns": 10,
-        "rev": 559.74,
-        "cvr": 0.1,
-        "eng": 70.9
-      },
-      {
-        "ch": "AI Assistant",
-        "sessions": 3294,
-        "txns": 158,
-        "rev": 8481.27,
-        "cvr": 4.8,
-        "eng": 77.4
-      },
-      {
-        "ch": "Organic Video",
-        "sessions": 871,
-        "txns": 21,
-        "rev": 1405.89,
-        "cvr": 2.41,
-        "eng": 80.5
-      },
-      {
-        "ch": "Affiliates",
-        "sessions": 39,
-        "txns": 3,
-        "rev": 148.77,
-        "cvr": 7.69,
-        "eng": 61.5
-      },
-      {
-        "ch": "Mobile Push Notifications",
-        "sessions": 5,
-        "txns": 0,
-        "rev": 0.0,
-        "cvr": 0.0,
-        "eng": 0.0
-      }
-    ],
-    "monthly": [
-      {
-        "month": "Apr 2026",
-        "chs": {
-          "Organic Video": 18,
-          "Organic Search": 3519,
-          "Email": 15099,
-          "Paid Shopping": 4435,
-          "Direct": 14567,
-          "Display": 204,
-          "Mobile Push Notifications": 1,
-          "Paid Search": 14260,
-          "SMS": 10436,
-          "Paid Video": 32,
-          "Cross-network": 5627,
-          "Unassigned": 8864,
-          "Paid Other": 15421,
-          "Paid Social": 51793,
-          "Organic Shopping": 1085,
-          "Organic Social": 2747,
-          "Referral": 719
-        }
-      },
-      {
-        "month": "May 2026",
-        "chs": {
-          "Unassigned": 387728,
-          "Paid Other": 424237,
-          "Cross-network": 193649,
-          "Display": 4120,
-          "Organic Video": 355,
-          "Email": 530117,
-          "Organic Shopping": 52647,
-          "SMS": 392780,
-          "Direct": 1836431,
-          "Paid Video": 3078,
-          "Paid Shopping": 124997,
-          "Organic Search": 102908,
-          "Paid Social": 2188680,
-          "Referral": 19213,
-          "Organic Social": 132582,
-          "Paid Search": 477762,
-          "Affiliates": 24
-        }
-      },
-      {
-        "month": "Jun 2026",
-        "chs": {
-          "Paid Social": 1454669,
-          "Paid Shopping": 112677,
-          "Email": 453056,
-          "Organic Search": 82287,
-          "Paid Other": 321863,
-          "Cross-network": 169820,
-          "Direct": 466180,
-          "Paid Search": 391238,
-          "Paid Video": 3288,
-          "Unassigned": 267603,
-          "Display": 4339,
-          "SMS": 302086,
-          "Referral": 14613,
-          "Organic Social": 130170,
-          "Organic Video": 133,
-          "Organic Shopping": 44780,
-          "Mobile Push Notifications": 4,
-          "AI Assistant": 1225,
-          "Affiliates": 3
-        }
-      },
-      {
-        "month": "Jul 2026",
-        "chs": {
-          "Organic Social": 107105,
-          "Organic Search": 89549,
-          "Display": 10350,
-          "Paid Shopping": 133682,
-          "Referral": 19681,
-          "Cross-network": 191011,
-          "Unassigned": 294263,
-          "Email": 471247,
-          "Paid Social": 1835866,
-          "Paid Video": 2219,
-          "Paid Other": 392354,
-          "Organic Video": 297,
-          "Paid Search": 392929,
-          "Organic Shopping": 31592,
-          "Direct": 652359,
-          "SMS": 237045,
-          "AI Assistant": 1111,
-          "Affiliates": 6
-        }
-      },
-      {
-        "month": "Aug 2026",
-        "chs": {
-          "Paid Search": 204257,
-          "Paid Social": 875724,
-          "Organic Social": 55265,
-          "Paid Other": 300130,
-          "Display": 8536,
-          "Direct": 368265,
-          "Paid Video": 1195,
-          "Unassigned": 193112,
-          "SMS": 129537,
-          "Referral": 9708,
-          "Organic Shopping": 16665,
-          "Organic Video": 68,
-          "Organic Search": 49164,
-          "Paid Shopping": 70576,
-          "AI Assistant": 958,
-          "Cross-network": 99940,
-          "Email": 309649,
-          "Affiliates": 6
-        }
-      }
-    ]
-  },
-  "landing": [
-    {
-      "label": "Liquid Lash Extensions Mascara (com)",
-      "page": "thrivecausemetics.com/products/liquid-lash-extensions-mascara",
-      "pageviews": 2338399,
-      "sessions": 414936,
-      "txns": 37839,
-      "rev": 1977361.1,
-      "eng": 41.8,
-      "cvr": 9.12
-    },
-    {
-      "label": "Beb Shade Match Quiz (com)",
-      "page": "thrivecausemetics.com/pages/beb-shade-match-quiz",
-      "pageviews": 486061,
-      "sessions": 132015,
-      "txns": 441,
-      "rev": 29786.99,
-      "eng": 27.4,
-      "cvr": 0.33
-    },
-    {
-      "label": "Focus Eyeshadow Palette (com)",
-      "page": "thrivecausemetics.com/products/focus-eyeshadow-palette",
-      "pageviews": 608055,
-      "sessions": 93039,
-      "txns": 7105,
-      "rev": 469793.44,
-      "eng": 46.7,
-      "cvr": 7.64
-    },
-    {
-      "label": "Liquid Lash Extensions Mascara (ca)",
-      "page": "thrivecausemetics.ca/products/liquid-lash-extensions-mascara",
-      "pageviews": 268747,
-      "sessions": 81716,
-      "txns": 2555,
-      "rev": 165507.89,
-      "eng": 1.5,
-      "cvr": 3.13
-    },
-    {
-      "label": "Focus Eyeshadow Palette (com)",
-      "page": "thrivecausemetics.com/pages/focus-eyeshadow-palette",
-      "pageviews": 134078,
-      "sessions": 46244,
-      "txns": 1251,
-      "rev": 85557.5,
-      "eng": 0.4,
-      "cvr": 2.71
-    },
-    {
-      "label": "Empowershine Satin Lip Cream (com)",
-      "page": "thrivecausemetics.com/products/empowershine-satin-lip-cream",
-      "pageviews": 180175,
-      "sessions": 27877,
-      "txns": 1510,
-      "rev": 93177.78,
-      "eng": 46.1,
-      "cvr": 5.42
-    },
-    {
-      "label": "Empowershinesatinlipcream (ca)",
-      "page": "thrivecausemetics.ca/pages/empowershinesatinlipcream",
-      "pageviews": 70387,
-      "sessions": 25435,
-      "txns": 401,
-      "rev": 27260.71,
-      "eng": 1.3,
-      "cvr": 1.58
-    },
-    {
-      "label": "Empowershine Satin Lip Cream (ca)",
-      "page": "thrivecausemetics.ca/products/empowershine-satin-lip-cream",
-      "pageviews": 104237,
-      "sessions": 25413,
-      "txns": 785,
-      "rev": 55745.81,
-      "eng": 1.5,
-      "cvr": 3.09
-    },
-    {
-      "label": "Empowershine Shade Finder Quiz (com)",
-      "page": "thrivecausemetics.com/pages/empowershine-shade-finder-quiz",
-      "pageviews": 81711,
-      "sessions": 16110,
-      "txns": 83,
-      "rev": 5346.59,
-      "eng": 41.5,
-      "cvr": 0.52
-    },
-    {
-      "label": "Liquid Lash Mascara Shade Finder Q (com)",
-      "page": "thrivecausemetics.com/pages/liquid-lash-mascara-shade-finder-quiz",
-      "pageviews": 45295,
-      "sessions": 16014,
-      "txns": 9,
-      "rev": 467.17,
-      "eng": 1.4,
-      "cvr": 0.06
     }
   ],
   "upcoming": [
