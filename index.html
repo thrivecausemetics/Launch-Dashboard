@@ -282,16 +282,20 @@
       + row('Launch date', sel.map(l => l.launchDate), v => fmtSmart(v))
       + row('Age at cutoff (days)', sel.map(ageAt), v => num(v))
       + grp(`Matched comparison — first ${num(matchDay)} days`)
-      + row('Units', at.map(a => a.units), fmtNum)
+      + row('Units', at.map(a => a.units), num)
       + row('Net sales', at.map(a => a.sales), fmtMoney)
       + grp('Launch to date')
-      + row('Units', sel.map(l => l.summary.units), fmtNum)
+      + row('Units', sel.map(l => l.summary.units), num)
       + row('Net sales', sel.map(l => l.summary.netSales), fmtMoney)
-      + row('Orders', sel.map(l => l.summary.orders), fmtNum)
+      + row('Orders', sel.map(l => l.summary.orders), num)
       + row('AOV', sel.map(l => l.summary.aov), v => '$' + Number(v).toFixed(2))
-      + row('New customers', sel.map(l => l.summary.newCustomers), fmtNum)
+      + row('New customers', sel.map(l => l.summary.newCustomers), num)
       + row('New customer share', sel.map(l => l.summary.newPct), v => v.toFixed(1) + '%')
-      + row('% to goal (full curve)', sel.map(l => l.pctToGoalUnits), v => v.toFixed(1) + '%')
+      // pctToGoalUnits is per variant; at launch level it has to be derived
+      // from the launch's own units against its full-curve plan total.
+      + row('% to goal (full curve)', sel.map(l => l.planTotalUnits
+            ? l.summary.units / l.planTotalUnits * 100 : null), v => v.toFixed(1) + '%')
+      + row('Goal (full-curve plan units)', sel.map(l => l.planTotalUnits), num)
       + row('PDP conversion rate', sel.map(l => l.summary.pdpCvr), v => v.toFixed(1) + '%');
 
     document.getElementById('cmp-note').innerHTML =
