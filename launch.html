@@ -944,11 +944,21 @@ const EXPORTS = {
     rows: (LOADED.pdp || []).map(r => [r.sku, r.name, r.pdpViews, r.atc, r.atcRate,
       r.purch, r.purchRate, r.rev]),
   }),
-  'crosssell-pairs': () => ({
-    slug: 'cross-sell-pairings', title: 'Top Products Paired', filters: LAUNCH_WIDE,
-    columns: ['Paired Product', 'SKU', 'Pair Count'],
-    rows: (LOADED.crossSell || []).map(r => [r.product, r.sku, r.pairs]),
-  }),
+  'crosssell-pairs': () => {
+    const { rows, scoped } = crossSellRows(LOADED);
+    const sel = (LOADED.byVariant || []).filter(v => XS_SKUS.has(v.sku));
+    return { slug: 'cross-sell-pairings', title: 'Top Products Paired',
+      filters: () => scoped ? {
+        lines: [['Shade filter (Cross-Sells tab)', `${sel.map(v => v.name).join(' + ')} (${sel.length} of ${(LOADED.byVariant || []).length})`]],
+        caveats: ['Counts come from the per-shade breakdown, summed across the selected shades. This is not the launch-wide top ten.'],
+        slug: ['shades-' + sel.length],
+      } : {
+        lines: [['Shade filter (Cross-Sells tab)', 'All shades — exact launch-wide ranking']],
+        caveats: [], slug: [],
+      },
+      columns: ['Paired Product', 'SKU', 'Pair Count'],
+      rows: rows.map(r => [r.product, r.sku, r.pairs]) };
+  },
   'category-variants': () => ({
     slug: 'category-customers', title: 'Category Customers by Variant', filters: LAUNCH_WIDE,
     columns: ['SKU', 'Variant', 'New to Category', 'Existing Category', 'Pct New to Category'],
@@ -1443,12 +1453,43 @@ function renderPDP(d) {
 }
 
 /* ── CROSS-SELLS TAB ── */
+/* Shade filter for the affinity view. Empty set = whole launch, which uses
+   the exact launch-wide query; picking shades switches to the per-SKU rows.
+   Rolling the per-shade top tens up to a launch total would quietly miss a
+   product that ranks 11th for every shade, so the two are kept separate. */
+let XS_SKUS = new Set();
+
+function crossSellRows(d) {
+  if (!XS_SKUS.size) return { rows: d.crossSell || [], scoped: false };
+  const agg = new Map();
+  for (const r of (d.crossSellBySku || [])) {
+    if (!XS_SKUS.has(r.primarySku)) continue;
+    const k = r.sku + '|' + r.product;
+    const hit = agg.get(k);
+    if (hit) hit.pairs += r.pairs;
+    else agg.set(k, { product: r.product, sku: r.sku, pairs: r.pairs });
+  }
+  return { rows: [...agg.values()].sort((a, b) => b.pairs - a.pairs).slice(0, 10), scoped: true };
+}
+
 function renderCrossSells(d) {
-  const rows = d.crossSell || [];
+  const { rows, scoped } = crossSellRows(d);
   const maxPairs = rows.length > 0 ? rows[0].pairs : 1;
+  const hasBySku = (d.crossSellBySku || []).length > 0;
+  const chips = (d.byVariant || []).map(v =>
+    `<button class="fb-btn${XS_SKUS.has(v.sku) ? ' on' : ''}" data-xs-sku="${v.sku}">`
+    + `<span class="dot" style="background:${v.color || '#ccc'}"></span>${v.name}</button>`).join('');
 
   document.getElementById('panel-crosssells').innerHTML = `
     <div class="section-title">Cross-Sells &amp; Pairings · ${d.name} · ${fmt.date(d.launchDate)} – ${fmt.date(META.dataCutoff)}</div>
+    ${hasBySku ? `<div class="filter-bar" style="margin-bottom:16px">
+      <span class="fb-label">Shades</span>
+      <div class="fb-seg" style="flex-wrap:wrap;gap:6px">${chips}
+        <button class="fb-btn${XS_SKUS.size ? '' : ' on'}" data-xs-sku="__all">All</button></div>
+      <span class="fb-note">${scoped
+        ? 'Pairings for the selected shade' + (XS_SKUS.size > 1 ? 's' : '') + ' only, summed across them.'
+        : 'All shades — the exact launch-wide ranking.'}</span>
+    </div>` : ''}
     <div class="kpi-row1" style="margin-bottom:18px">
       <div class="kpi-card c-teal"><div class="kpi-label">Top Cross-Sell</div><div class="kpi-value" style="font-size:14px">${rows[0] ? rows[0].product.split('™')[0]+'™' : '—'}</div><div class="kpi-sub">${fmt.num(rows[0]?.pairs||0)} paired orders</div></div>
       <div class="kpi-card c-gold"><div class="kpi-label">Unique Pairings Found</div><div class="kpi-value">${rows.length}</div><div class="kpi-sub">Distinct co-purchase products</div></div>
@@ -1467,7 +1508,14 @@ function renderCrossSells(d) {
         </tr>`).join('')}</tbody>
       </table></div>
     </div>
-    <p class="data-note">Source: DRP.PRODUCT_AFFINITY_SETS via Snowflake DAASITY_DB · Shows products purchased in the same order as a launch SKU during the launch window. Pair count = distinct order basket co-occurrences. Same-launch-family SKUs excluded.</p>`;
+    <p class="data-note">Source: DRP.PRODUCT_AFFINITY_SETS via Snowflake DAASITY_DB · Shows products purchased in the same order as a launch SKU during the launch window. Pair count = distinct order basket co-occurrences. Same-launch-family SKUs excluded.${hasBySku ? ' With a shade filter applied, counts come from the per-shade breakdown and are summed across the selected shades.' : ''}</p>`;
+
+  document.querySelectorAll('[data-xs-sku]').forEach(b => b.onclick = () => {
+    const sku = b.dataset.xsSku;
+    if (sku === '__all') XS_SKUS = new Set();
+    else XS_SKUS.has(sku) ? XS_SKUS.delete(sku) : XS_SKUS.add(sku);
+    renderCrossSells(d);
+  });
 }
 
 /* ── CATEGORY CUSTOMERS TAB ── */
