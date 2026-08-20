@@ -496,6 +496,10 @@ SELECT {c['page']} AS PAGE,
 FROM {SRC_DB}.{c['table']}
 WHERE ({like})
   AND CAST({c['date']} AS DATE) BETWEEN %(traffic_start)s AND %(ga_cutoff)s
+  -- Content pages only. Substring matching otherwise picks up order URLs and
+  -- web-pixel endpoints whose hex hashes happen to contain the match term
+  -- ("becca" inside .../orders/71becca7fcc...), which are not landing pages.
+  AND ({c['page']} ILIKE '%%/products/%%' OR {c['page']} ILIKE '%%/pages/%%')
 GROUP BY 1 ORDER BY SESSIONS DESC LIMIT 10
 """
 
@@ -922,8 +926,16 @@ def build_landing(cur, lc, params):
     launches' pages over a window starting at the earliest active launch.
     Scoped now to this launch's own SKUs and slug, over its own window.
     """
-    slugs = {s["sku"] for s in lc["skus"]}
-    slugs.add(lc["name"].split(" ")[0].lower())
+    # landing_patterns wins when set: the config name is an internal one and
+    # frequently does not appear in the storefront URL ("Becca Brow" ships as
+    # instant-brow-fix-* / infinity-waterproof-brow-liner), so deriving a slug
+    # from it silently matches nothing or the wrong thing.
+    explicit = lc.get("landing_patterns")
+    if explicit:
+        slugs = set(explicit)
+    else:
+        slugs = {s["sku"] for s in lc["skus"]}
+        slugs.add(lc["name"].split(" ")[0].lower())
     lrows = rows(cur, q_landing(sorted(slugs)), params)
     out = []
     for r in lrows:
