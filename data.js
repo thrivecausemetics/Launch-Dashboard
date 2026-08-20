@@ -410,20 +410,10 @@ window.DASHBOARD_DATA = {
           "cvr": 0.0
         },
         {
-          "label": "Meet Empowershine The New Lip Cray (com)",
-          "page": "thrivecausemetics.com/blogs/blog/meet-empowershine-the-new-lip-crayon-that-can-do-it-all",
-          "pageviews": 22,
-          "sessions": 3,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "Meet Empowershine\u2122 The New Lip Cra (ca)",
-          "page": "thrivecausemetics.ca/blogs/news/meet-empowershine\u2122-the-new-lip-crayon-that-can-do-it-all-nbsp",
-          "pageviews": 6,
-          "sessions": 2,
+          "label": "Empowershine Satin Lip Cream. (com)",
+          "page": "thrivecausemetics.com/products/empowershine-satin-lip-cream.",
+          "pageviews": 9,
+          "sessions": 1,
           "txns": 0,
           "rev": 0.0,
           "eng": 0.0,
@@ -3716,38 +3706,7 @@ window.DASHBOARD_DATA = {
           }
         ]
       },
-      "landing": [
-        {
-          "label": "Dbeccae4191D78F3D727E8199C07Ae74 (account..com)",
-          "page": "account.thrivecausemetics.com/web-pixels@585ceaccwe4738aa2pf8f14809md0785f1d/custom/web-pixel-24936538@3/sandbox/modern/orders/dbeccae4191d78f3d727e8199c07ae74",
-          "pageviews": 1,
-          "sessions": 1,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "Dbeccae4191D78F3D727E8199C07Ae74 (account..com)",
-          "page": "account.thrivecausemetics.com/web-pixels@5f5c0921we198f819p6efddfcfm66c0f9a3/custom/web-pixel-24936538@3/sandbox/modern/orders/dbeccae4191d78f3d727e8199c07ae74",
-          "pageviews": 2,
-          "sessions": 1,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "Authenticate (com)",
-          "page": "thrivecausemetics.com/5822885/orders/71becca7fcc627baddbb5a7a04c3129f/authenticate",
-          "pageviews": 1,
-          "sessions": 1,
-          "txns": 1,
-          "rev": 83.06,
-          "eng": 0.0,
-          "cvr": 100.0
-        }
-      ],
+      "landing": [],
       "planCurve": [
         {
           "date": "2026-06-08",
@@ -5654,16 +5613,6 @@ window.DASHBOARD_DATA = {
           "cvr": 2.19
         },
         {
-          "label": "Eyeshadow (com)",
-          "page": "thrivecausemetics.com/collections/eyeshadow",
-          "pageviews": 35656,
-          "sessions": 5116,
-          "txns": 319,
-          "rev": 23386.96,
-          "eng": 4.7,
-          "cvr": 6.24
-        },
-        {
           "label": "Eye Lift 360 Waterproof Eyeshadow  (com)",
           "page": "thrivecausemetics.com/products/eye-lift-360-waterproof-eyeshadow-primer",
           "pageviews": 11402,
@@ -5694,16 +5643,6 @@ window.DASHBOARD_DATA = {
           "cvr": 2.34
         },
         {
-          "label": "How To Put On Eyeshadow (com)",
-          "page": "thrivecausemetics.com/blogs/blog/how-to-put-on-eyeshadow",
-          "pageviews": 1461,
-          "sessions": 733,
-          "txns": 5,
-          "rev": 366.7,
-          "eng": 0.1,
-          "cvr": 0.68
-        },
-        {
           "label": "Focus Eyeshadow Palette Quiz (com)",
           "page": "thrivecausemetics.com/pages/focus-eyeshadow-palette-quiz",
           "pageviews": 3813,
@@ -5712,6 +5651,26 @@ window.DASHBOARD_DATA = {
           "rev": 3366.61,
           "eng": 21.5,
           "cvr": 9.16
+        },
+        {
+          "label": "Instant Blend Cream Eyeshadow Brus (com)",
+          "page": "thrivecausemetics.com/products/instant-blend-cream-eyeshadow-brush",
+          "pageviews": 1654,
+          "sessions": 509,
+          "txns": 23,
+          "rev": 1670.33,
+          "eng": 0.4,
+          "cvr": 4.52
+        },
+        {
+          "label": "Eyeshadow Primer Packette Sample (com)",
+          "page": "thrivecausemetics.com/products/eyeshadow-primer-packette-sample",
+          "pageviews": 711,
+          "sessions": 440,
+          "txns": 3,
+          "rev": 246.3,
+          "eng": 1.1,
+          "cvr": 0.68
         }
       ],
       "planCurve": [
@@ -6771,76 +6730,6 @@ window.DASHBOARD_DATA = {
           "cvr": 0.33
         },
         {
-          "label": "Modern (account..com)",
-          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern",
-          "pageviews": 29,
-          "sessions": 11,
-          "txns": 1,
-          "rev": 40.72,
-          "eng": 0.0,
-          "cvr": 9.09
-        },
-        {
-          "label": "Orders (account..com)",
-          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders",
-          "pageviews": 47,
-          "sessions": 8,
-          "txns": 1,
-          "rev": 28.73,
-          "eng": 0.0,
-          "cvr": 12.5
-        },
-        {
-          "label": "4D23429Cb417E1C17E437B6B457F1A93 (account..com)",
-          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/4d23429cb417e1c17e437b6b457f1a93",
-          "pageviews": 8,
-          "sessions": 6,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "11509031C1Efb0A3C0C41Ab41Cc00Cce (account..com)",
-          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/11509031c1efb0a3c0c41ab41cc00cce",
-          "pageviews": 9,
-          "sessions": 6,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "Information (com)",
-          "page": "thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/checkouts/cn/hwneooixx2abdrcpzhm6lnng/en/information",
-          "pageviews": 5,
-          "sessions": 5,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "8888D3242806B41Ba1C4A02B2Be3E734 (account..com)",
-          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/8888d3242806b41ba1c4a02b2be3e734",
-          "pageviews": 7,
-          "sessions": 5,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "D4B760C6Cb2850C330B9A547C4Bffc56 (account..com)",
-          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/d4b760c6cb2850c330b9a547c4bffc56",
-          "pageviews": 8,
-          "sessions": 5,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
           "label": "Beb Shade Match Quiz (ca)",
           "page": "thrivecausemetics.ca/pages/beb-shade-match-quiz",
           "pageviews": 17,
@@ -6851,10 +6740,50 @@ window.DASHBOARD_DATA = {
           "cvr": 0.0
         },
         {
-          "label": "F49Ec11F40091501F43640B5E1907A43 (account..com)",
-          "page": "account.thrivecausemetics.com/web-pixels@5b420bebw79a47f5bp51dad21bmd4c4ae2f/custom/web-pixel-24936538@3/sandbox/modern/orders/f49ec11f40091501f43640b5e1907a43",
-          "pageviews": 5,
-          "sessions": 4,
+          "label": "Cancel (com)",
+          "page": "thrivecausemetics.com/tools/recurring/pages/f4451897cac091fc8aa36f2ef4beb8/subscriptions/393949850/cancel",
+          "pageviews": 2,
+          "sessions": 2,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Cancel (com)",
+          "page": "thrivecausemetics.com/tools/recurring/pages/e03fd7579459810ec648a9cdafbebe/subscriptions/838789457/cancel",
+          "pageviews": 1,
+          "sessions": 1,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Cancel (com)",
+          "page": "thrivecausemetics.com/tools/recurring/pages/7a491f69072beb994222495e784a09/subscriptions/776997372/cancel",
+          "pageviews": 30,
+          "sessions": 1,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Cancel (com)",
+          "page": "thrivecausemetics.com/tools/recurring/pages/54bfbf86f860beb11310bfc0af67e8/subscriptions/733181822/cancel",
+          "pageviews": 2,
+          "sessions": 1,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Cancel (com)",
+          "page": "thrivecausemetics.com/tools/recurring/pages/3409b26f60784f3b95cffb26c7ebeb/subscriptions/788797897/cancel",
+          "pageviews": 1,
+          "sessions": 1,
           "txns": 0,
           "rev": 0.0,
           "eng": 0.0,
