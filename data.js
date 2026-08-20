@@ -511,9 +511,6 @@ window.DASHBOARD_DATA = {
           "cumPlanUnits": 67167
         }
       ],
-      "planTotalUnits": 71677,
-      "planEndDate": "2026-08-28",
-      "archived": false,
       "byVariant": [
         {
           "sku": "TVG5950",
@@ -534,12 +531,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 2018,
           "runRateUnitsPerDay": 50.29,
           "daysToOOS": 40,
-          "estOOSDate": "2026-09-28",
-          "planTotalUnits": 14487,
-          "pctToGoalUnits": 129.9,
-          "unitsToGoal": 0,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": 5.7
+          "estOOSDate": "2026-09-28"
         },
         {
           "sku": "TVG5880",
@@ -560,12 +552,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 19,
           "runRateUnitsPerDay": 15.0,
           "daysToOOS": 1,
-          "estOOSDate": "2026-08-20",
-          "planTotalUnits": 8036,
-          "pctToGoalUnits": 152.8,
-          "unitsToGoal": 0,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": 0.2
+          "estOOSDate": "2026-08-20"
         },
         {
           "sku": "TVG5960",
@@ -586,12 +573,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 3425,
           "runRateUnitsPerDay": 31.43,
           "daysToOOS": 108,
-          "estOOSDate": "2026-12-05",
-          "planTotalUnits": 9661,
-          "pctToGoalUnits": 97.7,
-          "unitsToGoal": 226,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": 15.6
+          "estOOSDate": "2026-12-05"
         },
         {
           "sku": "TVG5890",
@@ -612,12 +594,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 0,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": 0,
-          "estOOSDate": "2026-08-19",
-          "planTotalUnits": 4823,
-          "pctToGoalUnits": 181.8,
-          "unitsToGoal": 0,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": null
+          "estOOSDate": "2026-08-19"
         },
         {
           "sku": "TVG5920",
@@ -638,12 +615,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 7131,
           "runRateUnitsPerDay": 22.29,
           "daysToOOS": 319,
-          "estOOSDate": "2027-07-04",
-          "planTotalUnits": 9651,
-          "pctToGoalUnits": 75.2,
-          "unitsToGoal": 2397,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": 45.7
+          "estOOSDate": "2027-07-04"
         },
         {
           "sku": "TVG5900",
@@ -664,12 +636,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 2621,
           "runRateUnitsPerDay": 6.57,
           "daysToOOS": 398,
-          "estOOSDate": "2027-09-21",
-          "planTotalUnits": 3546,
-          "pctToGoalUnits": 171.8,
-          "unitsToGoal": 0,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": 57.0
+          "estOOSDate": "2027-09-21"
         },
         {
           "sku": "TVG5940",
@@ -690,12 +657,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 7264,
           "runRateUnitsPerDay": 7.0,
           "daysToOOS": 1037,
-          "estOOSDate": "2029-06-21",
-          "planTotalUnits": 5466,
-          "pctToGoalUnits": 44.5,
-          "unitsToGoal": 3036,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": 148.2
+          "estOOSDate": "2029-06-21"
         },
         {
           "sku": "TVG5910",
@@ -716,12 +678,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 6827,
           "runRateUnitsPerDay": 3.71,
           "daysToOOS": 1840,
-          "estOOSDate": "2031-09-02",
-          "planTotalUnits": 4185,
-          "pctToGoalUnits": 52.6,
-          "unitsToGoal": 1983,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": 262.9
+          "estOOSDate": "2031-09-02"
         },
         {
           "sku": "TVG5930",
@@ -742,12 +699,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 6686,
           "runRateUnitsPerDay": 3.86,
           "daysToOOS": 1732,
-          "estOOSDate": "2031-05-17",
-          "planTotalUnits": 3858,
-          "pctToGoalUnits": 57.3,
-          "unitsToGoal": 1649,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": 247.4
+          "estOOSDate": "2031-05-17"
         },
         {
           "sku": "TVG5970",
@@ -768,12 +720,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 7901,
           "runRateUnitsPerDay": 5.0,
           "daysToOOS": 1580,
-          "estOOSDate": "2030-12-16",
-          "planTotalUnits": 7964,
-          "pctToGoalUnits": 20.0,
-          "unitsToGoal": 6370,
-          "planEndDate": "2026-08-28",
-          "weeksOfStock": 225.7
+          "estOOSDate": "2030-12-16"
         }
       ],
       "dailySales": [
@@ -2398,608 +2345,6 @@ window.DASHBOARD_DATA = {
           "pairs": 34
         }
       ],
-      "crossSellBySku": [
-        {
-          "primarySku": "TVG5880",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 35
-        },
-        {
-          "primarySku": "TVG5880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 32
-        },
-        {
-          "primarySku": "TVG5880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6630",
-          "pairs": 26
-        },
-        {
-          "primarySku": "TVG5880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 19
-        },
-        {
-          "primarySku": "TVG5880",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 17
-        },
-        {
-          "primarySku": "TVG5880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
-          "pairs": 14
-        },
-        {
-          "primarySku": "TVG5880",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 14
-        },
-        {
-          "primarySku": "TVG5880",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG581",
-          "pairs": 10
-        },
-        {
-          "primarySku": "TVG5880",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
-          "pairs": 10
-        },
-        {
-          "primarySku": "TVG5880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG364",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 24
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 16
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 14
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
-          "pairs": 10
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6630",
-          "pairs": 10
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6610",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG5890",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG565",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG532",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG448",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG452",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG366",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG630",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG576",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG565",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
-          "sku": "TVG235",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG364",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 21
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 10
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 10
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG513",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG630",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6630",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG425",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG356",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG580",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG578",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG513",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG576",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG581",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
-          "sku": "TVG601",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG511",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG579",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG461",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG515",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 38
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 37
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 27
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 24
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG565",
-          "pairs": 16
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6610",
-          "pairs": 15
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG581",
-          "pairs": 14
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 10
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG5950",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 23
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 16
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Bright Balance\u2122 Hydrating Gel Cleanser",
-          "sku": "TBB001",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Defying Gravity\u2122 Deep Hydration Moisturizer",
-          "sku": "TBB005",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5960",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6640",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG4770",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG178",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG479",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6610",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG576",
-          "pairs": 2
-        }
-      ],
       "categoryCustomers": {
         "category": "Lip",
         "total": 53029,
@@ -3405,9 +2750,6 @@ window.DASHBOARD_DATA = {
           "cumPlanUnits": 18417
         }
       ],
-      "planTotalUnits": 27773,
-      "planEndDate": "2026-10-05",
-      "archived": false,
       "byVariant": [
         {
           "sku": "TVG6690",
@@ -3428,12 +2770,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 20697,
           "runRateUnitsPerDay": 23.57,
           "daysToOOS": 878,
-          "estOOSDate": "2029-01-13",
-          "planTotalUnits": 9861,
-          "pctToGoalUnits": 35.4,
-          "unitsToGoal": 6372,
-          "planEndDate": "2026-10-05",
-          "weeksOfStock": 125.4
+          "estOOSDate": "2029-01-13"
         },
         {
           "sku": "TVG6680",
@@ -3454,12 +2791,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 7844,
           "runRateUnitsPerDay": 13.86,
           "daysToOOS": 565,
-          "estOOSDate": "2028-03-06",
-          "planTotalUnits": 4535,
-          "pctToGoalUnits": 43.7,
-          "unitsToGoal": 2552,
-          "planEndDate": "2026-10-05",
-          "weeksOfStock": 80.8
+          "estOOSDate": "2028-03-06"
         },
         {
           "sku": "TVG6710",
@@ -3480,12 +2812,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 17710,
           "runRateUnitsPerDay": 15.14,
           "daysToOOS": 1169,
-          "estOOSDate": "2029-10-31",
-          "planTotalUnits": 13377,
-          "pctToGoalUnits": 12.0,
-          "unitsToGoal": 11766,
-          "planEndDate": "2026-10-05",
-          "weeksOfStock": 167.1
+          "estOOSDate": "2029-10-31"
         }
       ],
       "dailySales": [
@@ -4526,188 +3853,6 @@ window.DASHBOARD_DATA = {
           "pairs": 5
         }
       ],
-      "crossSellBySku": [
-        {
-          "primarySku": "TVG6680",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6640",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG178",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG288",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG648",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG581",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG630",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "Filtered Effects\u2122 Blurring Primer",
-          "sku": "TVG348",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG360",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
-          "sku": "TBB004",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG178",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG4770",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG648",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6640",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG427",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Filtered Effects\u2122 Blurring Primer",
-          "sku": "TVG348",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Empowershine\u2122 Satin Lip Cream",
-          "sku": "TVG5960",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6640",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG6390",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG648",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
-          "sku": "TVG219",
-          "pairs": 1
-        }
-      ],
       "categoryCustomers": {
         "category": "Brow",
         "total": 5872,
@@ -4895,9 +4040,6 @@ window.DASHBOARD_DATA = {
           "cumPlanUnits": 8647
         }
       ],
-      "planTotalUnits": 17784,
-      "planEndDate": "2026-11-18",
-      "archived": false,
       "byVariant": [
         {
           "sku": "TVG6720",
@@ -4918,12 +4060,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 2960,
           "runRateUnitsPerDay": 213.14,
           "daysToOOS": 13,
-          "estOOSDate": "2026-09-01",
-          "planTotalUnits": 9700,
-          "pctToGoalUnits": 81.6,
-          "unitsToGoal": 1783,
-          "planEndDate": "2026-11-18",
-          "weeksOfStock": 2.0
+          "estOOSDate": "2026-09-01"
         },
         {
           "sku": "TVG6700",
@@ -4944,12 +4081,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 1851,
           "runRateUnitsPerDay": 164.86,
           "daysToOOS": 11,
-          "estOOSDate": "2026-08-30",
-          "planTotalUnits": 8084,
-          "pctToGoalUnits": 90.9,
-          "unitsToGoal": 733,
-          "planEndDate": "2026-11-18",
-          "weeksOfStock": 1.6
+          "estOOSDate": "2026-08-30"
         }
       ],
       "dailySales": [
@@ -5407,128 +4539,6 @@ window.DASHBOARD_DATA = {
           "pairs": 6
         }
       ],
-      "crossSellBySku": [
-        {
-          "primarySku": "TVG6700",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 11
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
-          "sku": "TVG558",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6750",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
-          "sku": "TVG280",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG581",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6780",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 15
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
-          "sku": "TVG558",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG353",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Buildable Blur\u2122 HD Creaseless Concealer",
-          "sku": "TVG112",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG364",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
-          "pairs": 4
-        }
-      ],
       "categoryCustomers": {
         "category": "Eyeshadow",
         "total": 13666,
@@ -5850,9 +4860,6 @@ window.DASHBOARD_DATA = {
           "cumPlanUnits": 20430
         }
       ],
-      "planTotalUnits": 29011,
-      "planEndDate": "2026-10-14",
-      "archived": false,
       "byVariant": [
         {
           "sku": "TVG4770",
@@ -5873,12 +4880,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 32254,
           "runRateUnitsPerDay": 50.14,
           "daysToOOS": 643,
-          "estOOSDate": "2028-05-23",
-          "planTotalUnits": 16164,
-          "pctToGoalUnits": 58.6,
-          "unitsToGoal": 6691,
-          "planEndDate": "2026-10-14",
-          "weeksOfStock": 91.9
+          "estOOSDate": "2028-05-23"
         },
         {
           "sku": "TVG6640",
@@ -5899,12 +4901,7 @@ window.DASHBOARD_DATA = {
           "inventoryUnits": 14178,
           "runRateUnitsPerDay": 47.71,
           "daysToOOS": 297,
-          "estOOSDate": "2027-06-12",
-          "planTotalUnits": 12847,
-          "pctToGoalUnits": 70.7,
-          "unitsToGoal": 3760,
-          "planEndDate": "2026-10-14",
-          "weeksOfStock": 42.5
+          "estOOSDate": "2027-06-12"
         }
       ],
       "dailySales": [
@@ -6817,128 +5814,6 @@ window.DASHBOARD_DATA = {
           "pairs": 5
         }
       ],
-      "crossSellBySku": [
-        {
-          "primarySku": "TVG4770",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 10
-        },
-        {
-          "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG630",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG508",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG4770",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG507",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 11
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG508",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6630",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Empowershine\u2122 Satin Lip Cream",
-          "sku": "TVG5970",
-          "pairs": 3
-        }
-      ],
       "categoryCustomers": {
         "category": "Eyeshadow",
         "total": 14987,
@@ -6961,2399 +5836,336 @@ window.DASHBOARD_DATA = {
       }
     },
     {
-      "launchId": "llem-shade-extension",
-      "name": "Liquid Lash\u2122 Extensions Mascara \u2014 Shade Extension",
-      "launchDate": "2026-04-07",
+      "launchId": "lasting-mark-lip-stain",
+      "name": "Lasting Mark\u2122 Lip-Defining Stain",
+      "launchDate": "2026-08-18",
       "internalDate": null,
       "status": "LIVE",
-      "category": "Mascara",
-      "subtitle": "3 Shades \u00b7 Liquid Lash\u2122",
-      "accent": "#6B4C8A",
+      "category": "Lip",
+      "subtitle": "5 Shades \u00b7 Lip Stain",
+      "accent": "#C0304A",
       "summary": {
-        "netSales": 2001321.72,
-        "units": 86263,
-        "orders": 72335,
-        "aov": 27.67,
-        "newCustomers": 19985,
-        "retCustomers": 48641,
-        "totalCustomers": 68626,
-        "newPct": 29.1,
-        "retPct": 70.9,
-        "planUnits": 47610,
-        "pctToPlanUnits": 181.2,
+        "netSales": 111344.38,
+        "units": 4764,
+        "orders": 3607,
+        "aov": 30.87,
+        "newCustomers": 284,
+        "retCustomers": 3307,
+        "totalCustomers": 3591,
+        "newPct": 7.9,
+        "retPct": 92.1,
+        "planUnits": 1457,
+        "pctToPlanUnits": 327.0,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 546619.72,
-        "retCustomerRevenue": 1454702.0,
-        "pdpViews": 0,
-        "pdpAtcRate": 0,
-        "pdpCvr": 0
+        "newCustomerRevenue": 7965.65,
+        "retCustomerRevenue": 103378.73,
+        "pdpViews": 137580,
+        "pdpAtcRate": 8.9,
+        "pdpCvr": 3.2
       },
       "regions": {
         "us": {
-          "units": 82796,
-          "netSales": 1941151.76,
-          "orders": 69583
+          "units": 4523,
+          "netSales": 107437.48,
+          "orders": 3437
         },
         "ca": {
-          "units": 3467,
-          "netSales": 60169.96,
-          "orders": 2752
+          "units": 241,
+          "netSales": 3906.9,
+          "orders": 170
         }
       },
       "planCurve": [
         {
-          "date": "2026-04-07",
-          "cumPlanUnits": 30
+          "date": "2026-08-18",
+          "cumPlanUnits": 856
         },
         {
-          "date": "2026-04-08",
-          "cumPlanUnits": 1070
-        },
-        {
-          "date": "2026-04-09",
-          "cumPlanUnits": 1977
-        },
-        {
-          "date": "2026-04-10",
-          "cumPlanUnits": 3166
-        },
-        {
-          "date": "2026-04-11",
-          "cumPlanUnits": 4990
-        },
-        {
-          "date": "2026-04-12",
-          "cumPlanUnits": 6717
-        },
-        {
-          "date": "2026-04-13",
-          "cumPlanUnits": 7667
-        },
-        {
-          "date": "2026-04-14",
-          "cumPlanUnits": 8462
-        },
-        {
-          "date": "2026-04-15",
-          "cumPlanUnits": 9256
-        },
-        {
-          "date": "2026-04-16",
-          "cumPlanUnits": 9954
-        },
-        {
-          "date": "2026-04-17",
-          "cumPlanUnits": 10883
-        },
-        {
-          "date": "2026-04-18",
-          "cumPlanUnits": 11991
-        },
-        {
-          "date": "2026-04-19",
-          "cumPlanUnits": 13044
-        },
-        {
-          "date": "2026-04-20",
-          "cumPlanUnits": 13783
-        },
-        {
-          "date": "2026-04-21",
-          "cumPlanUnits": 14403
-        },
-        {
-          "date": "2026-04-22",
-          "cumPlanUnits": 15025
-        },
-        {
-          "date": "2026-04-23",
-          "cumPlanUnits": 15575
-        },
-        {
-          "date": "2026-04-24",
-          "cumPlanUnits": 16316
-        },
-        {
-          "date": "2026-04-25",
-          "cumPlanUnits": 17474
-        },
-        {
-          "date": "2026-04-26",
-          "cumPlanUnits": 18579
-        },
-        {
-          "date": "2026-04-27",
-          "cumPlanUnits": 19168
-        },
-        {
-          "date": "2026-04-28",
-          "cumPlanUnits": 19663
-        },
-        {
-          "date": "2026-04-29",
-          "cumPlanUnits": 20162
-        },
-        {
-          "date": "2026-04-30",
-          "cumPlanUnits": 20606
-        },
-        {
-          "date": "2026-05-01",
-          "cumPlanUnits": 21209
-        },
-        {
-          "date": "2026-05-02",
-          "cumPlanUnits": 21939
-        },
-        {
-          "date": "2026-05-03",
-          "cumPlanUnits": 22636
-        },
-        {
-          "date": "2026-05-04",
-          "cumPlanUnits": 23116
-        },
-        {
-          "date": "2026-05-05",
-          "cumPlanUnits": 23523
-        },
-        {
-          "date": "2026-05-06",
-          "cumPlanUnits": 23933
-        },
-        {
-          "date": "2026-05-07",
-          "cumPlanUnits": 24299
-        },
-        {
-          "date": "2026-05-08",
-          "cumPlanUnits": 24798
-        },
-        {
-          "date": "2026-05-09",
-          "cumPlanUnits": 25587
-        },
-        {
-          "date": "2026-05-10",
-          "cumPlanUnits": 26343
-        },
-        {
-          "date": "2026-05-11",
-          "cumPlanUnits": 26745
-        },
-        {
-          "date": "2026-05-12",
-          "cumPlanUnits": 27086
-        },
-        {
-          "date": "2026-05-13",
-          "cumPlanUnits": 27431
-        },
-        {
-          "date": "2026-05-14",
-          "cumPlanUnits": 27740
-        },
-        {
-          "date": "2026-05-15",
-          "cumPlanUnits": 28162
-        },
-        {
-          "date": "2026-05-16",
-          "cumPlanUnits": 28675
-        },
-        {
-          "date": "2026-05-17",
-          "cumPlanUnits": 29167
-        },
-        {
-          "date": "2026-05-18",
-          "cumPlanUnits": 29510
-        },
-        {
-          "date": "2026-05-19",
-          "cumPlanUnits": 29802
-        },
-        {
-          "date": "2026-05-20",
-          "cumPlanUnits": 30098
-        },
-        {
-          "date": "2026-05-21",
-          "cumPlanUnits": 30364
-        },
-        {
-          "date": "2026-05-22",
-          "cumPlanUnits": 30726
-        },
-        {
-          "date": "2026-05-23",
-          "cumPlanUnits": 31167
-        },
-        {
-          "date": "2026-05-24",
-          "cumPlanUnits": 31590
-        },
-        {
-          "date": "2026-05-25",
-          "cumPlanUnits": 31889
-        },
-        {
-          "date": "2026-05-26",
-          "cumPlanUnits": 32143
-        },
-        {
-          "date": "2026-05-27",
-          "cumPlanUnits": 32402
-        },
-        {
-          "date": "2026-05-28",
-          "cumPlanUnits": 32635
-        },
-        {
-          "date": "2026-05-29",
-          "cumPlanUnits": 32952
-        },
-        {
-          "date": "2026-05-30",
-          "cumPlanUnits": 33336
-        },
-        {
-          "date": "2026-05-31",
-          "cumPlanUnits": 33705
-        },
-        {
-          "date": "2026-06-01",
-          "cumPlanUnits": 33970
-        },
-        {
-          "date": "2026-06-02",
-          "cumPlanUnits": 34197
-        },
-        {
-          "date": "2026-06-03",
-          "cumPlanUnits": 34428
-        },
-        {
-          "date": "2026-06-04",
-          "cumPlanUnits": 34636
-        },
-        {
-          "date": "2026-06-05",
-          "cumPlanUnits": 34917
-        },
-        {
-          "date": "2026-06-06",
-          "cumPlanUnits": 35359
-        },
-        {
-          "date": "2026-06-07",
-          "cumPlanUnits": 35784
-        },
-        {
-          "date": "2026-06-08",
-          "cumPlanUnits": 36023
-        },
-        {
-          "date": "2026-06-09",
-          "cumPlanUnits": 36228
-        },
-        {
-          "date": "2026-06-10",
-          "cumPlanUnits": 36438
-        },
-        {
-          "date": "2026-06-11",
-          "cumPlanUnits": 36626
-        },
-        {
-          "date": "2026-06-12",
-          "cumPlanUnits": 36879
-        },
-        {
-          "date": "2026-06-13",
-          "cumPlanUnits": 37184
-        },
-        {
-          "date": "2026-06-14",
-          "cumPlanUnits": 37478
-        },
-        {
-          "date": "2026-06-15",
-          "cumPlanUnits": 37696
-        },
-        {
-          "date": "2026-06-16",
-          "cumPlanUnits": 37884
-        },
-        {
-          "date": "2026-06-17",
-          "cumPlanUnits": 38077
-        },
-        {
-          "date": "2026-06-18",
-          "cumPlanUnits": 38249
-        },
-        {
-          "date": "2026-06-19",
-          "cumPlanUnits": 38479
-        },
-        {
-          "date": "2026-06-20",
-          "cumPlanUnits": 38839
-        },
-        {
-          "date": "2026-06-21",
-          "cumPlanUnits": 39185
-        },
-        {
-          "date": "2026-06-22",
-          "cumPlanUnits": 39387
-        },
-        {
-          "date": "2026-06-23",
-          "cumPlanUnits": 39562
-        },
-        {
-          "date": "2026-06-24",
-          "cumPlanUnits": 39741
-        },
-        {
-          "date": "2026-06-25",
-          "cumPlanUnits": 39901
-        },
-        {
-          "date": "2026-06-26",
-          "cumPlanUnits": 40114
-        },
-        {
-          "date": "2026-06-27",
-          "cumPlanUnits": 40368
-        },
-        {
-          "date": "2026-06-28",
-          "cumPlanUnits": 40613
-        },
-        {
-          "date": "2026-06-29",
-          "cumPlanUnits": 40803
-        },
-        {
-          "date": "2026-06-30",
-          "cumPlanUnits": 40967
-        },
-        {
-          "date": "2026-07-01",
-          "cumPlanUnits": 41137
-        },
-        {
-          "date": "2026-07-02",
-          "cumPlanUnits": 41287
-        },
-        {
-          "date": "2026-07-03",
-          "cumPlanUnits": 41545
-        },
-        {
-          "date": "2026-07-04",
-          "cumPlanUnits": 41853
-        },
-        {
-          "date": "2026-07-05",
-          "cumPlanUnits": 42149
-        },
-        {
-          "date": "2026-07-06",
-          "cumPlanUnits": 42330
-        },
-        {
-          "date": "2026-07-07",
-          "cumPlanUnits": 42486
-        },
-        {
-          "date": "2026-07-08",
-          "cumPlanUnits": 42646
-        },
-        {
-          "date": "2026-07-09",
-          "cumPlanUnits": 42788
-        },
-        {
-          "date": "2026-07-10",
-          "cumPlanUnits": 42976
-        },
-        {
-          "date": "2026-07-11",
-          "cumPlanUnits": 43198
-        },
-        {
-          "date": "2026-07-12",
-          "cumPlanUnits": 43413
-        },
-        {
-          "date": "2026-07-13",
-          "cumPlanUnits": 43585
-        },
-        {
-          "date": "2026-07-14",
-          "cumPlanUnits": 43734
-        },
-        {
-          "date": "2026-07-15",
-          "cumPlanUnits": 43888
-        },
-        {
-          "date": "2026-07-16",
-          "cumPlanUnits": 44025
-        },
-        {
-          "date": "2026-07-17",
-          "cumPlanUnits": 44204
-        },
-        {
-          "date": "2026-07-18",
-          "cumPlanUnits": 44478
-        },
-        {
-          "date": "2026-07-19",
-          "cumPlanUnits": 44742
-        },
-        {
-          "date": "2026-07-20",
-          "cumPlanUnits": 44908
-        },
-        {
-          "date": "2026-07-21",
-          "cumPlanUnits": 45052
-        },
-        {
-          "date": "2026-07-22",
-          "cumPlanUnits": 45244
-        },
-        {
-          "date": "2026-07-23",
-          "cumPlanUnits": 45376
-        },
-        {
-          "date": "2026-07-24",
-          "cumPlanUnits": 45548
-        },
-        {
-          "date": "2026-07-25",
-          "cumPlanUnits": 45749
-        },
-        {
-          "date": "2026-07-26",
-          "cumPlanUnits": 45944
-        },
-        {
-          "date": "2026-07-27",
-          "cumPlanUnits": 46105
-        },
-        {
-          "date": "2026-07-28",
-          "cumPlanUnits": 46245
-        },
-        {
-          "date": "2026-07-29",
-          "cumPlanUnits": 46389
-        },
-        {
-          "date": "2026-07-30",
-          "cumPlanUnits": 46517
-        },
-        {
-          "date": "2026-07-31",
-          "cumPlanUnits": 46682
-        },
-        {
-          "date": "2026-08-01",
-          "cumPlanUnits": 46934
-        },
-        {
-          "date": "2026-08-02",
-          "cumPlanUnits": 47177
-        },
-        {
-          "date": "2026-08-03",
-          "cumPlanUnits": 47334
-        },
-        {
-          "date": "2026-08-04",
-          "cumPlanUnits": 47470
-        },
-        {
-          "date": "2026-08-05",
-          "cumPlanUnits": 47610
+          "date": "2026-08-19",
+          "cumPlanUnits": 1457
         }
       ],
-      "planTotalUnits": 47610,
-      "planEndDate": "2026-08-05",
-      "archived": true,
       "byVariant": [
         {
-          "sku": "TVG6380",
-          "name": "Iris",
-          "shade": "Deep Purple",
-          "color": "#4A1E6B",
-          "netSales": 836292.94,
-          "units": 35831,
-          "orders": 34321,
-          "newCustomers": 10702,
-          "retCustomers": 22999,
-          "usUnits": 34554,
-          "caUnits": 1277,
-          "usNetSales": 814349.56,
-          "caNetSales": 21943.38,
-          "planUnits": 18056,
-          "pctToPlanUnits": 198.4,
-          "inventoryUnits": null,
-          "runRateUnitsPerDay": 0.0,
-          "daysToOOS": null,
-          "estOOSDate": null,
-          "planTotalUnits": 18056,
-          "pctToGoalUnits": 198.4,
-          "unitsToGoal": 0,
-          "planEndDate": "2026-08-05",
-          "weeksOfStock": null
+          "sku": "TVG7250",
+          "name": "Daniella",
+          "shade": "Toasted Rose",
+          "color": "#C4736F",
+          "netSales": 45971.43,
+          "units": 1957,
+          "orders": 1916,
+          "newCustomers": 157,
+          "retCustomers": 1756,
+          "usUnits": 1863,
+          "caUnits": 94,
+          "usNetSales": 44439.78,
+          "caNetSales": 1531.65,
+          "planUnits": 274,
+          "pctToPlanUnits": 714.2,
+          "inventoryUnits": 8472,
+          "runRateUnitsPerDay": 978.5,
+          "daysToOOS": 8,
+          "estOOSDate": "2026-08-27"
         },
         {
-          "sku": "TVG6370",
-          "name": "Oceanne",
-          "shade": "Deep Navy",
-          "color": "#1C3A5C",
-          "netSales": 612228.8,
-          "units": 26520,
-          "orders": 25698,
-          "newCustomers": 6151,
-          "retCustomers": 18579,
-          "usUnits": 25534,
-          "caUnits": 986,
-          "usNetSales": 595039.4,
-          "caNetSales": 17189.4,
-          "planUnits": 16419,
-          "pctToPlanUnits": 161.5,
-          "inventoryUnits": null,
-          "runRateUnitsPerDay": 0.0,
-          "daysToOOS": null,
-          "estOOSDate": null,
-          "planTotalUnits": 16419,
-          "pctToGoalUnits": 161.5,
-          "unitsToGoal": 0,
-          "planEndDate": "2026-08-05",
-          "weeksOfStock": null
+          "sku": "TVG7240",
+          "name": "Liliana",
+          "shade": "Deep Berry",
+          "color": "#7A1840",
+          "netSales": 26769.36,
+          "units": 1139,
+          "orders": 1110,
+          "newCustomers": 75,
+          "retCustomers": 1033,
+          "usUnits": 1073,
+          "caUnits": 66,
+          "usNetSales": 25713.62,
+          "caNetSales": 1055.74,
+          "planUnits": 456,
+          "pctToPlanUnits": 249.8,
+          "inventoryUnits": 15710,
+          "runRateUnitsPerDay": 569.5,
+          "daysToOOS": 27,
+          "estOOSDate": "2026-09-15"
         },
         {
-          "sku": "TVG6390",
-          "name": "Ivy",
-          "shade": "Deep Green",
-          "color": "#1B4D3E",
-          "netSales": 552799.97,
-          "units": 23912,
-          "orders": 23259,
-          "newCustomers": 6318,
-          "retCustomers": 16441,
-          "usUnits": 22708,
-          "caUnits": 1204,
-          "usNetSales": 531762.8,
-          "caNetSales": 21037.17,
-          "planUnits": 13135,
-          "pctToPlanUnits": 182.0,
-          "inventoryUnits": null,
-          "runRateUnitsPerDay": 0.0,
-          "daysToOOS": null,
-          "estOOSDate": null,
-          "planTotalUnits": 13135,
-          "pctToGoalUnits": 182.0,
-          "unitsToGoal": 0,
-          "planEndDate": "2026-08-05",
-          "weeksOfStock": null
+          "sku": "TVG7230",
+          "name": "Li",
+          "shade": "Baby Pink",
+          "color": "#F2A6B8",
+          "netSales": 14559.09,
+          "units": 626,
+          "orders": 612,
+          "newCustomers": 42,
+          "retCustomers": 569,
+          "usUnits": 593,
+          "caUnits": 33,
+          "usNetSales": 14017.75,
+          "caNetSales": 541.34,
+          "planUnits": 456,
+          "pctToPlanUnits": 137.3,
+          "inventoryUnits": 4285,
+          "runRateUnitsPerDay": 313.0,
+          "daysToOOS": 13,
+          "estOOSDate": "2026-09-01"
+        },
+        {
+          "sku": "TVG7260",
+          "name": "Leslie",
+          "shade": "Soft Red",
+          "color": "#C0304A",
+          "netSales": 13892.8,
+          "units": 597,
+          "orders": 592,
+          "newCustomers": 37,
+          "retCustomers": 555,
+          "usUnits": 567,
+          "caUnits": 30,
+          "usNetSales": 13404.89,
+          "caNetSales": 487.91,
+          "planUnits": 89,
+          "pctToPlanUnits": 670.8,
+          "inventoryUnits": 4616,
+          "runRateUnitsPerDay": 298.5,
+          "daysToOOS": 15,
+          "estOOSDate": "2026-09-03"
+        },
+        {
+          "sku": "TVG7220",
+          "name": "Brandy",
+          "shade": "Spice Brown",
+          "color": "#8B5A3C",
+          "netSales": 10151.7,
+          "units": 445,
+          "orders": 437,
+          "newCustomers": 29,
+          "retCustomers": 404,
+          "usUnits": 427,
+          "caUnits": 18,
+          "usNetSales": 9861.44,
+          "caNetSales": 290.26,
+          "planUnits": 182,
+          "pctToPlanUnits": 244.5,
+          "inventoryUnits": 6336,
+          "runRateUnitsPerDay": 222.5,
+          "daysToOOS": 28,
+          "estOOSDate": "2026-09-16"
         }
       ],
       "dailySales": [
         {
-          "date": "2026-04-07",
-          "units": 155,
-          "netSales": 3642.26,
-          "usUnits": 151,
-          "caUnits": 4,
-          "usNetSales": 3577.41,
-          "caNetSales": 64.85,
-          "cumUnits": 155,
-          "cumSales": 3642.26,
-          "planUnits": 30,
-          "cumPlanUnits": 30
-        },
-        {
-          "date": "2026-04-08",
-          "units": 3432,
-          "netSales": 80229.1,
-          "usUnits": 3244,
-          "caUnits": 188,
-          "usNetSales": 76995.96,
-          "caNetSales": 3233.14,
-          "cumUnits": 3587,
-          "cumSales": 83871.36,
-          "planUnits": 1040,
-          "cumPlanUnits": 1070
-        },
-        {
-          "date": "2026-04-09",
-          "units": 4032,
-          "netSales": 96114.6,
-          "usUnits": 3854,
-          "caUnits": 178,
-          "usNetSales": 93035.34,
-          "caNetSales": 3079.26,
-          "cumUnits": 7619,
-          "cumSales": 179985.96,
-          "planUnits": 907,
-          "cumPlanUnits": 1977
-        },
-        {
-          "date": "2026-04-10",
-          "units": 2406,
-          "netSales": 56218.07,
-          "usUnits": 2273,
-          "caUnits": 133,
-          "usNetSales": 53866.97,
-          "caNetSales": 2351.1,
-          "cumUnits": 10025,
-          "cumSales": 236204.03,
-          "planUnits": 1189,
-          "cumPlanUnits": 3166
-        },
-        {
-          "date": "2026-04-11",
-          "units": 3174,
-          "netSales": 73448.6,
-          "usUnits": 2979,
-          "caUnits": 195,
-          "usNetSales": 70060.87,
-          "caNetSales": 3387.73,
-          "cumUnits": 13199,
-          "cumSales": 309652.63,
-          "planUnits": 1824,
-          "cumPlanUnits": 4990
-        },
-        {
-          "date": "2026-04-12",
-          "units": 3788,
-          "netSales": 87593.79,
-          "usUnits": 3565,
-          "caUnits": 223,
-          "usNetSales": 83788.23,
-          "caNetSales": 3805.56,
-          "cumUnits": 16987,
-          "cumSales": 397246.42,
-          "planUnits": 1727,
-          "cumPlanUnits": 6717
-        },
-        {
-          "date": "2026-04-13",
-          "units": 1863,
-          "netSales": 43248.48,
-          "usUnits": 1762,
-          "caUnits": 101,
-          "usNetSales": 41500.97,
-          "caNetSales": 1747.51,
-          "cumUnits": 18850,
-          "cumSales": 440494.9,
-          "planUnits": 950,
-          "cumPlanUnits": 7667
-        },
-        {
-          "date": "2026-04-14",
-          "units": 1582,
-          "netSales": 36634.56,
-          "usUnits": 1497,
-          "caUnits": 85,
-          "usNetSales": 35161.94,
-          "caNetSales": 1472.62,
-          "cumUnits": 20432,
-          "cumSales": 477129.46,
-          "planUnits": 795,
-          "cumPlanUnits": 8462
-        },
-        {
-          "date": "2026-04-15",
-          "units": 2119,
-          "netSales": 49546.41,
-          "usUnits": 2007,
-          "caUnits": 112,
-          "usNetSales": 47613.19,
-          "caNetSales": 1933.22,
-          "cumUnits": 22551,
-          "cumSales": 526675.87,
-          "planUnits": 794,
-          "cumPlanUnits": 9256
-        },
-        {
-          "date": "2026-04-16",
-          "units": 2342,
-          "netSales": 54743.5,
-          "usUnits": 2230,
-          "caUnits": 112,
-          "usNetSales": 52783.54,
-          "caNetSales": 1959.96,
-          "cumUnits": 24893,
-          "cumSales": 581419.37,
-          "planUnits": 698,
-          "cumPlanUnits": 9954
-        },
-        {
-          "date": "2026-04-17",
-          "units": 2022,
-          "netSales": 47676.09,
-          "usUnits": 1919,
-          "caUnits": 103,
-          "usNetSales": 45825.13,
-          "caNetSales": 1850.96,
-          "cumUnits": 26915,
-          "cumSales": 629095.46,
-          "planUnits": 929,
-          "cumPlanUnits": 10883
-        },
-        {
-          "date": "2026-04-18",
-          "units": 1848,
-          "netSales": 43429.92,
-          "usUnits": 1742,
-          "caUnits": 106,
-          "usNetSales": 41578.79,
-          "caNetSales": 1851.13,
-          "cumUnits": 28763,
-          "cumSales": 672525.38,
-          "planUnits": 1108,
-          "cumPlanUnits": 11991
-        },
-        {
-          "date": "2026-04-19",
-          "units": 2081,
-          "netSales": 48957.49,
-          "usUnits": 1981,
-          "caUnits": 100,
-          "usNetSales": 47177.49,
-          "caNetSales": 1780.0,
-          "cumUnits": 30844,
-          "cumSales": 721482.87,
-          "planUnits": 1053,
-          "cumPlanUnits": 13044
-        },
-        {
-          "date": "2026-04-20",
-          "units": 1775,
-          "netSales": 41352.84,
-          "usUnits": 1670,
-          "caUnits": 105,
-          "usNetSales": 39494.55,
-          "caNetSales": 1858.29,
-          "cumUnits": 32619,
-          "cumSales": 762835.71,
-          "planUnits": 739,
-          "cumPlanUnits": 13783
-        },
-        {
-          "date": "2026-04-21",
-          "units": 1632,
-          "netSales": 38262.93,
-          "usUnits": 1557,
-          "caUnits": 75,
-          "usNetSales": 36910.96,
-          "caNetSales": 1351.97,
-          "cumUnits": 34251,
-          "cumSales": 801098.64,
-          "planUnits": 620,
-          "cumPlanUnits": 14403
-        },
-        {
-          "date": "2026-04-22",
-          "units": 1748,
-          "netSales": 41098.6,
-          "usUnits": 1687,
-          "caUnits": 61,
-          "usNetSales": 40059.86,
-          "caNetSales": 1038.74,
-          "cumUnits": 35999,
-          "cumSales": 842197.24,
-          "planUnits": 622,
-          "cumPlanUnits": 15025
-        },
-        {
-          "date": "2026-04-23",
-          "units": 1576,
-          "netSales": 36652.79,
-          "usUnits": 1521,
-          "caUnits": 55,
-          "usNetSales": 35657.22,
-          "caNetSales": 995.57,
-          "cumUnits": 37575,
-          "cumSales": 878850.03,
-          "planUnits": 550,
-          "cumPlanUnits": 15575
-        },
-        {
-          "date": "2026-04-24",
-          "units": 1322,
-          "netSales": 30647.65,
-          "usUnits": 1290,
-          "caUnits": 32,
-          "usNetSales": 30080.72,
-          "caNetSales": 566.93,
-          "cumUnits": 38897,
-          "cumSales": 909497.68,
-          "planUnits": 741,
-          "cumPlanUnits": 16316
-        },
-        {
-          "date": "2026-04-25",
-          "units": 2155,
-          "netSales": 49433.34,
-          "usUnits": 2090,
-          "caUnits": 65,
-          "usNetSales": 48300.38,
-          "caNetSales": 1132.96,
-          "cumUnits": 41052,
-          "cumSales": 958931.02,
-          "planUnits": 1158,
-          "cumPlanUnits": 17474
-        },
-        {
-          "date": "2026-04-26",
-          "units": 2575,
-          "netSales": 59091.03,
-          "usUnits": 2497,
-          "caUnits": 78,
-          "usNetSales": 57736.7,
-          "caNetSales": 1354.33,
-          "cumUnits": 43627,
-          "cumSales": 1018022.05,
-          "planUnits": 1105,
-          "cumPlanUnits": 18579
-        },
-        {
-          "date": "2026-04-27",
-          "units": 1326,
-          "netSales": 30785.32,
-          "usUnits": 1298,
-          "caUnits": 28,
-          "usNetSales": 30281.25,
-          "caNetSales": 504.07,
-          "cumUnits": 44953,
-          "cumSales": 1048807.37,
-          "planUnits": 589,
-          "cumPlanUnits": 19168
-        },
-        {
-          "date": "2026-04-28",
-          "units": 1113,
-          "netSales": 25888.56,
-          "usUnits": 1097,
-          "caUnits": 16,
-          "usNetSales": 25590.76,
-          "caNetSales": 297.8,
-          "cumUnits": 46066,
-          "cumSales": 1074695.93,
-          "planUnits": 495,
-          "cumPlanUnits": 19663
-        },
-        {
-          "date": "2026-04-29",
-          "units": 889,
-          "netSales": 20640.1,
-          "usUnits": 874,
-          "caUnits": 15,
-          "usNetSales": 20372.38,
-          "caNetSales": 267.72,
-          "cumUnits": 46955,
-          "cumSales": 1095336.03,
-          "planUnits": 499,
-          "cumPlanUnits": 20162
-        },
-        {
-          "date": "2026-04-30",
-          "units": 845,
-          "netSales": 19855.8,
-          "usUnits": 827,
-          "caUnits": 18,
-          "usNetSales": 19525.54,
-          "caNetSales": 330.26,
-          "cumUnits": 47800,
-          "cumSales": 1115191.83,
-          "planUnits": 444,
-          "cumPlanUnits": 20606
-        },
-        {
-          "date": "2026-05-01",
-          "units": 933,
-          "netSales": 21496.76,
-          "usUnits": 921,
-          "caUnits": 12,
-          "usNetSales": 21273.59,
-          "caNetSales": 223.17,
-          "cumUnits": 48733,
-          "cumSales": 1136688.59,
-          "planUnits": 603,
-          "cumPlanUnits": 21209
-        },
-        {
-          "date": "2026-05-02",
-          "units": 1062,
-          "netSales": 24892.51,
-          "usUnits": 1047,
-          "caUnits": 15,
-          "usNetSales": 24624.09,
-          "caNetSales": 268.42,
-          "cumUnits": 49795,
-          "cumSales": 1161581.1,
-          "planUnits": 730,
-          "cumPlanUnits": 21939
-        },
-        {
-          "date": "2026-05-03",
-          "units": 726,
-          "netSales": 16793.46,
-          "usUnits": 711,
-          "caUnits": 15,
-          "usNetSales": 16530.32,
-          "caNetSales": 263.14,
-          "cumUnits": 50521,
-          "cumSales": 1178374.56,
-          "planUnits": 697,
-          "cumPlanUnits": 22636
-        },
-        {
-          "date": "2026-05-04",
-          "units": 362,
-          "netSales": 8317.11,
-          "usUnits": 356,
-          "caUnits": 6,
-          "usNetSales": 8203.05,
-          "caNetSales": 114.06,
-          "cumUnits": 50883,
-          "cumSales": 1186691.67,
-          "planUnits": 480,
-          "cumPlanUnits": 23116
-        },
-        {
-          "date": "2026-05-05",
-          "units": 341,
-          "netSales": 7790.82,
-          "usUnits": 333,
-          "caUnits": 8,
-          "usNetSales": 7646.85,
-          "caNetSales": 143.97,
-          "cumUnits": 51224,
-          "cumSales": 1194482.49,
-          "planUnits": 407,
-          "cumPlanUnits": 23523
-        },
-        {
-          "date": "2026-05-06",
-          "units": 355,
-          "netSales": 7906.76,
-          "usUnits": 339,
-          "caUnits": 16,
-          "usNetSales": 7638.22,
-          "caNetSales": 268.54,
-          "cumUnits": 51579,
-          "cumSales": 1202389.25,
-          "planUnits": 410,
-          "cumPlanUnits": 23933
-        },
-        {
-          "date": "2026-05-07",
-          "units": 335,
-          "netSales": 7680.69,
-          "usUnits": 323,
-          "caUnits": 12,
-          "usNetSales": 7465.69,
-          "caNetSales": 215.0,
-          "cumUnits": 51914,
-          "cumSales": 1210069.94,
-          "planUnits": 366,
-          "cumPlanUnits": 24299
-        },
-        {
-          "date": "2026-05-08",
-          "units": 240,
-          "netSales": 5482.06,
-          "usUnits": 234,
-          "caUnits": 6,
-          "usNetSales": 5378.06,
-          "caNetSales": 104.0,
-          "cumUnits": 52154,
-          "cumSales": 1215552.0,
-          "planUnits": 499,
-          "cumPlanUnits": 24798
-        },
-        {
-          "date": "2026-05-09",
-          "units": 745,
-          "netSales": 16979.91,
-          "usUnits": 715,
-          "caUnits": 30,
-          "usNetSales": 16473.59,
-          "caNetSales": 506.32,
-          "cumUnits": 52899,
-          "cumSales": 1232531.91,
-          "planUnits": 789,
-          "cumPlanUnits": 25587
-        },
-        {
-          "date": "2026-05-10",
-          "units": 685,
-          "netSales": 15698.5,
-          "usUnits": 663,
-          "caUnits": 22,
-          "usNetSales": 15309.71,
-          "caNetSales": 388.79,
-          "cumUnits": 53584,
-          "cumSales": 1248230.41,
-          "planUnits": 756,
-          "cumPlanUnits": 26343
-        },
-        {
-          "date": "2026-05-11",
-          "units": 223,
-          "netSales": 5119.8,
-          "usUnits": 217,
-          "caUnits": 6,
-          "usNetSales": 5008.95,
-          "caNetSales": 110.85,
-          "cumUnits": 53807,
-          "cumSales": 1253350.21,
-          "planUnits": 402,
-          "cumPlanUnits": 26745
-        },
-        {
-          "date": "2026-05-12",
-          "units": 174,
-          "netSales": 3807.79,
-          "usUnits": 166,
-          "caUnits": 8,
-          "usNetSales": 3657.19,
-          "caNetSales": 150.6,
-          "cumUnits": 53981,
-          "cumSales": 1257158.0,
-          "planUnits": 341,
-          "cumPlanUnits": 27086
-        },
-        {
-          "date": "2026-05-13",
-          "units": 190,
-          "netSales": 4407.45,
-          "usUnits": 186,
-          "caUnits": 4,
-          "usNetSales": 4336.51,
-          "caNetSales": 70.94,
-          "cumUnits": 54171,
-          "cumSales": 1261565.45,
-          "planUnits": 345,
-          "cumPlanUnits": 27431
-        },
-        {
-          "date": "2026-05-14",
-          "units": 147,
-          "netSales": 3201.79,
-          "usUnits": 142,
-          "caUnits": 5,
-          "usNetSales": 3111.09,
-          "caNetSales": 90.7,
-          "cumUnits": 54318,
-          "cumSales": 1264767.24,
-          "planUnits": 309,
-          "cumPlanUnits": 27740
-        },
-        {
-          "date": "2026-05-15",
-          "units": 184,
-          "netSales": 4197.44,
-          "usUnits": 181,
-          "caUnits": 3,
-          "usNetSales": 4142.4,
-          "caNetSales": 55.04,
-          "cumUnits": 54502,
-          "cumSales": 1268964.68,
-          "planUnits": 422,
-          "cumPlanUnits": 28162
-        },
-        {
-          "date": "2026-05-16",
-          "units": 346,
-          "netSales": 8046.05,
-          "usUnits": 336,
-          "caUnits": 10,
-          "usNetSales": 7868.25,
-          "caNetSales": 177.8,
-          "cumUnits": 54848,
-          "cumSales": 1277010.73,
-          "planUnits": 513,
-          "cumPlanUnits": 28675
-        },
-        {
-          "date": "2026-05-17",
-          "units": 247,
-          "netSales": 5708.04,
-          "usUnits": 237,
-          "caUnits": 10,
-          "usNetSales": 5540.95,
-          "caNetSales": 167.09,
-          "cumUnits": 55095,
-          "cumSales": 1282718.77,
-          "planUnits": 492,
-          "cumPlanUnits": 29167
-        },
-        {
-          "date": "2026-05-18",
-          "units": 286,
-          "netSales": 6566.22,
-          "usUnits": 277,
-          "caUnits": 9,
-          "usNetSales": 6408.69,
-          "caNetSales": 157.53,
-          "cumUnits": 55381,
-          "cumSales": 1289284.99,
-          "planUnits": 343,
-          "cumPlanUnits": 29510
-        },
-        {
-          "date": "2026-05-19",
-          "units": 211,
-          "netSales": 4697.61,
-          "usUnits": 207,
-          "caUnits": 4,
-          "usNetSales": 4627.17,
-          "caNetSales": 70.44,
-          "cumUnits": 55592,
-          "cumSales": 1293982.6,
-          "planUnits": 292,
-          "cumPlanUnits": 29802
-        },
-        {
-          "date": "2026-05-20",
-          "units": 210,
-          "netSales": 4808.39,
-          "usUnits": 204,
-          "caUnits": 6,
-          "usNetSales": 4698.97,
-          "caNetSales": 109.42,
-          "cumUnits": 55802,
-          "cumSales": 1298790.99,
-          "planUnits": 296,
-          "cumPlanUnits": 30098
-        },
-        {
-          "date": "2026-05-21",
-          "units": 204,
-          "netSales": 4668.5,
-          "usUnits": 201,
-          "caUnits": 3,
-          "usNetSales": 4629.47,
-          "caNetSales": 39.03,
-          "cumUnits": 56006,
-          "cumSales": 1303459.49,
-          "planUnits": 266,
-          "cumPlanUnits": 30364
-        },
-        {
-          "date": "2026-05-22",
-          "units": 597,
-          "netSales": 13925.99,
-          "usUnits": 570,
-          "caUnits": 27,
-          "usNetSales": 13460.94,
-          "caNetSales": 465.05,
-          "cumUnits": 56603,
-          "cumSales": 1317385.48,
-          "planUnits": 362,
-          "cumPlanUnits": 30726
-        },
-        {
-          "date": "2026-05-23",
-          "units": 485,
-          "netSales": 11289.87,
-          "usUnits": 464,
-          "caUnits": 21,
-          "usNetSales": 10942.74,
-          "caNetSales": 347.13,
-          "cumUnits": 57088,
-          "cumSales": 1328675.35,
-          "planUnits": 441,
-          "cumPlanUnits": 31167
-        },
-        {
-          "date": "2026-05-24",
-          "units": 483,
-          "netSales": 11396.84,
-          "usUnits": 471,
-          "caUnits": 12,
-          "usNetSales": 11188.66,
-          "caNetSales": 208.18,
-          "cumUnits": 57571,
-          "cumSales": 1340072.19,
-          "planUnits": 423,
-          "cumPlanUnits": 31590
-        },
-        {
-          "date": "2026-05-25",
-          "units": 636,
-          "netSales": 15128.5,
-          "usUnits": 636,
-          "caUnits": 0,
-          "usNetSales": 15128.5,
-          "caNetSales": 0.0,
-          "cumUnits": 58207,
-          "cumSales": 1355200.69,
-          "planUnits": 299,
-          "cumPlanUnits": 31889
-        },
-        {
-          "date": "2026-05-26",
-          "units": 178,
-          "netSales": 4054.44,
-          "usUnits": 178,
-          "caUnits": 0,
-          "usNetSales": 4054.44,
-          "caNetSales": 0.0,
-          "cumUnits": 58385,
-          "cumSales": 1359255.13,
-          "planUnits": 254,
-          "cumPlanUnits": 32143
-        },
-        {
-          "date": "2026-05-27",
-          "units": 146,
-          "netSales": 3371.59,
-          "usUnits": 146,
-          "caUnits": 0,
-          "usNetSales": 3371.59,
-          "caNetSales": 0.0,
-          "cumUnits": 58531,
-          "cumSales": 1362626.72,
-          "planUnits": 259,
-          "cumPlanUnits": 32402
-        },
-        {
-          "date": "2026-05-28",
-          "units": 183,
-          "netSales": 4271.68,
-          "usUnits": 183,
-          "caUnits": 0,
-          "usNetSales": 4271.68,
-          "caNetSales": 0.0,
-          "cumUnits": 58714,
-          "cumSales": 1366898.4,
-          "planUnits": 233,
-          "cumPlanUnits": 32635
-        },
-        {
-          "date": "2026-05-29",
-          "units": 167,
-          "netSales": 3791.25,
-          "usUnits": 167,
-          "caUnits": 0,
-          "usNetSales": 3791.25,
-          "caNetSales": 0.0,
-          "cumUnits": 58881,
-          "cumSales": 1370689.65,
-          "planUnits": 317,
-          "cumPlanUnits": 32952
-        },
-        {
-          "date": "2026-05-30",
-          "units": 158,
-          "netSales": 3724.04,
-          "usUnits": 158,
-          "caUnits": 0,
-          "usNetSales": 3724.04,
-          "caNetSales": 0.0,
-          "cumUnits": 59039,
-          "cumSales": 1374413.69,
-          "planUnits": 384,
-          "cumPlanUnits": 33336
-        },
-        {
-          "date": "2026-05-31",
-          "units": 165,
-          "netSales": 3860.83,
-          "usUnits": 165,
-          "caUnits": 0,
-          "usNetSales": 3860.83,
-          "caNetSales": 0.0,
-          "cumUnits": 59204,
-          "cumSales": 1378274.52,
-          "planUnits": 369,
-          "cumPlanUnits": 33705
-        },
-        {
-          "date": "2026-06-01",
-          "units": 236,
-          "netSales": 5400.31,
-          "usUnits": 236,
-          "caUnits": 0,
-          "usNetSales": 5400.31,
-          "caNetSales": 0.0,
-          "cumUnits": 59440,
-          "cumSales": 1383674.83,
-          "planUnits": 265,
-          "cumPlanUnits": 33970
-        },
-        {
-          "date": "2026-06-02",
-          "units": 217,
-          "netSales": 4956.68,
-          "usUnits": 217,
-          "caUnits": 0,
-          "usNetSales": 4956.68,
-          "caNetSales": 0.0,
-          "cumUnits": 59657,
-          "cumSales": 1388631.51,
-          "planUnits": 227,
-          "cumPlanUnits": 34197
-        },
-        {
-          "date": "2026-06-03",
-          "units": 246,
-          "netSales": 5686.46,
-          "usUnits": 246,
-          "caUnits": 0,
-          "usNetSales": 5686.46,
-          "caNetSales": 0.0,
-          "cumUnits": 59903,
-          "cumSales": 1394317.97,
-          "planUnits": 231,
-          "cumPlanUnits": 34428
-        },
-        {
-          "date": "2026-06-04",
-          "units": 171,
-          "netSales": 3819.27,
-          "usUnits": 171,
-          "caUnits": 0,
-          "usNetSales": 3819.27,
-          "caNetSales": 0.0,
-          "cumUnits": 60074,
-          "cumSales": 1398137.24,
-          "planUnits": 208,
-          "cumPlanUnits": 34636
-        },
-        {
-          "date": "2026-06-05",
-          "units": 227,
-          "netSales": 5283.38,
-          "usUnits": 227,
-          "caUnits": 0,
-          "usNetSales": 5283.38,
-          "caNetSales": 0.0,
-          "cumUnits": 60301,
-          "cumSales": 1403420.62,
-          "planUnits": 281,
-          "cumPlanUnits": 34917
-        },
-        {
-          "date": "2026-06-06",
-          "units": 265,
-          "netSales": 6269.37,
-          "usUnits": 265,
-          "caUnits": 0,
-          "usNetSales": 6269.37,
-          "caNetSales": 0.0,
-          "cumUnits": 60566,
-          "cumSales": 1409689.99,
-          "planUnits": 442,
-          "cumPlanUnits": 35359
-        },
-        {
-          "date": "2026-06-07",
-          "units": 221,
-          "netSales": 5265.3,
-          "usUnits": 221,
-          "caUnits": 0,
-          "usNetSales": 5265.3,
-          "caNetSales": 0.0,
-          "cumUnits": 60787,
-          "cumSales": 1414955.29,
-          "planUnits": 425,
-          "cumPlanUnits": 35784
-        },
-        {
-          "date": "2026-06-08",
-          "units": 364,
-          "netSales": 8567.24,
-          "usUnits": 364,
-          "caUnits": 0,
-          "usNetSales": 8567.24,
-          "caNetSales": 0.0,
-          "cumUnits": 61151,
-          "cumSales": 1423522.53,
-          "planUnits": 239,
-          "cumPlanUnits": 36023
-        },
-        {
-          "date": "2026-06-09",
-          "units": 218,
-          "netSales": 5069.7,
-          "usUnits": 218,
-          "caUnits": 0,
-          "usNetSales": 5069.7,
-          "caNetSales": 0.0,
-          "cumUnits": 61369,
-          "cumSales": 1428592.23,
-          "planUnits": 205,
-          "cumPlanUnits": 36228
-        },
-        {
-          "date": "2026-06-10",
-          "units": 220,
-          "netSales": 4994.01,
-          "usUnits": 220,
-          "caUnits": 0,
-          "usNetSales": 4994.01,
-          "caNetSales": 0.0,
-          "cumUnits": 61589,
-          "cumSales": 1433586.24,
-          "planUnits": 210,
-          "cumPlanUnits": 36438
-        },
-        {
-          "date": "2026-06-11",
-          "units": 308,
-          "netSales": 7169.65,
-          "usUnits": 308,
-          "caUnits": 0,
-          "usNetSales": 7169.65,
-          "caNetSales": 0.0,
-          "cumUnits": 61897,
-          "cumSales": 1440755.89,
-          "planUnits": 188,
-          "cumPlanUnits": 36626
-        },
-        {
-          "date": "2026-06-12",
-          "units": 217,
-          "netSales": 5038.31,
-          "usUnits": 217,
-          "caUnits": 0,
-          "usNetSales": 5038.31,
-          "caNetSales": 0.0,
-          "cumUnits": 62114,
-          "cumSales": 1445794.2,
-          "planUnits": 253,
-          "cumPlanUnits": 36879
-        },
-        {
-          "date": "2026-06-13",
-          "units": 415,
-          "netSales": 10052.16,
-          "usUnits": 415,
-          "caUnits": 0,
-          "usNetSales": 10052.16,
-          "caNetSales": 0.0,
-          "cumUnits": 62529,
-          "cumSales": 1455846.36,
-          "planUnits": 305,
-          "cumPlanUnits": 37184
-        },
-        {
-          "date": "2026-06-14",
-          "units": 575,
-          "netSales": 13850.98,
-          "usUnits": 575,
-          "caUnits": 0,
-          "usNetSales": 13850.98,
-          "caNetSales": 0.0,
-          "cumUnits": 63104,
-          "cumSales": 1469697.34,
-          "planUnits": 294,
-          "cumPlanUnits": 37478
-        },
-        {
-          "date": "2026-06-15",
-          "units": 494,
-          "netSales": 11703.1,
-          "usUnits": 494,
-          "caUnits": 0,
-          "usNetSales": 11703.1,
-          "caNetSales": 0.0,
-          "cumUnits": 63598,
-          "cumSales": 1481400.44,
-          "planUnits": 218,
-          "cumPlanUnits": 37696
-        },
-        {
-          "date": "2026-06-16",
-          "units": 237,
-          "netSales": 5511.58,
-          "usUnits": 237,
-          "caUnits": 0,
-          "usNetSales": 5511.58,
-          "caNetSales": 0.0,
-          "cumUnits": 63835,
-          "cumSales": 1486912.02,
-          "planUnits": 188,
-          "cumPlanUnits": 37884
-        },
-        {
-          "date": "2026-06-17",
-          "units": 134,
-          "netSales": 3110.15,
-          "usUnits": 134,
-          "caUnits": 0,
-          "usNetSales": 3110.15,
-          "caNetSales": 0.0,
-          "cumUnits": 63969,
-          "cumSales": 1490022.17,
-          "planUnits": 193,
-          "cumPlanUnits": 38077
-        },
-        {
-          "date": "2026-06-18",
-          "units": 111,
-          "netSales": 2614.08,
-          "usUnits": 111,
-          "caUnits": 0,
-          "usNetSales": 2614.08,
-          "caNetSales": 0.0,
-          "cumUnits": 64080,
-          "cumSales": 1492636.25,
-          "planUnits": 172,
-          "cumPlanUnits": 38249
-        },
-        {
-          "date": "2026-06-19",
-          "units": 85,
-          "netSales": 2055.9,
-          "usUnits": 85,
-          "caUnits": 0,
-          "usNetSales": 2055.9,
-          "caNetSales": 0.0,
-          "cumUnits": 64165,
-          "cumSales": 1494692.15,
-          "planUnits": 230,
-          "cumPlanUnits": 38479
-        },
-        {
-          "date": "2026-06-20",
-          "units": 222,
-          "netSales": 5257.1,
-          "usUnits": 222,
-          "caUnits": 0,
-          "usNetSales": 5257.1,
-          "caNetSales": 0.0,
-          "cumUnits": 64387,
-          "cumSales": 1499949.25,
-          "planUnits": 360,
-          "cumPlanUnits": 38839
-        },
-        {
-          "date": "2026-06-21",
-          "units": 212,
-          "netSales": 5065.52,
-          "usUnits": 212,
-          "caUnits": 0,
-          "usNetSales": 5065.52,
-          "caNetSales": 0.0,
-          "cumUnits": 64599,
-          "cumSales": 1505014.77,
-          "planUnits": 346,
-          "cumPlanUnits": 39185
-        },
-        {
-          "date": "2026-06-22",
-          "units": 125,
-          "netSales": 2944.27,
-          "usUnits": 125,
-          "caUnits": 0,
-          "usNetSales": 2944.27,
-          "caNetSales": 0.0,
-          "cumUnits": 64724,
-          "cumSales": 1507959.04,
-          "planUnits": 202,
-          "cumPlanUnits": 39387
-        },
-        {
-          "date": "2026-06-23",
-          "units": 93,
-          "netSales": 2104.57,
-          "usUnits": 93,
-          "caUnits": 0,
-          "usNetSales": 2104.57,
-          "caNetSales": 0.0,
-          "cumUnits": 64817,
-          "cumSales": 1510063.61,
-          "planUnits": 175,
-          "cumPlanUnits": 39562
-        },
-        {
-          "date": "2026-06-24",
-          "units": 78,
-          "netSales": 1779.69,
-          "usUnits": 78,
-          "caUnits": 0,
-          "usNetSales": 1779.69,
-          "caNetSales": 0.0,
-          "cumUnits": 64895,
-          "cumSales": 1511843.3,
-          "planUnits": 179,
-          "cumPlanUnits": 39741
-        },
-        {
-          "date": "2026-06-25",
-          "units": 77,
-          "netSales": 1828.9,
-          "usUnits": 77,
-          "caUnits": 0,
-          "usNetSales": 1828.9,
-          "caNetSales": 0.0,
-          "cumUnits": 64972,
-          "cumSales": 1513672.2,
-          "planUnits": 160,
-          "cumPlanUnits": 39901
-        },
-        {
-          "date": "2026-06-26",
-          "units": 83,
-          "netSales": 1843.83,
-          "usUnits": 83,
-          "caUnits": 0,
-          "usNetSales": 1843.83,
-          "caNetSales": 0.0,
-          "cumUnits": 65055,
-          "cumSales": 1515516.03,
-          "planUnits": 213,
-          "cumPlanUnits": 40114
-        },
-        {
-          "date": "2026-06-27",
-          "units": 149,
-          "netSales": 3615.84,
-          "usUnits": 149,
-          "caUnits": 0,
-          "usNetSales": 3615.84,
-          "caNetSales": 0.0,
-          "cumUnits": 65204,
-          "cumSales": 1519131.87,
-          "planUnits": 254,
-          "cumPlanUnits": 40368
-        },
-        {
-          "date": "2026-06-28",
-          "units": 95,
-          "netSales": 2240.28,
-          "usUnits": 95,
-          "caUnits": 0,
-          "usNetSales": 2240.28,
-          "caNetSales": 0.0,
-          "cumUnits": 65299,
-          "cumSales": 1521372.15,
-          "planUnits": 245,
-          "cumPlanUnits": 40613
-        },
-        {
-          "date": "2026-06-29",
-          "units": 110,
-          "netSales": 2615.21,
-          "usUnits": 110,
-          "caUnits": 0,
-          "usNetSales": 2615.21,
-          "caNetSales": 0.0,
-          "cumUnits": 65409,
-          "cumSales": 1523987.36,
-          "planUnits": 190,
-          "cumPlanUnits": 40803
-        },
-        {
-          "date": "2026-06-30",
-          "units": 104,
-          "netSales": 2446.21,
-          "usUnits": 104,
-          "caUnits": 0,
-          "usNetSales": 2446.21,
-          "caNetSales": 0.0,
-          "cumUnits": 65513,
-          "cumSales": 1526433.57,
-          "planUnits": 164,
-          "cumPlanUnits": 40967
-        },
-        {
-          "date": "2026-07-01",
-          "units": 222,
-          "netSales": 4850.53,
-          "usUnits": 222,
-          "caUnits": 0,
-          "usNetSales": 4850.53,
-          "caNetSales": 0.0,
-          "cumUnits": 65735,
-          "cumSales": 1531284.1,
-          "planUnits": 170,
-          "cumPlanUnits": 41137
-        },
-        {
-          "date": "2026-07-02",
-          "units": 193,
-          "netSales": 4175.02,
-          "usUnits": 193,
-          "caUnits": 0,
-          "usNetSales": 4175.02,
-          "caNetSales": 0.0,
-          "cumUnits": 65928,
-          "cumSales": 1535459.12,
-          "planUnits": 150,
-          "cumPlanUnits": 41287
-        },
-        {
-          "date": "2026-07-03",
-          "units": 278,
-          "netSales": 6159.0,
-          "usUnits": 278,
-          "caUnits": 0,
-          "usNetSales": 6159.0,
-          "caNetSales": 0.0,
-          "cumUnits": 66206,
-          "cumSales": 1541618.12,
-          "planUnits": 258,
-          "cumPlanUnits": 41545
-        },
-        {
-          "date": "2026-07-04",
-          "units": 270,
-          "netSales": 5937.29,
-          "usUnits": 270,
-          "caUnits": 0,
-          "usNetSales": 5937.29,
-          "caNetSales": 0.0,
-          "cumUnits": 66476,
-          "cumSales": 1547555.41,
-          "planUnits": 308,
-          "cumPlanUnits": 41853
-        },
-        {
-          "date": "2026-07-05",
-          "units": 371,
-          "netSales": 8163.85,
-          "usUnits": 371,
-          "caUnits": 0,
-          "usNetSales": 8163.85,
-          "caNetSales": 0.0,
-          "cumUnits": 66847,
-          "cumSales": 1555719.26,
-          "planUnits": 296,
-          "cumPlanUnits": 42149
-        },
-        {
-          "date": "2026-07-06",
-          "units": 94,
-          "netSales": 2188.9,
-          "usUnits": 94,
-          "caUnits": 0,
-          "usNetSales": 2188.9,
-          "caNetSales": 0.0,
-          "cumUnits": 66941,
-          "cumSales": 1557908.16,
-          "planUnits": 181,
-          "cumPlanUnits": 42330
-        },
-        {
-          "date": "2026-07-07",
-          "units": 85,
-          "netSales": 2024.95,
-          "usUnits": 85,
-          "caUnits": 0,
-          "usNetSales": 2024.95,
-          "caNetSales": 0.0,
-          "cumUnits": 67026,
-          "cumSales": 1559933.11,
-          "planUnits": 156,
-          "cumPlanUnits": 42486
-        },
-        {
-          "date": "2026-07-08",
-          "units": 107,
-          "netSales": 2447.9,
-          "usUnits": 107,
-          "caUnits": 0,
-          "usNetSales": 2447.9,
-          "caNetSales": 0.0,
-          "cumUnits": 67133,
-          "cumSales": 1562381.01,
-          "planUnits": 160,
-          "cumPlanUnits": 42646
-        },
-        {
-          "date": "2026-07-09",
-          "units": 93,
-          "netSales": 2149.27,
-          "usUnits": 93,
-          "caUnits": 0,
-          "usNetSales": 2149.27,
-          "caNetSales": 0.0,
-          "cumUnits": 67226,
-          "cumSales": 1564530.28,
-          "planUnits": 142,
-          "cumPlanUnits": 42788
-        },
-        {
-          "date": "2026-07-10",
-          "units": 134,
-          "netSales": 3074.69,
-          "usUnits": 134,
-          "caUnits": 0,
-          "usNetSales": 3074.69,
-          "caNetSales": 0.0,
-          "cumUnits": 67360,
-          "cumSales": 1567604.97,
-          "planUnits": 188,
-          "cumPlanUnits": 42976
-        },
-        {
-          "date": "2026-07-11",
-          "units": 127,
-          "netSales": 2930.58,
-          "usUnits": 127,
-          "caUnits": 0,
-          "usNetSales": 2930.58,
-          "caNetSales": 0.0,
-          "cumUnits": 67487,
-          "cumSales": 1570535.55,
-          "planUnits": 222,
-          "cumPlanUnits": 43198
-        },
-        {
-          "date": "2026-07-12",
-          "units": 93,
-          "netSales": 2215.39,
-          "usUnits": 93,
-          "caUnits": 0,
-          "usNetSales": 2215.39,
-          "caNetSales": 0.0,
-          "cumUnits": 67580,
-          "cumSales": 1572750.94,
-          "planUnits": 215,
-          "cumPlanUnits": 43413
-        },
-        {
-          "date": "2026-07-13",
-          "units": 81,
-          "netSales": 1838.91,
-          "usUnits": 81,
-          "caUnits": 0,
-          "usNetSales": 1838.91,
-          "caNetSales": 0.0,
-          "cumUnits": 67661,
-          "cumSales": 1574589.85,
-          "planUnits": 172,
-          "cumPlanUnits": 43585
-        },
-        {
-          "date": "2026-07-14",
-          "units": 87,
-          "netSales": 1980.31,
-          "usUnits": 87,
-          "caUnits": 0,
-          "usNetSales": 1980.31,
-          "caNetSales": 0.0,
-          "cumUnits": 67748,
-          "cumSales": 1576570.16,
-          "planUnits": 149,
-          "cumPlanUnits": 43734
-        },
-        {
-          "date": "2026-07-15",
-          "units": 103,
-          "netSales": 2391.25,
-          "usUnits": 103,
-          "caUnits": 0,
-          "usNetSales": 2391.25,
-          "caNetSales": 0.0,
-          "cumUnits": 67851,
-          "cumSales": 1578961.41,
-          "planUnits": 154,
-          "cumPlanUnits": 43888
-        },
-        {
-          "date": "2026-07-16",
-          "units": 103,
-          "netSales": 2468.43,
-          "usUnits": 103,
-          "caUnits": 0,
-          "usNetSales": 2468.43,
-          "caNetSales": 0.0,
-          "cumUnits": 67954,
-          "cumSales": 1581429.84,
-          "planUnits": 137,
-          "cumPlanUnits": 44025
-        },
-        {
-          "date": "2026-07-17",
-          "units": 107,
-          "netSales": 2468.96,
-          "usUnits": 107,
-          "caUnits": 0,
-          "usNetSales": 2468.96,
-          "caNetSales": 0.0,
-          "cumUnits": 68061,
-          "cumSales": 1583898.8,
-          "planUnits": 179,
-          "cumPlanUnits": 44204
-        },
-        {
-          "date": "2026-07-18",
-          "units": 115,
-          "netSales": 2687.62,
-          "usUnits": 115,
-          "caUnits": 0,
-          "usNetSales": 2687.62,
-          "caNetSales": 0.0,
-          "cumUnits": 68176,
-          "cumSales": 1586586.42,
-          "planUnits": 274,
-          "cumPlanUnits": 44478
-        },
-        {
-          "date": "2026-07-19",
-          "units": 109,
-          "netSales": 2505.7,
-          "usUnits": 109,
-          "caUnits": 0,
-          "usNetSales": 2505.7,
-          "caNetSales": 0.0,
-          "cumUnits": 68285,
-          "cumSales": 1589092.12,
-          "planUnits": 264,
-          "cumPlanUnits": 44742
-        },
-        {
-          "date": "2026-07-20",
-          "units": 91,
-          "netSales": 2117.24,
-          "usUnits": 91,
-          "caUnits": 0,
-          "usNetSales": 2117.24,
-          "caNetSales": 0.0,
-          "cumUnits": 68376,
-          "cumSales": 1591209.36,
-          "planUnits": 166,
-          "cumPlanUnits": 44908
-        },
-        {
-          "date": "2026-07-21",
-          "units": 149,
-          "netSales": 3487.48,
-          "usUnits": 149,
-          "caUnits": 0,
-          "usNetSales": 3487.48,
-          "caNetSales": 0.0,
-          "cumUnits": 68525,
-          "cumSales": 1594696.84,
-          "planUnits": 144,
-          "cumPlanUnits": 45052
-        },
-        {
-          "date": "2026-07-22",
-          "units": 136,
-          "netSales": 3170.51,
-          "usUnits": 136,
-          "caUnits": 0,
-          "usNetSales": 3170.51,
-          "caNetSales": 0.0,
-          "cumUnits": 68661,
-          "cumSales": 1597867.35,
-          "planUnits": 192,
-          "cumPlanUnits": 45244
-        },
-        {
-          "date": "2026-07-23",
-          "units": 122,
-          "netSales": 2808.26,
-          "usUnits": 122,
-          "caUnits": 0,
-          "usNetSales": 2808.26,
-          "caNetSales": 0.0,
-          "cumUnits": 68783,
-          "cumSales": 1600675.61,
-          "planUnits": 132,
-          "cumPlanUnits": 45376
-        },
-        {
-          "date": "2026-07-24",
-          "units": 160,
-          "netSales": 3766.52,
-          "usUnits": 160,
-          "caUnits": 0,
-          "usNetSales": 3766.52,
-          "caNetSales": 0.0,
-          "cumUnits": 68943,
-          "cumSales": 1604442.13,
-          "planUnits": 172,
-          "cumPlanUnits": 45548
-        },
-        {
-          "date": "2026-07-25",
-          "units": 142,
-          "netSales": 3347.37,
-          "usUnits": 142,
-          "caUnits": 0,
-          "usNetSales": 3347.37,
-          "caNetSales": 0.0,
-          "cumUnits": 69085,
-          "cumSales": 1607789.5,
-          "planUnits": 201,
-          "cumPlanUnits": 45749
-        },
-        {
-          "date": "2026-07-26",
-          "units": 501,
-          "netSales": 12050.7,
-          "usUnits": 501,
-          "caUnits": 0,
-          "usNetSales": 12050.7,
-          "caNetSales": 0.0,
-          "cumUnits": 69586,
-          "cumSales": 1619840.2,
-          "planUnits": 195,
-          "cumPlanUnits": 45944
-        },
-        {
-          "date": "2026-07-27",
-          "units": 467,
-          "netSales": 10905.9,
-          "usUnits": 453,
-          "caUnits": 14,
-          "usNetSales": 10675.76,
-          "caNetSales": 230.14,
-          "cumUnits": 70053,
-          "cumSales": 1630746.1,
-          "planUnits": 161,
-          "cumPlanUnits": 46105
-        },
-        {
-          "date": "2026-07-28",
-          "units": 425,
-          "netSales": 9674.58,
-          "usUnits": 394,
-          "caUnits": 31,
-          "usNetSales": 9160.75,
-          "caNetSales": 513.83,
-          "cumUnits": 70478,
-          "cumSales": 1640420.68,
-          "planUnits": 140,
-          "cumPlanUnits": 46245
-        },
-        {
-          "date": "2026-07-29",
-          "units": 423,
-          "netSales": 9831.11,
-          "usUnits": 394,
-          "caUnits": 29,
-          "usNetSales": 9323.15,
-          "caNetSales": 507.96,
-          "cumUnits": 70901,
-          "cumSales": 1650251.79,
-          "planUnits": 144,
-          "cumPlanUnits": 46389
-        },
-        {
-          "date": "2026-07-30",
-          "units": 493,
-          "netSales": 11505.92,
-          "usUnits": 459,
-          "caUnits": 34,
-          "usNetSales": 10925.05,
-          "caNetSales": 580.87,
-          "cumUnits": 71394,
-          "cumSales": 1661757.71,
-          "planUnits": 128,
-          "cumPlanUnits": 46517
-        },
-        {
-          "date": "2026-07-31",
-          "units": 796,
-          "netSales": 18670.0,
-          "usUnits": 770,
-          "caUnits": 26,
-          "usNetSales": 18215.75,
-          "caNetSales": 454.25,
-          "cumUnits": 72190,
-          "cumSales": 1680427.71,
-          "planUnits": 165,
-          "cumPlanUnits": 46682
-        },
-        {
-          "date": "2026-08-01",
-          "units": 616,
-          "netSales": 14364.57,
-          "usUnits": 582,
-          "caUnits": 34,
-          "usNetSales": 13785.56,
-          "caNetSales": 579.01,
-          "cumUnits": 72806,
-          "cumSales": 1694792.28,
-          "planUnits": 252,
-          "cumPlanUnits": 46934
-        },
-        {
-          "date": "2026-08-02",
-          "units": 699,
-          "netSales": 16336.81,
-          "usUnits": 665,
-          "caUnits": 34,
-          "usNetSales": 15759.61,
-          "caNetSales": 577.2,
-          "cumUnits": 73505,
-          "cumSales": 1711129.09,
-          "planUnits": 243,
-          "cumPlanUnits": 47177
-        },
-        {
-          "date": "2026-08-03",
-          "units": 274,
-          "netSales": 6258.32,
-          "usUnits": 257,
-          "caUnits": 17,
-          "usNetSales": 5970.24,
-          "caNetSales": 288.08,
-          "cumUnits": 73779,
-          "cumSales": 1717387.41,
-          "planUnits": 157,
-          "cumPlanUnits": 47334
-        },
-        {
-          "date": "2026-08-04",
-          "units": 289,
-          "netSales": 6655.28,
-          "usUnits": 278,
-          "caUnits": 11,
-          "usNetSales": 6471.21,
-          "caNetSales": 184.07,
-          "cumUnits": 74068,
-          "cumSales": 1724042.69,
-          "planUnits": 136,
-          "cumPlanUnits": 47470
-        },
-        {
-          "date": "2026-08-05",
-          "units": 925,
-          "netSales": 21940.79,
-          "usUnits": 899,
-          "caUnits": 26,
-          "usNetSales": 21498.15,
-          "caNetSales": 442.64,
-          "cumUnits": 74993,
-          "cumSales": 1745983.48,
-          "planUnits": 140,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-06",
-          "units": 882,
-          "netSales": 20400.56,
-          "usUnits": 830,
-          "caUnits": 52,
-          "usNetSales": 19525.0,
-          "caNetSales": 875.56,
-          "cumUnits": 75875,
-          "cumSales": 1766384.04,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-07",
-          "units": 614,
-          "netSales": 14087.02,
-          "usUnits": 572,
-          "caUnits": 42,
-          "usNetSales": 13376.45,
-          "caNetSales": 710.57,
-          "cumUnits": 76489,
-          "cumSales": 1780471.06,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-08",
-          "units": 1402,
-          "netSales": 30196.16,
-          "usUnits": 1313,
-          "caUnits": 89,
-          "usNetSales": 28775.55,
-          "caNetSales": 1420.61,
-          "cumUnits": 77891,
-          "cumSales": 1810667.22,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-09",
-          "units": 1708,
-          "netSales": 36558.18,
-          "usUnits": 1604,
-          "caUnits": 104,
-          "usNetSales": 34749.57,
-          "caNetSales": 1808.61,
-          "cumUnits": 79599,
-          "cumSales": 1847225.4,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-10",
-          "units": 548,
-          "netSales": 12305.2,
-          "usUnits": 496,
-          "caUnits": 52,
-          "usNetSales": 11436.09,
-          "caNetSales": 869.11,
-          "cumUnits": 80147,
-          "cumSales": 1859530.6,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-11",
-          "units": 649,
-          "netSales": 14962.27,
-          "usUnits": 600,
-          "caUnits": 49,
-          "usNetSales": 14124.23,
-          "caNetSales": 838.04,
-          "cumUnits": 80796,
-          "cumSales": 1874492.87,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-12",
-          "units": 642,
-          "netSales": 14729.04,
-          "usUnits": 587,
-          "caUnits": 55,
-          "usNetSales": 13771.59,
-          "caNetSales": 957.45,
-          "cumUnits": 81438,
-          "cumSales": 1889221.91,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-13",
-          "units": 689,
-          "netSales": 16059.54,
-          "usUnits": 637,
-          "caUnits": 52,
-          "usNetSales": 15175.56,
-          "caNetSales": 883.98,
-          "cumUnits": 82127,
-          "cumSales": 1905281.45,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-14",
-          "units": 707,
-          "netSales": 16240.03,
-          "usUnits": 663,
-          "caUnits": 44,
-          "usNetSales": 15467.9,
-          "caNetSales": 772.13,
-          "cumUnits": 82834,
-          "cumSales": 1921521.48,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-15",
-          "units": 721,
-          "netSales": 16928.01,
-          "usUnits": 686,
-          "caUnits": 35,
-          "usNetSales": 16323.16,
-          "caNetSales": 604.85,
-          "cumUnits": 83555,
-          "cumSales": 1938449.49,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-16",
-          "units": 762,
-          "netSales": 17734.16,
-          "usUnits": 702,
-          "caUnits": 60,
-          "usNetSales": 16690.65,
-          "caNetSales": 1043.51,
-          "cumUnits": 84317,
-          "cumSales": 1956183.65,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
-          "date": "2026-08-17",
-          "units": 666,
-          "netSales": 15494.7,
-          "usUnits": 620,
-          "caUnits": 46,
-          "usNetSales": 14667.63,
-          "caNetSales": 827.07,
-          "cumUnits": 84983,
-          "cumSales": 1971678.35,
-          "planUnits": null,
-          "cumPlanUnits": 47610
-        },
-        {
           "date": "2026-08-18",
-          "units": 700,
-          "netSales": 16340.37,
-          "usUnits": 676,
-          "caUnits": 24,
-          "usNetSales": 15916.21,
-          "caNetSales": 424.16,
-          "cumUnits": 85683,
-          "cumSales": 1988018.72,
-          "planUnits": null,
-          "cumPlanUnits": 47610
+          "units": 3559,
+          "netSales": 83794.03,
+          "usUnits": 3404,
+          "caUnits": 155,
+          "usNetSales": 81271.14,
+          "caNetSales": 2522.89,
+          "cumUnits": 3559,
+          "cumSales": 83794.03,
+          "planUnits": 856,
+          "cumPlanUnits": 856
         },
         {
           "date": "2026-08-19",
-          "units": 580,
-          "netSales": 13303.02,
-          "usUnits": 531,
-          "caUnits": 49,
-          "usNetSales": 12457.63,
-          "caNetSales": 845.39,
-          "cumUnits": 86263,
-          "cumSales": 2001321.74,
-          "planUnits": null,
-          "cumPlanUnits": 47610
+          "units": 1205,
+          "netSales": 27550.35,
+          "usUnits": 1119,
+          "caUnits": 86,
+          "usNetSales": 26166.34,
+          "caNetSales": 1384.01,
+          "cumUnits": 4764,
+          "cumSales": 111344.38,
+          "planUnits": 601,
+          "cumPlanUnits": 1457
         }
       ],
-      "pdp": [],
-      "crossSell": [],
-      "crossSellBySku": [],
+      "pdp": [
+        {
+          "sku": "TVG7230",
+          "name": "Li",
+          "pdpViews": 56492,
+          "atc": 1912,
+          "ckts": 351,
+          "purch": 574,
+          "rev": 14820.0,
+          "atcRate": 3.38,
+          "purchRate": 1.02
+        },
+        {
+          "sku": "TVG7250",
+          "name": "Daniella",
+          "pdpViews": 26458,
+          "atc": 4874,
+          "ckts": 1069,
+          "purch": 1834,
+          "rev": 47110.6,
+          "atcRate": 18.42,
+          "purchRate": 6.93
+        },
+        {
+          "sku": "TVG7240",
+          "name": "Liliana",
+          "pdpViews": 23022,
+          "atc": 3027,
+          "ckts": 611,
+          "purch": 1054,
+          "rev": 27248.0,
+          "atcRate": 13.15,
+          "purchRate": 4.58
+        },
+        {
+          "sku": "TVG7220",
+          "name": "Brandy",
+          "pdpViews": 16736,
+          "atc": 1121,
+          "ckts": 204,
+          "purch": 404,
+          "rev": 10322.0,
+          "atcRate": 6.7,
+          "purchRate": 2.41
+        },
+        {
+          "sku": "TVG7260",
+          "name": "Leslie",
+          "pdpViews": 14872,
+          "atc": 1336,
+          "ckts": 270,
+          "purch": 550,
+          "rev": 14300.0,
+          "atcRate": 8.98,
+          "purchRate": 3.7
+        }
+      ],
+      "crossSell": [
+        {
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
+          "pairs": 5
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
+          "pairs": 4
+        },
+        {
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG181",
+          "pairs": 3
+        },
+        {
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
+          "pairs": 2
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6630",
+          "pairs": 2
+        },
+        {
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
+          "pairs": 2
+        },
+        {
+          "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
+          "sku": "TVG521",
+          "pairs": 1
+        },
+        {
+          "product": "Lip Filler Long-Wearing + Plumping Lip Liner\u2122",
+          "sku": "TVG345",
+          "pairs": 1
+        },
+        {
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG282",
+          "pairs": 1
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
+          "pairs": 1
+        }
+      ],
       "categoryCustomers": {
-        "category": "Mascara",
-        "total": 68626,
-        "existingCategory": 43492,
-        "newToCategory": 25134,
+        "category": "Lip",
+        "total": 3591,
+        "existingCategory": 2698,
+        "newToCategory": 893,
         "byVariant": [
           {
-            "sku": "TVG6380",
-            "name": "Iris",
-            "newToCategory": 13444,
-            "existingCategory": 20257
+            "sku": "TVG7230",
+            "name": "Li",
+            "newToCategory": 152,
+            "existingCategory": 459
           },
           {
-            "sku": "TVG6370",
-            "name": "Oceanne",
-            "newToCategory": 7662,
-            "existingCategory": 17068
+            "sku": "TVG7250",
+            "name": "Daniella",
+            "newToCategory": 479,
+            "existingCategory": 1434
           },
           {
-            "sku": "TVG6390",
-            "name": "Ivy",
-            "newToCategory": 8073,
-            "existingCategory": 14686
+            "sku": "TVG7260",
+            "name": "Leslie",
+            "newToCategory": 125,
+            "existingCategory": 467
+          },
+          {
+            "sku": "TVG7240",
+            "name": "Liliana",
+            "newToCategory": 234,
+            "existingCategory": 874
+          },
+          {
+            "sku": "TVG7220",
+            "name": "Brandy",
+            "newToCategory": 99,
+            "existingCategory": 334
           }
         ]
       }
@@ -9759,10 +6571,10 @@ window.DASHBOARD_DATA = {
       "trackedId": null
     },
     {
-      "name": "Lip Stain Marker",
+      "name": "Lasting Mark\u2122 Lip-Defining Stain",
       "launchDate": "2026-08-18",
       "internalDate": "2026-08-18",
-      "trackedId": null
+      "trackedId": "lasting-mark-lip-stain"
     },
     {
       "name": "Holiday 2026 + Limited Edition",
