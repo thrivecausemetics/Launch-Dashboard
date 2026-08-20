@@ -851,6 +851,8 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
         },
         "trafficStart": launch_date,
         "trafficEnd": ga_cutoff,
+        "traffic": traffic,
+        "landing": landing,
         "planCurve": plan_curve,
         # Launch-level goal and the real end of the decay curve, taken from the
         # forecast itself rather than launch_date + N.
@@ -1026,8 +1028,6 @@ def main():
             "sourceStatus": SOURCE_STATUS,
         },
         "launches": launches,
-        "traffic": traffic,
-        "landing": landing,
         "upcoming": [
             {"name": u["name"], "launchDate": u["launch_date"],
              "internalDate": u.get("internal_date"), "trackedId": u.get("tracked_id")}
