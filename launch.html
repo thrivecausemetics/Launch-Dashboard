@@ -431,8 +431,12 @@ function loadData() {
   return { ...raw, state, daysLive, unitsPerOrder };
 }
 
-const trafficData = DD ? DD.traffic : {byChannel: [], monthly: []};
-const landingData = DD ? DD.landing : [];
+/* GA4 traffic and landing pages are per launch, reassigned as each launch
+   loads. They used to be one global set built from the earliest active launch
+   date, so every launch showed the same April-onwards window and every
+   launch's landing pages regardless of which one you opened. */
+let trafficData = {byChannel: [], monthly: []};
+let landingData = [];
 /* Shared by renderLanding and the Landing Page CSV export — must not be
    local to the renderer, or the export throws once a region is selected. */
 const isCA = r => (r.page || '').includes('.ca');
@@ -1253,7 +1257,7 @@ function renderSkuTable(d) {
 }
 
 /* ── TRAFFIC TAB ── */
-function renderTraffic() {
+function renderTraffic(d) {
   if (!trafficData.byChannel.length) {
     document.getElementById('panel-traffic').innerHTML =
       '<p class="data-note">GA4 traffic data was not available in the latest refresh (GA4_API.BASE_TRAFFIC not accessible to the refresh credentials).</p>';
@@ -1268,7 +1272,7 @@ function renderTraffic() {
 
   const panel = document.getElementById('panel-traffic');
   panel.innerHTML = `
-    <div class="section-title">Site-Wide Traffic · ${fmt.date(META.trafficStart)} – ${fmt.date(META.gaCutoff)} (GA4)</div>
+    <div class="section-title">Site-Wide Traffic · ${d.name} window · ${fmt.date(d.trafficStart)} – ${fmt.date(d.trafficEnd || META.gaCutoff)} (GA4)</div>
     <div class="kpi-row1" style="margin-bottom:18px">
       <div class="kpi-card c-teal"><div class="kpi-label">Total Sessions</div><div class="kpi-value">${(total.sessions/1e6).toFixed(2)}M</div><div class="kpi-sub">All channels</div></div>
       <div class="kpi-card c-gold"><div class="kpi-label">Total Transactions</div><div class="kpi-value">${fmt.num(total.txns)}</div><div class="kpi-sub">Site-wide purchases</div></div>
@@ -1288,7 +1292,7 @@ function renderTraffic() {
       </div>
     </div>
     <div class="table-card">
-      <div class="table-hdr split"><h3>Channel Breakdown — ${fmt.date(META.trafficStart)} to ${fmt.date(META.gaCutoff)}</h3>${exportBtn('traffic-channels')}</div>
+      <div class="table-hdr split"><h3>Channel Breakdown — ${fmt.date(d.trafficStart)} to ${fmt.date(d.trafficEnd || META.gaCutoff)}</h3>${exportBtn('traffic-channels')}</div>
       <div class="table-wrap"><table>
         <thead><tr><th>Channel</th><th class="r">Sessions</th><th class="r">Transactions</th><th class="r">Revenue</th><th class="r">CVR</th><th class="r">Engagement Rate</th></tr></thead>
         <tbody>${trafficData.byChannel.map(c=>`<tr>
@@ -1301,7 +1305,7 @@ function renderTraffic() {
         </tr>`).join('')}</tbody>
       </table></div>
     </div>
-    <p class="data-note">Source: GA4_API.BASE_TRAFFIC via Snowflake ${META.sourceDb || 'DAASITY_DB'} · Site-wide data (all products), not launch-specific. GA4 data lags ~2 days; traffic reflects through ${fmt.date(META.gaCutoff)}.</p>`;
+    <p class="data-note">Source: GA4_API.BASE_TRAFFIC via Snowflake ${META.sourceDb || 'DAASITY_DB'} · <strong>Windowed to this launch (${fmt.date(d.trafficStart)} onwards) but site-wide in scope</strong> — GA4_API.BASE_TRAFFIC records sessions by channel, source, medium, device and country, with no product or SKU dimension, so traffic cannot be attributed to a single launch. Read these as site sessions <em>during</em> this launch's window, not traffic driven <em>by</em> it. For launch-specific behaviour use the Landing Page and PDP Health tabs, which are scoped to this launch's pages and SKUs. GA4 data lags ~2 days; traffic reflects through ${fmt.date(META.gaCutoff)}.</p>`;
 
   kill('tch');
   _ch.tch = new Chart(document.getElementById('chart-tch'), {
@@ -1331,7 +1335,7 @@ function renderTraffic() {
 
 /* ── LANDING PAGE TAB ── */
 let LP_REGION = 'ALL';
-function renderLanding() {
+function renderLanding(d) {
   if (!landingData.length) {
     document.getElementById('panel-landing').innerHTML =
       '<p class="data-note">Landing page data was not available in the latest refresh (GA4_BQ_STG.BASE_LANDING_PAGE_STG2 not accessible to the refresh credentials).</p>';
@@ -1345,7 +1349,7 @@ function renderLanding() {
 
   const panel = document.getElementById('panel-landing');
   panel.innerHTML = `
-    <div class="section-title">Launch Landing Pages · ${fmt.date(META.trafficStart)} – ${fmt.date(META.gaCutoff)} (GA4)</div>
+    <div class="section-title">Launch Landing Pages · ${d.name} · ${fmt.date(d.trafficStart)} – ${fmt.date(d.trafficEnd || META.gaCutoff)} (GA4)</div>
     <div class="filter-bar">
       <span class="fb-label">Store</span>
       <div class="fb-seg">${['ALL','US','CA'].map(rg => `<button class="fb-btn${LP_REGION === rg ? ' on' : ''}" data-lp-region="${rg}">${rg === 'ALL' ? 'All' : rg === 'US' ? 'US (.com)' : 'CA (.ca)'}</button>`).join('')}</div>
@@ -1373,7 +1377,7 @@ function renderLanding() {
       </table></div>
     </div>
     <p class="data-note">Source: GA4_BQ_STG.BASE_LANDING_PAGE_STG2 via Snowflake DAASITY_DB · Filtered to pages containing launch product names/SKUs. Engagement rate = engaged sessions ÷ total sessions (GA4 definition).</p>`;
-  panel.querySelectorAll('[data-lp-region]').forEach(b => b.onclick = () => { LP_REGION = b.dataset.lpRegion; renderLanding(); });
+  panel.querySelectorAll('[data-lp-region]').forEach(b => b.onclick = () => { LP_REGION = b.dataset.lpRegion; renderLanding(d); });
 }
 
 /* ── PDP HEALTH TAB ── */
@@ -1663,16 +1667,22 @@ function init() {
 
     // launch switcher: live + pending launches only (archived drop off after RETENTION_DAYS)
     const sel = document.getElementById('launch-select');
-    const selectable = (DD.launches || []).filter(l => ['live','pending'].includes(launchState(l)));
+    // Archived included: the hub's Historical section links straight here, so
+    // excluding them left those cards pointing at an unreachable page.
+    const selectable = (DD.launches || []).filter(l => ['live','pending','archived'].includes(launchState(l)));
     sel.innerHTML = selectable.map(l => `<option value="${l.launchId}"${l.launchId === launchId ? ' selected' : ''}>${l.name}</option>`).join('');
     if (!selectable.some(l => l.launchId === launchId)) sel.innerHTML = `<option selected>${d.name}</option>` + sel.innerHTML;
+
+    // Must precede the renderers below, which read these.
+    trafficData = d.traffic || {byChannel: [], monthly: []};
+    landingData = d.landing || [];
 
     renderHeader(d);
     renderUpcoming();
     renderCategory(d);
     renderGuide(d);
-    renderTraffic();
-    renderLanding();
+    renderTraffic(d);
+    renderLanding(d);
 
     if (d.state === 'live') {
       LOADED = d;

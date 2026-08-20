@@ -633,7 +633,7 @@ def _build_category(cur, skus, cat_patterns, params, lc, sku_meta):
     }
 
 
-def build_launch(cur, lc, cutoff, full=True):
+def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
     launch_date = lc["launch_date"]
     skus = [s["sku"] for s in lc["skus"]]
     sku_meta = {s["sku"]: s for s in lc["skus"]}
@@ -665,9 +665,19 @@ def build_launch(cur, lc, cutoff, full=True):
                               lambda: rows(cur, q_inventory(skus), {}), [], key="uos_inventory")
         trail_rows = safe_fetch(f"{lid}.trailing_units (UOS)",
                                 lambda: rows(cur, q_trailing_units(skus), params), [], key="uos_inventory")
+        # GA4 window for THIS launch. Previously both of these ran once
+        # globally from the earliest active launch date, so every launch showed
+        # the same April-onwards numbers and every launch's landing pages.
+        ga_params = {"traffic_start": launch_date, "ga_cutoff": ga_cutoff}
+        traffic = safe_fetch(f"{lid}.traffic (GA4_API)",
+                             lambda: build_traffic(cur, ga_params),
+                             {"byChannel": [], "monthly": []}, key="ga4_api")
+        landing = safe_fetch(f"{lid}.landing (GA4_BQ_STG)",
+                             lambda: build_landing(cur, lc, ga_params), [], key="ga4_bq")
     else:
         pdp_rows, cross_rows, cross_sku_rows, inv_rows, trail_rows = [], [], [], [], []
         subs_row = {"SUB_ORDERS": 0, "SUB_UNITS": 0, "SUB_REVENUE": None}
+        traffic, landing = {"byChannel": [], "monthly": []}, []
     plan_detail = safe_fetch(f"{lid}.plan (GSHEETS)",
                              lambda: [(r["SKU"], str(r["D"]), int(r["PLAN_UNITS"] or 0))
                                       for r in rows(cur, q_plan(skus), params)],
@@ -839,6 +849,8 @@ def build_launch(cur, lc, cutoff, full=True):
             "ca": {"units": int(summary_row["CA_UNITS"] or 0), "netSales": f2(summary_row["CA_NET_SALES"]),
                    "orders": int(summary_row["CA_ORDERS"] or 0)},
         },
+        "trafficStart": launch_date,
+        "trafficEnd": ga_cutoff,
         "planCurve": plan_curve,
         # Launch-level goal and the real end of the decay curve, taken from the
         # forecast itself rather than launch_date + N.
@@ -900,11 +912,16 @@ def build_traffic(cur, params):
             "monthly": [{"month": m, "chs": monthly[m]} for m in order]}
 
 
-def build_landing(cur, cfg, params):
-    slugs = set()
-    for lc in cfg["launches"]:
-        slugs.update(s["sku"] for s in lc["skus"])
-        slugs.add(lc["name"].split(" ")[0].lower())
+def build_landing(cur, lc, params):
+    """Landing pages for ONE launch.
+
+    This used to union every launch's SKUs and product-name slugs into a
+    single global query, so whichever launch you opened, the tab listed other
+    launches' pages over a window starting at the earliest active launch.
+    Scoped now to this launch's own SKUs and slug, over its own window.
+    """
+    slugs = {s["sku"] for s in lc["skus"]}
+    slugs.add(lc["name"].split(" ")[0].lower())
     lrows = rows(cur, q_landing(sorted(slugs)), params)
     out = []
     for r in lrows:
@@ -952,11 +969,9 @@ def main():
     archived = [lc for lc in launched if lc["skus"] and lc not in active]
     # launched too recently for the cutoff (e.g. launched today/yesterday)
     too_new = [lc for lc in cfg["launches"] if lc["launch_date"] > cutoff and lc["launch_date"] <= str(today)]
-    traffic_start = min((lc["launch_date"] for lc in active), default=cutoff)
-    params = {"traffic_start": traffic_start, "ga_cutoff": ga_cutoff}
-
     if args.dry_run:
-        print(f"-- cutoff={cutoff} ga_cutoff={ga_cutoff} traffic_start={traffic_start}")
+        print(f"-- cutoff={cutoff} ga_cutoff={ga_cutoff}")
+        print("-- GA4 traffic/landing windows are per launch (launch_date -> ga_cutoff)")
         print(f"-- active launches: {[lc['id'] for lc in active]}")
         print(f"-- archived (past decay curve, reduced query set): {[lc['id'] for lc in archived]}")
         print(f"-- skipped (no SKUs yet): {[lc['id'] for lc in no_skus]}")
@@ -992,12 +1007,10 @@ def main():
     conn = connect()
     try:
         cur = conn.cursor()
-        launches = [build_launch(cur, lc, cutoff) for lc in with_skus]
-        launches += [build_launch(cur, lc, cutoff, full=False) for lc in archived]
+        launches = [build_launch(cur, lc, cutoff, ga_cutoff) for lc in with_skus]
+        launches += [build_launch(cur, lc, cutoff, ga_cutoff, full=False) for lc in archived]
         launches += [pending_launch(lc) for lc in no_skus + too_new]
-        traffic = safe_fetch("traffic (GA4_API)", lambda: build_traffic(cur, params),
-                             {"byChannel": [], "monthly": []}, key="ga4_api")
-        landing = safe_fetch("landing (GA4_BQ_STG)", lambda: build_landing(cur, cfg, params), [], key="ga4_bq")
+
     finally:
         conn.close()
 
@@ -1005,7 +1018,6 @@ def main():
         "meta": {
             "dataCutoff": cutoff,
             "gaCutoff": ga_cutoff,
-            "trafficStart": traffic_start,
             "generatedAt": str(today),
             "mode": "automated",
             "sourceDb": SRC_DB,
