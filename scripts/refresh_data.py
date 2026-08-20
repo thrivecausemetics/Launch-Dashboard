@@ -367,6 +367,56 @@ GROUP BY 1, 2 ORDER BY 2
 """
 
 
+def q_plan_full(skus):
+    """Whole-curve plan per SKU — deliberately NOT bounded by the cutoff.
+
+    q_plan() stops at the cutoff, which is right for "% to plan so far" but
+    cannot answer "how many units are still owed against the goal". The
+    forecast is a full 120-day curve per SKU, so summing it unbounded gives
+    the launch goal, and its last date is the real end of the decay curve
+    rather than a launch_date + N guess.
+    """
+    c = COLS["plan"]
+    return f"""
+SELECT {c['sku']} AS SKU, SUM({c['units']}) AS PLAN_TOTAL,
+       MAX(CAST({c['date']} AS DATE)) AS PLAN_END
+FROM {SRC_DB}.{c['table']}
+WHERE {c['sku']} IN ({sku_list_sql(skus)})
+GROUP BY 1
+"""
+
+
+def q_cross_sell_by_sku(skus):
+    """Same pairings as q_cross_sell but kept split by the launch SKU that
+    drove the basket, so the Cross-Sells tab can filter by shade. The
+    launch-wide list stays a separate exact query: rolling these per-shade
+    top tens back up would miss a product that ranks 11th for every shade.
+    """
+    c = COLS["affinity"]
+    in_list = sku_list_sql(skus)
+    slot_selects = "\n  UNION ALL\n".join(
+        f"  SELECT {c['primary_sku']} AS PRIMARY_SKU, {s}_PRODUCT_NAME AS PRODUCT, "
+        f"{s}_SKU AS SKU FROM baskets WHERE {s}_SKU IS NOT NULL"
+        for s in c["slots"]
+    )
+    return f"""
+WITH baskets AS (
+  SELECT * FROM {SRC_DB}.{c['table']}
+  WHERE {c['primary_sku']} IN ({in_list})
+    AND CAST({c['order_date']} AS DATE) BETWEEN %(launch_date)s AND %(cutoff)s
+),
+paired AS (
+{slot_selects}
+)
+SELECT PRIMARY_SKU, PRODUCT, SKU, COUNT(*) AS PAIRS
+FROM paired
+WHERE SKU NOT IN ({in_list})
+GROUP BY 1, 2, 3
+QUALIFY ROW_NUMBER() OVER (PARTITION BY PRIMARY_SKU ORDER BY COUNT(*) DESC) <= 10
+ORDER BY PRIMARY_SKU, PAIRS DESC
+"""
+
+
 def q_inventory(skus):
     """Currently available units per SKU, summed across fulfillment locations.
 
@@ -498,20 +548,38 @@ def f2(v):
 _PLAN_FALLBACK = None
 
 
-def plan_detail_from_fallback(skus, launch_date, cutoff):
-    """Per-SKU daily plan rows [(sku, date, units)] from the committed GSHEETS
-    snapshot (config/plan_fallback.json), for when the workflow's Snowflake
-    user has no grant on the GSHEETS schema. The live query takes precedence."""
+def _plan_fallback_by_sku():
+    """Committed GSHEETS snapshot (config/plan_fallback.json), loaded once."""
     global _PLAN_FALLBACK
     if _PLAN_FALLBACK is None:
         path = ROOT / "config" / "plan_fallback.json"
         _PLAN_FALLBACK = (json.loads(path.read_text()) if path.exists() else {})
-    by_sku = _PLAN_FALLBACK.get("plan_units_by_sku_date", {})
+    return _PLAN_FALLBACK.get("plan_units_by_sku_date", {})
+
+
+def plan_detail_from_fallback(skus, launch_date, cutoff):
+    """Per-SKU daily plan rows [(sku, date, units)] from the committed GSHEETS
+    snapshot, for when the workflow's Snowflake user has no grant on the
+    GSHEETS schema. The live query takes precedence."""
+    by_sku = _plan_fallback_by_sku()
     out = []
     for sku in skus:
         for d, u in by_sku.get(sku, {}).items():
             if launch_date <= d <= cutoff:
                 out.append((sku, d, u))
+    return out
+
+
+def plan_totals_from_fallback(skus):
+    """Whole-curve plan totals and curve end date from the committed snapshot,
+    for when the workflow's Snowflake user has no GSHEETS grant. Unbounded by
+    date on purpose — this is the goal, not progress against it."""
+    by_sku = _plan_fallback_by_sku()
+    out = {}
+    for sku in skus:
+        days = by_sku.get(sku) or {}
+        if days:
+            out[sku] = (sum(int(v or 0) for v in days.values()), max(days))
     return out
 
 
@@ -565,7 +633,7 @@ def _build_category(cur, skus, cat_patterns, params, lc, sku_meta):
     }
 
 
-def build_launch(cur, lc, cutoff):
+def build_launch(cur, lc, cutoff, full=True):
     launch_date = lc["launch_date"]
     skus = [s["sku"] for s in lc["skus"]]
     sku_meta = {s["sku"]: s for s in lc["skus"]}
@@ -583,14 +651,23 @@ def build_launch(cur, lc, cutoff):
     variant_rows = rows(cur, q_by_variant(skus), params)
     daily_rows = rows(cur, q_daily(skus), params)
     # Optional sources degrade gracefully if the schema isn't granted.
-    pdp_rows = safe_fetch(f"{lid}.pdp (UTS)", lambda: rows(cur, q_pdp(skus), params), [], key="uts")
-    cross_rows = safe_fetch(f"{lid}.cross_sell (DRP)", lambda: rows(cur, q_cross_sell(skus), params), [], key="drp")
-    subs_row = safe_fetch(f"{lid}.subscriptions (USS)", lambda: rows(cur, q_subs(skus), {})[0],
-                          {"SUB_ORDERS": 0, "SUB_UNITS": 0, "SUB_REVENUE": None}, key="uss")
-    inv_rows = safe_fetch(f"{lid}.inventory (UOS.INVENTORY_LEVELS)",
-                          lambda: rows(cur, q_inventory(skus), {}), [], key="uos_inventory")
-    trail_rows = safe_fetch(f"{lid}.trailing_units (UOS)",
-                            lambda: rows(cur, q_trailing_units(skus), params), [], key="uos_inventory")
+    # Archived launches (past the decay curve) keep sales, variants, daily and
+    # plan so the Historical view can render, but skip the per-tab detail: those
+    # figures cannot change any more and re-querying them daily is pure cost.
+    if full:
+        pdp_rows = safe_fetch(f"{lid}.pdp (UTS)", lambda: rows(cur, q_pdp(skus), params), [], key="uts")
+        cross_rows = safe_fetch(f"{lid}.cross_sell (DRP)", lambda: rows(cur, q_cross_sell(skus), params), [], key="drp")
+        cross_sku_rows = safe_fetch(f"{lid}.cross_sell_by_sku (DRP)",
+                                    lambda: rows(cur, q_cross_sell_by_sku(skus), params), [], key="drp")
+        subs_row = safe_fetch(f"{lid}.subscriptions (USS)", lambda: rows(cur, q_subs(skus), {})[0],
+                              {"SUB_ORDERS": 0, "SUB_UNITS": 0, "SUB_REVENUE": None}, key="uss")
+        inv_rows = safe_fetch(f"{lid}.inventory (UOS.INVENTORY_LEVELS)",
+                              lambda: rows(cur, q_inventory(skus), {}), [], key="uos_inventory")
+        trail_rows = safe_fetch(f"{lid}.trailing_units (UOS)",
+                                lambda: rows(cur, q_trailing_units(skus), params), [], key="uos_inventory")
+    else:
+        pdp_rows, cross_rows, cross_sku_rows, inv_rows, trail_rows = [], [], [], [], []
+        subs_row = {"SUB_ORDERS": 0, "SUB_UNITS": 0, "SUB_REVENUE": None}
     plan_detail = safe_fetch(f"{lid}.plan (GSHEETS)",
                              lambda: [(r["SKU"], str(r["D"]), int(r["PLAN_UNITS"] or 0))
                                       for r in rows(cur, q_plan(skus), params)],
@@ -601,6 +678,16 @@ def build_launch(cur, lc, cutoff):
             SOURCE_STATUS["gsheets"] = "fallback"
             print(f"NOTE: {lid}.plan using committed config/plan_fallback.json "
                   f"(GSHEETS snapshot) instead of a live query.")
+    # Whole-curve goal, separate from the to-date plan above. Without this the
+    # dashboard can say "116% to plan so far" but not "how many units are still
+    # owed against the goal", and cannot know when the curve actually ends.
+    plan_full = safe_fetch(f"{lid}.plan_full (GSHEETS)",
+                           lambda: {r["SKU"]: (int(r["PLAN_TOTAL"] or 0), str(r["PLAN_END"]))
+                                    for r in rows(cur, q_plan_full(skus), {})},
+                           {}, key="gsheets")
+    if not plan_full:
+        plan_full = plan_totals_from_fallback(skus)
+
     plan_rows, plan_daily = {}, {}
     for sku, d, u in plan_detail:
         plan_rows[sku] = plan_rows.get(sku, 0) + u
@@ -641,6 +728,7 @@ def build_launch(cur, lc, cutoff):
         # Out-of-stock projection: available units divided by the trailing
         # sell-through rate. A straight-line estimate that assumes demand
         # holds and ignores replenishment — the dashboard labels it as such.
+        goal, curve_end = plan_full.get(sku, (None, None))
         avail = inv_by_sku.get(sku)
         run_rate = round(trail_by_sku.get(sku, 0) / oos_days, 2) if oos_days else 0
         if avail is None:
@@ -672,6 +760,13 @@ def build_launch(cur, lc, cutoff):
             "runRateUnitsPerDay": run_rate,
             "daysToOOS": days_to_oos,
             "estOOSDate": est_oos,
+            # Whole-curve goal, distinct from planUnits above (plan to date).
+            "planTotalUnits": goal,
+            "pctToGoalUnits": round(units / goal * 100, 1) if goal else None,
+            "unitsToGoal": max(0, goal - units) if goal else None,
+            "planEndDate": curve_end,
+            # Cover at the trailing sell-through rate.
+            "weeksOfStock": round(avail / run_rate / 7, 1) if avail and run_rate > 0 else None,
         })
 
     # plan_daily holds the per-day plan the cumulative curve is built from;
@@ -745,12 +840,24 @@ def build_launch(cur, lc, cutoff):
                    "orders": int(summary_row["CA_ORDERS"] or 0)},
         },
         "planCurve": plan_curve,
+        # Launch-level goal and the real end of the decay curve, taken from the
+        # forecast itself rather than launch_date + N.
+        "planTotalUnits": sum(v[0] for v in plan_full.values()) or None,
+        "planEndDate": max((v[1] for v in plan_full.values()), default=None),
+        "archived": not full,
         "byVariant": by_variant,
         "dailySales": daily,
         "pdp": pdp,
         "crossSell": [
             {"product": r["PRODUCT"], "sku": r["SKU"], "pairs": int(r["PAIRS"] or 0)}
             for r in cross_rows
+        ],
+        # Same pairings split by the launch shade that drove the basket, so the
+        # Cross-Sells tab can filter by variant.
+        "crossSellBySku": [
+            {"primarySku": r["PRIMARY_SKU"], "product": r["PRODUCT"],
+             "sku": r["SKU"], "pairs": int(r["PAIRS"] or 0)}
+            for r in cross_sku_rows
         ],
         "categoryCustomers": cc,
     }
@@ -838,6 +945,11 @@ def main():
               if (dt.date.fromisoformat(cutoff) - dt.date.fromisoformat(lc["launch_date"])).days <= retention]
     with_skus = [lc for lc in active if lc["skus"]]
     no_skus = [lc for lc in active if not lc["skus"]]
+    # Past the decay curve. These used to be dropped entirely, which silently
+    # removed finished launches from the dashboard — LLEM Shade Extension
+    # vanished on day 123 despite being a $1.6M launch. Still built, with the
+    # per-tab detail skipped, so the Historical view can show them.
+    archived = [lc for lc in launched if lc["skus"] and lc not in active]
     # launched too recently for the cutoff (e.g. launched today/yesterday)
     too_new = [lc for lc in cfg["launches"] if lc["launch_date"] > cutoff and lc["launch_date"] <= str(today)]
     traffic_start = min((lc["launch_date"] for lc in active), default=cutoff)
@@ -846,18 +958,27 @@ def main():
     if args.dry_run:
         print(f"-- cutoff={cutoff} ga_cutoff={ga_cutoff} traffic_start={traffic_start}")
         print(f"-- active launches: {[lc['id'] for lc in active]}")
+        print(f"-- archived (past decay curve, reduced query set): {[lc['id'] for lc in archived]}")
         print(f"-- skipped (no SKUs yet): {[lc['id'] for lc in no_skus]}")
-        for lc in with_skus:
+        for lc in with_skus + archived:
             skus = [s["sku"] for s in lc["skus"]]
             cat_patterns = lc.get("category_type_patterns") or []
-            print(f"\n-- ========== {lc['id']} ==========")
-            for name, sql in [
+            is_archived = lc in archived
+            print(f"\n-- ========== {lc['id']}{' (archived)' if is_archived else ''} ==========")
+            queries = [
                 ("summary", q_summary(skus)), ("by_variant", q_by_variant(skus)),
-                ("daily", q_daily(skus)), ("pdp", q_pdp(skus)),
-                ("cross_sell", q_cross_sell(skus)), ("subs", q_subs(skus)),
-                ("plan", q_plan(skus)),
-                ("category_customers", q_category_customers(skus, cat_patterns) if cat_patterns else "-- no category patterns configured"),
-            ]:
+                ("daily", q_daily(skus)), ("plan", q_plan(skus)),
+                ("plan_full", q_plan_full(skus)),
+            ]
+            if not is_archived:
+                queries += [
+                    ("pdp", q_pdp(skus)), ("cross_sell", q_cross_sell(skus)),
+                    ("cross_sell_by_sku", q_cross_sell_by_sku(skus)),
+                    ("subs", q_subs(skus)), ("inventory", q_inventory(skus)),
+                    ("trailing_units", q_trailing_units(skus)),
+                    ("category_customers", q_category_customers(skus, cat_patterns) if cat_patterns else "-- no category patterns configured"),
+                ]
+            for name, sql in queries:
                 print(f"\n-- {lc['id']}.{name}\n{sql}")
         print(f"\n-- traffic_by_channel\n{q_traffic_by_channel()}")
         print(f"\n-- traffic_monthly\n{q_traffic_monthly()}")
@@ -872,6 +993,7 @@ def main():
     try:
         cur = conn.cursor()
         launches = [build_launch(cur, lc, cutoff) for lc in with_skus]
+        launches += [build_launch(cur, lc, cutoff, full=False) for lc in archived]
         launches += [pending_launch(lc) for lc in no_skus + too_new]
         traffic = safe_fetch("traffic (GA4_API)", lambda: build_traffic(cur, params),
                              {"byChannel": [], "monthly": []}, key="ga4_api")
@@ -910,7 +1032,8 @@ def main():
         + ";\n"
     )
     print(f"Wrote {OUT_PATH} · cutoff {cutoff} · {len(launches)} launches "
-          f"({len(with_skus)} with data, {len(no_skus) + len(too_new)} pending)")
+          f"({len(with_skus)} with data, {len(archived)} archived, "
+          f"{len(no_skus) + len(too_new)} pending)")
 
 
 if __name__ == "__main__":

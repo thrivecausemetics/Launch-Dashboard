@@ -103,7 +103,25 @@
       .grid { grid-template-columns:1fr; }
       .hdr  { padding:20px; }
       .main { padding:20px 16px; }
+      .sum-wrap { overflow-x:auto; }
     }
+    .sum-card { background:var(--card); border-radius:12px; overflow:hidden; margin-bottom:26px;
+                box-shadow:0 1px 3px rgba(28,43,58,.07); }
+    .sum-wrap { overflow-x:auto; }
+    .sum-card table { width:100%; border-collapse:collapse; font-size:12.5px; }
+    .sum-card th { text-align:left; padding:10px 12px; background:#F7F9FB; color:var(--muted);
+                   font-size:10.5px; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+                   border-bottom:1px solid var(--border); white-space:nowrap; cursor:pointer; }
+    .sum-card th.r, .sum-card td.r { text-align:right; }
+    .sum-card td { padding:9px 12px; border-bottom:1px solid #F0F3F6; white-space:nowrap; }
+    .sum-card tr:last-child td { border-bottom:0; }
+    .sum-card tbody tr:hover { background:#FAFCFD; }
+    .sum-prod { font-weight:600; }
+    .sum-note { font-size:11px; color:var(--muted); line-height:1.55; padding:10px 12px 14px; }
+    .pill-risk { font-weight:600; }
+    .card.archived { border-left:4px solid var(--tc-navy); opacity:.92; }
+    .card.archived .card-accent { background:var(--tc-navy); }
+    .badge.archived { background:rgba(28,43,58,.08); color:var(--tc-navy); border:1px solid var(--border); }
   </style>
 </head>
 <body>
@@ -116,11 +134,31 @@
 
 <div class="main">
 
+  <div class="section-title">Live Launch Summary</div>
+  <div class="sum-card">
+    <div class="sum-wrap">
+      <table>
+        <thead><tr>
+          <th data-k="product">Product</th><th data-k="variant">Variant</th><th data-k="sku">SKU</th>
+          <th data-k="launch">Launch</th><th data-k="curveEnd">Curve Ends</th>
+          <th class="r" data-k="pct">% to Goal</th><th class="r" data-k="toGoal">Units to Goal</th>
+          <th class="r" data-k="inv">Inventory</th><th class="r" data-k="weeks">Wks of Stock</th>
+          <th class="r" data-k="oos">Est. OOS</th>
+        </tr></thead>
+        <tbody id="sum-body"></tbody>
+      </table>
+    </div>
+    <p class="sum-note" id="sum-note"></p>
+  </div>
+
   <div class="section-title">Live Launches</div>
   <div class="grid" id="live-grid"></div>
 
   <div class="section-title">Upcoming Launches</div>
   <div class="grid" id="upcoming-grid"></div>
+
+  <div class="section-title" id="hist-title" style="display:none">Historical &mdash; Past the Decay Curve</div>
+  <div class="grid" id="hist-grid"></div>
 </div>
 
 <div class="footer">Thrive Causemetics Launch Intelligence Hub &mdash; Data: Snowflake DAASITY_DB &middot; <a href="https://github.com/thrivecausemetics/glowing-launch-pad" style="color:var(--tc-teal);text-decoration:none;">glowing-launch-pad</a></div>
@@ -139,6 +177,73 @@
 
   const live = DD.launches.filter(l => state(l) === 'live');
   const pending = DD.launches.filter(l => state(l) === 'pending');
+  const archived = DD.launches.filter(l => state(l) === 'archived');
+
+  /* ── LIVE LAUNCH SUMMARY ──
+     One row per variant across every launch still inside its decay curve.
+     Column order runs identity -> timeline -> goal -> stock risk, so the row
+     reads as "what it is, when it runs, how it is tracking, will we have
+     stock". The risk columns sit last because they are the punchline.
+
+     % to Goal is measured against the WHOLE 120-day plan curve, which is not
+     the same number as the "% to Plan" on a launch page — that one is plan to
+     date. Both are legitimate; they answer different questions, so the note
+     under the table spells out the difference. */
+  const riskColour = d => d == null ? 'var(--muted)'
+    : d <= 14 ? 'var(--danger)' : d <= 30 ? 'var(--warn)' : 'var(--positive)';
+
+  const sumRows = live.flatMap(l => (l.byVariant || []).map(v => ({
+    product: l.name, variant: v.name, sku: v.sku,
+    launch: l.launchDate, curveEnd: v.planEndDate || l.planEndDate,
+    pct: v.pctToGoalUnits, toGoal: v.unitsToGoal, inv: v.inventoryUnits,
+    weeks: v.weeksOfStock, oos: v.estOOSDate, days: v.daysToOOS,
+    href: 'launch.html?id=' + encodeURIComponent(l.launchId),
+  })));
+
+  const num = v => v == null ? '—' : Number(v).toLocaleString('en-US');
+  const renderSummary = () => {
+    document.getElementById('sum-body').innerHTML = sumRows.length ? sumRows.map(r => `
+      <tr>
+        <td class="sum-prod"><a href="${r.href}" style="color:inherit;text-decoration:none">${r.product}</a></td>
+        <td>${r.variant}</td>
+        <td><code style="font-size:11.5px;background:var(--bg);padding:1px 5px;border-radius:4px">${r.sku}</code></td>
+        <td>${fmtDay(r.launch)}</td>
+        <td>${r.curveEnd ? fmtDay(r.curveEnd) : '—'}</td>
+        <td class="r" style="color:${ptpColor(r.pct)};font-weight:600">${r.pct == null ? '—' : r.pct.toFixed(1) + '%'}</td>
+        <td class="r">${r.toGoal == null ? '—' : r.toGoal === 0 ? 'goal met' : num(r.toGoal)}</td>
+        <td class="r">${num(r.inv)}</td>
+        <td class="r">${r.weeks == null ? '—' : r.weeks.toFixed(1)}</td>
+        <td class="r pill-risk" style="color:${riskColour(r.days)}">${
+          r.inv === 0 ? 'out of stock' : r.oos ? fmtDay(r.oos) : '—'}</td>
+      </tr>`).join('')
+      : '<tr><td colspan="10" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
+  };
+  renderSummary();
+
+  document.getElementById('sum-note').innerHTML =
+    `${sumRows.length} variant${sumRows.length !== 1 ? 's' : ''} across ${live.length} live launch${live.length !== 1 ? 'es' : ''}. ` +
+    `<strong>% to Goal</strong> and <strong>Units to Goal</strong> are measured against the full ${RET}-day plan curve, ` +
+    `so they differ from the <strong>% to Plan</strong> on each launch page, which measures plan to date. ` +
+    `<strong>Wks of Stock</strong> and <strong>Est. OOS</strong> project current inventory forward at the trailing ` +
+    `${META.oosWindowDays || 7}-day sell-through rate — an assumption that demand holds and no replenishment arrives, not a forecast. ` +
+    `<strong>Curve Ends</strong> is the last day of the SKU's plan curve. Click any column to sort.`;
+
+  // Sorting: click a header, toggle direction. Nulls always sink.
+  let sortKey = null, sortAsc = true;
+  document.querySelectorAll('.sum-card th[data-k]').forEach(th => th.onclick = () => {
+    const k = th.dataset.k;
+    sortAsc = sortKey === k ? !sortAsc : true;
+    sortKey = k;
+    sumRows.sort((a, b) => {
+      const x = a[k], y = b[k];
+      if (x == null && y == null) return 0;
+      if (x == null) return 1;
+      if (y == null) return -1;
+      const c = typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y));
+      return sortAsc ? c : -c;
+    });
+    renderSummary();
+  });
 
   document.getElementById('hdr-meta').innerHTML = [
     `<span class="stat-pill green">${live.length} Live Launch${live.length !== 1 ? 'es' : ''}</span>`,
@@ -179,6 +284,36 @@
       <p class="upcoming-note">Sales data appears after the next automated refresh${l.skusPending ? ' (SKUs pending in config/launches.json)' : ''}</p>
       <span class="card-action">View Dashboard &rarr;</span>
     </a>`).join('');
+
+  /* ── HISTORICAL ──
+     Launches past the decay curve. These used to disappear from the hub
+     entirely once the pipeline stopped building them; they are now still
+     emitted (with per-tab detail skipped) so finished launches stay
+     inspectable instead of silently dropping off. */
+  if (archived.length) {
+    document.getElementById('hist-title').style.display = '';
+    document.getElementById('hist-grid').innerHTML = archived.map(l => {
+      const s = l.summary || {}, ptp = s.pctToPlanUnits;
+      const days = db(l.launchDate, META.dataCutoff);
+      return `<a class="card archived" href="launch.html?id=${encodeURIComponent(l.launchId)}" style="border-left-color:var(--tc-navy)">
+        <div class="card-accent" style="background:var(--tc-navy)"></div>
+        <div class="card-top">
+          <div class="card-name">${l.name}<br><span style="font-size:12px;font-weight:400;color:var(--muted)">${l.subtitle || ''}</span></div>
+          <span class="badge archived">Archived</span>
+        </div>
+        <div class="card-dates">
+          <div class="date-item"><strong>${fmtDate(l.launchDate)}</strong>Launch Date</div>
+          <div class="date-item"><strong>Day ${days}</strong>Past the ${RET}-day curve</div>
+        </div>
+        <div class="card-kpis">
+          <span class="kpi-chip">$${Math.round((s.netSales || 0) / 1000)}k Net Sales</span>
+          <span class="kpi-chip">${(s.units || 0).toLocaleString()} Units</span>
+          <span class="kpi-chip" style="color:${ptpColor(ptp)}">${ptp != null ? ptp.toFixed(1) + '% to Plan' : '—'}</span>
+        </div>
+        <span class="card-action" style="background:var(--tc-navy)">View Dashboard &rarr;</span>
+      </a>`;
+    }).join('');
+  }
 
   const upcoming = (DD.upcoming || []).filter(u =>
     db(META.generatedAt, u.launchDate) >= 0 &&
