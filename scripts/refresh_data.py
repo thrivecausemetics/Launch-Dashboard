@@ -53,6 +53,8 @@ GA4_LAG_DAYS = 2  # GA4 sync lag: traffic data trails the sales cutoff
 # weekday/weekend swing without letting launch-week spikes dominate.
 OOS_WINDOW_DAYS = 7
 
+LEARNINGS = {}
+
 # Tables are always resolved in this database, regardless of the connection's
 # default database context (SNOWFLAKE_DATABASE).
 SRC_DB = os.environ.get("SNOWFLAKE_SOURCE_DB", "DAASITY_DB")
@@ -574,6 +576,45 @@ def plan_detail_from_fallback(skus, launch_date, cutoff):
     return out
 
 
+LEARNINGS_PATH = ROOT / "config" / "learnings.json"
+
+
+def load_learnings():
+    """Retro learnings keyed by launch id, or {}.
+
+    Kept in the repo rather than a database because this dashboard's container
+    has no write path — see the note in config/learnings.json.
+    """
+    if not LEARNINGS_PATH.exists():
+        return {}
+    try:
+        return (json.loads(LEARNINGS_PATH.read_text()).get("byLaunch") or {})
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"WARNING: {LEARNINGS_PATH.name} unreadable ({e}); continuing without learnings")
+        return {}
+
+
+CALENDAR_PATH = ROOT / "config" / "launch_calendar.json"
+
+
+def load_launch_calendar():
+    """The Asana marketing calendar snapshot, or None.
+
+    Written by scripts/sync_launch_calendar.py. Read here rather than calling
+    Asana directly so the Snowflake refresh never depends on Asana being
+    reachable, and so every date change is visible in git history.
+    """
+    if not CALENDAR_PATH.exists():
+        return None
+    try:
+        cal = json.loads(CALENDAR_PATH.read_text())
+        return cal if cal.get("entries") else None
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"WARNING: {CALENDAR_PATH.name} unreadable ({e}); "
+              f"falling back to the upcoming list in launches.json")
+        return None
+
+
 def plan_totals_from_fallback(skus):
     """Whole-curve plan totals and curve end date from the committed snapshot,
     for when the workflow's Snowflake user has no GSHEETS grant. Unbounded by
@@ -857,6 +898,7 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
         "trafficEnd": ga_cutoff,
         "traffic": traffic,
         "landing": landing,
+        "learnings": LEARNINGS.get(lc["id"], []),
         "planCurve": plan_curve,
         # Launch-level goal and the real end of the decay curve, taken from the
         # forecast itself rather than launch_date + N.
@@ -964,6 +1006,8 @@ def main():
 
     cfg = json.loads(CONFIG_PATH.read_text())
     retention = int(cfg.get("retention_days", 122))
+    global LEARNINGS
+    LEARNINGS = load_learnings()   # before build_launch(), which reads it
 
     today = dt.date.today()
     cutoff = os.environ.get("DATA_CUTOFF") or str(today - dt.timedelta(days=1))
@@ -1028,6 +1072,39 @@ def main():
     finally:
         conn.close()
 
+    # Upcoming comes from the Asana marketing calendar when a snapshot exists —
+    # that is the team's source of truth. The hand-maintained list in
+    # launches.json stays as the fallback so the dashboard still works if the
+    # snapshot is missing. Tracked launches keep their config dates either way;
+    # a live launch's date is never rewritten from Asana automatically.
+    cal = load_launch_calendar()
+    tracked_by_gid = {l["asana_gid"]: l["id"] for l in cfg["launches"] if l.get("asana_gid")}
+    if cal:
+        upcoming_out = [
+            {"name": e["name"], "launchDate": e["launch_date"],
+             "internalDate": e.get("internal_date"),
+             "trackedId": tracked_by_gid.get(e["asana_gid"]),
+             "section": e.get("section"), "asanaUrl": e.get("asana_url")}
+            for e in cal["entries"]
+        ]
+        calendar_out = {
+            "source": "asana",
+            "projectUrl": cal.get("asana_project_url"),
+            "mismatches": cal.get("mismatches") or [],
+            "notLinked": cal.get("not_in_config") or [],
+            "configWithoutLink": cal.get("config_without_asana_gid") or [],
+        }
+        print(f"Upcoming sourced from the Asana calendar snapshot "
+              f"({len(upcoming_out)} entries, {len(calendar_out['mismatches'])} date mismatches)")
+    else:
+        upcoming_out = [
+            {"name": u["name"], "launchDate": u["launch_date"],
+             "internalDate": u.get("internal_date"), "trackedId": u.get("tracked_id")}
+            for u in cfg.get("upcoming", [])
+        ]
+        calendar_out = {"source": "config", "projectUrl": None,
+                        "mismatches": [], "notLinked": [], "configWithoutLink": []}
+
     data = {
         "meta": {
             "dataCutoff": cutoff,
@@ -1040,11 +1117,8 @@ def main():
             "sourceStatus": SOURCE_STATUS,
         },
         "launches": launches,
-        "upcoming": [
-            {"name": u["name"], "launchDate": u["launch_date"],
-             "internalDate": u.get("internal_date"), "trackedId": u.get("tracked_id")}
-            for u in cfg.get("upcoming", [])
-        ],
+        "upcoming": upcoming_out,
+        "calendar": calendar_out,
     }
 
     OUT_PATH.write_text(

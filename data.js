@@ -225,66 +225,66 @@ window.DASHBOARD_DATA = {
           {
             "month": "Apr 2026",
             "chs": {
-              "Organic Video": 18,
-              "Organic Search": 3519,
-              "Email": 15099,
-              "Paid Shopping": 4435,
-              "Direct": 14567,
+              "Cross-network": 5627,
               "Display": 204,
+              "Direct": 14567,
+              "Paid Other": 15421,
               "Mobile Push Notifications": 1,
+              "Referral": 719,
+              "Organic Search": 3519,
               "Paid Search": 14260,
+              "Email": 15099,
+              "Organic Video": 18,
               "SMS": 10436,
               "Paid Video": 32,
-              "Cross-network": 5627,
               "Unassigned": 8864,
-              "Paid Other": 15421,
-              "Paid Social": 51793,
               "Organic Shopping": 1085,
               "Organic Social": 2747,
-              "Referral": 719
+              "Paid Social": 51793,
+              "Paid Shopping": 4435
             }
           },
           {
             "month": "May 2026",
             "chs": {
-              "Unassigned": 387728,
-              "Paid Other": 424237,
-              "Cross-network": 193649,
-              "Display": 4120,
-              "Organic Video": 355,
+              "Paid Search": 477762,
               "Email": 530117,
-              "Organic Shopping": 52647,
-              "SMS": 392780,
-              "Direct": 1836431,
+              "Cross-network": 193649,
+              "Paid Social": 2188680,
               "Paid Video": 3078,
               "Paid Shopping": 124997,
+              "Unassigned": 387728,
+              "Organic Shopping": 52647,
               "Organic Search": 102908,
-              "Paid Social": 2188680,
               "Referral": 19213,
+              "Organic Video": 355,
+              "SMS": 392780,
               "Organic Social": 132582,
-              "Paid Search": 477762,
+              "Display": 4120,
+              "Paid Other": 424237,
+              "Direct": 1836431,
               "Affiliates": 24
             }
           },
           {
             "month": "Jun 2026",
             "chs": {
-              "Paid Social": 1454669,
-              "Paid Shopping": 112677,
-              "Email": 453056,
-              "Organic Search": 82287,
-              "Paid Other": 321863,
-              "Cross-network": 169820,
-              "Direct": 466180,
-              "Paid Search": 391238,
-              "Paid Video": 3288,
               "Unassigned": 267603,
-              "Display": 4339,
-              "SMS": 302086,
+              "Paid Search": 391238,
               "Referral": 14613,
-              "Organic Social": 130170,
               "Organic Video": 133,
+              "Email": 453056,
+              "Display": 4339,
+              "Paid Shopping": 112677,
+              "Organic Social": 130170,
+              "Paid Video": 3288,
+              "SMS": 302086,
               "Organic Shopping": 44780,
+              "Organic Search": 82287,
+              "Cross-network": 169820,
+              "Paid Social": 1454669,
+              "Direct": 466180,
+              "Paid Other": 321863,
               "Mobile Push Notifications": 4,
               "AI Assistant": 1225,
               "Affiliates": 3
@@ -293,22 +293,22 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Organic Social": 107105,
-              "Organic Search": 89549,
-              "Display": 10350,
-              "Paid Shopping": 133682,
-              "Referral": 19681,
-              "Cross-network": 191011,
-              "Unassigned": 294263,
-              "Email": 471247,
               "Paid Social": 1835866,
-              "Paid Video": 2219,
-              "Paid Other": 392354,
-              "Organic Video": 297,
-              "Paid Search": 392929,
-              "Organic Shopping": 31592,
               "Direct": 652359,
+              "Organic Video": 297,
+              "Paid Other": 392354,
+              "Email": 471247,
+              "Display": 10350,
+              "Unassigned": 294263,
+              "Paid Search": 392929,
+              "Paid Shopping": 133682,
+              "Cross-network": 191011,
               "SMS": 237045,
+              "Organic Shopping": 31592,
+              "Organic Social": 107105,
+              "Paid Video": 2219,
+              "Referral": 19681,
+              "Organic Search": 89549,
               "AI Assistant": 1111,
               "Affiliates": 6
             }
@@ -316,23 +316,23 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
-              "Paid Search": 204257,
-              "Paid Social": 875724,
-              "Organic Social": 55265,
-              "Paid Other": 300130,
-              "Display": 8536,
               "Direct": 368265,
-              "Paid Video": 1195,
-              "Unassigned": 193112,
-              "SMS": 129537,
-              "Referral": 9708,
-              "Organic Shopping": 16665,
-              "Organic Video": 68,
-              "Organic Search": 49164,
-              "Paid Shopping": 70576,
+              "Organic Social": 55265,
               "AI Assistant": 958,
+              "Organic Shopping": 16665,
+              "Paid Social": 875724,
+              "SMS": 129537,
+              "Paid Video": 1195,
               "Cross-network": 99940,
               "Email": 309649,
+              "Organic Video": 68,
+              "Paid Shopping": 70576,
+              "Display": 8536,
+              "Referral": 9708,
+              "Unassigned": 193112,
+              "Organic Search": 49164,
+              "Paid Other": 300130,
+              "Paid Search": 204257,
               "Affiliates": 6
             }
           }
@@ -430,6 +430,7 @@ window.DASHBOARD_DATA = {
           "cvr": 0.0
         }
       ],
+      "learnings": [],
       "planCurve": [
         {
           "date": "2026-05-01",
@@ -3637,23 +3638,23 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jun 2026",
             "chs": {
-              "Paid Other": 249202,
-              "Email": 352638,
-              "Cross-network": 136649,
               "Paid Search": 299936,
-              "Organic Social": 88198,
-              "Display": 3759,
               "Referral": 10953,
-              "Paid Social": 1145454,
-              "Unassigned": 204456,
+              "Display": 3759,
+              "Paid Shopping": 84486,
+              "Organic Social": 88198,
+              "SMS": 237059,
+              "Paid Other": 249202,
               "Organic Shopping": 36161,
+              "Paid Social": 1145454,
+              "Organic Video": 95,
+              "Cross-network": 136649,
+              "AI Assistant": 1103,
               "Organic Search": 63229,
               "Paid Video": 2326,
-              "AI Assistant": 1103,
-              "SMS": 237059,
+              "Email": 352638,
               "Direct": 361180,
-              "Paid Shopping": 84486,
-              "Organic Video": 95,
+              "Unassigned": 204456,
               "Mobile Push Notifications": 3,
               "Affiliates": 3
             }
@@ -3661,52 +3662,53 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Organic Search": 89549,
-              "Paid Search": 392929,
-              "Organic Shopping": 31592,
-              "SMS": 237045,
-              "Direct": 652359,
-              "Paid Other": 392354,
-              "Organic Social": 107105,
-              "Paid Video": 2219,
+              "Unassigned": 294263,
+              "Display": 10350,
               "Cross-network": 191011,
-              "Paid Shopping": 133682,
+              "Paid Search": 392929,
               "Email": 471247,
               "Organic Video": 297,
-              "Unassigned": 294263,
+              "Organic Social": 107105,
               "Paid Social": 1835866,
+              "Paid Shopping": 133682,
+              "Paid Other": 392354,
               "Referral": 19681,
-              "Display": 10350,
+              "Paid Video": 2219,
+              "Organic Search": 89549,
+              "Organic Shopping": 31592,
+              "SMS": 237045,
               "AI Assistant": 1111,
+              "Direct": 652359,
               "Affiliates": 6
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Organic Search": 49164,
-              "Cross-network": 99940,
-              "Organic Social": 55265,
-              "Unassigned": 193112,
-              "Display": 8536,
-              "Paid Search": 204257,
               "Organic Shopping": 16665,
-              "Organic Video": 68,
               "Email": 309649,
-              "Paid Other": 300130,
               "Paid Shopping": 70576,
+              "Organic Video": 68,
               "SMS": 129537,
-              "Referral": 9708,
-              "Paid Video": 1195,
-              "Direct": 368265,
+              "Organic Search": 49164,
+              "Paid Other": 300130,
               "Paid Social": 875724,
+              "Paid Video": 1195,
+              "Cross-network": 99940,
+              "Unassigned": 193112,
+              "Paid Search": 204257,
               "AI Assistant": 958,
+              "Organic Social": 55265,
+              "Referral": 9708,
+              "Direct": 368265,
+              "Display": 8536,
               "Affiliates": 6
             }
           }
         ]
       },
       "landing": [],
+      "learnings": [],
       "planCurve": [
         {
           "date": "2026-06-08",
@@ -5526,46 +5528,46 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Organic Social": 32182,
               "SMS": 96972,
-              "Paid Search": 134527,
-              "Paid Social": 634261,
               "Organic Search": 29385,
-              "Organic Video": 114,
-              "Paid Shopping": 36421,
-              "Paid Video": 613,
-              "Unassigned": 100081,
-              "Display": 1718,
+              "Cross-network": 66453,
               "Organic Shopping": 9533,
+              "Organic Video": 114,
+              "Organic Social": 32182,
+              "Paid Social": 634261,
               "Email": 189059,
               "Direct": 279560,
-              "Paid Other": 166315,
-              "Cross-network": 66453,
-              "Referral": 6859,
+              "Display": 1718,
+              "Paid Video": 613,
+              "Paid Shopping": 36421,
               "AI Assistant": 296,
+              "Paid Other": 166315,
+              "Unassigned": 100081,
+              "Referral": 6859,
+              "Paid Search": 134527,
               "Affiliates": 3
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Referral": 9708,
-              "Organic Shopping": 16665,
+              "Paid Other": 300130,
               "Paid Social": 875724,
-              "Paid Video": 1195,
-              "SMS": 129537,
-              "Paid Shopping": 70576,
-              "Cross-network": 99940,
-              "Display": 8536,
               "Organic Search": 49164,
               "Email": 309649,
-              "Paid Search": 204257,
-              "AI Assistant": 958,
-              "Organic Video": 68,
+              "Display": 8536,
               "Organic Social": 55265,
+              "Cross-network": 99940,
               "Unassigned": 193112,
-              "Paid Other": 300130,
+              "SMS": 129537,
+              "Referral": 9708,
+              "Paid Shopping": 70576,
+              "Organic Video": 68,
+              "AI Assistant": 958,
               "Direct": 368265,
+              "Paid Video": 1195,
+              "Paid Search": 204257,
+              "Organic Shopping": 16665,
               "Affiliates": 6
             }
           }
@@ -5673,6 +5675,7 @@ window.DASHBOARD_DATA = {
           "cvr": 0.68
         }
       ],
+      "learnings": [],
       "planCurve": [
         {
           "date": "2026-07-22",
@@ -6651,68 +6654,68 @@ window.DASHBOARD_DATA = {
             "chs": {
               "Paid Shopping": 50882,
               "Mobile Push Notifications": 1,
+              "Organic Search": 37974,
               "Paid Search": 180642,
-              "Paid Social": 647411,
-              "Email": 193821,
-              "Organic Video": 61,
-              "AI Assistant": 706,
               "Direct": 203377,
+              "Unassigned": 122012,
+              "Display": 2776,
               "SMS": 135686,
               "Referral": 6487,
-              "Display": 2776,
+              "AI Assistant": 706,
               "Paid Video": 1237,
-              "Organic Search": 37974,
-              "Organic Social": 39597,
-              "Organic Shopping": 21024,
               "Paid Other": 141854,
+              "Organic Shopping": 21024,
               "Cross-network": 86243,
-              "Unassigned": 122012,
+              "Organic Video": 61,
+              "Email": 193821,
+              "Paid Social": 647411,
+              "Organic Social": 39597,
               "Affiliates": 3
             }
           },
           {
             "month": "Jul 2026",
             "chs": {
-              "Organic Shopping": 31592,
+              "Organic Search": 89549,
+              "Paid Shopping": 133682,
+              "Display": 10350,
               "Unassigned": 294263,
-              "Paid Search": 392929,
-              "Email": 471247,
-              "Referral": 19681,
-              "Paid Social": 1835866,
               "Organic Social": 107105,
               "SMS": 237045,
+              "Paid Other": 392354,
+              "Referral": 19681,
+              "Paid Social": 1835866,
+              "Cross-network": 191011,
+              "Paid Search": 392929,
+              "Organic Shopping": 31592,
               "AI Assistant": 1111,
               "Organic Video": 297,
               "Direct": 652359,
               "Paid Video": 2219,
-              "Cross-network": 191011,
-              "Organic Search": 89549,
-              "Paid Other": 392354,
-              "Paid Shopping": 133682,
-              "Display": 10350,
+              "Email": 471247,
               "Affiliates": 6
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Email": 309649,
-              "Paid Search": 204257,
-              "Organic Shopping": 16665,
+              "Paid Video": 1195,
+              "Paid Other": 300130,
+              "SMS": 129537,
+              "Referral": 9708,
+              "Cross-network": 99940,
               "Paid Social": 875724,
+              "Paid Shopping": 70576,
+              "Organic Social": 55265,
+              "Paid Search": 204257,
+              "Organic Video": 68,
+              "Display": 8536,
+              "Unassigned": 193112,
+              "Organic Shopping": 16665,
+              "Direct": 368265,
+              "Email": 309649,
               "Organic Search": 49164,
               "AI Assistant": 958,
-              "Paid Video": 1195,
-              "Organic Video": 68,
-              "Organic Social": 55265,
-              "Display": 8536,
-              "Cross-network": 99940,
-              "SMS": 129537,
-              "Direct": 368265,
-              "Unassigned": 193112,
-              "Referral": 9708,
-              "Paid Other": 300130,
-              "Paid Shopping": 70576,
               "Affiliates": 6
             }
           }
@@ -6790,6 +6793,7 @@ window.DASHBOARD_DATA = {
           "cvr": 0.0
         }
       ],
+      "learnings": [],
       "planCurve": [
         {
           "date": "2026-06-17",
@@ -8207,6 +8211,7 @@ window.DASHBOARD_DATA = {
         "monthly": []
       },
       "landing": [],
+      "learnings": [],
       "planCurve": [
         {
           "date": "2026-08-18",
@@ -8663,6 +8668,7 @@ window.DASHBOARD_DATA = {
         "monthly": []
       },
       "landing": [],
+      "learnings": [],
       "planCurve": [
         {
           "date": "2026-04-07",
@@ -11022,40 +11028,213 @@ window.DASHBOARD_DATA = {
   ],
   "upcoming": [
     {
-      "name": "BEB Extension: Hoda & Mila",
-      "launchDate": "2026-06-17",
-      "internalDate": "2026-05-29",
-      "trackedId": "beb-hoda-mila"
-    },
-    {
-      "name": "Summer Promo",
-      "launchDate": "2026-07-01",
-      "internalDate": "2026-06-23",
-      "trackedId": null
-    },
-    {
-      "name": "Eyeshadow Quads",
+      "name": "Eyeshadow Quads Drop 1 US",
       "launchDate": "2026-07-22",
       "internalDate": "2026-07-14",
-      "trackedId": "eyeshadow-quads"
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1213575011101074"
     },
     {
-      "name": "Back to Me + Triple Threat",
-      "launchDate": "2026-08-20",
-      "internalDate": "2026-07-24",
-      "trackedId": null
+      "name": "Eyeshadow Quads Drop 1 CAN",
+      "launchDate": "2026-07-28",
+      "internalDate": "2026-07-14",
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777622961331"
     },
     {
-      "name": "Lasting Mark\u2122 Lip-Defining Stain",
+      "name": "LLEM Ivy & Iris Restock",
+      "launchDate": "2026-08-05",
+      "internalDate": null,
+      "trackedId": null,
+      "section": "Product Spotlights (Relaunches, Reanimations, Restocks)",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777622961361"
+    },
+    {
+      "name": "Lip Stain Marker",
       "launchDate": "2026-08-18",
-      "internalDate": "2026-08-18",
-      "trackedId": "lasting-mark-lip-stain"
+      "internalDate": "2026-09-02",
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1213996421586726"
     },
     {
-      "name": "Holiday 2026 + Limited Edition",
-      "launchDate": "2026-10-12",
-      "internalDate": "2026-10-06",
-      "trackedId": null
+      "name": "Triple Threat",
+      "launchDate": "2026-08-26",
+      "internalDate": "2026-07-24",
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1213929460766191"
+    },
+    {
+      "name": "Pumpkin Spice Latte Pout Hero Lip Balm",
+      "launchDate": "2026-09-02",
+      "internalDate": null,
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777821260262"
+    },
+    {
+      "name": "Winter Berries + BEB Cindy Drop",
+      "launchDate": "2026-09-16",
+      "internalDate": null,
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777821260266"
+    },
+    {
+      "name": "Eyeshadow Quads Drop 2",
+      "launchDate": "2026-10-07",
+      "internalDate": "2026-07-14",
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777622961333"
+    },
+    {
+      "name": "Holiday Phase 1: BEB & Holiday Bundles",
+      "launchDate": "2026-11-04",
+      "internalDate": null,
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777821260268"
+    },
+    {
+      "name": "Holiday Phase 2: BFCM & Giving Tuesday",
+      "launchDate": "2026-11-27",
+      "internalDate": null,
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777821260273"
     }
-  ]
+  ],
+  "calendar": {
+    "source": "asana",
+    "projectUrl": "https://app.asana.com/0/1216777821260255/list",
+    "mismatches": [],
+    "notLinked": [
+      {
+        "name": "Eyeshadow Quads Drop 1 US",
+        "launch_date": "2026-07-22",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1213575011101074"
+      },
+      {
+        "name": "Eyeshadow Quads Drop 1 CAN",
+        "launch_date": "2026-07-28",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1216777622961331"
+      },
+      {
+        "name": "LLEM Ivy & Iris Restock",
+        "launch_date": "2026-08-05",
+        "section": "Product Spotlights (Relaunches, Reanimations, Restocks)",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1216777622961361"
+      },
+      {
+        "name": "Lip Stain Marker",
+        "launch_date": "2026-08-18",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1213996421586726"
+      },
+      {
+        "name": "Triple Threat",
+        "launch_date": "2026-08-26",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1213929460766191"
+      },
+      {
+        "name": "Pumpkin Spice Latte Pout Hero Lip Balm",
+        "launch_date": "2026-09-02",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1216777821260262"
+      },
+      {
+        "name": "Winter Berries + BEB Cindy Drop",
+        "launch_date": "2026-09-16",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1216777821260266"
+      },
+      {
+        "name": "Eyeshadow Quads Drop 2",
+        "launch_date": "2026-10-07",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1216777622961333"
+      },
+      {
+        "name": "Holiday Phase 1: BEB & Holiday Bundles",
+        "launch_date": "2026-11-04",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1216777821260268"
+      },
+      {
+        "name": "Holiday Phase 2: BFCM & Giving Tuesday",
+        "launch_date": "2026-11-27",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/0/1216777821260255/1216777821260273"
+      }
+    ],
+    "configWithoutLink": [
+      {
+        "name": "EmpowerShine Satin Lip Cream",
+        "kind": "tracked",
+        "config_launch_date": "2026-04-30"
+      },
+      {
+        "name": "Becca Brow",
+        "kind": "tracked",
+        "config_launch_date": "2026-06-08"
+      },
+      {
+        "name": "Liquid Lash\u2122 Extensions Mascara \u2014 Shade Extension",
+        "kind": "tracked",
+        "config_launch_date": "2026-04-07"
+      },
+      {
+        "name": "Eyeshadow Quads",
+        "kind": "tracked",
+        "config_launch_date": "2026-07-22"
+      },
+      {
+        "name": "BEB Extension: Hoda & Mila",
+        "kind": "tracked",
+        "config_launch_date": "2026-06-17"
+      },
+      {
+        "name": "Lasting Mark\u2122 Lip-Defining Stain",
+        "kind": "tracked",
+        "config_launch_date": "2026-08-18"
+      },
+      {
+        "name": "BEB Extension: Hoda & Mila",
+        "kind": "upcoming",
+        "config_launch_date": "2026-06-17"
+      },
+      {
+        "name": "Summer Promo",
+        "kind": "upcoming",
+        "config_launch_date": "2026-07-01"
+      },
+      {
+        "name": "Eyeshadow Quads",
+        "kind": "upcoming",
+        "config_launch_date": "2026-07-22"
+      },
+      {
+        "name": "Back to Me + Triple Threat",
+        "kind": "upcoming",
+        "config_launch_date": "2026-08-20"
+      },
+      {
+        "name": "Lasting Mark\u2122 Lip-Defining Stain",
+        "kind": "upcoming",
+        "config_launch_date": "2026-08-18"
+      },
+      {
+        "name": "Holiday 2026 + Limited Edition",
+        "kind": "upcoming",
+        "config_launch_date": "2026-10-12"
+      }
+    ]
+  }
 };

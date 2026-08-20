@@ -1,0 +1,33 @@
+{
+  "_readme": [
+    "Retro learnings per launch, surfaced on the Launch Learnings tab so they",
+    "outlive the retro deck and stay attached to the launch's numbers.",
+    "",
+    "HOW TO ADD ONE TODAY",
+    "  Add an entry under the launch's id (matching config/launches.json) and",
+    "  open a PR. It appears on the next refresh. Entries are versioned in git,",
+    "  so who wrote what and when is recoverable.",
+    "",
+    "WHY NOT AN IN-APP FORM YET",
+    "  This dashboard is a static file server with no database and no write",
+    "  path — the container serves committed files and holds no state. Letting",
+    "  users type learnings straight into the page needs somewhere to put them",
+    "  and an identity to attribute them to. Both already exist in the internal",
+    "  portal (Postgres + Prisma + Google SSO + audit logging), so that is the",
+    "  right home for an editable version; it is a portal change, not one that",
+    "  belongs in this repo. Until then this file keeps the content durable and",
+    "  visible, which is the part that matters most.",
+    "",
+    "FIELDS",
+    "  date     ISO date the learning was recorded (not the launch date).",
+    "  author   Who recorded it. Shown verbatim.",
+    "  category One of: merchandising, creative, pricing, inventory, traffic,",
+    "           forecast, operations, other. Drives the tag colour.",
+    "  title    One line. What was learned.",
+    "  detail   Optional. The evidence or context behind it.",
+    "  metric   Optional. A figure that supports it, quoted as text so it stays",
+    "           true to what was known at the time rather than silently moving",
+    "           with the data."
+  ],
+  "byLaunch": {}
+}

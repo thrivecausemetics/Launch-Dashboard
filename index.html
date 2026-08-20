@@ -39,6 +39,23 @@
 
     .main { max-width:1200px; margin:0 auto; padding:32px 24px; }
 
+    .upc-link { display:inline-block; margin-top:8px; font-size:12px; font-weight:600;
+                color:var(--tc-teal); text-decoration:none; }
+    .upc-link:hover { text-decoration:underline; }
+    .cmp-bar { display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+                padding:14px 18px; border-bottom:1px solid var(--border); }
+    .cmp-label { font-size:11px; font-weight:600; text-transform:uppercase;
+                 letter-spacing:.05em; color:var(--muted); }
+    .cmp-chip { font:500 12px inherit; padding:5px 11px; margin:2px; border-radius:999px;
+                border:1px solid var(--border); background:#fff; cursor:pointer; color:var(--text); }
+    .cmp-chip.on { background:var(--tc-teal); border-color:var(--tc-teal); color:#fff; }
+    .cmp-chip .swatch { display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:6px; }
+    #cmp-table td { font-size:13px; }
+    #cmp-table td:first-child { font-weight:600; color:var(--muted); white-space:nowrap; }
+    #cmp-table tr.grp td { background:var(--bg); font-size:11px; text-transform:uppercase;
+                           letter-spacing:.05em; color:var(--muted); font-weight:600; }
+    .cmp-best { font-weight:700; }
+    .cmp-chart-wrap { padding:14px 18px 4px; }
     .section-title {
       font-size:11px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase;
       color:var(--muted); margin-bottom:16px; padding-bottom:8px;
@@ -151,11 +168,23 @@
     <p class="sum-note" id="sum-note"></p>
   </div>
 
+  <div class="section-title">Compare Launches</div>
+  <div class="sum-card">
+    <div class="cmp-bar">
+      <span class="cmp-label">Pick two or more</span>
+      <span id="cmp-chips"></span>
+    </div>
+    <div class="sum-wrap"><table id="cmp-table"><tbody id="cmp-body"></tbody></table></div>
+    <div class="cmp-chart-wrap"><canvas id="cmp-chart" height="230"></canvas></div>
+    <p class="sum-note" id="cmp-note"></p>
+  </div>
+
   <div class="section-title">Live Launches</div>
   <div class="grid" id="live-grid"></div>
 
   <div class="section-title">Upcoming Launches</div>
   <div class="grid" id="upcoming-grid"></div>
+  <p class="sum-note" id="cal-note" style="margin-top:10px"></p>
 
   <div class="section-title" id="hist-title" style="display:none">Historical &mdash; Past the Decay Curve</div>
   <div class="grid" id="hist-grid"></div>
@@ -163,6 +192,7 @@
 
 <div class="footer">Thrive Causemetics Launch Intelligence Hub &mdash; Data: Snowflake DAASITY_DB &middot; <a href="https://github.com/thrivecausemetics/glowing-launch-pad" style="color:var(--tc-teal);text-decoration:none;">glowing-launch-pad</a></div>
 
+<script src="vendor/chart.umd.min.js"></script>
 <script src="data.js"></script>
 <script>
   const DD = window.DASHBOARD_DATA, META = DD.meta;
@@ -190,6 +220,109 @@
     return n >= 1e6 ? '$' + (n / 1e6).toFixed(1) + 'M' : '$' + Math.round(n / 1000) + 'k';
   };
   const ptpColor = v => v == null ? '#9CA3AF' : v >= 100 ? '#22A06B' : v >= 85 ? '#F59E0B' : '#EF4444';
+
+  /* ── COMPARE LAUNCHES ──
+     Launches are compared at a MATCHED AGE, not on calendar dates. A launch on
+     day 110 will out-total one on day 26 no matter how it is performing, so
+     every cumulative figure is also reported at day N, where N is the youngest
+     selected launch's age. Archived launches are included — comparing against
+     a finished launch is the main reason to keep them. */
+  const CMP_COLORS = ['#3A9E98', '#C9A84C', '#8B5CF6', '#EF4444', '#0EA5E9', '#22A06B'];
+  const cmpSel = new Set();
+
+  const ageAt = l => db(l.launchDate, META.dataCutoff);
+  const cumAtDay = (l, n) => {
+    // dailySales is ordered; day 1 is the launch date itself.
+    const rows = l.dailySales || [];
+    let u = 0, s = 0;
+    for (const r of rows) {
+      if (db(l.launchDate, r.date) + 1 > n) break;
+      u = r.cumUnits; s = r.cumSales;
+    }
+    return { units: u, sales: s };
+  };
+
+  function renderCompare() {
+    const pool = DD.launches.filter(l => ['live', 'archived'].includes(state(l))
+                                      && l.summary && (l.dailySales || []).length);
+    const chips = document.getElementById('cmp-chips');
+    if (!pool.length) { document.getElementById('cmp-body').innerHTML = ''; return; }
+    if (!cmpSel.size) pool.slice(0, 2).forEach(l => cmpSel.add(l.launchId));
+
+    chips.innerHTML = pool.map(l => {
+      const i = [...cmpSel].indexOf(l.launchId);
+      const on = i >= 0;
+      return `<button class="cmp-chip${on ? ' on' : ''}" data-cmp="${l.launchId}">`
+        + (on ? `<span class="swatch" style="background:${CMP_COLORS[i % CMP_COLORS.length]}"></span>` : '')
+        + `${l.name}${state(l) === 'archived' ? ' (archived)' : ''}</button>`;
+    }).join('');
+    chips.querySelectorAll('[data-cmp]').forEach(b => b.onclick = () => {
+      const id = b.dataset.cmp;
+      if (cmpSel.has(id)) { if (cmpSel.size > 1) cmpSel.delete(id); }
+      else cmpSel.add(id);
+      renderCompare();
+    });
+
+    const sel = pool.filter(l => cmpSel.has(l.launchId));
+    const matchDay = Math.min(...sel.map(ageAt));
+    const at = sel.map(l => cumAtDay(l, matchDay));
+
+    // Highest wins for every metric here, so one comparator covers them all.
+    const best = vals => { const n = vals.filter(v => v != null); return n.length ? Math.max(...n) : null; };
+    const row = (label, vals, fmtFn) => {
+      const b = best(vals);
+      return `<tr><td>${label}</td>` + vals.map(v =>
+        `<td class="r${v != null && v === b && vals.filter(x => x === b).length === 1 ? ' cmp-best' : ''}">`
+        + (v == null ? '—' : fmtFn(v)) + '</td>').join('') + '</tr>';
+    };
+    const grp = label => `<tr class="grp"><td colspan="${sel.length + 1}">${label}</td></tr>`;
+
+    document.getElementById('cmp-body').innerHTML =
+      `<tr class="grp"><td></td>${sel.map(l => `<td class="r" style="font-weight:700;color:var(--text)">${l.name}</td>`).join('')}</tr>`
+      + row('Launch date', sel.map(l => l.launchDate), v => fmtSmart(v))
+      + row('Age at cutoff (days)', sel.map(ageAt), v => num(v))
+      + grp(`Matched comparison — first ${num(matchDay)} days`)
+      + row('Units', at.map(a => a.units), num)
+      + row('Net sales', at.map(a => a.sales), fmtMoney)
+      + grp('Launch to date')
+      + row('Units', sel.map(l => l.summary.units), num)
+      + row('Net sales', sel.map(l => l.summary.netSales), fmtMoney)
+      + row('Orders', sel.map(l => l.summary.orders), num)
+      + row('AOV', sel.map(l => l.summary.aov), v => '$' + Number(v).toFixed(2))
+      + row('New customers', sel.map(l => l.summary.newCustomers), num)
+      + row('New customer share', sel.map(l => l.summary.newPct), v => v.toFixed(1) + '%')
+      // pctToGoalUnits is per variant; at launch level it has to be derived
+      // from the launch's own units against its full-curve plan total.
+      + row('% to goal (full curve)', sel.map(l => l.planTotalUnits
+            ? l.summary.units / l.planTotalUnits * 100 : null), v => v.toFixed(1) + '%')
+      + row('Goal (full-curve plan units)', sel.map(l => l.planTotalUnits), num)
+      + row('PDP conversion rate', sel.map(l => l.summary.pdpCvr), v => v.toFixed(1) + '%');
+
+    document.getElementById('cmp-note').innerHTML =
+      `<strong>Matched comparison</strong> uses the first ${num(matchDay)} days of each launch — `
+      + `the age of the youngest selected launch — so a launch that has simply been live longer does not win by default. `
+      + `<strong>Launch to date</strong> rows are each launch's full history and are therefore not age-matched: `
+      + `new customers, AOV and PDP rate are launch-to-date totals only, since the pipeline does not store them per day. `
+      + `Bold marks the highest value in a row when there is a single leader.`;
+
+    const labels = Array.from({ length: matchDay }, (_, i) => 'Day ' + (i + 1));
+    if (window._cmpChart) window._cmpChart.destroy();
+    window._cmpChart = new Chart(document.getElementById('cmp-chart'), {
+      type: 'line',
+      data: { labels, datasets: sel.map((l, i) => ({
+        label: l.name,
+        data: Array.from({ length: matchDay }, (_, d) => cumAtDay(l, d + 1).units),
+        borderColor: CMP_COLORS[i % CMP_COLORS.length], backgroundColor: 'transparent',
+        fill: false, tension: 0.25, pointRadius: 0, borderWidth: 2,
+      })) },
+      options: { responsive: true,
+        plugins: { legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11 } } },
+                   title: { display: true, text: 'Cumulative units by day since launch',
+                            font: { size: 12 }, color: '#6B7A8D' } },
+        scales: { x: { grid: { display: false }, ticks: { maxTicksLimit: 12, font: { size: 10 } } },
+                  y: { ticks: { callback: v => Number(v).toLocaleString() }, grid: { color: '#E2E8EF' } } } },
+    });
+  }
 
   const live = DD.launches.filter(l => state(l) === 'live');
   const pending = DD.launches.filter(l => state(l) === 'pending');
@@ -235,6 +368,7 @@
       : '<tr><td colspan="10" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
   };
   renderSummary();
+  renderCompare();
 
   document.getElementById('sum-note').innerHTML =
     `${sumRows.length} variant${sumRows.length !== 1 ? 's' : ''} across ${live.length} live launch${live.length !== 1 ? 'es' : ''}. ` +
@@ -343,9 +477,35 @@
         <div class="date-item"><strong>${fmtDate(u.launchDate)}</strong>Launch Date</div>
         ${u.internalDate ? `<div class="date-item"><strong>${fmtDate(u.internalDate)}</strong>Internal</div>` : ''}
       </div>
-      <p class="upcoming-note">Dashboard will be created once live</p>
+      <p class="upcoming-note">Dashboard will be created once live${u.section ? ' &middot; ' + u.section.split(' (')[0] : ''}</p>
+      ${u.asanaUrl ? `<a class="upc-link" href="${u.asanaUrl}" target="_blank" rel="noopener">View on the marketing calendar &rarr;</a>` : ''}
     </div>`;
   }).join('') || '<p class="upcoming-note">No upcoming launches configured.</p>';
+
+  /* Where the upcoming dates came from, plus any drift between the calendar
+     and this repo's config. Silent drift is how a launch date goes stale
+     without anyone noticing, so it is stated on the page rather than logged. */
+  const cal = DD.calendar || {};
+  const calNote = document.getElementById('cal-note');
+  if (calNote) {
+    if (cal.source === 'asana') {
+      const bits = [`Launch dates come from the <a href="${cal.projectUrl}" target="_blank" rel="noopener">2026 Thrive Causemetics Marketing Calendar</a> in Asana (the <em>Live Date</em> field), synced with each refresh.`];
+      if ((cal.mismatches || []).length) {
+        bits.push('<strong>Date mismatches:</strong> ' + cal.mismatches.map(m =>
+          `${m.name} — this repo says ${m.config_launch_date || '—'}, the calendar says ${m.asana_launch_date || '—'}`).join('; ')
+          + '. Dates for launches that already have data are never rewritten automatically, because that would restate their whole history — these need a human decision.');
+      }
+      if ((cal.notLinked || []).length) {
+        bits.push(`<strong>${cal.notLinked.length} calendar ${cal.notLinked.length === 1 ? 'entry' : 'entries'} not yet linked</strong> to a tracked launch: `
+          + cal.notLinked.map(e => e.name).join(', ')
+          + '. Linking is explicit (an <code>asana_gid</code> in config/launches.json) because the calendar and this dashboard use different names for the same launch.');
+      }
+      calNote.innerHTML = bits.join('<br><br>');
+    } else {
+      calNote.innerHTML = 'Launch dates are from the hand-maintained list in <code>config/launches.json</code>. '
+        + 'The Asana marketing-calendar sync has not produced a snapshot yet — add the <code>ASANA_TOKEN</code> secret to enable it.';
+    }
+  }
 </script>
 </body>
 </html>
