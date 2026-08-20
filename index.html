@@ -172,7 +172,23 @@
     : (l.summary && l.dailySales && l.dailySales.length) ? 'live'
     : db(l.launchDate, META.generatedAt) >= 0 ? 'pending' : 'upcoming';
   const fmtDate = iso => new Date(iso + 'T00:00:00').toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
+  /* Projected dates (Est. OOS, Curve Ends) can land in a future year — a
+     45-week cover lands in 2027. Showing "Jul 4" for that reads as a date
+     already gone, so the year is added whenever it differs from the data year. */
+  const dataYear = new Date(META.dataCutoff + 'T00:00:00').getFullYear();
+  const fmtSmart = iso => {
+    if (!iso) return '—';
+    const d = new Date(iso + 'T00:00:00');
+    return d.toLocaleDateString('en-US', d.getFullYear() === dataYear
+      ? { month: 'short', day: 'numeric' }
+      : { month: 'short', day: 'numeric', year: 'numeric' });
+  };
   const fmtDay  = iso => new Date(iso + 'T00:00:00').toLocaleDateString('en-US', {month:'short', day:'numeric'});
+  /* $1782k / $2001k read badly once a launch passes seven figures. */
+  const fmtMoney = v => {
+    const n = Number(v || 0);
+    return n >= 1e6 ? '$' + (n / 1e6).toFixed(1) + 'M' : '$' + Math.round(n / 1000) + 'k';
+  };
   const ptpColor = v => v == null ? '#9CA3AF' : v >= 100 ? '#22A06B' : v >= 85 ? '#F59E0B' : '#EF4444';
 
   const live = DD.launches.filter(l => state(l) === 'live');
@@ -207,14 +223,14 @@
         <td class="sum-prod"><a href="${r.href}" style="color:inherit;text-decoration:none">${r.product}</a></td>
         <td>${r.variant}</td>
         <td><code style="font-size:11.5px;background:var(--bg);padding:1px 5px;border-radius:4px">${r.sku}</code></td>
-        <td>${fmtDay(r.launch)}</td>
-        <td>${r.curveEnd ? fmtDay(r.curveEnd) : '—'}</td>
+        <td>${fmtSmart(r.launch)}</td>
+        <td>${fmtSmart(r.curveEnd)}</td>
         <td class="r" style="color:${ptpColor(r.pct)};font-weight:600">${r.pct == null ? '—' : r.pct.toFixed(1) + '%'}</td>
         <td class="r">${r.toGoal == null ? '—' : r.toGoal === 0 ? 'goal met' : num(r.toGoal)}</td>
         <td class="r">${num(r.inv)}</td>
         <td class="r">${r.weeks == null ? '—' : r.weeks.toFixed(1)}</td>
         <td class="r pill-risk" style="color:${riskColour(r.days)}">${
-          r.inv === 0 ? 'out of stock' : r.oos ? fmtDay(r.oos) : '—'}</td>
+          r.inv === 0 ? 'out of stock' : fmtSmart(r.oos)}</td>
       </tr>`).join('')
       : '<tr><td colspan="10" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
   };
@@ -222,7 +238,7 @@
 
   document.getElementById('sum-note').innerHTML =
     `${sumRows.length} variant${sumRows.length !== 1 ? 's' : ''} across ${live.length} live launch${live.length !== 1 ? 'es' : ''}. ` +
-    `<strong>% to Goal</strong> and <strong>Units to Goal</strong> are measured against the full ${RET}-day plan curve, ` +
+    `<strong>% to Goal</strong> and <strong>Units to Goal</strong> are measured against the full plan curve (through <strong>Curve Ends</strong>), ` +
     `so they differ from the <strong>% to Plan</strong> on each launch page, which measures plan to date. ` +
     `<strong>Wks of Stock</strong> and <strong>Est. OOS</strong> project current inventory forward at the trailing ` +
     `${META.oosWindowDays || 7}-day sell-through rate — an assumption that demand holds and no replenishment arrives, not a forecast. ` +
@@ -265,7 +281,7 @@
         <div class="date-item"><strong>Day ${day}</strong>As of ${fmtDay(META.dataCutoff)}</div>
       </div>
       <div class="card-kpis">
-        <span class="kpi-chip">$${(s.netSales / 1000).toFixed(0)}k Net Sales</span>
+        <span class="kpi-chip">${fmtMoney(s.netSales)} Net Sales</span>
         <span class="kpi-chip">${s.units.toLocaleString()} Units</span>
         <span class="kpi-chip gold" style="color:${ptpColor(ptp)}">${ptp != null ? ptp.toFixed(1) + '% to Plan' : '—'}</span>
       </div>
@@ -306,7 +322,7 @@
           <div class="date-item"><strong>Day ${days}</strong>Past the ${RET}-day curve</div>
         </div>
         <div class="card-kpis">
-          <span class="kpi-chip">$${Math.round((s.netSales || 0) / 1000)}k Net Sales</span>
+          <span class="kpi-chip">${fmtMoney(s.netSales)} Net Sales</span>
           <span class="kpi-chip">${(s.units || 0).toLocaleString()} Units</span>
           <span class="kpi-chip" style="color:${ptpColor(ptp)}">${ptp != null ? ptp.toFixed(1) + '% to Plan' : '—'}</span>
         </div>
