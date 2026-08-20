@@ -82,6 +82,16 @@ jobs:
         if: steps.creds.outputs.configured == 'true'
         run: pip install "snowflake-connector-python[secure-local-storage]" cryptography
 
+      # Asana is the team's source of truth for launch dates. Runs before the
+      # Snowflake refresh so the snapshot it writes is picked up in the same
+      # run. No-ops without ASANA_TOKEN, leaving the committed snapshot in
+      # place, so a missing secret degrades instead of failing the refresh.
+      - name: Sync launch calendar from Asana
+        if: steps.creds.outputs.configured == 'true'
+        env:
+          ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
+        run: python scripts/sync_launch_calendar.py
+
       - name: Regenerate data.js from Snowflake
         if: steps.creds.outputs.configured == 'true'
         env:
@@ -98,12 +108,12 @@ jobs:
       - name: Commit and push if data changed
         if: steps.creds.outputs.configured == 'true'
         run: |
-          if git diff --quiet data.js; then
-            echo "data.js unchanged — nothing to commit."
+          if git diff --quiet data.js config/launch_calendar.json; then
+            echo "data.js and the launch calendar are unchanged — nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.js
+          git add data.js config/launch_calendar.json
           git commit -m "chore: refresh dashboard data ($(date -u +%F))"
           git push

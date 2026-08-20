@@ -108,6 +108,17 @@
     .sig-list li strong { display:block; font-weight:600; }
     .sig-dot { display:inline-block; width:6px; height:6px; border-radius:50%;
                margin-right:6px; vertical-align:middle; }
+    .lrn-item { border-left:3px solid var(--tc-teal); background:var(--card);
+                border-radius:8px; padding:14px 18px; margin-bottom:12px; }
+    .lrn-top { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    .lrn-title { font-size:14px; font-weight:600; }
+    .lrn-meta { font-size:11px; color:var(--muted); white-space:nowrap; }
+    .lrn-detail { font-size:13px; line-height:1.6; margin-top:6px; }
+    .lrn-metric { display:inline-block; margin-top:8px; font-size:12px; font-weight:600;
+                  background:var(--bg); padding:3px 9px; border-radius:5px; }
+    .lrn-tag { display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase;
+               letter-spacing:.05em; padding:2px 7px; border-radius:4px; margin-right:8px;
+               background:var(--tc-teal-light); color:var(--tc-teal-dark); }
     .sig-empty { font-size:12px; color:var(--muted); }
     .table-hdr.split { display:flex; align-items:center; justify-content:space-between; gap:12px; }
     .seg { display:inline-flex; border:1px solid var(--border); border-radius:6px; overflow:hidden; }
@@ -206,6 +217,7 @@
     <div class="tab" data-tab="crosssells">Cross-Sells &amp; Pairings</div>
     <div class="tab" data-tab="category">Category Customers</div>
     <div class="tab" data-tab="upcoming">Upcoming Launches</div>
+    <div class="tab" data-tab="learnings">Launch Learnings</div>
     <div class="tab" data-tab="guide">Data Guide</div>
   </div>
 </div>
@@ -317,6 +329,7 @@
   </div>
 
   <!-- DATA GUIDE -->
+  <div id="panel-learnings" style="display:none"></div>
   <div id="panel-guide" style="display:none">
     <div class="guide-grid">
       <div class="guide-card">
@@ -1605,6 +1618,40 @@ function renderCategory(d) {
 }
 
 /* ── DATA GUIDE TAB (dynamic bits) ── */
+/* Launch Learnings — retro notes kept with the launch's numbers.
+   Sourced from config/learnings.json via the refresh. There is no in-app form
+   because this container is a static file server with no write path or
+   identity; an editable version belongs in the internal portal, which already
+   has a database, SSO and audit logging. The empty state says so plainly
+   rather than implying the feature is broken. */
+function renderLearnings(d) {
+  const panel = document.getElementById('panel-learnings');
+  if (!panel) return;
+  const items = (d.learnings || []).slice()
+    .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+
+  panel.innerHTML = `
+    <div class="section-title">Launch Learnings &middot; ${d.name}</div>
+    ${items.length ? items.map(l => `
+      <div class="lrn-item">
+        <div class="lrn-top">
+          <div><span class="lrn-tag">${l.category || 'other'}</span><span class="lrn-title">${l.title || ''}</span></div>
+          <span class="lrn-meta">${l.author || 'Unattributed'}${l.date ? ' &middot; ' + fmt.date(l.date) : ''}</span>
+        </div>
+        ${l.detail ? `<p class="lrn-detail">${l.detail}</p>` : ''}
+        ${l.metric ? `<span class="lrn-metric">${l.metric}</span>` : ''}
+      </div>`).join('')
+    : `<p class="data-note">No learnings recorded for this launch yet.</p>`}
+    <p class="data-note">
+      ${items.length ? `${items.length} learning${items.length === 1 ? '' : 's'} recorded. ` : ''}
+      Learnings are added to <code>config/learnings.json</code> and appear on the next refresh,
+      which keeps them versioned in git and attached to this launch permanently.
+      There is no in-app editor yet: this dashboard is a static file server with no database or
+      sign-in of its own, so there is nowhere to store a submission or anyone to attribute it to.
+      An editable version belongs in the internal portal, which already has both.
+    </p>`;
+}
+
 function renderGuide(d) {
   document.getElementById('guide-fresh').innerHTML = META.mode === 'automated'
     ? 'Data is refreshed <strong>daily at 6:00am PT</strong> by GitHub Actions (scripts/refresh_data.py querying Snowflake ' + (META.sourceDb || 'DAASITY_DB') + '). Current data cutoff: <strong>' + fmt.date(META.dataCutoff) + '</strong> (always yesterday); GA4 traffic through <strong>' + fmt.date(META.gaCutoff) + '</strong> (~2-day sync lag). Last generated ' + fmt.date(META.generatedAt) + '.'
@@ -1702,6 +1749,7 @@ function init() {
     renderUpcoming();
     renderCategory(d);
     renderGuide(d);
+    renderLearnings(d);
     renderTraffic(d);
     renderLanding(d);
 
