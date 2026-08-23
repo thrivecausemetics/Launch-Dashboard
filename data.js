@@ -1,10 +1,10 @@
 /* GENERATED FILE — do not hand-edit.
-   Built by scripts/refresh_data.py on 2026-08-22 · cutoff 2026-08-21 · source Snowflake DAASITY_DB */
+   Built by scripts/refresh_data.py on 2026-08-23 · cutoff 2026-08-22 · source Snowflake DAASITY_DB */
 window.DASHBOARD_DATA = {
   "meta": {
-    "dataCutoff": "2026-08-21",
-    "gaCutoff": "2026-08-19",
-    "generatedAt": "2026-08-22",
+    "dataCutoff": "2026-08-22",
+    "gaCutoff": "2026-08-20",
+    "generatedAt": "2026-08-23",
     "mode": "automated",
     "sourceDb": "DAASITY_DB",
     "retentionDays": 122,
@@ -32,149 +32,149 @@ window.DASHBOARD_DATA = {
       "subtitle": "10 Shades",
       "accent": "#3A9E98",
       "summary": {
-        "netSales": 1796827.96,
-        "units": 71341,
-        "orders": 56639,
+        "netSales": 1802342.69,
+        "units": 71554,
+        "orders": 56821,
         "aov": 31.72,
-        "newCustomers": 17719,
-        "retCustomers": 35507,
-        "totalCustomers": 53226,
+        "newCustomers": 17762,
+        "retCustomers": 35623,
+        "totalCustomers": 53385,
         "newPct": 33.3,
         "retPct": 66.7,
-        "planUnits": 68170,
-        "pctToPlanUnits": 104.7,
-        "subscriptionOrders": 1971,
-        "subscriptionUnits": 2017,
-        "subscriptionRevenue": 56476.0,
-        "newCustomerRevenue": 585508.05,
-        "retCustomerRevenue": 1211319.91,
-        "pdpViews": 1926225,
-        "pdpAtcRate": 11.2,
+        "planUnits": 68754,
+        "pctToPlanUnits": 104.1,
+        "subscriptionOrders": 1982,
+        "subscriptionUnits": 2031,
+        "subscriptionRevenue": 56868.0,
+        "newCustomerRevenue": 586840.77,
+        "retCustomerRevenue": 1215501.92,
+        "pdpViews": 1938633,
+        "pdpAtcRate": 11.1,
         "pdpCvr": 3.7
       },
       "regions": {
         "us": {
-          "units": 68189,
-          "netSales": 1739764.21,
-          "orders": 54250
+          "units": 68400,
+          "netSales": 1745242.71,
+          "orders": 54430
         },
         "ca": {
-          "units": 3152,
-          "netSales": 57063.75,
-          "orders": 2389
+          "units": 3154,
+          "netSales": 57099.98,
+          "orders": 2391
         }
       },
       "trafficStart": "2026-04-30",
-      "trafficEnd": "2026-08-19",
+      "trafficEnd": "2026-08-20",
       "traffic": {
         "byChannel": [
           {
             "ch": "Paid Social",
-            "sessions": 6517122,
-            "txns": 161589,
-            "rev": 8868166.37,
+            "sessions": 6564703,
+            "txns": 162838,
+            "rev": 8941075.27,
             "cvr": 2.48,
             "eng": 76.6
           },
           {
             "ch": "Direct",
-            "sessions": 3377975,
-            "txns": 76027,
-            "rev": 4432768.66,
-            "cvr": 2.25,
-            "eng": 62.1
+            "sessions": 3393703,
+            "txns": 76783,
+            "rev": 4475990.27,
+            "cvr": 2.26,
+            "eng": 62.2
           },
           {
             "ch": "Email",
-            "sessions": 1820642,
-            "txns": 149811,
-            "rev": 9123533.55,
-            "cvr": 8.23,
+            "sessions": 1837124,
+            "txns": 150744,
+            "rev": 9183189.78,
+            "cvr": 8.21,
             "eng": 74.6
           },
           {
             "ch": "Paid Search",
-            "sessions": 1505501,
-            "txns": 162814,
-            "rev": 10821181.68,
-            "cvr": 10.81,
-            "eng": 83.5
+            "sessions": 1517601,
+            "txns": 164210,
+            "rev": 10914948.22,
+            "cvr": 10.82,
+            "eng": 83.6
           },
           {
             "ch": "Paid Other",
-            "sessions": 1483269,
-            "txns": 9079,
-            "rev": 576421.12,
+            "sessions": 1498811,
+            "txns": 9161,
+            "rev": 581732.13,
             "cvr": 0.61,
-            "eng": 71.0
+            "eng": 71.1
           },
           {
             "ch": "Unassigned",
-            "sessions": 1180043,
-            "txns": 260387,
-            "rev": 10787129.83,
-            "cvr": 22.07,
+            "sessions": 1195090,
+            "txns": 262818,
+            "rev": 10891267.04,
+            "cvr": 21.99,
             "eng": 57.6
           },
           {
             "ch": "SMS",
-            "sessions": 1113103,
-            "txns": 76227,
-            "rev": 4623473.35,
-            "cvr": 6.85,
-            "eng": 75.1
+            "sessions": 1133757,
+            "txns": 77006,
+            "rev": 4671619.97,
+            "cvr": 6.79,
+            "eng": 74.7
           },
           {
             "ch": "Cross-network",
-            "sessions": 671501,
-            "txns": 12105,
-            "rev": 712424.54,
+            "sessions": 676480,
+            "txns": 12197,
+            "rev": 718479.59,
             "cvr": 1.8,
             "eng": 72.7
           },
           {
             "ch": "Paid Shopping",
-            "sessions": 453422,
-            "txns": 39748,
-            "rev": 2188552.05,
-            "cvr": 8.77,
-            "eng": 84.5
+            "sessions": 456807,
+            "txns": 40097,
+            "rev": 2209202.41,
+            "cvr": 8.78,
+            "eng": 84.6
           },
           {
             "ch": "Organic Social",
-            "sessions": 434365,
-            "txns": 6471,
-            "rev": 374438.37,
+            "sessions": 437040,
+            "txns": 6515,
+            "rev": 377229.75,
             "cvr": 1.49,
             "eng": 70.3
           },
           {
             "ch": "Organic Search",
-            "sessions": 334233,
-            "txns": 29555,
-            "rev": 1986562.15,
+            "sessions": 337082,
+            "txns": 29802,
+            "rev": 2003741.48,
             "cvr": 8.84,
             "eng": 81.7
           },
           {
             "ch": "Organic Shopping",
-            "sessions": 148926,
-            "txns": 55468,
-            "rev": 2747140.99,
-            "cvr": 37.25,
+            "sessions": 149832,
+            "txns": 56046,
+            "rev": 2776655.37,
+            "cvr": 37.41,
             "eng": 84.9
           },
           {
             "ch": "Referral",
-            "sessions": 65099,
-            "txns": 2941,
-            "rev": 196509.03,
+            "sessions": 65776,
+            "txns": 2972,
+            "rev": 198712.92,
             "cvr": 4.52,
             "eng": 72.3
           },
           {
             "ch": "Display",
-            "sessions": 28932,
+            "sessions": 29549,
             "txns": 33,
             "rev": 1977.26,
             "cvr": 0.11,
@@ -182,7 +182,7 @@ window.DASHBOARD_DATA = {
           },
           {
             "ch": "Paid Video",
-            "sessions": 9927,
+            "sessions": 9994,
             "txns": 10,
             "rev": 559.74,
             "cvr": 0.1,
@@ -190,27 +190,27 @@ window.DASHBOARD_DATA = {
           },
           {
             "ch": "AI Assistant",
-            "sessions": 3415,
-            "txns": 166,
-            "rev": 8939.02,
-            "cvr": 4.86,
+            "sessions": 3486,
+            "txns": 168,
+            "rev": 8990.81,
+            "cvr": 4.82,
             "eng": 77.2
           },
           {
             "ch": "Organic Video",
-            "sessions": 877,
+            "sessions": 882,
             "txns": 21,
             "rev": 1405.89,
-            "cvr": 2.39,
-            "eng": 80.3
+            "cvr": 2.38,
+            "eng": 80.0
           },
           {
             "ch": "Affiliates",
-            "sessions": 39,
+            "sessions": 41,
             "txns": 3,
             "rev": 148.77,
-            "cvr": 7.69,
-            "eng": 61.5
+            "cvr": 7.32,
+            "eng": 63.4
           },
           {
             "ch": "Mobile Push Notifications",
@@ -225,66 +225,66 @@ window.DASHBOARD_DATA = {
           {
             "month": "Apr 2026",
             "chs": {
-              "Mobile Push Notifications": 1,
-              "Unassigned": 8864,
               "Paid Video": 32,
-              "Direct": 14567,
-              "Organic Search": 3519,
-              "Organic Video": 18,
-              "Email": 15099,
-              "Referral": 719,
-              "Display": 204,
-              "SMS": 10436,
               "Paid Search": 14260,
-              "Cross-network": 5627,
-              "Organic Shopping": 1085,
-              "Paid Other": 15421,
+              "Organic Video": 18,
+              "Display": 204,
               "Organic Social": 2747,
               "Paid Shopping": 4435,
-              "Paid Social": 51793
+              "Mobile Push Notifications": 1,
+              "Organic Search": 3519,
+              "SMS": 10436,
+              "Direct": 14567,
+              "Paid Social": 51793,
+              "Email": 15099,
+              "Cross-network": 5627,
+              "Paid Other": 15421,
+              "Referral": 719,
+              "Unassigned": 8864,
+              "Organic Shopping": 1085
             }
           },
           {
             "month": "May 2026",
             "chs": {
-              "Paid Other": 424237,
-              "Paid Shopping": 124997,
-              "Paid Video": 3078,
-              "Referral": 19213,
-              "Organic Video": 355,
-              "Cross-network": 193649,
-              "Organic Shopping": 52647,
-              "Direct": 1836431,
-              "Email": 530117,
-              "Unassigned": 387728,
               "Organic Search": 102908,
-              "SMS": 392780,
+              "Organic Video": 355,
               "Paid Social": 2188680,
-              "Organic Social": 132582,
-              "Display": 4120,
               "Paid Search": 477762,
+              "SMS": 392780,
+              "Paid Video": 3078,
+              "Unassigned": 387728,
+              "Paid Shopping": 124997,
+              "Email": 530117,
+              "Organic Shopping": 52647,
+              "Display": 4120,
+              "Direct": 1836431,
+              "Cross-network": 193649,
+              "Referral": 19213,
+              "Organic Social": 132582,
+              "Paid Other": 424237,
               "Affiliates": 24
             }
           },
           {
             "month": "Jun 2026",
             "chs": {
+              "Paid Video": 3288,
               "SMS": 302086,
-              "Organic Video": 133,
-              "Display": 4339,
-              "Organic Search": 82287,
-              "Paid Social": 1454669,
-              "Organic Shopping": 44780,
-              "Referral": 14613,
-              "Paid Other": 321863,
-              "Email": 453056,
-              "Cross-network": 169820,
-              "Unassigned": 267603,
               "Paid Shopping": 112677,
               "Direct": 466180,
+              "Cross-network": 169820,
               "Organic Social": 130170,
+              "Display": 4339,
+              "Unassigned": 267603,
+              "Organic Shopping": 44780,
+              "Organic Search": 82287,
+              "Email": 453056,
+              "Referral": 14613,
+              "Paid Other": 321863,
+              "Organic Video": 133,
               "Paid Search": 391238,
-              "Paid Video": 3288,
+              "Paid Social": 1454669,
               "Mobile Push Notifications": 4,
               "AI Assistant": 1225,
               "Affiliates": 3
@@ -293,22 +293,22 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Direct": 652359,
-              "AI Assistant": 1111,
-              "Paid Search": 392929,
-              "Display": 10350,
-              "Organic Search": 89549,
-              "Paid Video": 2219,
-              "Unassigned": 294263,
-              "Paid Shopping": 133682,
-              "Organic Shopping": 31592,
-              "Paid Social": 1835866,
               "Referral": 19681,
+              "Paid Shopping": 133682,
+              "Unassigned": 294263,
               "Organic Video": 297,
-              "Organic Social": 107105,
-              "Cross-network": 191011,
+              "Organic Search": 89549,
+              "Organic Shopping": 31592,
+              "Direct": 652359,
+              "Paid Social": 1835866,
+              "Paid Search": 392929,
               "Email": 471247,
+              "AI Assistant": 1111,
               "SMS": 237045,
+              "Paid Video": 2219,
+              "Cross-network": 191011,
+              "Organic Social": 107105,
+              "Display": 10350,
               "Paid Other": 392354,
               "Affiliates": 6
             }
@@ -316,24 +316,24 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
-              "Email": 351123,
-              "Organic Search": 55970,
-              "SMS": 170756,
-              "Organic Social": 61761,
-              "Paid Search": 229312,
-              "Paid Other": 329394,
-              "Direct": 408438,
-              "Cross-network": 111394,
-              "Referral": 10873,
-              "Display": 9919,
-              "Organic Video": 74,
-              "Paid Social": 986114,
-              "Paid Video": 1310,
-              "Organic Shopping": 18822,
-              "Unassigned": 221585,
-              "Paid Shopping": 77631,
-              "AI Assistant": 1079,
-              "Affiliates": 6
+              "Paid Shopping": 81016,
+              "Cross-network": 116373,
+              "Email": 367605,
+              "Display": 10536,
+              "SMS": 191410,
+              "Paid Search": 241412,
+              "Paid Other": 344936,
+              "Organic Social": 64436,
+              "Paid Social": 1033695,
+              "Organic Shopping": 19728,
+              "Direct": 424166,
+              "Organic Search": 58819,
+              "Paid Video": 1377,
+              "Referral": 11550,
+              "Unassigned": 236632,
+              "AI Assistant": 1150,
+              "Organic Video": 79,
+              "Affiliates": 8
             }
           }
         ]
@@ -342,48 +342,48 @@ window.DASHBOARD_DATA = {
         {
           "label": "Empowershine Satin Lip Cream (com)",
           "page": "thrivecausemetics.com/products/empowershine-satin-lip-cream",
-          "pageviews": 184098,
-          "sessions": 28556,
-          "txns": 1549,
-          "rev": 95724.34,
-          "eng": 45.7,
-          "cvr": 5.42
+          "pageviews": 185774,
+          "sessions": 28852,
+          "txns": 1569,
+          "rev": 97140.92,
+          "eng": 45.5,
+          "cvr": 5.44
+        },
+        {
+          "label": "Empowershine Satin Lip Cream (ca)",
+          "page": "thrivecausemetics.ca/products/empowershine-satin-lip-cream",
+          "pageviews": 104393,
+          "sessions": 25442,
+          "txns": 788,
+          "rev": 55993.76,
+          "eng": 1.5,
+          "cvr": 3.1
         },
         {
           "label": "Empowershinesatinlipcream (ca)",
           "page": "thrivecausemetics.ca/pages/empowershinesatinlipcream",
-          "pageviews": 70399,
-          "sessions": 25439,
+          "pageviews": 70401,
+          "sessions": 25440,
           "txns": 401,
           "rev": 27260.71,
           "eng": 1.3,
           "cvr": 1.58
         },
         {
-          "label": "Empowershine Satin Lip Cream (ca)",
-          "page": "thrivecausemetics.ca/products/empowershine-satin-lip-cream",
-          "pageviews": 104329,
-          "sessions": 25431,
-          "txns": 786,
-          "rev": 55781.4,
-          "eng": 1.5,
-          "cvr": 3.09
-        },
-        {
           "label": "Empowershine Shade Finder Quiz (com)",
           "page": "thrivecausemetics.com/pages/empowershine-shade-finder-quiz",
-          "pageviews": 86245,
-          "sessions": 16977,
-          "txns": 94,
-          "rev": 6015.19,
-          "eng": 41.5,
-          "cvr": 0.55
+          "pageviews": 88028,
+          "sessions": 17271,
+          "txns": 98,
+          "rev": 6331.65,
+          "eng": 41.7,
+          "cvr": 0.57
         },
         {
           "label": "Empowershinesatinlipcream (com)",
           "page": "thrivecausemetics.com/pages/empowershinesatinlipcream",
-          "pageviews": 62339,
-          "sessions": 16236,
+          "pageviews": 62366,
+          "sessions": 16248,
           "txns": 653,
           "rev": 36271.61,
           "eng": 3.0,
@@ -410,9 +410,9 @@ window.DASHBOARD_DATA = {
           "cvr": 0.0
         },
         {
-          "label": "Empowershine Satin Lip Cream (hlpo64ifql2yi5i2-5822885.shopifypreview.com)",
-          "page": "hlpo64ifql2yi5i2-5822885.shopifypreview.com/products/empowershine-satin-lip-cream",
-          "pageviews": 1,
+          "label": "Empowershine Satin Lip Cream. (com)",
+          "page": "thrivecausemetics.com/products/empowershine-satin-lip-cream.",
+          "pageviews": 9,
           "sessions": 1,
           "txns": 0,
           "rev": 0.0,
@@ -420,9 +420,9 @@ window.DASHBOARD_DATA = {
           "cvr": 0.0
         },
         {
-          "label": "Empowershine Satin Lip Cream. (com)",
-          "page": "thrivecausemetics.com/products/empowershine-satin-lip-cream.",
-          "pageviews": 9,
+          "label": "Empowershine Satin Lip Cream (hlpo64ifql2yi5i2-5822885.shopifypreview.com)",
+          "page": "hlpo64ifql2yi5i2-5822885.shopifypreview.com/products/empowershine-satin-lip-cream",
+          "pageviews": 1,
           "sessions": 1,
           "txns": 0,
           "rev": 0.0,
@@ -883,6 +883,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-08-21",
           "cumPlanUnits": 68170
+        },
+        {
+          "date": "2026-08-22",
+          "cumPlanUnits": 68754
         }
       ],
       "planTotalUnits": 71677,
@@ -894,47 +898,47 @@ window.DASHBOARD_DATA = {
           "name": "Ragan",
           "shade": "Warm Plum",
           "color": "#7B3FA0",
-          "netSales": 474838.14,
-          "units": 18922,
-          "orders": 18573,
-          "newCustomers": 5989,
-          "retCustomers": 12068,
-          "usUnits": 18146,
+          "netSales": 477048.91,
+          "units": 19008,
+          "orders": 18657,
+          "newCustomers": 6012,
+          "retCustomers": 12125,
+          "usUnits": 18232,
           "caUnits": 776,
-          "usNetSales": 460629.06,
+          "usNetSales": 462839.83,
           "caNetSales": 14209.08,
-          "planUnits": 13777,
-          "pctToPlanUnits": 137.3,
-          "inventoryUnits": 2094,
-          "runRateUnitsPerDay": 53.86,
-          "daysToOOS": 38,
-          "estOOSDate": "2026-09-28",
+          "planUnits": 13897,
+          "pctToPlanUnits": 136.8,
+          "inventoryUnits": 2012,
+          "runRateUnitsPerDay": 58.57,
+          "daysToOOS": 34,
+          "estOOSDate": "2026-09-25",
           "planTotalUnits": 14487,
-          "pctToGoalUnits": 130.6,
+          "pctToGoalUnits": 131.2,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
-          "weeksOfStock": 5.6
+          "weeksOfStock": 4.9
         },
         {
           "sku": "TVG5880",
           "name": "Ilene",
           "shade": "Natural Rose",
           "color": "#C89EA0",
-          "netSales": 309113.12,
-          "units": 12299,
-          "orders": 12060,
-          "newCustomers": 3929,
-          "retCustomers": 7797,
-          "usUnits": 11776,
+          "netSales": 309058.92,
+          "units": 12297,
+          "orders": 12058,
+          "newCustomers": 3928,
+          "retCustomers": 7796,
+          "usUnits": 11774,
           "caUnits": 523,
-          "usNetSales": 299802.7,
+          "usNetSales": 299748.5,
           "caNetSales": 9310.42,
-          "planUnits": 7661,
-          "pctToPlanUnits": 160.5,
+          "planUnits": 7727,
+          "pctToPlanUnits": 159.1,
           "inventoryUnits": 182,
           "runRateUnitsPerDay": 10.71,
           "daysToOOS": 16,
-          "estOOSDate": "2026-09-06",
+          "estOOSDate": "2026-09-07",
           "planTotalUnits": 8036,
           "pctToGoalUnits": 153.0,
           "unitsToGoal": 0,
@@ -946,26 +950,26 @@ window.DASHBOARD_DATA = {
           "name": "Joan",
           "shade": "Cool Rose",
           "color": "#E8748A",
-          "netSales": 238313.6,
-          "units": 9482,
-          "orders": 9354,
-          "newCustomers": 2964,
-          "retCustomers": 6142,
-          "usUnits": 8952,
-          "caUnits": 530,
-          "usNetSales": 228937.94,
-          "caNetSales": 9375.66,
-          "planUnits": 9202,
-          "pctToPlanUnits": 103.0,
-          "inventoryUnits": 3464,
-          "runRateUnitsPerDay": 31.86,
-          "daysToOOS": 108,
-          "estOOSDate": "2026-12-07",
+          "netSales": 239470.69,
+          "units": 9527,
+          "orders": 9397,
+          "newCustomers": 2975,
+          "retCustomers": 6173,
+          "usUnits": 8996,
+          "caUnits": 531,
+          "usNetSales": 230078.93,
+          "caNetSales": 9391.76,
+          "planUnits": 9279,
+          "pctToPlanUnits": 102.7,
+          "inventoryUnits": 3420,
+          "runRateUnitsPerDay": 35.0,
+          "daysToOOS": 97,
+          "estOOSDate": "2026-11-27",
           "planTotalUnits": 9661,
-          "pctToGoalUnits": 98.1,
-          "unitsToGoal": 179,
+          "pctToGoalUnits": 98.6,
+          "unitsToGoal": 134,
           "planEndDate": "2026-08-28",
-          "weeksOfStock": 15.5
+          "weeksOfStock": 14.0
         },
         {
           "sku": "TVG5890",
@@ -981,12 +985,12 @@ window.DASHBOARD_DATA = {
           "caUnits": 241,
           "usNetSales": 217834.77,
           "caNetSales": 4514.56,
-          "planUnits": 4594,
-          "pctToPlanUnits": 190.8,
+          "planUnits": 4632,
+          "pctToPlanUnits": 189.3,
           "inventoryUnits": 0,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": 0,
-          "estOOSDate": "2026-08-21",
+          "estOOSDate": "2026-08-22",
           "planTotalUnits": 4823,
           "pctToGoalUnits": 181.8,
           "unitsToGoal": 0,
@@ -998,156 +1002,156 @@ window.DASHBOARD_DATA = {
           "name": "Kaisa",
           "shade": "Dusty Rose",
           "color": "#D4879A",
-          "netSales": 183172.03,
-          "units": 7293,
-          "orders": 7182,
-          "newCustomers": 2391,
-          "retCustomers": 4639,
-          "usUnits": 6790,
-          "caUnits": 503,
-          "usNetSales": 174013.72,
-          "caNetSales": 9158.31,
-          "planUnits": 9185,
-          "pctToPlanUnits": 79.4,
-          "inventoryUnits": 7092,
-          "runRateUnitsPerDay": 21.57,
-          "daysToOOS": 328,
-          "estOOSDate": "2027-07-15",
+          "netSales": 184183.13,
+          "units": 7331,
+          "orders": 7220,
+          "newCustomers": 2399,
+          "retCustomers": 4668,
+          "usUnits": 6827,
+          "caUnits": 504,
+          "usNetSales": 175004.69,
+          "caNetSales": 9178.44,
+          "planUnits": 9264,
+          "pctToPlanUnits": 79.1,
+          "inventoryUnits": 7059,
+          "runRateUnitsPerDay": 25.43,
+          "daysToOOS": 277,
+          "estOOSDate": "2027-05-26",
           "planTotalUnits": 9651,
-          "pctToGoalUnits": 75.6,
-          "unitsToGoal": 2358,
+          "pctToGoalUnits": 76.0,
+          "unitsToGoal": 2320,
           "planEndDate": "2026-08-28",
-          "weeksOfStock": 47.0
+          "weeksOfStock": 39.7
         },
         {
           "sku": "TVG5900",
           "name": "Rosa",
           "shade": "Deep Berry",
           "color": "#7A1840",
-          "netSales": 156311.26,
-          "units": 6104,
-          "orders": 5870,
-          "newCustomers": 2361,
-          "retCustomers": 3314,
-          "usUnits": 5950,
+          "netSales": 156473.67,
+          "units": 6111,
+          "orders": 5877,
+          "newCustomers": 2363,
+          "retCustomers": 3318,
+          "usUnits": 5957,
           "caUnits": 154,
-          "usNetSales": 153511.71,
+          "usNetSales": 153674.12,
           "caNetSales": 2799.55,
-          "planUnits": 3366,
-          "pctToPlanUnits": 181.3,
-          "inventoryUnits": 2706,
-          "runRateUnitsPerDay": 5.86,
-          "daysToOOS": 461,
-          "estOOSDate": "2027-11-25",
+          "planUnits": 3398,
+          "pctToPlanUnits": 179.8,
+          "inventoryUnits": 2707,
+          "runRateUnitsPerDay": 6.43,
+          "daysToOOS": 420,
+          "estOOSDate": "2027-10-16",
           "planTotalUnits": 3546,
-          "pctToGoalUnits": 172.1,
+          "pctToGoalUnits": 172.3,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
-          "weeksOfStock": 66.0
+          "weeksOfStock": 60.1
         },
         {
           "sku": "TVG5940",
           "name": "Kathy",
           "shade": "Soft Apricot",
           "color": "#F4A460",
-          "netSales": 61185.31,
-          "units": 2443,
-          "orders": 2396,
-          "newCustomers": 731,
-          "retCustomers": 1603,
-          "usUnits": 2301,
+          "netSales": 61620.8,
+          "units": 2460,
+          "orders": 2412,
+          "newCustomers": 735,
+          "retCustomers": 1614,
+          "usUnits": 2318,
           "caUnits": 142,
-          "usNetSales": 58614.91,
+          "usNetSales": 59050.4,
           "caNetSales": 2570.4,
-          "planUnits": 5187,
-          "pctToPlanUnits": 47.1,
-          "inventoryUnits": 7249,
-          "runRateUnitsPerDay": 6.29,
-          "daysToOOS": 1152,
-          "estOOSDate": "2029-10-16",
+          "planUnits": 5231,
+          "pctToPlanUnits": 47.0,
+          "inventoryUnits": 7234,
+          "runRateUnitsPerDay": 8.29,
+          "daysToOOS": 872,
+          "estOOSDate": "2029-01-10",
           "planTotalUnits": 5466,
-          "pctToGoalUnits": 44.7,
-          "unitsToGoal": 3023,
+          "pctToGoalUnits": 45.0,
+          "unitsToGoal": 3006,
           "planEndDate": "2026-08-28",
-          "weeksOfStock": 164.6
+          "weeksOfStock": 124.7
         },
         {
           "sku": "TVG5910",
           "name": "Linda",
           "shade": "Cherry Red",
           "color": "#C01830",
-          "netSales": 56067.3,
-          "units": 2208,
-          "orders": 2160,
-          "newCustomers": 706,
-          "retCustomers": 1401,
-          "usUnits": 2122,
+          "netSales": 56226.23,
+          "units": 2214,
+          "orders": 2166,
+          "newCustomers": 708,
+          "retCustomers": 1405,
+          "usUnits": 2128,
           "caUnits": 86,
-          "usNetSales": 54500.5,
+          "usNetSales": 54659.43,
           "caNetSales": 1566.8,
-          "planUnits": 3974,
-          "pctToPlanUnits": 55.6,
-          "inventoryUnits": 6824,
-          "runRateUnitsPerDay": 3.71,
-          "daysToOOS": 1839,
-          "estOOSDate": "2031-09-03",
+          "planUnits": 4009,
+          "pctToPlanUnits": 55.2,
+          "inventoryUnits": 6818,
+          "runRateUnitsPerDay": 3.86,
+          "daysToOOS": 1766,
+          "estOOSDate": "2031-06-23",
           "planTotalUnits": 4185,
-          "pctToGoalUnits": 52.8,
-          "unitsToGoal": 1977,
+          "pctToGoalUnits": 52.9,
+          "unitsToGoal": 1971,
           "planEndDate": "2026-08-28",
-          "weeksOfStock": 262.8
+          "weeksOfStock": 252.3
         },
         {
           "sku": "TVG5930",
           "name": "Chanice",
           "shade": "Magenta Pink",
           "color": "#C930B8",
-          "netSales": 55163.51,
-          "units": 2217,
-          "orders": 2159,
-          "newCustomers": 614,
-          "retCustomers": 1489,
-          "usUnits": 2075,
+          "netSales": 55349.69,
+          "units": 2224,
+          "orders": 2166,
+          "newCustomers": 616,
+          "retCustomers": 1493,
+          "usUnits": 2082,
           "caUnits": 142,
-          "usNetSales": 52605.41,
+          "usNetSales": 52791.59,
           "caNetSales": 2558.1,
-          "planUnits": 3685,
-          "pctToPlanUnits": 60.2,
-          "inventoryUnits": 6775,
-          "runRateUnitsPerDay": 4.29,
-          "daysToOOS": 1579,
-          "estOOSDate": "2030-12-17",
+          "planUnits": 3711,
+          "pctToPlanUnits": 59.9,
+          "inventoryUnits": 6768,
+          "runRateUnitsPerDay": 4.57,
+          "daysToOOS": 1480,
+          "estOOSDate": "2030-09-10",
           "planTotalUnits": 3858,
-          "pctToGoalUnits": 57.5,
-          "unitsToGoal": 1641,
+          "pctToGoalUnits": 57.6,
+          "unitsToGoal": 1634,
           "planEndDate": "2026-08-28",
-          "weeksOfStock": 225.6
+          "weeksOfStock": 211.6
         },
         {
           "sku": "TVG5970",
           "name": "Kackie",
           "shade": "Mocha",
           "color": "#8B6355",
-          "netSales": 40314.36,
-          "units": 1606,
-          "orders": 1550,
+          "netSales": 40561.32,
+          "units": 1615,
+          "orders": 1558,
           "newCustomers": 483,
-          "retCustomers": 990,
-          "usUnits": 1551,
+          "retCustomers": 996,
+          "usUnits": 1560,
           "caUnits": 55,
-          "usNetSales": 39313.49,
+          "usNetSales": 39560.45,
           "caNetSales": 1000.87,
-          "planUnits": 7539,
-          "pctToPlanUnits": 21.3,
-          "inventoryUnits": 7891,
-          "runRateUnitsPerDay": 5.43,
-          "daysToOOS": 1453,
-          "estOOSDate": "2030-08-13",
+          "planUnits": 7606,
+          "pctToPlanUnits": 21.2,
+          "inventoryUnits": 7873,
+          "runRateUnitsPerDay": 5.71,
+          "daysToOOS": 1378,
+          "estOOSDate": "2030-05-31",
           "planTotalUnits": 7964,
-          "pctToGoalUnits": 20.2,
-          "unitsToGoal": 6358,
+          "pctToGoalUnits": 20.3,
+          "unitsToGoal": 6349,
           "planEndDate": "2026-08-28",
-          "weeksOfStock": 207.6
+          "weeksOfStock": 197.0
         }
       ],
       "dailySales": [
@@ -1738,14 +1742,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-06-14",
-          "units": 1282,
-          "netSales": 31058.31,
-          "usUnits": 1243,
+          "units": 1281,
+          "netSales": 31030.31,
+          "usUnits": 1242,
           "caUnits": 39,
-          "usNetSales": 30381.0,
+          "usNetSales": 30353.0,
           "caNetSales": 677.31,
-          "cumUnits": 52261,
-          "cumSales": 1317837.07,
+          "cumUnits": 52260,
+          "cumSales": 1317809.07,
           "planUnits": 626,
           "cumPlanUnits": 33205
         },
@@ -1757,8 +1761,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 32,
           "usNetSales": 10076.56,
           "caNetSales": 569.32,
-          "cumUnits": 52691,
-          "cumSales": 1328482.95,
+          "cumUnits": 52690,
+          "cumSales": 1328454.95,
           "planUnits": 419,
           "cumPlanUnits": 33624
         },
@@ -1770,8 +1774,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 28,
           "usNetSales": 7578.84,
           "caNetSales": 473.57,
-          "cumUnits": 53023,
-          "cumSales": 1336535.36,
+          "cumUnits": 53022,
+          "cumSales": 1336507.36,
           "planUnits": 387,
           "cumPlanUnits": 34011
         },
@@ -1783,8 +1787,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 22,
           "usNetSales": 8714.04,
           "caNetSales": 404.55,
-          "cumUnits": 53394,
-          "cumSales": 1345653.95,
+          "cumUnits": 53393,
+          "cumSales": 1345625.95,
           "planUnits": 405,
           "cumPlanUnits": 34416
         },
@@ -1796,8 +1800,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 25,
           "usNetSales": 9123.39,
           "caNetSales": 458.84,
-          "cumUnits": 53779,
-          "cumSales": 1355236.18,
+          "cumUnits": 53778,
+          "cumSales": 1355208.18,
           "planUnits": 522,
           "cumPlanUnits": 34938
         },
@@ -1809,8 +1813,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 15,
           "usNetSales": 11264.88,
           "caNetSales": 261.79,
-          "cumUnits": 54222,
-          "cumSales": 1366762.85,
+          "cumUnits": 54221,
+          "cumSales": 1366734.85,
           "planUnits": 494,
           "cumPlanUnits": 35432
         },
@@ -1822,8 +1826,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 28,
           "usNetSales": 15912.05,
           "caNetSales": 476.4,
-          "cumUnits": 54866,
-          "cumSales": 1383151.3,
+          "cumUnits": 54865,
+          "cumSales": 1383123.3,
           "planUnits": 766,
           "cumPlanUnits": 36198
         },
@@ -1835,8 +1839,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 25,
           "usNetSales": 17921.38,
           "caNetSales": 416.84,
-          "cumUnits": 55575,
-          "cumSales": 1401489.52,
+          "cumUnits": 55574,
+          "cumSales": 1401461.52,
           "planUnits": 809,
           "cumPlanUnits": 37007
         },
@@ -1848,8 +1852,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 8885.93,
           "caNetSales": 98.66,
-          "cumUnits": 55930,
-          "cumSales": 1410474.11,
+          "cumUnits": 55929,
+          "cumSales": 1410446.11,
           "planUnits": 416,
           "cumPlanUnits": 37423
         },
@@ -1861,21 +1865,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 16,
           "usNetSales": 7997.33,
           "caNetSales": 269.63,
-          "cumUnits": 56266,
-          "cumSales": 1418741.07,
+          "cumUnits": 56265,
+          "cumSales": 1418713.07,
           "planUnits": 385,
           "cumPlanUnits": 37808
         },
         {
           "date": "2026-06-24",
-          "units": 240,
+          "units": 239,
           "netSales": 5897.62,
-          "usUnits": 232,
+          "usUnits": 231,
           "caUnits": 8,
           "usNetSales": 5758.63,
           "caNetSales": 138.99,
-          "cumUnits": 56506,
-          "cumSales": 1424638.69,
+          "cumUnits": 56504,
+          "cumSales": 1424610.69,
           "planUnits": 403,
           "cumPlanUnits": 38211
         },
@@ -1887,8 +1891,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 5587.14,
           "caNetSales": 204.95,
-          "cumUnits": 56743,
-          "cumSales": 1430430.78,
+          "cumUnits": 56741,
+          "cumSales": 1430402.78,
           "planUnits": 521,
           "cumPlanUnits": 38732
         },
@@ -1900,8 +1904,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 10,
           "usNetSales": 3697.46,
           "caNetSales": 159.37,
-          "cumUnits": 56908,
-          "cumSales": 1434287.61,
+          "cumUnits": 56906,
+          "cumSales": 1434259.61,
           "planUnits": 492,
           "cumPlanUnits": 39224
         },
@@ -1913,8 +1917,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 5465.49,
           "caNetSales": 212.03,
-          "cumUnits": 57129,
-          "cumSales": 1439965.13,
+          "cumUnits": 57127,
+          "cumSales": 1439937.13,
           "planUnits": 588,
           "cumPlanUnits": 39812
         },
@@ -1926,8 +1930,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 6173.73,
           "caNetSales": 190.64,
-          "cumUnits": 57371,
-          "cumSales": 1446329.5,
+          "cumUnits": 57369,
+          "cumSales": 1446301.5,
           "planUnits": 620,
           "cumPlanUnits": 40432
         },
@@ -1939,8 +1943,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 4498.53,
           "caNetSales": 222.11,
-          "cumUnits": 57565,
-          "cumSales": 1451050.14,
+          "cumUnits": 57563,
+          "cumSales": 1451022.14,
           "planUnits": 415,
           "cumPlanUnits": 40847
         },
@@ -1952,8 +1956,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 6188.16,
           "caNetSales": 105.44,
-          "cumUnits": 57814,
-          "cumSales": 1457343.74,
+          "cumUnits": 57812,
+          "cumSales": 1457315.74,
           "planUnits": 385,
           "cumPlanUnits": 41232
         },
@@ -1965,8 +1969,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 29,
           "usNetSales": 9767.55,
           "caNetSales": 465.14,
-          "cumUnits": 58261,
-          "cumSales": 1467576.43,
+          "cumUnits": 58259,
+          "cumSales": 1467548.43,
           "planUnits": 403,
           "cumPlanUnits": 41635
         },
@@ -1978,8 +1982,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 9492.74,
           "caNetSales": 126.97,
-          "cumUnits": 58673,
-          "cumSales": 1477196.14,
+          "cumUnits": 58671,
+          "cumSales": 1477168.14,
           "planUnits": 518,
           "cumPlanUnits": 42153
         },
@@ -1991,8 +1995,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 20,
           "usNetSales": 10991.48,
           "caNetSales": 316.37,
-          "cumUnits": 59160,
-          "cumSales": 1488503.99,
+          "cumUnits": 59158,
+          "cumSales": 1488475.99,
           "planUnits": 637,
           "cumPlanUnits": 42790
         },
@@ -2004,8 +2008,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 16,
           "usNetSales": 10604.77,
           "caNetSales": 255.65,
-          "cumUnits": 59622,
-          "cumSales": 1499364.41,
+          "cumUnits": 59620,
+          "cumSales": 1499336.41,
           "planUnits": 762,
           "cumPlanUnits": 43552
         },
@@ -2017,8 +2021,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 19,
           "usNetSales": 17567.53,
           "caNetSales": 302.84,
-          "cumUnits": 60381,
-          "cumSales": 1517234.78,
+          "cumUnits": 60379,
+          "cumSales": 1517206.78,
           "planUnits": 805,
           "cumPlanUnits": 44357
         },
@@ -2030,8 +2034,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 6945.63,
           "caNetSales": 151.62,
-          "cumUnits": 60664,
-          "cumSales": 1524332.03,
+          "cumUnits": 60662,
+          "cumSales": 1524304.03,
           "planUnits": 414,
           "cumPlanUnits": 44771
         },
@@ -2043,8 +2047,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 6930.49,
           "caNetSales": 127.8,
-          "cumUnits": 60941,
-          "cumSales": 1531390.32,
+          "cumUnits": 60939,
+          "cumSales": 1531362.32,
           "planUnits": 384,
           "cumPlanUnits": 45155
         },
@@ -2056,8 +2060,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 9418.25,
           "caNetSales": 128.13,
-          "cumUnits": 61306,
-          "cumSales": 1540936.7,
+          "cumUnits": 61304,
+          "cumSales": 1540908.7,
           "planUnits": 401,
           "cumPlanUnits": 45556
         },
@@ -2069,8 +2073,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 7769.92,
           "caNetSales": 124.83,
-          "cumUnits": 61613,
-          "cumSales": 1548831.45,
+          "cumUnits": 61611,
+          "cumSales": 1548803.45,
           "planUnits": 518,
           "cumPlanUnits": 46074
         },
@@ -2082,8 +2086,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 10,
           "usNetSales": 10230.49,
           "caNetSales": 170.13,
-          "cumUnits": 62013,
-          "cumSales": 1559232.07,
+          "cumUnits": 62011,
+          "cumSales": 1559204.07,
           "planUnits": 490,
           "cumPlanUnits": 46564
         },
@@ -2095,8 +2099,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 10891.43,
           "caNetSales": 53.0,
-          "cumUnits": 62434,
-          "cumSales": 1570176.5,
+          "cumUnits": 62432,
+          "cumSales": 1570148.5,
           "planUnits": 586,
           "cumPlanUnits": 47150
         },
@@ -2108,8 +2112,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 9286.43,
           "caNetSales": 123.3,
-          "cumUnits": 62793,
-          "cumSales": 1579586.23,
+          "cumUnits": 62791,
+          "cumSales": 1579558.23,
           "planUnits": 618,
           "cumPlanUnits": 47768
         },
@@ -2121,8 +2125,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 14,
           "usNetSales": 7196.65,
           "caNetSales": 230.09,
-          "cumUnits": 63086,
-          "cumSales": 1587012.97,
+          "cumUnits": 63084,
+          "cumSales": 1586984.97,
           "planUnits": 413,
           "cumPlanUnits": 48181
         },
@@ -2134,8 +2138,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 6237.29,
           "caNetSales": 84.81,
-          "cumUnits": 63345,
-          "cumSales": 1593335.07,
+          "cumUnits": 63343,
+          "cumSales": 1593307.07,
           "planUnits": 383,
           "cumPlanUnits": 48564
         },
@@ -2147,8 +2151,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 4807.59,
           "caNetSales": 103.26,
-          "cumUnits": 63536,
-          "cumSales": 1598245.92,
+          "cumUnits": 63534,
+          "cumSales": 1598217.92,
           "planUnits": 400,
           "cumPlanUnits": 48964
         },
@@ -2160,8 +2164,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 5289.94,
           "caNetSales": 57.63,
-          "cumUnits": 63748,
-          "cumSales": 1603593.49,
+          "cumUnits": 63746,
+          "cumSales": 1603565.49,
           "planUnits": 517,
           "cumPlanUnits": 49481
         },
@@ -2173,8 +2177,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 6702.05,
           "caNetSales": 129.0,
-          "cumUnits": 64048,
-          "cumSales": 1610424.54,
+          "cumUnits": 64046,
+          "cumSales": 1610396.54,
           "planUnits": 490,
           "cumPlanUnits": 49971
         },
@@ -2186,8 +2190,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 10,
           "usNetSales": 7857.41,
           "caNetSales": 162.2,
-          "cumUnits": 64358,
-          "cumSales": 1618444.15,
+          "cumUnits": 64356,
+          "cumSales": 1618416.15,
           "planUnits": 760,
           "cumPlanUnits": 50731
         },
@@ -2199,8 +2203,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 7830.46,
           "caNetSales": 109.5,
-          "cumUnits": 64664,
-          "cumSales": 1626384.11,
+          "cumUnits": 64662,
+          "cumSales": 1626356.11,
           "planUnits": 803,
           "cumPlanUnits": 51534
         },
@@ -2212,34 +2216,34 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 7369.94,
           "caNetSales": 88.2,
-          "cumUnits": 64954,
-          "cumSales": 1633842.25,
+          "cumUnits": 64952,
+          "cumSales": 1633814.25,
           "planUnits": 413,
           "cumPlanUnits": 51947
         },
         {
           "date": "2026-07-21",
-          "units": 309,
-          "netSales": 7840.16,
-          "usUnits": 300,
+          "units": 307,
+          "netSales": 7786.22,
+          "usUnits": 298,
           "caUnits": 9,
-          "usNetSales": 7699.33,
+          "usNetSales": 7645.39,
           "caNetSales": 140.83,
-          "cumUnits": 65263,
-          "cumSales": 1641682.41,
+          "cumUnits": 65259,
+          "cumSales": 1641600.47,
           "planUnits": 383,
           "cumPlanUnits": 52330
         },
         {
           "date": "2026-07-22",
-          "units": 298,
-          "netSales": 7598.51,
-          "usUnits": 290,
+          "units": 295,
+          "netSales": 7522.29,
+          "usUnits": 287,
           "caUnits": 8,
-          "usNetSales": 7460.08,
+          "usNetSales": 7383.86,
           "caNetSales": 138.43,
-          "cumUnits": 65561,
-          "cumSales": 1649280.92,
+          "cumUnits": 65554,
+          "cumSales": 1649122.76,
           "planUnits": 519,
           "cumPlanUnits": 52849
         },
@@ -2251,8 +2255,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 7893.89,
           "caNetSales": 156.04,
-          "cumUnits": 65877,
-          "cumSales": 1657330.85,
+          "cumUnits": 65870,
+          "cumSales": 1657172.69,
           "planUnits": 516,
           "cumPlanUnits": 53365
         },
@@ -2264,8 +2268,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 7669.05,
           "caNetSales": 163.03,
-          "cumUnits": 66181,
-          "cumSales": 1665162.93,
+          "cumUnits": 66174,
+          "cumSales": 1665004.77,
           "planUnits": 489,
           "cumPlanUnits": 53854
         },
@@ -2277,8 +2281,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 16,
           "usNetSales": 9132.32,
           "caNetSales": 295.63,
-          "cumUnits": 66548,
-          "cumSales": 1674590.88,
+          "cumUnits": 66541,
+          "cumSales": 1674432.72,
           "planUnits": 585,
           "cumPlanUnits": 54439
         },
@@ -2290,8 +2294,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 8581.43,
           "caNetSales": 172.01,
-          "cumUnits": 66880,
-          "cumSales": 1683344.32,
+          "cumUnits": 66873,
+          "cumSales": 1683186.16,
           "planUnits": 617,
           "cumPlanUnits": 55056
         },
@@ -2303,8 +2307,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 6475.0,
           "caNetSales": 90.32,
-          "cumUnits": 67136,
-          "cumSales": 1689909.64,
+          "cumUnits": 67129,
+          "cumSales": 1689751.48,
           "planUnits": 413,
           "cumPlanUnits": 55469
         },
@@ -2316,8 +2320,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 8785.46,
           "caNetSales": 160.05,
-          "cumUnits": 67496,
-          "cumSales": 1698855.15,
+          "cumUnits": 67489,
+          "cumSales": 1698696.99,
           "planUnits": 383,
           "cumPlanUnits": 55852
         },
@@ -2329,8 +2333,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 6932.28,
           "caNetSales": 122.41,
-          "cumUnits": 67770,
-          "cumSales": 1705909.84,
+          "cumUnits": 67763,
+          "cumSales": 1705751.68,
           "planUnits": 400,
           "cumPlanUnits": 56252
         },
@@ -2342,8 +2346,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 3212.9,
           "caNetSales": 36.73,
-          "cumUnits": 67898,
-          "cumSales": 1709159.47,
+          "cumUnits": 67891,
+          "cumSales": 1709001.31,
           "planUnits": 516,
           "cumPlanUnits": 56768
         },
@@ -2355,8 +2359,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 4299.04,
           "caNetSales": 36.01,
-          "cumUnits": 68068,
-          "cumSales": 1713494.52,
+          "cumUnits": 68061,
+          "cumSales": 1713336.36,
           "planUnits": 488,
           "cumPlanUnits": 57256
         },
@@ -2368,8 +2372,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 3663.71,
           "caNetSales": 111.22,
-          "cumUnits": 68216,
-          "cumSales": 1717269.45,
+          "cumUnits": 68209,
+          "cumSales": 1717111.29,
           "planUnits": 759,
           "cumPlanUnits": 58015
         },
@@ -2381,8 +2385,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 5623.87,
           "caNetSales": 83.72,
-          "cumUnits": 68439,
-          "cumSales": 1722977.04,
+          "cumUnits": 68432,
+          "cumSales": 1722818.88,
           "planUnits": 802,
           "cumPlanUnits": 58817
         },
@@ -2394,8 +2398,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 2937.54,
           "caNetSales": 18.22,
-          "cumUnits": 68553,
-          "cumSales": 1725932.8,
+          "cumUnits": 68546,
+          "cumSales": 1725774.64,
           "planUnits": 413,
           "cumPlanUnits": 59230
         },
@@ -2407,8 +2411,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 3488.15,
           "caNetSales": 35.64,
-          "cumUnits": 68694,
-          "cumSales": 1729456.59,
+          "cumUnits": 68687,
+          "cumSales": 1729298.43,
           "planUnits": 383,
           "cumPlanUnits": 59613
         },
@@ -2420,21 +2424,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 3349.68,
           "caNetSales": 65.48,
-          "cumUnits": 68827,
-          "cumSales": 1732871.75,
+          "cumUnits": 68820,
+          "cumSales": 1732713.59,
           "planUnits": 399,
           "cumPlanUnits": 60012
         },
         {
           "date": "2026-08-06",
-          "units": 137,
-          "netSales": 3458.02,
-          "usUnits": 131,
+          "units": 136,
+          "netSales": 3433.64,
+          "usUnits": 130,
           "caUnits": 6,
-          "usNetSales": 3357.66,
+          "usNetSales": 3333.28,
           "caNetSales": 100.36,
-          "cumUnits": 68964,
-          "cumSales": 1736329.77,
+          "cumUnits": 68956,
+          "cumSales": 1736147.23,
           "planUnits": 516,
           "cumPlanUnits": 60528
         },
@@ -2446,8 +2450,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 3248.28,
           "caNetSales": 38.79,
-          "cumUnits": 69095,
-          "cumSales": 1739616.84,
+          "cumUnits": 69087,
+          "cumSales": 1739434.3,
           "planUnits": 488,
           "cumPlanUnits": 61016
         },
@@ -2459,8 +2463,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 6199.3,
           "caNetSales": 173.56,
-          "cumUnits": 69339,
-          "cumSales": 1745989.7,
+          "cumUnits": 69331,
+          "cumSales": 1745807.16,
           "planUnits": 584,
           "cumPlanUnits": 61600
         },
@@ -2472,21 +2476,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 7165.95,
           "caNetSales": 151.96,
-          "cumUnits": 69625,
-          "cumSales": 1753307.61,
+          "cumUnits": 69617,
+          "cumSales": 1753125.07,
           "planUnits": 616,
           "cumPlanUnits": 62216
         },
         {
           "date": "2026-08-10",
-          "units": 152,
-          "netSales": 3742.76,
-          "usUnits": 150,
+          "units": 151,
+          "netSales": 3717.59,
+          "usUnits": 149,
           "caUnits": 2,
-          "usNetSales": 3703.68,
+          "usNetSales": 3678.51,
           "caNetSales": 39.08,
-          "cumUnits": 69777,
-          "cumSales": 1757050.37,
+          "cumUnits": 69768,
+          "cumSales": 1756842.66,
           "planUnits": 412,
           "cumPlanUnits": 62628
         },
@@ -2498,8 +2502,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 2949.5,
           "caNetSales": 72.4,
-          "cumUnits": 69904,
-          "cumSales": 1760072.27,
+          "cumUnits": 69895,
+          "cumSales": 1759864.56,
           "planUnits": 383,
           "cumPlanUnits": 63011
         },
@@ -2511,34 +2515,34 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 3740.91,
           "caNetSales": 35.23,
-          "cumUnits": 70052,
-          "cumSales": 1763848.41,
+          "cumUnits": 70043,
+          "cumSales": 1763640.7,
           "planUnits": 398,
           "cumPlanUnits": 63409
         },
         {
           "date": "2026-08-13",
-          "units": 147,
-          "netSales": 3621.25,
-          "usUnits": 143,
+          "units": 144,
+          "netSales": 3550.76,
+          "usUnits": 140,
           "caUnits": 4,
-          "usNetSales": 3556.53,
+          "usNetSales": 3486.04,
           "caNetSales": 64.72,
-          "cumUnits": 70199,
-          "cumSales": 1767469.66,
+          "cumUnits": 70187,
+          "cumSales": 1767191.46,
           "planUnits": 516,
           "cumPlanUnits": 63925
         },
         {
           "date": "2026-08-14",
-          "units": 137,
-          "netSales": 3545.95,
-          "usUnits": 137,
+          "units": 136,
+          "netSales": 3517.95,
+          "usUnits": 136,
           "caUnits": 0,
-          "usNetSales": 3545.95,
+          "usNetSales": 3517.95,
           "caNetSales": 0.0,
-          "cumUnits": 70336,
-          "cumSales": 1771015.61,
+          "cumUnits": 70323,
+          "cumSales": 1770709.41,
           "planUnits": 488,
           "cumPlanUnits": 64413
         },
@@ -2550,8 +2554,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3185.72,
           "caNetSales": 0.0,
-          "cumUnits": 70457,
-          "cumSales": 1774201.33,
+          "cumUnits": 70444,
+          "cumSales": 1773895.13,
           "planUnits": 759,
           "cumPlanUnits": 65172
         },
@@ -2563,8 +2567,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3936.56,
           "caNetSales": 0.0,
-          "cumUnits": 70607,
-          "cumSales": 1778137.89,
+          "cumUnits": 70594,
+          "cumSales": 1777831.69,
           "planUnits": 802,
           "cumPlanUnits": 65974
         },
@@ -2576,8 +2580,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 3294.53,
           "caNetSales": 36.51,
-          "cumUnits": 70738,
-          "cumSales": 1781468.93,
+          "cumUnits": 70725,
+          "cumSales": 1781162.73,
           "planUnits": 412,
           "cumPlanUnits": 66386
         },
@@ -2589,8 +2593,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 4357.21,
           "caNetSales": 17.03,
-          "cumUnits": 70907,
-          "cumSales": 1785843.17,
+          "cumUnits": 70894,
+          "cumSales": 1785536.97,
           "planUnits": 383,
           "cumPlanUnits": 66769
         },
@@ -2602,8 +2606,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 3939.76,
           "caNetSales": 51.62,
-          "cumUnits": 71063,
-          "cumSales": 1789834.55,
+          "cumUnits": 71050,
+          "cumSales": 1789528.35,
           "planUnits": 398,
           "cumPlanUnits": 67167
         },
@@ -2615,8 +2619,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 4190.99,
           "caNetSales": 89.7,
-          "cumUnits": 71229,
-          "cumSales": 1794115.24,
+          "cumUnits": 71216,
+          "cumSales": 1793809.04,
           "planUnits": 516,
           "cumPlanUnits": 67683
         },
@@ -2628,121 +2632,134 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 2515.16,
           "caNetSales": 197.54,
-          "cumUnits": 71341,
-          "cumSales": 1796827.94,
+          "cumUnits": 71328,
+          "cumSales": 1796521.74,
           "planUnits": 487,
           "cumPlanUnits": 68170
+        },
+        {
+          "date": "2026-08-22",
+          "units": 226,
+          "netSales": 5820.93,
+          "usUnits": 224,
+          "caUnits": 2,
+          "usNetSales": 5784.7,
+          "caNetSales": 36.23,
+          "cumUnits": 71554,
+          "cumSales": 1802342.67,
+          "planUnits": 584,
+          "cumPlanUnits": 68754
         }
       ],
       "pdp": [
         {
           "sku": "TVG5920",
           "name": "Kaisa",
-          "pdpViews": 466500,
-          "atc": 20793,
-          "ckts": 7172,
-          "purch": 7204,
-          "rev": 201446.5,
-          "atcRate": 4.46,
+          "pdpViews": 470918,
+          "atc": 20916,
+          "ckts": 7202,
+          "purch": 7243,
+          "rev": 202538.5,
+          "atcRate": 4.44,
           "purchRate": 1.54
         },
         {
           "sku": "TVG5960",
           "name": "Joan",
-          "pdpViews": 302183,
-          "atc": 27661,
-          "ckts": 8705,
-          "purch": 9413,
-          "rev": 263050.22,
+          "pdpViews": 304001,
+          "atc": 27816,
+          "ckts": 8739,
+          "purch": 9461,
+          "rev": 264394.22,
           "atcRate": 9.15,
           "purchRate": 3.11
         },
         {
           "sku": "TVG5880",
           "name": "Ilene",
-          "pdpViews": 260293,
-          "atc": 37274,
+          "pdpViews": 261420,
+          "atc": 37276,
           "ckts": 12291,
           "purch": 12259,
           "rev": 342585.29,
-          "atcRate": 14.32,
-          "purchRate": 4.71
+          "atcRate": 14.26,
+          "purchRate": 4.69
         },
         {
           "sku": "TVG5890",
           "name": "Michelle",
-          "pdpViews": 246321,
+          "pdpViews": 247203,
           "atc": 27395,
           "ckts": 9096,
           "purch": 8884,
           "rev": 248356.45,
-          "atcRate": 11.12,
-          "purchRate": 3.61
+          "atcRate": 11.08,
+          "purchRate": 3.59
         },
         {
           "sku": "TVG5950",
           "name": "Ragan",
-          "pdpViews": 198873,
-          "atc": 55467,
-          "ckts": 19626,
-          "purch": 18773,
-          "rev": 524445.69,
-          "atcRate": 27.89,
-          "purchRate": 9.44
+          "pdpViews": 200335,
+          "atc": 55744,
+          "ckts": 19690,
+          "purch": 18857,
+          "rev": 526797.69,
+          "atcRate": 27.83,
+          "purchRate": 9.41
         },
         {
           "sku": "TVG5900",
           "name": "Rosa",
-          "pdpViews": 141785,
-          "atc": 22175,
-          "ckts": 6761,
-          "purch": 6086,
-          "rev": 170259.5,
-          "atcRate": 15.64,
-          "purchRate": 4.29
+          "pdpViews": 142244,
+          "atc": 22205,
+          "ckts": 6766,
+          "purch": 6094,
+          "rev": 170483.5,
+          "atcRate": 15.61,
+          "purchRate": 4.28
         },
         {
           "sku": "TVG5940",
           "name": "Kathy",
-          "pdpViews": 96497,
-          "atc": 6731,
-          "ckts": 2376,
-          "purch": 2402,
-          "rev": 67098.1,
-          "atcRate": 6.98,
+          "pdpViews": 97193,
+          "atc": 6778,
+          "ckts": 2397,
+          "purch": 2421,
+          "rev": 67630.1,
+          "atcRate": 6.97,
           "purchRate": 2.49
         },
         {
           "sku": "TVG5910",
           "name": "Linda",
-          "pdpViews": 75372,
-          "atc": 6655,
-          "ckts": 2003,
-          "purch": 2180,
-          "rev": 60937.06,
-          "atcRate": 8.83,
-          "purchRate": 2.89
+          "pdpViews": 75874,
+          "atc": 6686,
+          "ckts": 2004,
+          "purch": 2186,
+          "rev": 61105.06,
+          "atcRate": 8.81,
+          "purchRate": 2.88
         },
         {
           "sku": "TVG5930",
           "name": "Chanice",
-          "pdpViews": 74978,
-          "atc": 6058,
-          "ckts": 2024,
-          "purch": 2116,
-          "rev": 59127.09,
-          "atcRate": 8.08,
-          "purchRate": 2.82
+          "pdpViews": 75564,
+          "atc": 6088,
+          "ckts": 2026,
+          "purch": 2125,
+          "rev": 59369.09,
+          "atcRate": 8.06,
+          "purchRate": 2.81
         },
         {
           "sku": "TVG5970",
           "name": "Kackie",
-          "pdpViews": 63423,
-          "atc": 4674,
-          "ckts": 1657,
-          "purch": 1567,
-          "rev": 43810.44,
-          "atcRate": 7.37,
+          "pdpViews": 63881,
+          "atc": 4695,
+          "ckts": 1668,
+          "purch": 1576,
+          "rev": 44062.44,
+          "atcRate": 7.35,
           "purchRate": 2.47
         }
       ],
@@ -2750,12 +2767,12 @@ window.DASHBOARD_DATA = {
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG284",
-          "pairs": 169
+          "pairs": 170
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 109
+          "pairs": 111
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
@@ -2770,7 +2787,7 @@ window.DASHBOARD_DATA = {
         {
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
           "sku": "TVG478",
-          "pairs": 59
+          "pairs": 60
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
@@ -2779,8 +2796,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
-          "pairs": 37
+          "sku": "TVG6610",
+          "pairs": 38
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
@@ -2789,13 +2806,13 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6610",
+          "sku": "TVG358",
           "pairs": 37
         },
         {
           "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
           "sku": "TVG581",
-          "pairs": 35
+          "pairs": 36
         }
       ],
       "crossSellBySku": [
@@ -2831,14 +2848,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5880",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG534",
           "pairs": 14
         },
         {
           "primarySku": "TVG5880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 14
         },
         {
@@ -2880,13 +2897,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5890",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6630",
+          "sku": "TVG534",
           "pairs": 10
         },
         {
           "primarySku": "TVG5890",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "sku": "TVG6630",
           "pairs": 10
         },
         {
@@ -2909,14 +2926,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5890",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
           "pairs": 6
         },
         {
           "primarySku": "TVG5890",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
+          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
+          "sku": "TVG463",
           "pairs": 6
         },
         {
@@ -2934,7 +2951,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5900",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "sku": "TVG532",
           "pairs": 6
         },
         {
@@ -2946,7 +2963,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5900",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG532",
+          "sku": "TVG355",
           "pairs": 6
         },
         {
@@ -2969,14 +2986,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5900",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG564",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG461",
           "pairs": 4
         },
         {
           "primarySku": "TVG5900",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6610",
+          "sku": "TVG6640",
           "pairs": 4
         },
         {
@@ -2987,38 +3004,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5910",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG565",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG630",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG350",
           "pairs": 2
         },
         {
           "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG364",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
+          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
+          "sku": "TVG235",
           "pairs": 2
         },
         {
@@ -3030,13 +3023,37 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5910",
           "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG364",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5910",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG565",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5910",
+          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG366",
           "pairs": 2
         },
         {
           "primarySku": "TVG5910",
-          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
-          "sku": "TVG235",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5910",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG630",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5910",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG578",
           "pairs": 2
         },
         {
@@ -3047,14 +3064,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5920",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 10
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
+          "pairs": 11
         },
         {
           "primarySku": "TVG5920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
           "pairs": 10
         },
         {
@@ -3089,14 +3106,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG514",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG425",
           "pairs": 4
         },
         {
           "primarySku": "TVG5920",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG5870",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 4
         },
         {
@@ -3113,8 +3130,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5930",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG578",
           "pairs": 4
         },
         {
@@ -3125,20 +3142,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5930",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG578",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG533",
           "pairs": 4
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG576",
-          "pairs": 3
         },
         {
           "primarySku": "TVG5930",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG513",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG5930",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG576",
           "pairs": 3
         },
         {
@@ -3149,21 +3166,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5930",
-          "product": "Triple Threat\u2122 Highlighter Stick",
-          "sku": "TVG529",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG581",
           "pairs": 2
         },
         {
           "primarySku": "TVG5930",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
+          "sku": "TVG463",
           "pairs": 2
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 5
         },
         {
           "primarySku": "TVG5940",
@@ -3173,14 +3184,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5940",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 4
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
+          "pairs": 5
         },
         {
           "primarySku": "TVG5940",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG511",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 4
         },
         {
@@ -3192,7 +3203,19 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5940",
           "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG511",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG5940",
+          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG357",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG5940",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 3
         },
         {
@@ -3210,26 +3233,20 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5940",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG5940",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "sku": "TVG475",
           "pairs": 2
         },
         {
           "primarySku": "TVG5950",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG284",
-          "pairs": 38
+          "pairs": 39
         },
         {
           "primarySku": "TVG5950",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 37
+          "pairs": 38
         },
         {
           "primarySku": "TVG5950",
@@ -3251,21 +3268,21 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5950",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG581",
-          "pairs": 15
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6610",
+          "pairs": 16
         },
         {
           "primarySku": "TVG5950",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6610",
-          "pairs": 15
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG581",
+          "pairs": 16
         },
         {
           "primarySku": "TVG5950",
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
           "sku": "TVG478",
-          "pairs": 10
+          "pairs": 11
         },
         {
           "primarySku": "TVG5950",
@@ -3305,12 +3322,6 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5960",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5960",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
           "pairs": 5
@@ -3323,27 +3334,27 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5960",
+          "product": "Defying Gravity\u2122 Eye Lifting Cream",
+          "sku": "TBB002",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG5960",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG533",
           "pairs": 5
         },
         {
           "primarySku": "TVG5960",
-          "product": "Defying Gravity\u2122 Deep Hydration Moisturizer",
-          "sku": "TBB005",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 4
         },
         {
           "primarySku": "TVG5960",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
+          "product": "Defying Gravity\u2122 Deep Hydration Moisturizer",
+          "sku": "TBB005",
           "pairs": 4
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6640",
-          "pairs": 5
         },
         {
           "primarySku": "TVG5970",
@@ -3354,8 +3365,20 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5970",
           "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6640",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG5970",
+          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG4770",
           "pairs": 4
+        },
+        {
+          "primarySku": "TVG5970",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
+          "pairs": 3
         },
         {
           "primarySku": "TVG5970",
@@ -3371,14 +3394,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5970",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
-          "pairs": 3
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG580",
+          "pairs": 2
         },
         {
           "primarySku": "TVG5970",
-          "product": "Pout Hero\u2122\ufe0f Exfoliating Lip Scrub",
-          "sku": "TBB010",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG479",
           "pairs": 2
         },
         {
@@ -3389,46 +3412,34 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5970",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG580",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG576",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 2
         }
       ],
       "categoryCustomers": {
         "category": "Lip",
-        "total": 53227,
-        "existingCategory": 26138,
-        "newToCategory": 27089,
+        "total": 53386,
+        "existingCategory": 26226,
+        "newToCategory": 27160,
         "byVariant": [
           {
-            "sku": "TVG5930",
-            "name": "Chanice",
-            "newToCategory": 930,
-            "existingCategory": 1173
+            "sku": "TVG5880",
+            "name": "Ilene",
+            "newToCategory": 5929,
+            "existingCategory": 5795
           },
           {
             "sku": "TVG5950",
             "name": "Ragan",
-            "newToCategory": 8984,
-            "existingCategory": 9073
+            "newToCategory": 9026,
+            "existingCategory": 9111
           },
           {
-            "sku": "TVG5940",
-            "name": "Kathy",
-            "newToCategory": 1085,
-            "existingCategory": 1249
-          },
-          {
-            "sku": "TVG5970",
-            "name": "Kackie",
-            "newToCategory": 696,
-            "existingCategory": 777
+            "sku": "TVG5960",
+            "name": "Joan",
+            "newToCategory": 4679,
+            "existingCategory": 4470
           },
           {
             "sku": "TVG5890",
@@ -3437,34 +3448,40 @@ window.DASHBOARD_DATA = {
             "existingCategory": 4311
           },
           {
-            "sku": "TVG5900",
-            "name": "Rosa",
-            "newToCategory": 3232,
-            "existingCategory": 2443
-          },
-          {
-            "sku": "TVG5960",
-            "name": "Joan",
-            "newToCategory": 4662,
-            "existingCategory": 4445
-          },
-          {
-            "sku": "TVG5880",
-            "name": "Ilene",
-            "newToCategory": 5931,
-            "existingCategory": 5795
-          },
-          {
-            "sku": "TVG5910",
-            "name": "Linda",
-            "newToCategory": 1019,
-            "existingCategory": 1088
+            "sku": "TVG5970",
+            "name": "Kackie",
+            "newToCategory": 698,
+            "existingCategory": 781
           },
           {
             "sku": "TVG5920",
             "name": "Kaisa",
-            "newToCategory": 3676,
-            "existingCategory": 3354
+            "newToCategory": 3689,
+            "existingCategory": 3378
+          },
+          {
+            "sku": "TVG5930",
+            "name": "Chanice",
+            "newToCategory": 932,
+            "existingCategory": 1177
+          },
+          {
+            "sku": "TVG5900",
+            "name": "Rosa",
+            "newToCategory": 3235,
+            "existingCategory": 2446
+          },
+          {
+            "sku": "TVG5940",
+            "name": "Kathy",
+            "newToCategory": 1090,
+            "existingCategory": 1259
+          },
+          {
+            "sku": "TVG5910",
+            "name": "Linda",
+            "newToCategory": 1021,
+            "existingCategory": 1092
           }
         ]
       }
@@ -3479,185 +3496,185 @@ window.DASHBOARD_DATA = {
       "subtitle": "3 Products \u00b7 Silver Grey",
       "accent": "#C9A84C",
       "summary": {
-        "netSales": 159812.92,
-        "units": 7154,
-        "orders": 6232,
-        "aov": 25.64,
-        "newCustomers": 2296,
-        "retCustomers": 3629,
-        "totalCustomers": 5925,
+        "netSales": 160834.56,
+        "units": 7198,
+        "orders": 6269,
+        "aov": 25.66,
+        "newCustomers": 2312,
+        "retCustomers": 3648,
+        "totalCustomers": 5960,
         "newPct": 38.8,
         "retPct": 61.2,
-        "planUnits": 18795,
-        "pctToPlanUnits": 38.1,
-        "subscriptionOrders": 346,
-        "subscriptionUnits": 355,
-        "subscriptionRevenue": 8702.0,
-        "newCustomerRevenue": 58193.74,
-        "retCustomerRevenue": 101619.18,
-        "pdpViews": 125211,
+        "planUnits": 19006,
+        "pctToPlanUnits": 37.9,
+        "subscriptionOrders": 349,
+        "subscriptionUnits": 358,
+        "subscriptionRevenue": 8776.0,
+        "newCustomerRevenue": 58600.29,
+        "retCustomerRevenue": 102234.27,
+        "pdpViews": 125814,
         "pdpAtcRate": 15.4,
         "pdpCvr": 5.5
       },
       "regions": {
         "us": {
-          "units": 6847,
-          "netSales": 155248.52,
-          "orders": 5969
+          "units": 6890,
+          "netSales": 156253.21,
+          "orders": 6005
         },
         "ca": {
-          "units": 307,
-          "netSales": 4564.4,
-          "orders": 263
+          "units": 308,
+          "netSales": 4581.35,
+          "orders": 264
         }
       },
       "trafficStart": "2026-06-08",
-      "trafficEnd": "2026-08-19",
+      "trafficEnd": "2026-08-20",
       "traffic": {
         "byChannel": [
           {
             "ch": "Paid Social",
-            "sessions": 3967434,
-            "txns": 103984,
-            "rev": 5690607.67,
+            "sessions": 4015015,
+            "txns": 105233,
+            "rev": 5763516.57,
             "cvr": 2.62,
             "eng": 77.1
           },
           {
             "ch": "Direct",
-            "sessions": 1421977,
-            "txns": 48639,
-            "rev": 2778863.51,
-            "cvr": 3.42,
-            "eng": 64.8
+            "sessions": 1437705,
+            "txns": 49395,
+            "rev": 2822085.12,
+            "cvr": 3.44,
+            "eng": 64.9
           },
           {
             "ch": "Email",
-            "sessions": 1175008,
-            "txns": 97093,
-            "rev": 5827163.99,
-            "cvr": 8.26,
-            "eng": 75.1
+            "sessions": 1191490,
+            "txns": 98026,
+            "rev": 5886820.22,
+            "cvr": 8.23,
+            "eng": 75.0
           },
           {
             "ch": "Paid Other",
-            "sessions": 970950,
-            "txns": 6536,
-            "rev": 411202.13,
+            "sessions": 986492,
+            "txns": 6618,
+            "rev": 416513.14,
             "cvr": 0.67,
-            "eng": 75.1
+            "eng": 75.2
           },
           {
             "ch": "Paid Search",
-            "sessions": 922177,
-            "txns": 98938,
-            "rev": 6540143.44,
-            "cvr": 10.73,
+            "sessions": 934277,
+            "txns": 100334,
+            "rev": 6633909.98,
+            "cvr": 10.74,
             "eng": 83.1
           },
           {
             "ch": "Unassigned",
-            "sessions": 720304,
-            "txns": 170326,
-            "rev": 7033449.47,
-            "cvr": 23.65,
-            "eng": 63.2
+            "sessions": 735351,
+            "txns": 172757,
+            "rev": 7137586.68,
+            "cvr": 23.49,
+            "eng": 63.0
           },
           {
             "ch": "SMS",
-            "sessions": 644860,
-            "txns": 45210,
-            "rev": 2668741.25,
-            "cvr": 7.01,
-            "eng": 75.5
+            "sessions": 665514,
+            "txns": 45989,
+            "rev": 2716887.87,
+            "cvr": 6.91,
+            "eng": 75.0
           },
           {
             "ch": "Cross-network",
-            "sessions": 439054,
-            "txns": 7439,
-            "rev": 436405.12,
-            "cvr": 1.69,
+            "sessions": 444033,
+            "txns": 7531,
+            "rev": 442460.17,
+            "cvr": 1.7,
             "eng": 72.3
           },
           {
             "ch": "Paid Shopping",
-            "sessions": 295799,
-            "txns": 24158,
-            "rev": 1328921.78,
-            "cvr": 8.17,
+            "sessions": 299184,
+            "txns": 24507,
+            "rev": 1349572.14,
+            "cvr": 8.19,
             "eng": 84.1
           },
           {
             "ch": "Organic Social",
-            "sessions": 257064,
-            "txns": 4276,
-            "rev": 250017.23,
+            "sessions": 259739,
+            "txns": 4320,
+            "rev": 252808.61,
             "cvr": 1.66,
             "eng": 73.5
           },
           {
             "ch": "Organic Search",
-            "sessions": 208748,
-            "txns": 18135,
-            "rev": 1221680.34,
+            "sessions": 211597,
+            "txns": 18382,
+            "rev": 1238859.67,
             "cvr": 8.69,
             "eng": 81.1
           },
           {
             "ch": "Organic Shopping",
-            "sessions": 86575,
-            "txns": 35783,
-            "rev": 1785745.93,
-            "cvr": 41.33,
-            "eng": 85.9
+            "sessions": 87481,
+            "txns": 36361,
+            "rev": 1815260.31,
+            "cvr": 41.56,
+            "eng": 86.0
           },
           {
             "ch": "Referral",
-            "sessions": 41507,
-            "txns": 1935,
-            "rev": 124371.7,
+            "sessions": 42184,
+            "txns": 1966,
+            "rev": 126575.59,
             "cvr": 4.66,
-            "eng": 73.2
+            "eng": 73.3
           },
           {
             "ch": "Display",
-            "sessions": 24028,
+            "sessions": 24645,
             "txns": 26,
             "rev": 1574.47,
             "cvr": 0.11,
-            "eng": 76.2
+            "eng": 76.1
           },
           {
             "ch": "Paid Video",
-            "sessions": 5855,
+            "sessions": 5922,
             "txns": 5,
             "rev": 306.9,
-            "cvr": 0.09,
-            "eng": 71.8
+            "cvr": 0.08,
+            "eng": 71.7
           },
           {
             "ch": "AI Assistant",
-            "sessions": 3293,
-            "txns": 158,
-            "rev": 8621.76,
-            "cvr": 4.8,
+            "sessions": 3364,
+            "txns": 160,
+            "rev": 8673.55,
+            "cvr": 4.76,
             "eng": 77.2
           },
           {
             "ch": "Organic Video",
-            "sessions": 466,
+            "sessions": 471,
             "txns": 12,
             "rev": 785.18,
-            "cvr": 2.58,
-            "eng": 76.6
+            "cvr": 2.55,
+            "eng": 76.2
           },
           {
             "ch": "Affiliates",
-            "sessions": 15,
+            "sessions": 17,
             "txns": 2,
             "rev": 85.47,
-            "cvr": 13.33,
-            "eng": 80.0
+            "cvr": 11.76,
+            "eng": 82.4
           },
           {
             "ch": "Mobile Push Notifications",
@@ -3672,23 +3689,23 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jun 2026",
             "chs": {
-              "Unassigned": 204456,
-              "Display": 3759,
-              "Email": 352638,
-              "Organic Social": 88198,
-              "Paid Video": 2326,
-              "Organic Search": 63229,
-              "AI Assistant": 1103,
               "SMS": 237059,
-              "Paid Shopping": 84486,
-              "Paid Social": 1145454,
-              "Organic Video": 95,
+              "Paid Video": 2326,
               "Paid Other": 249202,
-              "Organic Shopping": 36161,
+              "Paid Shopping": 84486,
+              "Unassigned": 204456,
               "Cross-network": 136649,
-              "Direct": 361180,
+              "AI Assistant": 1103,
+              "Organic Shopping": 36161,
+              "Organic Social": 88198,
+              "Organic Search": 63229,
               "Paid Search": 299936,
+              "Organic Video": 95,
               "Referral": 10953,
+              "Display": 3759,
+              "Direct": 361180,
+              "Email": 352638,
+              "Paid Social": 1145454,
               "Mobile Push Notifications": 3,
               "Affiliates": 3
             }
@@ -3696,22 +3713,22 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Display": 10350,
-              "Direct": 652359,
-              "Paid Shopping": 133682,
-              "Organic Shopping": 31592,
-              "SMS": 237045,
-              "Paid Social": 1835866,
-              "Paid Other": 392354,
-              "Paid Search": 392929,
-              "Referral": 19681,
-              "AI Assistant": 1111,
-              "Organic Social": 107105,
-              "Email": 471247,
-              "Unassigned": 294263,
-              "Organic Video": 297,
               "Organic Search": 89549,
+              "Paid Other": 392354,
+              "SMS": 237045,
               "Cross-network": 191011,
+              "Unassigned": 294263,
+              "Organic Shopping": 31592,
+              "Display": 10350,
+              "AI Assistant": 1111,
+              "Referral": 19681,
+              "Organic Social": 107105,
+              "Direct": 652359,
+              "Email": 471247,
+              "Paid Shopping": 133682,
+              "Paid Social": 1835866,
+              "Paid Search": 392929,
+              "Organic Video": 297,
               "Paid Video": 2219,
               "Affiliates": 6
             }
@@ -3719,24 +3736,24 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
-              "Cross-network": 111394,
-              "Paid Video": 1310,
-              "Organic Social": 61761,
-              "Display": 9919,
-              "AI Assistant": 1079,
-              "Organic Shopping": 18822,
-              "Organic Search": 55970,
-              "Unassigned": 221585,
-              "Email": 351123,
-              "Paid Search": 229312,
-              "SMS": 170756,
-              "Paid Other": 329394,
-              "Referral": 10873,
-              "Paid Shopping": 77631,
-              "Organic Video": 74,
-              "Direct": 408438,
-              "Paid Social": 986114,
-              "Affiliates": 6
+              "Display": 10536,
+              "SMS": 191410,
+              "Unassigned": 236632,
+              "Email": 367605,
+              "Referral": 11550,
+              "Paid Search": 241412,
+              "Organic Shopping": 19728,
+              "Paid Social": 1033695,
+              "AI Assistant": 1150,
+              "Cross-network": 116373,
+              "Paid Video": 1377,
+              "Direct": 424166,
+              "Organic Search": 58819,
+              "Paid Shopping": 81016,
+              "Paid Other": 344936,
+              "Organic Social": 64436,
+              "Organic Video": 79,
+              "Affiliates": 8
             }
           }
         ]
@@ -4043,6 +4060,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-08-21",
           "cumPlanUnits": 18795
+        },
+        {
+          "date": "2026-08-22",
+          "cumPlanUnits": 19006
         }
       ],
       "planTotalUnits": 27773,
@@ -4054,78 +4075,78 @@ window.DASHBOARD_DATA = {
           "name": "Brow Gel",
           "shade": "Semi-Perm. Gel",
           "color": "#6B7A8D",
-          "netSales": 76738.55,
-          "units": 3526,
-          "orders": 3408,
-          "newCustomers": 1370,
-          "retCustomers": 1934,
-          "usUnits": 3342,
-          "caUnits": 184,
-          "usNetSales": 74052.92,
-          "caNetSales": 2685.63,
-          "planUnits": 6301,
-          "pctToPlanUnits": 56.0,
-          "inventoryUnits": 20676,
-          "runRateUnitsPerDay": 21.71,
-          "daysToOOS": 952,
-          "estOOSDate": "2029-03-30",
+          "netSales": 77281.39,
+          "units": 3550,
+          "orders": 3432,
+          "newCustomers": 1383,
+          "retCustomers": 1944,
+          "usUnits": 3365,
+          "caUnits": 185,
+          "usNetSales": 74578.81,
+          "caNetSales": 2702.58,
+          "planUnits": 6382,
+          "pctToPlanUnits": 55.6,
+          "inventoryUnits": 20661,
+          "runRateUnitsPerDay": 22.0,
+          "daysToOOS": 939,
+          "estOOSDate": "2029-03-18",
           "planTotalUnits": 9861,
-          "pctToGoalUnits": 35.8,
-          "unitsToGoal": 6335,
+          "pctToGoalUnits": 36.0,
+          "unitsToGoal": 6311,
           "planEndDate": "2026-10-05",
-          "weeksOfStock": 136.1
+          "weeksOfStock": 134.2
         },
         {
           "sku": "TVG6680",
           "name": "Brow Pencil",
           "shade": "Quick Fill Pencil",
           "color": "#4B5563",
-          "netSales": 47643.01,
-          "units": 2002,
-          "orders": 1897,
-          "newCustomers": 572,
-          "retCustomers": 1252,
-          "usUnits": 1917,
+          "netSales": 47889.11,
+          "units": 2012,
+          "orders": 1907,
+          "newCustomers": 575,
+          "retCustomers": 1259,
+          "usUnits": 1927,
           "caUnits": 85,
-          "usNetSales": 46306.84,
+          "usNetSales": 46552.94,
           "caNetSales": 1336.17,
-          "planUnits": 3820,
+          "planUnits": 3843,
           "pctToPlanUnits": 52.4,
-          "inventoryUnits": 7826,
-          "runRateUnitsPerDay": 11.57,
-          "daysToOOS": 676,
-          "estOOSDate": "2028-06-27",
+          "inventoryUnits": 7813,
+          "runRateUnitsPerDay": 11.43,
+          "daysToOOS": 683,
+          "estOOSDate": "2028-07-05",
           "planTotalUnits": 4535,
-          "pctToGoalUnits": 44.1,
-          "unitsToGoal": 2533,
+          "pctToGoalUnits": 44.4,
+          "unitsToGoal": 2523,
           "planEndDate": "2026-10-05",
-          "weeksOfStock": 96.6
+          "weeksOfStock": 97.7
         },
         {
           "sku": "TVG6710",
           "name": "Brow Liner",
           "shade": "Waterproof Liner",
           "color": "#9CA3AF",
-          "netSales": 35431.36,
-          "units": 1626,
-          "orders": 1489,
-          "newCustomers": 548,
-          "retCustomers": 887,
-          "usUnits": 1588,
+          "netSales": 35664.06,
+          "units": 1636,
+          "orders": 1496,
+          "newCustomers": 549,
+          "retCustomers": 892,
+          "usUnits": 1598,
           "caUnits": 38,
-          "usNetSales": 34888.76,
+          "usNetSales": 35121.46,
           "caNetSales": 542.6,
-          "planUnits": 8674,
-          "pctToPlanUnits": 18.7,
-          "inventoryUnits": 17703,
-          "runRateUnitsPerDay": 14.14,
-          "daysToOOS": 1251,
-          "estOOSDate": "2030-01-23",
+          "planUnits": 8781,
+          "pctToPlanUnits": 18.6,
+          "inventoryUnits": 17695,
+          "runRateUnitsPerDay": 13.43,
+          "daysToOOS": 1317,
+          "estOOSDate": "2030-03-31",
           "planTotalUnits": 13377,
           "pctToGoalUnits": 12.2,
-          "unitsToGoal": 11751,
+          "unitsToGoal": 11741,
           "planEndDate": "2026-10-05",
-          "weeksOfStock": 178.9
+          "weeksOfStock": 188.2
         }
       ],
       "dailySales": [
@@ -5067,14 +5088,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-08-19",
-          "units": 54,
-          "netSales": 1230.61,
-          "usUnits": 54,
+          "units": 53,
+          "netSales": 1206.81,
+          "usUnits": 53,
           "caUnits": 0,
-          "usNetSales": 1230.61,
+          "usNetSales": 1206.81,
           "caNetSales": 0.0,
-          "cumUnits": 7080,
-          "cumSales": 158128.14,
+          "cumUnits": 7079,
+          "cumSales": 158104.34,
           "planUnits": 185,
           "cumPlanUnits": 18417
         },
@@ -5086,8 +5107,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 958.23,
           "caNetSales": 0.0,
-          "cumUnits": 7123,
-          "cumSales": 159086.37,
+          "cumUnits": 7122,
+          "cumSales": 159062.57,
           "planUnits": 175,
           "cumPlanUnits": 18592
         },
@@ -5099,44 +5120,57 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 714.54,
           "caNetSales": 11.99,
-          "cumUnits": 7154,
-          "cumSales": 159812.9,
+          "cumUnits": 7153,
+          "cumSales": 159789.1,
           "planUnits": 203,
           "cumPlanUnits": 18795
+        },
+        {
+          "date": "2026-08-22",
+          "units": 45,
+          "netSales": 1045.44,
+          "usUnits": 44,
+          "caUnits": 1,
+          "usNetSales": 1028.49,
+          "caNetSales": 16.95,
+          "cumUnits": 7198,
+          "cumSales": 160834.54,
+          "planUnits": 211,
+          "cumPlanUnits": 19006
         }
       ],
       "pdp": [
         {
           "sku": "TVG6690",
           "name": "Brow Gel",
-          "pdpViews": 65309,
-          "atc": 9311,
-          "ckts": 3596,
-          "purch": 3376,
-          "rev": 80972.12,
-          "atcRate": 14.26,
+          "pdpViews": 65671,
+          "atc": 9357,
+          "ckts": 3613,
+          "purch": 3398,
+          "rev": 81500.12,
+          "atcRate": 14.25,
           "purchRate": 5.17
         },
         {
           "sku": "TVG6710",
           "name": "Brow Liner",
-          "pdpViews": 35214,
-          "atc": 4744,
-          "ckts": 1702,
-          "purch": 1608,
-          "rev": 38567.52,
-          "atcRate": 13.47,
+          "pdpViews": 35294,
+          "atc": 4766,
+          "ckts": 1707,
+          "purch": 1614,
+          "rev": 38711.52,
+          "atcRate": 13.5,
           "purchRate": 4.57
         },
         {
           "sku": "TVG6680",
           "name": "Brow Pencil",
-          "pdpViews": 24688,
-          "atc": 5178,
-          "ckts": 1813,
-          "purch": 1954,
-          "rev": 50779.2,
-          "atcRate": 20.97,
+          "pdpViews": 24849,
+          "atc": 5204,
+          "ckts": 1827,
+          "purch": 1965,
+          "rev": 51065.2,
+          "atcRate": 20.94,
           "purchRate": 7.91
         }
       ],
@@ -5177,18 +5211,18 @@ window.DASHBOARD_DATA = {
           "pairs": 6
         },
         {
+          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
+          "sku": "TBB004",
+          "pairs": 5
+        },
+        {
           "product": "Impact-FULL\u2122 Smoothing Lipstick",
           "sku": "TVG385",
           "pairs": 5
         },
         {
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
-          "pairs": 5
-        },
-        {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG4770",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 5
         }
       ],
@@ -5231,14 +5265,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6680",
-          "product": "Filtered Effects\u2122 Blurring Primer",
-          "sku": "TVG348",
+          "product": "Defying Gravity\u2122 Nourishing Hand + Body Cream",
+          "sku": "TBB031",
           "pairs": 2
         },
         {
           "primarySku": "TVG6680",
-          "product": "Defying Gravity\u2122 Nourishing Hand + Body Cream",
-          "sku": "TBB031",
+          "product": "Filtered Effects\u2122 Blurring Primer",
+          "sku": "TVG348",
           "pairs": 2
         },
         {
@@ -5249,14 +5283,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6680",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG630",
           "pairs": 2
         },
         {
           "primarySku": "TVG6690",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG351",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG6690",
+          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
+          "sku": "TBB004",
           "pairs": 5
         },
         {
@@ -5273,21 +5313,21 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6690",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG178",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG284",
           "pairs": 5
         },
         {
           "primarySku": "TVG6690",
-          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
-          "sku": "TBB004",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG178",
           "pairs": 5
+        },
+        {
+          "primarySku": "TVG6690",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG509",
+          "pairs": 4
         },
         {
           "primarySku": "TVG6690",
@@ -5298,20 +5338,26 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6690",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG6640",
           "pairs": 4
         },
         {
           "primarySku": "TVG6690",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG427",
+          "product": "Liquid Brilliance\u2122 Super Serum",
+          "sku": "TBB003",
           "pairs": 3
+        },
+        {
+          "primarySku": "TVG6710",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6640",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6710",
+          "product": "Filtered Effects\u2122 Blurring Primer",
+          "sku": "TVG348",
+          "pairs": 2
         },
         {
           "primarySku": "TVG6710",
@@ -5327,12 +5373,6 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6710",
-          "product": "Filtered Effects\u2122 Blurring Primer",
-          "sku": "TVG348",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
           "product": "Infinity Waterproof\u2122 Eyebrow Liner",
           "sku": "TVG427",
           "pairs": 2
@@ -5340,13 +5380,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6710",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6640",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG6390",
+          "sku": "TVG358",
           "pairs": 1
         },
         {
@@ -5357,46 +5391,46 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6710",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG648",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG6710",
           "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
           "sku": "TVG219",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6710",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6390",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6710",
+          "product": "Instant Makeup Fix\u2122 Set & Refresh Spray",
+          "sku": "TVG144",
           "pairs": 1
         }
       ],
       "categoryCustomers": {
         "category": "Brow",
-        "total": 5925,
-        "existingCategory": 2887,
-        "newToCategory": 3038,
+        "total": 5960,
+        "existingCategory": 2904,
+        "newToCategory": 3056,
         "byVariant": [
           {
             "sku": "TVG6690",
             "name": "Brow Gel",
-            "newToCategory": 1785,
-            "existingCategory": 1519
-          },
-          {
-            "sku": "TVG6680",
-            "name": "Brow Pencil",
-            "newToCategory": 830,
-            "existingCategory": 994
+            "newToCategory": 1799,
+            "existingCategory": 1528
           },
           {
             "sku": "TVG6710",
             "name": "Brow Liner",
-            "newToCategory": 675,
-            "existingCategory": 760
+            "newToCategory": 677,
+            "existingCategory": 764
+          },
+          {
+            "sku": "TVG6680",
+            "name": "Brow Pencil",
+            "newToCategory": 833,
+            "existingCategory": 1001
           }
         ]
       }
@@ -5411,185 +5445,185 @@ window.DASHBOARD_DATA = {
       "subtitle": "Focus Eyeshadow\u2122 Palette \u00b7 2 Palettes",
       "accent": "#8B5CF6",
       "summary": {
-        "netSales": 553260.1,
-        "units": 15911,
-        "orders": 14496,
-        "aov": 38.17,
-        "newCustomers": 1594,
-        "retCustomers": 12665,
-        "totalCustomers": 14259,
-        "newPct": 11.2,
-        "retPct": 88.8,
-        "planUnits": 8929,
-        "pctToPlanUnits": 178.2,
+        "netSales": 564688.71,
+        "units": 16234,
+        "orders": 14796,
+        "aov": 38.16,
+        "newCustomers": 1649,
+        "retCustomers": 12902,
+        "totalCustomers": 14551,
+        "newPct": 11.3,
+        "retPct": 88.7,
+        "planUnits": 9147,
+        "pctToPlanUnits": 177.5,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 58432.98,
-        "retCustomerRevenue": 494827.12,
-        "pdpViews": 267087,
+        "newCustomerRevenue": 60526.02,
+        "retCustomerRevenue": 504162.69,
+        "pdpViews": 272971,
         "pdpAtcRate": 15.5,
         "pdpCvr": 5.9
       },
       "regions": {
         "us": {
-          "units": 15561,
-          "netSales": 544528.67,
-          "orders": 14172
+          "units": 15880,
+          "netSales": 555858.66,
+          "orders": 14468
         },
         "ca": {
-          "units": 350,
-          "netSales": 8731.43,
-          "orders": 324
+          "units": 354,
+          "netSales": 8830.05,
+          "orders": 328
         }
       },
       "trafficStart": "2026-07-22",
-      "trafficEnd": "2026-08-19",
+      "trafficEnd": "2026-08-20",
       "traffic": {
         "byChannel": [
           {
             "ch": "Paid Social",
-            "sessions": 1620375,
-            "txns": 39248,
-            "rev": 2228329.33,
-            "cvr": 2.42,
+            "sessions": 1667956,
+            "txns": 40497,
+            "rev": 2301238.23,
+            "cvr": 2.43,
             "eng": 77.6
           },
           {
             "ch": "Direct",
-            "sessions": 687998,
-            "txns": 20099,
-            "rev": 1157283.46,
-            "cvr": 2.92,
-            "eng": 65.5
+            "sessions": 703726,
+            "txns": 20855,
+            "rev": 1200505.07,
+            "cvr": 2.96,
+            "eng": 65.7
           },
           {
             "ch": "Email",
-            "sessions": 540182,
-            "txns": 42368,
-            "rev": 2589236.66,
-            "cvr": 7.84,
-            "eng": 76.3
+            "sessions": 556664,
+            "txns": 43301,
+            "rev": 2648892.89,
+            "cvr": 7.78,
+            "eng": 76.2
           },
           {
             "ch": "Paid Other",
-            "sessions": 495709,
-            "txns": 2967,
-            "rev": 189086.07,
+            "sessions": 511251,
+            "txns": 3049,
+            "rev": 194397.08,
             "cvr": 0.6,
-            "eng": 77.1
+            "eng": 77.2
           },
           {
             "ch": "Paid Search",
-            "sessions": 363839,
-            "txns": 38905,
-            "rev": 2606802.65,
-            "cvr": 10.69,
+            "sessions": 375939,
+            "txns": 40301,
+            "rev": 2700569.19,
+            "cvr": 10.72,
             "eng": 83.4
           },
           {
             "ch": "Unassigned",
-            "sessions": 321666,
-            "txns": 70014,
-            "rev": 2972617.46,
-            "cvr": 21.77,
-            "eng": 62.2
+            "sessions": 336713,
+            "txns": 72445,
+            "rev": 3076754.67,
+            "cvr": 21.52,
+            "eng": 61.8
           },
           {
             "ch": "SMS",
-            "sessions": 267728,
-            "txns": 21344,
-            "rev": 1261909.89,
-            "cvr": 7.97,
-            "eng": 76.9
+            "sessions": 288382,
+            "txns": 22123,
+            "rev": 1310056.51,
+            "cvr": 7.67,
+            "eng": 75.5
           },
           {
             "ch": "Cross-network",
-            "sessions": 177847,
-            "txns": 2920,
-            "rev": 178639.31,
-            "cvr": 1.64,
-            "eng": 71.7
+            "sessions": 182826,
+            "txns": 3012,
+            "rev": 184694.36,
+            "cvr": 1.65,
+            "eng": 71.8
           },
           {
             "ch": "Paid Shopping",
-            "sessions": 114052,
-            "txns": 9221,
-            "rev": 521789.58,
-            "cvr": 8.08,
-            "eng": 84.5
+            "sessions": 117437,
+            "txns": 9570,
+            "rev": 542439.94,
+            "cvr": 8.15,
+            "eng": 84.6
           },
           {
             "ch": "Organic Social",
-            "sessions": 93943,
-            "txns": 1662,
-            "rev": 100797.56,
+            "sessions": 96618,
+            "txns": 1706,
+            "rev": 103588.94,
             "cvr": 1.77,
             "eng": 76.8
           },
           {
             "ch": "Organic Search",
-            "sessions": 85355,
-            "txns": 7187,
-            "rev": 505882.36,
-            "cvr": 8.42,
+            "sessions": 88204,
+            "txns": 7434,
+            "rev": 523061.69,
+            "cvr": 8.43,
             "eng": 82.2
           },
           {
             "ch": "Organic Shopping",
-            "sessions": 28355,
-            "txns": 15842,
-            "rev": 821485.27,
-            "cvr": 55.87,
-            "eng": 86.7
+            "sessions": 29261,
+            "txns": 16420,
+            "rev": 850999.65,
+            "cvr": 56.12,
+            "eng": 86.9
           },
           {
             "ch": "Referral",
-            "sessions": 17732,
-            "txns": 823,
-            "rev": 53544.73,
+            "sessions": 18409,
+            "txns": 854,
+            "rev": 55748.62,
             "cvr": 4.64,
-            "eng": 76.0
+            "eng": 76.1
           },
           {
             "ch": "Display",
-            "sessions": 11637,
+            "sessions": 12254,
             "txns": 11,
             "rev": 713.01,
             "cvr": 0.09,
-            "eng": 73.7
+            "eng": 73.6
           },
           {
             "ch": "Paid Video",
-            "sessions": 1923,
+            "sessions": 1990,
             "txns": 0,
             "rev": 0.0,
             "cvr": 0.0,
-            "eng": 70.5
+            "eng": 70.3
           },
           {
             "ch": "AI Assistant",
-            "sessions": 1375,
-            "txns": 64,
-            "rev": 3587.25,
-            "cvr": 4.65,
+            "sessions": 1446,
+            "txns": 66,
+            "rev": 3639.04,
+            "cvr": 4.56,
             "eng": 78.0
           },
           {
             "ch": "Organic Video",
-            "sessions": 188,
+            "sessions": 193,
             "txns": 5,
             "rev": 247.69,
-            "cvr": 2.66,
-            "eng": 80.9
+            "cvr": 2.59,
+            "eng": 79.8
           },
           {
             "ch": "Affiliates",
-            "sessions": 9,
+            "sessions": 11,
             "txns": 0,
             "rev": 0.0,
             "cvr": 0.0,
-            "eng": 77.8
+            "eng": 81.8
           }
         ],
         "monthly": [
@@ -5598,45 +5632,45 @@ window.DASHBOARD_DATA = {
             "chs": {
               "Organic Social": 32182,
               "Paid Other": 166315,
-              "Unassigned": 100081,
-              "Paid Video": 613,
-              "Paid Social": 634261,
               "Organic Shopping": 9533,
-              "Paid Search": 134527,
-              "Cross-network": 66453,
-              "SMS": 96972,
-              "AI Assistant": 296,
+              "Paid Social": 634261,
+              "Paid Shopping": 36421,
               "Organic Video": 114,
+              "Paid Video": 613,
               "Organic Search": 29385,
+              "SMS": 96972,
+              "Referral": 6859,
+              "AI Assistant": 296,
+              "Display": 1718,
+              "Cross-network": 66453,
               "Direct": 279560,
               "Email": 189059,
-              "Display": 1718,
-              "Paid Shopping": 36421,
-              "Referral": 6859,
+              "Unassigned": 100081,
+              "Paid Search": 134527,
               "Affiliates": 3
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Paid Shopping": 77631,
-              "Organic Shopping": 18822,
-              "Organic Social": 61761,
-              "Email": 351123,
-              "SMS": 170756,
-              "Organic Video": 74,
-              "Cross-network": 111394,
-              "AI Assistant": 1079,
-              "Organic Search": 55970,
-              "Paid Search": 229312,
-              "Paid Other": 329394,
-              "Unassigned": 221585,
-              "Referral": 10873,
-              "Paid Video": 1310,
-              "Direct": 408438,
-              "Paid Social": 986114,
-              "Display": 9919,
-              "Affiliates": 6
+              "Unassigned": 236632,
+              "Organic Shopping": 19728,
+              "SMS": 191410,
+              "Paid Video": 1377,
+              "Organic Video": 79,
+              "Email": 367605,
+              "Paid Shopping": 81016,
+              "Display": 10536,
+              "AI Assistant": 1150,
+              "Organic Search": 58819,
+              "Paid Other": 344936,
+              "Paid Social": 1033695,
+              "Referral": 11550,
+              "Paid Search": 241412,
+              "Organic Social": 64436,
+              "Direct": 424166,
+              "Cross-network": 116373,
+              "Affiliates": 8
             }
           }
         ]
@@ -5645,52 +5679,52 @@ window.DASHBOARD_DATA = {
         {
           "label": "Focus Eyeshadow Palette (com)",
           "page": "thrivecausemetics.com/products/focus-eyeshadow-palette",
-          "pageviews": 643919,
-          "sessions": 99608,
-          "txns": 7497,
-          "rev": 496387.08,
+          "pageviews": 658619,
+          "sessions": 102169,
+          "txns": 7671,
+          "rev": 509761.8,
           "eng": 46.2,
-          "cvr": 7.53
+          "cvr": 7.51
         },
         {
           "label": "Focus Eyeshadow Palette (com)",
           "page": "thrivecausemetics.com/pages/focus-eyeshadow-palette",
-          "pageviews": 136044,
-          "sessions": 46735,
-          "txns": 1289,
-          "rev": 88571.4,
+          "pageviews": 137111,
+          "sessions": 47065,
+          "txns": 1307,
+          "rev": 89523.9,
           "eng": 0.4,
-          "cvr": 2.76
+          "cvr": 2.78
         },
         {
           "label": "Eyeshadow Made Easy (com)",
           "page": "thrivecausemetics.com/products/eyeshadow-made-easy",
-          "pageviews": 36655,
-          "sessions": 10664,
-          "txns": 429,
-          "rev": 36292.22,
+          "pageviews": 36919,
+          "sessions": 10758,
+          "txns": 433,
+          "rev": 36661.04,
           "eng": 0.8,
           "cvr": 4.02
         },
         {
           "label": "Focus Eyeshadow Palette (ca)",
           "page": "thrivecausemetics.ca/products/focus-eyeshadow-palette",
-          "pageviews": 19850,
-          "sessions": 6919,
+          "pageviews": 19975,
+          "sessions": 6975,
           "txns": 155,
           "rev": 12493.68,
           "eng": 1.7,
-          "cvr": 2.24
+          "cvr": 2.22
         },
         {
           "label": "Eye Lift 360 Waterproof Eyeshadow  (com)",
           "page": "thrivecausemetics.com/products/eye-lift-360-waterproof-eyeshadow-primer",
-          "pageviews": 12856,
-          "sessions": 2914,
-          "txns": 279,
-          "rev": 19819.15,
+          "pageviews": 13334,
+          "sessions": 3073,
+          "txns": 290,
+          "rev": 20585.61,
           "eng": 1.3,
-          "cvr": 9.57
+          "cvr": 9.44
         },
         {
           "label": "Focus Eyeshadow Palette Warm Cool (ca)",
@@ -5715,28 +5749,28 @@ window.DASHBOARD_DATA = {
         {
           "label": "Focus Eyeshadow Palette Quiz (com)",
           "page": "thrivecausemetics.com/pages/focus-eyeshadow-palette-quiz",
-          "pageviews": 3964,
-          "sessions": 586,
-          "txns": 53,
-          "rev": 3463.76,
+          "pageviews": 3977,
+          "sessions": 592,
+          "txns": 54,
+          "rev": 3512.27,
           "eng": 22.0,
-          "cvr": 9.04
+          "cvr": 9.12
         },
         {
           "label": "Instant Blend Cream Eyeshadow Brus (com)",
           "page": "thrivecausemetics.com/products/instant-blend-cream-eyeshadow-brush",
-          "pageviews": 1716,
-          "sessions": 525,
-          "txns": 25,
-          "rev": 1795.71,
-          "eng": 0.4,
-          "cvr": 4.76
+          "pageviews": 1729,
+          "sessions": 534,
+          "txns": 27,
+          "rev": 1967.61,
+          "eng": 0.6,
+          "cvr": 5.06
         },
         {
           "label": "Eyeshadow Primer Packette Sample (com)",
           "page": "thrivecausemetics.com/products/eyeshadow-primer-packette-sample",
-          "pageviews": 726,
-          "sessions": 455,
+          "pageviews": 729,
+          "sessions": 458,
           "txns": 3,
           "rev": 246.3,
           "eng": 1.1,
@@ -5868,6 +5902,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-08-21",
           "cumPlanUnits": 8929
+        },
+        {
+          "date": "2026-08-22",
+          "cumPlanUnits": 9147
         }
       ],
       "planTotalUnits": 17784,
@@ -5879,52 +5917,52 @@ window.DASHBOARD_DATA = {
           "name": "Cool Neutrals",
           "shade": "Focus Eyeshadow\u2122 Palette",
           "color": "#8D8A96",
-          "netSales": 289608.4,
-          "units": 8286,
-          "orders": 8172,
-          "newCustomers": 936,
-          "retCustomers": 7167,
-          "usUnits": 8104,
-          "caUnits": 182,
-          "usNetSales": 285057.11,
-          "caNetSales": 4551.29,
-          "planUnits": 4870,
-          "pctToPlanUnits": 170.1,
-          "inventoryUnits": 2486,
-          "runRateUnitsPerDay": 205.29,
-          "daysToOOS": 12,
-          "estOOSDate": "2026-09-02",
+          "netSales": 296369.23,
+          "units": 8477,
+          "orders": 8360,
+          "newCustomers": 971,
+          "retCustomers": 7318,
+          "usUnits": 8294,
+          "caUnits": 183,
+          "usNetSales": 291795.48,
+          "caNetSales": 4573.75,
+          "planUnits": 4989,
+          "pctToPlanUnits": 169.9,
+          "inventoryUnits": 2281,
+          "runRateUnitsPerDay": 209.0,
+          "daysToOOS": 10,
+          "estOOSDate": "2026-09-01",
           "planTotalUnits": 9700,
-          "pctToGoalUnits": 85.4,
-          "unitsToGoal": 1414,
+          "pctToGoalUnits": 87.4,
+          "unitsToGoal": 1223,
           "planEndDate": "2026-11-18",
-          "weeksOfStock": 1.7
+          "weeksOfStock": 1.6
         },
         {
           "sku": "TVG6700",
           "name": "Warm Neutrals",
           "shade": "Focus Eyeshadow\u2122 Palette",
           "color": "#C68E5E",
-          "netSales": 263651.7,
-          "units": 7625,
-          "orders": 7532,
-          "newCustomers": 757,
-          "retCustomers": 6718,
-          "usUnits": 7457,
-          "caUnits": 168,
-          "usNetSales": 259471.56,
-          "caNetSales": 4180.14,
-          "planUnits": 4059,
-          "pctToPlanUnits": 187.9,
-          "inventoryUnits": 1504,
-          "runRateUnitsPerDay": 164.0,
-          "daysToOOS": 9,
+          "netSales": 268319.48,
+          "units": 7757,
+          "orders": 7664,
+          "newCustomers": 782,
+          "retCustomers": 6823,
+          "usUnits": 7586,
+          "caUnits": 171,
+          "usNetSales": 264063.18,
+          "caNetSales": 4256.3,
+          "planUnits": 4158,
+          "pctToPlanUnits": 186.6,
+          "inventoryUnits": 1380,
+          "runRateUnitsPerDay": 160.86,
+          "daysToOOS": 8,
           "estOOSDate": "2026-08-30",
           "planTotalUnits": 8084,
-          "pctToGoalUnits": 94.3,
-          "unitsToGoal": 459,
+          "pctToGoalUnits": 96.0,
+          "unitsToGoal": 327,
           "planEndDate": "2026-11-18",
-          "weeksOfStock": 1.3
+          "weeksOfStock": 1.2
         }
       ],
       "dailySales": [
@@ -5969,14 +6007,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-07-25",
-          "units": 1200,
-          "netSales": 41801.51,
-          "usUnits": 1198,
+          "units": 1199,
+          "netSales": 41773.51,
+          "usUnits": 1197,
           "caUnits": 2,
-          "usNetSales": 41748.12,
+          "usNetSales": 41720.12,
           "caNetSales": 53.39,
-          "cumUnits": 2336,
-          "cumSales": 80579.25,
+          "cumUnits": 2335,
+          "cumSales": 80551.25,
           "planUnits": 622,
           "cumPlanUnits": 2015
         },
@@ -5988,8 +6026,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 29405.73,
           "caNetSales": 26.66,
-          "cumUnits": 3177,
-          "cumSales": 110011.64,
+          "cumUnits": 3176,
+          "cumSales": 109983.64,
           "planUnits": 565,
           "cumPlanUnits": 2580
         },
@@ -6001,47 +6039,47 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 27083.98,
           "caNetSales": 140.63,
-          "cumUnits": 3961,
-          "cumSales": 137236.25,
+          "cumUnits": 3960,
+          "cumSales": 137208.25,
           "planUnits": 317,
           "cumPlanUnits": 2897
         },
         {
           "date": "2026-07-28",
-          "units": 770,
-          "netSales": 26413.58,
-          "usUnits": 727,
+          "units": 768,
+          "netSales": 26347.85,
+          "usUnits": 725,
           "caUnits": 43,
-          "usNetSales": 25374.0,
+          "usNetSales": 25308.27,
           "caNetSales": 1039.58,
-          "cumUnits": 4731,
-          "cumSales": 163649.83,
+          "cumUnits": 4728,
+          "cumSales": 163556.1,
           "planUnits": 333,
           "cumPlanUnits": 3230
         },
         {
           "date": "2026-07-29",
-          "units": 1122,
-          "netSales": 38746.49,
-          "usUnits": 1089,
+          "units": 1120,
+          "netSales": 38683.79,
+          "usUnits": 1087,
           "caUnits": 33,
-          "usNetSales": 37936.62,
+          "usNetSales": 37873.92,
           "caNetSales": 809.87,
-          "cumUnits": 5853,
-          "cumSales": 202396.32,
+          "cumUnits": 5848,
+          "cumSales": 202239.89,
           "planUnits": 305,
           "cumPlanUnits": 3535
         },
         {
           "date": "2026-07-30",
-          "units": 515,
-          "netSales": 17792.43,
-          "usUnits": 498,
+          "units": 514,
+          "netSales": 17764.43,
+          "usUnits": 497,
           "caUnits": 17,
-          "usNetSales": 17383.72,
+          "usNetSales": 17355.72,
           "caNetSales": 408.71,
-          "cumUnits": 6368,
-          "cumSales": 220188.75,
+          "cumUnits": 6362,
+          "cumSales": 220004.32,
           "planUnits": 311,
           "cumPlanUnits": 3846
         },
@@ -6053,8 +6091,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 15,
           "usNetSales": 18337.05,
           "caNetSales": 375.46,
-          "cumUnits": 6911,
-          "cumSales": 238901.26,
+          "cumUnits": 6905,
+          "cumSales": 238716.83,
           "planUnits": 375,
           "cumPlanUnits": 4221
         },
@@ -6066,8 +6104,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 18,
           "usNetSales": 13923.35,
           "caNetSales": 461.14,
-          "cumUnits": 7330,
-          "cumSales": 253285.75,
+          "cumUnits": 7324,
+          "cumSales": 253101.32,
           "planUnits": 450,
           "cumPlanUnits": 4671
         },
@@ -6079,8 +6117,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 40,
           "usNetSales": 22503.53,
           "caNetSales": 1026.96,
-          "cumUnits": 8016,
-          "cumSales": 276816.24,
+          "cumUnits": 8010,
+          "cumSales": 276631.81,
           "planUnits": 410,
           "cumPlanUnits": 5081
         },
@@ -6092,21 +6130,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 16,
           "usNetSales": 11292.26,
           "caNetSales": 389.64,
-          "cumUnits": 8357,
-          "cumSales": 288498.14,
+          "cumUnits": 8351,
+          "cumSales": 288313.71,
           "planUnits": 231,
           "cumPlanUnits": 5312
         },
         {
           "date": "2026-08-04",
-          "units": 341,
-          "netSales": 11833.88,
-          "usUnits": 332,
+          "units": 339,
+          "netSales": 11766.26,
+          "usUnits": 330,
           "caUnits": 9,
-          "usNetSales": 11615.9,
+          "usNetSales": 11548.28,
           "caNetSales": 217.98,
-          "cumUnits": 8698,
-          "cumSales": 300332.02,
+          "cumUnits": 8690,
+          "cumSales": 300079.97,
           "planUnits": 245,
           "cumPlanUnits": 5557
         },
@@ -6118,21 +6156,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 10177.89,
           "caNetSales": 298.99,
-          "cumUnits": 9005,
-          "cumSales": 310808.9,
+          "cumUnits": 8997,
+          "cumSales": 310556.85,
           "planUnits": 293,
           "cumPlanUnits": 5850
         },
         {
           "date": "2026-08-06",
-          "units": 334,
-          "netSales": 11665.64,
-          "usUnits": 323,
+          "units": 333,
+          "netSales": 11632.55,
+          "usUnits": 322,
           "caUnits": 11,
-          "usNetSales": 11386.3,
+          "usNetSales": 11353.21,
           "caNetSales": 279.34,
-          "cumUnits": 9339,
-          "cumSales": 322474.54,
+          "cumUnits": 9330,
+          "cumSales": 322189.4,
           "planUnits": 231,
           "cumPlanUnits": 6081
         },
@@ -6144,34 +6182,34 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 13370.23,
           "caNetSales": 209.11,
-          "cumUnits": 9732,
-          "cumSales": 336053.88,
+          "cumUnits": 9723,
+          "cumSales": 335768.74,
           "planUnits": 215,
           "cumPlanUnits": 6296
         },
         {
           "date": "2026-08-08",
-          "units": 800,
-          "netSales": 28418.27,
-          "usUnits": 778,
+          "units": 799,
+          "netSales": 28387.35,
+          "usUnits": 777,
           "caUnits": 22,
-          "usNetSales": 27863.54,
+          "usNetSales": 27832.62,
           "caNetSales": 554.73,
-          "cumUnits": 10532,
-          "cumSales": 364472.15,
+          "cumUnits": 10522,
+          "cumSales": 364156.09,
           "planUnits": 337,
           "cumPlanUnits": 6633
         },
         {
           "date": "2026-08-09",
-          "units": 1011,
-          "netSales": 35722.19,
-          "usUnits": 992,
+          "units": 1009,
+          "netSales": 35651.12,
+          "usUnits": 990,
           "caUnits": 19,
-          "usNetSales": 35243.65,
+          "usNetSales": 35172.58,
           "caNetSales": 478.54,
-          "cumUnits": 11543,
-          "cumSales": 400194.34,
+          "cumUnits": 11531,
+          "cumSales": 399807.21,
           "planUnits": 310,
           "cumPlanUnits": 6943
         },
@@ -6183,8 +6221,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 11733.54,
           "caNetSales": 70.87,
-          "cumUnits": 11884,
-          "cumSales": 411998.75,
+          "cumUnits": 11872,
+          "cumSales": 411611.62,
           "planUnits": 176,
           "cumPlanUnits": 7119
         },
@@ -6196,8 +6234,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 13,
           "usNetSales": 10613.24,
           "caNetSales": 334.8,
-          "cumUnits": 12201,
-          "cumSales": 422946.79,
+          "cumUnits": 12189,
+          "cumSales": 422559.66,
           "planUnits": 187,
           "cumPlanUnits": 7306
         },
@@ -6209,21 +6247,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 13520.81,
           "caNetSales": 187.06,
-          "cumUnits": 12591,
-          "cumSales": 436654.66,
+          "cumUnits": 12579,
+          "cumSales": 436267.53,
           "planUnits": 174,
           "cumPlanUnits": 7480
         },
         {
           "date": "2026-08-13",
           "units": 367,
-          "netSales": 12987.17,
+          "netSales": 12987.86,
           "usUnits": 362,
           "caUnits": 5,
-          "usNetSales": 12858.95,
+          "usNetSales": 12859.64,
           "caNetSales": 128.22,
-          "cumUnits": 12958,
-          "cumSales": 449641.83,
+          "cumUnits": 12946,
+          "cumSales": 449255.39,
           "planUnits": 178,
           "cumPlanUnits": 7658
         },
@@ -6235,8 +6273,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 12804.55,
           "caNetSales": 99.21,
-          "cumUnits": 13326,
-          "cumSales": 462545.59,
+          "cumUnits": 13314,
+          "cumSales": 462159.15,
           "planUnits": 167,
           "cumPlanUnits": 7825
         },
@@ -6248,21 +6286,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 11636.83,
           "caNetSales": 81.74,
-          "cumUnits": 13657,
-          "cumSales": 474264.16,
+          "cumUnits": 13645,
+          "cumSales": 473877.72,
           "planUnits": 205,
           "cumPlanUnits": 8030
         },
         {
           "date": "2026-08-16",
-          "units": 361,
-          "netSales": 12745.2,
-          "usUnits": 358,
+          "units": 360,
+          "netSales": 12708.85,
+          "usUnits": 357,
           "caUnits": 3,
-          "usNetSales": 12668.14,
+          "usNetSales": 12631.79,
           "caNetSales": 77.06,
-          "cumUnits": 14018,
-          "cumSales": 487009.36,
+          "cumUnits": 14005,
+          "cumSales": 486586.57,
           "planUnits": 187,
           "cumPlanUnits": 8217
         },
@@ -6274,8 +6312,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 10,
           "usNetSales": 11417.53,
           "caNetSales": 248.55,
-          "cumUnits": 14354,
-          "cumSales": 498675.44,
+          "cumUnits": 14341,
+          "cumSales": 498252.65,
           "planUnits": 140,
           "cumPlanUnits": 8357
         },
@@ -6287,8 +6325,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 14071.34,
           "caNetSales": 301.46,
-          "cumUnits": 14763,
-          "cumSales": 513048.24,
+          "cumUnits": 14750,
+          "cumSales": 512625.45,
           "planUnits": 150,
           "cumPlanUnits": 8507
         },
@@ -6300,21 +6338,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 16316.98,
           "caNetSales": 198.29,
-          "cumUnits": 15235,
-          "cumSales": 529563.51,
+          "cumUnits": 15222,
+          "cumSales": 529140.72,
           "planUnits": 140,
           "cumPlanUnits": 8647
         },
         {
           "date": "2026-08-20",
-          "units": 371,
-          "netSales": 12943.86,
-          "usUnits": 365,
+          "units": 370,
+          "netSales": 12910.86,
+          "usUnits": 364,
           "caUnits": 6,
-          "usNetSales": 12802.88,
+          "usNetSales": 12769.88,
           "caNetSales": 140.98,
-          "cumUnits": 15606,
-          "cumSales": 542507.37,
+          "cumUnits": 15592,
+          "cumSales": 542051.58,
           "planUnits": 144,
           "cumPlanUnits": 8791
         },
@@ -6326,34 +6364,47 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 10660.27,
           "caNetSales": 92.45,
-          "cumUnits": 15911,
-          "cumSales": 553260.09,
+          "cumUnits": 15897,
+          "cumSales": 552804.3,
           "planUnits": 138,
           "cumPlanUnits": 8929
+        },
+        {
+          "date": "2026-08-22",
+          "units": 337,
+          "netSales": 11884.4,
+          "usUnits": 333,
+          "caUnits": 4,
+          "usNetSales": 11785.78,
+          "caNetSales": 98.62,
+          "cumUnits": 16234,
+          "cumSales": 564688.7,
+          "planUnits": 218,
+          "cumPlanUnits": 9147
         }
       ],
       "pdp": [
         {
           "sku": "TVG6700",
           "name": "Warm Neutrals",
-          "pdpViews": 154052,
-          "atc": 18706,
-          "ckts": 5178,
-          "purch": 7472,
-          "rev": 283806.03,
-          "atcRate": 12.14,
+          "pdpViews": 156733,
+          "atc": 19063,
+          "ckts": 5284,
+          "purch": 7608,
+          "rev": 288974.03,
+          "atcRate": 12.16,
           "purchRate": 4.85
         },
         {
           "sku": "TVG6720",
           "name": "Cool Neutrals",
-          "pdpViews": 113035,
-          "atc": 22692,
-          "ckts": 6278,
-          "purch": 8164,
-          "rev": 310116.88,
-          "atcRate": 20.08,
-          "purchRate": 7.22
+          "pdpViews": 116238,
+          "atc": 23259,
+          "ckts": 6427,
+          "purch": 8362,
+          "rev": 317635.88,
+          "atcRate": 20.01,
+          "purchRate": 7.19
         }
       ],
       "crossSell": [
@@ -6368,8 +6419,8 @@ window.DASHBOARD_DATA = {
           "pairs": 17
         },
         {
-          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
-          "sku": "TVG280",
+          "product": "Liquid Lash\u2122 Volumizer Mascara",
+          "sku": "TVG6750",
           "pairs": 7
         },
         {
@@ -6378,8 +6429,8 @@ window.DASHBOARD_DATA = {
           "pairs": 7
         },
         {
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
           "pairs": 7
         },
         {
@@ -6388,23 +6439,23 @@ window.DASHBOARD_DATA = {
           "pairs": 7
         },
         {
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6750",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
           "pairs": 7
         },
         {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 6
-        },
-        {
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
           "pairs": 6
         },
         {
           "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
           "sku": "TVG581",
+          "pairs": 6
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 6
         }
       ],
@@ -6459,14 +6510,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6780",
           "pairs": 3
         },
         {
           "primarySku": "TVG6700",
-          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
-          "sku": "TVG237",
+          "product": "Filtered Effects\u2122 Blurring Primer",
+          "sku": "TVG348",
           "pairs": 3
         },
         {
@@ -6489,14 +6540,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
+          "product": "Buildable Blur\u2122 HD Creaseless Concealer",
+          "sku": "TVG112",
           "pairs": 5
         },
         {
           "primarySku": "TVG6720",
-          "product": "Buildable Blur\u2122 HD Creaseless Concealer",
-          "sku": "TVG112",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG533",
           "pairs": 5
         },
         {
@@ -6513,8 +6564,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6720",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
           "pairs": 4
         },
         {
@@ -6525,28 +6576,28 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG364",
+          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
+          "sku": "TVG463",
           "pairs": 4
         }
       ],
       "categoryCustomers": {
         "category": "Eyeshadow",
-        "total": 14259,
-        "existingCategory": 11114,
-        "newToCategory": 3145,
+        "total": 14551,
+        "existingCategory": 11323,
+        "newToCategory": 3228,
         "byVariant": [
           {
             "sku": "TVG6700",
             "name": "Warm Neutrals",
-            "newToCategory": 1589,
-            "existingCategory": 5886
+            "newToCategory": 1628,
+            "existingCategory": 5977
           },
           {
             "sku": "TVG6720",
             "name": "Cool Neutrals",
-            "newToCategory": 1781,
-            "existingCategory": 6322
+            "newToCategory": 1832,
+            "existingCategory": 6457
           }
         ]
       }
@@ -6561,185 +6612,185 @@ window.DASHBOARD_DATA = {
       "subtitle": "2 Shades \u00b7 Slate Grey \u00b7 Brilliant Eye Brightener\u2122",
       "accent": "#6B7A8D",
       "summary": {
-        "netSales": 431263.64,
-        "units": 18749,
-        "orders": 15568,
-        "aov": 27.7,
-        "newCustomers": 2433,
-        "retCustomers": 12709,
-        "totalCustomers": 15142,
+        "netSales": 432669.24,
+        "units": 18813,
+        "orders": 15628,
+        "aov": 27.69,
+        "newCustomers": 2449,
+        "retCustomers": 12751,
+        "totalCustomers": 15200,
         "newPct": 16.1,
         "retPct": 83.9,
-        "planUnits": 20884,
-        "pctToPlanUnits": 89.8,
+        "planUnits": 21105,
+        "pctToPlanUnits": 89.1,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 66440.43,
-        "retCustomerRevenue": 364823.21,
-        "pdpViews": 527965,
+        "newCustomerRevenue": 66819.42,
+        "retCustomerRevenue": 365849.82,
+        "pdpViews": 530294,
         "pdpAtcRate": 9.2,
         "pdpCvr": 3.4
       },
       "regions": {
         "us": {
-          "units": 17715,
-          "netSales": 414614.53,
-          "orders": 14741
+          "units": 17770,
+          "netSales": 415872.31,
+          "orders": 14794
         },
         "ca": {
-          "units": 1034,
-          "netSales": 16649.11,
-          "orders": 827
+          "units": 1043,
+          "netSales": 16796.93,
+          "orders": 834
         }
       },
       "trafficStart": "2026-06-17",
-      "trafficEnd": "2026-08-19",
+      "trafficEnd": "2026-08-20",
       "traffic": {
         "byChannel": [
           {
             "ch": "Paid Social",
-            "sessions": 3469391,
-            "txns": 90087,
-            "rev": 4958680.27,
+            "sessions": 3516972,
+            "txns": 91336,
+            "rev": 5031589.17,
             "cvr": 2.6,
-            "eng": 78.2
+            "eng": 78.3
           },
           {
             "ch": "Direct",
-            "sessions": 1264174,
-            "txns": 42354,
-            "rev": 2421892.4,
-            "cvr": 3.35,
-            "eng": 64.8
+            "sessions": 1279902,
+            "txns": 43110,
+            "rev": 2465114.01,
+            "cvr": 3.37,
+            "eng": 64.9
           },
           {
             "ch": "Email",
-            "sessions": 1016191,
-            "txns": 85225,
-            "rev": 5099008.11,
-            "cvr": 8.39,
+            "sessions": 1032673,
+            "txns": 86158,
+            "rev": 5158664.34,
+            "cvr": 8.34,
             "eng": 75.3
           },
           {
             "ch": "Paid Other",
-            "sessions": 863602,
-            "txns": 5916,
-            "rev": 372063.41,
-            "cvr": 0.69,
-            "eng": 76.0
+            "sessions": 879144,
+            "txns": 5998,
+            "rev": 377374.42,
+            "cvr": 0.68,
+            "eng": 76.1
           },
           {
             "ch": "Paid Search",
-            "sessions": 802883,
-            "txns": 85604,
-            "rev": 5680036.44,
-            "cvr": 10.66,
+            "sessions": 814983,
+            "txns": 87000,
+            "rev": 5773802.98,
+            "cvr": 10.68,
             "eng": 82.9
           },
           {
             "ch": "Unassigned",
-            "sessions": 637860,
-            "txns": 149762,
-            "rev": 6184711.07,
-            "cvr": 23.48,
-            "eng": 63.5
+            "sessions": 652907,
+            "txns": 152193,
+            "rev": 6288848.28,
+            "cvr": 23.31,
+            "eng": 63.2
           },
           {
             "ch": "SMS",
-            "sessions": 543487,
-            "txns": 39589,
-            "rev": 2325716.24,
-            "cvr": 7.28,
-            "eng": 75.5
+            "sessions": 564141,
+            "txns": 40368,
+            "rev": 2373862.86,
+            "cvr": 7.16,
+            "eng": 74.8
           },
           {
             "ch": "Cross-network",
-            "sessions": 388648,
-            "txns": 6471,
-            "rev": 381308.71,
+            "sessions": 393627,
+            "txns": 6563,
+            "rev": 387363.76,
             "cvr": 1.67,
             "eng": 71.9
           },
           {
             "ch": "Paid Shopping",
-            "sessions": 262195,
-            "txns": 21103,
-            "rev": 1161365.53,
-            "cvr": 8.05,
-            "eng": 84.0
+            "sessions": 265580,
+            "txns": 21452,
+            "rev": 1182015.89,
+            "cvr": 8.08,
+            "eng": 84.1
           },
           {
             "ch": "Organic Social",
-            "sessions": 208463,
-            "txns": 3648,
-            "rev": 213731.21,
+            "sessions": 211138,
+            "txns": 3692,
+            "rev": 216522.59,
             "cvr": 1.75,
             "eng": 75.8
           },
           {
             "ch": "Organic Search",
-            "sessions": 183493,
-            "txns": 15743,
-            "rev": 1065872.82,
+            "sessions": 186342,
+            "txns": 15990,
+            "rev": 1083052.15,
             "cvr": 8.58,
             "eng": 80.9
           },
           {
             "ch": "Organic Shopping",
-            "sessions": 71438,
-            "txns": 31391,
-            "rev": 1574379.82,
-            "cvr": 43.94,
-            "eng": 85.7
+            "sessions": 72344,
+            "txns": 31969,
+            "rev": 1603894.2,
+            "cvr": 44.19,
+            "eng": 85.8
           },
           {
             "ch": "Referral",
-            "sessions": 37041,
-            "txns": 1741,
-            "rev": 111556.31,
+            "sessions": 37718,
+            "txns": 1772,
+            "rev": 113760.2,
             "cvr": 4.7,
-            "eng": 73.7
+            "eng": 73.8
           },
           {
             "ch": "Display",
-            "sessions": 23045,
+            "sessions": 23662,
             "txns": 21,
             "rev": 1213.86,
             "cvr": 0.09,
-            "eng": 76.0
+            "eng": 75.9
           },
           {
             "ch": "Paid Video",
-            "sessions": 4766,
+            "sessions": 4833,
             "txns": 3,
             "rev": 183.31,
             "cvr": 0.06,
-            "eng": 71.0
+            "eng": 70.9
           },
           {
             "ch": "AI Assistant",
-            "sessions": 2896,
-            "txns": 140,
-            "rev": 7613.39,
-            "cvr": 4.83,
+            "sessions": 2967,
+            "txns": 142,
+            "rev": 7665.18,
+            "cvr": 4.79,
             "eng": 77.6
           },
           {
             "ch": "Organic Video",
-            "sessions": 432,
+            "sessions": 437,
             "txns": 12,
             "rev": 785.18,
-            "cvr": 2.78,
-            "eng": 76.2
+            "cvr": 2.75,
+            "eng": 75.7
           },
           {
             "ch": "Affiliates",
-            "sessions": 15,
+            "sessions": 17,
             "txns": 2,
             "rev": 85.47,
-            "cvr": 13.33,
-            "eng": 80.0
+            "cvr": 11.76,
+            "eng": 82.4
           },
           {
             "ch": "Mobile Push Notifications",
@@ -6754,71 +6805,71 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jun 2026",
             "chs": {
-              "Direct": 203377,
               "Mobile Push Notifications": 1,
-              "Cross-network": 86243,
-              "Paid Search": 180642,
-              "AI Assistant": 706,
-              "Paid Shopping": 50882,
-              "Organic Video": 61,
-              "Organic Search": 37974,
               "Email": 193821,
-              "Paid Other": 141854,
-              "Paid Video": 1237,
-              "Organic Shopping": 21024,
-              "Organic Social": 39597,
-              "Referral": 6487,
+              "Organic Video": 61,
+              "Unassigned": 122012,
+              "Organic Search": 37974,
+              "Cross-network": 86243,
+              "Direct": 203377,
               "Paid Social": 647411,
               "Display": 2776,
+              "Organic Shopping": 21024,
+              "Paid Other": 141854,
               "SMS": 135686,
-              "Unassigned": 122012,
+              "AI Assistant": 706,
+              "Organic Social": 39597,
+              "Referral": 6487,
+              "Paid Shopping": 50882,
+              "Paid Video": 1237,
+              "Paid Search": 180642,
               "Affiliates": 3
             }
           },
           {
             "month": "Jul 2026",
             "chs": {
+              "Paid Shopping": 133682,
+              "SMS": 237045,
+              "AI Assistant": 1111,
               "Paid Other": 392354,
+              "Email": 471247,
+              "Organic Video": 297,
+              "Cross-network": 191011,
               "Referral": 19681,
               "Organic Social": 107105,
-              "Paid Social": 1835866,
-              "Cross-network": 191011,
-              "Email": 471247,
+              "Direct": 652359,
+              "Organic Search": 89549,
+              "Paid Search": 392929,
               "Organic Shopping": 31592,
-              "AI Assistant": 1111,
-              "Organic Video": 297,
+              "Paid Video": 2219,
+              "Paid Social": 1835866,
               "Unassigned": 294263,
               "Display": 10350,
-              "Paid Search": 392929,
-              "Paid Shopping": 133682,
-              "Paid Video": 2219,
-              "Organic Search": 89549,
-              "SMS": 237045,
-              "Direct": 652359,
               "Affiliates": 6
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Referral": 10873,
-              "Display": 9919,
-              "Organic Search": 55970,
-              "SMS": 170756,
-              "Organic Social": 61761,
-              "Paid Video": 1310,
-              "Cross-network": 111394,
-              "Paid Search": 229312,
-              "Paid Other": 329394,
-              "Paid Social": 986114,
-              "AI Assistant": 1079,
-              "Direct": 408438,
-              "Paid Shopping": 77631,
-              "Organic Shopping": 18822,
-              "Email": 351123,
-              "Organic Video": 74,
-              "Unassigned": 221585,
-              "Affiliates": 6
+              "Email": 367605,
+              "Paid Shopping": 81016,
+              "Organic Social": 64436,
+              "Unassigned": 236632,
+              "Paid Social": 1033695,
+              "SMS": 191410,
+              "Paid Other": 344936,
+              "Cross-network": 116373,
+              "AI Assistant": 1150,
+              "Paid Search": 241412,
+              "Organic Video": 79,
+              "Organic Shopping": 19728,
+              "Organic Search": 58819,
+              "Paid Video": 1377,
+              "Direct": 424166,
+              "Display": 10536,
+              "Referral": 11550,
+              "Affiliates": 8
             }
           }
         ]
@@ -6827,12 +6878,12 @@ window.DASHBOARD_DATA = {
         {
           "label": "Beb Shade Match Quiz (com)",
           "page": "thrivecausemetics.com/pages/beb-shade-match-quiz",
-          "pageviews": 506570,
-          "sessions": 138231,
-          "txns": 466,
-          "rev": 31325.51,
-          "eng": 27.6,
-          "cvr": 0.34
+          "pageviews": 519869,
+          "sessions": 141738,
+          "txns": 473,
+          "rev": 31623.92,
+          "eng": 27.9,
+          "cvr": 0.33
         },
         {
           "label": "Beb Shade Match Quiz (ca)",
@@ -6876,16 +6927,6 @@ window.DASHBOARD_DATA = {
         },
         {
           "label": "Cancel (com)",
-          "page": "thrivecausemetics.com/tools/recurring/pages/54bfbf86f860beb11310bfc0af67e8/subscriptions/733181822/cancel",
-          "pageviews": 2,
-          "sessions": 1,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "Cancel (com)",
           "page": "thrivecausemetics.com/tools/recurring/pages/7a491f69072beb994222495e784a09/subscriptions/776997372/cancel",
           "pageviews": 30,
           "sessions": 1,
@@ -6898,6 +6939,16 @@ window.DASHBOARD_DATA = {
           "label": "Cancel (com)",
           "page": "thrivecausemetics.com/tools/recurring/pages/e03fd7579459810ec648a9cdafbebe/subscriptions/838789457/cancel",
           "pageviews": 1,
+          "sessions": 1,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Cancel (com)",
+          "page": "thrivecausemetics.com/tools/recurring/pages/54bfbf86f860beb11310bfc0af67e8/subscriptions/733181822/cancel",
+          "pageviews": 2,
           "sessions": 1,
           "txns": 0,
           "rev": 0.0,
@@ -7170,6 +7221,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-08-21",
           "cumPlanUnits": 20884
+        },
+        {
+          "date": "2026-08-22",
+          "cumPlanUnits": 21105
         }
       ],
       "planTotalUnits": 29011,
@@ -7181,52 +7236,52 @@ window.DASHBOARD_DATA = {
           "name": "Mila",
           "shade": "Slate Grey Metallic",
           "color": "#94A3B8",
-          "netSales": 220166.86,
-          "units": 9565,
-          "orders": 9187,
-          "newCustomers": 1346,
-          "retCustomers": 7690,
-          "usUnits": 9048,
-          "caUnits": 517,
-          "usNetSales": 211834.43,
-          "caNetSales": 8332.43,
-          "planUnits": 13229,
-          "pctToPlanUnits": 72.3,
-          "inventoryUnits": 32164,
-          "runRateUnitsPerDay": 49.43,
-          "daysToOOS": 650,
-          "estOOSDate": "2028-06-01",
+          "netSales": 221008.49,
+          "units": 9604,
+          "orders": 9225,
+          "newCustomers": 1357,
+          "retCustomers": 7716,
+          "usUnits": 9083,
+          "caUnits": 521,
+          "usNetSales": 212616.13,
+          "caNetSales": 8392.36,
+          "planUnits": 13343,
+          "pctToPlanUnits": 72.0,
+          "inventoryUnits": 32135,
+          "runRateUnitsPerDay": 48.43,
+          "daysToOOS": 663,
+          "estOOSDate": "2028-06-15",
           "planTotalUnits": 16164,
-          "pctToGoalUnits": 59.2,
-          "unitsToGoal": 6599,
+          "pctToGoalUnits": 59.4,
+          "unitsToGoal": 6560,
           "planEndDate": "2026-10-14",
-          "weeksOfStock": 93.0
+          "weeksOfStock": 94.8
         },
         {
           "sku": "TVG6640",
           "name": "Hoda",
           "shade": "Slate Grey Matte",
           "color": "#4A5568",
-          "netSales": 211096.77,
-          "units": 9184,
-          "orders": 8978,
-          "newCustomers": 1459,
-          "retCustomers": 7379,
-          "usUnits": 8667,
-          "caUnits": 517,
-          "usNetSales": 202780.1,
-          "caNetSales": 8316.67,
-          "planUnits": 7655,
-          "pctToPlanUnits": 120.0,
-          "inventoryUnits": 14082,
-          "runRateUnitsPerDay": 50.14,
-          "daysToOOS": 280,
-          "estOOSDate": "2027-05-28",
+          "netSales": 211660.75,
+          "units": 9209,
+          "orders": 9003,
+          "newCustomers": 1465,
+          "retCustomers": 7397,
+          "usUnits": 8687,
+          "caUnits": 522,
+          "usNetSales": 203256.18,
+          "caNetSales": 8404.57,
+          "planUnits": 7762,
+          "pctToPlanUnits": 118.6,
+          "inventoryUnits": 14053,
+          "runRateUnitsPerDay": 48.14,
+          "daysToOOS": 291,
+          "estOOSDate": "2027-06-09",
           "planTotalUnits": 12847,
-          "pctToGoalUnits": 71.5,
-          "unitsToGoal": 3663,
+          "pctToGoalUnits": 71.7,
+          "unitsToGoal": 3638,
           "planEndDate": "2026-10-14",
-          "weeksOfStock": 40.1
+          "weeksOfStock": 41.7
         }
       ],
       "dailySales": [
@@ -7310,14 +7365,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-06-23",
-          "units": 335,
-          "netSales": 7849.98,
-          "usUnits": 318,
+          "units": 334,
+          "netSales": 7828.14,
+          "usUnits": 317,
           "caUnits": 17,
-          "usNetSales": 7581.63,
+          "usNetSales": 7559.79,
           "caNetSales": 268.35,
-          "cumUnits": 5503,
-          "cumSales": 130630.3,
+          "cumUnits": 5502,
+          "cumSales": 130608.46,
           "planUnits": 352,
           "cumPlanUnits": 3420
         },
@@ -7329,8 +7384,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 19,
           "usNetSales": 9568.5,
           "caNetSales": 299.55,
-          "cumUnits": 5915,
-          "cumSales": 140498.35,
+          "cumUnits": 5914,
+          "cumSales": 140476.51,
           "planUnits": 332,
           "cumPlanUnits": 3752
         },
@@ -7342,8 +7397,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 22,
           "usNetSales": 8845.22,
           "caNetSales": 360.11,
-          "cumUnits": 6302,
-          "cumSales": 149703.68,
+          "cumUnits": 6301,
+          "cumSales": 149681.84,
           "planUnits": 394,
           "cumPlanUnits": 4146
         },
@@ -7355,8 +7410,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 24,
           "usNetSales": 8491.99,
           "caNetSales": 407.01,
-          "cumUnits": 6687,
-          "cumSales": 158602.68,
+          "cumUnits": 6686,
+          "cumSales": 158580.84,
           "planUnits": 447,
           "cumPlanUnits": 4593
         },
@@ -7368,8 +7423,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 8772.07,
           "caNetSales": 130.97,
-          "cumUnits": 7056,
-          "cumSales": 167505.72,
+          "cumUnits": 7055,
+          "cumSales": 167483.88,
           "planUnits": 397,
           "cumPlanUnits": 4990
         },
@@ -7381,8 +7436,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 13,
           "usNetSales": 8260.9,
           "caNetSales": 205.41,
-          "cumUnits": 7410,
-          "cumSales": 175972.03,
+          "cumUnits": 7409,
+          "cumSales": 175950.19,
           "planUnits": 394,
           "cumPlanUnits": 5384
         },
@@ -7394,8 +7449,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 7721.46,
           "caNetSales": 129.52,
-          "cumUnits": 7741,
-          "cumSales": 183823.01,
+          "cumUnits": 7740,
+          "cumSales": 183801.17,
           "planUnits": 336,
           "cumPlanUnits": 5720
         },
@@ -7407,8 +7462,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 16,
           "usNetSales": 7086.52,
           "caNetSales": 258.44,
-          "cumUnits": 8052,
-          "cumSales": 191167.97,
+          "cumUnits": 8051,
+          "cumSales": 191146.13,
           "planUnits": 307,
           "cumPlanUnits": 6027
         },
@@ -7420,8 +7475,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 64,
           "usNetSales": 10772.11,
           "caNetSales": 969.23,
-          "cumUnits": 8613,
-          "cumSales": 202909.31,
+          "cumUnits": 8612,
+          "cumSales": 202887.47,
           "planUnits": 291,
           "cumPlanUnits": 6318
         },
@@ -7433,8 +7488,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 26,
           "usNetSales": 9039.06,
           "caNetSales": 390.6,
-          "cumUnits": 9051,
-          "cumSales": 212338.97,
+          "cumUnits": 9050,
+          "cumSales": 212317.13,
           "planUnits": 347,
           "cumPlanUnits": 6665
         },
@@ -7446,8 +7501,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 19,
           "usNetSales": 10786.86,
           "caNetSales": 287.43,
-          "cumUnits": 9563,
-          "cumSales": 223413.26,
+          "cumUnits": 9562,
+          "cumSales": 223391.42,
           "planUnits": 517,
           "cumPlanUnits": 7182
         },
@@ -7459,8 +7514,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 57,
           "usNetSales": 9893.56,
           "caNetSales": 867.81,
-          "cumUnits": 10071,
-          "cumSales": 234174.63,
+          "cumUnits": 10070,
+          "cumSales": 234152.79,
           "planUnits": 461,
           "cumPlanUnits": 7643
         },
@@ -7472,8 +7527,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 47,
           "usNetSales": 13128.4,
           "caNetSales": 732.05,
-          "cumUnits": 10712,
-          "cumSales": 248035.08,
+          "cumUnits": 10711,
+          "cumSales": 248013.24,
           "planUnits": 461,
           "cumPlanUnits": 8104
         },
@@ -7485,8 +7540,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 19,
           "usNetSales": 5772.18,
           "caNetSales": 317.42,
-          "cumUnits": 10980,
-          "cumSales": 254124.68,
+          "cumUnits": 10979,
+          "cumSales": 254102.84,
           "planUnits": 304,
           "cumPlanUnits": 8408
         },
@@ -7498,8 +7553,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 5476.1,
           "caNetSales": 186.23,
-          "cumUnits": 11217,
-          "cumSales": 259787.01,
+          "cumUnits": 11216,
+          "cumSales": 259765.17,
           "planUnits": 280,
           "cumPlanUnits": 8688
         },
@@ -7511,8 +7566,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 29,
           "usNetSales": 6684.63,
           "caNetSales": 468.02,
-          "cumUnits": 11529,
-          "cumSales": 266939.66,
+          "cumUnits": 11528,
+          "cumSales": 266917.82,
           "planUnits": 266,
           "cumPlanUnits": 8954
         },
@@ -7524,8 +7579,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 20,
           "usNetSales": 7081.1,
           "caNetSales": 337.62,
-          "cumUnits": 11843,
-          "cumSales": 274358.38,
+          "cumUnits": 11842,
+          "cumSales": 274336.54,
           "planUnits": 320,
           "cumPlanUnits": 9274
         },
@@ -7537,8 +7592,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 13,
           "usNetSales": 5106.51,
           "caNetSales": 211.83,
-          "cumUnits": 12066,
-          "cumSales": 279676.72,
+          "cumUnits": 12065,
+          "cumSales": 279654.88,
           "planUnits": 367,
           "cumPlanUnits": 9641
         },
@@ -7550,8 +7605,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 27,
           "usNetSales": 5677.16,
           "caNetSales": 443.68,
-          "cumUnits": 12330,
-          "cumSales": 285797.56,
+          "cumUnits": 12329,
+          "cumSales": 285775.72,
           "planUnits": 327,
           "cumPlanUnits": 9968
         },
@@ -7563,8 +7618,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 6338.04,
           "caNetSales": 198.89,
-          "cumUnits": 12607,
-          "cumSales": 292334.49,
+          "cumUnits": 12606,
+          "cumSales": 292312.65,
           "planUnits": 328,
           "cumPlanUnits": 10296
         },
@@ -7576,8 +7631,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 16,
           "usNetSales": 5549.87,
           "caNetSales": 253.86,
-          "cumUnits": 12858,
-          "cumSales": 298138.22,
+          "cumUnits": 12857,
+          "cumSales": 298116.38,
           "planUnits": 283,
           "cumPlanUnits": 10579
         },
@@ -7589,8 +7644,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 5357.98,
           "caNetSales": 67.23,
-          "cumUnits": 13090,
-          "cumSales": 303563.43,
+          "cumUnits": 13089,
+          "cumSales": 303541.59,
           "planUnits": 260,
           "cumPlanUnits": 10839
         },
@@ -7602,8 +7657,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 20,
           "usNetSales": 4210.96,
           "caNetSales": 343.54,
-          "cumUnits": 13287,
-          "cumSales": 308117.93,
+          "cumUnits": 13286,
+          "cumSales": 308096.09,
           "planUnits": 248,
           "cumPlanUnits": 11087
         },
@@ -7615,8 +7670,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 4126.21,
           "caNetSales": 81.53,
-          "cumUnits": 13471,
-          "cumSales": 312325.67,
+          "cumUnits": 13470,
+          "cumSales": 312303.83,
           "planUnits": 298,
           "cumPlanUnits": 11385
         },
@@ -7628,8 +7683,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 3711.07,
           "caNetSales": 134.47,
-          "cumUnits": 13644,
-          "cumSales": 316171.21,
+          "cumUnits": 13643,
+          "cumSales": 316149.37,
           "planUnits": 342,
           "cumPlanUnits": 11727
         },
@@ -7641,8 +7696,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 3161.25,
           "caNetSales": 187.34,
-          "cumUnits": 13791,
-          "cumSales": 319519.8,
+          "cumUnits": 13790,
+          "cumSales": 319497.96,
           "planUnits": 399,
           "cumPlanUnits": 12126
         },
@@ -7654,8 +7709,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 3294.86,
           "caNetSales": 148.98,
-          "cumUnits": 13941,
-          "cumSales": 322963.64,
+          "cumUnits": 13940,
+          "cumSales": 322941.8,
           "planUnits": 400,
           "cumPlanUnits": 12526
         },
@@ -7667,8 +7722,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 3142.42,
           "caNetSales": 84.19,
-          "cumUnits": 14082,
-          "cumSales": 326190.25,
+          "cumUnits": 14081,
+          "cumSales": 326168.41,
           "planUnits": 264,
           "cumPlanUnits": 12790
         },
@@ -7680,8 +7735,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 3158.83,
           "caNetSales": 175.0,
-          "cumUnits": 14229,
-          "cumSales": 329524.08,
+          "cumUnits": 14228,
+          "cumSales": 329502.24,
           "planUnits": 243,
           "cumPlanUnits": 13033
         },
@@ -7693,8 +7748,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 2921.16,
           "caNetSales": 59.37,
-          "cumUnits": 14359,
-          "cumSales": 332504.61,
+          "cumUnits": 14358,
+          "cumSales": 332482.77,
           "planUnits": 302,
           "cumPlanUnits": 13335
         },
@@ -7706,8 +7761,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 2510.33,
           "caNetSales": 121.34,
-          "cumUnits": 14479,
-          "cumSales": 335136.28,
+          "cumUnits": 14478,
+          "cumSales": 335114.44,
           "planUnits": 279,
           "cumPlanUnits": 13614
         },
@@ -7719,8 +7774,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 17,
           "usNetSales": 5054.84,
           "caNetSales": 281.0,
-          "cumUnits": 14709,
-          "cumSales": 340472.12,
+          "cumUnits": 14708,
+          "cumSales": 340450.28,
           "planUnits": 321,
           "cumPlanUnits": 13935
         },
@@ -7732,8 +7787,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 3443.95,
           "caNetSales": 145.45,
-          "cumUnits": 14864,
-          "cumSales": 344061.52,
+          "cumUnits": 14863,
+          "cumSales": 344039.68,
           "planUnits": 289,
           "cumPlanUnits": 14224
         },
@@ -7745,8 +7800,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 21,
           "usNetSales": 5392.14,
           "caNetSales": 341.82,
-          "cumUnits": 15120,
-          "cumSales": 349795.48,
+          "cumUnits": 15119,
+          "cumSales": 349773.64,
           "planUnits": 289,
           "cumPlanUnits": 14513
         },
@@ -7758,8 +7813,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 2341.81,
           "caNetSales": 99.33,
-          "cumUnits": 15224,
-          "cumSales": 352236.62,
+          "cumUnits": 15223,
+          "cumSales": 352214.78,
           "planUnits": 248,
           "cumPlanUnits": 14761
         },
@@ -7771,8 +7826,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 3101.45,
           "caNetSales": 66.25,
-          "cumUnits": 15362,
-          "cumSales": 355404.32,
+          "cumUnits": 15361,
+          "cumSales": 355382.48,
           "planUnits": 227,
           "cumPlanUnits": 14988
         },
@@ -7784,8 +7839,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 2470.3,
           "caNetSales": 134.85,
-          "cumUnits": 15476,
-          "cumSales": 358009.47,
+          "cumUnits": 15475,
+          "cumSales": 357987.63,
           "planUnits": 218,
           "cumPlanUnits": 15206
         },
@@ -7797,8 +7852,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 2815.55,
           "caNetSales": 67.92,
-          "cumUnits": 15602,
-          "cumSales": 360892.94,
+          "cumUnits": 15601,
+          "cumSales": 360871.1,
           "planUnits": 262,
           "cumPlanUnits": 15468
         },
@@ -7810,21 +7865,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 4402.7,
           "caNetSales": 81.21,
-          "cumUnits": 15797,
-          "cumSales": 365376.85,
+          "cumUnits": 15796,
+          "cumSales": 365355.01,
           "planUnits": 301,
           "cumPlanUnits": 15769
         },
         {
           "date": "2026-08-01",
-          "units": 158,
-          "netSales": 3611.41,
-          "usUnits": 150,
+          "units": 157,
+          "netSales": 3585.41,
+          "usUnits": 149,
           "caUnits": 8,
-          "usNetSales": 3466.27,
+          "usNetSales": 3440.27,
           "caNetSales": 145.14,
-          "cumUnits": 15955,
-          "cumSales": 368988.26,
+          "cumUnits": 15953,
+          "cumSales": 368940.42,
           "planUnits": 352,
           "cumPlanUnits": 16121
         },
@@ -7836,8 +7891,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 15,
           "usNetSales": 7079.35,
           "caNetSales": 227.78,
-          "cumUnits": 16277,
-          "cumSales": 376295.39,
+          "cumUnits": 16275,
+          "cumSales": 376247.55,
           "planUnits": 353,
           "cumPlanUnits": 16474
         },
@@ -7849,8 +7904,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 2008.07,
           "caNetSales": 47.94,
-          "cumUnits": 16366,
-          "cumSales": 378351.4,
+          "cumUnits": 16364,
+          "cumSales": 378303.56,
           "planUnits": 233,
           "cumPlanUnits": 16707
         },
@@ -7862,8 +7917,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 2021.07,
           "caNetSales": 67.78,
-          "cumUnits": 16456,
-          "cumSales": 380440.25,
+          "cumUnits": 16454,
+          "cumSales": 380392.41,
           "planUnits": 213,
           "cumPlanUnits": 16920
         },
@@ -7875,8 +7930,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 2506.75,
           "caNetSales": 49.78,
-          "cumUnits": 16567,
-          "cumSales": 382996.78,
+          "cumUnits": 16565,
+          "cumSales": 382948.94,
           "planUnits": 204,
           "cumPlanUnits": 17124
         },
@@ -7888,8 +7943,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 2625.11,
           "caNetSales": 133.8,
-          "cumUnits": 16689,
-          "cumSales": 385755.69,
+          "cumUnits": 16687,
+          "cumSales": 385707.85,
           "planUnits": 244,
           "cumPlanUnits": 17368
         },
@@ -7901,8 +7956,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 2361.16,
           "caNetSales": 65.49,
-          "cumUnits": 16792,
-          "cumSales": 388182.34,
+          "cumUnits": 16790,
+          "cumSales": 388134.5,
           "planUnits": 281,
           "cumPlanUnits": 17649
         },
@@ -7914,8 +7969,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 7017.34,
           "caNetSales": 154.59,
-          "cumUnits": 17135,
-          "cumSales": 395354.27,
+          "cumUnits": 17133,
+          "cumSales": 395306.43,
           "planUnits": 255,
           "cumPlanUnits": 17904
         },
@@ -7927,8 +7982,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 31,
           "usNetSales": 8915.62,
           "caNetSales": 449.12,
-          "cumUnits": 17591,
-          "cumSales": 404719.01,
+          "cumUnits": 17589,
+          "cumSales": 404671.17,
           "planUnits": 253,
           "cumPlanUnits": 18157
         },
@@ -7940,8 +7995,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 2044.44,
           "caNetSales": 85.09,
-          "cumUnits": 17686,
-          "cumSales": 406848.54,
+          "cumUnits": 17684,
+          "cumSales": 406800.7,
           "planUnits": 217,
           "cumPlanUnits": 18374
         },
@@ -7953,8 +8008,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 1947.67,
           "caNetSales": 37.1,
-          "cumUnits": 17771,
-          "cumSales": 408833.31,
+          "cumUnits": 17769,
+          "cumSales": 408785.47,
           "planUnits": 198,
           "cumPlanUnits": 18572
         },
@@ -7966,21 +8021,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 2112.93,
           "caNetSales": 66.13,
-          "cumUnits": 17868,
-          "cumSales": 411012.37,
+          "cumUnits": 17866,
+          "cumSales": 410964.53,
           "planUnits": 190,
           "cumPlanUnits": 18762
         },
         {
           "date": "2026-08-13",
           "units": 103,
-          "netSales": 2351.2,
+          "netSales": 2353.12,
           "usUnits": 98,
           "caUnits": 5,
-          "usNetSales": 2265.9,
+          "usNetSales": 2267.82,
           "caNetSales": 85.3,
-          "cumUnits": 17971,
-          "cumSales": 413363.57,
+          "cumUnits": 17969,
+          "cumSales": 413317.65,
           "planUnits": 228,
           "cumPlanUnits": 18990
         },
@@ -7992,8 +8047,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 1677.53,
           "caNetSales": 88.08,
-          "cumUnits": 18052,
-          "cumSales": 415129.18,
+          "cumUnits": 18050,
+          "cumSales": 415083.26,
           "planUnits": 262,
           "cumPlanUnits": 19252
         },
@@ -8005,21 +8060,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 1970.69,
           "caNetSales": 34.73,
-          "cumUnits": 18139,
-          "cumSales": 417134.6,
+          "cumUnits": 18137,
+          "cumSales": 417088.68,
           "planUnits": 309,
           "cumPlanUnits": 19561
         },
         {
           "date": "2026-08-16",
           "units": 97,
-          "netSales": 2304.04,
+          "netSales": 2302.38,
           "usUnits": 93,
           "caUnits": 4,
-          "usNetSales": 2238.61,
+          "usNetSales": 2236.95,
           "caNetSales": 65.43,
-          "cumUnits": 18236,
-          "cumSales": 419438.64,
+          "cumUnits": 18234,
+          "cumSales": 419391.06,
           "planUnits": 307,
           "cumPlanUnits": 19868
         },
@@ -8031,8 +8086,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 2066.99,
           "caNetSales": 33.73,
-          "cumUnits": 18328,
-          "cumSales": 421539.36,
+          "cumUnits": 18326,
+          "cumSales": 421491.78,
           "planUnits": 202,
           "cumPlanUnits": 20070
         },
@@ -8044,21 +8099,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 2988.59,
           "caNetSales": 102.16,
-          "cumUnits": 18458,
-          "cumSales": 424630.11,
+          "cumUnits": 18456,
+          "cumSales": 424582.53,
           "planUnits": 183,
           "cumPlanUnits": 20253
         },
         {
           "date": "2026-08-19",
-          "units": 93,
-          "netSales": 2156.88,
-          "usUnits": 86,
+          "units": 92,
+          "netSales": 2130.88,
+          "usUnits": 85,
           "caUnits": 7,
-          "usNetSales": 2036.24,
+          "usNetSales": 2010.24,
           "caNetSales": 120.64,
-          "cumUnits": 18551,
-          "cumSales": 426786.99,
+          "cumUnits": 18548,
+          "cumSales": 426713.41,
           "planUnits": 177,
           "cumPlanUnits": 20430
         },
@@ -8070,8 +8125,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 2265.71,
           "caNetSales": 85.71,
-          "cumUnits": 18654,
-          "cumSales": 429138.41,
+          "cumUnits": 18651,
+          "cumSales": 429064.83,
           "planUnits": 211,
           "cumPlanUnits": 20641
         },
@@ -8083,41 +8138,54 @@ window.DASHBOARD_DATA = {
           "caUnits": 13,
           "usNetSales": 1911.69,
           "caNetSales": 213.55,
-          "cumUnits": 18749,
-          "cumSales": 431263.65,
+          "cumUnits": 18746,
+          "cumSales": 431190.07,
           "planUnits": 243,
           "cumPlanUnits": 20884
+        },
+        {
+          "date": "2026-08-22",
+          "units": 67,
+          "netSales": 1479.19,
+          "usUnits": 58,
+          "caUnits": 9,
+          "usNetSales": 1331.36,
+          "caNetSales": 147.83,
+          "cumUnits": 18813,
+          "cumSales": 432669.26,
+          "planUnits": 221,
+          "cumPlanUnits": 21105
         }
       ],
       "pdp": [
         {
           "sku": "TVG4770",
           "name": "Mila",
-          "pdpViews": 362525,
-          "atc": 25064,
-          "ckts": 6978,
-          "purch": 9013,
-          "rev": 234156.92,
-          "atcRate": 6.91,
+          "pdpViews": 363741,
+          "atc": 25179,
+          "ckts": 7009,
+          "purch": 9046,
+          "rev": 235014.92,
+          "atcRate": 6.92,
           "purchRate": 2.49
         },
         {
           "sku": "TVG6640",
           "name": "Hoda",
-          "pdpViews": 165440,
-          "atc": 23734,
-          "ckts": 6911,
-          "purch": 8722,
-          "rev": 226579.45,
-          "atcRate": 14.35,
-          "purchRate": 5.27
+          "pdpViews": 166553,
+          "atc": 23856,
+          "ckts": 6940,
+          "purch": 8744,
+          "rev": 227151.45,
+          "atcRate": 14.32,
+          "purchRate": 5.25
         }
       ],
       "crossSell": [
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 20
+          "pairs": 21
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
@@ -8136,12 +8204,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG508",
+          "sku": "TVG350",
           "pairs": 9
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
+          "sku": "TVG508",
           "pairs": 9
         },
         {
@@ -8176,7 +8244,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG4770",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 8
+          "pairs": 9
         },
         {
           "primarySku": "TVG4770",
@@ -8216,14 +8284,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4770",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG507",
           "pairs": 3
         },
         {
           "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG507",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG432",
           "pairs": 3
         },
         {
@@ -8247,13 +8315,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6640",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
+          "sku": "TVG355",
           "pairs": 6
         },
         {
           "primarySku": "TVG6640",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "sku": "TVG357",
           "pairs": 6
         },
         {
@@ -8289,21 +8357,21 @@ window.DASHBOARD_DATA = {
       ],
       "categoryCustomers": {
         "category": "Eyeshadow",
-        "total": 15142,
-        "existingCategory": 11484,
-        "newToCategory": 3658,
+        "total": 15200,
+        "existingCategory": 11520,
+        "newToCategory": 3680,
         "byVariant": [
-          {
-            "sku": "TVG6640",
-            "name": "Hoda",
-            "newToCategory": 2197,
-            "existingCategory": 6641
-          },
           {
             "sku": "TVG4770",
             "name": "Mila",
-            "newToCategory": 2014,
-            "existingCategory": 7022
+            "newToCategory": 2029,
+            "existingCategory": 7044
+          },
+          {
+            "sku": "TVG6640",
+            "name": "Hoda",
+            "newToCategory": 2207,
+            "existingCategory": 6655
           }
         ]
       }
@@ -8318,200 +8386,209 @@ window.DASHBOARD_DATA = {
       "subtitle": "5 Shades \u00b7 Lip Stain",
       "accent": "#C0304A",
       "summary": {
-        "netSales": 153964.26,
-        "units": 6651,
-        "orders": 5101,
-        "aov": 30.18,
-        "newCustomers": 548,
-        "retCustomers": 4520,
-        "totalCustomers": 5068,
-        "newPct": 10.8,
-        "retPct": 89.2,
-        "planUnits": 2627,
-        "pctToPlanUnits": 253.2,
+        "netSales": 178519.13,
+        "units": 7684,
+        "orders": 5954,
+        "aov": 29.98,
+        "newCustomers": 708,
+        "retCustomers": 5195,
+        "totalCustomers": 5903,
+        "newPct": 12.0,
+        "retPct": 88.0,
+        "planUnits": 3298,
+        "pctToPlanUnits": 233.0,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 14805.49,
-        "retCustomerRevenue": 139158.77,
-        "pdpViews": 171363,
-        "pdpAtcRate": 9.4,
-        "pdpCvr": 3.6
+        "newCustomerRevenue": 19435.09,
+        "retCustomerRevenue": 159084.04,
+        "pdpViews": 190063,
+        "pdpAtcRate": 9.8,
+        "pdpCvr": 3.7
       },
       "regions": {
         "us": {
-          "units": 6239,
-          "netSales": 147222.31,
-          "orders": 4812
+          "units": 7219,
+          "netSales": 170957.23,
+          "orders": 5626
         },
         "ca": {
-          "units": 412,
-          "netSales": 6741.95,
-          "orders": 289
+          "units": 465,
+          "netSales": 7561.9,
+          "orders": 328
         }
       },
       "trafficStart": "2026-08-18",
-      "trafficEnd": "2026-08-19",
+      "trafficEnd": "2026-08-20",
       "traffic": {
         "byChannel": [
           {
             "ch": "Paid Social",
-            "sessions": 110390,
-            "txns": 2442,
-            "rev": 144447.17,
-            "cvr": 2.21,
-            "eng": 78.6
-          },
-          {
-            "ch": "Email",
-            "sessions": 41474,
-            "txns": 2527,
-            "rev": 158314.03,
-            "cvr": 6.09,
-            "eng": 76.3
+            "sessions": 157971,
+            "txns": 3691,
+            "rev": 217356.07,
+            "cvr": 2.34,
+            "eng": 79.2
           },
           {
             "ch": "SMS",
-            "sessions": 41219,
-            "txns": 1661,
-            "rev": 104114.98,
-            "cvr": 4.03,
-            "eng": 84.0
+            "sessions": 61873,
+            "txns": 2440,
+            "rev": 152261.6,
+            "cvr": 3.94,
+            "eng": 75.1
+          },
+          {
+            "ch": "Email",
+            "sessions": 57956,
+            "txns": 3460,
+            "rev": 217970.26,
+            "cvr": 5.97,
+            "eng": 75.0
           },
           {
             "ch": "Direct",
-            "sessions": 40173,
-            "txns": 1371,
-            "rev": 78400.15,
-            "cvr": 3.41,
-            "eng": 74.1
-          },
-          {
-            "ch": "Paid Other",
-            "sessions": 29264,
-            "txns": 166,
-            "rev": 10765.57,
-            "cvr": 0.57,
-            "eng": 76.9
-          },
-          {
-            "ch": "Unassigned",
-            "sessions": 28473,
-            "txns": 4895,
-            "rev": 206670.13,
-            "cvr": 17.19,
-            "eng": 67.2
-          },
-          {
-            "ch": "Paid Search",
-            "sessions": 25055,
-            "txns": 2712,
-            "rev": 180673.3,
-            "cvr": 10.82,
-            "eng": 83.7
-          },
-          {
-            "ch": "Cross-network",
-            "sessions": 11454,
-            "txns": 202,
-            "rev": 12591.52,
-            "cvr": 1.76,
-            "eng": 68.8
-          },
-          {
-            "ch": "Paid Shopping",
-            "sessions": 7055,
-            "txns": 639,
-            "rev": 36473.3,
-            "cvr": 9.06,
-            "eng": 84.8
-          },
-          {
-            "ch": "Organic Search",
-            "sessions": 6806,
-            "txns": 591,
-            "rev": 39991.73,
-            "cvr": 8.68,
-            "eng": 82.1
-          },
-          {
-            "ch": "Organic Social",
-            "sessions": 6496,
-            "txns": 91,
-            "rev": 6204.8,
-            "cvr": 1.4,
-            "eng": 73.1
-          },
-          {
-            "ch": "Organic Shopping",
-            "sessions": 2157,
-            "txns": 1201,
-            "rev": 59450.15,
-            "cvr": 55.68,
-            "eng": 88.4
-          },
-          {
-            "ch": "Display",
-            "sessions": 1383,
-            "txns": 0,
-            "rev": 0.0,
-            "cvr": 0.0,
-            "eng": 68.5
-          },
-          {
-            "ch": "Referral",
-            "sessions": 1165,
-            "txns": 34,
-            "rev": 2029.56,
-            "cvr": 2.92,
-            "eng": 78.3
-          },
-          {
-            "ch": "AI Assistant",
-            "sessions": 121,
-            "txns": 8,
-            "rev": 457.75,
-            "cvr": 6.61,
-            "eng": 71.1
-          },
-          {
-            "ch": "Paid Video",
-            "sessions": 115,
-            "txns": 0,
-            "rev": 0.0,
-            "cvr": 0.0,
+            "sessions": 55901,
+            "txns": 2127,
+            "rev": 121621.76,
+            "cvr": 3.8,
             "eng": 73.9
           },
           {
-            "ch": "Organic Video",
-            "sessions": 6,
+            "ch": "Paid Other",
+            "sessions": 44806,
+            "txns": 248,
+            "rev": 16076.58,
+            "cvr": 0.55,
+            "eng": 77.9
+          },
+          {
+            "ch": "Unassigned",
+            "sessions": 43520,
+            "txns": 7326,
+            "rev": 310807.34,
+            "cvr": 16.83,
+            "eng": 62.4
+          },
+          {
+            "ch": "Paid Search",
+            "sessions": 37155,
+            "txns": 4108,
+            "rev": 274439.84,
+            "cvr": 11.06,
+            "eng": 84.0
+          },
+          {
+            "ch": "Cross-network",
+            "sessions": 16433,
+            "txns": 294,
+            "rev": 18646.57,
+            "cvr": 1.79,
+            "eng": 70.4
+          },
+          {
+            "ch": "Paid Shopping",
+            "sessions": 10440,
+            "txns": 988,
+            "rev": 57123.66,
+            "cvr": 9.46,
+            "eng": 85.5
+          },
+          {
+            "ch": "Organic Search",
+            "sessions": 9655,
+            "txns": 838,
+            "rev": 57171.06,
+            "cvr": 8.68,
+            "eng": 81.8
+          },
+          {
+            "ch": "Organic Social",
+            "sessions": 9171,
+            "txns": 135,
+            "rev": 8996.18,
+            "cvr": 1.47,
+            "eng": 74.1
+          },
+          {
+            "ch": "Organic Shopping",
+            "sessions": 3063,
+            "txns": 1779,
+            "rev": 88964.53,
+            "cvr": 58.08,
+            "eng": 89.6
+          },
+          {
+            "ch": "Display",
+            "sessions": 2000,
             "txns": 0,
             "rev": 0.0,
             "cvr": 0.0,
-            "eng": 50.0
+            "eng": 69.8
+          },
+          {
+            "ch": "Referral",
+            "sessions": 1842,
+            "txns": 65,
+            "rev": 4233.45,
+            "cvr": 3.53,
+            "eng": 77.9
+          },
+          {
+            "ch": "AI Assistant",
+            "sessions": 192,
+            "txns": 10,
+            "rev": 509.54,
+            "cvr": 5.21,
+            "eng": 74.0
+          },
+          {
+            "ch": "Paid Video",
+            "sessions": 182,
+            "txns": 0,
+            "rev": 0.0,
+            "cvr": 0.0,
+            "eng": 70.3
+          },
+          {
+            "ch": "Organic Video",
+            "sessions": 11,
+            "txns": 0,
+            "rev": 0.0,
+            "cvr": 0.0,
+            "eng": 45.5
+          },
+          {
+            "ch": "Affiliates",
+            "sessions": 2,
+            "txns": 0,
+            "rev": 0.0,
+            "cvr": 0.0,
+            "eng": 100.0
           }
         ],
         "monthly": [
           {
             "month": "Aug 2026",
             "chs": {
-              "Direct": 40173,
-              "Paid Other": 29264,
-              "SMS": 41219,
-              "Paid Shopping": 7055,
-              "Email": 41474,
-              "Paid Social": 110390,
-              "Paid Video": 115,
-              "Display": 1383,
-              "Cross-network": 11454,
-              "AI Assistant": 121,
-              "Organic Social": 6496,
-              "Referral": 1165,
-              "Organic Video": 6,
-              "Organic Shopping": 2157,
-              "Unassigned": 28473,
-              "Paid Search": 25055,
-              "Organic Search": 6806
+              "Paid Search": 37155,
+              "AI Assistant": 192,
+              "Paid Other": 44806,
+              "Paid Shopping": 10440,
+              "Cross-network": 16433,
+              "Paid Social": 157971,
+              "Direct": 55901,
+              "SMS": 61873,
+              "Unassigned": 43520,
+              "Organic Shopping": 3063,
+              "Organic Search": 9655,
+              "Display": 2000,
+              "Paid Video": 182,
+              "Organic Video": 11,
+              "Referral": 1842,
+              "Email": 57956,
+              "Organic Social": 9171,
+              "Affiliates": 2
             }
           }
         ]
@@ -8520,78 +8597,78 @@ window.DASHBOARD_DATA = {
         {
           "label": "Lasting Mark Lip Defining Stain (com)",
           "page": "thrivecausemetics.com/products/lasting-mark-lip-defining-stain",
-          "pageviews": 333691,
-          "sessions": 53317,
-          "txns": 3649,
-          "rev": 227527.74,
-          "eng": 31.4,
-          "cvr": 6.84
-        },
-        {
-          "label": "Lasting Mark Lip Defining Stain (ca)",
-          "page": "thrivecausemetics.ca/products/lasting-mark-lip-defining-stain",
-          "pageviews": 14422,
-          "sessions": 3434,
-          "txns": 103,
-          "rev": 6615.04,
-          "eng": 3.7,
-          "cvr": 3.0
+          "pageviews": 373050,
+          "sessions": 59267,
+          "txns": 4118,
+          "rev": 259841.51,
+          "eng": 32.7,
+          "cvr": 6.95
         },
         {
           "label": "Mature Lasting Mark Lip Defining S (com)",
           "page": "thrivecausemetics.com/pages/mature-lasting-mark-lip-defining-stain",
-          "pageviews": 7853,
-          "sessions": 3255,
-          "txns": 51,
-          "rev": 2669.96,
-          "eng": 0.4,
-          "cvr": 1.57
+          "pageviews": 10158,
+          "sessions": 4245,
+          "txns": 67,
+          "rev": 3306.44,
+          "eng": 0.3,
+          "cvr": 1.58
+        },
+        {
+          "label": "Lasting Mark Lip Defining Stain (ca)",
+          "page": "thrivecausemetics.ca/products/lasting-mark-lip-defining-stain",
+          "pageviews": 16469,
+          "sessions": 3933,
+          "txns": 133,
+          "rev": 8729.27,
+          "eng": 3.4,
+          "cvr": 3.38
         },
         {
           "label": "Mature Lasting Mark Lip Defining S (ca)",
           "page": "thrivecausemetics.ca/pages/mature-lasting-mark-lip-defining-stain",
-          "pageviews": 1896,
-          "sessions": 680,
-          "txns": 6,
-          "rev": 402.82,
-          "eng": 1.8,
-          "cvr": 0.88
+          "pageviews": 2207,
+          "sessions": 790,
+          "txns": 8,
+          "rev": 549.89,
+          "eng": 1.9,
+          "cvr": 1.01
         },
         {
           "label": "Gen Z Lasting Mark Lip Defining St (com)",
           "page": "thrivecausemetics.com/pages/gen-z-lasting-mark-lip-defining-stain",
-          "pageviews": 546,
-          "sessions": 139,
-          "txns": 4,
-          "rev": 181.33,
-          "eng": 2.2,
-          "cvr": 2.88
-        },
-        {
-          "label": "Lasting Mark\u2122 Lip Defining Stain Q (ca)",
-          "page": "thrivecausemetics.ca/pages/lasting-mark\u2122-lip-defining-stain-quiz",
-          "pageviews": 353,
-          "sessions": 89,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 2.2,
-          "cvr": 0.0
+          "pageviews": 1846,
+          "sessions": 497,
+          "txns": 16,
+          "rev": 697.52,
+          "eng": 0.8,
+          "cvr": 3.22
         },
         {
           "label": "Gen Z Lasting Mark Lip Defining St (ca)",
           "page": "thrivecausemetics.ca/pages/gen-z-lasting-mark-lip-defining-stain",
-          "pageviews": 338,
-          "sessions": 74,
-          "txns": 2,
-          "rev": 106.69,
-          "eng": 2.7,
-          "cvr": 2.7
+          "pageviews": 493,
+          "sessions": 121,
+          "txns": 4,
+          "rev": 254.42,
+          "eng": 2.5,
+          "cvr": 3.31
+        },
+        {
+          "label": "Lasting Mark\u2122 Lip Defining Stain Q (ca)",
+          "page": "thrivecausemetics.ca/pages/lasting-mark\u2122-lip-defining-stain-quiz",
+          "pageviews": 469,
+          "sessions": 120,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 1.7,
+          "cvr": 0.0
         },
         {
           "label": "Lasting Mark Lip Vault (com)",
           "page": "thrivecausemetics.com/products/lasting-mark-lip-vault",
-          "pageviews": 26,
-          "sessions": 22,
+          "pageviews": 34,
+          "sessions": 31,
           "txns": 0,
           "rev": 0.0,
           "eng": 0.0,
@@ -8600,18 +8677,18 @@ window.DASHBOARD_DATA = {
         {
           "label": "Lasting Mark Lip Defining Stain Qu (com)",
           "page": "thrivecausemetics.com/pages/lasting-mark-lip-defining-stain-quiz",
-          "pageviews": 23,
-          "sessions": 7,
+          "pageviews": 31,
+          "sessions": 9,
           "txns": 0,
           "rev": 0.0,
-          "eng": 28.6,
+          "eng": 44.4,
           "cvr": 0.0
         },
         {
           "label": "Lasting Mark Lip Vault (ca)",
           "page": "thrivecausemetics.ca/products/lasting-mark-lip-vault",
-          "pageviews": 8,
-          "sessions": 5,
+          "pageviews": 16,
+          "sessions": 7,
           "txns": 0,
           "rev": 0.0,
           "eng": 0.0,
@@ -8635,6 +8712,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-08-21",
           "cumPlanUnits": 2627
+        },
+        {
+          "date": "2026-08-22",
+          "cumPlanUnits": 3298
         }
       ],
       "planTotalUnits": 25361,
@@ -8646,24 +8727,24 @@ window.DASHBOARD_DATA = {
           "name": "Daniella",
           "shade": "Toasted Rose",
           "color": "#C4736F",
-          "netSales": 64796.39,
-          "units": 2793,
-          "orders": 2738,
-          "newCustomers": 320,
-          "retCustomers": 2411,
-          "usUnits": 2622,
-          "caUnits": 171,
-          "usNetSales": 61992.39,
-          "caNetSales": 2804.0,
-          "planUnits": 494,
-          "pctToPlanUnits": 565.4,
-          "inventoryUnits": 7629,
-          "runRateUnitsPerDay": 698.25,
-          "daysToOOS": 10,
-          "estOOSDate": "2026-08-31",
+          "netSales": 75562.15,
+          "units": 3248,
+          "orders": 3188,
+          "newCustomers": 422,
+          "retCustomers": 2758,
+          "usUnits": 3053,
+          "caUnits": 195,
+          "usNetSales": 72382.51,
+          "caNetSales": 3179.64,
+          "planUnits": 620,
+          "pctToPlanUnits": 523.9,
+          "inventoryUnits": 7181,
+          "runRateUnitsPerDay": 649.6,
+          "daysToOOS": 11,
+          "estOOSDate": "2026-09-02",
           "planTotalUnits": 4767,
-          "pctToGoalUnits": 58.6,
-          "unitsToGoal": 1974,
+          "pctToGoalUnits": 68.1,
+          "unitsToGoal": 1519,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 1.6
         },
@@ -8672,221 +8753,239 @@ window.DASHBOARD_DATA = {
           "name": "Liliana",
           "shade": "Deep Berry",
           "color": "#7A1840",
-          "netSales": 36683.79,
-          "units": 1578,
-          "orders": 1541,
-          "newCustomers": 134,
-          "retCustomers": 1404,
-          "usUnits": 1470,
-          "caUnits": 108,
-          "usNetSales": 34938.59,
-          "caNetSales": 1745.2,
-          "planUnits": 822,
-          "pctToPlanUnits": 192.0,
-          "inventoryUnits": 15261,
-          "runRateUnitsPerDay": 394.5,
-          "daysToOOS": 38,
-          "estOOSDate": "2026-09-28",
+          "netSales": 42545.41,
+          "units": 1826,
+          "orders": 1786,
+          "newCustomers": 167,
+          "retCustomers": 1615,
+          "usUnits": 1708,
+          "caUnits": 118,
+          "usNetSales": 40644.42,
+          "caNetSales": 1900.99,
+          "planUnits": 1032,
+          "pctToPlanUnits": 176.9,
+          "inventoryUnits": 15025,
+          "runRateUnitsPerDay": 365.2,
+          "daysToOOS": 41,
+          "estOOSDate": "2026-10-02",
           "planTotalUnits": 7937,
-          "pctToGoalUnits": 19.9,
-          "unitsToGoal": 6359,
+          "pctToGoalUnits": 23.0,
+          "unitsToGoal": 6111,
           "planEndDate": "2026-12-15",
-          "weeksOfStock": 5.5
+          "weeksOfStock": 5.9
         },
         {
           "sku": "TVG7230",
           "name": "Li",
           "shade": "Baby Pink",
           "color": "#F2A6B8",
-          "netSales": 20090.88,
-          "units": 869,
-          "orders": 849,
-          "newCustomers": 72,
-          "retCustomers": 775,
-          "usUnits": 812,
-          "caUnits": 57,
-          "usNetSales": 19143.4,
-          "caNetSales": 947.48,
-          "planUnits": 822,
-          "pctToPlanUnits": 105.7,
-          "inventoryUnits": 4040,
-          "runRateUnitsPerDay": 217.25,
-          "daysToOOS": 18,
-          "estOOSDate": "2026-09-08",
+          "netSales": 23206.38,
+          "units": 999,
+          "orders": 975,
+          "newCustomers": 90,
+          "retCustomers": 881,
+          "usUnits": 937,
+          "caUnits": 62,
+          "usNetSales": 22193.96,
+          "caNetSales": 1012.42,
+          "planUnits": 1032,
+          "pctToPlanUnits": 96.8,
+          "inventoryUnits": 3911,
+          "runRateUnitsPerDay": 199.8,
+          "daysToOOS": 19,
+          "estOOSDate": "2026-09-10",
           "planTotalUnits": 7937,
-          "pctToGoalUnits": 10.9,
-          "unitsToGoal": 7068,
+          "pctToGoalUnits": 12.6,
+          "unitsToGoal": 6938,
           "planEndDate": "2026-12-15",
-          "weeksOfStock": 2.7
+          "weeksOfStock": 2.8
         },
         {
           "sku": "TVG7260",
           "name": "Leslie",
           "shade": "Soft Red",
           "color": "#C0304A",
-          "netSales": 18622.28,
-          "units": 804,
-          "orders": 795,
-          "newCustomers": 67,
-          "retCustomers": 727,
-          "usUnits": 754,
-          "caUnits": 50,
-          "usNetSales": 17799.97,
-          "caNetSales": 822.31,
-          "planUnits": 161,
-          "pctToPlanUnits": 499.4,
-          "inventoryUnits": 4401,
-          "runRateUnitsPerDay": 201.0,
-          "daysToOOS": 21,
-          "estOOSDate": "2026-09-11",
+          "netSales": 21141.87,
+          "units": 908,
+          "orders": 894,
+          "newCustomers": 88,
+          "retCustomers": 805,
+          "usUnits": 850,
+          "caUnits": 58,
+          "usNetSales": 20189.18,
+          "caNetSales": 952.69,
+          "planUnits": 202,
+          "pctToPlanUnits": 449.5,
+          "inventoryUnits": 4298,
+          "runRateUnitsPerDay": 181.6,
+          "daysToOOS": 23,
+          "estOOSDate": "2026-09-14",
           "planTotalUnits": 1550,
-          "pctToGoalUnits": 51.9,
-          "unitsToGoal": 746,
+          "pctToGoalUnits": 58.6,
+          "unitsToGoal": 642,
           "planEndDate": "2026-12-15",
-          "weeksOfStock": 3.1
+          "weeksOfStock": 3.4
         },
         {
           "sku": "TVG7220",
           "name": "Brandy",
           "shade": "Spice Brown",
           "color": "#8B5A3C",
-          "netSales": 13770.92,
-          "units": 607,
-          "orders": 598,
-          "newCustomers": 58,
-          "retCustomers": 535,
-          "usUnits": 581,
-          "caUnits": 26,
-          "usNetSales": 13347.96,
-          "caNetSales": 422.96,
-          "planUnits": 328,
-          "pctToPlanUnits": 185.1,
-          "inventoryUnits": 6171,
-          "runRateUnitsPerDay": 151.75,
-          "daysToOOS": 40,
-          "estOOSDate": "2026-09-30",
+          "netSales": 16063.33,
+          "units": 703,
+          "orders": 691,
+          "newCustomers": 76,
+          "retCustomers": 610,
+          "usUnits": 671,
+          "caUnits": 32,
+          "usNetSales": 15547.16,
+          "caNetSales": 516.17,
+          "planUnits": 412,
+          "pctToPlanUnits": 170.6,
+          "inventoryUnits": 6079,
+          "runRateUnitsPerDay": 140.6,
+          "daysToOOS": 43,
+          "estOOSDate": "2026-10-04",
           "planTotalUnits": 3170,
-          "pctToGoalUnits": 19.1,
-          "unitsToGoal": 2563,
+          "pctToGoalUnits": 22.2,
+          "unitsToGoal": 2467,
           "planEndDate": "2026-12-15",
-          "weeksOfStock": 5.8
+          "weeksOfStock": 6.2
         }
       ],
       "dailySales": [
         {
           "date": "2026-08-18",
-          "units": 3555,
-          "netSales": 83702.37,
-          "usUnits": 3400,
+          "units": 3549,
+          "netSales": 83553.94,
+          "usUnits": 3394,
           "caUnits": 155,
-          "usNetSales": 81173.15,
+          "usNetSales": 81024.72,
           "caNetSales": 2529.22,
-          "cumUnits": 3555,
-          "cumSales": 83702.37,
+          "cumUnits": 3549,
+          "cumSales": 83553.94,
           "planUnits": 856,
           "cumPlanUnits": 856
         },
         {
           "date": "2026-08-19",
           "units": 1205,
-          "netSales": 27550.35,
+          "netSales": 27543.33,
           "usUnits": 1119,
           "caUnits": 86,
-          "usNetSales": 26166.34,
+          "usNetSales": 26159.32,
           "caNetSales": 1384.01,
-          "cumUnits": 4760,
-          "cumSales": 111252.72,
+          "cumUnits": 4754,
+          "cumSales": 111097.27,
           "planUnits": 601,
           "cumPlanUnits": 1457
         },
         {
           "date": "2026-08-20",
           "units": 1003,
-          "netSales": 23053.86,
+          "netSales": 23049.76,
           "usUnits": 914,
           "caUnits": 89,
-          "usNetSales": 21562.52,
+          "usNetSales": 21558.42,
           "caNetSales": 1491.34,
-          "cumUnits": 5763,
-          "cumSales": 134306.58,
+          "cumUnits": 5757,
+          "cumSales": 134147.03,
           "planUnits": 607,
           "cumPlanUnits": 2064
         },
         {
           "date": "2026-08-21",
-          "units": 888,
-          "netSales": 19657.69,
-          "usUnits": 806,
+          "units": 886,
+          "netSales": 19605.69,
+          "usUnits": 804,
           "caUnits": 82,
-          "usNetSales": 18320.3,
+          "usNetSales": 18268.3,
           "caNetSales": 1337.39,
-          "cumUnits": 6651,
-          "cumSales": 153964.27,
+          "cumUnits": 6643,
+          "cumSales": 153752.72,
           "planUnits": 563,
           "cumPlanUnits": 2627
+        },
+        {
+          "date": "2026-08-22",
+          "units": 1041,
+          "netSales": 24766.41,
+          "usUnits": 988,
+          "caUnits": 53,
+          "usNetSales": 23946.47,
+          "caNetSales": 819.94,
+          "cumUnits": 7684,
+          "cumSales": 178519.13,
+          "planUnits": 671,
+          "cumPlanUnits": 3298
         }
       ],
       "pdp": [
         {
           "sku": "TVG7230",
           "name": "Li",
-          "pdpViews": 70667,
-          "atc": 2547,
-          "ckts": 481,
-          "purch": 792,
-          "rev": 20355.5,
-          "atcRate": 3.6,
-          "purchRate": 1.12
+          "pdpViews": 77899,
+          "atc": 2910,
+          "ckts": 557,
+          "purch": 913,
+          "rev": 23501.5,
+          "atcRate": 3.74,
+          "purchRate": 1.17
         },
         {
           "sku": "TVG7250",
           "name": "Daniella",
-          "pdpViews": 33155,
-          "atc": 6519,
-          "ckts": 1533,
-          "purch": 2594,
-          "rev": 66215.6,
-          "atcRate": 19.66,
-          "purchRate": 7.82
+          "pdpViews": 37081,
+          "atc": 7555,
+          "ckts": 1788,
+          "purch": 3028,
+          "rev": 77499.6,
+          "atcRate": 20.37,
+          "purchRate": 8.17
         },
         {
           "sku": "TVG7240",
           "name": "Liliana",
-          "pdpViews": 28499,
-          "atc": 3904,
-          "ckts": 868,
-          "purch": 1451,
-          "rev": 37180.0,
-          "atcRate": 13.7,
-          "purchRate": 5.09
+          "pdpViews": 31736,
+          "atc": 4569,
+          "ckts": 1035,
+          "purch": 1686,
+          "rev": 43290.0,
+          "atcRate": 14.4,
+          "purchRate": 5.31
         },
         {
           "sku": "TVG7220",
           "name": "Brandy",
-          "pdpViews": 20743,
-          "atc": 1485,
-          "ckts": 275,
-          "purch": 557,
-          "rev": 14066.0,
-          "atcRate": 7.16,
-          "purchRate": 2.69
+          "pdpViews": 23079,
+          "atc": 1725,
+          "ckts": 335,
+          "purch": 647,
+          "rev": 16406.0,
+          "atcRate": 7.47,
+          "purchRate": 2.8
         },
         {
           "sku": "TVG7260",
           "name": "Leslie",
-          "pdpViews": 18299,
-          "atc": 1699,
-          "ckts": 365,
-          "purch": 736,
-          "rev": 19068.76,
-          "atcRate": 9.28,
-          "purchRate": 4.02
+          "pdpViews": 20268,
+          "atc": 1916,
+          "ckts": 428,
+          "purch": 837,
+          "rev": 21694.76,
+          "atcRate": 9.45,
+          "purchRate": 4.13
         }
       ],
       "crossSell": [
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG299",
+          "pairs": 12
+        },
+        {
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
           "pairs": 10
         },
         {
@@ -8895,14 +8994,19 @@ window.DASHBOARD_DATA = {
           "pairs": 9
         },
         {
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 9
-        },
-        {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG357",
-          "pairs": 9
+          "pairs": 8
+        },
+        {
+          "product": "Defying Gravity\u2122 Eye Lifting Cream",
+          "sku": "TBB002",
+          "pairs": 6
+        },
+        {
+          "product": "Triple Threat\u2122 Highlighter Stick",
+          "sku": "TVG4900",
+          "pairs": 6
         },
         {
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
@@ -8910,24 +9014,14 @@ window.DASHBOARD_DATA = {
           "pairs": 6
         },
         {
-          "product": "Triple Threat\u2122 Highlighter Stick",
-          "sku": "TVG4900",
-          "pairs": 5
-        },
-        {
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
-          "pairs": 5
-        },
-        {
           "product": "Instant Makeup Fix\u2122 Set & Refresh Spray",
           "sku": "TVG144",
-          "pairs": 5
+          "pairs": 6
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 4
+          "pairs": 5
         },
         {
           "product": "Infinity Waterproof\u2122 Eyebrow Liner",
@@ -8937,16 +9031,22 @@ window.DASHBOARD_DATA = {
       ],
       "crossSellBySku": [
         {
+          "primarySku": "TVG7220",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG434",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG7220",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
+          "pairs": 1
+        },
+        {
           "primarySku": "TVG7230",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG357",
           "pairs": 4
-        },
-        {
-          "primarySku": "TVG7230",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 3
         },
         {
           "primarySku": "TVG7230",
@@ -8956,8 +9056,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7230",
-          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
-          "sku": "TBB004",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7230",
+          "product": "Bright Balance\u2122 Hydrating Gel Cleanser",
+          "sku": "TBB001",
           "pairs": 2
         },
         {
@@ -8968,20 +9074,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7230",
-          "product": "Bright Balance\u2122 Hydrating Gel Cleanser",
-          "sku": "TBB001",
+          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
+          "sku": "TBB004",
           "pairs": 2
         },
         {
           "primarySku": "TVG7230",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
+          "sku": "TVG601",
           "pairs": 1
         },
         {
           "primarySku": "TVG7230",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 1
         },
         {
@@ -8992,14 +9098,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7230",
-          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
-          "sku": "TVG601",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
           "pairs": 1
         },
         {
           "primarySku": "TVG7240",
-          "product": "Triple Threat\u2122 Highlighter Stick",
-          "sku": "TVG4900",
+          "product": "Defying Gravity\u2122 Eye Lifting Cream",
+          "sku": "TBB002",
           "pairs": 3
         },
         {
@@ -9010,8 +9116,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7240",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
+          "product": "Triple Threat\u2122 Highlighter Stick",
+          "sku": "TVG4900",
           "pairs": 3
         },
         {
@@ -9034,18 +9140,6 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7240",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG7240",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG7240",
           "product": "Sheer Strength\u00ae Lip-Plumping Peptide Gloss",
           "sku": "TVG407",
           "pairs": 1
@@ -9057,6 +9151,24 @@ window.DASHBOARD_DATA = {
           "pairs": 1
         },
         {
+          "primarySku": "TVG7240",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG7240",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG7250",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
+          "pairs": 7
+        },
+        {
           "primarySku": "TVG7250",
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG181",
@@ -9065,20 +9177,8 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7250",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG7250",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG284",
           "pairs": 5
-        },
-        {
-          "primarySku": "TVG7250",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
-          "pairs": 4
         },
         {
           "primarySku": "TVG7250",
@@ -9089,14 +9189,32 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7250",
           "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7250",
+          "product": "Instant Makeup Fix\u2122 Set & Refresh Spray",
+          "sku": "TVG144",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7250",
+          "product": "Triple Threat\u2122 Highlighter Stick",
+          "sku": "TVG4900",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7250",
+          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
           "pairs": 3
         },
         {
           "primarySku": "TVG7250",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
-          "pairs": 2
+          "product": "Defying Gravity\u2122 Eye Lifting Cream",
+          "sku": "TBB002",
+          "pairs": 3
         },
         {
           "primarySku": "TVG7250",
@@ -9105,21 +9223,15 @@ window.DASHBOARD_DATA = {
           "pairs": 2
         },
         {
-          "primarySku": "TVG7250",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG7250",
-          "product": "Instant Makeup Fix\u2122 Set & Refresh Spray",
-          "sku": "TVG144",
+          "primarySku": "TVG7260",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6620",
           "pairs": 2
         },
         {
           "primarySku": "TVG7260",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
+          "sku": "TVG355",
           "pairs": 2
         },
         {
@@ -9133,49 +9245,43 @@ window.DASHBOARD_DATA = {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG284",
           "pairs": 1
-        },
-        {
-          "primarySku": "TVG7260",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 1
         }
       ],
       "categoryCustomers": {
         "category": "Lip",
-        "total": 5068,
-        "existingCategory": 3660,
-        "newToCategory": 1408,
+        "total": 5903,
+        "existingCategory": 4203,
+        "newToCategory": 1700,
         "byVariant": [
           {
-            "sku": "TVG7240",
-            "name": "Liliana",
-            "newToCategory": 354,
-            "existingCategory": 1184
-          },
-          {
-            "sku": "TVG7250",
-            "name": "Daniella",
-            "newToCategory": 779,
-            "existingCategory": 1952
-          },
-          {
-            "sku": "TVG7260",
-            "name": "Leslie",
+            "sku": "TVG7220",
+            "name": "Brandy",
             "newToCategory": 182,
-            "existingCategory": 612
+            "existingCategory": 504
           },
           {
             "sku": "TVG7230",
             "name": "Li",
-            "newToCategory": 232,
-            "existingCategory": 615
+            "newToCategory": 269,
+            "existingCategory": 702
           },
           {
-            "sku": "TVG7220",
-            "name": "Brandy",
-            "newToCategory": 148,
-            "existingCategory": 445
+            "sku": "TVG7250",
+            "name": "Daniella",
+            "newToCategory": 946,
+            "existingCategory": 2234
+          },
+          {
+            "sku": "TVG7260",
+            "name": "Leslie",
+            "newToCategory": 214,
+            "existingCategory": 679
+          },
+          {
+            "sku": "TVG7240",
+            "name": "Liliana",
+            "newToCategory": 421,
+            "existingCategory": 1361
           }
         ]
       }
@@ -9190,40 +9296,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "3 Shades \u00b7 Liquid Lash\u2122",
       "accent": "#6B4C8A",
       "summary": {
-        "netSales": 2030766.81,
-        "units": 87534,
-        "orders": 73419,
+        "netSales": 2046429.61,
+        "units": 88201,
+        "orders": 73992,
         "aov": 27.66,
-        "newCustomers": 20373,
-        "retCustomers": 49220,
-        "totalCustomers": 69593,
-        "newPct": 29.3,
-        "retPct": 70.7,
+        "newCustomers": 20594,
+        "retCustomers": 49523,
+        "totalCustomers": 70117,
+        "newPct": 29.4,
+        "retPct": 70.6,
         "planUnits": 47610,
-        "pctToPlanUnits": 183.9,
+        "pctToPlanUnits": 185.3,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 557898.94,
-        "retCustomerRevenue": 1472867.87,
+        "newCustomerRevenue": 563979.34,
+        "retCustomerRevenue": 1482450.27,
         "pdpViews": 0,
         "pdpAtcRate": 0,
         "pdpCvr": 0
       },
       "regions": {
         "us": {
-          "units": 83997,
-          "netSales": 1969346.17,
-          "orders": 70605
+          "units": 84623,
+          "netSales": 1984300.86,
+          "orders": 71145
         },
         "ca": {
-          "units": 3537,
-          "netSales": 61420.64,
-          "orders": 2814
+          "units": 3578,
+          "netSales": 62128.75,
+          "orders": 2847
         }
       },
       "trafficStart": "2026-04-07",
-      "trafficEnd": "2026-08-19",
+      "trafficEnd": "2026-08-20",
       "traffic": {
         "byChannel": [],
         "monthly": []
@@ -9725,23 +9831,23 @@ window.DASHBOARD_DATA = {
           "name": "Iris",
           "shade": "Deep Purple",
           "color": "#4A1E6B",
-          "netSales": 851820.9,
-          "units": 36502,
-          "orders": 34973,
-          "newCustomers": 10979,
-          "retCustomers": 23344,
-          "usUnits": 35185,
-          "caUnits": 1317,
-          "usNetSales": 829173.32,
-          "caNetSales": 22647.58,
+          "netSales": 859827.96,
+          "units": 36843,
+          "orders": 35306,
+          "newCustomers": 11119,
+          "retCustomers": 23526,
+          "usUnits": 35507,
+          "caUnits": 1336,
+          "usNetSales": 836836.39,
+          "caNetSales": 22991.57,
           "planUnits": 18056,
-          "pctToPlanUnits": 202.2,
+          "pctToPlanUnits": 204.0,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
           "estOOSDate": null,
           "planTotalUnits": 18056,
-          "pctToGoalUnits": 202.2,
+          "pctToGoalUnits": 204.0,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null
@@ -9751,23 +9857,23 @@ window.DASHBOARD_DATA = {
           "name": "Oceanne",
           "shade": "Deep Navy",
           "color": "#1C3A5C",
-          "netSales": 618187.88,
-          "units": 26778,
-          "orders": 25949,
-          "newCustomers": 6225,
-          "retCustomers": 18733,
-          "usUnits": 25783,
-          "caUnits": 995,
-          "usNetSales": 600836.53,
-          "caNetSales": 17351.35,
+          "netSales": 621432.6,
+          "units": 26917,
+          "orders": 26082,
+          "newCustomers": 6267,
+          "retCustomers": 18813,
+          "usUnits": 25914,
+          "caUnits": 1003,
+          "usNetSales": 603960.05,
+          "caNetSales": 17472.55,
           "planUnits": 16419,
-          "pctToPlanUnits": 163.1,
+          "pctToPlanUnits": 163.9,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
           "estOOSDate": null,
           "planTotalUnits": 16419,
-          "pctToGoalUnits": 163.1,
+          "pctToGoalUnits": 163.9,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null
@@ -9777,23 +9883,23 @@ window.DASHBOARD_DATA = {
           "name": "Ivy",
           "shade": "Deep Green",
           "color": "#1B4D3E",
-          "netSales": 560758.04,
-          "units": 24254,
-          "orders": 23593,
-          "newCustomers": 6428,
-          "retCustomers": 16647,
-          "usUnits": 23029,
-          "caUnits": 1225,
-          "usNetSales": 539336.32,
-          "caNetSales": 21421.72,
+          "netSales": 565169.05,
+          "units": 24441,
+          "orders": 23777,
+          "newCustomers": 6504,
+          "retCustomers": 16750,
+          "usUnits": 23202,
+          "caUnits": 1239,
+          "usNetSales": 543504.42,
+          "caNetSales": 21664.63,
           "planUnits": 13135,
-          "pctToPlanUnits": 184.7,
+          "pctToPlanUnits": 186.1,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
           "estOOSDate": null,
           "planTotalUnits": 13135,
-          "pctToGoalUnits": 184.7,
+          "pctToGoalUnits": 186.1,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null
@@ -10309,14 +10415,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-05-16",
-          "units": 346,
-          "netSales": 8046.05,
-          "usUnits": 336,
+          "units": 344,
+          "netSales": 8001.85,
+          "usUnits": 334,
           "caUnits": 10,
-          "usNetSales": 7868.25,
+          "usNetSales": 7824.05,
           "caNetSales": 177.8,
-          "cumUnits": 54847,
-          "cumSales": 1276989.93,
+          "cumUnits": 54845,
+          "cumSales": 1276945.73,
           "planUnits": 513,
           "cumPlanUnits": 28675
         },
@@ -10328,8 +10434,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 10,
           "usNetSales": 5540.95,
           "caNetSales": 167.09,
-          "cumUnits": 55094,
-          "cumSales": 1282697.97,
+          "cumUnits": 55092,
+          "cumSales": 1282653.77,
           "planUnits": 492,
           "cumPlanUnits": 29167
         },
@@ -10341,8 +10447,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 6408.69,
           "caNetSales": 157.53,
-          "cumUnits": 55380,
-          "cumSales": 1289264.19,
+          "cumUnits": 55378,
+          "cumSales": 1289219.99,
           "planUnits": 343,
           "cumPlanUnits": 29510
         },
@@ -10354,8 +10460,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 4627.17,
           "caNetSales": 70.44,
-          "cumUnits": 55591,
-          "cumSales": 1293961.8,
+          "cumUnits": 55589,
+          "cumSales": 1293917.6,
           "planUnits": 292,
           "cumPlanUnits": 29802
         },
@@ -10367,8 +10473,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 4698.97,
           "caNetSales": 109.42,
-          "cumUnits": 55801,
-          "cumSales": 1298770.19,
+          "cumUnits": 55799,
+          "cumSales": 1298725.99,
           "planUnits": 296,
           "cumPlanUnits": 30098
         },
@@ -10380,8 +10486,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 4629.47,
           "caNetSales": 39.03,
-          "cumUnits": 56005,
-          "cumSales": 1303438.69,
+          "cumUnits": 56003,
+          "cumSales": 1303394.49,
           "planUnits": 266,
           "cumPlanUnits": 30364
         },
@@ -10393,8 +10499,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 27,
           "usNetSales": 13460.94,
           "caNetSales": 465.05,
-          "cumUnits": 56602,
-          "cumSales": 1317364.68,
+          "cumUnits": 56600,
+          "cumSales": 1317320.48,
           "planUnits": 362,
           "cumPlanUnits": 30726
         },
@@ -10406,8 +10512,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 21,
           "usNetSales": 10942.74,
           "caNetSales": 347.13,
-          "cumUnits": 57087,
-          "cumSales": 1328654.55,
+          "cumUnits": 57085,
+          "cumSales": 1328610.35,
           "planUnits": 441,
           "cumPlanUnits": 31167
         },
@@ -10419,8 +10525,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 11188.66,
           "caNetSales": 208.18,
-          "cumUnits": 57570,
-          "cumSales": 1340051.39,
+          "cumUnits": 57568,
+          "cumSales": 1340007.19,
           "planUnits": 423,
           "cumPlanUnits": 31590
         },
@@ -10432,8 +10538,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 15128.5,
           "caNetSales": 0.0,
-          "cumUnits": 58206,
-          "cumSales": 1355179.89,
+          "cumUnits": 58204,
+          "cumSales": 1355135.69,
           "planUnits": 299,
           "cumPlanUnits": 31889
         },
@@ -10445,8 +10551,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 4054.44,
           "caNetSales": 0.0,
-          "cumUnits": 58384,
-          "cumSales": 1359234.33,
+          "cumUnits": 58382,
+          "cumSales": 1359190.13,
           "planUnits": 254,
           "cumPlanUnits": 32143
         },
@@ -10458,8 +10564,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3371.59,
           "caNetSales": 0.0,
-          "cumUnits": 58530,
-          "cumSales": 1362605.92,
+          "cumUnits": 58528,
+          "cumSales": 1362561.72,
           "planUnits": 259,
           "cumPlanUnits": 32402
         },
@@ -10471,8 +10577,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 4271.68,
           "caNetSales": 0.0,
-          "cumUnits": 58713,
-          "cumSales": 1366877.6,
+          "cumUnits": 58711,
+          "cumSales": 1366833.4,
           "planUnits": 233,
           "cumPlanUnits": 32635
         },
@@ -10484,8 +10590,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3791.25,
           "caNetSales": 0.0,
-          "cumUnits": 58880,
-          "cumSales": 1370668.85,
+          "cumUnits": 58878,
+          "cumSales": 1370624.65,
           "planUnits": 317,
           "cumPlanUnits": 32952
         },
@@ -10497,8 +10603,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3724.04,
           "caNetSales": 0.0,
-          "cumUnits": 59038,
-          "cumSales": 1374392.89,
+          "cumUnits": 59036,
+          "cumSales": 1374348.69,
           "planUnits": 384,
           "cumPlanUnits": 33336
         },
@@ -10510,8 +10616,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3860.83,
           "caNetSales": 0.0,
-          "cumUnits": 59203,
-          "cumSales": 1378253.72,
+          "cumUnits": 59201,
+          "cumSales": 1378209.52,
           "planUnits": 369,
           "cumPlanUnits": 33705
         },
@@ -10523,8 +10629,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5400.31,
           "caNetSales": 0.0,
-          "cumUnits": 59439,
-          "cumSales": 1383654.03,
+          "cumUnits": 59437,
+          "cumSales": 1383609.83,
           "planUnits": 265,
           "cumPlanUnits": 33970
         },
@@ -10536,8 +10642,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 4956.68,
           "caNetSales": 0.0,
-          "cumUnits": 59656,
-          "cumSales": 1388610.71,
+          "cumUnits": 59654,
+          "cumSales": 1388566.51,
           "planUnits": 227,
           "cumPlanUnits": 34197
         },
@@ -10549,8 +10655,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5686.46,
           "caNetSales": 0.0,
-          "cumUnits": 59902,
-          "cumSales": 1394297.17,
+          "cumUnits": 59900,
+          "cumSales": 1394252.97,
           "planUnits": 231,
           "cumPlanUnits": 34428
         },
@@ -10562,8 +10668,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3819.27,
           "caNetSales": 0.0,
-          "cumUnits": 60073,
-          "cumSales": 1398116.44,
+          "cumUnits": 60071,
+          "cumSales": 1398072.24,
           "planUnits": 208,
           "cumPlanUnits": 34636
         },
@@ -10575,8 +10681,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5283.38,
           "caNetSales": 0.0,
-          "cumUnits": 60300,
-          "cumSales": 1403399.82,
+          "cumUnits": 60298,
+          "cumSales": 1403355.62,
           "planUnits": 281,
           "cumPlanUnits": 34917
         },
@@ -10588,8 +10694,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 6269.37,
           "caNetSales": 0.0,
-          "cumUnits": 60565,
-          "cumSales": 1409669.19,
+          "cumUnits": 60563,
+          "cumSales": 1409624.99,
           "planUnits": 442,
           "cumPlanUnits": 35359
         },
@@ -10601,8 +10707,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5265.3,
           "caNetSales": 0.0,
-          "cumUnits": 60786,
-          "cumSales": 1414934.49,
+          "cumUnits": 60784,
+          "cumSales": 1414890.29,
           "planUnits": 425,
           "cumPlanUnits": 35784
         },
@@ -10614,8 +10720,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 8567.24,
           "caNetSales": 0.0,
-          "cumUnits": 61150,
-          "cumSales": 1423501.73,
+          "cumUnits": 61148,
+          "cumSales": 1423457.53,
           "planUnits": 239,
           "cumPlanUnits": 36023
         },
@@ -10627,8 +10733,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5069.7,
           "caNetSales": 0.0,
-          "cumUnits": 61368,
-          "cumSales": 1428571.43,
+          "cumUnits": 61366,
+          "cumSales": 1428527.23,
           "planUnits": 205,
           "cumPlanUnits": 36228
         },
@@ -10640,8 +10746,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 4994.01,
           "caNetSales": 0.0,
-          "cumUnits": 61588,
-          "cumSales": 1433565.44,
+          "cumUnits": 61586,
+          "cumSales": 1433521.24,
           "planUnits": 210,
           "cumPlanUnits": 36438
         },
@@ -10653,8 +10759,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 7169.65,
           "caNetSales": 0.0,
-          "cumUnits": 61896,
-          "cumSales": 1440735.09,
+          "cumUnits": 61894,
+          "cumSales": 1440690.89,
           "planUnits": 188,
           "cumPlanUnits": 36626
         },
@@ -10666,8 +10772,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5038.31,
           "caNetSales": 0.0,
-          "cumUnits": 62113,
-          "cumSales": 1445773.4,
+          "cumUnits": 62111,
+          "cumSales": 1445729.2,
           "planUnits": 253,
           "cumPlanUnits": 36879
         },
@@ -10679,8 +10785,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 10052.16,
           "caNetSales": 0.0,
-          "cumUnits": 62528,
-          "cumSales": 1455825.56,
+          "cumUnits": 62526,
+          "cumSales": 1455781.36,
           "planUnits": 305,
           "cumPlanUnits": 37184
         },
@@ -10692,8 +10798,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 13850.98,
           "caNetSales": 0.0,
-          "cumUnits": 63103,
-          "cumSales": 1469676.54,
+          "cumUnits": 63101,
+          "cumSales": 1469632.34,
           "planUnits": 294,
           "cumPlanUnits": 37478
         },
@@ -10705,8 +10811,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 11703.1,
           "caNetSales": 0.0,
-          "cumUnits": 63597,
-          "cumSales": 1481379.64,
+          "cumUnits": 63595,
+          "cumSales": 1481335.44,
           "planUnits": 218,
           "cumPlanUnits": 37696
         },
@@ -10718,8 +10824,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5511.58,
           "caNetSales": 0.0,
-          "cumUnits": 63834,
-          "cumSales": 1486891.22,
+          "cumUnits": 63832,
+          "cumSales": 1486847.02,
           "planUnits": 188,
           "cumPlanUnits": 37884
         },
@@ -10731,8 +10837,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3110.15,
           "caNetSales": 0.0,
-          "cumUnits": 63968,
-          "cumSales": 1490001.37,
+          "cumUnits": 63966,
+          "cumSales": 1489957.17,
           "planUnits": 193,
           "cumPlanUnits": 38077
         },
@@ -10744,8 +10850,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2614.08,
           "caNetSales": 0.0,
-          "cumUnits": 64079,
-          "cumSales": 1492615.45,
+          "cumUnits": 64077,
+          "cumSales": 1492571.25,
           "planUnits": 172,
           "cumPlanUnits": 38249
         },
@@ -10757,8 +10863,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2055.9,
           "caNetSales": 0.0,
-          "cumUnits": 64164,
-          "cumSales": 1494671.35,
+          "cumUnits": 64162,
+          "cumSales": 1494627.15,
           "planUnits": 230,
           "cumPlanUnits": 38479
         },
@@ -10770,8 +10876,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5257.1,
           "caNetSales": 0.0,
-          "cumUnits": 64386,
-          "cumSales": 1499928.45,
+          "cumUnits": 64384,
+          "cumSales": 1499884.25,
           "planUnits": 360,
           "cumPlanUnits": 38839
         },
@@ -10783,8 +10889,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5065.52,
           "caNetSales": 0.0,
-          "cumUnits": 64598,
-          "cumSales": 1504993.97,
+          "cumUnits": 64596,
+          "cumSales": 1504949.77,
           "planUnits": 346,
           "cumPlanUnits": 39185
         },
@@ -10796,8 +10902,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2944.27,
           "caNetSales": 0.0,
-          "cumUnits": 64723,
-          "cumSales": 1507938.24,
+          "cumUnits": 64721,
+          "cumSales": 1507894.04,
           "planUnits": 202,
           "cumPlanUnits": 39387
         },
@@ -10809,8 +10915,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2104.57,
           "caNetSales": 0.0,
-          "cumUnits": 64816,
-          "cumSales": 1510042.81,
+          "cumUnits": 64814,
+          "cumSales": 1509998.61,
           "planUnits": 175,
           "cumPlanUnits": 39562
         },
@@ -10822,8 +10928,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 1779.69,
           "caNetSales": 0.0,
-          "cumUnits": 64894,
-          "cumSales": 1511822.5,
+          "cumUnits": 64892,
+          "cumSales": 1511778.3,
           "planUnits": 179,
           "cumPlanUnits": 39741
         },
@@ -10835,8 +10941,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 1828.9,
           "caNetSales": 0.0,
-          "cumUnits": 64971,
-          "cumSales": 1513651.4,
+          "cumUnits": 64969,
+          "cumSales": 1513607.2,
           "planUnits": 160,
           "cumPlanUnits": 39901
         },
@@ -10848,8 +10954,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 1843.83,
           "caNetSales": 0.0,
-          "cumUnits": 65054,
-          "cumSales": 1515495.23,
+          "cumUnits": 65052,
+          "cumSales": 1515451.03,
           "planUnits": 213,
           "cumPlanUnits": 40114
         },
@@ -10861,8 +10967,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3615.84,
           "caNetSales": 0.0,
-          "cumUnits": 65203,
-          "cumSales": 1519111.07,
+          "cumUnits": 65201,
+          "cumSales": 1519066.87,
           "planUnits": 254,
           "cumPlanUnits": 40368
         },
@@ -10874,8 +10980,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2240.28,
           "caNetSales": 0.0,
-          "cumUnits": 65298,
-          "cumSales": 1521351.35,
+          "cumUnits": 65296,
+          "cumSales": 1521307.15,
           "planUnits": 245,
           "cumPlanUnits": 40613
         },
@@ -10887,8 +10993,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2591.81,
           "caNetSales": 0.0,
-          "cumUnits": 65407,
-          "cumSales": 1523943.16,
+          "cumUnits": 65405,
+          "cumSales": 1523898.96,
           "planUnits": 190,
           "cumPlanUnits": 40803
         },
@@ -10900,8 +11006,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2446.21,
           "caNetSales": 0.0,
-          "cumUnits": 65511,
-          "cumSales": 1526389.37,
+          "cumUnits": 65509,
+          "cumSales": 1526345.17,
           "planUnits": 164,
           "cumPlanUnits": 40967
         },
@@ -10913,8 +11019,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 4850.53,
           "caNetSales": 0.0,
-          "cumUnits": 65733,
-          "cumSales": 1531239.9,
+          "cumUnits": 65731,
+          "cumSales": 1531195.7,
           "planUnits": 170,
           "cumPlanUnits": 41137
         },
@@ -10926,8 +11032,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 4154.02,
           "caNetSales": 0.0,
-          "cumUnits": 65925,
-          "cumSales": 1535393.92,
+          "cumUnits": 65923,
+          "cumSales": 1535349.72,
           "planUnits": 150,
           "cumPlanUnits": 41287
         },
@@ -10939,8 +11045,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 6159.0,
           "caNetSales": 0.0,
-          "cumUnits": 66203,
-          "cumSales": 1541552.92,
+          "cumUnits": 66201,
+          "cumSales": 1541508.72,
           "planUnits": 258,
           "cumPlanUnits": 41545
         },
@@ -10952,8 +11058,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 5937.29,
           "caNetSales": 0.0,
-          "cumUnits": 66473,
-          "cumSales": 1547490.21,
+          "cumUnits": 66471,
+          "cumSales": 1547446.01,
           "planUnits": 308,
           "cumPlanUnits": 41853
         },
@@ -10965,8 +11071,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 8141.75,
           "caNetSales": 0.0,
-          "cumUnits": 66843,
-          "cumSales": 1555631.96,
+          "cumUnits": 66841,
+          "cumSales": 1555587.76,
           "planUnits": 296,
           "cumPlanUnits": 42149
         },
@@ -10978,8 +11084,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2188.9,
           "caNetSales": 0.0,
-          "cumUnits": 66937,
-          "cumSales": 1557820.86,
+          "cumUnits": 66935,
+          "cumSales": 1557776.66,
           "planUnits": 181,
           "cumPlanUnits": 42330
         },
@@ -10991,8 +11097,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2024.95,
           "caNetSales": 0.0,
-          "cumUnits": 67022,
-          "cumSales": 1559845.81,
+          "cumUnits": 67020,
+          "cumSales": 1559801.61,
           "planUnits": 156,
           "cumPlanUnits": 42486
         },
@@ -11004,8 +11110,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2447.9,
           "caNetSales": 0.0,
-          "cumUnits": 67129,
-          "cumSales": 1562293.71,
+          "cumUnits": 67127,
+          "cumSales": 1562249.51,
           "planUnits": 160,
           "cumPlanUnits": 42646
         },
@@ -11017,8 +11123,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2149.27,
           "caNetSales": 0.0,
-          "cumUnits": 67222,
-          "cumSales": 1564442.98,
+          "cumUnits": 67220,
+          "cumSales": 1564398.78,
           "planUnits": 142,
           "cumPlanUnits": 42788
         },
@@ -11030,8 +11136,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3074.69,
           "caNetSales": 0.0,
-          "cumUnits": 67356,
-          "cumSales": 1567517.67,
+          "cumUnits": 67354,
+          "cumSales": 1567473.47,
           "planUnits": 188,
           "cumPlanUnits": 42976
         },
@@ -11043,8 +11149,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2909.78,
           "caNetSales": 0.0,
-          "cumUnits": 67482,
-          "cumSales": 1570427.45,
+          "cumUnits": 67480,
+          "cumSales": 1570383.25,
           "planUnits": 222,
           "cumPlanUnits": 43198
         },
@@ -11056,8 +11162,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2215.39,
           "caNetSales": 0.0,
-          "cumUnits": 67575,
-          "cumSales": 1572642.84,
+          "cumUnits": 67573,
+          "cumSales": 1572598.64,
           "planUnits": 215,
           "cumPlanUnits": 43413
         },
@@ -11069,8 +11175,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 1838.91,
           "caNetSales": 0.0,
-          "cumUnits": 67656,
-          "cumSales": 1574481.75,
+          "cumUnits": 67654,
+          "cumSales": 1574437.55,
           "planUnits": 172,
           "cumPlanUnits": 43585
         },
@@ -11082,8 +11188,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 1980.31,
           "caNetSales": 0.0,
-          "cumUnits": 67743,
-          "cumSales": 1576462.06,
+          "cumUnits": 67741,
+          "cumSales": 1576417.86,
           "planUnits": 149,
           "cumPlanUnits": 43734
         },
@@ -11095,8 +11201,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2391.25,
           "caNetSales": 0.0,
-          "cumUnits": 67846,
-          "cumSales": 1578853.31,
+          "cumUnits": 67844,
+          "cumSales": 1578809.11,
           "planUnits": 154,
           "cumPlanUnits": 43888
         },
@@ -11108,8 +11214,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2442.43,
           "caNetSales": 0.0,
-          "cumUnits": 67948,
-          "cumSales": 1581295.74,
+          "cumUnits": 67946,
+          "cumSales": 1581251.54,
           "planUnits": 137,
           "cumPlanUnits": 44025
         },
@@ -11121,8 +11227,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2468.96,
           "caNetSales": 0.0,
-          "cumUnits": 68055,
-          "cumSales": 1583764.7,
+          "cumUnits": 68053,
+          "cumSales": 1583720.5,
           "planUnits": 179,
           "cumPlanUnits": 44204
         },
@@ -11134,8 +11240,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2687.62,
           "caNetSales": 0.0,
-          "cumUnits": 68170,
-          "cumSales": 1586452.32,
+          "cumUnits": 68168,
+          "cumSales": 1586408.12,
           "planUnits": 274,
           "cumPlanUnits": 44478
         },
@@ -11147,8 +11253,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2505.7,
           "caNetSales": 0.0,
-          "cumUnits": 68279,
-          "cumSales": 1588958.02,
+          "cumUnits": 68277,
+          "cumSales": 1588913.82,
           "planUnits": 264,
           "cumPlanUnits": 44742
         },
@@ -11160,8 +11266,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2117.24,
           "caNetSales": 0.0,
-          "cumUnits": 68370,
-          "cumSales": 1591075.26,
+          "cumUnits": 68368,
+          "cumSales": 1591031.06,
           "planUnits": 166,
           "cumPlanUnits": 44908
         },
@@ -11173,8 +11279,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3487.48,
           "caNetSales": 0.0,
-          "cumUnits": 68519,
-          "cumSales": 1594562.74,
+          "cumUnits": 68517,
+          "cumSales": 1594518.54,
           "planUnits": 144,
           "cumPlanUnits": 45052
         },
@@ -11186,8 +11292,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3147.11,
           "caNetSales": 0.0,
-          "cumUnits": 68654,
-          "cumSales": 1597709.85,
+          "cumUnits": 68652,
+          "cumSales": 1597665.65,
           "planUnits": 192,
           "cumPlanUnits": 45244
         },
@@ -11199,8 +11305,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2808.26,
           "caNetSales": 0.0,
-          "cumUnits": 68776,
-          "cumSales": 1600518.11,
+          "cumUnits": 68774,
+          "cumSales": 1600473.91,
           "planUnits": 132,
           "cumPlanUnits": 45376
         },
@@ -11212,8 +11318,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3743.12,
           "caNetSales": 0.0,
-          "cumUnits": 68935,
-          "cumSales": 1604261.23,
+          "cumUnits": 68933,
+          "cumSales": 1604217.03,
           "planUnits": 172,
           "cumPlanUnits": 45548
         },
@@ -11225,8 +11331,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3347.37,
           "caNetSales": 0.0,
-          "cumUnits": 69077,
-          "cumSales": 1607608.6,
+          "cumUnits": 69075,
+          "cumSales": 1607564.4,
           "planUnits": 201,
           "cumPlanUnits": 45749
         },
@@ -11238,8 +11344,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 12050.7,
           "caNetSales": 0.0,
-          "cumUnits": 69578,
-          "cumSales": 1619659.3,
+          "cumUnits": 69576,
+          "cumSales": 1619615.1,
           "planUnits": 195,
           "cumPlanUnits": 45944
         },
@@ -11251,8 +11357,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 14,
           "usNetSales": 10675.76,
           "caNetSales": 230.14,
-          "cumUnits": 70045,
-          "cumSales": 1630565.2,
+          "cumUnits": 70043,
+          "cumSales": 1630521.0,
           "planUnits": 161,
           "cumPlanUnits": 46105
         },
@@ -11264,21 +11370,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 31,
           "usNetSales": 9160.75,
           "caNetSales": 513.83,
-          "cumUnits": 70470,
-          "cumSales": 1640239.78,
+          "cumUnits": 70468,
+          "cumSales": 1640195.58,
           "planUnits": 140,
           "cumPlanUnits": 46245
         },
         {
           "date": "2026-07-29",
-          "units": 423,
-          "netSales": 9831.11,
-          "usUnits": 394,
+          "units": 422,
+          "netSales": 9807.99,
+          "usUnits": 393,
           "caUnits": 29,
-          "usNetSales": 9323.15,
+          "usNetSales": 9300.03,
           "caNetSales": 507.96,
-          "cumUnits": 70893,
-          "cumSales": 1650070.89,
+          "cumUnits": 70890,
+          "cumSales": 1650003.57,
           "planUnits": 144,
           "cumPlanUnits": 46389
         },
@@ -11290,8 +11396,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 34,
           "usNetSales": 10899.05,
           "caNetSales": 580.87,
-          "cumUnits": 71385,
-          "cumSales": 1661550.81,
+          "cumUnits": 71382,
+          "cumSales": 1661483.49,
           "planUnits": 128,
           "cumPlanUnits": 46517
         },
@@ -11303,8 +11409,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 26,
           "usNetSales": 18215.75,
           "caNetSales": 454.25,
-          "cumUnits": 72181,
-          "cumSales": 1680220.81,
+          "cumUnits": 72178,
+          "cumSales": 1680153.49,
           "planUnits": 165,
           "cumPlanUnits": 46682
         },
@@ -11316,8 +11422,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 34,
           "usNetSales": 13764.76,
           "caNetSales": 579.01,
-          "cumUnits": 72796,
-          "cumSales": 1694564.58,
+          "cumUnits": 72793,
+          "cumSales": 1694497.26,
           "planUnits": 252,
           "cumPlanUnits": 46934
         },
@@ -11329,8 +11435,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 34,
           "usNetSales": 15759.61,
           "caNetSales": 577.2,
-          "cumUnits": 73495,
-          "cumSales": 1710901.39,
+          "cumUnits": 73492,
+          "cumSales": 1710834.07,
           "planUnits": 243,
           "cumPlanUnits": 47177
         },
@@ -11342,8 +11448,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 17,
           "usNetSales": 5949.44,
           "caNetSales": 288.08,
-          "cumUnits": 73768,
-          "cumSales": 1717138.91,
+          "cumUnits": 73765,
+          "cumSales": 1717071.59,
           "planUnits": 157,
           "cumPlanUnits": 47334
         },
@@ -11355,8 +11461,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 6419.21,
           "caNetSales": 184.07,
-          "cumUnits": 74055,
-          "cumSales": 1723742.19,
+          "cumUnits": 74052,
+          "cumSales": 1723674.87,
           "planUnits": 136,
           "cumPlanUnits": 47470
         },
@@ -11368,73 +11474,73 @@ window.DASHBOARD_DATA = {
           "caUnits": 26,
           "usNetSales": 21428.87,
           "caNetSales": 442.64,
-          "cumUnits": 74977,
-          "cumSales": 1745613.7,
+          "cumUnits": 74974,
+          "cumSales": 1745546.38,
           "planUnits": 140,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-06",
-          "units": 878,
-          "netSales": 20301.76,
-          "usUnits": 826,
+          "units": 876,
+          "netSales": 20257.56,
+          "usUnits": 824,
           "caUnits": 52,
-          "usNetSales": 19426.2,
+          "usNetSales": 19382.0,
           "caNetSales": 875.56,
-          "cumUnits": 75855,
-          "cumSales": 1765915.46,
+          "cumUnits": 75850,
+          "cumSales": 1765803.94,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-07",
-          "units": 610,
-          "netSales": 13992.23,
-          "usUnits": 568,
+          "units": 609,
+          "netSales": 13971.43,
+          "usUnits": 567,
           "caUnits": 42,
-          "usNetSales": 13281.66,
+          "usNetSales": 13260.86,
           "caNetSales": 710.57,
-          "cumUnits": 76465,
-          "cumSales": 1779907.69,
+          "cumUnits": 76459,
+          "cumSales": 1779775.37,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-08",
-          "units": 1399,
-          "netSales": 30152.84,
-          "usUnits": 1311,
+          "units": 1398,
+          "netSales": 30119.74,
+          "usUnits": 1310,
           "caUnits": 88,
-          "usNetSales": 28743.42,
+          "usNetSales": 28710.32,
           "caNetSales": 1409.42,
-          "cumUnits": 77864,
-          "cumSales": 1810060.53,
+          "cumUnits": 77857,
+          "cumSales": 1809895.11,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-09",
-          "units": 1704,
-          "netSales": 36480.24,
-          "usUnits": 1600,
+          "units": 1702,
+          "netSales": 36441.04,
+          "usUnits": 1598,
           "caUnits": 104,
-          "usNetSales": 34671.63,
+          "usNetSales": 34632.43,
           "caNetSales": 1808.61,
-          "cumUnits": 79568,
-          "cumSales": 1846540.77,
+          "cumUnits": 79559,
+          "cumSales": 1846336.15,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-10",
-          "units": 548,
-          "netSales": 12308.45,
-          "usUnits": 496,
+          "units": 544,
+          "netSales": 12209.65,
+          "usUnits": 492,
           "caUnits": 52,
-          "usNetSales": 11439.34,
+          "usNetSales": 11340.54,
           "caNetSales": 869.11,
-          "cumUnits": 80116,
-          "cumSales": 1858849.22,
+          "cumUnits": 80103,
+          "cumSales": 1858545.8,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
@@ -11446,8 +11552,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 49,
           "usNetSales": 14121.26,
           "caNetSales": 838.04,
-          "cumUnits": 80765,
-          "cumSales": 1873808.52,
+          "cumUnits": 80752,
+          "cumSales": 1873505.1,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
@@ -11459,73 +11565,73 @@ window.DASHBOARD_DATA = {
           "caUnits": 55,
           "usNetSales": 13672.79,
           "caNetSales": 957.45,
-          "cumUnits": 81403,
-          "cumSales": 1888438.76,
+          "cumUnits": 81390,
+          "cumSales": 1888135.34,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-13",
-          "units": 687,
-          "netSales": 16007.54,
-          "usUnits": 635,
+          "units": 686,
+          "netSales": 15981.54,
+          "usUnits": 634,
           "caUnits": 52,
-          "usNetSales": 15123.56,
+          "usNetSales": 15097.56,
           "caNetSales": 883.98,
-          "cumUnits": 82090,
-          "cumSales": 1904446.3,
+          "cumUnits": 82076,
+          "cumSales": 1904116.88,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-14",
-          "units": 707,
-          "netSales": 16236.52,
-          "usUnits": 663,
+          "units": 705,
+          "netSales": 16199.36,
+          "usUnits": 661,
           "caUnits": 44,
-          "usNetSales": 15464.39,
+          "usNetSales": 15427.23,
           "caNetSales": 772.13,
-          "cumUnits": 82797,
-          "cumSales": 1920682.82,
+          "cumUnits": 82781,
+          "cumSales": 1920316.24,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-15",
-          "units": 720,
-          "netSales": 16904.62,
-          "usUnits": 685,
+          "units": 718,
+          "netSales": 16883.82,
+          "usUnits": 683,
           "caUnits": 35,
-          "usNetSales": 16299.76,
+          "usNetSales": 16278.96,
           "caNetSales": 604.86,
-          "cumUnits": 83517,
-          "cumSales": 1937587.44,
+          "cumUnits": 83499,
+          "cumSales": 1937200.06,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-16",
-          "units": 762,
-          "netSales": 17731.99,
-          "usUnits": 702,
+          "units": 760,
+          "netSales": 17686.49,
+          "usUnits": 700,
           "caUnits": 60,
-          "usNetSales": 16688.48,
+          "usNetSales": 16642.98,
           "caNetSales": 1043.51,
-          "cumUnits": 84279,
-          "cumSales": 1955319.43,
+          "cumUnits": 84259,
+          "cumSales": 1954886.55,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-17",
           "units": 666,
-          "netSales": 15494.6,
+          "netSales": 15494.92,
           "usUnits": 620,
           "caUnits": 46,
-          "usNetSales": 14667.53,
+          "usNetSales": 14667.85,
           "caNetSales": 827.07,
-          "cumUnits": 84945,
-          "cumSales": 1970814.03,
+          "cumUnits": 84925,
+          "cumSales": 1970381.47,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
@@ -11537,21 +11643,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 24,
           "usNetSales": 15916.21,
           "caNetSales": 424.16,
-          "cumUnits": 85645,
-          "cumSales": 1987154.4,
+          "cumUnits": 85625,
+          "cumSales": 1986721.84,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
         {
           "date": "2026-08-19",
           "units": 580,
-          "netSales": 13306.78,
+          "netSales": 13308.02,
           "usUnits": 531,
           "caUnits": 49,
-          "usNetSales": 12461.39,
+          "usNetSales": 12462.63,
           "caNetSales": 845.39,
-          "cumUnits": 86225,
-          "cumSales": 2000461.18,
+          "cumUnits": 86205,
+          "cumSales": 2000029.86,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
@@ -11563,8 +11669,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 41,
           "usNetSales": 15815.86,
           "caNetSales": 732.65,
-          "cumUnits": 86941,
-          "cumSales": 2017009.69,
+          "cumUnits": 86921,
+          "cumSales": 2016578.37,
           "planUnits": null,
           "cumPlanUnits": 47610
         },
@@ -11576,8 +11682,21 @@ window.DASHBOARD_DATA = {
           "caUnits": 30,
           "usNetSales": 13227.93,
           "caNetSales": 529.22,
-          "cumUnits": 87534,
-          "cumSales": 2030766.84,
+          "cumUnits": 87514,
+          "cumSales": 2030335.52,
+          "planUnits": null,
+          "cumPlanUnits": 47610
+        },
+        {
+          "date": "2026-08-22",
+          "units": 687,
+          "netSales": 16094.11,
+          "usUnits": 646,
+          "caUnits": 41,
+          "usNetSales": 15386.01,
+          "caNetSales": 708.1,
+          "cumUnits": 88201,
+          "cumSales": 2046429.63,
           "planUnits": null,
           "cumPlanUnits": 47610
         }
@@ -11587,27 +11706,27 @@ window.DASHBOARD_DATA = {
       "crossSellBySku": [],
       "categoryCustomers": {
         "category": "Mascara",
-        "total": 69593,
-        "existingCategory": 44000,
-        "newToCategory": 25593,
+        "total": 70117,
+        "existingCategory": 44265,
+        "newToCategory": 25852,
         "byVariant": [
-          {
-            "sku": "TVG6370",
-            "name": "Oceanne",
-            "newToCategory": 7755,
-            "existingCategory": 17203
-          },
           {
             "sku": "TVG6380",
             "name": "Iris",
-            "newToCategory": 13762,
-            "existingCategory": 20561
+            "newToCategory": 13925,
+            "existingCategory": 20720
           },
           {
             "sku": "TVG6390",
             "name": "Ivy",
-            "newToCategory": 8201,
-            "existingCategory": 14874
+            "newToCategory": 8294,
+            "existingCategory": 14960
+          },
+          {
+            "sku": "TVG6370",
+            "name": "Oceanne",
+            "newToCategory": 7808,
+            "existingCategory": 17272
           }
         ]
       }
