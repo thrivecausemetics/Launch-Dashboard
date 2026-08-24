@@ -1011,6 +1011,46 @@ def main():
     global LEARNINGS
     LEARNINGS = load_learnings()   # before build_launch(), which reads it
 
+    cal = load_launch_calendar()
+    tracked_by_gid = {l["asana_gid"]: l["id"] for l in cfg["launches"] if l.get("asana_gid")}
+
+    # Resolved here, before build_launch() below reads ASANA_LINKS and
+    # LEARNINGS. Doing this after the launches are built leaves every link
+    # empty and silently drops every Asana learning.
+    # Attach Asana learnings to launches. An explicit asana_gid in config wins.
+    # Failing that, a launch is matched to a calendar entry sharing its exact
+    # launch date, but only when that date maps to exactly one entry on each
+    # side — the calendar and this repo name the same launch differently, and
+    # an ambiguous date must not silently attach one launch's retro notes to
+    # another. How each link was made is recorded so the page can show it.
+    if cal:
+        by_gid = {e["asana_gid"]: e for e in cal["entries"]}
+        cal_dates = {}
+        for e in cal["entries"]:
+            cal_dates.setdefault(e["launch_date"], []).append(e)
+        cfg_dates = {}
+        for l in cfg["launches"]:
+            cfg_dates.setdefault(l["launch_date"], []).append(l)
+
+        for l in cfg["launches"]:
+            gid, how = l.get("asana_gid"), "config"
+            if not gid:
+                same = cal_dates.get(l["launch_date"], [])
+                if len(same) == 1 and len(cfg_dates.get(l["launch_date"], [])) == 1:
+                    gid, how = same[0]["asana_gid"], "launch date"
+            if not gid:
+                continue
+            entry = by_gid.get(gid)
+            found = (cal.get("learnings_by_gid") or {}).get(gid) or []
+            ASANA_LINKS[l["id"]] = {
+                "asanaUrl": entry.get("asana_url") if entry else None,
+                "asanaName": entry.get("name") if entry else None,
+                "linkedBy": how,
+            }
+            if found:
+                LEARNINGS.setdefault(l["id"], []).extend(found)
+                print(f"  {l['id']}: {len(found)} Asana learning(s) via {how}")
+
     today = dt.date.today()
     cutoff = os.environ.get("DATA_CUTOFF") or str(today - dt.timedelta(days=1))
     if cutoff >= str(today):
@@ -1079,42 +1119,6 @@ def main():
     # launches.json stays as the fallback so the dashboard still works if the
     # snapshot is missing. Tracked launches keep their config dates either way;
     # a live launch's date is never rewritten from Asana automatically.
-    cal = load_launch_calendar()
-    tracked_by_gid = {l["asana_gid"]: l["id"] for l in cfg["launches"] if l.get("asana_gid")}
-
-    # Attach Asana learnings to launches. An explicit asana_gid in config wins.
-    # Failing that, a launch is matched to a calendar entry sharing its exact
-    # launch date, but only when that date maps to exactly one entry on each
-    # side — the calendar and this repo name the same launch differently, and
-    # an ambiguous date must not silently attach one launch's retro notes to
-    # another. How each link was made is recorded so the page can show it.
-    if cal:
-        by_gid = {e["asana_gid"]: e for e in cal["entries"]}
-        cal_dates = {}
-        for e in cal["entries"]:
-            cal_dates.setdefault(e["launch_date"], []).append(e)
-        cfg_dates = {}
-        for l in cfg["launches"]:
-            cfg_dates.setdefault(l["launch_date"], []).append(l)
-
-        for l in cfg["launches"]:
-            gid, how = l.get("asana_gid"), "config"
-            if not gid:
-                same = cal_dates.get(l["launch_date"], [])
-                if len(same) == 1 and len(cfg_dates.get(l["launch_date"], [])) == 1:
-                    gid, how = same[0]["asana_gid"], "launch date"
-            if not gid:
-                continue
-            entry = by_gid.get(gid)
-            found = (cal.get("learnings_by_gid") or {}).get(gid) or []
-            ASANA_LINKS[l["id"]] = {
-                "asanaUrl": entry.get("asana_url") if entry else None,
-                "asanaName": entry.get("name") if entry else None,
-                "linkedBy": how,
-            }
-            if found:
-                LEARNINGS.setdefault(l["id"], []).extend(found)
-                print(f"  {l['id']}: {len(found)} Asana learning(s) via {how}")
     if cal:
         upcoming_out = [
             {"name": e["name"], "launchDate": e["launch_date"],
