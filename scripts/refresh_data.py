@@ -54,6 +54,7 @@ GA4_LAG_DAYS = 2  # GA4 sync lag: traffic data trails the sales cutoff
 OOS_WINDOW_DAYS = 7
 
 LEARNINGS = {}
+ASANA_LINKS = {}
 
 # Tables are always resolved in this database, regardless of the connection's
 # default database context (SNOWFLAKE_DATABASE).
@@ -899,6 +900,7 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
         "traffic": traffic,
         "landing": landing,
         "learnings": LEARNINGS.get(lc["id"], []),
+        "asanaLink": ASANA_LINKS.get(lc["id"]),
         "planCurve": plan_curve,
         # Launch-level goal and the real end of the decay curve, taken from the
         # forecast itself rather than launch_date + N.
@@ -1079,6 +1081,40 @@ def main():
     # a live launch's date is never rewritten from Asana automatically.
     cal = load_launch_calendar()
     tracked_by_gid = {l["asana_gid"]: l["id"] for l in cfg["launches"] if l.get("asana_gid")}
+
+    # Attach Asana learnings to launches. An explicit asana_gid in config wins.
+    # Failing that, a launch is matched to a calendar entry sharing its exact
+    # launch date, but only when that date maps to exactly one entry on each
+    # side — the calendar and this repo name the same launch differently, and
+    # an ambiguous date must not silently attach one launch's retro notes to
+    # another. How each link was made is recorded so the page can show it.
+    if cal:
+        by_gid = {e["asana_gid"]: e for e in cal["entries"]}
+        cal_dates = {}
+        for e in cal["entries"]:
+            cal_dates.setdefault(e["launch_date"], []).append(e)
+        cfg_dates = {}
+        for l in cfg["launches"]:
+            cfg_dates.setdefault(l["launch_date"], []).append(l)
+
+        for l in cfg["launches"]:
+            gid, how = l.get("asana_gid"), "config"
+            if not gid:
+                same = cal_dates.get(l["launch_date"], [])
+                if len(same) == 1 and len(cfg_dates.get(l["launch_date"], [])) == 1:
+                    gid, how = same[0]["asana_gid"], "launch date"
+            if not gid:
+                continue
+            entry = by_gid.get(gid)
+            found = (cal.get("learnings_by_gid") or {}).get(gid) or []
+            ASANA_LINKS[l["id"]] = {
+                "asanaUrl": entry.get("asana_url") if entry else None,
+                "asanaName": entry.get("name") if entry else None,
+                "linkedBy": how,
+            }
+            if found:
+                LEARNINGS.setdefault(l["id"], []).extend(found)
+                print(f"  {l['id']}: {len(found)} Asana learning(s) via {how}")
     if cal:
         upcoming_out = [
             {"name": e["name"], "launchDate": e["launch_date"],

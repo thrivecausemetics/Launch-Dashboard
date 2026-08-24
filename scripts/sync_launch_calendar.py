@@ -52,6 +52,14 @@ LAUNCH_SECTIONS = {
     "1216777622961360": "Product Spotlights (Relaunches, Reanimations, Restocks)",
 }
 
+# Learnings are opt-in via a marker, never "every comment on the task". A GTM
+# task carries a lot of routine chatter, and publishing all of it to a
+# dashboard would leak discussion nobody chose to publish.
+#   LEARNING [merchandising]: Shade finder drove most of the PDP traffic
+#   <optional detail on the following lines>
+LEARNING_RE = re.compile(
+    r"^\s*LEARNING\s*(?:\[([^\]]{1,40})\])?\s*[:\-–]\s*(.+)$", re.I)
+
 FIELD_LIVE_DATE = "Live Date"
 FIELD_INTERNAL = "Internal Due Date"
 
@@ -127,6 +135,56 @@ def fetch_calendar(token):
     return out
 
 
+def parse_learning(text):
+    """A comment -> a learning, or None if it is not marked as one."""
+    lines = (text or "").strip().splitlines()
+    if not lines:
+        return None
+    m = LEARNING_RE.match(lines[0])
+    if not m:
+        return None
+    category = (m.group(1) or "other").strip().lower()
+    detail = "\n".join(lines[1:]).strip()
+    return {"category": category, "title": m.group(2).strip(), "detail": detail or None}
+
+
+def fetch_learnings(token, entries):
+    """Marked comments on each launch's GTM task, keyed by task gid.
+
+    One request per task. The calendar is ~10 tasks, so this stays well inside
+    Asana's rate limits; if it grows, batch by project instead.
+    """
+    out = {}
+    for e in entries:
+        gid = e["asana_gid"]
+        try:
+            stories = api_get(f"/tasks/{gid}/stories", token, {
+                "opt_fields": "text,created_at,created_by.name,resource_subtype",
+                "limit": 100,
+            })
+        except RuntimeError as err:
+            print(f"NOTE: could not read comments on {e['name']!r} ({err})")
+            continue
+        found = []
+        for st in stories:
+            if st.get("resource_subtype") != "comment_added":
+                continue
+            parsed = parse_learning(st.get("text"))
+            if not parsed:
+                continue
+            parsed.update({
+                "date": (st.get("created_at") or "")[:10],
+                "author": ((st.get("created_by") or {}).get("name") or "Unattributed"),
+                "source": "asana",
+                "asanaUrl": e["asana_url"],
+            })
+            found.append(parsed)
+        if found:
+            out[gid] = found
+            print(f"  {len(found)} learning(s) on {e['name']!r}")
+    return out
+
+
 def compare_with_config(entries):
     """Report where the calendar and config/launches.json disagree.
 
@@ -199,6 +257,7 @@ def main():
               "existing snapshot.", file=sys.stderr)
         return 1
 
+    learnings = fetch_learnings(token, entries)
     mismatches, unmatched, missing = compare_with_config(entries)
     payload = {
         "_readme": [
@@ -211,6 +270,7 @@ def main():
         "asana_project_gid": PROJECT_GID,
         "asana_project_url": f"https://app.asana.com/0/{PROJECT_GID}/list",
         "entries": entries,
+        "learnings_by_gid": learnings,
         "mismatches": mismatches,
         "not_in_config": [
             {"name": e["name"], "launch_date": e["launch_date"],

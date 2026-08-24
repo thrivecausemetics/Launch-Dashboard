@@ -116,6 +116,7 @@
     .lrn-detail { font-size:13px; line-height:1.6; margin-top:6px; }
     .lrn-metric { display:inline-block; margin-top:8px; font-size:12px; font-weight:600;
                   background:var(--bg); padding:3px 9px; border-radius:5px; }
+    .lrn-src { font-weight:600; color:var(--tc-teal-dark); }
     .lrn-tag { display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase;
                letter-spacing:.05em; padding:2px 7px; border-radius:4px; margin-right:8px;
                background:var(--tc-teal-light); color:var(--tc-teal-dark); }
@@ -1619,16 +1620,34 @@ function renderCategory(d) {
 
 /* ── DATA GUIDE TAB (dynamic bits) ── */
 /* Launch Learnings — retro notes kept with the launch's numbers.
-   Sourced from config/learnings.json via the refresh. There is no in-app form
-   because this container is a static file server with no write path or
-   identity; an editable version belongs in the internal portal, which already
-   has a database, SSO and audit logging. The empty state says so plainly
-   rather than implying the feature is broken. */
+
+   Written in Asana, on the launch's GTM task, which that task's own
+   description calls "the single source of truth for this campaign launch".
+   That means people write them where the retro already happens and nothing
+   new has to be maintained, and the dashboard stays read-only — it is a
+   static file server with no write path or identity of its own.
+
+   Only comments marked LEARNING: are pulled. Publishing every comment on a
+   GTM task would leak routine discussion nobody chose to publish. */
 function renderLearnings(d) {
   const panel = document.getElementById('panel-learnings');
   if (!panel) return;
   const items = (d.learnings || []).slice()
     .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
+  const link = d.asanaLink || {};
+
+  const howToAdd = link.asanaUrl
+    ? `<p class="data-note">To add one, comment on this launch's GTM task in Asana starting with
+         <code>LEARNING:</code> — optionally with a category, e.g.
+         <code>LEARNING [merchandising]: Shade finder drove most of the PDP traffic</code>.
+         Anything after the first line becomes the detail. It appears here on the next refresh.
+         <a href="${link.asanaUrl}" target="_blank" rel="noopener">Open ${link.asanaName || 'the GTM task'} &rarr;</a>
+         ${link.linkedBy === 'launch date'
+            ? '<br><em>This launch is matched to that task by launch date. If that is the wrong task, set '
+              + '<code>asana_gid</code> for it in config/launches.json.</em>' : ''}</p>`
+    : `<p class="data-note">This launch is not linked to a task on the marketing calendar yet, so
+         learnings cannot be pulled from Asana for it. Add an <code>asana_gid</code> to its entry in
+         <code>config/launches.json</code> to connect it.</p>`;
 
   panel.innerHTML = `
     <div class="section-title">Launch Learnings &middot; ${d.name}</div>
@@ -1636,20 +1655,14 @@ function renderLearnings(d) {
       <div class="lrn-item">
         <div class="lrn-top">
           <div><span class="lrn-tag">${l.category || 'other'}</span><span class="lrn-title">${l.title || ''}</span></div>
-          <span class="lrn-meta">${l.author || 'Unattributed'}${l.date ? ' &middot; ' + fmt.date(l.date) : ''}</span>
+          <span class="lrn-meta">${l.author || 'Unattributed'}${l.date ? ' &middot; ' + fmt.date(l.date) : ''}
+            ${l.source === 'asana' ? '&middot; <span class="lrn-src">Asana</span>' : ''}</span>
         </div>
         ${l.detail ? `<p class="lrn-detail">${l.detail}</p>` : ''}
         ${l.metric ? `<span class="lrn-metric">${l.metric}</span>` : ''}
       </div>`).join('')
     : `<p class="data-note">No learnings recorded for this launch yet.</p>`}
-    <p class="data-note">
-      ${items.length ? `${items.length} learning${items.length === 1 ? '' : 's'} recorded. ` : ''}
-      Learnings are added to <code>config/learnings.json</code> and appear on the next refresh,
-      which keeps them versioned in git and attached to this launch permanently.
-      There is no in-app editor yet: this dashboard is a static file server with no database or
-      sign-in of its own, so there is nowhere to store a submission or anyone to attribute it to.
-      An editable version belongs in the internal portal, which already has both.
-    </p>`;
+    ${howToAdd}`;
 }
 
 function renderGuide(d) {
