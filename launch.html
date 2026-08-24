@@ -116,6 +116,17 @@
     .lrn-detail { font-size:13px; line-height:1.6; margin-top:6px; }
     .lrn-metric { display:inline-block; margin-top:8px; font-size:12px; font-weight:600;
                   background:var(--bg); padding:3px 9px; border-radius:5px; }
+    .lrn-how { background:var(--card); border:1px solid var(--border); border-radius:10px;
+                padding:18px 22px; margin-top:18px; }
+    .lrn-how h4 { font-size:13px; font-weight:700; margin-bottom:10px; }
+    .lrn-how ol { margin:0 0 4px 18px; display:flex; flex-direction:column; gap:7px; }
+    .lrn-how li { font-size:12.5px; line-height:1.6; }
+    .lrn-how code { background:var(--bg); padding:1px 5px; border-radius:4px; font-size:11.5px; }
+    .lrn-how-label { font-size:11px; color:var(--muted); margin-top:14px; margin-bottom:6px; }
+    .lrn-example { background:var(--bg); border-left:3px solid var(--tc-teal); border-radius:6px;
+                   padding:11px 14px; font-size:12px; line-height:1.55; white-space:pre-wrap;
+                   font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+    .lrn-how-note { font-size:11px; color:var(--muted); margin-top:12px; font-style:italic; }
     .lrn-src { font-weight:600; color:var(--tc-teal-dark); }
     .lrn-tag { display:inline-block; font-size:10px; font-weight:700; text-transform:uppercase;
                letter-spacing:.05em; padding:2px 7px; border-radius:4px; margin-right:8px;
@@ -1636,18 +1647,44 @@ function renderLearnings(d) {
     .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
   const link = d.asanaLink || {};
 
-  const howToAdd = link.asanaUrl
-    ? `<p class="data-note">To add one, comment on this launch's GTM task in Asana starting with
-         <code>LEARNING:</code> — optionally with a category, e.g.
-         <code>LEARNING [merchandising]: Shade finder drove most of the PDP traffic</code>.
-         Anything after the first line becomes the detail. It appears here on the next refresh.
-         <a href="${link.asanaUrl}" target="_blank" rel="noopener">Open ${link.asanaName || 'the GTM task'} &rarr;</a>
-         ${link.linkedBy === 'launch date'
-            ? '<br><em>This launch is matched to that task by launch date. If that is the wrong task, set '
-              + '<code>asana_gid</code> for it in config/launches.json.</em>' : ''}</p>`
-    : `<p class="data-note">This launch is not linked to a task on the marketing calendar yet, so
-         learnings cannot be pulled from Asana for it. Add an <code>asana_gid</code> to its entry in
-         <code>config/launches.json</code> to connect it.</p>`;
+  /* Written for the people who run retros, not for whoever maintains this
+     repo. The previous copy told an unlinked launch to "add an asana_gid to
+     config/launches.json", which is meaningless to a marketer and gives them
+     nothing they can act on. */
+  const CATEGORIES = ['merchandising', 'creative', 'pricing', 'inventory',
+                      'traffic', 'forecast', 'operations', 'other'];
+  const EXAMPLE = `LEARNING [inventory]: Warm Neutrals sold out three weeks ahead of plan
+Traffic-led stock planning missed that Cool Neutrals converted about 2x better.`;
+
+  const step1 = link.asanaUrl
+    ? `Open <a href="${link.asanaUrl}" target="_blank" rel="noopener"><strong>${link.asanaName || 'this launch\'s GTM task'}</strong></a>
+       — the launch's GTM task in Asana.`
+    : `<strong>This launch isn't connected to a GTM task yet</strong>, so there's nowhere to write its
+       learnings. Ask the data team to link it (they'll know: it needs an <code>asana_gid</code> in
+       <code>config/launches.json</code>). The steps below are how it works once it's connected.`;
+
+  const howToAdd = `
+    <div class="lrn-how">
+      <h4>How to add a learning</h4>
+      <ol>
+        <li>${step1}</li>
+        <li>Add a <strong>comment</strong> on that task — the same as any normal Asana comment.</li>
+        <li>Start the first line with <code>LEARNING:</code>. Only comments starting that way are
+            picked up, so the rest of the task's discussion stays private to Asana.</li>
+        <li>Put the headline on that first line. Anything on the lines below becomes the
+            supporting detail.</li>
+        <li>Optionally add a category in square brackets before the colon, e.g.
+            <code>LEARNING [pricing]:</code>. Leave it off and it files under "other".</li>
+        <li>Post it. It appears on this tab after the next daily refresh — about
+            <strong>6:05am PT</strong> the following morning.</li>
+      </ol>
+      <p class="lrn-how-label">Example — copy this and edit it:</p>
+      <pre class="lrn-example">${EXAMPLE}</pre>
+      <p class="lrn-how-label">Categories: ${CATEGORIES.map(c => `<code>${c}</code>`).join(' · ')}</p>
+      ${link.linkedBy === 'launch date'
+        ? `<p class="lrn-how-note">This launch is matched to that Asana task by launch date rather than an
+             explicit link. If it's the wrong task, tell the data team and they'll pin it.</p>` : ''}
+    </div>`;
 
   panel.innerHTML = `
     <div class="section-title">Launch Learnings &middot; ${d.name}</div>
