@@ -184,7 +184,15 @@ def main():
               "The dashboard will keep using the committed snapshot.")
         return 0
 
-    entries = fetch_calendar(token)
+    # A bad, expired or de-permissioned token must not take the daily data
+    # refresh down with it. A stale calendar is a far smaller problem than no
+    # Snowflake refresh at all, so this fails soft and keeps the snapshot.
+    try:
+        entries = fetch_calendar(token)
+    except Exception as e:
+        print(f"::warning::Asana calendar sync failed ({e}). Keeping the committed "
+              f"snapshot; launch dates may be stale until this is fixed.")
+        return 0
     if not entries:
         # Never blank out a good snapshot because a query came back empty.
         print("ERROR: Asana returned no launch tasks; refusing to overwrite the "

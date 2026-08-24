@@ -88,6 +88,9 @@ jobs:
       # place, so a missing secret degrades instead of failing the refresh.
       - name: Sync launch calendar from Asana
         if: steps.creds.outputs.configured == 'true'
+        # Belt and braces with the script's own soft failure: the calendar is
+        # never worth failing the data refresh over.
+        continue-on-error: true
         env:
           ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
         run: python scripts/sync_launch_calendar.py
