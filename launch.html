@@ -1704,13 +1704,18 @@ function renderUpcoming() {
 }
 
 /* ── TABS ── */
-const PANELS = ['overview','traffic','landing','pdp','crosssells','category','upcoming','guide'];
+// Derived from the tabs themselves rather than hand-listed. A hardcoded list
+// silently breaks any tab added later: the tab highlights on click but its
+// panel is never unhidden, so the content renders into a div that stays
+// display:none. That is exactly how the Launch Learnings tab shipped blank.
+const PANELS = [...document.querySelectorAll('.tab')].map(t => t.dataset.tab).filter(Boolean);
 document.querySelectorAll('.tab').forEach(t => {
   t.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
     t.classList.add('active');
     PANELS.forEach(id => {
-      document.getElementById('panel-' + id).style.display = (t.dataset.tab === id) ? '' : 'none';
+      const panel = document.getElementById('panel-' + id);
+      if (panel) panel.style.display = (t.dataset.tab === id) ? '' : 'none';
     });
   });
 });
@@ -1753,16 +1758,32 @@ function init() {
     renderTraffic(d);
     renderLanding(d);
 
-    if (d.state === 'live') {
+    // Archived launches keep sales, variants and the daily trend, so the
+    // Overview renders for them exactly as it does for a live launch — the
+    // Historical section links straight here, and a blank page would make
+    // those cards useless. Only the per-tab detail the refresh no longer
+    // collects is unavailable, and those tabs say so.
+    if (d.state === 'live' || d.state === 'archived') {
       LOADED = d;
       FILTER.region = 'ALL';
       FILTER.skus = new Set(d.byVariant.map(x => x.sku));
       buildFilterBar(d);
       renderOverview(d);
       renderSkuTable(d);
-      renderPDP(d);
-      renderCrossSells(d);
-    } else {
+      if (d.state === 'live') {
+        renderPDP(d);
+        renderCrossSells(d);
+      } else {
+        // Not queried for archived launches; say which, rather than leaving
+        // two tabs blank.
+        for (const [id, label] of [['pdp', 'PDP Health'], ['crosssells', 'Cross-Sells & Pairings']]) {
+          document.getElementById('panel-' + id).innerHTML =
+            `<div class="section-title">${label} · ${d.name}</div>`
+            + `<p class="data-note">${gaEmptyNote(d, '')}</p>`;
+        }
+      }
+    }
+    if (d.state !== 'live') {
       const b = document.getElementById('error-banner');
       b.style.display = '';
       if (d.state === 'pending') {
@@ -1770,7 +1791,9 @@ function init() {
         b.textContent = d.name + ' launched ' + fmt.date(d.launchDate) + ' — sales data will appear here after the next automated data refresh' +
           (d.skusPending ? ' (launch SKUs still need to be added to config/launches.json)' : '') + '.';
       } else if (d.state === 'archived') {
-        b.textContent = d.name + ' is archived — launches are removed from the dashboard ' + RETENTION_DAYS + ' days after their launch date (launched ' + fmt.date(d.launchDate) + ').';
+        b.textContent = d.name + ' is archived — it passed its ' + RETENTION_DAYS + '-day decay curve on '
+          + fmt.date(new Date(new Date(d.launchDate + 'T00:00:00').getTime() + RETENTION_DAYS * 86400000).toISOString().slice(0, 10))
+          + '. Sales, variants and the daily trend are still shown; the per-tab GA4, PDP and cross-sell detail is no longer refreshed.';
       } else {
         b.textContent = d.name + ' has not launched yet (launch date ' + fmt.date(d.launchDate) + ').';
       }
