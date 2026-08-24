@@ -225,66 +225,66 @@ window.DASHBOARD_DATA = {
           {
             "month": "Apr 2026",
             "chs": {
-              "Paid Search": 14260,
-              "Paid Shopping": 4435,
-              "Mobile Push Notifications": 1,
-              "Display": 204,
-              "SMS": 10436,
               "Direct": 14567,
-              "Organic Video": 18,
-              "Organic Search": 3519,
-              "Paid Video": 32,
-              "Cross-network": 5627,
-              "Organic Social": 2747,
-              "Unassigned": 8864,
-              "Email": 15099,
+              "Mobile Push Notifications": 1,
               "Paid Social": 51793,
+              "Paid Search": 14260,
+              "Cross-network": 5627,
               "Referral": 719,
+              "SMS": 10436,
+              "Email": 15099,
+              "Paid Video": 32,
+              "Organic Search": 3519,
+              "Paid Other": 15421,
+              "Display": 204,
+              "Unassigned": 8864,
+              "Organic Social": 2747,
+              "Organic Video": 18,
               "Organic Shopping": 1085,
-              "Paid Other": 15421
+              "Paid Shopping": 4435
             }
           },
           {
             "month": "May 2026",
             "chs": {
-              "Organic Search": 102908,
-              "Paid Social": 2188680,
-              "Paid Video": 3078,
-              "Paid Shopping": 124997,
-              "Direct": 1836431,
-              "Display": 4120,
               "Organic Shopping": 52647,
-              "Organic Video": 355,
-              "Paid Other": 424237,
-              "Referral": 19213,
-              "Paid Search": 477762,
               "SMS": 392780,
-              "Unassigned": 387728,
+              "Display": 4120,
+              "Paid Search": 477762,
+              "Organic Search": 102908,
               "Organic Social": 132582,
-              "Cross-network": 193649,
+              "Paid Other": 424237,
+              "Direct": 1836431,
+              "Organic Video": 355,
+              "Paid Video": 3078,
+              "Paid Social": 2188680,
               "Email": 530117,
+              "Referral": 19213,
+              "Cross-network": 193649,
+              "Unassigned": 387728,
+              "Paid Shopping": 124997,
               "Affiliates": 24
             }
           },
           {
             "month": "Jun 2026",
             "chs": {
+              "Email": 453056,
+              "SMS": 302086,
+              "Paid Social": 1454669,
+              "Direct": 466180,
+              "Unassigned": 267603,
+              "Organic Shopping": 44780,
+              "Referral": 14613,
+              "Paid Other": 321863,
               "Paid Search": 391238,
+              "Organic Video": 133,
+              "Display": 4339,
+              "Organic Social": 130170,
+              "Cross-network": 169820,
               "Paid Video": 3288,
               "Paid Shopping": 112677,
-              "Organic Social": 130170,
-              "Unassigned": 267603,
-              "Email": 453056,
-              "Display": 4339,
-              "Paid Other": 321863,
-              "SMS": 302086,
               "Organic Search": 82287,
-              "Paid Social": 1454669,
-              "Referral": 14613,
-              "Cross-network": 169820,
-              "Direct": 466180,
-              "Organic Video": 133,
-              "Organic Shopping": 44780,
               "Mobile Push Notifications": 4,
               "AI Assistant": 1225,
               "Affiliates": 3
@@ -293,46 +293,46 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
+              "Organic Video": 297,
+              "Organic Social": 107105,
+              "Paid Search": 392929,
+              "Organic Search": 89549,
               "Direct": 652359,
+              "SMS": 237045,
+              "Unassigned": 294263,
+              "Paid Other": 392354,
               "Paid Shopping": 133682,
               "Organic Shopping": 31592,
-              "Referral": 19681,
-              "AI Assistant": 1111,
               "Email": 471247,
-              "Display": 10350,
-              "Cross-network": 191011,
-              "Paid Other": 392354,
-              "Unassigned": 294263,
-              "Paid Video": 2219,
-              "Paid Search": 392929,
-              "Organic Social": 107105,
               "Paid Social": 1835866,
-              "SMS": 237045,
-              "Organic Video": 297,
-              "Organic Search": 89549,
+              "AI Assistant": 1111,
+              "Referral": 19681,
+              "Paid Video": 2219,
+              "Cross-network": 191011,
+              "Display": 10350,
               "Affiliates": 6
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Unassigned": 245869,
-              "Direct": 437328,
-              "Organic Video": 84,
-              "Display": 10934,
-              "Paid Shopping": 84212,
-              "Email": 377542,
-              "Organic Search": 61618,
-              "Cross-network": 121833,
-              "Paid Other": 360664,
-              "Paid Search": 252890,
-              "Paid Video": 1441,
-              "AI Assistant": 1216,
-              "SMS": 197587,
               "Organic Social": 67247,
-              "Paid Social": 1077889,
+              "Email": 377542,
               "Organic Shopping": 20577,
+              "Paid Video": 1441,
+              "Cross-network": 121833,
+              "Display": 10934,
+              "SMS": 197587,
+              "Direct": 437328,
+              "Paid Other": 360664,
+              "Organic Video": 84,
+              "Paid Shopping": 84212,
+              "Paid Search": 252890,
+              "AI Assistant": 1216,
               "Referral": 11998,
+              "Paid Social": 1077889,
+              "Unassigned": 245869,
+              "Organic Search": 61618,
               "Affiliates": 8
             }
           }
@@ -2818,12 +2818,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
+          "sku": "TVG534",
           "pairs": 37
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "sku": "TVG358",
           "pairs": 37
         },
         {
@@ -2865,14 +2865,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 14
         },
         {
           "primarySku": "TVG5880",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG534",
           "pairs": 14
         },
         {
@@ -2943,15 +2943,21 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5890",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
+          "pairs": 6
+        },
+        {
+          "primarySku": "TVG5890",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG299",
           "pairs": 6
         },
         {
-          "primarySku": "TVG5890",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
-          "pairs": 6
+          "primarySku": "TVG5900",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
+          "pairs": 7
         },
         {
           "primarySku": "TVG5900",
@@ -2962,19 +2968,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5900",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG532",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG5900",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
           "pairs": 6
         },
         {
@@ -2986,8 +2980,8 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5900",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
-          "pairs": 5
+          "sku": "TVG355",
+          "pairs": 6
         },
         {
           "primarySku": "TVG5900",
@@ -3003,14 +2997,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5900",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG564",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG351",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG5900",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG461",
           "pairs": 4
         },
         {
           "primarySku": "TVG5900",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
+          "sku": "TVG356",
           "pairs": 4
         },
         {
@@ -3021,20 +3021,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
           "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
           "sku": "TVG578",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
           "pairs": 2
         },
         {
@@ -3046,7 +3034,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5910",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG364",
+          "sku": "TVG366",
           "pairs": 2
         },
         {
@@ -3057,20 +3045,32 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5910",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG364",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5910",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG350",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5910",
           "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
           "sku": "TVG565",
           "pairs": 2
         },
         {
           "primarySku": "TVG5910",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG366",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
           "pairs": 2
         },
         {
           "primarySku": "TVG5910",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6620",
           "pairs": 2
         },
         {
@@ -3111,6 +3111,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5920",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG5920",
           "product": "Defying Gravity\u2122 Eye Lifting Cream",
           "sku": "TBB002",
           "pairs": 5
@@ -3118,19 +3124,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5920",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG5920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG514",
+          "sku": "TVG510",
           "pairs": 4
         },
         {
           "primarySku": "TVG5920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG510",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG5870",
           "pairs": 4
         },
         {
@@ -3148,12 +3148,6 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5930",
           "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG580",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
           "sku": "TVG578",
           "pairs": 4
         },
@@ -3161,6 +3155,12 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG5930",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG533",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG5930",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG580",
           "pairs": 4
         },
         {
@@ -3177,20 +3177,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5930",
+          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
+          "sku": "TVG463",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5930",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5930",
           "product": "Triple Threat\u2122 Highlighter Stick",
           "sku": "TVG529",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5930",
-          "product": "Dream Chaser\u2122 Reviving Powder Blush",
-          "sku": "TVG302",
           "pairs": 2
         },
         {
@@ -3207,12 +3207,6 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5940",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG511",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG5940",
           "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
           "sku": "TVG579",
           "pairs": 4
@@ -3221,6 +3215,12 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG5940",
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
           "sku": "TVG478",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG5940",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG511",
           "pairs": 4
         },
         {
@@ -3238,13 +3238,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5940",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
+          "sku": "TVG461",
           "pairs": 3
         },
         {
           "primarySku": "TVG5940",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG461",
+          "sku": "TVG349",
           "pairs": 3
         },
         {
@@ -3279,14 +3279,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5950",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG565",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG581",
           "pairs": 16
         },
         {
           "primarySku": "TVG5950",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG581",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG565",
           "pairs": 16
         },
         {
@@ -3304,13 +3304,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5950",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "sku": "TVG357",
           "pairs": 9
         },
         {
           "primarySku": "TVG5950",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
+          "sku": "TVG358",
           "pairs": 9
         },
         {
@@ -3340,7 +3340,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5960",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
+          "sku": "TVG358",
           "pairs": 5
         },
         {
@@ -3352,7 +3352,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5960",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
+          "sku": "TVG533",
           "pairs": 5
         },
         {
@@ -3394,7 +3394,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5970",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
+          "sku": "TVG357",
           "pairs": 3
         },
         {
@@ -3406,20 +3406,8 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG5970",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
+          "sku": "TVG358",
           "pairs": 3
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6610",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5970",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG580",
-          "pairs": 2
         },
         {
           "primarySku": "TVG5970",
@@ -3429,8 +3417,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5970",
-          "product": "Pout Hero\u2122\ufe0f Exfoliating Lip Scrub",
-          "sku": "TBB010",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5970",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG479",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG5970",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6610",
           "pairs": 2
         }
       ],
@@ -3441,28 +3441,10 @@ window.DASHBOARD_DATA = {
         "newToCategory": 27211,
         "byVariant": [
           {
-            "sku": "TVG5890",
-            "name": "Michelle",
-            "newToCategory": 4116,
-            "existingCategory": 4311
-          },
-          {
             "sku": "TVG5970",
             "name": "Kackie",
             "newToCategory": 700,
             "existingCategory": 787
-          },
-          {
-            "sku": "TVG5900",
-            "name": "Rosa",
-            "newToCategory": 3239,
-            "existingCategory": 2453
-          },
-          {
-            "sku": "TVG5920",
-            "name": "Kaisa",
-            "newToCategory": 3702,
-            "existingCategory": 3395
           },
           {
             "sku": "TVG5910",
@@ -3471,22 +3453,10 @@ window.DASHBOARD_DATA = {
             "existingCategory": 1094
           },
           {
-            "sku": "TVG5930",
-            "name": "Chanice",
-            "newToCategory": 933,
-            "existingCategory": 1182
-          },
-          {
-            "sku": "TVG5940",
-            "name": "Kathy",
-            "newToCategory": 1093,
-            "existingCategory": 1267
-          },
-          {
-            "sku": "TVG5950",
-            "name": "Ragan",
-            "newToCategory": 9049,
-            "existingCategory": 9144
+            "sku": "TVG5890",
+            "name": "Michelle",
+            "newToCategory": 4116,
+            "existingCategory": 4311
           },
           {
             "sku": "TVG5880",
@@ -3495,10 +3465,40 @@ window.DASHBOARD_DATA = {
             "existingCategory": 5797
           },
           {
+            "sku": "TVG5900",
+            "name": "Rosa",
+            "newToCategory": 3239,
+            "existingCategory": 2453
+          },
+          {
             "sku": "TVG5960",
             "name": "Joan",
             "newToCategory": 4689,
             "existingCategory": 4496
+          },
+          {
+            "sku": "TVG5920",
+            "name": "Kaisa",
+            "newToCategory": 3702,
+            "existingCategory": 3395
+          },
+          {
+            "sku": "TVG5930",
+            "name": "Chanice",
+            "newToCategory": 933,
+            "existingCategory": 1182
+          },
+          {
+            "sku": "TVG5950",
+            "name": "Ragan",
+            "newToCategory": 9049,
+            "existingCategory": 9144
+          },
+          {
+            "sku": "TVG5940",
+            "name": "Kathy",
+            "newToCategory": 1093,
+            "existingCategory": 1267
           }
         ]
       }
@@ -3706,23 +3706,23 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jun 2026",
             "chs": {
-              "Paid Search": 299936,
-              "Paid Video": 2326,
               "SMS": 237059,
-              "Organic Search": 63229,
-              "Organic Social": 88198,
-              "Paid Shopping": 84486,
               "Unassigned": 204456,
-              "Cross-network": 136649,
-              "Referral": 10953,
-              "Paid Social": 1145454,
-              "Organic Video": 95,
-              "Display": 3759,
-              "Direct": 361180,
-              "Paid Other": 249202,
-              "Organic Shopping": 36161,
               "Email": 352638,
+              "Organic Search": 63229,
+              "Organic Shopping": 36161,
+              "Referral": 10953,
+              "Organic Video": 95,
+              "Paid Other": 249202,
+              "Paid Shopping": 84486,
+              "Paid Search": 299936,
+              "Organic Social": 88198,
+              "Display": 3759,
+              "Paid Video": 2326,
+              "Paid Social": 1145454,
               "AI Assistant": 1103,
+              "Cross-network": 136649,
+              "Direct": 361180,
               "Mobile Push Notifications": 3,
               "Affiliates": 3
             }
@@ -3730,46 +3730,46 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Paid Social": 1835866,
-              "Paid Shopping": 133682,
+              "Display": 10350,
               "Organic Shopping": 31592,
-              "Organic Search": 89549,
-              "Cross-network": 191011,
-              "SMS": 237045,
-              "Email": 471247,
-              "Paid Search": 392929,
-              "Paid Video": 2219,
               "Unassigned": 294263,
+              "Paid Social": 1835866,
+              "Paid Other": 392354,
+              "Cross-network": 191011,
+              "Email": 471247,
+              "Paid Shopping": 133682,
+              "Organic Social": 107105,
+              "SMS": 237045,
+              "Paid Video": 2219,
+              "Direct": 652359,
+              "Paid Search": 392929,
+              "Organic Video": 297,
+              "Organic Search": 89549,
               "Referral": 19681,
               "AI Assistant": 1111,
-              "Organic Video": 297,
-              "Direct": 652359,
-              "Display": 10350,
-              "Paid Other": 392354,
-              "Organic Social": 107105,
               "Affiliates": 6
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Referral": 11998,
-              "SMS": 197587,
-              "Paid Social": 1077889,
-              "Display": 10934,
-              "Paid Other": 360664,
-              "Email": 377542,
-              "Organic Video": 84,
+              "Paid Shopping": 84212,
               "AI Assistant": 1216,
-              "Organic Search": 61618,
-              "Cross-network": 121833,
               "Paid Search": 252890,
               "Organic Social": 67247,
-              "Organic Shopping": 20577,
+              "Organic Search": 61618,
+              "Paid Other": 360664,
+              "SMS": 197587,
+              "Cross-network": 121833,
               "Paid Video": 1441,
               "Unassigned": 245869,
               "Direct": 437328,
-              "Paid Shopping": 84212,
+              "Display": 10934,
+              "Organic Video": 84,
+              "Email": 377542,
+              "Referral": 11998,
+              "Paid Social": 1077889,
+              "Organic Shopping": 20577,
               "Affiliates": 8
             }
           }
@@ -5235,28 +5235,28 @@ window.DASHBOARD_DATA = {
           "pairs": 8
         },
         {
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 6
-        },
-        {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG288",
           "pairs": 6
         },
         {
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG427",
-          "pairs": 5
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
+          "pairs": 6
         },
         {
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
+          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
+          "sku": "TBB004",
           "pairs": 5
         },
         {
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
           "sku": "TVG478",
+          "pairs": 5
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG4770",
           "pairs": 5
         }
       ],
@@ -5270,7 +5270,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6680",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
+          "sku": "TVG351",
           "pairs": 5
         },
         {
@@ -5282,7 +5282,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6680",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
+          "sku": "TVG509",
           "pairs": 5
         },
         {
@@ -5299,8 +5299,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6680",
-          "product": "Filtered Effects\u2122 Blurring Primer",
-          "sku": "TVG348",
+          "product": "Defying Gravity\u2122 Eye Lifting Cream",
+          "sku": "TBB002",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6680",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG360",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6680",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG630",
           "pairs": 2
         },
         {
@@ -5310,16 +5322,10 @@ window.DASHBOARD_DATA = {
           "pairs": 2
         },
         {
-          "primarySku": "TVG6680",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG581",
-          "pairs": 2
+          "primarySku": "TVG6690",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG351",
+          "pairs": 5
         },
         {
           "primarySku": "TVG6690",
@@ -5331,18 +5337,6 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG6690",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG284",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
-          "sku": "TBB004",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
           "pairs": 5
         },
         {
@@ -5359,14 +5353,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6690",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
-          "pairs": 4
+          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
+          "sku": "TBB004",
+          "pairs": 5
         },
         {
           "primarySku": "TVG6690",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG6640",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG6690",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG509",
           "pairs": 4
         },
         {
@@ -5377,9 +5377,27 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6690",
-          "product": "Impact-FULL\u2122 Smoothing Lipstick",
-          "sku": "TVG385",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG427",
           "pairs": 3
+        },
+        {
+          "primarySku": "TVG6710",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG427",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6710",
+          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
+          "sku": "TVG463",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6710",
+          "product": "Empowershine\u2122 Satin Lip Cream",
+          "sku": "TVG5960",
+          "pairs": 2
         },
         {
           "primarySku": "TVG6710",
@@ -5395,32 +5413,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6710",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG427",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Empowershine\u2122 Satin Lip Cream",
-          "sku": "TVG5960",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
+          "sku": "TVG219",
           "pairs": 1
         },
         {
           "primarySku": "TVG6710",
-          "product": "Instant Makeup Fix\u2122 Set & Refresh Spray",
-          "sku": "TVG144",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG432",
           "pairs": 1
         },
         {
@@ -5431,14 +5431,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6710",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG648",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 1
         },
         {
           "primarySku": "TVG6710",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG648",
           "pairs": 1
         }
       ],
@@ -5449,10 +5449,10 @@ window.DASHBOARD_DATA = {
         "newToCategory": 3080,
         "byVariant": [
           {
-            "sku": "TVG6710",
-            "name": "Brow Liner",
-            "newToCategory": 681,
-            "existingCategory": 765
+            "sku": "TVG6690",
+            "name": "Brow Gel",
+            "newToCategory": 1815,
+            "existingCategory": 1540
           },
           {
             "sku": "TVG6680",
@@ -5461,10 +5461,10 @@ window.DASHBOARD_DATA = {
             "existingCategory": 1004
           },
           {
-            "sku": "TVG6690",
-            "name": "Brow Gel",
-            "newToCategory": 1815,
-            "existingCategory": 1540
+            "sku": "TVG6710",
+            "name": "Brow Liner",
+            "newToCategory": 681,
+            "existingCategory": 765
           }
         ]
       }
@@ -5664,46 +5664,46 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Paid Video": 613,
-              "Cross-network": 66453,
-              "Organic Video": 114,
-              "SMS": 96972,
-              "Display": 1718,
-              "Referral": 6859,
-              "Paid Search": 134527,
-              "Email": 189059,
-              "Unassigned": 100081,
-              "Organic Social": 32182,
               "Paid Social": 634261,
-              "Organic Shopping": 9533,
-              "Paid Shopping": 36421,
-              "Direct": 279560,
-              "AI Assistant": 296,
               "Organic Search": 29385,
+              "Unassigned": 100081,
               "Paid Other": 166315,
+              "SMS": 96972,
+              "Direct": 279560,
+              "Referral": 6859,
+              "AI Assistant": 296,
+              "Display": 1718,
+              "Email": 189059,
+              "Paid Video": 613,
+              "Organic Social": 32182,
+              "Paid Shopping": 36421,
+              "Cross-network": 66453,
+              "Paid Search": 134527,
+              "Organic Video": 114,
+              "Organic Shopping": 9533,
               "Affiliates": 3
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Referral": 11998,
-              "Paid Video": 1441,
-              "Organic Video": 84,
-              "Direct": 437328,
-              "Organic Social": 67247,
-              "Email": 377542,
-              "Organic Search": 61618,
-              "Cross-network": 121833,
               "SMS": 197587,
-              "Paid Social": 1077889,
+              "Organic Social": 67247,
               "Paid Other": 360664,
+              "Paid Social": 1077889,
               "Unassigned": 245869,
+              "Email": 377542,
+              "Paid Shopping": 84212,
+              "Paid Video": 1441,
+              "Cross-network": 121833,
+              "Referral": 11998,
+              "Direct": 437328,
               "Paid Search": 252890,
               "Organic Shopping": 20577,
-              "AI Assistant": 1216,
-              "Paid Shopping": 84212,
+              "Organic Video": 84,
               "Display": 10934,
+              "AI Assistant": 1216,
+              "Organic Search": 61618,
               "Affiliates": 8
             }
           }
@@ -6480,13 +6480,13 @@ window.DASHBOARD_DATA = {
           "pairs": 8
         },
         {
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6750",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG534",
           "pairs": 7
         },
         {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "product": "Liquid Lash\u2122 Volumizer Mascara",
+          "sku": "TVG6750",
           "pairs": 7
         },
         {
@@ -6495,8 +6495,8 @@ window.DASHBOARD_DATA = {
           "pairs": 7
         },
         {
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 6
         },
         {
@@ -6505,8 +6505,8 @@ window.DASHBOARD_DATA = {
           "pairs": 6
         },
         {
-          "product": "Filtered Effects\u2122\ufe0f Protecting Primer SPF 37",
-          "sku": "TVG362",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 6
         }
       ],
@@ -6543,8 +6543,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
-          "sku": "TVG280",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 4
         },
         {
@@ -6555,20 +6555,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
           "pairs": 4
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
-          "pairs": 3
         },
         {
           "primarySku": "TVG6700",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG6780",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG6700",
+          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
+          "sku": "TVG463",
           "pairs": 3
         },
         {
@@ -6598,19 +6598,19 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6720",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG353",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG533",
           "pairs": 5
         },
         {
           "primarySku": "TVG6720",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
+          "sku": "TVG353",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG6720",
+          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
+          "sku": "TVG463",
           "pairs": 4
         },
         {
@@ -6628,7 +6628,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6720",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "sku": "TVG351",
           "pairs": 4
         }
       ],
@@ -6639,16 +6639,16 @@ window.DASHBOARD_DATA = {
         "newToCategory": 3314,
         "byVariant": [
           {
-            "sku": "TVG6700",
-            "name": "Warm Neutrals",
-            "newToCategory": 1662,
-            "existingCategory": 6126
-          },
-          {
             "sku": "TVG6720",
             "name": "Cool Neutrals",
             "newToCategory": 1887,
             "existingCategory": 6619
+          },
+          {
+            "sku": "TVG6700",
+            "name": "Warm Neutrals",
+            "newToCategory": 1662,
+            "existingCategory": 6126
           }
         ]
       }
@@ -6856,70 +6856,70 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jun 2026",
             "chs": {
-              "Email": 193821,
               "Unassigned": 122012,
-              "Referral": 6487,
-              "SMS": 135686,
-              "Mobile Push Notifications": 1,
-              "Cross-network": 86243,
-              "Organic Search": 37974,
-              "AI Assistant": 706,
               "Paid Shopping": 50882,
-              "Display": 2776,
-              "Organic Video": 61,
-              "Paid Social": 647411,
-              "Direct": 203377,
-              "Organic Shopping": 21024,
+              "Mobile Push Notifications": 1,
               "Organic Social": 39597,
+              "Cross-network": 86243,
               "Paid Video": 1237,
+              "Organic Shopping": 21024,
+              "Display": 2776,
+              "Email": 193821,
+              "Organic Video": 61,
+              "Organic Search": 37974,
+              "SMS": 135686,
+              "AI Assistant": 706,
+              "Paid Social": 647411,
               "Paid Other": 141854,
+              "Direct": 203377,
               "Paid Search": 180642,
+              "Referral": 6487,
               "Affiliates": 3
             }
           },
           {
             "month": "Jul 2026",
             "chs": {
-              "Cross-network": 191011,
-              "Organic Social": 107105,
-              "Paid Shopping": 133682,
               "Organic Search": 89549,
-              "Referral": 19681,
               "Paid Other": 392354,
-              "Paid Social": 1835866,
+              "Referral": 19681,
               "Unassigned": 294263,
-              "Organic Video": 297,
-              "Paid Video": 2219,
-              "Display": 10350,
               "SMS": 237045,
-              "Email": 471247,
-              "Paid Search": 392929,
-              "Direct": 652359,
-              "AI Assistant": 1111,
               "Organic Shopping": 31592,
+              "Cross-network": 191011,
+              "Paid Shopping": 133682,
+              "Organic Social": 107105,
+              "Paid Social": 1835866,
+              "Paid Search": 392929,
+              "Display": 10350,
+              "AI Assistant": 1111,
+              "Paid Video": 2219,
+              "Email": 471247,
+              "Direct": 652359,
+              "Organic Video": 297,
               "Affiliates": 6
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "AI Assistant": 1216,
-              "Display": 10934,
-              "Paid Social": 1077889,
-              "Email": 377542,
-              "Unassigned": 245869,
-              "Organic Social": 67247,
-              "Cross-network": 121833,
-              "Organic Video": 84,
               "Direct": 437328,
-              "Paid Search": 252890,
-              "Paid Video": 1441,
-              "SMS": 197587,
+              "Paid Other": 360664,
               "Organic Shopping": 20577,
+              "Organic Search": 61618,
+              "SMS": 197587,
+              "AI Assistant": 1216,
+              "Organic Social": 67247,
+              "Email": 377542,
               "Paid Shopping": 84212,
               "Referral": 11998,
-              "Paid Other": 360664,
-              "Organic Search": 61618,
+              "Cross-network": 121833,
+              "Paid Search": 252890,
+              "Paid Video": 1441,
+              "Unassigned": 245869,
+              "Display": 10934,
+              "Organic Video": 84,
+              "Paid Social": 1077889,
               "Affiliates": 8
             }
           }
@@ -6958,26 +6958,6 @@ window.DASHBOARD_DATA = {
         },
         {
           "label": "Cancel (com)",
-          "page": "thrivecausemetics.com/tools/recurring/pages/7a491f69072beb994222495e784a09/subscriptions/776997372/cancel",
-          "pageviews": 30,
-          "sessions": 1,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "Cancel (com)",
-          "page": "thrivecausemetics.com/tools/recurring/pages/70676c0b1abd077ca2bebb5a028135/subscriptions/694560598/cancel",
-          "pageviews": 0,
-          "sessions": 1,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "Cancel (com)",
           "page": "thrivecausemetics.com/tools/recurring/pages/54bfbf86f860beb11310bfc0af67e8/subscriptions/733181822/cancel",
           "pageviews": 2,
           "sessions": 1,
@@ -6998,6 +6978,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "label": "Cancel (com)",
+          "page": "thrivecausemetics.com/tools/recurring/pages/3409b26f60784f3b95cffb26c7ebeb/subscriptions/788797897/cancel",
+          "pageviews": 1,
+          "sessions": 1,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Cancel (com)",
+          "page": "thrivecausemetics.com/tools/recurring/pages/70676c0b1abd077ca2bebb5a028135/subscriptions/694560598/cancel",
+          "pageviews": 0,
+          "sessions": 1,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Cancel (com)",
           "page": "thrivecausemetics.com/tools/recurring/pages/6971fd842356dec886e7276d8beb7b/subscriptions/838358585/cancel",
           "pageviews": 0,
           "sessions": 1,
@@ -7008,8 +7008,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "label": "Cancel (com)",
-          "page": "thrivecausemetics.com/tools/recurring/pages/3409b26f60784f3b95cffb26c7ebeb/subscriptions/788797897/cancel",
-          "pageviews": 1,
+          "page": "thrivecausemetics.com/tools/recurring/pages/7a491f69072beb994222495e784a09/subscriptions/776997372/cancel",
+          "pageviews": 30,
           "sessions": 1,
           "txns": 0,
           "rev": 0.0,
@@ -8282,12 +8282,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG508",
+          "sku": "TVG350",
           "pairs": 9
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
+          "sku": "TVG508",
           "pairs": 9
         },
         {
@@ -8297,17 +8297,17 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
-          "pairs": 7
-        },
-        {
-          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG533",
           "pairs": 7
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
+          "sku": "TVG509",
+          "pairs": 7
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6630",
           "pairs": 5
         }
       ],
@@ -8362,14 +8362,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4770",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG507",
           "pairs": 3
         },
         {
           "primarySku": "TVG4770",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG507",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG432",
           "pairs": 3
         },
         {
@@ -8417,19 +8417,19 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6640",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6630",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG6640",
-          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG508",
           "pairs": 4
         },
         {
           "primarySku": "TVG6640",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6780",
+          "sku": "TVG6630",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG6640",
+          "product": "Empowershine\u2122 Satin Lip Cream",
+          "sku": "TVG5970",
           "pairs": 3
         }
       ],
@@ -8649,23 +8649,23 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
-              "Cross-network": 21893,
               "Paid Shopping": 13636,
-              "Paid Other": 60534,
-              "Display": 2398,
-              "Organic Video": 16,
-              "SMS": 68050,
-              "Direct": 69063,
-              "Paid Search": 48633,
-              "Referral": 2290,
-              "AI Assistant": 258,
-              "Organic Shopping": 3912,
-              "Organic Search": 12454,
-              "Unassigned": 52757,
-              "Paid Video": 246,
+              "Cross-network": 21893,
               "Email": 67893,
               "Organic Social": 11982,
+              "SMS": 68050,
+              "Organic Shopping": 3912,
+              "Display": 2398,
+              "Paid Video": 246,
               "Paid Social": 202165,
+              "AI Assistant": 258,
+              "Organic Video": 16,
+              "Paid Other": 60534,
+              "Unassigned": 52757,
+              "Direct": 69063,
+              "Organic Search": 12454,
+              "Paid Search": 48633,
+              "Referral": 2290,
               "Affiliates": 2
             }
           }
@@ -9075,12 +9075,12 @@ window.DASHBOARD_DATA = {
       "crossSell": [
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
+          "sku": "TVG299",
           "pairs": 12
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
+          "sku": "TVG284",
           "pairs": 12
         },
         {
@@ -9089,13 +9089,13 @@ window.DASHBOARD_DATA = {
           "pairs": 9
         },
         {
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG432",
           "pairs": 8
         },
         {
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
           "pairs": 8
         },
         {
@@ -9104,13 +9104,13 @@ window.DASHBOARD_DATA = {
           "pairs": 7
         },
         {
-          "product": "Instant Makeup Fix\u2122 Set & Refresh Spray",
-          "sku": "TVG144",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 6
         },
         {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Defying Gravity\u2122 Eye Lifting Cream",
+          "sku": "TBB002",
           "pairs": 6
         },
         {
@@ -9119,22 +9119,22 @@ window.DASHBOARD_DATA = {
           "pairs": 6
         },
         {
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
+          "product": "Instant Makeup Fix\u2122 Set & Refresh Spray",
+          "sku": "TVG144",
           "pairs": 6
         }
       ],
       "crossSellBySku": [
         {
           "primarySku": "TVG7220",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG434",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
           "pairs": 1
         },
         {
           "primarySku": "TVG7220",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG434",
           "pairs": 1
         },
         {
@@ -9145,20 +9145,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7230",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG7230",
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG181",
           "pairs": 3
         },
         {
           "primarySku": "TVG7230",
-          "product": "Bright Balance\u2122 Hydrating Gel Cleanser",
-          "sku": "TBB001",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG432",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7230",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
           "pairs": 2
         },
         {
@@ -9169,8 +9169,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7230",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
+          "product": "Bright Balance\u2122 Hydrating Gel Cleanser",
+          "sku": "TBB001",
           "pairs": 2
         },
         {
@@ -9181,14 +9181,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7230",
-          "product": "Lip Filler Long-Wearing + Plumping Lip Liner\u2122",
-          "sku": "TVG345",
+          "product": "Empowershine\u2122 Satin Lip Cream",
+          "sku": "TVG5940",
           "pairs": 1
         },
         {
           "primarySku": "TVG7230",
-          "product": "Empowershine\u2122 Satin Lip Cream",
-          "sku": "TVG5940",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 1
         },
         {
@@ -9199,26 +9199,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7240",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG7240",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG7240",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG509",
           "pairs": 3
         },
         {
           "primarySku": "TVG7240",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7240",
           "product": "Triple Threat\u2122 Highlighter Stick",
           "sku": "TVG4900",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7240",
+          "product": "Defying Gravity\u2122 Eye Lifting Cream",
+          "sku": "TBB002",
           "pairs": 3
         },
         {
@@ -9230,20 +9230,8 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7240",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
+          "sku": "TVG284",
           "pairs": 3
-        },
-        {
-          "primarySku": "TVG7240",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG426",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG7240",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG513",
-          "pairs": 1
         },
         {
           "primarySku": "TVG7240",
@@ -9253,8 +9241,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7240",
-          "product": "Sheer Strength\u00ae Lip-Plumping Peptide Gloss",
-          "sku": "TVG407",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG7240",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG7240",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
           "pairs": 1
         },
         {
@@ -9289,14 +9289,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7250",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG181",
           "pairs": 4
         },
         {
           "primarySku": "TVG7250",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG181",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 4
         },
         {
@@ -9307,26 +9307,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7250",
+          "product": "Instant Makeup Fix\u2122 Set & Refresh Spray",
+          "sku": "TVG144",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7250",
           "product": "Defying Gravity\u2122 Eye Lifting Cream",
           "sku": "TBB002",
           "pairs": 3
         },
         {
-          "primarySku": "TVG7250",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG5870",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG7260",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 2
-        },
-        {
           "primarySku": "TVG7260",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
+          "sku": "TVG355",
           "pairs": 2
         },
         {
@@ -9338,7 +9332,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7260",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "sku": "TVG6620",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG7260",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
           "pairs": 2
         },
         {
@@ -9354,6 +9354,18 @@ window.DASHBOARD_DATA = {
         "existingCategory": 4892,
         "newToCategory": 2054,
         "byVariant": [
+          {
+            "sku": "TVG7240",
+            "name": "Liliana",
+            "newToCategory": 496,
+            "existingCategory": 1589
+          },
+          {
+            "sku": "TVG7220",
+            "name": "Brandy",
+            "newToCategory": 213,
+            "existingCategory": 576
+          },
           {
             "sku": "TVG7230",
             "name": "Li",
@@ -9371,18 +9383,6 @@ window.DASHBOARD_DATA = {
             "name": "Leslie",
             "newToCategory": 260,
             "existingCategory": 774
-          },
-          {
-            "sku": "TVG7220",
-            "name": "Brandy",
-            "newToCategory": 213,
-            "existingCategory": 576
-          },
-          {
-            "sku": "TVG7240",
-            "name": "Liliana",
-            "newToCategory": 496,
-            "existingCategory": 1589
           }
         ]
       }
@@ -11853,7 +11853,7 @@ window.DASHBOARD_DATA = {
       "internalDate": "2026-07-14",
       "trackedId": null,
       "section": "GTM Campaigns",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1213575011101074"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1212387533350235/task/1213575011101074"
     },
     {
       "name": "Eyeshadow Quads Drop 1 CAN",
@@ -11861,7 +11861,7 @@ window.DASHBOARD_DATA = {
       "internalDate": "2026-07-14",
       "trackedId": null,
       "section": "GTM Campaigns",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777622961331"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1212387533350235/task/1216777622961331"
     },
     {
       "name": "LLEM Ivy & Iris Restock",
@@ -11869,7 +11869,7 @@ window.DASHBOARD_DATA = {
       "internalDate": null,
       "trackedId": null,
       "section": "Product Spotlights (Relaunches, Reanimations, Restocks)",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777622961361"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777622961361"
     },
     {
       "name": "Lip Stain Marker",
@@ -11877,7 +11877,7 @@ window.DASHBOARD_DATA = {
       "internalDate": "2026-09-02",
       "trackedId": null,
       "section": "GTM Campaigns",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1213996421586726"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1213996421586726"
     },
     {
       "name": "Triple Threat",
@@ -11885,7 +11885,7 @@ window.DASHBOARD_DATA = {
       "internalDate": "2026-07-24",
       "trackedId": null,
       "section": "GTM Campaigns",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1213929460766191"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1212587594973739/task/1213929460766191"
     },
     {
       "name": "Pumpkin Spice Latte Pout Hero Lip Balm",
@@ -11893,7 +11893,7 @@ window.DASHBOARD_DATA = {
       "internalDate": null,
       "trackedId": null,
       "section": "GTM Campaigns",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777821260262"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260262"
     },
     {
       "name": "Winter Berries + BEB Cindy Drop",
@@ -11901,7 +11901,7 @@ window.DASHBOARD_DATA = {
       "internalDate": null,
       "trackedId": null,
       "section": "GTM Campaigns",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777821260266"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260266"
     },
     {
       "name": "Eyeshadow Quads Drop 2",
@@ -11909,7 +11909,7 @@ window.DASHBOARD_DATA = {
       "internalDate": "2026-07-14",
       "trackedId": null,
       "section": "GTM Campaigns",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777622961333"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1216777622961333"
     },
     {
       "name": "Holiday Phase 1: BEB & Holiday Bundles",
@@ -11917,7 +11917,7 @@ window.DASHBOARD_DATA = {
       "internalDate": null,
       "trackedId": null,
       "section": "GTM Campaigns",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777821260268"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260268"
     },
     {
       "name": "Holiday Phase 2: BFCM & Giving Tuesday",
@@ -11925,7 +11925,7 @@ window.DASHBOARD_DATA = {
       "internalDate": null,
       "trackedId": null,
       "section": "GTM Campaigns",
-      "asanaUrl": "https://app.asana.com/0/1216777821260255/1216777821260273"
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260273"
     }
   ],
   "calendar": {
@@ -11937,61 +11937,61 @@ window.DASHBOARD_DATA = {
         "name": "Eyeshadow Quads Drop 1 US",
         "launch_date": "2026-07-22",
         "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1213575011101074"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1212387533350235/task/1213575011101074"
       },
       {
         "name": "Eyeshadow Quads Drop 1 CAN",
         "launch_date": "2026-07-28",
         "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1216777622961331"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1212387533350235/task/1216777622961331"
       },
       {
         "name": "LLEM Ivy & Iris Restock",
         "launch_date": "2026-08-05",
         "section": "Product Spotlights (Relaunches, Reanimations, Restocks)",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1216777622961361"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777622961361"
       },
       {
         "name": "Lip Stain Marker",
         "launch_date": "2026-08-18",
         "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1213996421586726"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1213996421586726"
       },
       {
         "name": "Triple Threat",
         "launch_date": "2026-08-26",
         "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1213929460766191"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1212587594973739/task/1213929460766191"
       },
       {
         "name": "Pumpkin Spice Latte Pout Hero Lip Balm",
         "launch_date": "2026-09-02",
         "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1216777821260262"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260262"
       },
       {
         "name": "Winter Berries + BEB Cindy Drop",
         "launch_date": "2026-09-16",
         "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1216777821260266"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260266"
       },
       {
         "name": "Eyeshadow Quads Drop 2",
         "launch_date": "2026-10-07",
         "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1216777622961333"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1216777622961333"
       },
       {
         "name": "Holiday Phase 1: BEB & Holiday Bundles",
         "launch_date": "2026-11-04",
         "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1216777821260268"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260268"
       },
       {
         "name": "Holiday Phase 2: BFCM & Giving Tuesday",
         "launch_date": "2026-11-27",
         "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/0/1216777821260255/1216777821260273"
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260273"
       }
     ],
     "configWithoutLink": [
