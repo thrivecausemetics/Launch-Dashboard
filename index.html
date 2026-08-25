@@ -156,6 +156,15 @@
     /* Snowflake inventory is kept for cross-checking, not for acting on, so it
        reads as a footnote rather than competing with the column beside it. */
     .sum-card th.ref, .sum-card td.ref { color:var(--muted); border-left:1px solid var(--border); }
+    .sku-chip { font-size:11.5px; font-weight:600; padding:1px 5px; border-radius:4px; }
+    /* Above the table, not below it: the colours are how people scan the rows,
+       so the key has to arrive before the rows do. */
+    .sum-legend { display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+                  padding:12px 14px; border-bottom:1px solid var(--border);
+                  font-size:11.5px; color:var(--muted); }
+    .sum-legend .lg-lead { font-weight:600; color:var(--text); }
+    .sum-legend .lg-item { display:inline-flex; align-items:center; gap:6px; }
+    .sum-legend .lg-chip { font-size:11px; font-weight:600; padding:1px 6px; border-radius:4px; }
     .th-sub { display:block; font-weight:500; font-size:9.5px; letter-spacing:0;
               text-transform:none; opacity:.75; margin-top:1px; }
     .sum-card td { padding:9px 9px; border-bottom:1px solid #F0F3F6; white-space:nowrap; }
@@ -199,6 +208,7 @@
   <div id="view-analysis" style="display:none">
     <div class="section-title">Live Launch Summary</div>
     <div class="sum-card">
+      <div class="sum-legend" id="sum-legend"></div>
       <div class="sum-wrap">
         <table>
           <thead><tr>
@@ -399,6 +409,13 @@
   const COVER_RED = 10, COVER_AMBER = 20;
   const coverColour = w => w == null ? 'var(--muted)'
     : w < COVER_RED ? 'var(--danger)' : w <= COVER_AMBER ? 'var(--warn)' : 'var(--positive)';
+  // The SKU chip carries the same verdict as a filled pill, so the row's
+  // stock risk is readable from the left edge without tracking across to the
+  // stock columns. Tinted rather than solid: eleven saturated chips down the
+  // page would shout over the numbers they are meant to flag.
+  const coverTint = w => w == null ? 'var(--bg)'
+    : w < COVER_RED ? 'rgba(239,68,68,.10)'
+    : w <= COVER_AMBER ? 'rgba(245,158,11,.14)' : 'rgba(34,160,107,.10)';
 
   const sumRows = live.flatMap(l => (l.byVariant || []).map(v => ({
     product: l.name, variant: v.name, sku: v.sku,
@@ -421,7 +438,7 @@
       <tr>
         <td class="sum-prod"><a href="${r.href}" style="color:inherit;text-decoration:none">${r.product}</a></td>
         <td>${r.variant}</td>
-        <td><code style="font-size:11.5px;background:var(--bg);padding:1px 5px;border-radius:4px">${r.sku}</code></td>
+        <td><code class="sku-chip" style="color:${coverColour(r.weeks)};background:${coverTint(r.weeks)}">${r.sku}</code></td>
         <td>${fmtSmart(r.launch)}</td>
         <td>${fmtSmart(r.curveEnd)}</td>
         <td class="r" style="color:${ptpColor(r.ptp)};font-weight:600">${r.ptp == null ? '—' : r.ptp.toFixed(1) + '%'}</td>
@@ -435,6 +452,25 @@
       : '<tr><td colspan="10" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
   };
   renderSummary();
+
+  // Counts come from the rows themselves so the key doubles as a tally of how
+  // many SKUs are actually in trouble — the number people want first.
+  const band = w => w == null ? 'none' : w < COVER_RED ? 'red' : w <= COVER_AMBER ? 'amber' : 'green';
+  const tally = b => sumRows.filter(r => band(r.weeks) === b).length;
+  const legendItem = (b, label) => {
+    const n = tally(b);
+    if (!n) return '';
+    const w = b === 'red' ? 1 : b === 'amber' ? COVER_RED + 1 : COVER_AMBER + 1;
+    return `<span class="lg-item"><code class="lg-chip" style="color:${coverColour(b === 'none' ? null : w)};`
+      + `background:${coverTint(b === 'none' ? null : w)}">SKU</code>${label} · ${n}</span>`;
+  };
+  document.getElementById('sum-legend').innerHTML =
+    `<span class="lg-lead">SKU colour = weeks of stock left</span>`
+    + legendItem('red', `under ${COVER_RED} weeks`)
+    + legendItem('amber', `${COVER_RED}–${COVER_AMBER} weeks`)
+    + legendItem('green', `over ${COVER_AMBER} weeks`)
+    + legendItem('none', 'no recent sales to project from')
+    + `<span class="lg-item">Real Inventory and Wks of Stock carry the same colour.</span>`;
 
   let comparedOnce = false;
   document.querySelectorAll('.hub-tab').forEach(btn => btn.onclick = () => {
@@ -463,7 +499,8 @@
     `<strong>Snowflake Inventory</strong> is the daily figure from <code>UOS.INVENTORY_LEVELS</code>, kept for reference only — ` +
     `it moves every day but Demand Planning say it is not always right, so cross-check with it rather than act on it. ` +
     `<strong>Wks of Stock</strong> is real inventory at the trailing ` +
-    `${META.oosWindowDays || 7}-day sell-through rate, and colours both stock columns: ` +
+    `${META.oosWindowDays || 7}-day sell-through rate, and colours the <strong>SKU</strong>, <strong>Wks of Stock</strong> ` +
+    `and <strong>Real Inventory</strong> cells on how long that SKU has left: ` +
     `<span style="color:var(--danger);font-weight:600">under ${COVER_RED} weeks</span>, ` +
     `<span style="color:var(--warn);font-weight:600">${COVER_RED}–${COVER_AMBER} weeks</span>, ` +
     `<span style="color:var(--positive);font-weight:600">over ${COVER_AMBER} weeks</span>. ` +
