@@ -55,6 +55,7 @@ OOS_WINDOW_DAYS = 7
 
 LEARNINGS = {}
 ASANA_LINKS = {}
+NPD_OOS = {}      # Demand Planning's own OOS date and on-hand units, by SKU
 
 # Tables are always resolved in this database, regardless of the connection's
 # default database context (SNOWFLAKE_DATABASE).
@@ -595,6 +596,27 @@ def load_learnings():
         return {}
 
 
+NPD_OOS_PATH = ROOT / "config" / "npd_oos_tracking.json"
+
+
+def load_npd_oos():
+    """Demand Planning's decay-curve OOS and on-hand units, keyed by SKU.
+
+    Written by scripts/sync_npd_oos.py from the NPD OOS Tracking sheet. Shown
+    next to the Snowflake-derived figures rather than replacing them: the two
+    disagree, and which one is right is Demand Planning's call.
+    """
+    if not NPD_OOS_PATH.exists():
+        return {}, None
+    try:
+        d = json.loads(NPD_OOS_PATH.read_text())
+        return (d.get("bySku") or {}), d.get("syncedAt")
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"WARNING: {NPD_OOS_PATH.name} unreadable ({e}); "
+              f"continuing without Demand Planning's figures")
+        return {}, None
+
+
 CALENDAR_PATH = ROOT / "config" / "launch_calendar.json"
 
 
@@ -823,6 +845,11 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
             "planEndDate": curve_end,
             # Cover at the trailing sell-through rate.
             "weeksOfStock": round(avail / run_rate / 7, 1) if avail and run_rate > 0 else None,
+            # Demand Planning's figures, carried through as-is. Deliberately
+            # separate fields rather than overwriting inventoryUnits/estOOSDate:
+            # the two sources disagree and the dashboard shows both.
+            "decayCurveOOS": (NPD_OOS.get(sku) or {}).get("decayCurveOOS"),
+            "realInventoryUnits": (NPD_OOS.get(sku) or {}).get("realInventoryUnits"),
         })
 
     # plan_daily holds the per-day plan the cumulative curve is built from;
@@ -1008,8 +1035,11 @@ def main():
 
     cfg = json.loads(CONFIG_PATH.read_text())
     retention = int(cfg.get("retention_days", 122))
-    global LEARNINGS
+    global LEARNINGS, NPD_OOS
     LEARNINGS = load_learnings()   # before build_launch(), which reads it
+    NPD_OOS, npd_synced_at = load_npd_oos()   # likewise
+    print(f"Demand Planning OOS snapshot: {len(NPD_OOS)} SKUs"
+          + (f" (synced {npd_synced_at})" if npd_synced_at else " (never synced)"))
 
     cal = load_launch_calendar()
     tracked_by_gid = {l["asana_gid"]: l["id"] for l in cfg["launches"] if l.get("asana_gid")}
@@ -1154,6 +1184,7 @@ def main():
             "sourceDb": SRC_DB,
             "retentionDays": retention,
             "oosWindowDays": OOS_WINDOW_DAYS,
+            "npdOosSyncedAt": npd_synced_at,
             "sourceStatus": SOURCE_STATUS,
         },
         "launches": launches,

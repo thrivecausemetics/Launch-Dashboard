@@ -95,6 +95,17 @@ jobs:
           ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
         run: python scripts/sync_launch_calendar.py
 
+      # Demand Planning's decay-curve OOS and on-hand units, from the NPD OOS
+      # Tracking sheet. Same shape as the Asana step above: runs before the
+      # refresh so the snapshot it writes is picked up in the same run, and
+      # no-ops without a credential rather than failing the refresh.
+      - name: Sync Demand Planning OOS figures
+        if: steps.creds.outputs.configured == 'true'
+        continue-on-error: true
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: python scripts/sync_npd_oos.py
+
       - name: Regenerate data.js from Snowflake
         if: steps.creds.outputs.configured == 'true'
         env:
@@ -111,12 +122,12 @@ jobs:
       - name: Commit and push if data changed
         if: steps.creds.outputs.configured == 'true'
         run: |
-          if git diff --quiet data.js config/launch_calendar.json; then
-            echo "data.js and the launch calendar are unchanged — nothing to commit."
+          if git diff --quiet data.js config/launch_calendar.json config/npd_oos_tracking.json; then
+            echo "data.js, the launch calendar and the NPD OOS snapshot are unchanged — nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.js config/launch_calendar.json
+          git add data.js config/launch_calendar.json config/npd_oos_tracking.json
           git commit -m "chore: refresh dashboard data ($(date -u +%F))"
           git push
