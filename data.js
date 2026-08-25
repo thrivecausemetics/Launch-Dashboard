@@ -928,7 +928,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": 4.5,
-          "decayCurveOOS": "2026-09-15",
+          "decayCurveOOS": "2026-09-22",
           "realInventoryUnits": 2275
         },
         {
@@ -956,7 +956,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": 2.2,
-          "decayCurveOOS": "2026-09-01",
+          "decayCurveOOS": "2026-09-08",
           "realInventoryUnits": 186
         },
         {
@@ -984,7 +984,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 63,
           "planEndDate": "2026-08-28",
           "weeksOfStock": 14.3,
-          "decayCurveOOS": "2026-10-22",
+          "decayCurveOOS": "2026-10-29",
           "realInventoryUnits": 3772
         },
         {
@@ -1012,7 +1012,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-09-01",
+          "decayCurveOOS": "2026-09-07",
           "realInventoryUnits": 91
         },
         {
@@ -1040,7 +1040,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2274,
           "planEndDate": "2026-08-28",
           "weeksOfStock": 38.5,
-          "decayCurveOOS": "2027-01-07",
+          "decayCurveOOS": "2027-01-13",
           "realInventoryUnits": 7234
         },
         {
@@ -1068,7 +1068,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": 51.0,
-          "decayCurveOOS": "2026-10-29",
+          "decayCurveOOS": "2026-11-05",
           "realInventoryUnits": 2811
         },
         {
@@ -1096,7 +1096,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2991,
           "planEndDate": "2026-08-28",
           "weeksOfStock": 128.9,
-          "decayCurveOOS": "2027-09-07",
+          "decayCurveOOS": "2027-09-13",
           "realInventoryUnits": 7288
         },
         {
@@ -1124,7 +1124,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 1958,
           "planEndDate": "2026-08-28",
           "weeksOfStock": 206.3,
-          "decayCurveOOS": "2027-10-06",
+          "decayCurveOOS": "2027-10-13",
           "realInventoryUnits": 6869
         },
         {
@@ -1152,7 +1152,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 1622,
           "planEndDate": "2026-08-28",
           "weeksOfStock": 182.4,
-          "decayCurveOOS": "2027-11-22",
+          "decayCurveOOS": "2027-11-29",
           "realInventoryUnits": 6812
         },
         {
@@ -1180,7 +1180,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 6334,
           "planEndDate": "2026-08-28",
           "weeksOfStock": 167.5,
-          "decayCurveOOS": "2028-04-22",
+          "decayCurveOOS": "2028-04-29",
           "realInventoryUnits": 7933
         }
       ],
@@ -4160,7 +4160,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 6265,
           "planEndDate": "2026-10-05",
           "weeksOfStock": 133.9,
-          "decayCurveOOS": "2027-12-04",
+          "decayCurveOOS": "2027-12-10",
           "realInventoryUnits": 20925
         },
         {
@@ -4188,7 +4188,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2501,
           "planEndDate": "2026-10-05",
           "weeksOfStock": 98.7,
-          "decayCurveOOS": "2029-09-06",
+          "decayCurveOOS": "2029-09-17",
           "realInventoryUnits": 7953
         },
         {
@@ -4216,7 +4216,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 11729,
           "planEndDate": "2026-10-05",
           "weeksOfStock": 232.6,
-          "decayCurveOOS": "2029-02-02",
+          "decayCurveOOS": "2029-02-09",
           "realInventoryUnits": 17896
         }
       ],
@@ -6047,7 +6047,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 810,
           "planEndDate": "2026-11-18",
           "weeksOfStock": 1.2,
-          "decayCurveOOS": "2026-09-19",
+          "decayCurveOOS": "2026-10-03",
           "realInventoryUnits": 4411
         },
         {
@@ -6075,7 +6075,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-11-18",
           "weeksOfStock": 0.9,
-          "decayCurveOOS": "2026-09-10",
+          "decayCurveOOS": "2026-09-23",
           "realInventoryUnits": 3310
         }
       ],
@@ -7415,7 +7415,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 6453,
           "planEndDate": "2026-10-14",
           "weeksOfStock": 90.8,
-          "decayCurveOOS": "2027-10-26",
+          "decayCurveOOS": "2027-11-03",
           "realInventoryUnits": 32736
         },
         {
@@ -7443,7 +7443,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 3542,
           "planEndDate": "2026-10-14",
           "weeksOfStock": 41.1,
-          "decayCurveOOS": "2026-12-24",
+          "decayCurveOOS": "2026-12-31",
           "realInventoryUnits": 14565
         }
       ],
@@ -8949,7 +8949,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 501,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 1.4,
-          "decayCurveOOS": "2027-01-05",
+          "decayCurveOOS": "2026-09-05",
           "realInventoryUnits": 7104
         },
         {
@@ -8977,7 +8977,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 5582,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 6.1,
-          "decayCurveOOS": "2027-05-25",
+          "decayCurveOOS": "2027-02-03",
           "realInventoryUnits": 14991
         },
         {
@@ -9005,7 +9005,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 6658,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 2.8,
-          "decayCurveOOS": "2026-12-15",
+          "decayCurveOOS": "2026-10-22",
           "realInventoryUnits": 3905
         },
         {
@@ -9033,7 +9033,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 396,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 3.5,
-          "decayCurveOOS": "2027-01-03",
+          "decayCurveOOS": "2026-11-02",
           "realInventoryUnits": 4285
         },
         {
@@ -9061,7 +9061,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2286,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 6.6,
-          "decayCurveOOS": "2027-04-23",
+          "decayCurveOOS": "2027-02-21",
           "realInventoryUnits": 6074
         }
       ],
