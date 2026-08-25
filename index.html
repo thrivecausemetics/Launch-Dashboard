@@ -187,10 +187,12 @@
             <th data-k="product">Product</th><th data-k="variant">Variant</th><th data-k="sku">SKU</th>
             <th data-k="launch">Launch</th><th data-k="curveEnd">Curve Ends</th>
             <th class="r" data-k="ptp">% to Plan<span class="th-sub">to date</span></th>
-            <th class="r" data-k="pct">% to Goal<span class="th-sub">full curve</span></th>
-            <th class="r" data-k="toGoal">Units to Goal</th>
-            <th class="r" data-k="inv">Inventory</th><th class="r" data-k="weeks">Wks of Stock</th>
-            <th class="r" data-k="oos">Est. OOS</th>
+            <th class="r" data-k="toGoal">Units to Goal<span class="th-sub">full curve</span></th>
+            <th class="r" data-k="inv">Inventory<span class="th-sub">Snowflake</span></th>
+            <th class="r" data-k="weeks">Wks of Stock<span class="th-sub">Snowflake</span></th>
+            <th class="r" data-k="oos">Est. OOS<span class="th-sub">Snowflake trend</span></th>
+            <th class="r" data-k="npdOos">Decay Curve OOS<span class="th-sub">Demand Planning</span></th>
+            <th class="r" data-k="npdInv">Real Inventory<span class="th-sub">Demand Planning</span></th>
           </tr></thead>
           <tbody id="sum-body"></tbody>
         </table>
@@ -356,23 +358,31 @@
      reads as "what it is, when it runs, how it is tracking, will we have
      stock". The risk columns sit last because they are the punchline.
 
-     Two percentage columns, deliberately, because people asked why this table
-     disagreed with the launch pages:
-       % to Plan  — units vs plan THROUGH THE DATA CUTOFF. Identical to the
-                    "% to Plan" column on the launch page, same field, so the
-                    two screens can be read side by side without reconciling.
-       % to Goal  — units vs the WHOLE plan curve, through Curve Ends. Pairs
-                    with Units to Goal.
-     A launch a week old can be 520% to plan and 80% to goal at the same time;
-     both are true and neither replaces the other. */
+     % to Plan is units vs plan THROUGH THE DATA CUTOFF — the same field the
+     launch page shows, so the two screens can be read side by side without
+     reconciling. Units to Goal is still measured against the whole curve.
+
+     The last four columns are two independent readings of the same question,
+     shown side by side on purpose:
+       Inventory / Est. OOS         Snowflake UOS.INVENTORY_LEVELS, projected
+                                    forward at the trailing sell-through rate.
+       Decay Curve OOS / Real Inv.  Demand Planning's own model, from the NPD
+                                    OOS Tracking sheet.
+     They disagree, sometimes by a lot. Which one is right is Demand Planning's
+     call, so both are labelled and neither is quietly dropped. */
   const riskColour = d => d == null ? 'var(--muted)'
     : d <= 14 ? 'var(--danger)' : d <= 30 ? 'var(--warn)' : 'var(--positive)';
+  // Demand Planning gives a date, not a countdown, so the colour comes from
+  // the gap to the data cutoff — same thresholds as the Snowflake column, so
+  // the two OOS dates are read on one scale.
+  const daysUntil = iso => iso == null ? null : db(META.dataCutoff, iso);
 
   const sumRows = live.flatMap(l => (l.byVariant || []).map(v => ({
     product: l.name, variant: v.name, sku: v.sku,
     launch: l.launchDate, curveEnd: v.planEndDate || l.planEndDate,
-    ptp: v.pctToPlanUnits, pct: v.pctToGoalUnits, toGoal: v.unitsToGoal, inv: v.inventoryUnits,
+    ptp: v.pctToPlanUnits, toGoal: v.unitsToGoal, inv: v.inventoryUnits,
     weeks: v.weeksOfStock, oos: v.estOOSDate, days: v.daysToOOS,
+    npdOos: v.decayCurveOOS ?? null, npdInv: v.realInventoryUnits ?? null,
     href: 'launch.html?id=' + encodeURIComponent(l.launchId),
   })));
 
@@ -386,14 +396,15 @@
         <td>${fmtSmart(r.launch)}</td>
         <td>${fmtSmart(r.curveEnd)}</td>
         <td class="r" style="color:${ptpColor(r.ptp)};font-weight:600">${r.ptp == null ? '—' : r.ptp.toFixed(1) + '%'}</td>
-        <td class="r" style="color:${ptpColor(r.pct)};font-weight:600">${r.pct == null ? '—' : r.pct.toFixed(1) + '%'}</td>
         <td class="r">${r.toGoal == null ? '—' : r.toGoal === 0 ? 'goal met' : num(r.toGoal)}</td>
         <td class="r">${num(r.inv)}</td>
         <td class="r">${r.weeks == null ? '—' : r.weeks.toFixed(1)}</td>
         <td class="r pill-risk" style="color:${riskColour(r.days)}">${
           r.inv === 0 ? 'out of stock' : fmtSmart(r.oos)}</td>
+        <td class="r pill-risk" style="color:${riskColour(daysUntil(r.npdOos))}">${fmtSmart(r.npdOos)}</td>
+        <td class="r">${num(r.npdInv)}</td>
       </tr>`).join('')
-      : '<tr><td colspan="11" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
+      : '<tr><td colspan="12" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
   };
   renderSummary();
 
@@ -415,12 +426,16 @@
   document.getElementById('sum-note').innerHTML =
     `${sumRows.length} variant${sumRows.length !== 1 ? 's' : ''} across ${live.length} live launch${live.length !== 1 ? 'es' : ''}. ` +
     `<strong>% to Plan</strong> is units against plan through ${fmtSmart(META.dataCutoff)} — the same number as the ` +
-    `<strong>% to Plan</strong> column on each launch page. <strong>% to Goal</strong> and <strong>Units to Goal</strong> ` +
-    `measure the same units against the full plan curve (through <strong>Curve Ends</strong>), so a launch can be well ahead ` +
-    `of plan to date and still only part way to its goal. ` +
-    `<strong>Wks of Stock</strong> and <strong>Est. OOS</strong> project current inventory forward at the trailing ` +
-    `${META.oosWindowDays || 7}-day sell-through rate — an assumption that demand holds and no replenishment arrives, not a forecast. ` +
-    `<strong>Curve Ends</strong> is the last day of the SKU's plan curve. Click any column to sort.`;
+    `<strong>% to Plan</strong> column on each launch page. <strong>Units to Goal</strong> is what is left against the ` +
+    `full plan curve (through <strong>Curve Ends</strong>), so a launch can be well ahead of plan to date and still have ` +
+    `a long way to its goal. ` +
+    `<br><br>The stock columns are <strong>two independent readings</strong>. ` +
+    `<strong>Inventory</strong>, <strong>Wks of Stock</strong> and <strong>Est. OOS</strong> come from Snowflake, projected ` +
+    `forward at the trailing ${META.oosWindowDays || 7}-day sell-through rate — an assumption that demand holds and no ` +
+    `replenishment arrives, not a forecast. <strong>Decay Curve OOS</strong> and <strong>Real Inventory</strong> come from ` +
+    `Demand Planning's <em>NPD OOS Tracking</em> sheet${META.npdOosSyncedAt ? ', synced ' + fmtSmart(META.npdOosSyncedAt) : ''}. ` +
+    `The two disagree — treat Demand Planning's as the on-hand truth and ask them before acting on a gap. ` +
+    `A dash means that SKU is not on their sheet. Click any column to sort.`;
 
   // Sorting: click a header, toggle direction. Nulls always sink.
   let sortKey = null, sortAsc = true;
