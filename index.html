@@ -143,6 +143,9 @@
     /* Two percentage columns sit side by side and answer different questions.
        The qualifier goes in the header rather than only in the note, so the
        column is readable without reading the small print underneath. */
+    /* Snowflake inventory is kept for cross-checking, not for acting on, so it
+       reads as a footnote rather than competing with the column beside it. */
+    .sum-card th.ref, .sum-card td.ref { color:var(--muted); border-left:1px solid var(--border); }
     .th-sub { display:block; font-weight:500; font-size:9.5px; letter-spacing:0;
               text-transform:none; opacity:.75; margin-top:1px; }
     .sum-card td { padding:9px 12px; border-bottom:1px solid #F0F3F6; white-space:nowrap; }
@@ -196,7 +199,8 @@
             <th class="r" data-k="weeks">Wks of Stock<span class="th-sub">real inv ÷ run rate</span></th>
             <th class="r" data-k="oos">Est. OOS<span class="th-sub">Snowflake trend</span></th>
             <th class="r" data-k="npdOos">Decay Curve OOS<span class="th-sub">Demand Planning</span></th>
-            <th class="r" data-k="npdInv">Real Inventory<span class="th-sub">Demand Planning</span></th>
+            <th class="r" data-k="npdInv">Real Inventory<span class="th-sub">Demand Planning · Mondays</span></th>
+            <th class="r ref" data-k="inv">Snowflake Inventory<span class="th-sub">reference only</span></th>
           </tr></thead>
           <tbody id="sum-body"></tbody>
         </table>
@@ -418,8 +422,9 @@
           r.inv === 0 ? 'out of stock' : fmtSmart(r.oos)}</td>
         <td class="r pill-risk" style="color:${riskColour(daysUntil(r.npdOos))}">${fmtSmart(r.npdOos)}</td>
         <td class="r pill-risk" style="color:${coverColour(r.weeks)}">${num(r.npdInv)}</td>
+        <td class="r ref">${num(r.inv)}</td>
       </tr>`).join('')
-      : '<tr><td colspan="11" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
+      : '<tr><td colspan="12" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
   };
   renderSummary();
 
@@ -446,7 +451,11 @@
     `a long way to its goal. ` +
     `<br><br><strong>Real Inventory</strong> and <strong>Decay Curve OOS</strong> come from Demand Planning's ` +
     `<em>NPD OOS Tracking</em> sheet${META.npdOosSyncedAt ? ', synced ' + fmtSmart(META.npdOosSyncedAt) : ''}; a dash means ` +
-    `that SKU is not on their sheet. <strong>Wks of Stock</strong> is that real inventory at the trailing ` +
+    `that SKU is not on their sheet. Demand Planning refresh Real Inventory <strong>every Monday</strong>, so mid-week it is ` +
+    `a stock count of up to a week ago and will not have moved as units sold. ` +
+    `<strong>Snowflake Inventory</strong> is the daily figure from <code>UOS.INVENTORY_LEVELS</code>, kept for reference only — ` +
+    `it moves every day but Demand Planning say it is not always right, so cross-check with it rather than act on it. ` +
+    `<strong>Wks of Stock</strong> is real inventory at the trailing ` +
     `${META.oosWindowDays || 7}-day sell-through rate, and colours both stock columns: ` +
     `<span style="color:var(--danger);font-weight:600">under ${COVER_RED} weeks</span>, ` +
     `<span style="color:var(--warn);font-weight:600">${COVER_RED}–${COVER_AMBER} weeks</span>, ` +
