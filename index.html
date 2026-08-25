@@ -135,6 +135,11 @@
                    font-size:10.5px; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
                    border-bottom:1px solid var(--border); white-space:nowrap; cursor:pointer; }
     .sum-card th.r, .sum-card td.r { text-align:right; }
+    /* Two percentage columns sit side by side and answer different questions.
+       The qualifier goes in the header rather than only in the note, so the
+       column is readable without reading the small print underneath. */
+    .th-sub { display:block; font-weight:500; font-size:9.5px; letter-spacing:0;
+              text-transform:none; opacity:.75; margin-top:1px; }
     .sum-card td { padding:9px 12px; border-bottom:1px solid #F0F3F6; white-space:nowrap; }
     .sum-card tr:last-child td { border-bottom:0; }
     .sum-card tbody tr:hover { background:#FAFCFD; }
@@ -181,7 +186,9 @@
           <thead><tr>
             <th data-k="product">Product</th><th data-k="variant">Variant</th><th data-k="sku">SKU</th>
             <th data-k="launch">Launch</th><th data-k="curveEnd">Curve Ends</th>
-            <th class="r" data-k="pct">% to Goal</th><th class="r" data-k="toGoal">Units to Goal</th>
+            <th class="r" data-k="ptp">% to Plan<span class="th-sub">to date</span></th>
+            <th class="r" data-k="pct">% to Goal<span class="th-sub">full curve</span></th>
+            <th class="r" data-k="toGoal">Units to Goal</th>
             <th class="r" data-k="inv">Inventory</th><th class="r" data-k="weeks">Wks of Stock</th>
             <th class="r" data-k="oos">Est. OOS</th>
           </tr></thead>
@@ -349,17 +356,22 @@
      reads as "what it is, when it runs, how it is tracking, will we have
      stock". The risk columns sit last because they are the punchline.
 
-     % to Goal is measured against the WHOLE 120-day plan curve, which is not
-     the same number as the "% to Plan" on a launch page — that one is plan to
-     date. Both are legitimate; they answer different questions, so the note
-     under the table spells out the difference. */
+     Two percentage columns, deliberately, because people asked why this table
+     disagreed with the launch pages:
+       % to Plan  — units vs plan THROUGH THE DATA CUTOFF. Identical to the
+                    "% to Plan" column on the launch page, same field, so the
+                    two screens can be read side by side without reconciling.
+       % to Goal  — units vs the WHOLE plan curve, through Curve Ends. Pairs
+                    with Units to Goal.
+     A launch a week old can be 520% to plan and 80% to goal at the same time;
+     both are true and neither replaces the other. */
   const riskColour = d => d == null ? 'var(--muted)'
     : d <= 14 ? 'var(--danger)' : d <= 30 ? 'var(--warn)' : 'var(--positive)';
 
   const sumRows = live.flatMap(l => (l.byVariant || []).map(v => ({
     product: l.name, variant: v.name, sku: v.sku,
     launch: l.launchDate, curveEnd: v.planEndDate || l.planEndDate,
-    pct: v.pctToGoalUnits, toGoal: v.unitsToGoal, inv: v.inventoryUnits,
+    ptp: v.pctToPlanUnits, pct: v.pctToGoalUnits, toGoal: v.unitsToGoal, inv: v.inventoryUnits,
     weeks: v.weeksOfStock, oos: v.estOOSDate, days: v.daysToOOS,
     href: 'launch.html?id=' + encodeURIComponent(l.launchId),
   })));
@@ -373,6 +385,7 @@
         <td><code style="font-size:11.5px;background:var(--bg);padding:1px 5px;border-radius:4px">${r.sku}</code></td>
         <td>${fmtSmart(r.launch)}</td>
         <td>${fmtSmart(r.curveEnd)}</td>
+        <td class="r" style="color:${ptpColor(r.ptp)};font-weight:600">${r.ptp == null ? '—' : r.ptp.toFixed(1) + '%'}</td>
         <td class="r" style="color:${ptpColor(r.pct)};font-weight:600">${r.pct == null ? '—' : r.pct.toFixed(1) + '%'}</td>
         <td class="r">${r.toGoal == null ? '—' : r.toGoal === 0 ? 'goal met' : num(r.toGoal)}</td>
         <td class="r">${num(r.inv)}</td>
@@ -380,7 +393,7 @@
         <td class="r pill-risk" style="color:${riskColour(r.days)}">${
           r.inv === 0 ? 'out of stock' : fmtSmart(r.oos)}</td>
       </tr>`).join('')
-      : '<tr><td colspan="10" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
+      : '<tr><td colspan="11" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
   };
   renderSummary();
 
@@ -401,8 +414,10 @@
 
   document.getElementById('sum-note').innerHTML =
     `${sumRows.length} variant${sumRows.length !== 1 ? 's' : ''} across ${live.length} live launch${live.length !== 1 ? 'es' : ''}. ` +
-    `<strong>% to Goal</strong> and <strong>Units to Goal</strong> are measured against the full plan curve (through <strong>Curve Ends</strong>), ` +
-    `so they differ from the <strong>% to Plan</strong> on each launch page, which measures plan to date. ` +
+    `<strong>% to Plan</strong> is units against plan through ${fmtSmart(META.dataCutoff)} — the same number as the ` +
+    `<strong>% to Plan</strong> column on each launch page. <strong>% to Goal</strong> and <strong>Units to Goal</strong> ` +
+    `measure the same units against the full plan curve (through <strong>Curve Ends</strong>), so a launch can be well ahead ` +
+    `of plan to date and still only part way to its goal. ` +
     `<strong>Wks of Stock</strong> and <strong>Est. OOS</strong> project current inventory forward at the trailing ` +
     `${META.oosWindowDays || 7}-day sell-through rate — an assumption that demand holds and no replenishment arrives, not a forecast. ` +
     `<strong>Curve Ends</strong> is the last day of the SKU's plan curve. Click any column to sort.`;
