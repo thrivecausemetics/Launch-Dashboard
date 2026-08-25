@@ -19,6 +19,11 @@
       --muted: #6B7A8D;
       --border: #E2E8EF;
       --positive: #22A06B;
+      /* Same values as launch.html. These were referenced by the risk colours
+         here long before they were defined, so every red and amber cell fell
+         back to body text and only the greens ever showed. */
+      --warn: #F59E0B;
+      --danger: #EF4444;
       --r: 12px;
     }
     * { margin:0; padding:0; box-sizing:border-box; }
@@ -188,8 +193,7 @@
             <th data-k="launch">Launch</th><th data-k="curveEnd">Curve Ends</th>
             <th class="r" data-k="ptp">% to Plan<span class="th-sub">to date</span></th>
             <th class="r" data-k="toGoal">Units to Goal<span class="th-sub">full curve</span></th>
-            <th class="r" data-k="inv">Inventory<span class="th-sub">Snowflake</span></th>
-            <th class="r" data-k="weeks">Wks of Stock<span class="th-sub">Snowflake</span></th>
+            <th class="r" data-k="weeks">Wks of Stock<span class="th-sub">real inv ÷ run rate</span></th>
             <th class="r" data-k="oos">Est. OOS<span class="th-sub">Snowflake trend</span></th>
             <th class="r" data-k="npdOos">Decay Curve OOS<span class="th-sub">Demand Planning</span></th>
             <th class="r" data-k="npdInv">Real Inventory<span class="th-sub">Demand Planning</span></th>
@@ -376,13 +380,25 @@
   // the gap to the data cutoff — same thresholds as the Snowflake column, so
   // the two OOS dates are read on one scale.
   const daysUntil = iso => iso == null ? null : db(META.dataCutoff, iso);
+  // Cover thresholds set by Brand: under 10 weeks is a reorder problem, 10-20
+  // is watch it, over 20 is fine. Applied to the real-inventory cover so the
+  // colour and the number people act on come from the same source.
+  const COVER_RED = 10, COVER_AMBER = 20;
+  const coverColour = w => w == null ? 'var(--muted)'
+    : w < COVER_RED ? 'var(--danger)' : w <= COVER_AMBER ? 'var(--warn)' : 'var(--positive)';
 
   const sumRows = live.flatMap(l => (l.byVariant || []).map(v => ({
     product: l.name, variant: v.name, sku: v.sku,
     launch: l.launchDate, curveEnd: v.planEndDate || l.planEndDate,
     ptp: v.pctToPlanUnits, toGoal: v.unitsToGoal, inv: v.inventoryUnits,
-    weeks: v.weeksOfStock, oos: v.estOOSDate, days: v.daysToOOS,
+    oos: v.estOOSDate, days: v.daysToOOS,
     npdOos: v.decayCurveOOS ?? null, npdInv: v.realInventoryUnits ?? null,
+    // Cover is Demand Planning's on-hand units at the trailing sell-through
+    // rate. The rate is the only part Snowflake still contributes — their
+    // sheet carries no rate of its own — so a blank rate blanks the cover
+    // rather than showing infinite stock.
+    weeks: v.realInventoryUnits != null && v.runRateUnitsPerDay > 0
+      ? Math.round(v.realInventoryUnits / v.runRateUnitsPerDay / 7 * 10) / 10 : null,
     href: 'launch.html?id=' + encodeURIComponent(l.launchId),
   })));
 
@@ -397,14 +413,13 @@
         <td>${fmtSmart(r.curveEnd)}</td>
         <td class="r" style="color:${ptpColor(r.ptp)};font-weight:600">${r.ptp == null ? '—' : r.ptp.toFixed(1) + '%'}</td>
         <td class="r">${r.toGoal == null ? '—' : r.toGoal === 0 ? 'goal met' : num(r.toGoal)}</td>
-        <td class="r">${num(r.inv)}</td>
-        <td class="r">${r.weeks == null ? '—' : r.weeks.toFixed(1)}</td>
+        <td class="r pill-risk" style="color:${coverColour(r.weeks)}">${r.weeks == null ? '—' : r.weeks.toFixed(1)}</td>
         <td class="r pill-risk" style="color:${riskColour(r.days)}">${
           r.inv === 0 ? 'out of stock' : fmtSmart(r.oos)}</td>
         <td class="r pill-risk" style="color:${riskColour(daysUntil(r.npdOos))}">${fmtSmart(r.npdOos)}</td>
-        <td class="r">${num(r.npdInv)}</td>
+        <td class="r pill-risk" style="color:${coverColour(r.weeks)}">${num(r.npdInv)}</td>
       </tr>`).join('')
-      : '<tr><td colspan="12" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
+      : '<tr><td colspan="11" style="text-align:center;padding:22px;color:var(--muted)">No live launches inside their decay curve.</td></tr>';
   };
   renderSummary();
 
@@ -429,13 +444,18 @@
     `<strong>% to Plan</strong> column on each launch page. <strong>Units to Goal</strong> is what is left against the ` +
     `full plan curve (through <strong>Curve Ends</strong>), so a launch can be well ahead of plan to date and still have ` +
     `a long way to its goal. ` +
-    `<br><br>The stock columns are <strong>two independent readings</strong>. ` +
-    `<strong>Inventory</strong>, <strong>Wks of Stock</strong> and <strong>Est. OOS</strong> come from Snowflake, projected ` +
-    `forward at the trailing ${META.oosWindowDays || 7}-day sell-through rate — an assumption that demand holds and no ` +
-    `replenishment arrives, not a forecast. <strong>Decay Curve OOS</strong> and <strong>Real Inventory</strong> come from ` +
-    `Demand Planning's <em>NPD OOS Tracking</em> sheet${META.npdOosSyncedAt ? ', synced ' + fmtSmart(META.npdOosSyncedAt) : ''}. ` +
-    `The two disagree — treat Demand Planning's as the on-hand truth and ask them before acting on a gap. ` +
-    `A dash means that SKU is not on their sheet. Click any column to sort.`;
+    `<br><br><strong>Real Inventory</strong> and <strong>Decay Curve OOS</strong> come from Demand Planning's ` +
+    `<em>NPD OOS Tracking</em> sheet${META.npdOosSyncedAt ? ', synced ' + fmtSmart(META.npdOosSyncedAt) : ''}; a dash means ` +
+    `that SKU is not on their sheet. <strong>Wks of Stock</strong> is that real inventory at the trailing ` +
+    `${META.oosWindowDays || 7}-day sell-through rate, and colours both stock columns: ` +
+    `<span style="color:var(--danger);font-weight:600">under ${COVER_RED} weeks</span>, ` +
+    `<span style="color:var(--warn);font-weight:600">${COVER_RED}–${COVER_AMBER} weeks</span>, ` +
+    `<span style="color:var(--positive);font-weight:600">over ${COVER_AMBER} weeks</span>. ` +
+    `<strong>Est. OOS</strong> is the Snowflake read of the same question, kept alongside because the two sources disagree — ` +
+    `where they do, Demand Planning's figure is the one to act on. Both project current stock forward and assume demand ` +
+    `holds with no replenishment arriving; neither is a forecast. ` +
+    `On a launch only a few weeks old the trailing rate is still the launch spike, so cover reads short and ` +
+    `<strong>Decay Curve OOS</strong>, which assumes demand decays, will sit much further out. Click any column to sort.`;
 
   // Sorting: click a header, toggle direction. Nulls always sink.
   let sortKey = null, sortAsc = true;
