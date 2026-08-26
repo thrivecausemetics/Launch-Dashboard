@@ -242,13 +242,62 @@ GROUP BY 1 ORDER BY NET_SALES DESC
 
 
 def q_daily(skus):
-    return q_launch_lines_cte(skus) + """
-SELECT ORDER_DAY AS D, SUM(QTY) AS UNITS, SUM(NET_LINE) AS NET_SALES,
-       SUM(CASE WHEN REGION = 'US' THEN QTY ELSE 0 END)      AS US_UNITS,
-       SUM(CASE WHEN REGION = 'CA' THEN QTY ELSE 0 END)      AS CA_UNITS,
-       SUM(CASE WHEN REGION = 'US' THEN NET_LINE ELSE 0 END) AS US_NET_SALES,
-       SUM(CASE WHEN REGION = 'CA' THEN NET_LINE ELSE 0 END) AS CA_NET_SALES
-FROM launch_lines GROUP BY 1 ORDER BY 1
+    """Day x SKU.
+
+    Carries the SKU dimension because the dashboard filters the daily trend
+    and the daily table by shade, and a launch-level-only series meant those
+    kept showing the whole launch while everything above them was filtered.
+    Launch-level totals are rolled up from these rows in Python — units and
+    revenue are additive, so querying them a second time would be waste.
+
+    New/returning counts here are per SKU per day: a customer buying two
+    shades on one day is counted in each. That is the same treatment the
+    per-variant totals already get, and the filter bar says so. The exact
+    launch-level split comes from q_daily_customers() below.
+    """
+    o = COLS["orders"]
+    return q_launch_lines_cte(skus) + f""",
+first_orders AS (
+  SELECT {o['customer_id']} AS CUSTOMER_ID, MIN(CAST({o['order_date']} AS DATE)) AS FIRST_ORDER_DAY
+  FROM {SRC_DB}.{o['table']}
+  GROUP BY 1
+)
+SELECT ll.ORDER_DAY AS D, ll.SKU AS SKU,
+       SUM(ll.QTY) AS UNITS, SUM(ll.NET_LINE) AS NET_SALES,
+       SUM(CASE WHEN ll.REGION = 'US' THEN ll.QTY ELSE 0 END)      AS US_UNITS,
+       SUM(CASE WHEN ll.REGION = 'CA' THEN ll.QTY ELSE 0 END)      AS CA_UNITS,
+       SUM(CASE WHEN ll.REGION = 'US' THEN ll.NET_LINE ELSE 0 END) AS US_NET_SALES,
+       SUM(CASE WHEN ll.REGION = 'CA' THEN ll.NET_LINE ELSE 0 END) AS CA_NET_SALES,
+       COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY >= %(launch_date)s THEN ll.CUSTOMER_ID END) AS NEW_CUSTOMERS,
+       COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY <  %(launch_date)s THEN ll.CUSTOMER_ID END) AS RET_CUSTOMERS
+FROM launch_lines ll
+LEFT JOIN first_orders fo ON fo.CUSTOMER_ID = ll.CUSTOMER_ID
+GROUP BY 1, 2 ORDER BY 1, 2
+"""
+
+
+def q_daily_customers(skus):
+    """Launch-level new vs returning buyers per day.
+
+    Distinct customer counts are not additive across SKUs, so this cannot be
+    summed out of q_daily(). It answers "of the people who bought on day N,
+    what share had never bought from us before" — the same new/returning
+    definition as the donut, sliced by day instead of over the whole launch.
+    """
+    o = COLS["orders"]
+    return q_launch_lines_cte(skus) + f""",
+first_orders AS (
+  SELECT {o['customer_id']} AS CUSTOMER_ID, MIN(CAST({o['order_date']} AS DATE)) AS FIRST_ORDER_DAY
+  FROM {SRC_DB}.{o['table']}
+  GROUP BY 1
+)
+SELECT ll.ORDER_DAY AS D,
+       COUNT(DISTINCT ll.CUSTOMER_ID) AS TOTAL_CUSTOMERS,
+       COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY >= %(launch_date)s THEN ll.CUSTOMER_ID END) AS NEW_CUSTOMERS,
+       COUNT(DISTINCT CASE WHEN fo.FIRST_ORDER_DAY <  %(launch_date)s THEN ll.CUSTOMER_ID END) AS RET_CUSTOMERS
+FROM launch_lines ll
+LEFT JOIN first_orders fo ON fo.CUSTOMER_ID = ll.CUSTOMER_ID
+GROUP BY 1 ORDER BY 1
 """
 
 
@@ -291,6 +340,28 @@ SELECT COUNT(*)                            AS TOTAL,
        COUNT(*) - COUNT(p.CUSTOMER_ID)     AS NEW_TO_CATEGORY
 FROM launch_buyers b
 LEFT JOIN prior_category_buyers p ON p.CUSTOMER_ID = b.CUSTOMER_ID
+"""
+
+
+def q_category_daily(skus, cat_patterns):
+    """New-to-category vs existing-category buyers per day.
+
+    'Existing' is judged against the pre-launch history once, not per day, so
+    a customer who is new to the category on day 3 stays counted as new on
+    day 3 even if they bought the category again on day 40. The question is
+    what each day's buyers looked like when they arrived.
+    """
+    return q_launch_lines_cte(skus) + f""",
+buyer_days AS (
+  SELECT DISTINCT ORDER_DAY, CUSTOMER_ID FROM launch_lines
+),{_prior_category_cte(cat_patterns)}
+SELECT bd.ORDER_DAY                        AS D,
+       COUNT(*)                            AS TOTAL,
+       COUNT(*) - COUNT(p.CUSTOMER_ID)     AS NEW_TO_CATEGORY,
+       COUNT(p.CUSTOMER_ID)                AS EXISTING_CATEGORY
+FROM buyer_days bd
+LEFT JOIN prior_category_buyers p ON p.CUSTOMER_ID = bd.CUSTOMER_ID
+GROUP BY 1 ORDER BY 1
 """
 
 
@@ -553,6 +624,38 @@ def f2(v):
     return round(float(v or 0), 2)
 
 
+class Compact:
+    """Marks a value to be written on one line, ignoring the output indent."""
+
+    __slots__ = ("value",)
+
+    def __init__(self, value):
+        self.value = value
+
+
+def dump_js(data):
+    """json.dumps(indent=2), except Compact() values stay on a single line.
+
+    The per-SKU daily series is a couple of thousand rows of six numbers.
+    Pretty-printed at indent=2 that is fifteen thousand lines and roughly
+    triples the file every browser downloads on page load, to make a number
+    grid nobody reads marginally easier to read. Everything a human might
+    actually open this file to check stays indented.
+    """
+    blobs = []
+
+    def default(o):
+        if isinstance(o, Compact):
+            blobs.append(json.dumps(o.value, default=str))
+            return f"@@COMPACT{len(blobs) - 1}@@"
+        return str(o)
+
+    out = json.dumps(data, indent=2, default=default)
+    for i, blob in enumerate(blobs):
+        out = out.replace(f'"@@COMPACT{i}@@"', blob)
+    return out
+
+
 _PLAN_FALLBACK = None
 
 
@@ -684,6 +787,7 @@ def safe_fetch(label, fn, default, key=None):
 def _build_category(cur, skus, cat_patterns, params, lc, sku_meta):
     cc_row = rows(cur, q_category_customers(skus, cat_patterns), params)[0]
     cc_var = rows(cur, q_category_by_variant(skus, cat_patterns), params)
+    cc_daily = rows(cur, q_category_daily(skus, cat_patterns), params)
     return {
         "category": lc.get("category"),
         "total": int(cc_row["TOTAL"] or 0),
@@ -698,6 +802,9 @@ def _build_category(cur, skus, cat_patterns, params, lc, sku_meta):
             }
             for r in cc_var
         ],
+        # [date, newToCategory, existingCategory] per day, for the trend view.
+        "daily": Compact([[str(r["D"]), int(r["NEW_TO_CATEGORY"] or 0),
+                           int(r["EXISTING_CATEGORY"] or 0)] for r in cc_daily]),
     }
 
 
@@ -718,6 +825,7 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
     summary_row = rows(cur, q_summary(skus), params)[0]
     variant_rows = rows(cur, q_by_variant(skus), params)
     daily_rows = rows(cur, q_daily(skus), params)
+    daily_customer_rows = rows(cur, q_daily_customers(skus), params)
     # Optional sources degrade gracefully if the schema isn't granted.
     # Archived launches (past the decay curve) keep sales, variants, daily and
     # plan so the Historical view can render, but skip the per-tab detail: those
@@ -852,24 +960,65 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
             "realInventoryUnits": (NPD_OOS.get(sku) or {}).get("realInventoryUnits"),
         })
 
+    # daily_rows is day x SKU. Roll it up to launch-level totals here — units
+    # and revenue are additive — and keep the per-SKU rows so the page can
+    # rebuild the same series for a shade subset.
+    by_day = {}
+    daily_by_sku = {}
+    for r in daily_rows:
+        day, sku = str(r["D"]), r["SKU"]
+        t = by_day.setdefault(day, {"units": 0, "netSales": 0.0, "usUnits": 0, "caUnits": 0,
+                                    "usNetSales": 0.0, "caNetSales": 0.0})
+        t["units"] += int(r["UNITS"] or 0)
+        t["netSales"] += float(r["NET_SALES"] or 0)
+        t["usUnits"] += int(r["US_UNITS"] or 0)
+        t["caUnits"] += int(r["CA_UNITS"] or 0)
+        t["usNetSales"] += float(r["US_NET_SALES"] or 0)
+        t["caNetSales"] += float(r["CA_NET_SALES"] or 0)
+        # Column order matches DAILY_SKU_COLUMNS in launch.html. Positional
+        # rather than keyed: this is the one structure in data.js big enough
+        # for the key names to cost more than the values.
+        daily_by_sku.setdefault(sku, []).append([
+            day, int(r["UNITS"] or 0), f2(r["NET_SALES"]),
+            int(r["US_UNITS"] or 0), int(r["CA_UNITS"] or 0),
+            f2(r["US_NET_SALES"]), f2(r["CA_NET_SALES"]),
+            int(r["NEW_CUSTOMERS"] or 0), int(r["RET_CUSTOMERS"] or 0),
+        ])
+
+    # Exact launch-level new/returning per day. Distinct customer counts do
+    # not sum across SKUs, so this cannot come out of the rollup above.
+    cust_by_day = {str(r["D"]): (int(r["NEW_CUSTOMERS"] or 0), int(r["RET_CUSTOMERS"] or 0))
+                   for r in daily_customer_rows}
+
     # plan_daily holds the per-day plan the cumulative curve is built from;
     # carrying it onto each row lets the dashboard show daily actual vs plan
     # instead of only the cumulative comparison.
     daily, cum_u, cum_s, cum_p = [], 0, 0.0, 0
-    for r in daily_rows:
-        u, s = int(r["UNITS"] or 0), f2(r["NET_SALES"])
-        day = str(r["D"])
+    for day in sorted(by_day):
+        t = by_day[day]
+        u, s = t["units"], round(t["netSales"], 2)
         plan_u = plan_daily.get(day)
         cum_u += u
         cum_s = round(cum_s + s, 2)
         if plan_u is not None:
             cum_p += plan_u
+        new_c, ret_c = cust_by_day.get(day, (None, None))
         daily.append({"date": day, "units": u, "netSales": s,
-                      "usUnits": int(r["US_UNITS"] or 0), "caUnits": int(r["CA_UNITS"] or 0),
-                      "usNetSales": f2(r["US_NET_SALES"]), "caNetSales": f2(r["CA_NET_SALES"]),
+                      "usUnits": t["usUnits"], "caUnits": t["caUnits"],
+                      "usNetSales": round(t["usNetSales"], 2),
+                      "caNetSales": round(t["caNetSales"], 2),
                       "cumUnits": cum_u, "cumSales": cum_s,
                       "planUnits": plan_u,
-                      "cumPlanUnits": cum_p if plan_daily else None})
+                      "cumPlanUnits": cum_p if plan_daily else None,
+                      "newCustomers": new_c, "retCustomers": ret_c})
+
+    # Per-SKU daily plan, so the plan line and "% to Plan" follow a shade
+    # filter instead of comparing a subset's units to the whole launch's plan.
+    plan_by_sku = {}
+    for sku, d, u in plan_detail:
+        plan_by_sku.setdefault(sku, []).append([d, u])
+    for v in plan_by_sku.values():
+        v.sort()
 
     pdp = []
     for r in pdp_rows:
@@ -936,6 +1085,13 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
         "archived": not full,
         "byVariant": by_variant,
         "dailySales": daily,
+        # Per-SKU daily series, so a shade filter can rebuild the daily trend,
+        # the daily table and the new-vs-returning trend from the same numbers
+        # instead of leaving them showing the whole launch.
+        "dailySkuColumns": ["date", "units", "netSales", "usUnits", "caUnits",
+                            "usNetSales", "caNetSales", "newCustomers", "retCustomers"],
+        "dailyBySku": {k: Compact(v) for k, v in daily_by_sku.items()},
+        "planBySku": {k: Compact(v) for k, v in plan_by_sku.items()},
         "pdp": pdp,
         "crossSell": [
             {"product": r["PRODUCT"], "sku": r["SKU"], "pairs": int(r["PAIRS"] or 0)}
@@ -1112,7 +1268,8 @@ def main():
             print(f"\n-- ========== {lc['id']}{' (archived)' if is_archived else ''} ==========")
             queries = [
                 ("summary", q_summary(skus)), ("by_variant", q_by_variant(skus)),
-                ("daily", q_daily(skus)), ("plan", q_plan(skus)),
+                ("daily", q_daily(skus)), ("daily_customers", q_daily_customers(skus)),
+                ("plan", q_plan(skus)),
                 ("plan_full", q_plan_full(skus)),
             ]
             if not is_archived:
@@ -1197,7 +1354,7 @@ def main():
         f"   Built by scripts/refresh_data.py on {today} · cutoff {cutoff} · "
         f"source Snowflake {data['meta']['sourceDb']} */\n"
         "window.DASHBOARD_DATA = "
-        + json.dumps(data, indent=2, default=str)
+        + dump_js(data)
         + ";\n"
     )
     print(f"Wrote {OUT_PATH} · cutoff {cutoff} · {len(launches)} launches "

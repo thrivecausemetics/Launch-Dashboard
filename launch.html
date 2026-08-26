@@ -67,6 +67,9 @@
     .ptp-fill { height:100%; border-radius:2px; }
     .row-2-1 { display:grid; grid-template-columns:2fr 1fr; gap:18px; margin-bottom:18px; }
     .row-1-1 { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:18px; }
+    /* Full-width row. The mix-over-time chart is a long time series — squeezed
+       into half the page the daily movement it exists to show disappears. */
+    .row-1 { display:grid; grid-template-columns:1fr; gap:18px; margin-bottom:18px; }
     .chart-card { background:var(--card); border-radius:var(--r); border:1px solid var(--border); padding:20px; }
     .chart-title { font-size:13px; font-weight:600; color:var(--text); margin-bottom:4px; }
     .chart-sub   { font-size:11px; color:var(--muted); margin-bottom:14px; }
@@ -303,6 +306,21 @@
         <div class="chart-title split"><span>Cumulative Units Sold</span><button type="button" class="btn-export sm" data-chart-export="cu" title="Download this chart's data as CSV"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>CSV</button></div>
         <div class="chart-sub" id="cs-cum-sub"></div>
         <canvas id="chart-cum" height="240"></canvas>
+      </div>
+    </div>
+    <div class="row-1">
+      <div class="chart-card">
+        <div class="chart-title split"><span id="cs-nvrt-title">New vs Returning Customers Over Time</span>
+          <span class="ct-actions">
+            <span class="seg" role="group" aria-label="Mix chart metric">
+              <button type="button" class="seg-btn is-on" data-nvrt-metric="share">% Share</button>
+              <button type="button" class="seg-btn" data-nvrt-metric="count">Buyers</button>
+            </span>
+            <button type="button" class="btn-export sm" data-chart-export="nvt" title="Download this chart's data as CSV"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>CSV</button>
+          </span>
+        </div>
+        <div class="chart-sub" id="cs-nvrt-sub"></div>
+        <canvas id="chart-nvr-time" height="200"></canvas>
       </div>
     </div>
     <div class="table-card">
@@ -557,17 +575,77 @@ function hasRegionData(d) {
 /* Derive a filtered copy of the launch for the Overview renderers. Sales
    figures (KPI row 1, variant charts/tables, daily trend) respect the
    filters; customer, plan and PDP metrics stay launch-wide. */
+/* Column positions in dailyBySku rows, mirroring dailySkuColumns in data.js.
+   Read from the data when it is there so a column added by the refresh does
+   not silently shift every field here. */
+const DAILY_SKU_COLUMNS = ['date', 'units', 'netSales', 'usUnits', 'caUnits',
+                           'usNetSales', 'caNetSales', 'newCustomers', 'retCustomers'];
+
+/* Rebuild the daily series from just the selected shades.
+
+   Everything below the KPI cards used to keep showing the whole launch while
+   the cards above it were filtered — pick one shade and the daily chart, the
+   cumulative curve and the Daily Sales Detail table all still answered a
+   different question than the rest of the page. */
+function dailyForSkus(d, skus) {
+  const cols = d.dailySkuColumns || DAILY_SKU_COLUMNS;
+  const ix = Object.fromEntries(cols.map((c, i) => [c, i]));
+  const byDay = new Map();
+  for (const sku of skus) {
+    for (const row of (d.dailyBySku || {})[sku] || []) {
+      const day = row[ix.date];
+      const t = byDay.get(day) || {date: day, units: 0, netSales: 0, usUnits: 0, caUnits: 0,
+                                   usNetSales: 0, caNetSales: 0, newCustomers: 0, retCustomers: 0};
+      for (const c of cols) if (c !== 'date') t[c] += row[ix[c]] || 0;
+      byDay.set(day, t);
+    }
+  }
+  // Per-SKU daily plan, so "% to Plan" in the table compares the subset's
+  // units to the subset's plan rather than to the whole launch's.
+  const planByDay = new Map();
+  for (const sku of skus) {
+    for (const [day, units] of (d.planBySku || {})[sku] || [])
+      planByDay.set(day, (planByDay.get(day) || 0) + units);
+  }
+  const hasPlan = planByDay.size > 0;
+  let cumU = 0, cumS = 0, cumP = 0;
+  const daily = [...byDay.values()].sort((a, b) => a.date < b.date ? -1 : 1).map(r => {
+    cumU += r.units;
+    cumS = Math.round((cumS + r.netSales) * 100) / 100;
+    const planU = planByDay.has(r.date) ? planByDay.get(r.date) : null;
+    if (planU != null) cumP += planU;
+    return {...r, netSales: Math.round(r.netSales * 100) / 100,
+            usNetSales: Math.round(r.usNetSales * 100) / 100,
+            caNetSales: Math.round(r.caNetSales * 100) / 100,
+            cumUnits: cumU, cumSales: cumS,
+            planUnits: planU, cumPlanUnits: hasPlan ? cumP : null};
+  });
+  const planCurve = [];
+  let c = 0;
+  for (const day of [...planByDay.keys()].sort()) { c += planByDay.get(day); planCurve.push({date: day, cumPlanUnits: c}); }
+  return {daily, planCurve};
+}
+
 function filteredView(d) {
   const region = hasRegionData(d) ? FILTER.region : 'ALL';
   let variants = d.byVariant.filter(x => !FILTER.skus.size || FILTER.skus.has(x.sku));
   let daily = d.dailySales, summary = d.summary, planCurve = d.planCurve;
   let unitsPerOrder = d.unitsPerOrder, regionLabel = null;
+  // Shade subset first, so a region filter below still applies on top of it.
+  const skuSubset = FILTER.skus.size && FILTER.skus.size < d.byVariant.length;
+  if (skuSubset && d.dailyBySku) {
+    const rebuilt = dailyForSkus(d, [...FILTER.skus]);
+    daily = rebuilt.daily;
+    planCurve = rebuilt.planCurve;
+  }
   if (region !== 'ALL') {
     const us = region === 'US';
     variants = variants.map(x => ({...x, units: us ? x.usUnits : x.caUnits,
       netSales: us ? x.usNetSales : x.caNetSales, orders: null, planUnits: null, pctToPlanUnits: null}));
     let cu = 0, cs = 0;
-    daily = d.dailySales.map(r => {
+    // Maps over `daily`, which already carries any shade subset — mapping
+    // d.dailySales here would throw the shade filter away.
+    daily = daily.map(r => {
       const u = us ? r.usUnits : r.caUnits, s = us ? r.usNetSales : r.caNetSales;
       cu += u; cs = Math.round((cs + s) * 100) / 100;
       return {...r, units: u, netSales: s, cumUnits: cu, cumSales: cs};
@@ -630,7 +708,7 @@ function buildFilterBar(d) {
       d.byVariant.map(x => `<button class="fb-chip${FILTER.skus.has(x.sku) ? ' on' : ''}" data-sku="${x.sku}"><span class="dot" style="background:${x.color || '#3A9E98'}"></span>${x.name}</button>`).join('') +
       '<button class="fb-chip" data-all="1">All</button></div>';
   }
-  html += '<span class="fb-note">Filters apply to all KPI cards, variant charts &amp; tables, and the daily trend (daily trend follows the region filter only). With a variant subset, orders &amp; customers are per-variant sums, so multi-variant buyers count in each selected variant.</span>';
+  html += '<span class="fb-note">Filters apply to everything on this tab &mdash; KPI cards, every chart, the variant table, the daily trend and the Daily Sales Detail table below it. With a variant subset, orders &amp; customers are per-variant sums, so a buyer of several selected variants counts once in each. Other tabs are launch-wide.</span>';
   bar.innerHTML = html;
   const rerender = () => { buildFilterBar(LOADED); renderOverview(LOADED); };
   bar.querySelectorAll('[data-region]').forEach(b => b.onclick = () => { FILTER.region = b.dataset.region; rerender(); });
@@ -652,6 +730,7 @@ function renderOverview(d) {
   renderNvrShade(v);
   renderTable(v);
   renderTrend(v);
+  renderNvrTime(v);
   renderDailyTable(v);
 }
 
@@ -879,7 +958,7 @@ function overviewFilters(includeVariants) {
       caveats.push('Variant subset active — orders and customers are per-variant sums, so a buyer of several selected variants is counted once in each.');
     }
   } else {
-    lines.push(['Variant filter', 'Not applied — the daily trend follows the region filter only']);
+    lines.push(['Variant filter', 'Not applied — this view is launch-wide']);
   }
   return { lines, caveats, slug };
 }
@@ -938,16 +1017,18 @@ const EXPORTS = {
   'overview-daily': () => {
     const v = filteredView(LOADED), pm = planMaps(v);
     return { slug: 'daily-sales', title: 'Daily Sales Detail',
-      filters: () => overviewFilters(false),
+      filters: () => overviewFilters(true),
       columns: ['Date', 'Units', 'Plan Units', 'Variance Units', 'Pct to Plan',
                 'Net Sales USD', 'US Units', 'CA Units', 'Cum Units',
-                'Cum Plan Units', 'Cum Net Sales USD'],
+                'Cum Plan Units', 'Cum Net Sales USD',
+                'New Customers', 'Returning Customers'],
       rows: v.dailySales.map(r => {
         const plan = pm.daily[r.date] ?? null;
         return [r.date, r.units, plan ?? '', plan == null ? '' : r.units - plan,
                 plan ? (r.units / plan * 100).toFixed(1) : '', r.netSales,
                 r.usUnits ?? '', r.caUnits ?? '', r.cumUnits,
-                pm.cum[r.date] ?? '', r.cumSales];
+                pm.cum[r.date] ?? '', r.cumSales,
+                r.newCustomers ?? '', r.retCustomers ?? ''];
       }) };
   },
   'traffic-channels': () => ({
@@ -1010,8 +1091,10 @@ const CHART_EXPORTS = {
   u:    { title: 'Units Sold by Variant',               filters: () => overviewFilters(true) },
   d:    { title: 'New vs Returning Customers',          filters: () => overviewFilters(true) },
   ns:   { title: 'New vs Returning by Shade',           filters: () => overviewFilters(true) },
-  dl:   { title: 'Daily Trend',                         filters: () => overviewFilters(false) },
-  cu:   { title: 'Cumulative Units Sold',               filters: () => overviewFilters(false) },
+  dl:   { title: 'Daily Trend',                         filters: () => overviewFilters(true) },
+  cu:   { title: 'Cumulative Units Sold',               filters: () => overviewFilters(true) },
+  nvt:  { title: 'New vs Returning Over Time',          filters: () => overviewFilters(true) },
+  cdt:  { title: 'Category Mix Over Time',              filters: LAUNCH_WIDE },
   tch:  { title: 'Sessions by Channel',                 filters: LAUNCH_WIDE },
   tmo:  { title: 'Monthly Session Trend',               filters: LAUNCH_WIDE },
   pdpv: { title: 'PDP Views by SKU',                    filters: LAUNCH_WIDE },
@@ -1131,6 +1214,101 @@ function renderNvrShade(d) {
       plugins:{legend:{position:'top',labels:{boxWidth:12,font:{size:11}}}},
       scales:{ x:{grid:{display:false},ticks:{maxRotation:45,font:{size:11}}}, y:{grid:{color:'#E2E8EF'}} } },
   });
+}
+
+/* ── NEW VS RETURNING OVER TIME ──
+   The donut says what the mix was across the whole launch; this says how it
+   got there. A launch that opened at 40% new and settled at 12% tells a very
+   different story from one that held steady, and the donut cannot show the
+   difference.
+
+   Share is the default view because that is the question people ask ("what
+   share of day one was new?"). Counts stay one click away, because on a share
+   chart a day with nine buyers looks exactly as important as launch day. */
+let nvrtMetric = 'share';
+let _nvrtData = null;
+
+function nvrSeries(d) {
+  // Launch-level rows carry exact distinct counts. Under a shade subset those
+  // are not available — distinct buyers do not sum across SKUs — so the rows
+  // rebuilt from dailyBySku are used instead, where a buyer of two selected
+  // shades counts in each. The sub-line says which is on screen.
+  return (d.dailySales || []).filter(r => r.newCustomers != null || r.retCustomers != null);
+}
+
+function buildNvrTimeChart(d) {
+  const rows = nvrSeries(d);
+  const el = document.getElementById('chart-nvr-time');
+  if (!el) return;
+  const share = nvrtMetric === 'share';
+  const tot = rows.map(r => (r.newCustomers || 0) + (r.retCustomers || 0));
+  const val = (r, k, i) => share ? (tot[i] ? (r[k] || 0) / tot[i] * 100 : null) : (r[k] || 0);
+
+  kill('nvt');
+  _ch.nvt = new Chart(el, {
+    type: 'line',
+    data: {
+      labels: rows.map(r => fmt.day(r.date)),
+      datasets: [
+        {label:'New', data:rows.map((r,i)=>val(r,'newCustomers',i)), borderColor:'#3A9E98',
+         backgroundColor:'rgba(58,158,152,.55)', fill:true, tension:0.25, pointRadius:0, borderWidth:1.5},
+        {label:'Returning', data:rows.map((r,i)=>val(r,'retCustomers',i)), borderColor:'#C9A84C',
+         backgroundColor:'rgba(201,168,76,.55)', fill:true, tension:0.25, pointRadius:0, borderWidth:1.5},
+      ],
+    },
+    options: {
+      responsive:true, interaction:{mode:'index', intersect:false},
+      plugins:{ legend:{position:'top', labels:{boxWidth:12, font:{size:11}}},
+        tooltip:{callbacks:{label:c => {
+          const i = c.dataIndex, n = rows[i].newCustomers || 0, rt = rows[i].retCustomers || 0;
+          const raw = c.datasetIndex === 0 ? n : rt;
+          return share ? ` ${c.dataset.label}: ${c.raw == null ? '—' : c.raw.toFixed(1)}% (${fmt.num(raw)} of ${fmt.num(n + rt)})`
+                       : ` ${c.dataset.label}: ${fmt.num(raw)} buyers`;
+        }}}},
+      scales:{
+        x:{stacked:true, grid:{display:false}, ticks:{maxTicksLimit:14, maxRotation:45, font:{size:11}}},
+        y:{stacked:true, min:0, max: share ? 100 : undefined,
+           ticks:{callback:v => share ? v + '%' : v.toLocaleString()}, grid:{color:'#E2E8EF'}},
+      },
+    },
+  });
+}
+
+function renderNvrTime(d) {
+  const rows = nvrSeries(d);
+  const sub = document.getElementById('cs-nvrt-sub');
+  const wrap = document.getElementById('chart-nvr-time')?.closest('.row-1');
+  if (!rows.length) {
+    // Older data.js snapshots have no per-day customer split. Say so rather
+    // than drawing an empty chart.
+    if (wrap) wrap.style.display = 'none';
+    return;
+  }
+  if (wrap) wrap.style.display = '';
+  const subset = FILTER.skus.size && FILTER.skus.size < LOADED.byVariant.length;
+  const first = rows[0], last = rows[rows.length - 1];
+  const pct = r => { const t = (r.newCustomers || 0) + (r.retCustomers || 0); return t ? (r.newCustomers || 0) / t * 100 : 0; };
+  sub.textContent = `New share moved from ${pct(first).toFixed(1)}% on ${fmt.day(first.date)} `
+    + `to ${pct(last).toFixed(1)}% on ${fmt.day(last.date)}`
+    + (subset ? ' · selected shades only, so a buyer of several counts in each' : '')
+    // Customers have never been split by region anywhere on this page — the
+    // source has no region on the customer, only on the order — so say it
+    // here rather than let a US/CA filter look like it applied.
+    + (FILTER.region !== 'ALL' ? ' · customers are not split by region, so this stays launch-wide' : '');
+  _nvrtData = d;
+  buildNvrTimeChart(d);
+
+  const seg = document.querySelector('[data-nvrt-metric]')?.parentElement;
+  if (seg && !seg.dataset.bound) {
+    seg.dataset.bound = '1';
+    seg.addEventListener('click', e => {
+      const btn = e.target.closest('[data-nvrt-metric]');
+      if (!btn) return;
+      nvrtMetric = btn.dataset.nvrtMetric;
+      seg.querySelectorAll('.seg-btn').forEach(b => b.classList.toggle('is-on', b === btn));
+      if (_nvrtData) buildNvrTimeChart(_nvrtData);
+    });
+  }
 }
 
 function renderTable(d) {
@@ -1609,6 +1787,13 @@ function renderCategory(d) {
         <canvas id="chart-cat-var" height="240"></canvas>
       </div>` : ''}
     </div>
+    ${cc.daily && cc.daily.length ? `<div class="row-1">
+      <div class="chart-card">
+        <div class="chart-title split"><span>Category Mix Over Time</span>${chartBtn('cdt')}</div>
+        <div class="chart-sub" id="cs-catt-sub"></div>
+        <canvas id="chart-cat-time" height="200"></canvas>
+      </div>
+    </div>` : ''}
     <p class="data-note">Source: UOS.ORDERS + UOS.ORDER_LINE_ITEMS via Snowflake ${META.sourceDb || 'DAASITY_DB'} · Existing = customer had a non-refunded ${catLabel} order before ${fmt.date(d.launchDate)}; New = no prior ${catLabel} purchase (full history lookback). Refunded orders excluded.</p>`;
   kill('cd');
   _ch.cd = new Chart(document.getElementById('chart-cat-donut'), {
@@ -1616,6 +1801,7 @@ function renderCategory(d) {
     data:{labels:['New to category','Existing category'],datasets:[{data:[cc.newToCategory,cc.existingCategory],backgroundColor:['#22A06B','#3A9E98'],borderWidth:0,hoverOffset:6}]},
     options:{responsive:true,cutout:'66%',plugins:{legend:{position:'bottom',labels:{boxWidth:12,font:{size:11}}},tooltip:{callbacks:{label:c=>' '+fmt.num(c.raw)+' ('+(c.raw/(total||1)*100).toFixed(1)+'%)'}}}},
   });
+  if (cc.daily && cc.daily.length) renderCategoryTime(cc, d);
   if (cc.byVariant && cc.byVariant.length) {
     kill('cv');
     _ch.cv = new Chart(document.getElementById('chart-cat-var'), {
@@ -1627,6 +1813,46 @@ function renderCategory(d) {
         scales:{x:{stacked:true,grid:{display:false},ticks:{maxRotation:45,font:{size:11}}},y:{stacked:true,grid:{color:'#E2E8EF'}}}},
     });
   }
+}
+
+/* Category mix over time — the same question as the donut above it, asked per
+   day. Rows are [date, newToCategory, existingCategory]; "new" is judged
+   against the pre-launch history, so a customer who was new to the category on
+   day 3 stays counted that way on day 3 for good. */
+function renderCategoryTime(cc, d) {
+  const rows = cc.daily || [];
+  const el = document.getElementById('chart-cat-time');
+  if (!el || !rows.length) return;
+  const tot = rows.map(r => (r[1] || 0) + (r[2] || 0));
+  const pctOf = i => tot[i] ? (rows[i][1] || 0) / tot[i] * 100 : 0;
+  const sub = document.getElementById('cs-catt-sub');
+  if (sub) sub.textContent =
+    `New-to-${d.category || 'category'} share moved from ${pctOf(0).toFixed(1)}% on ${fmt.day(rows[0][0])} `
+    + `to ${pctOf(rows.length - 1).toFixed(1)}% on ${fmt.day(rows[rows.length - 1][0])}`;
+
+  kill('cdt');
+  _ch.cdt = new Chart(el, {
+    type: 'line',
+    data: {
+      labels: rows.map(r => fmt.day(r[0])),
+      datasets: [
+        {label:`New to ${d.category || 'category'}`, data:rows.map((r,i)=>tot[i] ? (r[1]||0)/tot[i]*100 : null),
+         borderColor:'#22A06B', backgroundColor:'rgba(34,160,107,.55)', fill:true, tension:0.25, pointRadius:0, borderWidth:1.5},
+        {label:`Existing ${d.category || 'category'}`, data:rows.map((r,i)=>tot[i] ? (r[2]||0)/tot[i]*100 : null),
+         borderColor:'#3A9E98', backgroundColor:'rgba(58,158,152,.55)', fill:true, tension:0.25, pointRadius:0, borderWidth:1.5},
+      ],
+    },
+    options: {
+      responsive:true, interaction:{mode:'index', intersect:false},
+      plugins:{ legend:{position:'top', labels:{boxWidth:12, font:{size:11}}},
+        tooltip:{callbacks:{label:c => {
+          const i = c.dataIndex, raw = c.datasetIndex === 0 ? rows[i][1] : rows[i][2];
+          return ` ${c.dataset.label}: ${c.raw == null ? '—' : c.raw.toFixed(1)}% (${fmt.num(raw)} of ${fmt.num(tot[i])})`;
+        }}}},
+      scales:{ x:{stacked:true, grid:{display:false}, ticks:{maxTicksLimit:14, maxRotation:45, font:{size:11}}},
+               y:{stacked:true, min:0, max:100, ticks:{callback:v=>v+'%'}, grid:{color:'#E2E8EF'}} },
+    },
+  });
 }
 
 /* ── DATA GUIDE TAB (dynamic bits) ── */
