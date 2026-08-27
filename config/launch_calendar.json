@@ -50,16 +50,6 @@
       "asana_url": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1213996421586726"
     },
     {
-      "name": "Triple Threat",
-      "slug": "triple-threat",
-      "launch_date": "2026-08-26",
-      "internal_date": "2026-07-24",
-      "section": "GTM Campaigns",
-      "completed": false,
-      "asana_gid": "1213929460766191",
-      "asana_url": "https://app.asana.com/1/15251267373658/project/1212587594973739/task/1213929460766191"
-    },
-    {
       "name": "Pumpkin Spice Latte Pout Hero Lip Balm",
       "slug": "pumpkin-spice-latte-pout-hero-lip-balm",
       "launch_date": "2026-09-02",
@@ -136,12 +126,6 @@
       "launch_date": "2026-08-18",
       "section": "GTM Campaigns",
       "asana_url": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1213996421586726"
-    },
-    {
-      "name": "Triple Threat",
-      "launch_date": "2026-08-26",
-      "section": "GTM Campaigns",
-      "asana_url": "https://app.asana.com/1/15251267373658/project/1212587594973739/task/1213929460766191"
     },
     {
       "name": "Pumpkin Spice Latte Pout Hero Lip Balm",
