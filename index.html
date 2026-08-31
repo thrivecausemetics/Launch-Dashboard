@@ -157,6 +157,16 @@
        reads as a footnote rather than competing with the column beside it. */
     .sum-card th.ref, .sum-card td.ref { color:var(--muted); border-left:1px solid var(--border); }
     .sku-chip { font-size:11.5px; font-weight:600; padding:1px 5px; border-radius:4px; }
+    /* Same treatment as the export buttons on the launch pages, so the two
+       screens behave the same way to someone moving between them. */
+    .btn-export { font:600 12px inherit; padding:7px 14px; border:0; border-radius:8px;
+                  background:var(--tc-teal); color:#fff; cursor:pointer; white-space:nowrap;
+                  display:inline-flex; align-items:center; gap:7px;
+                  box-shadow:0 1px 3px rgba(28,43,58,.18); transition:background .15s ease; }
+    .btn-export:hover { background:var(--tc-teal-dark); }
+    .btn-export:active { transform:translateY(1px); }
+    .btn-export:focus-visible { outline:2px solid var(--tc-teal-dark); outline-offset:2px; }
+    .section-title.split { display:flex; align-items:center; justify-content:space-between; gap:12px; }
     /* Above the table, not below it: the colours are how people scan the rows,
        so the key has to arrive before the rows do. */
     .sum-legend { display:flex; align-items:center; gap:16px; flex-wrap:wrap;
@@ -206,7 +216,9 @@
   </div>
 
   <div id="view-analysis" style="display:none">
-    <div class="section-title">Live Launch Summary</div>
+    <div class="section-title split"><span>Live Launch Summary</span>
+      <button type="button" class="btn-export" id="sum-export" title="Download this table as CSV"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M4 21h16"/></svg>Export to Excel (CSV)</button>
+    </div>
     <div class="sum-card">
       <div class="sum-legend" id="sum-legend"></div>
       <div class="sum-wrap">
@@ -471,6 +483,65 @@
     + legendItem('green', `over ${COVER_AMBER} weeks`)
     + legendItem('none', 'no recent sales to project from')
     + `<span class="lg-item">Real Inventory and Wks of Stock carry the same colour.</span>`;
+
+  /* ── CSV EXPORT ──
+     Same shape as the launch pages: a provenance block, a blank line, then
+     the data. ISO dates and raw numbers rather than what is on screen — a
+     spreadsheet should be able to sort and subtract these, which "Sep 23" and
+     "1,832" do not allow. The two sources are labelled in the column names
+     for the same reason they are labelled in the table. */
+  const csvCell = v => {
+    const t = v == null ? '' : String(v);
+    return /[",\n\r]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t;
+  };
+
+  const exportSummary = () => {
+    const meta = [
+      ['Table', 'Live Launch Summary'],
+      ['Scope', `${sumRows.length} variants across ${live.length} live launches, inside their decay curve`],
+      ['Data cutoff', META.dataCutoff],
+      ['Generated at', new Date().toISOString()],
+      // The column's own label, not the internal key — "npdInv ascending"
+      // means nothing to whoever opens the file.
+      ['Sort', sortKey
+        ? `${(document.querySelector(`.sum-card th[data-k="${sortKey}"] `)?.firstChild?.textContent || sortKey).trim()}`
+          + ` ${sortAsc ? 'ascending' : 'descending'}`
+        : 'default (launch order)'],
+      ['Source — sales, plan, Snowflake inventory', `Snowflake ${META.sourceDb || 'DAASITY_DB'}`],
+      ['Source — real inventory, decay curve OOS', 'NPD OOS Tracking sheet (Demand Planning)'
+        + (META.npdOosSyncedAt ? `, synced ${META.npdOosSyncedAt}` : '')],
+      ['Note', 'Wks of Stock is real inventory at the trailing '
+        + `${META.oosWindowDays || 7}-day sell-through rate. It assumes demand holds and no `
+        + 'replenishment arrives, so it is an assumption, not a forecast.'],
+      ['Note', 'Demand Planning refresh Real Inventory weekly, on Mondays; Snowflake Inventory '
+        + 'moves daily and is for reference only. Where they disagree, Demand Planning is the figure to act on.'],
+      ['Cover bands', `red under ${COVER_RED} weeks, amber ${COVER_RED}-${COVER_AMBER}, green over ${COVER_AMBER}`],
+    ];
+    const columns = ['Product', 'Variant', 'SKU', 'Launch Date', 'Curve End Date',
+                     'Pct to Plan to Date', 'Weeks of Stock', 'Cover Band',
+                     'Est OOS Date (Snowflake)', 'Decay Curve OOS (Demand Planning)',
+                     'Real Inventory Units (Demand Planning)', 'Snowflake Inventory Units'];
+    const out = meta.map(r => r.map(csvCell).join(','));
+    out.push('');
+    out.push(columns.map(csvCell).join(','));
+    for (const r of sumRows) {
+      out.push([r.product, r.variant, r.sku, r.launch, r.curveEnd ?? '',
+                r.ptp ?? '', r.weeks ?? '', band(r.weeks),
+                r.inv === 0 ? 'out of stock' : (r.oos ?? ''),
+                r.npdOos ?? '', r.npdInv ?? '', r.inv ?? ''].map(csvCell).join(','));
+    }
+    // Leading BOM so Excel reads it as UTF-8; CRLF for the same reason.
+    const url = URL.createObjectURL(new Blob(['\ufeff' + out.join('\r\n')],
+      { type: 'text/csv;charset=utf-8;' }));
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `launch-hub_live-launch-summary_${META.dataCutoff}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  };
+  document.getElementById('sum-export').onclick = exportSummary;
 
   let comparedOnce = false;
   document.querySelectorAll('.hub-tab').forEach(btn => btn.onclick = () => {
