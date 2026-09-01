@@ -147,6 +147,10 @@ COLS = {
         "location": "LOCATION_ID",
         "available": "AVAILABLE_QUANTITY",
         "date": "INVENTORY_DATE",
+        # Which storefront the location belongs to. The Canadian warehouse
+        # (Ontario) syncs under thrive-causemetics-canada; every US location
+        # (Memphis, Las Vegas, HQ, the pop-up) under thrive-causemetics.
+        "shop": "__SHOP_ID",
     },
 }
 
@@ -493,16 +497,25 @@ ORDER BY PRIMARY_SKU, PAIRS DESC
 
 
 def q_inventory(skus):
-    """Currently available units per SKU, summed across fulfillment locations.
+    """Currently available units per SKU, split US vs Canada.
 
     The table holds a rolling snapshot, so keep only the newest row per
     (SKU, location) rather than summing every snapshot ever synced.
+
+    Region comes from the storefront the location syncs under, not from the
+    location name: names are free text and change, __SHOP_ID is what the sync
+    keys on. Anything that is not the Canadian shop counts as US, so a new US
+    warehouse is included the day it appears rather than silently dropped.
     """
     c = COLS["inventory"]
     return f"""
-SELECT SKU, SUM(AVAILABLE) AS AVAILABLE
+SELECT SKU,
+       SUM(AVAILABLE)                                        AS AVAILABLE,
+       SUM(CASE WHEN REGION = 'US' THEN AVAILABLE ELSE 0 END) AS US_AVAILABLE,
+       SUM(CASE WHEN REGION = 'CA' THEN AVAILABLE ELSE 0 END) AS CA_AVAILABLE
 FROM (
-  SELECT {c['sku']} AS SKU, COALESCE({c['available']}, 0) AS AVAILABLE
+  SELECT {c['sku']} AS SKU, COALESCE({c['available']}, 0) AS AVAILABLE,
+         CASE WHEN {c['shop']} ILIKE '%%canada%%' THEN 'CA' ELSE 'US' END AS REGION
   FROM {SRC_DB}.{c['table']}
   WHERE {c['sku']} IN ({sku_list_sql(skus)})
   QUALIFY ROW_NUMBER() OVER (
@@ -520,7 +533,9 @@ def q_trailing_units(skus):
     demand, not launch-to-date average, which decays badly after launch week.
     """
     return q_launch_lines_cte(skus) + """
-SELECT SKU, SUM(QTY) AS UNITS
+SELECT SKU, SUM(QTY) AS UNITS,
+       SUM(CASE WHEN REGION = 'US' THEN QTY ELSE 0 END) AS US_UNITS,
+       SUM(CASE WHEN REGION = 'CA' THEN QTY ELSE 0 END) AS CA_UNITS
 FROM launch_lines
 WHERE ORDER_DAY BETWEEN %(oos_start)s AND %(cutoff)s
 GROUP BY 1
@@ -843,6 +858,23 @@ def _date(iso):
     return dt.date.fromisoformat(str(iso)[:10]).strftime("%b %-d, %Y")
 
 
+def project_oos(avail, run_rate, cutoff):
+    """(days_to_oos, iso_date) for available units at a sell-through rate.
+
+    An assumption, not a forecast: it holds demand steady and assumes no
+    replenishment arrives. Returns (None, None) when there is nothing honest
+    to project from — no inventory figure at all, or no recent sales.
+    """
+    if avail is None:
+        return None, None                      # inventory source unavailable
+    if avail <= 0:
+        return 0, cutoff                       # already out of stock
+    if run_rate > 0:
+        days = int(avail // run_rate)
+        return days, str(dt.date.fromisoformat(cutoff) + dt.timedelta(days=days))
+    return None, None                          # no recent sales, no runway
+
+
 def compute_signals(by_variant, pdp, daily, plan_daily, cross_sell, cc):
     """Returns {"attention": [...], "working": [...]}, attention ranked.
 
@@ -1062,6 +1094,13 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
 
     inv_by_sku = {r["SKU"]: int(r["AVAILABLE"] or 0) for r in inv_rows}
     trail_by_sku = {r["SKU"]: int(r["UNITS"] or 0) for r in trail_rows}
+    # Same figures split by storefront. Stock does not move between the two —
+    # a Canadian order cannot be filled from Memphis — so a combined
+    # projection can read comfortable while one side is already empty.
+    inv_by_region = {r["SKU"]: {"us": int(r["US_AVAILABLE"] or 0),
+                                "ca": int(r["CA_AVAILABLE"] or 0)} for r in inv_rows}
+    trail_by_region = {r["SKU"]: {"us": int(r["US_UNITS"] or 0),
+                                  "ca": int(r["CA_UNITS"] or 0)} for r in trail_rows}
 
     by_variant = []
     for r in variant_rows:
@@ -1075,15 +1114,17 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
         goal, curve_end = plan_full.get(sku, (None, None))
         avail = inv_by_sku.get(sku)
         run_rate = round(trail_by_sku.get(sku, 0) / oos_days, 2) if oos_days else 0
-        if avail is None:
-            days_to_oos = est_oos = None          # inventory source unavailable
-        elif avail <= 0:
-            days_to_oos, est_oos = 0, cutoff      # already out of stock
-        elif run_rate > 0:
-            days_to_oos = int(avail // run_rate)
-            est_oos = str(dt.date.fromisoformat(cutoff) + dt.timedelta(days=days_to_oos))
-        else:
-            days_to_oos = est_oos = None          # no recent sales, no runway to project
+        days_to_oos, est_oos = project_oos(avail, run_rate, cutoff)
+        # Per storefront. None when the inventory source is unavailable, so
+        # the page can tell "no data" apart from "no stock".
+        region_oos = {}
+        for rg in ("us", "ca"):
+            r_avail = (inv_by_region.get(sku) or {}).get(rg) if sku in inv_by_region else None
+            r_rate = (round((trail_by_region.get(sku) or {}).get(rg, 0) / oos_days, 2)
+                      if oos_days else 0)
+            r_days, r_date = project_oos(r_avail, r_rate, cutoff)
+            region_oos[rg] = {"units": r_avail, "runRate": r_rate,
+                              "days": r_days, "date": r_date}
         by_variant.append({
             "sku": sku,
             "name": meta.get("name", sku),
@@ -1104,6 +1145,16 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
             "runRateUnitsPerDay": run_rate,
             "daysToOOS": days_to_oos,
             "estOOSDate": est_oos,
+            # Stock cannot move between storefronts, so each side is projected
+            # against its own inventory and its own sell-through rate.
+            "usInventoryUnits": region_oos["us"]["units"],
+            "caInventoryUnits": region_oos["ca"]["units"],
+            "usRunRateUnitsPerDay": region_oos["us"]["runRate"],
+            "caRunRateUnitsPerDay": region_oos["ca"]["runRate"],
+            "usDaysToOOS": region_oos["us"]["days"],
+            "caDaysToOOS": region_oos["ca"]["days"],
+            "usEstOOSDate": region_oos["us"]["date"],
+            "caEstOOSDate": region_oos["ca"]["date"],
             # Whole-curve goal, distinct from planUnits above (plan to date).
             "planTotalUnits": goal,
             "pctToGoalUnits": round(units / goal * 100, 1) if goal else None,
