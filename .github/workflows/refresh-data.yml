@@ -119,15 +119,36 @@ jobs:
           DATA_CUTOFF: ${{ inputs.data_cutoff }}
         run: python scripts/refresh_data.py
 
+      # Runs after the refresh so it alerts on the data that just landed, and
+      # after the commit step below would be too late to include its state
+      # file. No-ops without SLACK_WEBHOOK_URL, and never fails the refresh —
+      # a missed Slack post is a much smaller problem than no data.
+      - name: Post launch alerts to Slack
+        if: steps.creds.outputs.configured == 'true'
+        continue-on-error: true
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_ALERT_LIMIT: ${{ vars.SLACK_ALERT_LIMIT }}
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+        run: python scripts/post_slack_alerts.py
+
       - name: Commit and push if data changed
         if: steps.creds.outputs.configured == 'true'
         run: |
-          if git diff --quiet data.js config/launch_calendar.json config/npd_oos_tracking.json; then
-            echo "data.js, the launch calendar and the NPD OOS snapshot are unchanged — nothing to commit."
+          # config/alert_state.json only exists once the Slack alert has posted
+          # for the first time, so each path is added only if it is there —
+          # `git add` on a missing pathspec fails the step.
+          TRACKED=""
+          for f in data.js config/launch_calendar.json config/npd_oos_tracking.json config/alert_state.json; do
+            [ -e "$f" ] && TRACKED="$TRACKED $f"
+          done
+          git add --intent-to-add $TRACKED
+          if git diff --quiet -- $TRACKED; then
+            echo "Nothing changed in$TRACKED — nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.js config/launch_calendar.json config/npd_oos_tracking.json
+          git add $TRACKED
           git commit -m "chore: refresh dashboard data ($(date -u +%F))"
           git push

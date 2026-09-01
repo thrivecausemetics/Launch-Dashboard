@@ -739,115 +739,19 @@ function renderOverview(d) {
    merch and finance teams act on, so they must be deterministic, reproducible
    from the same data.js, and incapable of inventing a figure. Every signal
    quotes the values it fired on so a reader can check it against the tables
-   below. Thresholds live here and are documented in the Data Guide. */
-const SIGNAL_RULES = {
-  oosSoonDays: 21,       // flag SKUs projected out of stock within this window
-  atcDragRatio: 0.80,    // variant ATC rate below this share of the launch average
-  atcDragMinMissed: 500, // ...and at least this many estimated missed add-to-carts
-  atcStarRatio: 1.20,    // variant ATC rate above this share of the average
-  behindPlanPct: 85,
-  aheadPlanPct: 115,
-  pacingWindowDays: 7,
-  pacingBehindPct: 85,
-  maxPerGroup: 4,
-  // Per-rule caps. Without these one rule can fire five near-identical lines
-  // and crowd every other signal type out of the group.
-  maxPerRule: 2,
-};
+   below.
 
-function computeSignals(d) {
-  const R = SIGNAL_RULES, attention = [], working = [];
-  const vars = d.byVariant || [], pdp = d.pdp || [];
-
-  // ── Inventory ──────────────────────────────────────────────────────────
-  for (const v of vars.filter(v => v.inventoryUnits === 0)) {
-    attention.push({ rank: 0, title: `${v.name} is out of stock`, detail:
-      `0 units available across all fulfillment locations, at `
-      + `${v.pctToPlanUnits != null ? v.pctToPlanUnits.toFixed(1) + '% to plan' : 'unknown plan attainment'}.` });
-  }
-  for (const v of vars.filter(v => v.daysToOOS > 0 && v.daysToOOS <= R.oosSoonDays)
-                      .sort((a, b) => a.daysToOOS - b.daysToOOS).slice(0, R.maxPerRule)) {
-    attention.push({ rank: 1, title: `${v.name} projects out of stock ~${fmt.date(v.estOOSDate)}`, detail:
-      `${fmt.num(v.inventoryUnits)} units left at ${v.runRateUnitsPerDay}/day (~${v.daysToOOS} days). `
-      + `Assumes the current rate holds and no replenishment arrives.` });
-  }
-
-  // ── PDP conversion drag ────────────────────────────────────────────────
-  // Ranked by estimated missed add-to-carts (views x gap to average), not by
-  // rate alone: a weak rate on heavy traffic is the bigger opportunity.
-  const views = pdp.reduce((s, r) => s + r.pdpViews, 0);
-  const avgAtc = views > 0 ? pdp.reduce((s, r) => s + r.atc, 0) / views * 100 : 0;
-  if (avgAtc > 0) {
-    const drags = pdp
-      .map(r => ({ r, missed: Math.round(r.pdpViews * (avgAtc - r.atcRate) / 100) }))
-      .filter(x => x.r.atcRate < avgAtc * R.atcDragRatio && x.missed >= R.atcDragMinMissed)
-      .sort((a, b) => b.missed - a.missed);
-    drags.slice(0, R.maxPerRule).forEach(({ r, missed }, i) => attention.push({ rank: 2,
-      title: `${r.name} PDP converts below the launch average`, detail:
-        `${r.atcRate.toFixed(1)}% add-to-cart vs ${avgAtc.toFixed(1)}% average across `
-        + `${fmt.num(r.pdpViews)} views — roughly ${fmt.num(missed)} missed add-to-carts`
-        + `${i === 0 && drags.length > 1 ? ', the largest gap in this launch' : ''}. `
-        + `PDP creative and merchandising are the levers.` }));
-
-    const best = pdp.slice().sort((a, b) => b.atcRate - a.atcRate)[0];
-    if (best && best.atcRate >= avgAtc * R.atcStarRatio) working.push({
-      title: `${best.name} converts best on the PDP`, detail:
-        `${best.atcRate.toFixed(1)}% add-to-cart vs ${avgAtc.toFixed(1)}% average `
-        + `(${(best.atcRate / avgAtc * 100).toFixed(0)}% of it) on ${fmt.num(best.pdpViews)} views. `
-        + `Worth looking at what its page does differently.` });
-  }
-
-  // ── Plan attainment, per variant and recent pacing ─────────────────────
-  for (const v of vars.filter(v => v.pctToPlanUnits != null && v.pctToPlanUnits < R.behindPlanPct)
-                      .sort((a, b) => a.pctToPlanUnits - b.pctToPlanUnits).slice(0, R.maxPerRule)) {
-    attention.push({ rank: 3, title: `${v.name} is behind plan`, detail:
-      `${v.pctToPlanUnits.toFixed(1)}% to plan — ${fmt.num(v.units)} units against `
-      + `${fmt.num(v.planUnits)} planned.` });
-  }
-
-  const pm = planMaps(d);
-  const recent = (d.dailySales || []).slice(-R.pacingWindowDays)
-    .map(r => ({ u: r.units, p: pm.daily[r.date] }))
-    .filter(x => x.p != null);
-  if (recent.length === R.pacingWindowDays) {
-    const au = recent.reduce((s, x) => s + x.u, 0), ap = recent.reduce((s, x) => s + x.p, 0);
-    const pct = ap > 0 ? au / ap * 100 : null;
-    if (pct != null && pct < R.pacingBehindPct) attention.push({ rank: 4,
-      title: `Last ${R.pacingWindowDays} days are pacing behind plan`, detail:
-        `${fmt.num(au)} units vs ${fmt.num(ap)} planned (${pct.toFixed(0)}%). `
-        + `Cumulative attainment can stay green while recent days slip.` });
-    else if (pct != null) working.push({
-      title: `Last ${R.pacingWindowDays} days are on or above plan`, detail:
-        `${fmt.num(au)} units vs ${fmt.num(ap)} planned (${pct.toFixed(0)}%).` });
-  }
-
-  for (const v of vars.filter(v => v.pctToPlanUnits >= R.aheadPlanPct)
-                      .sort((a, b) => b.pctToPlanUnits - a.pctToPlanUnits).slice(0, R.maxPerRule)) {
-    working.push({ title: `${v.name} is ahead of plan`, detail:
-      `${v.pctToPlanUnits.toFixed(1)}% to plan — ${fmt.num(v.units)} units against `
-      + `${fmt.num(v.planUnits)} planned.` });
-  }
-
-  // ── Cross-sell and category acquisition ────────────────────────────────
-  const top = (d.crossSell || [])[0];
-  if (top && top.pairs > 0) working.push({
-    title: `Most common basket pairing: ${top.product}`, detail:
-      `${fmt.num(top.pairs)} same-cart orders. A bundle or PDP cross-sell placement is the obvious test.` });
-
-  const cc = d.categoryCustomers;
-  if (cc && cc.total > 0) {
-    const pct = cc.newToCategory / cc.total * 100;
-    working.push({ title: `${pct.toFixed(0)}% of buyers are new to ${cc.category}`, detail:
-      `${fmt.num(cc.newToCategory)} of ${fmt.num(cc.total)} buyers had not purchased this category before.` });
-  }
-
-  attention.sort((a, b) => a.rank - b.rank);
-  return { attention, working, avgAtc };
-}
+   The rules themselves live in scripts/refresh_data.py and arrive on
+   data.js — the same signals feed the daily Slack alert, and two copies of
+   the thresholds would drift until the alert disagreed with the page it
+   links to. Thresholds are listed in the Data Guide. */
+/* Renders one of the two signal groups. maxPerGroup caps what is shown on the
+   page — the refresh emits everything it found, so the cap belongs here where
+   it is a display choice, not in the data. */
+const MAX_SIGNALS_PER_GROUP = 4;
 
 function signalCard(kind, heading, items, emptyText) {
-  const R = SIGNAL_RULES;
-  const shown = items.slice(0, R.maxPerGroup);
+  const shown = items.slice(0, MAX_SIGNALS_PER_GROUP);
   const hidden = items.length - shown.length;
   const body = shown.length
     ? `<ul class="sig-list">${shown.map(s =>
@@ -859,7 +763,7 @@ function signalCard(kind, heading, items, emptyText) {
 }
 
 function renderSignals(d) {
-  const { attention, working } = computeSignals(d);
+  const { attention = [], working = [] } = d.signals || {};
   return `<div class="sig-row">
     ${signalCard('attention', 'Needs attention', attention, 'Nothing above threshold in this refresh.')}
     ${signalCard('working', "What's working", working, 'No standout positives in this refresh.')}
