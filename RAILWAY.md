@@ -92,6 +92,52 @@ dispatch path itself, run the workflow once from the GitHub Actions UI.
 Hosting SMEs for Railway / `thrive-internal-portal`: Brendan, Walka, or the
 requesting user.
 
+## Slack alerts (human-gated setup)
+
+The daily refresh can post the top launch alerts to Slack. It stays silent
+until `SLACK_WEBHOOK_URL` exists, so nothing breaks before this is done.
+
+**Creating the app (needs someone who can install Slack apps):**
+
+1. Create the destination channel first, e.g. `#launch-alerts`.
+2. Go to <https://api.slack.com/apps> → **Create New App** → **From scratch**.
+3. Name it (e.g. *Launch Intelligence Alerts*) and pick the Thrive Causemetics
+   workspace. If the button is greyed out, the workspace requires admin
+   approval for new apps — ask a Slack admin to approve the request.
+4. In the left sidebar under *Features*, open **Incoming Webhooks** and turn
+   **Activate Incoming Webhooks** on.
+5. Click **Add New Webhook to Workspace**, choose the channel, **Allow**.
+6. Copy the webhook URL (`https://hooks.slack.com/services/...`). It is a
+   secret — anyone holding it can post to that channel as the app.
+7. In GitHub: repo → **Settings → Secrets and variables → Actions → New
+   repository secret**, name `SLACK_WEBHOOK_URL`, paste the URL. Do not commit
+   it or paste it into a ticket.
+
+**Optional repository variables** (same page, *Variables* tab):
+
+| Variable | Default | Purpose |
+|---|---|---|
+| `SLACK_ALERT_LIMIT` | `5` | How many alerts a message carries |
+| `DASHBOARD_URL` | `https://internal.thrivecausemetics.com/launch-dashboards/` | Base for the links in each alert |
+
+**What gets posted.** `scripts/post_slack_alerts.py` reads the signals
+`refresh_data.py` wrote into `data.js` — the same ones the "Needs attention"
+panel shows — ranks them across every live launch, and posts the top N. Each
+alert links to that launch's dashboard; the footer links to the hub.
+
+Weekday runs post only what is new or has changed severity, and post nothing
+at all when there is nothing new. Monday posts the full digest plus anything
+that cleared during the week. State lives in `config/alert_state.json`,
+committed by the workflow, so what was alerted and when is in git history.
+
+Dry-run it without posting anything:
+
+```bash
+python scripts/post_slack_alerts.py --dry-run --digest
+```
+
+Delete an entry from `config/alert_state.json` to make that alert fire again.
+
 ## Database
 
 **Not required.** Evidence: the app serves committed static files; the only

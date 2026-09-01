@@ -808,6 +808,164 @@ def _build_category(cur, skus, cat_patterns, params, lc, sku_meta):
     }
 
 
+# ── LAUNCH SIGNALS ──
+# Rule-based, deliberately NOT a language model. These sit beside numbers merch
+# and finance act on, so they must be deterministic, reproducible from the same
+# data.js, and incapable of inventing a figure. Every signal quotes the values
+# it fired on so a reader can check it against the tables.
+#
+# Computed here rather than in the browser so the dashboard panel and the Slack
+# alert are the same code path. Two implementations of the same thresholds
+# would drift, and an alert that disagrees with the page it links to is worse
+# than no alert.
+SIGNAL_RULES = {
+    "oosSoonDays": 21,        # flag SKUs projected out of stock within this window
+    "atcDragRatio": 0.80,     # variant ATC rate below this share of the launch average
+    "atcDragMinMissed": 500,  # ...and at least this many estimated missed add-to-carts
+    "atcStarRatio": 1.20,     # variant ATC rate above this share of the average
+    "behindPlanPct": 85,
+    "aheadPlanPct": 115,
+    "pacingWindowDays": 7,
+    "pacingBehindPct": 85,
+    # Per-rule cap. Without it one rule fires five near-identical lines and
+    # crowds every other signal type out of the group.
+    "maxPerRule": 2,
+}
+
+
+def _num(v):
+    return f"{int(round(float(v or 0))):,}"
+
+
+def _date(iso):
+    if not iso:
+        return ""
+    return dt.date.fromisoformat(str(iso)[:10]).strftime("%b %-d, %Y")
+
+
+def compute_signals(by_variant, pdp, daily, plan_daily, cross_sell, cc):
+    """Returns {"attention": [...], "working": [...]}, attention ranked.
+
+    Ranks are the alert priority order: 0 out of stock, 1 projects OOS soon,
+    2 PDP conversion drag, 3 behind plan, 4 recent pacing. Slack takes the top
+    N across launches off the same ordering the page shows.
+    """
+    R, attention, working = SIGNAL_RULES, [], []
+
+    for v in [v for v in by_variant if v.get("inventoryUnits") == 0]:
+        ptp = v.get("pctToPlanUnits")
+        attention.append({
+            "rank": 0, "key": f"oos:{v['sku']}",
+            "title": f"{v['name']} is out of stock",
+            "detail": "0 units available across all fulfillment locations, at "
+                      + (f"{ptp:.1f}% to plan." if ptp is not None else "unknown plan attainment."),
+        })
+
+    soon = sorted([v for v in by_variant
+                   if (v.get("daysToOOS") or 0) > 0 and v["daysToOOS"] <= R["oosSoonDays"]],
+                  key=lambda v: v["daysToOOS"])[:R["maxPerRule"]]
+    for v in soon:
+        attention.append({
+            "rank": 1, "key": f"oos-soon:{v['sku']}",
+            "title": f"{v['name']} projects out of stock ~{_date(v.get('estOOSDate'))}",
+            "detail": f"{_num(v.get('inventoryUnits'))} units left at "
+                      f"{v.get('runRateUnitsPerDay')}/day (~{v['daysToOOS']} days). "
+                      "Assumes the current rate holds and no replenishment arrives.",
+        })
+
+    # Ranked by estimated missed add-to-carts (views x gap to average), not by
+    # rate alone: a weak rate on heavy traffic is the bigger opportunity.
+    views = sum(r["pdpViews"] for r in pdp)
+    avg_atc = (sum(r["atc"] for r in pdp) / views * 100) if views > 0 else 0
+    if avg_atc > 0:
+        drags = sorted(
+            [(r, round(r["pdpViews"] * (avg_atc - r["atcRate"]) / 100)) for r in pdp
+             if r["atcRate"] < avg_atc * R["atcDragRatio"]
+             and round(r["pdpViews"] * (avg_atc - r["atcRate"]) / 100) >= R["atcDragMinMissed"]],
+            key=lambda x: -x[1])
+        for i, (r, missed) in enumerate(drags[:R["maxPerRule"]]):
+            attention.append({
+                "rank": 2, "key": f"pdp-drag:{r['sku']}",
+                "title": f"{r['name']} PDP converts below the launch average",
+                "detail": f"{r['atcRate']:.1f}% add-to-cart vs {avg_atc:.1f}% average across "
+                          f"{_num(r['pdpViews'])} views — roughly {_num(missed)} missed add-to-carts"
+                          + (", the largest gap in this launch" if i == 0 and len(drags) > 1 else "")
+                          + ". PDP creative and merchandising are the levers.",
+            })
+        best = max(pdp, key=lambda r: r["atcRate"], default=None)
+        if best and best["atcRate"] >= avg_atc * R["atcStarRatio"]:
+            working.append({
+                "key": f"pdp-star:{best['sku']}",
+                "title": f"{best['name']} converts best on the PDP",
+                "detail": f"{best['atcRate']:.1f}% add-to-cart vs {avg_atc:.1f}% average "
+                          f"({best['atcRate'] / avg_atc * 100:.0f}% of it) on {_num(best['pdpViews'])} views. "
+                          "Worth looking at what its page does differently.",
+            })
+
+    behind = sorted([v for v in by_variant
+                     if v.get("pctToPlanUnits") is not None
+                     and v["pctToPlanUnits"] < R["behindPlanPct"]],
+                    key=lambda v: v["pctToPlanUnits"])[:R["maxPerRule"]]
+    for v in behind:
+        attention.append({
+            "rank": 3, "key": f"behind-plan:{v['sku']}",
+            "title": f"{v['name']} is behind plan",
+            "detail": f"{v['pctToPlanUnits']:.1f}% to plan — {_num(v['units'])} units against "
+                      f"{_num(v.get('planUnits'))} planned.",
+        })
+
+    recent = [(r["units"], plan_daily[r["date"]]) for r in daily[-R["pacingWindowDays"]:]
+              if r["date"] in plan_daily]
+    if len(recent) == R["pacingWindowDays"]:
+        au, ap = sum(x[0] for x in recent), sum(x[1] for x in recent)
+        pct = (au / ap * 100) if ap > 0 else None
+        if pct is not None and pct < R["pacingBehindPct"]:
+            attention.append({
+                "rank": 4, "key": "pacing",
+                "title": f"Last {R['pacingWindowDays']} days are pacing behind plan",
+                "detail": f"{_num(au)} units vs {_num(ap)} planned ({pct:.0f}%). "
+                          "Cumulative attainment can stay green while recent days slip.",
+            })
+        elif pct is not None:
+            working.append({
+                "key": "pacing",
+                "title": f"Last {R['pacingWindowDays']} days are on or above plan",
+                "detail": f"{_num(au)} units vs {_num(ap)} planned ({pct:.0f}%).",
+            })
+
+    ahead = sorted([v for v in by_variant
+                    if (v.get("pctToPlanUnits") or 0) >= R["aheadPlanPct"]],
+                   key=lambda v: -v["pctToPlanUnits"])[:R["maxPerRule"]]
+    for v in ahead:
+        working.append({
+            "key": f"ahead-plan:{v['sku']}",
+            "title": f"{v['name']} is ahead of plan",
+            "detail": f"{v['pctToPlanUnits']:.1f}% to plan — {_num(v['units'])} units against "
+                      f"{_num(v.get('planUnits'))} planned.",
+        })
+
+    top = (cross_sell or [{}])[0]
+    if top.get("pairs", 0) > 0:
+        working.append({
+            "key": f"pairing:{top.get('sku')}",
+            "title": f"Most common basket pairing: {top['product']}",
+            "detail": f"{_num(top['pairs'])} same-cart orders. A bundle or PDP cross-sell "
+                      "placement is the obvious test.",
+        })
+
+    if cc and (cc.get("total") or 0) > 0:
+        pct = cc["newToCategory"] / cc["total"] * 100
+        working.append({
+            "key": "new-to-category",
+            "title": f"{pct:.0f}% of buyers are new to {cc['category']}",
+            "detail": f"{_num(cc['newToCategory'])} of {_num(cc['total'])} buyers had not "
+                      "purchased this category before.",
+        })
+
+    attention.sort(key=lambda s: s["rank"])
+    return {"attention": attention, "working": working}
+
+
 def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
     launch_date = lc["launch_date"]
     skus = [s["sku"] for s in lc["skus"]]
@@ -1084,6 +1242,12 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
         "planEndDate": max((v[1] for v in plan_full.values()), default=None),
         "archived": not full,
         "byVariant": by_variant,
+        # Same rules the page renders, computed once here so the dashboard
+        # panel and the Slack alert can never disagree.
+        "signals": compute_signals(by_variant, pdp, daily, plan_daily,
+                                   [{"product": r["PRODUCT"], "sku": r["SKU"],
+                                     "pairs": int(r["PAIRS"] or 0)} for r in cross_rows],
+                                   cc),
         "dailySales": daily,
         # Per-SKU daily series, so a shade filter can rebuild the daily trend,
         # the daily table and the new-vs-returning trend from the same numbers
