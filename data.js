@@ -729,6 +729,45 @@ window.DASHBOARD_DATA = {
           "realInventoryUnits": 17785
         }
       ],
+      "signals": {
+        "attention": [
+          {
+            "rank": 3,
+            "key": "behind-plan:TVG6710",
+            "title": "Brow Liner is behind plan",
+            "detail": "18.1% to plan \u2014 1,760 units against 9,708 planned."
+          },
+          {
+            "rank": 3,
+            "key": "behind-plan:TVG6680",
+            "title": "Brow Pencil is behind plan",
+            "detail": "53.1% to plan \u2014 2,131 units against 4,011 planned."
+          },
+          {
+            "rank": 4,
+            "key": "pacing",
+            "title": "Last 7 days are pacing behind plan",
+            "detail": "414 units vs 1,382 planned (30%). Cumulative attainment can stay green while recent days slip."
+          }
+        ],
+        "working": [
+          {
+            "key": "pdp-star:TVG6680",
+            "title": "Brow Pencil converts best on the PDP",
+            "detail": "20.9% add-to-cart vs 15.5% average (135% of it) on 26,177 views. Worth looking at what its page does differently."
+          },
+          {
+            "key": "pairing:TVG6640",
+            "title": "Most common basket pairing: Brilliant Eye Brightener\u2122",
+            "detail": "14 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+          },
+          {
+            "key": "new-to-category",
+            "title": "51% of buyers are new to Brow",
+            "detail": "3,252 of 6,332 buyers had not purchased this category before."
+          }
+        ]
+      },
       "dailySales": [
         {
           "date": "2026-06-08",
@@ -2899,6 +2938,54 @@ window.DASHBOARD_DATA = {
           "realInventoryUnits": 2054
         }
       ],
+      "signals": {
+        "attention": [
+          {
+            "rank": 1,
+            "key": "oos-soon:TVG6720",
+            "title": "Cool Neutrals projects out of stock ~Sep 4, 2026",
+            "detail": "843 units left at 187.14/day (~4 days). Assumes the current rate holds and no replenishment arrives."
+          },
+          {
+            "rank": 1,
+            "key": "oos-soon:TVG6700",
+            "title": "Warm Neutrals projects out of stock ~Sep 4, 2026",
+            "detail": "580 units left at 136.57/day (~4 days). Assumes the current rate holds and no replenishment arrives."
+          }
+        ],
+        "working": [
+          {
+            "key": "pdp-star:TVG6720",
+            "title": "Cool Neutrals converts best on the PDP",
+            "detail": "19.4% add-to-cart vs 15.6% average (125% of it) on 143,212 views. Worth looking at what its page does differently."
+          },
+          {
+            "key": "pacing",
+            "title": "Last 7 days are on or above plan",
+            "detail": "2,266 units vs 898 planned (252%)."
+          },
+          {
+            "key": "ahead-plan:TVG6700",
+            "title": "Warm Neutrals is ahead of plan",
+            "detail": "191.5% to plan \u2014 9,020 units against 4,710 planned."
+          },
+          {
+            "key": "ahead-plan:TVG6720",
+            "title": "Cool Neutrals is ahead of plan",
+            "detail": "179.7% to plan \u2014 10,158 units against 5,652 planned."
+          },
+          {
+            "key": "pairing:TVG558",
+            "title": "Most common basket pairing: Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
+            "detail": "29 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+          },
+          {
+            "key": "new-to-category",
+            "title": "23% of buyers are new to Eyeshadow",
+            "detail": "3,969 of 17,181 buyers had not purchased this category before."
+          }
+        ]
+      },
       "dailySales": [
         {
           "date": "2026-07-22",
@@ -4498,6 +4585,45 @@ window.DASHBOARD_DATA = {
           "realInventoryUnits": 20144
         }
       ],
+      "signals": {
+        "attention": [
+          {
+            "rank": 2,
+            "key": "pdp-drag:TVG4770",
+            "title": "Mila PDP converts below the launch average",
+            "detail": "7.1% add-to-cart vs 9.3% average across 373,081 views \u2014 roughly 8,540 missed add-to-carts. PDP creative and merchandising are the levers."
+          },
+          {
+            "rank": 3,
+            "key": "behind-plan:TVG4770",
+            "title": "Mila is behind plan",
+            "detail": "70.3% to plan \u2014 10,032 units against 14,271 planned."
+          },
+          {
+            "rank": 4,
+            "key": "pacing",
+            "title": "Last 7 days are pacing behind plan",
+            "detail": "642 units vs 1,377 planned (47%). Cumulative attainment can stay green while recent days slip."
+          }
+        ],
+        "working": [
+          {
+            "key": "pdp-star:TVG6640",
+            "title": "Hoda converts best on the PDP",
+            "detail": "14.2% add-to-cart vs 9.3% average (152% of it) on 174,874 views. Worth looking at what its page does differently."
+          },
+          {
+            "key": "pairing:TVG349",
+            "title": "Most common basket pairing: Brilliant Eye Brightener\u2122",
+            "detail": "22 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+          },
+          {
+            "key": "new-to-category",
+            "title": "24% of buyers are new to Eyeshadow",
+            "detail": "3,840 of 15,899 buyers had not purchased this category before."
+          }
+        ]
+      },
       "dailySales": [
         {
           "date": "2026-06-17",
@@ -6407,6 +6533,66 @@ window.DASHBOARD_DATA = {
           "realInventoryUnits": 5133
         }
       ],
+      "signals": {
+        "attention": [
+          {
+            "rank": 1,
+            "key": "oos-soon:TVG7250",
+            "title": "Daniella projects out of stock ~Sep 9, 2026",
+            "detail": "3,486 units left at 352.43/day (~9 days). Assumes the current rate holds and no replenishment arrives."
+          },
+          {
+            "rank": 2,
+            "key": "pdp-drag:TVG7230",
+            "title": "Li PDP converts below the launch average",
+            "detail": "4.6% add-to-cart vs 10.8% average across 101,081 views \u2014 roughly 6,276 missed add-to-carts, the largest gap in this launch. PDP creative and merchandising are the levers."
+          },
+          {
+            "rank": 2,
+            "key": "pdp-drag:TVG7220",
+            "title": "Brandy PDP converts below the launch average",
+            "detail": "5.2% add-to-cart vs 10.8% average across 76,752 views \u2014 roughly 4,267 missed add-to-carts. PDP creative and merchandising are the levers."
+          },
+          {
+            "rank": 3,
+            "key": "behind-plan:TVG7230",
+            "title": "Li is behind plan",
+            "detail": "76.8% to plan \u2014 1,834 units against 2,389 planned."
+          }
+        ],
+        "working": [
+          {
+            "key": "pdp-star:TVG7250",
+            "title": "Daniella converts best on the PDP",
+            "detail": "23.0% add-to-cart vs 10.8% average (213% of it) on 63,527 views. Worth looking at what its page does differently."
+          },
+          {
+            "key": "pacing",
+            "title": "Last 7 days are on or above plan",
+            "detail": "5,509 units vs 3,279 planned (168%)."
+          },
+          {
+            "key": "ahead-plan:TVG7250",
+            "title": "Daniella is ahead of plan",
+            "detail": "465.3% to plan \u2014 6,677 units against 1,435 planned."
+          },
+          {
+            "key": "ahead-plan:TVG7260",
+            "title": "Leslie is ahead of plan",
+            "detail": "365.2% to plan \u2014 1,702 units against 466 planned."
+          },
+          {
+            "key": "pairing:TVG284",
+            "title": "Most common basket pairing: Liquid Lash\u2122 Extensions Tubing Mascara",
+            "detail": "23 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+          },
+          {
+            "key": "new-to-category",
+            "title": "34% of buyers are new to Lip",
+            "detail": "4,026 of 11,915 buyers had not purchased this category before."
+          }
+        ]
+      },
       "dailySales": [
         {
           "date": "2026-08-18",
@@ -7913,6 +8099,39 @@ window.DASHBOARD_DATA = {
           "realInventoryUnits": 7897
         }
       ],
+      "signals": {
+        "attention": [
+          {
+            "rank": 3,
+            "key": "behind-plan:TVG5970",
+            "title": "Kackie is behind plan",
+            "detail": "20.8% to plan \u2014 1,656 units against 7,964 planned."
+          },
+          {
+            "rank": 3,
+            "key": "behind-plan:TVG5940",
+            "title": "Kathy is behind plan",
+            "detail": "45.8% to plan \u2014 2,504 units against 5,466 planned."
+          }
+        ],
+        "working": [
+          {
+            "key": "ahead-plan:TVG5890",
+            "title": "Michelle is ahead of plan",
+            "detail": "181.7% to plan \u2014 8,765 units against 4,823 planned."
+          },
+          {
+            "key": "ahead-plan:TVG5900",
+            "title": "Rosa is ahead of plan",
+            "detail": "174.1% to plan \u2014 6,173 units against 3,546 planned."
+          },
+          {
+            "key": "new-to-category",
+            "title": "51% of buyers are new to Lip",
+            "detail": "27,568 of 54,254 buyers had not purchased this category before."
+          }
+        ]
+      },
       "dailySales": [
         {
           "date": "2026-04-30",
@@ -10509,6 +10728,26 @@ window.DASHBOARD_DATA = {
           "realInventoryUnits": 22180
         }
       ],
+      "signals": {
+        "attention": [],
+        "working": [
+          {
+            "key": "ahead-plan:TVG6380",
+            "title": "Iris is ahead of plan",
+            "detail": "218.5% to plan \u2014 39,449 units against 18,056 planned."
+          },
+          {
+            "key": "ahead-plan:TVG6390",
+            "title": "Ivy is ahead of plan",
+            "detail": "203.3% to plan \u2014 26,697 units against 13,135 planned."
+          },
+          {
+            "key": "new-to-category",
+            "title": "37% of buyers are new to Mascara",
+            "detail": "27,859 of 74,868 buyers had not purchased this category before."
+          }
+        ]
+      },
       "dailySales": [
         {
           "date": "2026-04-07",
