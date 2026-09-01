@@ -45,6 +45,10 @@
     .tab.active { color:var(--tc-teal); border-bottom-color:var(--tc-teal); font-weight:600; }
     .tab:hover:not(.active) { color:var(--text); }
     .main { max-width:1360px; margin:0 auto; padding:28px 24px 80px; }
+    /* Splitting Est. OOS into US and CA pushes the variant table a handful of
+       pixels past the gutters on a 13" laptop, which is a silly reason to make
+       people scroll a table they read across. */
+    @media(max-width:1400px) { .main { padding-left:14px; padding-right:14px; } }
     .kpi-row1 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:14px; }
     .kpi-row2 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:24px; }
     .kpi-card { background:var(--card); border-radius:var(--r); border:1px solid var(--border); padding:16px 20px; position:relative; overflow:hidden; }
@@ -99,6 +103,10 @@
     .ptp-mini-fill { height:100%; border-radius:2px; }
     .section-title { font-size:10px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; color:var(--muted); margin-bottom:14px; padding-bottom:8px; border-bottom:1px solid var(--border); }
     .data-note { font-size:11px; color:var(--muted); margin-top:10px; line-height:1.5; }
+    /* Column qualifier under the header, so a split column is readable
+       without reading the note underneath. Same treatment as the hub. */
+    .th-sub { display:block; font-weight:500; font-size:9.5px; letter-spacing:0;
+              text-transform:none; opacity:.75; margin-top:1px; }
     .sig-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:18px; }
     @media (max-width:1000px) { .sig-row { grid-template-columns:1fr; } }
     .sig-card { background:var(--card); border-radius:var(--r); padding:14px 18px;
@@ -279,9 +287,11 @@
           <thead><tr>
             <th>Shade / Product</th><th class="r">Units</th><th class="r">Net Sales</th>
             <th class="r">AOV</th><th class="r">New Cust.</th><th class="r">Returning</th><th class="r">US / CA Units</th><th class="r">% to Plan</th>
-            <th class="r">Inventory</th><th class="r">Est. OOS</th>
+            <th class="r">Inventory</th>
+            <th class="r">Est. OOS<span class="th-sub">US (.com)</span></th>
+            <th class="r">Est. OOS<span class="th-sub">CA (.ca)</span></th>
           </tr></thead>
-          <tbody id="tbl-body"><tr><td colspan="10" style="text-align:center;padding:28px;color:var(--muted)">Loading&hellip;</td></tr></tbody>
+          <tbody id="tbl-body"><tr><td colspan="11" style="text-align:center;padding:28px;color:var(--muted)">Loading&hellip;</td></tr></tbody>
         </table>
       </div>
       <div style="padding:0 20px 14px"><p class="data-note" id="oos-note"></p></div>
@@ -911,12 +921,16 @@ const EXPORTS = {
       columns: ['SKU', 'Variant', 'Shade', 'Units', 'Net Sales USD', 'Orders', 'AOV USD',
                 'New Customers', 'Returning Customers', 'US Units', 'CA Units',
                 'Plan Units', 'Pct to Plan', 'Inventory Units', 'Run Rate Units Per Day',
-                'Days to OOS', 'Est OOS Date'],
+                'Days to OOS', 'Est OOS Date',
+                'US Inventory Units', 'US Run Rate Units Per Day', 'US Days to OOS', 'US Est OOS Date',
+                'CA Inventory Units', 'CA Run Rate Units Per Day', 'CA Days to OOS', 'CA Est OOS Date'],
       rows: v.byVariant.map(x => [x.sku, x.name, x.shade, x.units, x.netSales,
         x.orders ?? '', x.orders ? (x.netSales / x.orders).toFixed(2) : '',
         x.newCustomers ?? '', x.retCustomers ?? '', x.usUnits ?? '', x.caUnits ?? '',
         x.planUnits ?? '', x.pctToPlanUnits ?? '', x.inventoryUnits ?? '',
-        x.runRateUnitsPerDay ?? '', x.daysToOOS ?? '', x.estOOSDate ?? '']) };
+        x.runRateUnitsPerDay ?? '', x.daysToOOS ?? '', x.estOOSDate ?? '',
+        x.usInventoryUnits ?? '', x.usRunRateUnitsPerDay ?? '', x.usDaysToOOS ?? '', x.usEstOOSDate ?? '',
+        x.caInventoryUnits ?? '', x.caRunRateUnitsPerDay ?? '', x.caDaysToOOS ?? '', x.caEstOOSDate ?? '']) };
   },
   'overview-daily': () => {
     const v = filteredView(LOADED), pm = planMaps(v);
@@ -1226,7 +1240,7 @@ function renderTable(d) {
       <td class="r">${v.usUnits != null ? fmt.num(v.usUnits) + ' / ' + fmt.num(v.caUnits) : '—'}</td>
       <td class="r"><div class="ptp-cell"><div class="ptp-mini"><div class="ptp-mini-fill" style="width:${ptpW}%;background:${ptpC}"></div></div><span style="color:${ptpC};font-weight:600">${v.pctToPlanUnits!=null?v.pctToPlanUnits.toFixed(1)+'%':'—'}</span></div></td>
       <td class="r">${v.inventoryUnits != null ? fmt.num(v.inventoryUnits) : '—'}</td>
-      ${oosCell(v)}
+      ${oosCell(v, 'us')}${oosCell(v, 'ca')}
     </tr>`;
   });
   const s = d.summary, tc = ptpColor(s.pctToPlanUnits), taov = s.orders > 0 ? s.netSales / s.orders : 0;
@@ -1235,25 +1249,50 @@ function renderTable(d) {
   const totInv = withInv.length ? withInv.reduce((a, v) => a + v.inventoryUnits, 0) : null;
   // Totals row surfaces the SKU that runs out first — that is the one that
   // actually constrains the launch, not the average.
-  const soonest = d.byVariant
-    .filter(v => v.estOOSDate && v.inventoryUnits > 0)
-    .sort((a, b) => a.daysToOOS - b.daysToOOS)[0] || null;
-  rows.push(`<tr class="tot"><td>Total / Avg</td><td class="r">${fmt.num(s.units)}</td><td class="r">${fmt.cur(s.netSales)}</td><td class="r">${fmt.cur2(taov)}</td><td class="r">${fmt.num(s.newCustomers)}</td><td class="r">${fmt.num(s.retCustomers)}</td><td class="r">${totUsCa}</td><td class="r" style="color:${tc}">${s.pctToPlanUnits!=null?s.pctToPlanUnits.toFixed(1)+'%':'—'}</td><td class="r">${totInv != null ? fmt.num(totInv) : '—'}</td><td class="r">${soonest ? fmt.date(soonest.estOOSDate) + ' <span style="font-weight:400;color:var(--muted)">(' + soonest.name + ')</span>' : '—'}</td></tr>`);
+  // The SKU that runs out first per storefront — that is what actually
+  // constrains the launch on each side, not the average.
+  const soonestIn = rg => d.byVariant
+    .filter(v => v[rg + 'EstOOSDate'] && v[rg + 'InventoryUnits'] > 0)
+    .sort((a, b) => a[rg + 'DaysToOOS'] - b[rg + 'DaysToOOS'])[0] || null;
+  const totCell = rg => {
+    const w = soonestIn(rg);
+    const empty = d.byVariant.filter(v => v[rg + 'InventoryUnits'] === 0);
+    if (!w) return `<td class="r">${empty.length ? '<span style="color:var(--danger);font-weight:600">all out of stock</span>' : '—'}</td>`;
+    return `<td class="r">${fmt.date(w[rg + 'EstOOSDate'])} <span style="font-weight:400;color:var(--muted)">(${w.name})</span>`
+      + (empty.length ? `<br><span style="font-size:11px;color:var(--danger)">${empty.length} already out</span>` : '')
+      + `</td>`;
+  };
+  rows.push(`<tr class="tot"><td>Total / Avg</td><td class="r">${fmt.num(s.units)}</td><td class="r">${fmt.cur(s.netSales)}</td><td class="r">${fmt.cur2(taov)}</td><td class="r">${fmt.num(s.newCustomers)}</td><td class="r">${fmt.num(s.retCustomers)}</td><td class="r">${totUsCa}</td><td class="r" style="color:${tc}">${s.pctToPlanUnits!=null?s.pctToPlanUnits.toFixed(1)+'%':'—'}</td><td class="r">${totInv != null ? fmt.num(totInv) : '—'}</td>${totCell('us')}${totCell('ca')}</tr>`);
   document.getElementById('tbl-body').innerHTML = rows.join('');
   renderOosNote(d);
 }
 
 /* Out-of-stock projection cell. Deliberately shows the rate it assumed, so
    the number is auditable at a glance rather than looking authoritative. */
-function oosCell(v) {
-  if (v.inventoryUnits == null) return '<td class="r">—</td>';
-  if (v.inventoryUnits <= 0)
+/* Out-of-stock projection cell, per storefront. Deliberately shows the units
+   and rate it assumed, so the number is auditable at a glance rather than
+   looking authoritative.
+
+   US and CA are projected separately because stock does not move between them
+   — a Canadian order cannot be filled from Memphis. A combined column reads
+   comfortable while one side is already empty: Daniella has thousands of US
+   units and zero in Ontario. */
+function oosCell(v, region) {
+  const units = v[region + 'InventoryUnits'];
+  const date  = v[region + 'EstOOSDate'];
+  const days  = v[region + 'DaysToOOS'];
+  const rate  = v[region + 'RunRateUnitsPerDay'];
+  // Older data.js snapshots carry only the combined figures.
+  if (units === undefined) return '<td class="r" style="color:var(--muted)">—</td>';
+  if (units == null) return '<td class="r">—</td>';
+  if (units <= 0)
     return '<td class="r" style="color:var(--danger);font-weight:600">Out of stock</td>';
-  if (v.estOOSDate == null)
-    return '<td class="r" style="color:var(--muted)">No recent sales</td>';
-  const c = v.daysToOOS <= 14 ? 'var(--danger)' : v.daysToOOS <= 30 ? 'var(--warn)' : 'var(--positive)';
-  return `<td class="r"><span style="color:${c};font-weight:600">${fmt.date(v.estOOSDate)}</span>`
-       + `<br><span style="font-size:11px;color:var(--muted)">~${fmt.num(v.daysToOOS)}d @ ${v.runRateUnitsPerDay}/day</span></td>`;
+  if (date == null)
+    return `<td class="r"><span style="color:var(--muted)">No recent sales</span>`
+         + `<br><span style="font-size:11px;color:var(--muted)">${fmt.num(units)} units</span></td>`;
+  const c = days <= 14 ? 'var(--danger)' : days <= 30 ? 'var(--warn)' : 'var(--positive)';
+  return `<td class="r"><span style="color:${c};font-weight:600">${fmt.date(date)}</span>`
+       + `<br><span style="font-size:11px;color:var(--muted)">${fmt.num(units)} u · ~${fmt.num(days)}d @ ${rate}/day</span></td>`;
 }
 
 function renderOosNote(d) {
@@ -1267,7 +1306,11 @@ function renderOosNote(d) {
       + `<em>if the current trend continues</em>. It assumes demand holds steady and that no `
       + `replenishment arrives, so it moves as the trend moves. Inventory is the latest `
       + `UOS.INVENTORY_LEVELS sync, summed across fulfillment locations. Treat it as a signal `
-      + `for which shades to look at, not a committed stock-out date.`
+      + `for which shades to look at, not a committed stock-out date. `
+      + `<strong>US and CA are projected separately</strong> because stock does not move between the two `
+      + `storefronts — a .ca order cannot be filled from a US warehouse — so each side uses its own `
+      + `available units and its own sell-through rate. A shade can have months of US cover and be out `
+      + `in Canada.`
     : 'Inventory data was not available in the latest refresh, so estimated out-of-stock dates '
       + 'could not be projected (UOS.INVENTORY_LEVELS not accessible to the refresh credentials).';
 }
