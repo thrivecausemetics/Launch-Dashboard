@@ -240,6 +240,52 @@
       "category_type_patterns": [
         "%lip%"
       ]
+    },
+    {
+      "id": "triple-threat-reform",
+      "name": "Triple Threat™ Color Stick Reform",
+      "subtitle": "5 Shades · Blush Stick · Reformulation",
+      "accent": "#C4577A",
+      "launch_date": "2026-08-26",
+      "category": "Triple Threat",
+      "skus": [
+        {
+          "sku": "TVG4961",
+          "name": "Kaisa",
+          "shade": "Dusty Rose",
+          "color": "#C4736F"
+        },
+        {
+          "sku": "TVG7170",
+          "name": "Nina",
+          "shade": "Rosy Plum",
+          "color": "#A9436B"
+        },
+        {
+          "sku": "TVG7160",
+          "name": "Allison",
+          "shade": "Bright Pink Petal",
+          "color": "#E8709A"
+        },
+        {
+          "sku": "TVG7150",
+          "name": "Mackenzie",
+          "shade": "Soft Coral",
+          "color": "#E8886B"
+        },
+        {
+          "sku": "TVG4880",
+          "name": "Dionne",
+          "shade": "Brick Red",
+          "color": "#9E3B2E"
+        }
+      ],
+      "category_type_patterns": [
+        "%triple threat%"
+      ],
+      "landing_patterns": [
+        "triple-threat"
+      ]
     }
   ],
   "upcoming": [
