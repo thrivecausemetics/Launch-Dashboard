@@ -7384,39 +7384,39 @@ window.DASHBOARD_DATA = {
       "internalDate": null,
       "status": "LIVE",
       "category": "Triple Threat",
-      "subtitle": "5 Shades \u00b7 Blush Stick \u00b7 Reformulation",
+      "subtitle": "7 Shades \u00b7 Blush & Highlighter Stick \u00b7 Reformulation",
       "accent": "#C4577A",
       "summary": {
-        "netSales": 76833.3,
-        "units": 2450,
-        "orders": 2101,
-        "aov": 36.57,
-        "newCustomers": 298,
-        "retCustomers": 1793,
-        "totalCustomers": 2091,
-        "newPct": 14.3,
-        "retPct": 85.7,
+        "netSales": 91642.0,
+        "units": 2957,
+        "orders": 2394,
+        "aov": 38.28,
+        "newCustomers": 331,
+        "retCustomers": 2047,
+        "totalCustomers": 2378,
+        "newPct": 13.9,
+        "retPct": 86.1,
         "planUnits": null,
         "pctToPlanUnits": null,
-        "subscriptionOrders": 27,
-        "subscriptionUnits": 27,
-        "subscriptionRevenue": 972.0,
-        "newCustomerRevenue": 9925.98,
-        "retCustomerRevenue": 66907.32,
-        "pdpViews": 57173,
-        "pdpAtcRate": 12.9,
-        "pdpCvr": 4.0
+        "subscriptionOrders": 57,
+        "subscriptionUnits": 57,
+        "subscriptionRevenue": 2052.0,
+        "newCustomerRevenue": 11858.87,
+        "retCustomerRevenue": 79783.13,
+        "pdpViews": 64884,
+        "pdpAtcRate": 13.3,
+        "pdpCvr": 4.2
       },
       "regions": {
         "us": {
-          "units": 2352,
-          "netSales": 74660.83,
-          "orders": 2012
+          "units": 2847,
+          "netSales": 89202.67,
+          "orders": 2298
         },
         "ca": {
-          "units": 98,
-          "netSales": 2172.47,
-          "orders": 89
+          "units": 110,
+          "netSales": 2439.33,
+          "orders": 96
         }
       },
       "trafficStart": "2026-08-26",
@@ -7776,6 +7776,42 @@ window.DASHBOARD_DATA = {
           "realInventoryUnits": null
         },
         {
+          "sku": "TVG4900",
+          "name": "Joy",
+          "shade": "Gold Shimmer \u00b7 Highlighter",
+          "color": "#D4AF63",
+          "netSales": 10911.2,
+          "units": 369,
+          "orders": 362,
+          "newCustomers": 47,
+          "retCustomers": 313,
+          "usUnits": 362,
+          "caUnits": 7,
+          "usNetSales": 10752.12,
+          "caNetSales": 159.08,
+          "planUnits": null,
+          "pctToPlanUnits": null,
+          "inventoryUnits": 15621,
+          "runRateUnitsPerDay": 61.5,
+          "daysToOOS": 254,
+          "estOOSDate": "2027-05-12",
+          "usInventoryUnits": 14952,
+          "caInventoryUnits": 669,
+          "usRunRateUnitsPerDay": 60.33,
+          "caRunRateUnitsPerDay": 1.17,
+          "usDaysToOOS": 247,
+          "caDaysToOOS": 571,
+          "usEstOOSDate": "2027-05-05",
+          "caEstOOSDate": "2028-03-24",
+          "planTotalUnits": null,
+          "pctToGoalUnits": null,
+          "unitsToGoal": null,
+          "planEndDate": null,
+          "weeksOfStock": 36.3,
+          "decayCurveOOS": null,
+          "realInventoryUnits": null
+        },
+        {
           "sku": "TVG7150",
           "name": "Mackenzie",
           "shade": "Soft Coral",
@@ -7848,6 +7884,42 @@ window.DASHBOARD_DATA = {
           "realInventoryUnits": null
         },
         {
+          "sku": "TVG4920",
+          "name": "Tessa",
+          "shade": "Rich Berry",
+          "color": "#8E2F5B",
+          "netSales": 3897.5,
+          "units": 138,
+          "orders": 135,
+          "newCustomers": 13,
+          "retCustomers": 121,
+          "usUnits": 133,
+          "caUnits": 5,
+          "usNetSales": 3789.72,
+          "caNetSales": 107.78,
+          "planUnits": null,
+          "pctToPlanUnits": null,
+          "inventoryUnits": 6579,
+          "runRateUnitsPerDay": 23.0,
+          "daysToOOS": 286,
+          "estOOSDate": "2027-06-13",
+          "usInventoryUnits": 6311,
+          "caInventoryUnits": 268,
+          "usRunRateUnitsPerDay": 22.17,
+          "caRunRateUnitsPerDay": 0.83,
+          "usDaysToOOS": 284,
+          "caDaysToOOS": 322,
+          "usEstOOSDate": "2027-06-11",
+          "caEstOOSDate": "2027-07-19",
+          "planTotalUnits": null,
+          "pctToGoalUnits": null,
+          "unitsToGoal": null,
+          "planEndDate": null,
+          "weeksOfStock": 40.9,
+          "decayCurveOOS": null,
+          "realInventoryUnits": null
+        },
+        {
           "sku": "TVG4880",
           "name": "Dionne",
           "shade": "Brick Red",
@@ -7890,117 +7962,117 @@ window.DASHBOARD_DATA = {
             "rank": 2,
             "key": "pdp-drag:TVG7150",
             "title": "Mackenzie PDP converts below the launch average",
-            "detail": "3.0% add-to-cart vs 12.9% average across 22,155 views \u2014 roughly 2,206 missed add-to-carts. PDP creative and merchandising are the levers."
+            "detail": "3.0% add-to-cart vs 13.3% average across 22,155 views \u2014 roughly 2,286 missed add-to-carts. PDP creative and merchandising are the levers."
           }
         ],
         "working": [
           {
             "key": "pdp-star:TVG4961",
             "title": "Kaisa converts best on the PDP",
-            "detail": "40.0% add-to-cart vs 12.9% average (310% of it) on 11,369 views. Worth looking at what its page does differently."
+            "detail": "40.0% add-to-cart vs 13.3% average (301% of it) on 11,369 views. Worth looking at what its page does differently."
           },
           {
             "key": "pairing:TVG2840",
             "title": "Most common basket pairing: Liquid Lash\u2122 Extensions Tubing Mascara",
-            "detail": "27 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+            "detail": "53 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
           },
           {
             "key": "new-to-category",
-            "title": "56% of buyers are new to Triple Threat",
-            "detail": "1,167 of 2,092 buyers had not purchased this category before."
+            "title": "54% of buyers are new to Triple Threat",
+            "detail": "1,291 of 2,379 buyers had not purchased this category before."
           }
         ]
       },
       "dailySales": [
         {
           "date": "2026-08-26",
-          "units": 612,
-          "netSales": 17223.74,
-          "usUnits": 590,
-          "caUnits": 22,
-          "usNetSales": 16709.28,
-          "caNetSales": 514.46,
-          "cumUnits": 612,
-          "cumSales": 17223.74,
+          "units": 727,
+          "netSales": 19948.79,
+          "usUnits": 704,
+          "caUnits": 23,
+          "usNetSales": 19410.77,
+          "caNetSales": 538.02,
+          "cumUnits": 727,
+          "cumSales": 19948.79,
           "planUnits": null,
           "cumPlanUnits": null,
-          "newCustomers": 45,
-          "retCustomers": 407
+          "newCustomers": 52,
+          "retCustomers": 446
         },
         {
           "date": "2026-08-27",
-          "units": 357,
-          "netSales": 11503.77,
-          "usUnits": 333,
-          "caUnits": 24,
-          "usNetSales": 11008.18,
-          "caNetSales": 495.59,
-          "cumUnits": 969,
-          "cumSales": 28727.51,
+          "units": 425,
+          "netSales": 13495.68,
+          "usUnits": 400,
+          "caUnits": 25,
+          "usNetSales": 12980.13,
+          "caNetSales": 515.55,
+          "cumUnits": 1152,
+          "cumSales": 33444.47,
           "planUnits": null,
           "cumPlanUnits": null,
-          "newCustomers": 42,
-          "retCustomers": 261
+          "newCustomers": 46,
+          "retCustomers": 301
         },
         {
           "date": "2026-08-28",
-          "units": 296,
-          "netSales": 9774.64,
-          "usUnits": 284,
-          "caUnits": 12,
-          "usNetSales": 9504.6,
-          "caNetSales": 270.04,
-          "cumUnits": 1265,
-          "cumSales": 38502.15,
+          "units": 355,
+          "netSales": 11586.14,
+          "usUnits": 341,
+          "caUnits": 14,
+          "usNetSales": 11273.77,
+          "caNetSales": 312.37,
+          "cumUnits": 1507,
+          "cumSales": 45030.61,
           "planUnits": null,
           "cumPlanUnits": null,
-          "newCustomers": 51,
-          "retCustomers": 218
+          "newCustomers": 55,
+          "retCustomers": 248
         },
         {
           "date": "2026-08-29",
-          "units": 311,
-          "netSales": 10152.25,
-          "usUnits": 297,
-          "caUnits": 14,
-          "usNetSales": 9843.26,
-          "caNetSales": 308.99,
-          "cumUnits": 1576,
-          "cumSales": 48654.4,
+          "units": 379,
+          "netSales": 12404.6,
+          "usUnits": 364,
+          "caUnits": 15,
+          "usNetSales": 12072.62,
+          "caNetSales": 331.98,
+          "cumUnits": 1886,
+          "cumSales": 57435.21,
           "planUnits": null,
           "cumPlanUnits": null,
-          "newCustomers": 39,
-          "retCustomers": 250
+          "newCustomers": 48,
+          "retCustomers": 285
         },
         {
           "date": "2026-08-30",
-          "units": 546,
-          "netSales": 17831.63,
-          "usUnits": 532,
-          "caUnits": 14,
-          "usNetSales": 17508.89,
-          "caNetSales": 322.74,
-          "cumUnits": 2122,
-          "cumSales": 66486.03,
+          "units": 674,
+          "netSales": 21909.25,
+          "usUnits": 654,
+          "caUnits": 20,
+          "usNetSales": 21447.47,
+          "caNetSales": 461.78,
+          "cumUnits": 2560,
+          "cumSales": 79344.46,
           "planUnits": null,
           "cumPlanUnits": null,
-          "newCustomers": 59,
-          "retCustomers": 429
+          "newCustomers": 63,
+          "retCustomers": 503
         },
         {
           "date": "2026-08-31",
-          "units": 328,
-          "netSales": 10347.27,
-          "usUnits": 316,
-          "caUnits": 12,
-          "usNetSales": 10086.62,
-          "caNetSales": 260.65,
-          "cumUnits": 2450,
-          "cumSales": 76833.3,
+          "units": 397,
+          "netSales": 12297.53,
+          "usUnits": 384,
+          "caUnits": 13,
+          "usNetSales": 12017.91,
+          "caNetSales": 279.62,
+          "cumUnits": 2957,
+          "cumSales": 91641.99,
           "planUnits": null,
           "cumPlanUnits": null,
-          "newCustomers": 62,
-          "retCustomers": 235
+          "newCustomers": 67,
+          "retCustomers": 271
         }
       ],
       "dailySkuColumns": [
@@ -8016,6 +8088,8 @@ window.DASHBOARD_DATA = {
       ],
       "dailyBySku": {
         "TVG4880": [["2026-08-26", 43, 883.17, 43, 0, 883.17, 0.0, 2, 39], ["2026-08-27", 20, 604.86, 18, 2, 584.9, 19.96, 0, 20], ["2026-08-28", 11, 380.37, 11, 0, 380.37, 0.0, 2, 9], ["2026-08-29", 7, 236.18, 6, 1, 213.85, 22.33, 0, 7], ["2026-08-30", 21, 702.53, 21, 0, 702.53, 0.0, 3, 15], ["2026-08-31", 17, 530.74, 17, 0, 530.74, 0.0, 4, 12]],
+        "TVG4900": [["2026-08-26", 72, 1867.24, 71, 1, 1843.68, 23.56, 7, 63], ["2026-08-27", 51, 1461.78, 51, 0, 1461.78, 0.0, 6, 45], ["2026-08-28", 41, 1251.35, 40, 1, 1228.94, 22.41, 8, 33], ["2026-08-29", 52, 1712.0, 51, 1, 1689.01, 22.99, 10, 40], ["2026-08-30", 104, 3327.31, 100, 4, 3237.19, 90.12, 9, 90], ["2026-08-31", 49, 1291.52, 49, 0, 1291.52, 0.0, 7, 42]],
+        "TVG4920": [["2026-08-26", 43, 857.81, 43, 0, 857.81, 0.0, 2, 40], ["2026-08-27", 17, 530.13, 16, 1, 510.17, 19.96, 1, 16], ["2026-08-28", 18, 560.15, 17, 1, 540.23, 19.92, 3, 15], ["2026-08-29", 16, 540.35, 16, 0, 540.35, 0.0, 3, 12], ["2026-08-30", 24, 750.32, 22, 2, 701.39, 48.93, 1, 22], ["2026-08-31", 20, 658.74, 19, 1, 639.77, 18.97, 3, 16]],
         "TVG4961": [["2026-08-26", 313, 9656.29, 302, 11, 9396.87, 259.42, 24, 261], ["2026-08-27", 220, 7202.21, 211, 9, 7023.39, 178.82, 30, 178], ["2026-08-28", 168, 5531.02, 161, 7, 5371.86, 159.16, 31, 134], ["2026-08-29", 197, 6455.21, 192, 5, 6347.3, 107.91, 29, 163], ["2026-08-30", 344, 11241.61, 337, 7, 11080.67, 160.94, 41, 291], ["2026-08-31", 192, 6127.67, 186, 6, 5993.15, 134.52, 39, 146]],
         "TVG7150": [["2026-08-26", 67, 1616.37, 65, 2, 1566.38, 49.99, 7, 56], ["2026-08-27", 29, 925.52, 26, 3, 855.65, 69.87, 4, 25], ["2026-08-28", 31, 1040.99, 31, 0, 1040.99, 0.0, 8, 21], ["2026-08-29", 19, 624.75, 18, 1, 599.94, 24.81, 3, 16], ["2026-08-30", 44, 1422.29, 43, 1, 1402.44, 19.85, 3, 39], ["2026-08-31", 33, 1026.28, 33, 0, 1026.28, 0.0, 5, 26]],
         "TVG7160": [["2026-08-26", 63, 1482.5, 58, 5, 1363.29, 119.21, 4, 56], ["2026-08-27", 28, 846.57, 23, 5, 736.77, 109.8, 4, 24], ["2026-08-28", 23, 745.96, 20, 3, 680.05, 65.91, 5, 16], ["2026-08-29", 31, 999.31, 29, 2, 956.95, 42.36, 4, 26], ["2026-08-30", 51, 1644.6, 49, 2, 1595.84, 48.76, 5, 44], ["2026-08-31", 29, 914.75, 29, 0, 914.75, 0.0, 4, 25]],
@@ -8068,6 +8142,17 @@ window.DASHBOARD_DATA = {
           "purchRate": 2.67
         },
         {
+          "sku": "TVG4920",
+          "name": "Tessa",
+          "pdpViews": 5434,
+          "atc": 374,
+          "ckts": 77,
+          "purch": 115,
+          "rev": 4068.0,
+          "atcRate": 6.88,
+          "purchRate": 2.12
+        },
+        {
           "sku": "TVG4880",
           "name": "Dionne",
           "pdpViews": 4963,
@@ -8077,101 +8162,76 @@ window.DASHBOARD_DATA = {
           "rev": 3636.0,
           "atcRate": 5.78,
           "purchRate": 2.08
+        },
+        {
+          "sku": "TVG4900",
+          "name": "Joy",
+          "pdpViews": 2277,
+          "atc": 857,
+          "ckts": 227,
+          "purch": 340,
+          "rev": 11628.0,
+          "atcRate": 37.64,
+          "purchRate": 14.93
         }
       ],
       "crossSell": [
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 27
+          "pairs": 53
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG176",
-          "pairs": 24
+          "pairs": 26
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 17
+          "pairs": 23
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
-          "pairs": 15
+          "pairs": 21
+        },
+        {
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG181",
+          "pairs": 20
+        },
+        {
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6700",
+          "pairs": 14
         },
         {
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "sku": "TVG094",
+          "pairs": 13
+        },
+        {
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6720",
+          "pairs": 12
+        },
+        {
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
           "pairs": 11
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
           "pairs": 10
-        },
-        {
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 9
-        },
-        {
-          "product": "Focus Eyeshadow\u2122 Palette",
-          "sku": "TVG6720",
-          "pairs": 8
-        },
-        {
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 8
-        },
-        {
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG448",
-          "pairs": 8
         }
       ],
       "crossSellBySku": [
         {
           "primarySku": "TVG4880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2840",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG356",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
-          "sku": "TVG280",
+          "sku": "TVG479",
           "pairs": 2
         },
         {
@@ -8182,14 +8242,134 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4880",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG432",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Defying Gravity\u2122 Eye Lifting Cream",
+          "sku": "TBB002",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG299",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG356",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
           "product": "Bright Balance\u2122 Hydrating Gel Cleanser",
           "sku": "TBB001",
           "pairs": 2
         },
         {
           "primarySku": "TVG4880",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG479",
+          "sku": "TVG478",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
+          "pairs": 26
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG181",
+          "pairs": 14
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6700",
+          "pairs": 11
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Filtered Effects\u2122 Blurring Primer",
+          "sku": "TVG348",
+          "pairs": 8
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Triple Threat\u2122 Bronzer Stick",
+          "sku": "TVG330",
+          "pairs": 7
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
+          "pairs": 6
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7230",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Filtered Effects\u2122\ufe0f Protecting Primer SPF 37",
+          "sku": "TVG362",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
+          "sku": "TVG558",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Sheer Strength\u00ae Lip-Plumping Peptide Gloss",
+          "sku": "TVG554",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG4920",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4920",
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6700",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4920",
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7250",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4920",
+          "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
+          "sku": "TVG517",
           "pairs": 2
         },
         {
@@ -8236,6 +8416,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4961",
+          "product": "Sheer Strength\u00ae Lip-Plumping Peptide Gloss",
+          "sku": "TVG554",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG4961",
           "product": "Infinity Waterproof\u2122 Eyebrow Liner",
           "sku": "TVG427",
           "pairs": 5
@@ -8247,15 +8433,15 @@ window.DASHBOARD_DATA = {
           "pairs": 5
         },
         {
-          "primarySku": "TVG4961",
-          "product": "Sheer Strength\u00ae Lip-Plumping Peptide Gloss",
-          "sku": "TVG554",
-          "pairs": 5
+          "primarySku": "TVG7150",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 2
         },
         {
           "primarySku": "TVG7150",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
           "pairs": 2
         },
         {
@@ -8272,20 +8458,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7150",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG7150",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG7150",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG6380",
+          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
+          "sku": "TVG216",
           "pairs": 2
         },
         {
@@ -8296,8 +8470,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7150",
-          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
-          "sku": "TVG216",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG7150",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 2
         },
         {
@@ -8309,13 +8489,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7160",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG7160",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
+          "sku": "TVG534",
           "pairs": 2
         },
         {
@@ -8326,15 +8500,27 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7160",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG7160",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "sku": "TVG533",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG7160",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 2
         },
         {
           "primarySku": "TVG7160",
           "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
-          "pairs": 2
+          "sku": "TVG179",
+          "pairs": 1
         },
         {
           "primarySku": "TVG7160",
@@ -8346,12 +8532,6 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG7160",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG357",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG7160",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
           "pairs": 1
         },
         {
@@ -8387,45 +8567,45 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7170",
           "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG534",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7170",
+          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
           "pairs": 3
         },
         {
           "primarySku": "TVG7170",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG7170",
-          "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
-          "sku": "TVG517",
+          "sku": "TVG6630",
           "pairs": 2
         },
         {
           "primarySku": "TVG7170",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG448",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
           "pairs": 2
         },
         {
           "primarySku": "TVG7170",
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6760",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG181",
           "pairs": 2
         }
       ],
       "categoryCustomers": {
         "category": "Triple Threat",
-        "total": 2092,
-        "existingCategory": 925,
-        "newToCategory": 1167,
+        "total": 2379,
+        "existingCategory": 1088,
+        "newToCategory": 1291,
         "byVariant": [
           {
-            "sku": "TVG4961",
-            "name": "Kaisa",
-            "newToCategory": 794,
-            "existingCategory": 574
+            "sku": "TVG4880",
+            "name": "Dionne",
+            "newToCategory": 41,
+            "existingCategory": 73
           },
           {
             "sku": "TVG7160",
@@ -8434,16 +8614,28 @@ window.DASHBOARD_DATA = {
             "existingCategory": 114
           },
           {
-            "sku": "TVG4880",
-            "name": "Dionne",
-            "newToCategory": 41,
-            "existingCategory": 73
-          },
-          {
             "sku": "TVG7170",
             "name": "Nina",
             "newToCategory": 221,
             "existingCategory": 225
+          },
+          {
+            "sku": "TVG4920",
+            "name": "Tessa",
+            "newToCategory": 60,
+            "existingCategory": 75
+          },
+          {
+            "sku": "TVG4961",
+            "name": "Kaisa",
+            "newToCategory": 794,
+            "existingCategory": 574
+          },
+          {
+            "sku": "TVG4900",
+            "name": "Joy",
+            "newToCategory": 164,
+            "existingCategory": 197
           },
           {
             "sku": "TVG7150",
@@ -8452,7 +8644,7 @@ window.DASHBOARD_DATA = {
             "existingCategory": 105
           }
         ],
-        "daily": [["2026-08-26", 226, 227], ["2026-08-27", 183, 120], ["2026-08-28", 162, 107], ["2026-08-29", 157, 132], ["2026-08-30", 263, 225], ["2026-08-31", 178, 119]]
+        "daily": [["2026-08-26", 248, 251], ["2026-08-27", 197, 150], ["2026-08-28", 174, 129], ["2026-08-29", 176, 157], ["2026-08-30", 296, 270], ["2026-08-31", 202, 136]]
       }
     },
     {
