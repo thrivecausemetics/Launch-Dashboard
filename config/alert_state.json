@@ -7,25 +7,31 @@
   ],
   "lastRun": "2026-09-02",
   "lastDigest": null,
-  "dataCutoff": "2026-09-01",
+  "dataCutoff": "2026-08-31",
   "alerts": {
     "lasting-mark-lip-stain|oos-soon:TVG7250": {
       "rank": 1,
-      "title": "Daniella projects out of stock ~Sep 10, 2026",
-      "firstSeen": "2026-09-01",
-      "lastPosted": "2026-09-01"
-    },
-    "eyeshadow-quads|oos-soon:TVG6700": {
-      "rank": 1,
-      "title": "Warm Neutrals projects out of stock ~Sep 4, 2026",
+      "title": "Daniella projects out of stock ~Sep 9, 2026",
       "firstSeen": "2026-09-01",
       "lastPosted": "2026-09-01"
     },
     "eyeshadow-quads|oos-soon:TVG6720": {
       "rank": 1,
-      "title": "Cool Neutrals projects out of stock ~Sep 5, 2026",
+      "title": "Cool Neutrals projects out of stock ~Sep 3, 2026",
       "firstSeen": "2026-09-01",
       "lastPosted": "2026-09-01"
+    },
+    "eyeshadow-quads|oos-soon:TVG6700": {
+      "rank": 1,
+      "title": "Warm Neutrals projects out of stock ~Sep 3, 2026",
+      "firstSeen": "2026-09-01",
+      "lastPosted": "2026-09-01"
+    },
+    "triple-threat-reform|pdp-drag:TVG7150": {
+      "rank": 2,
+      "title": "Mackenzie PDP converts below the launch average",
+      "firstSeen": "2026-09-02",
+      "lastPosted": "2026-09-02"
     },
     "lasting-mark-lip-stain|pdp-drag:TVG7230": {
       "rank": 2,
