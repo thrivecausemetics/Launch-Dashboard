@@ -244,7 +244,7 @@
     {
       "id": "triple-threat-reform",
       "name": "Triple Threat™ Color Stick Reform",
-      "subtitle": "5 Shades · Blush Stick · Reformulation",
+      "subtitle": "7 Shades · Blush & Highlighter Stick · Reformulation",
       "accent": "#C4577A",
       "launch_date": "2026-08-26",
       "category": "Triple Threat",
@@ -278,6 +278,18 @@
           "name": "Dionne",
           "shade": "Brick Red",
           "color": "#9E3B2E"
+        },
+        {
+          "sku": "TVG4900",
+          "name": "Joy",
+          "shade": "Gold Shimmer · Highlighter",
+          "color": "#D4AF63"
+        },
+        {
+          "sku": "TVG4920",
+          "name": "Tessa",
+          "shade": "Rich Berry",
+          "color": "#8E2F5B"
         }
       ],
       "category_type_patterns": [
