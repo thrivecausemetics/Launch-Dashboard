@@ -298,6 +298,30 @@
       "landing_patterns": [
         "triple-threat"
       ]
+    },
+    {
+      "id": "psl-pout-hero",
+      "name": "Pumpkin Spice Latte Pout Hero™ Lip Balm",
+      "subtitle": "Seasonal reanimation · Liquid Balm Lip Treatment",
+      "accent": "#C86B2B",
+      "launch_date": "2026-09-02",
+      "asana_gid": "1216777821260262",
+      "category": "Lip",
+      "skus": [
+        {
+          "sku": "TBB013",
+          "name": "Pumpkin Spice Latte",
+          "shade": "Seasonal flavour",
+          "color": "#C86B2B"
+        }
+      ],
+      "category_type_patterns": [
+        "%lip%"
+      ],
+      "landing_patterns": [
+        "pout-hero",
+        "pumpkin-spice"
+      ]
     }
   ],
   "upcoming": [
