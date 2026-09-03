@@ -226,23 +226,23 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jun 2026",
             "chs": {
-              "Organic Social": 88198,
+              "Organic Search": 63229,
+              "Display": 3759,
               "Paid Social": 1145454,
-              "Cross-network": 136649,
-              "Unassigned": 204456,
-              "Organic Video": 95,
+              "Email": 352638,
+              "SMS": 237059,
+              "Organic Social": 88198,
               "Direct": 361180,
               "AI Assistant": 1103,
-              "Display": 3759,
-              "SMS": 237059,
               "Referral": 10953,
               "Paid Shopping": 84486,
-              "Organic Search": 63229,
-              "Email": 352638,
-              "Paid Video": 2326,
               "Organic Shopping": 36161,
+              "Paid Video": 2326,
               "Paid Other": 249202,
+              "Cross-network": 136649,
               "Paid Search": 299936,
+              "Unassigned": 204456,
+              "Organic Video": 95,
               "Mobile Push Notifications": 3,
               "Affiliates": 3
             }
@@ -251,45 +251,45 @@ window.DASHBOARD_DATA = {
             "month": "Jul 2026",
             "chs": {
               "Paid Other": 392354,
-              "AI Assistant": 1111,
-              "Referral": 19681,
-              "Unassigned": 294263,
-              "Cross-network": 191011,
-              "Paid Shopping": 133682,
-              "Organic Search": 89549,
-              "SMS": 237045,
               "Organic Shopping": 31592,
-              "Paid Search": 392929,
+              "Referral": 19681,
+              "SMS": 237045,
+              "AI Assistant": 1111,
               "Direct": 652359,
-              "Organic Video": 297,
-              "Paid Social": 1835866,
-              "Email": 471247,
-              "Organic Social": 107105,
-              "Display": 10350,
               "Paid Video": 2219,
+              "Paid Shopping": 133682,
+              "Email": 471247,
+              "Organic Search": 89549,
+              "Unassigned": 294263,
+              "Display": 10350,
+              "Cross-network": 191011,
+              "Organic Social": 107105,
+              "Organic Video": 297,
+              "Paid Search": 392929,
+              "Paid Social": 1835866,
               "Affiliates": 6
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Cross-network": 172835,
-              "Direct": 604613,
-              "Paid Search": 364681,
-              "Organic Social": 100150,
-              "SMS": 289131,
-              "Display": 12664,
-              "Email": 527924,
-              "Organic Shopping": 32766,
-              "Paid Shopping": 117694,
-              "Unassigned": 354018,
-              "Referral": 18282,
               "Paid Social": 1530493,
-              "Organic Search": 92452,
               "Paid Other": 541415,
+              "Organic Shopping": 32766,
+              "Organic Video": 104,
+              "Referral": 18282,
+              "Unassigned": 354018,
+              "Paid Shopping": 117694,
+              "Cross-network": 172835,
+              "Organic Search": 92452,
+              "Display": 12664,
+              "Direct": 604613,
+              "SMS": 289131,
+              "Paid Search": 364681,
               "AI Assistant": 1959,
               "Paid Video": 1999,
-              "Organic Video": 104,
+              "Organic Social": 100150,
+              "Email": 527924,
               "Affiliates": 11
             }
           }
@@ -2620,46 +2620,46 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Cross-network": 66453,
-              "Organic Shopping": 9533,
-              "AI Assistant": 296,
-              "Paid Search": 134527,
               "Paid Social": 634261,
-              "Paid Shopping": 36421,
-              "Paid Video": 613,
-              "Display": 1718,
-              "Organic Social": 32182,
-              "Paid Other": 166315,
-              "Organic Search": 29385,
-              "Email": 189059,
-              "Referral": 6859,
-              "Unassigned": 100081,
-              "Direct": 279560,
-              "SMS": 96972,
+              "AI Assistant": 296,
+              "Organic Shopping": 9533,
               "Organic Video": 114,
+              "Direct": 279560,
+              "Unassigned": 100081,
+              "Organic Social": 32182,
+              "Display": 1718,
+              "SMS": 96972,
+              "Paid Other": 166315,
+              "Email": 189059,
+              "Paid Search": 134527,
+              "Cross-network": 66453,
+              "Referral": 6859,
+              "Paid Video": 613,
+              "Organic Search": 29385,
+              "Paid Shopping": 36421,
               "Affiliates": 3
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Organic Video": 104,
-              "Unassigned": 354018,
-              "Paid Shopping": 117694,
-              "Organic Search": 92452,
-              "Cross-network": 172835,
-              "Paid Social": 1530493,
-              "Paid Search": 364681,
-              "Organic Shopping": 32766,
-              "Paid Video": 1999,
               "Email": 527924,
-              "AI Assistant": 1959,
-              "Display": 12664,
-              "Referral": 18282,
-              "Direct": 604613,
-              "SMS": 289131,
+              "Organic Search": 92452,
+              "Paid Video": 1999,
               "Organic Social": 100150,
+              "Cross-network": 172835,
+              "SMS": 289131,
+              "Direct": 604613,
+              "Paid Social": 1530493,
+              "Display": 12664,
+              "Organic Video": 104,
+              "Referral": 18282,
+              "AI Assistant": 1959,
+              "Paid Search": 364681,
+              "Paid Shopping": 117694,
+              "Organic Shopping": 32766,
               "Paid Other": 541415,
+              "Unassigned": 354018,
               "Affiliates": 11
             }
           }
@@ -4161,70 +4161,70 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jun 2026",
             "chs": {
-              "Display": 2776,
-              "Organic Search": 37974,
-              "Organic Social": 39597,
               "Mobile Push Notifications": 1,
+              "Organic Social": 39597,
+              "Organic Search": 37974,
+              "Direct": 203377,
+              "Organic Shopping": 21024,
+              "SMS": 135686,
+              "Paid Shopping": 50882,
+              "Organic Video": 61,
+              "Paid Other": 141854,
+              "Paid Search": 180642,
+              "AI Assistant": 706,
+              "Display": 2776,
+              "Email": 193821,
+              "Cross-network": 86243,
+              "Unassigned": 122012,
               "Referral": 6487,
               "Paid Video": 1237,
-              "AI Assistant": 706,
-              "Paid Search": 180642,
-              "Email": 193821,
-              "Organic Shopping": 21024,
-              "Paid Shopping": 50882,
-              "Unassigned": 122012,
-              "Paid Other": 141854,
               "Paid Social": 647411,
-              "SMS": 135686,
-              "Cross-network": 86243,
-              "Organic Video": 61,
-              "Direct": 203377,
               "Affiliates": 3
             }
           },
           {
             "month": "Jul 2026",
             "chs": {
-              "Organic Social": 107105,
+              "Organic Shopping": 31592,
+              "Cross-network": 191011,
               "Paid Other": 392354,
-              "Email": 471247,
+              "Paid Search": 392929,
+              "Paid Shopping": 133682,
+              "Unassigned": 294263,
+              "Display": 10350,
               "Paid Social": 1835866,
+              "Direct": 652359,
+              "Organic Video": 297,
+              "Paid Video": 2219,
+              "Organic Social": 107105,
+              "Referral": 19681,
+              "Email": 471247,
+              "Organic Search": 89549,
               "AI Assistant": 1111,
               "SMS": 237045,
-              "Paid Search": 392929,
-              "Referral": 19681,
-              "Paid Video": 2219,
-              "Unassigned": 294263,
-              "Direct": 652359,
-              "Paid Shopping": 133682,
-              "Organic Shopping": 31592,
-              "Organic Video": 297,
-              "Organic Search": 89549,
-              "Display": 10350,
-              "Cross-network": 191011,
               "Affiliates": 6
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Organic Shopping": 32766,
-              "Paid Social": 1530493,
-              "SMS": 289131,
-              "Paid Shopping": 117694,
-              "Email": 527924,
-              "Paid Search": 364681,
               "AI Assistant": 1959,
-              "Cross-network": 172835,
-              "Organic Video": 104,
-              "Referral": 18282,
-              "Direct": 604613,
-              "Display": 12664,
-              "Organic Social": 100150,
-              "Paid Other": 541415,
-              "Paid Video": 1999,
               "Unassigned": 354018,
+              "Paid Search": 364681,
+              "Organic Video": 104,
+              "Paid Social": 1530493,
+              "Paid Shopping": 117694,
+              "Display": 12664,
+              "SMS": 289131,
+              "Referral": 18282,
+              "Organic Social": 100150,
+              "Cross-network": 172835,
+              "Paid Other": 541415,
+              "Email": 527924,
               "Organic Search": 92452,
+              "Paid Video": 1999,
+              "Direct": 604613,
+              "Organic Shopping": 32766,
               "Affiliates": 11
             }
           }
@@ -6371,22 +6371,22 @@ window.DASHBOARD_DATA = {
             "month": "Aug 2026",
             "chs": {
               "Organic Shopping": 16101,
-              "Organic Video": 36,
-              "Email": 218275,
-              "Direct": 236348,
-              "Display": 4128,
-              "AI Assistant": 1001,
-              "SMS": 159594,
-              "Referral": 8574,
-              "Paid Social": 654769,
-              "Paid Search": 160424,
-              "Paid Other": 241285,
-              "Unassigned": 160906,
-              "Paid Shopping": 47118,
               "Cross-network": 72895,
-              "Organic Social": 44885,
+              "Paid Social": 654769,
+              "Direct": 236348,
+              "Paid Shopping": 47118,
+              "Display": 4128,
+              "Email": 218275,
               "Paid Video": 804,
+              "Organic Social": 44885,
+              "Unassigned": 160906,
+              "Paid Other": 241285,
               "Organic Search": 43288,
+              "AI Assistant": 1001,
+              "Referral": 8574,
+              "SMS": 159594,
+              "Paid Search": 160424,
+              "Organic Video": 36,
               "Affiliates": 5
             }
           }
@@ -7724,24 +7724,24 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
+              "Unassigned": 63475,
+              "Referral": 4167,
+              "Organic Social": 21091,
+              "Paid Social": 261401,
+              "AI Assistant": 406,
               "Affiliates": 1,
-              "Organic Video": 11,
-              "SMS": 58835,
-              "Display": 868,
-              "Cross-network": 33271,
-              "Paid Shopping": 20023,
-              "Email": 94404,
-              "Organic Shopping": 8717,
+              "Organic Search": 19384,
               "Direct": 89238,
               "Paid Other": 113235,
+              "Cross-network": 33271,
               "Paid Search": 63046,
-              "Paid Social": 261401,
-              "Unassigned": 63475,
-              "Organic Social": 21091,
-              "AI Assistant": 406,
-              "Organic Search": 19384,
+              "Email": 94404,
+              "Paid Shopping": 20023,
               "Paid Video": 338,
-              "Referral": 4167
+              "Organic Video": 11,
+              "Display": 868,
+              "SMS": 58835,
+              "Organic Shopping": 8717
             }
           }
         ]
@@ -8833,6 +8833,307 @@ window.DASHBOARD_DATA = {
           }
         ],
         "daily": [["2026-08-26", 246, 249], ["2026-08-27", 196, 150], ["2026-08-28", 174, 129], ["2026-08-29", 176, 157], ["2026-08-30", 296, 270], ["2026-08-31", 202, 136], ["2026-09-01", 142, 130], ["2026-09-02", 168, 132]]
+      }
+    },
+    {
+      "launchId": "psl-pout-hero",
+      "name": "Pumpkin Spice Latte Pout Hero\u2122 Lip Balm",
+      "launchDate": "2026-09-02",
+      "internalDate": null,
+      "status": "LIVE",
+      "category": "Lip",
+      "subtitle": "Seasonal reanimation \u00b7 Liquid Balm Lip Treatment",
+      "accent": "#C86B2B",
+      "summary": {
+        "netSales": 20888.42,
+        "units": 877,
+        "orders": 713,
+        "aov": 29.3,
+        "newCustomers": 73,
+        "retCustomers": 639,
+        "totalCustomers": 712,
+        "newPct": 10.3,
+        "retPct": 89.7,
+        "planUnits": 782,
+        "pctToPlanUnits": 112.1,
+        "subscriptionOrders": 1116,
+        "subscriptionUnits": 1257,
+        "subscriptionRevenue": 32599.0,
+        "newCustomerRevenue": 1959.04,
+        "retCustomerRevenue": 18929.38,
+        "pdpViews": 24518,
+        "pdpAtcRate": 8.8,
+        "pdpCvr": 3.2
+      },
+      "regions": {
+        "us": {
+          "units": 834,
+          "netSales": 20171.4,
+          "orders": 675
+        },
+        "ca": {
+          "units": 43,
+          "netSales": 717.02,
+          "orders": 38
+        }
+      },
+      "trafficStart": "2026-09-02",
+      "trafficEnd": "2026-08-31",
+      "traffic": {
+        "byChannel": [],
+        "monthly": []
+      },
+      "landing": [],
+      "learnings": [],
+      "asanaLink": {
+        "asanaUrl": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260262",
+        "asanaName": "Pumpkin Spice Latte Pout Hero Lip Balm",
+        "linkedBy": "config"
+      },
+      "planCurve": [
+        {
+          "date": "2026-09-02",
+          "cumPlanUnits": 782
+        }
+      ],
+      "planTotalUnits": 41426,
+      "planEndDate": "2026-12-30",
+      "archived": false,
+      "byVariant": [
+        {
+          "sku": "TBB013",
+          "name": "Pumpkin Spice Latte",
+          "shade": "Seasonal flavour",
+          "color": "#C86B2B",
+          "netSales": 20888.42,
+          "units": 877,
+          "orders": 713,
+          "newCustomers": 73,
+          "retCustomers": 639,
+          "usUnits": 834,
+          "caUnits": 43,
+          "usNetSales": 20171.4,
+          "caNetSales": 717.02,
+          "planUnits": 782,
+          "pctToPlanUnits": 112.1,
+          "inventoryUnits": 6162,
+          "runRateUnitsPerDay": 877.0,
+          "daysToOOS": 7,
+          "estOOSDate": "2026-09-09",
+          "usInventoryUnits": 5571,
+          "caInventoryUnits": 591,
+          "usRunRateUnitsPerDay": 834.0,
+          "caRunRateUnitsPerDay": 43.0,
+          "usDaysToOOS": 6,
+          "caDaysToOOS": 13,
+          "usEstOOSDate": "2026-09-08",
+          "caEstOOSDate": "2026-09-15",
+          "planTotalUnits": 41426,
+          "pctToGoalUnits": 2.1,
+          "unitsToGoal": 40549,
+          "planEndDate": "2026-12-30",
+          "weeksOfStock": 1.0,
+          "decayCurveOOS": null,
+          "realInventoryUnits": null
+        }
+      ],
+      "signals": {
+        "attention": [
+          {
+            "rank": 1,
+            "key": "oos-soon:TBB013",
+            "title": "Pumpkin Spice Latte projects out of stock ~Sep 9, 2026",
+            "detail": "6,162 units left at 877.0/day (~7 days). Assumes the current rate holds and no replenishment arrives."
+          }
+        ],
+        "working": [
+          {
+            "key": "pairing:TVG179",
+            "title": "Most common basket pairing: Infinity Waterproof\u2122 Eyeliner",
+            "detail": "2 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+          },
+          {
+            "key": "new-to-category",
+            "title": "33% of buyers are new to Lip",
+            "detail": "233 of 712 buyers had not purchased this category before."
+          }
+        ]
+      },
+      "dailySales": [
+        {
+          "date": "2026-09-02",
+          "units": 877,
+          "netSales": 20888.42,
+          "usUnits": 834,
+          "caUnits": 43,
+          "usNetSales": 20171.4,
+          "caNetSales": 717.02,
+          "cumUnits": 877,
+          "cumSales": 20888.42,
+          "planUnits": 782,
+          "cumPlanUnits": 782,
+          "newCustomers": 73,
+          "retCustomers": 639
+        }
+      ],
+      "dailySkuColumns": [
+        "date",
+        "units",
+        "netSales",
+        "usUnits",
+        "caUnits",
+        "usNetSales",
+        "caNetSales",
+        "newCustomers",
+        "retCustomers"
+      ],
+      "dailyBySku": {
+        "TBB013": [["2026-09-02", 877, 20888.42, 834, 43, 20171.4, 717.02, 73, 639]]
+      },
+      "planBySku": {
+        "TBB013": [["2026-09-02", 782]]
+      },
+      "pdp": [
+        {
+          "sku": "TBB013",
+          "name": "Pumpkin Spice Latte",
+          "pdpViews": 24518,
+          "atc": 2167,
+          "ckts": 491,
+          "purch": 784,
+          "rev": 20384.0,
+          "atcRate": 8.84,
+          "purchRate": 3.2
+        }
+      ],
+      "crossSell": [
+        {
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
+          "pairs": 2
+        },
+        {
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
+          "pairs": 2
+        },
+        {
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG095",
+          "pairs": 2
+        },
+        {
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG582",
+          "pairs": 2
+        },
+        {
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG575",
+          "pairs": 2
+        },
+        {
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7240",
+          "pairs": 2
+        },
+        {
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
+          "pairs": 2
+        },
+        {
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 2
+        },
+        {
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG445",
+          "pairs": 2
+        },
+        {
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7250",
+          "pairs": 2
+        }
+      ],
+      "crossSellBySku": [
+        {
+          "primarySku": "TBB013",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG582",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG445",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7240",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG095",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG575",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7250",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
+          "pairs": 2
+        }
+      ],
+      "categoryCustomers": {
+        "category": "Lip",
+        "total": 712,
+        "existingCategory": 479,
+        "newToCategory": 233,
+        "byVariant": [
+          {
+            "sku": "TBB013",
+            "name": "Pumpkin Spice Latte",
+            "newToCategory": 233,
+            "existingCategory": 479
+          }
+        ],
+        "daily": [["2026-09-02", 233, 479]]
       }
     },
     {
@@ -14763,7 +15064,7 @@ window.DASHBOARD_DATA = {
       "name": "Pumpkin Spice Latte Pout Hero Lip Balm",
       "launchDate": "2026-09-02",
       "internalDate": null,
-      "trackedId": null,
+      "trackedId": "psl-pout-hero",
       "section": "GTM Campaigns",
       "asanaUrl": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260262"
     },
@@ -14828,12 +15129,6 @@ window.DASHBOARD_DATA = {
         "launch_date": "2026-08-18",
         "section": "GTM Campaigns",
         "asana_url": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1213996421586726"
-      },
-      {
-        "name": "Pumpkin Spice Latte Pout Hero Lip Balm",
-        "launch_date": "2026-09-02",
-        "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260262"
       },
       {
         "name": "Winter Berries + BEB Cindy Drop",

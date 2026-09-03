@@ -9,6 +9,12 @@
   "lastDigest": null,
   "dataCutoff": "2026-09-02",
   "alerts": {
+    "psl-pout-hero|oos-soon:TBB013": {
+      "rank": 1,
+      "title": "Pumpkin Spice Latte projects out of stock ~Sep 9, 2026",
+      "firstSeen": "2026-09-03",
+      "lastPosted": "2026-09-03"
+    },
     "lasting-mark-lip-stain|oos-soon:TVG7250": {
       "rank": 1,
       "title": "Daniella projects out of stock ~Sep 10, 2026",
