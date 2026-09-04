@@ -5,31 +5,31 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-03",
+  "lastRun": "2026-09-04",
   "lastDigest": null,
-  "dataCutoff": "2026-09-02",
+  "dataCutoff": "2026-09-03",
   "alerts": {
     "psl-pout-hero|oos-soon:TBB013": {
       "rank": 1,
-      "title": "Pumpkin Spice Latte projects out of stock ~Sep 9, 2026",
+      "title": "Pumpkin Spice Latte projects out of stock ~Sep 12, 2026",
       "firstSeen": "2026-09-03",
       "lastPosted": "2026-09-03"
     },
     "lasting-mark-lip-stain|oos-soon:TVG7250": {
       "rank": 1,
-      "title": "Daniella projects out of stock ~Sep 10, 2026",
+      "title": "Daniella projects out of stock ~Sep 11, 2026",
       "firstSeen": "2026-09-01",
       "lastPosted": "2026-09-01"
     },
     "eyeshadow-quads|oos-soon:TVG6720": {
       "rank": 1,
-      "title": "Cool Neutrals projects out of stock ~Sep 5, 2026",
+      "title": "Cool Neutrals projects out of stock ~Sep 6, 2026",
       "firstSeen": "2026-09-01",
       "lastPosted": "2026-09-01"
     },
     "eyeshadow-quads|oos-soon:TVG6700": {
       "rank": 1,
-      "title": "Warm Neutrals projects out of stock ~Sep 5, 2026",
+      "title": "Warm Neutrals projects out of stock ~Sep 6, 2026",
       "firstSeen": "2026-09-01",
       "lastPosted": "2026-09-01"
     },
@@ -38,6 +38,12 @@
       "title": "Mackenzie PDP converts below the launch average",
       "firstSeen": "2026-09-02",
       "lastPosted": "2026-09-02"
+    },
+    "triple-threat-reform|pdp-drag:TVG4880": {
+      "rank": 2,
+      "title": "Dionne PDP converts below the launch average",
+      "firstSeen": "2026-09-04",
+      "lastPosted": "2026-09-04"
     },
     "lasting-mark-lip-stain|pdp-drag:TVG7230": {
       "rank": 2,
