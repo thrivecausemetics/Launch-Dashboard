@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-12",
+  "lastRun": "2026-09-13",
   "rulesVersion": 2,
   "lastDigest": "2026-09-09",
-  "dataCutoff": "2026-09-11",
+  "dataCutoff": "2026-09-12",
   "alerts": {
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
@@ -18,13 +18,13 @@
     },
     "psl-pout-hero|oos-soon:us:TBB013": {
       "rank": 1,
-      "title": "Pumpkin Spice Latte runs out in US (.com) in ~15 days",
+      "title": "Pumpkin Spice Latte runs out in US (.com) in ~17 days",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-09"
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy runs out in Canada (.ca) in ~11 days",
+      "title": "Brandy runs out in Canada (.ca) in ~12 days",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-09"
     },
@@ -34,33 +34,21 @@
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-09"
     },
-    "lasting-mark-lip-stain|oos-soon:ca:TVG7260": {
-      "rank": 1,
-      "title": "Leslie runs out in Canada (.ca) in ~1 days",
-      "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-09"
-    },
     "eyeshadow-quads|oos-soon:us:TVG6720": {
       "rank": 1,
-      "title": "Cool Neutrals runs out in US (.com) in ~3 days",
-      "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-09"
-    },
-    "eyeshadow-quads|oos-soon:us:TVG6700": {
-      "rank": 1,
-      "title": "Warm Neutrals runs out in US (.com) in ~1 days",
+      "title": "Cool Neutrals runs out in US (.com) in ~2 days",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-09"
     },
     "triple-threat-reform|atc-drop:TVG4961": {
       "rank": 2,
-      "title": "Kaisa add-to-cart rate fell to 31.9%",
+      "title": "Kaisa add-to-cart rate fell to 31.7%",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-09"
     },
     "eyeshadow-quads|atc-drop:TVG6720": {
       "rank": 2,
-      "title": "Cool Neutrals add-to-cart rate fell to 13.0%",
+      "title": "Cool Neutrals add-to-cart rate fell to 12.5%",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-09"
     },
@@ -114,7 +102,7 @@
     }
   },
   "resolvedToday": [
-    "Liliana add-to-cart rate fell to 16.0%",
-    "Warm Neutrals add-to-cart rate fell to 12.4%"
+    "Leslie runs out in Canada (.ca) in ~1 days",
+    "Warm Neutrals runs out in US (.com) in ~1 days"
   ]
 }
