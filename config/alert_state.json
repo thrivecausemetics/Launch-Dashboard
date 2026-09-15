@@ -5,16 +5,22 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-14",
+  "lastRun": "2026-09-15",
   "rulesVersion": 2,
   "lastDigest": "2026-09-14",
-  "dataCutoff": "2026-09-13",
+  "dataCutoff": "2026-09-14",
   "alerts": {
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
       "title": "Daniella is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-14"
+    },
+    "lasting-mark-lip-stain|oos:us:TVG7250": {
+      "rank": 0,
+      "title": "Daniella is out of stock in US (.com)",
+      "firstSeen": "2026-09-15",
+      "lastPosted": "2026-09-15"
     },
     "lasting-mark-lip-stain|oos:ca:TVG7260": {
       "rank": 0,
@@ -28,27 +34,15 @@
       "firstSeen": "2026-09-14",
       "lastPosted": "2026-09-14"
     },
-    "psl-pout-hero|oos-soon:us:TBB013": {
-      "rank": 1,
-      "title": "Pumpkin Spice Latte runs out in US (.com) in ~20 days",
-      "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-14"
-    },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy runs out in Canada (.ca) in ~15 days",
-      "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-14"
-    },
-    "eyeshadow-quads|oos-soon:us:TVG6720": {
-      "rank": 1,
-      "title": "Cool Neutrals runs out in US (.com) in ~1 days",
+      "title": "Brandy runs out in Canada (.ca) in ~19 days",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-14"
     },
     "eyeshadow-quads|atc-drop:TVG6720": {
       "rank": 2,
-      "title": "Cool Neutrals add-to-cart rate fell to 12.3%",
+      "title": "Cool Neutrals add-to-cart rate fell to 11.9%",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-14"
     },
@@ -102,7 +96,7 @@
     }
   },
   "resolvedToday": [
-    "Daniella runs out in US (.com) in ~1 days",
-    "Kaisa add-to-cart rate fell to 31.7%"
+    "Pumpkin Spice Latte runs out in US (.com) in ~20 days",
+    "Cool Neutrals runs out in US (.com) in ~1 days"
   ]
 }
