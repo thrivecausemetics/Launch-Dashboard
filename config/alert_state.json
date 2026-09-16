@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-15",
+  "lastRun": "2026-09-16",
   "rulesVersion": 2,
   "lastDigest": "2026-09-14",
-  "dataCutoff": "2026-09-14",
+  "dataCutoff": "2026-09-15",
   "alerts": {
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
@@ -36,13 +36,7 @@
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy runs out in Canada (.ca) in ~19 days",
-      "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-14"
-    },
-    "eyeshadow-quads|atc-drop:TVG6720": {
-      "rank": 2,
-      "title": "Cool Neutrals add-to-cart rate fell to 11.9%",
+      "title": "Brandy runs out in Canada (.ca) in ~21 days",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-14"
     },
@@ -96,7 +90,6 @@
     }
   },
   "resolvedToday": [
-    "Pumpkin Spice Latte runs out in US (.com) in ~20 days",
-    "Cool Neutrals runs out in US (.com) in ~1 days"
+    "Cool Neutrals add-to-cart rate fell to 11.9%"
   ]
 }
