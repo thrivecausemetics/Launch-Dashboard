@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-16",
+  "lastRun": "2026-09-17",
   "rulesVersion": 2,
   "lastDigest": "2026-09-14",
-  "dataCutoff": "2026-09-15",
+  "dataCutoff": "2026-09-16",
   "alerts": {
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
@@ -28,17 +28,41 @@
       "firstSeen": "2026-09-14",
       "lastPosted": "2026-09-14"
     },
+    "eyeshadow-quads|oos:us:TVG6720": {
+      "rank": 0,
+      "title": "Cool Neutrals is out of stock in US (.com)",
+      "firstSeen": "2026-09-17",
+      "lastPosted": "2026-09-17"
+    },
     "eyeshadow-quads|oos:us:TVG6700": {
       "rank": 0,
       "title": "Warm Neutrals is out of stock in US (.com)",
       "firstSeen": "2026-09-14",
       "lastPosted": "2026-09-14"
     },
+    "psl-pout-hero|oos-soon:us:TBB013": {
+      "rank": 1,
+      "title": "Pumpkin Spice Latte runs out in US (.com) in ~16 days",
+      "firstSeen": "2026-09-17",
+      "lastPosted": "2026-09-17"
+    },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy runs out in Canada (.ca) in ~21 days",
+      "title": "Brandy runs out in Canada (.ca) in ~19 days",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-14"
+    },
+    "lasting-mark-lip-stain|atc-drop:TVG7250": {
+      "rank": 2,
+      "title": "Daniella add-to-cart rate fell to 19.9%",
+      "firstSeen": "2026-09-17",
+      "lastPosted": "2026-09-17"
+    },
+    "eyeshadow-quads|atc-drop:TVG6720": {
+      "rank": 2,
+      "title": "Cool Neutrals add-to-cart rate fell to 11.4%",
+      "firstSeen": "2026-09-17",
+      "lastPosted": "2026-09-17"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
@@ -89,7 +113,5 @@
       "lastPosted": "2026-09-14"
     }
   },
-  "resolvedToday": [
-    "Cool Neutrals add-to-cart rate fell to 11.9%"
-  ]
+  "resolvedToday": []
 }
