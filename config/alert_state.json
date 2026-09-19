@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-18",
+  "lastRun": "2026-09-19",
   "rulesVersion": 2,
   "lastDigest": "2026-09-14",
-  "dataCutoff": "2026-09-17",
+  "dataCutoff": "2026-09-18",
   "alerts": {
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
@@ -28,35 +28,17 @@
       "firstSeen": "2026-09-14",
       "lastPosted": "2026-09-14"
     },
-    "eyeshadow-quads|oos:us:TVG6720": {
-      "rank": 0,
-      "title": "Cool Neutrals is out of stock in US (.com)",
-      "firstSeen": "2026-09-17",
-      "lastPosted": "2026-09-17"
-    },
-    "eyeshadow-quads|oos:us:TVG6700": {
-      "rank": 0,
-      "title": "Warm Neutrals is out of stock in US (.com)",
-      "firstSeen": "2026-09-14",
-      "lastPosted": "2026-09-14"
-    },
     "psl-pout-hero|oos-soon:us:TBB013": {
       "rank": 1,
-      "title": "Pumpkin Spice Latte runs out in US (.com) in ~13 days",
+      "title": "Pumpkin Spice Latte runs out in US (.com) in ~12 days",
       "firstSeen": "2026-09-17",
       "lastPosted": "2026-09-17"
     },
     "lasting-mark-lip-stain|atc-drop:TVG7250": {
       "rank": 2,
-      "title": "Daniella add-to-cart rate fell to 17.6%",
+      "title": "Daniella add-to-cart rate fell to 15.2%",
       "firstSeen": "2026-09-17",
       "lastPosted": "2026-09-17"
-    },
-    "psl-pout-hero|recent-behind:TBB013": {
-      "rank": 3,
-      "title": "Pumpkin Spice Latte is behind plan over the last 7 days",
-      "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-14"
     },
     "beb-hoda-mila|recent-behind:TVG6640": {
       "rank": 3,
@@ -82,12 +64,6 @@
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-14"
     },
-    "psl-pout-hero|pacing": {
-      "rank": 4,
-      "title": "The whole launch is pacing behind plan",
-      "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-14"
-    },
     "beb-hoda-mila|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
@@ -102,7 +78,9 @@
     }
   },
   "resolvedToday": [
-    "Brandy runs out in Canada (.ca) in ~19 days",
-    "Cool Neutrals add-to-cart rate fell to 11.4%"
+    "Cool Neutrals is out of stock in US (.com)",
+    "Warm Neutrals is out of stock in US (.com)",
+    "Pumpkin Spice Latte is behind plan over the last 7 days",
+    "The whole launch is pacing behind plan"
   ]
 }
