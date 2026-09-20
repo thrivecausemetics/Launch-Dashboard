@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-19",
+  "lastRun": "2026-09-20",
   "rulesVersion": 2,
   "lastDigest": "2026-09-14",
-  "dataCutoff": "2026-09-18",
+  "dataCutoff": "2026-09-19",
   "alerts": {
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
@@ -30,13 +30,19 @@
     },
     "psl-pout-hero|oos-soon:us:TBB013": {
       "rank": 1,
-      "title": "Pumpkin Spice Latte runs out in US (.com) in ~12 days",
+      "title": "Pumpkin Spice Latte runs out in US (.com) in ~11 days",
       "firstSeen": "2026-09-17",
       "lastPosted": "2026-09-17"
     },
+    "psl-pout-hero|atc-drop:TBB013": {
+      "rank": 2,
+      "title": "Pumpkin Spice Latte add-to-cart rate fell to 9.7%",
+      "firstSeen": "2026-09-20",
+      "lastPosted": "2026-09-20"
+    },
     "lasting-mark-lip-stain|atc-drop:TVG7250": {
       "rank": 2,
-      "title": "Daniella add-to-cart rate fell to 15.2%",
+      "title": "Daniella add-to-cart rate fell to 12.7%",
       "firstSeen": "2026-09-17",
       "lastPosted": "2026-09-17"
     },
@@ -77,10 +83,5 @@
       "lastPosted": "2026-09-14"
     }
   },
-  "resolvedToday": [
-    "Cool Neutrals is out of stock in US (.com)",
-    "Warm Neutrals is out of stock in US (.com)",
-    "Pumpkin Spice Latte is behind plan over the last 7 days",
-    "The whole launch is pacing behind plan"
-  ]
+  "resolvedToday": []
 }
