@@ -5,82 +5,82 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-20",
+  "lastRun": "2026-09-21",
   "rulesVersion": 2,
-  "lastDigest": "2026-09-14",
-  "dataCutoff": "2026-09-19",
+  "lastDigest": "2026-09-21",
+  "dataCutoff": "2026-09-20",
   "alerts": {
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
       "title": "Daniella is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-14"
+      "lastPosted": "2026-09-21"
     },
     "lasting-mark-lip-stain|oos:us:TVG7250": {
       "rank": 0,
       "title": "Daniella is out of stock in US (.com)",
       "firstSeen": "2026-09-15",
-      "lastPosted": "2026-09-15"
+      "lastPosted": "2026-09-21"
     },
     "lasting-mark-lip-stain|oos:ca:TVG7260": {
       "rank": 0,
       "title": "Leslie is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-14",
-      "lastPosted": "2026-09-14"
+      "lastPosted": "2026-09-21"
     },
     "psl-pout-hero|oos-soon:us:TBB013": {
       "rank": 1,
       "title": "Pumpkin Spice Latte runs out in US (.com) in ~11 days",
       "firstSeen": "2026-09-17",
-      "lastPosted": "2026-09-17"
+      "lastPosted": "2026-09-21"
     },
     "psl-pout-hero|atc-drop:TBB013": {
       "rank": 2,
-      "title": "Pumpkin Spice Latte add-to-cart rate fell to 9.7%",
+      "title": "Pumpkin Spice Latte add-to-cart rate fell to 9.5%",
       "firstSeen": "2026-09-20",
-      "lastPosted": "2026-09-20"
+      "lastPosted": "2026-09-21"
     },
     "lasting-mark-lip-stain|atc-drop:TVG7250": {
       "rank": 2,
-      "title": "Daniella add-to-cart rate fell to 12.7%",
+      "title": "Daniella add-to-cart rate fell to 9.8%",
       "firstSeen": "2026-09-17",
-      "lastPosted": "2026-09-17"
+      "lastPosted": "2026-09-21"
     },
     "beb-hoda-mila|recent-behind:TVG6640": {
       "rank": 3,
       "title": "Hoda is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-14"
+      "lastPosted": "2026-09-21"
     },
     "beb-hoda-mila|recent-behind:TVG4770": {
       "rank": 3,
       "title": "Mila is behind plan over the last 7 days",
       "firstSeen": "2026-09-12",
-      "lastPosted": "2026-09-14"
+      "lastPosted": "2026-09-21"
     },
     "becca-brow|recent-behind:TVG6710": {
       "rank": 3,
       "title": "Brow Liner is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-14"
+      "lastPosted": "2026-09-21"
     },
     "becca-brow|recent-behind:TVG6690": {
       "rank": 3,
       "title": "Brow Gel is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-14"
+      "lastPosted": "2026-09-21"
     },
     "beb-hoda-mila|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-09-01",
-      "lastPosted": "2026-09-14"
+      "lastPosted": "2026-09-21"
     },
     "becca-brow|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-09-01",
-      "lastPosted": "2026-09-14"
+      "lastPosted": "2026-09-21"
     }
   },
   "resolvedToday": []
