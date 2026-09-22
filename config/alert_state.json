@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-21",
+  "lastRun": "2026-09-22",
   "rulesVersion": 2,
   "lastDigest": "2026-09-21",
-  "dataCutoff": "2026-09-20",
+  "dataCutoff": "2026-09-21",
   "alerts": {
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
@@ -36,13 +36,13 @@
     },
     "psl-pout-hero|atc-drop:TBB013": {
       "rank": 2,
-      "title": "Pumpkin Spice Latte add-to-cart rate fell to 9.5%",
+      "title": "Pumpkin Spice Latte add-to-cart rate fell to 9.3%",
       "firstSeen": "2026-09-20",
       "lastPosted": "2026-09-21"
     },
     "lasting-mark-lip-stain|atc-drop:TVG7250": {
       "rank": 2,
-      "title": "Daniella add-to-cart rate fell to 9.8%",
+      "title": "Daniella add-to-cart rate fell to 6.7%",
       "firstSeen": "2026-09-17",
       "lastPosted": "2026-09-21"
     },
@@ -50,12 +50,6 @@
       "rank": 3,
       "title": "Hoda is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-21"
-    },
-    "beb-hoda-mila|recent-behind:TVG4770": {
-      "rank": 3,
-      "title": "Mila is behind plan over the last 7 days",
-      "firstSeen": "2026-09-12",
       "lastPosted": "2026-09-21"
     },
     "becca-brow|recent-behind:TVG6710": {
@@ -83,5 +77,7 @@
       "lastPosted": "2026-09-21"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "Mila is behind plan over the last 7 days"
+  ]
 }
