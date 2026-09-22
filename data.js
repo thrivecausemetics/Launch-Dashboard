@@ -9,7 +9,7 @@ window.DASHBOARD_DATA = {
     "sourceDb": "DAASITY_DB",
     "retentionDays": 122,
     "oosWindowDays": 7,
-    "npdOosSyncedAt": "2026-09-08",
+    "npdOosSyncedAt": "2026-09-22",
     "sourceStatus": {
       "uos": "live",
       "uts": "live",
@@ -784,8 +784,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 5078,
           "planEndDate": "2026-10-05",
           "weeksOfStock": 60.3,
-          "decayCurveOOS": "2027-12-24",
-          "realInventoryUnits": 20277
+          "decayCurveOOS": "2027-12-25",
+          "realInventoryUnits": 19713
         },
         {
           "sku": "TVG6680",
@@ -820,8 +820,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2143,
           "planEndDate": "2026-10-05",
           "weeksOfStock": 90.7,
-          "decayCurveOOS": "2029-08-10",
-          "realInventoryUnits": 7573
+          "decayCurveOOS": "2029-06-30",
+          "realInventoryUnits": 7282
         },
         {
           "sku": "TVG6710",
@@ -856,8 +856,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 11318,
           "planEndDate": "2026-10-05",
           "weeksOfStock": 182.6,
-          "decayCurveOOS": "2029-03-21",
-          "realInventoryUnits": 17638
+          "decayCurveOOS": "2029-05-01",
+          "realInventoryUnits": 17467
         }
       ],
       "signals": {
@@ -2552,13 +2552,13 @@ window.DASHBOARD_DATA = {
           "pairs": 14
         },
         {
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG178",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG648",
           "pairs": 12
         },
         {
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG648",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG178",
           "pairs": 12
         },
         {
@@ -2583,18 +2583,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG289",
+          "pairs": 7
+        },
+        {
+          "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG288",
           "pairs": 6
         },
         {
-          "product": "Defying Gravity\u2122 Lightweight Moisturizer",
-          "sku": "TBB004",
-          "pairs": 5
-        },
-        {
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
-          "pairs": 5
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
+          "pairs": 6
         }
       ],
       "crossSellBySku": [
@@ -2636,8 +2636,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6680",
-          "product": "Filtered Effects\u2122 Blurring Primer",
-          "sku": "TVG348",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG6680",
+          "product": "Sheer Strength\u00ae Lip-Plumping Peptide Gloss",
+          "sku": "TVG407",
           "pairs": 2
         },
         {
@@ -2648,14 +2654,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6680",
-          "product": "Impact-FULL\u2122 Smoothing Lipstick",
-          "sku": "TVG385",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6680",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
+          "product": "Defying Gravity\u2122 Nourishing Hand + Body Cream",
+          "sku": "TBB031",
           "pairs": 2
         },
         {
@@ -2672,32 +2672,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6690",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG4770",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 5
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG289",
+          "pairs": 6
         },
         {
           "primarySku": "TVG6690",
           "product": "Defying Gravity\u2122 Lightweight Moisturizer",
           "sku": "TBB004",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG6690",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
           "pairs": 5
         },
         {
@@ -2708,9 +2690,27 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6690",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG6690",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
-          "pairs": 4
+          "sku": "TVG4770",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG6690",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG6690",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG351",
+          "pairs": 5
         },
         {
           "primarySku": "TVG6690",
@@ -2720,14 +2720,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6710",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG427",
+          "product": "Filtered Effects\u2122 Blurring Primer",
+          "sku": "TVG348",
           "pairs": 2
         },
         {
           "primarySku": "TVG6710",
-          "product": "Buildable Blur\u2122 HD Creaseless Concealer",
-          "sku": "TVG117",
+          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
+          "sku": "TVG241",
           "pairs": 2
         },
         {
@@ -2744,8 +2744,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6710",
-          "product": "Filtered Effects\u2122 Blurring Primer",
-          "sku": "TVG348",
+          "product": "Buildable Blur\u2122 HD Creaseless Concealer",
+          "sku": "TVG117",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6710",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG427",
           "pairs": 2
         },
         {
@@ -2756,26 +2762,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6710",
-          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
-          "sku": "TVG241",
-          "pairs": 2
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG351",
+          "pairs": 1
         },
         {
           "primarySku": "TVG6710",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
+          "sku": "TVG648",
           "pairs": 1
         },
         {
           "primarySku": "TVG6710",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG510",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG6710",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6390",
           "pairs": 1
         }
       ],
@@ -3465,8 +3465,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-11-18",
           "weeksOfStock": 30.9,
-          "decayCurveOOS": "2026-09-15",
-          "realInventoryUnits": 1315
+          "decayCurveOOS": "2027-03-09",
+          "realInventoryUnits": 14706
         },
         {
           "sku": "TVG6700",
@@ -3501,8 +3501,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-11-18",
           "weeksOfStock": 29.4,
-          "decayCurveOOS": "2026-09-11",
-          "realInventoryUnits": 902
+          "decayCurveOOS": "2027-02-22",
+          "realInventoryUnits": 11695
         }
       ],
       "signals": {
@@ -4527,13 +4527,13 @@ window.DASHBOARD_DATA = {
           "pairs": 18
         },
         {
-          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
-          "sku": "TVG280",
+          "product": "Filtered Effects\u2122 Blurring Primer",
+          "sku": "TVG348",
           "pairs": 15
         },
         {
-          "product": "Filtered Effects\u2122 Blurring Primer",
-          "sku": "TVG348",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
           "pairs": 15
         },
         {
@@ -4583,8 +4583,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6750",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
           "pairs": 7
         },
         {
@@ -4595,8 +4595,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
+          "product": "Liquid Lash\u2122 Volumizer Mascara",
+          "sku": "TVG6750",
+          "pairs": 7
+        },
+        {
+          "primarySku": "TVG6700",
+          "product": "Filtered Effects\u2122 Blurring Primer",
+          "sku": "TVG348",
           "pairs": 6
         },
         {
@@ -4609,12 +4615,6 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG6700",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Filtered Effects\u2122 Blurring Primer",
-          "sku": "TVG348",
           "pairs": 6
         },
         {
@@ -4643,26 +4643,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6720",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2840",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG6720",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
           "pairs": 8
         },
         {
           "primarySku": "TVG6720",
-          "product": "Buildable Blur\u2122 HD Creaseless Concealer",
-          "sku": "TVG112",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
           "pairs": 8
         },
         {
           "primarySku": "TVG6720",
-          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
-          "sku": "TVG280",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
+          "pairs": 8
+        },
+        {
+          "primarySku": "TVG6720",
+          "product": "Buildable Blur\u2122 HD Creaseless Concealer",
+          "sku": "TVG112",
           "pairs": 8
         },
         {
@@ -5532,8 +5532,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 5019,
           "planEndDate": "2026-10-14",
           "weeksOfStock": 95.6,
-          "decayCurveOOS": "2027-11-03",
-          "realInventoryUnits": 31671
+          "decayCurveOOS": "2027-11-08",
+          "realInventoryUnits": 31027
         },
         {
           "sku": "TVG6640",
@@ -5568,8 +5568,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2313,
           "planEndDate": "2026-10-14",
           "weeksOfStock": 73.8,
-          "decayCurveOOS": "2027-03-23",
-          "realInventoryUnits": 19675
+          "decayCurveOOS": "2027-04-20",
+          "realInventoryUnits": 19192
         }
       ],
       "signals": {
@@ -5593,7 +5593,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "pairing:TVG349",
             "title": "Most common basket pairing: Brilliant Eye Brightener\u2122",
-            "detail": "24 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+            "detail": "25 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
           },
           {
             "key": "new-to-category",
@@ -7106,7 +7106,7 @@ window.DASHBOARD_DATA = {
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 24
+          "pairs": 25
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
@@ -7116,7 +7116,7 @@ window.DASHBOARD_DATA = {
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 14
+          "pairs": 15
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
@@ -7130,13 +7130,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6620",
+          "pairs": 10
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG533",
           "pairs": 10
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
-          "pairs": 10
+          "sku": "TVG350",
+          "pairs": 9
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
@@ -7145,12 +7150,7 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
-          "pairs": 9
-        },
-        {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG630",
+          "sku": "TVG6630",
           "pairs": 8
         }
       ],
@@ -7159,7 +7159,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG4770",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 12
+          "pairs": 13
         },
         {
           "primarySku": "TVG4770",
@@ -7170,13 +7170,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG4770",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG508",
-          "pairs": 7
+          "sku": "TVG355",
+          "pairs": 8
         },
         {
           "primarySku": "TVG4770",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "sku": "TVG508",
           "pairs": 7
         },
         {
@@ -7211,8 +7211,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4770",
-          "product": "Bright Balance\u2122 Hydrating Gel Cleanser",
-          "sku": "TBB001",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG532",
           "pairs": 4
         },
         {
@@ -7242,13 +7242,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6640",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "sku": "TVG509",
           "pairs": 7
         },
         {
           "primarySku": "TVG6640",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
+          "sku": "TVG355",
           "pairs": 7
         },
         {
@@ -7271,8 +7271,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6640",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG178",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG508",
           "pairs": 4
         }
       ],
@@ -7825,8 +7825,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-09-06",
-          "realInventoryUnits": 1284
+          "decayCurveOOS": "2026-09-23",
+          "realInventoryUnits": null
         },
         {
           "sku": "TVG7240",
@@ -7861,8 +7861,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 1460,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 11.5,
-          "decayCurveOOS": "2027-03-02",
-          "realInventoryUnits": 11766
+          "decayCurveOOS": "2027-02-22",
+          "realInventoryUnits": 9865
         },
         {
           "sku": "TVG7220",
@@ -7897,8 +7897,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 4.2,
-          "decayCurveOOS": "2026-12-29",
-          "realInventoryUnits": 4134
+          "decayCurveOOS": "2026-11-29",
+          "realInventoryUnits": 2711
         },
         {
           "sku": "TVG7230",
@@ -7933,8 +7933,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 4536,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 26.4,
-          "decayCurveOOS": "2027-04-08",
-          "realInventoryUnits": 14184
+          "decayCurveOOS": "2027-03-30",
+          "realInventoryUnits": 12748
         },
         {
           "sku": "TVG7260",
@@ -7969,8 +7969,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 3.6,
-          "decayCurveOOS": "2026-11-21",
-          "realInventoryUnits": 2850
+          "decayCurveOOS": "2026-11-04",
+          "realInventoryUnits": 1594
         }
       ],
       "signals": {
@@ -8034,7 +8034,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "pairing:TVG2840",
             "title": "Most common basket pairing: Liquid Lash\u2122 Extensions Tubing Mascara",
-            "detail": "63 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+            "detail": "64 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
           },
           {
             "key": "new-to-category",
@@ -8656,17 +8656,12 @@ window.DASHBOARD_DATA = {
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 63
+          "pairs": 64
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG181",
-          "pairs": 33
-        },
-        {
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
-          "pairs": 31
+          "pairs": 35
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
@@ -8674,9 +8669,14 @@ window.DASHBOARD_DATA = {
           "pairs": 31
         },
         {
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
+          "pairs": 31
+        },
+        {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
-          "pairs": 28
+          "pairs": 29
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
@@ -8694,13 +8694,13 @@ window.DASHBOARD_DATA = {
           "pairs": 22
         },
         {
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 19
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
+          "pairs": 20
         },
         {
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 19
         }
       ],
@@ -8713,12 +8713,6 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7220",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG575",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG7220",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
           "pairs": 4
@@ -8727,6 +8721,12 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG7220",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG356",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG7220",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG575",
           "pairs": 4
         },
         {
@@ -8744,44 +8744,38 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7220",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7220",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
           "pairs": 3
         },
         {
           "primarySku": "TVG7220",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG6380",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG7220",
-          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
-          "sku": "TVG235",
+          "sku": "TVG2840",
           "pairs": 2
         },
         {
           "primarySku": "TVG7220",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG366",
           "pairs": 2
+        },
+        {
+          "primarySku": "TVG7230",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
+          "pairs": 10
         },
         {
           "primarySku": "TVG7230",
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "sku": "TVG094",
           "pairs": 9
-        },
-        {
-          "primarySku": "TVG7230",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2840",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG7230",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 5
         },
         {
           "primarySku": "TVG7230",
@@ -8797,20 +8791,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7230",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG7230",
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG181",
           "pairs": 4
         },
         {
           "primarySku": "TVG7230",
-          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
-          "sku": "TVG558",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG7230",
-          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
-          "sku": "TVG241",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG351",
           "pairs": 4
         },
         {
@@ -8821,8 +8815,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7230",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
+          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
+          "sku": "TVG241",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG7230",
+          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
+          "sku": "TVG558",
           "pairs": 4
         },
         {
@@ -8839,15 +8839,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7240",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG181",
           "pairs": 10
         },
         {
           "primarySku": "TVG7240",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG181",
-          "pairs": 8
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG509",
+          "pairs": 10
         },
         {
           "primarySku": "TVG7240",
@@ -8857,9 +8857,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7240",
-          "product": "Triple Threat\u2122 Highlighter Stick",
-          "sku": "TVG4900",
+          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
+          "sku": "TVG239",
           "pairs": 7
+        },
+        {
+          "primarySku": "TVG7240",
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6720",
+          "pairs": 6
         },
         {
           "primarySku": "TVG7240",
@@ -8869,20 +8875,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7240",
-          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
-          "sku": "TVG239",
+          "product": "Triple Threat\u2122 Highlighter Stick",
+          "sku": "TVG4900",
           "pairs": 6
         },
         {
           "primarySku": "TVG7240",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG284",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG7240",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG648",
           "pairs": 6
         },
         {
@@ -8893,14 +8893,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7250",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG181",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
           "pairs": 16
         },
         {
           "primarySku": "TVG7250",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG181",
           "pairs": 16
         },
         {
@@ -8935,14 +8935,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7250",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
           "pairs": 10
         },
         {
           "primarySku": "TVG7250",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 10
         },
         {
@@ -8977,32 +8977,32 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7260",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG7260",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG6380",
           "pairs": 4
         },
         {
           "primarySku": "TVG7260",
-          "product": "Liquid Brilliance\u2122 Super Serum",
-          "sku": "TBB003",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG7260",
-          "product": "Focus Eyeshadow\u2122 Palette",
-          "sku": "TVG6720",
-          "pairs": 3
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG432",
+          "pairs": 4
         },
         {
           "primarySku": "TVG7260",
           "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
           "sku": "TVG578",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7260",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG453",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7260",
+          "product": "Liquid Brilliance\u2122 Super Serum",
+          "sku": "TBB003",
           "pairs": 3
         }
       ],
@@ -9654,7 +9654,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "pairing:TVG2840",
             "title": "Most common basket pairing: Liquid Lash\u2122 Extensions Tubing Mascara",
-            "detail": "145 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+            "detail": "147 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
           },
           {
             "key": "new-to-category",
@@ -10174,7 +10174,7 @@ window.DASHBOARD_DATA = {
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 145
+          "pairs": 147
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
@@ -10207,13 +10207,13 @@ window.DASHBOARD_DATA = {
           "pairs": 28
         },
         {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG425",
           "pairs": 22
         },
         {
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG425",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 22
         },
         {
@@ -10225,26 +10225,32 @@ window.DASHBOARD_DATA = {
       "crossSellBySku": [
         {
           "primarySku": "TVG4880",
-          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
-          "sku": "TVG7220",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 2
         },
         {
           "primarySku": "TVG4880",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
+          "product": "Bright Balance\u2122 Hydrating Gel Cleanser",
+          "sku": "TBB001",
           "pairs": 2
         },
         {
           "primarySku": "TVG4880",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
           "pairs": 2
         },
         {
           "primarySku": "TVG4880",
-          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
-          "sku": "TVG7260",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG479",
           "pairs": 2
         },
         {
@@ -10267,20 +10273,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4880",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2840",
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7260",
           "pairs": 2
         },
         {
           "primarySku": "TVG4880",
           "product": "Filtered Effects\u2122\ufe0f Protecting Primer SPF 37",
           "sku": "TVG362",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
-          "sku": "TVG519",
           "pairs": 2
         },
         {
@@ -10303,21 +10303,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4900",
-          "product": "Triple Threat\u2122 Bronzer Stick",
-          "sku": "TVG328",
-          "pairs": 11
-        },
-        {
-          "primarySku": "TVG4900",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
           "pairs": 11
         },
         {
           "primarySku": "TVG4900",
-          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
-          "sku": "TVG7240",
-          "pairs": 10
+          "product": "Triple Threat\u2122 Bronzer Stick",
+          "sku": "TVG328",
+          "pairs": 11
         },
         {
           "primarySku": "TVG4900",
@@ -10327,8 +10321,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4900",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
+          "pairs": 9
+        },
+        {
+          "primarySku": "TVG4900",
           "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
           "sku": "TVG216",
+          "pairs": 9
+        },
+        {
+          "primarySku": "TVG4900",
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7240",
           "pairs": 9
         },
         {
@@ -10338,15 +10344,9 @@ window.DASHBOARD_DATA = {
           "pairs": 9
         },
         {
-          "primarySku": "TVG4900",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 9
-        },
-        {
           "primarySku": "TVG4920",
           "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG448",
+          "sku": "TVG565",
           "pairs": 5
         },
         {
@@ -10358,19 +10358,19 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG4920",
           "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG565",
+          "sku": "TVG448",
           "pairs": 5
-        },
-        {
-          "primarySku": "TVG4920",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 4
         },
         {
           "primarySku": "TVG4920",
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG180",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG4920",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
           "pairs": 4
         },
         {
@@ -10381,26 +10381,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4920",
-          "product": "Moisture Flash\u2122 Conditioning Toner Mist",
-          "sku": "TBB007",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4920",
           "product": "Focus Eyeshadow\u2122 Palette",
           "sku": "TVG6700",
           "pairs": 2
         },
         {
           "primarySku": "TVG4920",
+          "product": "Brilliant Face\u2122 Brightener Illuminating Primer",
+          "sku": "TVG270",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4920",
           "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
           "sku": "TVG7250",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4920",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
           "pairs": 2
         },
         {
@@ -10429,6 +10429,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4961",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
+          "pairs": 16
+        },
+        {
+          "primarySku": "TVG4961",
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "sku": "TVG425",
           "pairs": 16
@@ -10437,12 +10443,6 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG4961",
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "sku": "TVG094",
-          "pairs": 16
-        },
-        {
-          "primarySku": "TVG4961",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
           "pairs": 16
         },
         {
@@ -10459,8 +10459,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4961",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG576",
           "pairs": 9
         },
         {
@@ -10483,32 +10483,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7150",
-          "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
-          "sku": "TVG524",
+          "product": "Pout Hero\u2122 Liquid Balm Lip Treatment",
+          "sku": "TBB028",
           "pairs": 2
         },
         {
           "primarySku": "TVG7150",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG7150",
-          "product": "Triple Threat\u2122 Bronzer Stick",
-          "sku": "TVG330",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG7150",
-          "product": "Brilliant Face\u2122 Brightener Illuminating Primer",
-          "sku": "TVG270",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG7150",
-          "product": "Pout Hero\u2122 Liquid Balm Lip Treatment",
-          "sku": "TBB028",
+          "sku": "TVG515",
           "pairs": 2
         },
         {
@@ -10519,8 +10501,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7150",
-          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
-          "sku": "TVG216",
+          "product": "Liquid Lash\u2122 Extensions Lash and Brow Serum",
+          "sku": "TVG268",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG7150",
+          "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
+          "sku": "TVG524",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG7150",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG7150",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
           "pairs": 2
         },
         {
@@ -10561,14 +10561,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7160",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
           "pairs": 3
         },
         {
           "primarySku": "TVG7160",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 3
         },
         {
@@ -10610,12 +10610,6 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7170",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG7170",
-          "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG534",
           "pairs": 5
         },
@@ -10627,20 +10621,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7170",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG7170",
           "product": "Lip Filler Long-Wearing + Plumping Lip Liner\u2122",
           "sku": "TVG345",
           "pairs": 4
         },
         {
           "primarySku": "TVG7170",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG427",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 4
         },
         {
           "primarySku": "TVG7170",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG427",
           "pairs": 4
         }
       ],
@@ -11554,13 +11554,13 @@ window.DASHBOARD_DATA = {
           "pairs": 5
         },
         {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG425",
           "pairs": 4
         },
         {
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6750",
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7250",
           "pairs": 4
         }
       ],
@@ -11615,14 +11615,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TBB013",
-          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
-          "sku": "TVG7250",
+          "product": "Liquid Lash\u2122 Volumizer Mascara",
+          "sku": "TVG6750",
           "pairs": 4
         },
         {
           "primarySku": "TBB013",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "Infinity Waterproof\u2122 Liquid Eyeliner Pen",
+          "sku": "TVG315",
           "pairs": 4
         }
       ],
@@ -12212,8 +12212,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-09-20",
-          "realInventoryUnits": 1236
+          "decayCurveOOS": "2026-09-15",
+          "realInventoryUnits": 610
         },
         {
           "sku": "TVG5880",
@@ -12248,8 +12248,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-09-13",
-          "realInventoryUnits": 168
+          "decayCurveOOS": "2026-09-12",
+          "realInventoryUnits": 161
         },
         {
           "sku": "TVG5960",
@@ -12284,8 +12284,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-10-28",
-          "realInventoryUnits": 3177
+          "decayCurveOOS": "2026-10-25",
+          "realInventoryUnits": 2934
         },
         {
           "sku": "TVG5890",
@@ -12320,8 +12320,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-09-12",
-          "realInventoryUnits": 91
+          "decayCurveOOS": "2026-12-24",
+          "realInventoryUnits": 6195
         },
         {
           "sku": "TVG5920",
@@ -12356,8 +12356,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 1949,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-01-24",
-          "realInventoryUnits": 6958
+          "decayCurveOOS": "2027-01-13",
+          "realInventoryUnits": 6366
         },
         {
           "sku": "TVG5900",
@@ -12392,8 +12392,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-11-10",
-          "realInventoryUnits": 2691
+          "decayCurveOOS": "2026-11-08",
+          "realInventoryUnits": 2619
         },
         {
           "sku": "TVG5940",
@@ -12428,8 +12428,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2887,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-10-11",
-          "realInventoryUnits": 7205
+          "decayCurveOOS": "2027-10-09",
+          "realInventoryUnits": 7163
         },
         {
           "sku": "TVG5910",
@@ -12464,8 +12464,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 1824,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-11-01",
-          "realInventoryUnits": 6764
+          "decayCurveOOS": "2027-10-29",
+          "realInventoryUnits": 6714
         },
         {
           "sku": "TVG5930",
@@ -12500,8 +12500,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 1534,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-12-20",
-          "realInventoryUnits": 6737
+          "decayCurveOOS": "2027-12-18",
+          "realInventoryUnits": 6706
         },
         {
           "sku": "TVG5970",
@@ -12536,8 +12536,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 6152,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2028-05-26",
-          "realInventoryUnits": 7820
+          "decayCurveOOS": "2028-05-20",
+          "realInventoryUnits": 7735
         }
       ],
       "signals": {
@@ -15414,8 +15414,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null,
-          "decayCurveOOS": "2028-01-01",
-          "realInventoryUnits": 42633
+          "decayCurveOOS": "2027-11-22",
+          "realInventoryUnits": 39332
         },
         {
           "sku": "TVG6370",
@@ -15451,7 +15451,7 @@ window.DASHBOARD_DATA = {
           "planEndDate": "2026-08-05",
           "weeksOfStock": null,
           "decayCurveOOS": "2027-03-03",
-          "realInventoryUnits": 27896
+          "realInventoryUnits": 28077
         },
         {
           "sku": "TVG6390",
@@ -15486,8 +15486,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-05-24",
-          "realInventoryUnits": 17021
+          "decayCurveOOS": "2027-05-16",
+          "realInventoryUnits": 16543
         }
       ],
       "signals": {
