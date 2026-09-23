@@ -322,6 +322,56 @@
         "pout-hero",
         "pumpkin-spice"
       ]
+    },
+    {
+      "id": "berry-collection",
+      "name": "Berry Shade Collection",
+      "subtitle": "6 berry shades across 6 categories · merchandising moment, not a new product",
+      "accent": "#8E2F5B",
+      "launch_date": "2026-09-22",
+      "category": null,
+      "category_type_patterns": [],
+      "landing_patterns": [
+        "berry"
+      ],
+      "skus": [
+        {
+          "sku": "TVG629",
+          "name": "Cindy",
+          "shade": "Sugar Plum Shimmer · Brilliant Eye Brightener",
+          "color": "#8E5A7D"
+        },
+        {
+          "sku": "TVG5870",
+          "name": "Elena",
+          "shade": "Berry Brown · Liquid Lash Extensions Mascara",
+          "color": "#6B3A3A"
+        },
+        {
+          "sku": "TVG217",
+          "name": "Rowan",
+          "shade": "Deep Berry · Sheer Strength Lip Tint",
+          "color": "#7A1F3D"
+        },
+        {
+          "sku": "TVG407",
+          "name": "Liliana",
+          "shade": "Deep Berry · Lip-Plumping Peptide Gloss",
+          "color": "#A0284F"
+        },
+        {
+          "sku": "TVG4920",
+          "name": "Tessa",
+          "shade": "Rich Berry · Triple Threat Blush Stick",
+          "color": "#8E2F5B"
+        },
+        {
+          "sku": "TVG4560",
+          "name": "Rosa",
+          "shade": "Deep Berry · EmpowerMatte Lipstick Crayon",
+          "color": "#6E1736"
+        }
+      ]
     }
   ],
   "upcoming": [
