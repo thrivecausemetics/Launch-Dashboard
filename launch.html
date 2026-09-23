@@ -1831,6 +1831,20 @@ function renderCategory(d) {
   const panel = document.getElementById('panel-category');
   const cc = d.categoryCustomers;
   const catLabel = d.category ? d.category + ' category' : 'category';
+  // A launch that deliberately spans categories (a shade or seasonal collection
+  // pulled from several product lines) has no single category to be new to, so
+  // this view cannot be computed for it. Saying "awaiting data" there would send
+  // the reader off to wait for a number that is never going to arrive.
+  if (!cc && !d.category) {
+    panel.innerHTML = `
+      <div class="section-title">Category Customers · ${d.name}</div>
+      <div class="guide-card" style="max-width:780px">
+        <h3>Not applicable to this launch</h3>
+        <p><strong>${d.name}</strong> spans several product categories rather than sitting in one, so there is no single category for a customer to be new to. This view compares customers who had already bought from a launch's category against those buying it for the first time, and that comparison only means something when the launch has one category.</p>
+        <p style="margin-top:10px">The <strong>Overview</strong> tab's new-vs-returning split still applies — it measures customers new to Thrive Causemetics, which is well defined however many categories a launch covers.</p>
+      </div>`;
+    return;
+  }
   if (!cc) {
     panel.innerHTML = `
       <div class="section-title">Category Customers · ${d.name}</div>
