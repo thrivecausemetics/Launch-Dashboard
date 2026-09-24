@@ -19,6 +19,15 @@ on:
           (today - 1) picks up a partial Los Angeles day and labels it complete.
         required: false
         type: string
+      force_repost:
+        description: >-
+          Re-post the current top alerts after a wording or rule fix, labelled
+          as a correction rather than a weekly digest. Use when the text of an
+          alert changed but the underlying facts did not, so nothing counts as
+          new and the fix would otherwise never reach the channel.
+        required: false
+        default: false
+        type: boolean
       force_digest:
         description: >-
           Post the full weekly digest instead of only what changed. The digest
@@ -142,7 +151,7 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_ALERT_LIMIT: ${{ vars.SLACK_ALERT_LIMIT }}
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
-        run: python scripts/post_slack_alerts.py ${{ inputs.force_digest && '--digest' || '' }}
+        run: python scripts/post_slack_alerts.py ${{ inputs.force_digest && '--digest' || '' }} ${{ inputs.force_repost && '--repost' || '' }}
 
       - name: Commit and push if data changed
         if: steps.creds.outputs.configured == 'true'

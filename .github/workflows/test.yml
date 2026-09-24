@@ -25,6 +25,8 @@ jobs:
       - run: pip install cryptography
       - name: Snowflake auth selection
         run: python scripts/test_snowflake_auth.py
+      - name: Alert labels name their product
+        run: python scripts/test_alert_labels.py
       - name: Query builders still assemble
         # Catches a broken SQL f-string or a malformed launches.json without
         # needing a Snowflake connection.

@@ -181,6 +181,10 @@ def main():
                     help="print the message without posting or writing state")
     ap.add_argument("--digest", action="store_true",
                     help="force the full digest, whatever day it is")
+    ap.add_argument("--repost", action="store_true",
+                    help="re-post the current top alerts after a wording or rule "
+                         "fix. Same content as a digest, labelled as a correction "
+                         "so the channel is not told it is a weekly summary.")
     args = ap.parse_args()
 
     webhook = os.environ.get("SLACK_WEBHOOK_URL", "").strip()
@@ -199,7 +203,11 @@ def main():
 
     alerts = collect(data, base)
     today = dt.date.today()
-    digest = args.digest or today.weekday() == DIGEST_WEEKDAY
+    # A re-post shares the digest's "post the top N regardless of state" path,
+    # because that is exactly what is wanted after the text of an alert
+    # changes: the standing alerts are unchanged as facts, so nothing is new,
+    # and without this the corrected wording would never reach the channel.
+    digest = args.digest or args.repost or today.weekday() == DIGEST_WEEKDAY
 
     # Carry the age forward so a message can say how long something has been
     # open. An alert nobody closed in a week says more about ownership than
@@ -242,11 +250,21 @@ def main():
                                    "text": f":white_check_mark: *No launch alerts this week.* "
                                            f"Data through {cutoff}.  {dash}"}}]}
         else:
+            header = ("Launch alerts — re-posted with product names" if args.repost
+                      else "Launch alerts — weekly digest")
             footer = (f"Top {len(top)} of {len(alerts)} open alerts · data through {cutoff} · "
                       f"{dash}")
-            payload = {"text": f"Weekly launch alerts — top {len(top)} (data through {cutoff})",
-                       "blocks": blocks_for(top, "Launch alerts — weekly digest", footer,
-                                            today, cleared)}
+            if args.repost:
+                # Say why the channel is seeing these again. Without it a
+                # re-post reads as a second alert for the same problem.
+                footer = ("These are the same open alerts as before, renamed so each one says "
+                          "which product it is about. Nothing new has happened.\n" + footer)
+            summary = (f"Launch alerts re-posted with product names (data through {cutoff})"
+                       if args.repost
+                       else f"Weekly launch alerts — top {len(top)} (data through {cutoff})")
+            payload = {"text": summary,
+                       "blocks": blocks_for(top, header, footer, today,
+                                            () if args.repost else cleared)}
     elif fresh or resolved:
         top = fresh[:limit]
         bits = ([f"{len(fresh)} new"] if fresh else []) + ([f"{len(resolved)} cleared"] if resolved else [])
@@ -275,7 +293,9 @@ def main():
         ],
         "lastRun": str(today),
         "rulesVersion": RULES_VERSION,
-        "lastDigest": str(today) if digest else state.get("lastDigest"),
+        # A re-post is not a digest. Recording it as one would misreport when
+        # the channel last had a real weekly summary.
+        "lastDigest": str(today) if (digest and not args.repost) else state.get("lastDigest"),
         "dataCutoff": cutoff,
         "alerts": {a["id"]: {"rank": a["rank"], "title": a["title"],
                              "firstSeen": a["firstSeen"],
