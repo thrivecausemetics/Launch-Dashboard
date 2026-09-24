@@ -12,14 +12,14 @@ window.DASHBOARD_DATA = {
     "npdOosSyncedAt": "2026-09-22",
     "sourceStatus": {
       "uos": "live",
+      "uos_products": "live",
       "uts": "live",
       "drp": "live",
       "uss": "live",
       "uos_inventory": "live",
       "ga4_api": "live",
       "ga4_bq": "live",
-      "gsheets": "live",
-      "uos_products": "live"
+      "gsheets": "live"
     }
   },
   "launches": [
@@ -762,6 +762,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG6690",
           "name": "Brow Gel",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "shade": "Semi-Perm. Gel",
           "color": "#6B7A8D",
           "netSales": 107573.17,
@@ -798,6 +799,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG6680",
           "name": "Brow Pencil",
+          "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
           "shade": "Quick Fill Pencil",
           "color": "#4B5563",
           "netSales": 57888.27,
@@ -834,6 +836,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG6710",
           "name": "Brow Liner",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
           "shade": "Waterproof Liner",
           "color": "#9CA3AF",
           "netSales": 45888.6,
@@ -873,14 +876,14 @@ window.DASHBOARD_DATA = {
           {
             "rank": 3,
             "key": "recent-behind:TVG6710",
-            "title": "Brow Liner is behind plan over the last 7 days",
+            "title": "Brow Liner (Infinity Waterproof\u2122 Eyebrow Liner) is behind plan over the last 7 days",
             "detail": "93 units against 755 planned (12%), 662 short \u2014 about $14,542 at its current price.",
             "action": "Recent, not cumulative \u2014 this is the last week only. Worth checking against promo calendar and paid support before treating it as demand."
           },
           {
             "rank": 3,
             "key": "recent-behind:TVG6690",
-            "title": "Brow Gel is behind plan over the last 7 days",
+            "title": "Brow Gel (Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel) is behind plan over the last 7 days",
             "detail": "355 units against 569 planned (62%), 214 short \u2014 about $4,705 at its current price.",
             "action": "Recent, not cumulative \u2014 this is the last week only. Worth checking against promo calendar and paid support before treating it as demand."
           },
@@ -3481,6 +3484,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG6720",
           "name": "Cool Neutrals",
+          "product": "Focus Eyeshadow\u2122 Palette",
           "shade": "Focus Eyeshadow\u2122 Palette",
           "color": "#8D8A96",
           "netSales": 453025.07,
@@ -3517,6 +3521,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG6700",
           "name": "Warm Neutrals",
+          "product": "Focus Eyeshadow\u2122 Palette",
           "shade": "Focus Eyeshadow\u2122 Palette",
           "color": "#C68E5E",
           "netSales": 392462.47,
@@ -3556,12 +3561,12 @@ window.DASHBOARD_DATA = {
         "working": [
           {
             "key": "recent-ahead:TVG6700",
-            "title": "Warm Neutrals is ahead of plan over the last 7 days",
+            "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) is ahead of plan over the last 7 days",
             "detail": "560 units against 297 planned (189%)."
           },
           {
             "key": "recent-ahead:TVG6720",
-            "title": "Cool Neutrals is ahead of plan over the last 7 days",
+            "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) is ahead of plan over the last 7 days",
             "detail": "516 units against 357 planned (145%)."
           },
           {
@@ -5586,6 +5591,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG4770",
           "name": "Mila",
+          "product": "Brilliant Eye Brightener\u2122",
           "shade": "Slate Grey Metallic",
           "color": "#94A3B8",
           "netSales": 260273.45,
@@ -5622,6 +5628,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG6640",
           "name": "Hoda",
+          "product": "Brilliant Eye Brightener\u2122",
           "shade": "Slate Grey Matte",
           "color": "#4A5568",
           "netSales": 245184.18,
@@ -5661,7 +5668,7 @@ window.DASHBOARD_DATA = {
           {
             "rank": 3,
             "key": "recent-behind:TVG6640",
-            "title": "Hoda is behind plan over the last 7 days",
+            "title": "Hoda (Brilliant Eye Brightener\u2122) is behind plan over the last 7 days",
             "detail": "319 units against 708 planned (45%), 389 short \u2014 about $8,944 at its current price.",
             "action": "Recent, not cumulative \u2014 this is the last week only. Worth checking against promo calendar and paid support before treating it as demand."
           },
@@ -5676,7 +5683,7 @@ window.DASHBOARD_DATA = {
         "working": [
           {
             "key": "recent-ahead:TVG4770",
-            "title": "Mila is ahead of plan over the last 7 days",
+            "title": "Mila (Brilliant Eye Brightener\u2122) is ahead of plan over the last 7 days",
             "detail": "403 units against 340 planned (119%)."
           },
           {
@@ -7922,6 +7929,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG7250",
           "name": "Daniella",
+          "product": "Lasting Mark\u2122 Lip-Defining Stain",
           "shade": "Toasted Rose",
           "color": "#C4736F",
           "netSales": 241291.02,
@@ -7958,6 +7966,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG7240",
           "name": "Liliana",
+          "product": "Lasting Mark\u2122 Lip-Defining Stain",
           "shade": "Deep Berry",
           "color": "#7A1840",
           "netSales": 156535.89,
@@ -7994,6 +8003,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG7220",
           "name": "Brandy",
+          "product": "Lasting Mark\u2122 Lip-Defining Stain",
           "shade": "Spice Brown",
           "color": "#8B5A3C",
           "netSales": 88946.36,
@@ -8030,6 +8040,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG7230",
           "name": "Li",
+          "product": "Lasting Mark\u2122 Lip-Defining Stain",
           "shade": "Baby Pink",
           "color": "#F2A6B8",
           "netSales": 79393.38,
@@ -8066,6 +8077,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG7260",
           "name": "Leslie",
+          "product": "Lasting Mark\u2122 Lip-Defining Stain",
           "shade": "Soft Red",
           "color": "#C0304A",
           "netSales": 74582.26,
@@ -8105,21 +8117,21 @@ window.DASHBOARD_DATA = {
           {
             "rank": 0,
             "key": "oos:ca:TVG7250",
-            "title": "Daniella is out of stock in Canada (.ca)",
+            "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
             "detail": "0 units in Canada (.ca).",
             "action": "Reorder for Canada (.ca)."
           },
           {
             "rank": 0,
             "key": "oos:us:TVG7250",
-            "title": "Daniella is out of stock in US (.com)",
+            "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in US (.com)",
             "detail": "0 units in US (.com).",
             "action": "Reorder for US (.com)."
           },
           {
             "rank": 0,
             "key": "oos:ca:TVG7260",
-            "title": "Leslie is out of stock in Canada (.ca)",
+            "title": "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
             "detail": "0 units in Canada (.ca). 5,622 units still in US (.com), so this is a distribution problem, not a demand one.",
             "action": "Route or transfer stock to Canada (.ca) \u2014 the units exist, they are in the wrong place."
           },
@@ -8127,7 +8139,7 @@ window.DASHBOARD_DATA = {
             "rank": 2,
             "key": "atc-drop:TVG7250",
             "missedAtc": 2200,
-            "title": "Daniella add-to-cart rate fell to 1.2%",
+            "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) add-to-cart rate fell to 1.2%",
             "detail": "Down 18.7 points from 19.9% the week before, on 11,791 views \u2014 about 2,200 fewer add-to-carts, roughly $22,291 at this shade's own purchase rate and price.",
             "action": "Check whether anything changed on the page or in the traffic mix \u2014 creative, price, promo placement, or a paid source sending colder traffic."
           }
@@ -8135,22 +8147,22 @@ window.DASHBOARD_DATA = {
         "working": [
           {
             "key": "recent-ahead:TVG7220",
-            "title": "Brandy is ahead of plan over the last 7 days",
+            "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) is ahead of plan over the last 7 days",
             "detail": "678 units against 173 planned (392%)."
           },
           {
             "key": "recent-ahead:TVG7240",
-            "title": "Liliana is ahead of plan over the last 7 days",
+            "title": "Liliana (Lasting Mark\u2122 Lip-Defining Stain) is ahead of plan over the last 7 days",
             "detail": "919 units against 434 planned (212%)."
           },
           {
             "key": "recent-ahead:TVG7250",
-            "title": "Daniella is ahead of plan over the last 7 days",
+            "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is ahead of plan over the last 7 days",
             "detail": "1,293 units against 333 planned (388%)."
           },
           {
             "key": "recent-ahead:TVG7260",
-            "title": "Leslie is ahead of plan over the last 7 days",
+            "title": "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is ahead of plan over the last 7 days",
             "detail": "446 units against 85 planned (525%)."
           },
           {
@@ -9555,6 +9567,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG4961",
           "name": "Kaisa",
+          "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Dusty Rose",
           "color": "#C4736F",
           "netSales": 164488.81,
@@ -9591,6 +9604,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG4900",
           "name": "Joy",
+          "product": "Triple Threat\u2122 Highlighter Stick",
           "shade": "Gold Shimmer \u00b7 Highlighter",
           "color": "#D4AF63",
           "netSales": 50101.08,
@@ -9627,6 +9641,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG7170",
           "name": "Nina",
+          "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Rosy Plum",
           "color": "#A9436B",
           "netSales": 45564.15,
@@ -9663,6 +9678,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG7150",
           "name": "Mackenzie",
+          "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Soft Coral",
           "color": "#E8886B",
           "netSales": 24101.63,
@@ -9699,6 +9715,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG7160",
           "name": "Allison",
+          "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Bright Pink Petal",
           "color": "#E8709A",
           "netSales": 23940.52,
@@ -9735,6 +9752,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG4920",
           "name": "Tessa",
+          "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Rich Berry",
           "color": "#8E2F5B",
           "netSales": 14106.08,
@@ -9771,6 +9789,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG4880",
           "name": "Dionne",
+          "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Brick Red",
           "color": "#9E3B2E",
           "netSales": 11449.02,
@@ -11305,6 +11324,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TBB013",
           "name": "Pumpkin Spice Latte",
+          "product": "Pout Hero\u2122 Liquid Balm Lip Treatment",
           "shade": "Seasonal flavour",
           "color": "#C86B2B",
           "netSales": 115901.21,
@@ -11344,7 +11364,7 @@ window.DASHBOARD_DATA = {
           {
             "rank": 1,
             "key": "oos-soon:us:TBB013",
-            "title": "Pumpkin Spice Latte runs out in US (.com) in ~16 days",
+            "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) runs out in US (.com) in ~16 days",
             "detail": "1,681 units left in US (.com) at 103.86/day (2.3 weeks cover).",
             "action": "Confirm a replenishment date for US (.com) with Demand Planning, or plan for the shade to go dark there."
           },
@@ -11352,14 +11372,14 @@ window.DASHBOARD_DATA = {
             "rank": 2,
             "key": "atc-drop:TBB013",
             "missedAtc": 2475,
-            "title": "Pumpkin Spice Latte add-to-cart rate fell to 8.7%",
+            "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) add-to-cart rate fell to 8.7%",
             "detail": "Down 7.4 points from 16.0% the week before, on 33,508 views \u2014 about 2,475 fewer add-to-carts, roughly $23,149 at this shade's own purchase rate and price.",
             "action": "Check whether anything changed on the page or in the traffic mix \u2014 creative, price, promo placement, or a paid source sending colder traffic."
           },
           {
             "rank": 3,
             "key": "recent-behind:TBB013",
-            "title": "Pumpkin Spice Latte is behind plan over the last 7 days",
+            "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) is behind plan over the last 7 days",
             "detail": "756 units against 984 planned (77%), 228 short \u2014 about $5,444 at its current price.",
             "action": "Recent, not cumulative \u2014 this is the last week only. Worth checking against promo calendar and paid support before treating it as demand."
           },
@@ -11939,7 +11959,8 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG629",
           "name": "Cindy",
-          "shade": "Sugar Plum Shimmer \u00b7 Brilliant Eye Brightener",
+          "product": "Brilliant Eye Brightener\u2122",
+          "shade": "Sugar Plum Shimmer",
           "color": "#8E5A7D",
           "netSales": 52010.87,
           "units": 2181,
@@ -11975,7 +11996,8 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5870",
           "name": "Elena",
-          "shade": "Berry Brown \u00b7 Liquid Lash Extensions Mascara",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "shade": "Berry Brown",
           "color": "#6B3A3A",
           "netSales": 5234.08,
           "units": 229,
@@ -12011,7 +12033,8 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG217",
           "name": "Rowan",
-          "shade": "Deep Berry \u00b7 Sheer Strength Lip Tint",
+          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
+          "shade": "Deep Berry",
           "color": "#7A1F3D",
           "netSales": 2184.55,
           "units": 101,
@@ -12047,7 +12070,8 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG407",
           "name": "Liliana",
-          "shade": "Deep Berry \u00b7 Lip-Plumping Peptide Gloss",
+          "product": "Sheer Strength\u00ae Lip-Plumping Peptide Gloss",
+          "shade": "Deep Berry",
           "color": "#A0284F",
           "netSales": 1565.49,
           "units": 69,
@@ -12083,7 +12107,8 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG4560",
           "name": "Rosa",
-          "shade": "Deep Berry \u00b7 EmpowerMatte Lipstick Crayon",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "shade": "Deep Berry",
           "color": "#6E1736",
           "netSales": 1469.6,
           "units": 58,
@@ -12119,7 +12144,8 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG4920",
           "name": "Tessa",
-          "shade": "Rich Berry \u00b7 Triple Threat Blush Stick",
+          "product": "Triple Threat\u2122 Blush Stick",
+          "shade": "Rich Berry",
           "color": "#8E2F5B",
           "netSales": 795.07,
           "units": 30,
@@ -12158,7 +12184,7 @@ window.DASHBOARD_DATA = {
           {
             "rank": 0,
             "key": "oos:ca:TVG4560",
-            "title": "Rosa is out of stock in Canada (.ca)",
+            "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) is out of stock in Canada (.ca)",
             "detail": "0 units in Canada (.ca). 9,340 units still in US (.com), so this is a distribution problem, not a demand one.",
             "action": "Route or transfer stock to Canada (.ca) \u2014 the units exist, they are in the wrong place."
           }
@@ -12986,6 +13012,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5950",
           "name": "Ragan",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Warm Plum",
           "color": "#7B3FA0",
           "netSales": 514815.47,
@@ -13022,6 +13049,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5880",
           "name": "Ilene",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Natural Rose",
           "color": "#C89EA0",
           "netSales": 308970.08,
@@ -13058,6 +13086,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5960",
           "name": "Joan",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Cool Rose",
           "color": "#E8748A",
           "netSales": 260130.57,
@@ -13094,6 +13123,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5890",
           "name": "Michelle",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Neutral Mauve",
           "color": "#A0888A",
           "netSales": 228174.14,
@@ -13130,6 +13160,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5920",
           "name": "Kaisa",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Dusty Rose",
           "color": "#D4879A",
           "netSales": 194177.65,
@@ -13166,6 +13197,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5900",
           "name": "Rosa",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Deep Berry",
           "color": "#7A1840",
           "netSales": 162081.66,
@@ -13202,6 +13234,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5940",
           "name": "Kathy",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Soft Apricot",
           "color": "#F4A460",
           "netSales": 64833.88,
@@ -13238,6 +13271,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5910",
           "name": "Linda",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Cherry Red",
           "color": "#C01830",
           "netSales": 60187.69,
@@ -13274,6 +13308,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5930",
           "name": "Chanice",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Magenta Pink",
           "color": "#C930B8",
           "netSales": 58079.32,
@@ -13310,6 +13345,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG5970",
           "name": "Kackie",
+          "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Mocha",
           "color": "#8B6355",
           "netSales": 45643.89,
@@ -16213,6 +16249,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG6380",
           "name": "Iris",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "shade": "Deep Purple",
           "color": "#4A1E6B",
           "netSales": 1078706.05,
@@ -16249,6 +16286,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG6390",
           "name": "Ivy",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "shade": "Deep Green",
           "color": "#1B4D3E",
           "netSales": 719603.8,
@@ -16285,6 +16323,7 @@ window.DASHBOARD_DATA = {
         {
           "sku": "TVG6370",
           "name": "Oceanne",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "shade": "Deep Navy",
           "color": "#1C3A5C",
           "netSales": 718937.02,

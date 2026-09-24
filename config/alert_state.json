@@ -12,69 +12,69 @@
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
-      "title": "Rosa is out of stock in Canada (.ca)",
+      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-09-24"
     },
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
-      "title": "Daniella is out of stock in Canada (.ca)",
+      "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "lasting-mark-lip-stain|oos:us:TVG7250": {
       "rank": 0,
-      "title": "Daniella is out of stock in US (.com)",
+      "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in US (.com)",
       "firstSeen": "2026-09-15",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "lasting-mark-lip-stain|oos:ca:TVG7260": {
       "rank": 0,
-      "title": "Leslie is out of stock in Canada (.ca)",
+      "title": "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-14",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "psl-pout-hero|oos-soon:us:TBB013": {
       "rank": 1,
-      "title": "Pumpkin Spice Latte runs out in US (.com) in ~16 days",
+      "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) runs out in US (.com) in ~16 days",
       "firstSeen": "2026-09-17",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "psl-pout-hero|atc-drop:TBB013": {
       "rank": 2,
-      "title": "Pumpkin Spice Latte add-to-cart rate fell to 8.7%",
+      "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) add-to-cart rate fell to 8.7%",
       "firstSeen": "2026-09-20",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "lasting-mark-lip-stain|atc-drop:TVG7250": {
       "rank": 2,
-      "title": "Daniella add-to-cart rate fell to 1.2%",
+      "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) add-to-cart rate fell to 1.2%",
       "firstSeen": "2026-09-17",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
-      "title": "Pumpkin Spice Latte is behind plan over the last 7 days",
+      "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) is behind plan over the last 7 days",
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-09-24"
     },
     "beb-hoda-mila|recent-behind:TVG6640": {
       "rank": 3,
-      "title": "Hoda is behind plan over the last 7 days",
+      "title": "Hoda (Brilliant Eye Brightener\u2122) is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "becca-brow|recent-behind:TVG6710": {
       "rank": 3,
-      "title": "Brow Liner is behind plan over the last 7 days",
+      "title": "Brow Liner (Infinity Waterproof\u2122 Eyebrow Liner) is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "becca-brow|recent-behind:TVG6690": {
       "rank": 3,
-      "title": "Brow Gel is behind plan over the last 7 days",
+      "title": "Brow Gel (Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel) is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "psl-pout-hero|pacing": {
       "rank": 4,
@@ -86,13 +86,13 @@
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-09-01",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     },
     "becca-brow|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-09-01",
-      "lastPosted": "2026-09-21"
+      "lastPosted": "2026-09-24"
     }
   },
   "resolvedToday": []
