@@ -325,13 +325,15 @@
     },
     {
       "id": "berry-collection",
-      "name": "Berry Shade Collection",
-      "subtitle": "6 berry shades across 6 categories · merchandising moment, not a new product",
+      "name": "Winter Berries + BEB Cindy Drop",
+      "subtitle": "6 berry shades across 6 categories · seasonal collection, not a new product",
       "accent": "#8E2F5B",
-      "launch_date": "2026-09-22",
+      "launch_date": "2026-09-23",
+      "asana_gid": "1216777821260266",
       "category": null,
       "category_type_patterns": [],
       "landing_patterns": [
+        "winter-berries",
         "berry"
       ],
       "skus": [
