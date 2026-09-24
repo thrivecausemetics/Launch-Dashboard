@@ -620,6 +620,67 @@ GROUP BY 1 ORDER BY SESSIONS DESC LIMIT 10
 # Runner
 # ---------------------------------------------------------------------------
 
+def _der_from_pem(pem, var_name):
+    """PEM text -> PKCS8 DER bytes, which is what the connector wants.
+
+    Railway and GitHub both round-trip multi-line secrets inconsistently, so a
+    key can arrive with real newlines or with the two characters \\ and n. Both
+    are accepted; anything without a BEGIN header is rejected by name rather
+    than handed to the parser, whose own error ("Could not deserialize key
+    data") says nothing about which variable is wrong.
+    """
+    from cryptography.hazmat.primitives import serialization
+
+    pem = pem.strip().replace("\\n", "\n")
+    if "BEGIN" not in pem:
+        raise ValueError(
+            f"{var_name} must be the PEM text of the private key, starting with "
+            f"-----BEGIN. Got {len(pem)} characters with no BEGIN header."
+        )
+    key = serialization.load_pem_private_key(pem.encode(), password=None)
+    return key.private_bytes(
+        encoding=serialization.Encoding.DER,
+        format=serialization.PrivateFormat.PKCS8,
+        encryption_algorithm=serialization.NoEncryption(),
+    )
+
+
+def snowflake_auth(env=None):
+    """The auth half of the connect kwargs, chosen from the environment.
+
+    Split out from connect() so it can be tested without a Snowflake account.
+
+    THRIVE_APPS_SVC is TYPE=SERVICE as of 2026-09-23 and rejects password
+    logins outright, so key-pair is the live path and the password branch only
+    survives for local runs against a personal account. Precedence is
+    PEM, then base64 PEM, then password.
+    """
+    env = os.environ if env is None else env
+    pem = (env.get("SNOWFLAKE_PRIVATE_KEY") or "").strip()
+    if pem:
+        return {"private_key": _der_from_pem(pem, "SNOWFLAKE_PRIVATE_KEY")}
+    b64 = (env.get("SNOWFLAKE_PRIVATE_KEY_B64") or "").strip()
+    if b64:
+        import base64
+        # Historically this held raw base64 of the PEM. Decode first, then run
+        # it through the same path so an operator who pasted the PEM straight
+        # into the _B64 variable gets a clear message instead of a stack trace.
+        try:
+            decoded = base64.b64decode(b64, validate=True).decode()
+        except Exception:
+            decoded = b64
+        return {"private_key": _der_from_pem(decoded, "SNOWFLAKE_PRIVATE_KEY_B64")}
+    password = env.get("SNOWFLAKE_PASSWORD")
+    if not password:
+        raise RuntimeError(
+            "No Snowflake credential in the environment. Set SNOWFLAKE_PRIVATE_KEY "
+            "to the PEM text of the service account's private key. "
+            "SNOWFLAKE_PASSWORD is a fallback for local runs only — the shared "
+            "service user is TYPE=SERVICE and rejects password logins."
+        )
+    return {"password": password}
+
+
 def connect():
     import snowflake.connector  # imported lazily so --dry-run needs no deps
 
@@ -630,19 +691,7 @@ def connect():
         database=os.environ.get("SNOWFLAKE_DATABASE", "DAASITY_DB"),
         role=os.environ.get("SNOWFLAKE_ROLE"),
     )
-    pk_b64 = os.environ.get("SNOWFLAKE_PRIVATE_KEY_B64")
-    if pk_b64:
-        import base64
-        from cryptography.hazmat.primitives import serialization
-
-        key = serialization.load_pem_private_key(base64.b64decode(pk_b64), password=None)
-        kwargs["private_key"] = key.private_bytes(
-            encoding=serialization.Encoding.DER,
-            format=serialization.PrivateFormat.PKCS8,
-            encryption_algorithm=serialization.NoEncryption(),
-        )
-    else:
-        kwargs["password"] = os.environ["SNOWFLAKE_PASSWORD"]
+    kwargs.update(snowflake_auth())
     conn = snowflake.connector.connect(**{k: v for k, v in kwargs.items() if v})
     # Activate every role granted to the user, not just the primary one —
     # schema grants (e.g. DAASITY_DB.UTS) are often split across roles.
