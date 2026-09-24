@@ -1,0 +1,31 @@
+name: Tests
+
+# The refresh only fails where the real secret lives, which is here and
+# nowhere else — a credential bug is invisible locally and takes the whole
+# daily refresh down. Cheap to run on every change to the script.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/test.yml'
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/test.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install cryptography
+      - name: Snowflake auth selection
+        run: python scripts/test_snowflake_auth.py
+      - name: Query builders still assemble
+        # Catches a broken SQL f-string or a malformed launches.json without
+        # needing a Snowflake connection.
+        run: python scripts/refresh_data.py --dry-run > /dev/null

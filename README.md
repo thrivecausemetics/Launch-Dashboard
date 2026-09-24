@@ -43,11 +43,21 @@ Add these repository secrets (Settings → Secrets and variables → Actions):
 | Secret | Required | Notes |
 |---|---|---|
 | `SNOWFLAKE_ACCOUNT` | yes | e.g. `abc12345.us-east-1` |
-| `SNOWFLAKE_USER` | yes | service account recommended |
-| `SNOWFLAKE_PASSWORD` | yes* | *or `SNOWFLAKE_PRIVATE_KEY_B64` (base64 PEM, key-pair auth) |
+| `SNOWFLAKE_USER` | yes | the service account, `THRIVE_APPS_SVC` |
+| `SNOWFLAKE_PRIVATE_KEY` | yes | PEM text of the service account's RSA key, starting with `-----BEGIN`. Escaped `\n` newlines are fine. |
 | `SNOWFLAKE_WAREHOUSE` | yes | |
 | `SNOWFLAKE_ROLE` | no | read-only role recommended |
 | `SNOWFLAKE_DATABASE` | no | defaults to `DAASITY_DB` |
+| `SNOWFLAKE_PASSWORD` | no | fallback for local runs against a personal account; ignored when a key is set |
+| `SNOWFLAKE_PRIVATE_KEY_B64` | no | older base64-of-PEM form, still accepted |
+
+**Key-pair auth is not optional.** `THRIVE_APPS_SVC` was converted to
+`TYPE=SERVICE` on 2026-09-23 and rejects password logins, so a refresh with
+only `SNOWFLAKE_PASSWORD` set fails with `390100 (28000): Incorrect username
+or password` — which reads like a wrong password and is not one. Precedence is
+`SNOWFLAKE_PRIVATE_KEY`, then `SNOWFLAKE_PRIVATE_KEY_B64`, then the password.
+`python scripts/test_snowflake_auth.py` covers that selection without needing
+an account.
 
 **Review & dry-run first:** all queries are read-only SELECTs, but they hit
 production data. Column names in the `COLS` dict were verified against
@@ -75,7 +85,8 @@ conversion, first-order-based new/returning split, plan window).
 ## Manual refresh (fallback)
 
 ```bash
-export SNOWFLAKE_ACCOUNT=... SNOWFLAKE_USER=... SNOWFLAKE_PASSWORD=... SNOWFLAKE_WAREHOUSE=...
+export SNOWFLAKE_ACCOUNT=... SNOWFLAKE_USER=... SNOWFLAKE_WAREHOUSE=...
+export SNOWFLAKE_PRIVATE_KEY="$(cat /path/to/key.p8)"   # never commit the key
 python scripts/refresh_data.py          # rewrites data.js
 git add data.js && git commit -m "chore: refresh dashboard data" && git push
 ```
