@@ -86,7 +86,13 @@ COLS = {
     "products": {
         "table": "UOS.PRODUCTS",
         "product_id": "PRODUCT_ID",
+        "name": "PRODUCT_NAME",          # storefront title, e.g. "Lasting Mark™ …"
         "product_type": "PRODUCT_TYPE",  # granular values, matched via ILIKE
+    },
+    "variants": {
+        "table": "UOS.PRODUCT_VARIANTS",
+        "sku": "SKU",
+        "product_id": "PRODUCT_ID",
     },
     "traffic": {
         "table": "GA4_API.BASE_TRAFFIC",
@@ -242,6 +248,35 @@ SELECT ll.SKU,
 FROM launch_lines ll
 LEFT JOIN first_orders fo ON fo.CUSTOMER_ID = ll.CUSTOMER_ID
 GROUP BY 1 ORDER BY NET_SALES DESC
+"""
+
+
+def q_products(skus):
+    """SKU -> storefront product name.
+
+    Shade names are not unique across the catalogue: there is a Rosa in both
+    EmpowerShine and EmpowerMatte, a Liliana in Lasting Mark and Sheer
+    Strength, a Kaisa and a Tessa in two launches each. An alert that says
+    only "Rosa is out of stock" cannot be acted on without first working out
+    which Rosa, so every alert that names a shade names its product too.
+
+    Taken from the storefront rather than config: it is the name the team
+    already uses, and it cannot drift from what the launch registry says.
+    US listing wins when a SKU is on both storefronts — the names match, and
+    picking deterministically keeps the output stable between runs.
+    """
+    p, pv = COLS["products"], COLS["variants"]
+    return f"""
+SELECT SKU, PRODUCT_NAME FROM (
+  SELECT pv.{pv['sku']} AS SKU, p.{p['name']} AS PRODUCT_NAME,
+         ROW_NUMBER() OVER (PARTITION BY pv.{pv['sku']}
+           ORDER BY CASE WHEN pv.__SHOP_ID = 'thrive-causemetics' THEN 0 ELSE 1 END,
+                    p.{p['name']}) AS RN
+  FROM {SRC_DB}.{pv['table']} pv
+  JOIN {SRC_DB}.{p['table']} p
+    ON p.{p['product_id']} = pv.{pv['product_id']} AND p.__SHOP_ID = pv.__SHOP_ID
+  WHERE pv.{pv['sku']} IN ({sku_list_sql(skus)})
+) WHERE RN = 1
 """
 
 
@@ -936,6 +971,24 @@ def _date(iso):
 REGION_LABEL = {"us": "US (.com)", "ca": "Canada (.ca)"}
 
 
+def _clean_product(name):
+    """Storefront names carry an emoji variation selector after some ™ marks
+    (Lasting Mark ships as "™️"), which renders as a coloured emoji in
+    Slack next to plain ™ elsewhere in the same message. Strip it."""
+    return (name or "").replace("️", "").strip()
+
+
+def _label(v):
+    """How a shade is named in an alert: "Rosa (EmpowerMatte™ Precision
+    Lipstick Crayon)".
+
+    Shade names repeat across the catalogue, so the shade alone does not say
+    what is out of stock. Falls back to the bare shade when the product name
+    is unavailable, which is better than an empty bracket."""
+    product = _clean_product(v.get("product"))
+    return f"{v['name']} ({product})" if product else v["name"]
+
+
 def _stock_signals(by_variant, R):
     """Stock alerts, per storefront.
 
@@ -960,7 +1013,7 @@ def _stock_signals(by_variant, R):
             if units == 0:
                 out.append({
                     "rank": 0, "key": f"oos:{rg}:{v['sku']}",
-                    "title": f"{v['name']} is out of stock in {label}",
+                    "title": f"{_label(v)} is out of stock in {label}",
                     "detail": f"0 units in {label}."
                               + (f" {_num(other_units)} units still in {REGION_LABEL[other]}, so this is a "
                                  f"distribution problem, not a demand one." if lopsided else ""),
@@ -972,7 +1025,7 @@ def _stock_signals(by_variant, R):
                 weeks = round(units / rate / 7, 1) if rate else None
                 out.append({
                     "rank": 1, "key": f"oos-soon:{rg}:{v['sku']}",
-                    "title": f"{v['name']} runs out in {label} in ~{days} days",
+                    "title": f"{_label(v)} runs out in {label} in ~{days} days",
                     "detail": f"{_num(units)} units left in {label} at {rate}/day"
                               + (f" ({weeks} weeks cover)." if weeks is not None else "."),
                     "action": f"Confirm a replenishment date for {label} with Demand Planning, "
@@ -1003,7 +1056,9 @@ def compute_signals(by_variant, pdp, daily, plan_daily, cross_sell, cc,
     """
     R, attention, working = SIGNAL_RULES, [], []
     asp = {v["sku"]: (v["netSales"] / v["units"] if v.get("units") else 0) for v in by_variant}
-    name = {v["sku"]: v["name"] for v in by_variant}
+    # Shade plus product, for the same reason the stock alerts carry it: a
+    # bare shade name does not identify what the alert is about.
+    name = {v["sku"]: _label(v) for v in by_variant}
 
     attention.extend(_stock_signals(by_variant, R))
 
@@ -1181,6 +1236,12 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
     # Core sales data (UOS) — a failure here is a real failure.
     summary_row = rows(cur, q_summary(skus), params)[0]
     variant_rows = rows(cur, q_by_variant(skus), params)
+    # Product names for the alert labels. Optional: without them an alert says
+    # "Rosa" instead of "Rosa (EmpowerMatte™ Precision Lipstick Crayon)",
+    # which is the old behaviour rather than a broken one.
+    prod_by_sku = {r["SKU"]: r["PRODUCT_NAME"] for r in safe_fetch(
+        f"{lc['id']}.products (UOS.PRODUCTS)",
+        lambda: rows(cur, q_products(skus), None), [], key="uos_products")}
     daily_rows = rows(cur, q_daily(skus), params)
     daily_customer_rows = rows(cur, q_daily_customers(skus), params)
     # Optional sources degrade gracefully if the schema isn't granted.
@@ -1298,6 +1359,7 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
         by_variant.append({
             "sku": sku,
             "name": meta.get("name", sku),
+            "product": _clean_product(prod_by_sku.get(sku)) or None,
             "shade": meta.get("shade", ""),
             "color": meta.get("color", "#3A9E98"),
             "netSales": f2(r["NET_SALES"]),
