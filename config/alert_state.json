@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-24",
+  "lastRun": "2026-09-25",
   "rulesVersion": 2,
   "lastDigest": "2026-09-21",
-  "dataCutoff": "2026-09-23",
+  "dataCutoff": "2026-09-24",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -22,12 +22,6 @@
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-09-24"
     },
-    "lasting-mark-lip-stain|oos:us:TVG7250": {
-      "rank": 0,
-      "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in US (.com)",
-      "firstSeen": "2026-09-15",
-      "lastPosted": "2026-09-24"
-    },
     "lasting-mark-lip-stain|oos:ca:TVG7260": {
       "rank": 0,
       "title": "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
@@ -36,7 +30,7 @@
     },
     "psl-pout-hero|oos-soon:us:TBB013": {
       "rank": 1,
-      "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) runs out in US (.com) in ~16 days",
+      "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) runs out in US (.com) in ~19 days",
       "firstSeen": "2026-09-17",
       "lastPosted": "2026-09-24"
     },
@@ -95,5 +89,7 @@
       "lastPosted": "2026-09-24"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in US (.com)"
+  ]
 }
