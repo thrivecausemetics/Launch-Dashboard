@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-26",
+  "lastRun": "2026-09-27",
   "rulesVersion": 2,
   "lastDigest": "2026-09-21",
-  "dataCutoff": "2026-09-25",
+  "dataCutoff": "2026-09-26",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -28,15 +28,9 @@
       "firstSeen": "2026-09-14",
       "lastPosted": "2026-09-24"
     },
-    "psl-pout-hero|oos-soon:us:TBB013": {
-      "rank": 1,
-      "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) runs out in US (.com) in ~21 days",
-      "firstSeen": "2026-09-17",
-      "lastPosted": "2026-09-24"
-    },
     "lasting-mark-lip-stain|atc-drop:TVG7250": {
       "rank": 2,
-      "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) add-to-cart rate fell to 1.3%",
+      "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) add-to-cart rate fell to 5.1%",
       "firstSeen": "2026-09-17",
       "lastPosted": "2026-09-24"
     },
@@ -70,12 +64,6 @@
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-09-24"
     },
-    "beb-hoda-mila|pacing": {
-      "rank": 4,
-      "title": "The whole launch is pacing behind plan",
-      "firstSeen": "2026-09-01",
-      "lastPosted": "2026-09-24"
-    },
     "becca-brow|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
@@ -84,6 +72,7 @@
     }
   },
   "resolvedToday": [
-    "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) add-to-cart rate fell to 8.7%"
+    "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) runs out in US (.com) in ~21 days",
+    "The whole launch is pacing behind plan"
   ]
 }
