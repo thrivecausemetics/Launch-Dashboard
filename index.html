@@ -13,21 +13,32 @@
       --tc-teal-light: #E6F4F3;
       --tc-navy: #1C2B3A;
       --tc-gold: #C9A84C;
-      --bg: #F4F6F8;
-      --card: #FFFFFF;
+      --tc-gold-soft: #F3E7C3;
+      /* Shared Thrive Causemetics dashboard standard (DESIGN.md §1). */
+      --bg: #F0F2F5;
+      --surface: #FFFFFF;
+      --surface-2: #F7F9FB;
+      --card: var(--surface);
       --text: #1C2B3A;
       --muted: #6B7A8D;
       --border: #E2E8EF;
+      --border-strong: #CBD5E1;
       --positive: #22A06B;
       /* Same values as launch.html. These were referenced by the risk colours
          here long before they were defined, so every red and amber cell fell
          back to body text and only the greens ever showed. */
       --warn: #F59E0B;
       --danger: #EF4444;
+      --info: #0EA5E9;
       --r: 12px;
+      --r-sm: 8px;
+      --r-pill: 999px;
+      --shadow-sm: 0 1px 3px rgba(28,43,58,.07);
+      --shadow-md: 0 4px 20px rgba(28,43,58,.10);
+      --shadow-pop: 0 8px 24px rgba(28,43,58,.16);
     }
     * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--text); }
+    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
 
     .hdr {
       background:linear-gradient(135deg, var(--tc-navy) 0%, var(--tc-teal-dark) 100%);
@@ -37,10 +48,10 @@
     .hdr p  { font-size:13px; opacity:.7; margin-top:4px; }
     .hdr-meta { display:flex; align-items:center; gap:12px; margin-top:16px; flex-wrap:wrap; }
     .stat-pill {
-      background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2);
-      border-radius:20px; padding:5px 14px; font-size:12px; font-weight:500;
+      background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.25);
+      border-radius:var(--r-pill); padding:5px 14px; font-size:12px; font-weight:500;
     }
-    .stat-pill.green { background:rgba(34,160,107,.25); border-color:rgba(34,160,107,.5); }
+    .stat-pill.green { background:rgba(34,160,107,.28); border-color:rgba(34,160,107,.45); color:#8FFFD4; }
 
     .main { max-width:1200px; margin:0 auto; padding:32px 24px; }
     /* The summary table has more columns than the card grid has cards, and
@@ -61,28 +72,33 @@
 
     .hub-tabs { display:flex; gap:6px; margin-bottom:24px; border-bottom:1px solid var(--border); }
     .hub-tab { font:600 13px inherit; padding:10px 18px; border:0; background:none; cursor:pointer;
-               color:var(--muted); border-bottom:2px solid transparent; margin-bottom:-1px; }
+               color:var(--muted); border-bottom:2px solid transparent; margin-bottom:-1px;
+               transition:color .15s, border-color .15s; }
     .hub-tab:hover { color:var(--text); }
     .hub-tab.on { color:var(--tc-teal-dark); border-bottom-color:var(--tc-teal); }
+    .hub-tab:focus-visible, .cmp-chip:focus-visible, .sf-chip:focus-visible, .sf-reset:focus-visible {
+      outline:3px solid var(--tc-gold); outline-offset:2px; }
     .upc-link { display:inline-block; margin-top:8px; font-size:12px; font-weight:600;
-                color:var(--tc-teal); text-decoration:none; }
+                color:var(--tc-teal-dark); text-decoration:none; }
     .upc-link:hover { text-decoration:underline; }
     .cmp-bar { display:flex; align-items:center; gap:10px; flex-wrap:wrap;
                 padding:14px 18px; border-bottom:1px solid var(--border); }
-    .cmp-label { font-size:11px; font-weight:600; text-transform:uppercase;
-                 letter-spacing:.05em; color:var(--muted); }
-    .cmp-chip { font:500 12px inherit; padding:5px 11px; margin:2px; border-radius:999px;
-                border:1px solid var(--border); background:#fff; cursor:pointer; color:var(--text); }
-    .cmp-chip.on { background:var(--tc-teal); border-color:var(--tc-teal); color:#fff; }
+    .cmp-label { font-size:10.5px; font-weight:700; text-transform:uppercase;
+                 letter-spacing:.7px; color:var(--muted); }
+    .cmp-chip { font:500 12px inherit; padding:5px 11px; margin:2px; border-radius:var(--r-pill);
+                border:1px solid var(--border); background:var(--surface); cursor:pointer; color:var(--text);
+                transition:border-color .15s, color .15s, background .15s; }
+    .cmp-chip:hover { border-color:var(--tc-teal); color:var(--tc-teal-dark); }
+    .cmp-chip.on { background:var(--tc-teal-light); border-color:var(--tc-teal); color:var(--tc-teal-dark); font-weight:600; }
     .cmp-chip .swatch { display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:6px; }
     #cmp-table td { font-size:13px; }
     #cmp-table td:first-child { font-weight:600; color:var(--muted); white-space:nowrap; }
-    #cmp-table tr.grp td { background:var(--bg); font-size:11px; text-transform:uppercase;
+    #cmp-table tr.grp td { background:var(--surface-2); font-size:11px; text-transform:uppercase;
                            letter-spacing:.05em; color:var(--muted); font-weight:600; }
     .cmp-best { font-weight:700; }
     .cmp-chart-wrap { padding:14px 18px 4px; }
     .section-title {
-      font-size:11px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase;
+      font-size:10.5px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase;
       color:var(--muted); margin-bottom:16px; padding-bottom:8px;
       border-bottom:1px solid var(--border);
     }
@@ -91,11 +107,11 @@
 
     .card {
       background:var(--card); border-radius:var(--r); border:1px solid var(--border);
-      padding:20px; display:flex; flex-direction:column; gap:12px;
+      padding:20px; display:flex; flex-direction:column; gap:12px; box-shadow:var(--shadow-sm);
       transition:box-shadow .15s, transform .15s;
       text-decoration:none; color:inherit; position:relative; overflow:hidden;
     }
-    .card:hover { box-shadow:0 4px 20px rgba(28,43,58,.1); transform:translateY(-1px); }
+    .card:hover { box-shadow:var(--shadow-md); transform:translateY(-1px); }
     .card.live     { border-left:4px solid var(--tc-teal); }
     .card.upcoming { border-left:4px solid var(--border); }
     .card.upcoming .card-action { display:none; }
@@ -111,7 +127,7 @@
     .card-name { font-size:15px; font-weight:700; line-height:1.3; flex:1; padding-right:8px; }
     .badge {
       font-size:10px; font-weight:700; letter-spacing:.6px; text-transform:uppercase;
-      border-radius:20px; padding:3px 10px; white-space:nowrap;
+      border-radius:var(--r-pill); padding:3px 10px; white-space:nowrap;
     }
     .badge.live     { background:rgba(34,160,107,.12); color:#15794E; border:1px solid rgba(34,160,107,.3); }
     .badge.upcoming { background:rgba(107,122,141,.1);  color:var(--muted); border:1px solid var(--border); }
@@ -123,7 +139,7 @@
 
     .card-kpis { display:flex; gap:10px; flex-wrap:wrap; }
     .kpi-chip {
-      background:var(--tc-teal-light); border-radius:8px; padding:6px 12px;
+      background:var(--tc-teal-light); border-radius:var(--r-sm); padding:6px 12px;
       font-size:12px; color:var(--tc-teal-dark); font-weight:600;
     }
     .kpi-chip.gold    { background:rgba(201,168,76,.12); color:#7A5C00; }
@@ -132,11 +148,12 @@
 
     .card-action {
       display:inline-flex; align-items:center; gap:6px; margin-top:4px;
-      background:var(--tc-teal); color:#fff; border-radius:8px;
+      background:var(--tc-teal); color:#fff; border-radius:var(--r-sm);
       padding:8px 16px; font-size:12px; font-weight:600;
       text-decoration:none; transition:background .15s; align-self:flex-start;
     }
     .card-action:hover { background:var(--tc-teal-dark); }
+    .card-action:focus-visible { outline:3px solid var(--tc-gold); outline-offset:2px; }
 
     .upcoming-note { font-size:12px; color:var(--muted); font-style:italic; margin-top:2px; }
     .footer { text-align:center; padding:24px; font-size:11px; color:var(--muted); border-top:1px solid var(--border); }
@@ -147,47 +164,50 @@
       .main { padding:20px 16px; }
       .sum-wrap { overflow-x:auto; }
     }
-    .sum-card { background:var(--card); border-radius:12px; overflow:hidden; margin-bottom:26px;
-                box-shadow:0 1px 3px rgba(28,43,58,.07); }
+    .sum-card { background:var(--card); border-radius:var(--r); overflow:hidden; margin-bottom:26px;
+                border:1px solid var(--border); box-shadow:var(--shadow-sm); }
     .sum-wrap { overflow-x:auto; }
     .sum-card table { width:100%; border-collapse:collapse; font-size:12px; }
-    .sum-card th { text-align:left; padding:10px 9px; background:#F7F9FB; color:var(--muted);
+    /* Solid dark-teal header, white text (DESIGN.md §3.7). */
+    .sum-card th { text-align:left; padding:10px 9px; background:var(--tc-teal-dark); color:#fff;
                    font-size:10.5px; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
-                   border-bottom:1px solid var(--border); white-space:nowrap; cursor:pointer; }
-    .sum-card th.r, .sum-card td.r { text-align:right; }
+                   border-bottom:1px solid var(--tc-teal-dark); white-space:nowrap; cursor:pointer; }
+    .sum-card th.r, .sum-card td.r { text-align:right; font-variant-numeric:tabular-nums; }
     /* Two percentage columns sit side by side and answer different questions.
        The qualifier goes in the header rather than only in the note, so the
        column is readable without reading the small print underneath. */
     /* Snowflake inventory is kept for cross-checking, not for acting on, so it
        reads as a footnote rather than competing with the column beside it. */
     .sum-card th.ref, .sum-card td.ref { color:var(--muted); border-left:1px solid var(--border); }
+    .sum-card th.ref { color:rgba(255,255,255,.72); border-left-color:rgba(255,255,255,.18); }
     .sku-chip { font-size:11.5px; font-weight:600; padding:1px 5px; border-radius:4px; }
     /* Same treatment as the export buttons on the launch pages, so the two
        screens behave the same way to someone moving between them. */
-    .btn-export { font:600 12px inherit; padding:7px 14px; border:0; border-radius:8px;
+    .btn-export { font:600 12px inherit; padding:7px 14px; border:0; border-radius:var(--r-sm);
                   background:var(--tc-teal); color:#fff; cursor:pointer; white-space:nowrap;
                   display:inline-flex; align-items:center; gap:7px;
                   box-shadow:0 1px 3px rgba(28,43,58,.18); transition:background .15s ease; }
     .btn-export:hover { background:var(--tc-teal-dark); }
     .btn-export:active { transform:translateY(1px); }
-    .btn-export:focus-visible { outline:2px solid var(--tc-teal-dark); outline-offset:2px; }
+    .btn-export:focus-visible { outline:3px solid var(--tc-gold); outline-offset:2px; }
     .section-title.split { display:flex; align-items:center; justify-content:space-between; gap:12px; }
     /* Above the table, not below it: the colours are how people scan the rows,
        so the key has to arrive before the rows do. */
     .sum-filter { display:flex; align-items:center; gap:8px; flex-wrap:wrap;
                   padding:12px 14px; border-bottom:1px solid var(--border); }
-    .sum-filter .sf-lead { font-size:11px; font-weight:600; text-transform:uppercase;
-                           letter-spacing:.05em; color:var(--muted); margin-right:2px; }
-    .sf-chip { font:500 12px inherit; padding:5px 11px; border-radius:999px; cursor:pointer;
-               border:1px solid var(--border); background:#fff; color:var(--text);
-               display:inline-flex; align-items:center; gap:6px; transition:opacity .12s; }
+    .sum-filter .sf-lead { font-size:10.5px; font-weight:700; text-transform:uppercase;
+                           letter-spacing:.7px; color:var(--muted); margin-right:2px; }
+    .sf-chip { font:500 12px inherit; padding:5px 11px; border-radius:var(--r-pill); cursor:pointer;
+               border:1px solid var(--border); background:var(--surface); color:var(--text);
+               display:inline-flex; align-items:center; gap:6px; transition:opacity .12s, border-color .15s; }
+    .sf-chip:hover { border-color:var(--tc-teal); }
     .sf-chip .dot { width:7px; height:7px; border-radius:50%; background:var(--tc-teal); }
     /* Hidden launches stay legible rather than disappearing — you have to be
        able to find the one you switched off in order to switch it back on. */
     .sf-chip.off { background:var(--bg); color:var(--muted); border-style:dashed; }
     .sf-chip.off .dot { background:var(--border); }
-    .sf-reset { font:600 12px inherit; margin-left:auto; padding:5px 12px; border-radius:8px;
-                border:1px solid var(--border); background:#fff; color:var(--muted); cursor:pointer; }
+    .sf-reset { font:600 12px inherit; margin-left:auto; padding:5px 12px; border-radius:var(--r-sm);
+                border:1px solid var(--border); background:var(--surface); color:var(--muted); cursor:pointer; }
     .sf-reset:hover:not(:disabled) { color:var(--text); border-color:var(--muted); }
     .sf-reset:disabled { opacity:.45; cursor:default; }
     .sum-legend { display:flex; align-items:center; gap:16px; flex-wrap:wrap;
@@ -198,9 +218,12 @@
     .sum-legend .lg-chip { font-size:11px; font-weight:600; padding:1px 6px; border-radius:4px; }
     .th-sub { display:block; font-weight:500; font-size:9.5px; letter-spacing:0;
               text-transform:none; opacity:.75; margin-top:1px; }
-    .sum-card td { padding:9px 9px; border-bottom:1px solid #F0F3F6; white-space:nowrap; }
+    .sum-card td { padding:9px 9px; border-bottom:1px solid var(--border); white-space:nowrap; }
     .sum-card tr:last-child td { border-bottom:0; }
-    .sum-card tbody tr:hover { background:#FAFCFD; }
+    /* Zebra rows + teal hover (DESIGN.md §3.7). Group rows in the compare
+       table keep their own band. */
+    .sum-card tbody tr:nth-child(even) { background:var(--surface-2); }
+    .sum-card tbody tr:hover { background:var(--tc-teal-light); }
     .sum-prod { font-weight:600; }
     .sum-note { font-size:11px; color:var(--muted); line-height:1.55; padding:10px 12px 14px; }
     .pill-risk { font-weight:600; }
@@ -275,11 +298,31 @@
   </div>
 </div>
 
-<div class="footer">Thrive Causemetics Launch Intelligence Hub &mdash; Data: Snowflake DAASITY_DB &middot; <a href="https://github.com/thrivecausemetics/glowing-launch-pad" style="color:var(--tc-teal);text-decoration:none;">glowing-launch-pad</a></div>
+<div class="footer">Thrive Causemetics Launch Intelligence Hub &mdash; Data: Snowflake DAASITY_DB &middot; <a href="https://github.com/thrivecausemetics/glowing-launch-pad" style="color:var(--tc-teal-dark);text-decoration:none;font-weight:600;">glowing-launch-pad</a></div>
 
 <script src="vendor/chart.umd.min.js"></script>
 <script src="data.js"></script>
 <script>
+  /* Shared chart look (DESIGN.md §4.3), set once before any chart is built. */
+  Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  Chart.defaults.font.size = 11;
+  Chart.defaults.color = '#6B7A8D';
+  Chart.defaults.borderColor = '#E2E8EF';
+  Chart.defaults.plugins.legend.labels.boxWidth = 12;
+  Chart.defaults.plugins.legend.labels.boxHeight = 12;
+  Chart.defaults.plugins.tooltip.backgroundColor = '#1C2B3A';
+  Chart.defaults.plugins.tooltip.titleColor = '#FFFFFF';
+  Chart.defaults.plugins.tooltip.bodyColor = '#E6F4F3';
+  Chart.defaults.plugins.tooltip.padding = 10;
+  Chart.defaults.plugins.tooltip.cornerRadius = 8;
+  Chart.defaults.elements.bar.borderRadius = 4;
+  Chart.defaults.elements.line.tension = 0.25;
+  Chart.defaults.elements.line.borderWidth = 2;
+  Chart.defaults.elements.point.radius = 0;
+  Chart.defaults.elements.point.hoverRadius = 4;
+  Chart.defaults.elements.arc.borderWidth = 2;
+  Chart.defaults.elements.arc.borderColor = '#FFFFFF';
+
   const DD = window.DASHBOARD_DATA, META = DD.meta;
   const RET = META.retentionDays || 122;
   const db = (a, b) => Math.floor((new Date(b + 'T00:00:00') - new Date(a + 'T00:00:00')) / 86400000);
@@ -312,7 +355,9 @@
      every cumulative figure is also reported at day N, where N is the youngest
      selected launch's age. Archived launches are included — comparing against
      a finished launch is the main reason to keep them. */
-  const CMP_COLORS = ['#3A9E98', '#C9A84C', '#8B5CF6', '#EF4444', '#0EA5E9', '#22A06B'];
+  /* Shared series palette (DESIGN.md §4.1): red and amber are left out on
+     purpose, since on this page they mean "at risk". */
+  const CMP_COLORS = ['#3A9E98', '#C9A84C', '#1C2B3A', '#22A06B', '#8B5CF6', '#0EA5E9', '#8FD3CE', '#6366F1', '#E0A48B', '#6B7A8D'];
   const cmpSel = new Set();
 
   const ageAt = l => db(l.launchDate, META.dataCutoff);
