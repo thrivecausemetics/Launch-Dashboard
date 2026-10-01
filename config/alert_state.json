@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-09-30",
+  "lastRun": "2026-10-01",
   "rulesVersion": 2,
   "lastDigest": "2026-09-28",
-  "dataCutoff": "2026-09-29",
+  "dataCutoff": "2026-09-30",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -63,6 +63,12 @@
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-09-28"
+    },
+    "beb-hoda-mila|pacing": {
+      "rank": 4,
+      "title": "The whole launch is pacing behind plan",
+      "firstSeen": "2026-10-01",
+      "lastPosted": "2026-10-01"
     },
     "becca-brow|pacing": {
       "rank": 4,
