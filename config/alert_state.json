@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-02",
+  "lastRun": "2026-10-03",
   "rulesVersion": 2,
   "lastDigest": "2026-09-28",
-  "dataCutoff": "2026-10-01",
+  "dataCutoff": "2026-10-02",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -27,6 +27,12 @@
       "title": "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-14",
       "lastPosted": "2026-09-28"
+    },
+    "berry-collection|oos-soon:us:TVG407": {
+      "rank": 1,
+      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) runs out in US (.com) in ~21 days",
+      "firstSeen": "2026-10-03",
+      "lastPosted": "2026-10-03"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
@@ -71,7 +77,5 @@
       "lastPosted": "2026-09-28"
     }
   },
-  "resolvedToday": [
-    "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~19 days"
-  ]
+  "resolvedToday": []
 }
