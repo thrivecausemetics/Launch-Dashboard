@@ -5,73 +5,71 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-04",
+  "lastRun": "2026-10-05",
   "rulesVersion": 2,
-  "lastDigest": "2026-09-28",
-  "dataCutoff": "2026-10-03",
+  "lastDigest": "2026-10-05",
+  "dataCutoff": "2026-10-04",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
       "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-24",
-      "lastPosted": "2026-09-28"
+      "lastPosted": "2026-10-05"
     },
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
       "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-28"
+      "lastPosted": "2026-10-05"
     },
     "lasting-mark-lip-stain|oos:ca:TVG7260": {
       "rank": 0,
       "title": "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-14",
-      "lastPosted": "2026-09-28"
+      "lastPosted": "2026-10-05"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
       "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) is behind plan over the last 7 days",
       "firstSeen": "2026-09-24",
-      "lastPosted": "2026-09-28"
+      "lastPosted": "2026-10-05"
     },
     "beb-hoda-mila|recent-behind:TVG6640": {
       "rank": 3,
       "title": "Hoda (Brilliant Eye Brightener\u2122) is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-28"
+      "lastPosted": "2026-10-05"
     },
     "becca-brow|recent-behind:TVG6710": {
       "rank": 3,
       "title": "Brow Liner (Infinity Waterproof\u2122 Eyebrow Liner) is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-28"
+      "lastPosted": "2026-10-05"
     },
     "becca-brow|recent-behind:TVG6690": {
       "rank": 3,
       "title": "Brow Gel (Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel) is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-09-28"
+      "lastPosted": "2026-10-05"
     },
     "psl-pout-hero|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-09-24",
-      "lastPosted": "2026-09-28"
+      "lastPosted": "2026-10-05"
     },
     "beb-hoda-mila|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-10-01",
-      "lastPosted": "2026-10-01"
+      "lastPosted": "2026-10-05"
     },
     "becca-brow|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-09-01",
-      "lastPosted": "2026-09-28"
+      "lastPosted": "2026-10-05"
     }
   },
-  "resolvedToday": [
-    "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) runs out in US (.com) in ~21 days"
-  ]
+  "resolvedToday": []
 }
