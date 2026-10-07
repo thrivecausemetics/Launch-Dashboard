@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-06",
+  "lastRun": "2026-10-07",
   "rulesVersion": 2,
   "lastDigest": "2026-10-05",
-  "dataCutoff": "2026-10-05",
+  "dataCutoff": "2026-10-06",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -30,9 +30,15 @@
     },
     "berry-collection|atc-drop:TVG4560": {
       "rank": 2,
-      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 68.0%",
+      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 49.9%",
       "firstSeen": "2026-10-06",
       "lastPosted": "2026-10-06"
+    },
+    "berry-collection|atc-drop:TVG407": {
+      "rank": 2,
+      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 79.1%",
+      "firstSeen": "2026-10-07",
+      "lastPosted": "2026-10-07"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
@@ -69,13 +75,9 @@
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-10-01",
       "lastPosted": "2026-10-05"
-    },
-    "becca-brow|pacing": {
-      "rank": 4,
-      "title": "The whole launch is pacing behind plan",
-      "firstSeen": "2026-09-01",
-      "lastPosted": "2026-10-05"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "The whole launch is pacing behind plan"
+  ]
 }
