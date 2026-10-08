@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-07",
+  "lastRun": "2026-10-08",
   "rulesVersion": 2,
   "lastDigest": "2026-10-05",
-  "dataCutoff": "2026-10-06",
+  "dataCutoff": "2026-10-07",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -28,23 +28,29 @@
       "firstSeen": "2026-09-14",
       "lastPosted": "2026-10-05"
     },
-    "berry-collection|atc-drop:TVG4560": {
-      "rank": 2,
-      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 49.9%",
-      "firstSeen": "2026-10-06",
-      "lastPosted": "2026-10-06"
-    },
     "berry-collection|atc-drop:TVG407": {
       "rank": 2,
-      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 79.1%",
+      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 73.6%",
       "firstSeen": "2026-10-07",
       "lastPosted": "2026-10-07"
+    },
+    "berry-collection|atc-drop:TVG4560": {
+      "rank": 2,
+      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 46.4%",
+      "firstSeen": "2026-10-06",
+      "lastPosted": "2026-10-06"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
       "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) is behind plan over the last 7 days",
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-10-05"
+    },
+    "lasting-mark-lip-stain|recent-behind:TVG7230": {
+      "rank": 3,
+      "title": "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days",
+      "firstSeen": "2026-10-08",
+      "lastPosted": "2026-10-08"
     },
     "beb-hoda-mila|recent-behind:TVG6640": {
       "rank": 3,
@@ -77,7 +83,5 @@
       "lastPosted": "2026-10-05"
     }
   },
-  "resolvedToday": [
-    "The whole launch is pacing behind plan"
-  ]
+  "resolvedToday": []
 }
