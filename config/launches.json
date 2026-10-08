@@ -374,6 +374,33 @@
           "color": "#6E1736"
         }
       ]
+    },
+    {
+      "id": "eyeshadow-quads-drop-2",
+      "name": "Eyeshadow Quads Drop 2",
+      "subtitle": "Focus Eyeshadow™ Palette · Classic Pinks & Signature Plums",
+      "accent": "#A8578C",
+      "launch_date": "2026-10-07",
+      "internal_date": "2026-07-14",
+      "asana_gid": "1216777622961333",
+      "category": "Eyeshadow",
+      "category_type_patterns": [
+        "%shadow%"
+      ],
+      "skus": [
+        {
+          "sku": "TVG6730",
+          "name": "Classic Pinks",
+          "shade": "Focus Eyeshadow™ Palette",
+          "color": "#D6A0A6"
+        },
+        {
+          "sku": "TVG6740",
+          "name": "Signature Plums",
+          "shade": "Focus Eyeshadow™ Palette",
+          "color": "#7D4A6B"
+        }
+      ]
     }
   ],
   "upcoming": [
