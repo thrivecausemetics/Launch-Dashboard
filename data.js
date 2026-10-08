@@ -14871,6 +14871,366 @@ window.DASHBOARD_DATA = {
       "categoryCustomers": null
     },
     {
+      "launchId": "eyeshadow-quads-drop-2",
+      "name": "Eyeshadow Quads Drop 2",
+      "launchDate": "2026-10-07",
+      "internalDate": "2026-07-14",
+      "status": "LIVE",
+      "category": "Eyeshadow",
+      "subtitle": "Focus Eyeshadow\u2122 Palette \u00b7 Classic Pinks & Signature Plums",
+      "accent": "#A8578C",
+      "summary": {
+        "netSales": 21987.79,
+        "units": 634,
+        "orders": 542,
+        "aov": 40.57,
+        "newCustomers": 48,
+        "retCustomers": 491,
+        "totalCustomers": 539,
+        "newPct": 8.9,
+        "retPct": 91.1,
+        "planUnits": 291,
+        "pctToPlanUnits": 217.9,
+        "subscriptionOrders": 0,
+        "subscriptionUnits": 0,
+        "subscriptionRevenue": null,
+        "newCustomerRevenue": 1905.61,
+        "retCustomerRevenue": 20082.18,
+        "pdpViews": 14096,
+        "pdpAtcRate": 12.2,
+        "pdpCvr": 4.1
+      },
+      "regions": {
+        "us": {
+          "units": 618,
+          "netSales": 21611.2,
+          "orders": 528
+        },
+        "ca": {
+          "units": 16,
+          "netSales": 376.59,
+          "orders": 14
+        }
+      },
+      "trafficStart": "2026-10-07",
+      "trafficEnd": "2026-10-05",
+      "traffic": {
+        "byChannel": [],
+        "monthly": []
+      },
+      "landing": [],
+      "learnings": [],
+      "asanaLink": {
+        "asanaUrl": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1216777622961333",
+        "asanaName": "Eyeshadow Quads Drop 2",
+        "linkedBy": "config"
+      },
+      "planCurve": [
+        {
+          "date": "2026-10-07",
+          "cumPlanUnits": 291
+        }
+      ],
+      "planTotalUnits": 9699,
+      "planEndDate": "2027-02-03",
+      "archived": false,
+      "byVariant": [
+        {
+          "sku": "TVG6740",
+          "name": "Signature Plums",
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "shade": "Focus Eyeshadow\u2122 Palette",
+          "color": "#7D4A6B",
+          "netSales": 16196.61,
+          "units": 465,
+          "orders": 460,
+          "newCustomers": 40,
+          "retCustomers": 419,
+          "usUnits": 458,
+          "caUnits": 7,
+          "usNetSales": 16027.22,
+          "caNetSales": 169.39,
+          "planUnits": 194,
+          "pctToPlanUnits": 239.7,
+          "inventoryUnits": 8520,
+          "runRateUnitsPerDay": 465.0,
+          "daysToOOS": 18,
+          "estOOSDate": "2026-10-25",
+          "usInventoryUnits": 8209,
+          "caInventoryUnits": 311,
+          "usRunRateUnitsPerDay": 458.0,
+          "caRunRateUnitsPerDay": 7.0,
+          "usDaysToOOS": 17,
+          "caDaysToOOS": 44,
+          "usEstOOSDate": "2026-10-24",
+          "caEstOOSDate": "2026-11-20",
+          "planTotalUnits": 6467,
+          "pctToGoalUnits": 7.2,
+          "unitsToGoal": 6002,
+          "planEndDate": "2027-02-03",
+          "weeksOfStock": 2.6,
+          "decayCurveOOS": null,
+          "realInventoryUnits": null
+        },
+        {
+          "sku": "TVG6730",
+          "name": "Classic Pinks",
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "shade": "Focus Eyeshadow\u2122 Palette",
+          "color": "#D6A0A6",
+          "netSales": 5791.17,
+          "units": 169,
+          "orders": 168,
+          "newCustomers": 15,
+          "retCustomers": 152,
+          "usUnits": 160,
+          "caUnits": 9,
+          "usNetSales": 5583.98,
+          "caNetSales": 207.19,
+          "planUnits": 97,
+          "pctToPlanUnits": 174.2,
+          "inventoryUnits": 9588,
+          "runRateUnitsPerDay": 169.0,
+          "daysToOOS": 56,
+          "estOOSDate": "2026-12-02",
+          "usInventoryUnits": 9276,
+          "caInventoryUnits": 312,
+          "usRunRateUnitsPerDay": 160.0,
+          "caRunRateUnitsPerDay": 9.0,
+          "usDaysToOOS": 57,
+          "caDaysToOOS": 34,
+          "usEstOOSDate": "2026-12-03",
+          "caEstOOSDate": "2026-11-10",
+          "planTotalUnits": 3232,
+          "pctToGoalUnits": 5.2,
+          "unitsToGoal": 3063,
+          "planEndDate": "2027-02-03",
+          "weeksOfStock": 8.1,
+          "decayCurveOOS": null,
+          "realInventoryUnits": null
+        }
+      ],
+      "signals": {
+        "attention": [
+          {
+            "rank": 1,
+            "key": "oos-soon:us:TVG6740",
+            "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~17 days",
+            "detail": "8,209 units left in US (.com) at 458.0/day (2.6 weeks cover).",
+            "action": "Confirm a replenishment date for US (.com) with Demand Planning, or plan for the shade to go dark there."
+          }
+        ],
+        "working": [
+          {
+            "key": "pairing:TVG2990",
+            "title": "Most common basket pairing: Liquid Lash\u2122 Extensions Tubing Mascara",
+            "detail": "3 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+          },
+          {
+            "key": "new-to-category",
+            "title": "15% of buyers are new to Eyeshadow",
+            "detail": "83 of 539 buyers had not purchased this category before."
+          }
+        ]
+      },
+      "dailySales": [
+        {
+          "date": "2026-10-07",
+          "units": 634,
+          "netSales": 21987.79,
+          "usUnits": 618,
+          "caUnits": 16,
+          "usNetSales": 21611.2,
+          "caNetSales": 376.59,
+          "cumUnits": 634,
+          "cumSales": 21987.79,
+          "planUnits": 291,
+          "cumPlanUnits": 291,
+          "newCustomers": 48,
+          "retCustomers": 491
+        }
+      ],
+      "dailySkuColumns": [
+        "date",
+        "units",
+        "netSales",
+        "usUnits",
+        "caUnits",
+        "usNetSales",
+        "caNetSales",
+        "newCustomers",
+        "retCustomers"
+      ],
+      "dailyBySku": {
+        "TVG6730": [["2026-10-07", 169, 5791.17, 160, 9, 5583.98, 207.19, 15, 152]],
+        "TVG6740": [["2026-10-07", 465, 16196.61, 458, 7, 16027.22, 169.39, 40, 419]]
+      },
+      "planBySku": {
+        "TVG6730": [["2026-10-07", 97]],
+        "TVG6740": [["2026-10-07", 194]]
+      },
+      "pdp": [
+        {
+          "sku": "TVG6740",
+          "name": "Signature Plums",
+          "pdpViews": 8710,
+          "atc": 1292,
+          "ckts": 239,
+          "purch": 433,
+          "rev": 16454.0,
+          "atcRate": 14.83,
+          "purchRate": 4.97
+        },
+        {
+          "sku": "TVG6730",
+          "name": "Classic Pinks",
+          "pdpViews": 5386,
+          "atc": 427,
+          "ckts": 96,
+          "purch": 151,
+          "rev": 5738.0,
+          "atcRate": 7.93,
+          "purchRate": 2.8
+        }
+      ],
+      "crossSell": [
+        {
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
+          "pairs": 3
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG629",
+          "pairs": 3
+        },
+        {
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG582",
+          "pairs": 1
+        },
+        {
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG288",
+          "pairs": 1
+        },
+        {
+          "product": "Triple Threat\u2122 Blush Stick",
+          "sku": "TVG4961",
+          "pairs": 1
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
+          "pairs": 1
+        },
+        {
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
+          "pairs": 1
+        },
+        {
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 1
+        },
+        {
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
+          "pairs": 1
+        }
+      ],
+      "crossSellBySku": [
+        {
+          "primarySku": "TVG6730",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG629",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6730",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6730",
+          "product": "Triple Threat\u2122 Blush Stick",
+          "sku": "TVG4961",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6740",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG629",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6740",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6740",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6740",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG582",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6740",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG288",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6740",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6740",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG6740",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 1
+        }
+      ],
+      "categoryCustomers": {
+        "category": "Eyeshadow",
+        "total": 539,
+        "existingCategory": 456,
+        "newToCategory": 83,
+        "byVariant": [
+          {
+            "sku": "TVG6740",
+            "name": "Signature Plums",
+            "newToCategory": 68,
+            "existingCategory": 391
+          },
+          {
+            "sku": "TVG6730",
+            "name": "Classic Pinks",
+            "newToCategory": 26,
+            "existingCategory": 141
+          }
+        ],
+        "daily": [["2026-10-07", 83, 456]]
+      }
+    },
+    {
       "launchId": "empowershine",
       "name": "EmpowerShine Satin Lip Cream",
       "launchDate": "2026-04-30",
@@ -21844,7 +22204,7 @@ window.DASHBOARD_DATA = {
       "name": "Eyeshadow Quads Drop 2",
       "launchDate": "2026-10-07",
       "internalDate": "2026-07-14",
-      "trackedId": null,
+      "trackedId": "eyeshadow-quads-drop-2",
       "section": "GTM Campaigns",
       "asanaUrl": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1216777622961333"
     },
@@ -21893,12 +22253,6 @@ window.DASHBOARD_DATA = {
         "launch_date": "2026-08-18",
         "section": "GTM Campaigns",
         "asana_url": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1213996421586726"
-      },
-      {
-        "name": "Eyeshadow Quads Drop 2",
-        "launch_date": "2026-10-07",
-        "section": "GTM Campaigns",
-        "asana_url": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1216777622961333"
       },
       {
         "name": "Holiday Phase 1: BEB & Holiday Bundles",
