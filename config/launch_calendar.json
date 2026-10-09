@@ -10,26 +10,6 @@
   "asana_project_url": "https://app.asana.com/0/1216777821260255/list",
   "entries": [
     {
-      "name": "Eyeshadow Quads Drop 1 US",
-      "slug": "eyeshadow-quads-drop-1-us",
-      "launch_date": "2026-07-22",
-      "internal_date": "2026-07-14",
-      "section": "GTM Campaigns",
-      "completed": false,
-      "asana_gid": "1213575011101074",
-      "asana_url": "https://app.asana.com/1/15251267373658/project/1212387533350235/task/1213575011101074"
-    },
-    {
-      "name": "Eyeshadow Quads Drop 1 CAN",
-      "slug": "eyeshadow-quads-drop-1-can",
-      "launch_date": "2026-07-28",
-      "internal_date": "2026-07-14",
-      "section": "GTM Campaigns",
-      "completed": false,
-      "asana_gid": "1216777622961331",
-      "asana_url": "https://app.asana.com/1/15251267373658/project/1212387533350235/task/1216777622961331"
-    },
-    {
       "name": "LLEM Ivy & Iris Restock",
       "slug": "llem-ivy-iris-restock",
       "launch_date": "2026-08-05",
@@ -70,6 +50,16 @@
       "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260266"
     },
     {
+      "name": "[US/CA] 10/3\u201310/4 \u2014 Brow BOGO 40%: buy any 2 brow products, 40% off the second",
+      "slug": "us-ca-10-3-10-4-brow-bogo-40-buy-any-2-brow-products-40-off-the-second",
+      "launch_date": "2026-10-04",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1218518604898068",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1218518604898068"
+    },
+    {
       "name": "Eyeshadow Quads Drop 2",
       "slug": "eyeshadow-quads-drop-2",
       "launch_date": "2026-10-07",
@@ -80,9 +70,9 @@
       "asana_url": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1216777622961333"
     },
     {
-      "name": "Holiday Phase 1: BEB & Holiday Bundles",
-      "slug": "holiday-phase-1-beb-holiday-bundles",
-      "launch_date": "2026-11-04",
+      "name": "Holiday Phase 1: Holiday Bundles Drop",
+      "slug": "holiday-phase-1-holiday-bundles-drop",
+      "launch_date": "2026-10-14",
       "internal_date": null,
       "section": "GTM Campaigns",
       "completed": false,
@@ -90,31 +80,99 @@
       "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260268"
     },
     {
-      "name": "Holiday Phase 2: BFCM & Giving Tuesday",
-      "slug": "holiday-phase-2-bfcm-giving-tuesday",
-      "launch_date": "2026-11-27",
+      "name": "Holiday Phase 2: Brilliant Eye Brightener Grace and Hope Drop",
+      "slug": "holiday-phase-2-brilliant-eye-brightener-grace-and-hope-drop",
+      "launch_date": "2026-10-14",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1219335039693234",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693234"
+    },
+    {
+      "name": "[US/CA] 10/17\u201310/18 \u2014 Free Shipping weekend (+ holiday sets preview if GTM confirms October sets)",
+      "slug": "us-ca-10-17-10-18-free-shipping-weekend-holiday-sets-preview-if-gtm-confirms-october-sets",
+      "launch_date": "2026-10-18",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1217179831038948",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1217179831038948"
+    },
+    {
+      "name": "Holiday Phase 3: Cyber 6 Begins",
+      "slug": "holiday-phase-3-cyber-6-begins",
+      "launch_date": "2026-11-26",
       "internal_date": null,
       "section": "GTM Campaigns",
       "completed": false,
       "asana_gid": "1216777821260273",
       "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260273"
+    },
+    {
+      "name": "Black Friday",
+      "slug": "black-friday",
+      "launch_date": "2026-11-27",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1219335039693236",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693236"
+    },
+    {
+      "name": "IRL Black Friday Event",
+      "slug": "irl-black-friday-event",
+      "launch_date": "2026-11-27",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1219335039693240",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693240"
+    },
+    {
+      "name": "Cyber Monday",
+      "slug": "cyber-monday",
+      "launch_date": "2026-11-30",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1219335039693243",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693243"
+    },
+    {
+      "name": "Giving Tuesday",
+      "slug": "giving-tuesday",
+      "launch_date": "2026-12-01",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1219335039693245",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693245"
+    },
+    {
+      "name": "[US/CA] 11/26 to 12/1 Cyber 6 | 20% off sitewide + free shipping + free full size BEB (pick your shade) at $85 / C$120",
+      "slug": "us-ca-11-26-to-12-1-cyber-6-20-off-sitewide-free-shipping-free-full-size-beb-pick-your-shade-at-85-c-120",
+      "launch_date": "2026-12-01",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1219256534550830",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219256534550830"
+    },
+    {
+      "name": "Holiday Phase 4: Ecomm Bag GWP Drops",
+      "slug": "holiday-phase-4-ecomm-bag-gwp-drops",
+      "launch_date": "2026-12-02",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1219335039693251",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693251"
     }
   ],
   "learnings_by_gid": {},
   "mismatches": [],
   "not_in_config": [
-    {
-      "name": "Eyeshadow Quads Drop 1 US",
-      "launch_date": "2026-07-22",
-      "section": "GTM Campaigns",
-      "asana_url": "https://app.asana.com/1/15251267373658/project/1212387533350235/task/1213575011101074"
-    },
-    {
-      "name": "Eyeshadow Quads Drop 1 CAN",
-      "launch_date": "2026-07-28",
-      "section": "GTM Campaigns",
-      "asana_url": "https://app.asana.com/1/15251267373658/project/1212387533350235/task/1216777622961331"
-    },
     {
       "name": "LLEM Ivy & Iris Restock",
       "launch_date": "2026-08-05",
@@ -128,16 +186,70 @@
       "asana_url": "https://app.asana.com/1/15251267373658/project/1213044688931941/task/1213996421586726"
     },
     {
-      "name": "Holiday Phase 1: BEB & Holiday Bundles",
-      "launch_date": "2026-11-04",
+      "name": "[US/CA] 10/3\u201310/4 \u2014 Brow BOGO 40%: buy any 2 brow products, 40% off the second",
+      "launch_date": "2026-10-04",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1218518604898068"
+    },
+    {
+      "name": "Holiday Phase 1: Holiday Bundles Drop",
+      "launch_date": "2026-10-14",
       "section": "GTM Campaigns",
       "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260268"
     },
     {
-      "name": "Holiday Phase 2: BFCM & Giving Tuesday",
-      "launch_date": "2026-11-27",
+      "name": "Holiday Phase 2: Brilliant Eye Brightener Grace and Hope Drop",
+      "launch_date": "2026-10-14",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693234"
+    },
+    {
+      "name": "[US/CA] 10/17\u201310/18 \u2014 Free Shipping weekend (+ holiday sets preview if GTM confirms October sets)",
+      "launch_date": "2026-10-18",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1217179831038948"
+    },
+    {
+      "name": "Holiday Phase 3: Cyber 6 Begins",
+      "launch_date": "2026-11-26",
       "section": "GTM Campaigns",
       "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260273"
+    },
+    {
+      "name": "Black Friday",
+      "launch_date": "2026-11-27",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693236"
+    },
+    {
+      "name": "IRL Black Friday Event",
+      "launch_date": "2026-11-27",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693240"
+    },
+    {
+      "name": "Cyber Monday",
+      "launch_date": "2026-11-30",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693243"
+    },
+    {
+      "name": "Giving Tuesday",
+      "launch_date": "2026-12-01",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693245"
+    },
+    {
+      "name": "[US/CA] 11/26 to 12/1 Cyber 6 | 20% off sitewide + free shipping + free full size BEB (pick your shade) at $85 / C$120",
+      "launch_date": "2026-12-01",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219256534550830"
+    },
+    {
+      "name": "Holiday Phase 4: Ecomm Bag GWP Drops",
+      "launch_date": "2026-12-02",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693251"
     }
   ],
   "config_without_asana_gid": [

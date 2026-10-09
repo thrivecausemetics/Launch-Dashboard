@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-08",
+  "lastRun": "2026-10-09",
   "rulesVersion": 2,
   "lastDigest": "2026-10-05",
-  "dataCutoff": "2026-10-07",
+  "dataCutoff": "2026-10-08",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -30,21 +30,21 @@
     },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~17 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~15 days",
       "firstSeen": "2026-10-08",
       "lastPosted": "2026-10-08"
     },
-    "berry-collection|atc-drop:TVG407": {
-      "rank": 2,
-      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 73.6%",
-      "firstSeen": "2026-10-07",
-      "lastPosted": "2026-10-07"
-    },
     "berry-collection|atc-drop:TVG4560": {
       "rank": 2,
-      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 46.4%",
+      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 37.1%",
       "firstSeen": "2026-10-06",
       "lastPosted": "2026-10-06"
+    },
+    "berry-collection|atc-drop:TVG407": {
+      "rank": 2,
+      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 61.7%",
+      "firstSeen": "2026-10-07",
+      "lastPosted": "2026-10-07"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
@@ -70,12 +70,6 @@
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-10-05"
     },
-    "becca-brow|recent-behind:TVG6690": {
-      "rank": 3,
-      "title": "Brow Gel (Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel) is behind plan over the last 7 days",
-      "firstSeen": "2026-09-09",
-      "lastPosted": "2026-10-05"
-    },
     "psl-pout-hero|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
@@ -89,5 +83,7 @@
       "lastPosted": "2026-10-05"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "Brow Gel (Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel) is behind plan over the last 7 days"
+  ]
 }
