@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-09",
+  "lastRun": "2026-10-10",
   "rulesVersion": 2,
   "lastDigest": "2026-10-05",
-  "dataCutoff": "2026-10-08",
+  "dataCutoff": "2026-10-09",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -22,29 +22,35 @@
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-10-05"
     },
-    "lasting-mark-lip-stain|oos:ca:TVG7260": {
-      "rank": 0,
-      "title": "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
-      "firstSeen": "2026-09-14",
-      "lastPosted": "2026-10-05"
-    },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
       "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~15 days",
       "firstSeen": "2026-10-08",
       "lastPosted": "2026-10-08"
     },
+    "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
+      "rank": 1,
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~20 days",
+      "firstSeen": "2026-10-10",
+      "lastPosted": "2026-10-10"
+    },
     "berry-collection|atc-drop:TVG4560": {
       "rank": 2,
-      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 37.1%",
+      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 35.3%",
       "firstSeen": "2026-10-06",
       "lastPosted": "2026-10-06"
     },
     "berry-collection|atc-drop:TVG407": {
       "rank": 2,
-      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 61.7%",
+      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 59.1%",
       "firstSeen": "2026-10-07",
       "lastPosted": "2026-10-07"
+    },
+    "eyeshadow-quads|atc-drop:TVG6700": {
+      "rank": 2,
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 8.8%",
+      "firstSeen": "2026-10-10",
+      "lastPosted": "2026-10-10"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
@@ -52,21 +58,9 @@
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-10-05"
     },
-    "lasting-mark-lip-stain|recent-behind:TVG7230": {
-      "rank": 3,
-      "title": "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days",
-      "firstSeen": "2026-10-08",
-      "lastPosted": "2026-10-08"
-    },
     "beb-hoda-mila|recent-behind:TVG6640": {
       "rank": 3,
       "title": "Hoda (Brilliant Eye Brightener\u2122) is behind plan over the last 7 days",
-      "firstSeen": "2026-09-09",
-      "lastPosted": "2026-10-05"
-    },
-    "becca-brow|recent-behind:TVG6710": {
-      "rank": 3,
-      "title": "Brow Liner (Infinity Waterproof\u2122 Eyebrow Liner) is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-10-05"
     },
@@ -84,6 +78,8 @@
     }
   },
   "resolvedToday": [
-    "Brow Gel (Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel) is behind plan over the last 7 days"
+    "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
+    "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days",
+    "Brow Liner (Infinity Waterproof\u2122 Eyebrow Liner) is behind plan over the last 7 days"
   ]
 }
