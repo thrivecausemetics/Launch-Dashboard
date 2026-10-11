@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-10",
+  "lastRun": "2026-10-11",
   "rulesVersion": 2,
   "lastDigest": "2026-10-05",
-  "dataCutoff": "2026-10-09",
+  "dataCutoff": "2026-10-10",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -24,33 +24,45 @@
     },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~15 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~16 days",
       "firstSeen": "2026-10-08",
       "lastPosted": "2026-10-08"
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~20 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~16 days",
       "firstSeen": "2026-10-10",
       "lastPosted": "2026-10-10"
     },
     "berry-collection|atc-drop:TVG4560": {
       "rank": 2,
-      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 35.3%",
+      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 36.4%",
       "firstSeen": "2026-10-06",
       "lastPosted": "2026-10-06"
     },
-    "berry-collection|atc-drop:TVG407": {
+    "berry-collection|atc-drop:TVG629": {
       "rank": 2,
-      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 59.1%",
-      "firstSeen": "2026-10-07",
-      "lastPosted": "2026-10-07"
+      "title": "Cindy (Brilliant Eye Brightener\u2122) add-to-cart rate fell to 16.7%",
+      "firstSeen": "2026-10-11",
+      "lastPosted": "2026-10-11"
+    },
+    "triple-threat-reform|atc-drop:TVG4920": {
+      "rank": 2,
+      "title": "Tessa (Triple Threat\u2122 Blush Stick) add-to-cart rate fell to 15.3%",
+      "firstSeen": "2026-10-11",
+      "lastPosted": "2026-10-11"
     },
     "eyeshadow-quads|atc-drop:TVG6700": {
       "rank": 2,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 8.8%",
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 4.8%",
       "firstSeen": "2026-10-10",
       "lastPosted": "2026-10-10"
+    },
+    "eyeshadow-quads|atc-drop:TVG6720": {
+      "rank": 2,
+      "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 8.3%",
+      "firstSeen": "2026-10-11",
+      "lastPosted": "2026-10-11"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
@@ -78,8 +90,6 @@
     }
   },
   "resolvedToday": [
-    "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
-    "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days",
-    "Brow Liner (Infinity Waterproof\u2122 Eyebrow Liner) is behind plan over the last 7 days"
+    "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 59.1%"
   ]
 }
