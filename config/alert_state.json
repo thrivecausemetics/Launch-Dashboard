@@ -5,91 +5,95 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-11",
+  "lastRun": "2026-10-12",
   "rulesVersion": 2,
-  "lastDigest": "2026-10-05",
-  "dataCutoff": "2026-10-10",
+  "lastDigest": "2026-10-12",
+  "dataCutoff": "2026-10-11",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
       "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-24",
-      "lastPosted": "2026-10-05"
+      "lastPosted": "2026-10-12"
     },
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
       "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-10-05"
+      "lastPosted": "2026-10-12"
     },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~16 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~14 days",
       "firstSeen": "2026-10-08",
-      "lastPosted": "2026-10-08"
+      "lastPosted": "2026-10-12"
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~16 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~13 days",
       "firstSeen": "2026-10-10",
-      "lastPosted": "2026-10-10"
+      "lastPosted": "2026-10-12"
     },
-    "berry-collection|atc-drop:TVG4560": {
-      "rank": 2,
-      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 36.4%",
-      "firstSeen": "2026-10-06",
-      "lastPosted": "2026-10-06"
+    "lasting-mark-lip-stain|oos-soon:us:TVG7220": {
+      "rank": 1,
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~20 days",
+      "firstSeen": "2026-10-12",
+      "lastPosted": "2026-10-12"
     },
     "berry-collection|atc-drop:TVG629": {
       "rank": 2,
-      "title": "Cindy (Brilliant Eye Brightener\u2122) add-to-cart rate fell to 16.7%",
+      "title": "Cindy (Brilliant Eye Brightener\u2122) add-to-cart rate fell to 16.6%",
       "firstSeen": "2026-10-11",
-      "lastPosted": "2026-10-11"
+      "lastPosted": "2026-10-12"
+    },
+    "berry-collection|atc-drop:TVG4560": {
+      "rank": 2,
+      "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) add-to-cart rate fell to 36.2%",
+      "firstSeen": "2026-10-06",
+      "lastPosted": "2026-10-12"
     },
     "triple-threat-reform|atc-drop:TVG4920": {
       "rank": 2,
-      "title": "Tessa (Triple Threat\u2122 Blush Stick) add-to-cart rate fell to 15.3%",
+      "title": "Tessa (Triple Threat\u2122 Blush Stick) add-to-cart rate fell to 14.8%",
       "firstSeen": "2026-10-11",
-      "lastPosted": "2026-10-11"
-    },
-    "eyeshadow-quads|atc-drop:TVG6700": {
-      "rank": 2,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 4.8%",
-      "firstSeen": "2026-10-10",
-      "lastPosted": "2026-10-10"
+      "lastPosted": "2026-10-12"
     },
     "eyeshadow-quads|atc-drop:TVG6720": {
       "rank": 2,
-      "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 8.3%",
+      "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 7.8%",
       "firstSeen": "2026-10-11",
-      "lastPosted": "2026-10-11"
+      "lastPosted": "2026-10-12"
+    },
+    "eyeshadow-quads|atc-drop:TVG6700": {
+      "rank": 2,
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 4.5%",
+      "firstSeen": "2026-10-10",
+      "lastPosted": "2026-10-12"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
       "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) is behind plan over the last 7 days",
       "firstSeen": "2026-09-24",
-      "lastPosted": "2026-10-05"
+      "lastPosted": "2026-10-12"
     },
     "beb-hoda-mila|recent-behind:TVG6640": {
       "rank": 3,
       "title": "Hoda (Brilliant Eye Brightener\u2122) is behind plan over the last 7 days",
       "firstSeen": "2026-09-09",
-      "lastPosted": "2026-10-05"
+      "lastPosted": "2026-10-12"
     },
     "psl-pout-hero|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-09-24",
-      "lastPosted": "2026-10-05"
+      "lastPosted": "2026-10-12"
     },
     "beb-hoda-mila|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
       "firstSeen": "2026-10-01",
-      "lastPosted": "2026-10-05"
+      "lastPosted": "2026-10-12"
     }
   },
-  "resolvedToday": [
-    "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) add-to-cart rate fell to 59.1%"
-  ]
+  "resolvedToday": []
 }
