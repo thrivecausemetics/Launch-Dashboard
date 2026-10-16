@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-15",
+  "lastRun": "2026-10-16",
   "rulesVersion": 2,
   "lastDigest": "2026-10-12",
-  "dataCutoff": "2026-10-14",
+  "dataCutoff": "2026-10-15",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -24,31 +24,31 @@
     },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~17 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~20 days",
       "firstSeen": "2026-10-08",
       "lastPosted": "2026-10-12"
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~11 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~10 days",
       "firstSeen": "2026-10-10",
       "lastPosted": "2026-10-12"
     },
     "lasting-mark-lip-stain|oos-soon:us:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~18 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~17 days",
       "firstSeen": "2026-10-12",
       "lastPosted": "2026-10-12"
     },
     "eyeshadow-quads|atc-drop:TVG6700": {
       "rank": 2,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 3.1%",
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 2.9%",
       "firstSeen": "2026-10-10",
       "lastPosted": "2026-10-12"
     },
     "eyeshadow-quads|atc-drop:TVG6720": {
       "rank": 2,
-      "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 5.7%",
+      "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 5.1%",
       "firstSeen": "2026-10-11",
       "lastPosted": "2026-10-12"
     },
@@ -71,7 +71,5 @@
       "lastPosted": "2026-10-12"
     }
   },
-  "resolvedToday": [
-    "The whole launch is pacing behind plan"
-  ]
+  "resolvedToday": []
 }
