@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-16",
+  "lastRun": "2026-10-17",
   "rulesVersion": 2,
   "lastDigest": "2026-10-12",
-  "dataCutoff": "2026-10-15",
+  "dataCutoff": "2026-10-16",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -30,25 +30,25 @@
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~10 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~16 days",
       "firstSeen": "2026-10-10",
       "lastPosted": "2026-10-12"
     },
     "lasting-mark-lip-stain|oos-soon:us:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~17 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~16 days",
       "firstSeen": "2026-10-12",
       "lastPosted": "2026-10-12"
     },
     "eyeshadow-quads|atc-drop:TVG6700": {
       "rank": 2,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 2.9%",
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 2.6%",
       "firstSeen": "2026-10-10",
       "lastPosted": "2026-10-12"
     },
     "eyeshadow-quads|atc-drop:TVG6720": {
       "rank": 2,
-      "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 5.1%",
+      "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) add-to-cart rate fell to 4.9%",
       "firstSeen": "2026-10-11",
       "lastPosted": "2026-10-12"
     },
