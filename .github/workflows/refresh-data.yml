@@ -104,6 +104,7 @@ jobs:
       # run. No-ops without ASANA_TOKEN, leaving the committed snapshot in
       # place, so a missing secret degrades instead of failing the refresh.
       - name: Sync launch calendar from Asana
+        id: calendar
         if: steps.creds.outputs.configured == 'true'
         # Belt and braces with the script's own soft failure: the calendar is
         # never worth failing the data refresh over.
@@ -152,6 +153,17 @@ jobs:
           SLACK_ALERT_LIMIT: ${{ vars.SLACK_ALERT_LIMIT }}
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
         run: python scripts/post_slack_alerts.py ${{ inputs.force_digest && '--digest' || '' }} ${{ inputs.force_repost && '--repost' || '' }}
+
+      # continue-on-error keeps the run green when the calendar sync breaks,
+      # which is how the snapshot went stale for ten days unnoticed. Put the
+      # failure on the run's summary page, not just in the step log.
+      - name: Flag launch calendar sync failure
+        if: steps.calendar.outcome == 'failure'
+        run: |
+          msg="Launch calendar sync from Asana failed — config/launch_calendar.json was not updated and upcoming launch dates may be stale. See the 'Sync launch calendar from Asana' step log."
+          echo "::warning title=Launch calendar sync failed::$msg"
+          echo "### :warning: Launch calendar sync failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "$msg" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit and push if data changed
         if: steps.creds.outputs.configured == 'true'

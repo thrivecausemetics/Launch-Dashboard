@@ -828,7 +828,16 @@
   const calNote = document.getElementById('cal-note');
   if (calNote) {
     if (cal.source === 'asana') {
-      const bits = [`Launch dates come from the <a href="${cal.projectUrl}" target="_blank" rel="noopener">2026 Thrive Causemetics Marketing Calendar</a> in Asana (the <em>Live Date</em> field), synced with each refresh.`];
+      const bits = [`Launch dates come from the <a href="${cal.projectUrl}" target="_blank" rel="noopener">2026 Thrive Causemetics Marketing Calendar</a> in Asana (the <em>Live Date</em> field)`
+        + (cal.syncedAt ? `, last synced ${fmtSmart(cal.syncedAt)}.` : '.')];
+      /* The sync step never fails the refresh, so a broken sync is otherwise
+         invisible: the page keeps showing the last good snapshot as if current. */
+      const ageDays = cal.syncedAt ? Math.round((Date.parse(META.generatedAt) - Date.parse(cal.syncedAt)) / 864e5) : null;
+      if (ageDays === null || ageDays > (cal.staleAfterDays || 3)) {
+        bits.push(`<strong>Calendar sync looks broken:</strong> `
+          + (ageDays === null ? 'this snapshot has no sync date' : `the snapshot is ${ageDays} days old`)
+          + ', so upcoming dates may not match Asana. Check the "Sync launch calendar from Asana" step in the Refresh dashboard data workflow.');
+      }
       if ((cal.mismatches || []).length) {
         bits.push('<strong>Date mismatches:</strong> ' + cal.mismatches.map(m =>
           `${m.name} — this repo says ${m.config_launch_date || '—'}, the calendar says ${m.asana_launch_date || '—'}`).join('; ')

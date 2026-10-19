@@ -27,6 +27,8 @@ jobs:
         run: python scripts/test_snowflake_auth.py
       - name: Alert labels name their product
         run: python scripts/test_alert_labels.py
+      - name: Launch calendar sync reports and writes
+        run: python scripts/test_sync_launch_calendar.py
       - name: Query builders still assemble
         # Catches a broken SQL f-string or a malformed launches.json without
         # needing a Snowflake connection.
