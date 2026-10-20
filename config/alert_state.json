@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-19",
+  "lastRun": "2026-10-20",
   "rulesVersion": 2,
   "lastDigest": "2026-10-19",
-  "dataCutoff": "2026-10-18",
+  "dataCutoff": "2026-10-19",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -24,13 +24,13 @@
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~21 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~19 days",
       "firstSeen": "2026-10-10",
       "lastPosted": "2026-10-19"
     },
     "lasting-mark-lip-stain|oos-soon:us:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~16 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~14 days",
       "firstSeen": "2026-10-12",
       "lastPosted": "2026-10-19"
     },
@@ -47,7 +47,5 @@
       "lastPosted": "2026-10-19"
     }
   },
-  "resolvedToday": [
-    "Hoda (Brilliant Eye Brightener\u2122) is behind plan over the last 7 days"
-  ]
+  "resolvedToday": []
 }
