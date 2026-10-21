@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-20",
+  "lastRun": "2026-10-21",
   "rulesVersion": 2,
   "lastDigest": "2026-10-19",
-  "dataCutoff": "2026-10-19",
+  "dataCutoff": "2026-10-20",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -24,13 +24,13 @@
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~19 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~18 days",
       "firstSeen": "2026-10-10",
       "lastPosted": "2026-10-19"
     },
     "lasting-mark-lip-stain|oos-soon:us:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~14 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~13 days",
       "firstSeen": "2026-10-12",
       "lastPosted": "2026-10-19"
     },
