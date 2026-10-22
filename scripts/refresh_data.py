@@ -842,6 +842,9 @@ def load_npd_oos():
 
 
 CALENDAR_PATH = ROOT / "config" / "launch_calendar.json"
+# The calendar syncs daily, so a snapshot older than this means the sync step
+# is failing — its continue-on-error keeps the run green either way.
+CALENDAR_STALE_DAYS = 3
 
 
 def load_launch_calendar():
@@ -1775,9 +1778,17 @@ def main():
             "mismatches": cal.get("mismatches") or [],
             "notLinked": cal.get("not_in_config") or [],
             "configWithoutLink": cal.get("config_without_asana_gid") or [],
+            "syncedAt": cal.get("synced_at"),
+            "staleAfterDays": CALENDAR_STALE_DAYS,
         }
         print(f"Upcoming sourced from the Asana calendar snapshot "
               f"({len(upcoming_out)} entries, {len(calendar_out['mismatches'])} date mismatches)")
+        synced = cal.get("synced_at")
+        age = (today - dt.date.fromisoformat(synced)).days if synced else None
+        if age is None or age > CALENDAR_STALE_DAYS:
+            print(f"::warning title=Launch calendar is stale::config/launch_calendar.json "
+                  f"was last synced {f'{age} days ago ({synced})' if synced else 'on an unknown date'}. "
+                  f"Check the 'Sync launch calendar from Asana' step.")
     else:
         upcoming_out = [
             {"name": u["name"], "launchDate": u["launch_date"],

@@ -28,10 +28,12 @@ Environment:
 """
 
 import argparse
+import datetime as dt
 import json
 import os
 import re
 import sys
+import traceback
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -231,6 +233,19 @@ def compare_with_config(entries):
 
 
 def main():
+    # Any failure here, not just the Asana fetch, used to exit with a bare
+    # traceback that continue-on-error hid behind a green run. A KeyError in
+    # the report printing kept the snapshot frozen for ten days that way.
+    try:
+        return run()
+    except Exception as e:
+        traceback.print_exc()
+        print(f"::warning title=Launch calendar sync failed::{type(e).__name__}: {e}. "
+              f"config/launch_calendar.json was not updated; launch dates may be stale.")
+        return 1
+
+
+def run():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--dry-run", action="store_true",
                     help="print the result without writing the snapshot")
@@ -267,6 +282,10 @@ def main():
             "Dates for launches that already have data are NOT auto-applied;",
             "they are reported in mismatches[] for a human to action.",
         ],
+        # Read by refresh_data.py and the dashboard to flag a stale snapshot.
+        # Without it a sync that keeps failing looks exactly like a calendar
+        # that simply has not changed.
+        "synced_at": dt.date.today().isoformat(),
         "asana_project_gid": PROJECT_GID,
         "asana_project_url": f"https://app.asana.com/0/{PROJECT_GID}/list",
         "entries": entries,
@@ -282,7 +301,7 @@ def main():
 
     print(f"Asana calendar: {len(entries)} launch entries")
     for m in mismatches:
-        scope = "TRACKED LAUNCH" if m["tracked"] else "upcoming"
+        scope = "TRACKED LAUNCH" if m["kind"] == "tracked" else "upcoming"
         print(f"  MISMATCH ({scope}): {m['name']} — config {m['config_launch_date']} "
               f"vs Asana {m['asana_launch_date']}")
     for e in unmatched:
