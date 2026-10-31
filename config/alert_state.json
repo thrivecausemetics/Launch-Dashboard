@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-10-30",
+  "lastRun": "2026-10-31",
   "rulesVersion": 2,
   "lastDigest": "2026-10-26",
-  "dataCutoff": "2026-10-29",
+  "dataCutoff": "2026-10-30",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -24,21 +24,15 @@
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~9 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~10 days",
       "firstSeen": "2026-10-26",
       "lastPosted": "2026-10-26"
     },
     "lasting-mark-lip-stain|oos-soon:us:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~6 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~7 days",
       "firstSeen": "2026-10-12",
       "lastPosted": "2026-10-26"
-    },
-    "eyeshadow-quads|oos-soon:ca:TVG6700": {
-      "rank": 1,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~18 days",
-      "firstSeen": "2026-10-29",
-      "lastPosted": "2026-10-29"
     },
     "psl-pout-hero|recent-behind:TBB013": {
       "rank": 3,
@@ -59,5 +53,7 @@
       "lastPosted": "2026-10-26"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~18 days"
+  ]
 }
