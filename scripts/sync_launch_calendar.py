@@ -282,7 +282,7 @@ def main():
 
     print(f"Asana calendar: {len(entries)} launch entries")
     for m in mismatches:
-        scope = "TRACKED LAUNCH" if m["tracked"] else "upcoming"
+        scope = "TRACKED LAUNCH" if m["kind"] == "tracked" else "upcoming"
         print(f"  MISMATCH ({scope}): {m['name']} — config {m['config_launch_date']} "
               f"vs Asana {m['asana_launch_date']}")
     for e in unmatched:

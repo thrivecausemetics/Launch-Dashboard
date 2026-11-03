@@ -1590,22 +1590,33 @@ def launch_gaps(cfg, cal, today):
     def age(d):
         return (today - dt.date.fromisoformat(d)).days
 
-    for e in (cal or {}).get("not_in_config") or []:
-        d = e.get("launch_date")
-        if not d or not (0 <= age(d) <= GAP_REPORT_DAYS):
-            continue
-        gaps.append({
-            "name": e["name"], "launchDate": d, "daysLate": age(d),
-            "source": "calendar", "asanaUrl": e.get("asana_url"),
-        })
-
+    # Config first, so a launch present in both places is reported once, from
+    # the entry that carries its id.
+    claimed = set()
     for lc in cfg["launches"]:
+        if lc.get("asana_gid"):
+            claimed.add(lc["asana_gid"])
         if lc["skus"] or not (0 <= age(lc["launch_date"]) <= GAP_REPORT_DAYS):
             continue
         gaps.append({
             "name": lc["name"], "launchDate": lc["launch_date"],
             "daysLate": age(lc["launch_date"]), "source": "config",
             "launchId": lc["id"], "asanaUrl": None,
+        })
+
+    # The snapshot's not_in_config is only as fresh as the last successful
+    # calendar sync, and that sync fails soft — on 3 Nov it had been crashing
+    # unnoticed for weeks. Anything config already accounts for is skipped
+    # here, so a stale list cannot resurrect a launch that was linked since.
+    for e in (cal or {}).get("not_in_config") or []:
+        d = e.get("launch_date")
+        if not d or not (0 <= age(d) <= GAP_REPORT_DAYS):
+            continue
+        if e.get("asana_gid") in claimed:
+            continue
+        gaps.append({
+            "name": e["name"], "launchDate": d, "daysLate": age(d),
+            "source": "calendar", "asanaUrl": e.get("asana_url"),
         })
 
     gaps.sort(key=lambda g: (-g["daysLate"], g["name"]))

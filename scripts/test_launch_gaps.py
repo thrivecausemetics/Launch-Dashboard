@@ -74,6 +74,32 @@ class CalendarEntries(unittest.TestCase):
         self.assertIn("asana.com", gaps[0]["asanaUrl"])
 
 
+class StaleSnapshot(unittest.TestCase):
+    """The calendar sync fails soft, so not_in_config can lag config by hours
+    or — as happened on 3 Nov, when a crash in the sync went unnoticed for
+    weeks — by much longer. A launch linked in config must not be reported as
+    untracked just because the snapshot has not caught up."""
+
+    def test_linked_and_populated_launch_is_not_reported(self):
+        cal = {"not_in_config": [entry("BEB Holiday", days_ago(1), asana_gid="123")]}
+        c = cfg({"id": "beb", "name": "BEB Holiday", "launch_date": days_ago(1),
+                 "asana_gid": "123", "skus": [{"sku": "TVG1"}]})
+        self.assertEqual(launch_gaps(c, cal, TODAY), [])
+
+    def test_linked_but_still_empty_launch_is_still_reported(self):
+        # Linking the Asana task is not the fix; adding SKUs is.
+        cal = {"not_in_config": [entry("BEB Holiday", days_ago(1), asana_gid="123")]}
+        c = cfg({"id": "beb", "name": "BEB Holiday", "launch_date": days_ago(1),
+                 "asana_gid": "123", "skus": []})
+        self.assertEqual(len(launch_gaps(c, cal, TODAY)), 1)
+
+    def test_unrelated_gid_is_unaffected(self):
+        cal = {"not_in_config": [entry("Other", days_ago(1), asana_gid="999")]}
+        c = cfg({"id": "beb", "name": "BEB", "launch_date": days_ago(1),
+                 "asana_gid": "123", "skus": [{"sku": "TVG1"}]})
+        self.assertEqual(len(launch_gaps(c, cal, TODAY)), 1)
+
+
 class ConfigEntries(unittest.TestCase):
     def test_config_launch_with_empty_skus_is_reported(self):
         gaps = launch_gaps(cfg(tracked("beb-holiday", days_ago(1), [])), {}, TODAY)
