@@ -10,6 +10,12 @@
   "lastDigest": "2026-11-02",
   "dataCutoff": "2026-11-02",
   "alerts": {
+    "gap|Holiday Phase 1: Ecomm Bag Drops": {
+      "rank": -1,
+      "title": "Holiday Phase 1: Ecomm Bag Drops is live but not on the dashboard",
+      "firstSeen": "2026-11-03",
+      "lastPosted": "2026-11-03"
+    },
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
       "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) is out of stock in Canada (.ca)",
