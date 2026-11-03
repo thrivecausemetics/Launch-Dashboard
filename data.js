@@ -218,93 +218,93 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Email": 189059,
-              "Paid Video": 613,
-              "Unassigned": 100081,
               "Paid Search": 134527,
-              "Direct": 279560,
-              "SMS": 96972,
-              "Organic Video": 114,
-              "Organic Social": 32182,
-              "Referral": 6859,
-              "Display": 1718,
-              "Paid Social": 634261,
-              "AI Assistant": 296,
-              "Organic Search": 29385,
               "Paid Other": 166315,
-              "Paid Shopping": 36421,
+              "Referral": 6859,
+              "Direct": 279560,
+              "Organic Search": 29385,
+              "Organic Social": 32182,
+              "AI Assistant": 296,
+              "Organic Video": 114,
+              "Email": 189059,
+              "Display": 1718,
               "Cross-network": 66453,
               "Organic Shopping": 9533,
+              "Paid Shopping": 36421,
+              "SMS": 96972,
+              "Paid Social": 634261,
+              "Unassigned": 100081,
+              "Paid Video": 613,
               "Affiliates": 3
             }
           },
           {
             "month": "Aug 2026",
             "chs": {
-              "Email": 527924,
-              "Unassigned": 354018,
-              "Cross-network": 172835,
-              "Direct": 604613,
-              "Organic Search": 92452,
-              "Referral": 18282,
-              "Display": 12664,
-              "Paid Other": 541415,
-              "Organic Social": 100150,
-              "SMS": 289131,
               "Paid Shopping": 117694,
+              "Organic Shopping": 32766,
               "Organic Video": 104,
-              "Paid Search": 364681,
               "Paid Video": 1999,
               "Paid Social": 1530493,
+              "SMS": 289131,
+              "Organic Social": 100150,
+              "Display": 12664,
+              "Referral": 18282,
+              "Paid Search": 364681,
+              "Paid Other": 541415,
+              "Cross-network": 172835,
+              "Organic Search": 92452,
+              "Direct": 604613,
+              "Unassigned": 354018,
+              "Email": 527924,
               "AI Assistant": 1959,
-              "Organic Shopping": 32766,
               "Affiliates": 11
             }
           },
           {
             "month": "Sep 2026",
             "chs": {
-              "Organic Video": 194,
-              "Paid Video": 2889,
-              "Referral": 18265,
-              "Organic Shopping": 48938,
-              "Display": 5981,
-              "Paid Shopping": 94490,
-              "Organic Search": 90187,
-              "AI Assistant": 2015,
-              "SMS": 291683,
-              "Paid Other": 488068,
-              "Unassigned": 330771,
-              "Paid Social": 1682636,
-              "Paid Search": 349895,
-              "Email": 404147,
-              "Organic Social": 84396,
-              "Direct": 615318,
               "Cross-network": 151323,
+              "Display": 5981,
+              "Email": 404147,
+              "Paid Video": 2889,
+              "Paid Shopping": 94490,
+              "Paid Search": 349895,
+              "Referral": 18265,
+              "Paid Social": 1682636,
+              "Paid Other": 488068,
+              "Direct": 615318,
+              "Organic Social": 84396,
+              "Organic Video": 194,
+              "Unassigned": 330771,
+              "AI Assistant": 2015,
+              "Organic Shopping": 48938,
+              "SMS": 291683,
+              "Organic Search": 90187,
               "Affiliates": 11
             }
           },
           {
             "month": "Oct 2026",
             "chs": {
-              "Email": 91272,
-              "SMS": 50837,
-              "Display": 531,
-              "Paid Shopping": 14993,
-              "Paid Social": 312761,
-              "Referral": 3235,
-              "Organic Shopping": 5550,
-              "Affiliates": 3,
-              "Unassigned": 66436,
-              "Organic Video": 62,
               "Direct": 134575,
-              "Cross-network": 10091,
-              "Organic Search": 46032,
-              "Paid Video": 244,
+              "Display": 531,
+              "SMS": 50837,
               "Organic Social": 9693,
               "Paid Other": 14086,
+              "Paid Video": 244,
               "AI Assistant": 560,
-              "Paid Search": 32782
+              "Paid Social": 312761,
+              "Unassigned": 66436,
+              "Paid Shopping": 14993,
+              "Organic Search": 46032,
+              "Organic Shopping": 5550,
+              "Email": 91272,
+              "Organic Video": 62,
+              "Referral": 3235,
+              "Cross-network": 10091,
+              "Paid Search": 32782,
+              "Affiliates": 3
             }
           }
         ]
@@ -2560,13 +2560,13 @@ window.DASHBOARD_DATA = {
           "pairs": 28
         },
         {
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2840",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 27
         },
         {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
           "pairs": 27
         },
         {
@@ -2590,13 +2590,13 @@ window.DASHBOARD_DATA = {
           "pairs": 16
         },
         {
-          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
-          "sku": "TVG280",
+          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
+          "sku": "TVG463",
           "pairs": 15
         },
         {
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
           "pairs": 15
         }
       ],
@@ -2621,14 +2621,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
+          "product": "Liquid Lash\u2122 Volumizer Mascara",
+          "sku": "TVG6750",
           "pairs": 12
         },
         {
           "primarySku": "TVG6700",
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6750",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
           "pairs": 12
         },
         {
@@ -2639,8 +2639,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG629",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 9
         },
         {
@@ -2651,14 +2651,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG629",
           "pairs": 9
         },
         {
           "primarySku": "TVG6700",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG510",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
           "pairs": 7
         },
         {
@@ -2693,32 +2693,32 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6720",
-          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG581",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG6720",
           "product": "Filtered Effects\u2122 Blurring Primer",
           "sku": "TVG348",
           "pairs": 9
         },
         {
           "primarySku": "TVG6720",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 8
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG581",
+          "pairs": 9
         },
         {
           "primarySku": "TVG6720",
-          "product": "Buildable Blur\u2122 HD Creaseless Concealer",
-          "sku": "TVG112",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 8
         },
         {
           "primarySku": "TVG6720",
           "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
           "sku": "TVG280",
+          "pairs": 8
+        },
+        {
+          "primarySku": "TVG6720",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG534",
           "pairs": 8
         }
       ],
@@ -2729,16 +2729,16 @@ window.DASHBOARD_DATA = {
         "newToCategory": 6702,
         "byVariant": [
           {
-            "sku": "TVG6700",
-            "name": "Warm Neutrals",
-            "newToCategory": 3550,
-            "existingCategory": 10856
-          },
-          {
             "sku": "TVG6720",
             "name": "Cool Neutrals",
             "newToCategory": 3614,
             "existingCategory": 11145
+          },
+          {
+            "sku": "TVG6700",
+            "name": "Warm Neutrals",
+            "newToCategory": 3550,
+            "existingCategory": 10856
           }
         ],
         "daily": [["2026-07-22", 52, 280], ["2026-07-23", 54, 262], ["2026-07-24", 57, 278], ["2026-07-25", 159, 890], ["2026-07-26", 130, 618], ["2026-07-27", 131, 562], ["2026-07-28", 145, 549], ["2026-07-29", 188, 808], ["2026-07-30", 101, 360], ["2026-07-31", 87, 407], ["2026-08-01", 96, 281], ["2026-08-02", 141, 488], ["2026-08-03", 92, 228], ["2026-08-04", 55, 247], ["2026-08-05", 72, 208], ["2026-08-06", 73, 236], ["2026-08-07", 92, 263], ["2026-08-08", 163, 556], ["2026-08-09", 185, 708], ["2026-08-10", 70, 241], ["2026-08-11", 76, 217], ["2026-08-12", 104, 254], ["2026-08-13", 76, 258], ["2026-08-14", 89, 238], ["2026-08-15", 76, 221], ["2026-08-16", 84, 235], ["2026-08-17", 92, 209], ["2026-08-18", 95, 275], ["2026-08-19", 108, 325], ["2026-08-20", 97, 245], ["2026-08-21", 86, 196], ["2026-08-22", 87, 226], ["2026-08-23", 86, 289], ["2026-08-24", 75, 240], ["2026-08-25", 94, 210], ["2026-08-26", 77, 194], ["2026-08-27", 73, 166], ["2026-08-28", 78, 190], ["2026-08-29", 83, 194], ["2026-08-30", 122, 278], ["2026-08-31", 80, 196], ["2026-09-01", 73, 173], ["2026-09-02", 100, 201], ["2026-09-03", 70, 163], ["2026-09-04", 80, 155], ["2026-09-05", 102, 270], ["2026-09-06", 88, 235], ["2026-09-07", 156, 407], ["2026-09-08", 46, 143], ["2026-09-09", 50, 151], ["2026-09-10", 54, 139], ["2026-09-11", 45, 133], ["2026-09-12", 67, 161], ["2026-09-13", 85, 206], ["2026-09-14", 30, 71], ["2026-09-15", 22, 54], ["2026-09-16", 9, 13], ["2026-09-17", 3, 0], ["2026-09-18", 15, 43], ["2026-09-19", 47, 156], ["2026-09-20", 86, 190], ["2026-09-21", 34, 100], ["2026-09-22", 28, 92], ["2026-09-23", 42, 128], ["2026-09-24", 29, 73], ["2026-09-25", 26, 81], ["2026-09-26", 41, 135], ["2026-09-27", 43, 125], ["2026-09-28", 30, 91], ["2026-09-29", 37, 117], ["2026-09-30", 48, 60], ["2026-10-01", 39, 79], ["2026-10-02", 21, 99], ["2026-10-03", 36, 133], ["2026-10-04", 45, 135], ["2026-10-05", 24, 65], ["2026-10-06", 26, 71], ["2026-10-07", 42, 128], ["2026-10-08", 64, 194], ["2026-10-09", 55, 137], ["2026-10-10", 61, 171], ["2026-10-11", 95, 287], ["2026-10-12", 27, 102], ["2026-10-13", 44, 73], ["2026-10-14", 43, 84], ["2026-10-15", 43, 95], ["2026-10-16", 29, 69], ["2026-10-17", 58, 90], ["2026-10-18", 72, 155], ["2026-10-19", 23, 61], ["2026-10-20", 35, 59], ["2026-10-21", 26, 55], ["2026-10-22", 36, 64], ["2026-10-23", 22, 66], ["2026-10-24", 35, 84], ["2026-10-25", 36, 95], ["2026-10-26", 31, 96], ["2026-10-27", 28, 70], ["2026-10-28", 47, 114], ["2026-10-29", 28, 61], ["2026-10-30", 18, 61], ["2026-10-31", 29, 96], ["2026-11-01", 39, 136], ["2026-11-02", 26, 54]]
@@ -2939,21 +2939,21 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
-              "SMS": 159594,
-              "Paid Social": 654769,
-              "Paid Video": 804,
-              "Referral": 8574,
-              "Unassigned": 160906,
-              "Organic Search": 43288,
-              "Organic Social": 44885,
-              "Paid Other": 241285,
-              "Organic Shopping": 16101,
-              "Display": 4128,
-              "AI Assistant": 1001,
-              "Email": 218275,
-              "Paid Search": 160424,
-              "Cross-network": 72895,
               "Paid Shopping": 47118,
+              "Referral": 8574,
+              "SMS": 159594,
+              "Paid Video": 804,
+              "Organic Social": 44885,
+              "Email": 218275,
+              "Cross-network": 72895,
+              "Paid Social": 654769,
+              "Paid Other": 241285,
+              "AI Assistant": 1001,
+              "Paid Search": 160424,
+              "Display": 4128,
+              "Organic Search": 43288,
+              "Organic Shopping": 16101,
+              "Unassigned": 160906,
               "Organic Video": 36,
               "Direct": 236348,
               "Affiliates": 5
@@ -2962,47 +2962,47 @@ window.DASHBOARD_DATA = {
           {
             "month": "Sep 2026",
             "chs": {
-              "Paid Video": 2889,
-              "Referral": 18265,
-              "Paid Shopping": 94490,
-              "Organic Shopping": 48938,
-              "AI Assistant": 2015,
-              "Display": 5981,
-              "Direct": 615318,
-              "Cross-network": 151323,
-              "Paid Other": 488068,
-              "Organic Search": 90187,
-              "Organic Video": 194,
-              "Unassigned": 330771,
-              "Email": 404147,
               "SMS": 291683,
-              "Paid Search": 349895,
+              "AI Assistant": 2015,
+              "Organic Video": 194,
+              "Email": 404147,
               "Paid Social": 1682636,
+              "Paid Search": 349895,
+              "Referral": 18265,
+              "Display": 5981,
               "Organic Social": 84396,
+              "Paid Other": 488068,
+              "Paid Video": 2889,
+              "Unassigned": 330771,
+              "Direct": 615318,
+              "Organic Shopping": 48938,
+              "Paid Shopping": 94490,
+              "Organic Search": 90187,
+              "Cross-network": 151323,
               "Affiliates": 11
             }
           },
           {
             "month": "Oct 2026",
             "chs": {
-              "Unassigned": 66436,
               "Paid Video": 244,
               "SMS": 50837,
-              "Paid Other": 14086,
-              "Organic Social": 9693,
-              "Referral": 3235,
-              "Direct": 134575,
-              "Affiliates": 3,
-              "Cross-network": 10091,
-              "AI Assistant": 560,
-              "Organic Search": 46032,
-              "Organic Video": 62,
+              "Paid Shopping": 14993,
               "Organic Shopping": 5550,
               "Paid Social": 312761,
-              "Paid Search": 32782,
+              "Organic Video": 62,
+              "Organic Social": 9693,
+              "Direct": 134575,
+              "Paid Other": 14086,
               "Email": 91272,
+              "Cross-network": 10091,
+              "AI Assistant": 560,
+              "Paid Search": 32782,
+              "Affiliates": 3,
+              "Organic Search": 46032,
+              "Referral": 3235,
               "Display": 531,
-              "Paid Shopping": 14993
+              "Unassigned": 66436
             }
           }
         ]
@@ -4863,8 +4863,8 @@ window.DASHBOARD_DATA = {
         "TVG7220": [["2026-08-18", 107], ["2026-08-19", 75], ["2026-08-20", 76], ["2026-08-21", 70], ["2026-08-22", 84], ["2026-08-23", 77], ["2026-08-24", 55], ["2026-08-25", 59], ["2026-08-26", 70], ["2026-08-27", 54], ["2026-08-28", 51], ["2026-08-29", 80], ["2026-08-30", 55], ["2026-08-31", 41], ["2026-09-01", 43], ["2026-09-02", 52], ["2026-09-03", 41], ["2026-09-04", 38], ["2026-09-05", 60], ["2026-09-06", 55], ["2026-09-07", 41], ["2026-09-08", 33], ["2026-09-09", 31], ["2026-09-10", 32], ["2026-09-11", 30], ["2026-09-12", 36], ["2026-09-13", 34], ["2026-09-14", 25], ["2026-09-15", 26], ["2026-09-16", 33], ["2026-09-17", 26], ["2026-09-18", 24], ["2026-09-19", 31], ["2026-09-20", 28], ["2026-09-21", 20], ["2026-09-22", 23], ["2026-09-23", 21], ["2026-09-24", 23], ["2026-09-25", 21], ["2026-09-26", 26], ["2026-09-27", 24], ["2026-09-28", 18], ["2026-09-29", 20], ["2026-09-30", 19], ["2026-10-01", 20], ["2026-10-02", 19], ["2026-10-03", 23], ["2026-10-04", 22], ["2026-10-05", 16], ["2026-10-06", 19], ["2026-10-07", 22], ["2026-10-08", 18], ["2026-10-09", 17], ["2026-10-10", 22], ["2026-10-11", 20], ["2026-10-12", 16], ["2026-10-13", 17], ["2026-10-14", 16], ["2026-10-15", 17], ["2026-10-16", 17], ["2026-10-17", 20], ["2026-10-18", 19], ["2026-10-19", 15], ["2026-10-20", 16], ["2026-10-21", 16], ["2026-10-22", 16], ["2026-10-23", 16], ["2026-10-24", 20], ["2026-10-25", 19], ["2026-10-26", 14], ["2026-10-27", 16], ["2026-10-28", 15], ["2026-10-29", 16], ["2026-10-30", 15], ["2026-10-31", 19], ["2026-11-01", 19], ["2026-11-02", 14]],
         "TVG7230": [["2026-08-18", 268], ["2026-08-19", 188], ["2026-08-20", 190], ["2026-08-21", 176], ["2026-08-22", 210], ["2026-08-23", 191], ["2026-08-24", 140], ["2026-08-25", 146], ["2026-08-26", 175], ["2026-08-27", 137], ["2026-08-28", 128], ["2026-08-29", 198], ["2026-08-30", 139], ["2026-08-31", 103], ["2026-09-01", 108], ["2026-09-02", 130], ["2026-09-03", 102], ["2026-09-04", 96], ["2026-09-05", 150], ["2026-09-06", 137], ["2026-09-07", 102], ["2026-09-08", 83], ["2026-09-09", 78], ["2026-09-10", 79], ["2026-09-11", 75], ["2026-09-12", 91], ["2026-09-13", 84], ["2026-09-14", 63], ["2026-09-15", 67], ["2026-09-16", 82], ["2026-09-17", 65], ["2026-09-18", 61], ["2026-09-19", 76], ["2026-09-20", 70], ["2026-09-21", 52], ["2026-09-22", 57], ["2026-09-23", 53], ["2026-09-24", 56], ["2026-09-25", 52], ["2026-09-26", 65], ["2026-09-27", 61], ["2026-09-28", 46], ["2026-09-29", 50], ["2026-09-30", 47], ["2026-10-01", 49], ["2026-10-02", 48], ["2026-10-03", 58], ["2026-10-04", 55], ["2026-10-05", 42], ["2026-10-06", 45], ["2026-10-07", 56], ["2026-10-08", 45], ["2026-10-09", 44], ["2026-10-10", 54], ["2026-10-11", 51], ["2026-10-12", 39], ["2026-10-13", 42], ["2026-10-14", 41], ["2026-10-15", 43], ["2026-10-16", 41], ["2026-10-17", 51], ["2026-10-18", 49], ["2026-10-19", 37], ["2026-10-20", 40], ["2026-10-21", 39], ["2026-10-22", 41], ["2026-10-23", 40], ["2026-10-24", 49], ["2026-10-25", 47], ["2026-10-26", 36], ["2026-10-27", 39], ["2026-10-28", 38], ["2026-10-29", 40], ["2026-10-30", 39], ["2026-10-31", 48], ["2026-11-01", 46], ["2026-11-02", 35]],
         "TVG7260": [["2026-08-18", 52], ["2026-08-19", 37], ["2026-08-20", 37], ["2026-08-21", 35], ["2026-08-22", 41], ["2026-08-23", 37], ["2026-08-24", 27], ["2026-08-25", 29], ["2026-08-26", 34], ["2026-08-27", 27], ["2026-08-28", 25], ["2026-08-29", 38], ["2026-08-30", 28], ["2026-08-31", 19], ["2026-09-01", 22], ["2026-09-02", 25], ["2026-09-03", 20], ["2026-09-04", 19], ["2026-09-05", 29], ["2026-09-06", 27], ["2026-09-07", 20], ["2026-09-08", 16], ["2026-09-09", 15], ["2026-09-10", 16], ["2026-09-11", 14], ["2026-09-12", 18], ["2026-09-13", 16], ["2026-09-14", 13], ["2026-09-15", 13], ["2026-09-16", 16], ["2026-09-17", 12], ["2026-09-18", 12], ["2026-09-19", 15], ["2026-09-20", 14], ["2026-09-21", 10], ["2026-09-22", 11], ["2026-09-23", 11], ["2026-09-24", 10], ["2026-09-25", 11], ["2026-09-26", 12], ["2026-09-27", 12], ["2026-09-28", 9], ["2026-09-29", 10], ["2026-09-30", 9], ["2026-10-01", 10], ["2026-10-02", 9], ["2026-10-03", 11], ["2026-10-04", 11], ["2026-10-05", 8], ["2026-10-06", 9], ["2026-10-07", 11], ["2026-10-08", 9], ["2026-10-09", 8], ["2026-10-10", 11], ["2026-10-11", 10], ["2026-10-12", 8], ["2026-10-13", 8], ["2026-10-14", 8], ["2026-10-15", 8], ["2026-10-16", 8], ["2026-10-17", 10], ["2026-10-18", 10], ["2026-10-19", 7], ["2026-10-20", 8], ["2026-10-21", 7], ["2026-10-22", 8], ["2026-10-23", 8], ["2026-10-24", 10], ["2026-10-25", 9], ["2026-10-26", 7], ["2026-10-27", 8], ["2026-10-28", 7], ["2026-10-29", 8], ["2026-10-30", 7], ["2026-10-31", 10], ["2026-11-01", 9], ["2026-11-02", 7]],
-        "TVG7240": [["2026-08-18", 268], ["2026-08-19", 188], ["2026-08-20", 190], ["2026-08-21", 176], ["2026-08-22", 210], ["2026-08-23", 191], ["2026-08-24", 140], ["2026-08-25", 146], ["2026-08-26", 175], ["2026-08-27", 137], ["2026-08-28", 128], ["2026-08-29", 198], ["2026-08-30", 139], ["2026-08-31", 103], ["2026-09-01", 108], ["2026-09-02", 130], ["2026-09-03", 102], ["2026-09-04", 96], ["2026-09-05", 150], ["2026-09-06", 137], ["2026-09-07", 102], ["2026-09-08", 83], ["2026-09-09", 78], ["2026-09-10", 79], ["2026-09-11", 75], ["2026-09-12", 91], ["2026-09-13", 84], ["2026-09-14", 63], ["2026-09-15", 67], ["2026-09-16", 82], ["2026-09-17", 65], ["2026-09-18", 61], ["2026-09-19", 76], ["2026-09-20", 70], ["2026-09-21", 52], ["2026-09-22", 57], ["2026-09-23", 53], ["2026-09-24", 56], ["2026-09-25", 52], ["2026-09-26", 65], ["2026-09-27", 61], ["2026-09-28", 46], ["2026-09-29", 50], ["2026-09-30", 47], ["2026-10-01", 49], ["2026-10-02", 48], ["2026-10-03", 58], ["2026-10-04", 55], ["2026-10-05", 42], ["2026-10-06", 45], ["2026-10-07", 56], ["2026-10-08", 45], ["2026-10-09", 44], ["2026-10-10", 54], ["2026-10-11", 51], ["2026-10-12", 39], ["2026-10-13", 42], ["2026-10-14", 41], ["2026-10-15", 43], ["2026-10-16", 41], ["2026-10-17", 51], ["2026-10-18", 49], ["2026-10-19", 37], ["2026-10-20", 40], ["2026-10-21", 39], ["2026-10-22", 41], ["2026-10-23", 40], ["2026-10-24", 49], ["2026-10-25", 47], ["2026-10-26", 36], ["2026-10-27", 39], ["2026-10-28", 38], ["2026-10-29", 40], ["2026-10-30", 39], ["2026-10-31", 48], ["2026-11-01", 46], ["2026-11-02", 35]],
-        "TVG7250": [["2026-08-18", 161], ["2026-08-19", 113], ["2026-08-20", 114], ["2026-08-21", 106], ["2026-08-22", 126], ["2026-08-23", 115], ["2026-08-24", 83], ["2026-08-25", 88], ["2026-08-26", 106], ["2026-08-27", 82], ["2026-08-28", 76], ["2026-08-29", 120], ["2026-08-30", 83], ["2026-08-31", 62], ["2026-09-01", 65], ["2026-09-02", 78], ["2026-09-03", 61], ["2026-09-04", 57], ["2026-09-05", 91], ["2026-09-06", 82], ["2026-09-07", 61], ["2026-09-08", 50], ["2026-09-09", 47], ["2026-09-10", 48], ["2026-09-11", 45], ["2026-09-12", 54], ["2026-09-13", 51], ["2026-09-14", 38], ["2026-09-15", 40], ["2026-09-16", 49], ["2026-09-17", 39], ["2026-09-18", 37], ["2026-09-19", 45], ["2026-09-20", 42], ["2026-09-21", 32], ["2026-09-22", 34], ["2026-09-23", 32], ["2026-09-24", 33], ["2026-09-25", 32], ["2026-09-26", 39], ["2026-09-27", 36], ["2026-09-28", 28], ["2026-09-29", 30], ["2026-09-30", 28], ["2026-10-01", 30], ["2026-10-02", 28], ["2026-10-03", 35], ["2026-10-04", 33], ["2026-10-05", 25], ["2026-10-06", 27], ["2026-10-07", 34], ["2026-10-08", 27], ["2026-10-09", 26], ["2026-10-10", 33], ["2026-10-11", 31], ["2026-10-12", 23], ["2026-10-13", 25], ["2026-10-14", 25], ["2026-10-15", 25], ["2026-10-16", 25], ["2026-10-17", 31], ["2026-10-18", 29], ["2026-10-19", 22], ["2026-10-20", 25], ["2026-10-21", 23], ["2026-10-22", 25], ["2026-10-23", 23], ["2026-10-24", 30], ["2026-10-25", 28], ["2026-10-26", 22], ["2026-10-27", 24], ["2026-10-28", 22], ["2026-10-29", 24], ["2026-10-30", 23], ["2026-10-31", 29], ["2026-11-01", 28], ["2026-11-02", 21]]
+        "TVG7250": [["2026-08-18", 161], ["2026-08-19", 113], ["2026-08-20", 114], ["2026-08-21", 106], ["2026-08-22", 126], ["2026-08-23", 115], ["2026-08-24", 83], ["2026-08-25", 88], ["2026-08-26", 106], ["2026-08-27", 82], ["2026-08-28", 76], ["2026-08-29", 120], ["2026-08-30", 83], ["2026-08-31", 62], ["2026-09-01", 65], ["2026-09-02", 78], ["2026-09-03", 61], ["2026-09-04", 57], ["2026-09-05", 91], ["2026-09-06", 82], ["2026-09-07", 61], ["2026-09-08", 50], ["2026-09-09", 47], ["2026-09-10", 48], ["2026-09-11", 45], ["2026-09-12", 54], ["2026-09-13", 51], ["2026-09-14", 38], ["2026-09-15", 40], ["2026-09-16", 49], ["2026-09-17", 39], ["2026-09-18", 37], ["2026-09-19", 45], ["2026-09-20", 42], ["2026-09-21", 32], ["2026-09-22", 34], ["2026-09-23", 32], ["2026-09-24", 33], ["2026-09-25", 32], ["2026-09-26", 39], ["2026-09-27", 36], ["2026-09-28", 28], ["2026-09-29", 30], ["2026-09-30", 28], ["2026-10-01", 30], ["2026-10-02", 28], ["2026-10-03", 35], ["2026-10-04", 33], ["2026-10-05", 25], ["2026-10-06", 27], ["2026-10-07", 34], ["2026-10-08", 27], ["2026-10-09", 26], ["2026-10-10", 33], ["2026-10-11", 31], ["2026-10-12", 23], ["2026-10-13", 25], ["2026-10-14", 25], ["2026-10-15", 25], ["2026-10-16", 25], ["2026-10-17", 31], ["2026-10-18", 29], ["2026-10-19", 22], ["2026-10-20", 25], ["2026-10-21", 23], ["2026-10-22", 25], ["2026-10-23", 23], ["2026-10-24", 30], ["2026-10-25", 28], ["2026-10-26", 22], ["2026-10-27", 24], ["2026-10-28", 22], ["2026-10-29", 24], ["2026-10-30", 23], ["2026-10-31", 29], ["2026-11-01", 28], ["2026-11-02", 21]],
+        "TVG7240": [["2026-08-18", 268], ["2026-08-19", 188], ["2026-08-20", 190], ["2026-08-21", 176], ["2026-08-22", 210], ["2026-08-23", 191], ["2026-08-24", 140], ["2026-08-25", 146], ["2026-08-26", 175], ["2026-08-27", 137], ["2026-08-28", 128], ["2026-08-29", 198], ["2026-08-30", 139], ["2026-08-31", 103], ["2026-09-01", 108], ["2026-09-02", 130], ["2026-09-03", 102], ["2026-09-04", 96], ["2026-09-05", 150], ["2026-09-06", 137], ["2026-09-07", 102], ["2026-09-08", 83], ["2026-09-09", 78], ["2026-09-10", 79], ["2026-09-11", 75], ["2026-09-12", 91], ["2026-09-13", 84], ["2026-09-14", 63], ["2026-09-15", 67], ["2026-09-16", 82], ["2026-09-17", 65], ["2026-09-18", 61], ["2026-09-19", 76], ["2026-09-20", 70], ["2026-09-21", 52], ["2026-09-22", 57], ["2026-09-23", 53], ["2026-09-24", 56], ["2026-09-25", 52], ["2026-09-26", 65], ["2026-09-27", 61], ["2026-09-28", 46], ["2026-09-29", 50], ["2026-09-30", 47], ["2026-10-01", 49], ["2026-10-02", 48], ["2026-10-03", 58], ["2026-10-04", 55], ["2026-10-05", 42], ["2026-10-06", 45], ["2026-10-07", 56], ["2026-10-08", 45], ["2026-10-09", 44], ["2026-10-10", 54], ["2026-10-11", 51], ["2026-10-12", 39], ["2026-10-13", 42], ["2026-10-14", 41], ["2026-10-15", 43], ["2026-10-16", 41], ["2026-10-17", 51], ["2026-10-18", 49], ["2026-10-19", 37], ["2026-10-20", 40], ["2026-10-21", 39], ["2026-10-22", 41], ["2026-10-23", 40], ["2026-10-24", 49], ["2026-10-25", 47], ["2026-10-26", 36], ["2026-10-27", 39], ["2026-10-28", 38], ["2026-10-29", 40], ["2026-10-30", 39], ["2026-10-31", 48], ["2026-11-01", 46], ["2026-11-02", 35]]
       },
       "pdp": [
         {
@@ -4940,13 +4940,13 @@ window.DASHBOARD_DATA = {
           "pairs": 63
         },
         {
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG629",
           "pairs": 57
         },
         {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG629",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 57
         },
         {
@@ -4997,13 +4997,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7220",
           "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG181",
+          "sku": "TVG179",
           "pairs": 8
         },
         {
           "primarySku": "TVG7220",
           "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
+          "sku": "TVG181",
           "pairs": 8
         },
         {
@@ -5032,8 +5032,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7220",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG426",
+          "product": "Infinity Waterproof\u2122 Liquid Eyeliner Pen",
+          "sku": "TVG326",
           "pairs": 5
         },
         {
@@ -5044,15 +5044,27 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7230",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
+          "pairs": 11
+        },
+        {
+          "primarySku": "TVG7230",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
           "pairs": 11
         },
         {
           "primarySku": "TVG7230",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
-          "pairs": 11
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
+          "pairs": 8
+        },
+        {
+          "primarySku": "TVG7230",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
+          "pairs": 8
         },
         {
           "primarySku": "TVG7230",
@@ -5064,18 +5076,6 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG7230",
           "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
           "sku": "TVG517",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG7230",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 8
-        },
-        {
-          "primarySku": "TVG7230",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
           "pairs": 8
         },
         {
@@ -5176,14 +5176,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7250",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG432",
           "pairs": 25
         },
         {
           "primarySku": "TVG7250",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 25
         },
         {
@@ -5206,14 +5206,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7250",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG5870",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 16
         },
         {
           "primarySku": "TVG7250",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG629",
           "pairs": 16
         },
         {
@@ -5230,14 +5230,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7260",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG181",
           "pairs": 8
         },
         {
           "primarySku": "TVG7260",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG181",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 8
         },
         {
@@ -5254,14 +5254,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7260",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG532",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG7260",
-          "product": "Focus Eyeshadow\u2122 Palette",
-          "sku": "TVG6740",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG577",
           "pairs": 5
         },
         {
@@ -5272,8 +5266,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7260",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG5870",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG532",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG7260",
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6740",
           "pairs": 5
         }
       ],
@@ -5512,70 +5512,70 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
-              "Organic Shopping": 8717,
-              "Display": 868,
-              "Paid Video": 338,
-              "Referral": 4167,
               "Paid Search": 63046,
-              "Organic Social": 21091,
-              "Direct": 89238,
               "Organic Search": 19384,
-              "SMS": 58835,
-              "AI Assistant": 406,
-              "Unassigned": 63475,
-              "Email": 94404,
-              "Paid Other": 113235,
-              "Affiliates": 1,
+              "Organic Shopping": 8717,
+              "Referral": 4167,
               "Organic Video": 11,
+              "Direct": 89238,
+              "Unassigned": 63475,
+              "Organic Social": 21091,
+              "Display": 868,
+              "SMS": 58835,
+              "Paid Other": 113235,
+              "Email": 94404,
+              "Affiliates": 1,
+              "Paid Social": 261401,
               "Cross-network": 33271,
+              "AI Assistant": 406,
               "Paid Shopping": 20023,
-              "Paid Social": 261401
+              "Paid Video": 338
             }
           },
           {
             "month": "Sep 2026",
             "chs": {
-              "Email": 404147,
+              "Organic Shopping": 48938,
               "Organic Social": 84396,
+              "Email": 404147,
+              "Referral": 18265,
+              "Organic Search": 90187,
+              "Paid Search": 349895,
+              "Direct": 615318,
+              "Organic Video": 194,
+              "Unassigned": 330771,
               "Paid Social": 1682636,
               "Paid Shopping": 94490,
-              "Paid Search": 349895,
-              "Cross-network": 151323,
               "Paid Video": 2889,
-              "Unassigned": 330771,
-              "Organic Shopping": 48938,
-              "Referral": 18265,
-              "AI Assistant": 2015,
-              "Organic Search": 90187,
+              "Display": 5981,
+              "Cross-network": 151323,
               "Paid Other": 488068,
               "SMS": 291683,
-              "Organic Video": 194,
-              "Direct": 615318,
-              "Display": 5981,
+              "AI Assistant": 2015,
               "Affiliates": 11
             }
           },
           {
             "month": "Oct 2026",
             "chs": {
-              "SMS": 50837,
-              "Referral": 3235,
-              "Paid Shopping": 14993,
-              "Email": 91272,
-              "Organic Shopping": 5550,
-              "Direct": 134575,
-              "Affiliates": 3,
-              "Organic Video": 62,
-              "Paid Social": 312761,
+              "Cross-network": 10091,
               "Organic Search": 46032,
               "Display": 531,
-              "AI Assistant": 560,
-              "Organic Social": 9693,
+              "Paid Social": 312761,
+              "SMS": 50837,
               "Paid Search": 32782,
+              "Referral": 3235,
+              "Affiliates": 3,
+              "Paid Video": 244,
+              "AI Assistant": 560,
+              "Paid Shopping": 14993,
+              "Direct": 134575,
               "Paid Other": 14086,
+              "Organic Shopping": 5550,
+              "Organic Video": 62,
               "Unassigned": 66436,
-              "Cross-network": 10091,
-              "Paid Video": 244
+              "Email": 91272,
+              "Organic Social": 9693
             }
           }
         ]
@@ -7168,8 +7168,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4880",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG282",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG182",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG514",
           "pairs": 2
         },
         {
@@ -7180,38 +7198,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 2
         },
         {
           "primarySku": "TVG4880",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
+          "sku": "TVG353",
           "pairs": 2
         },
         {
           "primarySku": "TVG4880",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG299",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
-          "sku": "TVG280",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
+          "sku": "TVG517",
           "pairs": 2
         },
         {
@@ -7247,13 +7247,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG4900",
           "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG181",
+          "sku": "TVG179",
           "pairs": 19
         },
         {
           "primarySku": "TVG4900",
           "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
+          "sku": "TVG181",
           "pairs": 19
         },
         {
@@ -7294,14 +7294,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4920",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG5870",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 6
         },
         {
           "primarySku": "TVG4920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG5870",
           "pairs": 6
         },
         {
@@ -7312,14 +7312,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4920",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG448",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
           "pairs": 5
         },
         {
           "primarySku": "TVG4920",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG448",
           "pairs": 5
         },
         {
@@ -7372,14 +7372,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4961",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG425",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6620",
           "pairs": 28
         },
         {
           "primarySku": "TVG4961",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG425",
           "pairs": 28
         },
         {
@@ -7408,18 +7408,6 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7150",
-          "product": "Infinity Waterproof\u2122 Liquid Eyeliner Pen",
-          "sku": "TVG315",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG7150",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG093",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG7150",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG6380",
           "pairs": 4
@@ -7432,9 +7420,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7150",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 3
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG093",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG7150",
+          "product": "Infinity Waterproof\u2122 Liquid Eyeliner Pen",
+          "sku": "TVG315",
+          "pairs": 4
         },
         {
           "primarySku": "TVG7150",
@@ -7444,14 +7438,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7150",
-          "product": "Liquid Lash\u2122 Extensions Lash and Brow Serum",
-          "sku": "TVG268",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7150",
+          "product": "Empowershine\u2122 Satin Lip Cream",
+          "sku": "TVG5950",
           "pairs": 2
         },
         {
           "primarySku": "TVG7150",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG515",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG205",
           "pairs": 2
         },
         {
@@ -7498,6 +7498,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7160",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG7160",
           "product": "Liquid Lash\u2122 Volumizer Mascara",
           "sku": "TVG6750",
           "pairs": 5
@@ -7505,13 +7511,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG7160",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG7160",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
+          "sku": "TVG534",
           "pairs": 4
         },
         {
@@ -7582,36 +7582,6 @@ window.DASHBOARD_DATA = {
         "newToCategory": 9796,
         "byVariant": [
           {
-            "sku": "TVG4920",
-            "name": "Tessa",
-            "newToCategory": 799,
-            "existingCategory": 689
-          },
-          {
-            "sku": "TVG4900",
-            "name": "Joy",
-            "newToCategory": 1699,
-            "existingCategory": 1689
-          },
-          {
-            "sku": "TVG7150",
-            "name": "Mackenzie",
-            "newToCategory": 673,
-            "existingCategory": 587
-          },
-          {
-            "sku": "TVG4880",
-            "name": "Dionne",
-            "newToCategory": 275,
-            "existingCategory": 448
-          },
-          {
-            "sku": "TVG4961",
-            "name": "Kaisa",
-            "newToCategory": 5419,
-            "existingCategory": 4217
-          },
-          {
             "sku": "TVG7170",
             "name": "Nina",
             "newToCategory": 1514,
@@ -7622,6 +7592,36 @@ window.DASHBOARD_DATA = {
             "name": "Allison",
             "newToCategory": 662,
             "existingCategory": 705
+          },
+          {
+            "sku": "TVG4880",
+            "name": "Dionne",
+            "newToCategory": 275,
+            "existingCategory": 448
+          },
+          {
+            "sku": "TVG7150",
+            "name": "Mackenzie",
+            "newToCategory": 673,
+            "existingCategory": 587
+          },
+          {
+            "sku": "TVG4900",
+            "name": "Joy",
+            "newToCategory": 1699,
+            "existingCategory": 1689
+          },
+          {
+            "sku": "TVG4920",
+            "name": "Tessa",
+            "newToCategory": 799,
+            "existingCategory": 689
+          },
+          {
+            "sku": "TVG4961",
+            "name": "Kaisa",
+            "newToCategory": 5419,
+            "existingCategory": 4217
           }
         ],
         "daily": [["2026-08-26", 244, 248], ["2026-08-27", 192, 150], ["2026-08-28", 174, 127], ["2026-08-29", 172, 156], ["2026-08-30", 291, 268], ["2026-08-31", 197, 135], ["2026-09-01", 138, 129], ["2026-09-02", 167, 128], ["2026-09-03", 120, 110], ["2026-09-04", 120, 119], ["2026-09-05", 226, 188], ["2026-09-06", 338, 294], ["2026-09-07", 385, 352], ["2026-09-08", 159, 78], ["2026-09-09", 110, 69], ["2026-09-10", 150, 115], ["2026-09-11", 148, 91], ["2026-09-12", 144, 97], ["2026-09-13", 201, 174], ["2026-09-14", 112, 91], ["2026-09-15", 143, 79], ["2026-09-16", 139, 94], ["2026-09-17", 90, 82], ["2026-09-18", 114, 82], ["2026-09-19", 133, 102], ["2026-09-20", 215, 201], ["2026-09-21", 102, 66], ["2026-09-22", 105, 121], ["2026-09-23", 155, 139], ["2026-09-24", 117, 101], ["2026-09-25", 109, 99], ["2026-09-26", 229, 179], ["2026-09-27", 200, 137], ["2026-09-28", 109, 97], ["2026-09-29", 153, 147], ["2026-09-30", 114, 93], ["2026-10-01", 109, 92], ["2026-10-02", 129, 79], ["2026-10-03", 118, 105], ["2026-10-04", 129, 161], ["2026-10-05", 74, 89], ["2026-10-06", 84, 107], ["2026-10-07", 108, 103], ["2026-10-08", 132, 93], ["2026-10-09", 104, 80], ["2026-10-10", 237, 235], ["2026-10-11", 456, 374], ["2026-10-12", 91, 98], ["2026-10-13", 76, 68], ["2026-10-14", 103, 104], ["2026-10-15", 93, 75], ["2026-10-16", 96, 65], ["2026-10-17", 154, 177], ["2026-10-18", 184, 167], ["2026-10-19", 79, 76], ["2026-10-20", 81, 93], ["2026-10-21", 77, 78], ["2026-10-22", 84, 74], ["2026-10-23", 97, 97], ["2026-10-24", 172, 176], ["2026-10-25", 167, 129], ["2026-10-26", 132, 117], ["2026-10-27", 92, 102], ["2026-10-28", 106, 80], ["2026-10-29", 81, 89], ["2026-10-30", 75, 87], ["2026-10-31", 92, 103], ["2026-11-01", 138, 148], ["2026-11-02", 90, 100]]
@@ -7822,47 +7822,47 @@ window.DASHBOARD_DATA = {
           {
             "month": "Sep 2026",
             "chs": {
-              "Organic Shopping": 47994,
-              "SMS": 288317,
-              "Organic Search": 87115,
-              "Paid Shopping": 91279,
-              "Organic Video": 189,
-              "Organic Social": 78671,
-              "Display": 5803,
-              "Email": 396417,
-              "Paid Search": 339126,
               "Cross-network": 146875,
-              "Paid Video": 2821,
-              "Referral": 17774,
               "Direct": 599641,
+              "Paid Video": 2821,
               "Paid Other": 453819,
               "AI Assistant": 1944,
-              "Paid Social": 1636830,
+              "Organic Shopping": 47994,
+              "Referral": 17774,
+              "Organic Search": 87115,
               "Unassigned": 320914,
+              "SMS": 288317,
+              "Paid Social": 1636830,
+              "Organic Video": 189,
+              "Paid Shopping": 91279,
+              "Paid Search": 339126,
+              "Organic Social": 78671,
+              "Email": 396417,
+              "Display": 5803,
               "Affiliates": 11
             }
           },
           {
             "month": "Oct 2026",
             "chs": {
+              "SMS": 50837,
+              "Paid Video": 244,
+              "Organic Shopping": 5550,
+              "Paid Other": 14086,
+              "Cross-network": 10091,
+              "AI Assistant": 560,
+              "Affiliates": 3,
+              "Direct": 134575,
+              "Email": 91272,
+              "Organic Video": 62,
               "Paid Search": 32782,
               "Organic Search": 46032,
-              "Display": 531,
-              "Organic Social": 9693,
+              "Referral": 3235,
               "Paid Social": 312761,
               "Unassigned": 66436,
               "Paid Shopping": 14993,
-              "Organic Shopping": 5550,
-              "Organic Video": 62,
-              "Referral": 3235,
-              "Paid Video": 244,
-              "Cross-network": 10091,
-              "Affiliates": 3,
-              "Email": 91272,
-              "SMS": 50837,
-              "Direct": 134575,
-              "AI Assistant": 560,
-              "Paid Other": 14086
+              "Organic Social": 9693,
+              "Display": 531
             }
           }
         ]
@@ -7909,16 +7909,6 @@ window.DASHBOARD_DATA = {
           "cvr": 0.99
         },
         {
-          "label": "Pout Hero Liquid Balm Lip Treatmen (com)",
-          "page": "thrivecausemetics.com/products/pout-hero-liquid-balm-lip-treatment",
-          "pageviews": 2,
-          "sessions": 2,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
           "label": "Pout Hero Exfoliating Lip Scrub 1 (ca)",
           "page": "thrivecausemetics.ca/products/pout-hero-exfoliating-lip-scrub-1",
           "pageviews": 2,
@@ -7929,8 +7919,28 @@ window.DASHBOARD_DATA = {
           "cvr": 0.0
         },
         {
-          "label": "Pout Hero L= (com)",
-          "page": "thrivecausemetics.com/products/pout-hero-l=",
+          "label": "Pout Hero Liquid Balm Lip Treatmen (com)",
+          "page": "thrivecausemetics.com/products/pout-hero-liquid-balm-lip-treatment",
+          "pageviews": 2,
+          "sessions": 2,
+          "txns": 0,
+          "rev": 0.0,
+          "eng": 0.0,
+          "cvr": 0.0
+        },
+        {
+          "label": "Pumpkin Spice Creamer (com)",
+          "page": "thrivecausemetics.com/products/pumpkin-spice-creamer",
+          "pageviews": 2,
+          "sessions": 1,
+          "txns": 2,
+          "rev": 285.56,
+          "eng": 100.0,
+          "cvr": 200.0
+        },
+        {
+          "label": "Pout Hero= (com)",
+          "page": "thrivecausemetics.com/products/pout-hero=",
           "pageviews": 1,
           "sessions": 1,
           "txns": 0,
@@ -7941,16 +7951,6 @@ window.DASHBOARD_DATA = {
         {
           "label": "Pout Hero Liquid Balm Treatment (com)",
           "page": "thrivecausemetics.com/en-gb/products/pout-hero-liquid-balm-treatment",
-          "pageviews": 1,
-          "sessions": 1,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
-        },
-        {
-          "label": "Pout Hero Liquid B= (ca)",
-          "page": "thrivecausemetics.ca/products/pout-hero-liquid-b=",
           "pageviews": 1,
           "sessions": 1,
           "txns": 0,
@@ -9291,23 +9291,23 @@ window.DASHBOARD_DATA = {
           "pairs": 8
         },
         {
-          "product": "Overnight Sensation\u2122 Hydrating Sleep Mask",
-          "sku": "TBB019",
-          "pairs": 7
-        },
-        {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
           "pairs": 7
         },
         {
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "Overnight Sensation\u2122 Hydrating Sleep Mask",
+          "sku": "TBB019",
+          "pairs": 7
+        },
+        {
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
           "pairs": 6
         },
         {
-          "product": "Pout Hero\u2122 Liquid Balm Lip Treatment",
-          "sku": "TBB028",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG289",
           "pairs": 6
         }
       ],
@@ -9350,26 +9350,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TBB013",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TBB013",
           "product": "Overnight Sensation\u2122 Hydrating Sleep Mask",
           "sku": "TBB019",
           "pairs": 7
         },
         {
           "primarySku": "TBB013",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG5870",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
+          "pairs": 7
+        },
+        {
+          "primarySku": "TBB013",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
           "pairs": 6
         },
         {
           "primarySku": "TBB013",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG289",
           "pairs": 6
         }
       ],
@@ -9584,22 +9584,22 @@ window.DASHBOARD_DATA = {
           {
             "month": "Sep 2026",
             "chs": {
-              "Paid Other": 62126,
-              "Cross-network": 47215,
-              "SMS": 122575,
               "Email": 123735,
-              "Organic Shopping": 11146,
-              "Organic Social": 13976,
               "Paid Shopping": 30071,
-              "Referral": 5102,
-              "Display": 1599,
-              "Direct": 165787,
-              "AI Assistant": 632,
-              "Paid Search": 86439,
-              "Paid Social": 449198,
-              "Paid Video": 700,
-              "Organic Video": 135,
               "Unassigned": 104199,
+              "Display": 1599,
+              "Paid Social": 449198,
+              "Paid Search": 86439,
+              "Referral": 5102,
+              "Paid Other": 62126,
+              "Organic Shopping": 11146,
+              "Cross-network": 47215,
+              "Organic Social": 13976,
+              "AI Assistant": 632,
+              "Organic Video": 135,
+              "SMS": 122575,
+              "Paid Video": 700,
+              "Direct": 165787,
               "Organic Search": 21897,
               "Affiliates": 1
             }
@@ -9608,23 +9608,23 @@ window.DASHBOARD_DATA = {
             "month": "Oct 2026",
             "chs": {
               "AI Assistant": 560,
-              "SMS": 50837,
-              "Referral": 3235,
-              "Paid Other": 14086,
-              "Organic Shopping": 5550,
-              "Organic Social": 9693,
-              "Email": 91272,
-              "Paid Social": 312761,
-              "Paid Video": 244,
-              "Display": 531,
-              "Unassigned": 66436,
-              "Direct": 134575,
-              "Paid Search": 32782,
+              "Cross-network": 10091,
               "Paid Shopping": 14993,
-              "Organic Search": 46032,
+              "Display": 531,
+              "Organic Shopping": 5550,
+              "Paid Social": 312761,
               "Affiliates": 3,
+              "Direct": 134575,
+              "Paid Other": 14086,
               "Organic Video": 62,
-              "Cross-network": 10091
+              "Referral": 3235,
+              "SMS": 50837,
+              "Email": 91272,
+              "Organic Search": 46032,
+              "Unassigned": 66436,
+              "Organic Social": 9693,
+              "Paid Video": 244,
+              "Paid Search": 32782
             }
           }
         ]
@@ -10797,8 +10797,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG217",
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6750",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
           "pairs": 6
         },
         {
@@ -10827,26 +10827,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG407",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG6380",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG407",
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
           "sku": "TVG478",
           "pairs": 9
         },
         {
           "primarySku": "TVG407",
-          "product": "Focus Eyeshadow\u2122 Palette",
-          "sku": "TVG6740",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 9
+        },
+        {
+          "primarySku": "TVG407",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
           "pairs": 6
         },
         {
           "primarySku": "TVG407",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG565",
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6740",
           "pairs": 6
         },
         {
@@ -10857,8 +10857,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG407",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG565",
           "pairs": 6
         },
         {
@@ -10881,14 +10881,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4560",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG6380",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG357",
           "pairs": 2
         },
         {
           "primarySku": "TVG4560",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
           "pairs": 2
         },
         {
@@ -10899,14 +10899,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4560",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG4560",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2840",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 1
         },
         {
@@ -10917,8 +10911,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4560",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG449",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG4560",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
           "pairs": 1
         },
         {
@@ -10953,32 +10953,32 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4920",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG449",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 2
         },
         {
           "primarySku": "TVG4920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG361",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG461",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4920",
-          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
-          "sku": "TVG237",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG425",
           "pairs": 2
         },
         {
           "primarySku": "TVG4920",
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "sku": "TVG438",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4920",
+          "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
+          "sku": "TVG522",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4920",
+          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
+          "sku": "TVG237",
           "pairs": 2
         },
         {
@@ -11019,14 +11019,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5870",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG514",
           "pairs": 37
         },
         {
           "primarySku": "TVG5870",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG514",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
           "pairs": 37
         },
         {
@@ -11086,7 +11086,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG629",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG351",
+          "sku": "TVG357",
           "pairs": 10
         },
         {
@@ -11098,7 +11098,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG629",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG357",
+          "sku": "TVG351",
           "pairs": 10
         }
       ],
@@ -11476,7 +11476,7 @@ window.DASHBOARD_DATA = {
             "detail": "1,423 units vs 923 planned (154%)."
           },
           {
-            "key": "pairing:TVG2840",
+            "key": "pairing:TVG2990",
             "title": "Most common basket pairing: Liquid Lash\u2122 Extensions Tubing Mascara",
             "detail": "14 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
           },
@@ -11940,12 +11940,12 @@ window.DASHBOARD_DATA = {
       "crossSell": [
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2840",
+          "sku": "TVG2990",
           "pairs": 14
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
+          "sku": "TVG2840",
           "pairs": 14
         },
         {
@@ -11979,13 +11979,13 @@ window.DASHBOARD_DATA = {
           "pairs": 7
         },
         {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 6
         },
         {
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG350",
           "pairs": 6
         }
       ],
@@ -12001,6 +12001,12 @@ window.DASHBOARD_DATA = {
           "product": "Focus Eyeshadow\u2122 Palette",
           "sku": "TVG6700",
           "pairs": 4
+        },
+        {
+          "primarySku": "TVG6730",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG350",
+          "pairs": 3
         },
         {
           "primarySku": "TVG6730",
@@ -12028,26 +12034,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6730",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG6730",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6730",
           "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
-          "sku": "TVG579",
+          "sku": "TVG577",
           "pairs": 2
         },
         {
           "primarySku": "TVG6730",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG351",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6730",
+          "product": "Defying Gravity\u2122 Deep Hydration Moisturizer",
+          "sku": "TBB005",
           "pairs": 2
         },
         {
@@ -12076,14 +12076,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6740",
-          "product": "Focus Eyeshadow\u2122 Palette",
-          "sku": "TVG6720",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
           "pairs": 7
         },
         {
           "primarySku": "TVG6740",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6720",
           "pairs": 7
         },
         {
@@ -12095,7 +12095,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6740",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG514",
+          "sku": "TVG349",
           "pairs": 5
         },
         {
@@ -15884,14 +15884,14 @@ window.DASHBOARD_DATA = {
       "planBySku": {
         "TVG5950": [["2026-05-01", 411], ["2026-05-02", 433], ["2026-05-03", 419], ["2026-05-04", 244], ["2026-05-05", 176], ["2026-05-06", 173], ["2026-05-07", 227], ["2026-05-08", 195], ["2026-05-09", 280], ["2026-05-10", 284], ["2026-05-11", 134], ["2026-05-12", 101], ["2026-05-13", 105], ["2026-05-14", 144], ["2026-05-15", 129], ["2026-05-16", 149], ["2026-05-17", 158], ["2026-05-18", 100], ["2026-05-19", 79], ["2026-05-20", 84], ["2026-05-21", 119], ["2026-05-22", 109], ["2026-05-23", 129], ["2026-05-24", 139], ["2026-05-25", 90], ["2026-05-26", 72], ["2026-05-27", 78], ["2026-05-28", 111], ["2026-05-29", 103], ["2026-05-30", 123], ["2026-05-31", 134], ["2026-06-01", 87], ["2026-06-02", 70], ["2026-06-03", 76], ["2026-06-04", 109], ["2026-06-05", 101], ["2026-06-06", 157], ["2026-06-07", 172], ["2026-06-08", 86], ["2026-06-09", 69], ["2026-06-10", 75], ["2026-06-11", 108], ["2026-06-12", 101], ["2026-06-13", 121], ["2026-06-14", 132], ["2026-06-15", 86], ["2026-06-16", 69], ["2026-06-17", 75], ["2026-06-18", 108], ["2026-06-19", 101], ["2026-06-20", 156], ["2026-06-21", 171], ["2026-06-22", 86], ["2026-06-23", 69], ["2026-06-24", 75], ["2026-06-25", 108], ["2026-06-26", 101], ["2026-06-27", 120], ["2026-06-28", 131], ["2026-06-29", 86], ["2026-06-30", 69], ["2026-07-01", 75], ["2026-07-02", 108], ["2026-07-03", 131], ["2026-07-04", 156], ["2026-07-05", 171], ["2026-07-06", 86], ["2026-07-07", 69], ["2026-07-08", 75], ["2026-07-09", 108], ["2026-07-10", 101], ["2026-07-11", 120], ["2026-07-12", 131], ["2026-07-13", 86], ["2026-07-14", 69], ["2026-07-15", 75], ["2026-07-16", 108], ["2026-07-17", 101], ["2026-07-18", 156], ["2026-07-19", 171], ["2026-07-20", 86], ["2026-07-21", 69], ["2026-07-22", 97], ["2026-07-23", 108], ["2026-07-24", 101], ["2026-07-25", 120], ["2026-07-26", 131], ["2026-07-27", 86], ["2026-07-28", 69], ["2026-07-29", 75], ["2026-07-30", 108], ["2026-07-31", 101], ["2026-08-01", 156], ["2026-08-02", 171], ["2026-08-03", 86], ["2026-08-04", 69], ["2026-08-05", 75], ["2026-08-06", 108], ["2026-08-07", 101], ["2026-08-08", 120], ["2026-08-09", 131], ["2026-08-10", 86], ["2026-08-11", 69], ["2026-08-12", 75], ["2026-08-13", 108], ["2026-08-14", 101], ["2026-08-15", 156], ["2026-08-16", 171], ["2026-08-17", 86], ["2026-08-18", 69], ["2026-08-19", 75], ["2026-08-20", 108], ["2026-08-21", 101], ["2026-08-22", 120], ["2026-08-23", 131], ["2026-08-24", 86], ["2026-08-25", 89], ["2026-08-26", 75], ["2026-08-27", 108], ["2026-08-28", 101]],
         "TVG5960": [["2026-05-01", 384], ["2026-05-02", 375], ["2026-05-03", 346], ["2026-05-04", 169], ["2026-05-05", 157], ["2026-05-06", 133], ["2026-05-07", 152], ["2026-05-08", 135], ["2026-05-09", 185], ["2026-05-10", 183], ["2026-05-11", 74], ["2026-05-12", 75], ["2026-05-13", 69], ["2026-05-14", 84], ["2026-05-15", 81], ["2026-05-16", 91], ["2026-05-17", 96], ["2026-05-18", 54], ["2026-05-19", 57], ["2026-05-20", 55], ["2026-05-21", 70], ["2026-05-22", 69], ["2026-05-23", 80], ["2026-05-24", 87], ["2026-05-25", 49], ["2026-05-26", 53], ["2026-05-27", 52], ["2026-05-28", 67], ["2026-05-29", 67], ["2026-05-30", 78], ["2026-05-31", 85], ["2026-06-01", 48], ["2026-06-02", 52], ["2026-06-03", 51], ["2026-06-04", 66], ["2026-06-05", 66], ["2026-06-06", 100], ["2026-06-07", 109], ["2026-06-08", 48], ["2026-06-09", 52], ["2026-06-10", 51], ["2026-06-11", 66], ["2026-06-12", 66], ["2026-06-13", 77], ["2026-06-14", 84], ["2026-06-15", 48], ["2026-06-16", 52], ["2026-06-17", 51], ["2026-06-18", 66], ["2026-06-19", 66], ["2026-06-20", 100], ["2026-06-21", 109], ["2026-06-22", 48], ["2026-06-23", 52], ["2026-06-24", 51], ["2026-06-25", 66], ["2026-06-26", 66], ["2026-06-27", 77], ["2026-06-28", 84], ["2026-06-29", 48], ["2026-06-30", 52], ["2026-07-01", 51], ["2026-07-02", 66], ["2026-07-03", 86], ["2026-07-04", 100], ["2026-07-05", 109], ["2026-07-06", 48], ["2026-07-07", 52], ["2026-07-08", 51], ["2026-07-09", 66], ["2026-07-10", 66], ["2026-07-11", 77], ["2026-07-12", 84], ["2026-07-13", 48], ["2026-07-14", 52], ["2026-07-15", 51], ["2026-07-16", 66], ["2026-07-17", 66], ["2026-07-18", 100], ["2026-07-19", 109], ["2026-07-20", 48], ["2026-07-21", 52], ["2026-07-22", 66], ["2026-07-23", 66], ["2026-07-24", 66], ["2026-07-25", 77], ["2026-07-26", 84], ["2026-07-27", 48], ["2026-07-28", 52], ["2026-07-29", 51], ["2026-07-30", 66], ["2026-07-31", 66], ["2026-08-01", 100], ["2026-08-02", 109], ["2026-08-03", 48], ["2026-08-04", 52], ["2026-08-05", 51], ["2026-08-06", 66], ["2026-08-07", 66], ["2026-08-08", 77], ["2026-08-09", 84], ["2026-08-10", 48], ["2026-08-11", 52], ["2026-08-12", 51], ["2026-08-13", 66], ["2026-08-14", 66], ["2026-08-15", 100], ["2026-08-16", 109], ["2026-08-17", 48], ["2026-08-18", 52], ["2026-08-19", 51], ["2026-08-20", 66], ["2026-08-21", 66], ["2026-08-22", 77], ["2026-08-23", 84], ["2026-08-24", 48], ["2026-08-25", 67], ["2026-08-26", 51], ["2026-08-27", 66], ["2026-08-28", 66]],
+        "TVG5920": [["2026-05-01", 380], ["2026-05-02", 389], ["2026-05-03", 330], ["2026-05-04", 176], ["2026-05-05", 148], ["2026-05-06", 126], ["2026-05-07", 155], ["2026-05-08", 118], ["2026-05-09", 172], ["2026-05-10", 161], ["2026-05-11", 74], ["2026-05-12", 68], ["2026-05-13", 64], ["2026-05-14", 87], ["2026-05-15", 72], ["2026-05-16", 88], ["2026-05-17", 89], ["2026-05-18", 56], ["2026-05-19", 55], ["2026-05-20", 54], ["2026-05-21", 75], ["2026-05-22", 64], ["2026-05-23", 80], ["2026-05-24", 82], ["2026-05-25", 53], ["2026-05-26", 52], ["2026-05-27", 52], ["2026-05-28", 73], ["2026-05-29", 63], ["2026-05-30", 79], ["2026-05-31", 81], ["2026-06-01", 52], ["2026-06-02", 52], ["2026-06-03", 52], ["2026-06-04", 73], ["2026-06-05", 63], ["2026-06-06", 102], ["2026-06-07", 105], ["2026-06-08", 52], ["2026-06-09", 52], ["2026-06-10", 51], ["2026-06-11", 73], ["2026-06-12", 63], ["2026-06-13", 79], ["2026-06-14", 81], ["2026-06-15", 52], ["2026-06-16", 52], ["2026-06-17", 51], ["2026-06-18", 73], ["2026-06-19", 63], ["2026-06-20", 102], ["2026-06-21", 105], ["2026-06-22", 52], ["2026-06-23", 52], ["2026-06-24", 51], ["2026-06-25", 73], ["2026-06-26", 63], ["2026-06-27", 79], ["2026-06-28", 81], ["2026-06-29", 52], ["2026-06-30", 52], ["2026-07-01", 51], ["2026-07-02", 73], ["2026-07-03", 81], ["2026-07-04", 102], ["2026-07-05", 105], ["2026-07-06", 52], ["2026-07-07", 52], ["2026-07-08", 51], ["2026-07-09", 73], ["2026-07-10", 63], ["2026-07-11", 79], ["2026-07-12", 81], ["2026-07-13", 52], ["2026-07-14", 52], ["2026-07-15", 51], ["2026-07-16", 73], ["2026-07-17", 63], ["2026-07-18", 102], ["2026-07-19", 105], ["2026-07-20", 52], ["2026-07-21", 52], ["2026-07-22", 67], ["2026-07-23", 73], ["2026-07-24", 63], ["2026-07-25", 79], ["2026-07-26", 81], ["2026-07-27", 52], ["2026-07-28", 52], ["2026-07-29", 51], ["2026-07-30", 73], ["2026-07-31", 63], ["2026-08-01", 102], ["2026-08-02", 105], ["2026-08-03", 52], ["2026-08-04", 52], ["2026-08-05", 51], ["2026-08-06", 73], ["2026-08-07", 63], ["2026-08-08", 79], ["2026-08-09", 81], ["2026-08-10", 52], ["2026-08-11", 52], ["2026-08-12", 51], ["2026-08-13", 73], ["2026-08-14", 63], ["2026-08-15", 102], ["2026-08-16", 105], ["2026-08-17", 52], ["2026-08-18", 52], ["2026-08-19", 51], ["2026-08-20", 73], ["2026-08-21", 63], ["2026-08-22", 79], ["2026-08-23", 81], ["2026-08-24", 52], ["2026-08-25", 67], ["2026-08-26", 51], ["2026-08-27", 73], ["2026-08-28", 63]],
         "TVG5880": [["2026-05-01", 389], ["2026-05-02", 376], ["2026-05-03", 298], ["2026-05-04", 157], ["2026-05-05", 130], ["2026-05-06", 101], ["2026-05-07", 132], ["2026-05-08", 111], ["2026-05-09", 154], ["2026-05-10", 135], ["2026-05-11", 61], ["2026-05-12", 56], ["2026-05-13", 48], ["2026-05-14", 70], ["2026-05-15", 65], ["2026-05-16", 75], ["2026-05-17", 71], ["2026-05-18", 45], ["2026-05-19", 43], ["2026-05-20", 40], ["2026-05-21", 59], ["2026-05-22", 57], ["2026-05-23", 68], ["2026-05-24", 66], ["2026-05-25", 42], ["2026-05-26", 41], ["2026-05-27", 38], ["2026-05-28", 58], ["2026-05-29", 56], ["2026-05-30", 67], ["2026-05-31", 65], ["2026-06-01", 41], ["2026-06-02", 41], ["2026-06-03", 38], ["2026-06-04", 57], ["2026-06-05", 55], ["2026-06-06", 86], ["2026-06-07", 84], ["2026-06-08", 41], ["2026-06-09", 41], ["2026-06-10", 38], ["2026-06-11", 57], ["2026-06-12", 55], ["2026-06-13", 66], ["2026-06-14", 65], ["2026-06-15", 41], ["2026-06-16", 41], ["2026-06-17", 38], ["2026-06-18", 57], ["2026-06-19", 55], ["2026-06-20", 86], ["2026-06-21", 84], ["2026-06-22", 41], ["2026-06-23", 41], ["2026-06-24", 38], ["2026-06-25", 57], ["2026-06-26", 55], ["2026-06-27", 66], ["2026-06-28", 65], ["2026-06-29", 41], ["2026-06-30", 41], ["2026-07-01", 38], ["2026-07-02", 57], ["2026-07-03", 72], ["2026-07-04", 86], ["2026-07-05", 84], ["2026-07-06", 41], ["2026-07-07", 41], ["2026-07-08", 38], ["2026-07-09", 57], ["2026-07-10", 55], ["2026-07-11", 66], ["2026-07-12", 65], ["2026-07-13", 41], ["2026-07-14", 41], ["2026-07-15", 38], ["2026-07-16", 57], ["2026-07-17", 55], ["2026-07-18", 86], ["2026-07-19", 84], ["2026-07-20", 41], ["2026-07-21", 41], ["2026-07-22", 49], ["2026-07-23", 57], ["2026-07-24", 55], ["2026-07-25", 66], ["2026-07-26", 65], ["2026-07-27", 41], ["2026-07-28", 41], ["2026-07-29", 38], ["2026-07-30", 57], ["2026-07-31", 55], ["2026-08-01", 86], ["2026-08-02", 84], ["2026-08-03", 41], ["2026-08-04", 41], ["2026-08-05", 38], ["2026-08-06", 57], ["2026-08-07", 55], ["2026-08-08", 66], ["2026-08-09", 65], ["2026-08-10", 41], ["2026-08-11", 41], ["2026-08-12", 38], ["2026-08-13", 57], ["2026-08-14", 55], ["2026-08-15", 86], ["2026-08-16", 84], ["2026-08-17", 41], ["2026-08-18", 41], ["2026-08-19", 38], ["2026-08-20", 57], ["2026-08-21", 55], ["2026-08-22", 66], ["2026-08-23", 65], ["2026-08-24", 41], ["2026-08-25", 53], ["2026-08-26", 38], ["2026-08-27", 57], ["2026-08-28", 55]],
+        "TVG5910": [["2026-05-01", 191], ["2026-05-02", 162], ["2026-05-03", 123], ["2026-05-04", 59], ["2026-05-05", 46], ["2026-05-06", 46], ["2026-05-07", 54], ["2026-05-08", 41], ["2026-05-09", 57], ["2026-05-10", 53], ["2026-05-11", 24], ["2026-05-12", 23], ["2026-05-13", 27], ["2026-05-14", 36], ["2026-05-15", 31], ["2026-05-16", 35], ["2026-05-17", 36], ["2026-05-18", 22], ["2026-05-19", 22], ["2026-05-20", 26], ["2026-05-21", 35], ["2026-05-22", 30], ["2026-05-23", 35], ["2026-05-24", 35], ["2026-05-25", 22], ["2026-05-26", 21], ["2026-05-27", 26], ["2026-05-28", 35], ["2026-05-29", 30], ["2026-05-30", 35], ["2026-05-31", 35], ["2026-06-01", 22], ["2026-06-02", 21], ["2026-06-03", 26], ["2026-06-04", 35], ["2026-06-05", 30], ["2026-06-06", 45], ["2026-06-07", 46], ["2026-06-08", 22], ["2026-06-09", 21], ["2026-06-10", 26], ["2026-06-11", 35], ["2026-06-12", 30], ["2026-06-13", 35], ["2026-06-14", 35], ["2026-06-15", 22], ["2026-06-16", 21], ["2026-06-17", 26], ["2026-06-18", 35], ["2026-06-19", 30], ["2026-06-20", 45], ["2026-06-21", 46], ["2026-06-22", 22], ["2026-06-23", 21], ["2026-06-24", 26], ["2026-06-25", 35], ["2026-06-26", 30], ["2026-06-27", 35], ["2026-06-28", 35], ["2026-06-29", 22], ["2026-06-30", 21], ["2026-07-01", 26], ["2026-07-02", 35], ["2026-07-03", 39], ["2026-07-04", 45], ["2026-07-05", 46], ["2026-07-06", 22], ["2026-07-07", 21], ["2026-07-08", 26], ["2026-07-09", 35], ["2026-07-10", 30], ["2026-07-11", 35], ["2026-07-12", 35], ["2026-07-13", 22], ["2026-07-14", 21], ["2026-07-15", 26], ["2026-07-16", 35], ["2026-07-17", 30], ["2026-07-18", 45], ["2026-07-19", 46], ["2026-07-20", 22], ["2026-07-21", 21], ["2026-07-22", 34], ["2026-07-23", 35], ["2026-07-24", 30], ["2026-07-25", 35], ["2026-07-26", 35], ["2026-07-27", 22], ["2026-07-28", 21], ["2026-07-29", 26], ["2026-07-30", 35], ["2026-07-31", 30], ["2026-08-01", 45], ["2026-08-02", 46], ["2026-08-03", 22], ["2026-08-04", 21], ["2026-08-05", 26], ["2026-08-06", 35], ["2026-08-07", 30], ["2026-08-08", 35], ["2026-08-09", 35], ["2026-08-10", 22], ["2026-08-11", 21], ["2026-08-12", 26], ["2026-08-13", 35], ["2026-08-14", 30], ["2026-08-15", 45], ["2026-08-16", 46], ["2026-08-17", 22], ["2026-08-18", 21], ["2026-08-19", 26], ["2026-08-20", 35], ["2026-08-21", 30], ["2026-08-22", 35], ["2026-08-23", 35], ["2026-08-24", 22], ["2026-08-25", 28], ["2026-08-26", 26], ["2026-08-27", 35], ["2026-08-28", 30]],
+        "TVG5970": [["2026-05-01", 84], ["2026-05-02", 95], ["2026-05-03", 100], ["2026-05-04", 78], ["2026-05-05", 68], ["2026-05-06", 75], ["2026-05-07", 72], ["2026-05-08", 77], ["2026-05-09", 113], ["2026-05-10", 119], ["2026-05-11", 72], ["2026-05-12", 62], ["2026-05-13", 69], ["2026-05-14", 67], ["2026-05-15", 72], ["2026-05-16", 81], ["2026-05-17", 86], ["2026-05-18", 67], ["2026-05-19", 59], ["2026-05-20", 65], ["2026-05-21", 63], ["2026-05-22", 68], ["2026-05-23", 77], ["2026-05-24", 82], ["2026-05-25", 64], ["2026-05-26", 56], ["2026-05-27", 62], ["2026-05-28", 60], ["2026-05-29", 65], ["2026-05-30", 74], ["2026-05-31", 79], ["2026-06-01", 62], ["2026-06-02", 54], ["2026-06-03", 60], ["2026-06-04", 59], ["2026-06-05", 63], ["2026-06-06", 94], ["2026-06-07", 99], ["2026-06-08", 60], ["2026-06-09", 53], ["2026-06-10", 59], ["2026-06-11", 57], ["2026-06-12", 62], ["2026-06-13", 71], ["2026-06-14", 75], ["2026-06-15", 59], ["2026-06-16", 52], ["2026-06-17", 58], ["2026-06-18", 56], ["2026-06-19", 61], ["2026-06-20", 90], ["2026-06-21", 96], ["2026-06-22", 58], ["2026-06-23", 51], ["2026-06-24", 57], ["2026-06-25", 56], ["2026-06-26", 60], ["2026-06-27", 69], ["2026-06-28", 73], ["2026-06-29", 58], ["2026-06-30", 51], ["2026-07-01", 57], ["2026-07-02", 55], ["2026-07-03", 78], ["2026-07-04", 89], ["2026-07-05", 94], ["2026-07-06", 57], ["2026-07-07", 50], ["2026-07-08", 56], ["2026-07-09", 55], ["2026-07-10", 59], ["2026-07-11", 68], ["2026-07-12", 72], ["2026-07-13", 57], ["2026-07-14", 50], ["2026-07-15", 56], ["2026-07-16", 54], ["2026-07-17", 59], ["2026-07-18", 88], ["2026-07-19", 93], ["2026-07-20", 57], ["2026-07-21", 50], ["2026-07-22", 72], ["2026-07-23", 54], ["2026-07-24", 59], ["2026-07-25", 67], ["2026-07-26", 72], ["2026-07-27", 57], ["2026-07-28", 50], ["2026-07-29", 56], ["2026-07-30", 54], ["2026-07-31", 59], ["2026-08-01", 87], ["2026-08-02", 93], ["2026-08-03", 57], ["2026-08-04", 50], ["2026-08-05", 56], ["2026-08-06", 54], ["2026-08-07", 59], ["2026-08-08", 67], ["2026-08-09", 71], ["2026-08-10", 56], ["2026-08-11", 50], ["2026-08-12", 55], ["2026-08-13", 54], ["2026-08-14", 59], ["2026-08-15", 87], ["2026-08-16", 93], ["2026-08-17", 56], ["2026-08-18", 50], ["2026-08-19", 55], ["2026-08-20", 54], ["2026-08-21", 58], ["2026-08-22", 67], ["2026-08-23", 71], ["2026-08-24", 56], ["2026-08-25", 64], ["2026-08-26", 55], ["2026-08-27", 54], ["2026-08-28", 58]],
         "TVG5930": [["2026-05-01", 106], ["2026-05-02", 107], ["2026-05-03", 98], ["2026-05-04", 88], ["2026-05-05", 71], ["2026-05-06", 68], ["2026-05-07", 63], ["2026-05-08", 63], ["2026-05-09", 85], ["2026-05-10", 79], ["2026-05-11", 55], ["2026-05-12", 46], ["2026-05-13", 44], ["2026-05-14", 42], ["2026-05-15", 43], ["2026-05-16", 45], ["2026-05-17", 43], ["2026-05-18", 40], ["2026-05-19", 33], ["2026-05-20", 33], ["2026-05-21", 32], ["2026-05-22", 33], ["2026-05-23", 35], ["2026-05-24", 34], ["2026-05-25", 32], ["2026-05-26", 27], ["2026-05-27", 28], ["2026-05-28", 27], ["2026-05-29", 28], ["2026-05-30", 30], ["2026-05-31", 30], ["2026-06-01", 28], ["2026-06-02", 25], ["2026-06-03", 25], ["2026-06-04", 24], ["2026-06-05", 26], ["2026-06-06", 37], ["2026-06-07", 36], ["2026-06-08", 27], ["2026-06-09", 23], ["2026-06-10", 24], ["2026-06-11", 23], ["2026-06-12", 25], ["2026-06-13", 27], ["2026-06-14", 27], ["2026-06-15", 26], ["2026-06-16", 22], ["2026-06-17", 23], ["2026-06-18", 23], ["2026-06-19", 24], ["2026-06-20", 35], ["2026-06-21", 34], ["2026-06-22", 25], ["2026-06-23", 22], ["2026-06-24", 23], ["2026-06-25", 23], ["2026-06-26", 24], ["2026-06-27", 26], ["2026-06-28", 26], ["2026-06-29", 25], ["2026-06-30", 22], ["2026-07-01", 23], ["2026-07-02", 22], ["2026-07-03", 31], ["2026-07-04", 34], ["2026-07-05", 34], ["2026-07-06", 25], ["2026-07-07", 22], ["2026-07-08", 23], ["2026-07-09", 22], ["2026-07-10", 24], ["2026-07-11", 26], ["2026-07-12", 26], ["2026-07-13", 25], ["2026-07-14", 22], ["2026-07-15", 22], ["2026-07-16", 22], ["2026-07-17", 24], ["2026-07-18", 34], ["2026-07-19", 34], ["2026-07-20", 25], ["2026-07-21", 22], ["2026-07-22", 29], ["2026-07-23", 22], ["2026-07-24", 24], ["2026-07-25", 26], ["2026-07-26", 26], ["2026-07-27", 25], ["2026-07-28", 22], ["2026-07-29", 22], ["2026-07-30", 22], ["2026-07-31", 24], ["2026-08-01", 34], ["2026-08-02", 34], ["2026-08-03", 25], ["2026-08-04", 22], ["2026-08-05", 22], ["2026-08-06", 22], ["2026-08-07", 24], ["2026-08-08", 26], ["2026-08-09", 26], ["2026-08-10", 25], ["2026-08-11", 22], ["2026-08-12", 22], ["2026-08-13", 22], ["2026-08-14", 24], ["2026-08-15", 34], ["2026-08-16", 34], ["2026-08-17", 25], ["2026-08-18", 22], ["2026-08-19", 22], ["2026-08-20", 22], ["2026-08-21", 24], ["2026-08-22", 26], ["2026-08-23", 26], ["2026-08-24", 25], ["2026-08-25", 28], ["2026-08-26", 22], ["2026-08-27", 22], ["2026-08-28", 24]],
         "TVG5890": [["2026-05-01", 192], ["2026-05-02", 188], ["2026-05-03", 173], ["2026-05-04", 84], ["2026-05-05", 78], ["2026-05-06", 67], ["2026-05-07", 76], ["2026-05-08", 68], ["2026-05-09", 92], ["2026-05-10", 92], ["2026-05-11", 37], ["2026-05-12", 37], ["2026-05-13", 34], ["2026-05-14", 42], ["2026-05-15", 41], ["2026-05-16", 46], ["2026-05-17", 48], ["2026-05-18", 27], ["2026-05-19", 28], ["2026-05-20", 27], ["2026-05-21", 35], ["2026-05-22", 35], ["2026-05-23", 40], ["2026-05-24", 43], ["2026-05-25", 25], ["2026-05-26", 26], ["2026-05-27", 26], ["2026-05-28", 33], ["2026-05-29", 33], ["2026-05-30", 39], ["2026-05-31", 42], ["2026-06-01", 24], ["2026-06-02", 26], ["2026-06-03", 25], ["2026-06-04", 33], ["2026-06-05", 33], ["2026-06-06", 50], ["2026-06-07", 55], ["2026-06-08", 24], ["2026-06-09", 26], ["2026-06-10", 25], ["2026-06-11", 33], ["2026-06-12", 33], ["2026-06-13", 38], ["2026-06-14", 42], ["2026-06-15", 24], ["2026-06-16", 26], ["2026-06-17", 25], ["2026-06-18", 33], ["2026-06-19", 33], ["2026-06-20", 50], ["2026-06-21", 55], ["2026-06-22", 24], ["2026-06-23", 26], ["2026-06-24", 25], ["2026-06-25", 33], ["2026-06-26", 33], ["2026-06-27", 38], ["2026-06-28", 42], ["2026-06-29", 24], ["2026-06-30", 26], ["2026-07-01", 25], ["2026-07-02", 33], ["2026-07-03", 43], ["2026-07-04", 50], ["2026-07-05", 55], ["2026-07-06", 24], ["2026-07-07", 26], ["2026-07-08", 25], ["2026-07-09", 33], ["2026-07-10", 33], ["2026-07-11", 38], ["2026-07-12", 42], ["2026-07-13", 24], ["2026-07-14", 26], ["2026-07-15", 25], ["2026-07-16", 33], ["2026-07-17", 33], ["2026-07-18", 50], ["2026-07-19", 55], ["2026-07-20", 24], ["2026-07-21", 26], ["2026-07-22", 33], ["2026-07-23", 33], ["2026-07-24", 33], ["2026-07-25", 38], ["2026-07-26", 42], ["2026-07-27", 24], ["2026-07-28", 26], ["2026-07-29", 25], ["2026-07-30", 33], ["2026-07-31", 33], ["2026-08-01", 50], ["2026-08-02", 55], ["2026-08-03", 24], ["2026-08-04", 26], ["2026-08-05", 25], ["2026-08-06", 33], ["2026-08-07", 33], ["2026-08-08", 38], ["2026-08-09", 42], ["2026-08-10", 24], ["2026-08-11", 26], ["2026-08-12", 25], ["2026-08-13", 33], ["2026-08-14", 33], ["2026-08-15", 50], ["2026-08-16", 55], ["2026-08-17", 24], ["2026-08-18", 26], ["2026-08-19", 25], ["2026-08-20", 33], ["2026-08-21", 33], ["2026-08-22", 38], ["2026-08-23", 42], ["2026-08-24", 24], ["2026-08-25", 34], ["2026-08-26", 25], ["2026-08-27", 33], ["2026-08-28", 33]],
         "TVG5900": [["2026-05-01", 51], ["2026-05-02", 78], ["2026-05-03", 78], ["2026-05-04", 44], ["2026-05-05", 38], ["2026-05-06", 35], ["2026-05-07", 60], ["2026-05-08", 34], ["2026-05-09", 69], ["2026-05-10", 71], ["2026-05-11", 31], ["2026-05-12", 28], ["2026-05-13", 26], ["2026-05-14", 46], ["2026-05-15", 26], ["2026-05-16", 42], ["2026-05-17", 43], ["2026-05-18", 25], ["2026-05-19", 23], ["2026-05-20", 21], ["2026-05-21", 39], ["2026-05-22", 23], ["2026-05-23", 36], ["2026-05-24", 38], ["2026-05-25", 22], ["2026-05-26", 20], ["2026-05-27", 20], ["2026-05-28", 36], ["2026-05-29", 21], ["2026-05-30", 34], ["2026-05-31", 36], ["2026-06-01", 21], ["2026-06-02", 19], ["2026-06-03", 19], ["2026-06-04", 34], ["2026-06-05", 20], ["2026-06-06", 42], ["2026-06-07", 45], ["2026-06-08", 21], ["2026-06-09", 19], ["2026-06-10", 18], ["2026-06-11", 33], ["2026-06-12", 20], ["2026-06-13", 32], ["2026-06-14", 34], ["2026-06-15", 20], ["2026-06-16", 19], ["2026-06-17", 18], ["2026-06-18", 33], ["2026-06-19", 20], ["2026-06-20", 41], ["2026-06-21", 44], ["2026-06-22", 20], ["2026-06-23", 19], ["2026-06-24", 18], ["2026-06-25", 33], ["2026-06-26", 20], ["2026-06-27", 32], ["2026-06-28", 34], ["2026-06-29", 20], ["2026-06-30", 19], ["2026-07-01", 18], ["2026-07-02", 33], ["2026-07-03", 25], ["2026-07-04", 41], ["2026-07-05", 44], ["2026-07-06", 20], ["2026-07-07", 19], ["2026-07-08", 18], ["2026-07-09", 33], ["2026-07-10", 20], ["2026-07-11", 32], ["2026-07-12", 34], ["2026-07-13", 20], ["2026-07-14", 19], ["2026-07-15", 18], ["2026-07-16", 33], ["2026-07-17", 20], ["2026-07-18", 41], ["2026-07-19", 44], ["2026-07-20", 20], ["2026-07-21", 19], ["2026-07-22", 23], ["2026-07-23", 33], ["2026-07-24", 20], ["2026-07-25", 32], ["2026-07-26", 34], ["2026-07-27", 20], ["2026-07-28", 19], ["2026-07-29", 18], ["2026-07-30", 33], ["2026-07-31", 19], ["2026-08-01", 41], ["2026-08-02", 44], ["2026-08-03", 20], ["2026-08-04", 19], ["2026-08-05", 18], ["2026-08-06", 33], ["2026-08-07", 19], ["2026-08-08", 32], ["2026-08-09", 34], ["2026-08-10", 20], ["2026-08-11", 19], ["2026-08-12", 18], ["2026-08-13", 33], ["2026-08-14", 19], ["2026-08-15", 41], ["2026-08-16", 44], ["2026-08-17", 20], ["2026-08-18", 19], ["2026-08-19", 18], ["2026-08-20", 33], ["2026-08-21", 19], ["2026-08-22", 32], ["2026-08-23", 34], ["2026-08-24", 20], ["2026-08-25", 24], ["2026-08-26", 18], ["2026-08-27", 33], ["2026-08-28", 19]],
-        "TVG5970": [["2026-05-01", 84], ["2026-05-02", 95], ["2026-05-03", 100], ["2026-05-04", 78], ["2026-05-05", 68], ["2026-05-06", 75], ["2026-05-07", 72], ["2026-05-08", 77], ["2026-05-09", 113], ["2026-05-10", 119], ["2026-05-11", 72], ["2026-05-12", 62], ["2026-05-13", 69], ["2026-05-14", 67], ["2026-05-15", 72], ["2026-05-16", 81], ["2026-05-17", 86], ["2026-05-18", 67], ["2026-05-19", 59], ["2026-05-20", 65], ["2026-05-21", 63], ["2026-05-22", 68], ["2026-05-23", 77], ["2026-05-24", 82], ["2026-05-25", 64], ["2026-05-26", 56], ["2026-05-27", 62], ["2026-05-28", 60], ["2026-05-29", 65], ["2026-05-30", 74], ["2026-05-31", 79], ["2026-06-01", 62], ["2026-06-02", 54], ["2026-06-03", 60], ["2026-06-04", 59], ["2026-06-05", 63], ["2026-06-06", 94], ["2026-06-07", 99], ["2026-06-08", 60], ["2026-06-09", 53], ["2026-06-10", 59], ["2026-06-11", 57], ["2026-06-12", 62], ["2026-06-13", 71], ["2026-06-14", 75], ["2026-06-15", 59], ["2026-06-16", 52], ["2026-06-17", 58], ["2026-06-18", 56], ["2026-06-19", 61], ["2026-06-20", 90], ["2026-06-21", 96], ["2026-06-22", 58], ["2026-06-23", 51], ["2026-06-24", 57], ["2026-06-25", 56], ["2026-06-26", 60], ["2026-06-27", 69], ["2026-06-28", 73], ["2026-06-29", 58], ["2026-06-30", 51], ["2026-07-01", 57], ["2026-07-02", 55], ["2026-07-03", 78], ["2026-07-04", 89], ["2026-07-05", 94], ["2026-07-06", 57], ["2026-07-07", 50], ["2026-07-08", 56], ["2026-07-09", 55], ["2026-07-10", 59], ["2026-07-11", 68], ["2026-07-12", 72], ["2026-07-13", 57], ["2026-07-14", 50], ["2026-07-15", 56], ["2026-07-16", 54], ["2026-07-17", 59], ["2026-07-18", 88], ["2026-07-19", 93], ["2026-07-20", 57], ["2026-07-21", 50], ["2026-07-22", 72], ["2026-07-23", 54], ["2026-07-24", 59], ["2026-07-25", 67], ["2026-07-26", 72], ["2026-07-27", 57], ["2026-07-28", 50], ["2026-07-29", 56], ["2026-07-30", 54], ["2026-07-31", 59], ["2026-08-01", 87], ["2026-08-02", 93], ["2026-08-03", 57], ["2026-08-04", 50], ["2026-08-05", 56], ["2026-08-06", 54], ["2026-08-07", 59], ["2026-08-08", 67], ["2026-08-09", 71], ["2026-08-10", 56], ["2026-08-11", 50], ["2026-08-12", 55], ["2026-08-13", 54], ["2026-08-14", 59], ["2026-08-15", 87], ["2026-08-16", 93], ["2026-08-17", 56], ["2026-08-18", 50], ["2026-08-19", 55], ["2026-08-20", 54], ["2026-08-21", 58], ["2026-08-22", 67], ["2026-08-23", 71], ["2026-08-24", 56], ["2026-08-25", 64], ["2026-08-26", 55], ["2026-08-27", 54], ["2026-08-28", 58]],
-        "TVG5940": [["2026-05-01", 66], ["2026-05-02", 75], ["2026-05-03", 78], ["2026-05-04", 61], ["2026-05-05", 49], ["2026-05-06", 59], ["2026-05-07", 54], ["2026-05-08", 58], ["2026-05-09", 86], ["2026-05-10", 90], ["2026-05-11", 55], ["2026-05-12", 44], ["2026-05-13", 53], ["2026-05-14", 49], ["2026-05-15", 52], ["2026-05-16", 60], ["2026-05-17", 63], ["2026-05-18", 50], ["2026-05-19", 40], ["2026-05-20", 49], ["2026-05-21", 45], ["2026-05-22", 48], ["2026-05-23", 56], ["2026-05-24", 58], ["2026-05-25", 46], ["2026-05-26", 38], ["2026-05-27", 45], ["2026-05-28", 42], ["2026-05-29", 45], ["2026-05-30", 52], ["2026-05-31", 55], ["2026-06-01", 44], ["2026-06-02", 36], ["2026-06-03", 43], ["2026-06-04", 40], ["2026-06-05", 43], ["2026-06-06", 65], ["2026-06-07", 69], ["2026-06-08", 42], ["2026-06-09", 34], ["2026-06-10", 41], ["2026-06-11", 39], ["2026-06-12", 42], ["2026-06-13", 48], ["2026-06-14", 51], ["2026-06-15", 41], ["2026-06-16", 33], ["2026-06-17", 40], ["2026-06-18", 38], ["2026-06-19", 41], ["2026-06-20", 61], ["2026-06-21", 65], ["2026-06-22", 40], ["2026-06-23", 32], ["2026-06-24", 39], ["2026-06-25", 37], ["2026-06-26", 40], ["2026-06-27", 46], ["2026-06-28", 49], ["2026-06-29", 39], ["2026-06-30", 32], ["2026-07-01", 39], ["2026-07-02", 36], ["2026-07-03", 51], ["2026-07-04", 59], ["2026-07-05", 63], ["2026-07-06", 39], ["2026-07-07", 32], ["2026-07-08", 38], ["2026-07-09", 36], ["2026-07-10", 39], ["2026-07-11", 45], ["2026-07-12", 48], ["2026-07-13", 38], ["2026-07-14", 31], ["2026-07-15", 38], ["2026-07-16", 36], ["2026-07-17", 39], ["2026-07-18", 58], ["2026-07-19", 62], ["2026-07-20", 38], ["2026-07-21", 31], ["2026-07-22", 49], ["2026-07-23", 35], ["2026-07-24", 38], ["2026-07-25", 45], ["2026-07-26", 47], ["2026-07-27", 38], ["2026-07-28", 31], ["2026-07-29", 38], ["2026-07-30", 35], ["2026-07-31", 38], ["2026-08-01", 58], ["2026-08-02", 61], ["2026-08-03", 38], ["2026-08-04", 31], ["2026-08-05", 37], ["2026-08-06", 35], ["2026-08-07", 38], ["2026-08-08", 44], ["2026-08-09", 47], ["2026-08-10", 38], ["2026-08-11", 31], ["2026-08-12", 37], ["2026-08-13", 35], ["2026-08-14", 38], ["2026-08-15", 58], ["2026-08-16", 61], ["2026-08-17", 38], ["2026-08-18", 31], ["2026-08-19", 37], ["2026-08-20", 35], ["2026-08-21", 38], ["2026-08-22", 44], ["2026-08-23", 47], ["2026-08-24", 38], ["2026-08-25", 40], ["2026-08-26", 37], ["2026-08-27", 35], ["2026-08-28", 38]],
-        "TVG5920": [["2026-05-01", 380], ["2026-05-02", 389], ["2026-05-03", 330], ["2026-05-04", 176], ["2026-05-05", 148], ["2026-05-06", 126], ["2026-05-07", 155], ["2026-05-08", 118], ["2026-05-09", 172], ["2026-05-10", 161], ["2026-05-11", 74], ["2026-05-12", 68], ["2026-05-13", 64], ["2026-05-14", 87], ["2026-05-15", 72], ["2026-05-16", 88], ["2026-05-17", 89], ["2026-05-18", 56], ["2026-05-19", 55], ["2026-05-20", 54], ["2026-05-21", 75], ["2026-05-22", 64], ["2026-05-23", 80], ["2026-05-24", 82], ["2026-05-25", 53], ["2026-05-26", 52], ["2026-05-27", 52], ["2026-05-28", 73], ["2026-05-29", 63], ["2026-05-30", 79], ["2026-05-31", 81], ["2026-06-01", 52], ["2026-06-02", 52], ["2026-06-03", 52], ["2026-06-04", 73], ["2026-06-05", 63], ["2026-06-06", 102], ["2026-06-07", 105], ["2026-06-08", 52], ["2026-06-09", 52], ["2026-06-10", 51], ["2026-06-11", 73], ["2026-06-12", 63], ["2026-06-13", 79], ["2026-06-14", 81], ["2026-06-15", 52], ["2026-06-16", 52], ["2026-06-17", 51], ["2026-06-18", 73], ["2026-06-19", 63], ["2026-06-20", 102], ["2026-06-21", 105], ["2026-06-22", 52], ["2026-06-23", 52], ["2026-06-24", 51], ["2026-06-25", 73], ["2026-06-26", 63], ["2026-06-27", 79], ["2026-06-28", 81], ["2026-06-29", 52], ["2026-06-30", 52], ["2026-07-01", 51], ["2026-07-02", 73], ["2026-07-03", 81], ["2026-07-04", 102], ["2026-07-05", 105], ["2026-07-06", 52], ["2026-07-07", 52], ["2026-07-08", 51], ["2026-07-09", 73], ["2026-07-10", 63], ["2026-07-11", 79], ["2026-07-12", 81], ["2026-07-13", 52], ["2026-07-14", 52], ["2026-07-15", 51], ["2026-07-16", 73], ["2026-07-17", 63], ["2026-07-18", 102], ["2026-07-19", 105], ["2026-07-20", 52], ["2026-07-21", 52], ["2026-07-22", 67], ["2026-07-23", 73], ["2026-07-24", 63], ["2026-07-25", 79], ["2026-07-26", 81], ["2026-07-27", 52], ["2026-07-28", 52], ["2026-07-29", 51], ["2026-07-30", 73], ["2026-07-31", 63], ["2026-08-01", 102], ["2026-08-02", 105], ["2026-08-03", 52], ["2026-08-04", 52], ["2026-08-05", 51], ["2026-08-06", 73], ["2026-08-07", 63], ["2026-08-08", 79], ["2026-08-09", 81], ["2026-08-10", 52], ["2026-08-11", 52], ["2026-08-12", 51], ["2026-08-13", 73], ["2026-08-14", 63], ["2026-08-15", 102], ["2026-08-16", 105], ["2026-08-17", 52], ["2026-08-18", 52], ["2026-08-19", 51], ["2026-08-20", 73], ["2026-08-21", 63], ["2026-08-22", 79], ["2026-08-23", 81], ["2026-08-24", 52], ["2026-08-25", 67], ["2026-08-26", 51], ["2026-08-27", 73], ["2026-08-28", 63]],
-        "TVG5910": [["2026-05-01", 191], ["2026-05-02", 162], ["2026-05-03", 123], ["2026-05-04", 59], ["2026-05-05", 46], ["2026-05-06", 46], ["2026-05-07", 54], ["2026-05-08", 41], ["2026-05-09", 57], ["2026-05-10", 53], ["2026-05-11", 24], ["2026-05-12", 23], ["2026-05-13", 27], ["2026-05-14", 36], ["2026-05-15", 31], ["2026-05-16", 35], ["2026-05-17", 36], ["2026-05-18", 22], ["2026-05-19", 22], ["2026-05-20", 26], ["2026-05-21", 35], ["2026-05-22", 30], ["2026-05-23", 35], ["2026-05-24", 35], ["2026-05-25", 22], ["2026-05-26", 21], ["2026-05-27", 26], ["2026-05-28", 35], ["2026-05-29", 30], ["2026-05-30", 35], ["2026-05-31", 35], ["2026-06-01", 22], ["2026-06-02", 21], ["2026-06-03", 26], ["2026-06-04", 35], ["2026-06-05", 30], ["2026-06-06", 45], ["2026-06-07", 46], ["2026-06-08", 22], ["2026-06-09", 21], ["2026-06-10", 26], ["2026-06-11", 35], ["2026-06-12", 30], ["2026-06-13", 35], ["2026-06-14", 35], ["2026-06-15", 22], ["2026-06-16", 21], ["2026-06-17", 26], ["2026-06-18", 35], ["2026-06-19", 30], ["2026-06-20", 45], ["2026-06-21", 46], ["2026-06-22", 22], ["2026-06-23", 21], ["2026-06-24", 26], ["2026-06-25", 35], ["2026-06-26", 30], ["2026-06-27", 35], ["2026-06-28", 35], ["2026-06-29", 22], ["2026-06-30", 21], ["2026-07-01", 26], ["2026-07-02", 35], ["2026-07-03", 39], ["2026-07-04", 45], ["2026-07-05", 46], ["2026-07-06", 22], ["2026-07-07", 21], ["2026-07-08", 26], ["2026-07-09", 35], ["2026-07-10", 30], ["2026-07-11", 35], ["2026-07-12", 35], ["2026-07-13", 22], ["2026-07-14", 21], ["2026-07-15", 26], ["2026-07-16", 35], ["2026-07-17", 30], ["2026-07-18", 45], ["2026-07-19", 46], ["2026-07-20", 22], ["2026-07-21", 21], ["2026-07-22", 34], ["2026-07-23", 35], ["2026-07-24", 30], ["2026-07-25", 35], ["2026-07-26", 35], ["2026-07-27", 22], ["2026-07-28", 21], ["2026-07-29", 26], ["2026-07-30", 35], ["2026-07-31", 30], ["2026-08-01", 45], ["2026-08-02", 46], ["2026-08-03", 22], ["2026-08-04", 21], ["2026-08-05", 26], ["2026-08-06", 35], ["2026-08-07", 30], ["2026-08-08", 35], ["2026-08-09", 35], ["2026-08-10", 22], ["2026-08-11", 21], ["2026-08-12", 26], ["2026-08-13", 35], ["2026-08-14", 30], ["2026-08-15", 45], ["2026-08-16", 46], ["2026-08-17", 22], ["2026-08-18", 21], ["2026-08-19", 26], ["2026-08-20", 35], ["2026-08-21", 30], ["2026-08-22", 35], ["2026-08-23", 35], ["2026-08-24", 22], ["2026-08-25", 28], ["2026-08-26", 26], ["2026-08-27", 35], ["2026-08-28", 30]]
+        "TVG5940": [["2026-05-01", 66], ["2026-05-02", 75], ["2026-05-03", 78], ["2026-05-04", 61], ["2026-05-05", 49], ["2026-05-06", 59], ["2026-05-07", 54], ["2026-05-08", 58], ["2026-05-09", 86], ["2026-05-10", 90], ["2026-05-11", 55], ["2026-05-12", 44], ["2026-05-13", 53], ["2026-05-14", 49], ["2026-05-15", 52], ["2026-05-16", 60], ["2026-05-17", 63], ["2026-05-18", 50], ["2026-05-19", 40], ["2026-05-20", 49], ["2026-05-21", 45], ["2026-05-22", 48], ["2026-05-23", 56], ["2026-05-24", 58], ["2026-05-25", 46], ["2026-05-26", 38], ["2026-05-27", 45], ["2026-05-28", 42], ["2026-05-29", 45], ["2026-05-30", 52], ["2026-05-31", 55], ["2026-06-01", 44], ["2026-06-02", 36], ["2026-06-03", 43], ["2026-06-04", 40], ["2026-06-05", 43], ["2026-06-06", 65], ["2026-06-07", 69], ["2026-06-08", 42], ["2026-06-09", 34], ["2026-06-10", 41], ["2026-06-11", 39], ["2026-06-12", 42], ["2026-06-13", 48], ["2026-06-14", 51], ["2026-06-15", 41], ["2026-06-16", 33], ["2026-06-17", 40], ["2026-06-18", 38], ["2026-06-19", 41], ["2026-06-20", 61], ["2026-06-21", 65], ["2026-06-22", 40], ["2026-06-23", 32], ["2026-06-24", 39], ["2026-06-25", 37], ["2026-06-26", 40], ["2026-06-27", 46], ["2026-06-28", 49], ["2026-06-29", 39], ["2026-06-30", 32], ["2026-07-01", 39], ["2026-07-02", 36], ["2026-07-03", 51], ["2026-07-04", 59], ["2026-07-05", 63], ["2026-07-06", 39], ["2026-07-07", 32], ["2026-07-08", 38], ["2026-07-09", 36], ["2026-07-10", 39], ["2026-07-11", 45], ["2026-07-12", 48], ["2026-07-13", 38], ["2026-07-14", 31], ["2026-07-15", 38], ["2026-07-16", 36], ["2026-07-17", 39], ["2026-07-18", 58], ["2026-07-19", 62], ["2026-07-20", 38], ["2026-07-21", 31], ["2026-07-22", 49], ["2026-07-23", 35], ["2026-07-24", 38], ["2026-07-25", 45], ["2026-07-26", 47], ["2026-07-27", 38], ["2026-07-28", 31], ["2026-07-29", 38], ["2026-07-30", 35], ["2026-07-31", 38], ["2026-08-01", 58], ["2026-08-02", 61], ["2026-08-03", 38], ["2026-08-04", 31], ["2026-08-05", 37], ["2026-08-06", 35], ["2026-08-07", 38], ["2026-08-08", 44], ["2026-08-09", 47], ["2026-08-10", 38], ["2026-08-11", 31], ["2026-08-12", 37], ["2026-08-13", 35], ["2026-08-14", 38], ["2026-08-15", 58], ["2026-08-16", 61], ["2026-08-17", 38], ["2026-08-18", 31], ["2026-08-19", 37], ["2026-08-20", 35], ["2026-08-21", 38], ["2026-08-22", 44], ["2026-08-23", 47], ["2026-08-24", 38], ["2026-08-25", 40], ["2026-08-26", 37], ["2026-08-27", 35], ["2026-08-28", 38]]
       },
       "pdp": [],
       "crossSell": [],
@@ -15903,10 +15903,10 @@ window.DASHBOARD_DATA = {
         "newToCategory": 29214,
         "byVariant": [
           {
-            "sku": "TVG5940",
-            "name": "Kathy",
-            "newToCategory": 1161,
-            "existingCategory": 1377
+            "sku": "TVG5950",
+            "name": "Ragan",
+            "newToCategory": 9822,
+            "existingCategory": 10007
           },
           {
             "sku": "TVG5890",
@@ -15915,34 +15915,16 @@ window.DASHBOARD_DATA = {
             "existingCategory": 4670
           },
           {
-            "sku": "TVG5960",
-            "name": "Joan",
-            "newToCategory": 5323,
-            "existingCategory": 5229
-          },
-          {
-            "sku": "TVG5900",
-            "name": "Rosa",
-            "newToCategory": 3389,
-            "existingCategory": 2635
-          },
-          {
             "sku": "TVG5970",
             "name": "Kackie",
             "newToCategory": 808,
             "existingCategory": 964
           },
           {
-            "sku": "TVG5910",
-            "name": "Linda",
-            "newToCategory": 1114,
-            "existingCategory": 1237
-          },
-          {
-            "sku": "TVG5930",
-            "name": "Chanice",
-            "newToCategory": 979,
-            "existingCategory": 1268
+            "sku": "TVG5960",
+            "name": "Joan",
+            "newToCategory": 5323,
+            "existingCategory": 5229
           },
           {
             "sku": "TVG5880",
@@ -15951,16 +15933,34 @@ window.DASHBOARD_DATA = {
             "existingCategory": 5808
           },
           {
-            "sku": "TVG5950",
-            "name": "Ragan",
-            "newToCategory": 9822,
-            "existingCategory": 10007
+            "sku": "TVG5940",
+            "name": "Kathy",
+            "newToCategory": 1161,
+            "existingCategory": 1377
+          },
+          {
+            "sku": "TVG5930",
+            "name": "Chanice",
+            "newToCategory": 979,
+            "existingCategory": 1268
+          },
+          {
+            "sku": "TVG5910",
+            "name": "Linda",
+            "newToCategory": 1114,
+            "existingCategory": 1237
           },
           {
             "sku": "TVG5920",
             "name": "Kaisa",
             "newToCategory": 3928,
             "existingCategory": 3746
+          },
+          {
+            "sku": "TVG5900",
+            "name": "Rosa",
+            "newToCategory": 3389,
+            "existingCategory": 2635
           }
         ],
         "daily": [["2026-04-30", 9, 25], ["2026-05-01", 465, 875], ["2026-05-02", 598, 1248], ["2026-05-03", 483, 760], ["2026-05-04", 447, 567], ["2026-05-05", 506, 780], ["2026-05-06", 472, 564], ["2026-05-07", 520, 607], ["2026-05-08", 650, 615], ["2026-05-09", 651, 678], ["2026-05-10", 771, 792], ["2026-05-11", 539, 542], ["2026-05-12", 502, 459], ["2026-05-13", 541, 492], ["2026-05-14", 504, 488], ["2026-05-15", 466, 467], ["2026-05-16", 569, 524], ["2026-05-17", 614, 473], ["2026-05-18", 509, 450], ["2026-05-19", 542, 453], ["2026-05-20", 550, 404], ["2026-05-21", 486, 448], ["2026-05-22", 619, 533], ["2026-05-23", 606, 484], ["2026-05-24", 716, 482], ["2026-05-25", 903, 609], ["2026-05-26", 437, 300], ["2026-05-27", 357, 281], ["2026-05-28", 369, 316], ["2026-05-29", 342, 311], ["2026-05-30", 327, 246], ["2026-05-31", 281, 224], ["2026-06-01", 344, 296], ["2026-06-02", 333, 285], ["2026-06-03", 338, 293], ["2026-06-04", 334, 254], ["2026-06-05", 329, 235], ["2026-06-06", 232, 178], ["2026-06-07", 260, 187], ["2026-06-08", 402, 330], ["2026-06-09", 228, 161], ["2026-06-10", 174, 134], ["2026-06-11", 231, 142], ["2026-06-12", 304, 154], ["2026-06-13", 448, 303], ["2026-06-14", 495, 438], ["2026-06-15", 209, 135], ["2026-06-16", 144, 128], ["2026-06-17", 152, 153], ["2026-06-18", 212, 107], ["2026-06-19", 197, 168], ["2026-06-20", 335, 211], ["2026-06-21", 373, 227], ["2026-06-22", 166, 125], ["2026-06-23", 150, 112], ["2026-06-24", 99, 93], ["2026-06-25", 95, 90], ["2026-06-26", 68, 60], ["2026-06-27", 74, 101], ["2026-06-28", 94, 95], ["2026-06-29", 68, 85], ["2026-06-30", 113, 92], ["2026-07-01", 165, 207], ["2026-07-02", 164, 170], ["2026-07-03", 222, 183], ["2026-07-04", 190, 196], ["2026-07-05", 328, 306], ["2026-07-06", 131, 102], ["2026-07-07", 118, 118], ["2026-07-08", 137, 165], ["2026-07-09", 109, 143], ["2026-07-10", 140, 178], ["2026-07-11", 154, 207], ["2026-07-12", 127, 167], ["2026-07-13", 115, 125], ["2026-07-14", 89, 111], ["2026-07-15", 76, 92], ["2026-07-16", 68, 108], ["2026-07-17", 91, 114], ["2026-07-18", 111, 133], ["2026-07-19", 105, 138], ["2026-07-20", 92, 154], ["2026-07-21", 87, 166], ["2026-07-22", 79, 165], ["2026-07-23", 103, 149], ["2026-07-24", 93, 169], ["2026-07-25", 115, 178], ["2026-07-26", 106, 170], ["2026-07-27", 84, 131], ["2026-07-28", 134, 168], ["2026-07-29", 83, 141], ["2026-07-30", 43, 69], ["2026-07-31", 66, 80], ["2026-08-01", 49, 75], ["2026-08-02", 79, 107], ["2026-08-03", 41, 53], ["2026-08-04", 47, 75], ["2026-08-05", 54, 56], ["2026-08-06", 50, 59], ["2026-08-07", 48, 55], ["2026-08-08", 85, 123], ["2026-08-09", 106, 138], ["2026-08-10", 52, 68], ["2026-08-11", 44, 59], ["2026-08-12", 52, 65], ["2026-08-13", 56, 65], ["2026-08-14", 48, 62], ["2026-08-15", 52, 47], ["2026-08-16", 58, 58], ["2026-08-17", 55, 54], ["2026-08-18", 60, 76], ["2026-08-19", 52, 78], ["2026-08-20", 68, 67], ["2026-08-21", 50, 51], ["2026-08-22", 85, 98], ["2026-08-23", 54, 108], ["2026-08-24", 49, 61], ["2026-08-25", 49, 46], ["2026-08-26", 51, 61], ["2026-08-27", 58, 53], ["2026-08-28", 55, 53], ["2026-08-29", 53, 52], ["2026-08-30", 73, 82], ["2026-08-31", 48, 57], ["2026-09-01", 45, 53], ["2026-09-02", 87, 83], ["2026-09-03", 55, 47], ["2026-09-04", 37, 52], ["2026-09-05", 38, 62], ["2026-09-06", 75, 90], ["2026-09-07", 96, 115], ["2026-09-08", 35, 34], ["2026-09-09", 25, 43], ["2026-09-10", 29, 50], ["2026-09-11", 38, 40], ["2026-09-12", 37, 56], ["2026-09-13", 52, 54], ["2026-09-14", 25, 36], ["2026-09-15", 33, 34], ["2026-09-16", 43, 40], ["2026-09-17", 40, 65], ["2026-09-18", 41, 41], ["2026-09-19", 35, 44], ["2026-09-20", 46, 55], ["2026-09-21", 36, 38], ["2026-09-22", 25, 56], ["2026-09-23", 38, 75], ["2026-09-24", 24, 46], ["2026-09-25", 28, 43], ["2026-09-26", 34, 64], ["2026-09-27", 56, 56], ["2026-09-28", 33, 38], ["2026-09-29", 42, 60], ["2026-09-30", 33, 34], ["2026-10-01", 49, 27], ["2026-10-02", 47, 39], ["2026-10-03", 43, 50], ["2026-10-04", 45, 67], ["2026-10-05", 32, 46], ["2026-10-06", 31, 23], ["2026-10-07", 31, 47], ["2026-10-08", 28, 38], ["2026-10-09", 25, 26], ["2026-10-10", 34, 69], ["2026-10-11", 78, 129], ["2026-10-12", 24, 25], ["2026-10-13", 10, 19], ["2026-10-14", 18, 28], ["2026-10-15", 15, 21], ["2026-10-16", 17, 28], ["2026-10-17", 27, 44], ["2026-10-18", 38, 54], ["2026-10-19", 14, 19], ["2026-10-20", 25, 22], ["2026-10-21", 13, 28], ["2026-10-22", 18, 25], ["2026-10-23", 17, 19], ["2026-10-24", 18, 53], ["2026-10-25", 23, 31], ["2026-10-26", 21, 28], ["2026-10-27", 10, 29], ["2026-10-28", 22, 29], ["2026-10-29", 13, 16], ["2026-10-30", 24, 21], ["2026-10-31", 16, 23], ["2026-11-01", 24, 51], ["2026-11-02", 24, 31]]
@@ -18878,6 +18878,12 @@ window.DASHBOARD_DATA = {
         "newToCategory": 4828,
         "byVariant": [
           {
+            "sku": "TVG6710",
+            "name": "Brow Liner",
+            "newToCategory": 921,
+            "existingCategory": 1270
+          },
+          {
             "sku": "TVG6690",
             "name": "Brow Gel",
             "newToCategory": 3207,
@@ -18888,12 +18894,6 @@ window.DASHBOARD_DATA = {
             "name": "Brow Pencil",
             "newToCategory": 1126,
             "existingCategory": 1378
-          },
-          {
-            "sku": "TVG6710",
-            "name": "Brow Liner",
-            "newToCategory": 921,
-            "existingCategory": 1270
           }
         ],
         "daily": [["2026-06-08", 9, 30], ["2026-06-09", 59, 106], ["2026-06-10", 77, 100], ["2026-06-11", 76, 162], ["2026-06-12", 89, 83], ["2026-06-13", 112, 96], ["2026-06-14", 129, 103], ["2026-06-15", 66, 71], ["2026-06-16", 44, 53], ["2026-06-17", 37, 39], ["2026-06-18", 43, 40], ["2026-06-19", 47, 32], ["2026-06-20", 86, 74], ["2026-06-21", 88, 83], ["2026-06-22", 28, 34], ["2026-06-23", 28, 24], ["2026-06-24", 30, 32], ["2026-06-25", 25, 25], ["2026-06-26", 20, 13], ["2026-06-27", 18, 19], ["2026-06-28", 13, 13], ["2026-06-29", 16, 14], ["2026-06-30", 31, 29], ["2026-07-01", 49, 53], ["2026-07-02", 40, 44], ["2026-07-03", 58, 68], ["2026-07-04", 62, 88], ["2026-07-05", 82, 79], ["2026-07-06", 37, 25], ["2026-07-07", 32, 18], ["2026-07-08", 35, 25], ["2026-07-09", 35, 30], ["2026-07-10", 28, 22], ["2026-07-11", 29, 21], ["2026-07-12", 33, 21], ["2026-07-13", 24, 18], ["2026-07-14", 15, 28], ["2026-07-15", 22, 21], ["2026-07-16", 61, 58], ["2026-07-17", 41, 46], ["2026-07-18", 37, 29], ["2026-07-19", 36, 46], ["2026-07-20", 43, 41], ["2026-07-21", 45, 48], ["2026-07-22", 37, 47], ["2026-07-23", 34, 40], ["2026-07-24", 33, 44], ["2026-07-25", 38, 42], ["2026-07-26", 39, 42], ["2026-07-27", 25, 28], ["2026-07-28", 26, 36], ["2026-07-29", 30, 27], ["2026-07-30", 24, 35], ["2026-07-31", 50, 56], ["2026-08-01", 48, 31], ["2026-08-02", 58, 66], ["2026-08-03", 28, 20], ["2026-08-04", 16, 20], ["2026-08-05", 21, 23], ["2026-08-06", 79, 14], ["2026-08-07", 51, 15], ["2026-08-08", 90, 68], ["2026-08-09", 77, 75], ["2026-08-10", 29, 24], ["2026-08-11", 28, 26], ["2026-08-12", 28, 19], ["2026-08-13", 26, 24], ["2026-08-14", 29, 19], ["2026-08-15", 27, 13], ["2026-08-16", 23, 19], ["2026-08-17", 14, 26], ["2026-08-18", 25, 24], ["2026-08-19", 34, 13], ["2026-08-20", 20, 12], ["2026-08-21", 17, 11], ["2026-08-22", 18, 18], ["2026-08-23", 24, 18], ["2026-08-24", 17, 14], ["2026-08-25", 23, 24], ["2026-08-26", 22, 35], ["2026-08-27", 15, 14], ["2026-08-28", 24, 17], ["2026-08-29", 17, 22], ["2026-08-30", 31, 44], ["2026-08-31", 31, 19], ["2026-09-01", 23, 19], ["2026-09-02", 40, 33], ["2026-09-03", 38, 29], ["2026-09-04", 39, 25], ["2026-09-05", 48, 34], ["2026-09-06", 48, 59], ["2026-09-07", 52, 53], ["2026-09-08", 32, 20], ["2026-09-09", 25, 29], ["2026-09-10", 37, 32], ["2026-09-11", 20, 26], ["2026-09-12", 23, 25], ["2026-09-13", 37, 31], ["2026-09-14", 23, 20], ["2026-09-15", 22, 27], ["2026-09-16", 32, 34], ["2026-09-17", 36, 30], ["2026-09-18", 28, 21], ["2026-09-19", 36, 23], ["2026-09-20", 36, 41], ["2026-09-21", 38, 20], ["2026-09-22", 36, 27], ["2026-09-23", 49, 36], ["2026-09-24", 41, 20], ["2026-09-25", 44, 23], ["2026-09-26", 39, 33], ["2026-09-27", 43, 19], ["2026-09-28", 37, 18], ["2026-09-29", 34, 20], ["2026-09-30", 32, 18], ["2026-10-01", 19, 22], ["2026-10-02", 19, 19], ["2026-10-03", 50, 110], ["2026-10-04", 57, 91], ["2026-10-05", 20, 24], ["2026-10-06", 25, 20], ["2026-10-07", 17, 15], ["2026-10-08", 14, 21], ["2026-10-09", 24, 15], ["2026-10-10", 28, 36], ["2026-10-11", 37, 47], ["2026-10-12", 17, 15], ["2026-10-13", 11, 12], ["2026-10-14", 20, 19], ["2026-10-15", 14, 17], ["2026-10-16", 12, 11], ["2026-10-17", 32, 39], ["2026-10-18", 33, 32], ["2026-10-19", 10, 19], ["2026-10-20", 19, 12], ["2026-10-21", 16, 6], ["2026-10-22", 13, 19], ["2026-10-23", 21, 15], ["2026-10-24", 15, 29], ["2026-10-25", 18, 12], ["2026-10-26", 10, 17], ["2026-10-27", 15, 13], ["2026-10-28", 15, 9], ["2026-10-29", 19, 11], ["2026-10-30", 16, 11], ["2026-10-31", 16, 27], ["2026-11-01", 28, 23], ["2026-11-02", 19, 28]]
@@ -22732,8 +22732,8 @@ window.DASHBOARD_DATA = {
       },
       "planBySku": {
         "TVG6390": [["2026-04-07", 10], ["2026-04-08", 240], ["2026-04-09", 222], ["2026-04-10", 330], ["2026-04-11", 552], ["2026-04-12", 534], ["2026-04-13", 231], ["2026-04-14", 195], ["2026-04-15", 197], ["2026-04-16", 182], ["2026-04-17", 271], ["2026-04-18", 349], ["2026-04-19", 338], ["2026-04-20", 191], ["2026-04-21", 161], ["2026-04-22", 163], ["2026-04-23", 150], ["2026-04-24", 224], ["2026-04-25", 375], ["2026-04-26", 363], ["2026-04-27", 158], ["2026-04-28", 133], ["2026-04-29", 135], ["2026-04-30", 125], ["2026-05-01", 186], ["2026-05-02", 240], ["2026-05-03", 232], ["2026-05-04", 131], ["2026-05-05", 111], ["2026-05-06", 112], ["2026-05-07", 104], ["2026-05-08", 155], ["2026-05-09", 260], ["2026-05-10", 252], ["2026-05-11", 110], ["2026-05-12", 93], ["2026-05-13", 94], ["2026-05-14", 87], ["2026-05-15", 130], ["2026-05-16", 168], ["2026-05-17", 163], ["2026-05-18", 92], ["2026-05-19", 78], ["2026-05-20", 79], ["2026-05-21", 74], ["2026-05-22", 110], ["2026-05-23", 142], ["2026-05-24", 138], ["2026-05-25", 78], ["2026-05-26", 66], ["2026-05-27", 67], ["2026-05-28", 63], ["2026-05-29", 94], ["2026-05-30", 121], ["2026-05-31", 118], ["2026-06-01", 67], ["2026-06-02", 57], ["2026-06-03", 58], ["2026-06-04", 54], ["2026-06-05", 80], ["2026-06-06", 136], ["2026-06-07", 132], ["2026-06-08", 58], ["2026-06-09", 49], ["2026-06-10", 50], ["2026-06-11", 47], ["2026-06-12", 70], ["2026-06-13", 91], ["2026-06-14", 89], ["2026-06-15", 50], ["2026-06-16", 43], ["2026-06-17", 44], ["2026-06-18", 41], ["2026-06-19", 61], ["2026-06-20", 104], ["2026-06-21", 101], ["2026-06-22", 44], ["2026-06-23", 38], ["2026-06-24", 39], ["2026-06-25", 36], ["2026-06-26", 54], ["2026-06-27", 71], ["2026-06-28", 69], ["2026-06-29", 40], ["2026-06-30", 34], ["2026-07-01", 35], ["2026-07-02", 32], ["2026-07-03", 63], ["2026-07-04", 83], ["2026-07-05", 81], ["2026-07-06", 36], ["2026-07-07", 31], ["2026-07-08", 31], ["2026-07-09", 29], ["2026-07-10", 44], ["2026-07-11", 58], ["2026-07-12", 57], ["2026-07-13", 32], ["2026-07-14", 28], ["2026-07-15", 29], ["2026-07-16", 27], ["2026-07-17", 41], ["2026-07-18", 69], ["2026-07-19", 68], ["2026-07-20", 30], ["2026-07-21", 26], ["2026-07-22", 34], ["2026-07-23", 25], ["2026-07-24", 38], ["2026-07-25", 49], ["2026-07-26", 49], ["2026-07-27", 28], ["2026-07-28", 24], ["2026-07-29", 25], ["2026-07-30", 23], ["2026-07-31", 35], ["2026-08-01", 60], ["2026-08-02", 59], ["2026-08-03", 26], ["2026-08-04", 23], ["2026-08-05", 23]],
-        "TVG6370": [["2026-04-07", 10], ["2026-04-08", 470], ["2026-04-09", 380], ["2026-04-10", 406], ["2026-04-11", 513], ["2026-04-12", 459], ["2026-04-13", 401], ["2026-04-14", 331], ["2026-04-15", 326], ["2026-04-16", 265], ["2026-04-17", 285], ["2026-04-18", 278], ["2026-04-19", 250], ["2026-04-20", 286], ["2026-04-21", 238], ["2026-04-22", 235], ["2026-04-23", 193], ["2026-04-24", 209], ["2026-04-25", 267], ["2026-04-26", 242], ["2026-04-27", 214], ["2026-04-28", 179], ["2026-04-29", 179], ["2026-04-30", 148], ["2026-05-01", 161], ["2026-05-02", 160], ["2026-05-03", 146], ["2026-05-04", 169], ["2026-05-05", 143], ["2026-05-06", 144], ["2026-05-07", 119], ["2026-05-08", 131], ["2026-05-09", 171], ["2026-05-10", 157], ["2026-05-11", 141], ["2026-05-12", 120], ["2026-05-13", 122], ["2026-05-14", 102], ["2026-05-15", 113], ["2026-05-16", 114], ["2026-05-17", 105], ["2026-05-18", 124], ["2026-05-19", 106], ["2026-05-20", 108], ["2026-05-21", 91], ["2026-05-22", 101], ["2026-05-23", 103], ["2026-05-24", 95], ["2026-05-25", 113], ["2026-05-26", 97], ["2026-05-27", 99], ["2026-05-28", 84], ["2026-05-29", 94], ["2026-05-30", 96], ["2026-05-31", 89], ["2026-06-01", 106], ["2026-06-02", 92], ["2026-06-03", 94], ["2026-06-04", 80], ["2026-06-05", 90], ["2026-06-06", 119], ["2026-06-07", 111], ["2026-06-08", 102], ["2026-06-09", 88], ["2026-06-10", 91], ["2026-06-11", 77], ["2026-06-12", 87], ["2026-06-13", 89], ["2026-06-14", 83], ["2026-06-15", 99], ["2026-06-16", 86], ["2026-06-17", 89], ["2026-06-18", 75], ["2026-06-19", 85], ["2026-06-20", 113], ["2026-06-21", 106], ["2026-06-22", 97], ["2026-06-23", 85], ["2026-06-24", 87], ["2026-06-25", 74], ["2026-06-26", 84], ["2026-06-27", 86], ["2026-06-28", 81], ["2026-06-29", 96], ["2026-06-30", 84], ["2026-07-01", 87], ["2026-07-02", 74], ["2026-07-03", 108], ["2026-07-04", 111], ["2026-07-05", 104], ["2026-07-06", 96], ["2026-07-07", 83], ["2026-07-08", 86], ["2026-07-09", 73], ["2026-07-10", 83], ["2026-07-11", 85], ["2026-07-12", 80], ["2026-07-13", 95], ["2026-07-14", 83], ["2026-07-15", 86], ["2026-07-16", 73], ["2026-07-17", 82], ["2026-07-18", 110], ["2026-07-19", 103], ["2026-07-20", 95], ["2026-07-21", 83], ["2026-07-22", 111], ["2026-07-23", 73], ["2026-07-24", 82], ["2026-07-25", 84], ["2026-07-26", 79], ["2026-07-27", 95], ["2026-07-28", 83], ["2026-07-29", 85], ["2026-07-30", 73], ["2026-07-31", 82], ["2026-08-01", 109], ["2026-08-02", 103], ["2026-08-03", 95], ["2026-08-04", 82], ["2026-08-05", 85]],
-        "TVG6380": [["2026-04-07", 10], ["2026-04-08", 330], ["2026-04-09", 305], ["2026-04-10", 453], ["2026-04-11", 759], ["2026-04-12", 734], ["2026-04-13", 318], ["2026-04-14", 269], ["2026-04-15", 271], ["2026-04-16", 251], ["2026-04-17", 373], ["2026-04-18", 481], ["2026-04-19", 465], ["2026-04-20", 262], ["2026-04-21", 221], ["2026-04-22", 224], ["2026-04-23", 207], ["2026-04-24", 308], ["2026-04-25", 516], ["2026-04-26", 500], ["2026-04-27", 217], ["2026-04-28", 183], ["2026-04-29", 185], ["2026-04-30", 171], ["2026-05-01", 256], ["2026-05-02", 330], ["2026-05-03", 319], ["2026-05-04", 180], ["2026-05-05", 153], ["2026-05-06", 154], ["2026-05-07", 143], ["2026-05-08", 213], ["2026-05-09", 358], ["2026-05-10", 347], ["2026-05-11", 151], ["2026-05-12", 128], ["2026-05-13", 129], ["2026-05-14", 120], ["2026-05-15", 179], ["2026-05-16", 231], ["2026-05-17", 224], ["2026-05-18", 127], ["2026-05-19", 108], ["2026-05-20", 109], ["2026-05-21", 101], ["2026-05-22", 151], ["2026-05-23", 196], ["2026-05-24", 190], ["2026-05-25", 108], ["2026-05-26", 91], ["2026-05-27", 93], ["2026-05-28", 86], ["2026-05-29", 129], ["2026-05-30", 167], ["2026-05-31", 162], ["2026-06-01", 92], ["2026-06-02", 78], ["2026-06-03", 79], ["2026-06-04", 74], ["2026-06-05", 111], ["2026-06-06", 187], ["2026-06-07", 182], ["2026-06-08", 79], ["2026-06-09", 68], ["2026-06-10", 69], ["2026-06-11", 64], ["2026-06-12", 96], ["2026-06-13", 125], ["2026-06-14", 122], ["2026-06-15", 69], ["2026-06-16", 59], ["2026-06-17", 60], ["2026-06-18", 56], ["2026-06-19", 84], ["2026-06-20", 143], ["2026-06-21", 139], ["2026-06-22", 61], ["2026-06-23", 52], ["2026-06-24", 53], ["2026-06-25", 50], ["2026-06-26", 75], ["2026-06-27", 97], ["2026-06-28", 95], ["2026-06-29", 54], ["2026-06-30", 46], ["2026-07-01", 48], ["2026-07-02", 44], ["2026-07-03", 87], ["2026-07-04", 114], ["2026-07-05", 111], ["2026-07-06", 49], ["2026-07-07", 42], ["2026-07-08", 43], ["2026-07-09", 40], ["2026-07-10", 61], ["2026-07-11", 79], ["2026-07-12", 78], ["2026-07-13", 45], ["2026-07-14", 38], ["2026-07-15", 39], ["2026-07-16", 37], ["2026-07-17", 56], ["2026-07-18", 95], ["2026-07-19", 93], ["2026-07-20", 41], ["2026-07-21", 35], ["2026-07-22", 47], ["2026-07-23", 34], ["2026-07-24", 52], ["2026-07-25", 68], ["2026-07-26", 67], ["2026-07-27", 38], ["2026-07-28", 33], ["2026-07-29", 34], ["2026-07-30", 32], ["2026-07-31", 48], ["2026-08-01", 83], ["2026-08-02", 81], ["2026-08-03", 36], ["2026-08-04", 31], ["2026-08-05", 32]]
+        "TVG6380": [["2026-04-07", 10], ["2026-04-08", 330], ["2026-04-09", 305], ["2026-04-10", 453], ["2026-04-11", 759], ["2026-04-12", 734], ["2026-04-13", 318], ["2026-04-14", 269], ["2026-04-15", 271], ["2026-04-16", 251], ["2026-04-17", 373], ["2026-04-18", 481], ["2026-04-19", 465], ["2026-04-20", 262], ["2026-04-21", 221], ["2026-04-22", 224], ["2026-04-23", 207], ["2026-04-24", 308], ["2026-04-25", 516], ["2026-04-26", 500], ["2026-04-27", 217], ["2026-04-28", 183], ["2026-04-29", 185], ["2026-04-30", 171], ["2026-05-01", 256], ["2026-05-02", 330], ["2026-05-03", 319], ["2026-05-04", 180], ["2026-05-05", 153], ["2026-05-06", 154], ["2026-05-07", 143], ["2026-05-08", 213], ["2026-05-09", 358], ["2026-05-10", 347], ["2026-05-11", 151], ["2026-05-12", 128], ["2026-05-13", 129], ["2026-05-14", 120], ["2026-05-15", 179], ["2026-05-16", 231], ["2026-05-17", 224], ["2026-05-18", 127], ["2026-05-19", 108], ["2026-05-20", 109], ["2026-05-21", 101], ["2026-05-22", 151], ["2026-05-23", 196], ["2026-05-24", 190], ["2026-05-25", 108], ["2026-05-26", 91], ["2026-05-27", 93], ["2026-05-28", 86], ["2026-05-29", 129], ["2026-05-30", 167], ["2026-05-31", 162], ["2026-06-01", 92], ["2026-06-02", 78], ["2026-06-03", 79], ["2026-06-04", 74], ["2026-06-05", 111], ["2026-06-06", 187], ["2026-06-07", 182], ["2026-06-08", 79], ["2026-06-09", 68], ["2026-06-10", 69], ["2026-06-11", 64], ["2026-06-12", 96], ["2026-06-13", 125], ["2026-06-14", 122], ["2026-06-15", 69], ["2026-06-16", 59], ["2026-06-17", 60], ["2026-06-18", 56], ["2026-06-19", 84], ["2026-06-20", 143], ["2026-06-21", 139], ["2026-06-22", 61], ["2026-06-23", 52], ["2026-06-24", 53], ["2026-06-25", 50], ["2026-06-26", 75], ["2026-06-27", 97], ["2026-06-28", 95], ["2026-06-29", 54], ["2026-06-30", 46], ["2026-07-01", 48], ["2026-07-02", 44], ["2026-07-03", 87], ["2026-07-04", 114], ["2026-07-05", 111], ["2026-07-06", 49], ["2026-07-07", 42], ["2026-07-08", 43], ["2026-07-09", 40], ["2026-07-10", 61], ["2026-07-11", 79], ["2026-07-12", 78], ["2026-07-13", 45], ["2026-07-14", 38], ["2026-07-15", 39], ["2026-07-16", 37], ["2026-07-17", 56], ["2026-07-18", 95], ["2026-07-19", 93], ["2026-07-20", 41], ["2026-07-21", 35], ["2026-07-22", 47], ["2026-07-23", 34], ["2026-07-24", 52], ["2026-07-25", 68], ["2026-07-26", 67], ["2026-07-27", 38], ["2026-07-28", 33], ["2026-07-29", 34], ["2026-07-30", 32], ["2026-07-31", 48], ["2026-08-01", 83], ["2026-08-02", 81], ["2026-08-03", 36], ["2026-08-04", 31], ["2026-08-05", 32]],
+        "TVG6370": [["2026-04-07", 10], ["2026-04-08", 470], ["2026-04-09", 380], ["2026-04-10", 406], ["2026-04-11", 513], ["2026-04-12", 459], ["2026-04-13", 401], ["2026-04-14", 331], ["2026-04-15", 326], ["2026-04-16", 265], ["2026-04-17", 285], ["2026-04-18", 278], ["2026-04-19", 250], ["2026-04-20", 286], ["2026-04-21", 238], ["2026-04-22", 235], ["2026-04-23", 193], ["2026-04-24", 209], ["2026-04-25", 267], ["2026-04-26", 242], ["2026-04-27", 214], ["2026-04-28", 179], ["2026-04-29", 179], ["2026-04-30", 148], ["2026-05-01", 161], ["2026-05-02", 160], ["2026-05-03", 146], ["2026-05-04", 169], ["2026-05-05", 143], ["2026-05-06", 144], ["2026-05-07", 119], ["2026-05-08", 131], ["2026-05-09", 171], ["2026-05-10", 157], ["2026-05-11", 141], ["2026-05-12", 120], ["2026-05-13", 122], ["2026-05-14", 102], ["2026-05-15", 113], ["2026-05-16", 114], ["2026-05-17", 105], ["2026-05-18", 124], ["2026-05-19", 106], ["2026-05-20", 108], ["2026-05-21", 91], ["2026-05-22", 101], ["2026-05-23", 103], ["2026-05-24", 95], ["2026-05-25", 113], ["2026-05-26", 97], ["2026-05-27", 99], ["2026-05-28", 84], ["2026-05-29", 94], ["2026-05-30", 96], ["2026-05-31", 89], ["2026-06-01", 106], ["2026-06-02", 92], ["2026-06-03", 94], ["2026-06-04", 80], ["2026-06-05", 90], ["2026-06-06", 119], ["2026-06-07", 111], ["2026-06-08", 102], ["2026-06-09", 88], ["2026-06-10", 91], ["2026-06-11", 77], ["2026-06-12", 87], ["2026-06-13", 89], ["2026-06-14", 83], ["2026-06-15", 99], ["2026-06-16", 86], ["2026-06-17", 89], ["2026-06-18", 75], ["2026-06-19", 85], ["2026-06-20", 113], ["2026-06-21", 106], ["2026-06-22", 97], ["2026-06-23", 85], ["2026-06-24", 87], ["2026-06-25", 74], ["2026-06-26", 84], ["2026-06-27", 86], ["2026-06-28", 81], ["2026-06-29", 96], ["2026-06-30", 84], ["2026-07-01", 87], ["2026-07-02", 74], ["2026-07-03", 108], ["2026-07-04", 111], ["2026-07-05", 104], ["2026-07-06", 96], ["2026-07-07", 83], ["2026-07-08", 86], ["2026-07-09", 73], ["2026-07-10", 83], ["2026-07-11", 85], ["2026-07-12", 80], ["2026-07-13", 95], ["2026-07-14", 83], ["2026-07-15", 86], ["2026-07-16", 73], ["2026-07-17", 82], ["2026-07-18", 110], ["2026-07-19", 103], ["2026-07-20", 95], ["2026-07-21", 83], ["2026-07-22", 111], ["2026-07-23", 73], ["2026-07-24", 82], ["2026-07-25", 84], ["2026-07-26", 79], ["2026-07-27", 95], ["2026-07-28", 83], ["2026-07-29", 85], ["2026-07-30", 73], ["2026-07-31", 82], ["2026-08-01", 109], ["2026-08-02", 103], ["2026-08-03", 95], ["2026-08-04", 82], ["2026-08-05", 85]]
       },
       "pdp": [],
       "crossSell": [],
@@ -25581,7 +25581,7 @@ window.DASHBOARD_DATA = {
       "name": "Holiday Phase 2: Brilliant Eye Brightener Grace and Hope Drop",
       "launchDate": "2026-10-14",
       "internalDate": null,
-      "trackedId": null,
+      "trackedId": "beb-grace-hope",
       "section": "GTM Campaigns",
       "asanaUrl": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693234"
     },
@@ -25801,5 +25801,6 @@ window.DASHBOARD_DATA = {
         "config_launch_date": "2026-10-12"
       }
     ]
-  }
+  },
+  "launchGaps": []
 };
