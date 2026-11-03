@@ -401,6 +401,33 @@
           "color": "#7D4A6B"
         }
       ]
+    },
+    {
+      "id": "beb-grace-hope",
+      "name": "BEB Holiday: Grace & Hope",
+      "subtitle": "Brilliant Eye Brightener™ · 2 holiday shades",
+      "accent": "#B5446E",
+      "launch_date": "2026-11-04",
+      "asana_gid": "1219335039693234",
+      "category": "Eyeshadow",
+      "category_type_patterns": [
+        "%shadow%",
+        "%illuminating stick%"
+      ],
+      "skus": [
+        {
+          "sku": "TVG6670",
+          "name": "Grace",
+          "shade": "Brilliant Eye Brightener™",
+          "color": "#D8A48F"
+        },
+        {
+          "sku": "TVG6660",
+          "name": "Hope",
+          "shade": "Brilliant Eye Brightener™",
+          "color": "#C2849B"
+        }
+      ]
     }
   ],
   "upcoming": [

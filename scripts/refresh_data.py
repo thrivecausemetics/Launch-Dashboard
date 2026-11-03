@@ -1562,6 +1562,56 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
     }
 
 
+# How long a launch that went live without SKUs keeps being reported. Short on
+# purpose: the point is to catch it the morning it happens, while somebody can
+# still fix the launch day's reporting. Past this the calendar entry is either
+# deliberately not a tracked launch — giveaways and promos live on the same
+# calendar — or it needs a decision that a daily reminder will not produce, and
+# a standing alert nobody closes is the failure this system already had once.
+GAP_REPORT_DAYS = 14
+
+
+def launch_gaps(cfg, cal, today):
+    """Launches whose date has passed with no SKUs behind them.
+
+    Three times this quarter a launch sat in the Upcoming rail on its own
+    launch day — Triple Threat, Pumpkin Spice Latte, Eyeshadow Quads Drop 2 —
+    and every one was found by a person noticing, not by anything here. The
+    pipeline cannot query a launch with no SKUs, so it produces no data, no
+    signals and no alerts: the silence looks identical to a quiet launch.
+
+    Two shapes, same consequence:
+      * a calendar entry whose live date has passed with no tracked launch
+        linked to it at all (all three misses were this);
+      * a config entry whose date has passed with an empty SKU list.
+    """
+    gaps = []
+
+    def age(d):
+        return (today - dt.date.fromisoformat(d)).days
+
+    for e in (cal or {}).get("not_in_config") or []:
+        d = e.get("launch_date")
+        if not d or not (0 <= age(d) <= GAP_REPORT_DAYS):
+            continue
+        gaps.append({
+            "name": e["name"], "launchDate": d, "daysLate": age(d),
+            "source": "calendar", "asanaUrl": e.get("asana_url"),
+        })
+
+    for lc in cfg["launches"]:
+        if lc["skus"] or not (0 <= age(lc["launch_date"]) <= GAP_REPORT_DAYS):
+            continue
+        gaps.append({
+            "name": lc["name"], "launchDate": lc["launch_date"],
+            "daysLate": age(lc["launch_date"]), "source": "config",
+            "launchId": lc["id"], "asanaUrl": None,
+        })
+
+    gaps.sort(key=lambda g: (-g["daysLate"], g["name"]))
+    return gaps
+
+
 def pending_launch(lc):
     return {
         "launchId": lc["id"], "name": lc["name"], "launchDate": lc["launch_date"],
@@ -1746,6 +1796,16 @@ def main():
         print(f"WARNING: {lc['id']} launched {lc['launch_date']} but has no SKUs "
               f"in config/launches.json — skipping (will show as 'data pending').")
 
+    # Reported before the Snowflake work so a gap is visible in the log even if
+    # the refresh later fails: a launch going unreported is the more expensive
+    # of the two problems.
+    gaps = launch_gaps(cfg, cal, today)
+    for g in gaps:
+        when = "launched today" if g["daysLate"] == 0 else f"launched {g['daysLate']} days ago"
+        print(f"::warning::LAUNCH NOT TRACKED: {g['name']} ({when}, "
+              f"{g['launchDate']}) has no SKUs configured — it will show no data "
+              f"until they are added to config/launches.json.")
+
     conn = connect()
     try:
         cur = conn.cursor()
@@ -1802,6 +1862,7 @@ def main():
         "launches": launches,
         "upcoming": upcoming_out,
         "calendar": calendar_out,
+        "launchGaps": gaps,
     }
 
     OUT_PATH.write_text(

@@ -55,6 +55,10 @@ DIGEST_WEEKDAY = 0                      # Monday
 # Plain-language labels for the signal ranks, so a reader who has never opened
 # the dashboard can tell an out-of-stock from a soft conversion problem.
 RANK_LABEL = {
+    # Above every stock and conversion rule on purpose. The others describe a
+    # launch that is being measured; this one says a launch is not being
+    # measured at all, and nothing below it can fire until it is fixed.
+    -1: ":rotating_light: Launch not tracked",
     0: ":red_circle: Out of stock",
     1: ":warning: Stock running out",
     2: ":chart_with_downwards_trend: Conversion falling",
@@ -102,6 +106,28 @@ def collect(data, base):
     within a rank so a launch in its opening week is not buried under a
     four-month-old one raising the same flag."""
     out = []
+    # A launch with no SKUs produces no data, so it can raise none of the
+    # signals below — its silence is indistinguishable from a quiet launch.
+    # Reported first because every other alert on it is impossible until the
+    # SKUs exist.
+    for g in data.get("launchGaps", []):
+        when = ("launched today" if g["daysLate"] == 0
+                else f"launched yesterday" if g["daysLate"] == 1
+                else f"launched {g['daysLate']} days ago")
+        out.append({
+            "id": f"gap|{g.get('launchId') or g['name']}",
+            "rank": -1,
+            "launch": g["name"],
+            "launchDate": g["launchDate"],
+            "title": f"{g['name']} is live but not on the dashboard",
+            "detail": f"{when.capitalize()} ({g['launchDate']}) with no SKUs configured, "
+                      f"so nothing is being measured for it — no sales, no stock "
+                      f"projection, and no alerts of any kind.",
+            "action": "Send the launch SKUs to the data team, or reply here with them. "
+                      "They go into config/launches.json and the dashboard fills in on "
+                      "the next morning's refresh.",
+            "url": g.get("asanaUrl") or base.rstrip("/") + "/",
+        })
     for l in data.get("launches", []):
         if l.get("archived") or not l.get("signals"):
             continue
