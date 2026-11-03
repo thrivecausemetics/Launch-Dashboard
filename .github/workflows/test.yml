@@ -27,6 +27,8 @@ jobs:
         run: python scripts/test_snowflake_auth.py
       - name: Alert labels name their product
         run: python scripts/test_alert_labels.py
+      - name: Launches live without SKUs are reported
+        run: python scripts/test_launch_gaps.py
       - name: Query builders still assemble
         # Catches a broken SQL f-string or a malformed launches.json without
         # needing a Snowflake connection.
