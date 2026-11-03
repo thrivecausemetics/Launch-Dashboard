@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-02",
+  "lastRun": "2026-11-03",
   "rulesVersion": 2,
   "lastDigest": "2026-11-02",
-  "dataCutoff": "2026-11-01",
+  "dataCutoff": "2026-11-02",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -24,25 +24,25 @@
     },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~19 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~18 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-02"
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~10 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~12 days",
       "firstSeen": "2026-10-26",
       "lastPosted": "2026-11-02"
     },
     "lasting-mark-lip-stain|oos-soon:us:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~4 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~3 days",
       "firstSeen": "2026-10-12",
       "lastPosted": "2026-11-02"
     },
     "eyeshadow-quads|oos-soon:ca:TVG6700": {
       "rank": 1,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~14 days",
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~12 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-02"
     },
@@ -51,6 +51,12 @@
       "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) is behind plan over the last 7 days",
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-11-02"
+    },
+    "lasting-mark-lip-stain|recent-behind:TVG7230": {
+      "rank": 3,
+      "title": "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days",
+      "firstSeen": "2026-11-03",
+      "lastPosted": "2026-11-03"
     },
     "psl-pout-hero|pacing": {
       "rank": 4,
