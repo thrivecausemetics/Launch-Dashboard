@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-03",
+  "lastRun": "2026-11-04",
   "rulesVersion": 2,
   "lastDigest": "2026-11-02",
-  "dataCutoff": "2026-11-02",
+  "dataCutoff": "2026-11-03",
   "alerts": {
     "gap|Holiday Phase 1: Ecomm Bag Drops": {
       "rank": -1,
@@ -36,19 +36,19 @@
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~12 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~5 days",
       "firstSeen": "2026-10-26",
       "lastPosted": "2026-11-02"
     },
     "lasting-mark-lip-stain|oos-soon:us:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~3 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~2 days",
       "firstSeen": "2026-10-12",
       "lastPosted": "2026-11-02"
     },
     "eyeshadow-quads|oos-soon:ca:TVG6700": {
       "rank": 1,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~12 days",
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~11 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-02"
     },
@@ -58,12 +58,6 @@
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-11-02"
     },
-    "lasting-mark-lip-stain|recent-behind:TVG7230": {
-      "rank": 3,
-      "title": "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days",
-      "firstSeen": "2026-11-03",
-      "lastPosted": "2026-11-03"
-    },
     "psl-pout-hero|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
@@ -71,5 +65,7 @@
       "lastPosted": "2026-11-02"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days"
+  ]
 }
