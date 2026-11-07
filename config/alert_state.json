@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-06",
+  "lastRun": "2026-11-07",
   "rulesVersion": 2,
   "lastDigest": "2026-11-02",
-  "dataCutoff": "2026-11-05",
+  "dataCutoff": "2026-11-06",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
@@ -24,7 +24,7 @@
     },
     "beb-grace-hope|oos-soon:us:TVG6660": {
       "rank": 1,
-      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~16 days",
+      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~18 days",
       "firstSeen": "2026-11-05",
       "lastPosted": "2026-11-05"
     },
@@ -36,13 +36,13 @@
     },
     "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
       "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~5 days",
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~2 days",
       "firstSeen": "2026-10-26",
       "lastPosted": "2026-11-02"
     },
     "eyeshadow-quads|oos-soon:ca:TVG6700": {
       "rank": 1,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~12 days",
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~11 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-02"
     },
@@ -71,9 +71,5 @@
       "lastPosted": "2026-11-02"
     }
   },
-  "resolvedToday": [
-    "Holiday Phase 1: Ecomm Bag Drops is live but not on the dashboard",
-    "Hope (Brilliant Eye Brightener\u2122) runs out in Canada (.ca) in ~19 days",
-    "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in US (.com) in ~1 days"
-  ]
+  "resolvedToday": []
 }
