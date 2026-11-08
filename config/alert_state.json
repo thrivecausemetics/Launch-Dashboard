@@ -5,16 +5,22 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-07",
+  "lastRun": "2026-11-08",
   "rulesVersion": 2,
   "lastDigest": "2026-11-02",
-  "dataCutoff": "2026-11-06",
+  "dataCutoff": "2026-11-07",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
       "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-11-02"
+    },
+    "lasting-mark-lip-stain|oos:us:TVG7220": {
+      "rank": 0,
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in US (.com)",
+      "firstSeen": "2026-11-08",
+      "lastPosted": "2026-11-08"
     },
     "lasting-mark-lip-stain|oos:ca:TVG7250": {
       "rank": 0,
@@ -24,25 +30,19 @@
     },
     "beb-grace-hope|oos-soon:us:TVG6660": {
       "rank": 1,
-      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~18 days",
+      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~19 days",
       "firstSeen": "2026-11-05",
       "lastPosted": "2026-11-05"
     },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~16 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~15 days",
       "firstSeen": "2026-11-01",
-      "lastPosted": "2026-11-02"
-    },
-    "lasting-mark-lip-stain|oos-soon:ca:TVG7220": {
-      "rank": 1,
-      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~2 days",
-      "firstSeen": "2026-10-26",
       "lastPosted": "2026-11-02"
     },
     "eyeshadow-quads|oos-soon:ca:TVG6700": {
       "rank": 1,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~11 days",
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~14 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-02"
     },
@@ -71,5 +71,7 @@
       "lastPosted": "2026-11-02"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "Brandy (Lasting Mark\u2122 Lip-Defining Stain) runs out in Canada (.ca) in ~2 days"
+  ]
 }
