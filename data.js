@@ -10,8 +10,8 @@ window.DASHBOARD_DATA = {
     "retentionDays": 122,
     "oosWindowDays": 7,
     "npdOosSyncedAt": "2026-11-10",
-    "npdRealInventoryAsOf": "2026-10-20",
-    "npdRealInventoryNote": "Not refreshed since 2026-10-20 \u2014 the NetSuite credential Demand Planning use for the stock count is pending an admin fix. Decay Curve OOS in this file IS current. While this is set, the hub computes weeks of cover and the SKU colour band from Snowflake inventory instead. Remove both fields once the count resumes.",
+    "npdRealInventoryAsOf": "2026-11-10",
+    "npdRealInventoryNote": "Current, but sourced from Snowflake UOS.INVENTORY_LEVELS rather than Demand Planning's NetSuite count \u2014 their credential is still pending an admin fix, so the Snowflake figures were pasted into the sheet as an interim. Treat the numbers as an estimate: Demand Planning say Snowflake is not always right. Remove both fields once the NetSuite count resumes.",
     "sourceStatus": {
       "uos": "live",
       "uos_products": "live",
@@ -899,8 +899,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-11-18",
           "weeksOfStock": 47.6,
-          "decayCurveOOS": "2027-03-19",
-          "realInventoryUnits": 11693
+          "decayCurveOOS": "2027-03-20",
+          "realInventoryUnits": 11753
         },
         {
           "sku": "TVG6700",
@@ -936,8 +936,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-11-18",
           "weeksOfStock": 17.0,
-          "decayCurveOOS": "2027-01-30",
-          "realInventoryUnits": 7894
+          "decayCurveOOS": "2027-01-22",
+          "realInventoryUnits": 7340
         }
       ],
       "signals": {
@@ -3633,8 +3633,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 8.9,
-          "decayCurveOOS": "2027-01-27",
-          "realInventoryUnits": 9094
+          "decayCurveOOS": "2027-01-03",
+          "realInventoryUnits": 6682
         },
         {
           "sku": "TVG7240",
@@ -3670,8 +3670,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 12.9,
-          "decayCurveOOS": "2027-02-02",
-          "realInventoryUnits": 7040
+          "decayCurveOOS": "2027-01-11",
+          "realInventoryUnits": 5620
         },
         {
           "sku": "TVG7220",
@@ -3707,8 +3707,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-11-08",
-          "realInventoryUnits": 919
+          "decayCurveOOS": "2026-10-15",
+          "realInventoryUnits": 0
         },
         {
           "sku": "TVG7230",
@@ -3744,8 +3744,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2566,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 46.1,
-          "decayCurveOOS": "2027-03-18",
-          "realInventoryUnits": 10782
+          "decayCurveOOS": "2027-03-22",
+          "realInventoryUnits": 11067
         },
         {
           "sku": "TVG7260",
@@ -3781,8 +3781,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 27.7,
-          "decayCurveOOS": "2027-04-21",
-          "realInventoryUnits": 5203
+          "decayCurveOOS": "2027-03-30",
+          "realInventoryUnits": 4604
         }
       ],
       "signals": {
@@ -12055,7 +12055,7 @@ window.DASHBOARD_DATA = {
           "planEndDate": "2027-02-03",
           "weeksOfStock": 2.2,
           "decayCurveOOS": "2026-11-07",
-          "realInventoryUnits": 5420
+          "realInventoryUnits": 1817
         },
         {
           "sku": "TVG6730",
@@ -12091,8 +12091,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 270,
           "planEndDate": "2027-02-03",
           "weeksOfStock": 8.9,
-          "decayCurveOOS": "2028-02-12",
-          "realInventoryUnits": 8338
+          "decayCurveOOS": "2027-08-09",
+          "realInventoryUnits": 6158
         }
       ],
       "signals": {
@@ -13015,7 +13015,7 @@ window.DASHBOARD_DATA = {
           "planEndDate": "2027-03-03",
           "weeksOfStock": 2.9,
           "decayCurveOOS": "2026-12-05",
-          "realInventoryUnits": 22080
+          "realInventoryUnits": 16131
         },
         {
           "sku": "TVG6670",
@@ -13051,8 +13051,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 29847,
           "planEndDate": "2027-03-03",
           "weeksOfStock": 7.7,
-          "decayCurveOOS": null,
-          "realInventoryUnits": null
+          "decayCurveOOS": "2027-12-09",
+          "realInventoryUnits": 29169
         }
       ],
       "signals": {
@@ -13957,8 +13957,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-09-11",
-          "realInventoryUnits": 47
+          "decayCurveOOS": "2026-12-15",
+          "realInventoryUnits": 12938
         },
         {
           "sku": "TVG5880",
@@ -13995,7 +13995,7 @@ window.DASHBOARD_DATA = {
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
           "decayCurveOOS": "2026-09-12",
-          "realInventoryUnits": 135
+          "realInventoryUnits": 121
         },
         {
           "sku": "TVG5960",
@@ -14031,8 +14031,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-10-15",
-          "realInventoryUnits": 2290
+          "decayCurveOOS": "2026-12-09",
+          "realInventoryUnits": 5940
         },
         {
           "sku": "TVG5890",
@@ -14068,8 +14068,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-08-03",
-          "realInventoryUnits": 19333
+          "decayCurveOOS": "2027-07-30",
+          "realInventoryUnits": 19112
         },
         {
           "sku": "TVG5920",
@@ -14105,8 +14105,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 1529,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-01-16",
-          "realInventoryUnits": 6522
+          "decayCurveOOS": "2027-01-11",
+          "realInventoryUnits": 6295
         },
         {
           "sku": "TVG5900",
@@ -14142,8 +14142,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2026-11-04",
-          "realInventoryUnits": 2421
+          "decayCurveOOS": "2026-12-07",
+          "realInventoryUnits": 3908
         },
         {
           "sku": "TVG5940",
@@ -14179,8 +14179,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2741,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-10-04",
-          "realInventoryUnits": 7065
+          "decayCurveOOS": "2027-09-29",
+          "realInventoryUnits": 6980
         },
         {
           "sku": "TVG5910",
@@ -14216,8 +14216,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 1663,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-10-23",
-          "realInventoryUnits": 6617
+          "decayCurveOOS": "2027-10-17",
+          "realInventoryUnits": 6514
         },
         {
           "sku": "TVG5930",
@@ -14253,8 +14253,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 1451,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-12-14",
-          "realInventoryUnits": 6652
+          "decayCurveOOS": "2027-12-10",
+          "realInventoryUnits": 6596
         },
         {
           "sku": "TVG5970",
@@ -14290,8 +14290,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 5974,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
-          "decayCurveOOS": "2028-05-10",
-          "realInventoryUnits": 7616
+          "decayCurveOOS": "2028-05-02",
+          "realInventoryUnits": 7520
         }
       ],
       "signals": {
@@ -17896,7 +17896,7 @@ window.DASHBOARD_DATA = {
           "planEndDate": "2026-10-05",
           "weeksOfStock": null,
           "decayCurveOOS": null,
-          "realInventoryUnits": 18516
+          "realInventoryUnits": 17887
         },
         {
           "sku": "TVG6680",
@@ -17933,7 +17933,7 @@ window.DASHBOARD_DATA = {
           "planEndDate": "2026-10-05",
           "weeksOfStock": null,
           "decayCurveOOS": null,
-          "realInventoryUnits": 6914
+          "realInventoryUnits": 6713
         },
         {
           "sku": "TVG6710",
@@ -17970,7 +17970,7 @@ window.DASHBOARD_DATA = {
           "planEndDate": "2026-10-05",
           "weeksOfStock": null,
           "decayCurveOOS": null,
-          "realInventoryUnits": 16994
+          "realInventoryUnits": 16692
         }
       ],
       "signals": {
@@ -20937,8 +20937,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-07-11",
-          "realInventoryUnits": 28189
+          "decayCurveOOS": "2027-07-17",
+          "realInventoryUnits": 28664
         },
         {
           "sku": "TVG6390",
@@ -20974,8 +20974,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-03-11",
-          "realInventoryUnits": 12677
+          "decayCurveOOS": "2027-02-13",
+          "realInventoryUnits": 11203
         },
         {
           "sku": "TVG6370",
@@ -21012,7 +21012,7 @@ window.DASHBOARD_DATA = {
           "planEndDate": "2026-08-05",
           "weeksOfStock": null,
           "decayCurveOOS": "2027-03-03",
-          "realInventoryUnits": 19042
+          "realInventoryUnits": 23446
         }
       ],
       "signals": {
@@ -24905,8 +24905,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 2507,
           "planEndDate": "2026-10-14",
           "weeksOfStock": null,
-          "decayCurveOOS": "2027-11-12",
-          "realInventoryUnits": 29522
+          "decayCurveOOS": "2027-10-23",
+          "realInventoryUnits": 28010
         },
         {
           "sku": "TVG6640",
@@ -24943,7 +24943,7 @@ window.DASHBOARD_DATA = {
           "planEndDate": "2026-10-14",
           "weeksOfStock": null,
           "decayCurveOOS": null,
-          "realInventoryUnits": 18153
+          "realInventoryUnits": 21200
         }
       ],
       "signals": {
