@@ -5,16 +5,22 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-09",
+  "lastRun": "2026-11-10",
   "rulesVersion": 2,
   "lastDigest": "2026-11-09",
-  "dataCutoff": "2026-11-08",
+  "dataCutoff": "2026-11-09",
   "alerts": {
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
       "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) is out of stock in Canada (.ca)",
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-11-09"
+    },
+    "lasting-mark-lip-stain|oos:ca:TVG7220": {
+      "rank": 0,
+      "title": "Brandy (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
+      "firstSeen": "2026-11-10",
+      "lastPosted": "2026-11-10"
     },
     "lasting-mark-lip-stain|oos:us:TVG7220": {
       "rank": 0,
