@@ -831,14 +831,21 @@ def load_npd_oos():
     disagree, and which one is right is Demand Planning's call.
     """
     if not NPD_OOS_PATH.exists():
-        return {}, None
+        return {}, None, {}
     try:
         d = json.loads(NPD_OOS_PATH.read_text())
-        return (d.get("bySku") or {}), d.get("syncedAt")
+        # The two halves of the sheet can be different ages: Demand Planning's
+        # stock count needs a NetSuite credential that the decay curve does
+        # not, so one can stall while the other keeps updating. When that
+        # happens the snapshot says so, and the hub reads cover from Snowflake
+        # rather than presenting a stale count as current.
+        prov = {k: d.get(k) for k in ("realInventoryAsOf", "realInventoryNote")
+                if d.get(k)}
+        return (d.get("bySku") or {}), d.get("syncedAt"), prov
     except (json.JSONDecodeError, OSError) as e:
         print(f"WARNING: {NPD_OOS_PATH.name} unreadable ({e}); "
               f"continuing without Demand Planning's figures")
-        return {}, None
+        return {}, None, {}
 
 
 CALENDAR_PATH = ROOT / "config" / "launch_calendar.json"
@@ -1397,7 +1404,7 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
             # Demand Planning's figures, carried through as-is. Deliberately
             # separate fields rather than overwriting inventoryUnits/estOOSDate:
             # the two sources disagree and the dashboard shows both.
-            "decayCurveOOS": (NPD_OOS.get(sku) or {}).get("decayCurveOOS"),
+            "decayCurveOOS": _npd_oos_date(sku, launch_date),
             "realInventoryUnits": (NPD_OOS.get(sku) or {}).get("realInventoryUnits"),
         })
 
@@ -1623,6 +1630,27 @@ def launch_gaps(cfg, cal, today):
     return gaps
 
 
+def _npd_oos_date(sku, launch_date):
+    """Demand Planning's projected out-of-stock date, dropped if it is earlier
+    than the launch it belongs to.
+
+    A projection cannot run out before the product went on sale, so such a
+    value is a transcription slip in the sheet, not a figure to publish. Grace
+    arrived on 10 Nov as 25 Feb 2026 against a 4 Nov 2026 launch — eight months
+    before day one — and would have rendered as a plausible-looking Est. OOS
+    with no hint it was impossible. Blanked and named in the log so it gets
+    fixed at source; past dates on launches that genuinely ran out are
+    untouched, because those are real.
+    """
+    d = (NPD_OOS.get(sku) or {}).get("decayCurveOOS")
+    if d and launch_date and d < launch_date:
+        print(f"::warning::{sku} has a Decay Curve OOS of {d}, before its "
+              f"{launch_date} launch — impossible, so it is shown as unknown. "
+              f"Fix the NPD OOS Tracking sheet.")
+        return None
+    return d
+
+
 def pending_launch(lc):
     return {
         "launchId": lc["id"], "name": lc["name"], "launchDate": lc["launch_date"],
@@ -1708,9 +1736,13 @@ def main():
     retention = int(cfg.get("retention_days", 122))
     global LEARNINGS, NPD_OOS
     LEARNINGS = load_learnings()   # before build_launch(), which reads it
-    NPD_OOS, npd_synced_at = load_npd_oos()   # likewise
+    NPD_OOS, npd_synced_at, npd_prov = load_npd_oos()   # likewise
     print(f"Demand Planning OOS snapshot: {len(NPD_OOS)} SKUs"
           + (f" (synced {npd_synced_at})" if npd_synced_at else " (never synced)"))
+    if npd_prov.get("realInventoryAsOf"):
+        print(f"::warning::Real Inventory in the NPD sheet has not moved since "
+              f"{npd_prov['realInventoryAsOf']} — weeks of cover and the SKU "
+              f"colour band fall back to Snowflake inventory until it does.")
 
     cal = load_launch_calendar()
     tracked_by_gid = {l["asana_gid"]: l["id"] for l in cfg["launches"] if l.get("asana_gid")}
@@ -1868,6 +1900,8 @@ def main():
             "retentionDays": retention,
             "oosWindowDays": OOS_WINDOW_DAYS,
             "npdOosSyncedAt": npd_synced_at,
+            "npdRealInventoryAsOf": npd_prov.get("realInventoryAsOf"),
+            "npdRealInventoryNote": npd_prov.get("realInventoryNote"),
             "sourceStatus": SOURCE_STATUS,
         },
         "launches": launches,

@@ -272,11 +272,11 @@
             <th data-k="product">Product</th><th data-k="variant">Variant</th><th data-k="sku">SKU</th>
             <th data-k="launch">Launch</th><th data-k="curveEnd">Curve Ends</th>
             <th class="r" data-k="ptp">% to Plan<span class="th-sub">to date</span></th>
-            <th class="r" data-k="weeks">Wks of Stock<span class="th-sub">real inv ÷ run rate</span></th>
+            <th class="r" data-k="weeks">Wks of Stock<span class="th-sub" id="th-weeks">real inv ÷ run rate</span></th>
             <th class="r" data-k="oos">Est. OOS<span class="th-sub">Snowflake trend</span></th>
             <th class="r" data-k="npdOos">Decay Curve OOS<span class="th-sub">Demand Planning</span></th>
-            <th class="r" data-k="npdInv">Real Inventory<span class="th-sub">Demand Planning · Mondays</span></th>
-            <th class="r ref" data-k="inv">Snowflake Inventory<span class="th-sub">reference only</span></th>
+            <th class="r" data-k="npdInv">Real Inventory<span class="th-sub" id="th-npdinv">Demand Planning · Mondays</span></th>
+            <th class="r ref" data-k="inv" id="th-inv-cell">Snowflake Inventory<span class="th-sub" id="th-inv">reference only</span></th>
           </tr></thead>
           <tbody id="sum-body"></tbody>
         </table>
@@ -496,6 +496,15 @@
     : w < COVER_RED ? 'rgba(239,68,68,.10)'
     : w <= COVER_AMBER ? 'rgba(245,158,11,.14)' : 'rgba(34,160,107,.10)';
 
+  // Demand Planning's stock count can stall while the rest of their sheet
+  // keeps updating — the count needs a NetSuite credential the decay curve
+  // does not. When it has, cover is computed from Snowflake instead: a three
+  // week old count presented as current cover is worse than a daily figure
+  // Demand Planning merely distrust, because nothing on the page would say
+  // the number had stopped moving.
+  const NPD_INV_STALE = !!META.npdRealInventoryAsOf;
+  const coverSource = v => NPD_INV_STALE ? v.inventoryUnits : v.realInventoryUnits;
+
   const sumRows = live.flatMap(l => (l.byVariant || []).map(v => ({
     launchId: l.launchId,
     product: l.name, variant: v.name, sku: v.sku,
@@ -507,8 +516,8 @@
     // rate. The rate is the only part Snowflake still contributes — their
     // sheet carries no rate of its own — so a blank rate blanks the cover
     // rather than showing infinite stock.
-    weeks: v.realInventoryUnits != null && v.runRateUnitsPerDay > 0
-      ? Math.round(v.realInventoryUnits / v.runRateUnitsPerDay / 7 * 10) / 10 : null,
+    weeks: coverSource(v) != null && v.runRateUnitsPerDay > 0
+      ? Math.round(coverSource(v) / v.runRateUnitsPerDay / 7 * 10) / 10 : null,
     href: 'launch.html?id=' + encodeURIComponent(l.launchId),
   })));
 
@@ -518,6 +527,16 @@
      shows everything until someone chooses otherwise. */
   const hiddenLaunches = new Set();
   const visibleRows = () => sumRows.filter(r => !hiddenLaunches.has(r.launchId));
+
+  if (NPD_INV_STALE) {
+    const asOf = fmtSmart(META.npdRealInventoryAsOf);
+    const set = (id, txt) => { const el = document.getElementById(id); if (el) el.textContent = txt; };
+    set('th-weeks', 'Snowflake inv \u00f7 run rate');
+    set('th-npdinv', 'Demand Planning \u00b7 as of ' + asOf + ' \u00b7 NOT CURRENT');
+    set('th-inv', 'used for cover while Real Inventory is stale');
+    const cell = document.getElementById('th-inv-cell');
+    if (cell) cell.classList.remove('ref');
+  }
 
   const renderSummary = () => {
     const rows = visibleRows();
@@ -533,8 +552,8 @@
         <td class="r pill-risk" style="color:${riskColour(r.days)}">${
           r.inv === 0 ? 'out of stock' : fmtSmart(r.oos)}</td>
         <td class="r pill-risk" style="color:${riskColour(daysUntil(r.npdOos))}">${fmtSmart(r.npdOos)}</td>
-        <td class="r pill-risk" style="color:${coverColour(r.weeks)}">${num(r.npdInv)}</td>
-        <td class="r ref">${num(r.inv)}</td>
+        <td class="r pill-risk" style="color:${NPD_INV_STALE ? 'var(--muted)' : coverColour(r.weeks)}">${num(r.npdInv)}</td>
+        <td class="r${NPD_INV_STALE ? '' : ' ref'}" style="${NPD_INV_STALE ? 'color:' + coverColour(r.weeks) + ';font-weight:600' : ''}">${num(r.inv)}</td>
       </tr>`).join('')
       : `<tr><td colspan="11" style="text-align:center;padding:22px;color:var(--muted)">${
           sumRows.length ? 'Every launch is hidden — switch one back on above.'
@@ -562,7 +581,7 @@
       + legendItem(rows, 'amber', `${COVER_RED}–${COVER_AMBER} weeks`)
       + legendItem(rows, 'green', `over ${COVER_AMBER} weeks`)
       + legendItem(rows, 'none', 'no recent sales to project from')
-      + `<span class="lg-item">Real Inventory and Wks of Stock carry the same colour.</span>`;
+      + `<span class="lg-item">${NPD_INV_STALE ? 'Snowflake Inventory' : 'Real Inventory'} and Wks of Stock carry the same colour.</span>`;
   };
 
   /* ── CSV EXPORT ──
@@ -656,13 +675,22 @@
     `plan curve. ` +
     `<br><br><strong>Real Inventory</strong> and <strong>Decay Curve OOS</strong> come from Demand Planning's ` +
     `<em>NPD OOS Tracking</em> sheet${META.npdOosSyncedAt ? ', synced ' + fmtSmart(META.npdOosSyncedAt) : ''}; a dash means ` +
-    `that SKU is not on their sheet. Demand Planning refresh Real Inventory <strong>every Monday</strong>, so mid-week it is ` +
-    `a stock count of up to a week ago and will not have moved as units sold. ` +
-    `<strong>Snowflake Inventory</strong> is the daily figure from <code>UOS.INVENTORY_LEVELS</code>, kept for reference only — ` +
-    `it moves every day but Demand Planning say it is not always right, so cross-check with it rather than act on it. ` +
-    `<strong>Wks of Stock</strong> is real inventory at the trailing ` +
+    `that SKU is not on their sheet. ` +
+    (NPD_INV_STALE
+      ? `<span style="color:var(--warn);font-weight:600">Real Inventory has not been refreshed since ` +
+        `${fmtSmart(META.npdRealInventoryAsOf)}</span> — the NetSuite credential Demand Planning use for the stock count is ` +
+        `awaiting an admin fix, so those figures are shown greyed and should not be acted on. <strong>Decay Curve OOS is ` +
+        `current.</strong> Until the count resumes, <strong>Wks of Stock</strong>, the <strong>SKU</strong> colour band and ` +
+        `everything on this page that depends on cover are computed from <strong>Snowflake Inventory</strong> instead, which ` +
+        `is why that column is no longer greyed out. Snowflake is the daily figure from <code>UOS.INVENTORY_LEVELS</code>; ` +
+        `Demand Planning say it is not always right, so treat the cover numbers below as an estimate rather than their count. `
+      : `Demand Planning refresh Real Inventory <strong>every Monday</strong>, so mid-week it is ` +
+        `a stock count of up to a week ago and will not have moved as units sold. ` +
+        `<strong>Snowflake Inventory</strong> is the daily figure from <code>UOS.INVENTORY_LEVELS</code>, kept for reference only — ` +
+        `it moves every day but Demand Planning say it is not always right, so cross-check with it rather than act on it. `) +
+    `<strong>Wks of Stock</strong> is ${NPD_INV_STALE ? 'Snowflake' : 'real'} inventory at the trailing ` +
     `${META.oosWindowDays || 7}-day sell-through rate, and colours the <strong>SKU</strong>, <strong>Wks of Stock</strong> ` +
-    `and <strong>Real Inventory</strong> cells on how long that SKU has left: ` +
+    `and <strong>${NPD_INV_STALE ? 'Snowflake Inventory' : 'Real Inventory'}</strong> cells on how long that SKU has left: ` +
     `<span style="color:var(--danger);font-weight:600">under ${COVER_RED} weeks</span>, ` +
     `<span style="color:var(--warn);font-weight:600">${COVER_RED}–${COVER_AMBER} weeks</span>, ` +
     `<span style="color:var(--positive);font-weight:600">over ${COVER_AMBER} weeks</span>. ` +
