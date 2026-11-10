@@ -9,7 +9,9 @@ window.DASHBOARD_DATA = {
     "sourceDb": "DAASITY_DB",
     "retentionDays": 122,
     "oosWindowDays": 7,
-    "npdOosSyncedAt": "2026-10-20",
+    "npdOosSyncedAt": "2026-11-10",
+    "npdRealInventoryAsOf": "2026-10-20",
+    "npdRealInventoryNote": "Not refreshed since 2026-10-20 \u2014 the NetSuite credential Demand Planning use for the stock count is pending an admin fix. Decay Curve OOS in this file IS current. While this is set, the hub computes weeks of cover and the SKU colour band from Snowflake inventory instead. Remove both fields once the count resumes.",
     "sourceStatus": {
       "uos": "live",
       "uos_products": "live",
@@ -897,7 +899,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-11-18",
           "weeksOfStock": 47.6,
-          "decayCurveOOS": "2027-03-10",
+          "decayCurveOOS": "2027-03-19",
           "realInventoryUnits": 11693
         },
         {
@@ -934,7 +936,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-11-18",
           "weeksOfStock": 17.0,
-          "decayCurveOOS": "2027-01-28",
+          "decayCurveOOS": "2027-01-30",
           "realInventoryUnits": 7894
         }
       ],
@@ -3631,7 +3633,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 8.9,
-          "decayCurveOOS": "2027-01-28",
+          "decayCurveOOS": "2027-01-27",
           "realInventoryUnits": 9094
         },
         {
@@ -3668,7 +3670,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 12.9,
-          "decayCurveOOS": "2027-02-01",
+          "decayCurveOOS": "2027-02-02",
           "realInventoryUnits": 7040
         },
         {
@@ -3779,7 +3781,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
           "weeksOfStock": 27.7,
-          "decayCurveOOS": "2027-04-19",
+          "decayCurveOOS": "2027-04-21",
           "realInventoryUnits": 5203
         }
       ],
@@ -12089,7 +12091,7 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 270,
           "planEndDate": "2027-02-03",
           "weeksOfStock": 8.9,
-          "decayCurveOOS": "2028-02-24",
+          "decayCurveOOS": "2028-02-12",
           "realInventoryUnits": 8338
         }
       ],
@@ -13012,8 +13014,8 @@ window.DASHBOARD_DATA = {
           "unitsToGoal": 17318,
           "planEndDate": "2027-03-03",
           "weeksOfStock": 2.9,
-          "decayCurveOOS": null,
-          "realInventoryUnits": null
+          "decayCurveOOS": "2026-12-05",
+          "realInventoryUnits": 22080
         },
         {
           "sku": "TVG6670",
