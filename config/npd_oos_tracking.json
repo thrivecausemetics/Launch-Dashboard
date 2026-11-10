@@ -22,177 +22,177 @@
     "url": "https://docs.google.com/spreadsheets/d/1by_O_UW2oa9mDzF73f5PmCdfIrkOCghVZTa2P7LhXfs/edit#gid=915600089"
   },
   "syncedAt": "2026-11-10",
-  "realInventoryAsOf": "2026-10-20",
-  "realInventoryNote": "Not refreshed since 2026-10-20 \u2014 the NetSuite credential Demand Planning use for the stock count is pending an admin fix. Decay Curve OOS in this file IS current. While this is set, the hub computes weeks of cover and the SKU colour band from Snowflake inventory instead. Remove both fields once the count resumes.",
+  "realInventoryAsOf": "2026-11-10",
+  "realInventoryNote": "Current, but sourced from Snowflake UOS.INVENTORY_LEVELS rather than Demand Planning's NetSuite count \u2014 their credential is still pending an admin fix, so the Snowflake figures were pasted into the sheet as an interim. Treat the numbers as an estimate: Demand Planning say Snowflake is not always right. Remove both fields once the NetSuite count resumes.",
   "syncedBy": "manual snapshot (GOOGLE_SERVICE_ACCOUNT_JSON not configured yet)",
   "bySku": {
     "TVG575": {
-      "decayCurveOOS": "2027-03-11",
-      "realInventoryUnits": 9126
+      "decayCurveOOS": "2027-02-28",
+      "realInventoryUnits": 8786
     },
     "TVG576": {
-      "decayCurveOOS": "2027-02-20",
-      "realInventoryUnits": 31212
+      "decayCurveOOS": "2027-02-10",
+      "realInventoryUnits": 30041
     },
     "TVG577": {
-      "decayCurveOOS": "2027-07-30",
-      "realInventoryUnits": 10592
+      "decayCurveOOS": "2027-07-24",
+      "realInventoryUnits": 10453
     },
     "TVG578": {
-      "decayCurveOOS": "2027-04-26",
-      "realInventoryUnits": 10193
+      "decayCurveOOS": "2027-04-28",
+      "realInventoryUnits": 10225
     },
     "TVG579": {
-      "decayCurveOOS": "2027-05-06",
-      "realInventoryUnits": 18205
+      "decayCurveOOS": "2027-04-29",
+      "realInventoryUnits": 17828
     },
     "TVG580": {
       "decayCurveOOS": "2027-09-21",
-      "realInventoryUnits": 16545
+      "realInventoryUnits": 16564
     },
     "TVG582": {
       "decayCurveOOS": "2026-05-04",
-      "realInventoryUnits": 30587
+      "realInventoryUnits": 30675
     },
     "TVG583": {
       "decayCurveOOS": "2026-05-05",
-      "realInventoryUnits": 15828
+      "realInventoryUnits": 16817
     },
     "TVG581": {
-      "decayCurveOOS": "2026-11-30",
-      "realInventoryUnits": 10914
+      "decayCurveOOS": "2026-11-14",
+      "realInventoryUnits": 10013
     },
     "TVG584": {
       "decayCurveOOS": "2026-07-25",
-      "realInventoryUnits": 11122
+      "realInventoryUnits": 10932
     },
     "TVG6610": {
-      "decayCurveOOS": "2026-11-10",
-      "realInventoryUnits": 28896
+      "decayCurveOOS": "2026-11-13",
+      "realInventoryUnits": 29517
     },
     "TVG6620": {
-      "decayCurveOOS": "2026-08-28",
-      "realInventoryUnits": 19501
+      "decayCurveOOS": "2026-08-26",
+      "realInventoryUnits": 18792
     },
     "TVG6630": {
-      "decayCurveOOS": "2026-09-08",
-      "realInventoryUnits": 22903
+      "decayCurveOOS": "2026-09-06",
+      "realInventoryUnits": 22100
     },
     "TVG6390": {
-      "decayCurveOOS": "2027-03-11",
-      "realInventoryUnits": 12677
+      "decayCurveOOS": "2027-02-13",
+      "realInventoryUnits": 11203
     },
     "TVG6380": {
-      "decayCurveOOS": "2027-07-11",
-      "realInventoryUnits": 28189
+      "decayCurveOOS": "2027-07-17",
+      "realInventoryUnits": 28664
     },
     "TVG6370": {
       "decayCurveOOS": "2027-03-03",
-      "realInventoryUnits": 19042
+      "realInventoryUnits": 23446
     },
     "TVG5950": {
-      "decayCurveOOS": "2026-09-11",
-      "realInventoryUnits": 47
+      "decayCurveOOS": "2026-12-15",
+      "realInventoryUnits": 12938
     },
     "TVG5960": {
-      "decayCurveOOS": "2026-10-15",
-      "realInventoryUnits": 2290
+      "decayCurveOOS": "2026-12-09",
+      "realInventoryUnits": 5940
     },
     "TVG5920": {
-      "decayCurveOOS": "2027-01-16",
-      "realInventoryUnits": 6522
+      "decayCurveOOS": "2027-01-11",
+      "realInventoryUnits": 6295
     },
     "TVG5880": {
       "decayCurveOOS": "2026-09-12",
-      "realInventoryUnits": 135
+      "realInventoryUnits": 121
     },
     "TVG5940": {
-      "decayCurveOOS": "2027-10-04",
-      "realInventoryUnits": 7065
+      "decayCurveOOS": "2027-09-29",
+      "realInventoryUnits": 6980
     },
     "TVG5890": {
-      "decayCurveOOS": "2027-08-03",
-      "realInventoryUnits": 19333
+      "decayCurveOOS": "2027-07-30",
+      "realInventoryUnits": 19112
     },
     "TVG5910": {
-      "decayCurveOOS": "2027-10-23",
-      "realInventoryUnits": 6617
+      "decayCurveOOS": "2027-10-17",
+      "realInventoryUnits": 6514
     },
     "TVG5930": {
-      "decayCurveOOS": "2027-12-14",
-      "realInventoryUnits": 6652
+      "decayCurveOOS": "2027-12-10",
+      "realInventoryUnits": 6596
     },
     "TVG5900": {
-      "decayCurveOOS": "2026-11-04",
-      "realInventoryUnits": 2421
+      "decayCurveOOS": "2026-12-07",
+      "realInventoryUnits": 3908
     },
     "TVG5970": {
-      "decayCurveOOS": "2028-05-10",
-      "realInventoryUnits": 7616
+      "decayCurveOOS": "2028-05-02",
+      "realInventoryUnits": 7520
     },
     "TVG6710": {
       "decayCurveOOS": null,
-      "realInventoryUnits": 16994
+      "realInventoryUnits": 16692
     },
     "TVG6680": {
       "decayCurveOOS": null,
-      "realInventoryUnits": 6914
+      "realInventoryUnits": 6713
     },
     "TVG6690": {
       "decayCurveOOS": null,
-      "realInventoryUnits": 18516
+      "realInventoryUnits": 17887
     },
     "TVG6640": {
       "decayCurveOOS": null,
-      "realInventoryUnits": 18153
+      "realInventoryUnits": 21200
     },
     "TVG4770": {
-      "decayCurveOOS": "2027-11-12",
-      "realInventoryUnits": 29522
+      "decayCurveOOS": "2027-10-23",
+      "realInventoryUnits": 28010
     },
     "TVG6700": {
-      "decayCurveOOS": "2027-01-30",
-      "realInventoryUnits": 7894
+      "decayCurveOOS": "2027-01-22",
+      "realInventoryUnits": 7340
     },
     "TVG6720": {
-      "decayCurveOOS": "2027-03-19",
-      "realInventoryUnits": 11693
+      "decayCurveOOS": "2027-03-20",
+      "realInventoryUnits": 11753
     },
     "TVG7250": {
-      "decayCurveOOS": "2027-01-27",
-      "realInventoryUnits": 9094
+      "decayCurveOOS": "2027-01-03",
+      "realInventoryUnits": 6682
     },
     "TVG7240": {
-      "decayCurveOOS": "2027-02-02",
-      "realInventoryUnits": 7040
+      "decayCurveOOS": "2027-01-11",
+      "realInventoryUnits": 5620
     },
     "TVG7230": {
-      "decayCurveOOS": "2027-03-18",
-      "realInventoryUnits": 10782
+      "decayCurveOOS": "2027-03-22",
+      "realInventoryUnits": 11067
     },
     "TVG7260": {
-      "decayCurveOOS": "2027-04-21",
-      "realInventoryUnits": 5203
+      "decayCurveOOS": "2027-03-30",
+      "realInventoryUnits": 4604
     },
     "TVG7220": {
-      "decayCurveOOS": "2026-11-08",
-      "realInventoryUnits": 919
+      "decayCurveOOS": "2026-10-15",
+      "realInventoryUnits": 0
     },
     "TVG6730": {
-      "decayCurveOOS": "2028-02-12",
-      "realInventoryUnits": 8338
+      "decayCurveOOS": "2027-08-09",
+      "realInventoryUnits": 6158
     },
     "TVG6740": {
       "decayCurveOOS": "2026-11-07",
-      "realInventoryUnits": 5420
+      "realInventoryUnits": 1817
     },
     "TVG6670": {
-      "decayCurveOOS": "2026-02-25",
-      "realInventoryUnits": null
+      "decayCurveOOS": "2027-12-09",
+      "realInventoryUnits": 29169
     },
     "TVG6660": {
       "decayCurveOOS": "2026-12-05",
-      "realInventoryUnits": 22080
+      "realInventoryUnits": 16131
     }
   }
 }

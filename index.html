@@ -502,7 +502,13 @@
   // week old count presented as current cover is worse than a daily figure
   // Demand Planning merely distrust, because nothing on the page would say
   // the number had stopped moving.
-  const NPD_INV_STALE = !!META.npdRealInventoryAsOf;
+  // Stale means the count stopped moving while the rest of the sheet kept
+  // going — asOf behind syncedAt. When the two agree the figures are current
+  // and cover reads from them as normal, even if a note explains that they
+  // came from somewhere other than NetSuite this week.
+  const NPD_INV_STALE = !!META.npdRealInventoryAsOf
+    && META.npdRealInventoryAsOf !== META.npdOosSyncedAt;
+  const NPD_INV_NOTE = (META.npdRealInventoryNote || '').trim();
   const coverSource = v => NPD_INV_STALE ? v.inventoryUnits : v.realInventoryUnits;
 
   const sumRows = live.flatMap(l => (l.byVariant || []).map(v => ({
@@ -528,14 +534,21 @@
   const hiddenLaunches = new Set();
   const visibleRows = () => sumRows.filter(r => !hiddenLaunches.has(r.launchId));
 
-  if (NPD_INV_STALE) {
+  {
     const asOf = fmtSmart(META.npdRealInventoryAsOf);
     const set = (id, txt) => { const el = document.getElementById(id); if (el) el.textContent = txt; };
-    set('th-weeks', 'Snowflake inv \u00f7 run rate');
-    set('th-npdinv', 'Demand Planning \u00b7 as of ' + asOf + ' \u00b7 NOT CURRENT');
-    set('th-inv', 'used for cover while Real Inventory is stale');
-    const cell = document.getElementById('th-inv-cell');
-    if (cell) cell.classList.remove('ref');
+    if (NPD_INV_STALE) {
+      set('th-weeks', 'Snowflake inv \u00f7 run rate');
+      set('th-npdinv', 'Demand Planning \u00b7 as of ' + asOf + ' \u00b7 NOT CURRENT');
+      set('th-inv', 'used for cover while Real Inventory is stale');
+      const cell = document.getElementById('th-inv-cell');
+      if (cell) cell.classList.remove('ref');
+    } else if (NPD_INV_NOTE) {
+      // Current, but not from the usual source. The header should not keep
+      // crediting Demand Planning's Monday count for numbers that did not
+      // come from it.
+      set('th-npdinv', 'Snowflake figures \u00b7 as of ' + asOf);
+    }
   }
 
   const renderSummary = () => {
@@ -676,7 +689,14 @@
     `<br><br><strong>Real Inventory</strong> and <strong>Decay Curve OOS</strong> come from Demand Planning's ` +
     `<em>NPD OOS Tracking</em> sheet${META.npdOosSyncedAt ? ', synced ' + fmtSmart(META.npdOosSyncedAt) : ''}; a dash means ` +
     `that SKU is not on their sheet. ` +
-    (NPD_INV_STALE
+    (!NPD_INV_STALE && NPD_INV_NOTE
+      ? `<span style="color:var(--warn);font-weight:600">Real Inventory is current as of ` +
+        `${fmtSmart(META.npdRealInventoryAsOf)} but did not come from NetSuite this week</span> — Demand Planning's ` +
+        `credential for the stock count is still awaiting an admin fix, so Snowflake figures were pasted into their sheet ` +
+        `as an interim. The numbers move daily and are the best available, but Demand Planning say Snowflake is not always ` +
+        `right, so treat them as an estimate rather than a counted figure. <strong>Decay Curve OOS is their own and is ` +
+        `current.</strong> `
+      : NPD_INV_STALE
       ? `<span style="color:var(--warn);font-weight:600">Real Inventory has not been refreshed since ` +
         `${fmtSmart(META.npdRealInventoryAsOf)}</span> — the NetSuite credential Demand Planning use for the stock count is ` +
         `awaiting an admin fix, so those figures are shown greyed and should not be acted on. <strong>Decay Curve OOS is ` +
