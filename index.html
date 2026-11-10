@@ -193,6 +193,11 @@
     .section-title.split { display:flex; align-items:center; justify-content:space-between; gap:12px; }
     /* Above the table, not below it: the colours are how people scan the rows,
        so the key has to arrive before the rows do. */
+    /* Hiding a column is display-only — the figures stay in the data and the
+       colour bands keep using them. Driven by a class on the table so the row
+       builder does not have to know which columns are on. */
+    #sum-table.hide-npdOos [data-k="npdOos"], #sum-table.hide-npdOos [data-col="npdOos"],
+    #sum-table.hide-npdInv [data-k="npdInv"], #sum-table.hide-npdInv [data-col="npdInv"] { display:none; }
     .sum-filter { display:flex; align-items:center; gap:8px; flex-wrap:wrap;
                   padding:12px 14px; border-bottom:1px solid var(--border); }
     .sum-filter .sf-lead { font-size:10.5px; font-weight:700; text-transform:uppercase;
@@ -267,7 +272,7 @@
       <div class="sum-filter" id="sum-filter"></div>
       <div class="sum-legend" id="sum-legend"></div>
       <div class="sum-wrap">
-        <table>
+        <table id="sum-table">
           <thead><tr>
             <th data-k="product">Product</th><th data-k="variant">Variant</th><th data-k="sku">SKU</th>
             <th data-k="launch">Launch</th><th data-k="curveEnd">Curve Ends</th>
@@ -532,6 +537,16 @@
   /* Launches switched off in the filter bar. Empty by default — the table
      shows everything until someone chooses otherwise. */
   const hiddenLaunches = new Set();
+  // Columns that can be switched off. Deliberately just the two fed by the
+  // NPD sheet: when that source is mid-fix, showing a number nobody trusts is
+  // worse than showing none, and this is quicker than waiting for the fix.
+  const TOGGLE_COLS = [{ k: 'npdOos', label: 'Decay Curve OOS' },
+                       { k: 'npdInv', label: 'Real Inventory' }];
+  const hiddenCols = new Set();
+  const applyCols = () => {
+    const t = document.getElementById('sum-table');
+    if (t) TOGGLE_COLS.forEach(c => t.classList.toggle('hide-' + c.k, hiddenCols.has(c.k)));
+  };
   const visibleRows = () => sumRows.filter(r => !hiddenLaunches.has(r.launchId));
 
   {
@@ -564,8 +579,8 @@
         <td class="r pill-risk" style="color:${coverColour(r.weeks)}">${r.weeks == null ? '—' : r.weeks.toFixed(1)}</td>
         <td class="r pill-risk" style="color:${riskColour(r.days)}">${
           r.inv === 0 ? 'out of stock' : fmtSmart(r.oos)}</td>
-        <td class="r pill-risk" style="color:${riskColour(daysUntil(r.npdOos))}">${fmtSmart(r.npdOos)}</td>
-        <td class="r pill-risk" style="color:${NPD_INV_STALE ? 'var(--muted)' : coverColour(r.weeks)}">${num(r.npdInv)}</td>
+        <td class="r pill-risk" data-col="npdOos" style="color:${riskColour(daysUntil(r.npdOos))}">${fmtSmart(r.npdOos)}</td>
+        <td class="r pill-risk" data-col="npdInv" style="color:${NPD_INV_STALE ? 'var(--muted)' : coverColour(r.weeks)}">${num(r.npdInv)}</td>
         <td class="r${NPD_INV_STALE ? '' : ' ref'}" style="${NPD_INV_STALE ? 'color:' + coverColour(r.weeks) + ';font-weight:600' : ''}">${num(r.inv)}</td>
       </tr>`).join('')
       : `<tr><td colspan="11" style="text-align:center;padding:22px;color:var(--muted)">${
@@ -636,19 +651,34 @@
       ['Note', 'Demand Planning refresh Real Inventory weekly, on Mondays; Snowflake Inventory '
         + 'moves daily and is for reference only. Where they disagree, Demand Planning is the figure to act on.'],
       ['Cover bands', `red under ${COVER_RED} weeks, amber ${COVER_RED}-${COVER_AMBER}, green over ${COVER_AMBER}`],
+      ['Column filter', hiddenCols.size
+        ? 'hidden, and omitted from this file: '
+          + TOGGLE_COLS.filter(c => hiddenCols.has(c.k)).map(c => c.label).join('; ')
+        : 'all columns shown'],
     ];
-    const columns = ['Product', 'Variant', 'SKU', 'Launch Date', 'Curve End Date',
-                     'Pct to Plan to Date', 'Weeks of Stock', 'Cover Band',
-                     'Est OOS Date (Snowflake)', 'Decay Curve OOS (Demand Planning)',
-                     'Real Inventory Units (Demand Planning)', 'Snowflake Inventory Units'];
+    // A column switched off on screen is left out of the file too, and the
+    // provenance block above says which — the same contract the launch filter
+    // already has. Quietly exporting a column the reader had hidden because
+    // they did not trust it would hand them the number anyway.
+    const allCols = [
+      { k: 'product',  h: 'Product',                                 v: r => r.product },
+      { k: 'variant',  h: 'Variant',                                 v: r => r.variant },
+      { k: 'sku',      h: 'SKU',                                     v: r => r.sku },
+      { k: 'launch',   h: 'Launch Date',                             v: r => r.launch },
+      { k: 'curveEnd', h: 'Curve End Date',                          v: r => r.curveEnd ?? '' },
+      { k: 'ptp',      h: 'Pct to Plan to Date',                     v: r => r.ptp ?? '' },
+      { k: 'weeks',    h: 'Weeks of Stock',                          v: r => r.weeks ?? '' },
+      { k: 'band',     h: 'Cover Band',                              v: r => band(r.weeks) },
+      { k: 'oos',      h: 'Est OOS Date (Snowflake)',                v: r => r.inv === 0 ? 'out of stock' : (r.oos ?? '') },
+      { k: 'npdOos',   h: 'Decay Curve OOS (Demand Planning)',       v: r => r.npdOos ?? '' },
+      { k: 'npdInv',   h: 'Real Inventory Units (Demand Planning)',  v: r => r.npdInv ?? '' },
+      { k: 'inv',      h: 'Snowflake Inventory Units',               v: r => r.inv ?? '' },
+    ].filter(c => !hiddenCols.has(c.k));
     const out = meta.map(r => r.map(csvCell).join(','));
     out.push('');
-    out.push(columns.map(csvCell).join(','));
+    out.push(allCols.map(c => csvCell(c.h)).join(','));
     for (const r of visibleRows()) {
-      out.push([r.product, r.variant, r.sku, r.launch, r.curveEnd ?? '',
-                r.ptp ?? '', r.weeks ?? '', band(r.weeks),
-                r.inv === 0 ? 'out of stock' : (r.oos ?? ''),
-                r.npdOos ?? '', r.npdInv ?? '', r.inv ?? ''].map(csvCell).join(','));
+      out.push(allCols.map(c => csvCell(c.v(r))).join(','));
     }
     // Leading BOM so Excel reads it as UTF-8; CRLF for the same reason.
     const url = URL.createObjectURL(new Blob(['\ufeff' + out.join('\r\n')],
@@ -727,7 +757,7 @@
      Reset clears both the hidden launches and the sort, since those are the
      only two things that change what this table shows. */
   const renderFilter = () => {
-    const dirty = hiddenLaunches.size > 0 || sortKey !== null;
+    const dirty = hiddenLaunches.size > 0 || hiddenCols.size > 0 || sortKey !== null;
     document.getElementById('sum-filter').innerHTML =
       `<span class="sf-lead">Launches</span>`
       + live.map(l => `<button type="button" class="sf-chip${hiddenLaunches.has(l.launchId) ? ' off' : ''}" `
@@ -735,8 +765,22 @@
           + `title="${hiddenLaunches.has(l.launchId) ? 'Show' : 'Hide'} ${l.name}">`
           + `<span class="dot" style="${hiddenLaunches.has(l.launchId) ? '' : 'background:' + (l.accent || 'var(--tc-teal)')}"></span>`
           + `${l.name}</button>`).join('')
+      + `<span class="sf-lead" style="margin-left:14px">Columns</span>`
+      + TOGGLE_COLS.map(c => `<button type="button" class="sf-chip${hiddenCols.has(c.k) ? ' off' : ''}" `
+          + `data-col-toggle="${c.k}" aria-pressed="${!hiddenCols.has(c.k)}" `
+          + `title="${hiddenCols.has(c.k) ? 'Show' : 'Hide'} the ${c.label} column">`
+          + `<span class="dot" style="${hiddenCols.has(c.k) ? '' : 'background:var(--tc-teal)'}"></span>`
+          + `${c.label}</button>`).join('')
       + `<button type="button" class="sf-reset" id="sum-reset"${dirty ? '' : ' disabled'} `
-      + `title="Show every launch and clear the sort">Reset filters</button>`;
+      + `title="Show every launch and column, and clear the sort">Reset filters</button>`;
+
+    document.querySelectorAll('#sum-filter [data-col-toggle]').forEach(btn => btn.onclick = () => {
+      const k = btn.dataset.colToggle;
+      if (hiddenCols.has(k)) hiddenCols.delete(k); else hiddenCols.add(k);
+      applyCols();
+      renderFilter();
+      renderSummary();
+    });
 
     document.querySelectorAll('#sum-filter [data-launch]').forEach(btn => btn.onclick = () => {
       const id = btn.dataset.launch;
@@ -747,6 +791,8 @@
     const reset = document.getElementById('sum-reset');
     if (reset) reset.onclick = () => {
       hiddenLaunches.clear();
+      hiddenCols.clear();
+      applyCols();
       sortKey = null;
       sortAsc = true;
       sumRows.sort((a, b) => defaultOrder.get(a) - defaultOrder.get(b));
