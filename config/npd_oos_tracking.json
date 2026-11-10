@@ -21,7 +21,9 @@
     "owner": "bkennedy@thrivecausemetics.com",
     "url": "https://docs.google.com/spreadsheets/d/1by_O_UW2oa9mDzF73f5PmCdfIrkOCghVZTa2P7LhXfs/edit#gid=915600089"
   },
-  "syncedAt": "2026-10-20",
+  "syncedAt": "2026-11-10",
+  "realInventoryAsOf": "2026-10-20",
+  "realInventoryNote": "Not refreshed since 2026-10-20 \u2014 the NetSuite credential Demand Planning use for the stock count is pending an admin fix. Decay Curve OOS in this file IS current. While this is set, the hub computes weeks of cover and the SKU colour band from Snowflake inventory instead. Remove both fields once the count resumes.",
   "syncedBy": "manual snapshot (GOOGLE_SERVICE_ACCOUNT_JSON not configured yet)",
   "bySku": {
     "TVG575": {
@@ -149,19 +151,19 @@
       "realInventoryUnits": 29522
     },
     "TVG6700": {
-      "decayCurveOOS": "2027-01-28",
+      "decayCurveOOS": "2027-01-30",
       "realInventoryUnits": 7894
     },
     "TVG6720": {
-      "decayCurveOOS": "2027-03-10",
+      "decayCurveOOS": "2027-03-19",
       "realInventoryUnits": 11693
     },
     "TVG7250": {
-      "decayCurveOOS": "2027-01-28",
+      "decayCurveOOS": "2027-01-27",
       "realInventoryUnits": 9094
     },
     "TVG7240": {
-      "decayCurveOOS": "2027-02-01",
+      "decayCurveOOS": "2027-02-02",
       "realInventoryUnits": 7040
     },
     "TVG7230": {
@@ -169,7 +171,7 @@
       "realInventoryUnits": 10782
     },
     "TVG7260": {
-      "decayCurveOOS": "2027-04-19",
+      "decayCurveOOS": "2027-04-21",
       "realInventoryUnits": 5203
     },
     "TVG7220": {
@@ -177,12 +179,20 @@
       "realInventoryUnits": 919
     },
     "TVG6730": {
-      "decayCurveOOS": "2028-02-24",
+      "decayCurveOOS": "2028-02-12",
       "realInventoryUnits": 8338
     },
     "TVG6740": {
       "decayCurveOOS": "2026-11-07",
       "realInventoryUnits": 5420
+    },
+    "TVG6670": {
+      "decayCurveOOS": "2026-02-25",
+      "realInventoryUnits": null
+    },
+    "TVG6660": {
+      "decayCurveOOS": "2026-12-05",
+      "realInventoryUnits": 22080
     }
   }
 }
