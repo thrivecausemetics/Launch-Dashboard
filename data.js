@@ -1,10 +1,10 @@
 /* GENERATED FILE — do not hand-edit.
-   Built by scripts/refresh_data.py on 2026-11-11 · cutoff 2026-11-10 · source Snowflake DAASITY_DB */
+   Built by scripts/refresh_data.py on 2026-11-12 · cutoff 2026-11-11 · source Snowflake DAASITY_DB */
 window.DASHBOARD_DATA = {
   "meta": {
-    "dataCutoff": "2026-11-10",
-    "gaCutoff": "2026-11-08",
-    "generatedAt": "2026-11-11",
+    "dataCutoff": "2026-11-11",
+    "gaCutoff": "2026-11-09",
+    "generatedAt": "2026-11-12",
     "mode": "automated",
     "sourceDb": "DAASITY_DB",
     "retentionDays": 122,
@@ -35,40 +35,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "Focus Eyeshadow\u2122 Palette \u00b7 2 Palettes",
       "accent": "#8B5CF6",
       "summary": {
-        "netSales": 1070267.63,
-        "units": 30689,
-        "orders": 28374,
+        "netSales": 1073697.82,
+        "units": 30789,
+        "orders": 28468,
         "aov": 37.72,
-        "newCustomers": 4071,
-        "retCustomers": 23379,
-        "totalCustomers": 27450,
-        "newPct": 14.8,
-        "retPct": 85.2,
-        "planUnits": 17093,
-        "pctToPlanUnits": 179.5,
+        "newCustomers": 4100,
+        "retCustomers": 23440,
+        "totalCustomers": 27540,
+        "newPct": 14.9,
+        "retPct": 85.1,
+        "planUnits": 17194,
+        "pctToPlanUnits": 179.1,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 152719.39,
-        "retCustomerRevenue": 917548.24,
+        "newCustomerRevenue": 153790.91,
+        "retCustomerRevenue": 919906.91,
         "pdpViews": 505436,
         "pdpAtcRate": 13.7,
         "pdpCvr": 5.2
       },
       "regions": {
         "us": {
-          "units": 30040,
-          "netSales": 1054102.02,
-          "orders": 27756
+          "units": 30137,
+          "netSales": 1057452.54,
+          "orders": 27848
         },
         "ca": {
-          "units": 649,
-          "netSales": 16165.61,
-          "orders": 618
+          "units": 652,
+          "netSales": 16245.28,
+          "orders": 620
         }
       },
       "trafficStart": "2026-07-22",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [
           {
@@ -220,22 +220,22 @@ window.DASHBOARD_DATA = {
           {
             "month": "Jul 2026",
             "chs": {
-              "Email": 189059,
-              "Organic Shopping": 9533,
-              "Paid Other": 166315,
-              "Unassigned": 100081,
-              "AI Assistant": 296,
-              "Cross-network": 66453,
-              "Paid Search": 134527,
-              "Paid Shopping": 36421,
-              "Referral": 6859,
-              "Organic Search": 29385,
               "Organic Social": 32182,
+              "Paid Other": 166315,
+              "Organic Video": 114,
+              "Organic Shopping": 9533,
+              "Referral": 6859,
+              "Paid Shopping": 36421,
+              "Unassigned": 100081,
+              "SMS": 96972,
+              "Paid Search": 134527,
+              "AI Assistant": 296,
+              "Email": 189059,
+              "Organic Search": 29385,
               "Direct": 279560,
+              "Cross-network": 66453,
               "Display": 1718,
               "Paid Video": 613,
-              "SMS": 96972,
-              "Organic Video": 114,
               "Paid Social": 634261,
               "Affiliates": 3
             }
@@ -243,70 +243,70 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
-              "Paid Social": 1530493,
-              "Organic Shopping": 32766,
-              "SMS": 289131,
+              "Organic Social": 100150,
               "Cross-network": 172835,
+              "Unassigned": 354018,
+              "Paid Social": 1530493,
               "Paid Shopping": 117694,
               "Paid Search": 364681,
-              "Organic Social": 100150,
-              "Paid Other": 541415,
-              "Paid Video": 1999,
               "Organic Search": 92452,
+              "Organic Shopping": 32766,
               "Direct": 604613,
-              "Organic Video": 104,
               "Referral": 18282,
+              "Organic Video": 104,
               "Email": 527924,
               "Display": 12664,
-              "Unassigned": 354018,
               "AI Assistant": 1959,
+              "SMS": 289131,
+              "Paid Video": 1999,
+              "Paid Other": 541415,
               "Affiliates": 11
             }
           },
           {
             "month": "Sep 2026",
             "chs": {
-              "Paid Search": 349895,
-              "Paid Social": 1682636,
-              "Cross-network": 151323,
-              "Paid Other": 488068,
-              "Unassigned": 330771,
-              "Email": 404147,
-              "Paid Shopping": 94490,
-              "Organic Search": 90187,
-              "SMS": 291683,
-              "Paid Video": 2889,
-              "Direct": 615318,
-              "Display": 5981,
-              "Referral": 18265,
-              "Organic Shopping": 48938,
               "Organic Social": 84396,
+              "Organic Search": 90187,
+              "Direct": 615318,
+              "Organic Shopping": 48938,
+              "Paid Other": 488068,
+              "Email": 404147,
+              "Unassigned": 330771,
+              "Paid Video": 2889,
+              "SMS": 291683,
               "Organic Video": 194,
               "AI Assistant": 2015,
+              "Paid Shopping": 94490,
+              "Display": 5981,
+              "Paid Social": 1682636,
+              "Referral": 18265,
+              "Paid Search": 349895,
+              "Cross-network": 151323,
               "Affiliates": 11
             }
           },
           {
             "month": "Oct 2026",
             "chs": {
-              "Paid Video": 244,
+              "AI Assistant": 560,
+              "Organic Social": 9693,
+              "Display": 531,
+              "Cross-network": 10091,
+              "Organic Shopping": 5550,
               "Organic Search": 46032,
-              "Affiliates": 3,
-              "Organic Video": 62,
+              "Unassigned": 66436,
+              "SMS": 50837,
+              "Paid Video": 244,
               "Paid Social": 312761,
               "Paid Search": 32782,
-              "Paid Other": 14086,
               "Email": 91272,
-              "Organic Shopping": 5550,
-              "Unassigned": 66436,
-              "Paid Shopping": 14993,
-              "Referral": 3235,
-              "SMS": 50837,
-              "AI Assistant": 560,
-              "Cross-network": 10091,
               "Direct": 134575,
-              "Organic Social": 9693,
-              "Display": 531
+              "Paid Other": 14086,
+              "Affiliates": 3,
+              "Organic Video": 62,
+              "Paid Shopping": 14993,
+              "Referral": 3235
             }
           }
         ]
@@ -315,12 +315,12 @@ window.DASHBOARD_DATA = {
         {
           "label": "Focus Eyeshadow Palette (com)",
           "page": "thrivecausemetics.com/products/focus-eyeshadow-palette",
-          "pageviews": 1715303,
-          "sessions": 315465,
-          "txns": 17952,
-          "rev": 1215010.62,
-          "eng": 36.4,
-          "cvr": 5.69
+          "pageviews": 1722188,
+          "sessions": 318408,
+          "txns": 18012,
+          "rev": 1218837.85,
+          "eng": 36.1,
+          "cvr": 5.66
         },
         {
           "label": "Focus Eyeshadow Palette (com)",
@@ -335,18 +335,18 @@ window.DASHBOARD_DATA = {
         {
           "label": "Focus Eyeshadow Palette (ca)",
           "page": "thrivecausemetics.ca/products/focus-eyeshadow-palette",
-          "pageviews": 46773,
-          "sessions": 14929,
-          "txns": 368,
-          "rev": 28528.0,
+          "pageviews": 46923,
+          "sessions": 14982,
+          "txns": 369,
+          "rev": 28563.16,
           "eng": 2.0,
-          "cvr": 2.47
+          "cvr": 2.46
         },
         {
           "label": "Eyeshadow Made Easy (com)",
           "page": "thrivecausemetics.com/products/eyeshadow-made-easy",
-          "pageviews": 44641,
-          "sessions": 14643,
+          "pageviews": 44657,
+          "sessions": 14650,
           "txns": 492,
           "rev": 42870.67,
           "eng": 0.9,
@@ -355,42 +355,42 @@ window.DASHBOARD_DATA = {
         {
           "label": "Eye Lift 360 Waterproof Eyeshadow  (com)",
           "page": "thrivecausemetics.com/products/eye-lift-360-waterproof-eyeshadow-primer",
-          "pageviews": 38891,
-          "sessions": 9369,
-          "txns": 881,
-          "rev": 60823.7,
+          "pageviews": 39518,
+          "sessions": 9474,
+          "txns": 893,
+          "rev": 61849.22,
           "eng": 1.3,
-          "cvr": 9.4
+          "cvr": 9.43
         },
         {
           "label": "Holiday Glam Eyeshadow Trio (com)",
           "page": "thrivecausemetics.com/products/holiday-glam-eyeshadow-trio",
-          "pageviews": 8400,
-          "sessions": 1744,
-          "txns": 143,
-          "rev": 10887.61,
+          "pageviews": 8794,
+          "sessions": 1882,
+          "txns": 149,
+          "rev": 11288.32,
           "eng": 1.1,
-          "cvr": 8.2
+          "cvr": 7.92
         },
         {
           "label": "Instant Blend Cream Eyeshadow Brus (com)",
           "page": "thrivecausemetics.com/products/instant-blend-cream-eyeshadow-brush",
-          "pageviews": 4436,
-          "sessions": 1419,
+          "pageviews": 4463,
+          "sessions": 1439,
           "txns": 64,
           "rev": 4526.63,
           "eng": 0.6,
-          "cvr": 4.51
+          "cvr": 4.45
         },
         {
           "label": "Focus Eyeshadow Palette 2 (com)",
           "page": "thrivecausemetics.com/pages/focus-eyeshadow-palette-2",
-          "pageviews": 3809,
-          "sessions": 1323,
+          "pageviews": 3865,
+          "sessions": 1335,
           "txns": 38,
           "rev": 2415.19,
           "eng": 1.3,
-          "cvr": 2.87
+          "cvr": 2.85
         },
         {
           "label": "Focus Eyeshadow Palette Warm Cool (ca)",
@@ -405,12 +405,12 @@ window.DASHBOARD_DATA = {
         {
           "label": "Instant Blend Crease Eyeshadow Bru (com)",
           "page": "thrivecausemetics.com/products/instant-blend-crease-eyeshadow-brush",
-          "pageviews": 2869,
-          "sessions": 1076,
+          "pageviews": 2873,
+          "sessions": 1079,
           "txns": 43,
           "rev": 3870.03,
           "eng": 2.0,
-          "cvr": 4.0
+          "cvr": 3.99
         }
       ],
       "learnings": [],
@@ -863,6 +863,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-10",
           "cumPlanUnits": 17093
+        },
+        {
+          "date": "2026-11-11",
+          "cumPlanUnits": 17194
         }
       ],
       "planTotalUnits": 17784,
@@ -875,34 +879,34 @@ window.DASHBOARD_DATA = {
           "product": "Focus Eyeshadow\u2122 Palette",
           "shade": "Focus Eyeshadow\u2122 Palette",
           "color": "#8D8A96",
-          "netSales": 540136.18,
-          "units": 15427,
-          "orders": 15228,
-          "newCustomers": 2197,
-          "retCustomers": 12816,
-          "usUnits": 15109,
-          "caUnits": 318,
-          "usNetSales": 532239.52,
-          "caNetSales": 7896.66,
-          "planUnits": 9323,
-          "pctToPlanUnits": 165.5,
-          "inventoryUnits": 11714,
-          "runRateUnitsPerDay": 36.0,
-          "daysToOOS": 325,
-          "estOOSDate": "2027-10-01",
-          "usInventoryUnits": 11575,
-          "caInventoryUnits": 139,
-          "usRunRateUnitsPerDay": 34.71,
-          "caRunRateUnitsPerDay": 1.29,
-          "usDaysToOOS": 333,
-          "caDaysToOOS": 107,
-          "usEstOOSDate": "2027-10-09",
-          "caEstOOSDate": "2027-02-25",
+          "netSales": 541666.9,
+          "units": 15470,
+          "orders": 15270,
+          "newCustomers": 2204,
+          "retCustomers": 12850,
+          "usUnits": 15150,
+          "caUnits": 320,
+          "usNetSales": 533717.12,
+          "caNetSales": 7949.78,
+          "planUnits": 9378,
+          "pctToPlanUnits": 165.0,
+          "inventoryUnits": 11673,
+          "runRateUnitsPerDay": 38.14,
+          "daysToOOS": 306,
+          "estOOSDate": "2027-09-13",
+          "usInventoryUnits": 11535,
+          "caInventoryUnits": 138,
+          "usRunRateUnitsPerDay": 36.71,
+          "caRunRateUnitsPerDay": 1.43,
+          "usDaysToOOS": 314,
+          "caDaysToOOS": 96,
+          "usEstOOSDate": "2027-09-21",
+          "caEstOOSDate": "2027-02-15",
           "planTotalUnits": 9700,
-          "pctToGoalUnits": 159.0,
+          "pctToGoalUnits": 159.5,
           "unitsToGoal": 0,
           "planEndDate": "2026-11-18",
-          "weeksOfStock": 46.5,
+          "weeksOfStock": 43.7,
           "decayCurveOOS": "2027-03-20",
           "realInventoryUnits": 11753
         },
@@ -912,34 +916,34 @@ window.DASHBOARD_DATA = {
           "product": "Focus Eyeshadow\u2122 Palette",
           "shade": "Focus Eyeshadow\u2122 Palette",
           "color": "#C68E5E",
-          "netSales": 530131.45,
-          "units": 15262,
-          "orders": 15057,
-          "newCustomers": 2133,
-          "retCustomers": 12722,
-          "usUnits": 14931,
-          "caUnits": 331,
-          "usNetSales": 521862.5,
-          "caNetSales": 8268.95,
-          "planUnits": 7770,
-          "pctToPlanUnits": 196.4,
-          "inventoryUnits": 7283,
-          "runRateUnitsPerDay": 60.71,
+          "netSales": 532030.93,
+          "units": 15319,
+          "orders": 15113,
+          "newCustomers": 2157,
+          "retCustomers": 12751,
+          "usUnits": 14987,
+          "caUnits": 332,
+          "usNetSales": 523735.42,
+          "caNetSales": 8295.51,
+          "planUnits": 7816,
+          "pctToPlanUnits": 196.0,
+          "inventoryUnits": 7227,
+          "runRateUnitsPerDay": 60.57,
           "daysToOOS": 119,
-          "estOOSDate": "2027-03-09",
-          "usInventoryUnits": 7260,
-          "caInventoryUnits": 23,
-          "usRunRateUnitsPerDay": 59.14,
-          "caRunRateUnitsPerDay": 1.57,
-          "usDaysToOOS": 122,
-          "caDaysToOOS": 14,
+          "estOOSDate": "2027-03-10",
+          "usInventoryUnits": 7205,
+          "caInventoryUnits": 22,
+          "usRunRateUnitsPerDay": 59.29,
+          "caRunRateUnitsPerDay": 1.29,
+          "usDaysToOOS": 121,
+          "caDaysToOOS": 17,
           "usEstOOSDate": "2027-03-12",
-          "caEstOOSDate": "2026-11-24",
+          "caEstOOSDate": "2026-11-28",
           "planTotalUnits": 8084,
-          "pctToGoalUnits": 188.8,
+          "pctToGoalUnits": 189.5,
           "unitsToGoal": 0,
           "planEndDate": "2026-11-18",
-          "weeksOfStock": 17.1,
+          "weeksOfStock": 17.0,
           "decayCurveOOS": "2027-01-22",
           "realInventoryUnits": 7340
         }
@@ -949,15 +953,15 @@ window.DASHBOARD_DATA = {
           {
             "rank": 1,
             "key": "oos-soon:ca:TVG6700",
-            "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~14 days",
-            "detail": "23 units left in Canada (.ca) at 1.57/day (2.1 weeks cover).",
+            "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~17 days",
+            "detail": "22 units left in Canada (.ca) at 1.29/day (2.4 weeks cover).",
             "action": "Confirm a replenishment date for Canada (.ca) with Demand Planning, or plan for the shade to go dark there."
           },
           {
             "rank": 3,
             "key": "recent-behind:TVG6720",
             "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) is behind plan over the last 7 days",
-            "detail": "252 units against 336 planned (75%), 84 short \u2014 about $2,941 at its current price.",
+            "detail": "267 units against 335 planned (80%), 68 short \u2014 about $2,381 at its current price.",
             "action": "Recent, not cumulative \u2014 this is the last week only. Worth checking against promo calendar and paid support before treating it as demand."
           }
         ],
@@ -965,12 +969,12 @@ window.DASHBOARD_DATA = {
           {
             "key": "recent-ahead:TVG6700",
             "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) is ahead of plan over the last 7 days",
-            "detail": "425 units against 280 planned (152%)."
+            "detail": "424 units against 280 planned (151%)."
           },
           {
             "key": "pacing",
             "title": "Last 7 days are on or above plan",
-            "detail": "677 units vs 616 planned (110%)."
+            "detail": "691 units vs 615 planned (112%)."
           },
           {
             "key": "pairing:TVG558",
@@ -980,7 +984,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "new-to-category",
             "title": "25% of buyers are new to Eyeshadow",
-            "detail": "6,974 of 27,450 buyers had not purchased this category before."
+            "detail": "7,008 of 27,540 buyers had not purchased this category before."
           }
         ]
       },
@@ -1977,18 +1981,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-09-26",
-          "units": 184,
-          "netSales": 6522.72,
-          "usUnits": 182,
+          "units": 183,
+          "netSales": 6492.32,
+          "usUnits": 181,
           "caUnits": 2,
-          "usNetSales": 6473.09,
+          "usNetSales": 6442.69,
           "caNetSales": 49.63,
-          "cumUnits": 24496,
-          "cumSales": 855266.49,
+          "cumUnits": 24495,
+          "cumSales": 855236.09,
           "planUnits": 108,
           "cumPlanUnits": 13141,
           "newCustomers": 26,
-          "retCustomers": 150
+          "retCustomers": 149
         },
         {
           "date": "2026-09-27",
@@ -1998,8 +2002,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 5952.7,
           "caNetSales": 124.16,
-          "cumUnits": 24671,
-          "cumSales": 861343.35,
+          "cumUnits": 24670,
+          "cumSales": 861312.95,
           "planUnits": 102,
           "cumPlanUnits": 13243,
           "newCustomers": 26,
@@ -2013,8 +2017,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 4173.79,
           "caNetSales": 46.77,
-          "cumUnits": 24794,
-          "cumSales": 865563.91,
+          "cumUnits": 24793,
+          "cumSales": 865533.51,
           "planUnits": 78,
           "cumPlanUnits": 13321,
           "newCustomers": 22,
@@ -2028,8 +2032,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 5738.07,
           "caNetSales": 69.29,
-          "cumUnits": 24957,
-          "cumSales": 871371.27,
+          "cumUnits": 24956,
+          "cumSales": 871340.87,
           "planUnits": 86,
           "cumPlanUnits": 13407,
           "newCustomers": 24,
@@ -2043,8 +2047,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3939.82,
           "caNetSales": 0.0,
-          "cumUnits": 25071,
-          "cumSales": 875311.09,
+          "cumUnits": 25070,
+          "cumSales": 875280.69,
           "planUnits": 82,
           "cumPlanUnits": 13489,
           "newCustomers": 31,
@@ -2058,8 +2062,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 4269.55,
           "caNetSales": 21.09,
-          "cumUnits": 25193,
-          "cumSales": 879601.73,
+          "cumUnits": 25192,
+          "cumSales": 879571.33,
           "planUnits": 87,
           "cumPlanUnits": 13576,
           "newCustomers": 28,
@@ -2073,8 +2077,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 4525.22,
           "caNetSales": 26.12,
-          "cumUnits": 25323,
-          "cumSales": 884153.07,
+          "cumUnits": 25322,
+          "cumSales": 884122.67,
           "planUnits": 84,
           "cumPlanUnits": 13660,
           "newCustomers": 7,
@@ -2088,8 +2092,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 6330.71,
           "caNetSales": 23.57,
-          "cumUnits": 25503,
-          "cumSales": 890507.35,
+          "cumUnits": 25502,
+          "cumSales": 890476.95,
           "planUnits": 105,
           "cumPlanUnits": 13765,
           "newCustomers": 27,
@@ -2103,8 +2107,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 6786.02,
           "caNetSales": 24.0,
-          "cumUnits": 25693,
-          "cumSales": 897317.37,
+          "cumUnits": 25692,
+          "cumSales": 897286.97,
           "planUnits": 100,
           "cumPlanUnits": 13865,
           "newCustomers": 23,
@@ -2118,8 +2122,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 3165.62,
           "caNetSales": 74.39,
-          "cumUnits": 25787,
-          "cumSales": 900557.38,
+          "cumUnits": 25786,
+          "cumSales": 900526.98,
           "planUnits": 76,
           "cumPlanUnits": 13941,
           "newCustomers": 11,
@@ -2133,8 +2137,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3642.68,
           "caNetSales": 0.0,
-          "cumUnits": 25889,
-          "cumSales": 904200.06,
+          "cumUnits": 25888,
+          "cumSales": 904169.66,
           "planUnits": 84,
           "cumPlanUnits": 14025,
           "newCustomers": 16,
@@ -2148,8 +2152,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 5838.7,
           "caNetSales": 143.44,
-          "cumUnits": 26062,
-          "cumSales": 910182.2,
+          "cumUnits": 26061,
+          "cumSales": 910151.8,
           "planUnits": 105,
           "cumPlanUnits": 14130,
           "newCustomers": 30,
@@ -2163,8 +2167,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 9666.94,
           "caNetSales": 93.76,
-          "cumUnits": 26337,
-          "cumSales": 919942.9,
+          "cumUnits": 26336,
+          "cumSales": 919912.5,
           "planUnits": 85,
           "cumPlanUnits": 14215,
           "newCustomers": 38,
@@ -2178,8 +2182,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 6839.25,
           "caNetSales": 95.69,
-          "cumUnits": 26535,
-          "cumSales": 926877.84,
+          "cumUnits": 26534,
+          "cumSales": 926847.44,
           "planUnits": 82,
           "cumPlanUnits": 14297,
           "newCustomers": 38,
@@ -2193,8 +2197,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 8294.12,
           "caNetSales": 187.36,
-          "cumUnits": 26788,
-          "cumSales": 935359.32,
+          "cumUnits": 26787,
+          "cumSales": 935328.92,
           "planUnits": 104,
           "cumPlanUnits": 14401,
           "newCustomers": 34,
@@ -2208,8 +2212,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 13401.54,
           "caNetSales": 259.91,
-          "cumUnits": 27197,
-          "cumSales": 949020.77,
+          "cumUnits": 27196,
+          "cumSales": 948990.37,
           "planUnits": 98,
           "cumPlanUnits": 14499,
           "newCustomers": 58,
@@ -2223,8 +2227,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 4750.22,
           "caNetSales": 26.05,
-          "cumUnits": 27331,
-          "cumSales": 953797.04,
+          "cumUnits": 27330,
+          "cumSales": 953766.64,
           "planUnits": 75,
           "cumPlanUnits": 14574,
           "newCustomers": 18,
@@ -2238,8 +2242,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 4268.45,
           "caNetSales": 116.45,
-          "cumUnits": 27456,
-          "cumSales": 958181.94,
+          "cumUnits": 27455,
+          "cumSales": 958151.54,
           "planUnits": 82,
           "cumPlanUnits": 14656,
           "newCustomers": 28,
@@ -2253,8 +2257,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 4590.78,
           "caNetSales": 102.77,
-          "cumUnits": 27592,
-          "cumSales": 962875.49,
+          "cumUnits": 27591,
+          "cumSales": 962845.09,
           "planUnits": 79,
           "cumPlanUnits": 14735,
           "newCustomers": 35,
@@ -2268,8 +2272,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 5134.87,
           "caNetSales": 77.25,
-          "cumUnits": 27740,
-          "cumSales": 968087.61,
+          "cumUnits": 27739,
+          "cumSales": 968057.21,
           "planUnits": 85,
           "cumPlanUnits": 14820,
           "newCustomers": 27,
@@ -2283,8 +2287,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 3543.35,
           "caNetSales": 69.79,
-          "cumUnits": 27846,
-          "cumSales": 971700.75,
+          "cumUnits": 27845,
+          "cumSales": 971670.35,
           "planUnits": 82,
           "cumPlanUnits": 14902,
           "newCustomers": 16,
@@ -2298,8 +2302,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 5174.99,
           "caNetSales": 147.32,
-          "cumUnits": 28000,
-          "cumSales": 977023.06,
+          "cumUnits": 27999,
+          "cumSales": 976992.66,
           "planUnits": 102,
           "cumPlanUnits": 15004,
           "newCustomers": 34,
@@ -2313,8 +2317,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 8046.29,
           "caNetSales": 145.57,
-          "cumUnits": 28237,
-          "cumSales": 985214.92,
+          "cumUnits": 28236,
+          "cumSales": 985184.52,
           "planUnits": 98,
           "cumPlanUnits": 15102,
           "newCustomers": 48,
@@ -2328,8 +2332,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 2755.61,
           "caNetSales": 68.75,
-          "cumUnits": 28320,
-          "cumSales": 988039.28,
+          "cumUnits": 28319,
+          "cumSales": 988008.88,
           "planUnits": 73,
           "cumPlanUnits": 15175,
           "newCustomers": 18,
@@ -2343,8 +2347,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 3176.84,
           "caNetSales": 146.57,
-          "cumUnits": 28418,
-          "cumSales": 991362.69,
+          "cumUnits": 28417,
+          "cumSales": 991332.29,
           "planUnits": 83,
           "cumPlanUnits": 15258,
           "newCustomers": 25,
@@ -2358,8 +2362,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 2739.16,
           "caNetSales": 80.61,
-          "cumUnits": 28500,
-          "cumSales": 994182.46,
+          "cumUnits": 28499,
+          "cumSales": 994152.06,
           "planUnits": 78,
           "cumPlanUnits": 15336,
           "newCustomers": 17,
@@ -2373,8 +2377,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 3463.86,
           "caNetSales": 75.27,
-          "cumUnits": 28607,
-          "cumSales": 997721.59,
+          "cumUnits": 28606,
+          "cumSales": 997691.19,
           "planUnits": 83,
           "cumPlanUnits": 15419,
           "newCustomers": 27,
@@ -2388,8 +2392,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 2970.74,
           "caNetSales": 102.21,
-          "cumUnits": 28697,
-          "cumSales": 1000794.54,
+          "cumUnits": 28696,
+          "cumSales": 1000764.14,
           "planUnits": 82,
           "cumPlanUnits": 15501,
           "newCustomers": 16,
@@ -2403,8 +2407,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 4121.21,
           "caNetSales": 75.91,
-          "cumUnits": 28818,
-          "cumSales": 1004991.66,
+          "cumUnits": 28817,
+          "cumSales": 1004961.26,
           "planUnits": 101,
           "cumPlanUnits": 15602,
           "newCustomers": 20,
@@ -2418,8 +2422,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 4486.45,
           "caNetSales": 102.55,
-          "cumUnits": 28948,
-          "cumSales": 1009580.66,
+          "cumUnits": 28947,
+          "cumSales": 1009550.26,
           "planUnits": 97,
           "cumPlanUnits": 15699,
           "newCustomers": 19,
@@ -2433,8 +2437,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 4505.4,
           "caNetSales": 51.25,
-          "cumUnits": 29081,
-          "cumSales": 1014137.31,
+          "cumUnits": 29080,
+          "cumSales": 1014106.91,
           "planUnits": 74,
           "cumPlanUnits": 15773,
           "newCustomers": 22,
@@ -2448,8 +2452,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 3539.92,
           "caNetSales": 26.97,
-          "cumUnits": 29184,
-          "cumSales": 1017704.2,
+          "cumUnits": 29183,
+          "cumSales": 1017673.8,
           "planUnits": 81,
           "cumPlanUnits": 15854,
           "newCustomers": 15,
@@ -2463,8 +2467,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 5596.24,
           "caNetSales": 197.21,
-          "cumUnits": 29352,
-          "cumSales": 1023497.65,
+          "cumUnits": 29351,
+          "cumSales": 1023467.25,
           "planUnits": 78,
           "cumPlanUnits": 15932,
           "newCustomers": 26,
@@ -2478,8 +2482,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 3388.28,
           "caNetSales": 52.72,
-          "cumUnits": 29449,
-          "cumSales": 1026938.65,
+          "cumUnits": 29448,
+          "cumSales": 1026908.25,
           "planUnits": 83,
           "cumPlanUnits": 16015,
           "newCustomers": 19,
@@ -2493,8 +2497,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2907.46,
           "caNetSales": 0.0,
-          "cumUnits": 29531,
-          "cumSales": 1029846.11,
+          "cumUnits": 29530,
+          "cumSales": 1029815.71,
           "planUnits": 81,
           "cumPlanUnits": 16096,
           "newCustomers": 12,
@@ -2503,13 +2507,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-10-31",
           "units": 129,
-          "netSales": 4548.96,
+          "netSales": 4551.39,
           "usUnits": 120,
           "caUnits": 9,
-          "usNetSales": 4314.56,
+          "usNetSales": 4316.99,
           "caNetSales": 234.4,
-          "cumUnits": 29660,
-          "cumSales": 1034395.07,
+          "cumUnits": 29659,
+          "cumSales": 1034367.1,
           "planUnits": 131,
           "cumPlanUnits": 16227,
           "newCustomers": 17,
@@ -2518,13 +2522,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-01",
           "units": 177,
-          "netSales": 6323.59,
+          "netSales": 6331.19,
           "usUnits": 172,
           "caUnits": 5,
-          "usNetSales": 6187.89,
+          "usNetSales": 6195.49,
           "caNetSales": 135.7,
-          "cumUnits": 29837,
-          "cumSales": 1040718.66,
+          "cumUnits": 29836,
+          "cumSales": 1040698.29,
           "planUnits": 96,
           "cumPlanUnits": 16323,
           "newCustomers": 26,
@@ -2538,8 +2542,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 2852.77,
           "caNetSales": 75.99,
-          "cumUnits": 29921,
-          "cumSales": 1043647.42,
+          "cumUnits": 29920,
+          "cumSales": 1043627.05,
           "planUnits": 73,
           "cumPlanUnits": 16396,
           "newCustomers": 16,
@@ -2553,8 +2557,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 3068.11,
           "caNetSales": 54.42,
-          "cumUnits": 30012,
-          "cumSales": 1046769.95,
+          "cumUnits": 30011,
+          "cumSales": 1046749.58,
           "planUnits": 81,
           "cumPlanUnits": 16477,
           "newCustomers": 9,
@@ -2562,32 +2566,32 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-04",
-          "units": 88,
-          "netSales": 3066.57,
-          "usUnits": 84,
+          "units": 87,
+          "netSales": 3033.57,
+          "usUnits": 83,
           "caUnits": 4,
-          "usNetSales": 2964.81,
+          "usNetSales": 2931.81,
           "caNetSales": 101.76,
-          "cumUnits": 30100,
-          "cumSales": 1049836.52,
+          "cumUnits": 30098,
+          "cumSales": 1049783.15,
           "planUnits": 102,
           "cumPlanUnits": 16579,
           "newCustomers": 20,
-          "retCustomers": 66
+          "retCustomers": 65
         },
         {
           "date": "2026-11-05",
-          "units": 84,
-          "netSales": 2800.68,
-          "usUnits": 81,
+          "units": 83,
+          "netSales": 2762.68,
+          "usUnits": 80,
           "caUnits": 3,
-          "usNetSales": 2725.64,
+          "usNetSales": 2687.64,
           "caNetSales": 75.04,
-          "cumUnits": 30184,
-          "cumSales": 1052637.2,
+          "cumUnits": 30181,
+          "cumSales": 1052545.83,
           "planUnits": 83,
           "cumPlanUnits": 16662,
-          "newCustomers": 29,
+          "newCustomers": 28,
           "retCustomers": 52
         },
         {
@@ -2598,8 +2602,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 2475.09,
           "caNetSales": 54.37,
-          "cumUnits": 30258,
-          "cumSales": 1055166.66,
+          "cumUnits": 30255,
+          "cumSales": 1055075.29,
           "planUnits": 80,
           "cumPlanUnits": 16742,
           "newCustomers": 27,
@@ -2607,18 +2611,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-07",
-          "units": 123,
-          "netSales": 4331.26,
-          "usUnits": 121,
+          "units": 122,
+          "netSales": 4293.26,
+          "usUnits": 120,
           "caUnits": 2,
-          "usNetSales": 4278.05,
+          "usNetSales": 4240.05,
           "caNetSales": 53.21,
-          "cumUnits": 30381,
-          "cumSales": 1059497.92,
+          "cumUnits": 30377,
+          "cumSales": 1059368.55,
           "planUnits": 101,
           "cumPlanUnits": 16843,
           "newCustomers": 42,
-          "retCustomers": 76
+          "retCustomers": 75
         },
         {
           "date": "2026-11-08",
@@ -2628,8 +2632,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 4172.23,
           "caNetSales": 45.23,
-          "cumUnits": 30500,
-          "cumSales": 1063715.38,
+          "cumUnits": 30496,
+          "cumSales": 1063586.01,
           "planUnits": 96,
           "cumPlanUnits": 16939,
           "newCustomers": 37,
@@ -2643,8 +2647,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 3420.35,
           "caNetSales": 48.36,
-          "cumUnits": 30600,
-          "cumSales": 1067184.09,
+          "cumUnits": 30596,
+          "cumSales": 1067054.72,
           "planUnits": 73,
           "cumPlanUnits": 17012,
           "newCustomers": 28,
@@ -2658,12 +2662,27 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 3014.44,
           "caNetSales": 69.05,
-          "cumUnits": 30689,
-          "cumSales": 1070267.58,
+          "cumUnits": 30685,
+          "cumSales": 1070138.21,
           "planUnits": 81,
           "cumPlanUnits": 17093,
           "newCustomers": 30,
           "retCustomers": 54
+        },
+        {
+          "date": "2026-11-11",
+          "units": 104,
+          "netSales": 3559.56,
+          "usUnits": 101,
+          "caUnits": 3,
+          "usNetSales": 3479.89,
+          "caNetSales": 79.67,
+          "cumUnits": 30789,
+          "cumSales": 1073697.77,
+          "planUnits": 101,
+          "cumPlanUnits": 17194,
+          "newCustomers": 31,
+          "retCustomers": 67
         }
       ],
       "dailySkuColumns": [
@@ -2678,12 +2697,12 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TVG6700": [["2026-07-22", 215, 7133.99, 215, 0, 7133.99, 0.0, 22, 187], ["2026-07-23", 196, 6811.92, 196, 0, 6811.92, 0.0, 18, 176], ["2026-07-24", 221, 7774.79, 221, 0, 7774.79, 0.0, 18, 202], ["2026-07-25", 603, 21021.52, 603, 0, 21021.52, 0.0, 40, 557], ["2026-07-26", 429, 15066.23, 429, 0, 15066.23, 0.0, 27, 400], ["2026-07-27", 438, 15188.43, 433, 5, 15071.68, 116.75, 34, 399], ["2026-07-28", 365, 12499.9, 341, 24, 11914.88, 585.02, 30, 333], ["2026-07-29", 574, 19894.45, 563, 11, 19615.47, 278.98, 31, 522], ["2026-07-30", 263, 9052.98, 254, 9, 8846.53, 206.45, 21, 241], ["2026-07-31", 275, 9521.04, 267, 8, 9325.73, 195.31, 24, 246], ["2026-08-01", 209, 7181.78, 201, 8, 6971.62, 210.16, 29, 178], ["2026-08-02", 370, 12644.25, 349, 21, 12112.49, 531.76, 42, 326], ["2026-08-03", 185, 6325.31, 177, 8, 6135.44, 189.87, 26, 155], ["2026-08-04", 166, 5743.09, 162, 4, 5643.48, 99.61, 17, 144], ["2026-08-05", 161, 5502.21, 156, 5, 5373.6, 128.61, 18, 142], ["2026-08-06", 175, 6143.43, 169, 6, 5991.88, 151.55, 14, 160], ["2026-08-07", 137, 4531.42, 133, 4, 4425.11, 106.31, 19, 115], ["2026-08-08", 313, 10921.56, 301, 12, 10623.16, 298.4, 35, 274], ["2026-08-09", 421, 14696.26, 414, 7, 14525.22, 171.04, 33, 380], ["2026-08-10", 128, 4346.01, 127, 1, 4324.18, 21.83, 13, 114], ["2026-08-11", 114, 3818.9, 106, 8, 3607.05, 211.85, 17, 97], ["2026-08-12", 160, 5598.94, 158, 2, 5544.32, 54.62, 26, 132], ["2026-08-13", 135, 4724.94, 134, 1, 4699.2, 25.74, 13, 120], ["2026-08-14", 162, 5606.33, 162, 0, 5606.33, 0.0, 23, 138], ["2026-08-15", 157, 5496.54, 155, 2, 5441.49, 55.05, 26, 124], ["2026-08-16", 140, 4924.72, 139, 1, 4897.2, 27.52, 18, 121], ["2026-08-17", 156, 5396.44, 151, 5, 5268.28, 128.16, 22, 131], ["2026-08-18", 185, 6493.59, 180, 5, 6373.23, 120.36, 30, 152], ["2026-08-19", 197, 6739.52, 191, 6, 6589.8, 149.72, 21, 173], ["2026-08-20", 155, 5292.65, 151, 4, 5199.54, 93.11, 20, 135], ["2026-08-21", 130, 4524.08, 129, 1, 4501.71, 22.37, 18, 112], ["2026-08-22", 138, 4865.41, 135, 3, 4789.25, 76.16, 27, 111], ["2026-08-23", 188, 6525.07, 185, 3, 6445.75, 79.32, 14, 171], ["2026-08-24", 145, 4880.79, 143, 2, 4835.53, 45.26, 13, 128], ["2026-08-25", 132, 4603.02, 130, 2, 4547.76, 55.26, 19, 110], ["2026-08-26", 123, 4250.74, 122, 1, 4224.24, 26.5, 18, 102], ["2026-08-27", 100, 3599.63, 99, 1, 3572.08, 27.55, 15, 85], ["2026-08-28", 119, 4128.85, 118, 1, 4103.74, 25.11, 30, 88], ["2026-08-29", 134, 4736.31, 132, 2, 4683.86, 52.45, 20, 111], ["2026-08-30", 198, 6973.2, 194, 4, 6873.0, 100.2, 29, 158], ["2026-08-31", 127, 4329.61, 125, 2, 4285.74, 43.87, 22, 103], ["2026-09-01", 122, 4272.82, 118, 4, 4166.98, 105.84, 21, 100], ["2026-09-02", 152, 5233.21, 146, 6, 5075.68, 157.53, 25, 126], ["2026-09-03", 93, 3289.61, 92, 1, 3266.39, 23.22, 18, 75], ["2026-09-04", 115, 4027.86, 114, 1, 4000.05, 27.81, 28, 81], ["2026-09-05", 177, 6266.48, 173, 4, 6167.03, 99.45, 28, 148], ["2026-09-06", 178, 6299.81, 174, 4, 6193.24, 106.57, 28, 150], ["2026-09-07", 285, 10138.16, 278, 7, 9964.89, 173.27, 50, 223], ["2026-09-08", 75, 2627.32, 73, 2, 2580.18, 47.14, 9, 65], ["2026-09-09", 105, 3723.3, 103, 2, 3667.72, 55.58, 18, 77], ["2026-09-10", 94, 3311.3, 94, 0, 3311.3, 0.0, 18, 76], ["2026-09-11", 100, 3579.08, 99, 1, 3556.87, 22.21, 21, 78], ["2026-09-12", 122, 4276.28, 119, 3, 4205.95, 70.33, 23, 99], ["2026-09-13", 141, 4952.42, 141, 0, 4952.42, 0.0, 28, 113], ["2026-09-15", 1, 27.46, 0, 1, 0.0, 27.46, 1, 0], ["2026-09-16", 2, 49.25, 0, 2, 0.0, 49.25, 1, 1], ["2026-09-17", 1, 26.2, 0, 1, 0.0, 26.2, 1, 0], ["2026-09-18", 43, 1550.49, 43, 0, 1550.49, 0.0, 7, 33], ["2026-09-19", 113, 3951.28, 110, 3, 3878.8, 72.48, 15, 94], ["2026-09-20", 161, 5694.81, 159, 2, 5641.8, 53.01, 36, 121], ["2026-09-21", 59, 2130.73, 58, 1, 2103.76, 26.97, 11, 48], ["2026-09-22", 71, 2425.89, 71, 0, 2425.89, 0.0, 8, 63], ["2026-09-23", 96, 3287.3, 96, 0, 3287.3, 0.0, 22, 73], ["2026-09-24", 63, 2190.01, 63, 0, 2190.01, 0.0, 15, 47], ["2026-09-25", 61, 2085.34, 60, 1, 2058.75, 26.59, 10, 51], ["2026-09-26", 97, 3418.28, 96, 1, 3392.46, 25.82, 14, 83], ["2026-09-27", 106, 3703.34, 103, 3, 3628.86, 74.48, 14, 91], ["2026-09-28", 67, 2301.17, 66, 1, 2279.99, 21.18, 11, 56], ["2026-09-29", 84, 3025.48, 83, 1, 3001.55, 23.93, 15, 68], ["2026-09-30", 64, 2180.22, 64, 0, 2180.22, 0.0, 21, 42], ["2026-10-01", 68, 2402.53, 68, 0, 2402.53, 0.0, 14, 54], ["2026-10-02", 78, 2713.65, 78, 0, 2713.65, 0.0, 5, 72], ["2026-10-03", 105, 3778.24, 105, 0, 3778.24, 0.0, 17, 87], ["2026-10-04", 115, 4140.22, 115, 0, 4140.22, 0.0, 14, 98], ["2026-10-05", 49, 1708.43, 49, 0, 1708.43, 0.0, 6, 43], ["2026-10-06", 55, 1997.41, 55, 0, 1997.41, 0.0, 7, 48], ["2026-10-07", 108, 3716.97, 104, 4, 3622.62, 94.35, 19, 88], ["2026-10-08", 174, 6199.93, 173, 1, 6177.88, 22.05, 25, 146], ["2026-10-09", 119, 4143.98, 116, 3, 4073.13, 70.85, 24, 95], ["2026-10-10", 163, 5472.37, 158, 5, 5355.67, 116.7, 28, 129], ["2026-10-11", 248, 8286.56, 242, 6, 8145.38, 141.18, 39, 208], ["2026-10-12", 90, 3259.2, 90, 0, 3259.2, 0.0, 10, 80], ["2026-10-13", 76, 2656.92, 72, 4, 2560.37, 96.55, 19, 57], ["2026-10-14", 86, 2939.4, 84, 2, 2888.76, 50.64, 22, 63], ["2026-10-15", 98, 3440.47, 95, 3, 3363.22, 77.25, 19, 76], ["2026-10-16", 62, 2144.5, 62, 0, 2144.5, 0.0, 9, 51], ["2026-10-17", 86, 2986.1, 81, 5, 2865.24, 120.86, 17, 69], ["2026-10-18", 142, 4884.73, 138, 4, 4787.57, 97.16, 37, 105], ["2026-10-19", 50, 1727.97, 49, 1, 1701.53, 26.44, 10, 39], ["2026-10-20", 63, 2146.18, 59, 4, 2049.37, 96.81, 18, 44], ["2026-10-21", 50, 1739.64, 47, 3, 1659.03, 80.61, 10, 40], ["2026-10-22", 66, 2174.61, 63, 3, 2099.34, 75.27, 17, 46], ["2026-10-23", 61, 2030.59, 57, 4, 1928.38, 102.21, 9, 51], ["2026-10-24", 82, 2800.04, 80, 2, 2749.56, 50.48, 13, 69], ["2026-10-25", 76, 2660.63, 73, 3, 2579.53, 81.1, 13, 63], ["2026-10-26", 93, 3200.9, 92, 1, 3173.93, 26.97, 17, 74], ["2026-10-27", 68, 2351.28, 67, 1, 2324.31, 26.97, 12, 55], ["2026-10-28", 101, 3514.49, 96, 5, 3392.76, 121.73, 15, 84], ["2026-10-29", 62, 2224.89, 60, 2, 2172.17, 52.72, 14, 46], ["2026-10-30", 51, 1775.78, 51, 0, 1775.78, 0.0, 9, 40], ["2026-10-31", 88, 3097.81, 82, 6, 2944.94, 152.87, 16, 70], ["2026-11-01", 108, 3853.23, 105, 3, 3771.81, 81.42, 15, 93], ["2026-11-02", 49, 1679.52, 46, 3, 1603.53, 75.99, 8, 41], ["2026-11-03", 60, 2032.4, 59, 1, 2005.19, 27.21, 8, 52], ["2026-11-04", 59, 2036.47, 56, 3, 1959.45, 77.02, 15, 43], ["2026-11-05", 50, 1648.89, 49, 1, 1622.81, 26.08, 21, 29], ["2026-11-06", 52, 1780.52, 51, 1, 1753.33, 27.19, 21, 31], ["2026-11-07", 79, 2791.94, 77, 2, 2738.73, 53.21, 28, 50], ["2026-11-08", 72, 2540.5, 71, 1, 2519.22, 21.28, 26, 46], ["2026-11-09", 60, 2075.68, 58, 2, 2027.32, 48.36, 19, 39], ["2026-11-10", 53, 1821.11, 52, 1, 1799.86, 21.25, 21, 31]],
-        "TVG6720": [["2026-07-22", 187, 6105.13, 187, 0, 6105.13, 0.0, 13, 170], ["2026-07-23", 154, 5311.25, 154, 0, 5311.25, 0.0, 16, 135], ["2026-07-24", 153, 5288.67, 153, 0, 5288.67, 0.0, 11, 139], ["2026-07-25", 588, 20462.45, 586, 2, 20409.06, 53.39, 29, 539], ["2026-07-26", 409, 14258.09, 408, 1, 14231.43, 26.66, 33, 369], ["2026-07-27", 344, 11964.05, 343, 1, 11940.17, 23.88, 28, 304], ["2026-07-28", 397, 13640.24, 378, 19, 13185.67, 454.57, 30, 362], ["2026-07-29", 541, 18617.87, 519, 22, 18086.98, 530.89, 40, 493], ["2026-07-30", 249, 8645.44, 241, 8, 8443.19, 202.25, 20, 225], ["2026-07-31", 262, 8998.87, 255, 7, 8818.72, 180.15, 32, 228], ["2026-08-01", 204, 6999.09, 194, 10, 6748.1, 250.99, 22, 180], ["2026-08-02", 309, 10640.64, 290, 19, 10145.44, 495.2, 36, 271], ["2026-08-03", 154, 5295.79, 146, 8, 5096.02, 199.77, 20, 134], ["2026-08-04", 167, 5871.36, 162, 5, 5752.99, 118.37, 23, 143], ["2026-08-05", 143, 4883.95, 136, 7, 4713.57, 170.38, 20, 121], ["2026-08-06", 152, 5261.12, 147, 5, 5133.33, 127.79, 21, 131], ["2026-08-07", 252, 8917.05, 248, 4, 8814.26, 102.79, 35, 213], ["2026-08-08", 480, 17244.49, 470, 10, 16988.15, 256.34, 57, 415], ["2026-08-09", 571, 20364.7, 559, 12, 20057.2, 307.5, 56, 498], ["2026-08-10", 208, 7283.6, 206, 2, 7234.56, 49.04, 27, 179], ["2026-08-11", 199, 6982.14, 194, 5, 6859.19, 122.95, 34, 163], ["2026-08-12", 227, 8007.38, 222, 5, 7874.93, 132.45, 39, 187], ["2026-08-13", 229, 8150.62, 225, 4, 8048.13, 102.49, 31, 194], ["2026-08-14", 200, 7088.9, 196, 4, 6989.69, 99.21, 29, 168], ["2026-08-15", 171, 6120.39, 170, 1, 6093.7, 26.69, 21, 147], ["2026-08-16", 208, 7358.86, 206, 2, 7309.32, 49.54, 39, 167], ["2026-08-17", 170, 5919.5, 165, 5, 5799.11, 120.39, 28, 141], ["2026-08-18", 217, 7641.67, 210, 7, 7460.57, 181.1, 30, 184], ["2026-08-19", 264, 9408.36, 262, 2, 9359.79, 48.57, 37, 224], ["2026-08-20", 204, 7237.27, 202, 2, 7189.4, 47.87, 34, 166], ["2026-08-21", 169, 6028.32, 166, 3, 5958.24, 70.08, 32, 136], ["2026-08-22", 197, 6953.09, 196, 1, 6930.63, 22.46, 35, 159], ["2026-08-23", 213, 7468.07, 207, 6, 7313.15, 154.92, 21, 190], ["2026-08-24", 194, 6818.17, 190, 4, 6714.9, 103.27, 33, 161], ["2026-08-25", 197, 6955.04, 194, 3, 6872.18, 82.86, 41, 153], ["2026-08-26", 168, 5976.34, 166, 2, 5925.6, 50.74, 29, 138], ["2026-08-27", 156, 5472.04, 154, 2, 5422.5, 49.54, 32, 123], ["2026-08-28", 176, 6138.37, 173, 3, 6066.75, 71.62, 36, 139], ["2026-08-29", 164, 5733.22, 160, 4, 5628.27, 104.95, 31, 131], ["2026-08-30", 242, 8514.19, 238, 4, 8415.15, 99.04, 53, 187], ["2026-08-31", 181, 6418.2, 177, 4, 6329.26, 88.94, 41, 131], ["2026-09-01", 148, 5274.3, 148, 0, 5274.3, 0.0, 35, 112], ["2026-09-02", 177, 6281.06, 177, 0, 6281.06, 0.0, 42, 133], ["2026-09-03", 155, 5378.07, 154, 1, 5350.75, 27.32, 28, 123], ["2026-09-04", 145, 5221.88, 142, 3, 5141.9, 79.98, 28, 117], ["2026-09-05", 214, 7641.95, 212, 2, 7587.12, 54.83, 38, 175], ["2026-09-06", 166, 5832.42, 160, 6, 5681.31, 151.11, 33, 132], ["2026-09-07", 328, 11648.64, 324, 4, 11551.4, 97.24, 56, 262], ["2026-09-08", 128, 4531.7, 128, 0, 4531.7, 0.0, 18, 110], ["2026-09-09", 125, 4501.8, 124, 1, 4474.01, 27.79, 19, 103], ["2026-09-10", 112, 3940.37, 108, 4, 3837.75, 102.62, 14, 96], ["2026-09-11", 90, 3203.66, 89, 1, 3181.14, 22.52, 13, 75], ["2026-09-12", 124, 4342.09, 123, 1, 4314.5, 27.59, 25, 98], ["2026-09-13", 165, 5884.75, 165, 0, 5884.75, 0.0, 29, 133], ["2026-09-14", 103, 3533.99, 100, 3, 3456.63, 77.36, 21, 80], ["2026-09-15", 77, 2720.52, 76, 1, 2693.06, 27.46, 13, 62], ["2026-09-16", 20, 678.05, 19, 1, 650.69, 27.36, 7, 13], ["2026-09-17", 2, 48.18, 0, 2, 0.0, 48.18, 0, 2], ["2026-09-18", 24, 878.08, 24, 0, 878.08, 0.0, 4, 20], ["2026-09-19", 112, 4003.21, 109, 3, 3923.87, 79.34, 15, 93], ["2026-09-20", 138, 4843.67, 134, 4, 4746.56, 97.11, 23, 111], ["2026-09-21", 87, 3077.17, 85, 2, 3027.21, 49.96, 12, 74], ["2026-09-22", 57, 1909.82, 57, 0, 1909.82, 0.0, 4, 52], ["2026-09-23", 83, 2843.29, 82, 1, 2816.38, 26.91, 10, 73], ["2026-09-24", 42, 1416.51, 42, 0, 1416.51, 0.0, 6, 36], ["2026-09-25", 51, 1738.36, 50, 1, 1711.77, 26.59, 5, 45], ["2026-09-26", 87, 3104.44, 86, 1, 3080.63, 23.81, 14, 71], ["2026-09-27", 69, 2373.53, 67, 2, 2323.84, 49.69, 12, 57], ["2026-09-28", 56, 1919.4, 55, 1, 1893.8, 25.6, 12, 44], ["2026-09-29", 79, 2781.89, 77, 2, 2736.52, 45.37, 9, 69], ["2026-09-30", 50, 1759.6, 50, 0, 1759.6, 0.0, 12, 38], ["2026-10-01", 54, 1888.11, 53, 1, 1867.02, 21.09, 14, 39], ["2026-10-02", 52, 1837.69, 51, 1, 1811.57, 26.12, 2, 48], ["2026-10-03", 75, 2576.04, 74, 1, 2552.47, 23.57, 11, 64], ["2026-10-04", 75, 2669.8, 74, 1, 2645.8, 24.0, 11, 64], ["2026-10-05", 45, 1531.58, 42, 3, 1457.19, 74.39, 5, 40], ["2026-10-06", 47, 1645.27, 47, 0, 1645.27, 0.0, 10, 37], ["2026-10-07", 65, 2265.17, 63, 2, 2216.08, 49.09, 11, 54], ["2026-10-08", 101, 3560.78, 98, 3, 3489.06, 71.72, 16, 83], ["2026-10-09", 79, 2790.95, 78, 1, 2766.12, 24.83, 14, 64], ["2026-10-10", 90, 3009.11, 87, 3, 2938.45, 70.66, 9, 80], ["2026-10-11", 161, 5374.88, 156, 5, 5256.16, 118.72, 22, 139], ["2026-10-12", 44, 1517.07, 43, 1, 1491.02, 26.05, 8, 36], ["2026-10-13", 49, 1727.98, 48, 1, 1708.08, 19.9, 11, 37], ["2026-10-14", 50, 1754.16, 48, 2, 1702.02, 52.14, 16, 34], ["2026-10-15", 50, 1771.65, 50, 0, 1771.65, 0.0, 9, 40], ["2026-10-16", 44, 1468.64, 41, 3, 1398.85, 69.79, 8, 36], ["2026-10-17", 68, 2336.21, 67, 1, 2309.75, 26.46, 17, 50], ["2026-10-18", 95, 3307.12, 93, 2, 3258.72, 48.4, 12, 82], ["2026-10-19", 33, 1096.39, 31, 2, 1054.08, 42.31, 8, 25], ["2026-10-20", 35, 1177.23, 33, 2, 1127.47, 49.76, 7, 27], ["2026-10-21", 32, 1080.13, 32, 0, 1080.13, 0.0, 7, 24], ["2026-10-22", 41, 1364.52, 41, 0, 1364.52, 0.0, 10, 28], ["2026-10-23", 29, 1042.36, 29, 0, 1042.36, 0.0, 7, 22], ["2026-10-24", 39, 1397.09, 38, 1, 1371.65, 25.44, 9, 29], ["2026-10-25", 54, 1928.37, 53, 1, 1906.92, 21.45, 6, 47], ["2026-10-26", 40, 1355.75, 39, 1, 1331.47, 24.28, 5, 34], ["2026-10-27", 35, 1215.61, 35, 0, 1215.61, 0.0, 3, 30], ["2026-10-28", 67, 2278.96, 64, 3, 2203.48, 75.48, 11, 56], ["2026-10-29", 35, 1216.11, 35, 0, 1216.11, 0.0, 5, 29], ["2026-10-30", 31, 1131.68, 31, 0, 1131.68, 0.0, 3, 28], ["2026-10-31", 41, 1451.15, 38, 3, 1369.62, 81.53, 2, 39], ["2026-11-01", 69, 2470.36, 67, 2, 2416.08, 54.28, 11, 56], ["2026-11-02", 35, 1249.24, 35, 0, 1249.24, 0.0, 8, 27], ["2026-11-03", 31, 1090.13, 30, 1, 1062.92, 27.21, 2, 29], ["2026-11-04", 29, 1030.11, 28, 1, 1005.36, 24.75, 5, 24], ["2026-11-05", 34, 1151.79, 32, 2, 1102.83, 48.96, 9, 25], ["2026-11-06", 22, 748.95, 20, 2, 721.76, 27.19, 6, 16], ["2026-11-07", 44, 1539.32, 44, 0, 1539.32, 0.0, 17, 27], ["2026-11-08", 47, 1676.96, 46, 1, 1653.01, 23.95, 12, 35], ["2026-11-09", 40, 1393.03, 39, 1, 1393.03, 0.0, 10, 30], ["2026-11-10", 36, 1262.38, 34, 2, 1214.58, 47.8, 12, 23]]
+        "TVG6700": [["2026-07-22", 215, 7133.99, 215, 0, 7133.99, 0.0, 22, 187], ["2026-07-23", 196, 6811.92, 196, 0, 6811.92, 0.0, 18, 176], ["2026-07-24", 221, 7774.79, 221, 0, 7774.79, 0.0, 18, 202], ["2026-07-25", 603, 21021.52, 603, 0, 21021.52, 0.0, 40, 557], ["2026-07-26", 429, 15066.23, 429, 0, 15066.23, 0.0, 27, 400], ["2026-07-27", 438, 15188.43, 433, 5, 15071.68, 116.75, 34, 399], ["2026-07-28", 365, 12499.9, 341, 24, 11914.88, 585.02, 30, 333], ["2026-07-29", 574, 19894.45, 563, 11, 19615.47, 278.98, 31, 522], ["2026-07-30", 263, 9052.98, 254, 9, 8846.53, 206.45, 21, 241], ["2026-07-31", 275, 9521.04, 267, 8, 9325.73, 195.31, 24, 246], ["2026-08-01", 209, 7181.78, 201, 8, 6971.62, 210.16, 29, 178], ["2026-08-02", 370, 12644.25, 349, 21, 12112.49, 531.76, 42, 326], ["2026-08-03", 185, 6325.31, 177, 8, 6135.44, 189.87, 26, 155], ["2026-08-04", 166, 5743.09, 162, 4, 5643.48, 99.61, 17, 144], ["2026-08-05", 161, 5502.21, 156, 5, 5373.6, 128.61, 18, 142], ["2026-08-06", 175, 6143.43, 169, 6, 5991.88, 151.55, 14, 160], ["2026-08-07", 137, 4531.42, 133, 4, 4425.11, 106.31, 19, 115], ["2026-08-08", 313, 10921.56, 301, 12, 10623.16, 298.4, 35, 274], ["2026-08-09", 421, 14696.26, 414, 7, 14525.22, 171.04, 33, 380], ["2026-08-10", 128, 4346.01, 127, 1, 4324.18, 21.83, 13, 114], ["2026-08-11", 114, 3818.9, 106, 8, 3607.05, 211.85, 17, 97], ["2026-08-12", 160, 5598.94, 158, 2, 5544.32, 54.62, 26, 132], ["2026-08-13", 135, 4724.94, 134, 1, 4699.2, 25.74, 13, 120], ["2026-08-14", 162, 5606.33, 162, 0, 5606.33, 0.0, 23, 138], ["2026-08-15", 157, 5496.54, 155, 2, 5441.49, 55.05, 26, 124], ["2026-08-16", 140, 4924.72, 139, 1, 4897.2, 27.52, 18, 121], ["2026-08-17", 156, 5396.44, 151, 5, 5268.28, 128.16, 22, 131], ["2026-08-18", 185, 6493.59, 180, 5, 6373.23, 120.36, 30, 152], ["2026-08-19", 197, 6739.52, 191, 6, 6589.8, 149.72, 21, 173], ["2026-08-20", 155, 5292.65, 151, 4, 5199.54, 93.11, 20, 135], ["2026-08-21", 130, 4524.08, 129, 1, 4501.71, 22.37, 18, 112], ["2026-08-22", 138, 4865.41, 135, 3, 4789.25, 76.16, 27, 111], ["2026-08-23", 188, 6525.07, 185, 3, 6445.75, 79.32, 14, 171], ["2026-08-24", 145, 4880.79, 143, 2, 4835.53, 45.26, 13, 128], ["2026-08-25", 132, 4603.02, 130, 2, 4547.76, 55.26, 19, 110], ["2026-08-26", 123, 4250.74, 122, 1, 4224.24, 26.5, 18, 102], ["2026-08-27", 100, 3599.63, 99, 1, 3572.08, 27.55, 15, 85], ["2026-08-28", 119, 4128.85, 118, 1, 4103.74, 25.11, 30, 88], ["2026-08-29", 134, 4736.31, 132, 2, 4683.86, 52.45, 20, 111], ["2026-08-30", 198, 6973.2, 194, 4, 6873.0, 100.2, 29, 158], ["2026-08-31", 127, 4329.61, 125, 2, 4285.74, 43.87, 22, 103], ["2026-09-01", 122, 4272.82, 118, 4, 4166.98, 105.84, 21, 100], ["2026-09-02", 152, 5233.21, 146, 6, 5075.68, 157.53, 25, 126], ["2026-09-03", 93, 3289.61, 92, 1, 3266.39, 23.22, 18, 75], ["2026-09-04", 115, 4027.86, 114, 1, 4000.05, 27.81, 28, 81], ["2026-09-05", 177, 6266.48, 173, 4, 6167.03, 99.45, 28, 148], ["2026-09-06", 178, 6299.81, 174, 4, 6193.24, 106.57, 28, 150], ["2026-09-07", 285, 10138.16, 278, 7, 9964.89, 173.27, 50, 223], ["2026-09-08", 75, 2627.32, 73, 2, 2580.18, 47.14, 9, 65], ["2026-09-09", 105, 3723.3, 103, 2, 3667.72, 55.58, 18, 77], ["2026-09-10", 94, 3311.3, 94, 0, 3311.3, 0.0, 18, 76], ["2026-09-11", 100, 3579.08, 99, 1, 3556.87, 22.21, 21, 78], ["2026-09-12", 122, 4276.28, 119, 3, 4205.95, 70.33, 23, 99], ["2026-09-13", 141, 4952.42, 141, 0, 4952.42, 0.0, 28, 113], ["2026-09-15", 1, 27.46, 0, 1, 0.0, 27.46, 1, 0], ["2026-09-16", 2, 49.25, 0, 2, 0.0, 49.25, 1, 1], ["2026-09-17", 1, 26.2, 0, 1, 0.0, 26.2, 1, 0], ["2026-09-18", 43, 1550.49, 43, 0, 1550.49, 0.0, 7, 33], ["2026-09-19", 113, 3951.28, 110, 3, 3878.8, 72.48, 15, 94], ["2026-09-20", 161, 5694.81, 159, 2, 5641.8, 53.01, 36, 121], ["2026-09-21", 59, 2130.73, 58, 1, 2103.76, 26.97, 11, 48], ["2026-09-22", 71, 2425.89, 71, 0, 2425.89, 0.0, 8, 63], ["2026-09-23", 96, 3287.3, 96, 0, 3287.3, 0.0, 22, 73], ["2026-09-24", 63, 2190.01, 63, 0, 2190.01, 0.0, 15, 47], ["2026-09-25", 61, 2085.34, 60, 1, 2058.75, 26.59, 10, 51], ["2026-09-26", 96, 3387.88, 95, 1, 3362.06, 25.82, 14, 82], ["2026-09-27", 106, 3703.34, 103, 3, 3628.86, 74.48, 14, 91], ["2026-09-28", 67, 2301.17, 66, 1, 2279.99, 21.18, 11, 56], ["2026-09-29", 84, 3025.48, 83, 1, 3001.55, 23.93, 15, 68], ["2026-09-30", 64, 2180.22, 64, 0, 2180.22, 0.0, 21, 42], ["2026-10-01", 68, 2402.53, 68, 0, 2402.53, 0.0, 14, 54], ["2026-10-02", 78, 2713.65, 78, 0, 2713.65, 0.0, 5, 72], ["2026-10-03", 105, 3778.24, 105, 0, 3778.24, 0.0, 17, 87], ["2026-10-04", 115, 4140.22, 115, 0, 4140.22, 0.0, 14, 98], ["2026-10-05", 49, 1708.43, 49, 0, 1708.43, 0.0, 6, 43], ["2026-10-06", 55, 1997.41, 55, 0, 1997.41, 0.0, 7, 48], ["2026-10-07", 108, 3716.97, 104, 4, 3622.62, 94.35, 19, 88], ["2026-10-08", 174, 6199.93, 173, 1, 6177.88, 22.05, 25, 146], ["2026-10-09", 119, 4143.98, 116, 3, 4073.13, 70.85, 24, 95], ["2026-10-10", 163, 5472.37, 158, 5, 5355.67, 116.7, 28, 129], ["2026-10-11", 248, 8286.56, 242, 6, 8145.38, 141.18, 39, 208], ["2026-10-12", 90, 3259.2, 90, 0, 3259.2, 0.0, 10, 80], ["2026-10-13", 76, 2656.92, 72, 4, 2560.37, 96.55, 19, 57], ["2026-10-14", 86, 2939.4, 84, 2, 2888.76, 50.64, 22, 63], ["2026-10-15", 98, 3440.47, 95, 3, 3363.22, 77.25, 19, 76], ["2026-10-16", 62, 2144.5, 62, 0, 2144.5, 0.0, 9, 51], ["2026-10-17", 86, 2986.1, 81, 5, 2865.24, 120.86, 17, 69], ["2026-10-18", 142, 4884.73, 138, 4, 4787.57, 97.16, 37, 105], ["2026-10-19", 50, 1727.97, 49, 1, 1701.53, 26.44, 10, 39], ["2026-10-20", 63, 2146.18, 59, 4, 2049.37, 96.81, 18, 44], ["2026-10-21", 50, 1739.64, 47, 3, 1659.03, 80.61, 10, 40], ["2026-10-22", 66, 2174.61, 63, 3, 2099.34, 75.27, 17, 46], ["2026-10-23", 61, 2030.59, 57, 4, 1928.38, 102.21, 9, 51], ["2026-10-24", 82, 2800.04, 80, 2, 2749.56, 50.48, 13, 69], ["2026-10-25", 76, 2660.63, 73, 3, 2579.53, 81.1, 13, 63], ["2026-10-26", 93, 3200.9, 92, 1, 3173.93, 26.97, 17, 74], ["2026-10-27", 68, 2351.28, 67, 1, 2324.31, 26.97, 12, 55], ["2026-10-28", 101, 3514.49, 96, 5, 3392.76, 121.73, 15, 84], ["2026-10-29", 62, 2224.89, 60, 2, 2172.17, 52.72, 14, 46], ["2026-10-30", 51, 1775.78, 51, 0, 1775.78, 0.0, 9, 40], ["2026-10-31", 88, 3097.81, 82, 6, 2944.94, 152.87, 16, 70], ["2026-11-01", 108, 3853.23, 105, 3, 3771.81, 81.42, 15, 93], ["2026-11-02", 49, 1679.52, 46, 3, 1603.53, 75.99, 8, 41], ["2026-11-03", 60, 2032.4, 59, 1, 2005.19, 27.21, 8, 52], ["2026-11-04", 59, 2036.47, 56, 3, 1959.45, 77.02, 15, 43], ["2026-11-05", 49, 1610.89, 48, 1, 1584.81, 26.08, 20, 29], ["2026-11-06", 52, 1780.52, 51, 1, 1753.33, 27.19, 21, 31], ["2026-11-07", 78, 2753.94, 76, 2, 2700.73, 53.21, 28, 49], ["2026-11-08", 72, 2540.5, 71, 1, 2519.22, 21.28, 26, 46], ["2026-11-09", 60, 2075.68, 58, 2, 2027.32, 48.36, 19, 39], ["2026-11-10", 53, 1821.11, 52, 1, 1799.86, 21.25, 21, 31], ["2026-11-11", 60, 2005.88, 59, 1, 1979.32, 26.56, 26, 33]],
+        "TVG6720": [["2026-07-22", 187, 6105.13, 187, 0, 6105.13, 0.0, 13, 170], ["2026-07-23", 154, 5311.25, 154, 0, 5311.25, 0.0, 16, 135], ["2026-07-24", 153, 5288.67, 153, 0, 5288.67, 0.0, 11, 139], ["2026-07-25", 588, 20462.45, 586, 2, 20409.06, 53.39, 29, 539], ["2026-07-26", 409, 14258.09, 408, 1, 14231.43, 26.66, 33, 369], ["2026-07-27", 344, 11964.05, 343, 1, 11940.17, 23.88, 28, 304], ["2026-07-28", 397, 13640.24, 378, 19, 13185.67, 454.57, 30, 362], ["2026-07-29", 541, 18617.87, 519, 22, 18086.98, 530.89, 40, 493], ["2026-07-30", 249, 8645.44, 241, 8, 8443.19, 202.25, 20, 225], ["2026-07-31", 262, 8998.87, 255, 7, 8818.72, 180.15, 32, 228], ["2026-08-01", 204, 6999.09, 194, 10, 6748.1, 250.99, 22, 180], ["2026-08-02", 309, 10640.64, 290, 19, 10145.44, 495.2, 36, 271], ["2026-08-03", 154, 5295.79, 146, 8, 5096.02, 199.77, 20, 134], ["2026-08-04", 167, 5871.36, 162, 5, 5752.99, 118.37, 23, 143], ["2026-08-05", 143, 4883.95, 136, 7, 4713.57, 170.38, 20, 121], ["2026-08-06", 152, 5261.12, 147, 5, 5133.33, 127.79, 21, 131], ["2026-08-07", 252, 8917.05, 248, 4, 8814.26, 102.79, 35, 213], ["2026-08-08", 480, 17244.49, 470, 10, 16988.15, 256.34, 57, 415], ["2026-08-09", 571, 20364.7, 559, 12, 20057.2, 307.5, 56, 498], ["2026-08-10", 208, 7283.6, 206, 2, 7234.56, 49.04, 27, 179], ["2026-08-11", 199, 6982.14, 194, 5, 6859.19, 122.95, 34, 163], ["2026-08-12", 227, 8007.38, 222, 5, 7874.93, 132.45, 39, 187], ["2026-08-13", 229, 8150.62, 225, 4, 8048.13, 102.49, 31, 194], ["2026-08-14", 200, 7088.9, 196, 4, 6989.69, 99.21, 29, 168], ["2026-08-15", 171, 6120.39, 170, 1, 6093.7, 26.69, 21, 147], ["2026-08-16", 208, 7358.86, 206, 2, 7309.32, 49.54, 39, 167], ["2026-08-17", 170, 5919.5, 165, 5, 5799.11, 120.39, 28, 141], ["2026-08-18", 217, 7641.67, 210, 7, 7460.57, 181.1, 30, 184], ["2026-08-19", 264, 9408.36, 262, 2, 9359.79, 48.57, 37, 224], ["2026-08-20", 204, 7237.27, 202, 2, 7189.4, 47.87, 34, 166], ["2026-08-21", 169, 6028.32, 166, 3, 5958.24, 70.08, 32, 136], ["2026-08-22", 197, 6953.09, 196, 1, 6930.63, 22.46, 35, 159], ["2026-08-23", 213, 7468.07, 207, 6, 7313.15, 154.92, 21, 190], ["2026-08-24", 194, 6818.17, 190, 4, 6714.9, 103.27, 33, 161], ["2026-08-25", 197, 6955.04, 194, 3, 6872.18, 82.86, 41, 153], ["2026-08-26", 168, 5976.34, 166, 2, 5925.6, 50.74, 29, 138], ["2026-08-27", 156, 5472.04, 154, 2, 5422.5, 49.54, 32, 123], ["2026-08-28", 176, 6138.37, 173, 3, 6066.75, 71.62, 36, 139], ["2026-08-29", 164, 5733.22, 160, 4, 5628.27, 104.95, 31, 131], ["2026-08-30", 242, 8514.19, 238, 4, 8415.15, 99.04, 53, 187], ["2026-08-31", 181, 6418.2, 177, 4, 6329.26, 88.94, 41, 131], ["2026-09-01", 148, 5274.3, 148, 0, 5274.3, 0.0, 35, 112], ["2026-09-02", 177, 6281.06, 177, 0, 6281.06, 0.0, 42, 133], ["2026-09-03", 155, 5378.07, 154, 1, 5350.75, 27.32, 28, 123], ["2026-09-04", 145, 5221.88, 142, 3, 5141.9, 79.98, 28, 117], ["2026-09-05", 214, 7641.95, 212, 2, 7587.12, 54.83, 38, 175], ["2026-09-06", 166, 5832.42, 160, 6, 5681.31, 151.11, 33, 132], ["2026-09-07", 328, 11648.64, 324, 4, 11551.4, 97.24, 56, 262], ["2026-09-08", 128, 4531.7, 128, 0, 4531.7, 0.0, 18, 110], ["2026-09-09", 125, 4501.8, 124, 1, 4474.01, 27.79, 19, 103], ["2026-09-10", 112, 3940.37, 108, 4, 3837.75, 102.62, 14, 96], ["2026-09-11", 90, 3203.66, 89, 1, 3181.14, 22.52, 13, 75], ["2026-09-12", 124, 4342.09, 123, 1, 4314.5, 27.59, 25, 98], ["2026-09-13", 165, 5884.75, 165, 0, 5884.75, 0.0, 29, 133], ["2026-09-14", 103, 3533.99, 100, 3, 3456.63, 77.36, 21, 80], ["2026-09-15", 77, 2720.52, 76, 1, 2693.06, 27.46, 13, 62], ["2026-09-16", 20, 678.05, 19, 1, 650.69, 27.36, 7, 13], ["2026-09-17", 2, 48.18, 0, 2, 0.0, 48.18, 0, 2], ["2026-09-18", 24, 878.08, 24, 0, 878.08, 0.0, 4, 20], ["2026-09-19", 112, 4003.21, 109, 3, 3923.87, 79.34, 15, 93], ["2026-09-20", 138, 4843.67, 134, 4, 4746.56, 97.11, 23, 111], ["2026-09-21", 87, 3077.17, 85, 2, 3027.21, 49.96, 12, 74], ["2026-09-22", 57, 1909.82, 57, 0, 1909.82, 0.0, 4, 52], ["2026-09-23", 83, 2843.29, 82, 1, 2816.38, 26.91, 10, 73], ["2026-09-24", 42, 1416.51, 42, 0, 1416.51, 0.0, 6, 36], ["2026-09-25", 51, 1738.36, 50, 1, 1711.77, 26.59, 5, 45], ["2026-09-26", 87, 3104.44, 86, 1, 3080.63, 23.81, 14, 71], ["2026-09-27", 69, 2373.53, 67, 2, 2323.84, 49.69, 12, 57], ["2026-09-28", 56, 1919.4, 55, 1, 1893.8, 25.6, 12, 44], ["2026-09-29", 79, 2781.89, 77, 2, 2736.52, 45.37, 9, 69], ["2026-09-30", 50, 1759.6, 50, 0, 1759.6, 0.0, 12, 38], ["2026-10-01", 54, 1888.11, 53, 1, 1867.02, 21.09, 14, 39], ["2026-10-02", 52, 1837.69, 51, 1, 1811.57, 26.12, 2, 48], ["2026-10-03", 75, 2576.04, 74, 1, 2552.47, 23.57, 11, 64], ["2026-10-04", 75, 2669.8, 74, 1, 2645.8, 24.0, 11, 64], ["2026-10-05", 45, 1531.58, 42, 3, 1457.19, 74.39, 5, 40], ["2026-10-06", 47, 1645.27, 47, 0, 1645.27, 0.0, 10, 37], ["2026-10-07", 65, 2265.17, 63, 2, 2216.08, 49.09, 11, 54], ["2026-10-08", 101, 3560.78, 98, 3, 3489.06, 71.72, 16, 83], ["2026-10-09", 79, 2790.95, 78, 1, 2766.12, 24.83, 14, 64], ["2026-10-10", 90, 3009.11, 87, 3, 2938.45, 70.66, 9, 80], ["2026-10-11", 161, 5374.88, 156, 5, 5256.16, 118.72, 22, 139], ["2026-10-12", 44, 1517.07, 43, 1, 1491.02, 26.05, 8, 36], ["2026-10-13", 49, 1727.98, 48, 1, 1708.08, 19.9, 11, 37], ["2026-10-14", 50, 1754.16, 48, 2, 1702.02, 52.14, 16, 34], ["2026-10-15", 50, 1771.65, 50, 0, 1771.65, 0.0, 9, 40], ["2026-10-16", 44, 1468.64, 41, 3, 1398.85, 69.79, 8, 36], ["2026-10-17", 68, 2336.21, 67, 1, 2309.75, 26.46, 17, 50], ["2026-10-18", 95, 3307.12, 93, 2, 3258.72, 48.4, 12, 82], ["2026-10-19", 33, 1096.39, 31, 2, 1054.08, 42.31, 8, 25], ["2026-10-20", 35, 1177.23, 33, 2, 1127.47, 49.76, 7, 27], ["2026-10-21", 32, 1080.13, 32, 0, 1080.13, 0.0, 7, 24], ["2026-10-22", 41, 1364.52, 41, 0, 1364.52, 0.0, 10, 28], ["2026-10-23", 29, 1042.36, 29, 0, 1042.36, 0.0, 7, 22], ["2026-10-24", 39, 1397.09, 38, 1, 1371.65, 25.44, 9, 29], ["2026-10-25", 54, 1928.37, 53, 1, 1906.92, 21.45, 6, 47], ["2026-10-26", 40, 1355.75, 39, 1, 1331.47, 24.28, 5, 34], ["2026-10-27", 35, 1215.61, 35, 0, 1215.61, 0.0, 3, 30], ["2026-10-28", 67, 2278.96, 64, 3, 2203.48, 75.48, 11, 56], ["2026-10-29", 35, 1216.11, 35, 0, 1216.11, 0.0, 5, 29], ["2026-10-30", 31, 1131.68, 31, 0, 1131.68, 0.0, 3, 28], ["2026-10-31", 41, 1453.58, 38, 3, 1372.05, 81.53, 2, 39], ["2026-11-01", 69, 2477.96, 67, 2, 2423.68, 54.28, 11, 56], ["2026-11-02", 35, 1249.24, 35, 0, 1249.24, 0.0, 8, 27], ["2026-11-03", 31, 1090.13, 30, 1, 1062.92, 27.21, 2, 29], ["2026-11-04", 28, 997.11, 27, 1, 972.36, 24.75, 5, 23], ["2026-11-05", 34, 1151.79, 32, 2, 1102.83, 48.96, 9, 25], ["2026-11-06", 22, 748.95, 20, 2, 721.76, 27.19, 6, 16], ["2026-11-07", 44, 1539.32, 44, 0, 1539.32, 0.0, 17, 27], ["2026-11-08", 47, 1676.96, 46, 1, 1653.01, 23.95, 12, 35], ["2026-11-09", 40, 1393.03, 39, 1, 1393.03, 0.0, 10, 30], ["2026-11-10", 36, 1262.38, 34, 2, 1214.58, 47.8, 12, 23], ["2026-11-11", 44, 1553.69, 42, 2, 1500.57, 53.12, 7, 36]]
       },
       "planBySku": {
-        "TVG6700": [["2026-07-22", 254], ["2026-07-23", 197], ["2026-07-24", 182], ["2026-07-25", 283], ["2026-07-26", 257], ["2026-07-27", 144], ["2026-07-28", 151], ["2026-07-29", 139], ["2026-07-30", 141], ["2026-07-31", 171], ["2026-08-01", 204], ["2026-08-02", 187], ["2026-08-03", 105], ["2026-08-04", 111], ["2026-08-05", 133], ["2026-08-06", 105], ["2026-08-07", 98], ["2026-08-08", 153], ["2026-08-09", 141], ["2026-08-10", 80], ["2026-08-11", 85], ["2026-08-12", 79], ["2026-08-13", 81], ["2026-08-14", 76], ["2026-08-15", 93], ["2026-08-16", 85], ["2026-08-17", 64], ["2026-08-18", 68], ["2026-08-19", 64], ["2026-08-20", 65], ["2026-08-21", 63], ["2026-08-22", 99], ["2026-08-23", 92], ["2026-08-24", 52], ["2026-08-25", 57], ["2026-08-26", 70], ["2026-08-27", 56], ["2026-08-28", 53], ["2026-08-29", 65], ["2026-08-30", 62], ["2026-08-31", 45], ["2026-09-01", 50], ["2026-09-02", 62], ["2026-09-03", 49], ["2026-09-04", 47], ["2026-09-05", 76], ["2026-09-06", 71], ["2026-09-07", 54], ["2026-09-08", 46], ["2026-09-09", 42], ["2026-09-10", 46], ["2026-09-11", 56], ["2026-09-12", 54], ["2026-09-13", 51], ["2026-09-14", 38], ["2026-09-15", 42], ["2026-09-16", 53], ["2026-09-17", 42], ["2026-09-18", 41], ["2026-09-19", 51], ["2026-09-20", 48], ["2026-09-21", 37], ["2026-09-22", 40], ["2026-09-23", 38], ["2026-09-24", 41], ["2026-09-25", 39], ["2026-09-26", 49], ["2026-09-27", 47], ["2026-09-28", 35], ["2026-09-29", 39], ["2026-09-30", 38], ["2026-10-01", 39], ["2026-10-02", 38], ["2026-10-03", 48], ["2026-10-04", 46], ["2026-10-05", 34], ["2026-10-06", 38], ["2026-10-07", 48], ["2026-10-08", 39], ["2026-10-09", 37], ["2026-10-10", 47], ["2026-10-11", 45], ["2026-10-12", 34], ["2026-10-13", 37], ["2026-10-14", 36], ["2026-10-15", 39], ["2026-10-16", 37], ["2026-10-17", 46], ["2026-10-18", 45], ["2026-10-19", 33], ["2026-10-20", 38], ["2026-10-21", 35], ["2026-10-22", 38], ["2026-10-23", 37], ["2026-10-24", 46], ["2026-10-25", 44], ["2026-10-26", 34], ["2026-10-27", 37], ["2026-10-28", 35], ["2026-10-29", 38], ["2026-10-30", 37], ["2026-10-31", 59], ["2026-11-01", 44], ["2026-11-02", 33], ["2026-11-03", 37], ["2026-11-04", 46], ["2026-11-05", 38], ["2026-11-06", 36], ["2026-11-07", 46], ["2026-11-08", 44], ["2026-11-09", 33], ["2026-11-10", 37]],
-        "TVG6720": [["2026-07-22", 304], ["2026-07-23", 237], ["2026-07-24", 219], ["2026-07-25", 339], ["2026-07-26", 308], ["2026-07-27", 173], ["2026-07-28", 182], ["2026-07-29", 166], ["2026-07-30", 170], ["2026-07-31", 204], ["2026-08-01", 246], ["2026-08-02", 223], ["2026-08-03", 126], ["2026-08-04", 134], ["2026-08-05", 160], ["2026-08-06", 126], ["2026-08-07", 117], ["2026-08-08", 184], ["2026-08-09", 169], ["2026-08-10", 96], ["2026-08-11", 102], ["2026-08-12", 95], ["2026-08-13", 97], ["2026-08-14", 91], ["2026-08-15", 112], ["2026-08-16", 102], ["2026-08-17", 76], ["2026-08-18", 82], ["2026-08-19", 76], ["2026-08-20", 79], ["2026-08-21", 75], ["2026-08-22", 119], ["2026-08-23", 110], ["2026-08-24", 63], ["2026-08-25", 69], ["2026-08-26", 83], ["2026-08-27", 67], ["2026-08-28", 64], ["2026-08-29", 79], ["2026-08-30", 73], ["2026-08-31", 55], ["2026-09-01", 60], ["2026-09-02", 73], ["2026-09-03", 60], ["2026-09-04", 56], ["2026-09-05", 91], ["2026-09-06", 86], ["2026-09-07", 65], ["2026-09-08", 54], ["2026-09-09", 51], ["2026-09-10", 55], ["2026-09-11", 67], ["2026-09-12", 65], ["2026-09-13", 61], ["2026-09-14", 46], ["2026-09-15", 51], ["2026-09-16", 63], ["2026-09-17", 50], ["2026-09-18", 49], ["2026-09-19", 62], ["2026-09-20", 57], ["2026-09-21", 44], ["2026-09-22", 49], ["2026-09-23", 46], ["2026-09-24", 49], ["2026-09-25", 47], ["2026-09-26", 59], ["2026-09-27", 55], ["2026-09-28", 43], ["2026-09-29", 47], ["2026-09-30", 44], ["2026-10-01", 48], ["2026-10-02", 46], ["2026-10-03", 57], ["2026-10-04", 54], ["2026-10-05", 42], ["2026-10-06", 46], ["2026-10-07", 57], ["2026-10-08", 46], ["2026-10-09", 45], ["2026-10-10", 57], ["2026-10-11", 53], ["2026-10-12", 41], ["2026-10-13", 45], ["2026-10-14", 43], ["2026-10-15", 46], ["2026-10-16", 45], ["2026-10-17", 56], ["2026-10-18", 53], ["2026-10-19", 40], ["2026-10-20", 45], ["2026-10-21", 43], ["2026-10-22", 45], ["2026-10-23", 45], ["2026-10-24", 55], ["2026-10-25", 53], ["2026-10-26", 40], ["2026-10-27", 44], ["2026-10-28", 43], ["2026-10-29", 45], ["2026-10-30", 44], ["2026-10-31", 72], ["2026-11-01", 52], ["2026-11-02", 40], ["2026-11-03", 44], ["2026-11-04", 56], ["2026-11-05", 45], ["2026-11-06", 44], ["2026-11-07", 55], ["2026-11-08", 52], ["2026-11-09", 40], ["2026-11-10", 44]]
+        "TVG6700": [["2026-07-22", 254], ["2026-07-23", 197], ["2026-07-24", 182], ["2026-07-25", 283], ["2026-07-26", 257], ["2026-07-27", 144], ["2026-07-28", 151], ["2026-07-29", 139], ["2026-07-30", 141], ["2026-07-31", 171], ["2026-08-01", 204], ["2026-08-02", 187], ["2026-08-03", 105], ["2026-08-04", 111], ["2026-08-05", 133], ["2026-08-06", 105], ["2026-08-07", 98], ["2026-08-08", 153], ["2026-08-09", 141], ["2026-08-10", 80], ["2026-08-11", 85], ["2026-08-12", 79], ["2026-08-13", 81], ["2026-08-14", 76], ["2026-08-15", 93], ["2026-08-16", 85], ["2026-08-17", 64], ["2026-08-18", 68], ["2026-08-19", 64], ["2026-08-20", 65], ["2026-08-21", 63], ["2026-08-22", 99], ["2026-08-23", 92], ["2026-08-24", 52], ["2026-08-25", 57], ["2026-08-26", 70], ["2026-08-27", 56], ["2026-08-28", 53], ["2026-08-29", 65], ["2026-08-30", 62], ["2026-08-31", 45], ["2026-09-01", 50], ["2026-09-02", 62], ["2026-09-03", 49], ["2026-09-04", 47], ["2026-09-05", 76], ["2026-09-06", 71], ["2026-09-07", 54], ["2026-09-08", 46], ["2026-09-09", 42], ["2026-09-10", 46], ["2026-09-11", 56], ["2026-09-12", 54], ["2026-09-13", 51], ["2026-09-14", 38], ["2026-09-15", 42], ["2026-09-16", 53], ["2026-09-17", 42], ["2026-09-18", 41], ["2026-09-19", 51], ["2026-09-20", 48], ["2026-09-21", 37], ["2026-09-22", 40], ["2026-09-23", 38], ["2026-09-24", 41], ["2026-09-25", 39], ["2026-09-26", 49], ["2026-09-27", 47], ["2026-09-28", 35], ["2026-09-29", 39], ["2026-09-30", 38], ["2026-10-01", 39], ["2026-10-02", 38], ["2026-10-03", 48], ["2026-10-04", 46], ["2026-10-05", 34], ["2026-10-06", 38], ["2026-10-07", 48], ["2026-10-08", 39], ["2026-10-09", 37], ["2026-10-10", 47], ["2026-10-11", 45], ["2026-10-12", 34], ["2026-10-13", 37], ["2026-10-14", 36], ["2026-10-15", 39], ["2026-10-16", 37], ["2026-10-17", 46], ["2026-10-18", 45], ["2026-10-19", 33], ["2026-10-20", 38], ["2026-10-21", 35], ["2026-10-22", 38], ["2026-10-23", 37], ["2026-10-24", 46], ["2026-10-25", 44], ["2026-10-26", 34], ["2026-10-27", 37], ["2026-10-28", 35], ["2026-10-29", 38], ["2026-10-30", 37], ["2026-10-31", 59], ["2026-11-01", 44], ["2026-11-02", 33], ["2026-11-03", 37], ["2026-11-04", 46], ["2026-11-05", 38], ["2026-11-06", 36], ["2026-11-07", 46], ["2026-11-08", 44], ["2026-11-09", 33], ["2026-11-10", 37], ["2026-11-11", 46]],
+        "TVG6720": [["2026-07-22", 304], ["2026-07-23", 237], ["2026-07-24", 219], ["2026-07-25", 339], ["2026-07-26", 308], ["2026-07-27", 173], ["2026-07-28", 182], ["2026-07-29", 166], ["2026-07-30", 170], ["2026-07-31", 204], ["2026-08-01", 246], ["2026-08-02", 223], ["2026-08-03", 126], ["2026-08-04", 134], ["2026-08-05", 160], ["2026-08-06", 126], ["2026-08-07", 117], ["2026-08-08", 184], ["2026-08-09", 169], ["2026-08-10", 96], ["2026-08-11", 102], ["2026-08-12", 95], ["2026-08-13", 97], ["2026-08-14", 91], ["2026-08-15", 112], ["2026-08-16", 102], ["2026-08-17", 76], ["2026-08-18", 82], ["2026-08-19", 76], ["2026-08-20", 79], ["2026-08-21", 75], ["2026-08-22", 119], ["2026-08-23", 110], ["2026-08-24", 63], ["2026-08-25", 69], ["2026-08-26", 83], ["2026-08-27", 67], ["2026-08-28", 64], ["2026-08-29", 79], ["2026-08-30", 73], ["2026-08-31", 55], ["2026-09-01", 60], ["2026-09-02", 73], ["2026-09-03", 60], ["2026-09-04", 56], ["2026-09-05", 91], ["2026-09-06", 86], ["2026-09-07", 65], ["2026-09-08", 54], ["2026-09-09", 51], ["2026-09-10", 55], ["2026-09-11", 67], ["2026-09-12", 65], ["2026-09-13", 61], ["2026-09-14", 46], ["2026-09-15", 51], ["2026-09-16", 63], ["2026-09-17", 50], ["2026-09-18", 49], ["2026-09-19", 62], ["2026-09-20", 57], ["2026-09-21", 44], ["2026-09-22", 49], ["2026-09-23", 46], ["2026-09-24", 49], ["2026-09-25", 47], ["2026-09-26", 59], ["2026-09-27", 55], ["2026-09-28", 43], ["2026-09-29", 47], ["2026-09-30", 44], ["2026-10-01", 48], ["2026-10-02", 46], ["2026-10-03", 57], ["2026-10-04", 54], ["2026-10-05", 42], ["2026-10-06", 46], ["2026-10-07", 57], ["2026-10-08", 46], ["2026-10-09", 45], ["2026-10-10", 57], ["2026-10-11", 53], ["2026-10-12", 41], ["2026-10-13", 45], ["2026-10-14", 43], ["2026-10-15", 46], ["2026-10-16", 45], ["2026-10-17", 56], ["2026-10-18", 53], ["2026-10-19", 40], ["2026-10-20", 45], ["2026-10-21", 43], ["2026-10-22", 45], ["2026-10-23", 45], ["2026-10-24", 55], ["2026-10-25", 53], ["2026-10-26", 40], ["2026-10-27", 44], ["2026-10-28", 43], ["2026-10-29", 45], ["2026-10-30", 44], ["2026-10-31", 72], ["2026-11-01", 52], ["2026-11-02", 40], ["2026-11-03", 44], ["2026-11-04", 56], ["2026-11-05", 45], ["2026-11-06", 44], ["2026-11-07", 55], ["2026-11-08", 52], ["2026-11-09", 40], ["2026-11-10", 44], ["2026-11-11", 55]]
       },
       "pdp": [
         {
@@ -2718,7 +2737,7 @@ window.DASHBOARD_DATA = {
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 33
+          "pairs": 32
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
@@ -2738,7 +2757,7 @@ window.DASHBOARD_DATA = {
         {
           "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
           "sku": "TVG280",
-          "pairs": 17
+          "pairs": 19
         },
         {
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
@@ -2770,14 +2789,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2840",
-          "pairs": 18
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
+          "pairs": 17
         },
         {
           "primarySku": "TVG6700",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
           "pairs": 17
         },
         {
@@ -2788,15 +2807,21 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG284",
+          "pairs": 12
+        },
+        {
+          "primarySku": "TVG6700",
           "product": "Liquid Lash\u2122 Volumizer Mascara",
           "sku": "TVG6750",
           "pairs": 12
         },
         {
           "primarySku": "TVG6700",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG284",
-          "pairs": 12
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
+          "pairs": 11
         },
         {
           "primarySku": "TVG6700",
@@ -2806,20 +2831,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6700",
-          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
-          "sku": "TVG280",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 9
         },
         {
           "primarySku": "TVG6700",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG6700",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
           "pairs": 9
         },
         {
@@ -2878,31 +2897,31 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6720",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 8
         }
       ],
       "categoryCustomers": {
         "category": "Eyeshadow",
-        "total": 27450,
-        "existingCategory": 20476,
-        "newToCategory": 6974,
+        "total": 27540,
+        "existingCategory": 20532,
+        "newToCategory": 7008,
         "byVariant": [
           {
             "sku": "TVG6700",
             "name": "Warm Neutrals",
-            "newToCategory": 3744,
-            "existingCategory": 11111
+            "newToCategory": 3770,
+            "existingCategory": 11138
           },
           {
             "sku": "TVG6720",
             "name": "Cool Neutrals",
-            "newToCategory": 3704,
-            "existingCategory": 11309
+            "newToCategory": 3714,
+            "existingCategory": 11340
           }
         ],
-        "daily": [["2026-07-22", 52, 280], ["2026-07-23", 54, 262], ["2026-07-24", 57, 278], ["2026-07-25", 159, 890], ["2026-07-26", 130, 618], ["2026-07-27", 131, 562], ["2026-07-28", 145, 549], ["2026-07-29", 188, 808], ["2026-07-30", 101, 360], ["2026-07-31", 87, 407], ["2026-08-01", 96, 281], ["2026-08-02", 141, 488], ["2026-08-03", 92, 228], ["2026-08-04", 55, 247], ["2026-08-05", 72, 208], ["2026-08-06", 73, 236], ["2026-08-07", 92, 263], ["2026-08-08", 163, 556], ["2026-08-09", 185, 707], ["2026-08-10", 70, 241], ["2026-08-11", 76, 217], ["2026-08-12", 104, 254], ["2026-08-13", 76, 258], ["2026-08-14", 89, 238], ["2026-08-15", 76, 221], ["2026-08-16", 84, 235], ["2026-08-17", 92, 209], ["2026-08-18", 95, 275], ["2026-08-19", 108, 325], ["2026-08-20", 97, 245], ["2026-08-21", 86, 196], ["2026-08-22", 87, 226], ["2026-08-23", 86, 289], ["2026-08-24", 75, 240], ["2026-08-25", 94, 210], ["2026-08-26", 77, 194], ["2026-08-27", 73, 166], ["2026-08-28", 78, 190], ["2026-08-29", 83, 193], ["2026-08-30", 122, 278], ["2026-08-31", 80, 196], ["2026-09-01", 73, 173], ["2026-09-02", 100, 201], ["2026-09-03", 70, 163], ["2026-09-04", 80, 155], ["2026-09-05", 102, 270], ["2026-09-06", 88, 235], ["2026-09-07", 156, 406], ["2026-09-08", 46, 143], ["2026-09-09", 50, 151], ["2026-09-10", 54, 139], ["2026-09-11", 45, 133], ["2026-09-12", 67, 161], ["2026-09-13", 85, 206], ["2026-09-14", 30, 71], ["2026-09-15", 22, 54], ["2026-09-16", 9, 13], ["2026-09-17", 3, 0], ["2026-09-18", 15, 43], ["2026-09-19", 47, 156], ["2026-09-20", 86, 190], ["2026-09-21", 34, 100], ["2026-09-22", 28, 92], ["2026-09-23", 42, 128], ["2026-09-24", 29, 73], ["2026-09-25", 26, 81], ["2026-09-26", 41, 135], ["2026-09-27", 43, 124], ["2026-09-28", 30, 90], ["2026-09-29", 37, 117], ["2026-09-30", 48, 59], ["2026-10-01", 39, 79], ["2026-10-02", 21, 99], ["2026-10-03", 36, 132], ["2026-10-04", 45, 135], ["2026-10-05", 24, 65], ["2026-10-06", 26, 71], ["2026-10-07", 42, 127], ["2026-10-08", 63, 194], ["2026-10-09", 55, 137], ["2026-10-10", 61, 171], ["2026-10-11", 95, 285], ["2026-10-12", 27, 101], ["2026-10-13", 43, 73], ["2026-10-14", 43, 84], ["2026-10-15", 43, 95], ["2026-10-16", 29, 69], ["2026-10-17", 58, 89], ["2026-10-18", 72, 153], ["2026-10-19", 22, 60], ["2026-10-20", 35, 58], ["2026-10-21", 26, 55], ["2026-10-22", 34, 63], ["2026-10-23", 22, 65], ["2026-10-24", 34, 83], ["2026-10-25", 34, 94], ["2026-10-26", 31, 96], ["2026-10-27", 28, 70], ["2026-10-28", 47, 114], ["2026-10-29", 28, 61], ["2026-10-30", 18, 61], ["2026-10-31", 29, 96], ["2026-11-01", 39, 135], ["2026-11-02", 26, 54], ["2026-11-03", 22, 68], ["2026-11-04", 25, 61], ["2026-11-05", 36, 45], ["2026-11-06", 39, 34], ["2026-11-07", 50, 68], ["2026-11-08", 48, 70], ["2026-11-09", 36, 60], ["2026-11-10", 34, 50]]
+        "daily": [["2026-07-22", 52, 280], ["2026-07-23", 54, 262], ["2026-07-24", 57, 278], ["2026-07-25", 159, 890], ["2026-07-26", 130, 618], ["2026-07-27", 131, 562], ["2026-07-28", 145, 549], ["2026-07-29", 188, 808], ["2026-07-30", 101, 360], ["2026-07-31", 87, 407], ["2026-08-01", 96, 281], ["2026-08-02", 141, 488], ["2026-08-03", 92, 228], ["2026-08-04", 55, 247], ["2026-08-05", 72, 208], ["2026-08-06", 73, 236], ["2026-08-07", 92, 263], ["2026-08-08", 163, 556], ["2026-08-09", 185, 707], ["2026-08-10", 70, 241], ["2026-08-11", 76, 217], ["2026-08-12", 104, 254], ["2026-08-13", 76, 258], ["2026-08-14", 89, 238], ["2026-08-15", 76, 221], ["2026-08-16", 84, 235], ["2026-08-17", 92, 209], ["2026-08-18", 95, 275], ["2026-08-19", 108, 325], ["2026-08-20", 97, 245], ["2026-08-21", 86, 196], ["2026-08-22", 87, 226], ["2026-08-23", 86, 289], ["2026-08-24", 75, 240], ["2026-08-25", 94, 210], ["2026-08-26", 77, 194], ["2026-08-27", 73, 166], ["2026-08-28", 78, 190], ["2026-08-29", 83, 193], ["2026-08-30", 122, 278], ["2026-08-31", 80, 196], ["2026-09-01", 73, 173], ["2026-09-02", 100, 201], ["2026-09-03", 70, 163], ["2026-09-04", 80, 155], ["2026-09-05", 102, 270], ["2026-09-06", 88, 235], ["2026-09-07", 156, 406], ["2026-09-08", 46, 143], ["2026-09-09", 50, 151], ["2026-09-10", 54, 139], ["2026-09-11", 45, 133], ["2026-09-12", 67, 161], ["2026-09-13", 85, 206], ["2026-09-14", 30, 71], ["2026-09-15", 22, 54], ["2026-09-16", 9, 13], ["2026-09-17", 3, 0], ["2026-09-18", 15, 43], ["2026-09-19", 47, 156], ["2026-09-20", 86, 190], ["2026-09-21", 34, 100], ["2026-09-22", 28, 92], ["2026-09-23", 42, 128], ["2026-09-24", 29, 73], ["2026-09-25", 26, 81], ["2026-09-26", 41, 134], ["2026-09-27", 43, 124], ["2026-09-28", 30, 90], ["2026-09-29", 37, 117], ["2026-09-30", 48, 59], ["2026-10-01", 39, 79], ["2026-10-02", 21, 99], ["2026-10-03", 36, 132], ["2026-10-04", 45, 135], ["2026-10-05", 24, 65], ["2026-10-06", 26, 71], ["2026-10-07", 42, 127], ["2026-10-08", 63, 194], ["2026-10-09", 55, 137], ["2026-10-10", 61, 171], ["2026-10-11", 95, 285], ["2026-10-12", 27, 101], ["2026-10-13", 43, 73], ["2026-10-14", 43, 84], ["2026-10-15", 43, 95], ["2026-10-16", 29, 69], ["2026-10-17", 58, 89], ["2026-10-18", 72, 153], ["2026-10-19", 22, 60], ["2026-10-20", 35, 58], ["2026-10-21", 26, 55], ["2026-10-22", 34, 63], ["2026-10-23", 22, 65], ["2026-10-24", 34, 83], ["2026-10-25", 34, 94], ["2026-10-26", 31, 96], ["2026-10-27", 28, 70], ["2026-10-28", 47, 114], ["2026-10-29", 28, 61], ["2026-10-30", 18, 61], ["2026-10-31", 29, 96], ["2026-11-01", 39, 135], ["2026-11-02", 26, 54], ["2026-11-03", 22, 68], ["2026-11-04", 25, 60], ["2026-11-05", 35, 45], ["2026-11-06", 39, 34], ["2026-11-07", 50, 67], ["2026-11-08", 48, 70], ["2026-11-09", 36, 60], ["2026-11-10", 34, 50], ["2026-11-11", 36, 62]]
       }
     },
     {
@@ -2915,40 +2934,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "5 Shades \u00b7 Lip Stain",
       "accent": "#C0304A",
       "summary": {
-        "netSales": 1020781.56,
-        "units": 43997,
-        "orders": 35778,
+        "netSales": 1024436.46,
+        "units": 44151,
+        "orders": 35907,
         "aov": 28.53,
-        "newCustomers": 6757,
-        "retCustomers": 26694,
-        "totalCustomers": 33451,
+        "newCustomers": 6773,
+        "retCustomers": 26792,
+        "totalCustomers": 33565,
         "newPct": 20.2,
         "retPct": 79.8,
-        "planUnits": 20843,
-        "pctToPlanUnits": 211.1,
-        "subscriptionOrders": 804,
-        "subscriptionUnits": 813,
-        "subscriptionRevenue": 21138.0,
-        "newCustomerRevenue": 199364.91,
-        "retCustomerRevenue": 821416.65,
+        "planUnits": 20961,
+        "pctToPlanUnits": 210.6,
+        "subscriptionOrders": 809,
+        "subscriptionUnits": 819,
+        "subscriptionRevenue": 21294.0,
+        "newCustomerRevenue": 199999.31,
+        "retCustomerRevenue": 824437.15,
         "pdpViews": 717581,
         "pdpAtcRate": 10.8,
         "pdpCvr": 4.6
       },
       "regions": {
         "us": {
-          "units": 42069,
-          "netSales": 988700.19,
-          "orders": 34239
+          "units": 42220,
+          "netSales": 992303.01,
+          "orders": 34365
         },
         "ca": {
-          "units": 1928,
-          "netSales": 32081.37,
-          "orders": 1539
+          "units": 1931,
+          "netSales": 32133.45,
+          "orders": 1542
         }
       },
       "trafficStart": "2026-08-18",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [
           {
@@ -3100,70 +3119,70 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
-              "Display": 4128,
-              "Unassigned": 160906,
-              "Referral": 8574,
-              "Organic Social": 44885,
-              "Organic Search": 43288,
-              "Paid Social": 654769,
-              "Paid Search": 160424,
-              "Organic Shopping": 16101,
-              "AI Assistant": 1001,
-              "Organic Video": 36,
-              "Direct": 236348,
-              "Cross-network": 72895,
-              "Paid Other": 241285,
               "SMS": 159594,
-              "Paid Video": 804,
-              "Email": 218275,
               "Paid Shopping": 47118,
+              "Organic Shopping": 16101,
+              "Referral": 8574,
+              "Display": 4128,
+              "Organic Video": 36,
+              "Cross-network": 72895,
+              "Paid Video": 804,
+              "Paid Other": 241285,
+              "Unassigned": 160906,
+              "Direct": 236348,
+              "Email": 218275,
+              "Organic Search": 43288,
+              "Organic Social": 44885,
+              "AI Assistant": 1001,
+              "Paid Search": 160424,
+              "Paid Social": 654769,
               "Affiliates": 5
             }
           },
           {
             "month": "Sep 2026",
             "chs": {
-              "Paid Search": 349895,
-              "Paid Video": 2889,
               "Display": 5981,
-              "Direct": 615318,
-              "Referral": 18265,
-              "SMS": 291683,
-              "Cross-network": 151323,
-              "Unassigned": 330771,
-              "Organic Search": 90187,
-              "Email": 404147,
-              "Paid Social": 1682636,
-              "AI Assistant": 2015,
-              "Organic Video": 194,
-              "Organic Shopping": 48938,
-              "Paid Shopping": 94490,
               "Paid Other": 488068,
+              "Direct": 615318,
+              "Paid Video": 2889,
+              "AI Assistant": 2015,
+              "Paid Shopping": 94490,
+              "Paid Search": 349895,
+              "Paid Social": 1682636,
               "Organic Social": 84396,
+              "Unassigned": 330771,
+              "Referral": 18265,
+              "Organic Search": 90187,
+              "Organic Video": 194,
+              "Cross-network": 151323,
+              "Organic Shopping": 48938,
+              "Email": 404147,
+              "SMS": 291683,
               "Affiliates": 11
             }
           },
           {
             "month": "Oct 2026",
             "chs": {
-              "Cross-network": 10091,
-              "SMS": 50837,
-              "Display": 531,
-              "Paid Social": 312761,
-              "Paid Other": 14086,
-              "Paid Shopping": 14993,
-              "Email": 91272,
-              "Paid Search": 32782,
-              "Unassigned": 66436,
-              "Affiliates": 3,
-              "Referral": 3235,
+              "Organic Search": 46032,
               "Direct": 134575,
+              "Referral": 3235,
+              "Paid Shopping": 14993,
+              "SMS": 50837,
+              "Unassigned": 66436,
+              "Email": 91272,
+              "Organic Video": 62,
+              "Organic Social": 9693,
               "AI Assistant": 560,
               "Organic Shopping": 5550,
-              "Organic Video": 62,
+              "Display": 531,
+              "Paid Social": 312761,
+              "Cross-network": 10091,
+              "Paid Search": 32782,
               "Paid Video": 244,
-              "Organic Search": 46032,
-              "Organic Social": 9693
+              "Paid Other": 14086,
+              "Affiliates": 3
             }
           }
         ]
@@ -3172,10 +3191,10 @@ window.DASHBOARD_DATA = {
         {
           "label": "Lasting Mark Lip Defining Stain (com)",
           "page": "thrivecausemetics.com/products/lasting-mark-lip-defining-stain",
-          "pageviews": 1679020,
-          "sessions": 283129,
-          "txns": 17218,
-          "rev": 1068924.73,
+          "pageviews": 1683872,
+          "sessions": 284062,
+          "txns": 17261,
+          "rev": 1072006.4,
           "eng": 39.2,
           "cvr": 6.08
         },
@@ -3192,18 +3211,18 @@ window.DASHBOARD_DATA = {
         {
           "label": "Lasting Mark Lip Defining Stain (ca)",
           "page": "thrivecausemetics.ca/products/lasting-mark-lip-defining-stain",
-          "pageviews": 50913,
-          "sessions": 14225,
-          "txns": 451,
-          "rev": 31356.1,
+          "pageviews": 51087,
+          "sessions": 14249,
+          "txns": 452,
+          "rev": 31411.8,
           "eng": 2.4,
           "cvr": 3.17
         },
         {
           "label": "Mature Lasting Mark Lip Defining S (com)",
           "page": "thrivecausemetics.com/pages/mature-lasting-mark-lip-defining-stain",
-          "pageviews": 24768,
-          "sessions": 12549,
+          "pageviews": 24771,
+          "sessions": 12552,
           "txns": 144,
           "rev": 7802.99,
           "eng": 0.4,
@@ -3616,6 +3635,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-10",
           "cumPlanUnits": 20843
+        },
+        {
+          "date": "2026-11-11",
+          "cumPlanUnits": 20961
         }
       ],
       "planTotalUnits": 25361,
@@ -3628,34 +3651,34 @@ window.DASHBOARD_DATA = {
           "product": "Lasting Mark\u2122 Lip-Defining Stain",
           "shade": "Toasted Rose",
           "color": "#C4736F",
-          "netSales": 396521.08,
-          "units": 16868,
-          "orders": 16517,
-          "newCustomers": 3365,
-          "retCustomers": 12721,
-          "usUnits": 16413,
+          "netSales": 398317.0,
+          "units": 16944,
+          "orders": 16588,
+          "newCustomers": 3378,
+          "retCustomers": 12773,
+          "usUnits": 16489,
           "caUnits": 455,
-          "usNetSales": 388944.16,
+          "usNetSales": 390740.08,
           "caNetSales": 7576.92,
-          "planUnits": 3918,
-          "pctToPlanUnits": 430.5,
-          "inventoryUnits": 6600,
-          "runRateUnitsPerDay": 104.29,
-          "daysToOOS": 63,
-          "estOOSDate": "2027-01-12",
-          "usInventoryUnits": 6600,
+          "planUnits": 3940,
+          "pctToPlanUnits": 430.1,
+          "inventoryUnits": 6517,
+          "runRateUnitsPerDay": 98.71,
+          "daysToOOS": 66,
+          "estOOSDate": "2027-01-16",
+          "usInventoryUnits": 6517,
           "caInventoryUnits": 0,
-          "usRunRateUnitsPerDay": 104.29,
+          "usRunRateUnitsPerDay": 98.71,
           "caRunRateUnitsPerDay": 0.0,
-          "usDaysToOOS": 63,
+          "usDaysToOOS": 66,
           "caDaysToOOS": 0,
-          "usEstOOSDate": "2027-01-12",
-          "caEstOOSDate": "2026-11-10",
+          "usEstOOSDate": "2027-01-16",
+          "caEstOOSDate": "2026-11-11",
           "planTotalUnits": 4767,
-          "pctToGoalUnits": 353.8,
+          "pctToGoalUnits": 355.4,
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
-          "weeksOfStock": 9.0,
+          "weeksOfStock": 9.4,
           "decayCurveOOS": "2027-01-03",
           "realInventoryUnits": 6682
         },
@@ -3665,34 +3688,34 @@ window.DASHBOARD_DATA = {
           "product": "Lasting Mark\u2122 Lip-Defining Stain",
           "shade": "Deep Berry",
           "color": "#7A1840",
-          "netSales": 247699.75,
-          "units": 10685,
-          "orders": 10426,
-          "newCustomers": 1785,
-          "retCustomers": 8314,
-          "usUnits": 10153,
-          "caUnits": 532,
-          "usNetSales": 238939.66,
-          "caNetSales": 8760.09,
-          "planUnits": 6523,
-          "pctToPlanUnits": 163.8,
-          "inventoryUnits": 5582,
-          "runRateUnitsPerDay": 58.14,
-          "daysToOOS": 96,
-          "estOOSDate": "2027-02-14",
-          "usInventoryUnits": 5196,
-          "caInventoryUnits": 386,
-          "usRunRateUnitsPerDay": 56.57,
-          "caRunRateUnitsPerDay": 1.57,
-          "usDaysToOOS": 91,
-          "caDaysToOOS": 245,
-          "usEstOOSDate": "2027-02-09",
-          "caEstOOSDate": "2027-07-13",
+          "netSales": 248723.36,
+          "units": 10727,
+          "orders": 10467,
+          "newCustomers": 1788,
+          "retCustomers": 8349,
+          "usUnits": 10194,
+          "caUnits": 533,
+          "usNetSales": 239945.23,
+          "caNetSales": 8778.13,
+          "planUnits": 6560,
+          "pctToPlanUnits": 163.5,
+          "inventoryUnits": 5541,
+          "runRateUnitsPerDay": 54.86,
+          "daysToOOS": 101,
+          "estOOSDate": "2027-02-20",
+          "usInventoryUnits": 5156,
+          "caInventoryUnits": 385,
+          "usRunRateUnitsPerDay": 53.43,
+          "caRunRateUnitsPerDay": 1.43,
+          "usDaysToOOS": 96,
+          "caDaysToOOS": 269,
+          "usEstOOSDate": "2027-02-15",
+          "caEstOOSDate": "2027-08-07",
           "planTotalUnits": 7937,
-          "pctToGoalUnits": 134.6,
+          "pctToGoalUnits": 135.2,
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
-          "weeksOfStock": 13.7,
+          "weeksOfStock": 14.4,
           "decayCurveOOS": "2027-01-11",
           "realInventoryUnits": 5620
         },
@@ -3711,20 +3734,20 @@ window.DASHBOARD_DATA = {
           "caUnits": 223,
           "usNetSales": 144734.32,
           "caNetSales": 3766.18,
-          "planUnits": 2605,
-          "pctToPlanUnits": 246.3,
+          "planUnits": 2620,
+          "pctToPlanUnits": 244.9,
           "inventoryUnits": 0,
-          "runRateUnitsPerDay": 20.71,
+          "runRateUnitsPerDay": 12.86,
           "daysToOOS": 0,
-          "estOOSDate": "2026-11-10",
+          "estOOSDate": "2026-11-11",
           "usInventoryUnits": 0,
           "caInventoryUnits": 0,
-          "usRunRateUnitsPerDay": 19.86,
-          "caRunRateUnitsPerDay": 0.86,
+          "usRunRateUnitsPerDay": 12.14,
+          "caRunRateUnitsPerDay": 0.71,
           "usDaysToOOS": 0,
           "caDaysToOOS": 0,
-          "usEstOOSDate": "2026-11-10",
-          "caEstOOSDate": "2026-11-10",
+          "usEstOOSDate": "2026-11-11",
+          "caEstOOSDate": "2026-11-11",
           "planTotalUnits": 3170,
           "pctToGoalUnits": 202.4,
           "unitsToGoal": 0,
@@ -3739,34 +3762,34 @@ window.DASHBOARD_DATA = {
           "product": "Lasting Mark\u2122 Lip-Defining Stain",
           "shade": "Baby Pink",
           "color": "#F2A6B8",
-          "netSales": 121442.64,
-          "units": 5393,
-          "orders": 5244,
-          "newCustomers": 1033,
-          "retCustomers": 4027,
-          "usUnits": 4947,
-          "caUnits": 446,
-          "usNetSales": 114002.48,
-          "caNetSales": 7440.16,
-          "planUnits": 6523,
-          "pctToPlanUnits": 82.7,
-          "inventoryUnits": 11042,
-          "runRateUnitsPerDay": 32.57,
-          "daysToOOS": 339,
-          "estOOSDate": "2027-10-15",
-          "usInventoryUnits": 10337,
-          "caInventoryUnits": 705,
-          "usRunRateUnitsPerDay": 31.86,
-          "caRunRateUnitsPerDay": 0.71,
-          "usDaysToOOS": 324,
-          "caDaysToOOS": 992,
-          "usEstOOSDate": "2027-09-30",
-          "caEstOOSDate": "2029-07-29",
+          "netSales": 122007.01,
+          "units": 5417,
+          "orders": 5266,
+          "newCustomers": 1037,
+          "retCustomers": 4045,
+          "usUnits": 4969,
+          "caUnits": 448,
+          "usNetSales": 114532.81,
+          "caNetSales": 7474.2,
+          "planUnits": 6560,
+          "pctToPlanUnits": 82.6,
+          "inventoryUnits": 11020,
+          "runRateUnitsPerDay": 31.57,
+          "daysToOOS": 349,
+          "estOOSDate": "2027-10-26",
+          "usInventoryUnits": 10316,
+          "caInventoryUnits": 704,
+          "usRunRateUnitsPerDay": 30.57,
+          "caRunRateUnitsPerDay": 1.0,
+          "usDaysToOOS": 337,
+          "caDaysToOOS": 704,
+          "usEstOOSDate": "2027-10-14",
+          "caEstOOSDate": "2028-10-15",
           "planTotalUnits": 7937,
-          "pctToGoalUnits": 67.9,
-          "unitsToGoal": 2544,
+          "pctToGoalUnits": 68.2,
+          "unitsToGoal": 2520,
           "planEndDate": "2026-12-15",
-          "weeksOfStock": 48.4,
+          "weeksOfStock": 49.9,
           "decayCurveOOS": "2027-03-22",
           "realInventoryUnits": 11067
         },
@@ -3776,34 +3799,34 @@ window.DASHBOARD_DATA = {
           "product": "Lasting Mark\u2122 Lip-Defining Stain",
           "shade": "Soft Red",
           "color": "#C0304A",
-          "netSales": 106617.59,
-          "units": 4635,
-          "orders": 4563,
-          "newCustomers": 807,
-          "retCustomers": 3627,
-          "usUnits": 4363,
+          "netSales": 106888.59,
+          "units": 4647,
+          "orders": 4575,
+          "newCustomers": 809,
+          "retCustomers": 3637,
+          "usUnits": 4375,
           "caUnits": 272,
-          "usNetSales": 102079.57,
+          "usNetSales": 102350.57,
           "caNetSales": 4538.02,
-          "planUnits": 1274,
-          "pctToPlanUnits": 363.8,
-          "inventoryUnits": 4594,
-          "runRateUnitsPerDay": 20.29,
-          "daysToOOS": 226,
-          "estOOSDate": "2027-06-24",
-          "usInventoryUnits": 4178,
+          "planUnits": 1281,
+          "pctToPlanUnits": 362.8,
+          "inventoryUnits": 4583,
+          "runRateUnitsPerDay": 19.0,
+          "daysToOOS": 241,
+          "estOOSDate": "2027-07-10",
+          "usInventoryUnits": 4167,
           "caInventoryUnits": 416,
-          "usRunRateUnitsPerDay": 19.57,
+          "usRunRateUnitsPerDay": 18.29,
           "caRunRateUnitsPerDay": 0.71,
-          "usDaysToOOS": 213,
+          "usDaysToOOS": 227,
           "caDaysToOOS": 585,
-          "usEstOOSDate": "2027-06-11",
-          "caEstOOSDate": "2028-06-17",
+          "usEstOOSDate": "2027-06-26",
+          "caEstOOSDate": "2028-06-18",
           "planTotalUnits": 1550,
-          "pctToGoalUnits": 299.0,
+          "pctToGoalUnits": 299.8,
           "unitsToGoal": 0,
           "planEndDate": "2026-12-15",
-          "weeksOfStock": 32.3,
+          "weeksOfStock": 34.5,
           "decayCurveOOS": "2027-03-30",
           "realInventoryUnits": 4604
         }
@@ -3828,14 +3851,14 @@ window.DASHBOARD_DATA = {
             "rank": 0,
             "key": "oos:ca:TVG7250",
             "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is out of stock in Canada (.ca)",
-            "detail": "0 units in Canada (.ca). 6,600 units still in US (.com), so this is a distribution problem, not a demand one.",
+            "detail": "0 units in Canada (.ca). 6,517 units still in US (.com), so this is a distribution problem, not a demand one.",
             "action": "Route or transfer stock to Canada (.ca) \u2014 the units exist, they are in the wrong place."
           },
           {
             "rank": 3,
             "key": "recent-behind:TVG7230",
             "title": "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days",
-            "detail": "228 units against 291 planned (78%), 63 short \u2014 about $1,419 at its current price.",
+            "detail": "221 units against 279 planned (79%), 58 short \u2014 about $1,306 at its current price.",
             "action": "Recent, not cumulative \u2014 this is the last week only. Worth checking against promo calendar and paid support before treating it as demand."
           }
         ],
@@ -3848,22 +3871,22 @@ window.DASHBOARD_DATA = {
           {
             "key": "recent-ahead:TVG7240",
             "title": "Liliana (Lasting Mark\u2122 Lip-Defining Stain) is ahead of plan over the last 7 days",
-            "detail": "407 units against 291 planned (140%)."
+            "detail": "384 units against 279 planned (138%)."
           },
           {
             "key": "recent-ahead:TVG7250",
             "title": "Daniella (Lasting Mark\u2122 Lip-Defining Stain) is ahead of plan over the last 7 days",
-            "detail": "730 units against 175 planned (417%)."
+            "detail": "691 units against 168 planned (411%)."
           },
           {
             "key": "recent-ahead:TVG7260",
             "title": "Leslie (Lasting Mark\u2122 Lip-Defining Stain) is ahead of plan over the last 7 days",
-            "detail": "142 units against 57 planned (249%)."
+            "detail": "133 units against 54 planned (246%)."
           },
           {
             "key": "pacing",
             "title": "Last 7 days are on or above plan",
-            "detail": "1,652 units vs 930 planned (178%)."
+            "detail": "1,519 units vs 892 planned (170%)."
           },
           {
             "key": "pairing:TVG2840",
@@ -3873,7 +3896,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "new-to-category",
             "title": "38% of buyers are new to Lip",
-            "detail": "12,684 of 33,451 buyers had not purchased this category before."
+            "detail": "12,722 of 33,565 buyers had not purchased this category before."
           }
         ]
       },
@@ -4210,17 +4233,17 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-09-09",
-          "units": 500,
+          "units": 499,
           "netSales": 11014.45,
-          "usUnits": 488,
+          "usUnits": 487,
           "caUnits": 12,
           "usNetSales": 10794.86,
           "caNetSales": 219.59,
-          "cumUnits": 21679,
+          "cumUnits": 21678,
           "cumSales": 504417.14,
           "planUnits": 249,
           "cumPlanUnits": 10784,
-          "newCustomers": 103,
+          "newCustomers": 102,
           "retCustomers": 293
         },
         {
@@ -4231,7 +4254,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 33,
           "usNetSales": 11480.5,
           "caNetSales": 600.29,
-          "cumUnits": 22193,
+          "cumUnits": 22192,
           "cumSales": 516497.93,
           "planUnits": 254,
           "cumPlanUnits": 11038,
@@ -4246,7 +4269,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 19,
           "usNetSales": 12282.53,
           "caNetSales": 322.22,
-          "cumUnits": 22758,
+          "cumUnits": 22757,
           "cumSales": 529102.68,
           "planUnits": 239,
           "cumPlanUnits": 11277,
@@ -4261,7 +4284,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 33,
           "usNetSales": 11234.5,
           "caNetSales": 555.46,
-          "cumUnits": 23257,
+          "cumUnits": 23256,
           "cumSales": 540892.64,
           "planUnits": 290,
           "cumPlanUnits": 11567,
@@ -4276,7 +4299,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 30,
           "usNetSales": 15758.7,
           "caNetSales": 512.9,
-          "cumUnits": 23939,
+          "cumUnits": 23938,
           "cumSales": 557164.24,
           "planUnits": 269,
           "cumPlanUnits": 11836,
@@ -4291,7 +4314,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 18,
           "usNetSales": 6925.15,
           "caNetSales": 311.07,
-          "cumUnits": 24282,
+          "cumUnits": 24281,
           "cumSales": 564400.46,
           "planUnits": 202,
           "cumPlanUnits": 12038,
@@ -4306,7 +4329,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 17,
           "usNetSales": 6180.52,
           "caNetSales": 296.86,
-          "cumUnits": 24573,
+          "cumUnits": 24572,
           "cumSales": 570877.84,
           "planUnits": 213,
           "cumPlanUnits": 12251,
@@ -4321,7 +4344,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 6571.78,
           "caNetSales": 196.04,
-          "cumUnits": 24859,
+          "cumUnits": 24858,
           "cumSales": 577645.66,
           "planUnits": 262,
           "cumPlanUnits": 12513,
@@ -4336,7 +4359,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 13,
           "usNetSales": 6914.73,
           "caNetSales": 223.85,
-          "cumUnits": 25168,
+          "cumUnits": 25167,
           "cumSales": 584784.24,
           "planUnits": 207,
           "cumPlanUnits": 12720,
@@ -4351,7 +4374,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 6146.78,
           "caNetSales": 136.38,
-          "cumUnits": 25490,
+          "cumUnits": 25489,
           "cumSales": 591067.4,
           "planUnits": 195,
           "cumPlanUnits": 12915,
@@ -4366,7 +4389,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 6998.93,
           "caNetSales": 138.76,
-          "cumUnits": 25790,
+          "cumUnits": 25789,
           "cumSales": 598205.09,
           "planUnits": 243,
           "cumPlanUnits": 13158,
@@ -4381,7 +4404,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 17,
           "usNetSales": 11894.87,
           "caNetSales": 291.35,
-          "cumUnits": 26300,
+          "cumUnits": 26299,
           "cumSales": 610391.31,
           "planUnits": 224,
           "cumPlanUnits": 13382,
@@ -4396,7 +4419,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 6607.22,
           "caNetSales": 96.98,
-          "cumUnits": 26595,
+          "cumUnits": 26594,
           "cumSales": 617095.51,
           "planUnits": 166,
           "cumPlanUnits": 13548,
@@ -4411,7 +4434,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 7601.81,
           "caNetSales": 69.27,
-          "cumUnits": 26932,
+          "cumUnits": 26931,
           "cumSales": 624766.59,
           "planUnits": 182,
           "cumPlanUnits": 13730,
@@ -4426,7 +4449,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 17,
           "usNetSales": 8297.22,
           "caNetSales": 296.19,
-          "cumUnits": 27318,
+          "cumUnits": 27317,
           "cumSales": 633360.0,
           "planUnits": 170,
           "cumPlanUnits": 13900,
@@ -4441,7 +4464,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 11457.18,
           "caNetSales": 179.48,
-          "cumUnits": 27823,
+          "cumUnits": 27822,
           "cumSales": 644996.66,
           "planUnits": 178,
           "cumPlanUnits": 14078,
@@ -4456,7 +4479,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 10929.49,
           "caNetSales": 179.7,
-          "cumUnits": 28289,
+          "cumUnits": 28288,
           "cumSales": 656105.85,
           "planUnits": 168,
           "cumPlanUnits": 14246,
@@ -4471,7 +4494,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 17,
           "usNetSales": 13082.56,
           "caNetSales": 268.21,
-          "cumUnits": 28847,
+          "cumUnits": 28846,
           "cumSales": 669456.62,
           "planUnits": 207,
           "cumPlanUnits": 14453,
@@ -4486,7 +4509,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 15,
           "usNetSales": 13100.55,
           "caNetSales": 220.84,
-          "cumUnits": 29403,
+          "cumUnits": 29402,
           "cumSales": 682778.01,
           "planUnits": 194,
           "cumPlanUnits": 14647,
@@ -4501,7 +4524,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 8774.35,
           "caNetSales": 114.83,
-          "cumUnits": 29783,
+          "cumUnits": 29782,
           "cumSales": 691667.19,
           "planUnits": 147,
           "cumPlanUnits": 14794,
@@ -4516,7 +4539,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 13,
           "usNetSales": 12037.95,
           "caNetSales": 214.42,
-          "cumUnits": 30300,
+          "cumUnits": 30299,
           "cumSales": 703919.56,
           "planUnits": 160,
           "cumPlanUnits": 14954,
@@ -4531,7 +4554,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 9723.49,
           "caNetSales": 32.2,
-          "cumUnits": 30715,
+          "cumUnits": 30714,
           "cumSales": 713675.25,
           "planUnits": 150,
           "cumPlanUnits": 15104,
@@ -4546,7 +4569,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 8990.17,
           "caNetSales": 187.52,
-          "cumUnits": 31117,
+          "cumUnits": 31116,
           "cumSales": 722852.94,
           "planUnits": 158,
           "cumPlanUnits": 15262,
@@ -4561,7 +4584,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 8110.17,
           "caNetSales": 149.89,
-          "cumUnits": 31479,
+          "cumUnits": 31478,
           "cumSales": 731113.0,
           "planUnits": 152,
           "cumPlanUnits": 15414,
@@ -4576,7 +4599,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 9290.28,
           "caNetSales": 180.32,
-          "cumUnits": 31882,
+          "cumUnits": 31881,
           "cumSales": 740583.6,
           "planUnits": 185,
           "cumPlanUnits": 15599,
@@ -4591,7 +4614,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 10106.26,
           "caNetSales": 122.34,
-          "cumUnits": 32303,
+          "cumUnits": 32302,
           "cumSales": 750812.2,
           "planUnits": 176,
           "cumPlanUnits": 15775,
@@ -4606,7 +4629,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 6374.8,
           "caNetSales": 120.18,
-          "cumUnits": 32581,
+          "cumUnits": 32580,
           "cumSales": 757307.18,
           "planUnits": 133,
           "cumPlanUnits": 15908,
@@ -4621,7 +4644,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 15,
           "usNetSales": 5425.97,
           "caNetSales": 231.7,
-          "cumUnits": 32831,
+          "cumUnits": 32830,
           "cumSales": 762964.85,
           "planUnits": 145,
           "cumPlanUnits": 16053,
@@ -4636,7 +4659,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 7146.7,
           "caNetSales": 35.54,
-          "cumUnits": 33153,
+          "cumUnits": 33152,
           "cumSales": 770147.09,
           "planUnits": 179,
           "cumPlanUnits": 16232,
@@ -4651,7 +4674,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 7395.44,
           "caNetSales": 65.58,
-          "cumUnits": 33501,
+          "cumUnits": 33500,
           "cumSales": 777608.11,
           "planUnits": 144,
           "cumPlanUnits": 16376,
@@ -4666,7 +4689,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 7033.07,
           "caNetSales": 177.05,
-          "cumUnits": 33838,
+          "cumUnits": 33837,
           "cumSales": 784818.23,
           "planUnits": 139,
           "cumPlanUnits": 16515,
@@ -4681,7 +4704,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 22,
           "usNetSales": 11915.98,
           "caNetSales": 334.49,
-          "cumUnits": 34378,
+          "cumUnits": 34377,
           "cumSales": 797068.7,
           "planUnits": 174,
           "cumPlanUnits": 16689,
@@ -4696,7 +4719,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 24,
           "usNetSales": 17771.64,
           "caNetSales": 372.06,
-          "cumUnits": 35177,
+          "cumUnits": 35176,
           "cumSales": 815212.4,
           "planUnits": 163,
           "cumPlanUnits": 16852,
@@ -4711,7 +4734,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 6293.54,
           "caNetSales": 119.49,
-          "cumUnits": 35452,
+          "cumUnits": 35451,
           "cumSales": 821625.43,
           "planUnits": 125,
           "cumPlanUnits": 16977,
@@ -4726,7 +4749,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 5080.23,
           "caNetSales": 97.84,
-          "cumUnits": 35680,
+          "cumUnits": 35679,
           "cumSales": 826803.5,
           "planUnits": 134,
           "cumPlanUnits": 17111,
@@ -4741,7 +4764,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 6309.68,
           "caNetSales": 105.36,
-          "cumUnits": 35955,
+          "cumUnits": 35954,
           "cumSales": 833218.54,
           "planUnits": 131,
           "cumPlanUnits": 17242,
@@ -4756,7 +4779,7 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 6863.4,
           "caNetSales": 46.6,
-          "cumUnits": 36292,
+          "cumUnits": 36291,
           "cumSales": 840128.54,
           "planUnits": 136,
           "cumPlanUnits": 17378,
@@ -4765,17 +4788,17 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-10-16",
-          "units": 299,
-          "netSales": 6524.8,
-          "usUnits": 293,
+          "units": 298,
+          "netSales": 6504.0,
+          "usUnits": 292,
           "caUnits": 6,
-          "usNetSales": 6459.85,
+          "usNetSales": 6439.05,
           "caNetSales": 64.95,
-          "cumUnits": 36591,
-          "cumSales": 846653.34,
+          "cumUnits": 36589,
+          "cumSales": 846632.54,
           "planUnits": 132,
           "cumPlanUnits": 17510,
-          "newCustomers": 39,
+          "newCustomers": 38,
           "retCustomers": 200
         },
         {
@@ -4786,8 +4809,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 10215.59,
           "caNetSales": 195.61,
-          "cumUnits": 37042,
-          "cumSales": 857064.54,
+          "cumUnits": 37040,
+          "cumSales": 857043.74,
           "planUnits": 163,
           "cumPlanUnits": 17673,
           "newCustomers": 58,
@@ -4801,8 +4824,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 11210.91,
           "caNetSales": 200.46,
-          "cumUnits": 37522,
-          "cumSales": 868475.91,
+          "cumUnits": 37520,
+          "cumSales": 868455.11,
           "planUnits": 156,
           "cumPlanUnits": 17829,
           "newCustomers": 48,
@@ -4816,8 +4839,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 6988.62,
           "caNetSales": 50.65,
-          "cumUnits": 37821,
-          "cumSales": 875515.18,
+          "cumUnits": 37819,
+          "cumSales": 875494.38,
           "planUnits": 118,
           "cumPlanUnits": 17947,
           "newCustomers": 39,
@@ -4831,8 +4854,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 5680.37,
           "caNetSales": 119.67,
-          "cumUnits": 38067,
-          "cumSales": 881315.22,
+          "cumUnits": 38065,
+          "cumSales": 881294.42,
           "planUnits": 129,
           "cumPlanUnits": 18076,
           "newCustomers": 31,
@@ -4846,8 +4869,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 6048.8,
           "caNetSales": 32.08,
-          "cumUnits": 38325,
-          "cumSales": 887396.1,
+          "cumUnits": 38323,
+          "cumSales": 887375.3,
           "planUnits": 124,
           "cumPlanUnits": 18200,
           "newCustomers": 30,
@@ -4861,8 +4884,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 7084.72,
           "caNetSales": 90.28,
-          "cumUnits": 38628,
-          "cumSales": 894571.1,
+          "cumUnits": 38626,
+          "cumSales": 894550.3,
           "planUnits": 131,
           "cumPlanUnits": 18331,
           "newCustomers": 36,
@@ -4876,8 +4899,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 6270.47,
           "caNetSales": 97.27,
-          "cumUnits": 38904,
-          "cumSales": 900938.84,
+          "cumUnits": 38902,
+          "cumSales": 900918.04,
           "planUnits": 127,
           "cumPlanUnits": 18458,
           "newCustomers": 25,
@@ -4891,8 +4914,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 7865.3,
           "caNetSales": 84.44,
-          "cumUnits": 39237,
-          "cumSales": 908888.58,
+          "cumUnits": 39235,
+          "cumSales": 908867.78,
           "planUnits": 158,
           "cumPlanUnits": 18616,
           "newCustomers": 29,
@@ -4906,8 +4929,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 9409.79,
           "caNetSales": 119.62,
-          "cumUnits": 39631,
-          "cumSales": 918417.99,
+          "cumUnits": 39629,
+          "cumSales": 918397.19,
           "planUnits": 150,
           "cumPlanUnits": 18766,
           "newCustomers": 36,
@@ -4921,8 +4944,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 7867.91,
           "caNetSales": 161.5,
-          "cumUnits": 39979,
-          "cumSales": 926447.4,
+          "cumUnits": 39977,
+          "cumSales": 926426.6,
           "planUnits": 115,
           "cumPlanUnits": 18881,
           "newCustomers": 30,
@@ -4936,8 +4959,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 6905.5,
           "caNetSales": 102.56,
-          "cumUnits": 40281,
-          "cumSales": 933455.46,
+          "cumUnits": 40279,
+          "cumSales": 933434.66,
           "planUnits": 126,
           "cumPlanUnits": 19007,
           "newCustomers": 40,
@@ -4951,8 +4974,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 7246.84,
           "caNetSales": 68.43,
-          "cumUnits": 40588,
-          "cumSales": 940770.73,
+          "cumUnits": 40586,
+          "cumSales": 940749.93,
           "planUnits": 120,
           "cumPlanUnits": 19127,
           "newCustomers": 36,
@@ -4966,8 +4989,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 6094.05,
           "caNetSales": 123.74,
-          "cumUnits": 40846,
-          "cumSales": 946988.52,
+          "cumUnits": 40844,
+          "cumSales": 946967.72,
           "planUnits": 128,
           "cumPlanUnits": 19255,
           "newCustomers": 32,
@@ -4981,8 +5004,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 5907.96,
           "caNetSales": 94.36,
-          "cumUnits": 41109,
-          "cumSales": 952990.84,
+          "cumUnits": 41107,
+          "cumSales": 952970.04,
           "planUnits": 123,
           "cumPlanUnits": 19378,
           "newCustomers": 34,
@@ -4996,8 +5019,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 6442.07,
           "caNetSales": 66.87,
-          "cumUnits": 41382,
-          "cumSales": 959499.78,
+          "cumUnits": 41380,
+          "cumSales": 959478.98,
           "planUnits": 154,
           "cumPlanUnits": 19532,
           "newCustomers": 35,
@@ -5005,18 +5028,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-01",
-          "units": 415,
-          "netSales": 10129.12,
-          "usUnits": 409,
+          "units": 413,
+          "netSales": 10077.12,
+          "usUnits": 407,
           "caUnits": 6,
-          "usNetSales": 10025.32,
+          "usNetSales": 9973.32,
           "caNetSales": 103.8,
-          "cumUnits": 41797,
-          "cumSales": 969628.9,
+          "cumUnits": 41793,
+          "cumSales": 969556.1,
           "planUnits": 148,
           "cumPlanUnits": 19680,
-          "newCustomers": 40,
-          "retCustomers": 310
+          "newCustomers": 39,
+          "retCustomers": 309
         },
         {
           "date": "2026-11-02",
@@ -5026,8 +5049,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 5945.31,
           "caNetSales": 161.67,
-          "cumUnits": 42062,
-          "cumSales": 975735.88,
+          "cumUnits": 42058,
+          "cumSales": 975663.08,
           "planUnits": 112,
           "cumPlanUnits": 19792,
           "newCustomers": 41,
@@ -5041,8 +5064,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 6431.65,
           "caNetSales": 120.52,
-          "cumUnits": 42345,
-          "cumSales": 982288.05,
+          "cumUnits": 42341,
+          "cumSales": 982215.25,
           "planUnits": 121,
           "cumPlanUnits": 19913,
           "newCustomers": 26,
@@ -5050,14 +5073,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-04",
-          "units": 292,
-          "netSales": 6847.98,
-          "usUnits": 289,
+          "units": 291,
+          "netSales": 6821.98,
+          "usUnits": 288,
           "caUnits": 3,
-          "usNetSales": 6796.23,
+          "usNetSales": 6770.23,
           "caNetSales": 51.75,
-          "cumUnits": 42637,
-          "cumSales": 989136.03,
+          "cumUnits": 42632,
+          "cumSales": 989037.23,
           "planUnits": 156,
           "cumPlanUnits": 20069,
           "newCustomers": 37,
@@ -5065,18 +5088,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-05",
-          "units": 229,
-          "netSales": 5418.92,
-          "usUnits": 222,
+          "units": 227,
+          "netSales": 5366.92,
+          "usUnits": 220,
           "caUnits": 7,
-          "usNetSales": 5289.56,
+          "usNetSales": 5237.56,
           "caNetSales": 129.36,
-          "cumUnits": 42866,
-          "cumSales": 994554.95,
+          "cumUnits": 42859,
+          "cumSales": 994404.15,
           "planUnits": 125,
           "cumPlanUnits": 20194,
-          "newCustomers": 29,
-          "retCustomers": 162
+          "newCustomers": 28,
+          "retCustomers": 161
         },
         {
           "date": "2026-11-06",
@@ -5086,8 +5109,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 4333.17,
           "caNetSales": 136.27,
-          "cumUnits": 43072,
-          "cumSales": 999024.39,
+          "cumUnits": 43065,
+          "cumSales": 998873.59,
           "planUnits": 122,
           "cumPlanUnits": 20316,
           "newCustomers": 31,
@@ -5101,8 +5124,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 7450.07,
           "caNetSales": 83.73,
-          "cumUnits": 43387,
-          "cumSales": 1006558.19,
+          "cumUnits": 43380,
+          "cumSales": 1006407.39,
           "planUnits": 150,
           "cumPlanUnits": 20466,
           "newCustomers": 38,
@@ -5111,13 +5134,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-08",
           "units": 247,
-          "netSales": 6036.9,
+          "netSales": 6038.05,
           "usUnits": 246,
           "caUnits": 1,
-          "usNetSales": 6019.79,
+          "usNetSales": 6020.94,
           "caNetSales": 17.11,
-          "cumUnits": 43634,
-          "cumSales": 1012595.09,
+          "cumUnits": 43627,
+          "cumSales": 1012445.44,
           "planUnits": 146,
           "cumPlanUnits": 20612,
           "newCustomers": 34,
@@ -5131,8 +5154,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 4410.44,
           "caNetSales": 51.45,
-          "cumUnits": 43843,
-          "cumSales": 1017056.98,
+          "cumUnits": 43836,
+          "cumSales": 1016907.33,
           "planUnits": 109,
           "cumPlanUnits": 20721,
           "newCustomers": 35,
@@ -5146,12 +5169,27 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 3724.55,
           "caNetSales": 0.0,
-          "cumUnits": 43997,
-          "cumSales": 1020781.53,
+          "cumUnits": 43990,
+          "cumSales": 1020631.88,
           "planUnits": 122,
           "cumPlanUnits": 20843,
           "newCustomers": 14,
           "retCustomers": 119
+        },
+        {
+          "date": "2026-11-11",
+          "units": 161,
+          "netSales": 3804.55,
+          "usUnits": 158,
+          "caUnits": 3,
+          "usNetSales": 3752.47,
+          "caNetSales": 52.08,
+          "cumUnits": 44151,
+          "cumSales": 1024436.43,
+          "planUnits": 118,
+          "cumPlanUnits": 20961,
+          "newCustomers": 20,
+          "retCustomers": 115
         }
       ],
       "dailySkuColumns": [
@@ -5167,17 +5205,17 @@ window.DASHBOARD_DATA = {
       ],
       "dailyBySku": {
         "TVG7220": [["2026-08-18", 329, 7555.99, 317, 12, 7360.39, 195.6, 14, 305], ["2026-08-19", 101, 2251.07, 96, 5, 2174.07, 77.0, 14, 86], ["2026-08-20", 85, 1960.27, 81, 4, 1895.73, 64.54, 14, 71], ["2026-08-21", 71, 1526.61, 68, 3, 1476.39, 50.22, 12, 58], ["2026-08-22", 92, 2192.31, 86, 6, 2099.1, 93.21, 18, 71], ["2026-08-23", 101, 2366.72, 96, 5, 2280.68, 86.04, 13, 87], ["2026-08-24", 73, 1727.2, 71, 2, 1691.53, 35.67, 11, 61], ["2026-08-25", 93, 2216.0, 91, 2, 2181.8, 34.2, 19, 74], ["2026-08-26", 77, 1770.72, 75, 2, 1738.85, 31.87, 23, 53], ["2026-08-27", 74, 1696.17, 70, 4, 1627.5, 68.67, 20, 53], ["2026-08-28", 103, 2467.92, 100, 3, 2411.78, 56.14, 19, 80], ["2026-08-29", 90, 2110.53, 85, 5, 2023.32, 87.21, 20, 68], ["2026-08-30", 112, 2689.11, 107, 5, 2600.6, 88.51, 31, 78], ["2026-08-31", 73, 1673.85, 67, 6, 1567.69, 106.16, 19, 53], ["2026-09-01", 90, 2121.86, 85, 5, 2035.11, 86.75, 19, 64], ["2026-09-02", 144, 3427.87, 137, 7, 3310.21, 117.66, 51, 92], ["2026-09-03", 108, 2520.53, 103, 5, 2445.23, 75.3, 35, 69], ["2026-09-04", 109, 2579.58, 108, 1, 2564.47, 15.11, 39, 68], ["2026-09-05", 136, 3272.76, 128, 8, 3138.96, 133.8, 46, 90], ["2026-09-06", 153, 3643.55, 139, 14, 3400.81, 242.74, 43, 107], ["2026-09-07", 178, 4212.29, 165, 13, 3982.43, 229.86, 61, 113], ["2026-09-08", 69, 1536.53, 65, 4, 1467.71, 68.82, 23, 46], ["2026-09-09", 87, 1873.35, 85, 2, 1836.03, 37.32, 21, 64], ["2026-09-10", 85, 1999.61, 76, 9, 1836.36, 163.25, 28, 55], ["2026-09-11", 96, 2041.03, 92, 4, 1969.61, 71.42, 31, 63], ["2026-09-12", 81, 1944.43, 77, 4, 1870.79, 73.64, 22, 57], ["2026-09-13", 94, 2179.81, 91, 3, 2130.14, 49.67, 33, 57], ["2026-09-14", 80, 1574.43, 77, 3, 1518.38, 56.05, 24, 54], ["2026-09-15", 67, 1524.77, 66, 1, 1506.12, 18.65, 19, 42], ["2026-09-16", 86, 2065.41, 83, 3, 2013.4, 52.01, 24, 61], ["2026-09-17", 96, 2317.74, 95, 1, 2299.94, 17.8, 30, 62], ["2026-09-18", 93, 1881.99, 93, 0, 1881.99, 0.0, 23, 66], ["2026-09-19", 70, 1696.52, 69, 1, 1678.15, 18.37, 23, 46], ["2026-09-20", 127, 3015.17, 124, 3, 2967.81, 47.36, 27, 93], ["2026-09-21", 77, 1726.27, 76, 1, 1711.73, 14.54, 21, 55], ["2026-09-22", 104, 2357.5, 104, 0, 2357.5, 0.0, 29, 72], ["2026-09-23", 99, 2196.78, 98, 1, 2178.63, 18.15, 24, 75], ["2026-09-24", 77, 1802.06, 75, 2, 1765.85, 36.21, 13, 62], ["2026-09-25", 71, 1633.5, 68, 3, 1585.31, 48.19, 20, 49], ["2026-09-26", 70, 1696.63, 68, 2, 1664.24, 32.39, 12, 57], ["2026-09-27", 85, 2037.4, 82, 3, 1988.41, 48.99, 20, 64], ["2026-09-28", 56, 1234.67, 54, 2, 1198.71, 35.96, 10, 45], ["2026-09-29", 81, 1886.42, 77, 4, 1826.1, 60.32, 15, 64], ["2026-09-30", 51, 1228.56, 50, 1, 1210.65, 17.91, 11, 39], ["2026-10-01", 58, 1330.77, 58, 0, 1330.77, 0.0, 22, 36], ["2026-10-02", 63, 1431.4, 63, 0, 1431.4, 0.0, 22, 38], ["2026-10-03", 57, 1375.24, 57, 0, 1375.24, 0.0, 10, 47], ["2026-10-04", 76, 1824.88, 76, 0, 1824.88, 0.0, 9, 67], ["2026-10-05", 48, 1095.43, 47, 1, 1077.7, 17.73, 8, 40], ["2026-10-06", 40, 933.15, 35, 5, 850.59, 82.56, 8, 32], ["2026-10-07", 58, 1232.44, 58, 0, 1232.44, 0.0, 7, 48], ["2026-10-08", 64, 1457.73, 64, 0, 1457.73, 0.0, 13, 51], ["2026-10-09", 59, 1217.69, 52, 7, 1109.23, 108.46, 16, 40], ["2026-10-10", 77, 1780.78, 75, 2, 1749.02, 31.76, 8, 66], ["2026-10-11", 126, 2881.34, 123, 3, 2834.58, 46.76, 19, 104], ["2026-10-12", 53, 1230.15, 51, 2, 1215.11, 15.04, 7, 45], ["2026-10-13", 31, 673.38, 30, 1, 657.7, 15.68, 7, 24], ["2026-10-14", 58, 1291.62, 56, 2, 1257.2, 34.42, 8, 49], ["2026-10-15", 65, 1401.0, 65, 0, 1401.0, 0.0, 13, 45], ["2026-10-16", 56, 1204.43, 56, 0, 1204.43, 0.0, 11, 44], ["2026-10-17", 72, 1675.54, 71, 1, 1657.58, 17.96, 14, 57], ["2026-10-18", 86, 2024.63, 85, 1, 2010.26, 14.37, 10, 76], ["2026-10-19", 64, 1492.92, 62, 2, 1456.81, 36.11, 7, 53], ["2026-10-20", 40, 974.85, 39, 1, 957.89, 16.96, 4, 36], ["2026-10-21", 46, 1054.96, 46, 0, 1054.96, 0.0, 3, 40], ["2026-10-22", 49, 1227.69, 49, 0, 1227.69, 0.0, 7, 39], ["2026-10-23", 39, 884.37, 38, 1, 868.77, 15.6, 5, 34], ["2026-10-24", 54, 1264.09, 53, 1, 1247.57, 16.52, 1, 52], ["2026-10-25", 75, 1745.03, 73, 2, 1709.55, 35.48, 16, 58], ["2026-10-26", 57, 1328.84, 54, 3, 1277.51, 51.33, 4, 51], ["2026-10-27", 52, 1204.18, 52, 0, 1204.18, 0.0, 10, 41], ["2026-10-28", 55, 1321.72, 55, 0, 1321.72, 0.0, 7, 46], ["2026-10-29", 53, 1277.75, 51, 2, 1241.18, 36.57, 9, 44], ["2026-10-30", 43, 961.97, 43, 0, 961.97, 0.0, 6, 36], ["2026-10-31", 48, 1080.92, 47, 1, 1064.33, 16.59, 8, 39], ["2026-11-01", 70, 1720.41, 69, 1, 1705.66, 14.75, 11, 57], ["2026-11-02", 39, 922.21, 38, 1, 904.2, 18.01, 5, 34], ["2026-11-03", 46, 1083.3, 43, 3, 1029.74, 53.56, 4, 40], ["2026-11-04", 55, 1329.79, 54, 1, 1311.31, 18.48, 8, 47], ["2026-11-05", 43, 1040.15, 43, 0, 1040.15, 0.0, 10, 33], ["2026-11-06", 30, 689.28, 28, 2, 655.6, 33.68, 2, 27], ["2026-11-07", 16, 382.87, 14, 2, 346.46, 36.41, 1, 15], ["2026-11-09", 1, 18.08, 0, 1, 0.0, 18.08, 0, 1]],
-        "TVG7230": [["2026-08-18", 458, 10679.51, 436, 22, 10323.64, 355.87, 24, 423], ["2026-08-19", 136, 3133.36, 127, 9, 2983.29, 150.07, 16, 116], ["2026-08-20", 115, 2635.21, 103, 12, 2439.5, 195.71, 14, 98], ["2026-08-21", 117, 2612.27, 105, 12, 2408.17, 204.1, 16, 99], ["2026-08-22", 121, 2887.67, 116, 5, 2822.73, 64.94, 18, 99], ["2026-08-23", 151, 3445.79, 133, 18, 3147.93, 297.86, 23, 123], ["2026-08-24", 121, 2617.33, 104, 17, 2327.33, 290.0, 15, 102], ["2026-08-25", 83, 1894.27, 73, 10, 1732.95, 161.32, 15, 68], ["2026-08-26", 75, 1673.73, 71, 4, 1606.98, 66.75, 11, 62], ["2026-08-27", 66, 1388.18, 59, 7, 1258.95, 129.23, 13, 51], ["2026-08-28", 92, 2117.56, 84, 8, 1978.1, 139.46, 23, 66], ["2026-08-29", 76, 1727.91, 62, 14, 1489.06, 238.85, 18, 57], ["2026-08-30", 92, 2059.27, 78, 14, 1818.97, 240.3, 17, 70], ["2026-08-31", 58, 1210.65, 44, 14, 975.46, 235.19, 11, 47], ["2026-09-01", 62, 1372.28, 56, 6, 1264.89, 107.39, 13, 45], ["2026-09-02", 76, 1765.96, 67, 9, 1602.9, 163.06, 16, 57], ["2026-09-03", 69, 1591.32, 64, 5, 1500.59, 90.73, 19, 47], ["2026-09-04", 90, 2050.5, 85, 5, 1961.68, 88.82, 27, 60], ["2026-09-05", 97, 2315.03, 87, 10, 2149.78, 165.25, 27, 69], ["2026-09-06", 98, 2279.38, 85, 13, 2058.52, 220.86, 23, 74], ["2026-09-07", 127, 2915.96, 118, 9, 2759.54, 156.42, 34, 91], ["2026-09-08", 72, 1465.64, 69, 3, 1427.93, 37.71, 25, 47], ["2026-09-09", 64, 1402.03, 61, 3, 1346.19, 55.84, 16, 48], ["2026-09-10", 68, 1557.97, 60, 8, 1412.61, 145.36, 16, 50], ["2026-09-11", 70, 1461.11, 65, 5, 1368.85, 92.26, 23, 46], ["2026-09-12", 62, 1431.8, 52, 10, 1284.69, 147.11, 16, 46], ["2026-09-13", 83, 1909.16, 69, 14, 1675.04, 234.12, 20, 62], ["2026-09-14", 70, 1500.97, 62, 8, 1372.7, 128.27, 14, 48], ["2026-09-15", 69, 1522.54, 58, 11, 1333.25, 189.29, 29, 39], ["2026-09-16", 44, 1017.12, 43, 1, 1001.32, 15.8, 12, 30], ["2026-09-17", 58, 1230.65, 50, 8, 1090.33, 140.32, 17, 39], ["2026-09-18", 74, 1456.24, 70, 4, 1386.41, 69.83, 16, 52], ["2026-09-19", 65, 1449.45, 57, 8, 1329.06, 120.39, 21, 41], ["2026-09-20", 95, 2216.59, 89, 6, 2110.03, 106.56, 27, 65], ["2026-09-21", 63, 1458.21, 62, 1, 1441.67, 16.54, 15, 46], ["2026-09-22", 61, 1431.82, 58, 3, 1397.1, 34.72, 15, 46], ["2026-09-23", 53, 1091.89, 43, 10, 917.83, 174.06, 8, 44], ["2026-09-24", 56, 1067.57, 50, 6, 973.86, 93.71, 15, 38], ["2026-09-25", 43, 944.55, 42, 1, 930.14, 14.41, 12, 31], ["2026-09-26", 59, 1358.84, 54, 5, 1269.67, 89.17, 24, 34], ["2026-09-27", 53, 1226.27, 49, 4, 1179.52, 46.75, 20, 33], ["2026-09-28", 50, 1128.53, 48, 2, 1100.44, 28.09, 11, 37], ["2026-09-29", 51, 1143.89, 45, 6, 1038.25, 105.64, 16, 35], ["2026-09-30", 57, 1261.53, 57, 0, 1261.53, 0.0, 7, 47], ["2026-10-01", 44, 958.68, 41, 3, 908.54, 50.14, 14, 28], ["2026-10-02", 30, 693.37, 28, 2, 657.89, 35.48, 7, 20], ["2026-10-03", 53, 1198.76, 44, 9, 1050.36, 148.4, 16, 36], ["2026-10-04", 49, 1155.43, 46, 3, 1104.01, 51.42, 11, 37], ["2026-10-05", 35, 764.81, 30, 5, 680.09, 84.72, 11, 23], ["2026-10-06", 38, 719.26, 34, 4, 669.69, 49.57, 9, 26], ["2026-10-07", 43, 977.66, 42, 1, 959.89, 17.77, 10, 31], ["2026-10-08", 43, 943.92, 41, 2, 912.75, 31.17, 9, 32], ["2026-10-09", 32, 691.95, 30, 2, 657.35, 34.6, 11, 19], ["2026-10-10", 69, 1507.13, 61, 8, 1377.79, 129.34, 6, 61], ["2026-10-11", 108, 2361.59, 101, 7, 2250.59, 111.0, 22, 82], ["2026-10-12", 27, 637.08, 26, 1, 622.92, 14.16, 8, 19], ["2026-10-13", 27, 604.76, 26, 1, 588.21, 16.55, 7, 20], ["2026-10-14", 28, 625.61, 25, 3, 572.38, 53.23, 2, 26], ["2026-10-15", 42, 691.85, 40, 2, 659.77, 32.08, 10, 27], ["2026-10-16", 36, 754.58, 34, 2, 719.38, 35.2, 9, 26], ["2026-10-17", 64, 1428.55, 59, 5, 1338.69, 89.86, 8, 54], ["2026-10-18", 47, 1092.63, 44, 3, 1039.98, 52.65, 4, 42], ["2026-10-19", 25, 508.05, 24, 1, 493.51, 14.54, 3, 22], ["2026-10-20", 25, 590.4, 23, 2, 554.1, 36.3, 4, 21], ["2026-10-21", 31, 737.89, 31, 0, 737.89, 0.0, 3, 28], ["2026-10-22", 40, 917.37, 37, 3, 862.57, 54.8, 7, 32], ["2026-10-23", 25, 529.42, 24, 1, 514.53, 14.89, 4, 21], ["2026-10-24", 22, 537.65, 22, 0, 537.65, 0.0, 2, 20], ["2026-10-25", 43, 1048.13, 42, 1, 1029.77, 18.36, 4, 37], ["2026-10-26", 47, 1079.69, 42, 5, 987.88, 91.81, 6, 38], ["2026-10-27", 32, 703.92, 28, 4, 650.82, 53.1, 7, 25], ["2026-10-28", 32, 739.59, 32, 0, 739.59, 0.0, 5, 27], ["2026-10-29", 31, 752.32, 28, 3, 701.73, 50.59, 6, 24], ["2026-10-30", 30, 653.05, 28, 2, 623.26, 29.79, 5, 25], ["2026-10-31", 33, 765.98, 31, 2, 734.17, 31.81, 3, 28], ["2026-11-01", 49, 1195.91, 48, 1, 1180.24, 15.67, 4, 45], ["2026-11-02", 29, 560.75, 26, 3, 505.45, 55.3, 5, 23], ["2026-11-03", 36, 827.08, 36, 0, 827.08, 0.0, 1, 35], ["2026-11-04", 32, 774.12, 32, 0, 774.12, 0.0, 6, 24], ["2026-11-05", 28, 606.84, 26, 2, 569.88, 36.96, 3, 25], ["2026-11-06", 23, 503.62, 21, 2, 469.35, 34.27, 4, 19], ["2026-11-07", 45, 1095.88, 44, 1, 1079.38, 16.5, 6, 38], ["2026-11-08", 44, 1092.2, 44, 0, 1092.2, 0.0, 4, 34], ["2026-11-09", 32, 712.06, 32, 0, 712.06, 0.0, 4, 26], ["2026-11-10", 24, 595.59, 24, 0, 595.59, 0.0, 4, 19]],
-        "TVG7240": [["2026-08-18", 821, 19437.43, 782, 39, 18825.13, 612.3, 43, 755], ["2026-08-19", 271, 6220.0, 246, 25, 5810.88, 409.12, 29, 234], ["2026-08-20", 218, 5001.3, 201, 17, 4712.0, 289.3, 27, 189], ["2026-08-21", 201, 4444.04, 176, 25, 4043.87, 400.17, 29, 167], ["2026-08-22", 243, 5745.17, 233, 10, 5589.39, 155.78, 33, 207], ["2026-08-23", 294, 6952.07, 277, 17, 6677.33, 274.74, 34, 255], ["2026-08-24", 208, 4798.82, 196, 12, 4602.05, 196.77, 25, 177], ["2026-08-25", 173, 4038.39, 158, 15, 3795.45, 242.94, 33, 137], ["2026-08-26", 156, 3673.6, 150, 6, 3571.92, 101.68, 26, 128], ["2026-08-27", 138, 3121.41, 131, 7, 3000.08, 121.33, 26, 111], ["2026-08-28", 195, 4597.46, 187, 8, 4455.8, 141.66, 32, 159], ["2026-08-29", 182, 4307.28, 171, 11, 4115.87, 191.41, 32, 147], ["2026-08-30", 230, 5347.22, 217, 13, 5138.45, 208.77, 42, 179], ["2026-08-31", 119, 2634.85, 116, 3, 2590.19, 44.66, 22, 97], ["2026-09-01", 137, 3212.16, 130, 7, 3088.9, 123.26, 35, 94], ["2026-09-02", 167, 3840.13, 158, 9, 3685.8, 154.33, 34, 129], ["2026-09-03", 137, 3283.98, 130, 7, 3181.9, 102.08, 44, 90], ["2026-09-04", 152, 3528.48, 149, 3, 3484.94, 43.54, 46, 99], ["2026-09-05", 194, 4550.97, 175, 19, 4235.69, 315.28, 44, 146], ["2026-09-06", 218, 5153.62, 197, 21, 4789.27, 364.35, 33, 180], ["2026-09-07", 237, 5599.18, 209, 28, 5104.0, 495.18, 49, 184], ["2026-09-08", 105, 2223.16, 99, 6, 2132.01, 91.15, 31, 73], ["2026-09-09", 103, 2311.12, 97, 6, 2202.7, 108.42, 26, 75], ["2026-09-10", 121, 2871.19, 116, 5, 2780.41, 90.78, 39, 79], ["2026-09-11", 121, 2698.73, 117, 4, 2628.19, 70.54, 23, 95], ["2026-09-12", 127, 2971.51, 116, 11, 2773.61, 197.9, 30, 97], ["2026-09-13", 188, 4483.85, 178, 10, 4310.98, 172.87, 50, 132], ["2026-09-14", 108, 2284.32, 101, 7, 2157.57, 126.75, 27, 79], ["2026-09-15", 104, 2291.45, 99, 5, 2202.53, 88.92, 30, 72], ["2026-09-16", 102, 2453.16, 95, 7, 2324.93, 128.23, 25, 73], ["2026-09-17", 103, 2319.03, 99, 4, 2253.3, 65.73, 26, 75], ["2026-09-18", 103, 1946.2, 99, 4, 1879.65, 66.55, 28, 71], ["2026-09-19", 113, 2739.99, 113, 0, 2739.99, 0.0, 35, 74], ["2026-09-20", 186, 4508.58, 178, 8, 4371.15, 137.43, 41, 139], ["2026-09-21", 103, 2373.18, 99, 4, 2307.28, 65.9, 22, 78], ["2026-09-22", 123, 2774.94, 121, 2, 2740.39, 34.55, 18, 99], ["2026-09-23", 155, 3524.46, 149, 6, 3420.47, 103.99, 17, 137], ["2026-09-24", 107, 2441.08, 104, 3, 2391.52, 49.56, 22, 82], ["2026-09-25", 108, 2559.75, 100, 8, 2442.65, 117.1, 33, 74], ["2026-09-26", 171, 4063.2, 161, 10, 3916.55, 146.65, 41, 125], ["2026-09-27", 175, 4180.34, 167, 8, 4055.23, 125.11, 41, 133], ["2026-09-28", 88, 2021.21, 85, 3, 1970.43, 50.78, 18, 70], ["2026-09-29", 132, 3105.31, 129, 3, 3056.86, 48.45, 24, 106], ["2026-09-30", 104, 2439.66, 103, 1, 2425.37, 14.29, 14, 82], ["2026-10-01", 97, 2087.78, 88, 9, 1950.4, 137.38, 34, 61], ["2026-10-02", 106, 2351.97, 99, 7, 2237.56, 114.41, 23, 73], ["2026-10-03", 100, 2307.47, 98, 2, 2275.55, 31.92, 21, 78], ["2026-10-04", 101, 2409.65, 97, 4, 2338.73, 70.92, 14, 86], ["2026-10-05", 61, 1462.4, 60, 1, 1444.67, 17.73, 10, 48], ["2026-10-06", 66, 1549.01, 60, 6, 1449.44, 99.57, 12, 53], ["2026-10-07", 77, 1752.25, 75, 2, 1734.48, 17.77, 12, 59], ["2026-10-08", 86, 1792.72, 84, 2, 1758.3, 34.42, 13, 70], ["2026-10-09", 78, 1720.22, 77, 1, 1703.35, 16.87, 17, 58], ["2026-10-10", 131, 2977.68, 126, 5, 2897.41, 80.27, 18, 110], ["2026-10-11", 182, 4087.43, 174, 8, 3965.17, 122.26, 21, 156], ["2026-10-12", 65, 1495.43, 61, 4, 1432.94, 62.49, 7, 57], ["2026-10-13", 51, 1184.53, 49, 2, 1152.3, 32.23, 7, 43], ["2026-10-14", 63, 1491.81, 63, 0, 1491.81, 0.0, 8, 53], ["2026-10-15", 73, 1560.4, 72, 1, 1545.88, 14.52, 9, 60], ["2026-10-16", 69, 1544.22, 67, 2, 1529.84, 14.38, 5, 57], ["2026-10-17", 111, 2530.09, 110, 1, 2514.18, 15.91, 16, 91], ["2026-10-18", 117, 2761.99, 111, 6, 2662.92, 99.07, 13, 101], ["2026-10-19", 69, 1679.2, 69, 0, 1679.2, 0.0, 10, 56], ["2026-10-20", 53, 1283.94, 51, 2, 1253.02, 30.92, 7, 45], ["2026-10-21", 64, 1502.49, 63, 1, 1488.64, 13.85, 9, 53], ["2026-10-22", 55, 1312.88, 54, 1, 1295.65, 17.23, 7, 47], ["2026-10-23", 66, 1491.41, 64, 2, 1461.19, 30.22, 5, 56], ["2026-10-24", 84, 1981.88, 80, 4, 1932.31, 49.57, 7, 76], ["2026-10-25", 79, 1882.4, 76, 3, 1831.31, 51.09, 6, 72], ["2026-10-26", 68, 1571.23, 67, 1, 1552.87, 18.36, 6, 61], ["2026-10-27", 83, 1967.01, 80, 3, 1917.55, 49.46, 10, 72], ["2026-10-28", 70, 1645.35, 68, 2, 1613.54, 31.81, 8, 62], ["2026-10-29", 63, 1501.8, 62, 1, 1483.51, 18.29, 6, 56], ["2026-10-30", 64, 1425.48, 61, 3, 1375.69, 49.79, 14, 49], ["2026-10-31", 65, 1569.19, 64, 1, 1550.72, 18.47, 11, 52], ["2026-11-01", 96, 2352.84, 94, 2, 2315.97, 36.87, 12, 81], ["2026-11-02", 59, 1437.2, 57, 2, 1402.83, 34.37, 12, 46], ["2026-11-03", 65, 1505.27, 62, 3, 1455.89, 49.38, 7, 57], ["2026-11-04", 66, 1587.54, 64, 2, 1554.27, 33.27, 9, 57], ["2026-11-05", 50, 1185.82, 47, 3, 1130.38, 55.44, 8, 41], ["2026-11-06", 54, 1177.08, 52, 2, 1141.99, 35.09, 11, 42], ["2026-11-07", 87, 2096.44, 85, 2, 2065.61, 30.83, 10, 74], ["2026-11-08", 60, 1441.53, 60, 0, 1441.53, 0.0, 7, 53], ["2026-11-09", 54, 1099.13, 52, 2, 1065.75, 33.38, 9, 44], ["2026-11-10", 36, 862.63, 36, 0, 862.63, 0.0, 3, 31]],
-        "TVG7250": [["2026-08-18", 1396, 33291.25, 1341, 55, 32385.76, 905.49, 83, 1283], ["2026-08-19", 483, 10921.53, 449, 34, 10375.59, 545.94, 66, 409], ["2026-08-20", 433, 9873.25, 387, 46, 9099.85, 773.4, 63, 361], ["2026-08-21", 370, 8166.61, 340, 30, 7685.59, 481.02, 92, 270], ["2026-08-22", 443, 10515.95, 419, 24, 10140.32, 375.63, 101, 336], ["2026-08-23", 570, 13191.19, 526, 44, 12460.42, 730.77, 106, 455], ["2026-08-24", 418, 9346.62, 384, 34, 8780.86, 565.76, 88, 319], ["2026-08-25", 352, 8126.47, 314, 38, 7486.66, 639.81, 74, 275], ["2026-08-26", 308, 7234.75, 288, 20, 6898.1, 336.65, 59, 244], ["2026-08-27", 282, 6106.44, 250, 32, 5558.45, 547.99, 78, 200], ["2026-08-28", 410, 9719.6, 384, 26, 9260.89, 458.71, 75, 323], ["2026-08-29", 336, 7855.34, 309, 27, 7391.92, 463.42, 82, 249], ["2026-08-30", 412, 9563.38, 383, 29, 9088.32, 475.06, 98, 308], ["2026-08-31", 273, 6398.36, 257, 16, 6121.1, 277.26, 67, 200], ["2026-09-01", 261, 6168.65, 261, 0, 6168.65, 0.0, 77, 179], ["2026-09-02", 300, 7336.67, 300, 0, 7336.67, 0.0, 100, 198], ["2026-09-03", 282, 6761.74, 282, 0, 6761.74, 0.0, 97, 181], ["2026-09-04", 293, 7005.45, 293, 0, 7005.45, 0.0, 88, 200], ["2026-09-05", 373, 9093.71, 373, 0, 9093.71, 0.0, 109, 253], ["2026-09-06", 458, 11135.18, 458, 0, 11135.18, 0.0, 98, 352], ["2026-09-07", 490, 12001.18, 490, 0, 12001.18, 0.0, 131, 350], ["2026-09-08", 201, 4513.41, 201, 0, 4513.41, 0.0, 69, 129], ["2026-09-09", 200, 4435.4, 200, 0, 4435.4, 0.0, 56, 140], ["2026-09-10", 179, 4267.05, 179, 0, 4267.05, 0.0, 50, 122], ["2026-09-11", 219, 5113.28, 219, 0, 5113.28, 0.0, 68, 146], ["2026-09-12", 174, 4163.99, 174, 0, 4163.99, 0.0, 52, 121], ["2026-09-13", 264, 6419.96, 264, 0, 6419.96, 0.0, 67, 191], ["2026-09-14", 38, 876.25, 38, 0, 876.25, 0.0, 11, 27], ["2026-09-24", 228, 5480.4, 228, 0, 5480.4, 0.0, 53, 157], ["2026-09-25", 209, 5136.55, 209, 0, 5136.55, 0.0, 74, 130], ["2026-09-26", 210, 5110.34, 210, 0, 5110.34, 0.0, 52, 156], ["2026-09-27", 197, 4778.29, 197, 0, 4778.29, 0.0, 52, 139], ["2026-09-28", 155, 3784.21, 155, 0, 3784.21, 0.0, 50, 103], ["2026-09-29", 206, 4976.56, 206, 0, 4976.56, 0.0, 56, 146], ["2026-09-30", 167, 4062.8, 167, 0, 4062.8, 0.0, 43, 121], ["2026-10-01", 176, 4155.92, 176, 0, 4155.92, 0.0, 62, 108], ["2026-10-02", 135, 3203.96, 135, 0, 3203.96, 0.0, 36, 97], ["2026-10-03", 156, 3704.54, 156, 0, 3704.54, 0.0, 32, 119], ["2026-10-04", 161, 3968.4, 161, 0, 3968.4, 0.0, 30, 127], ["2026-10-05", 107, 2567.36, 107, 0, 2567.36, 0.0, 20, 85], ["2026-10-06", 86, 2016.71, 86, 0, 2016.71, 0.0, 23, 60], ["2026-10-07", 125, 2814.8, 125, 0, 2814.8, 0.0, 15, 104], ["2026-10-08", 126, 2696.22, 126, 0, 2696.22, 0.0, 19, 97], ["2026-10-09", 145, 3122.37, 145, 0, 3122.37, 0.0, 27, 112], ["2026-10-10", 211, 4868.55, 211, 0, 4868.55, 0.0, 25, 180], ["2026-10-11", 310, 7176.6, 310, 0, 7176.6, 0.0, 41, 260], ["2026-10-12", 97, 2287.69, 97, 0, 2287.69, 0.0, 19, 75], ["2026-10-13", 93, 2133.64, 93, 0, 2133.64, 0.0, 18, 72], ["2026-10-14", 105, 2520.14, 105, 0, 2520.14, 0.0, 11, 94], ["2026-10-15", 130, 2793.06, 130, 0, 2793.06, 0.0, 22, 104], ["2026-10-16", 119, 2627.27, 119, 0, 2627.27, 0.0, 20, 98], ["2026-10-17", 174, 4067.88, 174, 0, 4067.88, 0.0, 34, 135], ["2026-10-18", 201, 4818.22, 201, 0, 4818.22, 0.0, 26, 172], ["2026-10-19", 125, 2986.79, 125, 0, 2986.79, 0.0, 21, 101], ["2026-10-20", 102, 2354.03, 102, 0, 2354.03, 0.0, 17, 83], ["2026-10-21", 87, 2092.08, 87, 0, 2092.08, 0.0, 17, 69], ["2026-10-22", 127, 3019.3, 127, 0, 3019.3, 0.0, 15, 108], ["2026-10-23", 111, 2635.83, 111, 0, 2635.83, 0.0, 13, 95], ["2026-10-24", 149, 3584.2, 149, 0, 3584.2, 0.0, 20, 128], ["2026-10-25", 161, 3970.75, 161, 0, 3970.75, 0.0, 14, 143], ["2026-10-26", 135, 3098.36, 135, 0, 3098.36, 0.0, 16, 116], ["2026-10-27", 113, 2637.68, 113, 0, 2637.68, 0.0, 14, 97], ["2026-10-28", 117, 2805.38, 117, 0, 2805.38, 0.0, 15, 102], ["2026-10-29", 87, 2121.36, 87, 0, 2121.36, 0.0, 12, 74], ["2026-10-30", 101, 2385.59, 101, 0, 2385.59, 0.0, 12, 86], ["2026-10-31", 101, 2467.23, 101, 0, 2467.23, 0.0, 16, 83], ["2026-11-01", 160, 3868.29, 160, 0, 3868.29, 0.0, 14, 141], ["2026-11-02", 112, 2599.03, 112, 0, 2599.03, 0.0, 18, 93], ["2026-11-03", 103, 2403.63, 103, 0, 2403.63, 0.0, 15, 84], ["2026-11-04", 117, 2645.6, 117, 0, 2645.6, 0.0, 17, 98], ["2026-11-05", 95, 2314.61, 95, 0, 2314.61, 0.0, 12, 82], ["2026-11-06", 75, 1565.63, 75, 0, 1565.63, 0.0, 15, 54], ["2026-11-07", 136, 3229.43, 136, 0, 3229.43, 0.0, 21, 112], ["2026-11-08", 121, 2973.61, 121, 0, 2973.61, 0.0, 24, 96], ["2026-11-09", 101, 2240.85, 101, 0, 2240.85, 0.0, 23, 72], ["2026-11-10", 85, 2046.67, 85, 0, 2046.67, 0.0, 7, 74]],
-        "TVG7260": [["2026-08-18", 420, 9663.23, 401, 19, 9346.97, 316.26, 18, 398], ["2026-08-19", 148, 3554.22, 140, 8, 3432.22, 122.0, 17, 130], ["2026-08-20", 104, 2448.77, 94, 10, 2280.38, 168.39, 7, 93], ["2026-08-21", 93, 2078.7, 83, 10, 1912.7, 166.0, 21, 71], ["2026-08-22", 105, 2540.39, 97, 8, 2410.01, 130.38, 22, 78], ["2026-08-23", 140, 3207.21, 125, 15, 2956.05, 251.16, 22, 115], ["2026-08-24", 99, 2248.7, 89, 10, 2085.01, 163.69, 13, 85], ["2026-08-25", 77, 1816.16, 72, 5, 1731.52, 84.64, 22, 55], ["2026-08-26", 64, 1498.49, 62, 2, 1469.28, 29.21, 18, 45], ["2026-08-27", 86, 1935.0, 79, 7, 1834.4, 100.6, 28, 57], ["2026-08-28", 89, 2099.31, 84, 5, 2008.91, 90.4, 15, 73], ["2026-08-29", 67, 1550.41, 57, 10, 1374.11, 176.3, 14, 53], ["2026-08-30", 94, 2193.0, 84, 10, 2020.4, 172.6, 14, 80], ["2026-08-31", 52, 1171.78, 47, 5, 1089.35, 82.43, 10, 41], ["2026-09-01", 77, 1811.89, 69, 8, 1671.65, 140.24, 20, 54], ["2026-09-02", 74, 1742.42, 67, 7, 1616.8, 125.62, 16, 57], ["2026-09-03", 66, 1481.97, 62, 4, 1413.32, 68.65, 18, 44], ["2026-09-04", 85, 1891.57, 78, 7, 1773.74, 117.83, 28, 55], ["2026-09-05", 95, 2267.5, 86, 9, 2117.87, 149.63, 20, 75], ["2026-09-06", 125, 2951.6, 106, 19, 2616.61, 334.99, 26, 98], ["2026-09-07", 113, 2690.44, 105, 8, 2546.7, 143.74, 27, 84], ["2026-09-08", 53, 1164.22, 47, 6, 1070.36, 93.86, 14, 37], ["2026-09-09", 46, 992.55, 45, 1, 974.54, 18.01, 13, 32], ["2026-09-10", 61, 1384.97, 50, 11, 1184.07, 200.9, 12, 48], ["2026-09-11", 59, 1290.59, 53, 6, 1202.6, 87.99, 18, 37], ["2026-09-12", 55, 1278.23, 47, 8, 1141.42, 136.81, 15, 39], ["2026-09-13", 53, 1278.81, 50, 3, 1222.58, 56.23, 12, 41], ["2026-09-14", 47, 1000.25, 47, 0, 1000.25, 0.0, 9, 37], ["2026-09-15", 51, 1138.62, 51, 0, 1138.62, 0.0, 16, 33], ["2026-09-16", 54, 1232.13, 54, 0, 1232.13, 0.0, 13, 41], ["2026-09-17", 52, 1271.16, 52, 0, 1271.16, 0.0, 11, 41], ["2026-09-18", 52, 998.73, 52, 0, 998.73, 0.0, 13, 36], ["2026-09-19", 52, 1251.73, 52, 0, 1251.73, 0.0, 13, 36], ["2026-09-20", 102, 2445.88, 102, 0, 2445.88, 0.0, 19, 82], ["2026-09-21", 52, 1146.54, 52, 0, 1146.54, 0.0, 10, 42], ["2026-09-22", 49, 1106.82, 49, 0, 1106.82, 0.0, 10, 39], ["2026-09-23", 79, 1780.29, 79, 0, 1780.29, 0.0, 8, 71], ["2026-09-24", 37, 845.55, 37, 0, 845.55, 0.0, 7, 29], ["2026-09-25", 35, 834.84, 35, 0, 834.84, 0.0, 8, 27], ["2026-09-26", 48, 1121.76, 48, 0, 1121.76, 0.0, 11, 37], ["2026-09-27", 46, 1099.1, 46, 0, 1099.1, 0.0, 8, 38], ["2026-09-28", 31, 720.56, 31, 0, 720.56, 0.0, 7, 23], ["2026-09-29", 47, 1140.18, 47, 0, 1140.18, 0.0, 7, 40], ["2026-09-30", 36, 763.14, 36, 0, 763.14, 0.0, 5, 31], ["2026-10-01", 27, 644.54, 27, 0, 644.54, 0.0, 6, 21], ["2026-10-02", 28, 579.36, 28, 0, 579.36, 0.0, 6, 21], ["2026-10-03", 37, 884.59, 37, 0, 884.59, 0.0, 10, 27], ["2026-10-04", 34, 870.24, 34, 0, 870.24, 0.0, 7, 27], ["2026-10-05", 27, 604.98, 27, 0, 604.98, 0.0, 12, 14], ["2026-10-06", 20, 439.54, 20, 0, 439.54, 0.0, 2, 18], ["2026-10-07", 19, 405.09, 19, 0, 405.09, 0.0, 2, 17], ["2026-10-08", 29, 570.44, 29, 0, 570.44, 0.0, 7, 22], ["2026-10-09", 23, 457.89, 22, 1, 440.77, 17.12, 3, 19], ["2026-10-10", 52, 1116.33, 45, 7, 1023.21, 93.12, 5, 46], ["2026-10-11", 73, 1636.74, 67, 6, 1544.7, 92.04, 6, 67], ["2026-10-12", 33, 762.68, 31, 2, 734.88, 27.8, 5, 27], ["2026-10-13", 26, 581.76, 24, 2, 548.38, 33.38, 3, 23], ["2026-10-14", 21, 485.86, 20, 1, 468.15, 17.71, 2, 19], ["2026-10-15", 27, 463.69, 26, 1, 463.69, 0.0, 3, 24], ["2026-10-16", 19, 394.3, 17, 2, 378.93, 15.37, 4, 15], ["2026-10-17", 30, 709.14, 26, 4, 637.26, 71.88, 3, 27], ["2026-10-18", 29, 713.9, 27, 2, 679.53, 34.37, 3, 25], ["2026-10-19", 16, 372.31, 16, 0, 372.31, 0.0, 3, 13], ["2026-10-20", 26, 596.82, 24, 2, 561.33, 35.49, 1, 23], ["2026-10-21", 30, 693.47, 29, 1, 675.23, 18.24, 2, 28], ["2026-10-22", 32, 697.77, 31, 1, 679.51, 18.26, 3, 29], ["2026-10-23", 35, 826.7, 33, 2, 790.15, 36.55, 4, 30], ["2026-10-24", 24, 581.93, 23, 1, 563.57, 18.36, 1, 23], ["2026-10-25", 36, 883.1, 35, 1, 868.41, 14.69, 6, 30], ["2026-10-26", 41, 951.29, 41, 0, 951.29, 0.0, 4, 33], ["2026-10-27", 22, 495.27, 22, 0, 495.27, 0.0, 3, 19], ["2026-10-28", 33, 803.23, 31, 2, 766.61, 36.62, 6, 26], ["2026-10-29", 24, 564.56, 23, 1, 546.27, 18.29, 3, 20], ["2026-10-30", 25, 576.23, 24, 1, 561.45, 14.78, 3, 22], ["2026-10-31", 26, 625.62, 26, 0, 625.62, 0.0, 4, 21], ["2026-11-01", 40, 991.68, 38, 2, 955.16, 36.52, 4, 36], ["2026-11-02", 26, 587.79, 23, 3, 533.8, 53.99, 10, 16], ["2026-11-03", 33, 732.89, 32, 1, 715.31, 17.58, 2, 31], ["2026-11-04", 22, 510.93, 22, 0, 510.93, 0.0, 3, 19], ["2026-11-05", 13, 271.5, 11, 2, 234.54, 36.96, 1, 12], ["2026-11-06", 24, 533.84, 22, 2, 500.6, 33.24, 4, 18], ["2026-11-07", 31, 729.19, 31, 0, 729.19, 0.0, 5, 25], ["2026-11-08", 22, 529.56, 21, 1, 512.45, 17.11, 2, 20], ["2026-11-09", 21, 391.78, 21, 0, 391.78, 0.0, 6, 15], ["2026-11-10", 9, 219.66, 9, 0, 219.66, 0.0, 0, 9]]
+        "TVG7230": [["2026-08-18", 458, 10679.51, 436, 22, 10323.64, 355.87, 24, 423], ["2026-08-19", 136, 3133.36, 127, 9, 2983.29, 150.07, 16, 116], ["2026-08-20", 115, 2635.21, 103, 12, 2439.5, 195.71, 14, 98], ["2026-08-21", 117, 2612.27, 105, 12, 2408.17, 204.1, 16, 99], ["2026-08-22", 121, 2887.67, 116, 5, 2822.73, 64.94, 18, 99], ["2026-08-23", 151, 3445.79, 133, 18, 3147.93, 297.86, 23, 123], ["2026-08-24", 121, 2617.33, 104, 17, 2327.33, 290.0, 15, 102], ["2026-08-25", 83, 1894.27, 73, 10, 1732.95, 161.32, 15, 68], ["2026-08-26", 75, 1673.73, 71, 4, 1606.98, 66.75, 11, 62], ["2026-08-27", 66, 1388.18, 59, 7, 1258.95, 129.23, 13, 51], ["2026-08-28", 92, 2117.56, 84, 8, 1978.1, 139.46, 23, 66], ["2026-08-29", 76, 1727.91, 62, 14, 1489.06, 238.85, 18, 57], ["2026-08-30", 92, 2059.27, 78, 14, 1818.97, 240.3, 17, 70], ["2026-08-31", 58, 1210.65, 44, 14, 975.46, 235.19, 11, 47], ["2026-09-01", 62, 1372.28, 56, 6, 1264.89, 107.39, 13, 45], ["2026-09-02", 76, 1765.96, 67, 9, 1602.9, 163.06, 16, 57], ["2026-09-03", 69, 1591.32, 64, 5, 1500.59, 90.73, 19, 47], ["2026-09-04", 90, 2050.5, 85, 5, 1961.68, 88.82, 27, 60], ["2026-09-05", 97, 2315.03, 87, 10, 2149.78, 165.25, 27, 69], ["2026-09-06", 98, 2279.38, 85, 13, 2058.52, 220.86, 23, 74], ["2026-09-07", 127, 2915.96, 118, 9, 2759.54, 156.42, 34, 91], ["2026-09-08", 72, 1465.64, 69, 3, 1427.93, 37.71, 25, 47], ["2026-09-09", 64, 1402.03, 61, 3, 1346.19, 55.84, 16, 48], ["2026-09-10", 68, 1557.97, 60, 8, 1412.61, 145.36, 16, 50], ["2026-09-11", 70, 1461.11, 65, 5, 1368.85, 92.26, 23, 46], ["2026-09-12", 62, 1431.8, 52, 10, 1284.69, 147.11, 16, 46], ["2026-09-13", 83, 1909.16, 69, 14, 1675.04, 234.12, 20, 62], ["2026-09-14", 70, 1500.97, 62, 8, 1372.7, 128.27, 14, 48], ["2026-09-15", 69, 1522.54, 58, 11, 1333.25, 189.29, 29, 39], ["2026-09-16", 44, 1017.12, 43, 1, 1001.32, 15.8, 12, 30], ["2026-09-17", 58, 1230.65, 50, 8, 1090.33, 140.32, 17, 39], ["2026-09-18", 74, 1456.24, 70, 4, 1386.41, 69.83, 16, 52], ["2026-09-19", 65, 1449.45, 57, 8, 1329.06, 120.39, 21, 41], ["2026-09-20", 95, 2216.59, 89, 6, 2110.03, 106.56, 27, 65], ["2026-09-21", 63, 1458.21, 62, 1, 1441.67, 16.54, 15, 46], ["2026-09-22", 61, 1431.82, 58, 3, 1397.1, 34.72, 15, 46], ["2026-09-23", 53, 1091.89, 43, 10, 917.83, 174.06, 8, 44], ["2026-09-24", 56, 1067.57, 50, 6, 973.86, 93.71, 15, 38], ["2026-09-25", 43, 944.55, 42, 1, 930.14, 14.41, 12, 31], ["2026-09-26", 59, 1358.84, 54, 5, 1269.67, 89.17, 24, 34], ["2026-09-27", 53, 1226.27, 49, 4, 1179.52, 46.75, 20, 33], ["2026-09-28", 50, 1128.53, 48, 2, 1100.44, 28.09, 11, 37], ["2026-09-29", 51, 1143.89, 45, 6, 1038.25, 105.64, 16, 35], ["2026-09-30", 57, 1261.53, 57, 0, 1261.53, 0.0, 7, 47], ["2026-10-01", 44, 958.68, 41, 3, 908.54, 50.14, 14, 28], ["2026-10-02", 30, 693.37, 28, 2, 657.89, 35.48, 7, 20], ["2026-10-03", 53, 1198.76, 44, 9, 1050.36, 148.4, 16, 36], ["2026-10-04", 49, 1155.43, 46, 3, 1104.01, 51.42, 11, 37], ["2026-10-05", 35, 764.81, 30, 5, 680.09, 84.72, 11, 23], ["2026-10-06", 38, 719.26, 34, 4, 669.69, 49.57, 9, 26], ["2026-10-07", 43, 977.66, 42, 1, 959.89, 17.77, 10, 31], ["2026-10-08", 43, 943.92, 41, 2, 912.75, 31.17, 9, 32], ["2026-10-09", 32, 691.95, 30, 2, 657.35, 34.6, 11, 19], ["2026-10-10", 69, 1507.13, 61, 8, 1377.79, 129.34, 6, 61], ["2026-10-11", 108, 2361.59, 101, 7, 2250.59, 111.0, 22, 82], ["2026-10-12", 27, 637.08, 26, 1, 622.92, 14.16, 8, 19], ["2026-10-13", 27, 604.76, 26, 1, 588.21, 16.55, 7, 20], ["2026-10-14", 28, 625.61, 25, 3, 572.38, 53.23, 2, 26], ["2026-10-15", 42, 691.85, 40, 2, 659.77, 32.08, 10, 27], ["2026-10-16", 35, 733.78, 33, 2, 698.58, 35.2, 8, 26], ["2026-10-17", 64, 1428.55, 59, 5, 1338.69, 89.86, 8, 54], ["2026-10-18", 47, 1092.63, 44, 3, 1039.98, 52.65, 4, 42], ["2026-10-19", 25, 508.05, 24, 1, 493.51, 14.54, 3, 22], ["2026-10-20", 25, 590.4, 23, 2, 554.1, 36.3, 4, 21], ["2026-10-21", 31, 737.89, 31, 0, 737.89, 0.0, 3, 28], ["2026-10-22", 40, 917.37, 37, 3, 862.57, 54.8, 7, 32], ["2026-10-23", 25, 529.42, 24, 1, 514.53, 14.89, 4, 21], ["2026-10-24", 22, 537.65, 22, 0, 537.65, 0.0, 2, 20], ["2026-10-25", 43, 1048.13, 42, 1, 1029.77, 18.36, 4, 37], ["2026-10-26", 47, 1079.69, 42, 5, 987.88, 91.81, 6, 38], ["2026-10-27", 32, 703.92, 28, 4, 650.82, 53.1, 7, 25], ["2026-10-28", 32, 739.59, 32, 0, 739.59, 0.0, 5, 27], ["2026-10-29", 31, 752.32, 28, 3, 701.73, 50.59, 6, 24], ["2026-10-30", 30, 653.05, 28, 2, 623.26, 29.79, 5, 25], ["2026-10-31", 33, 765.98, 31, 2, 734.17, 31.81, 3, 28], ["2026-11-01", 49, 1195.91, 48, 1, 1180.24, 15.67, 4, 45], ["2026-11-02", 29, 560.75, 26, 3, 505.45, 55.3, 5, 23], ["2026-11-03", 36, 827.08, 36, 0, 827.08, 0.0, 1, 35], ["2026-11-04", 32, 774.12, 32, 0, 774.12, 0.0, 6, 24], ["2026-11-05", 28, 606.84, 26, 2, 569.88, 36.96, 3, 25], ["2026-11-06", 23, 503.62, 21, 2, 469.35, 34.27, 4, 19], ["2026-11-07", 45, 1095.88, 44, 1, 1079.38, 16.5, 6, 38], ["2026-11-08", 44, 1092.2, 44, 0, 1092.2, 0.0, 4, 34], ["2026-11-09", 32, 712.06, 32, 0, 712.06, 0.0, 4, 26], ["2026-11-10", 24, 595.59, 24, 0, 595.59, 0.0, 4, 19], ["2026-11-11", 25, 585.17, 23, 2, 551.13, 34.04, 5, 18]],
+        "TVG7240": [["2026-08-18", 821, 19437.43, 782, 39, 18825.13, 612.3, 43, 755], ["2026-08-19", 271, 6220.0, 246, 25, 5810.88, 409.12, 29, 234], ["2026-08-20", 218, 5001.3, 201, 17, 4712.0, 289.3, 27, 189], ["2026-08-21", 201, 4444.04, 176, 25, 4043.87, 400.17, 29, 167], ["2026-08-22", 243, 5745.17, 233, 10, 5589.39, 155.78, 33, 207], ["2026-08-23", 294, 6952.07, 277, 17, 6677.33, 274.74, 34, 255], ["2026-08-24", 208, 4798.82, 196, 12, 4602.05, 196.77, 25, 177], ["2026-08-25", 173, 4038.39, 158, 15, 3795.45, 242.94, 33, 137], ["2026-08-26", 156, 3673.6, 150, 6, 3571.92, 101.68, 26, 128], ["2026-08-27", 138, 3121.41, 131, 7, 3000.08, 121.33, 26, 111], ["2026-08-28", 195, 4597.46, 187, 8, 4455.8, 141.66, 32, 159], ["2026-08-29", 182, 4307.28, 171, 11, 4115.87, 191.41, 32, 147], ["2026-08-30", 230, 5347.22, 217, 13, 5138.45, 208.77, 42, 179], ["2026-08-31", 119, 2634.85, 116, 3, 2590.19, 44.66, 22, 97], ["2026-09-01", 137, 3212.16, 130, 7, 3088.9, 123.26, 35, 94], ["2026-09-02", 167, 3840.13, 158, 9, 3685.8, 154.33, 34, 129], ["2026-09-03", 137, 3283.98, 130, 7, 3181.9, 102.08, 44, 90], ["2026-09-04", 152, 3528.48, 149, 3, 3484.94, 43.54, 46, 99], ["2026-09-05", 194, 4550.97, 175, 19, 4235.69, 315.28, 44, 146], ["2026-09-06", 218, 5153.62, 197, 21, 4789.27, 364.35, 33, 180], ["2026-09-07", 237, 5599.18, 209, 28, 5104.0, 495.18, 49, 184], ["2026-09-08", 105, 2223.16, 99, 6, 2132.01, 91.15, 31, 73], ["2026-09-09", 102, 2311.12, 96, 6, 2202.7, 108.42, 25, 75], ["2026-09-10", 121, 2871.19, 116, 5, 2780.41, 90.78, 39, 79], ["2026-09-11", 121, 2698.73, 117, 4, 2628.19, 70.54, 23, 95], ["2026-09-12", 127, 2971.51, 116, 11, 2773.61, 197.9, 30, 97], ["2026-09-13", 188, 4483.85, 178, 10, 4310.98, 172.87, 50, 132], ["2026-09-14", 108, 2284.32, 101, 7, 2157.57, 126.75, 27, 79], ["2026-09-15", 104, 2291.45, 99, 5, 2202.53, 88.92, 30, 72], ["2026-09-16", 102, 2453.16, 95, 7, 2324.93, 128.23, 25, 73], ["2026-09-17", 103, 2319.03, 99, 4, 2253.3, 65.73, 26, 75], ["2026-09-18", 103, 1946.2, 99, 4, 1879.65, 66.55, 28, 71], ["2026-09-19", 113, 2739.99, 113, 0, 2739.99, 0.0, 35, 74], ["2026-09-20", 186, 4508.58, 178, 8, 4371.15, 137.43, 41, 139], ["2026-09-21", 103, 2373.18, 99, 4, 2307.28, 65.9, 22, 78], ["2026-09-22", 123, 2774.94, 121, 2, 2740.39, 34.55, 18, 99], ["2026-09-23", 155, 3524.46, 149, 6, 3420.47, 103.99, 17, 137], ["2026-09-24", 107, 2441.08, 104, 3, 2391.52, 49.56, 22, 82], ["2026-09-25", 108, 2559.75, 100, 8, 2442.65, 117.1, 33, 74], ["2026-09-26", 171, 4063.2, 161, 10, 3916.55, 146.65, 41, 125], ["2026-09-27", 175, 4180.34, 167, 8, 4055.23, 125.11, 41, 133], ["2026-09-28", 88, 2021.21, 85, 3, 1970.43, 50.78, 18, 70], ["2026-09-29", 132, 3105.31, 129, 3, 3056.86, 48.45, 24, 106], ["2026-09-30", 104, 2439.66, 103, 1, 2425.37, 14.29, 14, 82], ["2026-10-01", 97, 2087.78, 88, 9, 1950.4, 137.38, 34, 61], ["2026-10-02", 106, 2351.97, 99, 7, 2237.56, 114.41, 23, 73], ["2026-10-03", 100, 2307.47, 98, 2, 2275.55, 31.92, 21, 78], ["2026-10-04", 101, 2409.65, 97, 4, 2338.73, 70.92, 14, 86], ["2026-10-05", 61, 1462.4, 60, 1, 1444.67, 17.73, 10, 48], ["2026-10-06", 66, 1549.01, 60, 6, 1449.44, 99.57, 12, 53], ["2026-10-07", 77, 1752.25, 75, 2, 1734.48, 17.77, 12, 59], ["2026-10-08", 86, 1792.72, 84, 2, 1758.3, 34.42, 13, 70], ["2026-10-09", 78, 1720.22, 77, 1, 1703.35, 16.87, 17, 58], ["2026-10-10", 131, 2977.68, 126, 5, 2897.41, 80.27, 18, 110], ["2026-10-11", 182, 4087.43, 174, 8, 3965.17, 122.26, 21, 156], ["2026-10-12", 65, 1495.43, 61, 4, 1432.94, 62.49, 7, 57], ["2026-10-13", 51, 1184.53, 49, 2, 1152.3, 32.23, 7, 43], ["2026-10-14", 63, 1491.81, 63, 0, 1491.81, 0.0, 8, 53], ["2026-10-15", 73, 1560.4, 72, 1, 1545.88, 14.52, 9, 60], ["2026-10-16", 69, 1544.22, 67, 2, 1529.84, 14.38, 5, 57], ["2026-10-17", 111, 2530.09, 110, 1, 2514.18, 15.91, 16, 91], ["2026-10-18", 117, 2761.99, 111, 6, 2662.92, 99.07, 13, 101], ["2026-10-19", 69, 1679.2, 69, 0, 1679.2, 0.0, 10, 56], ["2026-10-20", 53, 1283.94, 51, 2, 1253.02, 30.92, 7, 45], ["2026-10-21", 64, 1502.49, 63, 1, 1488.64, 13.85, 9, 53], ["2026-10-22", 55, 1312.88, 54, 1, 1295.65, 17.23, 7, 47], ["2026-10-23", 66, 1491.41, 64, 2, 1461.19, 30.22, 5, 56], ["2026-10-24", 84, 1981.88, 80, 4, 1932.31, 49.57, 7, 76], ["2026-10-25", 79, 1882.4, 76, 3, 1831.31, 51.09, 6, 72], ["2026-10-26", 68, 1571.23, 67, 1, 1552.87, 18.36, 6, 61], ["2026-10-27", 83, 1967.01, 80, 3, 1917.55, 49.46, 10, 72], ["2026-10-28", 70, 1645.35, 68, 2, 1613.54, 31.81, 8, 62], ["2026-10-29", 63, 1501.8, 62, 1, 1483.51, 18.29, 6, 56], ["2026-10-30", 64, 1425.48, 61, 3, 1375.69, 49.79, 14, 49], ["2026-10-31", 65, 1569.19, 64, 1, 1550.72, 18.47, 11, 52], ["2026-11-01", 96, 2352.84, 94, 2, 2315.97, 36.87, 12, 81], ["2026-11-02", 59, 1437.2, 57, 2, 1402.83, 34.37, 12, 46], ["2026-11-03", 65, 1505.27, 62, 3, 1455.89, 49.38, 7, 57], ["2026-11-04", 66, 1587.54, 64, 2, 1554.27, 33.27, 9, 57], ["2026-11-05", 50, 1185.82, 47, 3, 1130.38, 55.44, 8, 41], ["2026-11-06", 54, 1177.08, 52, 2, 1141.99, 35.09, 11, 42], ["2026-11-07", 87, 2096.44, 85, 2, 2065.61, 30.83, 10, 74], ["2026-11-08", 60, 1442.68, 60, 0, 1442.68, 0.0, 7, 53], ["2026-11-09", 54, 1099.13, 52, 2, 1065.75, 33.38, 9, 44], ["2026-11-10", 36, 862.63, 36, 0, 862.63, 0.0, 3, 31], ["2026-11-11", 43, 1022.46, 42, 1, 1004.42, 18.04, 4, 38]],
+        "TVG7250": [["2026-08-18", 1396, 33291.25, 1341, 55, 32385.76, 905.49, 83, 1283], ["2026-08-19", 483, 10921.53, 449, 34, 10375.59, 545.94, 66, 409], ["2026-08-20", 433, 9873.25, 387, 46, 9099.85, 773.4, 63, 361], ["2026-08-21", 370, 8166.61, 340, 30, 7685.59, 481.02, 92, 270], ["2026-08-22", 443, 10515.95, 419, 24, 10140.32, 375.63, 101, 336], ["2026-08-23", 570, 13191.19, 526, 44, 12460.42, 730.77, 106, 455], ["2026-08-24", 418, 9346.62, 384, 34, 8780.86, 565.76, 88, 319], ["2026-08-25", 352, 8126.47, 314, 38, 7486.66, 639.81, 74, 275], ["2026-08-26", 308, 7234.75, 288, 20, 6898.1, 336.65, 59, 244], ["2026-08-27", 282, 6106.44, 250, 32, 5558.45, 547.99, 78, 200], ["2026-08-28", 410, 9719.6, 384, 26, 9260.89, 458.71, 75, 323], ["2026-08-29", 336, 7855.34, 309, 27, 7391.92, 463.42, 82, 249], ["2026-08-30", 412, 9563.38, 383, 29, 9088.32, 475.06, 98, 308], ["2026-08-31", 273, 6398.36, 257, 16, 6121.1, 277.26, 67, 200], ["2026-09-01", 261, 6168.65, 261, 0, 6168.65, 0.0, 77, 179], ["2026-09-02", 300, 7336.67, 300, 0, 7336.67, 0.0, 100, 198], ["2026-09-03", 282, 6761.74, 282, 0, 6761.74, 0.0, 97, 181], ["2026-09-04", 293, 7005.45, 293, 0, 7005.45, 0.0, 88, 200], ["2026-09-05", 373, 9093.71, 373, 0, 9093.71, 0.0, 109, 253], ["2026-09-06", 458, 11135.18, 458, 0, 11135.18, 0.0, 98, 352], ["2026-09-07", 490, 12001.18, 490, 0, 12001.18, 0.0, 131, 350], ["2026-09-08", 201, 4513.41, 201, 0, 4513.41, 0.0, 69, 129], ["2026-09-09", 200, 4435.4, 200, 0, 4435.4, 0.0, 56, 140], ["2026-09-10", 179, 4267.05, 179, 0, 4267.05, 0.0, 50, 122], ["2026-09-11", 219, 5113.28, 219, 0, 5113.28, 0.0, 68, 146], ["2026-09-12", 174, 4163.99, 174, 0, 4163.99, 0.0, 52, 121], ["2026-09-13", 264, 6419.96, 264, 0, 6419.96, 0.0, 67, 191], ["2026-09-14", 38, 876.25, 38, 0, 876.25, 0.0, 11, 27], ["2026-09-24", 228, 5480.4, 228, 0, 5480.4, 0.0, 53, 157], ["2026-09-25", 209, 5136.55, 209, 0, 5136.55, 0.0, 74, 130], ["2026-09-26", 210, 5110.34, 210, 0, 5110.34, 0.0, 52, 156], ["2026-09-27", 197, 4778.29, 197, 0, 4778.29, 0.0, 52, 139], ["2026-09-28", 155, 3784.21, 155, 0, 3784.21, 0.0, 50, 103], ["2026-09-29", 206, 4976.56, 206, 0, 4976.56, 0.0, 56, 146], ["2026-09-30", 167, 4062.8, 167, 0, 4062.8, 0.0, 43, 121], ["2026-10-01", 176, 4155.92, 176, 0, 4155.92, 0.0, 62, 108], ["2026-10-02", 135, 3203.96, 135, 0, 3203.96, 0.0, 36, 97], ["2026-10-03", 156, 3704.54, 156, 0, 3704.54, 0.0, 32, 119], ["2026-10-04", 161, 3968.4, 161, 0, 3968.4, 0.0, 30, 127], ["2026-10-05", 107, 2567.36, 107, 0, 2567.36, 0.0, 20, 85], ["2026-10-06", 86, 2016.71, 86, 0, 2016.71, 0.0, 23, 60], ["2026-10-07", 125, 2814.8, 125, 0, 2814.8, 0.0, 15, 104], ["2026-10-08", 126, 2696.22, 126, 0, 2696.22, 0.0, 19, 97], ["2026-10-09", 145, 3122.37, 145, 0, 3122.37, 0.0, 27, 112], ["2026-10-10", 211, 4868.55, 211, 0, 4868.55, 0.0, 25, 180], ["2026-10-11", 310, 7176.6, 310, 0, 7176.6, 0.0, 41, 260], ["2026-10-12", 97, 2287.69, 97, 0, 2287.69, 0.0, 19, 75], ["2026-10-13", 93, 2133.64, 93, 0, 2133.64, 0.0, 18, 72], ["2026-10-14", 105, 2520.14, 105, 0, 2520.14, 0.0, 11, 94], ["2026-10-15", 130, 2793.06, 130, 0, 2793.06, 0.0, 22, 104], ["2026-10-16", 119, 2627.27, 119, 0, 2627.27, 0.0, 20, 98], ["2026-10-17", 174, 4067.88, 174, 0, 4067.88, 0.0, 34, 135], ["2026-10-18", 201, 4818.22, 201, 0, 4818.22, 0.0, 26, 172], ["2026-10-19", 125, 2986.79, 125, 0, 2986.79, 0.0, 21, 101], ["2026-10-20", 102, 2354.03, 102, 0, 2354.03, 0.0, 17, 83], ["2026-10-21", 87, 2092.08, 87, 0, 2092.08, 0.0, 17, 69], ["2026-10-22", 127, 3019.3, 127, 0, 3019.3, 0.0, 15, 108], ["2026-10-23", 111, 2635.83, 111, 0, 2635.83, 0.0, 13, 95], ["2026-10-24", 149, 3584.2, 149, 0, 3584.2, 0.0, 20, 128], ["2026-10-25", 161, 3970.75, 161, 0, 3970.75, 0.0, 14, 143], ["2026-10-26", 135, 3098.36, 135, 0, 3098.36, 0.0, 16, 116], ["2026-10-27", 113, 2637.68, 113, 0, 2637.68, 0.0, 14, 97], ["2026-10-28", 117, 2805.38, 117, 0, 2805.38, 0.0, 15, 102], ["2026-10-29", 87, 2121.36, 87, 0, 2121.36, 0.0, 12, 74], ["2026-10-30", 101, 2385.59, 101, 0, 2385.59, 0.0, 12, 86], ["2026-10-31", 101, 2467.23, 101, 0, 2467.23, 0.0, 16, 83], ["2026-11-01", 158, 3816.29, 158, 0, 3816.29, 0.0, 13, 140], ["2026-11-02", 112, 2599.03, 112, 0, 2599.03, 0.0, 18, 93], ["2026-11-03", 103, 2403.63, 103, 0, 2403.63, 0.0, 15, 84], ["2026-11-04", 117, 2645.6, 117, 0, 2645.6, 0.0, 17, 98], ["2026-11-05", 93, 2262.61, 93, 0, 2262.61, 0.0, 11, 81], ["2026-11-06", 75, 1565.63, 75, 0, 1565.63, 0.0, 15, 54], ["2026-11-07", 136, 3229.43, 136, 0, 3229.43, 0.0, 21, 112], ["2026-11-08", 121, 2973.61, 121, 0, 2973.61, 0.0, 24, 96], ["2026-11-09", 101, 2240.85, 101, 0, 2240.85, 0.0, 23, 72], ["2026-11-10", 85, 2046.67, 85, 0, 2046.67, 0.0, 7, 74], ["2026-11-11", 80, 1899.92, 80, 0, 1899.92, 0.0, 15, 60]],
+        "TVG7260": [["2026-08-18", 420, 9663.23, 401, 19, 9346.97, 316.26, 18, 398], ["2026-08-19", 148, 3554.22, 140, 8, 3432.22, 122.0, 17, 130], ["2026-08-20", 104, 2448.77, 94, 10, 2280.38, 168.39, 7, 93], ["2026-08-21", 93, 2078.7, 83, 10, 1912.7, 166.0, 21, 71], ["2026-08-22", 105, 2540.39, 97, 8, 2410.01, 130.38, 22, 78], ["2026-08-23", 140, 3207.21, 125, 15, 2956.05, 251.16, 22, 115], ["2026-08-24", 99, 2248.7, 89, 10, 2085.01, 163.69, 13, 85], ["2026-08-25", 77, 1816.16, 72, 5, 1731.52, 84.64, 22, 55], ["2026-08-26", 64, 1498.49, 62, 2, 1469.28, 29.21, 18, 45], ["2026-08-27", 86, 1935.0, 79, 7, 1834.4, 100.6, 28, 57], ["2026-08-28", 89, 2099.31, 84, 5, 2008.91, 90.4, 15, 73], ["2026-08-29", 67, 1550.41, 57, 10, 1374.11, 176.3, 14, 53], ["2026-08-30", 94, 2193.0, 84, 10, 2020.4, 172.6, 14, 80], ["2026-08-31", 52, 1171.78, 47, 5, 1089.35, 82.43, 10, 41], ["2026-09-01", 77, 1811.89, 69, 8, 1671.65, 140.24, 20, 54], ["2026-09-02", 74, 1742.42, 67, 7, 1616.8, 125.62, 16, 57], ["2026-09-03", 66, 1481.97, 62, 4, 1413.32, 68.65, 18, 44], ["2026-09-04", 85, 1891.57, 78, 7, 1773.74, 117.83, 28, 55], ["2026-09-05", 95, 2267.5, 86, 9, 2117.87, 149.63, 20, 75], ["2026-09-06", 125, 2951.6, 106, 19, 2616.61, 334.99, 26, 98], ["2026-09-07", 113, 2690.44, 105, 8, 2546.7, 143.74, 27, 84], ["2026-09-08", 53, 1164.22, 47, 6, 1070.36, 93.86, 14, 37], ["2026-09-09", 46, 992.55, 45, 1, 974.54, 18.01, 13, 32], ["2026-09-10", 61, 1384.97, 50, 11, 1184.07, 200.9, 12, 48], ["2026-09-11", 59, 1290.59, 53, 6, 1202.6, 87.99, 18, 37], ["2026-09-12", 55, 1278.23, 47, 8, 1141.42, 136.81, 15, 39], ["2026-09-13", 53, 1278.81, 50, 3, 1222.58, 56.23, 12, 41], ["2026-09-14", 47, 1000.25, 47, 0, 1000.25, 0.0, 9, 37], ["2026-09-15", 51, 1138.62, 51, 0, 1138.62, 0.0, 16, 33], ["2026-09-16", 54, 1232.13, 54, 0, 1232.13, 0.0, 13, 41], ["2026-09-17", 52, 1271.16, 52, 0, 1271.16, 0.0, 11, 41], ["2026-09-18", 52, 998.73, 52, 0, 998.73, 0.0, 13, 36], ["2026-09-19", 52, 1251.73, 52, 0, 1251.73, 0.0, 13, 36], ["2026-09-20", 102, 2445.88, 102, 0, 2445.88, 0.0, 19, 82], ["2026-09-21", 52, 1146.54, 52, 0, 1146.54, 0.0, 10, 42], ["2026-09-22", 49, 1106.82, 49, 0, 1106.82, 0.0, 10, 39], ["2026-09-23", 79, 1780.29, 79, 0, 1780.29, 0.0, 8, 71], ["2026-09-24", 37, 845.55, 37, 0, 845.55, 0.0, 7, 29], ["2026-09-25", 35, 834.84, 35, 0, 834.84, 0.0, 8, 27], ["2026-09-26", 48, 1121.76, 48, 0, 1121.76, 0.0, 11, 37], ["2026-09-27", 46, 1099.1, 46, 0, 1099.1, 0.0, 8, 38], ["2026-09-28", 31, 720.56, 31, 0, 720.56, 0.0, 7, 23], ["2026-09-29", 47, 1140.18, 47, 0, 1140.18, 0.0, 7, 40], ["2026-09-30", 36, 763.14, 36, 0, 763.14, 0.0, 5, 31], ["2026-10-01", 27, 644.54, 27, 0, 644.54, 0.0, 6, 21], ["2026-10-02", 28, 579.36, 28, 0, 579.36, 0.0, 6, 21], ["2026-10-03", 37, 884.59, 37, 0, 884.59, 0.0, 10, 27], ["2026-10-04", 34, 870.24, 34, 0, 870.24, 0.0, 7, 27], ["2026-10-05", 27, 604.98, 27, 0, 604.98, 0.0, 12, 14], ["2026-10-06", 20, 439.54, 20, 0, 439.54, 0.0, 2, 18], ["2026-10-07", 19, 405.09, 19, 0, 405.09, 0.0, 2, 17], ["2026-10-08", 29, 570.44, 29, 0, 570.44, 0.0, 7, 22], ["2026-10-09", 23, 457.89, 22, 1, 440.77, 17.12, 3, 19], ["2026-10-10", 52, 1116.33, 45, 7, 1023.21, 93.12, 5, 46], ["2026-10-11", 73, 1636.74, 67, 6, 1544.7, 92.04, 6, 67], ["2026-10-12", 33, 762.68, 31, 2, 734.88, 27.8, 5, 27], ["2026-10-13", 26, 581.76, 24, 2, 548.38, 33.38, 3, 23], ["2026-10-14", 21, 485.86, 20, 1, 468.15, 17.71, 2, 19], ["2026-10-15", 27, 463.69, 26, 1, 463.69, 0.0, 3, 24], ["2026-10-16", 19, 394.3, 17, 2, 378.93, 15.37, 4, 15], ["2026-10-17", 30, 709.14, 26, 4, 637.26, 71.88, 3, 27], ["2026-10-18", 29, 713.9, 27, 2, 679.53, 34.37, 3, 25], ["2026-10-19", 16, 372.31, 16, 0, 372.31, 0.0, 3, 13], ["2026-10-20", 26, 596.82, 24, 2, 561.33, 35.49, 1, 23], ["2026-10-21", 30, 693.47, 29, 1, 675.23, 18.24, 2, 28], ["2026-10-22", 32, 697.77, 31, 1, 679.51, 18.26, 3, 29], ["2026-10-23", 35, 826.7, 33, 2, 790.15, 36.55, 4, 30], ["2026-10-24", 24, 581.93, 23, 1, 563.57, 18.36, 1, 23], ["2026-10-25", 36, 883.1, 35, 1, 868.41, 14.69, 6, 30], ["2026-10-26", 41, 951.29, 41, 0, 951.29, 0.0, 4, 33], ["2026-10-27", 22, 495.27, 22, 0, 495.27, 0.0, 3, 19], ["2026-10-28", 33, 803.23, 31, 2, 766.61, 36.62, 6, 26], ["2026-10-29", 24, 564.56, 23, 1, 546.27, 18.29, 3, 20], ["2026-10-30", 25, 576.23, 24, 1, 561.45, 14.78, 3, 22], ["2026-10-31", 26, 625.62, 26, 0, 625.62, 0.0, 4, 21], ["2026-11-01", 40, 991.68, 38, 2, 955.16, 36.52, 4, 36], ["2026-11-02", 26, 587.79, 23, 3, 533.8, 53.99, 10, 16], ["2026-11-03", 33, 732.89, 32, 1, 715.31, 17.58, 2, 31], ["2026-11-04", 21, 484.93, 21, 0, 484.93, 0.0, 3, 18], ["2026-11-05", 13, 271.5, 11, 2, 234.54, 36.96, 1, 12], ["2026-11-06", 24, 533.84, 22, 2, 500.6, 33.24, 4, 18], ["2026-11-07", 31, 729.19, 31, 0, 729.19, 0.0, 5, 25], ["2026-11-08", 22, 529.56, 21, 1, 512.45, 17.11, 2, 20], ["2026-11-09", 21, 391.78, 21, 0, 391.78, 0.0, 6, 15], ["2026-11-10", 9, 219.66, 9, 0, 219.66, 0.0, 0, 9], ["2026-11-11", 13, 297.0, 13, 0, 297.0, 0.0, 2, 11]]
       },
       "planBySku": {
-        "TVG7220": [["2026-08-18", 107], ["2026-08-19", 75], ["2026-08-20", 76], ["2026-08-21", 70], ["2026-08-22", 84], ["2026-08-23", 77], ["2026-08-24", 55], ["2026-08-25", 59], ["2026-08-26", 70], ["2026-08-27", 54], ["2026-08-28", 51], ["2026-08-29", 80], ["2026-08-30", 55], ["2026-08-31", 41], ["2026-09-01", 43], ["2026-09-02", 52], ["2026-09-03", 41], ["2026-09-04", 38], ["2026-09-05", 60], ["2026-09-06", 55], ["2026-09-07", 41], ["2026-09-08", 33], ["2026-09-09", 31], ["2026-09-10", 32], ["2026-09-11", 30], ["2026-09-12", 36], ["2026-09-13", 34], ["2026-09-14", 25], ["2026-09-15", 26], ["2026-09-16", 33], ["2026-09-17", 26], ["2026-09-18", 24], ["2026-09-19", 31], ["2026-09-20", 28], ["2026-09-21", 20], ["2026-09-22", 23], ["2026-09-23", 21], ["2026-09-24", 23], ["2026-09-25", 21], ["2026-09-26", 26], ["2026-09-27", 24], ["2026-09-28", 18], ["2026-09-29", 20], ["2026-09-30", 19], ["2026-10-01", 20], ["2026-10-02", 19], ["2026-10-03", 23], ["2026-10-04", 22], ["2026-10-05", 16], ["2026-10-06", 19], ["2026-10-07", 22], ["2026-10-08", 18], ["2026-10-09", 17], ["2026-10-10", 22], ["2026-10-11", 20], ["2026-10-12", 16], ["2026-10-13", 17], ["2026-10-14", 16], ["2026-10-15", 17], ["2026-10-16", 17], ["2026-10-17", 20], ["2026-10-18", 19], ["2026-10-19", 15], ["2026-10-20", 16], ["2026-10-21", 16], ["2026-10-22", 16], ["2026-10-23", 16], ["2026-10-24", 20], ["2026-10-25", 19], ["2026-10-26", 14], ["2026-10-27", 16], ["2026-10-28", 15], ["2026-10-29", 16], ["2026-10-30", 15], ["2026-10-31", 19], ["2026-11-01", 19], ["2026-11-02", 14], ["2026-11-03", 15], ["2026-11-04", 19], ["2026-11-05", 16], ["2026-11-06", 15], ["2026-11-07", 19], ["2026-11-08", 18], ["2026-11-09", 14], ["2026-11-10", 15]],
-        "TVG7230": [["2026-08-18", 268], ["2026-08-19", 188], ["2026-08-20", 190], ["2026-08-21", 176], ["2026-08-22", 210], ["2026-08-23", 191], ["2026-08-24", 140], ["2026-08-25", 146], ["2026-08-26", 175], ["2026-08-27", 137], ["2026-08-28", 128], ["2026-08-29", 198], ["2026-08-30", 139], ["2026-08-31", 103], ["2026-09-01", 108], ["2026-09-02", 130], ["2026-09-03", 102], ["2026-09-04", 96], ["2026-09-05", 150], ["2026-09-06", 137], ["2026-09-07", 102], ["2026-09-08", 83], ["2026-09-09", 78], ["2026-09-10", 79], ["2026-09-11", 75], ["2026-09-12", 91], ["2026-09-13", 84], ["2026-09-14", 63], ["2026-09-15", 67], ["2026-09-16", 82], ["2026-09-17", 65], ["2026-09-18", 61], ["2026-09-19", 76], ["2026-09-20", 70], ["2026-09-21", 52], ["2026-09-22", 57], ["2026-09-23", 53], ["2026-09-24", 56], ["2026-09-25", 52], ["2026-09-26", 65], ["2026-09-27", 61], ["2026-09-28", 46], ["2026-09-29", 50], ["2026-09-30", 47], ["2026-10-01", 49], ["2026-10-02", 48], ["2026-10-03", 58], ["2026-10-04", 55], ["2026-10-05", 42], ["2026-10-06", 45], ["2026-10-07", 56], ["2026-10-08", 45], ["2026-10-09", 44], ["2026-10-10", 54], ["2026-10-11", 51], ["2026-10-12", 39], ["2026-10-13", 42], ["2026-10-14", 41], ["2026-10-15", 43], ["2026-10-16", 41], ["2026-10-17", 51], ["2026-10-18", 49], ["2026-10-19", 37], ["2026-10-20", 40], ["2026-10-21", 39], ["2026-10-22", 41], ["2026-10-23", 40], ["2026-10-24", 49], ["2026-10-25", 47], ["2026-10-26", 36], ["2026-10-27", 39], ["2026-10-28", 38], ["2026-10-29", 40], ["2026-10-30", 39], ["2026-10-31", 48], ["2026-11-01", 46], ["2026-11-02", 35], ["2026-11-03", 38], ["2026-11-04", 49], ["2026-11-05", 39], ["2026-11-06", 38], ["2026-11-07", 47], ["2026-11-08", 46], ["2026-11-09", 34], ["2026-11-10", 38]],
-        "TVG7260": [["2026-08-18", 52], ["2026-08-19", 37], ["2026-08-20", 37], ["2026-08-21", 35], ["2026-08-22", 41], ["2026-08-23", 37], ["2026-08-24", 27], ["2026-08-25", 29], ["2026-08-26", 34], ["2026-08-27", 27], ["2026-08-28", 25], ["2026-08-29", 38], ["2026-08-30", 28], ["2026-08-31", 19], ["2026-09-01", 22], ["2026-09-02", 25], ["2026-09-03", 20], ["2026-09-04", 19], ["2026-09-05", 29], ["2026-09-06", 27], ["2026-09-07", 20], ["2026-09-08", 16], ["2026-09-09", 15], ["2026-09-10", 16], ["2026-09-11", 14], ["2026-09-12", 18], ["2026-09-13", 16], ["2026-09-14", 13], ["2026-09-15", 13], ["2026-09-16", 16], ["2026-09-17", 12], ["2026-09-18", 12], ["2026-09-19", 15], ["2026-09-20", 14], ["2026-09-21", 10], ["2026-09-22", 11], ["2026-09-23", 11], ["2026-09-24", 10], ["2026-09-25", 11], ["2026-09-26", 12], ["2026-09-27", 12], ["2026-09-28", 9], ["2026-09-29", 10], ["2026-09-30", 9], ["2026-10-01", 10], ["2026-10-02", 9], ["2026-10-03", 11], ["2026-10-04", 11], ["2026-10-05", 8], ["2026-10-06", 9], ["2026-10-07", 11], ["2026-10-08", 9], ["2026-10-09", 8], ["2026-10-10", 11], ["2026-10-11", 10], ["2026-10-12", 8], ["2026-10-13", 8], ["2026-10-14", 8], ["2026-10-15", 8], ["2026-10-16", 8], ["2026-10-17", 10], ["2026-10-18", 10], ["2026-10-19", 7], ["2026-10-20", 8], ["2026-10-21", 7], ["2026-10-22", 8], ["2026-10-23", 8], ["2026-10-24", 10], ["2026-10-25", 9], ["2026-10-26", 7], ["2026-10-27", 8], ["2026-10-28", 7], ["2026-10-29", 8], ["2026-10-30", 7], ["2026-10-31", 10], ["2026-11-01", 9], ["2026-11-02", 7], ["2026-11-03", 7], ["2026-11-04", 10], ["2026-11-05", 7], ["2026-11-06", 8], ["2026-11-07", 9], ["2026-11-08", 9], ["2026-11-09", 6], ["2026-11-10", 8]],
-        "TVG7250": [["2026-08-18", 161], ["2026-08-19", 113], ["2026-08-20", 114], ["2026-08-21", 106], ["2026-08-22", 126], ["2026-08-23", 115], ["2026-08-24", 83], ["2026-08-25", 88], ["2026-08-26", 106], ["2026-08-27", 82], ["2026-08-28", 76], ["2026-08-29", 120], ["2026-08-30", 83], ["2026-08-31", 62], ["2026-09-01", 65], ["2026-09-02", 78], ["2026-09-03", 61], ["2026-09-04", 57], ["2026-09-05", 91], ["2026-09-06", 82], ["2026-09-07", 61], ["2026-09-08", 50], ["2026-09-09", 47], ["2026-09-10", 48], ["2026-09-11", 45], ["2026-09-12", 54], ["2026-09-13", 51], ["2026-09-14", 38], ["2026-09-15", 40], ["2026-09-16", 49], ["2026-09-17", 39], ["2026-09-18", 37], ["2026-09-19", 45], ["2026-09-20", 42], ["2026-09-21", 32], ["2026-09-22", 34], ["2026-09-23", 32], ["2026-09-24", 33], ["2026-09-25", 32], ["2026-09-26", 39], ["2026-09-27", 36], ["2026-09-28", 28], ["2026-09-29", 30], ["2026-09-30", 28], ["2026-10-01", 30], ["2026-10-02", 28], ["2026-10-03", 35], ["2026-10-04", 33], ["2026-10-05", 25], ["2026-10-06", 27], ["2026-10-07", 34], ["2026-10-08", 27], ["2026-10-09", 26], ["2026-10-10", 33], ["2026-10-11", 31], ["2026-10-12", 23], ["2026-10-13", 25], ["2026-10-14", 25], ["2026-10-15", 25], ["2026-10-16", 25], ["2026-10-17", 31], ["2026-10-18", 29], ["2026-10-19", 22], ["2026-10-20", 25], ["2026-10-21", 23], ["2026-10-22", 25], ["2026-10-23", 23], ["2026-10-24", 30], ["2026-10-25", 28], ["2026-10-26", 22], ["2026-10-27", 24], ["2026-10-28", 22], ["2026-10-29", 24], ["2026-10-30", 23], ["2026-10-31", 29], ["2026-11-01", 28], ["2026-11-02", 21], ["2026-11-03", 23], ["2026-11-04", 29], ["2026-11-05", 24], ["2026-11-06", 23], ["2026-11-07", 28], ["2026-11-08", 27], ["2026-11-09", 21], ["2026-11-10", 23]],
-        "TVG7240": [["2026-08-18", 268], ["2026-08-19", 188], ["2026-08-20", 190], ["2026-08-21", 176], ["2026-08-22", 210], ["2026-08-23", 191], ["2026-08-24", 140], ["2026-08-25", 146], ["2026-08-26", 175], ["2026-08-27", 137], ["2026-08-28", 128], ["2026-08-29", 198], ["2026-08-30", 139], ["2026-08-31", 103], ["2026-09-01", 108], ["2026-09-02", 130], ["2026-09-03", 102], ["2026-09-04", 96], ["2026-09-05", 150], ["2026-09-06", 137], ["2026-09-07", 102], ["2026-09-08", 83], ["2026-09-09", 78], ["2026-09-10", 79], ["2026-09-11", 75], ["2026-09-12", 91], ["2026-09-13", 84], ["2026-09-14", 63], ["2026-09-15", 67], ["2026-09-16", 82], ["2026-09-17", 65], ["2026-09-18", 61], ["2026-09-19", 76], ["2026-09-20", 70], ["2026-09-21", 52], ["2026-09-22", 57], ["2026-09-23", 53], ["2026-09-24", 56], ["2026-09-25", 52], ["2026-09-26", 65], ["2026-09-27", 61], ["2026-09-28", 46], ["2026-09-29", 50], ["2026-09-30", 47], ["2026-10-01", 49], ["2026-10-02", 48], ["2026-10-03", 58], ["2026-10-04", 55], ["2026-10-05", 42], ["2026-10-06", 45], ["2026-10-07", 56], ["2026-10-08", 45], ["2026-10-09", 44], ["2026-10-10", 54], ["2026-10-11", 51], ["2026-10-12", 39], ["2026-10-13", 42], ["2026-10-14", 41], ["2026-10-15", 43], ["2026-10-16", 41], ["2026-10-17", 51], ["2026-10-18", 49], ["2026-10-19", 37], ["2026-10-20", 40], ["2026-10-21", 39], ["2026-10-22", 41], ["2026-10-23", 40], ["2026-10-24", 49], ["2026-10-25", 47], ["2026-10-26", 36], ["2026-10-27", 39], ["2026-10-28", 38], ["2026-10-29", 40], ["2026-10-30", 39], ["2026-10-31", 48], ["2026-11-01", 46], ["2026-11-02", 35], ["2026-11-03", 38], ["2026-11-04", 49], ["2026-11-05", 39], ["2026-11-06", 38], ["2026-11-07", 47], ["2026-11-08", 46], ["2026-11-09", 34], ["2026-11-10", 38]]
+        "TVG7220": [["2026-08-18", 107], ["2026-08-19", 75], ["2026-08-20", 76], ["2026-08-21", 70], ["2026-08-22", 84], ["2026-08-23", 77], ["2026-08-24", 55], ["2026-08-25", 59], ["2026-08-26", 70], ["2026-08-27", 54], ["2026-08-28", 51], ["2026-08-29", 80], ["2026-08-30", 55], ["2026-08-31", 41], ["2026-09-01", 43], ["2026-09-02", 52], ["2026-09-03", 41], ["2026-09-04", 38], ["2026-09-05", 60], ["2026-09-06", 55], ["2026-09-07", 41], ["2026-09-08", 33], ["2026-09-09", 31], ["2026-09-10", 32], ["2026-09-11", 30], ["2026-09-12", 36], ["2026-09-13", 34], ["2026-09-14", 25], ["2026-09-15", 26], ["2026-09-16", 33], ["2026-09-17", 26], ["2026-09-18", 24], ["2026-09-19", 31], ["2026-09-20", 28], ["2026-09-21", 20], ["2026-09-22", 23], ["2026-09-23", 21], ["2026-09-24", 23], ["2026-09-25", 21], ["2026-09-26", 26], ["2026-09-27", 24], ["2026-09-28", 18], ["2026-09-29", 20], ["2026-09-30", 19], ["2026-10-01", 20], ["2026-10-02", 19], ["2026-10-03", 23], ["2026-10-04", 22], ["2026-10-05", 16], ["2026-10-06", 19], ["2026-10-07", 22], ["2026-10-08", 18], ["2026-10-09", 17], ["2026-10-10", 22], ["2026-10-11", 20], ["2026-10-12", 16], ["2026-10-13", 17], ["2026-10-14", 16], ["2026-10-15", 17], ["2026-10-16", 17], ["2026-10-17", 20], ["2026-10-18", 19], ["2026-10-19", 15], ["2026-10-20", 16], ["2026-10-21", 16], ["2026-10-22", 16], ["2026-10-23", 16], ["2026-10-24", 20], ["2026-10-25", 19], ["2026-10-26", 14], ["2026-10-27", 16], ["2026-10-28", 15], ["2026-10-29", 16], ["2026-10-30", 15], ["2026-10-31", 19], ["2026-11-01", 19], ["2026-11-02", 14], ["2026-11-03", 15], ["2026-11-04", 19], ["2026-11-05", 16], ["2026-11-06", 15], ["2026-11-07", 19], ["2026-11-08", 18], ["2026-11-09", 14], ["2026-11-10", 15], ["2026-11-11", 15]],
+        "TVG7250": [["2026-08-18", 161], ["2026-08-19", 113], ["2026-08-20", 114], ["2026-08-21", 106], ["2026-08-22", 126], ["2026-08-23", 115], ["2026-08-24", 83], ["2026-08-25", 88], ["2026-08-26", 106], ["2026-08-27", 82], ["2026-08-28", 76], ["2026-08-29", 120], ["2026-08-30", 83], ["2026-08-31", 62], ["2026-09-01", 65], ["2026-09-02", 78], ["2026-09-03", 61], ["2026-09-04", 57], ["2026-09-05", 91], ["2026-09-06", 82], ["2026-09-07", 61], ["2026-09-08", 50], ["2026-09-09", 47], ["2026-09-10", 48], ["2026-09-11", 45], ["2026-09-12", 54], ["2026-09-13", 51], ["2026-09-14", 38], ["2026-09-15", 40], ["2026-09-16", 49], ["2026-09-17", 39], ["2026-09-18", 37], ["2026-09-19", 45], ["2026-09-20", 42], ["2026-09-21", 32], ["2026-09-22", 34], ["2026-09-23", 32], ["2026-09-24", 33], ["2026-09-25", 32], ["2026-09-26", 39], ["2026-09-27", 36], ["2026-09-28", 28], ["2026-09-29", 30], ["2026-09-30", 28], ["2026-10-01", 30], ["2026-10-02", 28], ["2026-10-03", 35], ["2026-10-04", 33], ["2026-10-05", 25], ["2026-10-06", 27], ["2026-10-07", 34], ["2026-10-08", 27], ["2026-10-09", 26], ["2026-10-10", 33], ["2026-10-11", 31], ["2026-10-12", 23], ["2026-10-13", 25], ["2026-10-14", 25], ["2026-10-15", 25], ["2026-10-16", 25], ["2026-10-17", 31], ["2026-10-18", 29], ["2026-10-19", 22], ["2026-10-20", 25], ["2026-10-21", 23], ["2026-10-22", 25], ["2026-10-23", 23], ["2026-10-24", 30], ["2026-10-25", 28], ["2026-10-26", 22], ["2026-10-27", 24], ["2026-10-28", 22], ["2026-10-29", 24], ["2026-10-30", 23], ["2026-10-31", 29], ["2026-11-01", 28], ["2026-11-02", 21], ["2026-11-03", 23], ["2026-11-04", 29], ["2026-11-05", 24], ["2026-11-06", 23], ["2026-11-07", 28], ["2026-11-08", 27], ["2026-11-09", 21], ["2026-11-10", 23], ["2026-11-11", 22]],
+        "TVG7260": [["2026-08-18", 52], ["2026-08-19", 37], ["2026-08-20", 37], ["2026-08-21", 35], ["2026-08-22", 41], ["2026-08-23", 37], ["2026-08-24", 27], ["2026-08-25", 29], ["2026-08-26", 34], ["2026-08-27", 27], ["2026-08-28", 25], ["2026-08-29", 38], ["2026-08-30", 28], ["2026-08-31", 19], ["2026-09-01", 22], ["2026-09-02", 25], ["2026-09-03", 20], ["2026-09-04", 19], ["2026-09-05", 29], ["2026-09-06", 27], ["2026-09-07", 20], ["2026-09-08", 16], ["2026-09-09", 15], ["2026-09-10", 16], ["2026-09-11", 14], ["2026-09-12", 18], ["2026-09-13", 16], ["2026-09-14", 13], ["2026-09-15", 13], ["2026-09-16", 16], ["2026-09-17", 12], ["2026-09-18", 12], ["2026-09-19", 15], ["2026-09-20", 14], ["2026-09-21", 10], ["2026-09-22", 11], ["2026-09-23", 11], ["2026-09-24", 10], ["2026-09-25", 11], ["2026-09-26", 12], ["2026-09-27", 12], ["2026-09-28", 9], ["2026-09-29", 10], ["2026-09-30", 9], ["2026-10-01", 10], ["2026-10-02", 9], ["2026-10-03", 11], ["2026-10-04", 11], ["2026-10-05", 8], ["2026-10-06", 9], ["2026-10-07", 11], ["2026-10-08", 9], ["2026-10-09", 8], ["2026-10-10", 11], ["2026-10-11", 10], ["2026-10-12", 8], ["2026-10-13", 8], ["2026-10-14", 8], ["2026-10-15", 8], ["2026-10-16", 8], ["2026-10-17", 10], ["2026-10-18", 10], ["2026-10-19", 7], ["2026-10-20", 8], ["2026-10-21", 7], ["2026-10-22", 8], ["2026-10-23", 8], ["2026-10-24", 10], ["2026-10-25", 9], ["2026-10-26", 7], ["2026-10-27", 8], ["2026-10-28", 7], ["2026-10-29", 8], ["2026-10-30", 7], ["2026-10-31", 10], ["2026-11-01", 9], ["2026-11-02", 7], ["2026-11-03", 7], ["2026-11-04", 10], ["2026-11-05", 7], ["2026-11-06", 8], ["2026-11-07", 9], ["2026-11-08", 9], ["2026-11-09", 6], ["2026-11-10", 8], ["2026-11-11", 7]],
+        "TVG7240": [["2026-08-18", 268], ["2026-08-19", 188], ["2026-08-20", 190], ["2026-08-21", 176], ["2026-08-22", 210], ["2026-08-23", 191], ["2026-08-24", 140], ["2026-08-25", 146], ["2026-08-26", 175], ["2026-08-27", 137], ["2026-08-28", 128], ["2026-08-29", 198], ["2026-08-30", 139], ["2026-08-31", 103], ["2026-09-01", 108], ["2026-09-02", 130], ["2026-09-03", 102], ["2026-09-04", 96], ["2026-09-05", 150], ["2026-09-06", 137], ["2026-09-07", 102], ["2026-09-08", 83], ["2026-09-09", 78], ["2026-09-10", 79], ["2026-09-11", 75], ["2026-09-12", 91], ["2026-09-13", 84], ["2026-09-14", 63], ["2026-09-15", 67], ["2026-09-16", 82], ["2026-09-17", 65], ["2026-09-18", 61], ["2026-09-19", 76], ["2026-09-20", 70], ["2026-09-21", 52], ["2026-09-22", 57], ["2026-09-23", 53], ["2026-09-24", 56], ["2026-09-25", 52], ["2026-09-26", 65], ["2026-09-27", 61], ["2026-09-28", 46], ["2026-09-29", 50], ["2026-09-30", 47], ["2026-10-01", 49], ["2026-10-02", 48], ["2026-10-03", 58], ["2026-10-04", 55], ["2026-10-05", 42], ["2026-10-06", 45], ["2026-10-07", 56], ["2026-10-08", 45], ["2026-10-09", 44], ["2026-10-10", 54], ["2026-10-11", 51], ["2026-10-12", 39], ["2026-10-13", 42], ["2026-10-14", 41], ["2026-10-15", 43], ["2026-10-16", 41], ["2026-10-17", 51], ["2026-10-18", 49], ["2026-10-19", 37], ["2026-10-20", 40], ["2026-10-21", 39], ["2026-10-22", 41], ["2026-10-23", 40], ["2026-10-24", 49], ["2026-10-25", 47], ["2026-10-26", 36], ["2026-10-27", 39], ["2026-10-28", 38], ["2026-10-29", 40], ["2026-10-30", 39], ["2026-10-31", 48], ["2026-11-01", 46], ["2026-11-02", 35], ["2026-11-03", 38], ["2026-11-04", 49], ["2026-11-05", 39], ["2026-11-06", 38], ["2026-11-07", 47], ["2026-11-08", 46], ["2026-11-09", 34], ["2026-11-10", 38], ["2026-11-11", 37]],
+        "TVG7230": [["2026-08-18", 268], ["2026-08-19", 188], ["2026-08-20", 190], ["2026-08-21", 176], ["2026-08-22", 210], ["2026-08-23", 191], ["2026-08-24", 140], ["2026-08-25", 146], ["2026-08-26", 175], ["2026-08-27", 137], ["2026-08-28", 128], ["2026-08-29", 198], ["2026-08-30", 139], ["2026-08-31", 103], ["2026-09-01", 108], ["2026-09-02", 130], ["2026-09-03", 102], ["2026-09-04", 96], ["2026-09-05", 150], ["2026-09-06", 137], ["2026-09-07", 102], ["2026-09-08", 83], ["2026-09-09", 78], ["2026-09-10", 79], ["2026-09-11", 75], ["2026-09-12", 91], ["2026-09-13", 84], ["2026-09-14", 63], ["2026-09-15", 67], ["2026-09-16", 82], ["2026-09-17", 65], ["2026-09-18", 61], ["2026-09-19", 76], ["2026-09-20", 70], ["2026-09-21", 52], ["2026-09-22", 57], ["2026-09-23", 53], ["2026-09-24", 56], ["2026-09-25", 52], ["2026-09-26", 65], ["2026-09-27", 61], ["2026-09-28", 46], ["2026-09-29", 50], ["2026-09-30", 47], ["2026-10-01", 49], ["2026-10-02", 48], ["2026-10-03", 58], ["2026-10-04", 55], ["2026-10-05", 42], ["2026-10-06", 45], ["2026-10-07", 56], ["2026-10-08", 45], ["2026-10-09", 44], ["2026-10-10", 54], ["2026-10-11", 51], ["2026-10-12", 39], ["2026-10-13", 42], ["2026-10-14", 41], ["2026-10-15", 43], ["2026-10-16", 41], ["2026-10-17", 51], ["2026-10-18", 49], ["2026-10-19", 37], ["2026-10-20", 40], ["2026-10-21", 39], ["2026-10-22", 41], ["2026-10-23", 40], ["2026-10-24", 49], ["2026-10-25", 47], ["2026-10-26", 36], ["2026-10-27", 39], ["2026-10-28", 38], ["2026-10-29", 40], ["2026-10-30", 39], ["2026-10-31", 48], ["2026-11-01", 46], ["2026-11-02", 35], ["2026-11-03", 38], ["2026-11-04", 49], ["2026-11-05", 39], ["2026-11-06", 38], ["2026-11-07", 47], ["2026-11-08", 46], ["2026-11-09", 34], ["2026-11-10", 38], ["2026-11-11", 37]]
       },
       "pdp": [
         {
@@ -5250,7 +5288,7 @@ window.DASHBOARD_DATA = {
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
-          "pairs": 65
+          "pairs": 66
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
@@ -5278,13 +5316,13 @@ window.DASHBOARD_DATA = {
           "pairs": 55
         },
         {
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
+          "sku": "TVG558",
           "pairs": 48
         },
         {
-          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
-          "sku": "TVG558",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 48
         }
       ],
@@ -5333,14 +5371,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7220",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
+          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
+          "sku": "TVG558",
           "pairs": 6
         },
         {
           "primarySku": "TVG7220",
-          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
-          "sku": "TVG558",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6620",
           "pairs": 6
         },
         {
@@ -5353,7 +5391,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG7230",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 20
+          "pairs": 21
         },
         {
           "primarySku": "TVG7230",
@@ -5459,21 +5497,21 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7240",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
+          "product": "Infinity Waterproof\u2122 Liquid Eyeliner Pen",
+          "sku": "TVG315",
           "pairs": 10
         },
         {
           "primarySku": "TVG7240",
-          "product": "Infinity Waterproof\u2122 Liquid Eyeliner Pen",
-          "sku": "TVG315",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 10
         },
         {
           "primarySku": "TVG7250",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 80
+          "pairs": 79
         },
         {
           "primarySku": "TVG7250",
@@ -5485,7 +5523,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG7250",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
-          "pairs": 31
+          "pairs": 32
         },
         {
           "primarySku": "TVG7250",
@@ -5521,7 +5559,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG7250",
           "product": "Focus Eyeshadow\u2122 Palette",
           "sku": "TVG6700",
-          "pairs": 20
+          "pairs": 19
         },
         {
           "primarySku": "TVG7250",
@@ -5537,14 +5575,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7260",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2840",
           "pairs": 9
         },
         {
           "primarySku": "TVG7260",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2840",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 9
         },
         {
@@ -5552,6 +5590,18 @@ window.DASHBOARD_DATA = {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG181",
           "pairs": 8
+        },
+        {
+          "primarySku": "TVG7260",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG453",
+          "pairs": 7
+        },
+        {
+          "primarySku": "TVG7260",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG6620",
+          "pairs": 7
         },
         {
           "primarySku": "TVG7260",
@@ -5567,46 +5617,34 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7260",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG448",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG7260",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG532",
           "pairs": 6
         },
         {
           "primarySku": "TVG7260",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
-          "pairs": 6
-        },
-        {
-          "primarySku": "TVG7260",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG453",
-          "pairs": 6
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6740",
+          "pairs": 5
         }
       ],
       "categoryCustomers": {
         "category": "Lip",
-        "total": 33451,
-        "existingCategory": 20767,
-        "newToCategory": 12684,
+        "total": 33565,
+        "existingCategory": 20843,
+        "newToCategory": 12722,
         "byVariant": [
-          {
-            "sku": "TVG7240",
-            "name": "Liliana",
-            "newToCategory": 3340,
-            "existingCategory": 6759
-          },
           {
             "sku": "TVG7260",
             "name": "Leslie",
-            "newToCategory": 1536,
-            "existingCategory": 2898
+            "newToCategory": 1538,
+            "existingCategory": 2908
+          },
+          {
+            "sku": "TVG7250",
+            "name": "Daniella",
+            "newToCategory": 6199,
+            "existingCategory": 9952
           },
           {
             "sku": "TVG7220",
@@ -5615,19 +5653,19 @@ window.DASHBOARD_DATA = {
             "existingCategory": 3605
           },
           {
-            "sku": "TVG7250",
-            "name": "Daniella",
-            "newToCategory": 6172,
-            "existingCategory": 9914
+            "sku": "TVG7240",
+            "name": "Liliana",
+            "newToCategory": 3353,
+            "existingCategory": 6784
           },
           {
             "sku": "TVG7230",
             "name": "Li",
-            "newToCategory": 1977,
-            "existingCategory": 3083
+            "newToCategory": 1983,
+            "existingCategory": 3099
           }
         ],
-        "daily": [["2026-08-18", 575, 1966], ["2026-08-19", 277, 620], ["2026-08-20", 225, 542], ["2026-08-21", 263, 398], ["2026-08-22", 283, 545], ["2026-08-23", 337, 686], ["2026-08-24", 239, 518], ["2026-08-25", 250, 387], ["2026-08-26", 214, 342], ["2026-08-27", 230, 291], ["2026-08-28", 290, 432], ["2026-08-29", 244, 370], ["2026-08-30", 305, 468], ["2026-08-31", 188, 290], ["2026-09-01", 207, 279], ["2026-09-02", 277, 350], ["2026-09-03", 246, 275], ["2026-09-04", 266, 303], ["2026-09-05", 322, 405], ["2026-09-06", 327, 544], ["2026-09-07", 425, 541], ["2026-09-08", 201, 221], ["2026-09-09", 162, 234], ["2026-09-10", 177, 216], ["2026-09-11", 201, 246], ["2026-09-12", 177, 236], ["2026-09-13", 244, 328], ["2026-09-14", 122, 161], ["2026-09-15", 120, 127], ["2026-09-16", 99, 148], ["2026-09-17", 118, 141], ["2026-09-18", 112, 139], ["2026-09-19", 117, 138], ["2026-09-20", 161, 257], ["2026-09-21", 103, 145], ["2026-09-22", 116, 175], ["2026-09-23", 123, 213], ["2026-09-24", 157, 247], ["2026-09-25", 189, 192], ["2026-09-26", 193, 281], ["2026-09-27", 210, 262], ["2026-09-28", 141, 173], ["2026-09-29", 173, 246], ["2026-09-30", 136, 214], ["2026-10-01", 155, 163], ["2026-10-02", 129, 160], ["2026-10-03", 133, 190], ["2026-10-04", 118, 235], ["2026-10-05", 92, 136], ["2026-10-06", 87, 121], ["2026-10-07", 93, 162], ["2026-10-08", 94, 171], ["2026-10-09", 117, 159], ["2026-10-10", 141, 297], ["2026-10-11", 201, 454], ["2026-10-12", 86, 135], ["2026-10-13", 78, 110], ["2026-10-14", 76, 154], ["2026-10-15", 95, 158], ["2026-10-16", 84, 155], ["2026-10-17", 122, 233], ["2026-10-18", 134, 262], ["2026-10-19", 75, 163], ["2026-10-20", 71, 135], ["2026-10-21", 72, 138], ["2026-10-22", 73, 168], ["2026-10-23", 72, 141], ["2026-10-24", 77, 214], ["2026-10-25", 94, 223], ["2026-10-26", 81, 213], ["2026-10-27", 81, 168], ["2026-10-28", 93, 163], ["2026-10-29", 75, 139], ["2026-10-30", 82, 135], ["2026-10-31", 76, 147], ["2026-11-01", 102, 248], ["2026-11-02", 87, 135], ["2026-11-03", 67, 165], ["2026-11-04", 84, 167], ["2026-11-05", 68, 123], ["2026-11-06", 67, 102], ["2026-11-07", 93, 162], ["2026-11-08", 75, 137], ["2026-11-09", 65, 113], ["2026-11-10", 37, 96]]
+        "daily": [["2026-08-18", 575, 1966], ["2026-08-19", 277, 620], ["2026-08-20", 225, 542], ["2026-08-21", 263, 398], ["2026-08-22", 283, 545], ["2026-08-23", 337, 686], ["2026-08-24", 239, 518], ["2026-08-25", 250, 387], ["2026-08-26", 214, 342], ["2026-08-27", 230, 291], ["2026-08-28", 290, 432], ["2026-08-29", 244, 370], ["2026-08-30", 305, 468], ["2026-08-31", 188, 290], ["2026-09-01", 207, 279], ["2026-09-02", 277, 350], ["2026-09-03", 246, 275], ["2026-09-04", 266, 303], ["2026-09-05", 322, 405], ["2026-09-06", 327, 544], ["2026-09-07", 425, 541], ["2026-09-08", 201, 221], ["2026-09-09", 161, 234], ["2026-09-10", 177, 216], ["2026-09-11", 201, 246], ["2026-09-12", 177, 236], ["2026-09-13", 244, 328], ["2026-09-14", 122, 161], ["2026-09-15", 120, 127], ["2026-09-16", 99, 148], ["2026-09-17", 118, 141], ["2026-09-18", 112, 139], ["2026-09-19", 117, 138], ["2026-09-20", 161, 257], ["2026-09-21", 103, 145], ["2026-09-22", 116, 175], ["2026-09-23", 123, 213], ["2026-09-24", 157, 247], ["2026-09-25", 189, 192], ["2026-09-26", 193, 281], ["2026-09-27", 210, 262], ["2026-09-28", 141, 173], ["2026-09-29", 173, 246], ["2026-09-30", 136, 214], ["2026-10-01", 155, 163], ["2026-10-02", 129, 160], ["2026-10-03", 133, 190], ["2026-10-04", 118, 235], ["2026-10-05", 92, 136], ["2026-10-06", 87, 121], ["2026-10-07", 93, 162], ["2026-10-08", 94, 171], ["2026-10-09", 117, 159], ["2026-10-10", 141, 297], ["2026-10-11", 201, 454], ["2026-10-12", 86, 135], ["2026-10-13", 78, 110], ["2026-10-14", 76, 154], ["2026-10-15", 95, 158], ["2026-10-16", 83, 155], ["2026-10-17", 122, 233], ["2026-10-18", 134, 262], ["2026-10-19", 75, 163], ["2026-10-20", 71, 135], ["2026-10-21", 72, 138], ["2026-10-22", 73, 168], ["2026-10-23", 72, 141], ["2026-10-24", 77, 214], ["2026-10-25", 94, 223], ["2026-10-26", 81, 213], ["2026-10-27", 81, 168], ["2026-10-28", 93, 163], ["2026-10-29", 75, 139], ["2026-10-30", 82, 135], ["2026-10-31", 76, 147], ["2026-11-01", 101, 247], ["2026-11-02", 87, 135], ["2026-11-03", 67, 165], ["2026-11-04", 84, 167], ["2026-11-05", 67, 122], ["2026-11-06", 67, 102], ["2026-11-07", 93, 162], ["2026-11-08", 75, 137], ["2026-11-09", 65, 113], ["2026-11-10", 37, 96], ["2026-11-11", 47, 88]]
       }
     },
     {
@@ -5640,40 +5678,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "7 Shades \u00b7 Blush & Highlighter Stick \u00b7 Reformulation",
       "accent": "#C4577A",
       "summary": {
-        "netSales": 739391.26,
-        "units": 23358,
-        "orders": 20449,
-        "aov": 36.16,
-        "newCustomers": 3334,
-        "retCustomers": 16476,
-        "totalCustomers": 19810,
+        "netSales": 746145.65,
+        "units": 23567,
+        "orders": 20629,
+        "aov": 36.17,
+        "newCustomers": 3363,
+        "retCustomers": 16617,
+        "totalCustomers": 19980,
         "newPct": 16.8,
         "retPct": 83.2,
         "planUnits": null,
         "pctToPlanUnits": null,
-        "subscriptionOrders": 510,
-        "subscriptionUnits": 521,
-        "subscriptionRevenue": 18756.0,
-        "newCustomerRevenue": 115266.08,
-        "retCustomerRevenue": 624125.18,
+        "subscriptionOrders": 513,
+        "subscriptionUnits": 524,
+        "subscriptionRevenue": 18864.0,
+        "newCustomerRevenue": 116230.62,
+        "retCustomerRevenue": 629915.03,
         "pdpViews": 274476,
         "pdpAtcRate": 13.5,
         "pdpCvr": 5.1
       },
       "regions": {
         "us": {
-          "units": 22519,
-          "netSales": 720782.12,
-          "orders": 19695
+          "units": 22721,
+          "netSales": 727389.35,
+          "orders": 19868
         },
         "ca": {
-          "units": 839,
-          "netSales": 18609.14,
-          "orders": 754
+          "units": 846,
+          "netSales": 18756.3,
+          "orders": 761
         }
       },
       "trafficStart": "2026-08-26",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [
           {
@@ -5825,70 +5863,70 @@ window.DASHBOARD_DATA = {
           {
             "month": "Aug 2026",
             "chs": {
-              "Paid Search": 63046,
-              "Referral": 4167,
-              "Affiliates": 1,
-              "Display": 868,
-              "Organic Shopping": 8717,
-              "Organic Social": 21091,
-              "Email": 94404,
-              "Paid Shopping": 20023,
-              "Cross-network": 33271,
-              "Paid Video": 338,
-              "SMS": 58835,
-              "Unassigned": 63475,
               "Paid Social": 261401,
-              "Organic Video": 11,
+              "Paid Shopping": 20023,
               "Paid Other": 113235,
+              "Display": 868,
+              "Cross-network": 33271,
+              "Organic Video": 11,
+              "Organic Shopping": 8717,
+              "Organic Search": 19384,
+              "Paid Video": 338,
+              "Unassigned": 63475,
               "Direct": 89238,
+              "Referral": 4167,
+              "SMS": 58835,
+              "Paid Search": 63046,
+              "Email": 94404,
               "AI Assistant": 406,
-              "Organic Search": 19384
+              "Affiliates": 1,
+              "Organic Social": 21091
             }
           },
           {
             "month": "Sep 2026",
             "chs": {
-              "SMS": 291683,
-              "Direct": 615318,
-              "Organic Video": 194,
-              "Unassigned": 330771,
-              "Organic Shopping": 48938,
-              "Referral": 18265,
-              "Paid Shopping": 94490,
-              "Email": 404147,
-              "Paid Social": 1682636,
-              "Display": 5981,
-              "Cross-network": 151323,
-              "AI Assistant": 2015,
-              "Paid Search": 349895,
-              "Organic Social": 84396,
-              "Paid Other": 488068,
-              "Organic Search": 90187,
               "Paid Video": 2889,
+              "Email": 404147,
+              "Organic Shopping": 48938,
+              "Cross-network": 151323,
+              "Organic Social": 84396,
+              "Paid Shopping": 94490,
+              "Organic Search": 90187,
+              "Unassigned": 330771,
+              "Paid Social": 1682636,
+              "SMS": 291683,
+              "Display": 5981,
+              "AI Assistant": 2015,
+              "Paid Other": 488068,
+              "Organic Video": 194,
+              "Paid Search": 349895,
+              "Referral": 18265,
+              "Direct": 615318,
               "Affiliates": 11
             }
           },
           {
             "month": "Oct 2026",
             "chs": {
-              "Referral": 3235,
-              "Affiliates": 3,
-              "Email": 91272,
-              "Organic Search": 46032,
-              "Organic Social": 9693,
-              "Display": 531,
-              "Direct": 134575,
-              "Paid Search": 32782,
               "Organic Video": 62,
-              "Unassigned": 66436,
-              "Cross-network": 10091,
               "SMS": 50837,
-              "Paid Video": 244,
-              "Paid Other": 14086,
-              "AI Assistant": 560,
+              "Paid Search": 32782,
+              "Display": 531,
+              "Referral": 3235,
               "Paid Shopping": 14993,
-              "Paid Social": 312761,
-              "Organic Shopping": 5550
+              "Organic Shopping": 5550,
+              "Organic Search": 46032,
+              "Affiliates": 3,
+              "Paid Other": 14086,
+              "Unassigned": 66436,
+              "AI Assistant": 560,
+              "Paid Video": 244,
+              "Organic Social": 9693,
+              "Direct": 134575,
+              "Cross-network": 10091,
+              "Email": 91272,
+              "Paid Social": 312761
             }
           }
         ]
@@ -5897,18 +5935,18 @@ window.DASHBOARD_DATA = {
         {
           "label": "Triple Threat Blush Stick (com)",
           "page": "thrivecausemetics.com/products/triple-threat-blush-stick",
-          "pageviews": 429771,
-          "sessions": 92809,
-          "txns": 3248,
-          "rev": 234998.1,
+          "pageviews": 432943,
+          "sessions": 93781,
+          "txns": 3265,
+          "rev": 236709.64,
           "eng": 34.8,
-          "cvr": 3.5
+          "cvr": 3.48
         },
         {
           "label": "Triple Threat Blush Stick Duo (com)",
           "page": "thrivecausemetics.com/products/triple-threat-blush-stick-duo",
-          "pageviews": 90136,
-          "sessions": 29798,
+          "pageviews": 90149,
+          "sessions": 29819,
           "txns": 1059,
           "rev": 76030.71,
           "eng": 0.7,
@@ -5917,38 +5955,38 @@ window.DASHBOARD_DATA = {
         {
           "label": "Triple Threat Bronzer Stick (com)",
           "page": "thrivecausemetics.com/products/triple-threat-bronzer-stick",
-          "pageviews": 37904,
-          "sessions": 8072,
-          "txns": 343,
-          "rev": 32681.52,
-          "eng": 31.7,
-          "cvr": 4.25
+          "pageviews": 38348,
+          "sessions": 8152,
+          "txns": 348,
+          "rev": 33203.55,
+          "eng": 31.8,
+          "cvr": 4.27
         },
         {
           "label": "Triple Threat Highlighter Stick (com)",
           "page": "thrivecausemetics.com/products/triple-threat-highlighter-stick",
-          "pageviews": 26153,
-          "sessions": 5357,
-          "txns": 280,
-          "rev": 23643.78,
-          "eng": 33.1,
-          "cvr": 5.23
+          "pageviews": 26523,
+          "sessions": 5452,
+          "txns": 283,
+          "rev": 23903.38,
+          "eng": 33.2,
+          "cvr": 5.19
         },
         {
           "label": "Triple Threat\u2122 Blush Stick (ca)",
           "page": "thrivecausemetics.ca/products/triple-threat\u2122-blush-stick",
-          "pageviews": 13337,
-          "sessions": 3928,
+          "pageviews": 13353,
+          "sessions": 3938,
           "txns": 101,
           "rev": 7584.34,
           "eng": 1.9,
-          "cvr": 2.57
+          "cvr": 2.56
         },
         {
           "label": "Triple Threat Blush Stick New Form (com)",
           "page": "thrivecausemetics.com/pages/triple-threat-blush-stick-new-formula",
-          "pageviews": 3827,
-          "sessions": 963,
+          "pageviews": 3830,
+          "sessions": 965,
           "txns": 6,
           "rev": 1350.27,
           "eng": 33.0,
@@ -5958,7 +5996,7 @@ window.DASHBOARD_DATA = {
           "label": "Triple Threat Color Stick Trio Bli (com)",
           "page": "thrivecausemetics.com/products/triple-threat-color-stick-trio-blister-on-card",
           "pageviews": 910,
-          "sessions": 525,
+          "sessions": 526,
           "txns": 1,
           "rev": 69.68,
           "eng": 0.6,
@@ -5967,22 +6005,22 @@ window.DASHBOARD_DATA = {
         {
           "label": "Triple Threat\u2122 Color Stick Duo (ca)",
           "page": "thrivecausemetics.ca/products/triple-threat\u2122-color-stick-duo",
-          "pageviews": 1845,
-          "sessions": 458,
+          "pageviews": 1846,
+          "sessions": 459,
           "txns": 13,
           "rev": 1199.52,
           "eng": 1.3,
-          "cvr": 2.84
+          "cvr": 2.83
         },
         {
           "label": "Triple Threat Bronzer Stick (ca)",
           "page": "thrivecausemetics.ca/products/triple-threat-bronzer-stick",
-          "pageviews": 815,
-          "sessions": 375,
+          "pageviews": 824,
+          "sessions": 378,
           "txns": 10,
           "rev": 836.37,
-          "eng": 1.3,
-          "cvr": 2.67
+          "eng": 1.6,
+          "cvr": 2.65
         },
         {
           "label": "Triple Threat Color Stick Maggie K (com)",
@@ -6008,34 +6046,34 @@ window.DASHBOARD_DATA = {
           "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Dusty Rose",
           "color": "#C4736F",
-          "netSales": 351226.28,
-          "units": 10887,
-          "orders": 10622,
-          "newCustomers": 1842,
-          "retCustomers": 8616,
-          "usUnits": 10482,
-          "caUnits": 405,
-          "usNetSales": 342236.99,
-          "caNetSales": 8989.29,
+          "netSales": 354287.55,
+          "units": 10981,
+          "orders": 10710,
+          "newCustomers": 1854,
+          "retCustomers": 8691,
+          "usUnits": 10572,
+          "caUnits": 409,
+          "usNetSales": 345217.38,
+          "caNetSales": 9070.17,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 20136,
-          "runRateUnitsPerDay": 107.71,
-          "daysToOOS": 186,
-          "estOOSDate": "2027-05-15",
-          "usInventoryUnits": 19431,
-          "caInventoryUnits": 705,
-          "usRunRateUnitsPerDay": 104.29,
-          "caRunRateUnitsPerDay": 3.43,
-          "usDaysToOOS": 186,
-          "caDaysToOOS": 205,
-          "usEstOOSDate": "2027-05-15",
-          "caEstOOSDate": "2027-06-03",
+          "inventoryUnits": 20048,
+          "runRateUnitsPerDay": 102.29,
+          "daysToOOS": 195,
+          "estOOSDate": "2027-05-25",
+          "usInventoryUnits": 19347,
+          "caInventoryUnits": 701,
+          "usRunRateUnitsPerDay": 99.57,
+          "caRunRateUnitsPerDay": 2.71,
+          "usDaysToOOS": 194,
+          "caDaysToOOS": 258,
+          "usEstOOSDate": "2027-05-24",
+          "caEstOOSDate": "2027-07-27",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 26.7,
+          "weeksOfStock": 28.0,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -6045,34 +6083,34 @@ window.DASHBOARD_DATA = {
           "product": "Triple Threat\u2122 Highlighter Stick",
           "shade": "Gold Shimmer \u00b7 Highlighter",
           "color": "#D4AF63",
-          "netSales": 119218.44,
-          "units": 3857,
-          "orders": 3762,
-          "newCustomers": 612,
-          "retCustomers": 3090,
-          "usUnits": 3719,
-          "caUnits": 138,
-          "usNetSales": 116114.19,
-          "caNetSales": 3104.25,
+          "netSales": 120401.1,
+          "units": 3894,
+          "orders": 3798,
+          "newCustomers": 620,
+          "retCustomers": 3115,
+          "usUnits": 3754,
+          "caUnits": 140,
+          "usNetSales": 117251.91,
+          "caNetSales": 3149.19,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 14749,
-          "runRateUnitsPerDay": 42.0,
-          "daysToOOS": 351,
-          "estOOSDate": "2027-10-27",
-          "usInventoryUnits": 14215,
-          "caInventoryUnits": 534,
-          "usRunRateUnitsPerDay": 40.71,
-          "caRunRateUnitsPerDay": 1.29,
-          "usDaysToOOS": 349,
-          "caDaysToOOS": 413,
-          "usEstOOSDate": "2027-10-25",
-          "caEstOOSDate": "2027-12-28",
+          "inventoryUnits": 14722,
+          "runRateUnitsPerDay": 41.0,
+          "daysToOOS": 359,
+          "estOOSDate": "2027-11-05",
+          "usInventoryUnits": 14190,
+          "caInventoryUnits": 532,
+          "usRunRateUnitsPerDay": 40.0,
+          "caRunRateUnitsPerDay": 1.0,
+          "usDaysToOOS": 354,
+          "caDaysToOOS": 532,
+          "usEstOOSDate": "2027-10-31",
+          "caEstOOSDate": "2028-04-26",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 50.2,
+          "weeksOfStock": 51.3,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -6082,34 +6120,34 @@ window.DASHBOARD_DATA = {
           "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Rosy Plum",
           "color": "#A9436B",
-          "netSales": 102357.37,
-          "units": 3255,
-          "orders": 3218,
-          "newCustomers": 511,
-          "retCustomers": 2655,
-          "usUnits": 3133,
-          "caUnits": 122,
-          "usNetSales": 99692.13,
-          "caNetSales": 2665.24,
+          "netSales": 103723.94,
+          "units": 3297,
+          "orders": 3260,
+          "newCustomers": 515,
+          "retCustomers": 2691,
+          "usUnits": 3174,
+          "caUnits": 123,
+          "usNetSales": 101037.37,
+          "caNetSales": 2686.57,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 4532,
-          "runRateUnitsPerDay": 32.86,
-          "daysToOOS": 137,
-          "estOOSDate": "2027-03-27",
-          "usInventoryUnits": 4211,
+          "inventoryUnits": 4497,
+          "runRateUnitsPerDay": 33.71,
+          "daysToOOS": 133,
+          "estOOSDate": "2027-03-24",
+          "usInventoryUnits": 4176,
           "caInventoryUnits": 321,
-          "usRunRateUnitsPerDay": 32.0,
-          "caRunRateUnitsPerDay": 0.86,
-          "usDaysToOOS": 131,
-          "caDaysToOOS": 373,
-          "usEstOOSDate": "2027-03-21",
-          "caEstOOSDate": "2027-11-18",
+          "usRunRateUnitsPerDay": 32.71,
+          "caRunRateUnitsPerDay": 1.0,
+          "usDaysToOOS": 127,
+          "caDaysToOOS": 321,
+          "usEstOOSDate": "2027-03-18",
+          "caEstOOSDate": "2027-09-28",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 19.7,
+          "weeksOfStock": 19.1,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -6119,34 +6157,34 @@ window.DASHBOARD_DATA = {
           "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Rich Berry",
           "color": "#8E2F5B",
-          "netSales": 50852.17,
-          "units": 1647,
-          "orders": 1624,
-          "newCustomers": 275,
-          "retCustomers": 1330,
-          "usUnits": 1604,
+          "netSales": 51363.37,
+          "units": 1665,
+          "orders": 1639,
+          "newCustomers": 281,
+          "retCustomers": 1339,
+          "usUnits": 1622,
           "caUnits": 43,
-          "usNetSales": 49911.23,
+          "usNetSales": 50422.43,
           "caNetSales": 940.94,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 4435,
-          "runRateUnitsPerDay": 16.14,
-          "daysToOOS": 274,
-          "estOOSDate": "2027-08-11",
-          "usInventoryUnits": 4205,
+          "inventoryUnits": 4418,
+          "runRateUnitsPerDay": 16.57,
+          "daysToOOS": 266,
+          "estOOSDate": "2027-08-04",
+          "usInventoryUnits": 4188,
           "caInventoryUnits": 230,
-          "usRunRateUnitsPerDay": 16.0,
+          "usRunRateUnitsPerDay": 16.43,
           "caRunRateUnitsPerDay": 0.14,
-          "usDaysToOOS": 262,
+          "usDaysToOOS": 254,
           "caDaysToOOS": 1642,
-          "usEstOOSDate": "2027-07-30",
-          "caEstOOSDate": "2031-05-10",
+          "usEstOOSDate": "2027-07-23",
+          "caEstOOSDate": "2031-05-11",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 39.3,
+          "weeksOfStock": 38.1,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -6156,34 +6194,34 @@ window.DASHBOARD_DATA = {
           "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Bright Pink Petal",
           "color": "#E8709A",
-          "netSales": 46494.67,
-          "units": 1500,
-          "orders": 1464,
-          "newCustomers": 215,
-          "retCustomers": 1220,
-          "usUnits": 1442,
+          "netSales": 46632.71,
+          "units": 1504,
+          "orders": 1468,
+          "newCustomers": 216,
+          "retCustomers": 1223,
+          "usUnits": 1446,
           "caUnits": 58,
-          "usNetSales": 45194.56,
+          "usNetSales": 45332.6,
           "caNetSales": 1300.11,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 7988,
-          "runRateUnitsPerDay": 8.57,
-          "daysToOOS": 932,
-          "estOOSDate": "2029-05-30",
-          "usInventoryUnits": 7702,
+          "inventoryUnits": 7983,
+          "runRateUnitsPerDay": 7.29,
+          "daysToOOS": 1095,
+          "estOOSDate": "2029-11-10",
+          "usInventoryUnits": 7697,
           "caInventoryUnits": 286,
-          "usRunRateUnitsPerDay": 8.29,
-          "caRunRateUnitsPerDay": 0.29,
-          "usDaysToOOS": 929,
-          "caDaysToOOS": 986,
-          "usEstOOSDate": "2029-05-27",
-          "caEstOOSDate": "2029-07-23",
+          "usRunRateUnitsPerDay": 7.14,
+          "caRunRateUnitsPerDay": 0.14,
+          "usDaysToOOS": 1078,
+          "caDaysToOOS": 2042,
+          "usEstOOSDate": "2029-10-24",
+          "caEstOOSDate": "2032-06-14",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 133.2,
+          "weeksOfStock": 156.4,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -6193,34 +6231,34 @@ window.DASHBOARD_DATA = {
           "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Soft Coral",
           "color": "#E8886B",
-          "netSales": 43349.76,
-          "units": 1381,
-          "orders": 1356,
-          "newCustomers": 226,
-          "retCustomers": 1108,
-          "usUnits": 1328,
+          "netSales": 43742.05,
+          "units": 1392,
+          "orders": 1366,
+          "newCustomers": 228,
+          "retCustomers": 1116,
+          "usUnits": 1339,
           "caUnits": 53,
-          "usNetSales": 42154.87,
+          "usNetSales": 42547.16,
           "caNetSales": 1194.89,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 4600,
-          "runRateUnitsPerDay": 9.71,
-          "daysToOOS": 473,
-          "estOOSDate": "2028-02-26",
-          "usInventoryUnits": 4107,
+          "inventoryUnits": 4589,
+          "runRateUnitsPerDay": 10.29,
+          "daysToOOS": 445,
+          "estOOSDate": "2028-01-30",
+          "usInventoryUnits": 4096,
           "caInventoryUnits": 493,
-          "usRunRateUnitsPerDay": 9.14,
-          "caRunRateUnitsPerDay": 0.57,
-          "usDaysToOOS": 449,
-          "caDaysToOOS": 864,
-          "usEstOOSDate": "2028-02-02",
-          "caEstOOSDate": "2029-03-23",
+          "usRunRateUnitsPerDay": 9.86,
+          "caRunRateUnitsPerDay": 0.43,
+          "usDaysToOOS": 415,
+          "caDaysToOOS": 1146,
+          "usEstOOSDate": "2027-12-31",
+          "caEstOOSDate": "2029-12-31",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 67.7,
+          "weeksOfStock": 63.7,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -6230,34 +6268,34 @@ window.DASHBOARD_DATA = {
           "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Brick Red",
           "color": "#9E3B2E",
-          "netSales": 25892.58,
-          "units": 831,
-          "orders": 802,
-          "newCustomers": 98,
-          "retCustomers": 689,
-          "usUnits": 811,
+          "netSales": 25994.93,
+          "units": 834,
+          "orders": 805,
+          "newCustomers": 99,
+          "retCustomers": 691,
+          "usUnits": 814,
           "caUnits": 20,
-          "usNetSales": 25478.15,
+          "usNetSales": 25580.5,
           "caNetSales": 414.43,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 8286,
-          "runRateUnitsPerDay": 8.43,
-          "daysToOOS": 982,
-          "estOOSDate": "2029-07-19",
-          "usInventoryUnits": 7811,
+          "inventoryUnits": 8280,
+          "runRateUnitsPerDay": 7.57,
+          "daysToOOS": 1093,
+          "estOOSDate": "2029-11-08",
+          "usInventoryUnits": 7805,
           "caInventoryUnits": 475,
-          "usRunRateUnitsPerDay": 8.43,
+          "usRunRateUnitsPerDay": 7.57,
           "caRunRateUnitsPerDay": 0.0,
-          "usDaysToOOS": 926,
+          "usDaysToOOS": 1031,
           "caDaysToOOS": null,
-          "usEstOOSDate": "2029-05-24",
+          "usEstOOSDate": "2029-09-07",
           "caEstOOSDate": null,
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 140.4,
+          "weeksOfStock": 156.3,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         }
@@ -6268,12 +6306,12 @@ window.DASHBOARD_DATA = {
           {
             "key": "pairing:TVG2840",
             "title": "Most common basket pairing: Liquid Lash\u2122 Extensions Tubing Mascara",
-            "detail": "378 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+            "detail": "382 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
           },
           {
             "key": "new-to-category",
             "title": "53% of buyers are new to Triple Threat",
-            "detail": "10,555 of 19,811 buyers had not purchased this category before."
+            "detail": "10,632 of 19,981 buyers had not purchased this category before."
           }
         ]
       },
@@ -6880,18 +6918,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-10-05",
-          "units": 189,
-          "netSales": 6197.51,
-          "usUnits": 184,
+          "units": 188,
+          "netSales": 6166.91,
+          "usUnits": 183,
           "caUnits": 5,
-          "usNetSales": 6086.4,
+          "usNetSales": 6055.8,
           "caNetSales": 111.11,
-          "cumUnits": 13888,
-          "cumSales": 437388.52,
+          "cumUnits": 13887,
+          "cumSales": 437357.92,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 27,
-          "retCustomers": 136
+          "retCustomers": 135
         },
         {
           "date": "2026-10-06",
@@ -6901,8 +6939,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 9,
           "usNetSales": 6736.27,
           "caNetSales": 206.16,
-          "cumUnits": 14101,
-          "cumSales": 444330.95,
+          "cumUnits": 14100,
+          "cumSales": 444300.35,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 20,
@@ -6916,8 +6954,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 7107.24,
           "caNetSales": 158.21,
-          "cumUnits": 14345,
-          "cumSales": 451596.4,
+          "cumUnits": 14344,
+          "cumSales": 451565.8,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 37,
@@ -6931,8 +6969,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 7964.96,
           "caNetSales": 106.39,
-          "cumUnits": 14600,
-          "cumSales": 459667.75,
+          "cumUnits": 14599,
+          "cumSales": 459637.15,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 41,
@@ -6946,8 +6984,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 6361.77,
           "caNetSales": 46.1,
-          "cumUnits": 14810,
-          "cumSales": 466075.62,
+          "cumUnits": 14809,
+          "cumSales": 466045.02,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 46,
@@ -6961,8 +6999,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 29,
           "usNetSales": 16574.12,
           "caNetSales": 594.35,
-          "cumUnits": 15357,
-          "cumSales": 483244.09,
+          "cumUnits": 15356,
+          "cumSales": 483213.49,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 67,
@@ -6976,8 +7014,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 33,
           "usNetSales": 29001.86,
           "caNetSales": 700.14,
-          "cumUnits": 16295,
-          "cumSales": 512946.09,
+          "cumUnits": 16294,
+          "cumSales": 512915.49,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 114,
@@ -6991,8 +7029,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 6764.25,
           "caNetSales": 139.01,
-          "cumUnits": 16508,
-          "cumSales": 519849.35,
+          "cumUnits": 16507,
+          "cumSales": 519818.75,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 33,
@@ -7006,8 +7044,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 5121.11,
           "caNetSales": 109.33,
-          "cumUnits": 16675,
-          "cumSales": 525079.79,
+          "cumUnits": 16674,
+          "cumSales": 525049.19,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 34,
@@ -7021,8 +7059,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 11,
           "usNetSales": 7411.04,
           "caNetSales": 245.43,
-          "cumUnits": 16913,
-          "cumSales": 532736.26,
+          "cumUnits": 16912,
+          "cumSales": 532705.66,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 32,
@@ -7036,8 +7074,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 5162.28,
           "caNetSales": 61.78,
-          "cumUnits": 17113,
-          "cumSales": 537960.32,
+          "cumUnits": 17112,
+          "cumSales": 537929.72,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 34,
@@ -7051,8 +7089,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 5469.83,
           "caNetSales": 93.0,
-          "cumUnits": 17302,
-          "cumSales": 543523.15,
+          "cumUnits": 17301,
+          "cumSales": 543492.55,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 39,
@@ -7066,8 +7104,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 18,
           "usNetSales": 11444.13,
           "caNetSales": 398.33,
-          "cumUnits": 17669,
-          "cumSales": 555365.61,
+          "cumUnits": 17668,
+          "cumSales": 555335.01,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 37,
@@ -7081,8 +7119,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 13,
           "usNetSales": 12251.9,
           "caNetSales": 291.76,
-          "cumUnits": 18051,
-          "cumSales": 567909.27,
+          "cumUnits": 18050,
+          "cumSales": 567878.67,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 49,
@@ -7096,8 +7134,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 5446.32,
           "caNetSales": 60.89,
-          "cumUnits": 18223,
-          "cumSales": 573416.48,
+          "cumUnits": 18222,
+          "cumSales": 573385.88,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 22,
@@ -7111,8 +7149,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 5824.01,
           "caNetSales": 187.38,
-          "cumUnits": 18419,
-          "cumSales": 579427.87,
+          "cumUnits": 18418,
+          "cumSales": 579397.27,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 23,
@@ -7126,8 +7164,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 5320.91,
           "caNetSales": 159.68,
-          "cumUnits": 18591,
-          "cumSales": 584908.46,
+          "cumUnits": 18590,
+          "cumSales": 584877.86,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 23,
@@ -7141,8 +7179,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 5143.93,
           "caNetSales": 133.71,
-          "cumUnits": 18762,
-          "cumSales": 590186.1,
+          "cumUnits": 18761,
+          "cumSales": 590155.5,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 27,
@@ -7156,8 +7194,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 13,
           "usNetSales": 6616.11,
           "caNetSales": 283.06,
-          "cumUnits": 18985,
-          "cumSales": 597085.27,
+          "cumUnits": 18984,
+          "cumSales": 597054.67,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 38,
@@ -7171,8 +7209,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 12276.96,
           "caNetSales": 269.13,
-          "cumUnits": 19370,
-          "cumSales": 609631.36,
+          "cumUnits": 19369,
+          "cumSales": 609600.76,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 62,
@@ -7186,8 +7224,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 18,
           "usNetSales": 10722.9,
           "caNetSales": 412.14,
-          "cumUnits": 19704,
-          "cumSales": 620766.4,
+          "cumUnits": 19703,
+          "cumSales": 620735.8,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 48,
@@ -7201,8 +7239,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 8647.08,
           "caNetSales": 88.08,
-          "cumUnits": 19976,
-          "cumSales": 629501.56,
+          "cumUnits": 19975,
+          "cumSales": 629470.96,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 28,
@@ -7216,8 +7254,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 6728.91,
           "caNetSales": 97.67,
-          "cumUnits": 20189,
-          "cumSales": 636328.14,
+          "cumUnits": 20188,
+          "cumSales": 636297.54,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 31,
@@ -7231,8 +7269,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 6931.16,
           "caNetSales": 19.51,
-          "cumUnits": 20399,
-          "cumSales": 643278.81,
+          "cumUnits": 20398,
+          "cumSales": 643248.21,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 32,
@@ -7246,8 +7284,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 6163.29,
           "caNetSales": 67.16,
-          "cumUnits": 20587,
-          "cumSales": 649509.26,
+          "cumUnits": 20586,
+          "cumSales": 649478.66,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 31,
@@ -7261,8 +7299,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 5832.43,
           "caNetSales": 24.57,
-          "cumUnits": 20776,
-          "cumSales": 655366.26,
+          "cumUnits": 20775,
+          "cumSales": 655335.66,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 31,
@@ -7276,8 +7314,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 7057.01,
           "caNetSales": 168.35,
-          "cumUnits": 20999,
-          "cumSales": 662591.62,
+          "cumUnits": 20998,
+          "cumSales": 662561.02,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 40,
@@ -7291,8 +7329,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 10625.33,
           "caNetSales": 142.56,
-          "cumUnits": 21318,
-          "cumSales": 673359.51,
+          "cumUnits": 21317,
+          "cumSales": 673328.91,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 38,
@@ -7306,8 +7344,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 7175.51,
           "caNetSales": 90.95,
-          "cumUnits": 21536,
-          "cumSales": 680625.97,
+          "cumUnits": 21535,
+          "cumSales": 680595.37,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 30,
@@ -7321,8 +7359,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 14,
           "usNetSales": 7567.77,
           "caNetSales": 308.9,
-          "cumUnits": 21780,
-          "cumSales": 688502.64,
+          "cumUnits": 21779,
+          "cumSales": 688472.04,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 32,
@@ -7336,8 +7374,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 15,
           "usNetSales": 7798.48,
           "caNetSales": 349.36,
-          "cumUnits": 22037,
-          "cumSales": 696650.48,
+          "cumUnits": 22036,
+          "cumSales": 696619.88,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 39,
@@ -7351,8 +7389,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 4,
           "usNetSales": 6703.31,
           "caNetSales": 87.0,
-          "cumUnits": 22248,
-          "cumSales": 703440.79,
+          "cumUnits": 22247,
+          "cumSales": 703410.19,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 35,
@@ -7366,8 +7404,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 6395.88,
           "caNetSales": 129.88,
-          "cumUnits": 22456,
-          "cumSales": 709966.55,
+          "cumUnits": 22455,
+          "cumSales": 709935.95,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 39,
@@ -7381,8 +7419,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 10,
           "usNetSales": 8223.23,
           "caNetSales": 231.45,
-          "cumUnits": 22719,
-          "cumSales": 718421.23,
+          "cumUnits": 22718,
+          "cumSales": 718390.63,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 43,
@@ -7396,8 +7434,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 6,
           "usNetSales": 7818.71,
           "caNetSales": 129.06,
-          "cumUnits": 22962,
-          "cumSales": 726369.0,
+          "cumUnits": 22961,
+          "cumSales": 726338.4,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 38,
@@ -7411,8 +7449,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 6707.44,
           "caNetSales": 45.85,
-          "cumUnits": 23166,
-          "cumSales": 733122.29,
+          "cumUnits": 23165,
+          "cumSales": 733091.69,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 31,
@@ -7426,12 +7464,27 @@ window.DASHBOARD_DATA = {
           "caUnits": 3,
           "usNetSales": 6203.88,
           "caNetSales": 65.05,
-          "cumUnits": 23358,
-          "cumSales": 739391.22,
+          "cumUnits": 23357,
+          "cumSales": 739360.62,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 31,
           "retCustomers": 143
+        },
+        {
+          "date": "2026-11-11",
+          "units": 210,
+          "netSales": 6784.98,
+          "usUnits": 203,
+          "caUnits": 7,
+          "usNetSales": 6637.83,
+          "caNetSales": 147.15,
+          "cumUnits": 23567,
+          "cumSales": 746145.6,
+          "planUnits": null,
+          "cumPlanUnits": null,
+          "newCustomers": 30,
+          "retCustomers": 151
         }
       ],
       "dailySkuColumns": [
@@ -7446,13 +7499,13 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TVG4880": [["2026-08-26", 42, 850.77, 42, 0, 850.77, 0.0, 2, 38], ["2026-08-27", 20, 604.86, 18, 2, 584.9, 19.96, 0, 20], ["2026-08-28", 11, 380.37, 11, 0, 380.37, 0.0, 2, 9], ["2026-08-29", 7, 236.18, 6, 1, 213.85, 22.33, 0, 7], ["2026-08-30", 21, 702.53, 21, 0, 702.53, 0.0, 3, 15], ["2026-08-31", 17, 530.74, 17, 0, 530.74, 0.0, 4, 12], ["2026-09-01", 12, 407.0, 12, 0, 407.0, 0.0, 1, 10], ["2026-09-02", 17, 546.77, 17, 0, 546.77, 0.0, 4, 12], ["2026-09-03", 8, 271.76, 8, 0, 271.76, 0.0, 2, 5], ["2026-09-04", 11, 369.15, 11, 0, 369.15, 0.0, 3, 8], ["2026-09-05", 16, 534.33, 15, 1, 509.89, 24.44, 0, 16], ["2026-09-06", 23, 792.06, 23, 0, 792.06, 0.0, 2, 18], ["2026-09-07", 35, 1153.75, 33, 2, 1108.63, 45.12, 5, 29], ["2026-09-08", 12, 333.28, 12, 0, 333.28, 0.0, 2, 8], ["2026-09-09", 6, 193.29, 6, 0, 193.29, 0.0, 2, 4], ["2026-09-10", 8, 240.86, 8, 0, 240.86, 0.0, 0, 8], ["2026-09-11", 9, 144.0, 9, 0, 144.0, 0.0, 0, 8], ["2026-09-12", 6, 213.5, 6, 0, 213.5, 0.0, 1, 5], ["2026-09-13", 12, 383.32, 10, 2, 352.95, 30.37, 1, 10], ["2026-09-14", 7, 206.75, 7, 0, 206.75, 0.0, 1, 6], ["2026-09-15", 10, 227.2, 10, 0, 227.2, 0.0, 2, 8], ["2026-09-16", 12, 414.52, 12, 0, 414.52, 0.0, 1, 10], ["2026-09-17", 8, 258.74, 7, 1, 234.0, 24.74, 2, 6], ["2026-09-18", 10, 250.72, 10, 0, 250.72, 0.0, 2, 7], ["2026-09-19", 6, 178.04, 6, 0, 178.04, 0.0, 2, 4], ["2026-09-20", 12, 346.9, 11, 1, 327.3, 19.6, 2, 10], ["2026-09-21", 4, 136.8, 4, 0, 136.8, 0.0, 1, 3], ["2026-09-22", 5, 164.89, 5, 0, 164.89, 0.0, 0, 5], ["2026-09-23", 11, 347.14, 10, 1, 322.77, 24.37, 1, 10], ["2026-09-24", 7, 198.91, 7, 0, 198.91, 0.0, 0, 7], ["2026-09-25", 6, 186.6, 6, 0, 186.6, 0.0, 2, 4], ["2026-09-26", 8, 274.83, 8, 0, 274.83, 0.0, 0, 8], ["2026-09-27", 12, 392.04, 10, 2, 345.6, 46.44, 2, 10], ["2026-09-28", 5, 171.15, 5, 0, 171.15, 0.0, 1, 4], ["2026-09-29", 10, 330.77, 10, 0, 330.77, 0.0, 2, 8], ["2026-09-30", 4, 128.07, 3, 1, 105.18, 22.89, 0, 4], ["2026-10-01", 4, 128.2, 4, 0, 128.2, 0.0, 1, 3], ["2026-10-02", 11, 225.59, 11, 0, 225.59, 0.0, 0, 11], ["2026-10-03", 8, 266.25, 8, 0, 266.25, 0.0, 0, 8], ["2026-10-04", 12, 398.5, 12, 0, 398.5, 0.0, 1, 10], ["2026-10-05", 8, 244.8, 8, 0, 244.8, 0.0, 2, 6], ["2026-10-06", 9, 293.81, 8, 1, 270.26, 23.55, 2, 7], ["2026-10-07", 7, 206.97, 7, 0, 206.97, 0.0, 0, 7], ["2026-10-08", 6, 202.8, 6, 0, 202.8, 0.0, 2, 4], ["2026-10-09", 8, 213.0, 8, 0, 213.0, 0.0, 1, 6], ["2026-10-10", 10, 318.6, 10, 0, 318.6, 0.0, 1, 9], ["2026-10-11", 36, 1110.07, 35, 1, 1091.47, 18.6, 2, 33], ["2026-10-12", 6, 192.33, 6, 0, 192.33, 0.0, 2, 4], ["2026-10-13", 7, 235.74, 7, 0, 235.74, 0.0, 0, 6], ["2026-10-14", 8, 271.44, 8, 0, 271.44, 0.0, 2, 6], ["2026-10-15", 9, 246.0, 9, 0, 246.0, 0.0, 1, 8], ["2026-10-16", 7, 237.57, 7, 0, 237.57, 0.0, 2, 5], ["2026-10-17", 14, 465.25, 14, 0, 465.25, 0.0, 0, 13], ["2026-10-18", 11, 360.89, 11, 0, 360.89, 0.0, 2, 9], ["2026-10-19", 11, 355.41, 11, 0, 355.41, 0.0, 1, 10], ["2026-10-20", 10, 280.22, 10, 0, 280.22, 0.0, 0, 10], ["2026-10-21", 9, 302.44, 9, 0, 302.44, 0.0, 1, 8], ["2026-10-22", 12, 387.46, 12, 0, 387.46, 0.0, 1, 11], ["2026-10-23", 6, 193.29, 5, 1, 168.92, 24.37, 2, 4], ["2026-10-24", 25, 782.27, 23, 2, 738.21, 44.06, 3, 21], ["2026-10-25", 11, 347.61, 10, 1, 324.02, 23.59, 1, 10], ["2026-10-26", 12, 408.87, 12, 0, 408.87, 0.0, 2, 8], ["2026-10-27", 6, 198.69, 6, 0, 198.69, 0.0, 1, 5], ["2026-10-28", 7, 240.47, 7, 0, 240.47, 0.0, 0, 7], ["2026-10-29", 4, 136.85, 4, 0, 136.85, 0.0, 0, 4], ["2026-10-30", 7, 232.0, 7, 0, 232.0, 0.0, 0, 6], ["2026-10-31", 5, 157.86, 5, 0, 157.86, 0.0, 1, 4], ["2026-11-01", 19, 665.79, 19, 0, 665.79, 0.0, 1, 17], ["2026-11-02", 6, 202.82, 6, 0, 202.82, 0.0, 0, 5], ["2026-11-03", 11, 356.02, 11, 0, 356.02, 0.0, 2, 7], ["2026-11-04", 9, 285.06, 9, 0, 285.06, 0.0, 1, 8], ["2026-11-05", 12, 396.36, 12, 0, 396.36, 0.0, 0, 12], ["2026-11-06", 7, 195.66, 7, 0, 195.66, 0.0, 3, 4], ["2026-11-07", 7, 222.67, 7, 0, 222.67, 0.0, 1, 6], ["2026-11-08", 8, 262.98, 8, 0, 262.98, 0.0, 0, 8], ["2026-11-09", 7, 247.49, 7, 0, 247.49, 0.0, 0, 7], ["2026-11-10", 9, 313.89, 9, 0, 313.89, 0.0, 1, 7]],
-        "TVG4900": [["2026-08-26", 72, 1867.24, 71, 1, 1843.68, 23.56, 7, 63], ["2026-08-27", 50, 1425.78, 50, 0, 1425.78, 0.0, 6, 44], ["2026-08-28", 41, 1251.35, 40, 1, 1228.94, 22.41, 8, 33], ["2026-08-29", 51, 1679.6, 50, 1, 1656.61, 22.99, 10, 39], ["2026-08-30", 104, 3327.31, 100, 4, 3237.19, 90.12, 9, 90], ["2026-08-31", 47, 1262.72, 47, 0, 1262.72, 0.0, 6, 41], ["2026-09-01", 41, 1338.09, 38, 3, 1273.26, 64.83, 7, 32], ["2026-09-02", 56, 1756.45, 56, 0, 1756.45, 0.0, 8, 48], ["2026-09-03", 33, 1114.85, 31, 2, 1065.37, 49.48, 2, 30], ["2026-09-04", 35, 1115.13, 35, 0, 1115.13, 0.0, 4, 30], ["2026-09-05", 75, 2400.02, 68, 7, 2241.23, 158.79, 12, 62], ["2026-09-06", 119, 3864.38, 109, 10, 3636.3, 228.08, 14, 103], ["2026-09-07", 146, 4825.76, 141, 5, 4721.48, 104.28, 16, 124], ["2026-09-08", 64, 1045.68, 64, 0, 1045.68, 0.0, 17, 45], ["2026-09-09", 35, 920.54, 34, 1, 895.37, 25.17, 9, 26], ["2026-09-10", 55, 1710.31, 52, 3, 1634.5, 75.81, 12, 43], ["2026-09-11", 60, 1472.33, 59, 1, 1449.7, 22.63, 16, 43], ["2026-09-12", 48, 1588.27, 44, 4, 1506.02, 82.25, 10, 38], ["2026-09-13", 76, 2573.76, 75, 1, 2548.77, 24.99, 9, 66], ["2026-09-14", 43, 1076.0, 39, 4, 993.8, 82.2, 6, 35], ["2026-09-15", 43, 1289.57, 43, 0, 1289.57, 0.0, 7, 35], ["2026-09-16", 44, 1418.57, 41, 3, 1347.77, 70.8, 9, 35], ["2026-09-17", 33, 1030.12, 32, 1, 1010.33, 19.79, 8, 24], ["2026-09-18", 45, 1080.91, 44, 1, 1056.4, 24.51, 14, 30], ["2026-09-19", 46, 1463.73, 44, 2, 1415.73, 48.0, 9, 36], ["2026-09-20", 80, 2544.16, 75, 5, 2423.33, 120.83, 16, 63], ["2026-09-21", 25, 814.18, 22, 3, 744.43, 69.75, 6, 19], ["2026-09-22", 40, 1277.61, 39, 1, 1253.18, 24.43, 6, 33], ["2026-09-23", 47, 1374.63, 45, 2, 1331.95, 42.68, 9, 38], ["2026-09-24", 40, 1231.15, 40, 0, 1231.15, 0.0, 4, 34], ["2026-09-25", 37, 1244.81, 37, 0, 1244.81, 0.0, 6, 31], ["2026-09-26", 55, 1823.95, 54, 1, 1802.39, 21.56, 9, 44], ["2026-09-27", 49, 1502.05, 48, 1, 1478.08, 23.97, 9, 38], ["2026-09-28", 28, 876.14, 24, 4, 788.52, 87.62, 5, 22], ["2026-09-29", 48, 1454.93, 44, 4, 1362.63, 92.3, 6, 42], ["2026-09-30", 39, 1269.12, 39, 0, 1269.12, 0.0, 6, 30], ["2026-10-01", 33, 914.97, 33, 0, 914.97, 0.0, 10, 21], ["2026-10-02", 38, 922.9, 38, 0, 922.9, 0.0, 4, 34], ["2026-10-03", 44, 1501.99, 44, 0, 1501.99, 0.0, 8, 35], ["2026-10-04", 53, 1734.58, 51, 2, 1690.08, 44.5, 5, 48], ["2026-10-05", 35, 1134.03, 34, 1, 1112.75, 21.28, 8, 27], ["2026-10-06", 32, 996.88, 28, 4, 904.08, 92.8, 4, 28], ["2026-10-07", 47, 1368.66, 46, 1, 1345.11, 23.55, 9, 34], ["2026-10-08", 44, 1288.4, 44, 0, 1288.4, 0.0, 4, 39], ["2026-10-09", 34, 937.27, 34, 0, 937.27, 0.0, 9, 23], ["2026-10-10", 91, 2907.08, 88, 3, 2838.84, 68.24, 11, 77], ["2026-10-11", 159, 5095.84, 152, 7, 4946.34, 149.5, 17, 136], ["2026-10-12", 37, 1238.71, 36, 1, 1215.11, 23.6, 8, 28], ["2026-10-13", 29, 929.42, 29, 0, 929.42, 0.0, 2, 27], ["2026-10-14", 44, 1400.12, 43, 1, 1377.84, 22.28, 6, 36], ["2026-10-15", 38, 745.75, 37, 1, 726.74, 19.01, 9, 27], ["2026-10-16", 34, 917.5, 34, 0, 917.5, 0.0, 9, 24], ["2026-10-17", 69, 2288.02, 68, 1, 2268.34, 19.68, 10, 57], ["2026-10-18", 78, 2617.09, 76, 2, 2573.77, 43.32, 4, 70], ["2026-10-19", 27, 781.99, 25, 2, 740.09, 41.9, 4, 22], ["2026-10-20", 39, 1161.71, 39, 0, 1161.71, 0.0, 7, 29], ["2026-10-21", 32, 986.77, 29, 3, 914.61, 72.16, 4, 28], ["2026-10-22", 26, 710.84, 22, 4, 620.96, 89.88, 8, 18], ["2026-10-23", 43, 1238.99, 38, 5, 1135.12, 103.87, 14, 27], ["2026-10-24", 69, 2238.93, 68, 1, 2217.7, 21.23, 13, 55], ["2026-10-25", 70, 2362.08, 68, 2, 2313.12, 48.96, 9, 61], ["2026-10-26", 47, 1508.28, 46, 1, 1488.69, 19.59, 2, 44], ["2026-10-27", 42, 1364.71, 41, 1, 1340.28, 24.43, 8, 34], ["2026-10-28", 31, 1046.9, 31, 0, 1046.9, 0.0, 4, 27], ["2026-10-29", 26, 881.71, 26, 0, 881.71, 0.0, 4, 22], ["2026-10-30", 37, 1094.48, 37, 0, 1094.48, 0.0, 9, 27], ["2026-10-31", 44, 1391.88, 39, 5, 1289.51, 102.37, 8, 35], ["2026-11-01", 61, 2001.85, 58, 3, 1933.03, 68.82, 6, 55], ["2026-11-02", 42, 1424.7, 41, 1, 1400.12, 24.58, 7, 32], ["2026-11-03", 38, 1215.43, 37, 1, 1190.79, 24.64, 4, 34], ["2026-11-04", 44, 1406.48, 40, 4, 1312.59, 93.89, 8, 32], ["2026-11-05", 43, 1432.22, 43, 0, 1432.22, 0.0, 8, 33], ["2026-11-06", 49, 1571.15, 47, 2, 1527.3, 43.85, 11, 35], ["2026-11-07", 45, 1425.48, 43, 2, 1377.11, 48.37, 9, 35], ["2026-11-08", 41, 1357.27, 40, 1, 1333.17, 24.1, 9, 32], ["2026-11-09", 40, 1339.06, 40, 0, 1339.06, 0.0, 6, 34], ["2026-11-10", 32, 1025.1, 32, 0, 1025.1, 0.0, 5, 26]],
-        "TVG4920": [["2026-08-26", 42, 827.21, 42, 0, 827.21, 0.0, 2, 39], ["2026-08-27", 17, 530.13, 16, 1, 510.17, 19.96, 1, 16], ["2026-08-28", 18, 560.15, 17, 1, 540.23, 19.92, 3, 15], ["2026-08-29", 15, 504.35, 15, 0, 504.35, 0.0, 2, 12], ["2026-08-30", 24, 750.32, 22, 2, 701.39, 48.93, 1, 22], ["2026-08-31", 19, 624.78, 18, 1, 605.81, 18.97, 3, 15], ["2026-09-01", 15, 507.6, 15, 0, 507.6, 0.0, 4, 10], ["2026-09-02", 17, 566.1, 17, 0, 566.1, 0.0, 3, 14], ["2026-09-03", 13, 438.61, 13, 0, 438.61, 0.0, 3, 10], ["2026-09-04", 11, 332.14, 11, 0, 332.14, 0.0, 3, 8], ["2026-09-05", 10, 337.39, 10, 0, 337.39, 0.0, 0, 10], ["2026-09-06", 18, 622.04, 17, 1, 596.97, 25.07, 1, 17], ["2026-09-07", 41, 1327.32, 40, 1, 1307.26, 20.06, 3, 38], ["2026-09-08", 11, 269.7, 11, 0, 269.7, 0.0, 2, 9], ["2026-09-09", 11, 258.3, 11, 0, 258.3, 0.0, 3, 8], ["2026-09-10", 11, 304.34, 11, 0, 304.34, 0.0, 4, 7], ["2026-09-11", 9, 229.45, 9, 0, 229.45, 0.0, 4, 5], ["2026-09-12", 11, 348.45, 11, 0, 348.45, 0.0, 1, 10], ["2026-09-13", 13, 427.52, 12, 1, 402.53, 24.99, 2, 11], ["2026-09-14", 12, 364.82, 11, 1, 345.77, 19.05, 2, 10], ["2026-09-15", 12, 333.47, 12, 0, 333.47, 0.0, 4, 8], ["2026-09-16", 12, 372.66, 11, 1, 347.88, 24.78, 0, 9], ["2026-09-17", 9, 258.28, 7, 2, 208.8, 49.48, 2, 7], ["2026-09-18", 11, 334.8, 11, 0, 334.8, 0.0, 1, 10], ["2026-09-19", 9, 304.46, 9, 0, 304.46, 0.0, 1, 8], ["2026-09-20", 19, 640.81, 18, 1, 616.31, 24.5, 1, 18], ["2026-09-21", 15, 471.4, 14, 1, 446.97, 24.43, 2, 13], ["2026-09-22", 13, 428.42, 13, 0, 428.42, 0.0, 4, 9], ["2026-09-23", 29, 766.27, 29, 0, 766.27, 0.0, 2, 27], ["2026-09-24", 21, 616.97, 21, 0, 616.97, 0.0, 3, 17], ["2026-09-25", 24, 748.29, 21, 3, 683.39, 64.9, 5, 19], ["2026-09-26", 133, 4096.09, 130, 3, 4030.35, 65.74, 19, 113], ["2026-09-27", 100, 3040.85, 96, 4, 2954.54, 86.31, 14, 85], ["2026-09-28", 24, 732.44, 22, 2, 687.31, 45.13, 2, 22], ["2026-09-29", 61, 1918.3, 58, 3, 1859.31, 58.99, 8, 53], ["2026-09-30", 25, 792.68, 24, 1, 769.3, 23.38, 5, 20], ["2026-10-01", 21, 630.78, 20, 1, 611.86, 18.92, 4, 17], ["2026-10-02", 20, 579.83, 19, 1, 560.91, 18.92, 2, 18], ["2026-10-03", 21, 682.2, 21, 0, 682.2, 0.0, 6, 15], ["2026-10-04", 33, 1058.63, 33, 0, 1058.63, 0.0, 3, 30], ["2026-10-05", 11, 378.62, 11, 0, 378.62, 0.0, 2, 9], ["2026-10-06", 22, 725.37, 22, 0, 725.37, 0.0, 1, 21], ["2026-10-07", 17, 548.68, 17, 0, 548.68, 0.0, 6, 11], ["2026-10-08", 16, 547.08, 16, 0, 547.08, 0.0, 1, 15], ["2026-10-09", 18, 599.96, 18, 0, 599.96, 0.0, 6, 12], ["2026-10-10", 34, 1074.42, 33, 1, 1051.93, 22.49, 5, 26], ["2026-10-11", 55, 1734.12, 52, 3, 1670.9, 63.22, 13, 41], ["2026-10-12", 13, 405.19, 13, 0, 405.19, 0.0, 4, 9], ["2026-10-13", 16, 472.58, 16, 0, 472.58, 0.0, 4, 12], ["2026-10-14", 20, 627.0, 20, 0, 627.0, 0.0, 2, 18], ["2026-10-15", 16, 459.15, 16, 0, 459.15, 0.0, 3, 12], ["2026-10-16", 17, 456.01, 17, 0, 456.01, 0.0, 3, 13], ["2026-10-17", 32, 979.2, 31, 1, 955.23, 23.97, 1, 31], ["2026-10-18", 33, 1020.51, 33, 0, 1020.51, 0.0, 9, 24], ["2026-10-19", 9, 259.7, 9, 0, 259.7, 0.0, 2, 7], ["2026-10-20", 15, 404.12, 15, 0, 404.12, 0.0, 2, 12], ["2026-10-21", 18, 572.53, 17, 1, 551.86, 20.67, 4, 14], ["2026-10-22", 17, 503.75, 17, 0, 503.75, 0.0, 5, 12], ["2026-10-23", 20, 612.53, 18, 2, 568.67, 43.86, 2, 18], ["2026-10-24", 28, 909.52, 28, 0, 909.52, 0.0, 5, 22], ["2026-10-25", 22, 693.52, 21, 1, 669.81, 23.71, 5, 17], ["2026-10-26", 13, 409.72, 13, 0, 409.72, 0.0, 1, 11], ["2026-10-27", 13, 422.34, 13, 0, 422.34, 0.0, 6, 7], ["2026-10-28", 11, 369.41, 11, 0, 369.41, 0.0, 2, 9], ["2026-10-29", 14, 472.44, 14, 0, 472.44, 0.0, 2, 12], ["2026-10-30", 12, 309.47, 12, 0, 309.47, 0.0, 3, 9], ["2026-10-31", 15, 492.85, 15, 0, 492.85, 0.0, 5, 10], ["2026-11-01", 30, 995.33, 30, 0, 995.33, 0.0, 9, 18], ["2026-11-02", 14, 431.23, 13, 1, 409.11, 22.12, 2, 11], ["2026-11-03", 13, 438.97, 13, 0, 438.97, 0.0, 2, 10], ["2026-11-04", 15, 481.71, 15, 0, 481.71, 0.0, 2, 13], ["2026-11-05", 16, 483.11, 15, 1, 464.63, 18.48, 3, 13], ["2026-11-06", 17, 518.4, 17, 0, 518.4, 0.0, 5, 10], ["2026-11-07", 22, 725.78, 22, 0, 725.78, 0.0, 8, 14], ["2026-11-08", 20, 663.77, 20, 0, 663.77, 0.0, 3, 17], ["2026-11-09", 10, 318.64, 10, 0, 318.64, 0.0, 3, 7], ["2026-11-10", 13, 397.1, 13, 0, 397.1, 0.0, 2, 11]],
-        "TVG4961": [["2026-08-26", 308, 9498.69, 297, 11, 9239.27, 259.42, 24, 257], ["2026-08-27", 218, 7132.77, 209, 9, 6953.95, 178.82, 28, 178], ["2026-08-28", 167, 5502.22, 160, 7, 5343.06, 159.16, 31, 133], ["2026-08-29", 194, 6350.81, 189, 5, 6242.9, 107.91, 29, 160], ["2026-08-30", 337, 11029.21, 330, 7, 10868.27, 160.94, 38, 287], ["2026-08-31", 190, 6063.56, 184, 6, 5929.04, 134.52, 38, 145], ["2026-09-01", 154, 5091.48, 150, 4, 5024.23, 67.25, 18, 128], ["2026-09-02", 153, 5009.5, 147, 6, 4859.9, 149.6, 32, 119], ["2026-09-03", 135, 4418.37, 125, 10, 4177.56, 240.81, 29, 102], ["2026-09-04", 148, 4707.52, 143, 5, 4591.89, 115.63, 31, 114], ["2026-09-05", 219, 7121.89, 204, 15, 6780.88, 341.01, 40, 177], ["2026-09-06", 348, 11598.3, 331, 17, 11196.74, 401.56, 61, 279], ["2026-09-07", 408, 13573.09, 390, 18, 13173.13, 399.96, 52, 345], ["2026-09-08", 125, 3579.09, 121, 4, 3482.73, 96.36, 34, 87], ["2026-09-09", 96, 2983.05, 92, 4, 2893.37, 89.68, 25, 71], ["2026-09-10", 147, 4832.61, 145, 2, 4782.33, 50.28, 25, 122], ["2026-09-11", 110, 3433.22, 108, 2, 3385.0, 48.22, 40, 68], ["2026-09-12", 137, 4531.95, 133, 4, 4439.35, 92.6, 33, 103], ["2026-09-13", 196, 6541.67, 190, 6, 6405.06, 136.61, 35, 159], ["2026-09-14", 113, 3367.7, 110, 3, 3292.72, 74.98, 22, 90], ["2026-09-15", 125, 3908.31, 119, 6, 3771.56, 136.75, 23, 100], ["2026-09-16", 123, 4035.88, 119, 4, 3943.99, 91.89, 19, 102], ["2026-09-17", 91, 2884.16, 85, 6, 2743.01, 141.15, 17, 74], ["2026-09-18", 99, 2918.22, 97, 2, 2869.2, 49.02, 24, 71], ["2026-09-19", 128, 4028.91, 117, 11, 3799.43, 229.48, 26, 101], ["2026-09-20", 229, 7490.46, 217, 12, 7222.79, 267.67, 41, 181], ["2026-09-21", 94, 2991.74, 88, 6, 2856.48, 135.26, 23, 70], ["2026-09-22", 133, 4344.01, 131, 2, 4298.87, 45.14, 18, 108], ["2026-09-23", 132, 4220.3, 129, 3, 4181.3, 39.0, 24, 107], ["2026-09-24", 113, 3535.53, 112, 1, 3511.33, 24.2, 25, 88], ["2026-09-25", 113, 3749.77, 109, 4, 3658.26, 91.51, 17, 93], ["2026-09-26", 158, 5178.12, 154, 4, 5088.9, 89.22, 28, 128], ["2026-09-27", 137, 4445.58, 127, 10, 4248.44, 197.14, 28, 103], ["2026-09-28", 100, 3010.01, 93, 7, 2862.66, 147.35, 22, 76], ["2026-09-29", 135, 4365.89, 130, 5, 4253.08, 112.81, 23, 111], ["2026-09-30", 99, 3179.96, 97, 2, 3157.99, 21.97, 24, 74], ["2026-10-01", 107, 3314.87, 105, 2, 3267.11, 47.76, 21, 83], ["2026-10-02", 97, 3010.56, 95, 2, 2965.54, 45.02, 26, 70], ["2026-10-03", 120, 3964.11, 115, 5, 3852.59, 111.52, 18, 99], ["2026-10-04", 142, 4705.96, 135, 7, 4553.94, 152.02, 18, 121], ["2026-10-05", 88, 2943.34, 85, 3, 2874.78, 68.56, 10, 74], ["2026-10-06", 100, 3248.85, 96, 4, 3159.05, 89.8, 10, 89], ["2026-10-07", 108, 3250.61, 104, 4, 3158.35, 92.26, 20, 87], ["2026-10-08", 114, 3648.08, 109, 5, 3541.69, 106.39, 25, 83], ["2026-10-09", 100, 3205.9, 99, 1, 3183.41, 22.49, 25, 73], ["2026-10-10", 258, 8111.98, 244, 14, 7821.15, 290.83, 35, 207], ["2026-10-11", 453, 14364.55, 436, 17, 14006.37, 358.18, 63, 377], ["2026-10-12", 97, 3132.27, 92, 5, 3016.86, 115.41, 14, 81], ["2026-10-13", 84, 2728.24, 81, 3, 2666.5, 61.74, 21, 60], ["2026-10-14", 108, 3484.97, 102, 6, 3352.49, 132.48, 18, 88], ["2026-10-15", 85, 2522.0, 83, 2, 2479.23, 42.77, 14, 68], ["2026-10-16", 87, 2780.92, 85, 2, 2733.15, 47.77, 21, 64], ["2026-10-17", 169, 5484.64, 160, 9, 5286.84, 197.8, 18, 148], ["2026-10-18", 178, 5861.94, 169, 9, 5656.9, 205.04, 27, 148], ["2026-10-19", 92, 2990.91, 91, 1, 2971.91, 19.0, 14, 76], ["2026-10-20", 91, 2935.56, 84, 7, 2771.35, 164.21, 10, 80], ["2026-10-21", 73, 2394.8, 71, 2, 2352.25, 42.55, 12, 60], ["2026-10-22", 74, 2388.11, 73, 1, 2368.63, 19.48, 12, 62], ["2026-10-23", 98, 3178.54, 96, 2, 3134.68, 43.86, 18, 77], ["2026-10-24", 175, 5738.07, 169, 6, 5607.66, 130.41, 38, 137], ["2026-10-25", 154, 5161.57, 146, 8, 4980.88, 180.69, 24, 127], ["2026-10-26", 129, 4163.27, 127, 2, 4119.26, 44.01, 18, 109], ["2026-10-27", 112, 3603.28, 110, 2, 3554.45, 48.83, 12, 96], ["2026-10-28", 99, 3266.29, 98, 1, 3246.78, 19.51, 17, 81], ["2026-10-29", 89, 2928.04, 87, 2, 2882.73, 45.31, 19, 69], ["2026-10-30", 85, 2755.67, 84, 1, 2731.1, 24.57, 17, 67], ["2026-10-31", 102, 3293.45, 100, 2, 3249.12, 44.33, 22, 79], ["2026-11-01", 131, 4440.57, 128, 3, 4366.83, 73.74, 13, 116], ["2026-11-02", 100, 3348.16, 99, 1, 3323.58, 24.58, 15, 80], ["2026-11-03", 122, 3890.13, 112, 10, 3678.51, 211.62, 18, 102], ["2026-11-04", 132, 4173.25, 123, 9, 3962.14, 211.11, 21, 107], ["2026-11-05", 102, 3277.9, 101, 1, 3253.26, 24.64, 22, 78], ["2026-11-06", 90, 2917.14, 87, 3, 2853.6, 63.54, 18, 68], ["2026-11-07", 129, 4132.22, 124, 5, 4021.77, 110.45, 21, 107], ["2026-11-08", 113, 3658.67, 111, 2, 3615.29, 43.38, 17, 93], ["2026-11-09", 96, 3150.85, 94, 2, 3105.0, 45.85, 15, 77], ["2026-11-10", 92, 3022.47, 90, 2, 2981.59, 40.88, 19, 71]],
-        "TVG7150": [["2026-08-26", 66, 1587.57, 64, 2, 1537.58, 49.99, 6, 56], ["2026-08-27", 29, 925.52, 26, 3, 855.65, 69.87, 4, 25], ["2026-08-28", 31, 1040.99, 31, 0, 1040.99, 0.0, 8, 21], ["2026-08-29", 19, 624.75, 18, 1, 599.94, 24.81, 3, 16], ["2026-08-30", 43, 1393.49, 42, 1, 1373.64, 19.85, 3, 38], ["2026-08-31", 33, 1028.49, 33, 0, 1028.49, 0.0, 5, 26], ["2026-09-01", 22, 737.91, 21, 1, 715.97, 21.94, 5, 16], ["2026-09-02", 25, 861.31, 24, 1, 838.04, 23.27, 10, 15], ["2026-09-03", 22, 720.79, 21, 1, 696.05, 24.74, 5, 14], ["2026-09-04", 16, 485.41, 16, 0, 485.41, 0.0, 8, 8], ["2026-09-05", 37, 1253.43, 37, 0, 1253.43, 0.0, 5, 32], ["2026-09-06", 56, 1868.01, 53, 3, 1801.92, 66.09, 6, 49], ["2026-09-07", 55, 1804.28, 54, 1, 1784.22, 20.06, 9, 46], ["2026-09-08", 17, 385.77, 16, 1, 362.13, 23.64, 3, 14], ["2026-09-09", 11, 332.5, 11, 0, 332.5, 0.0, 5, 6], ["2026-09-10", 12, 421.02, 12, 0, 421.02, 0.0, 1, 11], ["2026-09-11", 22, 617.5, 22, 0, 617.5, 0.0, 5, 17], ["2026-09-12", 12, 388.73, 11, 1, 363.74, 24.99, 2, 10], ["2026-09-13", 41, 1370.38, 39, 2, 1323.69, 46.69, 3, 35], ["2026-09-14", 19, 603.81, 18, 1, 580.09, 23.72, 3, 16], ["2026-09-15", 10, 267.09, 10, 0, 267.09, 0.0, 3, 7], ["2026-09-16", 20, 646.25, 20, 0, 646.25, 0.0, 3, 17], ["2026-09-17", 17, 565.03, 16, 1, 544.0, 21.03, 3, 12], ["2026-09-18", 22, 525.09, 21, 1, 500.58, 24.51, 6, 16], ["2026-09-19", 22, 721.58, 20, 2, 677.11, 44.47, 3, 18], ["2026-09-20", 30, 1043.23, 28, 2, 994.24, 48.99, 7, 22], ["2026-09-21", 8, 247.72, 7, 1, 225.08, 22.64, 2, 6], ["2026-09-22", 15, 478.78, 14, 1, 471.65, 7.13, 1, 14], ["2026-09-23", 30, 971.33, 28, 2, 925.11, 46.22, 7, 22], ["2026-09-24", 10, 280.8, 10, 0, 280.8, 0.0, 1, 9], ["2026-09-25", 15, 497.78, 14, 1, 473.7, 24.08, 3, 12], ["2026-09-26", 17, 571.96, 17, 0, 571.96, 0.0, 3, 14], ["2026-09-27", 13, 430.43, 12, 1, 406.46, 23.97, 2, 11], ["2026-09-28", 11, 372.96, 11, 0, 372.96, 0.0, 3, 8], ["2026-09-29", 14, 442.71, 12, 2, 398.45, 44.26, 0, 14], ["2026-09-30", 10, 330.11, 10, 0, 330.11, 0.0, 1, 9], ["2026-10-01", 13, 443.25, 13, 0, 443.25, 0.0, 5, 8], ["2026-10-02", 17, 379.2, 15, 2, 331.89, 47.31, 1, 16], ["2026-10-03", 16, 538.27, 16, 0, 538.27, 0.0, 2, 14], ["2026-10-04", 11, 367.71, 11, 0, 367.71, 0.0, 2, 9], ["2026-10-05", 12, 358.49, 12, 0, 358.49, 0.0, 3, 9], ["2026-10-06", 12, 417.52, 12, 0, 417.52, 0.0, 2, 9], ["2026-10-07", 15, 491.34, 14, 1, 472.5, 18.84, 2, 13], ["2026-10-08", 9, 246.6, 9, 0, 246.6, 0.0, 2, 7], ["2026-10-09", 9, 288.31, 9, 0, 288.31, 0.0, 3, 6], ["2026-10-10", 27, 861.89, 27, 0, 861.89, 0.0, 2, 24], ["2026-10-11", 60, 1870.31, 59, 1, 1847.41, 22.9, 9, 51], ["2026-10-12", 11, 364.67, 11, 0, 364.67, 0.0, 5, 6], ["2026-10-13", 8, 177.67, 6, 2, 130.47, 47.2, 3, 5], ["2026-10-14", 9, 288.47, 8, 1, 264.71, 23.76, 0, 9], ["2026-10-15", 12, 331.65, 12, 0, 331.65, 0.0, 3, 9], ["2026-10-16", 14, 345.58, 13, 1, 321.78, 23.8, 4, 10], ["2026-10-17", 14, 420.49, 13, 1, 401.56, 18.93, 2, 12], ["2026-10-18", 13, 406.1, 13, 0, 406.1, 0.0, 1, 10], ["2026-10-19", 7, 240.37, 7, 0, 240.37, 0.0, 0, 7], ["2026-10-20", 7, 198.21, 7, 0, 198.21, 0.0, 0, 7], ["2026-10-21", 10, 331.27, 10, 0, 331.27, 0.0, 1, 9], ["2026-10-22", 13, 398.01, 13, 0, 398.01, 0.0, 2, 11], ["2026-10-23", 12, 343.57, 11, 1, 319.2, 24.37, 0, 12], ["2026-10-24", 26, 857.9, 25, 1, 833.42, 24.48, 2, 23], ["2026-10-25", 20, 662.87, 18, 2, 618.06, 44.81, 4, 16], ["2026-10-26", 13, 400.98, 13, 0, 400.98, 0.0, 1, 12], ["2026-10-27", 4, 96.41, 3, 1, 72.0, 24.41, 1, 3], ["2026-10-28", 10, 335.7, 10, 0, 335.7, 0.0, 2, 8], ["2026-10-29", 14, 460.3, 13, 1, 438.46, 21.84, 3, 11], ["2026-10-30", 8, 248.21, 8, 0, 248.21, 0.0, 1, 7], ["2026-10-31", 11, 363.71, 11, 0, 363.71, 0.0, 1, 10], ["2026-11-01", 7, 241.2, 7, 0, 241.2, 0.0, 2, 5], ["2026-11-02", 8, 273.18, 8, 0, 273.18, 0.0, 0, 8], ["2026-11-03", 9, 272.16, 8, 1, 248.8, 23.36, 2, 7], ["2026-11-04", 8, 240.41, 7, 1, 220.7, 19.71, 3, 5], ["2026-11-05", 9, 285.32, 8, 1, 266.08, 19.24, 1, 8], ["2026-11-06", 7, 202.5, 6, 1, 180.0, 22.5, 1, 6], ["2026-11-07", 14, 481.6, 14, 0, 481.6, 0.0, 0, 14], ["2026-11-08", 12, 381.03, 11, 1, 360.55, 20.48, 2, 10], ["2026-11-09", 9, 314.74, 9, 0, 314.74, 0.0, 1, 8], ["2026-11-10", 9, 278.09, 9, 0, 278.09, 0.0, 0, 9]],
-        "TVG7160": [["2026-08-26", 62, 1451.9, 57, 5, 1332.69, 119.21, 4, 55], ["2026-08-27", 28, 846.57, 23, 5, 736.77, 109.8, 4, 24], ["2026-08-28", 23, 745.96, 20, 3, 680.05, 65.91, 5, 16], ["2026-08-29", 31, 999.31, 29, 2, 956.95, 42.36, 4, 26], ["2026-08-30", 51, 1644.6, 49, 2, 1595.84, 48.76, 5, 44], ["2026-08-31", 29, 914.75, 29, 0, 914.75, 0.0, 4, 25], ["2026-09-01", 35, 1184.35, 34, 1, 1164.46, 19.89, 6, 28], ["2026-09-02", 20, 639.13, 19, 1, 614.39, 24.74, 2, 18], ["2026-09-03", 19, 653.66, 19, 0, 653.66, 0.0, 1, 18], ["2026-09-04", 20, 577.57, 19, 1, 552.39, 25.18, 4, 16], ["2026-09-05", 28, 919.94, 27, 1, 894.76, 25.18, 7, 21], ["2026-09-06", 44, 1457.19, 44, 0, 1457.19, 0.0, 5, 39], ["2026-09-07", 51, 1710.84, 49, 2, 1660.7, 50.14, 7, 44], ["2026-09-08", 38, 985.34, 37, 1, 963.97, 21.37, 7, 21], ["2026-09-09", 19, 422.94, 19, 0, 422.94, 0.0, 5, 11], ["2026-09-10", 18, 562.02, 17, 1, 539.59, 22.43, 3, 15], ["2026-09-11", 30, 750.17, 29, 1, 725.18, 24.99, 6, 24], ["2026-09-12", 15, 497.49, 14, 1, 473.97, 23.52, 5, 10], ["2026-09-13", 23, 747.93, 21, 2, 700.55, 47.38, 1, 22], ["2026-09-14", 19, 573.11, 19, 0, 573.11, 0.0, 5, 14], ["2026-09-15", 20, 611.24, 20, 0, 611.24, 0.0, 7, 13], ["2026-09-16", 18, 581.39, 18, 0, 581.39, 0.0, 1, 17], ["2026-09-17", 14, 426.56, 13, 1, 404.29, 22.27, 3, 11], ["2026-09-18", 19, 530.42, 19, 0, 530.42, 0.0, 5, 14], ["2026-09-19", 16, 507.49, 15, 1, 483.01, 24.48, 3, 13], ["2026-09-20", 38, 1263.46, 37, 1, 1241.41, 22.05, 3, 34], ["2026-09-21", 13, 406.89, 13, 0, 406.89, 0.0, 2, 11], ["2026-09-22", 14, 427.12, 14, 0, 427.12, 0.0, 0, 14], ["2026-09-23", 25, 807.76, 24, 1, 783.39, 24.37, 0, 23], ["2026-09-24", 16, 525.01, 15, 1, 510.9, 14.11, 0, 16], ["2026-09-25", 11, 350.6, 11, 0, 350.6, 0.0, 0, 10], ["2026-09-26", 28, 849.04, 26, 2, 810.62, 38.42, 4, 24], ["2026-09-27", 14, 462.15, 14, 0, 462.15, 0.0, 2, 12], ["2026-09-28", 24, 789.29, 23, 1, 765.32, 23.97, 3, 21], ["2026-09-29", 21, 635.84, 20, 1, 615.5, 20.34, 3, 18], ["2026-09-30", 14, 395.74, 13, 1, 374.3, 21.44, 3, 11], ["2026-10-01", 11, 312.82, 11, 0, 312.82, 0.0, 2, 9], ["2026-10-02", 16, 431.35, 15, 1, 410.1, 21.25, 2, 14], ["2026-10-03", 11, 381.76, 11, 0, 381.76, 0.0, 2, 9], ["2026-10-04", 22, 739.44, 22, 0, 739.44, 0.0, 3, 18], ["2026-10-05", 8, 225.66, 7, 1, 204.38, 21.28, 1, 7], ["2026-10-06", 10, 323.73, 10, 0, 323.73, 0.0, 0, 9], ["2026-10-07", 15, 420.72, 14, 1, 397.17, 23.55, 3, 12], ["2026-10-08", 16, 557.5, 16, 0, 557.5, 0.0, 4, 12], ["2026-10-09", 15, 440.41, 14, 1, 416.8, 23.61, 4, 10], ["2026-10-10", 39, 1208.6, 36, 3, 1145.86, 62.74, 6, 33], ["2026-10-11", 48, 1484.72, 46, 2, 1439.63, 45.09, 8, 40], ["2026-10-12", 15, 490.45, 15, 0, 490.45, 0.0, 0, 15], ["2026-10-13", 11, 353.72, 11, 0, 353.72, 0.0, 1, 9], ["2026-10-14", 18, 540.02, 17, 1, 520.48, 19.54, 3, 15], ["2026-10-15", 14, 319.61, 14, 0, 319.61, 0.0, 5, 8], ["2026-10-16", 10, 344.07, 10, 0, 344.07, 0.0, 2, 8], ["2026-10-17", 23, 717.98, 19, 4, 626.95, 91.03, 5, 17], ["2026-10-18", 26, 860.04, 25, 1, 838.2, 21.84, 2, 24], ["2026-10-19", 15, 508.29, 15, 0, 508.29, 0.0, 2, 10], ["2026-10-20", 11, 322.18, 11, 0, 322.18, 0.0, 2, 9], ["2026-10-21", 10, 333.1, 10, 0, 333.1, 0.0, 2, 8], ["2026-10-22", 8, 239.26, 8, 0, 239.26, 0.0, 0, 8], ["2026-10-23", 12, 357.27, 12, 0, 357.27, 0.0, 4, 8], ["2026-10-24", 17, 511.17, 17, 0, 511.17, 0.0, 2, 15], ["2026-10-25", 24, 792.99, 22, 2, 749.02, 43.97, 2, 21], ["2026-10-26", 18, 604.26, 18, 0, 604.26, 0.0, 1, 15], ["2026-10-27", 10, 329.09, 10, 0, 329.09, 0.0, 0, 10], ["2026-10-28", 10, 308.2, 10, 0, 308.2, 0.0, 3, 7], ["2026-10-29", 9, 267.75, 9, 0, 267.75, 0.0, 2, 7], ["2026-10-30", 7, 234.58, 7, 0, 234.58, 0.0, 3, 3], ["2026-10-31", 13, 417.85, 13, 0, 417.85, 0.0, 2, 11], ["2026-11-01", 15, 511.16, 15, 0, 511.16, 0.0, 2, 13], ["2026-11-02", 11, 371.32, 11, 0, 371.32, 0.0, 1, 10], ["2026-11-03", 14, 485.12, 14, 0, 485.12, 0.0, 1, 13], ["2026-11-04", 13, 410.67, 12, 1, 386.03, 24.64, 1, 12], ["2026-11-05", 9, 292.13, 9, 0, 292.13, 0.0, 1, 8], ["2026-11-06", 7, 170.07, 7, 0, 170.07, 0.0, 1, 6], ["2026-11-07", 6, 172.8, 6, 0, 172.8, 0.0, 0, 6], ["2026-11-08", 11, 361.97, 10, 1, 342.69, 19.28, 2, 9], ["2026-11-09", 8, 278.52, 8, 0, 278.52, 0.0, 1, 7], ["2026-11-10", 6, 207.57, 6, 0, 207.57, 0.0, 1, 5]],
-        "TVG7170": [["2026-08-26", 125, 3548.85, 121, 4, 3463.0, 85.85, 9, 114], ["2026-08-27", 58, 1860.11, 53, 5, 1742.97, 117.14, 6, 52], ["2026-08-28", 62, 2045.3, 60, 2, 2000.33, 44.97, 8, 53], ["2026-08-29", 56, 1813.25, 52, 4, 1725.22, 88.03, 4, 52], ["2026-08-30", 84, 2753.42, 80, 4, 2660.22, 93.2, 9, 75], ["2026-08-31", 54, 1652.43, 48, 6, 1526.3, 126.13, 12, 42], ["2026-09-01", 39, 1286.95, 38, 1, 1262.09, 24.86, 7, 31], ["2026-09-02", 48, 1478.68, 47, 1, 1456.07, 22.61, 5, 42], ["2026-09-03", 40, 1379.65, 39, 1, 1357.84, 21.81, 4, 35], ["2026-09-04", 27, 866.29, 27, 0, 866.29, 0.0, 5, 22], ["2026-09-05", 68, 2268.57, 66, 2, 2221.83, 46.74, 7, 61], ["2026-09-06", 95, 3200.64, 92, 3, 3126.27, 74.37, 10, 84], ["2026-09-07", 95, 3158.55, 91, 4, 3060.21, 98.34, 10, 85], ["2026-09-08", 36, 822.6, 35, 1, 797.46, 25.14, 10, 26], ["2026-09-09", 27, 845.57, 27, 0, 845.57, 0.0, 6, 19], ["2026-09-10", 52, 1622.79, 50, 2, 1572.8, 49.99, 12, 40], ["2026-09-11", 43, 1093.38, 42, 1, 1070.75, 22.63, 8, 34], ["2026-09-12", 38, 1194.8, 33, 5, 1076.34, 118.46, 6, 32], ["2026-09-13", 56, 1912.7, 56, 0, 1912.7, 0.0, 5, 50], ["2026-09-14", 23, 568.67, 22, 1, 546.7, 21.97, 5, 18], ["2026-09-15", 34, 1003.14, 33, 1, 978.27, 24.87, 10, 20], ["2026-09-16", 35, 1168.7, 33, 2, 1121.62, 47.08, 4, 31], ["2026-09-17", 23, 789.46, 23, 0, 789.46, 0.0, 2, 21], ["2026-09-18", 27, 729.87, 27, 0, 729.87, 0.0, 3, 24], ["2026-09-19", 33, 996.77, 29, 4, 926.91, 69.86, 10, 23], ["2026-09-20", 54, 1806.54, 51, 3, 1735.47, 71.07, 8, 45], ["2026-09-21", 24, 687.87, 22, 2, 643.83, 44.04, 4, 19], ["2026-09-22", 40, 1278.45, 39, 1, 1258.95, 19.5, 6, 34], ["2026-09-23", 49, 1440.22, 46, 3, 1370.55, 69.67, 7, 41], ["2026-09-24", 38, 1112.66, 37, 1, 1089.47, 23.19, 10, 28], ["2026-09-25", 28, 928.42, 27, 1, 904.41, 24.01, 5, 22], ["2026-09-26", 64, 2140.03, 63, 1, 2117.26, 22.77, 12, 49], ["2026-09-27", 61, 1946.54, 59, 2, 1902.66, 43.88, 9, 50], ["2026-09-28", 33, 1053.03, 30, 3, 988.34, 64.69, 5, 28], ["2026-09-29", 53, 1703.43, 52, 1, 1684.29, 19.14, 7, 45], ["2026-09-30", 40, 1073.18, 37, 3, 1014.81, 58.37, 8, 31], ["2026-10-01", 28, 767.53, 23, 5, 663.31, 104.22, 6, 22], ["2026-10-02", 41, 1147.49, 39, 2, 1107.31, 40.18, 9, 32], ["2026-10-03", 34, 1131.28, 33, 1, 1112.36, 18.92, 8, 25], ["2026-10-04", 46, 1526.0, 45, 1, 1507.09, 18.91, 8, 38], ["2026-10-05", 27, 912.58, 27, 0, 912.58, 0.0, 4, 22], ["2026-10-06", 28, 936.26, 28, 0, 936.26, 0.0, 4, 24], ["2026-10-07", 35, 978.46, 35, 0, 978.46, 0.0, 4, 30], ["2026-10-08", 50, 1580.89, 50, 0, 1580.89, 0.0, 10, 40], ["2026-10-09", 26, 723.02, 26, 0, 723.02, 0.0, 7, 19], ["2026-10-10", 88, 2685.91, 80, 8, 2535.85, 150.06, 13, 72], ["2026-10-11", 127, 4042.38, 125, 2, 3999.74, 42.64, 14, 113], ["2026-10-12", 34, 1079.64, 34, 0, 1079.64, 0.0, 6, 27], ["2026-10-13", 12, 333.07, 11, 1, 332.68, 0.39, 4, 8], ["2026-10-14", 31, 1044.45, 29, 2, 997.08, 47.37, 7, 24], ["2026-10-15", 26, 599.9, 26, 0, 599.9, 0.0, 7, 19], ["2026-10-16", 20, 481.17, 19, 1, 459.75, 21.42, 8, 12], ["2026-10-17", 46, 1486.88, 44, 2, 1439.96, 46.92, 6, 40], ["2026-10-18", 43, 1417.08, 42, 1, 1395.53, 21.55, 5, 37], ["2026-10-19", 11, 370.55, 11, 0, 370.55, 0.0, 2, 9], ["2026-10-20", 23, 709.39, 22, 1, 686.22, 23.17, 3, 20], ["2026-10-21", 20, 559.69, 19, 1, 535.38, 24.31, 1, 19], ["2026-10-22", 21, 650.21, 20, 1, 625.86, 24.35, 1, 20], ["2026-10-23", 32, 974.98, 30, 2, 932.25, 42.73, 7, 25], ["2026-10-24", 45, 1508.23, 43, 2, 1459.28, 48.95, 7, 38], ["2026-10-25", 33, 1114.4, 31, 2, 1067.99, 46.41, 5, 28], ["2026-10-26", 40, 1239.78, 39, 1, 1215.3, 24.48, 5, 35], ["2026-10-27", 26, 812.06, 25, 1, 812.06, 0.0, 5, 20], ["2026-10-28", 42, 1383.7, 42, 0, 1383.7, 0.0, 8, 34], ["2026-10-29", 32, 1083.35, 32, 0, 1083.35, 0.0, 7, 24], ["2026-10-30", 33, 982.59, 33, 0, 982.59, 0.0, 5, 26], ["2026-10-31", 33, 1107.76, 32, 1, 1086.11, 21.65, 9, 24], ["2026-11-01", 56, 1911.99, 56, 0, 1911.99, 0.0, 7, 49], ["2026-11-02", 37, 1215.04, 36, 1, 1195.38, 19.66, 5, 31], ["2026-11-03", 37, 1218.85, 35, 2, 1169.56, 49.29, 8, 28], ["2026-11-04", 36, 1150.25, 36, 0, 1150.25, 0.0, 8, 27], ["2026-11-05", 20, 623.27, 19, 1, 598.63, 24.64, 3, 16], ["2026-11-06", 31, 950.85, 31, 0, 950.85, 0.0, 8, 23], ["2026-11-07", 40, 1294.14, 37, 3, 1221.5, 72.64, 8, 32], ["2026-11-08", 38, 1262.09, 37, 1, 1240.26, 21.83, 5, 33], ["2026-11-09", 34, 1103.99, 34, 0, 1103.99, 0.0, 6, 28], ["2026-11-10", 31, 1024.71, 30, 1, 1000.54, 24.17, 4, 26]]
+        "TVG4880": [["2026-08-26", 42, 850.77, 42, 0, 850.77, 0.0, 2, 38], ["2026-08-27", 20, 604.86, 18, 2, 584.9, 19.96, 0, 20], ["2026-08-28", 11, 380.37, 11, 0, 380.37, 0.0, 2, 9], ["2026-08-29", 7, 236.18, 6, 1, 213.85, 22.33, 0, 7], ["2026-08-30", 21, 702.53, 21, 0, 702.53, 0.0, 3, 15], ["2026-08-31", 17, 530.74, 17, 0, 530.74, 0.0, 4, 12], ["2026-09-01", 12, 407.0, 12, 0, 407.0, 0.0, 1, 10], ["2026-09-02", 17, 546.77, 17, 0, 546.77, 0.0, 4, 12], ["2026-09-03", 8, 271.76, 8, 0, 271.76, 0.0, 2, 5], ["2026-09-04", 11, 369.15, 11, 0, 369.15, 0.0, 3, 8], ["2026-09-05", 16, 534.33, 15, 1, 509.89, 24.44, 0, 16], ["2026-09-06", 23, 792.06, 23, 0, 792.06, 0.0, 2, 18], ["2026-09-07", 35, 1153.75, 33, 2, 1108.63, 45.12, 5, 29], ["2026-09-08", 12, 333.28, 12, 0, 333.28, 0.0, 2, 8], ["2026-09-09", 6, 193.29, 6, 0, 193.29, 0.0, 2, 4], ["2026-09-10", 8, 240.86, 8, 0, 240.86, 0.0, 0, 8], ["2026-09-11", 9, 144.0, 9, 0, 144.0, 0.0, 0, 8], ["2026-09-12", 6, 213.5, 6, 0, 213.5, 0.0, 1, 5], ["2026-09-13", 12, 383.32, 10, 2, 352.95, 30.37, 1, 10], ["2026-09-14", 7, 206.75, 7, 0, 206.75, 0.0, 1, 6], ["2026-09-15", 10, 227.2, 10, 0, 227.2, 0.0, 2, 8], ["2026-09-16", 12, 414.52, 12, 0, 414.52, 0.0, 1, 10], ["2026-09-17", 8, 258.74, 7, 1, 234.0, 24.74, 2, 6], ["2026-09-18", 10, 250.72, 10, 0, 250.72, 0.0, 2, 7], ["2026-09-19", 6, 178.04, 6, 0, 178.04, 0.0, 2, 4], ["2026-09-20", 12, 346.9, 11, 1, 327.3, 19.6, 2, 10], ["2026-09-21", 4, 136.8, 4, 0, 136.8, 0.0, 1, 3], ["2026-09-22", 5, 164.89, 5, 0, 164.89, 0.0, 0, 5], ["2026-09-23", 11, 347.14, 10, 1, 322.77, 24.37, 1, 10], ["2026-09-24", 7, 198.91, 7, 0, 198.91, 0.0, 0, 7], ["2026-09-25", 6, 186.6, 6, 0, 186.6, 0.0, 2, 4], ["2026-09-26", 8, 274.83, 8, 0, 274.83, 0.0, 0, 8], ["2026-09-27", 12, 392.04, 10, 2, 345.6, 46.44, 2, 10], ["2026-09-28", 5, 171.15, 5, 0, 171.15, 0.0, 1, 4], ["2026-09-29", 10, 330.77, 10, 0, 330.77, 0.0, 2, 8], ["2026-09-30", 4, 128.07, 3, 1, 105.18, 22.89, 0, 4], ["2026-10-01", 4, 128.2, 4, 0, 128.2, 0.0, 1, 3], ["2026-10-02", 11, 225.59, 11, 0, 225.59, 0.0, 0, 11], ["2026-10-03", 8, 266.25, 8, 0, 266.25, 0.0, 0, 8], ["2026-10-04", 12, 398.5, 12, 0, 398.5, 0.0, 1, 10], ["2026-10-05", 8, 244.8, 8, 0, 244.8, 0.0, 2, 6], ["2026-10-06", 9, 293.81, 8, 1, 270.26, 23.55, 2, 7], ["2026-10-07", 7, 206.97, 7, 0, 206.97, 0.0, 0, 7], ["2026-10-08", 6, 202.8, 6, 0, 202.8, 0.0, 2, 4], ["2026-10-09", 8, 213.0, 8, 0, 213.0, 0.0, 1, 6], ["2026-10-10", 10, 318.6, 10, 0, 318.6, 0.0, 1, 9], ["2026-10-11", 36, 1110.07, 35, 1, 1091.47, 18.6, 2, 33], ["2026-10-12", 6, 192.33, 6, 0, 192.33, 0.0, 2, 4], ["2026-10-13", 7, 235.74, 7, 0, 235.74, 0.0, 0, 6], ["2026-10-14", 8, 271.44, 8, 0, 271.44, 0.0, 2, 6], ["2026-10-15", 9, 246.0, 9, 0, 246.0, 0.0, 1, 8], ["2026-10-16", 7, 237.57, 7, 0, 237.57, 0.0, 2, 5], ["2026-10-17", 14, 465.25, 14, 0, 465.25, 0.0, 0, 13], ["2026-10-18", 11, 360.89, 11, 0, 360.89, 0.0, 2, 9], ["2026-10-19", 11, 355.41, 11, 0, 355.41, 0.0, 1, 10], ["2026-10-20", 10, 280.22, 10, 0, 280.22, 0.0, 0, 10], ["2026-10-21", 9, 302.44, 9, 0, 302.44, 0.0, 1, 8], ["2026-10-22", 12, 387.46, 12, 0, 387.46, 0.0, 1, 11], ["2026-10-23", 6, 193.29, 5, 1, 168.92, 24.37, 2, 4], ["2026-10-24", 25, 782.27, 23, 2, 738.21, 44.06, 3, 21], ["2026-10-25", 11, 347.61, 10, 1, 324.02, 23.59, 1, 10], ["2026-10-26", 12, 408.87, 12, 0, 408.87, 0.0, 2, 8], ["2026-10-27", 6, 198.69, 6, 0, 198.69, 0.0, 1, 5], ["2026-10-28", 7, 240.47, 7, 0, 240.47, 0.0, 0, 7], ["2026-10-29", 4, 136.85, 4, 0, 136.85, 0.0, 0, 4], ["2026-10-30", 7, 232.0, 7, 0, 232.0, 0.0, 0, 6], ["2026-10-31", 5, 157.86, 5, 0, 157.86, 0.0, 1, 4], ["2026-11-01", 19, 665.79, 19, 0, 665.79, 0.0, 1, 17], ["2026-11-02", 6, 202.82, 6, 0, 202.82, 0.0, 0, 5], ["2026-11-03", 11, 356.02, 11, 0, 356.02, 0.0, 2, 7], ["2026-11-04", 9, 285.06, 9, 0, 285.06, 0.0, 1, 8], ["2026-11-05", 12, 396.36, 12, 0, 396.36, 0.0, 0, 12], ["2026-11-06", 7, 195.66, 7, 0, 195.66, 0.0, 3, 4], ["2026-11-07", 7, 222.67, 7, 0, 222.67, 0.0, 1, 6], ["2026-11-08", 8, 262.98, 8, 0, 262.98, 0.0, 0, 8], ["2026-11-09", 7, 247.49, 7, 0, 247.49, 0.0, 0, 7], ["2026-11-10", 9, 313.89, 9, 0, 313.89, 0.0, 1, 7], ["2026-11-11", 3, 102.35, 3, 0, 102.35, 0.0, 1, 2]],
+        "TVG4900": [["2026-08-26", 72, 1867.24, 71, 1, 1843.68, 23.56, 7, 63], ["2026-08-27", 50, 1425.78, 50, 0, 1425.78, 0.0, 6, 44], ["2026-08-28", 41, 1251.35, 40, 1, 1228.94, 22.41, 8, 33], ["2026-08-29", 51, 1679.6, 50, 1, 1656.61, 22.99, 10, 39], ["2026-08-30", 104, 3327.31, 100, 4, 3237.19, 90.12, 9, 90], ["2026-08-31", 47, 1262.72, 47, 0, 1262.72, 0.0, 6, 41], ["2026-09-01", 41, 1338.09, 38, 3, 1273.26, 64.83, 7, 32], ["2026-09-02", 56, 1756.45, 56, 0, 1756.45, 0.0, 8, 48], ["2026-09-03", 33, 1114.85, 31, 2, 1065.37, 49.48, 2, 30], ["2026-09-04", 35, 1115.13, 35, 0, 1115.13, 0.0, 4, 30], ["2026-09-05", 75, 2400.02, 68, 7, 2241.23, 158.79, 12, 62], ["2026-09-06", 119, 3864.38, 109, 10, 3636.3, 228.08, 14, 103], ["2026-09-07", 146, 4825.76, 141, 5, 4721.48, 104.28, 16, 124], ["2026-09-08", 64, 1045.68, 64, 0, 1045.68, 0.0, 17, 45], ["2026-09-09", 35, 920.54, 34, 1, 895.37, 25.17, 9, 26], ["2026-09-10", 55, 1710.31, 52, 3, 1634.5, 75.81, 12, 43], ["2026-09-11", 60, 1472.33, 59, 1, 1449.7, 22.63, 16, 43], ["2026-09-12", 48, 1588.27, 44, 4, 1506.02, 82.25, 10, 38], ["2026-09-13", 76, 2573.76, 75, 1, 2548.77, 24.99, 9, 66], ["2026-09-14", 43, 1076.0, 39, 4, 993.8, 82.2, 6, 35], ["2026-09-15", 43, 1289.57, 43, 0, 1289.57, 0.0, 7, 35], ["2026-09-16", 44, 1418.57, 41, 3, 1347.77, 70.8, 9, 35], ["2026-09-17", 33, 1030.12, 32, 1, 1010.33, 19.79, 8, 24], ["2026-09-18", 45, 1080.91, 44, 1, 1056.4, 24.51, 14, 30], ["2026-09-19", 46, 1463.73, 44, 2, 1415.73, 48.0, 9, 36], ["2026-09-20", 80, 2544.16, 75, 5, 2423.33, 120.83, 16, 63], ["2026-09-21", 25, 814.18, 22, 3, 744.43, 69.75, 6, 19], ["2026-09-22", 40, 1277.61, 39, 1, 1253.18, 24.43, 6, 33], ["2026-09-23", 47, 1374.63, 45, 2, 1331.95, 42.68, 9, 38], ["2026-09-24", 40, 1231.15, 40, 0, 1231.15, 0.0, 4, 34], ["2026-09-25", 37, 1244.81, 37, 0, 1244.81, 0.0, 6, 31], ["2026-09-26", 55, 1823.95, 54, 1, 1802.39, 21.56, 9, 44], ["2026-09-27", 49, 1502.05, 48, 1, 1478.08, 23.97, 9, 38], ["2026-09-28", 28, 876.14, 24, 4, 788.52, 87.62, 5, 22], ["2026-09-29", 48, 1454.93, 44, 4, 1362.63, 92.3, 6, 42], ["2026-09-30", 39, 1269.12, 39, 0, 1269.12, 0.0, 6, 30], ["2026-10-01", 33, 914.97, 33, 0, 914.97, 0.0, 10, 21], ["2026-10-02", 38, 922.9, 38, 0, 922.9, 0.0, 4, 34], ["2026-10-03", 44, 1501.99, 44, 0, 1501.99, 0.0, 8, 35], ["2026-10-04", 53, 1734.58, 51, 2, 1690.08, 44.5, 5, 48], ["2026-10-05", 35, 1134.03, 34, 1, 1112.75, 21.28, 8, 27], ["2026-10-06", 32, 996.88, 28, 4, 904.08, 92.8, 4, 28], ["2026-10-07", 47, 1368.66, 46, 1, 1345.11, 23.55, 9, 34], ["2026-10-08", 44, 1288.4, 44, 0, 1288.4, 0.0, 4, 39], ["2026-10-09", 34, 937.27, 34, 0, 937.27, 0.0, 9, 23], ["2026-10-10", 91, 2907.08, 88, 3, 2838.84, 68.24, 11, 77], ["2026-10-11", 159, 5095.84, 152, 7, 4946.34, 149.5, 17, 136], ["2026-10-12", 37, 1238.71, 36, 1, 1215.11, 23.6, 8, 28], ["2026-10-13", 29, 929.42, 29, 0, 929.42, 0.0, 2, 27], ["2026-10-14", 44, 1400.12, 43, 1, 1377.84, 22.28, 6, 36], ["2026-10-15", 38, 745.75, 37, 1, 726.74, 19.01, 9, 27], ["2026-10-16", 34, 917.5, 34, 0, 917.5, 0.0, 9, 24], ["2026-10-17", 69, 2288.02, 68, 1, 2268.34, 19.68, 10, 57], ["2026-10-18", 78, 2617.09, 76, 2, 2573.77, 43.32, 4, 70], ["2026-10-19", 27, 781.99, 25, 2, 740.09, 41.9, 4, 22], ["2026-10-20", 39, 1161.71, 39, 0, 1161.71, 0.0, 7, 29], ["2026-10-21", 32, 986.77, 29, 3, 914.61, 72.16, 4, 28], ["2026-10-22", 26, 710.84, 22, 4, 620.96, 89.88, 8, 18], ["2026-10-23", 43, 1238.99, 38, 5, 1135.12, 103.87, 14, 27], ["2026-10-24", 69, 2238.93, 68, 1, 2217.7, 21.23, 13, 55], ["2026-10-25", 70, 2362.08, 68, 2, 2313.12, 48.96, 9, 61], ["2026-10-26", 47, 1508.28, 46, 1, 1488.69, 19.59, 2, 44], ["2026-10-27", 42, 1364.71, 41, 1, 1340.28, 24.43, 8, 34], ["2026-10-28", 31, 1046.9, 31, 0, 1046.9, 0.0, 4, 27], ["2026-10-29", 26, 881.71, 26, 0, 881.71, 0.0, 4, 22], ["2026-10-30", 37, 1094.48, 37, 0, 1094.48, 0.0, 9, 27], ["2026-10-31", 44, 1391.88, 39, 5, 1289.51, 102.37, 8, 35], ["2026-11-01", 61, 2001.85, 58, 3, 1933.03, 68.82, 6, 55], ["2026-11-02", 42, 1424.7, 41, 1, 1400.12, 24.58, 7, 32], ["2026-11-03", 38, 1215.43, 37, 1, 1190.79, 24.64, 4, 34], ["2026-11-04", 44, 1406.48, 40, 4, 1312.59, 93.89, 8, 32], ["2026-11-05", 43, 1432.22, 43, 0, 1432.22, 0.0, 8, 33], ["2026-11-06", 49, 1571.15, 47, 2, 1527.3, 43.85, 11, 35], ["2026-11-07", 45, 1425.48, 43, 2, 1377.11, 48.37, 9, 35], ["2026-11-08", 41, 1357.27, 40, 1, 1333.17, 24.1, 9, 32], ["2026-11-09", 40, 1339.06, 40, 0, 1339.06, 0.0, 6, 34], ["2026-11-10", 32, 1025.1, 32, 0, 1025.1, 0.0, 5, 26], ["2026-11-11", 37, 1182.66, 35, 2, 1137.72, 44.94, 8, 28]],
+        "TVG4920": [["2026-08-26", 42, 827.21, 42, 0, 827.21, 0.0, 2, 39], ["2026-08-27", 17, 530.13, 16, 1, 510.17, 19.96, 1, 16], ["2026-08-28", 18, 560.15, 17, 1, 540.23, 19.92, 3, 15], ["2026-08-29", 15, 504.35, 15, 0, 504.35, 0.0, 2, 12], ["2026-08-30", 24, 750.32, 22, 2, 701.39, 48.93, 1, 22], ["2026-08-31", 19, 624.78, 18, 1, 605.81, 18.97, 3, 15], ["2026-09-01", 15, 507.6, 15, 0, 507.6, 0.0, 4, 10], ["2026-09-02", 17, 566.1, 17, 0, 566.1, 0.0, 3, 14], ["2026-09-03", 13, 438.61, 13, 0, 438.61, 0.0, 3, 10], ["2026-09-04", 11, 332.14, 11, 0, 332.14, 0.0, 3, 8], ["2026-09-05", 10, 337.39, 10, 0, 337.39, 0.0, 0, 10], ["2026-09-06", 18, 622.04, 17, 1, 596.97, 25.07, 1, 17], ["2026-09-07", 41, 1327.32, 40, 1, 1307.26, 20.06, 3, 38], ["2026-09-08", 11, 269.7, 11, 0, 269.7, 0.0, 2, 9], ["2026-09-09", 11, 258.3, 11, 0, 258.3, 0.0, 3, 8], ["2026-09-10", 11, 304.34, 11, 0, 304.34, 0.0, 4, 7], ["2026-09-11", 9, 229.45, 9, 0, 229.45, 0.0, 4, 5], ["2026-09-12", 11, 348.45, 11, 0, 348.45, 0.0, 1, 10], ["2026-09-13", 13, 427.52, 12, 1, 402.53, 24.99, 2, 11], ["2026-09-14", 12, 364.82, 11, 1, 345.77, 19.05, 2, 10], ["2026-09-15", 12, 333.47, 12, 0, 333.47, 0.0, 4, 8], ["2026-09-16", 12, 372.66, 11, 1, 347.88, 24.78, 0, 9], ["2026-09-17", 9, 258.28, 7, 2, 208.8, 49.48, 2, 7], ["2026-09-18", 11, 334.8, 11, 0, 334.8, 0.0, 1, 10], ["2026-09-19", 9, 304.46, 9, 0, 304.46, 0.0, 1, 8], ["2026-09-20", 19, 640.81, 18, 1, 616.31, 24.5, 1, 18], ["2026-09-21", 15, 471.4, 14, 1, 446.97, 24.43, 2, 13], ["2026-09-22", 13, 428.42, 13, 0, 428.42, 0.0, 4, 9], ["2026-09-23", 29, 766.27, 29, 0, 766.27, 0.0, 2, 27], ["2026-09-24", 21, 616.97, 21, 0, 616.97, 0.0, 3, 17], ["2026-09-25", 24, 748.29, 21, 3, 683.39, 64.9, 5, 19], ["2026-09-26", 133, 4096.09, 130, 3, 4030.35, 65.74, 19, 113], ["2026-09-27", 100, 3040.85, 96, 4, 2954.54, 86.31, 14, 85], ["2026-09-28", 24, 732.44, 22, 2, 687.31, 45.13, 2, 22], ["2026-09-29", 61, 1918.3, 58, 3, 1859.31, 58.99, 8, 53], ["2026-09-30", 25, 792.68, 24, 1, 769.3, 23.38, 5, 20], ["2026-10-01", 21, 630.78, 20, 1, 611.86, 18.92, 4, 17], ["2026-10-02", 20, 579.83, 19, 1, 560.91, 18.92, 2, 18], ["2026-10-03", 21, 682.2, 21, 0, 682.2, 0.0, 6, 15], ["2026-10-04", 33, 1058.63, 33, 0, 1058.63, 0.0, 3, 30], ["2026-10-05", 11, 378.62, 11, 0, 378.62, 0.0, 2, 9], ["2026-10-06", 22, 725.37, 22, 0, 725.37, 0.0, 1, 21], ["2026-10-07", 17, 548.68, 17, 0, 548.68, 0.0, 6, 11], ["2026-10-08", 16, 547.08, 16, 0, 547.08, 0.0, 1, 15], ["2026-10-09", 18, 599.96, 18, 0, 599.96, 0.0, 6, 12], ["2026-10-10", 34, 1074.42, 33, 1, 1051.93, 22.49, 5, 26], ["2026-10-11", 55, 1734.12, 52, 3, 1670.9, 63.22, 13, 41], ["2026-10-12", 13, 405.19, 13, 0, 405.19, 0.0, 4, 9], ["2026-10-13", 16, 472.58, 16, 0, 472.58, 0.0, 4, 12], ["2026-10-14", 20, 627.0, 20, 0, 627.0, 0.0, 2, 18], ["2026-10-15", 16, 459.15, 16, 0, 459.15, 0.0, 3, 12], ["2026-10-16", 17, 456.01, 17, 0, 456.01, 0.0, 3, 13], ["2026-10-17", 32, 979.2, 31, 1, 955.23, 23.97, 1, 31], ["2026-10-18", 33, 1020.51, 33, 0, 1020.51, 0.0, 9, 24], ["2026-10-19", 9, 259.7, 9, 0, 259.7, 0.0, 2, 7], ["2026-10-20", 15, 404.12, 15, 0, 404.12, 0.0, 2, 12], ["2026-10-21", 18, 572.53, 17, 1, 551.86, 20.67, 4, 14], ["2026-10-22", 17, 503.75, 17, 0, 503.75, 0.0, 5, 12], ["2026-10-23", 20, 612.53, 18, 2, 568.67, 43.86, 2, 18], ["2026-10-24", 28, 909.52, 28, 0, 909.52, 0.0, 5, 22], ["2026-10-25", 22, 693.52, 21, 1, 669.81, 23.71, 5, 17], ["2026-10-26", 13, 409.72, 13, 0, 409.72, 0.0, 1, 11], ["2026-10-27", 13, 422.34, 13, 0, 422.34, 0.0, 6, 7], ["2026-10-28", 11, 369.41, 11, 0, 369.41, 0.0, 2, 9], ["2026-10-29", 14, 472.44, 14, 0, 472.44, 0.0, 2, 12], ["2026-10-30", 12, 309.47, 12, 0, 309.47, 0.0, 3, 9], ["2026-10-31", 15, 492.85, 15, 0, 492.85, 0.0, 5, 10], ["2026-11-01", 30, 995.33, 30, 0, 995.33, 0.0, 9, 18], ["2026-11-02", 14, 431.23, 13, 1, 409.11, 22.12, 2, 11], ["2026-11-03", 13, 438.97, 13, 0, 438.97, 0.0, 2, 10], ["2026-11-04", 15, 481.71, 15, 0, 481.71, 0.0, 2, 13], ["2026-11-05", 16, 483.11, 15, 1, 464.63, 18.48, 3, 13], ["2026-11-06", 17, 518.4, 17, 0, 518.4, 0.0, 5, 10], ["2026-11-07", 22, 725.78, 22, 0, 725.78, 0.0, 8, 14], ["2026-11-08", 20, 663.77, 20, 0, 663.77, 0.0, 3, 17], ["2026-11-09", 10, 318.64, 10, 0, 318.64, 0.0, 3, 7], ["2026-11-10", 13, 397.1, 13, 0, 397.1, 0.0, 2, 11], ["2026-11-11", 18, 511.2, 18, 0, 511.2, 0.0, 6, 9]],
+        "TVG4961": [["2026-08-26", 308, 9498.69, 297, 11, 9239.27, 259.42, 24, 257], ["2026-08-27", 218, 7132.77, 209, 9, 6953.95, 178.82, 28, 178], ["2026-08-28", 167, 5502.22, 160, 7, 5343.06, 159.16, 31, 133], ["2026-08-29", 194, 6350.81, 189, 5, 6242.9, 107.91, 29, 160], ["2026-08-30", 337, 11029.21, 330, 7, 10868.27, 160.94, 38, 287], ["2026-08-31", 190, 6063.56, 184, 6, 5929.04, 134.52, 38, 145], ["2026-09-01", 154, 5091.48, 150, 4, 5024.23, 67.25, 18, 128], ["2026-09-02", 153, 5009.5, 147, 6, 4859.9, 149.6, 32, 119], ["2026-09-03", 135, 4418.37, 125, 10, 4177.56, 240.81, 29, 102], ["2026-09-04", 148, 4707.52, 143, 5, 4591.89, 115.63, 31, 114], ["2026-09-05", 219, 7121.89, 204, 15, 6780.88, 341.01, 40, 177], ["2026-09-06", 348, 11598.3, 331, 17, 11196.74, 401.56, 61, 279], ["2026-09-07", 408, 13573.09, 390, 18, 13173.13, 399.96, 52, 345], ["2026-09-08", 125, 3579.09, 121, 4, 3482.73, 96.36, 34, 87], ["2026-09-09", 96, 2983.05, 92, 4, 2893.37, 89.68, 25, 71], ["2026-09-10", 147, 4832.61, 145, 2, 4782.33, 50.28, 25, 122], ["2026-09-11", 110, 3433.22, 108, 2, 3385.0, 48.22, 40, 68], ["2026-09-12", 137, 4531.95, 133, 4, 4439.35, 92.6, 33, 103], ["2026-09-13", 196, 6541.67, 190, 6, 6405.06, 136.61, 35, 159], ["2026-09-14", 113, 3367.7, 110, 3, 3292.72, 74.98, 22, 90], ["2026-09-15", 125, 3908.31, 119, 6, 3771.56, 136.75, 23, 100], ["2026-09-16", 123, 4035.88, 119, 4, 3943.99, 91.89, 19, 102], ["2026-09-17", 91, 2884.16, 85, 6, 2743.01, 141.15, 17, 74], ["2026-09-18", 99, 2918.22, 97, 2, 2869.2, 49.02, 24, 71], ["2026-09-19", 128, 4028.91, 117, 11, 3799.43, 229.48, 26, 101], ["2026-09-20", 229, 7490.46, 217, 12, 7222.79, 267.67, 41, 181], ["2026-09-21", 94, 2991.74, 88, 6, 2856.48, 135.26, 23, 70], ["2026-09-22", 133, 4344.01, 131, 2, 4298.87, 45.14, 18, 108], ["2026-09-23", 132, 4220.3, 129, 3, 4181.3, 39.0, 24, 107], ["2026-09-24", 113, 3535.53, 112, 1, 3511.33, 24.2, 25, 88], ["2026-09-25", 113, 3749.77, 109, 4, 3658.26, 91.51, 17, 93], ["2026-09-26", 158, 5178.12, 154, 4, 5088.9, 89.22, 28, 128], ["2026-09-27", 137, 4445.58, 127, 10, 4248.44, 197.14, 28, 103], ["2026-09-28", 100, 3010.01, 93, 7, 2862.66, 147.35, 22, 76], ["2026-09-29", 135, 4365.89, 130, 5, 4253.08, 112.81, 23, 111], ["2026-09-30", 99, 3179.96, 97, 2, 3157.99, 21.97, 24, 74], ["2026-10-01", 107, 3314.87, 105, 2, 3267.11, 47.76, 21, 83], ["2026-10-02", 97, 3010.56, 95, 2, 2965.54, 45.02, 26, 70], ["2026-10-03", 120, 3964.11, 115, 5, 3852.59, 111.52, 18, 99], ["2026-10-04", 142, 4705.96, 135, 7, 4553.94, 152.02, 18, 121], ["2026-10-05", 88, 2943.34, 85, 3, 2874.78, 68.56, 10, 74], ["2026-10-06", 100, 3248.85, 96, 4, 3159.05, 89.8, 10, 89], ["2026-10-07", 108, 3250.61, 104, 4, 3158.35, 92.26, 20, 87], ["2026-10-08", 114, 3648.08, 109, 5, 3541.69, 106.39, 25, 83], ["2026-10-09", 100, 3205.9, 99, 1, 3183.41, 22.49, 25, 73], ["2026-10-10", 258, 8111.98, 244, 14, 7821.15, 290.83, 35, 207], ["2026-10-11", 453, 14364.55, 436, 17, 14006.37, 358.18, 63, 377], ["2026-10-12", 97, 3132.27, 92, 5, 3016.86, 115.41, 14, 81], ["2026-10-13", 84, 2728.24, 81, 3, 2666.5, 61.74, 21, 60], ["2026-10-14", 108, 3484.97, 102, 6, 3352.49, 132.48, 18, 88], ["2026-10-15", 85, 2522.0, 83, 2, 2479.23, 42.77, 14, 68], ["2026-10-16", 87, 2780.92, 85, 2, 2733.15, 47.77, 21, 64], ["2026-10-17", 169, 5484.64, 160, 9, 5286.84, 197.8, 18, 148], ["2026-10-18", 178, 5861.94, 169, 9, 5656.9, 205.04, 27, 148], ["2026-10-19", 92, 2990.91, 91, 1, 2971.91, 19.0, 14, 76], ["2026-10-20", 91, 2935.56, 84, 7, 2771.35, 164.21, 10, 80], ["2026-10-21", 73, 2394.8, 71, 2, 2352.25, 42.55, 12, 60], ["2026-10-22", 74, 2388.11, 73, 1, 2368.63, 19.48, 12, 62], ["2026-10-23", 98, 3178.54, 96, 2, 3134.68, 43.86, 18, 77], ["2026-10-24", 175, 5738.07, 169, 6, 5607.66, 130.41, 38, 137], ["2026-10-25", 154, 5161.57, 146, 8, 4980.88, 180.69, 24, 127], ["2026-10-26", 129, 4163.27, 127, 2, 4119.26, 44.01, 18, 109], ["2026-10-27", 112, 3603.28, 110, 2, 3554.45, 48.83, 12, 96], ["2026-10-28", 99, 3266.29, 98, 1, 3246.78, 19.51, 17, 81], ["2026-10-29", 89, 2928.04, 87, 2, 2882.73, 45.31, 19, 69], ["2026-10-30", 85, 2755.67, 84, 1, 2731.1, 24.57, 17, 67], ["2026-10-31", 102, 3293.45, 100, 2, 3249.12, 44.33, 22, 79], ["2026-11-01", 131, 4440.57, 128, 3, 4366.83, 73.74, 13, 116], ["2026-11-02", 100, 3348.16, 99, 1, 3323.58, 24.58, 15, 80], ["2026-11-03", 122, 3890.13, 112, 10, 3678.51, 211.62, 18, 102], ["2026-11-04", 132, 4173.25, 123, 9, 3962.14, 211.11, 21, 107], ["2026-11-05", 102, 3277.9, 101, 1, 3253.26, 24.64, 22, 78], ["2026-11-06", 90, 2917.14, 87, 3, 2853.6, 63.54, 18, 68], ["2026-11-07", 129, 4132.22, 124, 5, 4021.77, 110.45, 21, 107], ["2026-11-08", 113, 3658.67, 111, 2, 3615.29, 43.38, 17, 93], ["2026-11-09", 96, 3150.85, 94, 2, 3105.0, 45.85, 15, 77], ["2026-11-10", 92, 3022.47, 90, 2, 2981.59, 40.88, 19, 71], ["2026-11-11", 94, 3061.28, 90, 4, 2980.39, 80.89, 12, 76]],
+        "TVG7150": [["2026-08-26", 66, 1587.57, 64, 2, 1537.58, 49.99, 6, 56], ["2026-08-27", 29, 925.52, 26, 3, 855.65, 69.87, 4, 25], ["2026-08-28", 31, 1040.99, 31, 0, 1040.99, 0.0, 8, 21], ["2026-08-29", 19, 624.75, 18, 1, 599.94, 24.81, 3, 16], ["2026-08-30", 43, 1393.49, 42, 1, 1373.64, 19.85, 3, 38], ["2026-08-31", 33, 1028.49, 33, 0, 1028.49, 0.0, 5, 26], ["2026-09-01", 22, 737.91, 21, 1, 715.97, 21.94, 5, 16], ["2026-09-02", 25, 861.31, 24, 1, 838.04, 23.27, 10, 15], ["2026-09-03", 22, 720.79, 21, 1, 696.05, 24.74, 5, 14], ["2026-09-04", 16, 485.41, 16, 0, 485.41, 0.0, 8, 8], ["2026-09-05", 37, 1253.43, 37, 0, 1253.43, 0.0, 5, 32], ["2026-09-06", 56, 1868.01, 53, 3, 1801.92, 66.09, 6, 49], ["2026-09-07", 55, 1804.28, 54, 1, 1784.22, 20.06, 9, 46], ["2026-09-08", 17, 385.77, 16, 1, 362.13, 23.64, 3, 14], ["2026-09-09", 11, 332.5, 11, 0, 332.5, 0.0, 5, 6], ["2026-09-10", 12, 421.02, 12, 0, 421.02, 0.0, 1, 11], ["2026-09-11", 22, 617.5, 22, 0, 617.5, 0.0, 5, 17], ["2026-09-12", 12, 388.73, 11, 1, 363.74, 24.99, 2, 10], ["2026-09-13", 41, 1370.38, 39, 2, 1323.69, 46.69, 3, 35], ["2026-09-14", 19, 603.81, 18, 1, 580.09, 23.72, 3, 16], ["2026-09-15", 10, 267.09, 10, 0, 267.09, 0.0, 3, 7], ["2026-09-16", 20, 646.25, 20, 0, 646.25, 0.0, 3, 17], ["2026-09-17", 17, 565.03, 16, 1, 544.0, 21.03, 3, 12], ["2026-09-18", 22, 525.09, 21, 1, 500.58, 24.51, 6, 16], ["2026-09-19", 22, 721.58, 20, 2, 677.11, 44.47, 3, 18], ["2026-09-20", 30, 1043.23, 28, 2, 994.24, 48.99, 7, 22], ["2026-09-21", 8, 247.72, 7, 1, 225.08, 22.64, 2, 6], ["2026-09-22", 15, 478.78, 14, 1, 471.65, 7.13, 1, 14], ["2026-09-23", 30, 971.33, 28, 2, 925.11, 46.22, 7, 22], ["2026-09-24", 10, 280.8, 10, 0, 280.8, 0.0, 1, 9], ["2026-09-25", 15, 497.78, 14, 1, 473.7, 24.08, 3, 12], ["2026-09-26", 17, 571.96, 17, 0, 571.96, 0.0, 3, 14], ["2026-09-27", 13, 430.43, 12, 1, 406.46, 23.97, 2, 11], ["2026-09-28", 11, 372.96, 11, 0, 372.96, 0.0, 3, 8], ["2026-09-29", 14, 442.71, 12, 2, 398.45, 44.26, 0, 14], ["2026-09-30", 10, 330.11, 10, 0, 330.11, 0.0, 1, 9], ["2026-10-01", 13, 443.25, 13, 0, 443.25, 0.0, 5, 8], ["2026-10-02", 17, 379.2, 15, 2, 331.89, 47.31, 1, 16], ["2026-10-03", 16, 538.27, 16, 0, 538.27, 0.0, 2, 14], ["2026-10-04", 11, 367.71, 11, 0, 367.71, 0.0, 2, 9], ["2026-10-05", 11, 327.89, 11, 0, 327.89, 0.0, 3, 8], ["2026-10-06", 12, 417.52, 12, 0, 417.52, 0.0, 2, 9], ["2026-10-07", 15, 491.34, 14, 1, 472.5, 18.84, 2, 13], ["2026-10-08", 9, 246.6, 9, 0, 246.6, 0.0, 2, 7], ["2026-10-09", 9, 288.31, 9, 0, 288.31, 0.0, 3, 6], ["2026-10-10", 27, 861.89, 27, 0, 861.89, 0.0, 2, 24], ["2026-10-11", 60, 1870.31, 59, 1, 1847.41, 22.9, 9, 51], ["2026-10-12", 11, 364.67, 11, 0, 364.67, 0.0, 5, 6], ["2026-10-13", 8, 177.67, 6, 2, 130.47, 47.2, 3, 5], ["2026-10-14", 9, 288.47, 8, 1, 264.71, 23.76, 0, 9], ["2026-10-15", 12, 331.65, 12, 0, 331.65, 0.0, 3, 9], ["2026-10-16", 14, 345.58, 13, 1, 321.78, 23.8, 4, 10], ["2026-10-17", 14, 420.49, 13, 1, 401.56, 18.93, 2, 12], ["2026-10-18", 13, 406.1, 13, 0, 406.1, 0.0, 1, 10], ["2026-10-19", 7, 240.37, 7, 0, 240.37, 0.0, 0, 7], ["2026-10-20", 7, 198.21, 7, 0, 198.21, 0.0, 0, 7], ["2026-10-21", 10, 331.27, 10, 0, 331.27, 0.0, 1, 9], ["2026-10-22", 13, 398.01, 13, 0, 398.01, 0.0, 2, 11], ["2026-10-23", 12, 343.57, 11, 1, 319.2, 24.37, 0, 12], ["2026-10-24", 26, 857.9, 25, 1, 833.42, 24.48, 2, 23], ["2026-10-25", 20, 662.87, 18, 2, 618.06, 44.81, 4, 16], ["2026-10-26", 13, 400.98, 13, 0, 400.98, 0.0, 1, 12], ["2026-10-27", 4, 96.41, 3, 1, 72.0, 24.41, 1, 3], ["2026-10-28", 10, 335.7, 10, 0, 335.7, 0.0, 2, 8], ["2026-10-29", 14, 460.3, 13, 1, 438.46, 21.84, 3, 11], ["2026-10-30", 8, 248.21, 8, 0, 248.21, 0.0, 1, 7], ["2026-10-31", 11, 363.71, 11, 0, 363.71, 0.0, 1, 10], ["2026-11-01", 7, 241.2, 7, 0, 241.2, 0.0, 2, 5], ["2026-11-02", 8, 273.18, 8, 0, 273.18, 0.0, 0, 8], ["2026-11-03", 9, 272.16, 8, 1, 248.8, 23.36, 2, 7], ["2026-11-04", 8, 240.41, 7, 1, 220.7, 19.71, 3, 5], ["2026-11-05", 9, 285.32, 8, 1, 266.08, 19.24, 1, 8], ["2026-11-06", 7, 202.5, 6, 1, 180.0, 22.5, 1, 6], ["2026-11-07", 14, 481.6, 14, 0, 481.6, 0.0, 0, 14], ["2026-11-08", 12, 381.03, 11, 1, 360.55, 20.48, 2, 10], ["2026-11-09", 9, 314.74, 9, 0, 314.74, 0.0, 1, 8], ["2026-11-10", 9, 278.09, 9, 0, 278.09, 0.0, 0, 9], ["2026-11-11", 12, 422.89, 12, 0, 422.89, 0.0, 2, 9]],
+        "TVG7160": [["2026-08-26", 62, 1451.9, 57, 5, 1332.69, 119.21, 4, 55], ["2026-08-27", 28, 846.57, 23, 5, 736.77, 109.8, 4, 24], ["2026-08-28", 23, 745.96, 20, 3, 680.05, 65.91, 5, 16], ["2026-08-29", 31, 999.31, 29, 2, 956.95, 42.36, 4, 26], ["2026-08-30", 51, 1644.6, 49, 2, 1595.84, 48.76, 5, 44], ["2026-08-31", 29, 914.75, 29, 0, 914.75, 0.0, 4, 25], ["2026-09-01", 35, 1184.35, 34, 1, 1164.46, 19.89, 6, 28], ["2026-09-02", 20, 639.13, 19, 1, 614.39, 24.74, 2, 18], ["2026-09-03", 19, 653.66, 19, 0, 653.66, 0.0, 1, 18], ["2026-09-04", 20, 577.57, 19, 1, 552.39, 25.18, 4, 16], ["2026-09-05", 28, 919.94, 27, 1, 894.76, 25.18, 7, 21], ["2026-09-06", 44, 1457.19, 44, 0, 1457.19, 0.0, 5, 39], ["2026-09-07", 51, 1710.84, 49, 2, 1660.7, 50.14, 7, 44], ["2026-09-08", 38, 985.34, 37, 1, 963.97, 21.37, 7, 21], ["2026-09-09", 19, 422.94, 19, 0, 422.94, 0.0, 5, 11], ["2026-09-10", 18, 562.02, 17, 1, 539.59, 22.43, 3, 15], ["2026-09-11", 30, 750.17, 29, 1, 725.18, 24.99, 6, 24], ["2026-09-12", 15, 497.49, 14, 1, 473.97, 23.52, 5, 10], ["2026-09-13", 23, 747.93, 21, 2, 700.55, 47.38, 1, 22], ["2026-09-14", 19, 573.11, 19, 0, 573.11, 0.0, 5, 14], ["2026-09-15", 20, 611.24, 20, 0, 611.24, 0.0, 7, 13], ["2026-09-16", 18, 581.39, 18, 0, 581.39, 0.0, 1, 17], ["2026-09-17", 14, 426.56, 13, 1, 404.29, 22.27, 3, 11], ["2026-09-18", 19, 530.42, 19, 0, 530.42, 0.0, 5, 14], ["2026-09-19", 16, 507.49, 15, 1, 483.01, 24.48, 3, 13], ["2026-09-20", 38, 1263.46, 37, 1, 1241.41, 22.05, 3, 34], ["2026-09-21", 13, 406.89, 13, 0, 406.89, 0.0, 2, 11], ["2026-09-22", 14, 427.12, 14, 0, 427.12, 0.0, 0, 14], ["2026-09-23", 25, 807.76, 24, 1, 783.39, 24.37, 0, 23], ["2026-09-24", 16, 525.01, 15, 1, 510.9, 14.11, 0, 16], ["2026-09-25", 11, 350.6, 11, 0, 350.6, 0.0, 0, 10], ["2026-09-26", 28, 849.04, 26, 2, 810.62, 38.42, 4, 24], ["2026-09-27", 14, 462.15, 14, 0, 462.15, 0.0, 2, 12], ["2026-09-28", 24, 789.29, 23, 1, 765.32, 23.97, 3, 21], ["2026-09-29", 21, 635.84, 20, 1, 615.5, 20.34, 3, 18], ["2026-09-30", 14, 395.74, 13, 1, 374.3, 21.44, 3, 11], ["2026-10-01", 11, 312.82, 11, 0, 312.82, 0.0, 2, 9], ["2026-10-02", 16, 431.35, 15, 1, 410.1, 21.25, 2, 14], ["2026-10-03", 11, 381.76, 11, 0, 381.76, 0.0, 2, 9], ["2026-10-04", 22, 739.44, 22, 0, 739.44, 0.0, 3, 18], ["2026-10-05", 8, 225.66, 7, 1, 204.38, 21.28, 1, 7], ["2026-10-06", 10, 323.73, 10, 0, 323.73, 0.0, 0, 9], ["2026-10-07", 15, 420.72, 14, 1, 397.17, 23.55, 3, 12], ["2026-10-08", 16, 557.5, 16, 0, 557.5, 0.0, 4, 12], ["2026-10-09", 15, 440.41, 14, 1, 416.8, 23.61, 4, 10], ["2026-10-10", 39, 1208.6, 36, 3, 1145.86, 62.74, 6, 33], ["2026-10-11", 48, 1484.72, 46, 2, 1439.63, 45.09, 8, 40], ["2026-10-12", 15, 490.45, 15, 0, 490.45, 0.0, 0, 15], ["2026-10-13", 11, 353.72, 11, 0, 353.72, 0.0, 1, 9], ["2026-10-14", 18, 540.02, 17, 1, 520.48, 19.54, 3, 15], ["2026-10-15", 14, 319.61, 14, 0, 319.61, 0.0, 5, 8], ["2026-10-16", 10, 344.07, 10, 0, 344.07, 0.0, 2, 8], ["2026-10-17", 23, 717.98, 19, 4, 626.95, 91.03, 5, 17], ["2026-10-18", 26, 860.04, 25, 1, 838.2, 21.84, 2, 24], ["2026-10-19", 15, 508.29, 15, 0, 508.29, 0.0, 2, 10], ["2026-10-20", 11, 322.18, 11, 0, 322.18, 0.0, 2, 9], ["2026-10-21", 10, 333.1, 10, 0, 333.1, 0.0, 2, 8], ["2026-10-22", 8, 239.26, 8, 0, 239.26, 0.0, 0, 8], ["2026-10-23", 12, 357.27, 12, 0, 357.27, 0.0, 4, 8], ["2026-10-24", 17, 511.17, 17, 0, 511.17, 0.0, 2, 15], ["2026-10-25", 24, 792.99, 22, 2, 749.02, 43.97, 2, 21], ["2026-10-26", 18, 604.26, 18, 0, 604.26, 0.0, 1, 15], ["2026-10-27", 10, 329.09, 10, 0, 329.09, 0.0, 0, 10], ["2026-10-28", 10, 308.2, 10, 0, 308.2, 0.0, 3, 7], ["2026-10-29", 9, 267.75, 9, 0, 267.75, 0.0, 2, 7], ["2026-10-30", 7, 234.58, 7, 0, 234.58, 0.0, 3, 3], ["2026-10-31", 13, 417.85, 13, 0, 417.85, 0.0, 2, 11], ["2026-11-01", 15, 511.16, 15, 0, 511.16, 0.0, 2, 13], ["2026-11-02", 11, 371.32, 11, 0, 371.32, 0.0, 1, 10], ["2026-11-03", 14, 485.12, 14, 0, 485.12, 0.0, 1, 13], ["2026-11-04", 13, 410.67, 12, 1, 386.03, 24.64, 1, 12], ["2026-11-05", 9, 292.13, 9, 0, 292.13, 0.0, 1, 8], ["2026-11-06", 7, 170.07, 7, 0, 170.07, 0.0, 1, 6], ["2026-11-07", 6, 172.8, 6, 0, 172.8, 0.0, 0, 6], ["2026-11-08", 11, 361.97, 10, 1, 342.69, 19.28, 2, 9], ["2026-11-09", 8, 278.52, 8, 0, 278.52, 0.0, 1, 7], ["2026-11-10", 6, 207.57, 6, 0, 207.57, 0.0, 1, 5], ["2026-11-11", 4, 138.04, 4, 0, 138.04, 0.0, 1, 3]],
+        "TVG7170": [["2026-08-26", 125, 3548.85, 121, 4, 3463.0, 85.85, 9, 114], ["2026-08-27", 58, 1860.11, 53, 5, 1742.97, 117.14, 6, 52], ["2026-08-28", 62, 2045.3, 60, 2, 2000.33, 44.97, 8, 53], ["2026-08-29", 56, 1813.25, 52, 4, 1725.22, 88.03, 4, 52], ["2026-08-30", 84, 2753.42, 80, 4, 2660.22, 93.2, 9, 75], ["2026-08-31", 54, 1652.43, 48, 6, 1526.3, 126.13, 12, 42], ["2026-09-01", 39, 1286.95, 38, 1, 1262.09, 24.86, 7, 31], ["2026-09-02", 48, 1478.68, 47, 1, 1456.07, 22.61, 5, 42], ["2026-09-03", 40, 1379.65, 39, 1, 1357.84, 21.81, 4, 35], ["2026-09-04", 27, 866.29, 27, 0, 866.29, 0.0, 5, 22], ["2026-09-05", 68, 2268.57, 66, 2, 2221.83, 46.74, 7, 61], ["2026-09-06", 95, 3200.64, 92, 3, 3126.27, 74.37, 10, 84], ["2026-09-07", 95, 3158.55, 91, 4, 3060.21, 98.34, 10, 85], ["2026-09-08", 36, 822.6, 35, 1, 797.46, 25.14, 10, 26], ["2026-09-09", 27, 845.57, 27, 0, 845.57, 0.0, 6, 19], ["2026-09-10", 52, 1622.79, 50, 2, 1572.8, 49.99, 12, 40], ["2026-09-11", 43, 1093.38, 42, 1, 1070.75, 22.63, 8, 34], ["2026-09-12", 38, 1194.8, 33, 5, 1076.34, 118.46, 6, 32], ["2026-09-13", 56, 1912.7, 56, 0, 1912.7, 0.0, 5, 50], ["2026-09-14", 23, 568.67, 22, 1, 546.7, 21.97, 5, 18], ["2026-09-15", 34, 1003.14, 33, 1, 978.27, 24.87, 10, 20], ["2026-09-16", 35, 1168.7, 33, 2, 1121.62, 47.08, 4, 31], ["2026-09-17", 23, 789.46, 23, 0, 789.46, 0.0, 2, 21], ["2026-09-18", 27, 729.87, 27, 0, 729.87, 0.0, 3, 24], ["2026-09-19", 33, 996.77, 29, 4, 926.91, 69.86, 10, 23], ["2026-09-20", 54, 1806.54, 51, 3, 1735.47, 71.07, 8, 45], ["2026-09-21", 24, 687.87, 22, 2, 643.83, 44.04, 4, 19], ["2026-09-22", 40, 1278.45, 39, 1, 1258.95, 19.5, 6, 34], ["2026-09-23", 49, 1440.22, 46, 3, 1370.55, 69.67, 7, 41], ["2026-09-24", 38, 1112.66, 37, 1, 1089.47, 23.19, 10, 28], ["2026-09-25", 28, 928.42, 27, 1, 904.41, 24.01, 5, 22], ["2026-09-26", 64, 2140.03, 63, 1, 2117.26, 22.77, 12, 49], ["2026-09-27", 61, 1946.54, 59, 2, 1902.66, 43.88, 9, 50], ["2026-09-28", 33, 1053.03, 30, 3, 988.34, 64.69, 5, 28], ["2026-09-29", 53, 1703.43, 52, 1, 1684.29, 19.14, 7, 45], ["2026-09-30", 40, 1073.18, 37, 3, 1014.81, 58.37, 8, 31], ["2026-10-01", 28, 767.53, 23, 5, 663.31, 104.22, 6, 22], ["2026-10-02", 41, 1147.49, 39, 2, 1107.31, 40.18, 9, 32], ["2026-10-03", 34, 1131.28, 33, 1, 1112.36, 18.92, 8, 25], ["2026-10-04", 46, 1526.0, 45, 1, 1507.09, 18.91, 8, 38], ["2026-10-05", 27, 912.58, 27, 0, 912.58, 0.0, 4, 22], ["2026-10-06", 28, 936.26, 28, 0, 936.26, 0.0, 4, 24], ["2026-10-07", 35, 978.46, 35, 0, 978.46, 0.0, 4, 30], ["2026-10-08", 50, 1580.89, 50, 0, 1580.89, 0.0, 10, 40], ["2026-10-09", 26, 723.02, 26, 0, 723.02, 0.0, 7, 19], ["2026-10-10", 88, 2685.91, 80, 8, 2535.85, 150.06, 13, 72], ["2026-10-11", 127, 4042.38, 125, 2, 3999.74, 42.64, 14, 113], ["2026-10-12", 34, 1079.64, 34, 0, 1079.64, 0.0, 6, 27], ["2026-10-13", 12, 333.07, 11, 1, 332.68, 0.39, 4, 8], ["2026-10-14", 31, 1044.45, 29, 2, 997.08, 47.37, 7, 24], ["2026-10-15", 26, 599.9, 26, 0, 599.9, 0.0, 7, 19], ["2026-10-16", 20, 481.17, 19, 1, 459.75, 21.42, 8, 12], ["2026-10-17", 46, 1486.88, 44, 2, 1439.96, 46.92, 6, 40], ["2026-10-18", 43, 1417.08, 42, 1, 1395.53, 21.55, 5, 37], ["2026-10-19", 11, 370.55, 11, 0, 370.55, 0.0, 2, 9], ["2026-10-20", 23, 709.39, 22, 1, 686.22, 23.17, 3, 20], ["2026-10-21", 20, 559.69, 19, 1, 535.38, 24.31, 1, 19], ["2026-10-22", 21, 650.21, 20, 1, 625.86, 24.35, 1, 20], ["2026-10-23", 32, 974.98, 30, 2, 932.25, 42.73, 7, 25], ["2026-10-24", 45, 1508.23, 43, 2, 1459.28, 48.95, 7, 38], ["2026-10-25", 33, 1114.4, 31, 2, 1067.99, 46.41, 5, 28], ["2026-10-26", 40, 1239.78, 39, 1, 1215.3, 24.48, 5, 35], ["2026-10-27", 26, 812.06, 25, 1, 812.06, 0.0, 5, 20], ["2026-10-28", 42, 1383.7, 42, 0, 1383.7, 0.0, 8, 34], ["2026-10-29", 32, 1083.35, 32, 0, 1083.35, 0.0, 7, 24], ["2026-10-30", 33, 982.59, 33, 0, 982.59, 0.0, 5, 26], ["2026-10-31", 33, 1107.76, 32, 1, 1086.11, 21.65, 9, 24], ["2026-11-01", 56, 1911.99, 56, 0, 1911.99, 0.0, 7, 49], ["2026-11-02", 37, 1215.04, 36, 1, 1195.38, 19.66, 5, 31], ["2026-11-03", 37, 1218.85, 35, 2, 1169.56, 49.29, 8, 28], ["2026-11-04", 36, 1150.25, 36, 0, 1150.25, 0.0, 8, 27], ["2026-11-05", 20, 623.27, 19, 1, 598.63, 24.64, 3, 16], ["2026-11-06", 31, 950.85, 31, 0, 950.85, 0.0, 8, 23], ["2026-11-07", 40, 1294.14, 37, 3, 1221.5, 72.64, 8, 32], ["2026-11-08", 38, 1262.09, 37, 1, 1240.26, 21.83, 5, 33], ["2026-11-09", 34, 1103.99, 34, 0, 1103.99, 0.0, 6, 28], ["2026-11-10", 31, 1024.71, 30, 1, 1000.54, 24.17, 4, 26], ["2026-11-11", 42, 1366.57, 41, 1, 1345.24, 21.33, 4, 38]]
       },
       "planBySku": {},
       "pdp": [
@@ -7538,7 +7591,7 @@ window.DASHBOARD_DATA = {
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 378
+          "pairs": 382
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
@@ -7548,7 +7601,7 @@ window.DASHBOARD_DATA = {
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 156
+          "pairs": 158
         },
         {
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
@@ -7563,12 +7616,12 @@ window.DASHBOARD_DATA = {
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 84
+          "pairs": 85
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG179",
-          "pairs": 64
+          "pairs": 66
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
@@ -7595,32 +7648,38 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4880",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG4880",
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
           "sku": "TVG479",
           "pairs": 4
         },
         {
           "primarySku": "TVG4880",
+          "product": "Filtered Effects\u2122\ufe0f Protecting Primer SPF 37",
+          "sku": "TVG362",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG513",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG093",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4880",
           "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
           "sku": "TVG239",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG181",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
           "pairs": 2
         },
         {
@@ -7631,20 +7690,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4880",
-          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
-          "sku": "TVG432",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG353",
           "pairs": 2
         },
         {
           "primarySku": "TVG4880",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4880",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG093",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 2
         },
         {
@@ -7661,14 +7714,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4900",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
           "pairs": 34
         },
         {
           "primarySku": "TVG4900",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 34
         },
         {
@@ -7680,7 +7733,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG4900",
           "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG181",
+          "sku": "TVG179",
           "pairs": 19
         },
         {
@@ -7692,7 +7745,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG4900",
           "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
+          "sku": "TVG181",
           "pairs": 19
         },
         {
@@ -7703,8 +7756,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4900",
-          "product": "Triple Threat\u2122 Bronzer Stick",
-          "sku": "TVG327",
+          "product": "Filtered Effects\u2122 Blurring Primer",
+          "sku": "TVG348",
           "pairs": 17
         },
         {
@@ -7727,15 +7780,21 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4920",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
+          "pairs": 6
+        },
+        {
+          "primarySku": "TVG4920",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG5870",
           "pairs": 6
         },
         {
           "primarySku": "TVG4920",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 6
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG565",
+          "pairs": 5
         },
         {
           "primarySku": "TVG4920",
@@ -7751,27 +7810,21 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4920",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG565",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG4920",
-          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
-          "sku": "TVG7240",
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
           "pairs": 4
         },
         {
           "primarySku": "TVG4920",
-          "product": "Focus Eyeshadow\u2122 Palette",
-          "sku": "TVG6700",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG180",
           "pairs": 4
         },
         {
           "primarySku": "TVG4961",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 191
+          "pairs": 195
         },
         {
           "primarySku": "TVG4961",
@@ -7783,7 +7836,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG4961",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 82
+          "pairs": 84
         },
         {
           "primarySku": "TVG4961",
@@ -7823,8 +7876,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4961",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG425",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 27
         },
         {
@@ -7859,21 +7912,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7150",
-          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
-          "sku": "TVG216",
-          "pairs": 4
-        },
-        {
-          "primarySku": "TVG7150",
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "sku": "TVG093",
           "pairs": 4
         },
         {
           "primarySku": "TVG7150",
-          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
-          "sku": "TVG7250",
-          "pairs": 3
+          "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
+          "sku": "TVG216",
+          "pairs": 4
         },
         {
           "primarySku": "TVG7150",
@@ -7885,6 +7932,12 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG7150",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG7150",
+          "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
+          "sku": "TVG7250",
           "pairs": 3
         },
         {
@@ -7925,6 +7978,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7160",
+          "product": "Liquid Lash\u2122 Volumizer Mascara",
+          "sku": "TVG6750",
+          "pairs": 5
+        },
+        {
+          "primarySku": "TVG7160",
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG176",
           "pairs": 5
@@ -7937,14 +7996,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7160",
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6750",
-          "pairs": 5
-        },
-        {
-          "primarySku": "TVG7160",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG509",
+          "sku": "TVG534",
           "pairs": 4
         },
         {
@@ -7967,15 +8020,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7170",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
           "pairs": 15
         },
         {
           "primarySku": "TVG7170",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 14
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
+          "pairs": 15
         },
         {
           "primarySku": "TVG7170",
@@ -8003,61 +8056,61 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG7170",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
-          "pairs": 9
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6390",
+          "pairs": 10
         }
       ],
       "categoryCustomers": {
         "category": "Triple Threat",
-        "total": 19811,
-        "existingCategory": 9256,
-        "newToCategory": 10555,
+        "total": 19981,
+        "existingCategory": 9349,
+        "newToCategory": 10632,
         "byVariant": [
-          {
-            "sku": "TVG7170",
-            "name": "Nina",
-            "newToCategory": 1642,
-            "existingCategory": 1525
-          },
-          {
-            "sku": "TVG7150",
-            "name": "Mackenzie",
-            "newToCategory": 704,
-            "existingCategory": 631
-          },
           {
             "sku": "TVG4961",
             "name": "Kaisa",
-            "newToCategory": 5841,
-            "existingCategory": 4618
+            "newToCategory": 5881,
+            "existingCategory": 4665
           },
           {
             "sku": "TVG4900",
             "name": "Joy",
-            "newToCategory": 1852,
-            "existingCategory": 1851
+            "newToCategory": 1866,
+            "existingCategory": 1870
           },
           {
             "sku": "TVG4920",
             "name": "Tessa",
-            "newToCategory": 869,
-            "existingCategory": 737
+            "newToCategory": 878,
+            "existingCategory": 743
           },
           {
             "sku": "TVG4880",
             "name": "Dionne",
-            "newToCategory": 290,
-            "existingCategory": 498
+            "newToCategory": 291,
+            "existingCategory": 500
+          },
+          {
+            "sku": "TVG7170",
+            "name": "Nina",
+            "newToCategory": 1657,
+            "existingCategory": 1550
+          },
+          {
+            "sku": "TVG7150",
+            "name": "Mackenzie",
+            "newToCategory": 710,
+            "existingCategory": 635
           },
           {
             "sku": "TVG7160",
             "name": "Allison",
-            "newToCategory": 685,
-            "existingCategory": 751
+            "newToCategory": 687,
+            "existingCategory": 753
           }
         ],
-        "daily": [["2026-08-26", 244, 248], ["2026-08-27", 192, 150], ["2026-08-28", 174, 127], ["2026-08-29", 172, 156], ["2026-08-30", 291, 268], ["2026-08-31", 197, 135], ["2026-09-01", 138, 129], ["2026-09-02", 167, 128], ["2026-09-03", 120, 110], ["2026-09-04", 120, 119], ["2026-09-05", 226, 188], ["2026-09-06", 338, 294], ["2026-09-07", 385, 352], ["2026-09-08", 159, 78], ["2026-09-09", 110, 69], ["2026-09-10", 150, 115], ["2026-09-11", 148, 91], ["2026-09-12", 144, 97], ["2026-09-13", 201, 174], ["2026-09-14", 112, 91], ["2026-09-15", 142, 79], ["2026-09-16", 139, 94], ["2026-09-17", 90, 82], ["2026-09-18", 114, 82], ["2026-09-19", 133, 102], ["2026-09-20", 215, 201], ["2026-09-21", 102, 66], ["2026-09-22", 105, 121], ["2026-09-23", 155, 139], ["2026-09-24", 116, 101], ["2026-09-25", 109, 99], ["2026-09-26", 229, 179], ["2026-09-27", 200, 137], ["2026-09-28", 109, 97], ["2026-09-29", 153, 147], ["2026-09-30", 114, 92], ["2026-10-01", 109, 92], ["2026-10-02", 129, 78], ["2026-10-03", 118, 105], ["2026-10-04", 129, 161], ["2026-10-05", 74, 89], ["2026-10-06", 83, 107], ["2026-10-07", 108, 103], ["2026-10-08", 132, 93], ["2026-10-09", 104, 80], ["2026-10-10", 236, 234], ["2026-10-11", 454, 373], ["2026-10-12", 91, 98], ["2026-10-13", 75, 68], ["2026-10-14", 103, 104], ["2026-10-15", 92, 75], ["2026-10-16", 96, 65], ["2026-10-17", 153, 176], ["2026-10-18", 183, 167], ["2026-10-19", 79, 76], ["2026-10-20", 81, 93], ["2026-10-21", 77, 78], ["2026-10-22", 84, 74], ["2026-10-23", 96, 97], ["2026-10-24", 171, 174], ["2026-10-25", 167, 129], ["2026-10-26", 131, 117], ["2026-10-27", 90, 101], ["2026-10-28", 105, 80], ["2026-10-29", 79, 89], ["2026-10-30", 75, 87], ["2026-10-31", 92, 102], ["2026-11-01", 138, 148], ["2026-11-02", 90, 100], ["2026-11-03", 87, 130], ["2026-11-04", 102, 122], ["2026-11-05", 96, 91], ["2026-11-06", 100, 76], ["2026-11-07", 134, 106], ["2026-11-08", 112, 107], ["2026-11-09", 94, 87], ["2026-11-10", 86, 88]]
+        "daily": [["2026-08-26", 244, 248], ["2026-08-27", 192, 150], ["2026-08-28", 174, 127], ["2026-08-29", 172, 156], ["2026-08-30", 291, 268], ["2026-08-31", 197, 135], ["2026-09-01", 138, 129], ["2026-09-02", 167, 128], ["2026-09-03", 120, 110], ["2026-09-04", 120, 119], ["2026-09-05", 226, 188], ["2026-09-06", 338, 294], ["2026-09-07", 385, 352], ["2026-09-08", 159, 78], ["2026-09-09", 110, 69], ["2026-09-10", 150, 115], ["2026-09-11", 148, 91], ["2026-09-12", 144, 97], ["2026-09-13", 201, 174], ["2026-09-14", 112, 91], ["2026-09-15", 142, 79], ["2026-09-16", 139, 94], ["2026-09-17", 90, 82], ["2026-09-18", 114, 82], ["2026-09-19", 133, 102], ["2026-09-20", 215, 201], ["2026-09-21", 102, 66], ["2026-09-22", 105, 121], ["2026-09-23", 155, 139], ["2026-09-24", 116, 101], ["2026-09-25", 109, 99], ["2026-09-26", 229, 179], ["2026-09-27", 200, 137], ["2026-09-28", 109, 97], ["2026-09-29", 153, 147], ["2026-09-30", 114, 92], ["2026-10-01", 109, 92], ["2026-10-02", 129, 78], ["2026-10-03", 118, 105], ["2026-10-04", 129, 161], ["2026-10-05", 73, 89], ["2026-10-06", 83, 107], ["2026-10-07", 108, 103], ["2026-10-08", 132, 93], ["2026-10-09", 104, 80], ["2026-10-10", 236, 234], ["2026-10-11", 454, 373], ["2026-10-12", 91, 98], ["2026-10-13", 75, 68], ["2026-10-14", 103, 104], ["2026-10-15", 92, 75], ["2026-10-16", 96, 65], ["2026-10-17", 153, 176], ["2026-10-18", 183, 167], ["2026-10-19", 79, 76], ["2026-10-20", 81, 93], ["2026-10-21", 77, 78], ["2026-10-22", 84, 74], ["2026-10-23", 96, 97], ["2026-10-24", 171, 174], ["2026-10-25", 167, 129], ["2026-10-26", 131, 117], ["2026-10-27", 90, 101], ["2026-10-28", 105, 80], ["2026-10-29", 79, 89], ["2026-10-30", 75, 87], ["2026-10-31", 92, 102], ["2026-11-01", 138, 148], ["2026-11-02", 90, 100], ["2026-11-03", 87, 130], ["2026-11-04", 102, 122], ["2026-11-05", 96, 91], ["2026-11-06", 100, 76], ["2026-11-07", 134, 106], ["2026-11-08", 112, 107], ["2026-11-09", 94, 87], ["2026-11-10", 86, 88], ["2026-11-11", 80, 101]]
       }
     },
     {
@@ -8070,31 +8123,31 @@ window.DASHBOARD_DATA = {
       "subtitle": "Seasonal reanimation \u00b7 Liquid Balm Lip Treatment",
       "accent": "#C86B2B",
       "summary": {
-        "netSales": 143205.59,
-        "units": 6021,
-        "orders": 5368,
+        "netSales": 143350.73,
+        "units": 6027,
+        "orders": 5373,
         "aov": 26.68,
-        "newCustomers": 1037,
-        "retCustomers": 4174,
-        "totalCustomers": 5211,
+        "newCustomers": 1039,
+        "retCustomers": 4175,
+        "totalCustomers": 5214,
         "newPct": 19.9,
         "retPct": 80.1,
-        "planUnits": 10271,
-        "pctToPlanUnits": 58.6,
-        "subscriptionOrders": 1296,
-        "subscriptionUnits": 1457,
-        "subscriptionRevenue": 37799.0,
-        "newCustomerRevenue": 27705.58,
-        "retCustomerRevenue": 115500.01,
+        "planUnits": 10332,
+        "pctToPlanUnits": 58.3,
+        "subscriptionOrders": 1298,
+        "subscriptionUnits": 1459,
+        "subscriptionRevenue": 37851.0,
+        "newCustomerRevenue": 27752.38,
+        "retCustomerRevenue": 115598.35,
         "pdpViews": 109099,
         "pdpAtcRate": 11.8,
         "pdpCvr": 4.7
       },
       "regions": {
         "us": {
-          "units": 5760,
-          "netSales": 138837.97,
-          "orders": 5131
+          "units": 5766,
+          "netSales": 138983.11,
+          "orders": 5136
         },
         "ca": {
           "units": 261,
@@ -8103,7 +8156,7 @@ window.DASHBOARD_DATA = {
         }
       },
       "trafficStart": "2026-09-02",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [
           {
@@ -8256,46 +8309,46 @@ window.DASHBOARD_DATA = {
             "month": "Sep 2026",
             "chs": {
               "Direct": 599641,
-              "Referral": 17774,
-              "Cross-network": 146875,
-              "Organic Social": 78671,
-              "SMS": 288317,
-              "Paid Video": 2821,
-              "Organic Shopping": 47994,
-              "Unassigned": 320914,
-              "Paid Search": 339126,
               "Display": 5803,
-              "Organic Video": 189,
-              "AI Assistant": 1944,
-              "Paid Shopping": 91279,
-              "Paid Other": 453819,
-              "Organic Search": 87115,
-              "Email": 396417,
               "Paid Social": 1636830,
+              "Referral": 17774,
+              "AI Assistant": 1944,
+              "Paid Video": 2821,
+              "Paid Other": 453819,
+              "Email": 396417,
+              "Paid Search": 339126,
+              "Unassigned": 320914,
+              "Organic Shopping": 47994,
+              "Organic Social": 78671,
+              "Paid Shopping": 91279,
+              "Organic Search": 87115,
+              "Organic Video": 189,
+              "SMS": 288317,
+              "Cross-network": 146875,
               "Affiliates": 11
             }
           },
           {
             "month": "Oct 2026",
             "chs": {
-              "Organic Shopping": 5550,
-              "SMS": 50837,
-              "Organic Video": 62,
               "AI Assistant": 560,
               "Email": 91272,
               "Paid Shopping": 14993,
-              "Referral": 3235,
-              "Paid Other": 14086,
-              "Paid Video": 244,
-              "Paid Social": 312761,
-              "Paid Search": 32782,
-              "Affiliates": 3,
-              "Direct": 134575,
               "Display": 531,
-              "Organic Social": 9693,
+              "Direct": 134575,
+              "Affiliates": 3,
+              "Paid Social": 312761,
               "Unassigned": 66436,
+              "Organic Video": 62,
+              "Organic Shopping": 5550,
+              "Paid Search": 32782,
+              "Organic Social": 9693,
               "Cross-network": 10091,
-              "Organic Search": 46032
+              "Paid Video": 244,
+              "SMS": 50837,
+              "Organic Search": 46032,
+              "Referral": 3235,
+              "Paid Other": 14086
             }
           }
         ]
@@ -8304,18 +8357,18 @@ window.DASHBOARD_DATA = {
         {
           "label": "Pout Hero Liquid Balm Treatment (com)",
           "page": "thrivecausemetics.com/products/pout-hero-liquid-balm-treatment",
-          "pageviews": 544459,
-          "sessions": 109434,
-          "txns": 5584,
-          "rev": 353915.05,
+          "pageviews": 544919,
+          "sessions": 109587,
+          "txns": 5585,
+          "rev": 354030.87,
           "eng": 32.8,
           "cvr": 5.1
         },
         {
           "label": "Pout Hero Liquid Balm Treatment (ca)",
           "page": "thrivecausemetics.ca/products/pout-hero-liquid-balm-treatment",
-          "pageviews": 19248,
-          "sessions": 6791,
+          "pageviews": 19256,
+          "sessions": 6799,
           "txns": 140,
           "rev": 10614.28,
           "eng": 2.2,
@@ -8324,27 +8377,27 @@ window.DASHBOARD_DATA = {
         {
           "label": "Pout Hero Exfoliating Lip Scrub 1 (com)",
           "page": "thrivecausemetics.com/products/pout-hero-exfoliating-lip-scrub-1",
-          "pageviews": 4346,
-          "sessions": 832,
-          "txns": 91,
-          "rev": 6072.01,
-          "eng": 38.5,
-          "cvr": 10.94
+          "pageviews": 4416,
+          "sessions": 853,
+          "txns": 92,
+          "rev": 6117.92,
+          "eng": 38.3,
+          "cvr": 10.79
         },
         {
           "label": "Pout Hero Exfoliating Lip Scrub (ca)",
           "page": "thrivecausemetics.ca/products/pout-hero-exfoliating-lip-scrub",
-          "pageviews": 221,
-          "sessions": 113,
+          "pageviews": 222,
+          "sessions": 114,
           "txns": 1,
           "rev": 95.6,
-          "eng": 2.7,
+          "eng": 2.6,
           "cvr": 0.88
         },
         {
-          "label": "Pout Hero Liquid Balm Treatment (com)",
-          "page": "thrivecausemetics.com/en-gb/products/pout-hero-liquid-balm-treatment",
-          "pageviews": 6,
+          "label": "Pout Hero Exfoliating Lip Scrub 1 (ca)",
+          "page": "thrivecausemetics.ca/products/pout-hero-exfoliating-lip-scrub-1",
+          "pageviews": 5,
           "sessions": 4,
           "txns": 0,
           "rev": 0.0,
@@ -8352,9 +8405,9 @@ window.DASHBOARD_DATA = {
           "cvr": 0.0
         },
         {
-          "label": "Pout Hero Exfoliating Lip Scrub 1 (ca)",
-          "page": "thrivecausemetics.ca/products/pout-hero-exfoliating-lip-scrub-1",
-          "pageviews": 5,
+          "label": "Pout Hero Liquid Balm Treatment (com)",
+          "page": "thrivecausemetics.com/en-gb/products/pout-hero-liquid-balm-treatment",
+          "pageviews": 6,
           "sessions": 4,
           "txns": 0,
           "rev": 0.0,
@@ -8372,28 +8425,28 @@ window.DASHBOARD_DATA = {
           "cvr": 0.0
         },
         {
-          "label": "Pout Hero L= (com)",
-          "page": "thrivecausemetics.com/products/pout-hero-l=",
-          "pageviews": 1,
+          "label": "Pumpkin Spice Roast (com)",
+          "page": "thrivecausemetics.com/products/pumpkin-spice-roast",
+          "pageviews": 2,
           "sessions": 1,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
+          "txns": 2,
+          "rev": 44.14,
+          "eng": 100.0,
+          "cvr": 200.0
         },
         {
-          "label": "Pout Hero Liquid = (com)",
-          "page": "thrivecausemetics.com/products/pout-hero-liquid-=",
-          "pageviews": 1,
+          "label": "Pumpkin Spice Creamer (com)",
+          "page": "thrivecausemetics.com/products/pumpkin-spice-creamer",
+          "pageviews": 2,
           "sessions": 1,
-          "txns": 0,
-          "rev": 0.0,
-          "eng": 0.0,
-          "cvr": 0.0
+          "txns": 2,
+          "rev": 285.56,
+          "eng": 100.0,
+          "cvr": 200.0
         },
         {
-          "label": "Pout Hero= (com)",
-          "page": "thrivecausemetics.com/products/pout-hero=",
+          "label": "Pout Hero = (ca)",
+          "page": "thrivecausemetics.ca/products/pout-hero-=",
           "pageviews": 1,
           "sessions": 1,
           "txns": 0,
@@ -8688,6 +8741,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-10",
           "cumPlanUnits": 10271
+        },
+        {
+          "date": "2026-11-11",
+          "cumPlanUnits": 10332
         }
       ],
       "planTotalUnits": 41426,
@@ -8700,34 +8757,34 @@ window.DASHBOARD_DATA = {
           "product": "Pout Hero\u2122 Liquid Balm Lip Treatment",
           "shade": "Seasonal flavour",
           "color": "#C86B2B",
-          "netSales": 143205.59,
-          "units": 6021,
-          "orders": 5368,
-          "newCustomers": 1037,
-          "retCustomers": 4174,
-          "usUnits": 5760,
+          "netSales": 143350.73,
+          "units": 6027,
+          "orders": 5373,
+          "newCustomers": 1039,
+          "retCustomers": 4175,
+          "usUnits": 5766,
           "caUnits": 261,
-          "usNetSales": 138837.97,
+          "usNetSales": 138983.11,
           "caNetSales": 4367.62,
-          "planUnits": 10271,
-          "pctToPlanUnits": 58.6,
-          "inventoryUnits": 25258,
-          "runRateUnitsPerDay": 11.0,
-          "daysToOOS": 2296,
-          "estOOSDate": "2033-02-22",
-          "usInventoryUnits": 24889,
+          "planUnits": 10332,
+          "pctToPlanUnits": 58.3,
+          "inventoryUnits": 25252,
+          "runRateUnitsPerDay": 10.29,
+          "daysToOOS": 2454,
+          "estOOSDate": "2033-07-31",
+          "usInventoryUnits": 24883,
           "caInventoryUnits": 369,
-          "usRunRateUnitsPerDay": 10.57,
+          "usRunRateUnitsPerDay": 9.86,
           "caRunRateUnitsPerDay": 0.43,
-          "usDaysToOOS": 2354,
+          "usDaysToOOS": 2523,
           "caDaysToOOS": 858,
-          "usEstOOSDate": "2033-04-21",
-          "caEstOOSDate": "2029-03-17",
+          "usEstOOSDate": "2033-10-08",
+          "caEstOOSDate": "2029-03-18",
           "planTotalUnits": 41426,
           "pctToGoalUnits": 14.5,
-          "unitsToGoal": 35405,
+          "unitsToGoal": 35399,
           "planEndDate": "2026-12-30",
-          "weeksOfStock": 328.0,
+          "weeksOfStock": 350.6,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         }
@@ -8738,14 +8795,14 @@ window.DASHBOARD_DATA = {
             "rank": 3,
             "key": "recent-behind:TBB013",
             "title": "Pumpkin Spice Latte (Pout Hero\u2122 Liquid Balm Lip Treatment) is behind plan over the last 7 days",
-            "detail": "77 units against 397 planned (19%), 320 short \u2014 about $7,611 at its current price.",
+            "detail": "72 units against 394 planned (18%), 322 short \u2014 about $7,659 at its current price.",
             "action": "Recent, not cumulative \u2014 this is the last week only. Worth checking against promo calendar and paid support before treating it as demand."
           },
           {
             "rank": 4,
             "key": "pacing",
             "title": "The whole launch is pacing behind plan",
-            "detail": "77 units vs 397 planned over the last 7 days (19%). Cumulative attainment can stay green while recent days slip.",
+            "detail": "72 units vs 394 planned over the last 7 days (18%). Cumulative attainment can stay green while recent days slip.",
             "action": "Launch-wide rather than one shade \u2014 look at traffic and promo support before shade-level merchandising."
           }
         ],
@@ -8758,7 +8815,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "new-to-category",
             "title": "39% of buyers are new to Lip",
-            "detail": "2,016 of 5,211 buyers had not purchased this category before."
+            "detail": "2,018 of 5,214 buyers had not purchased this category before."
           }
         ]
       },
@@ -9771,13 +9828,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-08",
           "units": 11,
-          "netSales": 267.5,
+          "netSales": 268.22,
           "usUnits": 11,
           "caUnits": 0,
-          "usNetSales": 267.5,
+          "usNetSales": 268.22,
           "caNetSales": 0.0,
           "cumUnits": 6003,
-          "cumSales": 142768.21,
+          "cumSales": 142768.93,
           "planUnits": 65,
           "cumPlanUnits": 10170,
           "newCustomers": 3,
@@ -9792,7 +9849,7 @@ window.DASHBOARD_DATA = {
           "usNetSales": 148.69,
           "caNetSales": 0.0,
           "cumUnits": 6009,
-          "cumSales": 142916.9,
+          "cumSales": 142917.62,
           "planUnits": 52,
           "cumPlanUnits": 10222,
           "newCustomers": 0,
@@ -9807,11 +9864,26 @@ window.DASHBOARD_DATA = {
           "usNetSales": 274.24,
           "caNetSales": 14.48,
           "cumUnits": 6021,
-          "cumSales": 143205.62,
+          "cumSales": 143206.34,
           "planUnits": 49,
           "cumPlanUnits": 10271,
           "newCustomers": 4,
           "retCustomers": 5
+        },
+        {
+          "date": "2026-11-11",
+          "units": 6,
+          "netSales": 144.42,
+          "usUnits": 6,
+          "caUnits": 0,
+          "usNetSales": 144.42,
+          "caNetSales": 0.0,
+          "cumUnits": 6027,
+          "cumSales": 143350.76,
+          "planUnits": 61,
+          "cumPlanUnits": 10332,
+          "newCustomers": 2,
+          "retCustomers": 3
         }
       ],
       "dailySkuColumns": [
@@ -9826,10 +9898,10 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TBB013": [["2026-09-02", 870, 20709.46, 827, 43, 19992.44, 717.02, 72, 636], ["2026-09-03", 339, 8071.12, 319, 20, 7743.2, 327.92, 61, 240], ["2026-09-04", 341, 8256.24, 327, 14, 8009.27, 246.97, 68, 237], ["2026-09-05", 361, 8692.57, 333, 28, 8220.84, 471.73, 84, 244], ["2026-09-06", 402, 9697.13, 380, 22, 9328.82, 368.31, 70, 288], ["2026-09-07", 403, 9658.72, 379, 24, 9248.08, 410.64, 79, 292], ["2026-09-08", 129, 3091.23, 124, 5, 3002.3, 88.93, 35, 80], ["2026-09-09", 152, 3597.16, 148, 4, 3524.17, 72.99, 27, 113], ["2026-09-10", 95, 2253.56, 89, 6, 2151.64, 101.92, 23, 64], ["2026-09-11", 76, 1821.58, 75, 1, 1803.69, 17.89, 24, 43], ["2026-09-12", 97, 2242.51, 90, 7, 2124.45, 118.06, 26, 65], ["2026-09-13", 152, 3722.04, 148, 4, 3650.05, 71.99, 32, 104], ["2026-09-14", 82, 1892.76, 82, 0, 1892.76, 0.0, 24, 53], ["2026-09-15", 86, 2035.04, 84, 2, 2003.65, 31.39, 21, 57], ["2026-09-16", 494, 11971.89, 478, 16, 11702.71, 269.18, 33, 374], ["2026-09-17", 211, 4910.11, 199, 12, 4707.84, 202.27, 36, 155], ["2026-09-18", 99, 2334.67, 95, 4, 2266.58, 68.09, 12, 76], ["2026-09-19", 85, 1985.82, 81, 4, 1920.28, 65.54, 15, 62], ["2026-09-20", 131, 3116.82, 127, 4, 3047.16, 69.66, 27, 92], ["2026-09-21", 61, 1424.25, 58, 3, 1377.81, 46.44, 13, 47], ["2026-09-22", 101, 2384.64, 100, 1, 2366.83, 17.81, 11, 84], ["2026-09-23", 65, 1526.09, 64, 1, 1508.96, 17.13, 7, 58], ["2026-09-24", 47, 1110.06, 45, 2, 1074.86, 35.2, 7, 35], ["2026-09-25", 38, 924.24, 37, 1, 906.68, 17.56, 5, 28], ["2026-09-26", 45, 1037.33, 43, 2, 1007.59, 29.74, 10, 31], ["2026-09-27", 47, 1124.35, 45, 2, 1092.88, 31.47, 7, 37], ["2026-09-28", 27, 537.7, 26, 1, 523.72, 13.98, 9, 16], ["2026-09-29", 41, 1002.42, 41, 0, 1002.42, 0.0, 5, 30], ["2026-09-30", 22, 536.87, 22, 0, 536.87, 0.0, 2, 19], ["2026-10-01", 31, 697.79, 30, 1, 686.53, 11.26, 9, 15], ["2026-10-02", 29, 672.85, 29, 0, 672.85, 0.0, 4, 23], ["2026-10-03", 31, 716.51, 30, 1, 700.51, 16.0, 6, 22], ["2026-10-04", 34, 784.83, 31, 3, 736.56, 48.27, 4, 26], ["2026-10-05", 22, 440.09, 21, 1, 424.58, 15.51, 5, 16], ["2026-10-06", 19, 410.48, 18, 1, 396.93, 13.55, 3, 15], ["2026-10-07", 30, 677.64, 30, 0, 677.64, 0.0, 2, 24], ["2026-10-08", 22, 518.29, 21, 1, 501.08, 17.21, 4, 17], ["2026-10-09", 22, 494.6, 20, 2, 463.19, 31.41, 7, 15], ["2026-10-10", 45, 1036.28, 43, 2, 1005.34, 30.94, 9, 31], ["2026-10-11", 54, 1230.75, 52, 2, 1198.19, 32.56, 4, 47], ["2026-10-12", 17, 411.1, 17, 0, 411.1, 0.0, 3, 14], ["2026-10-13", 20, 474.12, 20, 0, 474.12, 0.0, 7, 11], ["2026-10-14", 29, 652.71, 28, 1, 636.1, 16.61, 6, 17], ["2026-10-15", 23, 542.58, 22, 1, 526.08, 16.5, 4, 15], ["2026-10-16", 27, 658.02, 27, 0, 658.02, 0.0, 10, 14], ["2026-10-17", 41, 933.31, 40, 1, 919.33, 13.98, 15, 25], ["2026-10-18", 52, 1278.07, 51, 1, 1264.1, 13.97, 23, 28], ["2026-10-19", 21, 496.48, 19, 2, 465.77, 30.71, 10, 9], ["2026-10-20", 29, 708.76, 29, 0, 708.76, 0.0, 15, 13], ["2026-10-21", 30, 730.9, 30, 0, 730.9, 0.0, 12, 12], ["2026-10-22", 16, 377.5, 16, 0, 377.5, 0.0, 8, 7], ["2026-10-23", 10, 248.11, 10, 0, 248.11, 0.0, 3, 6], ["2026-10-24", 24, 568.27, 23, 1, 552.21, 16.06, 2, 21], ["2026-10-25", 26, 631.46, 25, 1, 613.61, 17.85, 7, 19], ["2026-10-26", 17, 426.36, 17, 0, 426.36, 0.0, 3, 12], ["2026-10-27", 12, 293.11, 12, 0, 293.11, 0.0, 4, 8], ["2026-10-28", 19, 440.71, 19, 0, 440.71, 0.0, 2, 16], ["2026-10-29", 18, 409.66, 18, 0, 409.66, 0.0, 4, 12], ["2026-10-30", 13, 315.89, 13, 0, 315.89, 0.0, 3, 10], ["2026-10-31", 18, 395.29, 17, 1, 379.16, 16.13, 5, 11], ["2026-11-01", 20, 469.33, 20, 0, 469.33, 0.0, 3, 17], ["2026-11-02", 14, 331.48, 14, 0, 331.48, 0.0, 2, 11], ["2026-11-03", 10, 216.39, 8, 2, 183.12, 33.27, 2, 8], ["2026-11-04", 11, 273.13, 11, 0, 273.13, 0.0, 4, 7], ["2026-11-05", 11, 241.08, 10, 1, 227.23, 13.85, 3, 8], ["2026-11-06", 11, 263.96, 11, 0, 263.96, 0.0, 1, 10], ["2026-11-07", 15, 364.44, 14, 1, 346.74, 17.7, 1, 12], ["2026-11-08", 11, 267.5, 11, 0, 267.5, 0.0, 3, 8], ["2026-11-09", 6, 148.69, 6, 0, 148.69, 0.0, 0, 6], ["2026-11-10", 12, 288.72, 11, 1, 274.24, 14.48, 4, 5]]
+        "TBB013": [["2026-09-02", 870, 20709.46, 827, 43, 19992.44, 717.02, 72, 636], ["2026-09-03", 339, 8071.12, 319, 20, 7743.2, 327.92, 61, 240], ["2026-09-04", 341, 8256.24, 327, 14, 8009.27, 246.97, 68, 237], ["2026-09-05", 361, 8692.57, 333, 28, 8220.84, 471.73, 84, 244], ["2026-09-06", 402, 9697.13, 380, 22, 9328.82, 368.31, 70, 288], ["2026-09-07", 403, 9658.72, 379, 24, 9248.08, 410.64, 79, 292], ["2026-09-08", 129, 3091.23, 124, 5, 3002.3, 88.93, 35, 80], ["2026-09-09", 152, 3597.16, 148, 4, 3524.17, 72.99, 27, 113], ["2026-09-10", 95, 2253.56, 89, 6, 2151.64, 101.92, 23, 64], ["2026-09-11", 76, 1821.58, 75, 1, 1803.69, 17.89, 24, 43], ["2026-09-12", 97, 2242.51, 90, 7, 2124.45, 118.06, 26, 65], ["2026-09-13", 152, 3722.04, 148, 4, 3650.05, 71.99, 32, 104], ["2026-09-14", 82, 1892.76, 82, 0, 1892.76, 0.0, 24, 53], ["2026-09-15", 86, 2035.04, 84, 2, 2003.65, 31.39, 21, 57], ["2026-09-16", 494, 11971.89, 478, 16, 11702.71, 269.18, 33, 374], ["2026-09-17", 211, 4910.11, 199, 12, 4707.84, 202.27, 36, 155], ["2026-09-18", 99, 2334.67, 95, 4, 2266.58, 68.09, 12, 76], ["2026-09-19", 85, 1985.82, 81, 4, 1920.28, 65.54, 15, 62], ["2026-09-20", 131, 3116.82, 127, 4, 3047.16, 69.66, 27, 92], ["2026-09-21", 61, 1424.25, 58, 3, 1377.81, 46.44, 13, 47], ["2026-09-22", 101, 2384.64, 100, 1, 2366.83, 17.81, 11, 84], ["2026-09-23", 65, 1526.09, 64, 1, 1508.96, 17.13, 7, 58], ["2026-09-24", 47, 1110.06, 45, 2, 1074.86, 35.2, 7, 35], ["2026-09-25", 38, 924.24, 37, 1, 906.68, 17.56, 5, 28], ["2026-09-26", 45, 1037.33, 43, 2, 1007.59, 29.74, 10, 31], ["2026-09-27", 47, 1124.35, 45, 2, 1092.88, 31.47, 7, 37], ["2026-09-28", 27, 537.7, 26, 1, 523.72, 13.98, 9, 16], ["2026-09-29", 41, 1002.42, 41, 0, 1002.42, 0.0, 5, 30], ["2026-09-30", 22, 536.87, 22, 0, 536.87, 0.0, 2, 19], ["2026-10-01", 31, 697.79, 30, 1, 686.53, 11.26, 9, 15], ["2026-10-02", 29, 672.85, 29, 0, 672.85, 0.0, 4, 23], ["2026-10-03", 31, 716.51, 30, 1, 700.51, 16.0, 6, 22], ["2026-10-04", 34, 784.83, 31, 3, 736.56, 48.27, 4, 26], ["2026-10-05", 22, 440.09, 21, 1, 424.58, 15.51, 5, 16], ["2026-10-06", 19, 410.48, 18, 1, 396.93, 13.55, 3, 15], ["2026-10-07", 30, 677.64, 30, 0, 677.64, 0.0, 2, 24], ["2026-10-08", 22, 518.29, 21, 1, 501.08, 17.21, 4, 17], ["2026-10-09", 22, 494.6, 20, 2, 463.19, 31.41, 7, 15], ["2026-10-10", 45, 1036.28, 43, 2, 1005.34, 30.94, 9, 31], ["2026-10-11", 54, 1230.75, 52, 2, 1198.19, 32.56, 4, 47], ["2026-10-12", 17, 411.1, 17, 0, 411.1, 0.0, 3, 14], ["2026-10-13", 20, 474.12, 20, 0, 474.12, 0.0, 7, 11], ["2026-10-14", 29, 652.71, 28, 1, 636.1, 16.61, 6, 17], ["2026-10-15", 23, 542.58, 22, 1, 526.08, 16.5, 4, 15], ["2026-10-16", 27, 658.02, 27, 0, 658.02, 0.0, 10, 14], ["2026-10-17", 41, 933.31, 40, 1, 919.33, 13.98, 15, 25], ["2026-10-18", 52, 1278.07, 51, 1, 1264.1, 13.97, 23, 28], ["2026-10-19", 21, 496.48, 19, 2, 465.77, 30.71, 10, 9], ["2026-10-20", 29, 708.76, 29, 0, 708.76, 0.0, 15, 13], ["2026-10-21", 30, 730.9, 30, 0, 730.9, 0.0, 12, 12], ["2026-10-22", 16, 377.5, 16, 0, 377.5, 0.0, 8, 7], ["2026-10-23", 10, 248.11, 10, 0, 248.11, 0.0, 3, 6], ["2026-10-24", 24, 568.27, 23, 1, 552.21, 16.06, 2, 21], ["2026-10-25", 26, 631.46, 25, 1, 613.61, 17.85, 7, 19], ["2026-10-26", 17, 426.36, 17, 0, 426.36, 0.0, 3, 12], ["2026-10-27", 12, 293.11, 12, 0, 293.11, 0.0, 4, 8], ["2026-10-28", 19, 440.71, 19, 0, 440.71, 0.0, 2, 16], ["2026-10-29", 18, 409.66, 18, 0, 409.66, 0.0, 4, 12], ["2026-10-30", 13, 315.89, 13, 0, 315.89, 0.0, 3, 10], ["2026-10-31", 18, 395.29, 17, 1, 379.16, 16.13, 5, 11], ["2026-11-01", 20, 469.33, 20, 0, 469.33, 0.0, 3, 17], ["2026-11-02", 14, 331.48, 14, 0, 331.48, 0.0, 2, 11], ["2026-11-03", 10, 216.39, 8, 2, 183.12, 33.27, 2, 8], ["2026-11-04", 11, 273.13, 11, 0, 273.13, 0.0, 4, 7], ["2026-11-05", 11, 241.08, 10, 1, 227.23, 13.85, 3, 8], ["2026-11-06", 11, 263.96, 11, 0, 263.96, 0.0, 1, 10], ["2026-11-07", 15, 364.44, 14, 1, 346.74, 17.7, 1, 12], ["2026-11-08", 11, 268.22, 11, 0, 268.22, 0.0, 3, 8], ["2026-11-09", 6, 148.69, 6, 0, 148.69, 0.0, 0, 6], ["2026-11-10", 12, 288.72, 11, 1, 274.24, 14.48, 4, 5], ["2026-11-11", 6, 144.42, 6, 0, 144.42, 0.0, 2, 3]]
       },
       "planBySku": {
-        "TBB013": [["2026-09-02", 782], ["2026-09-03", 512], ["2026-09-04", 520], ["2026-09-05", 641], ["2026-09-06", 617], ["2026-09-07", 435], ["2026-09-08", 297], ["2026-09-09", 254], ["2026-09-10", 226], ["2026-09-11", 330], ["2026-09-12", 252], ["2026-09-13", 250], ["2026-09-14", 184], ["2026-09-15", 169], ["2026-09-16", 191], ["2026-09-17", 135], ["2026-09-18", 163], ["2026-09-19", 164], ["2026-09-20", 170], ["2026-09-21", 128], ["2026-09-22", 119], ["2026-09-23", 105], ["2026-09-24", 99], ["2026-09-25", 122], ["2026-09-26", 125], ["2026-09-27", 131], ["2026-09-28", 101], ["2026-09-29", 94], ["2026-09-30", 84], ["2026-10-01", 82], ["2026-10-02", 98], ["2026-10-03", 104], ["2026-10-04", 108], ["2026-10-05", 84], ["2026-10-06", 79], ["2026-10-07", 93], ["2026-10-08", 69], ["2026-10-09", 85], ["2026-10-10", 88], ["2026-10-11", 93], ["2026-10-12", 73], ["2026-10-13", 68], ["2026-10-14", 64], ["2026-10-15", 61], ["2026-10-16", 74], ["2026-10-17", 78], ["2026-10-18", 83], ["2026-10-19", 64], ["2026-10-20", 62], ["2026-10-21", 56], ["2026-10-22", 56], ["2026-10-23", 66], ["2026-10-24", 71], ["2026-10-25", 75], ["2026-10-26", 58], ["2026-10-27", 56], ["2026-10-28", 54], ["2026-10-29", 50], ["2026-10-30", 62], ["2026-10-31", 84], ["2026-11-01", 70], ["2026-11-02", 54], ["2026-11-03", 52], ["2026-11-04", 64], ["2026-11-05", 49], ["2026-11-06", 57], ["2026-11-07", 61], ["2026-11-08", 65], ["2026-11-09", 52], ["2026-11-10", 49]]
+        "TBB013": [["2026-09-02", 782], ["2026-09-03", 512], ["2026-09-04", 520], ["2026-09-05", 641], ["2026-09-06", 617], ["2026-09-07", 435], ["2026-09-08", 297], ["2026-09-09", 254], ["2026-09-10", 226], ["2026-09-11", 330], ["2026-09-12", 252], ["2026-09-13", 250], ["2026-09-14", 184], ["2026-09-15", 169], ["2026-09-16", 191], ["2026-09-17", 135], ["2026-09-18", 163], ["2026-09-19", 164], ["2026-09-20", 170], ["2026-09-21", 128], ["2026-09-22", 119], ["2026-09-23", 105], ["2026-09-24", 99], ["2026-09-25", 122], ["2026-09-26", 125], ["2026-09-27", 131], ["2026-09-28", 101], ["2026-09-29", 94], ["2026-09-30", 84], ["2026-10-01", 82], ["2026-10-02", 98], ["2026-10-03", 104], ["2026-10-04", 108], ["2026-10-05", 84], ["2026-10-06", 79], ["2026-10-07", 93], ["2026-10-08", 69], ["2026-10-09", 85], ["2026-10-10", 88], ["2026-10-11", 93], ["2026-10-12", 73], ["2026-10-13", 68], ["2026-10-14", 64], ["2026-10-15", 61], ["2026-10-16", 74], ["2026-10-17", 78], ["2026-10-18", 83], ["2026-10-19", 64], ["2026-10-20", 62], ["2026-10-21", 56], ["2026-10-22", 56], ["2026-10-23", 66], ["2026-10-24", 71], ["2026-10-25", 75], ["2026-10-26", 58], ["2026-10-27", 56], ["2026-10-28", 54], ["2026-10-29", 50], ["2026-10-30", 62], ["2026-10-31", 84], ["2026-11-01", 70], ["2026-11-02", 54], ["2026-11-03", 52], ["2026-11-04", 64], ["2026-11-05", 49], ["2026-11-06", 57], ["2026-11-07", 61], ["2026-11-08", 65], ["2026-11-09", 52], ["2026-11-10", 49], ["2026-11-11", 61]]
       },
       "pdp": [
         {
@@ -9881,18 +9953,18 @@ window.DASHBOARD_DATA = {
           "pairs": 7
         },
         {
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG5870",
+          "pairs": 6
+        },
+        {
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
           "pairs": 6
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG289",
-          "pairs": 6
-        },
-        {
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG5870",
           "pairs": 6
         }
       ],
@@ -9941,8 +10013,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TBB013",
+          "product": "Pout Hero\u2122 Liquid Balm Lip Treatment",
+          "sku": "TBB028",
+          "pairs": 6
+        },
+        {
+          "primarySku": "TBB013",
           "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
+          "sku": "TVG289",
           "pairs": 6
         },
         {
@@ -9950,28 +10028,22 @@ window.DASHBOARD_DATA = {
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "sku": "TVG094",
           "pairs": 6
-        },
-        {
-          "primarySku": "TBB013",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG179",
-          "pairs": 6
         }
       ],
       "categoryCustomers": {
         "category": "Lip",
-        "total": 5211,
-        "existingCategory": 3195,
-        "newToCategory": 2016,
+        "total": 5214,
+        "existingCategory": 3196,
+        "newToCategory": 2018,
         "byVariant": [
           {
             "sku": "TBB013",
             "name": "Pumpkin Spice Latte",
-            "newToCategory": 2016,
-            "existingCategory": 3195
+            "newToCategory": 2018,
+            "existingCategory": 3196
           }
         ],
-        "daily": [["2026-09-02", 231, 477], ["2026-09-03", 126, 175], ["2026-09-04", 133, 172], ["2026-09-05", 144, 184], ["2026-09-06", 152, 206], ["2026-09-07", 144, 227], ["2026-09-08", 50, 65], ["2026-09-09", 53, 87], ["2026-09-10", 33, 54], ["2026-09-11", 33, 34], ["2026-09-12", 43, 48], ["2026-09-13", 52, 84], ["2026-09-14", 40, 37], ["2026-09-15", 28, 50], ["2026-09-16", 135, 272], ["2026-09-17", 77, 114], ["2026-09-18", 28, 60], ["2026-09-19", 29, 48], ["2026-09-20", 47, 72], ["2026-09-21", 27, 33], ["2026-09-22", 30, 65], ["2026-09-23", 19, 46], ["2026-09-24", 17, 25], ["2026-09-25", 12, 21], ["2026-09-26", 12, 29], ["2026-09-27", 12, 32], ["2026-09-28", 12, 13], ["2026-09-29", 9, 26], ["2026-09-30", 8, 13], ["2026-10-01", 12, 12], ["2026-10-02", 6, 21], ["2026-10-03", 8, 20], ["2026-10-04", 12, 18], ["2026-10-05", 7, 14], ["2026-10-06", 5, 13], ["2026-10-07", 6, 20], ["2026-10-08", 9, 12], ["2026-10-09", 13, 9], ["2026-10-10", 14, 26], ["2026-10-11", 12, 39], ["2026-10-12", 5, 12], ["2026-10-13", 9, 9], ["2026-10-14", 9, 14], ["2026-10-15", 5, 14], ["2026-10-16", 14, 10], ["2026-10-17", 22, 18], ["2026-10-18", 29, 22], ["2026-10-19", 10, 9], ["2026-10-20", 16, 12], ["2026-10-21", 15, 9], ["2026-10-22", 9, 6], ["2026-10-23", 3, 6], ["2026-10-24", 6, 17], ["2026-10-25", 11, 15], ["2026-10-26", 6, 9], ["2026-10-27", 4, 8], ["2026-10-28", 2, 16], ["2026-10-29", 8, 8], ["2026-10-30", 7, 6], ["2026-10-31", 7, 9], ["2026-11-01", 4, 16], ["2026-11-02", 3, 10], ["2026-11-03", 3, 7], ["2026-11-04", 4, 7], ["2026-11-05", 5, 6], ["2026-11-06", 2, 9], ["2026-11-07", 3, 10], ["2026-11-08", 5, 6], ["2026-11-09", 1, 5], ["2026-11-10", 4, 5]]
+        "daily": [["2026-09-02", 231, 477], ["2026-09-03", 126, 175], ["2026-09-04", 133, 172], ["2026-09-05", 144, 184], ["2026-09-06", 152, 206], ["2026-09-07", 144, 227], ["2026-09-08", 50, 65], ["2026-09-09", 53, 87], ["2026-09-10", 33, 54], ["2026-09-11", 33, 34], ["2026-09-12", 43, 48], ["2026-09-13", 52, 84], ["2026-09-14", 40, 37], ["2026-09-15", 28, 50], ["2026-09-16", 135, 272], ["2026-09-17", 77, 114], ["2026-09-18", 28, 60], ["2026-09-19", 29, 48], ["2026-09-20", 47, 72], ["2026-09-21", 27, 33], ["2026-09-22", 30, 65], ["2026-09-23", 19, 46], ["2026-09-24", 17, 25], ["2026-09-25", 12, 21], ["2026-09-26", 12, 29], ["2026-09-27", 12, 32], ["2026-09-28", 12, 13], ["2026-09-29", 9, 26], ["2026-09-30", 8, 13], ["2026-10-01", 12, 12], ["2026-10-02", 6, 21], ["2026-10-03", 8, 20], ["2026-10-04", 12, 18], ["2026-10-05", 7, 14], ["2026-10-06", 5, 13], ["2026-10-07", 6, 20], ["2026-10-08", 9, 12], ["2026-10-09", 13, 9], ["2026-10-10", 14, 26], ["2026-10-11", 12, 39], ["2026-10-12", 5, 12], ["2026-10-13", 9, 9], ["2026-10-14", 9, 14], ["2026-10-15", 5, 14], ["2026-10-16", 14, 10], ["2026-10-17", 22, 18], ["2026-10-18", 29, 22], ["2026-10-19", 10, 9], ["2026-10-20", 16, 12], ["2026-10-21", 15, 9], ["2026-10-22", 9, 6], ["2026-10-23", 3, 6], ["2026-10-24", 6, 17], ["2026-10-25", 11, 15], ["2026-10-26", 6, 9], ["2026-10-27", 4, 8], ["2026-10-28", 2, 16], ["2026-10-29", 8, 8], ["2026-10-30", 7, 6], ["2026-10-31", 7, 9], ["2026-11-01", 4, 16], ["2026-11-02", 3, 10], ["2026-11-03", 3, 7], ["2026-11-04", 4, 7], ["2026-11-05", 5, 6], ["2026-11-06", 2, 9], ["2026-11-07", 3, 10], ["2026-11-08", 5, 6], ["2026-11-09", 1, 5], ["2026-11-10", 4, 5], ["2026-11-11", 3, 2]]
       }
     },
     {
@@ -9984,40 +10056,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "6 berry shades across 6 categories \u00b7 seasonal collection, not a new product",
       "accent": "#8E2F5B",
       "summary": {
-        "netSales": 1181158.1,
-        "units": 49972,
-        "orders": 42164,
-        "aov": 28.01,
-        "newCustomers": 8140,
-        "retCustomers": 32998,
-        "totalCustomers": 41138,
-        "newPct": 19.8,
-        "retPct": 80.2,
+        "netSales": 1202928.7,
+        "units": 50894,
+        "orders": 42977,
+        "aov": 27.99,
+        "newCustomers": 8331,
+        "retCustomers": 33585,
+        "totalCustomers": 41916,
+        "newPct": 19.9,
+        "retPct": 80.1,
         "planUnits": null,
         "pctToPlanUnits": null,
-        "subscriptionOrders": 13330,
-        "subscriptionUnits": 14030,
-        "subscriptionRevenue": 364904.0,
-        "newCustomerRevenue": 219713.33,
-        "retCustomerRevenue": 961444.77,
+        "subscriptionOrders": 13366,
+        "subscriptionUnits": 14066,
+        "subscriptionRevenue": 365850.0,
+        "newCustomerRevenue": 225082.92,
+        "retCustomerRevenue": 977845.78,
         "pdpViews": 290250,
         "pdpAtcRate": 19.9,
         "pdpCvr": 7.1
       },
       "regions": {
         "us": {
-          "units": 47980,
-          "netSales": 1148181.24,
-          "orders": 40383
+          "units": 48872,
+          "netSales": 1169468.22,
+          "orders": 41167
         },
         "ca": {
-          "units": 1992,
-          "netSales": 32976.86,
-          "orders": 1781
+          "units": 2022,
+          "netSales": 33460.48,
+          "orders": 1810
         }
       },
       "trafficStart": "2026-09-23",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [
           {
@@ -10169,47 +10241,47 @@ window.DASHBOARD_DATA = {
           {
             "month": "Sep 2026",
             "chs": {
-              "Organic Video": 135,
-              "Email": 123735,
-              "Organic Search": 21897,
-              "Paid Search": 86439,
-              "Paid Other": 62126,
-              "Referral": 5102,
-              "Organic Social": 13976,
-              "SMS": 122575,
-              "Organic Shopping": 11146,
-              "Direct": 165787,
-              "Cross-network": 47215,
               "Unassigned": 104199,
-              "Paid Video": 700,
-              "Display": 1599,
+              "Direct": 165787,
+              "Referral": 5102,
+              "Email": 123735,
               "AI Assistant": 632,
               "Paid Social": 449198,
               "Paid Shopping": 30071,
+              "Display": 1599,
+              "Organic Video": 135,
+              "Organic Shopping": 11146,
+              "SMS": 122575,
+              "Paid Video": 700,
+              "Organic Social": 13976,
+              "Cross-network": 47215,
+              "Paid Search": 86439,
+              "Paid Other": 62126,
+              "Organic Search": 21897,
               "Affiliates": 1
             }
           },
           {
             "month": "Oct 2026",
             "chs": {
-              "Organic Social": 9693,
-              "AI Assistant": 560,
-              "Organic Search": 46032,
+              "Display": 531,
+              "Organic Shopping": 5550,
               "Paid Video": 244,
-              "Paid Social": 312761,
               "Paid Search": 32782,
               "Referral": 3235,
-              "Cross-network": 10091,
-              "Affiliates": 3,
-              "Organic Shopping": 5550,
-              "Display": 531,
-              "Paid Shopping": 14993,
-              "SMS": 50837,
-              "Direct": 134575,
-              "Organic Video": 62,
-              "Unassigned": 66436,
+              "Paid Social": 312761,
               "Paid Other": 14086,
-              "Email": 91272
+              "Direct": 134575,
+              "Cross-network": 10091,
+              "Paid Shopping": 14993,
+              "Email": 91272,
+              "SMS": 50837,
+              "Organic Social": 9693,
+              "Unassigned": 66436,
+              "Organic Search": 46032,
+              "AI Assistant": 560,
+              "Affiliates": 3,
+              "Organic Video": 62
             }
           }
         ]
@@ -10218,72 +10290,72 @@ window.DASHBOARD_DATA = {
         {
           "label": "Winter Berries Collection (com)",
           "page": "thrivecausemetics.com/pages/winter-berries-collection",
-          "pageviews": 53308,
-          "sessions": 18983,
-          "txns": 332,
-          "rev": 25710.9,
+          "pageviews": 54086,
+          "sessions": 19340,
+          "txns": 340,
+          "rev": 26554.41,
           "eng": 0.7,
-          "cvr": 1.75
+          "cvr": 1.76
         },
         {
           "label": "Winter Berries Collection (com)",
           "page": "thrivecausemetics.com/products/winter-berries-collection",
-          "pageviews": 27382,
-          "sessions": 5575,
-          "txns": 433,
-          "rev": 34056.43,
+          "pageviews": 27439,
+          "sessions": 5606,
+          "txns": 434,
+          "rev": 34091.54,
           "eng": 1.4,
-          "cvr": 7.77
+          "cvr": 7.74
         },
         {
           "label": "Berry Glow Eye Trio (com)",
           "page": "thrivecausemetics.com/products/berry-glow-eye-trio",
-          "pageviews": 16674,
-          "sessions": 4403,
-          "txns": 232,
-          "rev": 21510.29,
+          "pageviews": 16878,
+          "sessions": 4431,
+          "txns": 233,
+          "rev": 21734.67,
           "eng": 1.3,
-          "cvr": 5.27
+          "cvr": 5.26
         },
         {
           "label": "Berry Pop Duo (com)",
           "page": "thrivecausemetics.com/products/berry-pop-duo",
-          "pageviews": 8864,
-          "sessions": 1957,
+          "pageviews": 8891,
+          "sessions": 1969,
           "txns": 89,
           "rev": 6780.63,
           "eng": 1.2,
-          "cvr": 4.55
+          "cvr": 4.52
         },
         {
           "label": "Berry Glaze Lip Duo (com)",
           "page": "thrivecausemetics.com/products/berry-glaze-lip-duo",
-          "pageviews": 7200,
-          "sessions": 1919,
+          "pageviews": 7210,
+          "sessions": 1927,
           "txns": 91,
           "rev": 6410.44,
           "eng": 1.1,
-          "cvr": 4.74
+          "cvr": 4.72
         },
         {
           "label": "Berry Kiss Lip Duo (com)",
           "page": "thrivecausemetics.com/products/berry-kiss-lip-duo",
-          "pageviews": 4272,
-          "sessions": 1284,
+          "pageviews": 4364,
+          "sessions": 1292,
           "txns": 60,
           "rev": 5359.86,
           "eng": 1.1,
-          "cvr": 4.67
+          "cvr": 4.64
         },
         {
           "label": "Winter Berries Collection (ca)",
           "page": "thrivecausemetics.ca/products/winter-berries-collection",
-          "pageviews": 1905,
-          "sessions": 523,
+          "pageviews": 1920,
+          "sessions": 526,
           "txns": 18,
           "rev": 1025.28,
           "eng": 1.3,
-          "cvr": 3.44
+          "cvr": 3.42
         },
         {
           "label": "Berry Lip Kit (com)",
@@ -10299,11 +10371,11 @@ window.DASHBOARD_DATA = {
           "label": "Berry Glow Eye Trio (ca)",
           "page": "thrivecausemetics.ca/products/berry-glow-eye-trio",
           "pageviews": 1008,
-          "sessions": 331,
+          "sessions": 332,
           "txns": 13,
           "rev": 1017.63,
           "eng": 2.4,
-          "cvr": 3.93
+          "cvr": 3.92
         },
         {
           "label": "Berry Pop Duo (ca)",
@@ -10333,34 +10405,34 @@ window.DASHBOARD_DATA = {
           "product": "Brilliant Eye Brightener\u2122",
           "shade": "Sugar Plum Shimmer",
           "color": "#8E5A7D",
-          "netSales": 642781.45,
-          "units": 27336,
-          "orders": 25939,
-          "newCustomers": 4126,
-          "retCustomers": 21295,
-          "usUnits": 26168,
-          "caUnits": 1168,
-          "usNetSales": 623469.62,
-          "caNetSales": 19311.83,
+          "netSales": 655552.99,
+          "units": 27879,
+          "orders": 26463,
+          "newCustomers": 4214,
+          "retCustomers": 21711,
+          "usUnits": 26688,
+          "caUnits": 1191,
+          "usNetSales": 635874.37,
+          "caNetSales": 19678.62,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 68859,
-          "runRateUnitsPerDay": 490.71,
-          "daysToOOS": 140,
-          "estOOSDate": "2027-03-30",
-          "usInventoryUnits": 67105,
-          "caInventoryUnits": 1754,
-          "usRunRateUnitsPerDay": 475.14,
-          "caRunRateUnitsPerDay": 15.57,
-          "usDaysToOOS": 141,
-          "caDaysToOOS": 112,
-          "usEstOOSDate": "2027-03-31",
-          "caEstOOSDate": "2027-03-02",
+          "inventoryUnits": 68318,
+          "runRateUnitsPerDay": 482.0,
+          "daysToOOS": 141,
+          "estOOSDate": "2027-04-01",
+          "usInventoryUnits": 66589,
+          "caInventoryUnits": 1729,
+          "usRunRateUnitsPerDay": 466.14,
+          "caRunRateUnitsPerDay": 15.86,
+          "usDaysToOOS": 142,
+          "caDaysToOOS": 109,
+          "usEstOOSDate": "2027-04-02",
+          "caEstOOSDate": "2027-02-28",
           "planTotalUnits": 38592,
-          "pctToGoalUnits": 70.8,
-          "unitsToGoal": 11256,
+          "pctToGoalUnits": 72.2,
+          "unitsToGoal": 10713,
           "planEndDate": "2026-01-14",
-          "weeksOfStock": 20.0,
+          "weeksOfStock": 20.2,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -10370,34 +10442,34 @@ window.DASHBOARD_DATA = {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "shade": "Berry Brown",
           "color": "#6B3A3A",
-          "netSales": 308059.2,
-          "units": 13178,
-          "orders": 12565,
-          "newCustomers": 3588,
-          "retCustomers": 8809,
-          "usUnits": 12571,
-          "caUnits": 607,
-          "usNetSales": 297921.96,
-          "caNetSales": 10137.24,
+          "netSales": 313738.66,
+          "units": 13418,
+          "orders": 12796,
+          "newCustomers": 3678,
+          "retCustomers": 8946,
+          "usUnits": 12808,
+          "caUnits": 610,
+          "usNetSales": 303552.74,
+          "caNetSales": 10185.92,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 105657,
-          "runRateUnitsPerDay": 271.43,
-          "daysToOOS": 389,
-          "estOOSDate": "2027-12-04",
-          "usInventoryUnits": 102190,
-          "caInventoryUnits": 3467,
-          "usRunRateUnitsPerDay": 265.57,
-          "caRunRateUnitsPerDay": 5.86,
-          "usDaysToOOS": 384,
-          "caDaysToOOS": 591,
-          "usEstOOSDate": "2027-11-29",
-          "caEstOOSDate": "2028-06-23",
+          "inventoryUnits": 152822,
+          "runRateUnitsPerDay": 267.14,
+          "daysToOOS": 572,
+          "estOOSDate": "2028-06-05",
+          "usInventoryUnits": 149359,
+          "caInventoryUnits": 3463,
+          "usRunRateUnitsPerDay": 262.0,
+          "caRunRateUnitsPerDay": 5.14,
+          "usDaysToOOS": 570,
+          "caDaysToOOS": 673,
+          "usEstOOSDate": "2028-06-03",
+          "caEstOOSDate": "2028-09-14",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 55.6,
+          "weeksOfStock": 81.7,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -10407,34 +10479,34 @@ window.DASHBOARD_DATA = {
           "product": "Sheer Strength\u00ae Hydrating Shine Lip Tint",
           "shade": "Deep Berry",
           "color": "#7A1F3D",
-          "netSales": 83023.91,
-          "units": 3637,
-          "orders": 3331,
-          "newCustomers": 634,
-          "retCustomers": 2634,
-          "usUnits": 3518,
-          "caUnits": 119,
-          "usNetSales": 81203.03,
-          "caNetSales": 1820.88,
+          "netSales": 84266.84,
+          "units": 3691,
+          "orders": 3380,
+          "newCustomers": 656,
+          "retCustomers": 2656,
+          "usUnits": 3569,
+          "caUnits": 122,
+          "usNetSales": 82394.85,
+          "caNetSales": 1871.99,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 67129,
+          "inventoryUnits": 67083,
           "runRateUnitsPerDay": 54.29,
-          "daysToOOS": 1236,
+          "daysToOOS": 1235,
           "estOOSDate": "2030-03-30",
-          "usInventoryUnits": 66812,
-          "caInventoryUnits": 317,
-          "usRunRateUnitsPerDay": 52.29,
-          "caRunRateUnitsPerDay": 2.0,
-          "usDaysToOOS": 1277,
-          "caDaysToOOS": 158,
-          "usEstOOSDate": "2030-05-10",
-          "caEstOOSDate": "2027-04-17",
+          "usInventoryUnits": 66769,
+          "caInventoryUnits": 314,
+          "usRunRateUnitsPerDay": 52.0,
+          "caRunRateUnitsPerDay": 2.29,
+          "usDaysToOOS": 1284,
+          "caDaysToOOS": 137,
+          "usEstOOSDate": "2030-05-18",
+          "caEstOOSDate": "2027-03-28",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 176.6,
+          "weeksOfStock": 176.5,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -10444,27 +10516,27 @@ window.DASHBOARD_DATA = {
           "product": "Sheer Strength\u00ae Lip-Plumping Peptide Gloss",
           "shade": "Deep Berry",
           "color": "#A0284F",
-          "netSales": 57173.14,
-          "units": 2491,
-          "orders": 2393,
-          "newCustomers": 312,
-          "retCustomers": 2031,
-          "usUnits": 2422,
-          "caUnits": 69,
-          "usNetSales": 56087.04,
-          "caNetSales": 1086.1,
+          "netSales": 58047.8,
+          "units": 2530,
+          "orders": 2431,
+          "newCustomers": 322,
+          "retCustomers": 2058,
+          "usUnits": 2460,
+          "caUnits": 70,
+          "usNetSales": 56944.66,
+          "caNetSales": 1103.14,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 1095,
-          "runRateUnitsPerDay": 34.29,
+          "inventoryUnits": 1065,
+          "runRateUnitsPerDay": 33.29,
           "daysToOOS": 31,
-          "estOOSDate": "2026-12-11",
-          "usInventoryUnits": 831,
-          "caInventoryUnits": 264,
-          "usRunRateUnitsPerDay": 33.14,
+          "estOOSDate": "2026-12-12",
+          "usInventoryUnits": 802,
+          "caInventoryUnits": 263,
+          "usRunRateUnitsPerDay": 32.14,
           "caRunRateUnitsPerDay": 1.14,
-          "usDaysToOOS": 25,
-          "caDaysToOOS": 231,
+          "usDaysToOOS": 24,
+          "caDaysToOOS": 230,
           "usEstOOSDate": "2026-12-05",
           "caEstOOSDate": "2027-06-29",
           "planTotalUnits": null,
@@ -10481,34 +10553,34 @@ window.DASHBOARD_DATA = {
           "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
           "shade": "Deep Berry",
           "color": "#6E1736",
-          "netSales": 52543.24,
-          "units": 2121,
-          "orders": 2076,
-          "newCustomers": 394,
-          "retCustomers": 1656,
-          "usUnits": 2121,
+          "netSales": 53234.05,
+          "units": 2149,
+          "orders": 2104,
+          "newCustomers": 404,
+          "retCustomers": 1674,
+          "usUnits": 2149,
           "caUnits": 0,
-          "usNetSales": 52543.24,
+          "usNetSales": 53234.05,
           "caNetSales": 0.0,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 6609,
+          "inventoryUnits": 6579,
           "runRateUnitsPerDay": 22.57,
-          "daysToOOS": 292,
+          "daysToOOS": 291,
           "estOOSDate": "2027-08-29",
-          "usInventoryUnits": 6609,
+          "usInventoryUnits": 6579,
           "caInventoryUnits": 0,
           "usRunRateUnitsPerDay": 22.57,
           "caRunRateUnitsPerDay": 0.0,
-          "usDaysToOOS": 292,
+          "usDaysToOOS": 291,
           "caDaysToOOS": 0,
           "usEstOOSDate": "2027-08-29",
-          "caEstOOSDate": "2026-11-10",
+          "caEstOOSDate": "2026-11-11",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 41.8,
+          "weeksOfStock": 41.6,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         },
@@ -10518,34 +10590,34 @@ window.DASHBOARD_DATA = {
           "product": "Triple Threat\u2122 Blush Stick",
           "shade": "Rich Berry",
           "color": "#8E2F5B",
-          "netSales": 37577.16,
-          "units": 1209,
-          "orders": 1192,
-          "newCustomers": 197,
-          "retCustomers": 989,
-          "usUnits": 1180,
+          "netSales": 38088.36,
+          "units": 1227,
+          "orders": 1207,
+          "newCustomers": 203,
+          "retCustomers": 998,
+          "usUnits": 1198,
           "caUnits": 29,
-          "usNetSales": 36956.35,
+          "usNetSales": 37467.55,
           "caNetSales": 620.81,
           "planUnits": null,
           "pctToPlanUnits": null,
-          "inventoryUnits": 4435,
-          "runRateUnitsPerDay": 16.14,
-          "daysToOOS": 274,
-          "estOOSDate": "2027-08-11",
-          "usInventoryUnits": 4205,
+          "inventoryUnits": 4418,
+          "runRateUnitsPerDay": 16.57,
+          "daysToOOS": 266,
+          "estOOSDate": "2027-08-04",
+          "usInventoryUnits": 4188,
           "caInventoryUnits": 230,
-          "usRunRateUnitsPerDay": 16.0,
+          "usRunRateUnitsPerDay": 16.43,
           "caRunRateUnitsPerDay": 0.14,
-          "usDaysToOOS": 262,
+          "usDaysToOOS": 254,
           "caDaysToOOS": 1642,
-          "usEstOOSDate": "2027-07-30",
-          "caEstOOSDate": "2031-05-10",
+          "usEstOOSDate": "2027-07-23",
+          "caEstOOSDate": "2031-05-11",
           "planTotalUnits": null,
           "pctToGoalUnits": null,
           "unitsToGoal": null,
           "planEndDate": null,
-          "weeksOfStock": 39.3,
+          "weeksOfStock": 38.1,
           "decayCurveOOS": null,
           "realInventoryUnits": null
         }
@@ -10556,7 +10628,7 @@ window.DASHBOARD_DATA = {
             "rank": 0,
             "key": "oos:ca:TVG4560",
             "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) is out of stock in Canada (.ca)",
-            "detail": "0 units in Canada (.ca). 6,609 units still in US (.com), so this is a distribution problem, not a demand one.",
+            "detail": "0 units in Canada (.ca). 6,579 units still in US (.com), so this is a distribution problem, not a demand one.",
             "action": "Route or transfer stock to Canada (.ca) \u2014 the units exist, they are in the wrong place."
           }
         ],
@@ -11066,17 +11138,17 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-10-26",
-          "units": 752,
-          "netSales": 17573.35,
-          "usUnits": 724,
+          "units": 751,
+          "netSales": 17552.55,
+          "usUnits": 723,
           "caUnits": 28,
-          "usNetSales": 17132.0,
+          "usNetSales": 17111.2,
           "caNetSales": 441.35,
-          "cumUnits": 37753,
-          "cumSales": 891414.47,
+          "cumUnits": 37752,
+          "cumSales": 891393.67,
           "planUnits": null,
           "cumPlanUnits": null,
-          "newCustomers": 117,
+          "newCustomers": 116,
           "retCustomers": 551
         },
         {
@@ -11087,8 +11159,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 19,
           "usNetSales": 14829.96,
           "caNetSales": 295.81,
-          "cumUnits": 38402,
-          "cumSales": 906540.24,
+          "cumUnits": 38401,
+          "cumSales": 906519.44,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 129,
@@ -11102,8 +11174,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 28,
           "usNetSales": 15629.51,
           "caNetSales": 487.07,
-          "cumUnits": 39085,
-          "cumSales": 922656.82,
+          "cumUnits": 39084,
+          "cumSales": 922636.02,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 123,
@@ -11117,8 +11189,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 15,
           "usNetSales": 13367.15,
           "caNetSales": 266.7,
-          "cumUnits": 39655,
-          "cumSales": 936290.67,
+          "cumUnits": 39654,
+          "cumSales": 936269.87,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 114,
@@ -11126,18 +11198,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-10-30",
-          "units": 652,
-          "netSales": 15591.67,
-          "usUnits": 635,
+          "units": 651,
+          "netSales": 15565.67,
+          "usUnits": 634,
           "caUnits": 17,
-          "usNetSales": 15313.88,
+          "usNetSales": 15287.88,
           "caNetSales": 277.79,
-          "cumUnits": 40307,
-          "cumSales": 951882.34,
+          "cumUnits": 40305,
+          "cumSales": 951835.54,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 133,
-          "retCustomers": 427
+          "retCustomers": 426
         },
         {
           "date": "2026-10-31",
@@ -11147,8 +11219,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 32,
           "usNetSales": 18057.9,
           "caNetSales": 552.92,
-          "cumUnits": 41084,
-          "cumSales": 970493.16,
+          "cumUnits": 41082,
+          "cumSales": 970446.36,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 128,
@@ -11162,8 +11234,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 42,
           "usNetSales": 29483.39,
           "caNetSales": 721.13,
-          "cumUnits": 42330,
-          "cumSales": 1000697.68,
+          "cumUnits": 42328,
+          "cumSales": 1000650.88,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 192,
@@ -11171,18 +11243,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-02",
-          "units": 697,
-          "netSales": 16590.24,
-          "usUnits": 671,
+          "units": 696,
+          "netSales": 16562.24,
+          "usUnits": 670,
           "caUnits": 26,
-          "usNetSales": 16140.86,
+          "usNetSales": 16112.86,
           "caNetSales": 449.38,
-          "cumUnits": 43027,
-          "cumSales": 1017287.92,
+          "cumUnits": 43024,
+          "cumSales": 1017213.12,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 114,
-          "retCustomers": 486
+          "retCustomers": 485
         },
         {
           "date": "2026-11-03",
@@ -11192,8 +11264,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 25,
           "usNetSales": 16408.54,
           "caNetSales": 401.06,
-          "cumUnits": 43746,
-          "cumSales": 1034097.52,
+          "cumUnits": 43743,
+          "cumSales": 1034022.72,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 129,
@@ -11202,13 +11274,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-04",
           "units": 1020,
-          "netSales": 23987.31,
+          "netSales": 23981.63,
           "usUnits": 989,
           "caUnits": 31,
-          "usNetSales": 23453.98,
+          "usNetSales": 23448.3,
           "caNetSales": 533.33,
-          "cumUnits": 44766,
-          "cumSales": 1058084.83,
+          "cumUnits": 44763,
+          "cumSales": 1058004.35,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 181,
@@ -11222,8 +11294,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 23,
           "usNetSales": 19682.18,
           "caNetSales": 398.16,
-          "cumUnits": 45625,
-          "cumSales": 1078165.17,
+          "cumUnits": 45622,
+          "cumSales": 1078084.69,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 190,
@@ -11232,13 +11304,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-06",
           "units": 809,
-          "netSales": 18970.0,
+          "netSales": 18964.4,
           "usUnits": 785,
           "caUnits": 24,
-          "usNetSales": 18559.93,
+          "usNetSales": 18554.33,
           "caNetSales": 410.07,
-          "cumUnits": 46434,
-          "cumSales": 1097135.17,
+          "cumUnits": 46431,
+          "cumSales": 1097049.09,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 182,
@@ -11247,13 +11319,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-07",
           "units": 971,
-          "netSales": 22999.23,
+          "netSales": 22995.7,
           "usUnits": 944,
           "caUnits": 27,
-          "usNetSales": 22559.2,
+          "usNetSales": 22555.67,
           "caNetSales": 440.03,
-          "cumUnits": 47405,
-          "cumSales": 1120134.4,
+          "cumUnits": 47402,
+          "cumSales": 1120044.79,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 192,
@@ -11262,13 +11334,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-08",
           "units": 1008,
-          "netSales": 24215.87,
+          "netSales": 24210.74,
           "usUnits": 977,
           "caUnits": 31,
-          "usNetSales": 23695.9,
+          "usNetSales": 23690.77,
           "caNetSales": 519.97,
-          "cumUnits": 48413,
-          "cumSales": 1144350.27,
+          "cumUnits": 48410,
+          "cumSales": 1144255.53,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 214,
@@ -11276,17 +11348,17 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-09",
-          "units": 748,
-          "netSales": 17656.76,
+          "units": 747,
+          "netSales": 17638.18,
           "usUnits": 732,
-          "caUnits": 16,
+          "caUnits": 15,
           "usNetSales": 17400.41,
-          "caNetSales": 256.35,
-          "cumUnits": 49161,
-          "cumSales": 1162007.03,
+          "caNetSales": 237.77,
+          "cumUnits": 49157,
+          "cumSales": 1161893.71,
           "planUnits": null,
           "cumPlanUnits": null,
-          "newCustomers": 157,
+          "newCustomers": 156,
           "retCustomers": 524
         },
         {
@@ -11297,12 +11369,27 @@ window.DASHBOARD_DATA = {
           "caUnits": 21,
           "usNetSales": 18808.61,
           "caNetSales": 342.48,
-          "cumUnits": 49972,
-          "cumSales": 1181158.12,
+          "cumUnits": 49968,
+          "cumSales": 1181044.8,
           "planUnits": null,
           "cumPlanUnits": null,
           "newCustomers": 171,
           "retCustomers": 572
+        },
+        {
+          "date": "2026-11-11",
+          "units": 926,
+          "netSales": 21883.92,
+          "usUnits": 895,
+          "caUnits": 31,
+          "usNetSales": 21381.72,
+          "caNetSales": 502.2,
+          "cumUnits": 50894,
+          "cumSales": 1202928.72,
+          "planUnits": null,
+          "cumPlanUnits": null,
+          "newCustomers": 197,
+          "retCustomers": 619
         }
       ],
       "dailySkuColumns": [
@@ -11317,12 +11404,12 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TVG217": [["2026-09-23", 101, 2184.55, 95, 6, 2089.44, 95.11, 13, 79], ["2026-09-24", 67, 1537.78, 65, 2, 1510.42, 27.36, 14, 44], ["2026-09-25", 75, 1685.97, 73, 2, 1653.4, 32.57, 10, 58], ["2026-09-26", 276, 6224.13, 267, 9, 6087.92, 136.21, 33, 226], ["2026-09-27", 209, 4739.95, 204, 5, 4664.71, 75.24, 27, 180], ["2026-09-28", 93, 2143.65, 91, 2, 2110.57, 33.08, 8, 73], ["2026-09-29", 120, 2701.77, 119, 1, 2684.9, 16.87, 13, 101], ["2026-09-30", 77, 1795.13, 76, 1, 1779.82, 15.31, 9, 65], ["2026-10-01", 67, 1488.46, 65, 2, 1458.49, 29.97, 9, 54], ["2026-10-02", 51, 1169.65, 51, 0, 1169.65, 0.0, 5, 42], ["2026-10-03", 48, 1072.38, 45, 3, 1025.5, 46.88, 5, 41], ["2026-10-04", 86, 1981.09, 83, 3, 1935.88, 45.21, 9, 69], ["2026-10-05", 52, 1063.99, 48, 4, 1001.59, 62.4, 4, 41], ["2026-10-06", 46, 1112.38, 45, 1, 1098.99, 13.39, 1, 36], ["2026-10-07", 66, 1490.63, 63, 3, 1444.67, 45.96, 10, 51], ["2026-10-08", 48, 1038.91, 45, 3, 991.97, 46.94, 9, 34], ["2026-10-09", 42, 993.54, 42, 0, 993.54, 0.0, 7, 33], ["2026-10-10", 121, 2690.64, 110, 11, 2530.28, 160.36, 15, 93], ["2026-10-11", 195, 4484.56, 188, 7, 4378.41, 106.15, 26, 135], ["2026-10-12", 52, 1213.2, 50, 2, 1183.95, 29.25, 11, 36], ["2026-10-13", 52, 1230.43, 52, 0, 1230.43, 0.0, 15, 30], ["2026-10-14", 54, 1268.36, 54, 0, 1268.36, 0.0, 12, 40], ["2026-10-15", 54, 1278.52, 54, 0, 1278.52, 0.0, 8, 41], ["2026-10-16", 54, 1229.04, 52, 2, 1200.26, 28.78, 6, 47], ["2026-10-17", 97, 2163.95, 95, 2, 2130.86, 33.09, 16, 73], ["2026-10-18", 132, 3075.97, 127, 5, 3000.49, 75.48, 27, 92], ["2026-10-19", 47, 1031.02, 44, 3, 984.64, 46.38, 8, 38], ["2026-10-20", 44, 1026.55, 43, 1, 1012.77, 13.78, 9, 28], ["2026-10-21", 38, 874.29, 37, 1, 860.51, 13.78, 5, 28], ["2026-10-22", 68, 1548.23, 68, 0, 1548.23, 0.0, 15, 45], ["2026-10-23", 59, 1381.0, 58, 1, 1366.26, 14.74, 14, 41], ["2026-10-24", 84, 2021.5, 82, 2, 1988.56, 32.94, 9, 67], ["2026-10-25", 71, 1618.7, 68, 3, 1571.88, 46.82, 23, 40], ["2026-10-26", 59, 1326.99, 55, 4, 1260.22, 66.77, 15, 41], ["2026-10-27", 59, 1359.92, 57, 2, 1332.25, 27.67, 16, 36], ["2026-10-28", 57, 1221.62, 55, 2, 1188.05, 33.57, 12, 38], ["2026-10-29", 35, 789.67, 35, 0, 789.67, 0.0, 8, 27], ["2026-10-30", 60, 1451.94, 59, 1, 1434.53, 17.41, 16, 37], ["2026-10-31", 62, 1424.68, 61, 1, 1407.27, 17.41, 18, 38], ["2026-11-01", 77, 1771.5, 74, 3, 1721.88, 49.62, 19, 50], ["2026-11-02", 50, 1163.35, 48, 2, 1130.21, 33.14, 8, 39], ["2026-11-03", 52, 1078.83, 49, 3, 1045.5, 33.33, 12, 36], ["2026-11-04", 54, 1254.21, 53, 1, 1236.75, 17.46, 20, 32], ["2026-11-05", 51, 1244.74, 49, 2, 1213.66, 31.08, 16, 32], ["2026-11-06", 58, 1330.28, 56, 2, 1295.9, 34.38, 18, 36], ["2026-11-07", 50, 1186.52, 49, 1, 1169.33, 17.19, 15, 34], ["2026-11-08", 63, 1462.84, 60, 3, 1418.45, 44.39, 15, 43], ["2026-11-09", 54, 1249.22, 52, 2, 1221.87, 27.35, 14, 35], ["2026-11-10", 50, 1147.69, 47, 3, 1101.62, 46.07, 12, 34]],
-        "TVG407": [["2026-09-23", 69, 1565.49, 64, 5, 1489.2, 76.29, 3, 65], ["2026-09-24", 31, 709.54, 30, 1, 692.48, 17.06, 2, 29], ["2026-09-25", 44, 997.99, 40, 4, 934.72, 63.27, 5, 37], ["2026-09-26", 281, 6419.54, 273, 8, 6295.65, 123.89, 21, 253], ["2026-09-27", 225, 5105.35, 220, 5, 5029.71, 75.64, 24, 199], ["2026-09-28", 58, 1318.45, 54, 4, 1258.86, 59.59, 6, 49], ["2026-09-29", 131, 3032.63, 127, 4, 2970.59, 62.04, 12, 114], ["2026-09-30", 56, 1321.47, 56, 0, 1321.47, 0.0, 2, 52], ["2026-10-01", 57, 1320.87, 54, 3, 1275.2, 45.67, 9, 47], ["2026-10-02", 52, 1224.26, 52, 0, 1224.26, 0.0, 4, 46], ["2026-10-03", 48, 1124.16, 48, 0, 1124.16, 0.0, 11, 37], ["2026-10-04", 55, 1276.36, 54, 1, 1259.61, 16.75, 6, 48], ["2026-10-05", 23, 505.48, 23, 0, 505.48, 0.0, 2, 20], ["2026-10-06", 31, 728.88, 30, 1, 715.49, 13.39, 3, 27], ["2026-10-07", 44, 1015.42, 43, 1, 998.64, 16.78, 6, 33], ["2026-10-08", 34, 768.06, 33, 1, 751.28, 16.78, 5, 28], ["2026-10-09", 30, 685.51, 29, 1, 671.26, 14.25, 5, 25], ["2026-10-10", 69, 1582.66, 67, 2, 1552.47, 30.19, 10, 54], ["2026-10-11", 101, 2325.71, 100, 1, 2310.92, 14.79, 14, 85], ["2026-10-12", 31, 680.38, 31, 0, 680.38, 0.0, 7, 23], ["2026-10-13", 27, 565.13, 25, 2, 536.13, 29.0, 6, 21], ["2026-10-14", 41, 974.38, 40, 1, 960.02, 14.36, 6, 34], ["2026-10-15", 32, 752.1, 32, 0, 752.1, 0.0, 6, 25], ["2026-10-16", 23, 508.54, 23, 0, 508.54, 0.0, 6, 17], ["2026-10-17", 59, 1363.28, 58, 1, 1346.3, 16.98, 5, 53], ["2026-10-18", 65, 1525.84, 65, 0, 1525.84, 0.0, 8, 55], ["2026-10-19", 35, 770.06, 33, 2, 736.7, 33.36, 3, 30], ["2026-10-20", 33, 803.86, 33, 0, 803.86, 0.0, 3, 29], ["2026-10-21", 27, 638.91, 25, 2, 606.12, 32.79, 3, 20], ["2026-10-22", 42, 933.46, 40, 2, 902.41, 31.05, 10, 29], ["2026-10-23", 32, 743.09, 30, 2, 708.57, 34.52, 2, 27], ["2026-10-24", 36, 856.16, 36, 0, 856.16, 0.0, 3, 33], ["2026-10-25", 60, 1373.54, 58, 2, 1338.86, 34.68, 8, 47], ["2026-10-26", 36, 849.52, 36, 0, 849.52, 0.0, 2, 32], ["2026-10-27", 33, 720.46, 33, 0, 720.46, 0.0, 5, 26], ["2026-10-28", 18, 404.79, 17, 1, 387.52, 17.27, 4, 14], ["2026-10-29", 23, 506.27, 23, 0, 506.27, 0.0, 4, 19], ["2026-10-30", 24, 563.61, 24, 0, 563.61, 0.0, 3, 21], ["2026-10-31", 22, 528.17, 21, 1, 511.75, 16.42, 6, 16], ["2026-11-01", 50, 1170.4, 49, 1, 1153.85, 16.55, 7, 40], ["2026-11-02", 32, 696.62, 30, 2, 663.54, 33.08, 7, 23], ["2026-11-03", 31, 696.83, 31, 0, 696.83, 0.0, 5, 23], ["2026-11-04", 46, 1044.83, 45, 1, 1027.37, 17.46, 6, 37], ["2026-11-05", 34, 805.96, 34, 0, 805.96, 0.0, 9, 21], ["2026-11-06", 20, 438.94, 20, 0, 438.94, 0.0, 3, 16], ["2026-11-07", 41, 975.64, 40, 1, 961.03, 14.61, 11, 27], ["2026-11-08", 38, 903.28, 35, 3, 852.08, 51.2, 6, 27], ["2026-11-09", 33, 744.57, 32, 1, 729.17, 15.4, 7, 22], ["2026-11-10", 28, 606.69, 26, 2, 575.7, 30.99, 7, 19]],
-        "TVG4560": [["2026-09-23", 56, 1415.06, 56, 0, 1415.06, 0.0, 6, 50], ["2026-09-24", 31, 786.04, 31, 0, 786.04, 0.0, 6, 23], ["2026-09-25", 33, 830.39, 33, 0, 830.39, 0.0, 3, 29], ["2026-09-26", 288, 7122.41, 288, 0, 7122.41, 0.0, 21, 254], ["2026-09-27", 228, 5556.03, 228, 0, 5556.03, 0.0, 28, 195], ["2026-09-28", 59, 1461.31, 59, 0, 1461.31, 0.0, 4, 54], ["2026-09-29", 127, 3171.06, 127, 0, 3171.06, 0.0, 13, 110], ["2026-09-30", 56, 1412.12, 56, 0, 1412.12, 0.0, 6, 49], ["2026-10-01", 44, 1079.05, 44, 0, 1079.05, 0.0, 11, 32], ["2026-10-02", 36, 917.8, 36, 0, 917.8, 0.0, 3, 33], ["2026-10-03", 39, 966.49, 39, 0, 966.49, 0.0, 10, 27], ["2026-10-04", 51, 1289.37, 51, 0, 1289.37, 0.0, 7, 44], ["2026-10-05", 26, 669.42, 26, 0, 669.42, 0.0, 9, 17], ["2026-10-06", 21, 522.26, 21, 0, 522.26, 0.0, 6, 14], ["2026-10-07", 35, 882.36, 35, 0, 882.36, 0.0, 6, 28], ["2026-10-08", 31, 801.56, 31, 0, 801.56, 0.0, 6, 25], ["2026-10-09", 24, 598.91, 24, 0, 598.91, 0.0, 7, 17], ["2026-10-10", 58, 1461.38, 58, 0, 1461.38, 0.0, 14, 44], ["2026-10-11", 87, 2168.8, 87, 0, 2168.8, 0.0, 22, 63], ["2026-10-12", 21, 515.82, 21, 0, 515.82, 0.0, 6, 15], ["2026-10-13", 30, 768.13, 30, 0, 768.13, 0.0, 12, 17], ["2026-10-14", 30, 716.71, 30, 0, 716.71, 0.0, 10, 20], ["2026-10-15", 26, 660.74, 26, 0, 660.74, 0.0, 3, 23], ["2026-10-16", 21, 517.02, 21, 0, 517.02, 0.0, 6, 15], ["2026-10-17", 43, 1042.66, 43, 0, 1042.66, 0.0, 5, 38], ["2026-10-18", 53, 1270.18, 53, 0, 1270.18, 0.0, 9, 43], ["2026-10-19", 28, 685.66, 28, 0, 685.66, 0.0, 7, 20], ["2026-10-20", 30, 752.04, 30, 0, 752.04, 0.0, 9, 21], ["2026-10-21", 20, 489.09, 20, 0, 489.09, 0.0, 4, 15], ["2026-10-22", 25, 617.44, 25, 0, 617.44, 0.0, 8, 16], ["2026-10-23", 22, 515.4, 22, 0, 515.4, 0.0, 7, 15], ["2026-10-24", 36, 912.82, 36, 0, 912.82, 0.0, 4, 32], ["2026-10-25", 30, 768.1, 30, 0, 768.1, 0.0, 9, 20], ["2026-10-26", 25, 545.32, 25, 0, 545.32, 0.0, 4, 20], ["2026-10-27", 25, 577.58, 25, 0, 577.58, 0.0, 6, 18], ["2026-10-28", 22, 512.53, 22, 0, 512.53, 0.0, 7, 13], ["2026-10-29", 20, 513.95, 20, 0, 513.95, 0.0, 5, 15], ["2026-10-30", 21, 517.4, 21, 0, 517.4, 0.0, 7, 14], ["2026-10-31", 21, 519.88, 21, 0, 519.88, 0.0, 8, 13], ["2026-11-01", 35, 880.45, 35, 0, 880.45, 0.0, 12, 23], ["2026-11-02", 23, 584.41, 23, 0, 584.41, 0.0, 5, 18], ["2026-11-03", 26, 601.77, 26, 0, 601.77, 0.0, 7, 18], ["2026-11-04", 29, 722.07, 29, 0, 722.07, 0.0, 10, 18], ["2026-11-05", 19, 476.06, 19, 0, 476.06, 0.0, 6, 13], ["2026-11-06", 23, 568.99, 23, 0, 568.99, 0.0, 5, 17], ["2026-11-07", 31, 780.53, 31, 0, 780.53, 0.0, 13, 18], ["2026-11-08", 26, 662.49, 26, 0, 662.49, 0.0, 10, 15], ["2026-11-09", 16, 411.76, 16, 0, 411.76, 0.0, 4, 12], ["2026-11-10", 14, 324.42, 14, 0, 324.42, 0.0, 2, 12]],
-        "TVG4920": [["2026-09-23", 29, 766.27, 29, 0, 766.27, 0.0, 2, 27], ["2026-09-24", 21, 616.97, 21, 0, 616.97, 0.0, 3, 17], ["2026-09-25", 24, 748.29, 21, 3, 683.39, 64.9, 4, 20], ["2026-09-26", 133, 4096.09, 130, 3, 4030.35, 65.74, 14, 118], ["2026-09-27", 100, 3040.85, 96, 4, 2954.54, 86.31, 13, 86], ["2026-09-28", 24, 732.44, 22, 2, 687.31, 45.13, 2, 22], ["2026-09-29", 61, 1918.3, 58, 3, 1859.31, 58.99, 7, 54], ["2026-09-30", 25, 792.68, 24, 1, 769.3, 23.38, 4, 21], ["2026-10-01", 21, 630.78, 20, 1, 611.86, 18.92, 3, 18], ["2026-10-02", 20, 579.83, 19, 1, 560.91, 18.92, 2, 18], ["2026-10-03", 21, 682.2, 21, 0, 682.2, 0.0, 5, 16], ["2026-10-04", 33, 1058.63, 33, 0, 1058.63, 0.0, 3, 30], ["2026-10-05", 11, 378.62, 11, 0, 378.62, 0.0, 1, 10], ["2026-10-06", 22, 725.37, 22, 0, 725.37, 0.0, 1, 21], ["2026-10-07", 17, 548.68, 17, 0, 548.68, 0.0, 5, 12], ["2026-10-08", 16, 547.08, 16, 0, 547.08, 0.0, 1, 15], ["2026-10-09", 18, 599.96, 18, 0, 599.96, 0.0, 6, 12], ["2026-10-10", 34, 1074.42, 33, 1, 1051.93, 22.49, 5, 26], ["2026-10-11", 55, 1734.12, 52, 3, 1670.9, 63.22, 12, 42], ["2026-10-12", 13, 405.19, 13, 0, 405.19, 0.0, 4, 9], ["2026-10-13", 16, 472.58, 16, 0, 472.58, 0.0, 4, 12], ["2026-10-14", 20, 627.0, 20, 0, 627.0, 0.0, 2, 18], ["2026-10-15", 16, 459.15, 16, 0, 459.15, 0.0, 3, 12], ["2026-10-16", 17, 456.01, 17, 0, 456.01, 0.0, 3, 13], ["2026-10-17", 32, 979.2, 31, 1, 955.23, 23.97, 0, 32], ["2026-10-18", 33, 1020.51, 33, 0, 1020.51, 0.0, 9, 24], ["2026-10-19", 9, 259.7, 9, 0, 259.7, 0.0, 2, 7], ["2026-10-20", 15, 404.12, 15, 0, 404.12, 0.0, 2, 12], ["2026-10-21", 18, 572.53, 17, 1, 551.86, 20.67, 4, 14], ["2026-10-22", 17, 503.75, 17, 0, 503.75, 0.0, 5, 12], ["2026-10-23", 20, 612.53, 18, 2, 568.67, 43.86, 1, 19], ["2026-10-24", 28, 909.52, 28, 0, 909.52, 0.0, 5, 22], ["2026-10-25", 22, 693.52, 21, 1, 669.81, 23.71, 4, 18], ["2026-10-26", 13, 409.72, 13, 0, 409.72, 0.0, 1, 11], ["2026-10-27", 13, 422.34, 13, 0, 422.34, 0.0, 6, 7], ["2026-10-28", 11, 369.41, 11, 0, 369.41, 0.0, 2, 9], ["2026-10-29", 14, 472.44, 14, 0, 472.44, 0.0, 2, 12], ["2026-10-30", 12, 309.47, 12, 0, 309.47, 0.0, 2, 10], ["2026-10-31", 15, 492.85, 15, 0, 492.85, 0.0, 5, 10], ["2026-11-01", 30, 995.33, 30, 0, 995.33, 0.0, 9, 18], ["2026-11-02", 14, 431.23, 13, 1, 409.11, 22.12, 2, 11], ["2026-11-03", 13, 438.97, 13, 0, 438.97, 0.0, 2, 10], ["2026-11-04", 15, 481.71, 15, 0, 481.71, 0.0, 2, 13], ["2026-11-05", 16, 483.11, 15, 1, 464.63, 18.48, 3, 13], ["2026-11-06", 17, 518.4, 17, 0, 518.4, 0.0, 5, 10], ["2026-11-07", 22, 725.78, 22, 0, 725.78, 0.0, 8, 14], ["2026-11-08", 20, 663.77, 20, 0, 663.77, 0.0, 3, 17], ["2026-11-09", 10, 318.64, 10, 0, 318.64, 0.0, 3, 7], ["2026-11-10", 13, 397.1, 13, 0, 397.1, 0.0, 2, 11]],
-        "TVG5870": [["2026-09-23", 227, 5187.28, 222, 5, 5101.49, 85.79, 52, 170], ["2026-09-24", 243, 5620.33, 229, 14, 5378.66, 241.67, 88, 143], ["2026-09-25", 265, 6242.06, 254, 11, 6056.05, 186.01, 95, 166], ["2026-09-26", 488, 11356.53, 469, 19, 11046.47, 310.06, 98, 365], ["2026-09-27", 438, 10081.9, 421, 17, 9822.74, 259.16, 115, 306], ["2026-09-28", 257, 6112.49, 250, 7, 5996.74, 115.75, 72, 165], ["2026-09-29", 336, 7791.47, 317, 19, 7472.5, 318.97, 116, 211], ["2026-09-30", 275, 6471.13, 262, 13, 6263.07, 208.06, 96, 168], ["2026-10-01", 217, 5155.39, 206, 11, 4966.31, 189.08, 54, 159], ["2026-10-02", 218, 5139.36, 205, 13, 4919.96, 219.4, 59, 151], ["2026-10-03", 239, 5646.82, 221, 18, 5348.89, 297.93, 79, 151], ["2026-10-04", 288, 6733.73, 268, 20, 6397.67, 336.06, 82, 196], ["2026-10-05", 206, 4674.49, 182, 24, 4284.68, 389.81, 54, 140], ["2026-10-06", 200, 4616.23, 185, 15, 4365.05, 251.18, 55, 140], ["2026-10-07", 223, 5273.44, 212, 11, 5089.62, 183.82, 50, 164], ["2026-10-08", 195, 4586.03, 180, 15, 4326.93, 259.1, 56, 134], ["2026-10-09", 205, 4786.23, 190, 15, 4549.45, 236.78, 60, 134], ["2026-10-10", 410, 9223.46, 384, 26, 8800.43, 423.03, 67, 307], ["2026-10-11", 528, 11860.02, 494, 34, 11318.24, 541.78, 86, 409], ["2026-10-12", 193, 4488.96, 175, 18, 4179.92, 309.04, 58, 127], ["2026-10-13", 171, 3956.04, 157, 14, 3727.06, 228.98, 51, 113], ["2026-10-14", 205, 4805.77, 192, 13, 4614.92, 190.85, 40, 157], ["2026-10-15", 227, 5301.66, 216, 11, 5109.24, 192.42, 52, 167], ["2026-10-16", 222, 5147.43, 209, 13, 4927.35, 220.08, 54, 156], ["2026-10-17", 401, 9439.12, 375, 26, 8981.88, 457.24, 85, 294], ["2026-10-18", 435, 10172.0, 406, 29, 9671.28, 500.72, 95, 326], ["2026-10-19", 225, 5278.69, 217, 8, 5159.97, 118.72, 52, 158], ["2026-10-20", 240, 5762.3, 230, 10, 5588.44, 173.86, 44, 186], ["2026-10-21", 223, 5195.89, 210, 13, 4981.32, 214.57, 45, 166], ["2026-10-22", 259, 6033.78, 252, 7, 5924.9, 108.88, 70, 174], ["2026-10-23", 241, 5727.53, 231, 10, 5556.21, 171.32, 73, 157], ["2026-10-24", 255, 6027.2, 247, 8, 5892.82, 134.38, 81, 163], ["2026-10-25", 303, 7176.32, 288, 15, 6913.83, 262.49, 80, 210], ["2026-10-26", 269, 6343.1, 260, 9, 6181.86, 161.24, 70, 184], ["2026-10-27", 241, 5598.66, 232, 9, 5464.99, 133.67, 76, 156], ["2026-10-28", 239, 5695.69, 236, 3, 5639.23, 56.46, 66, 165], ["2026-10-29", 199, 4663.92, 193, 6, 4554.91, 109.01, 65, 124], ["2026-10-30", 215, 5152.25, 208, 7, 5032.84, 119.41, 61, 143], ["2026-10-31", 243, 5794.96, 233, 10, 5613.45, 181.51, 62, 163], ["2026-11-01", 360, 8677.49, 354, 6, 8573.7, 103.79, 97, 250], ["2026-11-02", 231, 5444.81, 223, 8, 5306.82, 137.99, 65, 158], ["2026-11-03", 223, 5179.76, 217, 6, 5077.44, 102.32, 59, 153], ["2026-11-04", 271, 6338.67, 263, 8, 6200.88, 137.79, 88, 174], ["2026-11-05", 266, 6024.82, 261, 5, 5937.46, 87.36, 99, 133], ["2026-11-06", 274, 6473.96, 266, 8, 6334.68, 139.28, 109, 150], ["2026-11-07", 315, 7434.62, 308, 7, 7320.82, 113.8, 101, 192], ["2026-11-08", 298, 7092.65, 292, 6, 6994.2, 98.45, 101, 184], ["2026-11-09", 237, 5499.66, 234, 3, 5448.41, 51.25, 84, 144], ["2026-11-10", 239, 5573.09, 235, 4, 5506.18, 66.91, 97, 135]],
-        "TVG629": [["2026-09-23", 2163, 51571.68, 2091, 72, 50338.03, 1233.65, 133, 1727], ["2026-09-24", 1144, 27560.08, 1121, 23, 27188.2, 371.88, 114, 925], ["2026-09-25", 552, 13082.04, 530, 22, 12712.13, 369.91, 88, 437], ["2026-09-26", 1050, 24396.48, 1017, 33, 23857.69, 538.79, 132, 842], ["2026-09-27", 919, 21262.21, 869, 50, 20419.91, 842.3, 141, 737], ["2026-09-28", 473, 10890.58, 420, 53, 10009.12, 881.46, 80, 366], ["2026-09-29", 1121, 26360.88, 1060, 61, 25368.05, 992.83, 121, 916], ["2026-09-30", 710, 16757.99, 673, 37, 16135.24, 622.75, 111, 561], ["2026-10-01", 608, 14349.5, 578, 30, 13855.35, 494.15, 140, 433], ["2026-10-02", 605, 14396.38, 586, 19, 14088.63, 307.75, 113, 465], ["2026-10-03", 585, 13840.22, 551, 34, 13276.07, 564.15, 122, 444], ["2026-10-04", 694, 16557.5, 668, 26, 16128.8, 428.7, 164, 500], ["2026-10-05", 449, 10666.72, 431, 18, 10374.99, 291.73, 111, 322], ["2026-10-06", 429, 9907.22, 417, 12, 9712.88, 194.34, 94, 307], ["2026-10-07", 515, 12210.61, 501, 14, 11997.27, 213.34, 125, 371], ["2026-10-08", 493, 11791.03, 472, 21, 11437.62, 353.41, 120, 351], ["2026-10-09", 458, 10618.42, 444, 14, 10393.9, 224.52, 111, 333], ["2026-10-10", 720, 16360.37, 680, 40, 15744.23, 616.14, 95, 605], ["2026-10-11", 1086, 24713.37, 1030, 56, 23827.62, 885.75, 103, 938], ["2026-10-12", 349, 7927.54, 327, 22, 7587.19, 340.35, 56, 283], ["2026-10-13", 275, 6452.91, 262, 13, 6246.75, 206.16, 53, 207], ["2026-10-14", 454, 10732.46, 436, 18, 10435.19, 297.27, 62, 365], ["2026-10-15", 411, 9797.12, 395, 16, 9525.07, 272.05, 61, 333], ["2026-10-16", 359, 8457.1, 343, 16, 8195.41, 261.69, 65, 283], ["2026-10-17", 590, 13758.68, 572, 18, 13461.17, 297.51, 78, 496], ["2026-10-18", 779, 18300.26, 741, 38, 17675.26, 625.0, 114, 644], ["2026-10-19", 348, 8260.21, 331, 17, 7980.6, 279.61, 66, 268], ["2026-10-20", 299, 7004.34, 286, 13, 6792.39, 211.95, 58, 229], ["2026-10-21", 323, 7513.8, 303, 20, 7169.28, 344.52, 61, 254], ["2026-10-22", 318, 7540.14, 307, 11, 7356.34, 183.8, 57, 253], ["2026-10-23", 314, 7249.13, 295, 19, 6938.62, 310.51, 57, 244], ["2026-10-24", 415, 9663.04, 386, 29, 9161.47, 501.57, 56, 342], ["2026-10-25", 501, 11752.99, 471, 30, 11243.66, 509.33, 81, 405], ["2026-10-26", 350, 8098.69, 335, 15, 7885.36, 213.33, 33, 301], ["2026-10-27", 278, 6446.81, 270, 8, 6312.34, 134.47, 50, 223], ["2026-10-28", 336, 7912.54, 314, 22, 7532.77, 379.77, 42, 281], ["2026-10-29", 279, 6687.6, 270, 9, 6529.91, 157.69, 40, 230], ["2026-10-30", 320, 7597.0, 311, 9, 7456.03, 140.97, 58, 240], ["2026-10-31", 414, 9850.28, 394, 20, 9512.7, 337.58, 56, 342], ["2026-11-01", 694, 16709.35, 662, 32, 16158.18, 551.17, 88, 582], ["2026-11-02", 347, 8269.82, 334, 13, 8046.77, 223.05, 48, 279], ["2026-11-03", 374, 8813.45, 358, 16, 8548.03, 265.42, 63, 299], ["2026-11-04", 605, 14145.83, 584, 21, 13785.2, 360.63, 78, 515], ["2026-11-05", 473, 11045.65, 458, 15, 10784.41, 261.24, 88, 357], ["2026-11-06", 417, 9639.42, 403, 14, 9403.02, 236.4, 73, 331], ["2026-11-07", 512, 11896.13, 494, 18, 11601.71, 294.42, 93, 402], ["2026-11-08", 563, 13430.84, 544, 19, 13104.91, 325.93, 115, 434], ["2026-11-09", 398, 9432.9, 388, 10, 9270.56, 162.34, 58, 331], ["2026-11-10", 467, 11102.11, 455, 12, 10903.59, 198.52, 61, 393]]
+        "TVG217": [["2026-09-23", 101, 2184.55, 95, 6, 2089.44, 95.11, 13, 79], ["2026-09-24", 67, 1537.78, 65, 2, 1510.42, 27.36, 14, 44], ["2026-09-25", 75, 1685.97, 73, 2, 1653.4, 32.57, 10, 58], ["2026-09-26", 276, 6224.13, 267, 9, 6087.92, 136.21, 33, 226], ["2026-09-27", 209, 4739.95, 204, 5, 4664.71, 75.24, 27, 180], ["2026-09-28", 93, 2143.65, 91, 2, 2110.57, 33.08, 8, 73], ["2026-09-29", 120, 2701.77, 119, 1, 2684.9, 16.87, 13, 101], ["2026-09-30", 77, 1795.13, 76, 1, 1779.82, 15.31, 9, 65], ["2026-10-01", 67, 1488.46, 65, 2, 1458.49, 29.97, 9, 54], ["2026-10-02", 51, 1169.65, 51, 0, 1169.65, 0.0, 5, 42], ["2026-10-03", 48, 1072.38, 45, 3, 1025.5, 46.88, 5, 41], ["2026-10-04", 86, 1981.09, 83, 3, 1935.88, 45.21, 9, 69], ["2026-10-05", 52, 1063.99, 48, 4, 1001.59, 62.4, 4, 41], ["2026-10-06", 46, 1112.38, 45, 1, 1098.99, 13.39, 1, 36], ["2026-10-07", 66, 1490.63, 63, 3, 1444.67, 45.96, 10, 51], ["2026-10-08", 48, 1038.91, 45, 3, 991.97, 46.94, 9, 34], ["2026-10-09", 42, 993.54, 42, 0, 993.54, 0.0, 7, 33], ["2026-10-10", 121, 2690.64, 110, 11, 2530.28, 160.36, 15, 93], ["2026-10-11", 195, 4484.56, 188, 7, 4378.41, 106.15, 26, 135], ["2026-10-12", 52, 1213.2, 50, 2, 1183.95, 29.25, 11, 36], ["2026-10-13", 52, 1230.43, 52, 0, 1230.43, 0.0, 15, 30], ["2026-10-14", 54, 1268.36, 54, 0, 1268.36, 0.0, 12, 40], ["2026-10-15", 54, 1278.52, 54, 0, 1278.52, 0.0, 8, 41], ["2026-10-16", 54, 1229.04, 52, 2, 1200.26, 28.78, 6, 47], ["2026-10-17", 97, 2163.95, 95, 2, 2130.86, 33.09, 16, 73], ["2026-10-18", 132, 3075.97, 127, 5, 3000.49, 75.48, 27, 92], ["2026-10-19", 47, 1031.02, 44, 3, 984.64, 46.38, 8, 38], ["2026-10-20", 44, 1026.55, 43, 1, 1012.77, 13.78, 9, 28], ["2026-10-21", 38, 874.29, 37, 1, 860.51, 13.78, 5, 28], ["2026-10-22", 68, 1548.23, 68, 0, 1548.23, 0.0, 15, 45], ["2026-10-23", 59, 1381.0, 58, 1, 1366.26, 14.74, 14, 41], ["2026-10-24", 84, 2021.5, 82, 2, 1988.56, 32.94, 9, 67], ["2026-10-25", 71, 1618.7, 68, 3, 1571.88, 46.82, 23, 40], ["2026-10-26", 59, 1326.99, 55, 4, 1260.22, 66.77, 15, 41], ["2026-10-27", 59, 1359.92, 57, 2, 1332.25, 27.67, 16, 36], ["2026-10-28", 57, 1221.62, 55, 2, 1188.05, 33.57, 12, 38], ["2026-10-29", 35, 789.67, 35, 0, 789.67, 0.0, 8, 27], ["2026-10-30", 60, 1451.94, 59, 1, 1434.53, 17.41, 16, 37], ["2026-10-31", 62, 1424.68, 61, 1, 1407.27, 17.41, 18, 38], ["2026-11-01", 77, 1771.5, 74, 3, 1721.88, 49.62, 19, 50], ["2026-11-02", 50, 1163.35, 48, 2, 1130.21, 33.14, 8, 39], ["2026-11-03", 52, 1078.83, 49, 3, 1045.5, 33.33, 12, 36], ["2026-11-04", 54, 1254.21, 53, 1, 1236.75, 17.46, 20, 32], ["2026-11-05", 51, 1244.74, 49, 2, 1213.66, 31.08, 16, 32], ["2026-11-06", 58, 1330.28, 56, 2, 1295.9, 34.38, 18, 36], ["2026-11-07", 50, 1186.52, 49, 1, 1169.33, 17.19, 15, 34], ["2026-11-08", 63, 1462.84, 60, 3, 1418.45, 44.39, 15, 43], ["2026-11-09", 54, 1249.22, 52, 2, 1221.87, 27.35, 14, 35], ["2026-11-10", 50, 1147.69, 47, 3, 1101.62, 46.07, 12, 34], ["2026-11-11", 54, 1242.93, 51, 3, 1191.82, 51.11, 22, 27]],
+        "TVG407": [["2026-09-23", 69, 1565.49, 64, 5, 1489.2, 76.29, 3, 65], ["2026-09-24", 31, 709.54, 30, 1, 692.48, 17.06, 2, 29], ["2026-09-25", 44, 997.99, 40, 4, 934.72, 63.27, 5, 37], ["2026-09-26", 281, 6419.54, 273, 8, 6295.65, 123.89, 21, 253], ["2026-09-27", 225, 5105.35, 220, 5, 5029.71, 75.64, 24, 199], ["2026-09-28", 58, 1318.45, 54, 4, 1258.86, 59.59, 6, 49], ["2026-09-29", 131, 3032.63, 127, 4, 2970.59, 62.04, 12, 114], ["2026-09-30", 56, 1321.47, 56, 0, 1321.47, 0.0, 2, 52], ["2026-10-01", 57, 1320.87, 54, 3, 1275.2, 45.67, 9, 47], ["2026-10-02", 52, 1224.26, 52, 0, 1224.26, 0.0, 4, 46], ["2026-10-03", 48, 1124.16, 48, 0, 1124.16, 0.0, 11, 37], ["2026-10-04", 55, 1276.36, 54, 1, 1259.61, 16.75, 6, 48], ["2026-10-05", 23, 505.48, 23, 0, 505.48, 0.0, 2, 20], ["2026-10-06", 31, 728.88, 30, 1, 715.49, 13.39, 3, 27], ["2026-10-07", 44, 1015.42, 43, 1, 998.64, 16.78, 6, 33], ["2026-10-08", 34, 768.06, 33, 1, 751.28, 16.78, 5, 28], ["2026-10-09", 30, 685.51, 29, 1, 671.26, 14.25, 5, 25], ["2026-10-10", 69, 1582.66, 67, 2, 1552.47, 30.19, 10, 54], ["2026-10-11", 101, 2325.71, 100, 1, 2310.92, 14.79, 14, 85], ["2026-10-12", 31, 680.38, 31, 0, 680.38, 0.0, 7, 23], ["2026-10-13", 27, 565.13, 25, 2, 536.13, 29.0, 6, 21], ["2026-10-14", 41, 974.38, 40, 1, 960.02, 14.36, 6, 34], ["2026-10-15", 32, 752.1, 32, 0, 752.1, 0.0, 6, 25], ["2026-10-16", 23, 508.54, 23, 0, 508.54, 0.0, 6, 17], ["2026-10-17", 59, 1363.28, 58, 1, 1346.3, 16.98, 5, 53], ["2026-10-18", 65, 1525.84, 65, 0, 1525.84, 0.0, 8, 55], ["2026-10-19", 35, 770.06, 33, 2, 736.7, 33.36, 3, 30], ["2026-10-20", 33, 803.86, 33, 0, 803.86, 0.0, 3, 29], ["2026-10-21", 27, 638.91, 25, 2, 606.12, 32.79, 3, 20], ["2026-10-22", 42, 933.46, 40, 2, 902.41, 31.05, 10, 29], ["2026-10-23", 32, 743.09, 30, 2, 708.57, 34.52, 2, 27], ["2026-10-24", 36, 856.16, 36, 0, 856.16, 0.0, 3, 33], ["2026-10-25", 60, 1373.54, 58, 2, 1338.86, 34.68, 8, 47], ["2026-10-26", 36, 849.52, 36, 0, 849.52, 0.0, 2, 32], ["2026-10-27", 33, 720.46, 33, 0, 720.46, 0.0, 5, 26], ["2026-10-28", 18, 404.79, 17, 1, 387.52, 17.27, 4, 14], ["2026-10-29", 23, 506.27, 23, 0, 506.27, 0.0, 4, 19], ["2026-10-30", 24, 563.61, 24, 0, 563.61, 0.0, 3, 21], ["2026-10-31", 22, 528.17, 21, 1, 511.75, 16.42, 6, 16], ["2026-11-01", 50, 1170.4, 49, 1, 1153.85, 16.55, 7, 40], ["2026-11-02", 32, 696.62, 30, 2, 663.54, 33.08, 7, 23], ["2026-11-03", 31, 696.83, 31, 0, 696.83, 0.0, 5, 23], ["2026-11-04", 46, 1044.83, 45, 1, 1027.37, 17.46, 6, 37], ["2026-11-05", 34, 805.96, 34, 0, 805.96, 0.0, 9, 21], ["2026-11-06", 20, 438.94, 20, 0, 438.94, 0.0, 3, 16], ["2026-11-07", 41, 972.25, 40, 1, 957.64, 14.61, 11, 27], ["2026-11-08", 38, 903.28, 35, 3, 852.08, 51.2, 6, 27], ["2026-11-09", 33, 744.57, 32, 1, 729.17, 15.4, 7, 22], ["2026-11-10", 28, 606.69, 26, 2, 575.7, 30.99, 7, 19], ["2026-11-11", 39, 878.05, 38, 1, 861.01, 17.04, 10, 28]],
+        "TVG4560": [["2026-09-23", 56, 1415.06, 56, 0, 1415.06, 0.0, 6, 50], ["2026-09-24", 31, 786.04, 31, 0, 786.04, 0.0, 6, 23], ["2026-09-25", 33, 830.39, 33, 0, 830.39, 0.0, 3, 29], ["2026-09-26", 288, 7122.41, 288, 0, 7122.41, 0.0, 21, 254], ["2026-09-27", 228, 5556.03, 228, 0, 5556.03, 0.0, 28, 195], ["2026-09-28", 59, 1461.31, 59, 0, 1461.31, 0.0, 4, 54], ["2026-09-29", 127, 3171.06, 127, 0, 3171.06, 0.0, 13, 110], ["2026-09-30", 56, 1412.12, 56, 0, 1412.12, 0.0, 6, 49], ["2026-10-01", 44, 1079.05, 44, 0, 1079.05, 0.0, 11, 32], ["2026-10-02", 36, 917.8, 36, 0, 917.8, 0.0, 3, 33], ["2026-10-03", 39, 966.49, 39, 0, 966.49, 0.0, 10, 27], ["2026-10-04", 51, 1289.37, 51, 0, 1289.37, 0.0, 7, 44], ["2026-10-05", 26, 669.42, 26, 0, 669.42, 0.0, 9, 17], ["2026-10-06", 21, 522.26, 21, 0, 522.26, 0.0, 6, 14], ["2026-10-07", 35, 882.36, 35, 0, 882.36, 0.0, 6, 28], ["2026-10-08", 31, 801.56, 31, 0, 801.56, 0.0, 6, 25], ["2026-10-09", 24, 598.91, 24, 0, 598.91, 0.0, 7, 17], ["2026-10-10", 58, 1461.38, 58, 0, 1461.38, 0.0, 14, 44], ["2026-10-11", 87, 2168.8, 87, 0, 2168.8, 0.0, 22, 63], ["2026-10-12", 21, 515.82, 21, 0, 515.82, 0.0, 6, 15], ["2026-10-13", 30, 768.13, 30, 0, 768.13, 0.0, 12, 17], ["2026-10-14", 30, 716.71, 30, 0, 716.71, 0.0, 10, 20], ["2026-10-15", 26, 660.74, 26, 0, 660.74, 0.0, 3, 23], ["2026-10-16", 21, 517.02, 21, 0, 517.02, 0.0, 6, 15], ["2026-10-17", 43, 1042.66, 43, 0, 1042.66, 0.0, 5, 38], ["2026-10-18", 53, 1270.18, 53, 0, 1270.18, 0.0, 9, 43], ["2026-10-19", 28, 685.66, 28, 0, 685.66, 0.0, 7, 20], ["2026-10-20", 30, 752.04, 30, 0, 752.04, 0.0, 9, 21], ["2026-10-21", 20, 489.09, 20, 0, 489.09, 0.0, 4, 15], ["2026-10-22", 25, 617.44, 25, 0, 617.44, 0.0, 8, 16], ["2026-10-23", 22, 515.4, 22, 0, 515.4, 0.0, 7, 15], ["2026-10-24", 36, 912.82, 36, 0, 912.82, 0.0, 4, 32], ["2026-10-25", 30, 768.1, 30, 0, 768.1, 0.0, 9, 20], ["2026-10-26", 25, 545.32, 25, 0, 545.32, 0.0, 4, 20], ["2026-10-27", 25, 577.58, 25, 0, 577.58, 0.0, 6, 18], ["2026-10-28", 22, 512.53, 22, 0, 512.53, 0.0, 7, 13], ["2026-10-29", 20, 513.95, 20, 0, 513.95, 0.0, 5, 15], ["2026-10-30", 21, 517.4, 21, 0, 517.4, 0.0, 7, 14], ["2026-10-31", 21, 519.88, 21, 0, 519.88, 0.0, 8, 13], ["2026-11-01", 35, 880.45, 35, 0, 880.45, 0.0, 12, 23], ["2026-11-02", 22, 556.41, 22, 0, 556.41, 0.0, 5, 17], ["2026-11-03", 26, 601.77, 26, 0, 601.77, 0.0, 7, 18], ["2026-11-04", 29, 720.64, 29, 0, 720.64, 0.0, 10, 18], ["2026-11-05", 19, 476.06, 19, 0, 476.06, 0.0, 6, 13], ["2026-11-06", 23, 568.99, 23, 0, 568.99, 0.0, 5, 17], ["2026-11-07", 31, 780.53, 31, 0, 780.53, 0.0, 13, 18], ["2026-11-08", 26, 662.49, 26, 0, 662.49, 0.0, 10, 15], ["2026-11-09", 16, 411.76, 16, 0, 411.76, 0.0, 4, 12], ["2026-11-10", 14, 324.42, 14, 0, 324.42, 0.0, 2, 12], ["2026-11-11", 29, 720.24, 29, 0, 720.24, 0.0, 10, 19]],
+        "TVG4920": [["2026-09-23", 29, 766.27, 29, 0, 766.27, 0.0, 2, 27], ["2026-09-24", 21, 616.97, 21, 0, 616.97, 0.0, 3, 17], ["2026-09-25", 24, 748.29, 21, 3, 683.39, 64.9, 4, 20], ["2026-09-26", 133, 4096.09, 130, 3, 4030.35, 65.74, 14, 118], ["2026-09-27", 100, 3040.85, 96, 4, 2954.54, 86.31, 13, 86], ["2026-09-28", 24, 732.44, 22, 2, 687.31, 45.13, 2, 22], ["2026-09-29", 61, 1918.3, 58, 3, 1859.31, 58.99, 7, 54], ["2026-09-30", 25, 792.68, 24, 1, 769.3, 23.38, 4, 21], ["2026-10-01", 21, 630.78, 20, 1, 611.86, 18.92, 3, 18], ["2026-10-02", 20, 579.83, 19, 1, 560.91, 18.92, 2, 18], ["2026-10-03", 21, 682.2, 21, 0, 682.2, 0.0, 5, 16], ["2026-10-04", 33, 1058.63, 33, 0, 1058.63, 0.0, 3, 30], ["2026-10-05", 11, 378.62, 11, 0, 378.62, 0.0, 1, 10], ["2026-10-06", 22, 725.37, 22, 0, 725.37, 0.0, 1, 21], ["2026-10-07", 17, 548.68, 17, 0, 548.68, 0.0, 5, 12], ["2026-10-08", 16, 547.08, 16, 0, 547.08, 0.0, 1, 15], ["2026-10-09", 18, 599.96, 18, 0, 599.96, 0.0, 6, 12], ["2026-10-10", 34, 1074.42, 33, 1, 1051.93, 22.49, 5, 26], ["2026-10-11", 55, 1734.12, 52, 3, 1670.9, 63.22, 12, 42], ["2026-10-12", 13, 405.19, 13, 0, 405.19, 0.0, 4, 9], ["2026-10-13", 16, 472.58, 16, 0, 472.58, 0.0, 4, 12], ["2026-10-14", 20, 627.0, 20, 0, 627.0, 0.0, 2, 18], ["2026-10-15", 16, 459.15, 16, 0, 459.15, 0.0, 3, 12], ["2026-10-16", 17, 456.01, 17, 0, 456.01, 0.0, 3, 13], ["2026-10-17", 32, 979.2, 31, 1, 955.23, 23.97, 0, 32], ["2026-10-18", 33, 1020.51, 33, 0, 1020.51, 0.0, 9, 24], ["2026-10-19", 9, 259.7, 9, 0, 259.7, 0.0, 2, 7], ["2026-10-20", 15, 404.12, 15, 0, 404.12, 0.0, 2, 12], ["2026-10-21", 18, 572.53, 17, 1, 551.86, 20.67, 4, 14], ["2026-10-22", 17, 503.75, 17, 0, 503.75, 0.0, 5, 12], ["2026-10-23", 20, 612.53, 18, 2, 568.67, 43.86, 1, 19], ["2026-10-24", 28, 909.52, 28, 0, 909.52, 0.0, 5, 22], ["2026-10-25", 22, 693.52, 21, 1, 669.81, 23.71, 4, 18], ["2026-10-26", 13, 409.72, 13, 0, 409.72, 0.0, 1, 11], ["2026-10-27", 13, 422.34, 13, 0, 422.34, 0.0, 6, 7], ["2026-10-28", 11, 369.41, 11, 0, 369.41, 0.0, 2, 9], ["2026-10-29", 14, 472.44, 14, 0, 472.44, 0.0, 2, 12], ["2026-10-30", 12, 309.47, 12, 0, 309.47, 0.0, 2, 10], ["2026-10-31", 15, 492.85, 15, 0, 492.85, 0.0, 5, 10], ["2026-11-01", 30, 995.33, 30, 0, 995.33, 0.0, 9, 18], ["2026-11-02", 14, 431.23, 13, 1, 409.11, 22.12, 2, 11], ["2026-11-03", 13, 438.97, 13, 0, 438.97, 0.0, 2, 10], ["2026-11-04", 15, 481.71, 15, 0, 481.71, 0.0, 2, 13], ["2026-11-05", 16, 483.11, 15, 1, 464.63, 18.48, 3, 13], ["2026-11-06", 17, 518.4, 17, 0, 518.4, 0.0, 5, 10], ["2026-11-07", 22, 725.78, 22, 0, 725.78, 0.0, 8, 14], ["2026-11-08", 20, 663.77, 20, 0, 663.77, 0.0, 3, 17], ["2026-11-09", 10, 318.64, 10, 0, 318.64, 0.0, 3, 7], ["2026-11-10", 13, 397.1, 13, 0, 397.1, 0.0, 2, 11], ["2026-11-11", 18, 511.2, 18, 0, 511.2, 0.0, 6, 9]],
+        "TVG5870": [["2026-09-23", 227, 5187.28, 222, 5, 5101.49, 85.79, 52, 170], ["2026-09-24", 243, 5620.33, 229, 14, 5378.66, 241.67, 88, 143], ["2026-09-25", 265, 6242.06, 254, 11, 6056.05, 186.01, 95, 166], ["2026-09-26", 488, 11356.53, 469, 19, 11046.47, 310.06, 98, 365], ["2026-09-27", 438, 10081.9, 421, 17, 9822.74, 259.16, 115, 306], ["2026-09-28", 257, 6112.49, 250, 7, 5996.74, 115.75, 72, 165], ["2026-09-29", 336, 7791.47, 317, 19, 7472.5, 318.97, 116, 211], ["2026-09-30", 275, 6471.13, 262, 13, 6263.07, 208.06, 96, 168], ["2026-10-01", 217, 5155.39, 206, 11, 4966.31, 189.08, 54, 159], ["2026-10-02", 218, 5139.36, 205, 13, 4919.96, 219.4, 59, 151], ["2026-10-03", 239, 5646.82, 221, 18, 5348.89, 297.93, 79, 151], ["2026-10-04", 288, 6733.73, 268, 20, 6397.67, 336.06, 82, 196], ["2026-10-05", 206, 4674.49, 182, 24, 4284.68, 389.81, 54, 140], ["2026-10-06", 200, 4616.23, 185, 15, 4365.05, 251.18, 55, 140], ["2026-10-07", 223, 5273.44, 212, 11, 5089.62, 183.82, 50, 164], ["2026-10-08", 195, 4586.03, 180, 15, 4326.93, 259.1, 56, 134], ["2026-10-09", 205, 4786.23, 190, 15, 4549.45, 236.78, 60, 134], ["2026-10-10", 410, 9223.46, 384, 26, 8800.43, 423.03, 67, 307], ["2026-10-11", 528, 11860.02, 494, 34, 11318.24, 541.78, 86, 409], ["2026-10-12", 193, 4488.96, 175, 18, 4179.92, 309.04, 58, 127], ["2026-10-13", 171, 3956.04, 157, 14, 3727.06, 228.98, 51, 113], ["2026-10-14", 205, 4805.77, 192, 13, 4614.92, 190.85, 40, 157], ["2026-10-15", 227, 5301.66, 216, 11, 5109.24, 192.42, 52, 167], ["2026-10-16", 222, 5147.43, 209, 13, 4927.35, 220.08, 54, 156], ["2026-10-17", 401, 9439.12, 375, 26, 8981.88, 457.24, 85, 294], ["2026-10-18", 435, 10172.0, 406, 29, 9671.28, 500.72, 95, 326], ["2026-10-19", 225, 5278.69, 217, 8, 5159.97, 118.72, 52, 158], ["2026-10-20", 240, 5762.3, 230, 10, 5588.44, 173.86, 44, 186], ["2026-10-21", 223, 5195.89, 210, 13, 4981.32, 214.57, 45, 166], ["2026-10-22", 259, 6033.78, 252, 7, 5924.9, 108.88, 70, 174], ["2026-10-23", 241, 5727.53, 231, 10, 5556.21, 171.32, 73, 157], ["2026-10-24", 255, 6027.2, 247, 8, 5892.82, 134.38, 81, 163], ["2026-10-25", 303, 7176.32, 288, 15, 6913.83, 262.49, 80, 210], ["2026-10-26", 268, 6322.3, 259, 9, 6161.06, 161.24, 69, 184], ["2026-10-27", 241, 5598.66, 232, 9, 5464.99, 133.67, 76, 156], ["2026-10-28", 239, 5695.69, 236, 3, 5639.23, 56.46, 66, 165], ["2026-10-29", 199, 4663.92, 193, 6, 4554.91, 109.01, 65, 124], ["2026-10-30", 215, 5152.25, 208, 7, 5032.84, 119.41, 61, 143], ["2026-10-31", 243, 5794.96, 233, 10, 5613.45, 181.51, 62, 163], ["2026-11-01", 360, 8677.49, 354, 6, 8573.7, 103.79, 97, 250], ["2026-11-02", 231, 5444.81, 223, 8, 5306.82, 137.99, 65, 158], ["2026-11-03", 223, 5179.76, 217, 6, 5077.44, 102.32, 59, 153], ["2026-11-04", 271, 6338.67, 263, 8, 6200.88, 137.79, 88, 174], ["2026-11-05", 266, 6024.82, 261, 5, 5937.46, 87.36, 99, 133], ["2026-11-06", 274, 6471.02, 266, 8, 6331.74, 139.28, 109, 150], ["2026-11-07", 315, 7435.55, 308, 7, 7321.75, 113.8, 101, 192], ["2026-11-08", 298, 7092.65, 292, 6, 6994.2, 98.45, 101, 184], ["2026-11-09", 236, 5481.08, 234, 2, 5448.41, 32.67, 83, 144], ["2026-11-10", 239, 5573.09, 235, 4, 5506.18, 66.91, 97, 135], ["2026-11-11", 242, 5720.85, 238, 4, 5653.59, 67.26, 92, 141]],
+        "TVG629": [["2026-09-23", 2163, 51571.68, 2091, 72, 50338.03, 1233.65, 133, 1727], ["2026-09-24", 1144, 27560.08, 1121, 23, 27188.2, 371.88, 114, 925], ["2026-09-25", 552, 13082.04, 530, 22, 12712.13, 369.91, 88, 437], ["2026-09-26", 1050, 24396.48, 1017, 33, 23857.69, 538.79, 132, 842], ["2026-09-27", 919, 21262.21, 869, 50, 20419.91, 842.3, 141, 737], ["2026-09-28", 473, 10890.58, 420, 53, 10009.12, 881.46, 80, 366], ["2026-09-29", 1121, 26360.88, 1060, 61, 25368.05, 992.83, 121, 916], ["2026-09-30", 710, 16757.99, 673, 37, 16135.24, 622.75, 111, 561], ["2026-10-01", 608, 14349.5, 578, 30, 13855.35, 494.15, 140, 433], ["2026-10-02", 605, 14396.38, 586, 19, 14088.63, 307.75, 113, 465], ["2026-10-03", 585, 13840.22, 551, 34, 13276.07, 564.15, 122, 444], ["2026-10-04", 694, 16557.5, 668, 26, 16128.8, 428.7, 164, 500], ["2026-10-05", 449, 10666.72, 431, 18, 10374.99, 291.73, 111, 322], ["2026-10-06", 429, 9907.22, 417, 12, 9712.88, 194.34, 94, 307], ["2026-10-07", 515, 12210.61, 501, 14, 11997.27, 213.34, 125, 371], ["2026-10-08", 493, 11791.03, 472, 21, 11437.62, 353.41, 120, 351], ["2026-10-09", 458, 10618.42, 444, 14, 10393.9, 224.52, 111, 333], ["2026-10-10", 720, 16360.37, 680, 40, 15744.23, 616.14, 95, 605], ["2026-10-11", 1086, 24713.37, 1030, 56, 23827.62, 885.75, 103, 938], ["2026-10-12", 349, 7927.54, 327, 22, 7587.19, 340.35, 56, 283], ["2026-10-13", 275, 6452.91, 262, 13, 6246.75, 206.16, 53, 207], ["2026-10-14", 454, 10732.46, 436, 18, 10435.19, 297.27, 62, 365], ["2026-10-15", 411, 9797.12, 395, 16, 9525.07, 272.05, 61, 333], ["2026-10-16", 359, 8457.1, 343, 16, 8195.41, 261.69, 65, 283], ["2026-10-17", 590, 13758.68, 572, 18, 13461.17, 297.51, 78, 496], ["2026-10-18", 779, 18300.26, 741, 38, 17675.26, 625.0, 114, 644], ["2026-10-19", 348, 8260.21, 331, 17, 7980.6, 279.61, 66, 268], ["2026-10-20", 299, 7004.34, 286, 13, 6792.39, 211.95, 58, 229], ["2026-10-21", 323, 7513.8, 303, 20, 7169.28, 344.52, 61, 254], ["2026-10-22", 318, 7540.14, 307, 11, 7356.34, 183.8, 57, 253], ["2026-10-23", 314, 7249.13, 295, 19, 6938.62, 310.51, 57, 244], ["2026-10-24", 415, 9663.04, 386, 29, 9161.47, 501.57, 56, 342], ["2026-10-25", 501, 11752.99, 471, 30, 11243.66, 509.33, 81, 405], ["2026-10-26", 350, 8098.69, 335, 15, 7885.36, 213.33, 33, 301], ["2026-10-27", 278, 6446.81, 270, 8, 6312.34, 134.47, 50, 223], ["2026-10-28", 336, 7912.54, 314, 22, 7532.77, 379.77, 42, 281], ["2026-10-29", 279, 6687.6, 270, 9, 6529.91, 157.69, 40, 230], ["2026-10-30", 319, 7571.0, 310, 9, 7430.03, 140.97, 58, 239], ["2026-10-31", 414, 9850.28, 394, 20, 9512.7, 337.58, 56, 342], ["2026-11-01", 694, 16709.35, 662, 32, 16158.18, 551.17, 88, 582], ["2026-11-02", 347, 8269.82, 334, 13, 8046.77, 223.05, 48, 279], ["2026-11-03", 374, 8813.45, 358, 16, 8548.03, 265.42, 63, 299], ["2026-11-04", 605, 14141.58, 584, 21, 13780.95, 360.63, 78, 515], ["2026-11-05", 473, 11045.65, 458, 15, 10784.41, 261.24, 88, 357], ["2026-11-06", 417, 9636.76, 403, 14, 9400.36, 236.4, 73, 331], ["2026-11-07", 512, 11895.06, 494, 18, 11600.64, 294.42, 93, 402], ["2026-11-08", 563, 13425.71, 544, 19, 13099.78, 325.93, 115, 434], ["2026-11-09", 398, 9432.9, 388, 10, 9270.56, 162.34, 58, 331], ["2026-11-10", 467, 11102.11, 455, 12, 10903.59, 198.52, 61, 393], ["2026-11-11", 544, 12810.65, 521, 23, 12443.86, 366.79, 90, 434]]
       },
       "planBySku": {},
       "pdp": [
@@ -11402,27 +11489,27 @@ window.DASHBOARD_DATA = {
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 124
+          "pairs": 128
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 118
+          "pairs": 121
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
-          "pairs": 98
+          "pairs": 103
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG176",
-          "pairs": 84
+          "pairs": 92
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG181",
-          "pairs": 82
+          "pairs": 84
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
@@ -11432,12 +11519,12 @@ window.DASHBOARD_DATA = {
         {
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "sku": "TVG094",
-          "pairs": 71
+          "pairs": 69
         },
         {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG289",
-          "pairs": 56
+          "pairs": 58
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
@@ -11454,15 +11541,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG217",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
-          "pairs": 16
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
+          "pairs": 18
         },
         {
           "primarySku": "TVG217",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 16
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
+          "pairs": 14
         },
         {
           "primarySku": "TVG217",
@@ -11478,9 +11565,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG217",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG176",
+          "pairs": 10
+        },
+        {
+          "primarySku": "TVG217",
           "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
           "sku": "TVG565",
-          "pairs": 12
+          "pairs": 10
         },
         {
           "primarySku": "TVG217",
@@ -11490,21 +11583,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG217",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG355",
-          "pairs": 9
-        },
-        {
-          "primarySku": "TVG217",
           "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
           "sku": "TVG7240",
           "pairs": 9
         },
         {
           "primarySku": "TVG217",
-          "product": "Liquid Lash\u2122 Volumizer Mascara",
-          "sku": "TVG6750",
-          "pairs": 8
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG355",
+          "pairs": 9
         },
         {
           "primarySku": "TVG407",
@@ -11516,7 +11603,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG407",
           "product": "Lasting Mark\u2122\ufe0f Lip-Defining Stain",
           "sku": "TVG7240",
-          "pairs": 16
+          "pairs": 17
         },
         {
           "primarySku": "TVG407",
@@ -11544,9 +11631,9 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG407",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG289",
-          "pairs": 6
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
+          "pairs": 7
         },
         {
           "primarySku": "TVG407",
@@ -11556,14 +11643,14 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG407",
-          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
-          "sku": "TVG094",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG289",
           "pairs": 6
         },
         {
           "primarySku": "TVG407",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG565",
+          "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
+          "sku": "TVG094",
           "pairs": 6
         },
         {
@@ -11592,20 +11679,26 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4560",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG6380",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4560",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG357",
           "pairs": 2
         },
         {
           "primarySku": "TVG4560",
-          "product": "Impact-FULL\u2122 Smoothing Lipstick",
-          "sku": "TVG385",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG6380",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4560",
+          "product": "Liquid Lash\u2122 Volumizer Mascara",
+          "sku": "TVG6750",
+          "pairs": 1
+        },
+        {
+          "primarySku": "TVG4560",
+          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
+          "sku": "TVG4440",
           "pairs": 1
         },
         {
@@ -11616,14 +11709,8 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4560",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 1
-        },
-        {
-          "primarySku": "TVG4560",
-          "product": "EmpowerMatte\u2122 Precision Lipstick Crayon",
-          "sku": "TVG4440",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG179",
           "pairs": 1
         },
         {
@@ -11646,14 +11733,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4920",
-          "product": "Defying Gravity\u2122 Eye Lifting Cream",
-          "sku": "TBB002",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG163",
           "pairs": 2
         },
         {
           "primarySku": "TVG4920",
-          "product": "Infinity Waterproof\u2122 Liquid Eyeliner Pen",
-          "sku": "TVG315",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG461",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4920",
+          "product": "Buildable Blur\u2122 CC Cream Broad Spectrum SPF 40",
+          "sku": "TVG235",
           "pairs": 2
         },
         {
@@ -11664,39 +11757,33 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG4920",
+          "product": "Defying Gravity\u2122 Eye Lifting Cream",
+          "sku": "TBB002",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG4920",
           "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
           "sku": "TVG522",
           "pairs": 2
         },
         {
           "primarySku": "TVG4920",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG163",
+          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
+          "sku": "TVG558",
           "pairs": 2
-        },
-        {
-          "primarySku": "TVG4920",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG4920",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG5870",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG181",
-          "pairs": 75
         },
         {
           "primarySku": "TVG5870",
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG176",
-          "pairs": 71
+          "pairs": 77
+        },
+        {
+          "primarySku": "TVG5870",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG181",
+          "pairs": 77
         },
         {
           "primarySku": "TVG5870",
@@ -11708,7 +11795,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG5870",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 54
+          "pairs": 57
         },
         {
           "primarySku": "TVG5870",
@@ -11730,15 +11817,15 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG5870",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG514",
+          "product": "Infinity Waterproof\u2122 Eyeliner",
+          "sku": "TVG289",
           "pairs": 39
         },
         {
           "primarySku": "TVG5870",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG289",
-          "pairs": 37
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG514",
+          "pairs": 39
         },
         {
           "primarySku": "TVG5870",
@@ -11750,7 +11837,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG629",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 54
+          "pairs": 55
         },
         {
           "primarySku": "TVG629",
@@ -11762,7 +11849,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG629",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 46
+          "pairs": 47
         },
         {
           "primarySku": "TVG629",
@@ -11773,13 +11860,13 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG629",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
+          "sku": "TVG6620",
           "pairs": 16
         },
         {
           "primarySku": "TVG629",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
+          "sku": "TVG533",
           "pairs": 16
         },
         {
@@ -11804,7 +11891,7 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG629",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
-          "pairs": 11
+          "pairs": 12
         }
       ],
       "categoryCustomers": null
@@ -11819,40 +11906,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "Focus Eyeshadow\u2122 Palette \u00b7 Classic Pinks & Signature Plums",
       "accent": "#A8578C",
       "summary": {
-        "netSales": 316888.5,
-        "units": 9158,
-        "orders": 8295,
-        "aov": 38.2,
-        "newCustomers": 1633,
-        "retCustomers": 6538,
-        "totalCustomers": 8171,
-        "newPct": 20.0,
-        "retPct": 80.0,
-        "planUnits": 5503,
-        "pctToPlanUnits": 166.4,
+        "netSales": 324371.3,
+        "units": 9373,
+        "orders": 8502,
+        "aov": 38.15,
+        "newCustomers": 1724,
+        "retCustomers": 6650,
+        "totalCustomers": 8374,
+        "newPct": 20.6,
+        "retPct": 79.4,
+        "planUnits": 5605,
+        "pctToPlanUnits": 167.2,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 60507.78,
-        "retCustomerRevenue": 256380.72,
+        "newCustomerRevenue": 63831.63,
+        "retCustomerRevenue": 260539.67,
         "pdpViews": 41859,
         "pdpAtcRate": 11.0,
         "pdpCvr": 3.4
       },
       "regions": {
         "us": {
-          "units": 8869,
-          "netSales": 309822.74,
-          "orders": 8035
+          "units": 9080,
+          "netSales": 317209.79,
+          "orders": 8238
         },
         "ca": {
-          "units": 289,
-          "netSales": 7065.76,
-          "orders": 260
+          "units": 293,
+          "netSales": 7161.51,
+          "orders": 264
         }
       },
       "trafficStart": "2026-10-07",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [],
         "monthly": []
@@ -11861,102 +11948,102 @@ window.DASHBOARD_DATA = {
         {
           "label": "Focus Eyeshadow Palette (com)",
           "page": "thrivecausemetics.com/products/focus-eyeshadow-palette",
-          "pageviews": 672857,
-          "sessions": 132044,
-          "txns": 6417,
-          "rev": 450212.0,
-          "eng": 27.6,
-          "cvr": 4.86
+          "pageviews": 679742,
+          "sessions": 134987,
+          "txns": 6477,
+          "rev": 454039.23,
+          "eng": 27.0,
+          "cvr": 4.8
         },
         {
           "label": "Focus Eyeshadow Palette (ca)",
           "page": "thrivecausemetics.ca/products/focus-eyeshadow-palette",
-          "pageviews": 24458,
-          "sessions": 6942,
-          "txns": 191,
-          "rev": 14090.81,
-          "eng": 2.5,
-          "cvr": 2.75
+          "pageviews": 24608,
+          "sessions": 6995,
+          "txns": 192,
+          "rev": 14125.97,
+          "eng": 2.4,
+          "cvr": 2.74
         },
         {
           "label": "Eye Lift 360 Waterproof Eyeshadow  (com)",
           "page": "thrivecausemetics.com/products/eye-lift-360-waterproof-eyeshadow-primer",
-          "pageviews": 9460,
-          "sessions": 2615,
-          "txns": 222,
-          "rev": 15246.77,
-          "eng": 1.5,
-          "cvr": 8.49
+          "pageviews": 10087,
+          "sessions": 2720,
+          "txns": 234,
+          "rev": 16272.29,
+          "eng": 1.4,
+          "cvr": 8.6
         },
         {
           "label": "Holiday Glam Eyeshadow Trio (com)",
           "page": "thrivecausemetics.com/products/holiday-glam-eyeshadow-trio",
-          "pageviews": 8400,
-          "sessions": 1744,
-          "txns": 143,
-          "rev": 10887.61,
+          "pageviews": 8794,
+          "sessions": 1882,
+          "txns": 149,
+          "rev": 11288.32,
           "eng": 1.1,
-          "cvr": 8.2
+          "cvr": 7.92
         },
         {
           "label": "Focus Eyeshadow Palette 2 (com)",
           "page": "thrivecausemetics.com/pages/focus-eyeshadow-palette-2",
-          "pageviews": 3738,
-          "sessions": 1316,
+          "pageviews": 3794,
+          "sessions": 1328,
           "txns": 38,
           "rev": 2415.19,
           "eng": 1.3,
-          "cvr": 2.89
+          "cvr": 2.86
         },
         {
           "label": "Instant Blend Cream Eyeshadow Brus (com)",
           "page": "thrivecausemetics.com/products/instant-blend-cream-eyeshadow-brush",
-          "pageviews": 1224,
-          "sessions": 428,
+          "pageviews": 1251,
+          "sessions": 448,
           "txns": 14,
           "rev": 881.46,
           "eng": 0.9,
-          "cvr": 3.27
+          "cvr": 3.12
         },
         {
           "label": "Holiday Glam Eyeshadow Trio (ca)",
           "page": "thrivecausemetics.ca/products/holiday-glam-eyeshadow-trio",
-          "pageviews": 1427,
-          "sessions": 400,
-          "txns": 7,
-          "rev": 679.78,
-          "eng": 5.5,
-          "cvr": 1.75
+          "pageviews": 1481,
+          "sessions": 422,
+          "txns": 8,
+          "rev": 735.27,
+          "eng": 5.2,
+          "cvr": 1.9
         },
         {
           "label": "Eyeshadow Made Easy (com)",
           "page": "thrivecausemetics.com/products/eyeshadow-made-easy",
-          "pageviews": 958,
-          "sessions": 384,
+          "pageviews": 974,
+          "sessions": 391,
           "txns": 11,
           "rev": 1086.82,
           "eng": 0.5,
-          "cvr": 2.86
+          "cvr": 2.81
+        },
+        {
+          "label": "Instant Blend Crease Eyeshadow Bru (com)",
+          "page": "thrivecausemetics.com/products/instant-blend-crease-eyeshadow-brush",
+          "pageviews": 745,
+          "sessions": 190,
+          "txns": 21,
+          "rev": 1771.04,
+          "eng": 2.6,
+          "cvr": 11.05
         },
         {
           "label": "Focus Eyeshadow Palette Quiz (com)",
           "page": "thrivecausemetics.com/pages/focus-eyeshadow-palette-quiz",
           "pageviews": 1157,
-          "sessions": 187,
+          "sessions": 188,
           "txns": 11,
           "rev": 718.34,
-          "eng": 29.9,
-          "cvr": 5.88
-        },
-        {
-          "label": "Instant Blend Crease Eyeshadow Bru (com)",
-          "page": "thrivecausemetics.com/products/instant-blend-crease-eyeshadow-brush",
-          "pageviews": 741,
-          "sessions": 187,
-          "txns": 21,
-          "rev": 1771.04,
-          "eng": 2.7,
-          "cvr": 11.23
+          "eng": 29.8,
+          "cvr": 5.85
         }
       ],
       "learnings": [],
@@ -12105,6 +12192,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-10",
           "cumPlanUnits": 5503
+        },
+        {
+          "date": "2026-11-11",
+          "cumPlanUnits": 5605
         }
       ],
       "planTotalUnits": 9699,
@@ -12117,32 +12208,32 @@ window.DASHBOARD_DATA = {
           "product": "Focus Eyeshadow\u2122 Palette",
           "shade": "Focus Eyeshadow\u2122 Palette",
           "color": "#7D4A6B",
-          "netSales": 212176.66,
-          "units": 6120,
-          "orders": 6055,
-          "newCustomers": 1053,
-          "retCustomers": 4949,
-          "usUnits": 5940,
-          "caUnits": 180,
-          "usNetSales": 207729.07,
-          "caNetSales": 4447.59,
-          "planUnits": 3669,
-          "pctToPlanUnits": 166.8,
-          "inventoryUnits": 1797,
-          "runRateUnitsPerDay": 120.0,
+          "netSales": 215839.47,
+          "units": 6227,
+          "orders": 6161,
+          "newCustomers": 1089,
+          "retCustomers": 5017,
+          "usUnits": 6043,
+          "caUnits": 184,
+          "usNetSales": 211296.13,
+          "caNetSales": 4543.34,
+          "planUnits": 3737,
+          "pctToPlanUnits": 166.6,
+          "inventoryUnits": 1714,
+          "runRateUnitsPerDay": 116.14,
           "daysToOOS": 14,
-          "estOOSDate": "2026-11-24",
-          "usInventoryUnits": 1678,
-          "caInventoryUnits": 119,
-          "usRunRateUnitsPerDay": 116.57,
-          "caRunRateUnitsPerDay": 3.43,
+          "estOOSDate": "2026-11-25",
+          "usInventoryUnits": 1599,
+          "caInventoryUnits": 115,
+          "usRunRateUnitsPerDay": 112.86,
+          "caRunRateUnitsPerDay": 3.29,
           "usDaysToOOS": 14,
           "caDaysToOOS": 34,
-          "usEstOOSDate": "2026-11-24",
-          "caEstOOSDate": "2026-12-14",
+          "usEstOOSDate": "2026-11-25",
+          "caEstOOSDate": "2026-12-15",
           "planTotalUnits": 6467,
-          "pctToGoalUnits": 94.6,
-          "unitsToGoal": 347,
+          "pctToGoalUnits": 96.3,
+          "unitsToGoal": 240,
           "planEndDate": "2027-02-03",
           "weeksOfStock": 2.1,
           "decayCurveOOS": "2026-11-07",
@@ -12154,34 +12245,34 @@ window.DASHBOARD_DATA = {
           "product": "Focus Eyeshadow\u2122 Palette",
           "shade": "Focus Eyeshadow\u2122 Palette",
           "color": "#D6A0A6",
-          "netSales": 104711.84,
-          "units": 3038,
-          "orders": 3011,
-          "newCustomers": 691,
-          "retCustomers": 2298,
-          "usUnits": 2929,
+          "netSales": 108531.83,
+          "units": 3146,
+          "orders": 3119,
+          "newCustomers": 748,
+          "retCustomers": 2348,
+          "usUnits": 3037,
           "caUnits": 109,
-          "usNetSales": 102093.67,
+          "usNetSales": 105913.66,
           "caNetSales": 2618.17,
-          "planUnits": 1834,
-          "pctToPlanUnits": 165.6,
-          "inventoryUnits": 6123,
-          "runRateUnitsPerDay": 101.57,
-          "daysToOOS": 60,
-          "estOOSDate": "2027-01-09",
-          "usInventoryUnits": 5919,
-          "caInventoryUnits": 204,
-          "usRunRateUnitsPerDay": 99.57,
+          "planUnits": 1868,
+          "pctToPlanUnits": 168.4,
+          "inventoryUnits": 6021,
+          "runRateUnitsPerDay": 105.14,
+          "daysToOOS": 57,
+          "estOOSDate": "2027-01-07",
+          "usInventoryUnits": 5819,
+          "caInventoryUnits": 202,
+          "usRunRateUnitsPerDay": 103.14,
           "caRunRateUnitsPerDay": 2.0,
-          "usDaysToOOS": 59,
-          "caDaysToOOS": 102,
-          "usEstOOSDate": "2027-01-08",
+          "usDaysToOOS": 56,
+          "caDaysToOOS": 101,
+          "usEstOOSDate": "2027-01-06",
           "caEstOOSDate": "2027-02-20",
           "planTotalUnits": 3232,
-          "pctToGoalUnits": 94.0,
-          "unitsToGoal": 194,
+          "pctToGoalUnits": 97.3,
+          "unitsToGoal": 86,
           "planEndDate": "2027-02-03",
-          "weeksOfStock": 8.6,
+          "weeksOfStock": 8.2,
           "decayCurveOOS": "2027-08-09",
           "realInventoryUnits": 6158
         }
@@ -12192,7 +12283,7 @@ window.DASHBOARD_DATA = {
             "rank": 1,
             "key": "oos-soon:us:TVG6740",
             "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~14 days",
-            "detail": "1,678 units left in US (.com) at 116.57/day (2.1 weeks cover).",
+            "detail": "1,599 units left in US (.com) at 112.86/day (2.0 weeks cover).",
             "action": "Confirm a replenishment date for US (.com) with Demand Planning, or plan for the shade to go dark there."
           }
         ],
@@ -12200,27 +12291,27 @@ window.DASHBOARD_DATA = {
           {
             "key": "recent-ahead:TVG6730",
             "title": "Classic Pinks (Focus Eyeshadow\u2122 Palette) is ahead of plan over the last 7 days",
-            "detail": "711 units against 259 planned (275%)."
+            "detail": "736 units against 253 planned (291%)."
           },
           {
             "key": "recent-ahead:TVG6740",
             "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) is ahead of plan over the last 7 days",
-            "detail": "840 units against 517 planned (162%)."
+            "detail": "813 units against 505 planned (161%)."
           },
           {
             "key": "pacing",
             "title": "Last 7 days are on or above plan",
-            "detail": "1,551 units vs 776 planned (200%)."
+            "detail": "1,549 units vs 758 planned (204%)."
           },
           {
             "key": "pairing:TVG2840",
             "title": "Most common basket pairing: Liquid Lash\u2122 Extensions Tubing Mascara",
-            "detail": "19 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+            "detail": "21 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
           },
           {
             "key": "new-to-category",
-            "title": "28% of buyers are new to Eyeshadow",
-            "detail": "2,304 of 8,171 buyers had not purchased this category before."
+            "title": "29% of buyers are new to Eyeshadow",
+            "detail": "2,411 of 8,374 buyers had not purchased this category before."
           }
         ]
       },
@@ -12662,17 +12753,17 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-05",
-          "units": 257,
-          "netSales": 9089.15,
-          "usUnits": 252,
+          "units": 256,
+          "netSales": 9051.15,
+          "usUnits": 251,
           "caUnits": 5,
-          "usNetSales": 8958.34,
+          "usNetSales": 8920.34,
           "caNetSales": 130.81,
-          "cumUnits": 8081,
-          "cumSales": 279621.39,
+          "cumUnits": 8080,
+          "cumSales": 279583.39,
           "planUnits": 95,
           "cumPlanUnits": 4942,
-          "newCustomers": 137,
+          "newCustomers": 136,
           "retCustomers": 109
         },
         {
@@ -12683,8 +12774,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 6176.18,
           "caNetSales": 21.75,
-          "cumUnits": 8261,
-          "cumSales": 285819.32,
+          "cumUnits": 8260,
+          "cumSales": 285781.32,
           "planUnits": 96,
           "cumPlanUnits": 5038,
           "newCustomers": 89,
@@ -12698,8 +12789,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 9657.15,
           "caNetSales": 132.19,
-          "cumUnits": 8541,
-          "cumSales": 295608.66,
+          "cumUnits": 8540,
+          "cumSales": 295570.66,
           "planUnits": 133,
           "cumPlanUnits": 5171,
           "newCustomers": 110,
@@ -12708,13 +12799,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-08",
           "units": 263,
-          "netSales": 9173.05,
+          "netSales": 9164.98,
           "usUnits": 256,
           "caUnits": 7,
-          "usNetSales": 9001.69,
+          "usNetSales": 8993.62,
           "caNetSales": 171.36,
-          "cumUnits": 8804,
-          "cumSales": 304781.71,
+          "cumUnits": 8803,
+          "cumSales": 304735.64,
           "planUnits": 147,
           "cumPlanUnits": 5318,
           "newCustomers": 114,
@@ -12728,8 +12819,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 5340.24,
           "caNetSales": 168.82,
-          "cumUnits": 8965,
-          "cumSales": 310290.77,
+          "cumUnits": 8964,
+          "cumSales": 310244.7,
           "planUnits": 93,
           "cumPlanUnits": 5411,
           "newCustomers": 61,
@@ -12743,12 +12834,27 @@ window.DASHBOARD_DATA = {
           "caUnits": 7,
           "usNetSales": 6430.42,
           "caNetSales": 167.33,
-          "cumUnits": 9158,
-          "cumSales": 316888.52,
+          "cumUnits": 9157,
+          "cumSales": 316842.45,
           "planUnits": 92,
           "cumPlanUnits": 5503,
-          "newCustomers": 82,
-          "retCustomers": 92
+          "newCustomers": 81,
+          "retCustomers": 93
+        },
+        {
+          "date": "2026-11-11",
+          "units": 216,
+          "netSales": 7528.87,
+          "usUnits": 212,
+          "caUnits": 4,
+          "usNetSales": 7433.12,
+          "caNetSales": 95.75,
+          "cumUnits": 9373,
+          "cumSales": 324371.32,
+          "planUnits": 102,
+          "cumPlanUnits": 5605,
+          "newCustomers": 94,
+          "retCustomers": 114
         }
       ],
       "dailySkuColumns": [
@@ -12763,12 +12869,12 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TVG6730": [["2026-10-07", 166, 5684.67, 157, 9, 5477.48, 207.19, 15, 149], ["2026-10-08", 204, 7210.12, 197, 7, 7040.12, 170.0, 15, 188], ["2026-10-09", 139, 4802.5, 133, 6, 4658.65, 143.85, 20, 117], ["2026-10-10", 136, 4498.23, 127, 9, 4310.18, 188.05, 15, 120], ["2026-10-11", 206, 6893.17, 202, 4, 6797.95, 95.22, 23, 181], ["2026-10-12", 78, 2690.81, 73, 5, 2575.5, 115.31, 11, 67], ["2026-10-13", 53, 1776.63, 51, 2, 1724.52, 52.11, 6, 47], ["2026-10-14", 69, 2396.4, 69, 0, 2396.4, 0.0, 10, 58], ["2026-10-15", 68, 2316.17, 63, 5, 2199.26, 116.91, 6, 60], ["2026-10-16", 70, 2466.16, 69, 1, 2441.12, 25.04, 9, 61], ["2026-10-17", 73, 2497.73, 66, 7, 2319.01, 178.72, 6, 66], ["2026-10-18", 82, 2842.21, 78, 4, 2745.37, 96.84, 5, 77], ["2026-10-19", 42, 1452.22, 40, 2, 1406.24, 45.98, 10, 32], ["2026-10-20", 42, 1408.48, 42, 0, 1408.48, 0.0, 6, 36], ["2026-10-21", 34, 1141.99, 32, 2, 1088.22, 53.77, 5, 29], ["2026-10-22", 39, 1344.47, 39, 0, 1344.47, 0.0, 4, 31], ["2026-10-23", 23, 795.18, 21, 2, 746.75, 48.43, 4, 19], ["2026-10-24", 64, 2193.45, 61, 3, 2116.24, 77.21, 11, 52], ["2026-10-25", 56, 1953.12, 54, 2, 1901.6, 51.52, 7, 49], ["2026-10-26", 74, 2482.44, 72, 2, 2433.84, 48.6, 6, 67], ["2026-10-27", 76, 2669.82, 72, 4, 2572.09, 97.73, 18, 55], ["2026-10-28", 98, 3383.2, 96, 2, 3329.32, 53.88, 16, 82], ["2026-10-29", 59, 2045.69, 58, 1, 2021.71, 23.98, 11, 48], ["2026-10-30", 64, 2179.51, 63, 1, 2157.75, 21.76, 15, 49], ["2026-10-31", 88, 3039.78, 84, 4, 2933.92, 105.86, 14, 74], ["2026-11-01", 109, 3834.68, 103, 6, 3683.54, 151.14, 20, 89], ["2026-11-02", 58, 2066.64, 57, 1, 2039.5, 27.14, 11, 42], ["2026-11-03", 57, 1864.41, 53, 4, 1782.85, 81.56, 13, 44], ["2026-11-04", 83, 2905.79, 83, 0, 2905.79, 0.0, 35, 48], ["2026-11-05", 146, 5143.14, 145, 1, 5115.93, 27.21, 97, 49], ["2026-11-06", 89, 3090.13, 88, 1, 3068.38, 21.75, 56, 33], ["2026-11-07", 125, 4417.44, 123, 2, 4363.84, 53.6, 58, 67], ["2026-11-08", 125, 4321.54, 123, 2, 4276.44, 45.1, 62, 61], ["2026-11-09", 67, 2354.86, 64, 3, 2282.63, 72.23, 32, 35], ["2026-11-10", 76, 2549.06, 71, 5, 2428.58, 120.48, 44, 31]],
-        "TVG6740": [["2026-10-07", 454, 15812.11, 447, 7, 15642.72, 169.39, 37, 411], ["2026-10-08", 563, 19916.44, 548, 15, 19550.55, 365.89, 69, 489], ["2026-10-09", 327, 11473.98, 318, 9, 11250.63, 223.35, 60, 262], ["2026-10-10", 333, 11110.91, 323, 10, 10874.71, 236.2, 53, 276], ["2026-10-11", 456, 15305.33, 447, 9, 15105.25, 200.08, 59, 394], ["2026-10-12", 176, 6194.3, 170, 6, 6058.95, 135.35, 31, 144], ["2026-10-13", 169, 5928.31, 165, 4, 5830.25, 98.06, 34, 128], ["2026-10-14", 164, 5739.89, 160, 4, 5640.96, 98.93, 41, 122], ["2026-10-15", 200, 6977.12, 193, 7, 6805.44, 171.68, 14, 182], ["2026-10-16", 182, 6242.12, 178, 4, 6151.23, 90.89, 30, 149], ["2026-10-17", 159, 5504.89, 150, 9, 5275.3, 229.59, 22, 137], ["2026-10-18", 240, 8306.7, 229, 11, 8019.81, 286.89, 23, 215], ["2026-10-19", 107, 3738.91, 102, 5, 3617.43, 121.48, 21, 83], ["2026-10-20", 128, 4317.85, 123, 5, 4194.75, 123.1, 27, 99], ["2026-10-21", 101, 3429.18, 96, 5, 3305.65, 123.53, 19, 80], ["2026-10-22", 96, 3315.15, 94, 2, 3261.36, 53.79, 14, 78], ["2026-10-23", 88, 3126.55, 86, 2, 3072.74, 53.81, 10, 75], ["2026-10-24", 151, 5284.74, 145, 6, 5133.17, 151.57, 23, 127], ["2026-10-25", 126, 4398.53, 119, 7, 4211.19, 187.34, 20, 105], ["2026-10-26", 109, 3707.58, 106, 3, 3627.99, 79.59, 10, 98], ["2026-10-27", 117, 4037.93, 115, 2, 3986.73, 51.2, 15, 99], ["2026-10-28", 134, 4595.98, 128, 6, 4443.51, 152.47, 13, 119], ["2026-10-29", 120, 4261.6, 119, 1, 4234.47, 27.13, 16, 103], ["2026-10-30", 100, 3518.55, 99, 1, 3496.84, 21.71, 14, 85], ["2026-10-31", 129, 4589.26, 127, 2, 4540.35, 48.91, 20, 109], ["2026-11-01", 173, 6053.37, 165, 8, 5840.47, 212.9, 22, 151], ["2026-11-02", 88, 3047.36, 86, 2, 2993.08, 54.28, 10, 77], ["2026-11-03", 90, 3125.33, 86, 4, 3027.44, 97.89, 15, 75], ["2026-11-04", 134, 4636.6, 129, 5, 4507.88, 128.72, 34, 100], ["2026-11-05", 111, 3946.01, 107, 4, 3842.41, 103.6, 43, 67], ["2026-11-06", 91, 3107.8, 91, 0, 3107.8, 0.0, 37, 54], ["2026-11-07", 155, 5371.9, 152, 3, 5293.31, 78.59, 59, 96], ["2026-11-08", 138, 4851.51, 133, 5, 4725.25, 126.26, 60, 78], ["2026-11-09", 94, 3154.2, 89, 5, 3057.61, 96.59, 31, 62], ["2026-11-10", 117, 4048.69, 115, 2, 4001.84, 46.85, 51, 66]]
+        "TVG6730": [["2026-10-07", 166, 5684.67, 157, 9, 5477.48, 207.19, 15, 149], ["2026-10-08", 204, 7210.12, 197, 7, 7040.12, 170.0, 15, 188], ["2026-10-09", 139, 4802.5, 133, 6, 4658.65, 143.85, 20, 117], ["2026-10-10", 136, 4498.23, 127, 9, 4310.18, 188.05, 15, 120], ["2026-10-11", 206, 6893.17, 202, 4, 6797.95, 95.22, 23, 181], ["2026-10-12", 78, 2690.81, 73, 5, 2575.5, 115.31, 11, 67], ["2026-10-13", 53, 1776.63, 51, 2, 1724.52, 52.11, 6, 47], ["2026-10-14", 69, 2396.4, 69, 0, 2396.4, 0.0, 10, 58], ["2026-10-15", 68, 2316.17, 63, 5, 2199.26, 116.91, 6, 60], ["2026-10-16", 70, 2466.16, 69, 1, 2441.12, 25.04, 9, 61], ["2026-10-17", 73, 2497.73, 66, 7, 2319.01, 178.72, 6, 66], ["2026-10-18", 82, 2842.21, 78, 4, 2745.37, 96.84, 5, 77], ["2026-10-19", 42, 1452.22, 40, 2, 1406.24, 45.98, 10, 32], ["2026-10-20", 42, 1408.48, 42, 0, 1408.48, 0.0, 6, 36], ["2026-10-21", 34, 1141.99, 32, 2, 1088.22, 53.77, 5, 29], ["2026-10-22", 39, 1344.47, 39, 0, 1344.47, 0.0, 4, 31], ["2026-10-23", 23, 795.18, 21, 2, 746.75, 48.43, 4, 19], ["2026-10-24", 64, 2193.45, 61, 3, 2116.24, 77.21, 11, 52], ["2026-10-25", 56, 1953.12, 54, 2, 1901.6, 51.52, 7, 49], ["2026-10-26", 74, 2482.44, 72, 2, 2433.84, 48.6, 6, 67], ["2026-10-27", 76, 2669.82, 72, 4, 2572.09, 97.73, 18, 55], ["2026-10-28", 98, 3383.2, 96, 2, 3329.32, 53.88, 16, 82], ["2026-10-29", 59, 2045.69, 58, 1, 2021.71, 23.98, 11, 48], ["2026-10-30", 64, 2179.51, 63, 1, 2157.75, 21.76, 15, 49], ["2026-10-31", 88, 3039.78, 84, 4, 2933.92, 105.86, 14, 74], ["2026-11-01", 109, 3834.68, 103, 6, 3683.54, 151.14, 20, 89], ["2026-11-02", 58, 2066.64, 57, 1, 2039.5, 27.14, 11, 42], ["2026-11-03", 57, 1864.41, 53, 4, 1782.85, 81.56, 13, 44], ["2026-11-04", 83, 2905.79, 83, 0, 2905.79, 0.0, 35, 48], ["2026-11-05", 146, 5143.14, 145, 1, 5115.93, 27.21, 97, 49], ["2026-11-06", 89, 3090.13, 88, 1, 3068.38, 21.75, 56, 33], ["2026-11-07", 125, 4417.44, 123, 2, 4363.84, 53.6, 58, 67], ["2026-11-08", 125, 4313.47, 123, 2, 4268.37, 45.1, 62, 61], ["2026-11-09", 67, 2354.86, 64, 3, 2282.63, 72.23, 32, 35], ["2026-11-10", 76, 2549.06, 71, 5, 2428.58, 120.48, 43, 32], ["2026-11-11", 108, 3828.06, 108, 0, 3828.06, 0.0, 59, 49]],
+        "TVG6740": [["2026-10-07", 454, 15812.11, 447, 7, 15642.72, 169.39, 37, 411], ["2026-10-08", 563, 19916.44, 548, 15, 19550.55, 365.89, 69, 489], ["2026-10-09", 327, 11473.98, 318, 9, 11250.63, 223.35, 60, 262], ["2026-10-10", 333, 11110.91, 323, 10, 10874.71, 236.2, 53, 276], ["2026-10-11", 456, 15305.33, 447, 9, 15105.25, 200.08, 59, 394], ["2026-10-12", 176, 6194.3, 170, 6, 6058.95, 135.35, 31, 144], ["2026-10-13", 169, 5928.31, 165, 4, 5830.25, 98.06, 34, 128], ["2026-10-14", 164, 5739.89, 160, 4, 5640.96, 98.93, 41, 122], ["2026-10-15", 200, 6977.12, 193, 7, 6805.44, 171.68, 14, 182], ["2026-10-16", 182, 6242.12, 178, 4, 6151.23, 90.89, 30, 149], ["2026-10-17", 159, 5504.89, 150, 9, 5275.3, 229.59, 22, 137], ["2026-10-18", 240, 8306.7, 229, 11, 8019.81, 286.89, 23, 215], ["2026-10-19", 107, 3738.91, 102, 5, 3617.43, 121.48, 21, 83], ["2026-10-20", 128, 4317.85, 123, 5, 4194.75, 123.1, 27, 99], ["2026-10-21", 101, 3429.18, 96, 5, 3305.65, 123.53, 19, 80], ["2026-10-22", 96, 3315.15, 94, 2, 3261.36, 53.79, 14, 78], ["2026-10-23", 88, 3126.55, 86, 2, 3072.74, 53.81, 10, 75], ["2026-10-24", 151, 5284.74, 145, 6, 5133.17, 151.57, 23, 127], ["2026-10-25", 126, 4398.53, 119, 7, 4211.19, 187.34, 20, 105], ["2026-10-26", 109, 3707.58, 106, 3, 3627.99, 79.59, 10, 98], ["2026-10-27", 117, 4037.93, 115, 2, 3986.73, 51.2, 15, 99], ["2026-10-28", 134, 4595.98, 128, 6, 4443.51, 152.47, 13, 119], ["2026-10-29", 120, 4261.6, 119, 1, 4234.47, 27.13, 16, 103], ["2026-10-30", 100, 3518.55, 99, 1, 3496.84, 21.71, 14, 85], ["2026-10-31", 129, 4589.26, 127, 2, 4540.35, 48.91, 20, 109], ["2026-11-01", 173, 6053.37, 165, 8, 5840.47, 212.9, 22, 151], ["2026-11-02", 88, 3047.36, 86, 2, 2993.08, 54.28, 10, 77], ["2026-11-03", 90, 3125.33, 86, 4, 3027.44, 97.89, 15, 75], ["2026-11-04", 134, 4636.6, 129, 5, 4507.88, 128.72, 34, 100], ["2026-11-05", 110, 3908.01, 106, 4, 3804.41, 103.6, 42, 67], ["2026-11-06", 91, 3107.8, 91, 0, 3107.8, 0.0, 37, 54], ["2026-11-07", 155, 5371.9, 152, 3, 5293.31, 78.59, 59, 96], ["2026-11-08", 138, 4851.51, 133, 5, 4725.25, 126.26, 60, 78], ["2026-11-09", 94, 3154.2, 89, 5, 3057.61, 96.59, 31, 62], ["2026-11-10", 117, 4048.69, 115, 2, 4001.84, 46.85, 50, 67], ["2026-11-11", 108, 3700.81, 104, 4, 3605.06, 95.75, 39, 68]]
       },
       "planBySku": {
-        "TVG6730": [["2026-10-07", 97], ["2026-10-08", 59], ["2026-10-09", 61], ["2026-10-10", 83], ["2026-10-11", 92], ["2026-10-12", 59], ["2026-10-13", 56], ["2026-10-14", 64], ["2026-10-15", 50], ["2026-10-16", 52], ["2026-10-17", 71], ["2026-10-18", 79], ["2026-10-19", 49], ["2026-10-20", 49], ["2026-10-21", 54], ["2026-10-22", 43], ["2026-10-23", 44], ["2026-10-24", 61], ["2026-10-25", 67], ["2026-10-26", 42], ["2026-10-27", 42], ["2026-10-28", 46], ["2026-10-29", 37], ["2026-10-30", 38], ["2026-10-31", 51], ["2026-11-01", 58], ["2026-11-02", 36], ["2026-11-03", 35], ["2026-11-04", 40], ["2026-11-05", 32], ["2026-11-06", 32], ["2026-11-07", 44], ["2026-11-08", 49], ["2026-11-09", 31], ["2026-11-10", 31]],
-        "TVG6740": [["2026-10-07", 194], ["2026-10-08", 119], ["2026-10-09", 122], ["2026-10-10", 165], ["2026-10-11", 185], ["2026-10-12", 117], ["2026-10-13", 113], ["2026-10-14", 128], ["2026-10-15", 101], ["2026-10-16", 103], ["2026-10-17", 141], ["2026-10-18", 158], ["2026-10-19", 100], ["2026-10-20", 96], ["2026-10-21", 109], ["2026-10-22", 86], ["2026-10-23", 89], ["2026-10-24", 120], ["2026-10-25", 135], ["2026-10-26", 85], ["2026-10-27", 83], ["2026-10-28", 92], ["2026-10-29", 74], ["2026-10-30", 76], ["2026-10-31", 103], ["2026-11-01", 115], ["2026-11-02", 72], ["2026-11-03", 71], ["2026-11-04", 80], ["2026-11-05", 63], ["2026-11-06", 64], ["2026-11-07", 89], ["2026-11-08", 98], ["2026-11-09", 62], ["2026-11-10", 61]]
+        "TVG6740": [["2026-10-07", 194], ["2026-10-08", 119], ["2026-10-09", 122], ["2026-10-10", 165], ["2026-10-11", 185], ["2026-10-12", 117], ["2026-10-13", 113], ["2026-10-14", 128], ["2026-10-15", 101], ["2026-10-16", 103], ["2026-10-17", 141], ["2026-10-18", 158], ["2026-10-19", 100], ["2026-10-20", 96], ["2026-10-21", 109], ["2026-10-22", 86], ["2026-10-23", 89], ["2026-10-24", 120], ["2026-10-25", 135], ["2026-10-26", 85], ["2026-10-27", 83], ["2026-10-28", 92], ["2026-10-29", 74], ["2026-10-30", 76], ["2026-10-31", 103], ["2026-11-01", 115], ["2026-11-02", 72], ["2026-11-03", 71], ["2026-11-04", 80], ["2026-11-05", 63], ["2026-11-06", 64], ["2026-11-07", 89], ["2026-11-08", 98], ["2026-11-09", 62], ["2026-11-10", 61], ["2026-11-11", 68]],
+        "TVG6730": [["2026-10-07", 97], ["2026-10-08", 59], ["2026-10-09", 61], ["2026-10-10", 83], ["2026-10-11", 92], ["2026-10-12", 59], ["2026-10-13", 56], ["2026-10-14", 64], ["2026-10-15", 50], ["2026-10-16", 52], ["2026-10-17", 71], ["2026-10-18", 79], ["2026-10-19", 49], ["2026-10-20", 49], ["2026-10-21", 54], ["2026-10-22", 43], ["2026-10-23", 44], ["2026-10-24", 61], ["2026-10-25", 67], ["2026-10-26", 42], ["2026-10-27", 42], ["2026-10-28", 46], ["2026-10-29", 37], ["2026-10-30", 38], ["2026-10-31", 51], ["2026-11-01", 58], ["2026-11-02", 36], ["2026-11-03", 35], ["2026-11-04", 40], ["2026-11-05", 32], ["2026-11-06", 32], ["2026-11-07", 44], ["2026-11-08", 49], ["2026-11-09", 31], ["2026-11-10", 31], ["2026-11-11", 34]]
       },
       "pdp": [
         {
@@ -12798,17 +12904,17 @@ window.DASHBOARD_DATA = {
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 19
+          "pairs": 21
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG629",
-          "pairs": 15
+          "pairs": 17
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2990",
-          "pairs": 14
+          "pairs": 15
         },
         {
           "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
@@ -12826,23 +12932,23 @@ window.DASHBOARD_DATA = {
           "pairs": 8
         },
         {
-          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
-          "sku": "TVG463",
-          "pairs": 8
-        },
-        {
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG179",
           "pairs": 8
         },
         {
-          "product": "Focus Eyeshadow\u2122 Palette",
-          "sku": "TVG6720",
-          "pairs": 7
+          "product": "Brilliant Under Eye Brightener\u2122 Loose Setting Powder",
+          "sku": "TVG463",
+          "pairs": 8
         },
         {
-          "product": "Focus Eyeshadow\u2122 Palette",
-          "sku": "TVG6700",
+          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
+          "sku": "TVG558",
+          "pairs": 8
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG349",
           "pairs": 7
         }
       ],
@@ -12869,12 +12975,12 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG6730",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 4
+          "pairs": 5
         },
         {
           "primarySku": "TVG6730",
-          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
-          "sku": "TVG478",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG350",
           "pairs": 4
         },
         {
@@ -12885,14 +12991,20 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6730",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG629",
-          "pairs": 3
+          "product": "Brilliant Under Eye Brightener\u2122 Illuminating Corrector",
+          "sku": "TVG478",
+          "pairs": 4
         },
         {
           "primarySku": "TVG6730",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
+          "product": "EmpowerGloss\u2122 Ultra-Glossy Lip Serum",
+          "sku": "TVG579",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG6730",
+          "product": "Filtered Effects\u2122 Soft Focus HD Setting Powder",
+          "sku": "TVG280",
           "pairs": 3
         },
         {
@@ -12902,22 +13014,16 @@ window.DASHBOARD_DATA = {
           "pairs": 3
         },
         {
-          "primarySku": "TVG6730",
-          "product": "Infinity Waterproof\u2122 Eyeliner",
-          "sku": "TVG176",
-          "pairs": 2
-        },
-        {
           "primarySku": "TVG6740",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 15
+          "pairs": 16
         },
         {
           "primarySku": "TVG6740",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG629",
-          "pairs": 12
+          "pairs": 14
         },
         {
           "primarySku": "TVG6740",
@@ -12933,6 +13039,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "primarySku": "TVG6740",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
+          "pairs": 8
+        },
+        {
+          "primarySku": "TVG6740",
+          "product": "Focus Eyeshadow\u2122 Palette",
+          "sku": "TVG6720",
+          "pairs": 7
+        },
+        {
+          "primarySku": "TVG6740",
           "product": "Infinity Waterproof\u2122 Eyeliner",
           "sku": "TVG179",
           "pairs": 7
@@ -12941,18 +13059,6 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG6740",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG349",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG6740",
-          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
-          "sku": "TVG2990",
-          "pairs": 7
-        },
-        {
-          "primarySku": "TVG6740",
-          "product": "Focus Eyeshadow\u2122 Palette",
-          "sku": "TVG6720",
           "pairs": 7
         },
         {
@@ -12970,24 +13076,24 @@ window.DASHBOARD_DATA = {
       ],
       "categoryCustomers": {
         "category": "Eyeshadow",
-        "total": 8171,
-        "existingCategory": 5867,
-        "newToCategory": 2304,
+        "total": 8374,
+        "existingCategory": 5963,
+        "newToCategory": 2411,
         "byVariant": [
           {
             "sku": "TVG6730",
             "name": "Classic Pinks",
-            "newToCategory": 950,
-            "existingCategory": 2039
+            "newToCategory": 1016,
+            "existingCategory": 2080
           },
           {
             "sku": "TVG6740",
             "name": "Signature Plums",
-            "newToCategory": 1534,
-            "existingCategory": 4468
+            "newToCategory": 1578,
+            "existingCategory": 4528
           }
         ],
-        "daily": [["2026-10-07", 80, 449], ["2026-10-08", 133, 539], ["2026-10-09", 103, 292], ["2026-10-10", 95, 303], ["2026-10-11", 112, 465], ["2026-10-12", 59, 171], ["2026-10-13", 53, 142], ["2026-10-14", 63, 149], ["2026-10-15", 42, 201], ["2026-10-16", 65, 161], ["2026-10-17", 59, 156], ["2026-10-18", 61, 243], ["2026-10-19", 44, 98], ["2026-10-20", 39, 121], ["2026-10-21", 36, 89], ["2026-10-22", 24, 93], ["2026-10-23", 23, 79], ["2026-10-24", 44, 149], ["2026-10-25", 46, 126], ["2026-10-26", 32, 139], ["2026-10-27", 46, 128], ["2026-10-28", 52, 166], ["2026-10-29", 38, 130], ["2026-10-30", 35, 115], ["2026-10-31", 47, 160], ["2026-11-01", 72, 197], ["2026-11-02", 33, 102], ["2026-11-03", 42, 96], ["2026-11-04", 82, 121], ["2026-11-05", 149, 97], ["2026-11-06", 100, 70], ["2026-11-07", 128, 130], ["2026-11-08", 131, 116], ["2026-11-09", 75, 77], ["2026-11-10", 90, 84]]
+        "daily": [["2026-10-07", 80, 449], ["2026-10-08", 133, 539], ["2026-10-09", 103, 292], ["2026-10-10", 95, 303], ["2026-10-11", 112, 465], ["2026-10-12", 59, 171], ["2026-10-13", 53, 142], ["2026-10-14", 63, 149], ["2026-10-15", 42, 201], ["2026-10-16", 65, 161], ["2026-10-17", 59, 156], ["2026-10-18", 61, 243], ["2026-10-19", 44, 98], ["2026-10-20", 39, 121], ["2026-10-21", 36, 89], ["2026-10-22", 24, 93], ["2026-10-23", 23, 79], ["2026-10-24", 44, 149], ["2026-10-25", 46, 126], ["2026-10-26", 32, 139], ["2026-10-27", 46, 128], ["2026-10-28", 52, 166], ["2026-10-29", 38, 130], ["2026-10-30", 35, 115], ["2026-10-31", 47, 160], ["2026-11-01", 72, 197], ["2026-11-02", 33, 102], ["2026-11-03", 42, 96], ["2026-11-04", 82, 121], ["2026-11-05", 148, 97], ["2026-11-06", 100, 70], ["2026-11-07", 128, 130], ["2026-11-08", 131, 116], ["2026-11-09", 75, 77], ["2026-11-10", 89, 85], ["2026-11-11", 111, 97]]
       }
     },
     {
@@ -13000,40 +13106,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "Brilliant Eye Brightener\u2122 \u00b7 2 holiday shades",
       "accent": "#B5446E",
       "summary": {
-        "netSales": 203309.15,
-        "units": 8859,
-        "orders": 6503,
-        "aov": 31.26,
-        "newCustomers": 724,
-        "retCustomers": 5736,
-        "totalCustomers": 6460,
-        "newPct": 11.2,
-        "retPct": 88.8,
-        "planUnits": 8817,
-        "pctToPlanUnits": 100.5,
+        "netSales": 222743.65,
+        "units": 9703,
+        "orders": 7166,
+        "aov": 31.08,
+        "newCustomers": 804,
+        "retCustomers": 6307,
+        "totalCustomers": 7111,
+        "newPct": 11.3,
+        "retPct": 88.7,
+        "planUnits": 9677,
+        "pctToPlanUnits": 100.3,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 20595.64,
-        "retCustomerRevenue": 182713.51,
+        "newCustomerRevenue": 23093.0,
+        "retCustomerRevenue": 199650.65,
         "pdpViews": 0,
         "pdpAtcRate": 0,
         "pdpCvr": 0
       },
       "regions": {
         "us": {
-          "units": 8410,
-          "netSales": 195920.7,
-          "orders": 6177
+          "units": 9205,
+          "netSales": 214560.6,
+          "orders": 6802
         },
         "ca": {
-          "units": 449,
-          "netSales": 7388.45,
-          "orders": 326
+          "units": 498,
+          "netSales": 8183.05,
+          "orders": 364
         }
       },
       "trafficStart": "2026-11-04",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [],
         "monthly": []
@@ -13042,12 +13148,12 @@ window.DASHBOARD_DATA = {
         {
           "label": "Beb Shade Match Quiz (com)",
           "page": "thrivecausemetics.com/pages/beb-shade-match-quiz",
-          "pageviews": 10248,
-          "sessions": 2078,
-          "txns": 18,
-          "rev": 1524.52,
+          "pageviews": 12265,
+          "sessions": 2655,
+          "txns": 21,
+          "rev": 1674.69,
           "eng": 44.4,
-          "cvr": 0.87
+          "cvr": 0.79
         },
         {
           "label": "Cancel (com)",
@@ -13094,6 +13200,10 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-10",
           "cumPlanUnits": 8817
+        },
+        {
+          "date": "2026-11-11",
+          "cumPlanUnits": 9677
         }
       ],
       "planTotalUnits": 55142,
@@ -13106,34 +13216,34 @@ window.DASHBOARD_DATA = {
           "product": "Brilliant Eye Brightener\u2122",
           "shade": "Brilliant Eye Brightener\u2122",
           "color": "#C2849B",
-          "netSales": 119136.82,
-          "units": 5171,
-          "orders": 4890,
-          "newCustomers": 565,
-          "retCustomers": 4302,
-          "usUnits": 4928,
-          "caUnits": 243,
-          "usNetSales": 115139.67,
-          "caNetSales": 3997.15,
-          "planUnits": 3526,
-          "pctToPlanUnits": 146.7,
-          "inventoryUnits": 15548,
-          "runRateUnitsPerDay": 738.71,
-          "daysToOOS": 21,
-          "estOOSDate": "2026-12-01",
-          "usInventoryUnits": 14441,
-          "caInventoryUnits": 1107,
-          "usRunRateUnitsPerDay": 704.0,
-          "caRunRateUnitsPerDay": 34.71,
-          "usDaysToOOS": 20,
-          "caDaysToOOS": 31,
-          "usEstOOSDate": "2026-11-30",
-          "caEstOOSDate": "2026-12-11",
+          "netSales": 129936.78,
+          "units": 5637,
+          "orders": 5338,
+          "newCustomers": 629,
+          "retCustomers": 4677,
+          "usUnits": 5370,
+          "caUnits": 267,
+          "usNetSales": 125551.68,
+          "caNetSales": 4385.1,
+          "planUnits": 3870,
+          "pctToPlanUnits": 145.7,
+          "inventoryUnits": 14993,
+          "runRateUnitsPerDay": 605.57,
+          "daysToOOS": 24,
+          "estOOSDate": "2026-12-05",
+          "usInventoryUnits": 13917,
+          "caInventoryUnits": 1076,
+          "usRunRateUnitsPerDay": 577.0,
+          "caRunRateUnitsPerDay": 28.57,
+          "usDaysToOOS": 24,
+          "caDaysToOOS": 37,
+          "usEstOOSDate": "2026-12-05",
+          "caEstOOSDate": "2026-12-18",
           "planTotalUnits": 22051,
-          "pctToGoalUnits": 23.5,
-          "unitsToGoal": 16880,
+          "pctToGoalUnits": 25.6,
+          "unitsToGoal": 16414,
           "planEndDate": "2027-03-03",
-          "weeksOfStock": 3.0,
+          "weeksOfStock": 3.5,
           "decayCurveOOS": "2026-12-05",
           "realInventoryUnits": 16131
         },
@@ -13143,34 +13253,34 @@ window.DASHBOARD_DATA = {
           "product": "Brilliant Eye Brightener\u2122",
           "shade": "Brilliant Eye Brightener\u2122",
           "color": "#D8A48F",
-          "netSales": 84172.33,
-          "units": 3688,
-          "orders": 3493,
-          "newCustomers": 309,
-          "retCustomers": 3176,
-          "usUnits": 3482,
-          "caUnits": 206,
-          "usNetSales": 80781.03,
-          "caNetSales": 3391.3,
-          "planUnits": 5291,
-          "pctToPlanUnits": 69.7,
-          "inventoryUnits": 28480,
-          "runRateUnitsPerDay": 526.86,
-          "daysToOOS": 54,
-          "estOOSDate": "2027-01-03",
-          "usInventoryUnits": 27335,
-          "caInventoryUnits": 1145,
-          "usRunRateUnitsPerDay": 497.43,
-          "caRunRateUnitsPerDay": 29.43,
-          "usDaysToOOS": 54,
-          "caDaysToOOS": 38,
-          "usEstOOSDate": "2027-01-03",
-          "caEstOOSDate": "2026-12-18",
+          "netSales": 92806.87,
+          "units": 4066,
+          "orders": 3857,
+          "newCustomers": 347,
+          "retCustomers": 3501,
+          "usUnits": 3835,
+          "caUnits": 231,
+          "usNetSales": 89008.92,
+          "caNetSales": 3797.95,
+          "planUnits": 5807,
+          "pctToPlanUnits": 70.0,
+          "inventoryUnits": 28033,
+          "runRateUnitsPerDay": 445.29,
+          "daysToOOS": 62,
+          "estOOSDate": "2027-01-12",
+          "usInventoryUnits": 26919,
+          "caInventoryUnits": 1114,
+          "usRunRateUnitsPerDay": 420.43,
+          "caRunRateUnitsPerDay": 24.86,
+          "usDaysToOOS": 64,
+          "caDaysToOOS": 44,
+          "usEstOOSDate": "2027-01-14",
+          "caEstOOSDate": "2026-12-25",
           "planTotalUnits": 33091,
-          "pctToGoalUnits": 11.1,
-          "unitsToGoal": 29403,
+          "pctToGoalUnits": 12.3,
+          "unitsToGoal": 29025,
           "planEndDate": "2027-03-03",
-          "weeksOfStock": 7.7,
+          "weeksOfStock": 9.0,
           "decayCurveOOS": "2027-12-09",
           "realInventoryUnits": 29169
         }
@@ -13178,17 +13288,10 @@ window.DASHBOARD_DATA = {
       "signals": {
         "attention": [
           {
-            "rank": 1,
-            "key": "oos-soon:us:TVG6660",
-            "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~20 days",
-            "detail": "14,441 units left in US (.com) at 704.0/day (2.9 weeks cover).",
-            "action": "Confirm a replenishment date for US (.com) with Demand Planning, or plan for the shade to go dark there."
-          },
-          {
             "rank": 3,
             "key": "recent-behind:TVG6670",
             "title": "Grace (Brilliant Eye Brightener\u2122) is behind plan over the last 7 days",
-            "detail": "3,688 units against 5,291 planned (70%), 1,603 short \u2014 about $36,586 at its current price.",
+            "detail": "3,117 units against 4,933 planned (63%), 1,816 short \u2014 about $41,450 at its current price.",
             "action": "Recent, not cumulative \u2014 this is the last week only. Worth checking against promo calendar and paid support before treating it as demand."
           }
         ],
@@ -13196,22 +13299,22 @@ window.DASHBOARD_DATA = {
           {
             "key": "recent-ahead:TVG6660",
             "title": "Hope (Brilliant Eye Brightener\u2122) is ahead of plan over the last 7 days",
-            "detail": "5,171 units against 3,526 planned (147%)."
+            "detail": "4,239 units against 3,288 planned (129%)."
           },
           {
             "key": "pacing",
             "title": "Last 7 days are on or above plan",
-            "detail": "8,859 units vs 8,817 planned (100%)."
+            "detail": "7,356 units vs 8,221 planned (89%)."
           },
           {
             "key": "pairing:TVG629",
             "title": "Most common basket pairing: Brilliant Eye Brightener\u2122",
-            "detail": "21 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
+            "detail": "24 same-cart orders. A bundle or PDP cross-sell placement is the obvious test."
           },
           {
             "key": "new-to-category",
             "title": "15% of buyers are new to Eyeshadow",
-            "detail": "954 of 6,460 buyers had not purchased this category before."
+            "detail": "1,050 of 7,111 buyers had not purchased this category before."
           }
         ]
       },
@@ -13219,13 +13322,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-04",
           "units": 2347,
-          "netSales": 52819.19,
+          "netSales": 52815.18,
           "usUnits": 2223,
           "caUnits": 124,
-          "usNetSales": 50817.6,
+          "usNetSales": 50813.59,
           "caNetSales": 2001.59,
           "cumUnits": 2347,
-          "cumSales": 52819.19,
+          "cumSales": 52815.18,
           "planUnits": 1456,
           "cumPlanUnits": 1456,
           "newCustomers": 118,
@@ -13233,32 +13336,32 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-05",
-          "units": 1466,
-          "netSales": 33428.72,
+          "units": 1465,
+          "netSales": 33405.85,
           "usUnits": 1386,
-          "caUnits": 80,
-          "usNetSales": 32077.61,
-          "caNetSales": 1351.11,
-          "cumUnits": 3813,
-          "cumSales": 86247.91,
+          "caUnits": 79,
+          "usNetSales": 32072.58,
+          "caNetSales": 1333.27,
+          "cumUnits": 3812,
+          "cumSales": 86221.03,
           "planUnits": 1257,
           "cumPlanUnits": 2713,
           "newCustomers": 113,
-          "retCustomers": 906
+          "retCustomers": 905
         },
         {
           "date": "2026-11-06",
-          "units": 963,
-          "netSales": 22252.08,
-          "usUnits": 906,
+          "units": 962,
+          "netSales": 22226.08,
+          "usUnits": 905,
           "caUnits": 57,
-          "usNetSales": 21307.96,
+          "usNetSales": 21281.96,
           "caNetSales": 944.12,
-          "cumUnits": 4776,
-          "cumSales": 108499.99,
+          "cumUnits": 4774,
+          "cumSales": 108447.11,
           "planUnits": 1311,
           "cumPlanUnits": 4024,
-          "newCustomers": 96,
+          "newCustomers": 95,
           "retCustomers": 613
         },
         {
@@ -13269,8 +13372,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 49,
           "usNetSales": 24424.59,
           "caNetSales": 815.55,
-          "cumUnits": 5867,
-          "cumSales": 133740.13,
+          "cumUnits": 5865,
+          "cumSales": 133687.25,
           "planUnits": 1475,
           "cumPlanUnits": 5499,
           "newCustomers": 102,
@@ -13279,13 +13382,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-08",
           "units": 1073,
-          "netSales": 24872.49,
+          "netSales": 24887.62,
           "usUnits": 1020,
           "caUnits": 53,
-          "usNetSales": 24005.22,
-          "caNetSales": 867.27,
-          "cumUnits": 6940,
-          "cumSales": 158612.62,
+          "usNetSales": 24019.86,
+          "caNetSales": 867.76,
+          "cumUnits": 6938,
+          "cumSales": 158574.87,
           "planUnits": 1490,
           "cumPlanUnits": 6989,
           "newCustomers": 133,
@@ -13299,8 +13402,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 40,
           "usNetSales": 23363.83,
           "caNetSales": 657.79,
-          "cumUnits": 7968,
-          "cumSales": 182634.24,
+          "cumUnits": 7966,
+          "cumSales": 182596.49,
           "planUnits": 946,
           "cumPlanUnits": 7935,
           "newCustomers": 78,
@@ -13309,17 +13412,32 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-10",
           "units": 891,
-          "netSales": 20674.91,
+          "netSales": 20677.01,
           "usUnits": 845,
           "caUnits": 46,
-          "usNetSales": 19923.89,
+          "usNetSales": 19925.99,
           "caNetSales": 751.02,
-          "cumUnits": 8859,
-          "cumSales": 203309.15,
+          "cumUnits": 8857,
+          "cumSales": 203273.5,
           "planUnits": 882,
           "cumPlanUnits": 8817,
           "newCustomers": 86,
           "retCustomers": 616
+        },
+        {
+          "date": "2026-11-11",
+          "units": 846,
+          "netSales": 19470.15,
+          "usUnits": 796,
+          "caUnits": 50,
+          "usNetSales": 18658.2,
+          "caNetSales": 811.95,
+          "cumUnits": 9703,
+          "cumSales": 222743.65,
+          "planUnits": 860,
+          "cumPlanUnits": 9677,
+          "newCustomers": 81,
+          "retCustomers": 582
         }
       ],
       "dailySkuColumns": [
@@ -13334,33 +13452,33 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TVG6660": [["2026-11-04", 1398, 31489.19, 1331, 67, 30409.58, 1079.61, 95, 1201], ["2026-11-05", 922, 21264.46, 884, 38, 20619.77, 644.69, 95, 760], ["2026-11-06", 622, 14462.24, 591, 31, 13953.04, 509.2, 82, 499], ["2026-11-07", 659, 15307.99, 628, 31, 14791.08, 516.91, 80, 545], ["2026-11-08", 671, 15620.23, 642, 29, 15148.53, 471.7, 104, 548], ["2026-11-09", 453, 10640.31, 430, 23, 10258.49, 381.82, 54, 385], ["2026-11-10", 446, 10352.4, 422, 24, 9959.18, 393.22, 56, 379]],
-        "TVG6670": [["2026-11-04", 949, 21330.0, 892, 57, 20408.02, 921.98, 54, 852], ["2026-11-05", 544, 12164.26, 502, 42, 11457.84, 706.42, 41, 467], ["2026-11-06", 341, 7789.84, 315, 26, 7354.92, 434.92, 40, 286], ["2026-11-07", 432, 9932.15, 414, 18, 9633.51, 298.64, 42, 363], ["2026-11-08", 402, 9252.26, 378, 24, 8856.69, 395.57, 49, 336], ["2026-11-09", 575, 13381.31, 558, 17, 13105.34, 275.97, 37, 494], ["2026-11-10", 445, 10322.5, 423, 22, 9964.71, 357.79, 46, 384]]
+        "TVG6660": [["2026-11-04", 1398, 31484.28, 1331, 67, 30404.67, 1079.61, 95, 1201], ["2026-11-05", 922, 21268.47, 884, 38, 20623.78, 644.69, 95, 760], ["2026-11-06", 621, 14434.58, 590, 31, 13925.38, 509.2, 81, 499], ["2026-11-07", 659, 15307.99, 628, 31, 14791.08, 516.91, 80, 545], ["2026-11-08", 671, 15620.72, 642, 29, 15148.53, 472.19, 104, 548], ["2026-11-09", 453, 10640.31, 430, 23, 10258.49, 381.82, 54, 385], ["2026-11-10", 446, 10354.5, 422, 24, 9961.28, 393.22, 56, 379], ["2026-11-11", 467, 10825.93, 443, 24, 10438.47, 387.46, 65, 382]],
+        "TVG6670": [["2026-11-04", 949, 21330.9, 892, 57, 20408.92, 921.98, 54, 852], ["2026-11-05", 543, 12137.38, 502, 41, 11448.8, 688.58, 41, 466], ["2026-11-06", 341, 7791.5, 315, 26, 7356.58, 434.92, 40, 286], ["2026-11-07", 432, 9932.15, 414, 18, 9633.51, 298.64, 42, 363], ["2026-11-08", 402, 9266.9, 378, 24, 8871.33, 395.57, 49, 336], ["2026-11-09", 575, 13381.31, 558, 17, 13105.34, 275.97, 37, 494], ["2026-11-10", 445, 10322.5, 423, 22, 9964.71, 357.79, 46, 384], ["2026-11-11", 379, 8644.22, 353, 26, 8219.73, 424.49, 38, 327]]
       },
       "planBySku": {
-        "TVG6670": [["2026-11-04", 874], ["2026-11-05", 754], ["2026-11-06", 787], ["2026-11-07", 885], ["2026-11-08", 894], ["2026-11-09", 568], ["2026-11-10", 529]],
-        "TVG6660": [["2026-11-04", 582], ["2026-11-05", 503], ["2026-11-06", 524], ["2026-11-07", 590], ["2026-11-08", 596], ["2026-11-09", 378], ["2026-11-10", 353]]
+        "TVG6670": [["2026-11-04", 874], ["2026-11-05", 754], ["2026-11-06", 787], ["2026-11-07", 885], ["2026-11-08", 894], ["2026-11-09", 568], ["2026-11-10", 529], ["2026-11-11", 516]],
+        "TVG6660": [["2026-11-04", 582], ["2026-11-05", 503], ["2026-11-06", 524], ["2026-11-07", 590], ["2026-11-08", 596], ["2026-11-09", 378], ["2026-11-10", 353], ["2026-11-11", 344]]
       },
       "pdp": [],
       "crossSell": [
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG629",
-          "pairs": 21
+          "pairs": 24
         },
         {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 16
+          "pairs": 19
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 6
+          "pairs": 8
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6620",
+          "sku": "TVG6640",
           "pairs": 4
         },
         {
@@ -13370,7 +13488,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6640",
+          "sku": "TVG349",
+          "pairs": 4
+        },
+        {
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG358",
           "pairs": 4
         },
         {
@@ -13380,17 +13503,12 @@ window.DASHBOARD_DATA = {
         },
         {
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 3
+          "sku": "TVG6620",
+          "pairs": 4
         },
         {
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
-          "pairs": 3
-        },
-        {
-          "product": "Eye Lift 360\u00b0\u2122 Waterproof Eyeshadow Primer",
-          "sku": "TVG558",
+          "product": "Infinity Waterproof\u2122 Eyebrow Liner",
+          "sku": "TVG432",
           "pairs": 3
         }
       ],
@@ -13399,13 +13517,13 @@ window.DASHBOARD_DATA = {
           "primarySku": "TVG6660",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG629",
-          "pairs": 14
+          "pairs": 15
         },
         {
           "primarySku": "TVG6660",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 7
+          "pairs": 9
         },
         {
           "primarySku": "TVG6660",
@@ -13416,20 +13534,14 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6660",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG350",
-          "pairs": 3
+          "sku": "TVG358",
+          "pairs": 4
         },
         {
           "primarySku": "TVG6660",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
-          "pairs": 3
-        },
-        {
-          "primarySku": "TVG6660",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG358",
-          "pairs": 3
+          "pairs": 4
         },
         {
           "primarySku": "TVG6660",
@@ -13440,43 +13552,61 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6660",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG364",
+          "sku": "TVG350",
+          "pairs": 3
+        },
+        {
+          "primarySku": "TVG6660",
+          "product": "Liquid Brow\u2122 Lock 24Hr Eyebrow Gel",
+          "sku": "TVG562",
           "pairs": 2
         },
         {
           "primarySku": "TVG6660",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG533",
+          "sku": "TVG6780",
           "pairs": 2
         },
         {
           "primarySku": "TVG6660",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6640",
+          "sku": "TVG349",
           "pairs": 2
         },
         {
           "primarySku": "TVG6670",
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "sku": "TVG2840",
-          "pairs": 9
+          "pairs": 10
         },
         {
           "primarySku": "TVG6670",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG629",
-          "pairs": 7
+          "pairs": 9
         },
         {
           "primarySku": "TVG6670",
           "product": "Brilliant Eye Brightener\u2122",
           "sku": "TVG355",
+          "pairs": 4
+        },
+        {
+          "primarySku": "TVG6670",
+          "product": "Brilliant Eye Brightener\u2122",
+          "sku": "TVG534",
           "pairs": 3
         },
         {
           "primarySku": "TVG6670",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG6640",
+          "sku": "TVG513",
+          "pairs": 2
+        },
+        {
+          "primarySku": "TVG6670",
+          "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
+          "sku": "TVG2990",
           "pairs": 2
         },
         {
@@ -13488,7 +13618,7 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6670",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG510",
+          "sku": "TVG349",
           "pairs": 2
         },
         {
@@ -13500,42 +13630,30 @@ window.DASHBOARD_DATA = {
         {
           "primarySku": "TVG6670",
           "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG534",
+          "sku": "TVG510",
           "pairs": 2
-        },
-        {
-          "primarySku": "TVG6670",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG349",
-          "pairs": 2
-        },
-        {
-          "primarySku": "TVG6670",
-          "product": "Brilliant Eye Brightener\u2122",
-          "sku": "TVG354",
-          "pairs": 1
         }
       ],
       "categoryCustomers": {
         "category": "Eyeshadow",
-        "total": 6460,
-        "existingCategory": 5506,
-        "newToCategory": 954,
+        "total": 7111,
+        "existingCategory": 6061,
+        "newToCategory": 1050,
         "byVariant": [
           {
             "sku": "TVG6670",
             "name": "Grace",
-            "newToCategory": 404,
-            "existingCategory": 3081
+            "newToCategory": 450,
+            "existingCategory": 3398
           },
           {
             "sku": "TVG6660",
             "name": "Hope",
-            "newToCategory": 734,
-            "existingCategory": 4133
+            "newToCategory": 807,
+            "existingCategory": 4499
           }
         ],
-        "daily": [["2026-11-04", 157, 1445], ["2026-11-05", 151, 868], ["2026-11-06", 123, 586], ["2026-11-07", 124, 685], ["2026-11-08", 176, 664], ["2026-11-09", 107, 704], ["2026-11-10", 118, 584]]
+        "daily": [["2026-11-04", 157, 1445], ["2026-11-05", 150, 868], ["2026-11-06", 122, 586], ["2026-11-07", 124, 685], ["2026-11-08", 176, 664], ["2026-11-09", 107, 704], ["2026-11-10", 118, 584], ["2026-11-11", 98, 565]]
       }
     },
     {
@@ -13548,40 +13666,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "10 Shades",
       "accent": "#3A9E98",
       "summary": {
-        "netSales": 1985067.14,
-        "units": 78783,
-        "orders": 63135,
+        "netSales": 1987113.53,
+        "units": 78864,
+        "orders": 63204,
         "aov": 31.44,
-        "newCustomers": 19195,
-        "retCustomers": 38951,
-        "totalCustomers": 58146,
+        "newCustomers": 19208,
+        "retCustomers": 38992,
+        "totalCustomers": 58200,
         "newPct": 33.0,
         "retPct": 67.0,
         "planUnits": 71677,
-        "pctToPlanUnits": 109.9,
+        "pctToPlanUnits": 110.0,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 635507.23,
-        "retCustomerRevenue": 1349559.91,
+        "newCustomerRevenue": 635842.57,
+        "retCustomerRevenue": 1351270.96,
         "pdpViews": 0,
         "pdpAtcRate": 0,
         "pdpCvr": 0
       },
       "regions": {
         "us": {
-          "units": 75275,
-          "netSales": 1921738.81,
-          "orders": 60447
+          "units": 75353,
+          "netSales": 1923732.56,
+          "orders": 60515
         },
         "ca": {
-          "units": 3508,
-          "netSales": 63328.33,
-          "orders": 2688
+          "units": 3511,
+          "netSales": 63380.97,
+          "orders": 2689
         }
       },
       "trafficStart": "2026-04-30",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [],
         "monthly": []
@@ -14081,17 +14199,17 @@ window.DASHBOARD_DATA = {
           "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Warm Plum",
           "color": "#7B3FA0",
-          "netSales": 530048.12,
-          "units": 21091,
-          "orders": 20686,
-          "newCustomers": 6544,
-          "retCustomers": 13377,
-          "usUnits": 20247,
-          "caUnits": 844,
-          "usNetSales": 514676.31,
-          "caNetSales": 15371.81,
+          "netSales": 530892.35,
+          "units": 21123,
+          "orders": 20717,
+          "newCustomers": 6550,
+          "retCustomers": 13399,
+          "usUnits": 20278,
+          "caUnits": 845,
+          "usNetSales": 515501.77,
+          "caNetSales": 15390.58,
           "planUnits": 14487,
-          "pctToPlanUnits": 145.6,
+          "pctToPlanUnits": 145.8,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -14105,7 +14223,7 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 14487,
-          "pctToGoalUnits": 145.6,
+          "pctToGoalUnits": 145.8,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
@@ -14118,15 +14236,15 @@ window.DASHBOARD_DATA = {
           "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Natural Rose",
           "color": "#C89EA0",
-          "netSales": 309546.54,
-          "units": 12332,
-          "orders": 12093,
+          "netSales": 309565.3,
+          "units": 12333,
+          "orders": 12094,
           "newCustomers": 3946,
-          "retCustomers": 7812,
+          "retCustomers": 7813,
           "usUnits": 11749,
-          "caUnits": 583,
+          "caUnits": 584,
           "usNetSales": 299163.56,
-          "caNetSales": 10382.98,
+          "caNetSales": 10401.74,
           "planUnits": 8036,
           "pctToPlanUnits": 153.5,
           "inventoryUnits": null,
@@ -14155,17 +14273,17 @@ window.DASHBOARD_DATA = {
           "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Cool Rose",
           "color": "#E8748A",
-          "netSales": 282311.67,
-          "units": 11222,
-          "orders": 11047,
-          "newCustomers": 3396,
-          "retCustomers": 7217,
-          "usUnits": 10623,
-          "caUnits": 599,
-          "usNetSales": 271693.66,
-          "caNetSales": 10618.01,
+          "netSales": 282688.65,
+          "units": 11238,
+          "orders": 11063,
+          "newCustomers": 3397,
+          "retCustomers": 7230,
+          "usUnits": 10638,
+          "caUnits": 600,
+          "usNetSales": 272051.88,
+          "caNetSales": 10636.77,
           "planUnits": 9661,
-          "pctToPlanUnits": 116.2,
+          "pctToPlanUnits": 116.3,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -14179,7 +14297,7 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 9661,
-          "pctToGoalUnits": 116.2,
+          "pctToGoalUnits": 116.3,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
@@ -14192,17 +14310,17 @@ window.DASHBOARD_DATA = {
           "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Neutral Mauve",
           "color": "#A0888A",
-          "netSales": 247524.93,
-          "units": 9783,
-          "orders": 9515,
-          "newCustomers": 2944,
-          "retCustomers": 6221,
-          "usUnits": 9462,
-          "caUnits": 321,
-          "usNetSales": 241628.9,
-          "caNetSales": 5896.03,
+          "netSales": 247786.24,
+          "units": 9793,
+          "orders": 9525,
+          "newCustomers": 2946,
+          "retCustomers": 6227,
+          "usUnits": 9473,
+          "caUnits": 320,
+          "usNetSales": 241909.67,
+          "caNetSales": 5876.57,
           "planUnits": 4823,
-          "pctToPlanUnits": 202.8,
+          "pctToPlanUnits": 203.0,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -14216,7 +14334,7 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 4823,
-          "pctToGoalUnits": 202.8,
+          "pctToGoalUnits": 203.0,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
@@ -14229,17 +14347,17 @@ window.DASHBOARD_DATA = {
           "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Dusty Rose",
           "color": "#D4879A",
-          "netSales": 204582.98,
-          "units": 8127,
-          "orders": 7981,
-          "newCustomers": 2567,
-          "retCustomers": 5147,
-          "usUnits": 7598,
+          "netSales": 204771.48,
+          "units": 8135,
+          "orders": 7989,
+          "newCustomers": 2568,
+          "retCustomers": 5153,
+          "usUnits": 7606,
           "caUnits": 529,
-          "usNetSales": 194960.47,
+          "usNetSales": 195148.97,
           "caNetSales": 9622.51,
           "planUnits": 9651,
-          "pctToPlanUnits": 84.2,
+          "pctToPlanUnits": 84.3,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -14253,8 +14371,8 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 9651,
-          "pctToGoalUnits": 84.2,
-          "unitsToGoal": 1524,
+          "pctToGoalUnits": 84.3,
+          "unitsToGoal": 1516,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
           "decayCurveOOS": "2027-01-11",
@@ -14266,17 +14384,17 @@ window.DASHBOARD_DATA = {
           "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Deep Berry",
           "color": "#7A1840",
-          "netSales": 168398.75,
-          "units": 6579,
-          "orders": 6331,
-          "newCustomers": 2482,
-          "retCustomers": 3563,
-          "usUnits": 6412,
-          "caUnits": 167,
-          "usNetSales": 165373.01,
-          "caNetSales": 3025.74,
+          "netSales": 168574.76,
+          "units": 6586,
+          "orders": 6338,
+          "newCustomers": 2483,
+          "retCustomers": 3568,
+          "usUnits": 6418,
+          "caUnits": 168,
+          "usNetSales": 165533.21,
+          "caNetSales": 3041.55,
           "planUnits": 3546,
-          "pctToPlanUnits": 185.5,
+          "pctToPlanUnits": 185.7,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -14290,7 +14408,7 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 3546,
-          "pctToGoalUnits": 185.5,
+          "pctToGoalUnits": 185.7,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
@@ -14303,14 +14421,14 @@ window.DASHBOARD_DATA = {
           "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Soft Apricot",
           "color": "#F4A460",
-          "netSales": 68403.07,
-          "units": 2725,
-          "orders": 2666,
+          "netSales": 68459.07,
+          "units": 2727,
+          "orders": 2668,
           "newCustomers": 787,
-          "retCustomers": 1764,
-          "usUnits": 2572,
+          "retCustomers": 1766,
+          "usUnits": 2574,
           "caUnits": 153,
-          "usNetSales": 65640.76,
+          "usNetSales": 65696.76,
           "caNetSales": 2762.31,
           "planUnits": 5466,
           "pctToPlanUnits": 49.9,
@@ -14328,7 +14446,7 @@ window.DASHBOARD_DATA = {
           "caEstOOSDate": null,
           "planTotalUnits": 5466,
           "pctToGoalUnits": 49.9,
-          "unitsToGoal": 2741,
+          "unitsToGoal": 2739,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
           "decayCurveOOS": "2027-09-29",
@@ -14340,14 +14458,14 @@ window.DASHBOARD_DATA = {
           "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Cherry Red",
           "color": "#C01830",
-          "netSales": 64264.01,
-          "units": 2526,
-          "orders": 2464,
-          "newCustomers": 764,
+          "netSales": 64314.41,
+          "units": 2528,
+          "orders": 2466,
+          "newCustomers": 766,
           "retCustomers": 1610,
-          "usUnits": 2435,
+          "usUnits": 2437,
           "caUnits": 91,
-          "usNetSales": 62608.14,
+          "usNetSales": 62658.54,
           "caNetSales": 1655.87,
           "planUnits": 4185,
           "pctToPlanUnits": 60.4,
@@ -14365,7 +14483,7 @@ window.DASHBOARD_DATA = {
           "caEstOOSDate": null,
           "planTotalUnits": 4185,
           "pctToGoalUnits": 60.4,
-          "unitsToGoal": 1659,
+          "unitsToGoal": 1657,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
           "decayCurveOOS": "2027-10-17",
@@ -14414,14 +14532,14 @@ window.DASHBOARD_DATA = {
           "product": "Empowershine\u2122 Satin Lip Cream",
           "shade": "Mocha",
           "color": "#8B6355",
-          "netSales": 49925.67,
-          "units": 1991,
-          "orders": 1921,
-          "newCustomers": 558,
-          "retCustomers": 1225,
-          "usUnits": 1919,
+          "netSales": 49999.87,
+          "units": 1994,
+          "orders": 1924,
+          "newCustomers": 559,
+          "retCustomers": 1227,
+          "usUnits": 1922,
           "caUnits": 72,
-          "usNetSales": 48621.23,
+          "usNetSales": 48695.43,
           "caNetSales": 1304.44,
           "planUnits": 7964,
           "pctToPlanUnits": 25.0,
@@ -14439,7 +14557,7 @@ window.DASHBOARD_DATA = {
           "caEstOOSDate": null,
           "planTotalUnits": 7964,
           "pctToGoalUnits": 25.0,
-          "unitsToGoal": 5973,
+          "unitsToGoal": 5970,
           "planEndDate": "2026-08-28",
           "weeksOfStock": null,
           "decayCurveOOS": "2028-05-02",
@@ -14452,7 +14570,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "new-to-category",
             "title": "50% of buyers are new to Lip",
-            "detail": "29,319 of 58,147 buyers had not purchased this category before."
+            "detail": "29,344 of 58,201 buyers had not purchased this category before."
           }
         ]
       },
@@ -17249,17 +17367,17 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-02",
-          "units": 60,
-          "netSales": 1500.32,
+          "units": 59,
+          "netSales": 1480.86,
           "usUnits": 52,
-          "caUnits": 8,
+          "caUnits": 7,
           "usNetSales": 1391.35,
-          "caNetSales": 108.97,
-          "cumUnits": 78251,
-          "cumSales": 1971567.03,
+          "caNetSales": 89.51,
+          "cumUnits": 78250,
+          "cumSales": 1971547.57,
           "planUnits": null,
           "cumPlanUnits": 71677,
-          "newCustomers": 12,
+          "newCustomers": 11,
           "retCustomers": 43
         },
         {
@@ -17270,8 +17388,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 1216.68,
           "caNetSales": 88.71,
-          "cumUnits": 78306,
-          "cumSales": 1972872.42,
+          "cumUnits": 78305,
+          "cumSales": 1972852.96,
           "planUnits": null,
           "cumPlanUnits": 71677,
           "newCustomers": 12,
@@ -17285,8 +17403,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 2,
           "usNetSales": 1534.32,
           "caNetSales": 36.49,
-          "cumUnits": 78366,
-          "cumSales": 1974443.23,
+          "cumUnits": 78365,
+          "cumSales": 1974423.77,
           "planUnits": null,
           "cumPlanUnits": 71677,
           "newCustomers": 14,
@@ -17300,8 +17418,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 5,
           "usNetSales": 1892.61,
           "caNetSales": 93.62,
-          "cumUnits": 78452,
-          "cumSales": 1976429.46,
+          "cumUnits": 78451,
+          "cumSales": 1976410.0,
           "planUnits": null,
           "cumPlanUnits": 71677,
           "newCustomers": 8,
@@ -17309,18 +17427,18 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-06",
-          "units": 78,
-          "netSales": 2021.19,
-          "usUnits": 76,
+          "units": 77,
+          "netSales": 1993.19,
+          "usUnits": 75,
           "caUnits": 2,
-          "usNetSales": 1988.39,
+          "usNetSales": 1960.39,
           "caNetSales": 32.8,
-          "cumUnits": 78530,
-          "cumSales": 1978450.65,
+          "cumUnits": 78528,
+          "cumSales": 1978403.19,
           "planUnits": null,
           "cumPlanUnits": 71677,
           "newCustomers": 12,
-          "retCustomers": 56
+          "retCustomers": 55
         },
         {
           "date": "2026-11-07",
@@ -17330,8 +17448,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 0,
           "usNetSales": 2322.66,
           "caNetSales": 0.0,
-          "cumUnits": 78617,
-          "cumSales": 1980773.31,
+          "cumUnits": 78615,
+          "cumSales": 1980725.85,
           "planUnits": null,
           "cumPlanUnits": 71677,
           "newCustomers": 19,
@@ -17345,8 +17463,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 1748.46,
           "caNetSales": 15.26,
-          "cumUnits": 78684,
-          "cumSales": 1982537.03,
+          "cumUnits": 78682,
+          "cumSales": 1982489.57,
           "planUnits": null,
           "cumPlanUnits": 71677,
           "newCustomers": 10,
@@ -17360,8 +17478,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 1272.25,
           "caNetSales": 19.13,
-          "cumUnits": 78733,
-          "cumSales": 1983828.41,
+          "cumUnits": 78731,
+          "cumSales": 1983780.95,
           "planUnits": null,
           "cumPlanUnits": 71677,
           "newCustomers": 10,
@@ -17375,12 +17493,27 @@ window.DASHBOARD_DATA = {
           "caUnits": 1,
           "usNetSales": 1219.68,
           "caNetSales": 19.04,
-          "cumUnits": 78783,
-          "cumSales": 1985067.13,
+          "cumUnits": 78781,
+          "cumSales": 1985019.67,
           "planUnits": null,
           "cumPlanUnits": 71677,
           "newCustomers": 16,
           "retCustomers": 32
+        },
+        {
+          "date": "2026-11-11",
+          "units": 83,
+          "netSales": 2093.86,
+          "usUnits": 79,
+          "caUnits": 4,
+          "usNetSales": 2021.75,
+          "caNetSales": 72.11,
+          "cumUnits": 78864,
+          "cumSales": 1987113.53,
+          "planUnits": null,
+          "cumPlanUnits": 71677,
+          "newCustomers": 14,
+          "retCustomers": 57
         }
       ],
       "dailySkuColumns": [
@@ -17395,79 +17528,43 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TVG5880": [["2026-04-30", 9, 226.91, 7, 2, 187.6, 39.31, 0, 9], ["2026-05-01", 233, 5976.9, 218, 15, 5697.54, 279.36, 30, 198], ["2026-05-02", 275, 7166.28, 268, 7, 7032.7, 133.58, 21, 250], ["2026-05-03", 159, 4117.8, 155, 4, 4047.92, 69.88, 31, 127], ["2026-05-04", 126, 3264.54, 120, 6, 3151.48, 113.06, 29, 96], ["2026-05-05", 170, 4414.41, 167, 3, 4357.36, 57.05, 36, 133], ["2026-05-06", 137, 3543.52, 133, 4, 3469.74, 73.78, 26, 110], ["2026-05-07", 153, 3851.8, 138, 15, 3567.59, 284.21, 26, 125], ["2026-05-08", 161, 4094.54, 157, 4, 4012.65, 81.89, 28, 127], ["2026-05-09", 170, 4154.5, 146, 24, 3709.38, 445.12, 47, 121], ["2026-05-10", 204, 5227.83, 197, 7, 5103.47, 124.36, 61, 140], ["2026-05-11", 149, 3779.31, 141, 8, 3625.14, 154.17, 50, 98], ["2026-05-12", 159, 3963.13, 148, 11, 3759.23, 203.9, 45, 111], ["2026-05-13", 173, 4385.9, 164, 9, 4225.28, 160.62, 58, 113], ["2026-05-14", 178, 4412.04, 167, 11, 4206.4, 205.64, 60, 110], ["2026-05-15", 145, 3521.67, 136, 9, 3350.75, 170.92, 45, 98], ["2026-05-16", 178, 4387.26, 161, 17, 4088.91, 298.35, 70, 106], ["2026-05-17", 188, 4719.53, 172, 16, 4421.64, 297.89, 65, 123], ["2026-05-18", 128, 3174.75, 120, 8, 3024.24, 150.51, 40, 86], ["2026-05-19", 145, 3648.05, 135, 10, 3453.47, 194.58, 51, 92], ["2026-05-20", 150, 3784.26, 145, 5, 3688.03, 96.23, 49, 98], ["2026-05-21", 167, 4104.95, 160, 7, 3979.31, 125.64, 77, 90], ["2026-05-22", 171, 4216.26, 157, 14, 3955.41, 260.85, 78, 88], ["2026-05-23", 180, 4344.82, 167, 13, 4099.29, 245.53, 83, 92], ["2026-05-24", 216, 5416.35, 203, 13, 5180.16, 236.19, 109, 102], ["2026-05-25", 282, 7046.04, 271, 11, 6850.66, 195.38, 150, 127], ["2026-05-26", 173, 4272.86, 163, 10, 4086.78, 186.08, 73, 96], ["2026-05-27", 184, 4522.99, 174, 10, 4338.27, 184.72, 91, 90], ["2026-05-28", 159, 3959.45, 153, 6, 3867.91, 91.54, 75, 83], ["2026-05-29", 121, 2920.95, 117, 4, 2849.6, 71.35, 46, 74], ["2026-05-30", 110, 2769.71, 101, 9, 2602.31, 167.4, 48, 61], ["2026-05-31", 107, 2636.64, 99, 8, 2494.27, 142.37, 45, 61], ["2026-06-01", 143, 3422.03, 138, 5, 3329.25, 92.78, 69, 69], ["2026-06-02", 127, 3094.3, 119, 8, 2965.25, 129.05, 70, 54], ["2026-06-03", 121, 2963.32, 115, 6, 2852.4, 110.92, 46, 65], ["2026-06-04", 135, 3284.36, 131, 4, 3225.2, 59.16, 63, 71], ["2026-06-05", 116, 2840.88, 116, 0, 2840.88, 0.0, 62, 54], ["2026-06-06", 74, 1855.55, 69, 5, 1766.58, 88.97, 44, 28], ["2026-06-07", 91, 2306.46, 86, 5, 2224.65, 81.81, 49, 39], ["2026-06-08", 154, 3932.87, 149, 5, 3841.51, 91.36, 74, 78], ["2026-06-09", 86, 2120.21, 82, 4, 2065.45, 54.76, 41, 43], ["2026-06-10", 69, 1789.31, 68, 1, 1773.65, 15.66, 41, 28], ["2026-06-11", 73, 1860.54, 70, 3, 1809.64, 50.9, 42, 28], ["2026-06-12", 122, 3135.47, 120, 2, 3104.35, 31.12, 87, 30], ["2026-06-13", 229, 5694.47, 218, 11, 5500.53, 193.94, 146, 72], ["2026-06-14", 254, 6272.5, 248, 6, 6169.66, 102.84, 146, 104], ["2026-06-15", 95, 2379.75, 89, 6, 2281.66, 98.09, 65, 30], ["2026-06-16", 66, 1631.87, 59, 7, 1509.28, 122.59, 37, 27], ["2026-06-17", 64, 1598.52, 61, 3, 1542.36, 56.16, 19, 45], ["2026-06-18", 87, 2127.61, 82, 5, 2037.69, 89.92, 44, 43], ["2026-06-19", 136, 3633.41, 133, 3, 3580.13, 53.28, 35, 96], ["2026-06-20", 153, 3843.47, 143, 10, 3679.13, 164.34, 66, 85], ["2026-06-21", 197, 5048.77, 186, 11, 4865.59, 183.18, 72, 121], ["2026-06-22", 83, 2154.46, 83, 0, 2154.46, 0.0, 24, 55], ["2026-06-23", 59, 1401.61, 57, 2, 1373.88, 27.73, 21, 38], ["2026-06-24", 48, 1198.4, 44, 4, 1131.14, 67.26, 11, 35], ["2026-06-25", 47, 1129.23, 45, 2, 1095.43, 33.8, 10, 37], ["2026-06-26", 36, 781.47, 35, 1, 766.36, 15.11, 14, 22], ["2026-06-27", 64, 1687.27, 60, 4, 1617.11, 70.16, 11, 52], ["2026-06-28", 65, 1720.25, 63, 2, 1684.89, 35.36, 18, 45], ["2026-06-29", 50, 1156.67, 48, 2, 1118.93, 37.74, 11, 38], ["2026-06-30", 66, 1675.68, 64, 2, 1638.05, 37.63, 19, 47], ["2026-07-01", 145, 3380.08, 139, 6, 3281.87, 98.21, 27, 117], ["2026-07-02", 128, 3028.44, 125, 3, 2980.48, 47.96, 33, 92], ["2026-07-03", 145, 3381.33, 142, 3, 3333.33, 48.0, 48, 92], ["2026-07-04", 126, 2978.05, 123, 3, 2929.93, 48.12, 46, 78], ["2026-07-05", 235, 5494.39, 229, 6, 5399.21, 95.18, 91, 141], ["2026-07-06", 94, 2318.29, 90, 4, 2253.26, 65.03, 42, 50], ["2026-07-07", 90, 2301.23, 87, 3, 2263.65, 37.58, 30, 60], ["2026-07-08", 146, 3791.15, 143, 3, 3753.42, 37.73, 27, 116], ["2026-07-09", 108, 2843.17, 107, 1, 2828.04, 15.13, 13, 93], ["2026-07-10", 157, 4081.37, 154, 3, 4028.4, 52.97, 32, 119], ["2026-07-11", 201, 5222.77, 199, 2, 5203.84, 18.93, 23, 171], ["2026-07-12", 132, 3502.74, 128, 4, 3434.65, 68.09, 21, 107], ["2026-07-13", 101, 2583.35, 97, 4, 2511.47, 71.88, 20, 76], ["2026-07-14", 82, 2125.7, 80, 2, 2090.43, 35.27, 13, 69], ["2026-07-15", 62, 1614.65, 59, 3, 1564.93, 49.72, 17, 45], ["2026-07-16", 68, 1659.25, 68, 0, 1659.25, 0.0, 9, 57], ["2026-07-17", 91, 2225.73, 87, 4, 2154.59, 71.14, 17, 65], ["2026-07-18", 110, 2874.21, 106, 4, 2811.26, 62.95, 13, 93], ["2026-07-19", 123, 3218.08, 121, 2, 3181.99, 36.09, 16, 105], ["2026-07-20", 107, 2783.47, 106, 1, 2764.15, 19.32, 12, 93], ["2026-07-21", 127, 3270.01, 124, 3, 3212.41, 57.6, 13, 112], ["2026-07-22", 110, 2776.94, 106, 4, 2707.61, 69.33, 11, 98], ["2026-07-23", 110, 2865.01, 105, 5, 2779.13, 85.88, 16, 91], ["2026-07-24", 102, 2660.56, 96, 6, 2555.01, 105.55, 13, 88], ["2026-07-25", 148, 3811.45, 140, 8, 3662.52, 148.93, 21, 118], ["2026-07-26", 123, 3266.81, 121, 2, 3228.58, 38.23, 18, 101], ["2026-07-27", 88, 2293.87, 88, 0, 2293.87, 0.0, 14, 73], ["2026-07-28", 122, 3024.43, 122, 0, 3024.43, 0.0, 16, 105], ["2026-07-29", 89, 2351.34, 89, 0, 2351.34, 0.0, 8, 79], ["2026-07-30", 11, 254.64, 11, 0, 254.64, 0.0, 1, 10], ["2026-07-31", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-08-01", 16, 394.75, 16, 0, 394.75, 0.0, 4, 12], ["2026-08-02", 15, 349.78, 15, 0, 349.78, 0.0, 2, 13], ["2026-08-03", 8, 214.2, 8, 0, 214.2, 0.0, 3, 4], ["2026-08-04", 21, 531.25, 21, 0, 531.25, 0.0, 3, 18], ["2026-08-05", 26, 707.85, 26, 0, 707.85, 0.0, 5, 19], ["2026-08-06", 20, 513.31, 20, 0, 513.31, 0.0, 5, 15], ["2026-08-07", 28, 698.54, 28, 0, 698.54, 0.0, 8, 18], ["2026-08-08", 47, 1218.01, 47, 0, 1218.01, 0.0, 8, 39], ["2026-08-09", 56, 1425.16, 56, 0, 1425.16, 0.0, 15, 39], ["2026-08-10", 22, 573.63, 22, 0, 573.63, 0.0, 2, 20], ["2026-08-11", 23, 548.98, 23, 0, 548.98, 0.0, 8, 15], ["2026-08-12", 24, 574.79, 24, 0, 574.79, 0.0, 9, 13], ["2026-08-13", 19, 508.23, 19, 0, 508.23, 0.0, 9, 10], ["2026-08-14", 25, 653.88, 25, 0, 653.88, 0.0, 8, 16], ["2026-08-17", 1, 20.22, 1, 0, 20.22, 0.0, 0, 1], ["2026-08-18", 14, 367.67, 14, 0, 367.67, 0.0, 4, 8], ["2026-08-19", 37, 954.98, 36, 1, 937.84, 17.14, 8, 28], ["2026-08-20", 17, 425.51, 14, 3, 370.2, 55.31, 5, 11], ["2026-08-21", 1, 16.04, 0, 1, 0.0, 16.04, 1, 0], ["2026-08-23", 4, 66.72, 0, 4, 0.0, 66.72, 0, 4], ["2026-08-24", 2, 35.94, 0, 2, 0.0, 35.94, 1, 1], ["2026-08-25", 3, 57.47, 0, 3, 0.0, 57.47, 1, 2], ["2026-08-27", 1, 19.76, 0, 1, 0.0, 19.76, 0, 1], ["2026-08-28", 1, 13.13, 0, 1, 0.0, 13.13, 0, 1], ["2026-08-30", 1, 19.64, 0, 1, 0.0, 19.64, 0, 1], ["2026-08-31", 1, 15.76, 0, 1, 0.0, 15.76, 0, 1], ["2026-09-01", 1, 19.68, 0, 1, 0.0, 19.68, 0, 1], ["2026-09-05", 1, 19.94, 0, 1, 0.0, 19.94, 0, 1], ["2026-09-06", 1, 19.85, 0, 1, 0.0, 19.85, 0, 1], ["2026-09-07", 2, 38.19, 0, 2, 0.0, 38.19, 0, 2], ["2026-09-08", 1, 19.9, 0, 1, 0.0, 19.9, 0, 1], ["2026-09-09", 1, 15.94, 0, 1, 0.0, 15.94, 1, 0], ["2026-09-10", 1, 16.4, 0, 1, 0.0, 16.4, 0, 1], ["2026-09-13", 2, 37.03, 0, 2, 0.0, 37.03, 0, 2], ["2026-09-19", 1, 15.92, 0, 1, 0.0, 15.92, 0, 1], ["2026-09-20", 1, 19.39, 0, 1, 0.0, 19.39, 0, 1], ["2026-09-23", 1, 17.44, 0, 1, 0.0, 17.44, 0, 1], ["2026-09-24", 2, 30.16, 0, 2, 0.0, 30.16, 1, 1], ["2026-09-25", 2, 36.02, 0, 2, 0.0, 36.02, 1, 1], ["2026-09-27", 1, 17.08, 0, 1, 0.0, 17.08, 0, 1], ["2026-09-29", 1, 17.94, 0, 1, 0.0, 17.94, 0, 1], ["2026-10-01", 2, 33.89, 0, 2, 0.0, 33.89, 2, 0], ["2026-10-03", 3, 52.43, 0, 3, 0.0, 52.43, 3, 0], ["2026-10-04", 1, 14.97, 0, 1, 0.0, 14.97, 1, 0], ["2026-10-05", 3, 50.96, 0, 3, 0.0, 50.96, 3, 0], ["2026-10-06", 1, 18.71, 0, 1, 0.0, 18.71, 1, 0], ["2026-10-07", 2, 37.29, 0, 2, 0.0, 37.29, 1, 1], ["2026-10-08", 1, 14.95, 0, 1, 0.0, 14.95, 1, 0], ["2026-10-09", 2, 35.51, 0, 2, 0.0, 35.51, 2, 0], ["2026-10-11", 1, 17.75, 0, 1, 0.0, 17.75, 1, 0], ["2026-10-12", 1, 17.89, 0, 1, 0.0, 17.89, 0, 1], ["2026-10-18", 1, 18.96, 0, 1, 0.0, 18.96, 0, 1], ["2026-10-19", 1, 19.16, 0, 1, 0.0, 19.16, 0, 1], ["2026-10-25", 1, 17.44, 0, 1, 0.0, 17.44, 1, 0], ["2026-10-26", 1, 19.38, 0, 1, 0.0, 19.38, 1, 0], ["2026-10-29", 1, 19.3, 0, 1, 0.0, 19.3, 1, 0], ["2026-11-01", 2, 38.92, 0, 2, 0.0, 38.92, 1, 1], ["2026-11-04", 1, 19.51, 0, 1, 0.0, 19.51, 1, 0], ["2026-11-05", 2, 39.01, 0, 2, 0.0, 39.01, 1, 0], ["2026-11-06", 1, 17.2, 0, 1, 0.0, 17.2, 0, 1]],
-        "TVG5890": [["2026-04-30", 6, 144.34, 4, 2, 105.9, 38.44, 1, 5], ["2026-05-01", 263, 6807.28, 253, 10, 6631.4, 175.88, 45, 212], ["2026-05-02", 429, 11210.86, 421, 8, 11056.06, 154.8, 40, 374], ["2026-05-03", 287, 7466.37, 282, 5, 7365.3, 101.07, 61, 220], ["2026-05-04", 195, 5081.09, 188, 7, 4954.34, 126.75, 32, 161], ["2026-05-05", 280, 7108.72, 270, 10, 6908.01, 200.71, 52, 219], ["2026-05-06", 254, 6547.27, 247, 7, 6408.68, 138.59, 53, 192], ["2026-05-07", 254, 6660.23, 247, 7, 6518.31, 141.92, 70, 181], ["2026-05-08", 256, 6490.32, 242, 14, 6221.74, 268.58, 58, 192], ["2026-05-09", 396, 10076.14, 373, 23, 9649.87, 426.27, 86, 299], ["2026-05-10", 440, 11246.5, 423, 17, 10917.63, 328.87, 88, 341], ["2026-05-11", 262, 6579.4, 254, 8, 6422.83, 156.57, 77, 177], ["2026-05-12", 305, 7834.38, 287, 18, 7504.63, 329.75, 100, 202], ["2026-05-13", 271, 6890.2, 263, 8, 6739.17, 151.03, 110, 155], ["2026-05-14", 327, 8276.43, 312, 15, 8000.5, 275.93, 121, 201], ["2026-05-15", 277, 7113.31, 267, 10, 6926.62, 186.69, 109, 162], ["2026-05-16", 291, 7307.8, 271, 20, 6962.09, 345.71, 126, 154], ["2026-05-17", 285, 7168.84, 267, 18, 6829.06, 339.78, 135, 146], ["2026-05-18", 231, 5797.77, 220, 11, 5595.12, 202.65, 75, 148], ["2026-05-19", 214, 5266.95, 207, 7, 5142.34, 124.61, 85, 126], ["2026-05-20", 211, 5454.79, 205, 6, 5334.42, 120.37, 71, 131], ["2026-05-21", 245, 6212.72, 241, 4, 6136.54, 76.18, 73, 165], ["2026-05-22", 283, 7172.07, 277, 6, 7068.64, 103.43, 82, 199], ["2026-05-23", 294, 7620.53, 294, 0, 7620.53, 0.0, 115, 178], ["2026-05-24", 299, 7710.17, 299, 0, 7710.17, 0.0, 123, 168], ["2026-05-25", 342, 8727.54, 342, 0, 8727.54, 0.0, 125, 211], ["2026-05-26", 16, 420.77, 16, 0, 420.77, 0.0, 6, 10], ["2026-05-28", 52, 1325.66, 52, 0, 1325.66, 0.0, 22, 27], ["2026-05-29", 90, 2156.74, 90, 0, 2156.74, 0.0, 31, 58], ["2026-06-01", 78, 1943.57, 78, 0, 1943.57, 0.0, 35, 41], ["2026-06-02", 101, 2491.63, 101, 0, 2491.63, 0.0, 39, 61], ["2026-06-03", 74, 1811.13, 74, 0, 1811.13, 0.0, 29, 44], ["2026-06-04", 79, 1994.76, 79, 0, 1994.76, 0.0, 44, 35], ["2026-06-05", 95, 2418.1, 95, 0, 2418.1, 0.0, 47, 48], ["2026-06-06", 78, 1895.61, 78, 0, 1895.61, 0.0, 32, 44], ["2026-06-07", 70, 1794.19, 70, 0, 1794.19, 0.0, 33, 36], ["2026-06-08", 92, 2128.19, 92, 0, 2128.19, 0.0, 32, 57], ["2026-06-09", 71, 1617.69, 71, 0, 1617.69, 0.0, 25, 42], ["2026-06-10", 40, 904.58, 40, 0, 904.58, 0.0, 16, 22], ["2026-06-11", 44, 1151.21, 44, 0, 1151.21, 0.0, 26, 18], ["2026-06-12", 54, 1342.8, 54, 0, 1342.8, 0.0, 24, 29], ["2026-06-13", 103, 2429.06, 103, 0, 2429.06, 0.0, 43, 56], ["2026-06-14", 156, 3646.6, 156, 0, 3646.6, 0.0, 44, 101], ["2026-06-15", 48, 1148.13, 48, 0, 1148.13, 0.0, 20, 27], ["2026-06-16", 28, 630.68, 28, 0, 630.68, 0.0, 9, 18], ["2026-06-17", 55, 1375.58, 55, 0, 1375.58, 0.0, 18, 37], ["2026-06-22", 35, 908.01, 35, 0, 908.01, 0.0, 16, 17], ["2026-06-23", 45, 1159.3, 45, 0, 1159.3, 0.0, 14, 30], ["2026-06-24", 32, 805.45, 32, 0, 805.45, 0.0, 10, 18], ["2026-06-25", 31, 798.09, 31, 0, 798.09, 0.0, 13, 17], ["2026-09-17", 48, 1291.99, 48, 0, 1291.99, 0.0, 6, 30], ["2026-09-18", 46, 1160.67, 42, 4, 1107.23, 53.44, 13, 21], ["2026-09-19", 29, 688.32, 26, 3, 638.31, 50.01, 7, 17], ["2026-09-20", 26, 678.27, 25, 1, 658.88, 19.39, 9, 17], ["2026-09-21", 22, 541.85, 21, 1, 522.46, 19.39, 3, 14], ["2026-09-22", 15, 347.32, 15, 0, 347.32, 0.0, 5, 9], ["2026-09-23", 37, 898.0, 34, 3, 844.5, 53.5, 8, 23], ["2026-09-24", 16, 396.99, 13, 3, 346.42, 50.57, 3, 13], ["2026-09-25", 15, 364.27, 15, 0, 364.27, 0.0, 5, 10], ["2026-09-26", 19, 507.85, 19, 0, 507.85, 0.0, 2, 16], ["2026-09-27", 30, 760.39, 29, 1, 745.21, 15.18, 11, 15], ["2026-09-28", 6, 154.62, 6, 0, 154.62, 0.0, 3, 3], ["2026-09-29", 19, 488.53, 17, 2, 450.73, 37.8, 6, 12], ["2026-09-30", 8, 178.87, 8, 0, 178.87, 0.0, 3, 5], ["2026-10-01", 20, 500.17, 15, 5, 409.75, 90.42, 8, 10], ["2026-10-02", 11, 258.12, 9, 2, 224.41, 33.71, 5, 3], ["2026-10-03", 27, 601.3, 19, 8, 466.48, 134.82, 9, 17], ["2026-10-04", 27, 666.13, 22, 5, 580.04, 86.09, 11, 15], ["2026-10-05", 13, 323.06, 10, 3, 274.41, 48.65, 6, 7], ["2026-10-06", 15, 356.78, 10, 5, 263.3, 93.48, 9, 6], ["2026-10-07", 33, 851.85, 31, 2, 814.44, 37.41, 9, 24], ["2026-10-08", 19, 498.36, 19, 0, 498.36, 0.0, 5, 13], ["2026-10-09", 10, 261.41, 10, 0, 261.41, 0.0, 6, 4], ["2026-10-10", 29, 725.74, 27, 2, 690.02, 35.72, 5, 24], ["2026-10-11", 67, 1602.51, 64, 3, 1553.0, 49.51, 13, 50], ["2026-10-12", 15, 350.32, 15, 0, 350.32, 0.0, 4, 10], ["2026-10-13", 4, 82.96, 4, 0, 82.96, 0.0, 0, 4], ["2026-10-14", 13, 325.67, 13, 0, 325.67, 0.0, 3, 10], ["2026-10-15", 7, 174.66, 7, 0, 174.66, 0.0, 0, 7], ["2026-10-16", 12, 254.65, 11, 1, 235.81, 18.84, 5, 7], ["2026-10-17", 21, 544.71, 20, 1, 525.75, 18.96, 6, 14], ["2026-10-18", 24, 588.9, 24, 0, 588.9, 0.0, 4, 20], ["2026-10-19", 7, 182.94, 7, 0, 182.94, 0.0, 1, 6], ["2026-10-20", 8, 223.34, 8, 0, 223.34, 0.0, 3, 5], ["2026-10-21", 10, 261.91, 9, 1, 242.66, 19.25, 2, 8], ["2026-10-22", 16, 406.51, 15, 1, 387.24, 19.27, 5, 10], ["2026-10-23", 10, 247.27, 8, 2, 212.55, 34.72, 5, 5], ["2026-10-24", 23, 552.95, 21, 2, 519.3, 33.65, 3, 20], ["2026-10-25", 24, 589.66, 20, 4, 526.31, 63.35, 5, 17], ["2026-10-26", 13, 314.28, 13, 0, 314.28, 0.0, 4, 9], ["2026-10-27", 16, 403.25, 14, 2, 368.44, 34.81, 4, 12], ["2026-10-28", 15, 379.52, 13, 2, 340.86, 38.66, 4, 11], ["2026-10-29", 6, 158.24, 5, 1, 138.94, 19.3, 3, 3], ["2026-10-30", 11, 243.61, 9, 2, 212.45, 31.16, 5, 6], ["2026-10-31", 11, 255.56, 9, 2, 221.75, 33.81, 2, 9], ["2026-11-01", 22, 546.95, 21, 1, 527.49, 19.46, 6, 16], ["2026-11-02", 12, 307.16, 10, 2, 272.13, 35.03, 4, 8], ["2026-11-03", 16, 356.35, 15, 1, 336.84, 19.51, 5, 11], ["2026-11-04", 15, 370.6, 14, 1, 353.62, 16.98, 3, 9], ["2026-11-05", 19, 412.78, 19, 0, 412.78, 0.0, 3, 9], ["2026-11-06", 9, 232.44, 8, 1, 216.85, 15.59, 1, 7], ["2026-11-07", 17, 468.88, 17, 0, 468.88, 0.0, 6, 11], ["2026-11-08", 12, 312.0, 12, 0, 312.0, 0.0, 4, 8], ["2026-11-09", 11, 290.89, 11, 0, 290.89, 0.0, 2, 9], ["2026-11-10", 13, 313.04, 13, 0, 313.04, 0.0, 5, 8]],
-        "TVG5900": [["2026-04-30", 5, 127.45, 5, 0, 127.45, 0.0, 0, 5], ["2026-05-01", 148, 3409.47, 144, 4, 3336.03, 73.44, 44, 99], ["2026-05-02", 256, 6620.89, 251, 5, 6523.5, 97.39, 85, 161], ["2026-05-03", 219, 5677.71, 213, 6, 5564.3, 113.41, 80, 132], ["2026-05-04", 203, 5218.78, 195, 8, 5067.14, 151.64, 80, 119], ["2026-05-05", 181, 4789.02, 179, 2, 4752.06, 36.96, 68, 107], ["2026-05-06", 141, 3658.03, 134, 7, 3524.75, 133.28, 70, 66], ["2026-05-07", 227, 5923.91, 224, 3, 5866.51, 57.4, 102, 117], ["2026-05-08", 255, 6578.38, 248, 7, 6439.4, 138.98, 108, 139], ["2026-05-09", 238, 6098.95, 235, 3, 6041.98, 56.97, 137, 95], ["2026-05-10", 236, 6013.82, 227, 9, 5846.1, 167.72, 128, 103], ["2026-05-11", 148, 3873.09, 146, 2, 3832.39, 40.7, 55, 89], ["2026-05-12", 73, 1832.17, 67, 6, 1729.23, 102.94, 24, 48], ["2026-05-13", 129, 3402.77, 128, 1, 3382.5, 20.27, 62, 63], ["2026-05-14", 58, 1427.47, 51, 7, 1288.43, 139.04, 12, 41], ["2026-05-15", 53, 1348.97, 50, 3, 1293.38, 55.59, 20, 33], ["2026-05-16", 116, 2875.39, 115, 1, 2855.31, 20.08, 43, 62], ["2026-05-17", 163, 4203.84, 157, 6, 4101.2, 102.64, 78, 77], ["2026-05-18", 113, 2927.43, 110, 3, 2871.14, 56.29, 58, 51], ["2026-05-19", 168, 4318.81, 161, 7, 4186.2, 132.61, 96, 62], ["2026-05-20", 124, 3231.45, 123, 1, 3211.41, 20.04, 78, 44], ["2026-05-21", 42, 1064.51, 41, 1, 1048.48, 16.03, 15, 27], ["2026-05-22", 130, 3358.46, 127, 3, 3306.38, 52.08, 53, 74], ["2026-05-23", 62, 1581.7, 62, 0, 1581.7, 0.0, 25, 35], ["2026-05-24", 141, 3692.84, 136, 5, 3601.39, 91.45, 51, 85], ["2026-05-25", 163, 4275.26, 162, 1, 4259.36, 15.9, 71, 87], ["2026-05-26", 60, 1551.07, 59, 1, 1531.12, 19.95, 23, 36], ["2026-05-27", 51, 1280.44, 51, 0, 1280.44, 0.0, 29, 20], ["2026-05-28", 89, 2284.1, 89, 0, 2284.1, 0.0, 34, 52], ["2026-05-29", 86, 2246.98, 85, 1, 2227.2, 19.78, 26, 57], ["2026-05-30", 90, 2355.14, 89, 1, 2338.18, 16.96, 50, 37], ["2026-05-31", 44, 1156.12, 44, 0, 1156.12, 0.0, 20, 23], ["2026-06-01", 72, 1870.55, 72, 0, 1870.55, 0.0, 34, 35], ["2026-06-02", 43, 1033.79, 41, 2, 998.08, 35.71, 20, 23], ["2026-06-03", 72, 1778.81, 70, 2, 1742.67, 36.14, 29, 32], ["2026-06-04", 39, 938.25, 38, 1, 918.44, 19.81, 21, 16], ["2026-06-05", 36, 871.62, 35, 1, 853.73, 17.89, 19, 16], ["2026-06-06", 43, 1121.3, 43, 0, 1121.3, 0.0, 22, 20], ["2026-06-07", 72, 1893.93, 70, 2, 1858.24, 35.69, 31, 31], ["2026-06-08", 72, 1904.98, 72, 0, 1904.98, 0.0, 33, 34], ["2026-06-09", 35, 905.76, 35, 0, 905.76, 0.0, 18, 14], ["2026-06-10", 20, 512.89, 19, 1, 493.31, 19.58, 7, 12], ["2026-06-11", 27, 670.61, 24, 3, 617.43, 53.18, 13, 13], ["2026-06-12", 42, 1084.11, 40, 2, 1064.66, 19.45, 9, 33], ["2026-06-13", 63, 1441.62, 63, 0, 1441.62, 0.0, 25, 32], ["2026-06-14", 101, 2597.02, 97, 4, 2527.17, 69.85, 28, 69], ["2026-06-15", 28, 745.47, 27, 1, 729.89, 15.58, 8, 20], ["2026-06-16", 25, 658.41, 24, 1, 638.94, 19.47, 8, 17], ["2026-06-17", 17, 413.96, 15, 2, 375.2, 38.76, 7, 10], ["2026-06-18", 20, 501.61, 18, 2, 467.0, 34.61, 8, 12], ["2026-06-19", 11, 251.25, 10, 1, 232.2, 19.05, 2, 9], ["2026-06-20", 33, 811.05, 30, 3, 758.72, 52.33, 13, 19], ["2026-06-21", 29, 754.73, 28, 1, 739.55, 15.18, 8, 21], ["2026-06-22", 13, 336.88, 13, 0, 336.88, 0.0, 6, 6], ["2026-06-23", 16, 430.44, 15, 1, 411.56, 18.88, 4, 10], ["2026-06-24", 14, 346.76, 14, 0, 346.76, 0.0, 6, 8], ["2026-06-25", 10, 231.17, 10, 0, 231.17, 0.0, 4, 6], ["2026-06-26", 8, 205.11, 7, 1, 190.0, 15.11, 2, 6], ["2026-06-27", 14, 350.11, 13, 1, 331.24, 18.87, 3, 11], ["2026-06-28", 7, 189.08, 7, 0, 189.08, 0.0, 0, 6], ["2026-06-29", 11, 268.28, 11, 0, 268.28, 0.0, 2, 9], ["2026-06-30", 18, 483.29, 18, 0, 483.29, 0.0, 6, 12], ["2026-07-01", 23, 540.26, 22, 1, 524.31, 15.95, 2, 18], ["2026-07-02", 17, 406.43, 17, 0, 406.43, 0.0, 8, 8], ["2026-07-03", 24, 543.2, 24, 0, 543.2, 0.0, 12, 12], ["2026-07-04", 31, 695.52, 29, 2, 663.44, 32.08, 8, 23], ["2026-07-05", 34, 813.2, 34, 0, 813.2, 0.0, 12, 21], ["2026-07-06", 14, 360.98, 14, 0, 360.98, 0.0, 4, 10], ["2026-07-07", 16, 422.08, 16, 0, 422.08, 0.0, 5, 11], ["2026-07-08", 12, 293.17, 12, 0, 293.17, 0.0, 3, 9], ["2026-07-09", 17, 458.82, 17, 0, 458.82, 0.0, 2, 15], ["2026-07-10", 9, 231.06, 9, 0, 231.06, 0.0, 0, 9], ["2026-07-11", 16, 399.03, 16, 0, 399.03, 0.0, 3, 13], ["2026-07-12", 28, 748.92, 28, 0, 748.92, 0.0, 8, 19], ["2026-07-13", 21, 504.6, 20, 1, 504.6, 0.0, 6, 15], ["2026-07-14", 17, 412.03, 17, 0, 412.03, 0.0, 4, 13], ["2026-07-15", 10, 270.0, 10, 0, 270.0, 0.0, 3, 6], ["2026-07-16", 19, 524.23, 19, 0, 524.23, 0.0, 3, 15], ["2026-07-17", 31, 685.57, 31, 0, 685.57, 0.0, 3, 18], ["2026-07-18", 24, 607.65, 24, 0, 607.65, 0.0, 5, 16], ["2026-07-19", 26, 696.32, 25, 1, 677.0, 19.32, 5, 20], ["2026-07-20", 28, 745.26, 28, 0, 745.26, 0.0, 4, 21], ["2026-07-21", 18, 464.05, 17, 1, 445.46, 18.59, 0, 18], ["2026-07-22", 27, 646.34, 26, 1, 630.96, 15.38, 2, 24], ["2026-07-23", 25, 652.19, 25, 0, 652.19, 0.0, 5, 15], ["2026-07-24", 32, 852.71, 31, 1, 833.55, 19.16, 6, 23], ["2026-07-25", 34, 817.57, 33, 1, 798.4, 19.17, 6, 23], ["2026-07-26", 31, 822.87, 30, 1, 803.76, 19.11, 3, 28], ["2026-07-27", 23, 619.51, 23, 0, 619.51, 0.0, 6, 15], ["2026-07-28", 24, 642.4, 24, 0, 642.4, 0.0, 5, 18], ["2026-07-29", 21, 576.39, 20, 1, 557.31, 19.08, 5, 15], ["2026-07-30", 11, 286.66, 11, 0, 286.66, 0.0, 3, 8], ["2026-07-31", 18, 439.75, 18, 0, 439.75, 0.0, 4, 13], ["2026-08-01", 13, 333.82, 12, 1, 318.36, 15.46, 2, 10], ["2026-08-02", 19, 521.37, 19, 0, 521.37, 0.0, 1, 16], ["2026-08-03", 7, 191.54, 7, 0, 191.54, 0.0, 0, 7], ["2026-08-04", 7, 160.89, 7, 0, 160.89, 0.0, 2, 5], ["2026-08-05", 9, 248.26, 9, 0, 248.26, 0.0, 2, 7], ["2026-08-06", 12, 287.26, 10, 2, 256.37, 30.89, 6, 6], ["2026-08-07", 17, 428.7, 17, 0, 428.7, 0.0, 5, 11], ["2026-08-08", 13, 338.76, 13, 0, 338.76, 0.0, 2, 11], ["2026-08-09", 20, 485.4, 18, 2, 448.51, 36.89, 3, 17], ["2026-08-10", 5, 92.0, 5, 0, 92.0, 0.0, 1, 3], ["2026-08-11", 5, 129.55, 5, 0, 129.55, 0.0, 2, 3], ["2026-08-12", 11, 287.93, 11, 0, 287.93, 0.0, 2, 9], ["2026-08-13", 10, 256.6, 10, 0, 256.6, 0.0, 3, 7], ["2026-08-14", 7, 183.09, 7, 0, 183.09, 0.0, 2, 5], ["2026-08-15", 3, 78.4, 3, 0, 78.4, 0.0, 2, 1], ["2026-08-16", 4, 103.9, 4, 0, 103.9, 0.0, 0, 4], ["2026-08-17", 7, 178.33, 6, 1, 161.56, 16.77, 2, 5], ["2026-08-18", 7, 166.5, 6, 1, 149.47, 17.03, 1, 6], ["2026-08-19", 8, 216.21, 8, 0, 216.21, 0.0, 2, 5], ["2026-08-20", 5, 138.96, 5, 0, 138.96, 0.0, 1, 4], ["2026-08-21", 6, 162.48, 6, 0, 162.48, 0.0, 3, 3], ["2026-08-22", 7, 161.9, 7, 0, 161.9, 0.0, 2, 5], ["2026-08-23", 14, 366.68, 14, 0, 366.68, 0.0, 2, 12], ["2026-08-24", 4, 94.24, 4, 0, 94.24, 0.0, 3, 1], ["2026-08-25", 8, 179.04, 8, 0, 179.04, 0.0, 4, 4], ["2026-08-26", 4, 105.71, 4, 0, 105.71, 0.0, 0, 4], ["2026-08-27", 3, 56.0, 3, 0, 56.0, 0.0, 2, 1], ["2026-08-28", 10, 257.6, 10, 0, 257.6, 0.0, 5, 4], ["2026-08-29", 7, 193.65, 7, 0, 193.65, 0.0, 2, 5], ["2026-08-30", 6, 154.0, 6, 0, 154.0, 0.0, 4, 2], ["2026-08-31", 6, 163.8, 6, 0, 163.8, 0.0, 4, 2], ["2026-09-01", 5, 104.13, 5, 0, 104.13, 0.0, 1, 4], ["2026-09-02", 9, 214.81, 9, 0, 214.81, 0.0, 3, 6], ["2026-09-03", 5, 135.0, 5, 0, 135.0, 0.0, 1, 4], ["2026-09-04", 3, 75.81, 3, 0, 75.81, 0.0, 1, 2], ["2026-09-05", 9, 245.31, 9, 0, 245.31, 0.0, 2, 6], ["2026-09-06", 9, 229.21, 9, 0, 229.21, 0.0, 3, 6], ["2026-09-07", 17, 433.29, 16, 1, 417.41, 15.88, 5, 9], ["2026-09-08", 8, 206.67, 8, 0, 206.67, 0.0, 5, 3], ["2026-09-09", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-09-10", 4, 105.33, 4, 0, 105.33, 0.0, 0, 4], ["2026-09-11", 7, 190.4, 7, 0, 190.4, 0.0, 4, 2], ["2026-09-12", 7, 194.15, 7, 0, 194.15, 0.0, 1, 6], ["2026-09-13", 7, 181.64, 7, 0, 181.64, 0.0, 2, 5], ["2026-09-14", 5, 128.8, 5, 0, 128.8, 0.0, 2, 3], ["2026-09-15", 5, 131.71, 5, 0, 131.71, 0.0, 3, 1], ["2026-09-16", 2, 49.24, 2, 0, 49.24, 0.0, 0, 2], ["2026-09-17", 6, 168.0, 6, 0, 168.0, 0.0, 0, 6], ["2026-09-18", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-09-19", 3, 72.8, 3, 0, 72.8, 0.0, 3, 0], ["2026-09-20", 7, 171.99, 6, 1, 152.6, 19.39, 7, 0], ["2026-09-21", 9, 238.0, 9, 0, 238.0, 0.0, 3, 5], ["2026-09-22", 6, 159.6, 6, 0, 159.6, 0.0, 2, 4], ["2026-09-23", 17, 459.78, 17, 0, 459.78, 0.0, 2, 14], ["2026-09-24", 2, 52.41, 2, 0, 52.41, 0.0, 1, 1], ["2026-09-25", 6, 156.22, 6, 0, 156.22, 0.0, 1, 5], ["2026-09-26", 15, 355.91, 15, 0, 355.91, 0.0, 3, 12], ["2026-09-27", 12, 255.04, 12, 0, 255.04, 0.0, 3, 9], ["2026-09-28", 6, 152.44, 6, 0, 152.44, 0.0, 0, 6], ["2026-09-29", 9, 224.75, 8, 1, 209.6, 15.15, 2, 7], ["2026-09-30", 4, 112.0, 4, 0, 112.0, 0.0, 1, 3], ["2026-10-01", 5, 117.2, 3, 2, 81.88, 35.32, 1, 3], ["2026-10-02", 5, 134.4, 5, 0, 134.4, 0.0, 3, 2], ["2026-10-03", 3, 74.2, 3, 0, 74.2, 0.0, 0, 3], ["2026-10-04", 3, 81.96, 3, 0, 81.96, 0.0, 0, 3], ["2026-10-05", 4, 99.4, 4, 0, 99.4, 0.0, 2, 2], ["2026-10-06", 3, 84.0, 3, 0, 84.0, 0.0, 2, 1], ["2026-10-07", 8, 210.1, 8, 0, 210.1, 0.0, 2, 6], ["2026-10-08", 5, 134.4, 5, 0, 134.4, 0.0, 1, 4], ["2026-10-09", 4, 80.07, 4, 0, 80.07, 0.0, 0, 4], ["2026-10-10", 9, 228.2, 9, 0, 228.2, 0.0, 3, 6], ["2026-10-11", 16, 364.74, 12, 4, 301.22, 63.52, 2, 14], ["2026-10-12", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-10-14", 5, 132.64, 5, 0, 132.64, 0.0, 1, 3], ["2026-10-15", 4, 84.7, 4, 0, 84.7, 0.0, 1, 3], ["2026-10-16", 8, 203.43, 8, 0, 203.43, 0.0, 1, 6], ["2026-10-17", 10, 268.4, 10, 0, 268.4, 0.0, 3, 7], ["2026-10-18", 14, 361.82, 13, 1, 342.86, 18.96, 3, 10], ["2026-10-19", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-10-20", 3, 78.4, 3, 0, 78.4, 0.0, 1, 2], ["2026-10-21", 6, 159.68, 6, 0, 159.68, 0.0, 1, 5], ["2026-10-22", 7, 189.98, 7, 0, 189.98, 0.0, 0, 6], ["2026-10-23", 1, 19.29, 0, 1, 0.0, 19.29, 1, 0], ["2026-10-24", 3, 75.81, 3, 0, 75.81, 0.0, 1, 2], ["2026-10-25", 1, 22.4, 1, 0, 22.4, 0.0, 1, 0], ["2026-10-26", 3, 70.38, 2, 1, 51.0, 19.38, 2, 1], ["2026-10-27", 4, 111.27, 4, 0, 111.27, 0.0, 1, 3], ["2026-10-28", 3, 53.62, 3, 0, 53.62, 0.0, 1, 2], ["2026-10-29", 6, 150.28, 5, 1, 130.98, 19.3, 2, 4], ["2026-10-30", 5, 132.65, 5, 0, 132.65, 0.0, 2, 3], ["2026-10-31", 2, 44.8, 2, 0, 44.8, 0.0, 2, 0], ["2026-11-01", 4, 78.4, 4, 0, 78.4, 0.0, 1, 3], ["2026-11-02", 8, 217.2, 8, 0, 217.2, 0.0, 1, 6], ["2026-11-03", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-11-04", 6, 160.35, 6, 0, 160.35, 0.0, 1, 5], ["2026-11-05", 5, 138.51, 5, 0, 138.51, 0.0, 2, 3], ["2026-11-06", 2, 53.81, 2, 0, 53.81, 0.0, 0, 2], ["2026-11-07", 9, 239.29, 9, 0, 239.29, 0.0, 3, 6], ["2026-11-08", 3, 83.22, 3, 0, 83.22, 0.0, 1, 2], ["2026-11-09", 5, 126.72, 5, 0, 126.72, 0.0, 0, 5], ["2026-11-10", 2, 56.0, 2, 0, 56.0, 0.0, 2, 0]],
-        "TVG5920": [["2026-04-30", 3, 76.29, 2, 1, 56.0, 20.29, 1, 2], ["2026-05-01", 189, 4902.27, 177, 12, 4669.26, 233.01, 22, 164], ["2026-05-02", 242, 6277.0, 229, 13, 6036.67, 240.33, 28, 208], ["2026-05-03", 165, 4181.87, 156, 9, 4003.12, 178.75, 31, 132], ["2026-05-04", 112, 2858.78, 102, 10, 2671.74, 187.04, 28, 82], ["2026-05-05", 141, 3579.41, 134, 7, 3440.22, 139.19, 19, 116], ["2026-05-06", 121, 3080.38, 115, 6, 2970.94, 109.44, 34, 87], ["2026-05-07", 137, 3491.49, 123, 14, 3223.28, 268.21, 32, 103], ["2026-05-08", 127, 3249.17, 117, 10, 3061.24, 187.93, 32, 94], ["2026-05-09", 125, 3098.87, 114, 11, 2902.47, 196.4, 39, 85], ["2026-05-10", 175, 4351.06, 160, 15, 4066.84, 284.22, 67, 107], ["2026-05-11", 129, 3352.68, 123, 6, 3238.75, 113.93, 37, 90], ["2026-05-12", 113, 2777.68, 99, 14, 2530.52, 247.16, 37, 74], ["2026-05-13", 134, 3388.53, 126, 8, 3235.2, 153.33, 44, 89], ["2026-05-14", 111, 2768.91, 99, 12, 2542.07, 226.84, 35, 75], ["2026-05-15", 132, 3275.2, 119, 13, 3029.85, 245.35, 36, 95], ["2026-05-16", 147, 3615.8, 133, 14, 3362.04, 253.76, 55, 92], ["2026-05-17", 133, 3314.48, 122, 11, 3102.88, 211.6, 43, 88], ["2026-05-18", 120, 3040.76, 111, 9, 2867.07, 173.69, 32, 87], ["2026-05-19", 116, 2911.03, 108, 8, 2758.92, 152.11, 33, 78], ["2026-05-20", 120, 3057.71, 113, 7, 2929.31, 128.4, 53, 66], ["2026-05-21", 131, 3208.78, 118, 13, 2983.57, 225.21, 45, 82], ["2026-05-22", 148, 3690.5, 133, 15, 3405.08, 285.42, 56, 89], ["2026-05-23", 161, 3986.08, 143, 18, 3667.68, 318.4, 68, 90], ["2026-05-24", 138, 3365.87, 127, 11, 3166.69, 199.18, 62, 76], ["2026-05-25", 208, 5290.25, 203, 5, 5198.76, 91.49, 103, 104], ["2026-05-26", 112, 2764.49, 103, 9, 2602.4, 162.09, 45, 63], ["2026-05-27", 73, 1822.28, 71, 2, 1786.46, 35.82, 29, 42], ["2026-05-28", 92, 2242.87, 87, 5, 2144.61, 98.26, 31, 60], ["2026-05-29", 76, 1828.18, 70, 6, 1727.25, 100.93, 24, 52], ["2026-05-30", 86, 2163.02, 81, 5, 2072.6, 90.42, 33, 52], ["2026-05-31", 80, 2023.14, 72, 8, 1881.88, 141.26, 31, 47], ["2026-06-01", 70, 1811.26, 68, 2, 1778.34, 32.92, 18, 51], ["2026-06-02", 68, 1680.57, 67, 1, 1660.7, 19.87, 20, 47], ["2026-06-03", 85, 2112.67, 79, 6, 2014.26, 98.41, 31, 53], ["2026-06-04", 87, 2243.6, 84, 3, 2192.23, 51.37, 28, 58], ["2026-06-05", 77, 1905.86, 74, 3, 1851.69, 54.17, 34, 42], ["2026-06-06", 57, 1456.02, 54, 3, 1402.38, 53.64, 26, 29], ["2026-06-07", 73, 1838.23, 70, 3, 1785.35, 52.88, 32, 41], ["2026-06-08", 108, 2773.89, 102, 6, 2663.52, 110.37, 48, 57], ["2026-06-09", 53, 1316.72, 46, 7, 1199.84, 116.88, 21, 31], ["2026-06-10", 44, 1109.76, 44, 0, 1109.76, 0.0, 19, 23], ["2026-06-11", 52, 1349.24, 52, 0, 1349.24, 0.0, 31, 21], ["2026-06-12", 60, 1543.36, 60, 0, 1543.36, 0.0, 36, 23], ["2026-06-13", 106, 2674.58, 101, 5, 2581.4, 93.18, 45, 58], ["2026-06-14", 110, 2720.73, 106, 4, 2652.17, 68.56, 41, 69], ["2026-06-15", 56, 1373.01, 50, 6, 1264.35, 108.66, 29, 26], ["2026-06-16", 40, 982.82, 32, 8, 842.4, 140.42, 20, 20], ["2026-06-17", 43, 991.98, 39, 4, 914.49, 77.49, 19, 24], ["2026-06-18", 66, 1662.4, 57, 9, 1497.43, 164.97, 41, 23], ["2026-06-19", 51, 1350.05, 49, 2, 1311.95, 38.1, 18, 33], ["2026-06-20", 78, 1986.41, 74, 4, 1918.88, 67.53, 47, 30], ["2026-06-21", 89, 2346.33, 88, 1, 2327.36, 18.97, 51, 37], ["2026-06-22", 41, 1047.43, 40, 1, 1032.25, 15.18, 19, 21], ["2026-06-23", 41, 975.48, 36, 5, 888.21, 87.27, 24, 17], ["2026-06-24", 31, 788.79, 30, 1, 769.91, 18.88, 13, 17], ["2026-06-25", 31, 773.17, 28, 3, 716.89, 56.28, 11, 19], ["2026-06-26", 17, 408.28, 15, 2, 374.4, 33.88, 7, 10], ["2026-06-27", 22, 575.5, 21, 1, 556.61, 18.89, 6, 16], ["2026-06-28", 32, 832.32, 29, 3, 778.27, 54.05, 9, 22], ["2026-06-29", 26, 660.32, 24, 2, 622.58, 37.74, 4, 22], ["2026-06-30", 30, 725.79, 29, 1, 710.7, 15.09, 12, 16], ["2026-07-01", 38, 879.55, 34, 4, 816.2, 63.35, 6, 32], ["2026-07-02", 53, 1242.21, 50, 3, 1194.24, 47.97, 17, 36], ["2026-07-03", 63, 1422.73, 54, 9, 1281.51, 141.22, 20, 39], ["2026-07-04", 43, 1005.05, 40, 3, 956.93, 48.12, 13, 30], ["2026-07-05", 82, 1904.09, 78, 4, 1840.95, 63.14, 34, 46], ["2026-07-06", 31, 805.53, 29, 2, 771.65, 33.88, 9, 20], ["2026-07-07", 28, 727.75, 26, 2, 690.17, 37.58, 12, 15], ["2026-07-08", 37, 982.35, 35, 2, 944.73, 37.62, 8, 29], ["2026-07-09", 27, 675.13, 26, 1, 656.22, 18.91, 5, 22], ["2026-07-10", 34, 902.71, 33, 1, 883.8, 18.91, 10, 24], ["2026-07-11", 33, 853.78, 31, 2, 819.72, 34.06, 8, 24], ["2026-07-12", 34, 891.43, 34, 0, 891.43, 0.0, 12, 22], ["2026-07-13", 23, 606.37, 22, 1, 587.46, 18.91, 3, 20], ["2026-07-14", 26, 612.33, 25, 1, 597.1, 15.23, 7, 19], ["2026-07-15", 23, 578.81, 22, 1, 559.72, 19.09, 6, 15], ["2026-07-16", 14, 355.06, 13, 1, 335.85, 19.21, 3, 11], ["2026-07-17", 31, 673.61, 30, 1, 654.32, 19.29, 6, 20], ["2026-07-18", 36, 952.78, 34, 2, 918.32, 34.46, 9, 27], ["2026-07-19", 18, 470.14, 16, 2, 431.5, 38.64, 6, 12], ["2026-07-20", 23, 601.43, 21, 2, 567.32, 34.11, 7, 15], ["2026-07-21", 23, 591.08, 23, 0, 591.08, 0.0, 5, 17], ["2026-07-22", 26, 695.93, 25, 1, 680.55, 15.38, 4, 21], ["2026-07-23", 34, 811.38, 34, 0, 811.38, 0.0, 7, 25], ["2026-07-24", 25, 643.23, 23, 2, 604.91, 38.32, 3, 21], ["2026-07-25", 31, 789.75, 28, 3, 733.21, 56.54, 5, 24], ["2026-07-26", 26, 677.7, 24, 2, 639.47, 38.23, 6, 20], ["2026-07-27", 15, 329.84, 14, 1, 312.19, 17.65, 5, 9], ["2026-07-28", 40, 1007.11, 34, 6, 900.21, 106.9, 10, 30], ["2026-07-29", 17, 377.24, 14, 3, 327.4, 49.84, 3, 14], ["2026-07-30", 13, 322.29, 11, 2, 285.56, 36.73, 2, 11], ["2026-07-31", 28, 705.59, 26, 2, 669.58, 36.01, 5, 23], ["2026-08-01", 25, 596.97, 22, 3, 539.88, 57.09, 6, 16], ["2026-08-02", 28, 696.1, 24, 4, 631.72, 64.38, 8, 20], ["2026-08-03", 19, 494.94, 18, 1, 476.72, 18.22, 5, 13], ["2026-08-04", 17, 439.8, 15, 2, 404.16, 35.64, 4, 12], ["2026-08-05", 15, 345.05, 12, 3, 294.98, 50.07, 6, 9], ["2026-08-06", 19, 481.64, 18, 1, 466.12, 15.52, 7, 11], ["2026-08-07", 14, 370.05, 13, 1, 350.66, 19.39, 4, 10], ["2026-08-08", 33, 846.16, 29, 4, 768.63, 77.53, 8, 25], ["2026-08-09", 38, 997.72, 34, 4, 919.66, 78.06, 7, 31], ["2026-08-10", 19, 486.44, 17, 2, 447.36, 39.08, 9, 10], ["2026-08-11", 16, 376.26, 14, 2, 343.0, 33.26, 7, 8], ["2026-08-12", 20, 521.38, 19, 1, 501.81, 19.57, 8, 12], ["2026-08-13", 20, 484.88, 18, 2, 451.48, 33.4, 9, 11], ["2026-08-14", 22, 578.08, 22, 0, 578.08, 0.0, 4, 15], ["2026-08-15", 13, 358.59, 13, 0, 358.59, 0.0, 1, 12], ["2026-08-16", 18, 465.24, 18, 0, 465.24, 0.0, 5, 13], ["2026-08-17", 20, 498.42, 19, 1, 478.69, 19.73, 5, 15], ["2026-08-18", 22, 581.0, 22, 0, 581.0, 0.0, 6, 16], ["2026-08-19", 25, 639.81, 24, 1, 622.59, 17.22, 8, 17], ["2026-08-20", 18, 458.2, 18, 0, 458.2, 0.0, 1, 17], ["2026-08-21", 21, 544.52, 20, 1, 524.47, 20.05, 4, 17], ["2026-08-22", 36, 963.96, 35, 1, 943.83, 20.13, 10, 26], ["2026-08-23", 32, 828.49, 32, 0, 828.49, 0.0, 5, 26], ["2026-08-24", 13, 308.92, 12, 1, 289.09, 19.83, 4, 9], ["2026-08-25", 18, 445.07, 17, 1, 426.04, 19.03, 10, 8], ["2026-08-26", 23, 530.7, 22, 1, 511.58, 19.12, 5, 18], ["2026-08-27", 8, 213.4, 8, 0, 213.4, 0.0, 2, 6], ["2026-08-28", 8, 199.72, 8, 0, 199.72, 0.0, 3, 5], ["2026-08-29", 12, 317.9, 12, 0, 317.9, 0.0, 3, 9], ["2026-08-30", 13, 327.46, 12, 1, 307.82, 19.64, 6, 7], ["2026-08-31", 7, 168.27, 6, 1, 152.52, 15.75, 1, 6], ["2026-09-01", 11, 283.93, 9, 2, 248.5, 35.43, 4, 7], ["2026-09-02", 22, 583.86, 22, 0, 583.86, 0.0, 6, 15], ["2026-09-03", 21, 544.75, 21, 0, 544.75, 0.0, 5, 16], ["2026-09-04", 18, 441.41, 18, 0, 441.41, 0.0, 5, 12], ["2026-09-05", 11, 292.38, 11, 0, 292.38, 0.0, 5, 6], ["2026-09-06", 20, 523.55, 20, 0, 523.55, 0.0, 7, 13], ["2026-09-07", 21, 560.46, 21, 0, 560.46, 0.0, 5, 14], ["2026-09-08", 11, 305.57, 11, 0, 305.57, 0.0, 3, 5], ["2026-09-09", 8, 199.8, 8, 0, 199.8, 0.0, 3, 5], ["2026-09-10", 13, 339.65, 13, 0, 339.65, 0.0, 0, 13], ["2026-09-11", 6, 159.8, 6, 0, 159.8, 0.0, 1, 5], ["2026-09-12", 6, 161.16, 6, 0, 161.16, 0.0, 1, 5], ["2026-09-13", 11, 292.07, 11, 0, 292.07, 0.0, 2, 9], ["2026-09-14", 6, 134.23, 6, 0, 134.23, 0.0, 1, 5], ["2026-09-15", 9, 241.96, 9, 0, 241.96, 0.0, 1, 8], ["2026-09-16", 15, 398.68, 15, 0, 398.68, 0.0, 5, 9], ["2026-09-17", 12, 324.49, 12, 0, 324.49, 0.0, 1, 9], ["2026-09-18", 12, 321.8, 12, 0, 321.8, 0.0, 2, 9], ["2026-09-19", 14, 367.24, 14, 0, 367.24, 0.0, 1, 12], ["2026-09-20", 9, 246.4, 9, 0, 246.4, 0.0, 2, 6], ["2026-09-21", 4, 112.0, 4, 0, 112.0, 0.0, 2, 2], ["2026-09-22", 6, 161.61, 6, 0, 161.61, 0.0, 1, 5], ["2026-09-23", 7, 167.98, 7, 0, 167.98, 0.0, 1, 6], ["2026-09-24", 10, 265.94, 10, 0, 265.94, 0.0, 1, 9], ["2026-09-25", 6, 162.4, 6, 0, 162.4, 0.0, 3, 3], ["2026-09-26", 11, 291.79, 11, 0, 291.79, 0.0, 3, 7], ["2026-09-27", 12, 311.07, 12, 0, 311.07, 0.0, 5, 7], ["2026-09-28", 8, 185.84, 8, 0, 185.84, 0.0, 3, 5], ["2026-09-29", 11, 273.02, 11, 0, 273.02, 0.0, 3, 8], ["2026-09-30", 4, 112.0, 4, 0, 112.0, 0.0, 2, 2], ["2026-10-01", 13, 351.6, 13, 0, 351.6, 0.0, 9, 2], ["2026-10-02", 12, 324.8, 12, 0, 324.8, 0.0, 4, 8], ["2026-10-03", 3, 73.62, 3, 0, 73.62, 0.0, 0, 3], ["2026-10-04", 9, 242.89, 9, 0, 242.89, 0.0, 1, 7], ["2026-10-05", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-10-06", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-07", 11, 263.63, 11, 0, 263.63, 0.0, 3, 7], ["2026-10-08", 13, 354.77, 13, 0, 354.77, 0.0, 4, 9], ["2026-10-09", 8, 187.6, 8, 0, 187.6, 0.0, 2, 5], ["2026-10-10", 18, 446.68, 16, 2, 413.0, 33.68, 3, 12], ["2026-10-11", 34, 827.66, 31, 3, 780.39, 47.27, 9, 25], ["2026-10-12", 14, 360.63, 13, 1, 345.68, 14.95, 3, 7], ["2026-10-13", 5, 140.0, 5, 0, 140.0, 0.0, 0, 5], ["2026-10-14", 5, 98.29, 5, 0, 98.29, 0.0, 1, 4], ["2026-10-15", 5, 140.0, 5, 0, 140.0, 0.0, 2, 3], ["2026-10-16", 7, 190.52, 7, 0, 190.52, 0.0, 0, 6], ["2026-10-17", 9, 225.34, 9, 0, 225.34, 0.0, 2, 7], ["2026-10-18", 18, 465.33, 18, 0, 465.33, 0.0, 4, 13], ["2026-10-19", 9, 223.56, 8, 1, 204.6, 18.96, 3, 6], ["2026-10-20", 8, 155.15, 8, 0, 155.15, 0.0, 2, 6], ["2026-10-21", 6, 158.46, 6, 0, 158.46, 0.0, 3, 3], ["2026-10-22", 3, 73.4, 3, 0, 73.4, 0.0, 0, 3], ["2026-10-23", 6, 160.44, 6, 0, 160.44, 0.0, 2, 3], ["2026-10-24", 13, 336.79, 13, 0, 336.79, 0.0, 0, 13], ["2026-10-25", 4, 111.22, 4, 0, 111.22, 0.0, 0, 4], ["2026-10-26", 8, 179.18, 7, 1, 159.8, 19.38, 2, 5], ["2026-10-27", 4, 79.03, 4, 0, 79.03, 0.0, 0, 4], ["2026-10-28", 9, 217.73, 8, 1, 198.4, 19.33, 2, 6], ["2026-10-29", 3, 71.0, 3, 0, 71.0, 0.0, 0, 3], ["2026-10-30", 9, 197.77, 8, 1, 182.17, 15.6, 4, 5], ["2026-10-31", 6, 164.2, 6, 0, 164.2, 0.0, 2, 4], ["2026-11-01", 16, 366.3, 12, 4, 288.95, 77.35, 2, 14], ["2026-11-02", 13, 326.54, 12, 1, 310.0, 16.54, 1, 12], ["2026-11-03", 11, 291.37, 10, 1, 275.8, 15.57, 3, 7], ["2026-11-04", 6, 160.44, 6, 0, 160.44, 0.0, 1, 5], ["2026-11-05", 13, 272.74, 11, 2, 235.69, 37.05, 1, 7], ["2026-11-06", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-11-07", 8, 206.53, 8, 0, 206.53, 0.0, 1, 7], ["2026-11-08", 8, 203.99, 7, 1, 188.73, 15.26, 2, 6], ["2026-11-09", 4, 102.2, 4, 0, 102.2, 0.0, 2, 2], ["2026-11-10", 7, 186.2, 7, 0, 186.2, 0.0, 2, 5]],
+        "TVG5880": [["2026-04-30", 9, 226.91, 7, 2, 187.6, 39.31, 0, 9], ["2026-05-01", 233, 5976.9, 218, 15, 5697.54, 279.36, 30, 198], ["2026-05-02", 275, 7166.28, 268, 7, 7032.7, 133.58, 21, 250], ["2026-05-03", 159, 4117.8, 155, 4, 4047.92, 69.88, 31, 127], ["2026-05-04", 126, 3264.54, 120, 6, 3151.48, 113.06, 29, 96], ["2026-05-05", 170, 4414.41, 167, 3, 4357.36, 57.05, 36, 133], ["2026-05-06", 137, 3543.52, 133, 4, 3469.74, 73.78, 26, 110], ["2026-05-07", 153, 3851.8, 138, 15, 3567.59, 284.21, 26, 125], ["2026-05-08", 161, 4094.54, 157, 4, 4012.65, 81.89, 28, 127], ["2026-05-09", 170, 4154.5, 146, 24, 3709.38, 445.12, 47, 121], ["2026-05-10", 204, 5227.83, 197, 7, 5103.47, 124.36, 61, 140], ["2026-05-11", 149, 3779.31, 141, 8, 3625.14, 154.17, 50, 98], ["2026-05-12", 159, 3963.13, 148, 11, 3759.23, 203.9, 45, 111], ["2026-05-13", 173, 4385.9, 164, 9, 4225.28, 160.62, 58, 113], ["2026-05-14", 178, 4412.04, 167, 11, 4206.4, 205.64, 60, 110], ["2026-05-15", 145, 3521.67, 136, 9, 3350.75, 170.92, 45, 98], ["2026-05-16", 178, 4387.26, 161, 17, 4088.91, 298.35, 70, 106], ["2026-05-17", 188, 4719.53, 172, 16, 4421.64, 297.89, 65, 123], ["2026-05-18", 128, 3174.75, 120, 8, 3024.24, 150.51, 40, 86], ["2026-05-19", 145, 3648.05, 135, 10, 3453.47, 194.58, 51, 92], ["2026-05-20", 150, 3784.26, 145, 5, 3688.03, 96.23, 49, 98], ["2026-05-21", 167, 4104.95, 160, 7, 3979.31, 125.64, 77, 90], ["2026-05-22", 171, 4216.26, 157, 14, 3955.41, 260.85, 78, 88], ["2026-05-23", 180, 4344.82, 167, 13, 4099.29, 245.53, 83, 92], ["2026-05-24", 216, 5416.35, 203, 13, 5180.16, 236.19, 109, 102], ["2026-05-25", 282, 7046.04, 271, 11, 6850.66, 195.38, 150, 127], ["2026-05-26", 173, 4272.86, 163, 10, 4086.78, 186.08, 73, 96], ["2026-05-27", 184, 4522.99, 174, 10, 4338.27, 184.72, 91, 90], ["2026-05-28", 159, 3959.45, 153, 6, 3867.91, 91.54, 75, 83], ["2026-05-29", 121, 2920.95, 117, 4, 2849.6, 71.35, 46, 74], ["2026-05-30", 110, 2769.71, 101, 9, 2602.31, 167.4, 48, 61], ["2026-05-31", 107, 2636.64, 99, 8, 2494.27, 142.37, 45, 61], ["2026-06-01", 143, 3422.03, 138, 5, 3329.25, 92.78, 69, 69], ["2026-06-02", 127, 3094.3, 119, 8, 2965.25, 129.05, 70, 54], ["2026-06-03", 121, 2963.32, 115, 6, 2852.4, 110.92, 46, 65], ["2026-06-04", 135, 3284.36, 131, 4, 3225.2, 59.16, 63, 71], ["2026-06-05", 116, 2840.88, 116, 0, 2840.88, 0.0, 62, 54], ["2026-06-06", 74, 1855.55, 69, 5, 1766.58, 88.97, 44, 28], ["2026-06-07", 91, 2306.46, 86, 5, 2224.65, 81.81, 49, 39], ["2026-06-08", 154, 3932.87, 149, 5, 3841.51, 91.36, 74, 78], ["2026-06-09", 86, 2120.21, 82, 4, 2065.45, 54.76, 41, 43], ["2026-06-10", 69, 1789.31, 68, 1, 1773.65, 15.66, 41, 28], ["2026-06-11", 73, 1860.54, 70, 3, 1809.64, 50.9, 42, 28], ["2026-06-12", 122, 3135.47, 120, 2, 3104.35, 31.12, 87, 30], ["2026-06-13", 229, 5694.47, 218, 11, 5500.53, 193.94, 146, 72], ["2026-06-14", 254, 6272.5, 248, 6, 6169.66, 102.84, 146, 104], ["2026-06-15", 95, 2379.75, 89, 6, 2281.66, 98.09, 65, 30], ["2026-06-16", 66, 1631.87, 59, 7, 1509.28, 122.59, 37, 27], ["2026-06-17", 64, 1598.52, 61, 3, 1542.36, 56.16, 19, 45], ["2026-06-18", 87, 2127.61, 82, 5, 2037.69, 89.92, 44, 43], ["2026-06-19", 136, 3633.41, 133, 3, 3580.13, 53.28, 35, 96], ["2026-06-20", 153, 3843.47, 143, 10, 3679.13, 164.34, 66, 85], ["2026-06-21", 197, 5048.77, 186, 11, 4865.59, 183.18, 72, 121], ["2026-06-22", 83, 2154.46, 83, 0, 2154.46, 0.0, 24, 55], ["2026-06-23", 59, 1401.61, 57, 2, 1373.88, 27.73, 21, 38], ["2026-06-24", 48, 1198.4, 44, 4, 1131.14, 67.26, 11, 35], ["2026-06-25", 47, 1129.23, 45, 2, 1095.43, 33.8, 10, 37], ["2026-06-26", 36, 781.47, 35, 1, 766.36, 15.11, 14, 22], ["2026-06-27", 64, 1687.27, 60, 4, 1617.11, 70.16, 11, 52], ["2026-06-28", 65, 1720.25, 63, 2, 1684.89, 35.36, 18, 45], ["2026-06-29", 50, 1156.67, 48, 2, 1118.93, 37.74, 11, 38], ["2026-06-30", 66, 1675.68, 64, 2, 1638.05, 37.63, 19, 47], ["2026-07-01", 145, 3380.08, 139, 6, 3281.87, 98.21, 27, 117], ["2026-07-02", 128, 3028.44, 125, 3, 2980.48, 47.96, 33, 92], ["2026-07-03", 145, 3381.33, 142, 3, 3333.33, 48.0, 48, 92], ["2026-07-04", 126, 2978.05, 123, 3, 2929.93, 48.12, 46, 78], ["2026-07-05", 235, 5494.39, 229, 6, 5399.21, 95.18, 91, 141], ["2026-07-06", 94, 2318.29, 90, 4, 2253.26, 65.03, 42, 50], ["2026-07-07", 90, 2301.23, 87, 3, 2263.65, 37.58, 30, 60], ["2026-07-08", 146, 3791.15, 143, 3, 3753.42, 37.73, 27, 116], ["2026-07-09", 108, 2843.17, 107, 1, 2828.04, 15.13, 13, 93], ["2026-07-10", 157, 4081.37, 154, 3, 4028.4, 52.97, 32, 119], ["2026-07-11", 201, 5222.77, 199, 2, 5203.84, 18.93, 23, 171], ["2026-07-12", 132, 3502.74, 128, 4, 3434.65, 68.09, 21, 107], ["2026-07-13", 101, 2583.35, 97, 4, 2511.47, 71.88, 20, 76], ["2026-07-14", 82, 2125.7, 80, 2, 2090.43, 35.27, 13, 69], ["2026-07-15", 62, 1614.65, 59, 3, 1564.93, 49.72, 17, 45], ["2026-07-16", 68, 1659.25, 68, 0, 1659.25, 0.0, 9, 57], ["2026-07-17", 91, 2225.73, 87, 4, 2154.59, 71.14, 17, 65], ["2026-07-18", 110, 2874.21, 106, 4, 2811.26, 62.95, 13, 93], ["2026-07-19", 123, 3218.08, 121, 2, 3181.99, 36.09, 16, 105], ["2026-07-20", 107, 2783.47, 106, 1, 2764.15, 19.32, 12, 93], ["2026-07-21", 127, 3270.01, 124, 3, 3212.41, 57.6, 13, 112], ["2026-07-22", 110, 2776.94, 106, 4, 2707.61, 69.33, 11, 98], ["2026-07-23", 110, 2865.01, 105, 5, 2779.13, 85.88, 16, 91], ["2026-07-24", 102, 2660.56, 96, 6, 2555.01, 105.55, 13, 88], ["2026-07-25", 148, 3811.45, 140, 8, 3662.52, 148.93, 21, 118], ["2026-07-26", 123, 3266.81, 121, 2, 3228.58, 38.23, 18, 101], ["2026-07-27", 88, 2293.87, 88, 0, 2293.87, 0.0, 14, 73], ["2026-07-28", 122, 3024.43, 122, 0, 3024.43, 0.0, 16, 105], ["2026-07-29", 89, 2351.34, 89, 0, 2351.34, 0.0, 8, 79], ["2026-07-30", 11, 254.64, 11, 0, 254.64, 0.0, 1, 10], ["2026-07-31", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-08-01", 16, 394.75, 16, 0, 394.75, 0.0, 4, 12], ["2026-08-02", 15, 349.78, 15, 0, 349.78, 0.0, 2, 13], ["2026-08-03", 8, 214.2, 8, 0, 214.2, 0.0, 3, 4], ["2026-08-04", 21, 531.25, 21, 0, 531.25, 0.0, 3, 18], ["2026-08-05", 26, 707.85, 26, 0, 707.85, 0.0, 5, 19], ["2026-08-06", 20, 513.31, 20, 0, 513.31, 0.0, 5, 15], ["2026-08-07", 28, 698.54, 28, 0, 698.54, 0.0, 8, 18], ["2026-08-08", 47, 1218.01, 47, 0, 1218.01, 0.0, 8, 39], ["2026-08-09", 56, 1425.16, 56, 0, 1425.16, 0.0, 15, 39], ["2026-08-10", 22, 573.63, 22, 0, 573.63, 0.0, 2, 20], ["2026-08-11", 23, 548.98, 23, 0, 548.98, 0.0, 8, 15], ["2026-08-12", 24, 574.79, 24, 0, 574.79, 0.0, 9, 13], ["2026-08-13", 19, 508.23, 19, 0, 508.23, 0.0, 9, 10], ["2026-08-14", 25, 653.88, 25, 0, 653.88, 0.0, 8, 16], ["2026-08-17", 1, 20.22, 1, 0, 20.22, 0.0, 0, 1], ["2026-08-18", 14, 367.67, 14, 0, 367.67, 0.0, 4, 8], ["2026-08-19", 37, 954.98, 36, 1, 937.84, 17.14, 8, 28], ["2026-08-20", 17, 425.51, 14, 3, 370.2, 55.31, 5, 11], ["2026-08-21", 1, 16.04, 0, 1, 0.0, 16.04, 1, 0], ["2026-08-23", 4, 66.72, 0, 4, 0.0, 66.72, 0, 4], ["2026-08-24", 2, 35.94, 0, 2, 0.0, 35.94, 1, 1], ["2026-08-25", 3, 57.47, 0, 3, 0.0, 57.47, 1, 2], ["2026-08-27", 1, 19.76, 0, 1, 0.0, 19.76, 0, 1], ["2026-08-28", 1, 13.13, 0, 1, 0.0, 13.13, 0, 1], ["2026-08-30", 1, 19.64, 0, 1, 0.0, 19.64, 0, 1], ["2026-08-31", 1, 15.76, 0, 1, 0.0, 15.76, 0, 1], ["2026-09-01", 1, 19.68, 0, 1, 0.0, 19.68, 0, 1], ["2026-09-05", 1, 19.94, 0, 1, 0.0, 19.94, 0, 1], ["2026-09-06", 1, 19.85, 0, 1, 0.0, 19.85, 0, 1], ["2026-09-07", 2, 38.19, 0, 2, 0.0, 38.19, 0, 2], ["2026-09-08", 1, 19.9, 0, 1, 0.0, 19.9, 0, 1], ["2026-09-09", 1, 15.94, 0, 1, 0.0, 15.94, 1, 0], ["2026-09-10", 1, 16.4, 0, 1, 0.0, 16.4, 0, 1], ["2026-09-13", 2, 37.03, 0, 2, 0.0, 37.03, 0, 2], ["2026-09-19", 1, 15.92, 0, 1, 0.0, 15.92, 0, 1], ["2026-09-20", 1, 19.39, 0, 1, 0.0, 19.39, 0, 1], ["2026-09-23", 1, 17.44, 0, 1, 0.0, 17.44, 0, 1], ["2026-09-24", 2, 30.16, 0, 2, 0.0, 30.16, 1, 1], ["2026-09-25", 2, 36.02, 0, 2, 0.0, 36.02, 1, 1], ["2026-09-27", 1, 17.08, 0, 1, 0.0, 17.08, 0, 1], ["2026-09-29", 1, 17.94, 0, 1, 0.0, 17.94, 0, 1], ["2026-10-01", 2, 33.89, 0, 2, 0.0, 33.89, 2, 0], ["2026-10-03", 3, 52.43, 0, 3, 0.0, 52.43, 3, 0], ["2026-10-04", 1, 14.97, 0, 1, 0.0, 14.97, 1, 0], ["2026-10-05", 3, 50.96, 0, 3, 0.0, 50.96, 3, 0], ["2026-10-06", 1, 18.71, 0, 1, 0.0, 18.71, 1, 0], ["2026-10-07", 2, 37.29, 0, 2, 0.0, 37.29, 1, 1], ["2026-10-08", 1, 14.95, 0, 1, 0.0, 14.95, 1, 0], ["2026-10-09", 2, 35.51, 0, 2, 0.0, 35.51, 2, 0], ["2026-10-11", 1, 17.75, 0, 1, 0.0, 17.75, 1, 0], ["2026-10-12", 1, 17.89, 0, 1, 0.0, 17.89, 0, 1], ["2026-10-18", 1, 18.96, 0, 1, 0.0, 18.96, 0, 1], ["2026-10-19", 1, 19.16, 0, 1, 0.0, 19.16, 0, 1], ["2026-10-25", 1, 17.44, 0, 1, 0.0, 17.44, 1, 0], ["2026-10-26", 1, 19.38, 0, 1, 0.0, 19.38, 1, 0], ["2026-10-29", 1, 19.3, 0, 1, 0.0, 19.3, 1, 0], ["2026-11-01", 2, 38.92, 0, 2, 0.0, 38.92, 1, 1], ["2026-11-04", 1, 19.51, 0, 1, 0.0, 19.51, 1, 0], ["2026-11-05", 2, 39.01, 0, 2, 0.0, 39.01, 1, 0], ["2026-11-06", 1, 17.2, 0, 1, 0.0, 17.2, 0, 1], ["2026-11-11", 1, 18.76, 0, 1, 0.0, 18.76, 0, 1]],
+        "TVG5890": [["2026-04-30", 6, 144.34, 4, 2, 105.9, 38.44, 1, 5], ["2026-05-01", 263, 6807.28, 253, 10, 6631.4, 175.88, 45, 212], ["2026-05-02", 429, 11210.86, 421, 8, 11056.06, 154.8, 40, 374], ["2026-05-03", 287, 7466.37, 282, 5, 7365.3, 101.07, 61, 220], ["2026-05-04", 195, 5081.09, 188, 7, 4954.34, 126.75, 32, 161], ["2026-05-05", 280, 7108.72, 270, 10, 6908.01, 200.71, 52, 219], ["2026-05-06", 254, 6547.27, 247, 7, 6408.68, 138.59, 53, 192], ["2026-05-07", 254, 6660.23, 247, 7, 6518.31, 141.92, 70, 181], ["2026-05-08", 256, 6490.32, 242, 14, 6221.74, 268.58, 58, 192], ["2026-05-09", 396, 10076.14, 373, 23, 9649.87, 426.27, 86, 299], ["2026-05-10", 440, 11246.5, 423, 17, 10917.63, 328.87, 88, 341], ["2026-05-11", 262, 6579.4, 254, 8, 6422.83, 156.57, 77, 177], ["2026-05-12", 305, 7834.38, 287, 18, 7504.63, 329.75, 100, 202], ["2026-05-13", 271, 6890.2, 263, 8, 6739.17, 151.03, 110, 155], ["2026-05-14", 327, 8276.43, 312, 15, 8000.5, 275.93, 121, 201], ["2026-05-15", 277, 7113.31, 267, 10, 6926.62, 186.69, 109, 162], ["2026-05-16", 291, 7307.8, 271, 20, 6962.09, 345.71, 126, 154], ["2026-05-17", 285, 7168.84, 267, 18, 6829.06, 339.78, 135, 146], ["2026-05-18", 231, 5797.77, 220, 11, 5595.12, 202.65, 75, 148], ["2026-05-19", 214, 5266.95, 207, 7, 5142.34, 124.61, 85, 126], ["2026-05-20", 211, 5454.79, 205, 6, 5334.42, 120.37, 71, 131], ["2026-05-21", 245, 6212.72, 241, 4, 6136.54, 76.18, 73, 165], ["2026-05-22", 283, 7172.07, 277, 6, 7068.64, 103.43, 82, 199], ["2026-05-23", 294, 7620.53, 294, 0, 7620.53, 0.0, 115, 178], ["2026-05-24", 299, 7710.17, 299, 0, 7710.17, 0.0, 123, 168], ["2026-05-25", 342, 8727.54, 342, 0, 8727.54, 0.0, 125, 211], ["2026-05-26", 16, 420.77, 16, 0, 420.77, 0.0, 6, 10], ["2026-05-28", 52, 1325.66, 52, 0, 1325.66, 0.0, 22, 27], ["2026-05-29", 90, 2156.74, 90, 0, 2156.74, 0.0, 31, 58], ["2026-06-01", 78, 1943.57, 78, 0, 1943.57, 0.0, 35, 41], ["2026-06-02", 101, 2491.63, 101, 0, 2491.63, 0.0, 39, 61], ["2026-06-03", 74, 1811.13, 74, 0, 1811.13, 0.0, 29, 44], ["2026-06-04", 79, 1994.76, 79, 0, 1994.76, 0.0, 44, 35], ["2026-06-05", 95, 2418.1, 95, 0, 2418.1, 0.0, 47, 48], ["2026-06-06", 78, 1895.61, 78, 0, 1895.61, 0.0, 32, 44], ["2026-06-07", 70, 1794.19, 70, 0, 1794.19, 0.0, 33, 36], ["2026-06-08", 92, 2128.19, 92, 0, 2128.19, 0.0, 32, 57], ["2026-06-09", 71, 1617.69, 71, 0, 1617.69, 0.0, 25, 42], ["2026-06-10", 40, 904.58, 40, 0, 904.58, 0.0, 16, 22], ["2026-06-11", 44, 1151.21, 44, 0, 1151.21, 0.0, 26, 18], ["2026-06-12", 54, 1342.8, 54, 0, 1342.8, 0.0, 24, 29], ["2026-06-13", 103, 2429.06, 103, 0, 2429.06, 0.0, 43, 56], ["2026-06-14", 156, 3646.6, 156, 0, 3646.6, 0.0, 44, 101], ["2026-06-15", 48, 1148.13, 48, 0, 1148.13, 0.0, 20, 27], ["2026-06-16", 28, 630.68, 28, 0, 630.68, 0.0, 9, 18], ["2026-06-17", 55, 1375.58, 55, 0, 1375.58, 0.0, 18, 37], ["2026-06-22", 35, 908.01, 35, 0, 908.01, 0.0, 16, 17], ["2026-06-23", 45, 1159.3, 45, 0, 1159.3, 0.0, 14, 30], ["2026-06-24", 32, 805.45, 32, 0, 805.45, 0.0, 10, 18], ["2026-06-25", 31, 798.09, 31, 0, 798.09, 0.0, 13, 17], ["2026-09-17", 48, 1291.99, 48, 0, 1291.99, 0.0, 6, 30], ["2026-09-18", 46, 1160.67, 42, 4, 1107.23, 53.44, 13, 21], ["2026-09-19", 29, 688.32, 26, 3, 638.31, 50.01, 7, 17], ["2026-09-20", 26, 678.27, 25, 1, 658.88, 19.39, 9, 17], ["2026-09-21", 22, 541.85, 21, 1, 522.46, 19.39, 3, 14], ["2026-09-22", 15, 347.32, 15, 0, 347.32, 0.0, 5, 9], ["2026-09-23", 37, 898.0, 34, 3, 844.5, 53.5, 8, 23], ["2026-09-24", 16, 396.99, 13, 3, 346.42, 50.57, 3, 13], ["2026-09-25", 15, 364.27, 15, 0, 364.27, 0.0, 5, 10], ["2026-09-26", 19, 507.85, 19, 0, 507.85, 0.0, 2, 16], ["2026-09-27", 30, 760.39, 29, 1, 745.21, 15.18, 11, 15], ["2026-09-28", 6, 154.62, 6, 0, 154.62, 0.0, 3, 3], ["2026-09-29", 19, 488.53, 17, 2, 450.73, 37.8, 6, 12], ["2026-09-30", 8, 178.87, 8, 0, 178.87, 0.0, 3, 5], ["2026-10-01", 20, 500.17, 15, 5, 409.75, 90.42, 8, 10], ["2026-10-02", 11, 258.12, 9, 2, 224.41, 33.71, 5, 3], ["2026-10-03", 27, 601.3, 19, 8, 466.48, 134.82, 9, 17], ["2026-10-04", 27, 666.13, 22, 5, 580.04, 86.09, 11, 15], ["2026-10-05", 13, 323.06, 10, 3, 274.41, 48.65, 6, 7], ["2026-10-06", 15, 356.78, 10, 5, 263.3, 93.48, 9, 6], ["2026-10-07", 33, 851.85, 31, 2, 814.44, 37.41, 9, 24], ["2026-10-08", 19, 498.36, 19, 0, 498.36, 0.0, 5, 13], ["2026-10-09", 10, 261.41, 10, 0, 261.41, 0.0, 6, 4], ["2026-10-10", 29, 725.74, 27, 2, 690.02, 35.72, 5, 24], ["2026-10-11", 67, 1602.51, 64, 3, 1553.0, 49.51, 13, 50], ["2026-10-12", 15, 350.32, 15, 0, 350.32, 0.0, 4, 10], ["2026-10-13", 4, 82.96, 4, 0, 82.96, 0.0, 0, 4], ["2026-10-14", 13, 325.67, 13, 0, 325.67, 0.0, 3, 10], ["2026-10-15", 7, 174.66, 7, 0, 174.66, 0.0, 0, 7], ["2026-10-16", 12, 254.65, 11, 1, 235.81, 18.84, 5, 7], ["2026-10-17", 21, 544.71, 20, 1, 525.75, 18.96, 6, 14], ["2026-10-18", 24, 588.9, 24, 0, 588.9, 0.0, 4, 20], ["2026-10-19", 7, 182.94, 7, 0, 182.94, 0.0, 1, 6], ["2026-10-20", 8, 223.34, 8, 0, 223.34, 0.0, 3, 5], ["2026-10-21", 10, 261.91, 9, 1, 242.66, 19.25, 2, 8], ["2026-10-22", 16, 406.51, 15, 1, 387.24, 19.27, 5, 10], ["2026-10-23", 10, 247.27, 8, 2, 212.55, 34.72, 5, 5], ["2026-10-24", 23, 552.95, 21, 2, 519.3, 33.65, 3, 20], ["2026-10-25", 24, 589.66, 20, 4, 526.31, 63.35, 5, 17], ["2026-10-26", 13, 314.28, 13, 0, 314.28, 0.0, 4, 9], ["2026-10-27", 16, 403.25, 14, 2, 368.44, 34.81, 4, 12], ["2026-10-28", 15, 379.52, 13, 2, 340.86, 38.66, 4, 11], ["2026-10-29", 6, 158.24, 5, 1, 138.94, 19.3, 3, 3], ["2026-10-30", 11, 243.61, 9, 2, 212.45, 31.16, 5, 6], ["2026-10-31", 11, 255.56, 9, 2, 221.75, 33.81, 2, 9], ["2026-11-01", 22, 546.95, 21, 1, 527.49, 19.46, 6, 16], ["2026-11-02", 11, 287.7, 10, 1, 272.13, 15.57, 3, 8], ["2026-11-03", 16, 356.35, 15, 1, 336.84, 19.51, 5, 11], ["2026-11-04", 15, 370.6, 14, 1, 353.62, 16.98, 3, 9], ["2026-11-05", 19, 412.78, 19, 0, 412.78, 0.0, 3, 9], ["2026-11-06", 9, 232.44, 8, 1, 216.85, 15.59, 1, 7], ["2026-11-07", 17, 468.88, 17, 0, 468.88, 0.0, 6, 11], ["2026-11-08", 12, 312.0, 12, 0, 312.0, 0.0, 4, 8], ["2026-11-09", 11, 290.89, 11, 0, 290.89, 0.0, 2, 9], ["2026-11-10", 13, 313.04, 13, 0, 313.04, 0.0, 5, 8], ["2026-11-11", 11, 280.77, 11, 0, 280.77, 0.0, 3, 8]],
+        "TVG5900": [["2026-04-30", 5, 127.45, 5, 0, 127.45, 0.0, 0, 5], ["2026-05-01", 148, 3409.47, 144, 4, 3336.03, 73.44, 44, 99], ["2026-05-02", 256, 6620.89, 251, 5, 6523.5, 97.39, 85, 161], ["2026-05-03", 219, 5677.71, 213, 6, 5564.3, 113.41, 80, 132], ["2026-05-04", 203, 5218.78, 195, 8, 5067.14, 151.64, 80, 119], ["2026-05-05", 181, 4789.02, 179, 2, 4752.06, 36.96, 68, 107], ["2026-05-06", 141, 3658.03, 134, 7, 3524.75, 133.28, 70, 66], ["2026-05-07", 227, 5923.91, 224, 3, 5866.51, 57.4, 102, 117], ["2026-05-08", 255, 6578.38, 248, 7, 6439.4, 138.98, 108, 139], ["2026-05-09", 238, 6098.95, 235, 3, 6041.98, 56.97, 137, 95], ["2026-05-10", 236, 6013.82, 227, 9, 5846.1, 167.72, 128, 103], ["2026-05-11", 148, 3873.09, 146, 2, 3832.39, 40.7, 55, 89], ["2026-05-12", 73, 1832.17, 67, 6, 1729.23, 102.94, 24, 48], ["2026-05-13", 129, 3402.77, 128, 1, 3382.5, 20.27, 62, 63], ["2026-05-14", 58, 1427.47, 51, 7, 1288.43, 139.04, 12, 41], ["2026-05-15", 53, 1348.97, 50, 3, 1293.38, 55.59, 20, 33], ["2026-05-16", 116, 2875.39, 115, 1, 2855.31, 20.08, 43, 62], ["2026-05-17", 163, 4203.84, 157, 6, 4101.2, 102.64, 78, 77], ["2026-05-18", 113, 2927.43, 110, 3, 2871.14, 56.29, 58, 51], ["2026-05-19", 168, 4318.81, 161, 7, 4186.2, 132.61, 96, 62], ["2026-05-20", 124, 3231.45, 123, 1, 3211.41, 20.04, 78, 44], ["2026-05-21", 42, 1064.51, 41, 1, 1048.48, 16.03, 15, 27], ["2026-05-22", 130, 3358.46, 127, 3, 3306.38, 52.08, 53, 74], ["2026-05-23", 62, 1581.7, 62, 0, 1581.7, 0.0, 25, 35], ["2026-05-24", 141, 3692.84, 136, 5, 3601.39, 91.45, 51, 85], ["2026-05-25", 163, 4275.26, 162, 1, 4259.36, 15.9, 71, 87], ["2026-05-26", 60, 1551.07, 59, 1, 1531.12, 19.95, 23, 36], ["2026-05-27", 51, 1280.44, 51, 0, 1280.44, 0.0, 29, 20], ["2026-05-28", 89, 2284.1, 89, 0, 2284.1, 0.0, 34, 52], ["2026-05-29", 86, 2246.98, 85, 1, 2227.2, 19.78, 26, 57], ["2026-05-30", 90, 2355.14, 89, 1, 2338.18, 16.96, 50, 37], ["2026-05-31", 44, 1156.12, 44, 0, 1156.12, 0.0, 20, 23], ["2026-06-01", 72, 1870.55, 72, 0, 1870.55, 0.0, 34, 35], ["2026-06-02", 43, 1033.79, 41, 2, 998.08, 35.71, 20, 23], ["2026-06-03", 72, 1778.81, 70, 2, 1742.67, 36.14, 29, 32], ["2026-06-04", 39, 938.25, 38, 1, 918.44, 19.81, 21, 16], ["2026-06-05", 36, 871.62, 35, 1, 853.73, 17.89, 19, 16], ["2026-06-06", 43, 1121.3, 43, 0, 1121.3, 0.0, 22, 20], ["2026-06-07", 72, 1893.93, 70, 2, 1858.24, 35.69, 31, 31], ["2026-06-08", 72, 1904.98, 72, 0, 1904.98, 0.0, 33, 34], ["2026-06-09", 35, 905.76, 35, 0, 905.76, 0.0, 18, 14], ["2026-06-10", 20, 512.89, 19, 1, 493.31, 19.58, 7, 12], ["2026-06-11", 27, 670.61, 24, 3, 617.43, 53.18, 13, 13], ["2026-06-12", 42, 1084.11, 40, 2, 1064.66, 19.45, 9, 33], ["2026-06-13", 63, 1441.62, 63, 0, 1441.62, 0.0, 25, 32], ["2026-06-14", 101, 2597.02, 97, 4, 2527.17, 69.85, 28, 69], ["2026-06-15", 28, 745.47, 27, 1, 729.89, 15.58, 8, 20], ["2026-06-16", 25, 658.41, 24, 1, 638.94, 19.47, 8, 17], ["2026-06-17", 17, 413.96, 15, 2, 375.2, 38.76, 7, 10], ["2026-06-18", 20, 501.61, 18, 2, 467.0, 34.61, 8, 12], ["2026-06-19", 11, 251.25, 10, 1, 232.2, 19.05, 2, 9], ["2026-06-20", 33, 811.05, 30, 3, 758.72, 52.33, 13, 19], ["2026-06-21", 29, 754.73, 28, 1, 739.55, 15.18, 8, 21], ["2026-06-22", 13, 336.88, 13, 0, 336.88, 0.0, 6, 6], ["2026-06-23", 16, 430.44, 15, 1, 411.56, 18.88, 4, 10], ["2026-06-24", 14, 346.76, 14, 0, 346.76, 0.0, 6, 8], ["2026-06-25", 10, 231.17, 10, 0, 231.17, 0.0, 4, 6], ["2026-06-26", 8, 205.11, 7, 1, 190.0, 15.11, 2, 6], ["2026-06-27", 14, 350.11, 13, 1, 331.24, 18.87, 3, 11], ["2026-06-28", 7, 189.08, 7, 0, 189.08, 0.0, 0, 6], ["2026-06-29", 11, 268.28, 11, 0, 268.28, 0.0, 2, 9], ["2026-06-30", 18, 483.29, 18, 0, 483.29, 0.0, 6, 12], ["2026-07-01", 23, 540.26, 22, 1, 524.31, 15.95, 2, 18], ["2026-07-02", 17, 406.43, 17, 0, 406.43, 0.0, 8, 8], ["2026-07-03", 24, 543.2, 24, 0, 543.2, 0.0, 12, 12], ["2026-07-04", 31, 695.52, 29, 2, 663.44, 32.08, 8, 23], ["2026-07-05", 34, 813.2, 34, 0, 813.2, 0.0, 12, 21], ["2026-07-06", 14, 360.98, 14, 0, 360.98, 0.0, 4, 10], ["2026-07-07", 16, 422.08, 16, 0, 422.08, 0.0, 5, 11], ["2026-07-08", 12, 293.17, 12, 0, 293.17, 0.0, 3, 9], ["2026-07-09", 17, 458.82, 17, 0, 458.82, 0.0, 2, 15], ["2026-07-10", 9, 231.06, 9, 0, 231.06, 0.0, 0, 9], ["2026-07-11", 16, 399.03, 16, 0, 399.03, 0.0, 3, 13], ["2026-07-12", 28, 748.92, 28, 0, 748.92, 0.0, 8, 19], ["2026-07-13", 21, 504.6, 20, 1, 504.6, 0.0, 6, 15], ["2026-07-14", 17, 412.03, 17, 0, 412.03, 0.0, 4, 13], ["2026-07-15", 10, 270.0, 10, 0, 270.0, 0.0, 3, 6], ["2026-07-16", 19, 524.23, 19, 0, 524.23, 0.0, 3, 15], ["2026-07-17", 31, 685.57, 31, 0, 685.57, 0.0, 3, 18], ["2026-07-18", 24, 607.65, 24, 0, 607.65, 0.0, 5, 16], ["2026-07-19", 26, 696.32, 25, 1, 677.0, 19.32, 5, 20], ["2026-07-20", 28, 745.26, 28, 0, 745.26, 0.0, 4, 21], ["2026-07-21", 18, 464.05, 17, 1, 445.46, 18.59, 0, 18], ["2026-07-22", 27, 646.34, 26, 1, 630.96, 15.38, 2, 24], ["2026-07-23", 25, 652.19, 25, 0, 652.19, 0.0, 5, 15], ["2026-07-24", 32, 852.71, 31, 1, 833.55, 19.16, 6, 23], ["2026-07-25", 34, 817.57, 33, 1, 798.4, 19.17, 6, 23], ["2026-07-26", 31, 822.87, 30, 1, 803.76, 19.11, 3, 28], ["2026-07-27", 23, 619.51, 23, 0, 619.51, 0.0, 6, 15], ["2026-07-28", 24, 642.4, 24, 0, 642.4, 0.0, 5, 18], ["2026-07-29", 21, 576.39, 20, 1, 557.31, 19.08, 5, 15], ["2026-07-30", 11, 286.66, 11, 0, 286.66, 0.0, 3, 8], ["2026-07-31", 18, 439.75, 18, 0, 439.75, 0.0, 4, 13], ["2026-08-01", 13, 333.82, 12, 1, 318.36, 15.46, 2, 10], ["2026-08-02", 19, 521.37, 19, 0, 521.37, 0.0, 1, 16], ["2026-08-03", 7, 191.54, 7, 0, 191.54, 0.0, 0, 7], ["2026-08-04", 7, 160.89, 7, 0, 160.89, 0.0, 2, 5], ["2026-08-05", 9, 248.26, 9, 0, 248.26, 0.0, 2, 7], ["2026-08-06", 12, 287.26, 10, 2, 256.37, 30.89, 6, 6], ["2026-08-07", 17, 428.7, 17, 0, 428.7, 0.0, 5, 11], ["2026-08-08", 13, 338.76, 13, 0, 338.76, 0.0, 2, 11], ["2026-08-09", 20, 485.4, 18, 2, 448.51, 36.89, 3, 17], ["2026-08-10", 5, 92.0, 5, 0, 92.0, 0.0, 1, 3], ["2026-08-11", 5, 129.55, 5, 0, 129.55, 0.0, 2, 3], ["2026-08-12", 11, 287.93, 11, 0, 287.93, 0.0, 2, 9], ["2026-08-13", 10, 256.6, 10, 0, 256.6, 0.0, 3, 7], ["2026-08-14", 7, 183.09, 7, 0, 183.09, 0.0, 2, 5], ["2026-08-15", 3, 78.4, 3, 0, 78.4, 0.0, 2, 1], ["2026-08-16", 4, 103.9, 4, 0, 103.9, 0.0, 0, 4], ["2026-08-17", 7, 178.33, 6, 1, 161.56, 16.77, 2, 5], ["2026-08-18", 7, 166.5, 6, 1, 149.47, 17.03, 1, 6], ["2026-08-19", 8, 216.21, 8, 0, 216.21, 0.0, 2, 5], ["2026-08-20", 5, 138.96, 5, 0, 138.96, 0.0, 1, 4], ["2026-08-21", 6, 162.48, 6, 0, 162.48, 0.0, 3, 3], ["2026-08-22", 7, 161.9, 7, 0, 161.9, 0.0, 2, 5], ["2026-08-23", 14, 366.68, 14, 0, 366.68, 0.0, 2, 12], ["2026-08-24", 4, 94.24, 4, 0, 94.24, 0.0, 3, 1], ["2026-08-25", 8, 179.04, 8, 0, 179.04, 0.0, 4, 4], ["2026-08-26", 4, 105.71, 4, 0, 105.71, 0.0, 0, 4], ["2026-08-27", 3, 56.0, 3, 0, 56.0, 0.0, 2, 1], ["2026-08-28", 10, 257.6, 10, 0, 257.6, 0.0, 5, 4], ["2026-08-29", 7, 193.65, 7, 0, 193.65, 0.0, 2, 5], ["2026-08-30", 6, 154.0, 6, 0, 154.0, 0.0, 4, 2], ["2026-08-31", 6, 163.8, 6, 0, 163.8, 0.0, 4, 2], ["2026-09-01", 5, 104.13, 5, 0, 104.13, 0.0, 1, 4], ["2026-09-02", 9, 214.81, 9, 0, 214.81, 0.0, 3, 6], ["2026-09-03", 5, 135.0, 5, 0, 135.0, 0.0, 1, 4], ["2026-09-04", 3, 75.81, 3, 0, 75.81, 0.0, 1, 2], ["2026-09-05", 9, 245.31, 9, 0, 245.31, 0.0, 2, 6], ["2026-09-06", 9, 229.21, 9, 0, 229.21, 0.0, 3, 6], ["2026-09-07", 17, 433.29, 16, 1, 417.41, 15.88, 5, 9], ["2026-09-08", 8, 206.67, 8, 0, 206.67, 0.0, 5, 3], ["2026-09-09", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-09-10", 4, 105.33, 4, 0, 105.33, 0.0, 0, 4], ["2026-09-11", 7, 190.4, 7, 0, 190.4, 0.0, 4, 2], ["2026-09-12", 7, 194.15, 7, 0, 194.15, 0.0, 1, 6], ["2026-09-13", 7, 181.64, 7, 0, 181.64, 0.0, 2, 5], ["2026-09-14", 5, 128.8, 5, 0, 128.8, 0.0, 2, 3], ["2026-09-15", 5, 131.71, 5, 0, 131.71, 0.0, 3, 1], ["2026-09-16", 2, 49.24, 2, 0, 49.24, 0.0, 0, 2], ["2026-09-17", 6, 168.0, 6, 0, 168.0, 0.0, 0, 6], ["2026-09-18", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-09-19", 3, 72.8, 3, 0, 72.8, 0.0, 3, 0], ["2026-09-20", 7, 171.99, 6, 1, 152.6, 19.39, 7, 0], ["2026-09-21", 9, 238.0, 9, 0, 238.0, 0.0, 3, 5], ["2026-09-22", 6, 159.6, 6, 0, 159.6, 0.0, 2, 4], ["2026-09-23", 17, 459.78, 17, 0, 459.78, 0.0, 2, 14], ["2026-09-24", 2, 52.41, 2, 0, 52.41, 0.0, 1, 1], ["2026-09-25", 6, 156.22, 6, 0, 156.22, 0.0, 1, 5], ["2026-09-26", 15, 355.91, 15, 0, 355.91, 0.0, 3, 12], ["2026-09-27", 12, 255.04, 12, 0, 255.04, 0.0, 3, 9], ["2026-09-28", 6, 152.44, 6, 0, 152.44, 0.0, 0, 6], ["2026-09-29", 9, 224.75, 8, 1, 209.6, 15.15, 2, 7], ["2026-09-30", 4, 112.0, 4, 0, 112.0, 0.0, 1, 3], ["2026-10-01", 5, 117.2, 3, 2, 81.88, 35.32, 1, 3], ["2026-10-02", 5, 134.4, 5, 0, 134.4, 0.0, 3, 2], ["2026-10-03", 3, 74.2, 3, 0, 74.2, 0.0, 0, 3], ["2026-10-04", 3, 81.96, 3, 0, 81.96, 0.0, 0, 3], ["2026-10-05", 4, 99.4, 4, 0, 99.4, 0.0, 2, 2], ["2026-10-06", 3, 84.0, 3, 0, 84.0, 0.0, 2, 1], ["2026-10-07", 8, 210.1, 8, 0, 210.1, 0.0, 2, 6], ["2026-10-08", 5, 134.4, 5, 0, 134.4, 0.0, 1, 4], ["2026-10-09", 4, 80.07, 4, 0, 80.07, 0.0, 0, 4], ["2026-10-10", 9, 228.2, 9, 0, 228.2, 0.0, 3, 6], ["2026-10-11", 16, 364.74, 12, 4, 301.22, 63.52, 2, 14], ["2026-10-12", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-10-14", 5, 132.64, 5, 0, 132.64, 0.0, 1, 3], ["2026-10-15", 4, 84.7, 4, 0, 84.7, 0.0, 1, 3], ["2026-10-16", 8, 203.43, 8, 0, 203.43, 0.0, 1, 6], ["2026-10-17", 10, 268.4, 10, 0, 268.4, 0.0, 3, 7], ["2026-10-18", 14, 361.82, 13, 1, 342.86, 18.96, 3, 10], ["2026-10-19", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-10-20", 3, 78.4, 3, 0, 78.4, 0.0, 1, 2], ["2026-10-21", 6, 159.68, 6, 0, 159.68, 0.0, 1, 5], ["2026-10-22", 7, 189.98, 7, 0, 189.98, 0.0, 0, 6], ["2026-10-23", 1, 19.29, 0, 1, 0.0, 19.29, 1, 0], ["2026-10-24", 3, 75.81, 3, 0, 75.81, 0.0, 1, 2], ["2026-10-25", 1, 22.4, 1, 0, 22.4, 0.0, 1, 0], ["2026-10-26", 3, 70.38, 2, 1, 51.0, 19.38, 2, 1], ["2026-10-27", 4, 111.27, 4, 0, 111.27, 0.0, 1, 3], ["2026-10-28", 3, 53.62, 3, 0, 53.62, 0.0, 1, 2], ["2026-10-29", 6, 150.28, 5, 1, 130.98, 19.3, 2, 4], ["2026-10-30", 5, 132.65, 5, 0, 132.65, 0.0, 2, 3], ["2026-10-31", 2, 44.8, 2, 0, 44.8, 0.0, 2, 0], ["2026-11-01", 4, 78.4, 4, 0, 78.4, 0.0, 1, 3], ["2026-11-02", 8, 217.2, 8, 0, 217.2, 0.0, 1, 6], ["2026-11-03", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-11-04", 6, 160.35, 6, 0, 160.35, 0.0, 1, 5], ["2026-11-05", 5, 138.51, 5, 0, 138.51, 0.0, 2, 3], ["2026-11-06", 2, 53.81, 2, 0, 53.81, 0.0, 0, 2], ["2026-11-07", 9, 239.29, 9, 0, 239.29, 0.0, 3, 6], ["2026-11-08", 3, 83.22, 3, 0, 83.22, 0.0, 1, 2], ["2026-11-09", 5, 126.72, 5, 0, 126.72, 0.0, 0, 5], ["2026-11-10", 2, 56.0, 2, 0, 56.0, 0.0, 2, 0], ["2026-11-11", 7, 176.01, 6, 1, 160.2, 15.81, 1, 6]],
+        "TVG5920": [["2026-04-30", 3, 76.29, 2, 1, 56.0, 20.29, 1, 2], ["2026-05-01", 189, 4902.27, 177, 12, 4669.26, 233.01, 22, 164], ["2026-05-02", 242, 6277.0, 229, 13, 6036.67, 240.33, 28, 208], ["2026-05-03", 165, 4181.87, 156, 9, 4003.12, 178.75, 31, 132], ["2026-05-04", 112, 2858.78, 102, 10, 2671.74, 187.04, 28, 82], ["2026-05-05", 141, 3579.41, 134, 7, 3440.22, 139.19, 19, 116], ["2026-05-06", 121, 3080.38, 115, 6, 2970.94, 109.44, 34, 87], ["2026-05-07", 137, 3491.49, 123, 14, 3223.28, 268.21, 32, 103], ["2026-05-08", 127, 3249.17, 117, 10, 3061.24, 187.93, 32, 94], ["2026-05-09", 125, 3098.87, 114, 11, 2902.47, 196.4, 39, 85], ["2026-05-10", 175, 4351.06, 160, 15, 4066.84, 284.22, 67, 107], ["2026-05-11", 129, 3352.68, 123, 6, 3238.75, 113.93, 37, 90], ["2026-05-12", 113, 2777.68, 99, 14, 2530.52, 247.16, 37, 74], ["2026-05-13", 134, 3388.53, 126, 8, 3235.2, 153.33, 44, 89], ["2026-05-14", 111, 2768.91, 99, 12, 2542.07, 226.84, 35, 75], ["2026-05-15", 132, 3275.2, 119, 13, 3029.85, 245.35, 36, 95], ["2026-05-16", 147, 3615.8, 133, 14, 3362.04, 253.76, 55, 92], ["2026-05-17", 133, 3314.48, 122, 11, 3102.88, 211.6, 43, 88], ["2026-05-18", 120, 3040.76, 111, 9, 2867.07, 173.69, 32, 87], ["2026-05-19", 116, 2911.03, 108, 8, 2758.92, 152.11, 33, 78], ["2026-05-20", 120, 3057.71, 113, 7, 2929.31, 128.4, 53, 66], ["2026-05-21", 131, 3208.78, 118, 13, 2983.57, 225.21, 45, 82], ["2026-05-22", 148, 3690.5, 133, 15, 3405.08, 285.42, 56, 89], ["2026-05-23", 161, 3986.08, 143, 18, 3667.68, 318.4, 68, 90], ["2026-05-24", 138, 3365.87, 127, 11, 3166.69, 199.18, 62, 76], ["2026-05-25", 208, 5290.25, 203, 5, 5198.76, 91.49, 103, 104], ["2026-05-26", 112, 2764.49, 103, 9, 2602.4, 162.09, 45, 63], ["2026-05-27", 73, 1822.28, 71, 2, 1786.46, 35.82, 29, 42], ["2026-05-28", 92, 2242.87, 87, 5, 2144.61, 98.26, 31, 60], ["2026-05-29", 76, 1828.18, 70, 6, 1727.25, 100.93, 24, 52], ["2026-05-30", 86, 2163.02, 81, 5, 2072.6, 90.42, 33, 52], ["2026-05-31", 80, 2023.14, 72, 8, 1881.88, 141.26, 31, 47], ["2026-06-01", 70, 1811.26, 68, 2, 1778.34, 32.92, 18, 51], ["2026-06-02", 68, 1680.57, 67, 1, 1660.7, 19.87, 20, 47], ["2026-06-03", 85, 2112.67, 79, 6, 2014.26, 98.41, 31, 53], ["2026-06-04", 87, 2243.6, 84, 3, 2192.23, 51.37, 28, 58], ["2026-06-05", 77, 1905.86, 74, 3, 1851.69, 54.17, 34, 42], ["2026-06-06", 57, 1456.02, 54, 3, 1402.38, 53.64, 26, 29], ["2026-06-07", 73, 1838.23, 70, 3, 1785.35, 52.88, 32, 41], ["2026-06-08", 108, 2773.89, 102, 6, 2663.52, 110.37, 48, 57], ["2026-06-09", 53, 1316.72, 46, 7, 1199.84, 116.88, 21, 31], ["2026-06-10", 44, 1109.76, 44, 0, 1109.76, 0.0, 19, 23], ["2026-06-11", 52, 1349.24, 52, 0, 1349.24, 0.0, 31, 21], ["2026-06-12", 60, 1543.36, 60, 0, 1543.36, 0.0, 36, 23], ["2026-06-13", 106, 2674.58, 101, 5, 2581.4, 93.18, 45, 58], ["2026-06-14", 110, 2720.73, 106, 4, 2652.17, 68.56, 41, 69], ["2026-06-15", 56, 1373.01, 50, 6, 1264.35, 108.66, 29, 26], ["2026-06-16", 40, 982.82, 32, 8, 842.4, 140.42, 20, 20], ["2026-06-17", 43, 991.98, 39, 4, 914.49, 77.49, 19, 24], ["2026-06-18", 66, 1662.4, 57, 9, 1497.43, 164.97, 41, 23], ["2026-06-19", 51, 1350.05, 49, 2, 1311.95, 38.1, 18, 33], ["2026-06-20", 78, 1986.41, 74, 4, 1918.88, 67.53, 47, 30], ["2026-06-21", 89, 2346.33, 88, 1, 2327.36, 18.97, 51, 37], ["2026-06-22", 41, 1047.43, 40, 1, 1032.25, 15.18, 19, 21], ["2026-06-23", 41, 975.48, 36, 5, 888.21, 87.27, 24, 17], ["2026-06-24", 31, 788.79, 30, 1, 769.91, 18.88, 13, 17], ["2026-06-25", 31, 773.17, 28, 3, 716.89, 56.28, 11, 19], ["2026-06-26", 17, 408.28, 15, 2, 374.4, 33.88, 7, 10], ["2026-06-27", 22, 575.5, 21, 1, 556.61, 18.89, 6, 16], ["2026-06-28", 32, 832.32, 29, 3, 778.27, 54.05, 9, 22], ["2026-06-29", 26, 660.32, 24, 2, 622.58, 37.74, 4, 22], ["2026-06-30", 30, 725.79, 29, 1, 710.7, 15.09, 12, 16], ["2026-07-01", 38, 879.55, 34, 4, 816.2, 63.35, 6, 32], ["2026-07-02", 53, 1242.21, 50, 3, 1194.24, 47.97, 17, 36], ["2026-07-03", 63, 1422.73, 54, 9, 1281.51, 141.22, 20, 39], ["2026-07-04", 43, 1005.05, 40, 3, 956.93, 48.12, 13, 30], ["2026-07-05", 82, 1904.09, 78, 4, 1840.95, 63.14, 34, 46], ["2026-07-06", 31, 805.53, 29, 2, 771.65, 33.88, 9, 20], ["2026-07-07", 28, 727.75, 26, 2, 690.17, 37.58, 12, 15], ["2026-07-08", 37, 982.35, 35, 2, 944.73, 37.62, 8, 29], ["2026-07-09", 27, 675.13, 26, 1, 656.22, 18.91, 5, 22], ["2026-07-10", 34, 902.71, 33, 1, 883.8, 18.91, 10, 24], ["2026-07-11", 33, 853.78, 31, 2, 819.72, 34.06, 8, 24], ["2026-07-12", 34, 891.43, 34, 0, 891.43, 0.0, 12, 22], ["2026-07-13", 23, 606.37, 22, 1, 587.46, 18.91, 3, 20], ["2026-07-14", 26, 612.33, 25, 1, 597.1, 15.23, 7, 19], ["2026-07-15", 23, 578.81, 22, 1, 559.72, 19.09, 6, 15], ["2026-07-16", 14, 355.06, 13, 1, 335.85, 19.21, 3, 11], ["2026-07-17", 31, 673.61, 30, 1, 654.32, 19.29, 6, 20], ["2026-07-18", 36, 952.78, 34, 2, 918.32, 34.46, 9, 27], ["2026-07-19", 18, 470.14, 16, 2, 431.5, 38.64, 6, 12], ["2026-07-20", 23, 601.43, 21, 2, 567.32, 34.11, 7, 15], ["2026-07-21", 23, 591.08, 23, 0, 591.08, 0.0, 5, 17], ["2026-07-22", 26, 695.93, 25, 1, 680.55, 15.38, 4, 21], ["2026-07-23", 34, 811.38, 34, 0, 811.38, 0.0, 7, 25], ["2026-07-24", 25, 643.23, 23, 2, 604.91, 38.32, 3, 21], ["2026-07-25", 31, 789.75, 28, 3, 733.21, 56.54, 5, 24], ["2026-07-26", 26, 677.7, 24, 2, 639.47, 38.23, 6, 20], ["2026-07-27", 15, 329.84, 14, 1, 312.19, 17.65, 5, 9], ["2026-07-28", 40, 1007.11, 34, 6, 900.21, 106.9, 10, 30], ["2026-07-29", 17, 377.24, 14, 3, 327.4, 49.84, 3, 14], ["2026-07-30", 13, 322.29, 11, 2, 285.56, 36.73, 2, 11], ["2026-07-31", 28, 705.59, 26, 2, 669.58, 36.01, 5, 23], ["2026-08-01", 25, 596.97, 22, 3, 539.88, 57.09, 6, 16], ["2026-08-02", 28, 696.1, 24, 4, 631.72, 64.38, 8, 20], ["2026-08-03", 19, 494.94, 18, 1, 476.72, 18.22, 5, 13], ["2026-08-04", 17, 439.8, 15, 2, 404.16, 35.64, 4, 12], ["2026-08-05", 15, 345.05, 12, 3, 294.98, 50.07, 6, 9], ["2026-08-06", 19, 481.64, 18, 1, 466.12, 15.52, 7, 11], ["2026-08-07", 14, 370.05, 13, 1, 350.66, 19.39, 4, 10], ["2026-08-08", 33, 846.16, 29, 4, 768.63, 77.53, 8, 25], ["2026-08-09", 38, 997.72, 34, 4, 919.66, 78.06, 7, 31], ["2026-08-10", 19, 486.44, 17, 2, 447.36, 39.08, 9, 10], ["2026-08-11", 16, 376.26, 14, 2, 343.0, 33.26, 7, 8], ["2026-08-12", 20, 521.38, 19, 1, 501.81, 19.57, 8, 12], ["2026-08-13", 20, 484.88, 18, 2, 451.48, 33.4, 9, 11], ["2026-08-14", 22, 578.08, 22, 0, 578.08, 0.0, 4, 15], ["2026-08-15", 13, 358.59, 13, 0, 358.59, 0.0, 1, 12], ["2026-08-16", 18, 465.24, 18, 0, 465.24, 0.0, 5, 13], ["2026-08-17", 20, 498.42, 19, 1, 478.69, 19.73, 5, 15], ["2026-08-18", 22, 581.0, 22, 0, 581.0, 0.0, 6, 16], ["2026-08-19", 25, 639.81, 24, 1, 622.59, 17.22, 8, 17], ["2026-08-20", 18, 458.2, 18, 0, 458.2, 0.0, 1, 17], ["2026-08-21", 21, 544.52, 20, 1, 524.47, 20.05, 4, 17], ["2026-08-22", 36, 963.96, 35, 1, 943.83, 20.13, 10, 26], ["2026-08-23", 32, 828.49, 32, 0, 828.49, 0.0, 5, 26], ["2026-08-24", 13, 308.92, 12, 1, 289.09, 19.83, 4, 9], ["2026-08-25", 18, 445.07, 17, 1, 426.04, 19.03, 10, 8], ["2026-08-26", 23, 530.7, 22, 1, 511.58, 19.12, 5, 18], ["2026-08-27", 8, 213.4, 8, 0, 213.4, 0.0, 2, 6], ["2026-08-28", 8, 199.72, 8, 0, 199.72, 0.0, 3, 5], ["2026-08-29", 12, 317.9, 12, 0, 317.9, 0.0, 3, 9], ["2026-08-30", 13, 327.46, 12, 1, 307.82, 19.64, 6, 7], ["2026-08-31", 7, 168.27, 6, 1, 152.52, 15.75, 1, 6], ["2026-09-01", 11, 283.93, 9, 2, 248.5, 35.43, 4, 7], ["2026-09-02", 22, 583.86, 22, 0, 583.86, 0.0, 6, 15], ["2026-09-03", 21, 544.75, 21, 0, 544.75, 0.0, 5, 16], ["2026-09-04", 18, 441.41, 18, 0, 441.41, 0.0, 5, 12], ["2026-09-05", 11, 292.38, 11, 0, 292.38, 0.0, 5, 6], ["2026-09-06", 20, 523.55, 20, 0, 523.55, 0.0, 7, 13], ["2026-09-07", 21, 560.46, 21, 0, 560.46, 0.0, 5, 14], ["2026-09-08", 11, 305.57, 11, 0, 305.57, 0.0, 3, 5], ["2026-09-09", 8, 199.8, 8, 0, 199.8, 0.0, 3, 5], ["2026-09-10", 13, 339.65, 13, 0, 339.65, 0.0, 0, 13], ["2026-09-11", 6, 159.8, 6, 0, 159.8, 0.0, 1, 5], ["2026-09-12", 6, 161.16, 6, 0, 161.16, 0.0, 1, 5], ["2026-09-13", 11, 292.07, 11, 0, 292.07, 0.0, 2, 9], ["2026-09-14", 6, 134.23, 6, 0, 134.23, 0.0, 1, 5], ["2026-09-15", 9, 241.96, 9, 0, 241.96, 0.0, 1, 8], ["2026-09-16", 15, 398.68, 15, 0, 398.68, 0.0, 5, 9], ["2026-09-17", 12, 324.49, 12, 0, 324.49, 0.0, 1, 9], ["2026-09-18", 12, 321.8, 12, 0, 321.8, 0.0, 2, 9], ["2026-09-19", 14, 367.24, 14, 0, 367.24, 0.0, 1, 12], ["2026-09-20", 9, 246.4, 9, 0, 246.4, 0.0, 2, 6], ["2026-09-21", 4, 112.0, 4, 0, 112.0, 0.0, 2, 2], ["2026-09-22", 6, 161.61, 6, 0, 161.61, 0.0, 1, 5], ["2026-09-23", 7, 167.98, 7, 0, 167.98, 0.0, 1, 6], ["2026-09-24", 10, 265.94, 10, 0, 265.94, 0.0, 1, 9], ["2026-09-25", 6, 162.4, 6, 0, 162.4, 0.0, 3, 3], ["2026-09-26", 11, 291.79, 11, 0, 291.79, 0.0, 3, 7], ["2026-09-27", 12, 311.07, 12, 0, 311.07, 0.0, 5, 7], ["2026-09-28", 8, 185.84, 8, 0, 185.84, 0.0, 3, 5], ["2026-09-29", 11, 273.02, 11, 0, 273.02, 0.0, 3, 8], ["2026-09-30", 4, 112.0, 4, 0, 112.0, 0.0, 2, 2], ["2026-10-01", 13, 351.6, 13, 0, 351.6, 0.0, 9, 2], ["2026-10-02", 12, 324.8, 12, 0, 324.8, 0.0, 4, 8], ["2026-10-03", 3, 73.62, 3, 0, 73.62, 0.0, 0, 3], ["2026-10-04", 9, 242.89, 9, 0, 242.89, 0.0, 1, 7], ["2026-10-05", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-10-06", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-07", 11, 263.63, 11, 0, 263.63, 0.0, 3, 7], ["2026-10-08", 13, 354.77, 13, 0, 354.77, 0.0, 4, 9], ["2026-10-09", 8, 187.6, 8, 0, 187.6, 0.0, 2, 5], ["2026-10-10", 18, 446.68, 16, 2, 413.0, 33.68, 3, 12], ["2026-10-11", 34, 827.66, 31, 3, 780.39, 47.27, 9, 25], ["2026-10-12", 14, 360.63, 13, 1, 345.68, 14.95, 3, 7], ["2026-10-13", 5, 140.0, 5, 0, 140.0, 0.0, 0, 5], ["2026-10-14", 5, 98.29, 5, 0, 98.29, 0.0, 1, 4], ["2026-10-15", 5, 140.0, 5, 0, 140.0, 0.0, 2, 3], ["2026-10-16", 7, 190.52, 7, 0, 190.52, 0.0, 0, 6], ["2026-10-17", 9, 225.34, 9, 0, 225.34, 0.0, 2, 7], ["2026-10-18", 18, 465.33, 18, 0, 465.33, 0.0, 4, 13], ["2026-10-19", 9, 223.56, 8, 1, 204.6, 18.96, 3, 6], ["2026-10-20", 8, 155.15, 8, 0, 155.15, 0.0, 2, 6], ["2026-10-21", 6, 158.46, 6, 0, 158.46, 0.0, 3, 3], ["2026-10-22", 3, 73.4, 3, 0, 73.4, 0.0, 0, 3], ["2026-10-23", 6, 160.44, 6, 0, 160.44, 0.0, 2, 3], ["2026-10-24", 13, 336.79, 13, 0, 336.79, 0.0, 0, 13], ["2026-10-25", 4, 111.22, 4, 0, 111.22, 0.0, 0, 4], ["2026-10-26", 8, 179.18, 7, 1, 159.8, 19.38, 2, 5], ["2026-10-27", 4, 79.03, 4, 0, 79.03, 0.0, 0, 4], ["2026-10-28", 9, 217.73, 8, 1, 198.4, 19.33, 2, 6], ["2026-10-29", 3, 71.0, 3, 0, 71.0, 0.0, 0, 3], ["2026-10-30", 9, 197.77, 8, 1, 182.17, 15.6, 4, 5], ["2026-10-31", 6, 164.2, 6, 0, 164.2, 0.0, 2, 4], ["2026-11-01", 16, 366.3, 12, 4, 288.95, 77.35, 2, 14], ["2026-11-02", 13, 326.54, 12, 1, 310.0, 16.54, 1, 12], ["2026-11-03", 11, 291.37, 10, 1, 275.8, 15.57, 3, 7], ["2026-11-04", 6, 160.44, 6, 0, 160.44, 0.0, 1, 5], ["2026-11-05", 13, 272.74, 11, 2, 235.69, 37.05, 1, 7], ["2026-11-06", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-11-07", 8, 206.53, 8, 0, 206.53, 0.0, 1, 7], ["2026-11-08", 8, 203.99, 7, 1, 188.73, 15.26, 2, 6], ["2026-11-09", 4, 102.2, 4, 0, 102.2, 0.0, 2, 2], ["2026-11-10", 7, 186.2, 7, 0, 186.2, 0.0, 2, 5], ["2026-11-11", 8, 188.5, 8, 0, 188.5, 0.0, 1, 7]],
         "TVG5930": [["2026-04-30", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-05-01", 76, 1978.68, 74, 2, 1937.88, 40.8, 10, 63], ["2026-05-02", 106, 2812.28, 105, 1, 2792.32, 19.96, 15, 89], ["2026-05-03", 50, 1301.57, 49, 1, 1281.02, 20.55, 12, 38], ["2026-05-04", 42, 1044.93, 40, 2, 1006.91, 38.02, 7, 34], ["2026-05-05", 67, 1779.91, 66, 1, 1763.48, 16.43, 14, 48], ["2026-05-06", 44, 1097.04, 38, 6, 984.46, 112.58, 14, 29], ["2026-05-07", 43, 1050.04, 39, 4, 972.07, 77.97, 10, 33], ["2026-05-08", 52, 1310.81, 49, 3, 1249.39, 61.42, 15, 35], ["2026-05-09", 59, 1485.36, 56, 3, 1436.43, 48.93, 18, 41], ["2026-05-10", 60, 1508.54, 58, 2, 1471.95, 36.59, 21, 36], ["2026-05-11", 35, 900.45, 35, 0, 900.45, 0.0, 12, 23], ["2026-05-12", 25, 632.59, 21, 4, 555.47, 77.12, 4, 17], ["2026-05-13", 34, 868.28, 33, 1, 848.07, 20.21, 16, 18], ["2026-05-14", 29, 755.51, 27, 2, 715.05, 40.46, 5, 24], ["2026-05-15", 30, 731.74, 28, 2, 692.25, 39.49, 7, 23], ["2026-05-16", 45, 1160.68, 41, 4, 1084.27, 76.41, 16, 29], ["2026-05-17", 28, 725.2, 27, 1, 705.12, 20.08, 9, 19], ["2026-05-18", 39, 936.29, 37, 2, 904.26, 32.03, 13, 25], ["2026-05-19", 32, 826.91, 30, 2, 790.7, 36.21, 10, 21], ["2026-05-20", 34, 799.37, 32, 2, 763.24, 36.13, 14, 19], ["2026-05-21", 28, 714.92, 27, 1, 698.89, 16.03, 3, 25], ["2026-05-22", 38, 989.05, 37, 1, 969.09, 19.96, 6, 31], ["2026-05-23", 27, 701.35, 25, 2, 669.42, 31.93, 9, 16], ["2026-05-24", 43, 1090.65, 41, 2, 1056.17, 34.48, 11, 32], ["2026-05-25", 57, 1417.24, 52, 5, 1341.67, 75.57, 22, 35], ["2026-05-26", 17, 397.49, 17, 0, 397.49, 0.0, 7, 10], ["2026-05-27", 15, 384.53, 15, 0, 384.53, 0.0, 4, 11], ["2026-05-28", 29, 693.23, 29, 0, 693.23, 0.0, 9, 20], ["2026-05-29", 34, 858.49, 34, 0, 858.49, 0.0, 8, 26], ["2026-05-30", 27, 639.16, 25, 2, 604.05, 35.11, 12, 15], ["2026-05-31", 19, 482.79, 18, 1, 462.84, 19.95, 6, 13], ["2026-06-01", 25, 620.46, 25, 0, 620.46, 0.0, 10, 14], ["2026-06-02", 21, 483.15, 20, 1, 465.02, 18.13, 6, 15], ["2026-06-03", 31, 714.92, 27, 4, 639.65, 75.27, 12, 14], ["2026-06-04", 24, 615.0, 23, 1, 599.15, 15.85, 9, 14], ["2026-06-05", 22, 548.23, 18, 4, 473.4, 74.83, 8, 14], ["2026-06-06", 26, 650.47, 22, 4, 575.82, 74.65, 11, 14], ["2026-06-07", 21, 522.18, 19, 2, 486.96, 35.22, 9, 12], ["2026-06-08", 25, 567.99, 22, 3, 521.59, 46.4, 11, 14], ["2026-06-09", 11, 286.97, 11, 0, 286.97, 0.0, 6, 5], ["2026-06-10", 16, 395.48, 16, 0, 395.48, 0.0, 5, 10], ["2026-06-11", 13, 277.09, 10, 3, 226.08, 51.01, 6, 7], ["2026-06-12", 16, 386.87, 11, 5, 297.49, 89.38, 10, 5], ["2026-06-13", 50, 1139.49, 47, 3, 1089.0, 50.49, 16, 31], ["2026-06-14", 65, 1577.96, 61, 4, 1507.81, 70.15, 23, 39], ["2026-06-15", 15, 356.81, 11, 4, 285.87, 70.94, 10, 5], ["2026-06-16", 18, 394.86, 15, 3, 336.6, 58.26, 6, 12], ["2026-06-17", 15, 359.76, 11, 4, 286.06, 73.7, 6, 9], ["2026-06-18", 14, 361.04, 13, 1, 341.67, 19.37, 5, 9], ["2026-06-19", 12, 323.0, 12, 0, 323.0, 0.0, 3, 9], ["2026-06-20", 21, 544.23, 20, 1, 525.24, 18.99, 3, 18], ["2026-06-21", 37, 923.36, 34, 3, 872.13, 51.23, 18, 18], ["2026-06-22", 7, 183.18, 6, 1, 168.0, 15.18, 0, 7], ["2026-06-23", 7, 142.86, 6, 1, 124.6, 18.26, 5, 2], ["2026-06-24", 14, 339.39, 13, 1, 320.51, 18.88, 2, 11], ["2026-06-25", 8, 202.31, 7, 1, 187.29, 15.02, 4, 4], ["2026-06-26", 7, 145.01, 6, 1, 129.9, 15.11, 3, 3], ["2026-06-27", 8, 209.93, 8, 0, 209.93, 0.0, 2, 6], ["2026-06-28", 7, 186.67, 7, 0, 186.67, 0.0, 2, 5], ["2026-06-29", 3, 60.14, 1, 2, 22.4, 37.74, 2, 0], ["2026-06-30", 4, 112.0, 4, 0, 112.0, 0.0, 3, 1], ["2026-07-01", 14, 287.91, 12, 2, 256.02, 31.89, 1, 12], ["2026-07-02", 12, 262.89, 12, 0, 262.89, 0.0, 2, 9], ["2026-07-03", 9, 217.34, 9, 0, 217.34, 0.0, 3, 6], ["2026-07-04", 17, 402.35, 16, 1, 386.31, 16.04, 3, 13], ["2026-07-05", 24, 562.17, 23, 1, 546.15, 16.02, 9, 15], ["2026-07-06", 8, 199.16, 8, 0, 199.16, 0.0, 1, 7], ["2026-07-07", 4, 91.21, 4, 0, 91.21, 0.0, 0, 4], ["2026-07-08", 10, 259.01, 9, 1, 240.2, 18.81, 2, 8], ["2026-07-09", 8, 218.95, 8, 0, 218.95, 0.0, 1, 7], ["2026-07-10", 14, 373.53, 13, 1, 358.4, 15.13, 4, 10], ["2026-07-11", 5, 140.0, 5, 0, 140.0, 0.0, 0, 5], ["2026-07-12", 9, 236.6, 9, 0, 236.6, 0.0, 3, 6], ["2026-07-13", 7, 158.28, 7, 0, 158.28, 0.0, 1, 5], ["2026-07-14", 5, 127.6, 5, 0, 127.6, 0.0, 0, 5], ["2026-07-15", 5, 116.24, 5, 0, 116.24, 0.0, 0, 5], ["2026-07-16", 5, 122.74, 5, 0, 122.74, 0.0, 0, 5], ["2026-07-17", 16, 329.77, 14, 2, 291.2, 38.57, 0, 11], ["2026-07-18", 4, 109.31, 4, 0, 109.31, 0.0, 0, 4], ["2026-07-19", 12, 308.13, 12, 0, 308.13, 0.0, 3, 9], ["2026-07-20", 3, 84.0, 3, 0, 84.0, 0.0, 1, 2], ["2026-07-21", 7, 165.96, 5, 2, 135.8, 30.16, 1, 6], ["2026-07-22", 6, 165.0, 6, 0, 165.0, 0.0, 1, 5], ["2026-07-23", 7, 178.0, 7, 0, 178.0, 0.0, 2, 5], ["2026-07-24", 10, 225.62, 10, 0, 225.62, 0.0, 1, 9], ["2026-07-25", 13, 334.3, 11, 2, 298.57, 35.73, 2, 11], ["2026-07-26", 6, 148.93, 4, 2, 110.7, 38.23, 1, 5], ["2026-07-27", 4, 103.11, 3, 1, 84.0, 19.11, 3, 1], ["2026-07-28", 9, 227.68, 8, 1, 208.58, 19.1, 1, 8], ["2026-07-29", 11, 246.68, 10, 1, 231.36, 15.32, 1, 9], ["2026-07-30", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-07-31", 6, 165.3, 6, 0, 165.3, 0.0, 0, 6], ["2026-08-01", 10, 271.4, 10, 0, 271.4, 0.0, 0, 6], ["2026-08-02", 10, 258.98, 9, 1, 239.65, 19.33, 1, 9], ["2026-08-03", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-08-04", 6, 153.59, 6, 0, 153.59, 0.0, 0, 6], ["2026-08-05", 5, 95.21, 4, 1, 79.8, 15.41, 1, 4], ["2026-08-06", 10, 232.06, 7, 3, 178.1, 53.96, 4, 6], ["2026-08-07", 4, 92.4, 3, 1, 73.01, 19.39, 0, 4], ["2026-08-08", 7, 177.39, 6, 1, 158.05, 19.34, 3, 4], ["2026-08-09", 5, 124.91, 4, 1, 106.4, 18.51, 0, 5], ["2026-08-10", 4, 82.2, 4, 0, 82.2, 0.0, 1, 3], ["2026-08-11", 12, 286.29, 11, 1, 266.71, 19.58, 2, 9], ["2026-08-12", 4, 108.59, 4, 0, 108.59, 0.0, 2, 2], ["2026-08-13", 2, 48.5, 2, 0, 48.5, 0.0, 1, 1], ["2026-08-14", 3, 78.4, 3, 0, 78.4, 0.0, 2, 1], ["2026-08-15", 6, 131.07, 6, 0, 131.07, 0.0, 2, 4], ["2026-08-16", 4, 108.2, 4, 0, 108.2, 0.0, 0, 4], ["2026-08-17", 3, 72.8, 3, 0, 72.8, 0.0, 2, 1], ["2026-08-18", 4, 102.83, 4, 0, 102.83, 0.0, 0, 4], ["2026-08-19", 5, 120.37, 5, 0, 120.37, 0.0, 1, 4], ["2026-08-20", 4, 78.4, 4, 0, 78.4, 0.0, 0, 4], ["2026-08-21", 4, 78.47, 4, 0, 78.47, 0.0, 0, 4], ["2026-08-22", 8, 211.58, 8, 0, 211.58, 0.0, 2, 6], ["2026-08-23", 7, 187.45, 7, 0, 187.45, 0.0, 1, 6], ["2026-08-24", 5, 132.24, 5, 0, 132.24, 0.0, 0, 4], ["2026-08-25", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-08-26", 6, 155.44, 6, 0, 155.44, 0.0, 0, 6], ["2026-08-27", 5, 133.17, 5, 0, 133.17, 0.0, 1, 4], ["2026-08-28", 3, 79.56, 3, 0, 79.56, 0.0, 0, 3], ["2026-08-29", 4, 105.93, 4, 0, 105.93, 0.0, 0, 4], ["2026-08-30", 7, 185.1, 6, 1, 165.46, 19.64, 2, 4], ["2026-08-31", 4, 112.0, 4, 0, 112.0, 0.0, 0, 4], ["2026-09-01", 2, 46.38, 1, 1, 26.7, 19.68, 0, 2], ["2026-09-02", 5, 132.6, 5, 0, 132.6, 0.0, 2, 3], ["2026-09-03", 2, 50.4, 2, 0, 50.4, 0.0, 1, 1], ["2026-09-04", 6, 151.6, 6, 0, 151.6, 0.0, 3, 3], ["2026-09-05", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-09-06", 2, 48.4, 2, 0, 48.4, 0.0, 0, 2], ["2026-09-07", 9, 240.84, 9, 0, 240.84, 0.0, 2, 6], ["2026-09-08", 2, 25.41, 2, 0, 25.41, 0.0, 1, 1], ["2026-09-09", 2, 50.48, 2, 0, 50.48, 0.0, 0, 2], ["2026-09-10", 1, 17.76, 0, 1, 0.0, 17.76, 0, 1], ["2026-09-11", 1, 22.4, 1, 0, 22.4, 0.0, 1, 0], ["2026-09-12", 4, 112.0, 4, 0, 112.0, 0.0, 1, 2], ["2026-09-13", 2, 52.41, 2, 0, 52.41, 0.0, 1, 1], ["2026-09-14", 4, 106.4, 4, 0, 106.4, 0.0, 1, 3], ["2026-09-15", 2, 44.8, 2, 0, 44.8, 0.0, 1, 1], ["2026-09-16", 4, 94.0, 4, 0, 94.0, 0.0, 1, 3], ["2026-09-17", 1, 22.4, 1, 0, 22.4, 0.0, 0, 1], ["2026-09-18", 2, 56.0, 2, 0, 56.0, 0.0, 2, 0], ["2026-09-19", 4, 112.0, 4, 0, 112.0, 0.0, 1, 3], ["2026-09-20", 2, 43.38, 2, 0, 43.38, 0.0, 0, 2], ["2026-09-22", 4, 99.93, 3, 1, 80.59, 19.34, 1, 3], ["2026-09-23", 2, 47.55, 2, 0, 47.55, 0.0, 0, 2], ["2026-09-24", 2, 51.8, 2, 0, 51.8, 0.0, 0, 2], ["2026-09-25", 3, 56.0, 3, 0, 56.0, 0.0, 1, 2], ["2026-09-26", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-09-27", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-28", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-29", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-01", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-10-02", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-03", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-04", 2, 46.72, 1, 1, 28.0, 18.72, 0, 2], ["2026-10-05", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-06", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-07", 4, 110.25, 4, 0, 110.25, 0.0, 1, 3], ["2026-10-08", 3, 80.59, 3, 0, 80.59, 0.0, 1, 2], ["2026-10-10", 3, 66.33, 2, 1, 50.4, 15.93, 0, 3], ["2026-10-11", 4, 100.41, 4, 0, 100.41, 0.0, 1, 3], ["2026-10-12", 2, 43.41, 2, 0, 43.41, 0.0, 0, 2], ["2026-10-14", 3, 83.34, 3, 0, 83.34, 0.0, 1, 2], ["2026-10-15", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-16", 3, 75.6, 3, 0, 75.6, 0.0, 1, 2], ["2026-10-17", 2, 53.1, 2, 0, 53.1, 0.0, 2, 0], ["2026-10-18", 2, 53.05, 2, 0, 53.05, 0.0, 1, 1], ["2026-10-20", 1, 23.8, 1, 0, 23.8, 0.0, 0, 1], ["2026-10-22", 1, 26.51, 1, 0, 26.51, 0.0, 0, 1], ["2026-10-23", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-24", 2, 53.38, 2, 0, 53.38, 0.0, 0, 2], ["2026-10-25", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-28", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-30", 7, 175.97, 6, 1, 156.52, 19.45, 2, 2], ["2026-10-31", 2, 48.23, 2, 0, 48.23, 0.0, 0, 2], ["2026-11-01", 2, 54.49, 2, 0, 54.49, 0.0, 0, 2], ["2026-11-02", 2, 54.29, 2, 0, 54.29, 0.0, 0, 2], ["2026-11-03", 3, 49.0, 3, 0, 49.0, 0.0, 0, 3], ["2026-11-04", 4, 108.72, 4, 0, 108.72, 0.0, 1, 3], ["2026-11-05", 2, 53.5, 2, 0, 53.5, 0.0, 1, 1], ["2026-11-06", 3, 73.98, 3, 0, 73.98, 0.0, 0, 3], ["2026-11-07", 2, 51.8, 2, 0, 51.8, 0.0, 1, 1], ["2026-11-09", 1, 23.8, 1, 0, 23.8, 0.0, 0, 1]],
-        "TVG5940": [["2026-04-30", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-05-01", 77, 1988.22, 72, 5, 1893.68, 94.54, 9, 67], ["2026-05-02", 121, 3219.42, 120, 1, 3202.98, 16.44, 7, 112], ["2026-05-03", 70, 1791.86, 68, 2, 1756.52, 35.34, 10, 58], ["2026-05-04", 54, 1369.98, 47, 7, 1232.51, 137.47, 10, 43], ["2026-05-05", 60, 1555.48, 55, 5, 1463.08, 92.4, 9, 50], ["2026-05-06", 31, 815.68, 29, 2, 774.69, 40.99, 7, 24], ["2026-05-07", 45, 1162.1, 42, 3, 1100.49, 61.61, 7, 37], ["2026-05-08", 53, 1269.76, 45, 8, 1120.32, 149.44, 15, 38], ["2026-05-09", 49, 1182.37, 44, 5, 1091.68, 90.69, 12, 37], ["2026-05-10", 44, 1119.62, 42, 2, 1085.72, 33.9, 5, 39], ["2026-05-11", 55, 1414.38, 54, 1, 1394.05, 20.33, 18, 34], ["2026-05-12", 35, 904.28, 34, 1, 888.91, 15.37, 14, 21], ["2026-05-13", 26, 680.16, 24, 2, 639.68, 40.48, 12, 13], ["2026-05-14", 42, 1067.02, 37, 5, 976.61, 90.41, 18, 24], ["2026-05-15", 36, 912.08, 35, 1, 895.93, 16.15, 13, 23], ["2026-05-16", 40, 1025.76, 36, 4, 947.48, 78.28, 15, 25], ["2026-05-17", 31, 780.64, 26, 5, 683.3, 97.34, 9, 22], ["2026-05-18", 30, 748.85, 29, 1, 732.78, 16.07, 5, 25], ["2026-05-19", 50, 1232.77, 45, 5, 1160.46, 72.31, 10, 38], ["2026-05-20", 64, 1646.92, 60, 4, 1568.01, 78.91, 24, 39], ["2026-05-21", 34, 834.33, 32, 2, 794.25, 40.08, 11, 23], ["2026-05-22", 44, 1060.88, 39, 5, 968.28, 92.6, 18, 26], ["2026-05-23", 48, 1239.39, 46, 2, 1202.81, 36.58, 16, 32], ["2026-05-24", 48, 1225.28, 45, 3, 1169.62, 55.66, 19, 29], ["2026-05-25", 65, 1653.89, 63, 2, 1615.42, 38.47, 26, 39], ["2026-05-26", 34, 862.64, 33, 1, 844.03, 18.61, 12, 22], ["2026-05-27", 27, 663.52, 24, 3, 606.66, 56.86, 11, 16], ["2026-05-28", 30, 767.11, 29, 1, 750.61, 16.5, 6, 24], ["2026-05-29", 20, 500.66, 18, 2, 466.36, 34.3, 6, 13], ["2026-05-30", 26, 666.37, 26, 0, 666.37, 0.0, 13, 13], ["2026-05-31", 13, 287.75, 12, 1, 271.79, 15.96, 6, 7], ["2026-06-01", 23, 628.12, 23, 0, 628.12, 0.0, 6, 17], ["2026-06-02", 33, 813.08, 32, 1, 797.23, 15.85, 12, 20], ["2026-06-03", 34, 779.37, 32, 2, 743.72, 35.65, 11, 13], ["2026-06-04", 25, 596.8, 24, 1, 580.95, 15.85, 7, 17], ["2026-06-05", 24, 584.02, 24, 0, 584.02, 0.0, 11, 13], ["2026-06-06", 15, 381.41, 15, 0, 381.41, 0.0, 10, 5], ["2026-06-07", 16, 393.61, 14, 2, 361.32, 32.29, 8, 8], ["2026-06-08", 28, 721.17, 27, 1, 701.6, 19.57, 10, 18], ["2026-06-09", 14, 352.8, 14, 0, 352.8, 0.0, 10, 4], ["2026-06-10", 12, 267.43, 12, 0, 267.43, 0.0, 4, 8], ["2026-06-11", 22, 550.8, 21, 1, 531.22, 19.58, 9, 13], ["2026-06-12", 19, 445.65, 17, 2, 426.2, 19.45, 12, 7], ["2026-06-13", 27, 605.83, 27, 0, 605.83, 0.0, 11, 16], ["2026-06-14", 56, 1308.88, 54, 2, 1273.95, 34.93, 24, 32], ["2026-06-15", 15, 371.81, 12, 3, 313.6, 58.21, 9, 6], ["2026-06-16", 9, 240.15, 9, 0, 240.15, 0.0, 3, 6], ["2026-06-17", 15, 385.99, 13, 2, 351.13, 34.86, 7, 8], ["2026-06-18", 12, 301.82, 11, 1, 282.45, 19.37, 9, 3], ["2026-06-19", 12, 307.24, 12, 0, 307.24, 0.0, 1, 11], ["2026-06-20", 21, 510.88, 19, 2, 476.81, 34.07, 9, 12], ["2026-06-21", 26, 632.7, 23, 3, 585.99, 46.71, 15, 11], ["2026-06-22", 12, 279.37, 11, 1, 260.4, 18.97, 7, 5], ["2026-06-23", 12, 302.45, 10, 2, 267.47, 34.98, 3, 8], ["2026-06-24", 5, 137.4, 5, 0, 137.4, 0.0, 2, 3], ["2026-06-25", 7, 189.77, 7, 0, 189.77, 0.0, 2, 5], ["2026-06-26", 7, 190.4, 7, 0, 190.4, 0.0, 5, 2], ["2026-06-27", 11, 288.75, 11, 0, 288.75, 0.0, 1, 10], ["2026-06-28", 11, 287.91, 10, 1, 272.81, 15.1, 4, 7], ["2026-06-29", 13, 342.26, 13, 0, 342.26, 0.0, 1, 10], ["2026-06-30", 13, 299.6, 13, 0, 299.6, 0.0, 4, 5], ["2026-07-01", 16, 332.83, 16, 0, 332.83, 0.0, 6, 10], ["2026-07-02", 26, 608.27, 26, 0, 608.27, 0.0, 11, 14], ["2026-07-03", 21, 489.33, 19, 2, 457.33, 32.0, 10, 9], ["2026-07-04", 18, 416.53, 18, 0, 416.53, 0.0, 9, 9], ["2026-07-05", 31, 733.02, 31, 0, 733.02, 0.0, 13, 18], ["2026-07-06", 13, 304.55, 12, 1, 285.7, 18.85, 4, 9], ["2026-07-07", 15, 327.67, 15, 0, 327.67, 0.0, 6, 8], ["2026-07-08", 13, 342.62, 13, 0, 342.62, 0.0, 4, 9], ["2026-07-09", 10, 277.4, 10, 0, 277.4, 0.0, 1, 9], ["2026-07-10", 14, 364.02, 13, 1, 345.11, 18.91, 2, 12], ["2026-07-11", 9, 233.3, 9, 0, 233.3, 0.0, 4, 5], ["2026-07-12", 14, 343.6, 14, 0, 343.6, 0.0, 2, 12], ["2026-07-13", 5, 127.13, 4, 1, 112.0, 15.13, 3, 2], ["2026-07-14", 8, 202.2, 8, 0, 202.2, 0.0, 4, 4], ["2026-07-15", 8, 219.8, 8, 0, 219.8, 0.0, 0, 6], ["2026-07-16", 6, 134.4, 6, 0, 134.4, 0.0, 2, 4], ["2026-07-17", 7, 155.98, 7, 0, 155.98, 0.0, 1, 6], ["2026-07-18", 8, 209.68, 7, 1, 194.23, 15.45, 1, 7], ["2026-07-19", 9, 223.54, 8, 1, 208.09, 15.45, 1, 8], ["2026-07-20", 5, 126.67, 4, 1, 107.35, 19.32, 0, 5], ["2026-07-21", 10, 252.0, 10, 0, 252.0, 0.0, 2, 6], ["2026-07-22", 6, 150.82, 5, 1, 131.7, 19.12, 2, 4], ["2026-07-23", 6, 142.12, 4, 2, 106.4, 35.72, 0, 6], ["2026-07-24", 8, 208.21, 8, 0, 208.21, 0.0, 1, 7], ["2026-07-25", 7, 177.32, 6, 1, 159.3, 18.02, 1, 6], ["2026-07-26", 7, 172.63, 5, 2, 134.4, 38.23, 2, 5], ["2026-07-27", 8, 170.37, 7, 1, 155.03, 15.34, 1, 7], ["2026-07-28", 9, 233.67, 8, 1, 217.09, 16.58, 0, 9], ["2026-07-29", 9, 218.04, 8, 1, 198.96, 19.08, 1, 7], ["2026-07-30", 5, 112.12, 5, 0, 112.12, 0.0, 0, 5], ["2026-07-31", 12, 315.58, 12, 0, 315.58, 0.0, 2, 10], ["2026-08-01", 10, 248.77, 8, 2, 210.1, 38.67, 5, 4], ["2026-08-02", 7, 191.8, 7, 0, 191.8, 0.0, 2, 5], ["2026-08-03", 9, 243.44, 9, 0, 243.44, 0.0, 3, 6], ["2026-08-04", 4, 90.2, 4, 0, 90.2, 0.0, 1, 3], ["2026-08-05", 3, 79.8, 3, 0, 79.8, 0.0, 0, 3], ["2026-08-06", 7, 158.2, 7, 0, 158.2, 0.0, 2, 5], ["2026-08-07", 3, 49.2, 3, 0, 49.2, 0.0, 1, 2], ["2026-08-08", 18, 463.79, 15, 3, 405.6, 58.19, 4, 13], ["2026-08-09", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-08-10", 7, 177.01, 7, 0, 177.01, 0.0, 3, 4], ["2026-08-11", 7, 179.75, 6, 1, 160.19, 19.56, 3, 4], ["2026-08-12", 4, 106.81, 4, 0, 106.81, 0.0, 1, 3], ["2026-08-13", 10, 209.6, 10, 0, 209.6, 0.0, 3, 7], ["2026-08-14", 7, 181.2, 7, 0, 181.2, 0.0, 3, 4], ["2026-08-15", 5, 138.33, 5, 0, 138.33, 0.0, 3, 1], ["2026-08-16", 14, 360.13, 14, 0, 360.13, 0.0, 7, 7], ["2026-08-17", 3, 74.0, 3, 0, 74.0, 0.0, 1, 2], ["2026-08-18", 2, 51.0, 2, 0, 51.0, 0.0, 1, 1], ["2026-08-19", 5, 121.05, 4, 1, 103.8, 17.25, 1, 4], ["2026-08-20", 10, 258.1, 10, 0, 258.1, 0.0, 1, 9], ["2026-08-21", 2, 53.2, 2, 0, 53.2, 0.0, 0, 2], ["2026-08-22", 18, 459.87, 18, 0, 459.87, 0.0, 4, 13], ["2026-08-23", 12, 304.33, 12, 0, 304.33, 0.0, 0, 12], ["2026-08-24", 3, 72.34, 3, 0, 72.34, 0.0, 0, 2], ["2026-08-26", 4, 103.6, 4, 0, 103.6, 0.0, 1, 3], ["2026-08-27", 5, 134.4, 5, 0, 134.4, 0.0, 2, 3], ["2026-08-28", 3, 81.4, 3, 0, 81.4, 0.0, 0, 3], ["2026-08-29", 4, 100.34, 4, 0, 100.34, 0.0, 0, 4], ["2026-08-30", 13, 338.11, 12, 1, 320.09, 18.02, 3, 9], ["2026-08-31", 1, 26.05, 1, 0, 26.05, 0.0, 1, 0], ["2026-09-01", 3, 82.29, 3, 0, 82.29, 0.0, 1, 2], ["2026-09-02", 10, 256.85, 9, 1, 240.72, 16.13, 2, 8], ["2026-09-03", 9, 243.59, 8, 1, 224.0, 19.59, 3, 6], ["2026-09-04", 1, 26.15, 1, 0, 26.15, 0.0, 0, 1], ["2026-09-05", 3, 70.68, 3, 0, 70.68, 0.0, 2, 1], ["2026-09-06", 8, 205.36, 8, 0, 205.36, 0.0, 1, 6], ["2026-09-07", 4, 108.63, 4, 0, 108.63, 0.0, 0, 4], ["2026-09-08", 3, 72.92, 2, 1, 56.0, 16.92, 1, 2], ["2026-09-09", 4, 94.27, 4, 0, 94.27, 0.0, 1, 3], ["2026-09-10", 1, 25.17, 1, 0, 25.17, 0.0, 0, 1], ["2026-09-11", 3, 73.62, 3, 0, 73.62, 0.0, 2, 1], ["2026-09-12", 2, 46.54, 2, 0, 46.54, 0.0, 1, 1], ["2026-09-13", 4, 108.5, 4, 0, 108.5, 0.0, 0, 4], ["2026-09-14", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-09-15", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-16", 5, 110.03, 3, 2, 79.55, 30.48, 1, 3], ["2026-09-17", 6, 151.34, 6, 0, 151.34, 0.0, 1, 5], ["2026-09-18", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-19", 3, 82.25, 3, 0, 82.25, 0.0, 2, 1], ["2026-09-20", 4, 108.72, 4, 0, 108.72, 0.0, 0, 4], ["2026-09-21", 2, 56.0, 2, 0, 56.0, 0.0, 2, 0], ["2026-09-22", 4, 81.8, 4, 0, 81.8, 0.0, 1, 3], ["2026-09-23", 1, 22.81, 1, 0, 22.81, 0.0, 0, 1], ["2026-09-24", 2, 51.93, 2, 0, 51.93, 0.0, 0, 2], ["2026-09-25", 3, 72.8, 3, 0, 72.8, 0.0, 1, 2], ["2026-09-26", 1, 26.15, 1, 0, 26.15, 0.0, 0, 1], ["2026-09-27", 3, 65.81, 3, 0, 65.81, 0.0, 0, 2], ["2026-09-28", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-09-29", 2, 50.4, 2, 0, 50.4, 0.0, 1, 1], ["2026-09-30", 4, 96.94, 3, 1, 81.82, 15.12, 1, 3], ["2026-10-01", 2, 44.8, 2, 0, 44.8, 0.0, 0, 1], ["2026-10-02", 4, 82.3, 4, 0, 82.3, 0.0, 0, 4], ["2026-10-03", 4, 101.58, 4, 0, 101.58, 0.0, 1, 3], ["2026-10-04", 2, 52.59, 2, 0, 52.59, 0.0, 0, 2], ["2026-10-05", 7, 147.52, 6, 1, 128.8, 18.72, 0, 6], ["2026-10-06", 1, 27.36, 1, 0, 27.36, 0.0, 0, 1], ["2026-10-07", 3, 81.4, 3, 0, 81.4, 0.0, 2, 1], ["2026-10-08", 2, 41.91, 2, 0, 41.91, 0.0, 1, 1], ["2026-10-09", 3, 80.72, 3, 0, 80.72, 0.0, 1, 2], ["2026-10-10", 9, 229.45, 9, 0, 229.45, 0.0, 4, 5], ["2026-10-11", 12, 302.4, 12, 0, 302.4, 0.0, 2, 10], ["2026-10-13", 3, 82.62, 3, 0, 82.62, 0.0, 1, 2], ["2026-10-14", 5, 120.04, 5, 0, 120.04, 0.0, 2, 2], ["2026-10-15", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-10-16", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-17", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-10-18", 3, 75.14, 3, 0, 75.14, 0.0, 0, 3], ["2026-10-19", 2, 46.88, 2, 0, 46.88, 0.0, 0, 2], ["2026-10-20", 6, 145.6, 6, 0, 145.6, 0.0, 1, 5], ["2026-10-21", 4, 112.0, 4, 0, 112.0, 0.0, 3, 0], ["2026-10-22", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-23", 1, 26.25, 1, 0, 26.25, 0.0, 1, 0], ["2026-10-24", 4, 101.82, 3, 1, 82.44, 19.38, 2, 2], ["2026-10-25", 3, 73.08, 2, 1, 54.97, 18.11, 0, 3], ["2026-10-26", 6, 158.2, 6, 0, 158.2, 0.0, 0, 5], ["2026-10-27", 2, 45.24, 2, 0, 45.24, 0.0, 1, 1], ["2026-10-28", 2, 51.8, 2, 0, 51.8, 0.0, 0, 2], ["2026-10-29", 4, 112.0, 4, 0, 112.0, 0.0, 1, 2], ["2026-10-30", 1, 26.7, 1, 0, 26.7, 0.0, 0, 1], ["2026-10-31", 1, 26.29, 1, 0, 26.29, 0.0, 0, 1], ["2026-11-01", 6, 146.86, 5, 1, 127.4, 19.46, 3, 3], ["2026-11-02", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-11-03", 3, 80.36, 3, 0, 80.36, 0.0, 0, 3], ["2026-11-04", 2, 53.65, 2, 0, 53.65, 0.0, 1, 1], ["2026-11-05", 5, 140.0, 5, 0, 140.0, 0.0, 0, 5], ["2026-11-06", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-11-07", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-11-08", 3, 79.1, 3, 0, 79.1, 0.0, 0, 3], ["2026-11-09", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-11-10", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0]],
-        "TVG5950": [["2026-04-30", 13, 337.09, 13, 0, 337.09, 0.0, 4, 9], ["2026-05-01", 545, 13978.09, 517, 28, 13460.17, 517.92, 81, 450], ["2026-05-02", 739, 19193.6, 718, 21, 18782.35, 411.25, 100, 621], ["2026-05-03", 455, 11760.75, 432, 23, 11319.59, 441.16, 92, 353], ["2026-05-04", 396, 10089.92, 370, 26, 9591.51, 498.41, 83, 303], ["2026-05-05", 546, 13991.69, 531, 15, 13707.88, 283.81, 103, 426], ["2026-05-06", 414, 10554.76, 388, 26, 10062.39, 492.37, 103, 302], ["2026-05-07", 354, 8889.62, 334, 20, 8511.96, 377.66, 109, 240], ["2026-05-08", 437, 11176.08, 421, 16, 10872.63, 303.45, 135, 295], ["2026-05-09", 419, 10527.71, 398, 21, 10135.39, 392.32, 134, 282], ["2026-05-10", 560, 14201.09, 533, 27, 13706.43, 494.66, 174, 382], ["2026-05-11", 410, 10530.77, 398, 12, 10302.33, 228.44, 106, 296], ["2026-05-12", 288, 7101.73, 264, 24, 6657.1, 444.63, 119, 167], ["2026-05-13", 312, 7801.83, 293, 19, 7448.34, 353.49, 97, 212], ["2026-05-14", 312, 7714.46, 283, 29, 7155.34, 559.12, 90, 217], ["2026-05-15", 274, 6773.12, 258, 16, 6475.05, 298.07, 86, 182], ["2026-05-16", 348, 8640.4, 317, 31, 8080.44, 559.96, 120, 224], ["2026-05-17", 331, 8357.05, 306, 25, 7902.04, 455.01, 108, 212], ["2026-05-18", 321, 7857.61, 297, 24, 7408.86, 448.75, 114, 199], ["2026-05-19", 311, 7803.78, 290, 21, 7402.49, 401.29, 125, 180], ["2026-05-20", 258, 6575.63, 248, 10, 6386.32, 189.31, 104, 152], ["2026-05-21", 264, 6552.55, 246, 18, 6216.79, 335.76, 99, 161], ["2026-05-22", 382, 9655.41, 354, 28, 9133.35, 522.06, 146, 232], ["2026-05-23", 386, 9579.9, 356, 30, 9036.26, 543.64, 158, 221], ["2026-05-24", 426, 10748.72, 394, 32, 10152.52, 596.2, 192, 227], ["2026-05-25", 505, 12858.57, 492, 13, 12638.72, 219.85, 221, 282], ["2026-05-26", 277, 6736.16, 265, 12, 6510.37, 225.79, 124, 149], ["2026-05-27", 223, 5472.11, 208, 15, 5215.85, 256.26, 81, 138], ["2026-05-28", 187, 4573.61, 183, 4, 4502.14, 71.47, 70, 115], ["2026-05-29", 224, 5537.68, 208, 16, 5283.08, 254.6, 74, 142], ["2026-05-30", 181, 4374.53, 167, 14, 4109.74, 264.79, 68, 107], ["2026-05-31", 184, 4691.89, 171, 13, 4456.56, 235.33, 85, 98], ["2026-06-01", 201, 4865.97, 192, 9, 4720.98, 144.99, 77, 121], ["2026-06-02", 182, 4422.1, 174, 8, 4275.23, 146.87, 70, 109], ["2026-06-03", 203, 4909.17, 190, 13, 4693.57, 215.6, 73, 119], ["2026-06-04", 159, 3721.53, 157, 2, 3689.84, 31.69, 64, 92], ["2026-06-05", 185, 4642.08, 180, 5, 4552.96, 89.12, 74, 109], ["2026-06-06", 150, 3716.78, 142, 8, 3586.29, 130.49, 61, 88], ["2026-06-07", 153, 3898.79, 146, 7, 3773.92, 124.87, 63, 83], ["2026-06-08", 192, 4879.18, 185, 7, 4765.3, 113.88, 70, 118], ["2026-06-09", 104, 2490.9, 97, 7, 2365.69, 125.21, 47, 55], ["2026-06-10", 103, 2552.28, 98, 5, 2456.17, 96.11, 34, 67], ["2026-06-11", 119, 2987.89, 116, 3, 2937.22, 50.67, 49, 67], ["2026-06-12", 127, 3149.73, 124, 3, 3095.3, 54.43, 41, 78], ["2026-06-13", 270, 6457.68, 260, 10, 6279.06, 178.62, 90, 171], ["2026-06-14", 321, 7915.61, 310, 11, 7724.33, 191.28, 95, 216], ["2026-06-15", 96, 2354.92, 90, 6, 2242.38, 112.54, 42, 53], ["2026-06-16", 88, 2147.96, 88, 0, 2147.96, 0.0, 14, 73], ["2026-06-17", 92, 2295.38, 92, 0, 2295.38, 0.0, 38, 52], ["2026-06-18", 113, 2823.3, 110, 3, 2765.84, 57.46, 68, 45], ["2026-06-19", 133, 3394.38, 127, 6, 3296.31, 98.07, 66, 65], ["2026-06-20", 205, 5333.29, 204, 1, 5318.1, 15.19, 118, 83], ["2026-06-21", 225, 5865.75, 221, 4, 5798.34, 67.41, 116, 105], ["2026-06-22", 98, 2423.29, 96, 2, 2389.14, 34.15, 48, 48], ["2026-06-23", 96, 2393.71, 94, 2, 2360.33, 33.38, 36, 56], ["2026-06-24", 56, 1255.42, 54, 2, 1221.44, 33.98, 17, 36], ["2026-06-25", 68, 1597.19, 64, 4, 1528.31, 68.88, 27, 38], ["2026-06-26", 57, 1324.71, 54, 3, 1274.78, 49.93, 20, 36], ["2026-06-27", 56, 1400.15, 54, 2, 1366.14, 34.01, 17, 37], ["2026-06-28", 61, 1593.34, 59, 2, 1561.26, 32.08, 25, 35], ["2026-06-29", 48, 1177.76, 45, 3, 1124.92, 52.84, 15, 32], ["2026-06-30", 73, 1807.88, 71, 2, 1770.25, 37.63, 26, 46], ["2026-07-01", 121, 2736.9, 114, 7, 2626.05, 110.85, 40, 77], ["2026-07-02", 96, 2168.68, 96, 0, 2168.68, 0.0, 33, 62], ["2026-07-03", 129, 3024.95, 129, 0, 3024.95, 0.0, 55, 72], ["2026-07-04", 129, 3057.62, 129, 0, 3057.62, 0.0, 41, 86], ["2026-07-05", 196, 4673.78, 196, 0, 4673.78, 0.0, 59, 133], ["2026-07-06", 59, 1516.04, 59, 0, 1516.04, 0.0, 27, 31], ["2026-07-07", 74, 1876.21, 74, 0, 1876.21, 0.0, 22, 50], ["2026-07-08", 78, 2059.37, 78, 0, 2059.37, 0.0, 31, 44], ["2026-07-09", 69, 1747.91, 69, 0, 1747.91, 0.0, 20, 46], ["2026-07-10", 105, 2746.14, 105, 0, 2746.14, 0.0, 33, 71], ["2026-07-11", 76, 1957.56, 76, 0, 1957.56, 0.0, 22, 54], ["2026-07-12", 69, 1790.42, 69, 0, 1790.42, 0.0, 20, 49], ["2026-07-13", 66, 1714.19, 66, 0, 1714.19, 0.0, 18, 48], ["2026-07-14", 67, 1478.46, 67, 0, 1478.46, 0.0, 15, 47], ["2026-07-15", 45, 1161.92, 45, 0, 1161.92, 0.0, 6, 39], ["2026-07-16", 61, 1552.83, 61, 0, 1552.83, 0.0, 13, 46], ["2026-07-17", 62, 1392.28, 62, 0, 1392.28, 0.0, 18, 39], ["2026-07-18", 70, 1831.12, 70, 0, 1831.12, 0.0, 18, 51], ["2026-07-19", 60, 1570.88, 60, 0, 1570.88, 0.0, 16, 41], ["2026-07-20", 69, 1766.88, 69, 0, 1766.88, 0.0, 13, 53], ["2026-07-21", 66, 1629.38, 66, 0, 1629.38, 0.0, 11, 54], ["2026-07-22", 67, 1694.13, 67, 0, 1694.13, 0.0, 11, 55], ["2026-07-23", 70, 1788.57, 70, 0, 1788.57, 0.0, 19, 49], ["2026-07-24", 89, 2246.76, 89, 0, 2246.76, 0.0, 20, 67], ["2026-07-25", 78, 2021.57, 78, 0, 2021.57, 0.0, 18, 59], ["2026-07-26", 84, 2190.62, 84, 0, 2190.62, 0.0, 11, 72], ["2026-07-27", 70, 1831.74, 70, 0, 1831.74, 0.0, 12, 55], ["2026-07-28", 82, 1998.44, 82, 0, 1998.44, 0.0, 17, 65], ["2026-07-29", 66, 1703.28, 66, 0, 1703.28, 0.0, 12, 54], ["2026-07-30", 45, 1138.77, 45, 0, 1138.77, 0.0, 13, 32], ["2026-07-31", 64, 1624.63, 64, 0, 1624.63, 0.0, 22, 41], ["2026-08-01", 44, 1147.99, 44, 0, 1147.99, 0.0, 9, 35], ["2026-08-02", 80, 2064.2, 80, 0, 2064.2, 0.0, 18, 62], ["2026-08-03", 32, 805.77, 32, 0, 805.77, 0.0, 5, 27], ["2026-08-04", 53, 1311.34, 53, 0, 1311.34, 0.0, 14, 38], ["2026-08-05", 47, 1245.06, 47, 0, 1245.06, 0.0, 12, 35], ["2026-08-06", 42, 1101.97, 42, 0, 1101.97, 0.0, 6, 34], ["2026-08-07", 39, 968.67, 39, 0, 968.67, 0.0, 12, 27], ["2026-08-08", 74, 1943.64, 74, 0, 1943.64, 0.0, 23, 50], ["2026-08-09", 102, 2635.6, 102, 0, 2635.6, 0.0, 27, 74], ["2026-08-10", 49, 1139.09, 49, 0, 1139.09, 0.0, 15, 31], ["2026-08-11", 38, 913.41, 38, 0, 913.41, 0.0, 13, 24], ["2026-08-12", 44, 1126.01, 44, 0, 1126.01, 0.0, 9, 33], ["2026-08-13", 44, 1071.58, 44, 0, 1071.58, 0.0, 14, 29], ["2026-08-14", 39, 986.12, 39, 0, 986.12, 0.0, 7, 32], ["2026-08-15", 52, 1382.3, 52, 0, 1382.3, 0.0, 16, 34], ["2026-08-16", 50, 1327.54, 50, 0, 1327.54, 0.0, 16, 34], ["2026-08-17", 46, 1138.56, 46, 0, 1138.56, 0.0, 18, 27], ["2026-08-18", 59, 1522.52, 59, 0, 1522.52, 0.0, 17, 39], ["2026-08-19", 41, 1059.96, 41, 0, 1059.96, 0.0, 11, 30], ["2026-08-20", 65, 1705.18, 65, 0, 1705.18, 0.0, 19, 42], ["2026-08-21", 45, 1129.47, 45, 0, 1129.47, 0.0, 13, 32], ["2026-08-22", 86, 2207.94, 86, 0, 2207.94, 0.0, 23, 61], ["2026-08-23", 68, 1783.32, 66, 2, 1747.26, 36.06, 10, 54], ["2026-08-24", 47, 1194.54, 46, 1, 1177.31, 17.23, 11, 35], ["2026-08-25", 40, 953.51, 39, 1, 934.61, 18.9, 12, 26], ["2026-08-26", 48, 1283.02, 48, 0, 1283.02, 0.0, 16, 31], ["2026-08-27", 61, 1587.8, 61, 0, 1587.8, 0.0, 19, 41], ["2026-08-28", 52, 1299.61, 50, 2, 1260.18, 39.43, 18, 32], ["2026-08-29", 49, 1273.37, 49, 0, 1273.37, 0.0, 12, 34], ["2026-08-30", 69, 1793.36, 68, 1, 1777.65, 15.71, 19, 50], ["2026-08-31", 58, 1411.83, 57, 1, 1396.08, 15.75, 17, 39], ["2026-09-01", 44, 985.25, 42, 2, 949.82, 35.43, 11, 33], ["2026-09-02", 67, 1722.89, 65, 2, 1687.31, 35.58, 16, 51], ["2026-09-03", 44, 1045.48, 44, 0, 1045.48, 0.0, 17, 26], ["2026-09-04", 46, 1195.63, 45, 1, 1175.69, 19.94, 11, 32], ["2026-09-05", 53, 1318.86, 51, 2, 1285.78, 33.08, 15, 38], ["2026-09-06", 82, 2116.88, 79, 3, 2062.56, 54.32, 22, 57], ["2026-09-07", 112, 2808.44, 105, 7, 2683.19, 125.25, 38, 74], ["2026-09-08", 26, 633.91, 26, 0, 633.91, 0.0, 7, 18], ["2026-09-09", 24, 601.4, 24, 0, 601.4, 0.0, 7, 17], ["2026-09-10", 34, 829.21, 34, 0, 829.21, 0.0, 8, 26], ["2026-09-11", 45, 1164.83, 44, 1, 1144.93, 19.9, 14, 28], ["2026-09-12", 49, 1220.96, 48, 1, 1202.13, 18.83, 17, 31], ["2026-09-13", 60, 1569.67, 59, 1, 1549.88, 19.79, 24, 34], ["2026-09-14", 29, 680.05, 29, 0, 680.05, 0.0, 8, 20], ["2026-09-15", 34, 873.49, 34, 0, 873.49, 0.0, 8, 25], ["2026-09-16", 36, 936.32, 36, 0, 936.32, 0.0, 12, 24], ["2026-09-17", 31, 801.25, 30, 1, 785.58, 15.67, 7, 23], ["2026-09-18", 27, 712.24, 27, 0, 712.24, 0.0, 9, 18], ["2026-09-19", 27, 707.0, 27, 0, 707.0, 0.0, 8, 19], ["2026-09-20", 41, 1078.3, 41, 0, 1078.3, 0.0, 13, 25], ["2026-09-21", 29, 723.73, 29, 0, 723.73, 0.0, 7, 22], ["2026-09-22", 35, 862.28, 35, 0, 862.28, 0.0, 3, 32], ["2026-09-23", 44, 1141.32, 44, 0, 1141.32, 0.0, 10, 32], ["2026-09-24", 25, 676.01, 25, 0, 676.01, 0.0, 7, 18], ["2026-09-25", 28, 760.22, 28, 0, 760.22, 0.0, 7, 21], ["2026-09-26", 40, 1016.19, 40, 0, 1016.19, 0.0, 12, 27], ["2026-09-27", 50, 1259.73, 49, 1, 1240.75, 18.98, 15, 35], ["2026-09-28", 35, 914.69, 32, 3, 862.52, 52.17, 9, 25], ["2026-09-29", 42, 1057.01, 40, 2, 1022.91, 34.1, 10, 30], ["2026-09-30", 36, 864.94, 35, 1, 849.85, 15.09, 12, 20], ["2026-10-01", 30, 756.78, 28, 2, 722.75, 34.03, 14, 15], ["2026-10-02", 33, 858.52, 30, 3, 806.08, 52.44, 11, 21], ["2026-10-03", 36, 895.38, 34, 2, 861.67, 33.71, 12, 23], ["2026-10-04", 43, 1127.73, 39, 4, 1053.54, 74.19, 14, 29], ["2026-10-05", 34, 922.82, 33, 1, 904.11, 18.71, 7, 26], ["2026-10-06", 8, 202.79, 6, 2, 165.37, 37.42, 4, 4], ["2026-10-07", 1, 18.76, 0, 1, 0.0, 18.76, 1, 0], ["2026-10-10", 2, 33.58, 0, 2, 0.0, 33.58, 0, 2], ["2026-10-11", 1, 15.25, 0, 1, 0.0, 15.25, 0, 1], ["2026-10-12", 2, 31.76, 0, 2, 0.0, 31.76, 1, 1], ["2026-10-16", 1, 18.84, 0, 1, 0.0, 18.84, 0, 1], ["2026-10-17", 2, 30.18, 0, 2, 0.0, 30.18, 0, 2], ["2026-10-18", 1, 18.96, 0, 1, 0.0, 18.96, 0, 1], ["2026-10-22", 1, 19.27, 0, 1, 0.0, 19.27, 1, 0], ["2026-10-23", 1, 19.29, 0, 1, 0.0, 19.29, 1, 0], ["2026-10-24", 1, 15.51, 0, 1, 0.0, 15.51, 1, 0], ["2026-10-31", 1, 15.6, 0, 1, 0.0, 15.6, 1, 0], ["2026-11-02", 3, 18.49, 0, 3, 0.0, 18.49, 0, 2], ["2026-11-03", 1, 15.57, 0, 1, 0.0, 15.57, 1, 0], ["2026-11-05", 15, 394.9, 15, 0, 394.9, 0.0, 1, 11], ["2026-11-06", 49, 1334.08, 49, 0, 1334.08, 0.0, 9, 37], ["2026-11-07", 33, 873.77, 33, 0, 873.77, 0.0, 8, 24], ["2026-11-08", 26, 685.4, 26, 0, 685.4, 0.0, 4, 20], ["2026-11-09", 15, 402.6, 15, 0, 402.6, 0.0, 1, 14], ["2026-11-10", 15, 401.79, 15, 0, 401.79, 0.0, 4, 11]],
-        "TVG5960": [["2026-04-30", 7, 163.51, 4, 3, 103.9, 59.61, 1, 5], ["2026-05-01", 163, 4239.53, 152, 11, 4041.39, 198.14, 19, 140], ["2026-05-02", 197, 5183.38, 191, 6, 5070.89, 112.49, 14, 179], ["2026-05-03", 123, 3137.17, 117, 6, 3022.95, 114.22, 19, 103], ["2026-05-04", 104, 2657.22, 98, 6, 2545.09, 112.13, 27, 77], ["2026-05-05", 123, 3168.3, 116, 7, 3042.02, 126.28, 17, 105], ["2026-05-06", 120, 3034.72, 110, 10, 2860.87, 173.85, 24, 92], ["2026-05-07", 202, 5231.9, 195, 7, 5101.43, 130.47, 30, 170], ["2026-05-08", 199, 5153.28, 195, 4, 5073.52, 79.76, 47, 150], ["2026-05-09", 159, 3871.84, 137, 22, 3491.53, 380.31, 46, 111], ["2026-05-10", 158, 3879.19, 140, 18, 3543.7, 335.49, 43, 113], ["2026-05-11", 186, 4838.54, 175, 11, 4635.54, 203.0, 47, 137], ["2026-05-12", 180, 4441.46, 164, 16, 4153.6, 287.86, 60, 119], ["2026-05-13", 192, 4862.03, 180, 12, 4646.69, 215.34, 61, 129], ["2026-05-14", 178, 4509.75, 166, 12, 4274.7, 235.05, 51, 124], ["2026-05-15", 192, 4896.48, 176, 16, 4591.72, 304.76, 59, 131], ["2026-05-16", 193, 4779.04, 174, 19, 4425.43, 353.61, 57, 133], ["2026-05-17", 210, 5407.03, 195, 15, 5129.77, 277.26, 59, 149], ["2026-05-18", 175, 4414.81, 167, 8, 4263.87, 150.94, 49, 121], ["2026-05-19", 177, 4502.19, 166, 11, 4312.59, 189.6, 54, 123], ["2026-05-20", 193, 4813.15, 182, 11, 4601.97, 211.18, 66, 127], ["2026-05-21", 197, 4911.18, 185, 12, 4689.81, 221.37, 77, 119], ["2026-05-22", 149, 3666.44, 137, 12, 3457.56, 208.88, 60, 87], ["2026-05-23", 156, 3858.94, 144, 12, 3640.77, 218.17, 82, 73], ["2026-05-24", 156, 3881.08, 142, 14, 3634.3, 246.78, 79, 77], ["2026-05-25", 200, 5125.26, 188, 12, 4906.89, 218.37, 91, 108], ["2026-05-26", 173, 4369.56, 165, 8, 4226.12, 143.44, 53, 118], ["2026-05-27", 158, 3914.48, 150, 8, 3784.8, 129.68, 48, 110], ["2026-05-28", 148, 3693.3, 144, 4, 3622.74, 70.56, 41, 105], ["2026-05-29", 124, 3090.42, 117, 7, 2963.59, 126.83, 43, 81], ["2026-05-30", 137, 3342.15, 130, 7, 3233.34, 108.81, 55, 79], ["2026-05-31", 133, 3374.4, 126, 7, 3252.92, 121.48, 53, 77], ["2026-06-01", 152, 3732.63, 147, 5, 3663.43, 69.2, 44, 104], ["2026-06-02", 161, 4034.02, 159, 2, 3994.27, 39.75, 42, 115], ["2026-06-03", 149, 3696.82, 141, 8, 3550.24, 146.58, 56, 91], ["2026-06-04", 148, 3466.66, 141, 7, 3352.3, 114.36, 50, 96], ["2026-06-05", 118, 3042.69, 114, 4, 2974.8, 67.89, 40, 76], ["2026-06-06", 59, 1422.2, 56, 3, 1372.31, 49.89, 25, 33], ["2026-06-07", 69, 1731.53, 64, 5, 1647.55, 83.98, 29, 38], ["2026-06-08", 171, 4316.65, 167, 4, 4238.37, 78.28, 49, 121], ["2026-06-09", 83, 2081.89, 81, 2, 2044.15, 37.74, 26, 57], ["2026-06-10", 49, 1239.28, 46, 3, 1189.43, 49.85, 20, 28], ["2026-06-11", 90, 2337.39, 86, 4, 2259.08, 78.31, 52, 35], ["2026-06-12", 95, 2433.66, 88, 7, 2343.26, 90.4, 55, 36], ["2026-06-13", 134, 3220.29, 120, 14, 2964.02, 256.27, 65, 67], ["2026-06-14", 140, 3324.54, 132, 8, 3184.83, 139.71, 65, 72], ["2026-06-15", 55, 1384.94, 50, 5, 1295.22, 89.72, 29, 26], ["2026-06-16", 44, 1010.79, 37, 7, 913.6, 97.19, 16, 28], ["2026-06-17", 44, 1034.58, 40, 4, 969.14, 65.44, 16, 27], ["2026-06-18", 52, 1277.96, 48, 4, 1204.81, 73.15, 34, 18], ["2026-06-19", 67, 1718.33, 64, 3, 1665.04, 53.29, 27, 39], ["2026-06-20", 99, 2508.6, 92, 7, 2384.65, 123.95, 56, 41], ["2026-06-21", 70, 1810.48, 68, 2, 1776.33, 34.15, 34, 35], ["2026-06-22", 43, 1105.72, 42, 1, 1090.54, 15.18, 20, 23], ["2026-06-23", 40, 954.52, 37, 3, 905.39, 49.13, 18, 21], ["2026-06-24", 29, 755.52, 29, 0, 755.52, 0.0, 14, 15], ["2026-06-25", 23, 571.38, 22, 1, 555.42, 15.96, 13, 9], ["2026-06-26", 25, 620.23, 23, 2, 590.0, 30.23, 11, 13], ["2026-06-27", 33, 839.09, 30, 3, 787.36, 51.73, 5, 25], ["2026-06-28", 47, 1229.52, 44, 3, 1175.47, 54.05, 11, 35], ["2026-06-29", 25, 584.3, 22, 3, 528.27, 56.03, 11, 14], ["2026-06-30", 27, 713.29, 27, 0, 713.29, 0.0, 8, 18], ["2026-07-01", 65, 1489.57, 58, 7, 1376.57, 113.0, 19, 44], ["2026-07-02", 55, 1310.46, 53, 2, 1279.41, 31.05, 22, 33], ["2026-07-03", 73, 1679.17, 67, 6, 1584.03, 95.14, 36, 36], ["2026-07-04", 67, 1575.54, 61, 6, 1480.3, 95.24, 26, 39], ["2026-07-05", 110, 2561.29, 102, 8, 2432.8, 128.49, 47, 62], ["2026-07-06", 54, 1350.0, 52, 2, 1316.13, 33.87, 24, 30], ["2026-07-07", 41, 1080.51, 38, 3, 1027.87, 52.64, 14, 25], ["2026-07-08", 51, 1356.0, 49, 2, 1322.03, 33.97, 18, 33], ["2026-07-09", 50, 1223.33, 46, 4, 1151.46, 71.87, 16, 33], ["2026-07-10", 47, 1210.38, 44, 3, 1165.06, 45.32, 13, 34], ["2026-07-11", 54, 1428.55, 54, 0, 1428.55, 0.0, 10, 44], ["2026-07-12", 56, 1473.99, 54, 2, 1436.81, 37.18, 15, 40], ["2026-07-13", 52, 1263.09, 46, 6, 1155.0, 108.09, 19, 32], ["2026-07-14", 42, 1081.4, 40, 2, 1047.09, 34.31, 10, 31], ["2026-07-15", 29, 703.03, 27, 2, 668.58, 34.45, 6, 23], ["2026-07-16", 22, 567.03, 21, 1, 547.82, 19.21, 4, 18], ["2026-07-17", 30, 711.49, 30, 0, 711.49, 0.0, 4, 21], ["2026-07-18", 36, 918.32, 34, 2, 884.46, 33.86, 10, 24], ["2026-07-19", 41, 1023.35, 41, 0, 1023.35, 0.0, 6, 35], ["2026-07-20", 35, 841.8, 34, 1, 826.35, 15.45, 4, 30], ["2026-07-21", 44, 1104.03, 42, 2, 1085.06, 18.97, 7, 36], ["2026-07-22", 43, 1127.14, 42, 1, 1107.91, 19.23, 6, 36], ["2026-07-23", 49, 1262.77, 49, 0, 1262.77, 0.0, 5, 43], ["2026-07-24", 26, 679.83, 26, 0, 679.83, 0.0, 6, 20], ["2026-07-25", 33, 878.97, 33, 0, 878.97, 0.0, 5, 26], ["2026-07-26", 33, 893.66, 33, 0, 893.66, 0.0, 5, 27], ["2026-07-27", 31, 769.16, 31, 0, 769.16, 0.0, 4, 27], ["2026-07-28", 49, 1191.57, 49, 0, 1191.57, 0.0, 6, 43], ["2026-07-29", 34, 878.31, 34, 0, 878.31, 0.0, 2, 30], ["2026-07-30", 29, 758.02, 29, 0, 758.02, 0.0, 8, 21], ["2026-07-31", 25, 641.3, 25, 0, 641.3, 0.0, 4, 20], ["2026-08-01", 23, 601.4, 23, 0, 601.4, 0.0, 7, 16], ["2026-08-02", 38, 958.76, 38, 0, 958.76, 0.0, 8, 28], ["2026-08-03", 21, 546.28, 21, 0, 546.28, 0.0, 7, 13], ["2026-08-04", 19, 478.28, 19, 0, 478.28, 0.0, 4, 15], ["2026-08-05", 18, 461.53, 18, 0, 461.53, 0.0, 8, 9], ["2026-08-06", 14, 375.99, 14, 0, 375.99, 0.0, 1, 13], ["2026-08-07", 14, 379.63, 14, 0, 379.63, 0.0, 5, 9], ["2026-08-08", 32, 871.01, 32, 0, 871.01, 0.0, 6, 25], ["2026-08-09", 37, 956.58, 37, 0, 956.58, 0.0, 11, 25], ["2026-08-10", 27, 675.66, 27, 0, 675.66, 0.0, 8, 14], ["2026-08-11", 10, 234.64, 10, 0, 234.64, 0.0, 3, 7], ["2026-08-12", 24, 608.76, 24, 0, 608.76, 0.0, 7, 17], ["2026-08-13", 26, 681.91, 26, 0, 681.91, 0.0, 10, 15], ["2026-08-14", 20, 529.74, 20, 0, 529.74, 0.0, 8, 12], ["2026-08-15", 28, 729.72, 28, 0, 729.72, 0.0, 8, 20], ["2026-08-16", 41, 1067.25, 41, 0, 1067.25, 0.0, 10, 30], ["2026-08-17", 33, 886.07, 33, 0, 886.07, 0.0, 9, 22], ["2026-08-18", 33, 882.88, 33, 0, 882.88, 0.0, 12, 20], ["2026-08-19", 23, 573.02, 23, 0, 573.02, 0.0, 5, 18], ["2026-08-20", 27, 684.59, 25, 2, 650.2, 34.39, 9, 18], ["2026-08-21", 21, 444.17, 13, 8, 301.37, 142.8, 5, 15], ["2026-08-22", 49, 1233.43, 48, 1, 1217.33, 16.1, 12, 35], ["2026-08-23", 39, 972.92, 39, 0, 972.92, 0.0, 9, 28], ["2026-08-24", 32, 787.97, 29, 3, 732.0, 55.97, 12, 19], ["2026-08-25", 25, 616.27, 23, 2, 577.4, 38.87, 8, 17], ["2026-08-26", 32, 750.85, 32, 0, 750.85, 0.0, 11, 21], ["2026-08-27", 36, 911.35, 35, 1, 891.59, 19.76, 12, 24], ["2026-08-28", 34, 843.95, 34, 0, 843.95, 0.0, 9, 25], ["2026-08-29", 34, 878.73, 33, 1, 861.88, 16.85, 11, 22], ["2026-08-30", 47, 1212.73, 44, 3, 1158.15, 54.58, 14, 33], ["2026-08-31", 33, 815.95, 32, 1, 800.2, 15.75, 9, 24], ["2026-09-01", 33, 807.2, 33, 0, 807.2, 0.0, 13, 20], ["2026-09-02", 53, 1321.63, 52, 1, 1304.59, 17.04, 22, 30], ["2026-09-03", 22, 579.44, 21, 1, 563.77, 15.67, 6, 16], ["2026-09-04", 27, 653.61, 25, 2, 617.72, 35.89, 8, 19], ["2026-09-05", 30, 801.11, 29, 1, 781.17, 19.94, 8, 22], ["2026-09-06", 48, 1267.84, 48, 0, 1267.84, 0.0, 9, 37], ["2026-09-07", 48, 1272.98, 46, 2, 1237.26, 35.72, 15, 33], ["2026-09-08", 21, 535.05, 20, 1, 518.13, 16.92, 7, 12], ["2026-09-09", 16, 406.37, 16, 0, 406.37, 0.0, 5, 10], ["2026-09-10", 23, 590.39, 22, 1, 570.38, 20.01, 9, 14], ["2026-09-11", 22, 572.08, 21, 1, 554.19, 17.89, 7, 13], ["2026-09-12", 28, 720.59, 28, 0, 720.59, 0.0, 6, 21], ["2026-09-13", 17, 457.05, 16, 1, 437.95, 19.1, 3, 14], ["2026-09-14", 15, 383.71, 15, 0, 383.71, 0.0, 2, 12], ["2026-09-15", 15, 396.57, 14, 1, 378.85, 17.72, 5, 10], ["2026-09-16", 18, 454.83, 17, 1, 435.21, 19.62, 7, 11], ["2026-09-17", 21, 493.2, 21, 0, 493.2, 0.0, 3, 18], ["2026-09-18", 9, 224.0, 8, 1, 205.49, 18.51, 1, 8], ["2026-09-19", 6, 148.74, 5, 1, 129.36, 19.38, 2, 4], ["2026-09-20", 14, 375.32, 14, 0, 375.32, 0.0, 2, 11], ["2026-09-21", 10, 262.85, 10, 0, 262.85, 0.0, 3, 7], ["2026-09-22", 13, 311.95, 13, 0, 311.95, 0.0, 4, 8], ["2026-09-23", 15, 393.61, 15, 0, 393.61, 0.0, 1, 13], ["2026-09-24", 19, 515.97, 19, 0, 515.97, 0.0, 6, 12], ["2026-09-25", 20, 508.68, 17, 3, 455.37, 53.31, 2, 18], ["2026-09-26", 13, 315.04, 13, 0, 315.04, 0.0, 4, 9], ["2026-09-27", 12, 291.2, 12, 0, 291.2, 0.0, 3, 9], ["2026-09-28", 8, 205.55, 8, 0, 205.55, 0.0, 3, 5], ["2026-09-29", 20, 489.19, 20, 0, 489.19, 0.0, 6, 13], ["2026-09-30", 17, 422.22, 15, 2, 388.27, 33.95, 7, 10], ["2026-10-01", 13, 335.13, 12, 1, 316.4, 18.73, 6, 7], ["2026-10-02", 27, 703.86, 23, 4, 636.44, 67.42, 8, 18], ["2026-10-03", 23, 554.72, 20, 3, 506.03, 48.69, 7, 16], ["2026-10-04", 28, 728.93, 26, 2, 695.21, 33.72, 3, 25], ["2026-10-05", 21, 478.47, 19, 2, 441.49, 36.98, 6, 14], ["2026-10-06", 24, 579.5, 21, 3, 527.99, 51.51, 5, 19], ["2026-10-07", 15, 379.49, 14, 1, 360.84, 18.65, 3, 12], ["2026-10-08", 30, 776.97, 29, 1, 758.21, 18.76, 8, 20], ["2026-10-09", 22, 529.93, 21, 1, 511.24, 18.69, 7, 15], ["2026-10-10", 41, 987.07, 38, 3, 933.71, 53.36, 7, 32], ["2026-10-11", 80, 1975.43, 76, 4, 1904.43, 71.0, 17, 61], ["2026-10-12", 14, 308.69, 13, 1, 292.81, 15.88, 4, 9], ["2026-10-13", 15, 374.73, 15, 0, 374.73, 0.0, 5, 9], ["2026-10-14", 19, 495.72, 19, 0, 495.72, 0.0, 7, 12], ["2026-10-15", 20, 530.61, 20, 0, 530.61, 0.0, 9, 9], ["2026-10-16", 16, 419.72, 15, 1, 401.75, 17.97, 1, 13], ["2026-10-17", 22, 572.91, 22, 0, 572.91, 0.0, 5, 17], ["2026-10-18", 32, 816.91, 32, 0, 816.91, 0.0, 9, 22], ["2026-10-19", 12, 330.4, 12, 0, 330.4, 0.0, 3, 7], ["2026-10-20", 16, 395.22, 16, 0, 395.22, 0.0, 8, 8], ["2026-10-21", 17, 444.56, 17, 0, 444.56, 0.0, 1, 14], ["2026-10-22", 16, 330.71, 15, 1, 311.42, 19.29, 6, 8], ["2026-10-23", 15, 390.62, 15, 0, 390.62, 0.0, 4, 10], ["2026-10-24", 22, 574.57, 21, 1, 556.07, 18.5, 5, 17], ["2026-10-25", 16, 428.2, 16, 0, 428.2, 0.0, 3, 12], ["2026-10-26", 15, 375.38, 14, 1, 356.0, 19.38, 2, 13], ["2026-10-27", 10, 201.13, 10, 0, 201.13, 0.0, 2, 7], ["2026-10-28", 20, 497.84, 20, 0, 497.84, 0.0, 6, 14], ["2026-10-29", 11, 298.37, 10, 1, 279.07, 19.3, 3, 7], ["2026-10-30", 17, 439.48, 17, 0, 439.48, 0.0, 3, 14], ["2026-10-31", 16, 425.19, 16, 0, 425.19, 0.0, 3, 12], ["2026-11-01", 27, 712.65, 25, 2, 673.73, 38.92, 3, 23], ["2026-11-02", 12, 313.59, 11, 1, 294.13, 19.46, 5, 7], ["2026-11-03", 10, 261.66, 9, 1, 242.2, 19.46, 3, 7], ["2026-11-04", 19, 512.74, 19, 0, 512.74, 0.0, 4, 14], ["2026-11-05", 14, 315.42, 14, 0, 315.42, 0.0, 1, 13], ["2026-11-06", 8, 181.54, 8, 0, 181.54, 0.0, 1, 7], ["2026-11-07", 11, 293.89, 11, 0, 293.89, 0.0, 2, 9], ["2026-11-08", 9, 235.58, 9, 0, 235.58, 0.0, 1, 8], ["2026-11-09", 8, 206.46, 7, 1, 187.33, 19.13, 3, 5], ["2026-11-10", 7, 123.44, 6, 1, 104.4, 19.04, 2, 5]],
-        "TVG5970": [["2026-04-30", 2, 55.15, 2, 0, 55.15, 0.0, 0, 2], ["2026-05-01", 61, 1580.79, 60, 1, 1560.39, 20.4, 11, 48], ["2026-05-02", 78, 2016.94, 76, 2, 1975.66, 41.28, 13, 63], ["2026-05-03", 40, 1011.86, 37, 3, 953.25, 58.61, 7, 31], ["2026-05-04", 37, 932.97, 35, 2, 900.48, 32.49, 12, 24], ["2026-05-05", 42, 1110.65, 40, 2, 1069.58, 41.07, 8, 33], ["2026-05-06", 19, 510.3, 19, 0, 510.3, 0.0, 3, 16], ["2026-05-07", 26, 686.87, 25, 1, 666.3, 20.57, 7, 15], ["2026-05-08", 24, 634.83, 24, 0, 634.83, 0.0, 7, 16], ["2026-05-09", 37, 919.49, 36, 1, 899.1, 20.39, 16, 20], ["2026-05-10", 43, 1103.4, 41, 2, 1068.14, 35.26, 14, 29], ["2026-05-11", 37, 964.34, 37, 0, 964.34, 0.0, 16, 20], ["2026-05-12", 25, 647.27, 23, 2, 613.69, 33.58, 8, 15], ["2026-05-13", 20, 495.02, 19, 1, 474.75, 20.27, 8, 12], ["2026-05-14", 19, 455.09, 18, 1, 434.82, 20.27, 5, 14], ["2026-05-15", 22, 554.86, 20, 2, 514.48, 40.38, 8, 14], ["2026-05-16", 23, 589.7, 22, 1, 573.61, 16.09, 11, 12], ["2026-05-17", 22, 542.24, 22, 0, 542.24, 0.0, 8, 14], ["2026-05-18", 28, 713.69, 28, 0, 713.69, 0.0, 10, 17], ["2026-05-19", 16, 381.95, 15, 1, 365.86, 16.09, 5, 10], ["2026-05-20", 24, 618.19, 23, 1, 598.12, 20.07, 11, 11], ["2026-05-21", 18, 445.73, 17, 1, 428.7, 17.03, 7, 11], ["2026-05-22", 31, 745.45, 29, 2, 707.93, 37.52, 13, 15], ["2026-05-23", 21, 521.18, 21, 0, 521.18, 0.0, 7, 14], ["2026-05-24", 28, 719.92, 27, 1, 700.04, 19.88, 10, 18], ["2026-05-25", 24, 627.49, 24, 0, 627.49, 0.0, 13, 11], ["2026-05-26", 20, 507.65, 18, 2, 471.77, 35.88, 7, 13], ["2026-05-27", 19, 507.34, 18, 1, 487.39, 19.95, 7, 11], ["2026-05-28", 19, 462.81, 17, 2, 423.1, 39.71, 10, 9], ["2026-05-29", 17, 418.22, 15, 2, 382.62, 35.6, 6, 11], ["2026-05-30", 15, 343.03, 14, 1, 325.07, 17.96, 7, 8], ["2026-05-31", 10, 248.36, 9, 1, 232.4, 15.96, 5, 5], ["2026-06-01", 13, 308.3, 11, 2, 276.44, 31.86, 7, 6], ["2026-06-02", 13, 289.36, 12, 1, 276.33, 13.03, 2, 11], ["2026-06-03", 23, 527.03, 22, 1, 511.18, 15.85, 7, 10], ["2026-06-04", 15, 355.1, 15, 0, 355.1, 0.0, 7, 8], ["2026-06-05", 18, 465.68, 18, 0, 465.68, 0.0, 9, 9], ["2026-06-06", 11, 266.43, 11, 0, 266.43, 0.0, 4, 6], ["2026-06-07", 10, 259.65, 10, 0, 259.65, 0.0, 3, 7], ["2026-06-08", 16, 432.27, 16, 0, 432.27, 0.0, 8, 7], ["2026-06-09", 10, 223.63, 9, 1, 207.99, 15.64, 3, 5], ["2026-06-10", 5, 134.61, 5, 0, 134.61, 0.0, 3, 2], ["2026-06-11", 9, 207.32, 9, 0, 207.32, 0.0, 4, 4], ["2026-06-12", 11, 275.63, 11, 0, 275.63, 0.0, 4, 6], ["2026-06-13", 22, 502.84, 22, 0, 502.84, 0.0, 5, 16], ["2026-06-14", 30, 625.38, 30, 0, 625.38, 0.0, 13, 16], ["2026-06-15", 5, 137.31, 5, 0, 137.31, 0.0, 2, 3], ["2026-06-16", 4, 101.4, 4, 0, 101.4, 0.0, 3, 1], ["2026-06-17", 10, 260.51, 10, 0, 260.51, 0.0, 7, 3], ["2026-06-18", 9, 245.0, 9, 0, 245.0, 0.0, 5, 4], ["2026-06-19", 13, 341.81, 13, 0, 341.81, 0.0, 2, 11], ["2026-06-20", 13, 302.1, 13, 0, 302.1, 0.0, 4, 8], ["2026-06-21", 11, 293.22, 11, 0, 293.22, 0.0, 4, 7], ["2026-06-22", 12, 254.8, 12, 0, 254.8, 0.0, 4, 8], ["2026-06-23", 9, 242.2, 9, 0, 242.2, 0.0, 2, 5], ["2026-06-24", 4, 109.5, 4, 0, 109.5, 0.0, 1, 3], ["2026-06-25", 4, 110.19, 4, 0, 110.19, 0.0, 2, 2], ["2026-06-26", 4, 104.73, 4, 0, 104.73, 0.0, 2, 2], ["2026-06-27", 2, 44.8, 2, 0, 44.8, 0.0, 1, 1], ["2026-06-28", 5, 134.4, 5, 0, 134.4, 0.0, 1, 4], ["2026-06-29", 8, 206.85, 8, 0, 206.85, 0.0, 1, 6], ["2026-06-30", 7, 180.98, 7, 0, 180.98, 0.0, 3, 4], ["2026-07-01", 10, 243.87, 10, 0, 243.87, 0.0, 2, 7], ["2026-07-02", 15, 353.96, 15, 0, 353.96, 0.0, 4, 11], ["2026-07-03", 12, 286.11, 12, 0, 286.11, 0.0, 3, 8], ["2026-07-04", 20, 477.38, 20, 0, 477.38, 0.0, 6, 13], ["2026-07-05", 14, 336.38, 14, 0, 336.38, 0.0, 3, 11], ["2026-07-06", 4, 100.8, 4, 0, 100.8, 0.0, 2, 1], ["2026-07-07", 5, 124.81, 5, 0, 124.81, 0.0, 3, 2], ["2026-07-08", 10, 264.21, 10, 0, 264.21, 0.0, 2, 8], ["2026-07-09", 9, 242.92, 8, 1, 224.0, 18.92, 2, 7], ["2026-07-10", 9, 233.73, 8, 1, 214.82, 18.91, 2, 7], ["2026-07-11", 14, 365.5, 14, 0, 365.5, 0.0, 2, 12], ["2026-07-12", 8, 190.6, 8, 0, 190.6, 0.0, 1, 6], ["2026-07-13", 6, 162.4, 6, 0, 162.4, 0.0, 0, 6], ["2026-07-14", 7, 155.48, 7, 0, 155.48, 0.0, 2, 5], ["2026-07-15", 4, 112.0, 4, 0, 112.0, 0.0, 1, 3], ["2026-07-16", 13, 328.43, 12, 1, 309.22, 19.21, 2, 8], ["2026-07-17", 15, 308.71, 15, 0, 308.71, 0.0, 3, 6], ["2026-07-18", 7, 166.46, 6, 1, 150.98, 15.48, 1, 6], ["2026-07-19", 7, 157.3, 7, 0, 157.3, 0.0, 1, 6], ["2026-07-20", 11, 294.79, 11, 0, 294.79, 0.0, 1, 10], ["2026-07-21", 4, 99.08, 4, 0, 99.08, 0.0, 0, 4], ["2026-07-22", 6, 162.4, 6, 0, 162.4, 0.0, 3, 3], ["2026-07-23", 9, 202.45, 7, 2, 168.0, 34.45, 1, 7], ["2026-07-24", 6, 159.6, 6, 0, 159.6, 0.0, 4, 2], ["2026-07-25", 13, 325.43, 12, 1, 308.18, 17.25, 2, 11], ["2026-07-26", 10, 256.83, 10, 0, 256.83, 0.0, 3, 7], ["2026-07-27", 8, 208.11, 7, 1, 189.0, 19.11, 1, 7], ["2026-07-28", 11, 260.45, 10, 1, 242.98, 17.47, 3, 8], ["2026-07-29", 13, 336.64, 12, 1, 317.56, 19.08, 2, 11], ["2026-07-30", 6, 158.73, 6, 0, 158.73, 0.0, 1, 5], ["2026-07-31", 8, 195.1, 8, 0, 195.1, 0.0, 3, 5], ["2026-08-01", 3, 81.2, 3, 0, 81.2, 0.0, 1, 2], ["2026-08-02", 13, 326.63, 13, 0, 326.63, 0.0, 0, 13], ["2026-08-03", 5, 102.33, 5, 0, 102.33, 0.0, 1, 4], ["2026-08-04", 7, 181.04, 7, 0, 181.04, 0.0, 1, 6], ["2026-08-05", 5, 126.0, 5, 0, 126.0, 0.0, 1, 4], ["2026-08-06", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-08-07", 2, 47.6, 2, 0, 47.6, 0.0, 2, 0], ["2026-08-08", 9, 239.7, 8, 1, 221.2, 18.5, 3, 6], ["2026-08-09", 12, 303.04, 11, 1, 284.53, 18.51, 4, 8], ["2026-08-10", 6, 162.4, 6, 0, 162.4, 0.0, 1, 5], ["2026-08-11", 3, 72.66, 3, 0, 72.66, 0.0, 1, 2], ["2026-08-12", 6, 148.58, 5, 1, 132.92, 15.66, 3, 3], ["2026-08-13", 3, 70.9, 3, 0, 70.9, 0.0, 0, 3], ["2026-08-14", 4, 107.38, 4, 0, 107.38, 0.0, 0, 4], ["2026-08-15", 7, 177.78, 7, 0, 177.78, 0.0, 4, 3], ["2026-08-16", 5, 137.87, 5, 0, 137.87, 0.0, 1, 4], ["2026-08-17", 3, 72.82, 3, 0, 72.82, 0.0, 1, 2], ["2026-08-18", 7, 165.4, 7, 0, 165.4, 0.0, 2, 5], ["2026-08-19", 3, 74.53, 3, 0, 74.53, 0.0, 0, 3], ["2026-08-20", 8, 224.0, 8, 0, 224.0, 0.0, 2, 5], ["2026-08-21", 4, 112.0, 4, 0, 112.0, 0.0, 1, 3], ["2026-08-22", 9, 246.96, 9, 0, 246.96, 0.0, 2, 6], ["2026-08-23", 8, 211.06, 8, 0, 211.06, 0.0, 2, 6], ["2026-08-24", 8, 149.58, 8, 0, 149.58, 0.0, 1, 7], ["2026-08-25", 4, 99.06, 4, 0, 99.06, 0.0, 1, 3], ["2026-08-26", 5, 135.06, 5, 0, 135.06, 0.0, 2, 3], ["2026-08-27", 1, 22.4, 1, 0, 22.4, 0.0, 1, 0], ["2026-08-28", 3, 76.55, 3, 0, 76.55, 0.0, 2, 1], ["2026-08-29", 4, 99.69, 4, 0, 99.69, 0.0, 1, 3], ["2026-08-30", 2, 50.4, 2, 0, 50.4, 0.0, 0, 2], ["2026-08-31", 6, 157.17, 6, 0, 157.17, 0.0, 2, 4], ["2026-09-01", 2, 48.52, 2, 0, 48.52, 0.0, 1, 1], ["2026-09-02", 27, 676.23, 27, 0, 676.23, 0.0, 5, 22], ["2026-09-03", 5, 121.37, 5, 0, 121.37, 0.0, 2, 3], ["2026-09-04", 10, 231.0, 10, 0, 231.0, 0.0, 2, 7], ["2026-09-05", 5, 132.14, 5, 0, 132.14, 0.0, 1, 4], ["2026-09-06", 7, 182.45, 6, 1, 162.6, 19.85, 2, 5], ["2026-09-07", 10, 232.71, 9, 1, 212.86, 19.85, 4, 6], ["2026-09-08", 6, 156.8, 6, 0, 156.8, 0.0, 4, 2], ["2026-09-09", 16, 415.28, 16, 0, 415.28, 0.0, 2, 12], ["2026-09-10", 15, 360.24, 13, 2, 325.92, 34.32, 1, 14], ["2026-09-11", 4, 98.85, 4, 0, 98.85, 0.0, 1, 3], ["2026-09-12", 3, 74.2, 3, 0, 74.2, 0.0, 1, 2], ["2026-09-13", 5, 127.95, 5, 0, 127.95, 0.0, 1, 4], ["2026-09-14", 5, 105.7, 5, 0, 105.7, 0.0, 2, 3], ["2026-09-15", 7, 185.4, 7, 0, 185.4, 0.0, 1, 6], ["2026-09-16", 12, 315.08, 12, 0, 315.08, 0.0, 2, 8], ["2026-09-17", 1, 25.2, 1, 0, 25.2, 0.0, 1, 0], ["2026-09-18", 2, 45.21, 2, 0, 45.21, 0.0, 0, 2], ["2026-09-19", 3, 74.99, 3, 0, 74.99, 0.0, 0, 3], ["2026-09-20", 5, 102.81, 5, 0, 102.81, 0.0, 1, 4], ["2026-09-21", 7, 183.01, 7, 0, 183.01, 0.0, 3, 3], ["2026-09-22", 3, 79.93, 3, 0, 79.93, 0.0, 1, 2], ["2026-09-23", 5, 119.61, 5, 0, 119.61, 0.0, 0, 5], ["2026-09-24", 2, 50.4, 2, 0, 50.4, 0.0, 0, 2], ["2026-09-25", 1, 23.67, 1, 0, 23.67, 0.0, 0, 1], ["2026-09-26", 7, 170.63, 6, 1, 152.51, 18.12, 2, 5], ["2026-09-27", 8, 204.68, 7, 1, 187.6, 17.08, 1, 6], ["2026-09-28", 5, 113.18, 4, 1, 98.0, 15.18, 3, 2], ["2026-09-29", 6, 137.12, 6, 0, 137.12, 0.0, 0, 5], ["2026-10-01", 2, 53.41, 2, 0, 53.41, 0.0, 0, 2], ["2026-10-02", 5, 127.4, 5, 0, 127.4, 0.0, 1, 4], ["2026-10-03", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-10-04", 6, 162.4, 6, 0, 162.4, 0.0, 4, 2], ["2026-10-05", 5, 120.54, 4, 1, 103.7, 16.84, 0, 5], ["2026-10-06", 4, 94.93, 4, 0, 94.93, 0.0, 0, 4], ["2026-10-07", 5, 104.28, 5, 0, 104.28, 0.0, 1, 4], ["2026-10-08", 1, 17.63, 1, 0, 17.63, 0.0, 0, 1], ["2026-10-09", 3, 72.82, 2, 1, 56.0, 16.82, 2, 1], ["2026-10-10", 2, 40.07, 1, 1, 22.4, 17.67, 1, 1], ["2026-10-11", 13, 328.21, 13, 0, 328.21, 0.0, 4, 9], ["2026-10-12", 3, 77.0, 3, 0, 77.0, 0.0, 0, 3], ["2026-10-13", 4, 107.8, 4, 0, 107.8, 0.0, 1, 2], ["2026-10-14", 3, 70.93, 2, 1, 54.11, 16.82, 0, 3], ["2026-10-15", 3, 78.43, 3, 0, 78.43, 0.0, 0, 3], ["2026-10-16", 4, 101.96, 3, 1, 83.12, 18.84, 3, 1], ["2026-10-17", 3, 82.16, 3, 0, 82.16, 0.0, 1, 2], ["2026-10-18", 5, 126.57, 4, 1, 110.46, 16.11, 0, 5], ["2026-10-19", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-10-20", 7, 179.2, 7, 0, 179.2, 0.0, 3, 4], ["2026-10-21", 3, 84.0, 3, 0, 84.0, 0.0, 1, 1], ["2026-10-22", 4, 109.2, 4, 0, 109.2, 0.0, 2, 2], ["2026-10-23", 3, 79.71, 3, 0, 79.71, 0.0, 0, 3], ["2026-10-24", 2, 50.24, 2, 0, 50.24, 0.0, 0, 2], ["2026-10-25", 12, 298.62, 10, 2, 262.51, 36.11, 1, 10], ["2026-10-26", 5, 133.28, 5, 0, 133.28, 0.0, 3, 2], ["2026-10-27", 1, 22.4, 1, 0, 22.4, 0.0, 1, 0], ["2026-10-28", 2, 50.4, 2, 0, 50.4, 0.0, 0, 2], ["2026-10-29", 2, 47.6, 2, 0, 47.6, 0.0, 0, 2], ["2026-10-30", 4, 94.9, 3, 1, 75.45, 19.45, 1, 3], ["2026-10-31", 2, 50.4, 2, 0, 50.4, 0.0, 2, 0], ["2026-11-01", 2, 46.0, 2, 0, 46.0, 0.0, 0, 1], ["2026-11-02", 5, 131.6, 5, 0, 131.6, 0.0, 1, 4], ["2026-11-03", 3, 68.1, 2, 1, 49.49, 18.61, 0, 3], ["2026-11-04", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-11-05", 2, 45.56, 1, 1, 28.0, 17.56, 0, 2], ["2026-11-06", 3, 72.13, 3, 0, 72.13, 0.0, 0, 3], ["2026-11-07", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-11-08", 4, 112.0, 4, 0, 112.0, 0.0, 0, 2], ["2026-11-09", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-11-10", 1, 25.2, 1, 0, 25.2, 0.0, 0, 1]],
-        "TVG5910": [["2026-05-01", 64, 1673.02, 59, 5, 1577.73, 95.29, 11, 53], ["2026-05-02", 86, 2235.05, 83, 3, 2178.33, 56.72, 11, 75], ["2026-05-03", 62, 1653.42, 61, 1, 1636.98, 16.44, 17, 45], ["2026-05-04", 43, 1065.63, 40, 3, 1009.01, 56.62, 12, 31], ["2026-05-05", 79, 2057.84, 75, 4, 1983.99, 73.85, 19, 55], ["2026-05-06", 48, 1208.98, 45, 3, 1154.61, 54.37, 20, 28], ["2026-05-07", 51, 1302.08, 50, 1, 1281.61, 20.47, 15, 36], ["2026-05-08", 58, 1495.53, 57, 1, 1475.06, 20.47, 26, 31], ["2026-05-09", 47, 1164.72, 45, 2, 1129.36, 35.36, 23, 23], ["2026-05-10", 64, 1614.72, 64, 0, 1614.72, 0.0, 30, 33], ["2026-05-11", 38, 945.48, 38, 0, 945.48, 0.0, 16, 22], ["2026-05-12", 32, 800.97, 30, 2, 763.87, 37.1, 8, 24], ["2026-05-13", 34, 863.93, 32, 2, 826.49, 37.44, 8, 26], ["2026-05-14", 36, 867.3, 30, 6, 754.04, 113.26, 16, 19], ["2026-05-15", 30, 749.81, 28, 2, 719.69, 30.12, 10, 20], ["2026-05-16", 45, 1144.38, 44, 1, 1124.26, 20.12, 14, 31], ["2026-05-17", 44, 1099.59, 39, 5, 1004.98, 94.61, 21, 23], ["2026-05-18", 37, 959.53, 36, 1, 939.45, 20.08, 12, 25], ["2026-05-19", 36, 899.38, 34, 2, 859.15, 40.23, 17, 19], ["2026-05-20", 38, 994.78, 37, 1, 974.74, 20.04, 14, 24], ["2026-05-21", 29, 717.45, 27, 2, 681.38, 36.07, 10, 19], ["2026-05-22", 42, 1098.65, 41, 1, 1082.69, 15.96, 12, 28], ["2026-05-23", 30, 762.6, 29, 1, 746.64, 15.96, 12, 16], ["2026-05-24", 34, 890.94, 33, 1, 871.06, 19.88, 11, 23], ["2026-05-25", 61, 1537.47, 59, 2, 1501.65, 35.82, 23, 38], ["2026-05-26", 25, 647.65, 24, 1, 631.72, 15.93, 14, 11], ["2026-05-27", 17, 441.24, 16, 1, 424.28, 16.96, 11, 6], ["2026-05-28", 23, 619.1, 23, 0, 619.1, 0.0, 5, 17], ["2026-05-29", 34, 881.66, 32, 2, 843.36, 38.3, 9, 25], ["2026-05-30", 27, 707.86, 27, 0, 707.86, 0.0, 13, 14], ["2026-05-31", 20, 522.31, 19, 1, 502.36, 19.95, 5, 14], ["2026-06-01", 24, 631.83, 23, 1, 611.88, 19.95, 9, 15], ["2026-06-02", 22, 553.82, 21, 1, 535.69, 18.13, 6, 16], ["2026-06-03", 27, 683.47, 24, 3, 627.52, 55.95, 10, 17], ["2026-06-04", 16, 391.33, 16, 0, 391.33, 0.0, 8, 8], ["2026-06-05", 24, 559.19, 23, 1, 543.45, 15.74, 9, 14], ["2026-06-06", 11, 282.09, 10, 1, 262.36, 19.73, 5, 6], ["2026-06-07", 26, 632.17, 26, 0, 632.17, 0.0, 11, 14], ["2026-06-08", 26, 670.67, 23, 3, 616.43, 54.24, 8, 17], ["2026-06-09", 9, 246.4, 9, 0, 246.4, 0.0, 5, 3], ["2026-06-10", 12, 309.91, 12, 0, 309.91, 0.0, 4, 7], ["2026-06-11", 15, 361.8, 14, 1, 344.84, 16.96, 8, 6], ["2026-06-12", 19, 516.1, 19, 0, 516.1, 0.0, 7, 12], ["2026-06-13", 32, 783.88, 31, 1, 768.34, 15.54, 8, 22], ["2026-06-14", 48, 1041.1, 48, 0, 1041.1, 0.0, 14, 31], ["2026-06-15", 15, 393.73, 14, 1, 378.15, 15.58, 4, 11], ["2026-06-16", 10, 253.47, 8, 2, 217.83, 35.64, 2, 7], ["2026-06-17", 16, 402.32, 13, 3, 344.19, 58.13, 7, 8], ["2026-06-18", 12, 281.5, 12, 0, 281.5, 0.0, 10, 2], ["2026-06-19", 8, 207.2, 8, 0, 207.2, 0.0, 4, 4], ["2026-06-20", 21, 548.42, 21, 0, 548.42, 0.0, 7, 14], ["2026-06-21", 25, 662.87, 25, 0, 662.87, 0.0, 10, 15], ["2026-06-22", 10, 269.05, 10, 0, 269.05, 0.0, 3, 5], ["2026-06-23", 11, 264.39, 11, 0, 264.39, 0.0, 2, 9], ["2026-06-24", 6, 161.0, 6, 0, 161.0, 0.0, 2, 3], ["2026-06-25", 7, 166.99, 6, 1, 151.97, 15.02, 1, 6], ["2026-06-26", 4, 76.89, 4, 0, 76.89, 0.0, 2, 2], ["2026-06-27", 10, 255.4, 9, 1, 237.04, 18.36, 4, 6], ["2026-06-28", 7, 190.88, 7, 0, 190.88, 0.0, 2, 4], ["2026-06-29", 10, 264.04, 10, 0, 264.04, 0.0, 1, 9], ["2026-06-30", 11, 295.09, 10, 1, 280.0, 15.09, 4, 4], ["2026-07-01", 15, 341.72, 13, 2, 309.83, 31.89, 6, 9], ["2026-07-02", 10, 238.38, 10, 0, 238.38, 0.0, 4, 6], ["2026-07-03", 10, 239.88, 10, 0, 239.88, 0.0, 3, 6], ["2026-07-04", 11, 252.37, 10, 1, 236.33, 16.04, 2, 9], ["2026-07-05", 30, 716.42, 30, 0, 716.42, 0.0, 7, 22], ["2026-07-06", 6, 141.91, 6, 0, 141.91, 0.0, 3, 3], ["2026-07-07", 4, 106.82, 4, 0, 106.82, 0.0, 1, 3], ["2026-07-08", 8, 198.5, 8, 0, 198.5, 0.0, 1, 7], ["2026-07-09", 8, 179.12, 8, 0, 179.12, 0.0, 2, 6], ["2026-07-10", 10, 257.7, 10, 0, 257.7, 0.0, 1, 9], ["2026-07-11", 10, 259.93, 10, 0, 259.93, 0.0, 3, 7], ["2026-07-12", 9, 231.43, 8, 1, 213.4, 18.03, 2, 7], ["2026-07-13", 12, 307.33, 11, 1, 291.25, 16.08, 5, 7], ["2026-07-14", 5, 126.9, 5, 0, 126.9, 0.0, 1, 4], ["2026-07-15", 5, 134.4, 5, 0, 134.4, 0.0, 2, 3], ["2026-07-16", 4, 103.6, 4, 0, 103.6, 0.0, 0, 4], ["2026-07-17", 17, 347.91, 17, 0, 347.91, 0.0, 1, 11], ["2026-07-18", 12, 330.84, 12, 0, 330.84, 0.0, 2, 9], ["2026-07-19", 10, 272.22, 10, 0, 272.22, 0.0, 3, 7], ["2026-07-20", 9, 213.84, 9, 0, 213.84, 0.0, 3, 6], ["2026-07-21", 8, 210.63, 7, 1, 195.12, 15.51, 1, 7], ["2026-07-22", 3, 79.8, 3, 0, 79.8, 0.0, 1, 2], ["2026-07-23", 6, 147.45, 6, 0, 147.45, 0.0, 1, 5], ["2026-07-24", 5, 130.06, 5, 0, 130.06, 0.0, 0, 5], ["2026-07-25", 10, 271.6, 10, 0, 271.6, 0.0, 0, 9], ["2026-07-26", 5, 134.4, 5, 0, 134.4, 0.0, 3, 2], ["2026-07-27", 9, 239.61, 8, 1, 220.5, 19.11, 5, 4], ["2026-07-28", 11, 285.25, 11, 0, 285.25, 0.0, 4, 6], ["2026-07-29", 14, 366.76, 14, 0, 366.76, 0.0, 2, 11], ["2026-07-30", 6, 162.4, 6, 0, 162.4, 0.0, 2, 3], ["2026-07-31", 8, 219.8, 8, 0, 219.8, 0.0, 2, 5], ["2026-08-01", 3, 70.63, 3, 0, 70.63, 0.0, 0, 3], ["2026-08-02", 10, 272.76, 10, 0, 272.76, 0.0, 0, 9], ["2026-08-03", 9, 245.26, 9, 0, 245.26, 0.0, 2, 7], ["2026-08-04", 4, 93.4, 4, 0, 93.4, 0.0, 1, 3], ["2026-08-05", 3, 78.4, 3, 0, 78.4, 0.0, 3, 0], ["2026-08-06", 7, 182.42, 7, 0, 182.42, 0.0, 2, 5], ["2026-08-07", 5, 133.06, 5, 0, 133.06, 0.0, 2, 1], ["2026-08-08", 7, 190.4, 7, 0, 190.4, 0.0, 2, 5], ["2026-08-09", 6, 147.6, 6, 0, 147.6, 0.0, 1, 5], ["2026-08-10", 7, 189.16, 7, 0, 189.16, 0.0, 3, 4], ["2026-08-11", 5, 129.16, 5, 0, 129.16, 0.0, 1, 4], ["2026-08-12", 7, 186.89, 7, 0, 186.89, 0.0, 3, 4], ["2026-08-13", 4, 105.35, 4, 0, 105.35, 0.0, 2, 2], ["2026-08-14", 2, 50.4, 2, 0, 50.4, 0.0, 1, 1], ["2026-08-15", 5, 133.53, 5, 0, 133.53, 0.0, 0, 5], ["2026-08-16", 3, 81.41, 3, 0, 81.41, 0.0, 0, 3], ["2026-08-17", 4, 106.4, 4, 0, 106.4, 0.0, 2, 2], ["2026-08-18", 6, 156.05, 6, 0, 156.05, 0.0, 2, 4], ["2026-08-19", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-08-20", 4, 106.4, 4, 0, 106.4, 0.0, 1, 3], ["2026-08-21", 2, 46.65, 1, 1, 28.0, 18.65, 1, 1], ["2026-08-22", 5, 136.53, 5, 0, 136.53, 0.0, 1, 4], ["2026-08-23", 6, 163.8, 6, 0, 163.8, 0.0, 0, 6], ["2026-08-24", 7, 181.03, 7, 0, 181.03, 0.0, 2, 5], ["2026-08-25", 6, 154.27, 6, 0, 154.27, 0.0, 2, 4], ["2026-08-26", 3, 78.62, 3, 0, 78.62, 0.0, 0, 3], ["2026-08-27", 6, 165.79, 6, 0, 165.79, 0.0, 0, 5], ["2026-08-28", 5, 134.4, 5, 0, 134.4, 0.0, 1, 4], ["2026-08-29", 5, 133.0, 5, 0, 133.0, 0.0, 1, 4], ["2026-08-30", 8, 194.38, 7, 1, 178.67, 15.71, 2, 6], ["2026-08-31", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-01", 8, 205.7, 8, 0, 205.7, 0.0, 2, 6], ["2026-09-02", 9, 239.84, 9, 0, 239.84, 0.0, 3, 6], ["2026-09-03", 5, 134.4, 5, 0, 134.4, 0.0, 2, 3], ["2026-09-04", 5, 124.45, 5, 0, 124.45, 0.0, 1, 4], ["2026-09-06", 15, 390.73, 15, 0, 390.73, 0.0, 4, 10], ["2026-09-07", 11, 290.92, 11, 0, 290.92, 0.0, 3, 6], ["2026-09-08", 4, 106.4, 4, 0, 106.4, 0.0, 2, 2], ["2026-09-09", 4, 101.11, 4, 0, 101.11, 0.0, 1, 3], ["2026-09-10", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-11", 2, 50.4, 2, 0, 50.4, 0.0, 2, 0], ["2026-09-12", 4, 84.0, 4, 0, 84.0, 0.0, 0, 4], ["2026-09-13", 6, 153.19, 6, 0, 153.19, 0.0, 1, 5], ["2026-09-14", 5, 129.4, 5, 0, 129.4, 0.0, 1, 3], ["2026-09-15", 3, 84.0, 3, 0, 84.0, 0.0, 2, 1], ["2026-09-16", 3, 79.8, 3, 0, 79.8, 0.0, 0, 3], ["2026-09-17", 3, 82.21, 3, 0, 82.21, 0.0, 2, 1], ["2026-09-18", 3, 78.4, 3, 0, 78.4, 0.0, 1, 2], ["2026-09-19", 6, 112.0, 6, 0, 112.0, 0.0, 1, 4], ["2026-09-20", 4, 96.69, 4, 0, 96.69, 0.0, 1, 3], ["2026-09-21", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-22", 2, 41.64, 1, 1, 23.0, 18.64, 0, 2], ["2026-09-23", 3, 74.2, 3, 0, 74.2, 0.0, 1, 2], ["2026-09-24", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-09-25", 3, 78.4, 3, 0, 78.4, 0.0, 2, 1], ["2026-09-26", 2, 53.5, 2, 0, 53.5, 0.0, 0, 2], ["2026-09-27", 1, 23.8, 1, 0, 23.8, 0.0, 0, 1], ["2026-09-28", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-09-29", 6, 168.0, 6, 0, 168.0, 0.0, 1, 5], ["2026-09-30", 1, 22.4, 1, 0, 22.4, 0.0, 0, 1], ["2026-10-01", 3, 84.0, 3, 0, 84.0, 0.0, 3, 0], ["2026-10-02", 2, 54.23, 2, 0, 54.23, 0.0, 1, 1], ["2026-10-03", 8, 214.39, 8, 0, 214.39, 0.0, 2, 5], ["2026-10-04", 4, 112.0, 4, 0, 112.0, 0.0, 1, 3], ["2026-10-06", 3, 79.0, 3, 0, 79.0, 0.0, 0, 3], ["2026-10-07", 8, 207.58, 8, 0, 207.58, 0.0, 2, 6], ["2026-10-08", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-09", 4, 106.4, 4, 0, 106.4, 0.0, 0, 4], ["2026-10-10", 5, 130.2, 5, 0, 130.2, 0.0, 0, 4], ["2026-10-11", 10, 231.2, 9, 1, 215.32, 15.88, 3, 7], ["2026-10-12", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-13", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-14", 4, 106.08, 4, 0, 106.08, 0.0, 3, 1], ["2026-10-15", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-16", 2, 54.9, 2, 0, 54.9, 0.0, 0, 2], ["2026-10-17", 5, 125.63, 5, 0, 125.63, 0.0, 1, 4], ["2026-10-18", 4, 99.05, 4, 0, 99.05, 0.0, 0, 4], ["2026-10-19", 2, 50.4, 2, 0, 50.4, 0.0, 1, 1], ["2026-10-20", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-10-21", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-22", 3, 78.31, 3, 0, 78.31, 0.0, 0, 3], ["2026-10-23", 3, 84.0, 3, 0, 84.0, 0.0, 1, 1], ["2026-10-24", 4, 107.44, 4, 0, 107.44, 0.0, 0, 4], ["2026-10-25", 5, 130.39, 4, 1, 111.01, 19.38, 1, 4], ["2026-10-26", 3, 75.71, 3, 0, 75.71, 0.0, 0, 3], ["2026-10-27", 6, 161.42, 6, 0, 161.42, 0.0, 1, 5], ["2026-10-28", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-29", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-30", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-31", 3, 81.41, 3, 0, 81.41, 0.0, 1, 2], ["2026-11-01", 5, 114.73, 5, 0, 114.73, 0.0, 1, 4], ["2026-11-02", 3, 75.46, 2, 1, 56.0, 19.46, 1, 2], ["2026-11-03", 5, 98.99, 5, 0, 98.99, 0.0, 0, 5], ["2026-11-04", 6, 156.8, 6, 0, 156.8, 0.0, 2, 4], ["2026-11-05", 9, 173.81, 9, 0, 173.81, 0.0, 0, 4], ["2026-11-06", 1, 0.0, 1, 0, 0.0, 0.0, 0, 1], ["2026-11-07", 5, 132.5, 5, 0, 132.5, 0.0, 1, 4], ["2026-11-08", 2, 52.43, 2, 0, 52.43, 0.0, 0, 2], ["2026-11-09", 2, 54.71, 2, 0, 54.71, 0.0, 0, 2], ["2026-11-10", 4, 105.05, 4, 0, 105.05, 0.0, 1, 3]]
+        "TVG5940": [["2026-04-30", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-05-01", 77, 1988.22, 72, 5, 1893.68, 94.54, 9, 67], ["2026-05-02", 121, 3219.42, 120, 1, 3202.98, 16.44, 7, 112], ["2026-05-03", 70, 1791.86, 68, 2, 1756.52, 35.34, 10, 58], ["2026-05-04", 54, 1369.98, 47, 7, 1232.51, 137.47, 10, 43], ["2026-05-05", 60, 1555.48, 55, 5, 1463.08, 92.4, 9, 50], ["2026-05-06", 31, 815.68, 29, 2, 774.69, 40.99, 7, 24], ["2026-05-07", 45, 1162.1, 42, 3, 1100.49, 61.61, 7, 37], ["2026-05-08", 53, 1269.76, 45, 8, 1120.32, 149.44, 15, 38], ["2026-05-09", 49, 1182.37, 44, 5, 1091.68, 90.69, 12, 37], ["2026-05-10", 44, 1119.62, 42, 2, 1085.72, 33.9, 5, 39], ["2026-05-11", 55, 1414.38, 54, 1, 1394.05, 20.33, 18, 34], ["2026-05-12", 35, 904.28, 34, 1, 888.91, 15.37, 14, 21], ["2026-05-13", 26, 680.16, 24, 2, 639.68, 40.48, 12, 13], ["2026-05-14", 42, 1067.02, 37, 5, 976.61, 90.41, 18, 24], ["2026-05-15", 36, 912.08, 35, 1, 895.93, 16.15, 13, 23], ["2026-05-16", 40, 1025.76, 36, 4, 947.48, 78.28, 15, 25], ["2026-05-17", 31, 780.64, 26, 5, 683.3, 97.34, 9, 22], ["2026-05-18", 30, 748.85, 29, 1, 732.78, 16.07, 5, 25], ["2026-05-19", 50, 1232.77, 45, 5, 1160.46, 72.31, 10, 38], ["2026-05-20", 64, 1646.92, 60, 4, 1568.01, 78.91, 24, 39], ["2026-05-21", 34, 834.33, 32, 2, 794.25, 40.08, 11, 23], ["2026-05-22", 44, 1060.88, 39, 5, 968.28, 92.6, 18, 26], ["2026-05-23", 48, 1239.39, 46, 2, 1202.81, 36.58, 16, 32], ["2026-05-24", 48, 1225.28, 45, 3, 1169.62, 55.66, 19, 29], ["2026-05-25", 65, 1653.89, 63, 2, 1615.42, 38.47, 26, 39], ["2026-05-26", 34, 862.64, 33, 1, 844.03, 18.61, 12, 22], ["2026-05-27", 27, 663.52, 24, 3, 606.66, 56.86, 11, 16], ["2026-05-28", 30, 767.11, 29, 1, 750.61, 16.5, 6, 24], ["2026-05-29", 20, 500.66, 18, 2, 466.36, 34.3, 6, 13], ["2026-05-30", 26, 666.37, 26, 0, 666.37, 0.0, 13, 13], ["2026-05-31", 13, 287.75, 12, 1, 271.79, 15.96, 6, 7], ["2026-06-01", 23, 628.12, 23, 0, 628.12, 0.0, 6, 17], ["2026-06-02", 33, 813.08, 32, 1, 797.23, 15.85, 12, 20], ["2026-06-03", 34, 779.37, 32, 2, 743.72, 35.65, 11, 13], ["2026-06-04", 25, 596.8, 24, 1, 580.95, 15.85, 7, 17], ["2026-06-05", 24, 584.02, 24, 0, 584.02, 0.0, 11, 13], ["2026-06-06", 15, 381.41, 15, 0, 381.41, 0.0, 10, 5], ["2026-06-07", 16, 393.61, 14, 2, 361.32, 32.29, 8, 8], ["2026-06-08", 28, 721.17, 27, 1, 701.6, 19.57, 10, 18], ["2026-06-09", 14, 352.8, 14, 0, 352.8, 0.0, 10, 4], ["2026-06-10", 12, 267.43, 12, 0, 267.43, 0.0, 4, 8], ["2026-06-11", 22, 550.8, 21, 1, 531.22, 19.58, 9, 13], ["2026-06-12", 19, 445.65, 17, 2, 426.2, 19.45, 12, 7], ["2026-06-13", 27, 605.83, 27, 0, 605.83, 0.0, 11, 16], ["2026-06-14", 56, 1308.88, 54, 2, 1273.95, 34.93, 24, 32], ["2026-06-15", 15, 371.81, 12, 3, 313.6, 58.21, 9, 6], ["2026-06-16", 9, 240.15, 9, 0, 240.15, 0.0, 3, 6], ["2026-06-17", 15, 385.99, 13, 2, 351.13, 34.86, 7, 8], ["2026-06-18", 12, 301.82, 11, 1, 282.45, 19.37, 9, 3], ["2026-06-19", 12, 307.24, 12, 0, 307.24, 0.0, 1, 11], ["2026-06-20", 21, 510.88, 19, 2, 476.81, 34.07, 9, 12], ["2026-06-21", 26, 632.7, 23, 3, 585.99, 46.71, 15, 11], ["2026-06-22", 12, 279.37, 11, 1, 260.4, 18.97, 7, 5], ["2026-06-23", 12, 302.45, 10, 2, 267.47, 34.98, 3, 8], ["2026-06-24", 5, 137.4, 5, 0, 137.4, 0.0, 2, 3], ["2026-06-25", 7, 189.77, 7, 0, 189.77, 0.0, 2, 5], ["2026-06-26", 7, 190.4, 7, 0, 190.4, 0.0, 5, 2], ["2026-06-27", 11, 288.75, 11, 0, 288.75, 0.0, 1, 10], ["2026-06-28", 11, 287.91, 10, 1, 272.81, 15.1, 4, 7], ["2026-06-29", 13, 342.26, 13, 0, 342.26, 0.0, 1, 10], ["2026-06-30", 13, 299.6, 13, 0, 299.6, 0.0, 4, 5], ["2026-07-01", 16, 332.83, 16, 0, 332.83, 0.0, 6, 10], ["2026-07-02", 26, 608.27, 26, 0, 608.27, 0.0, 11, 14], ["2026-07-03", 21, 489.33, 19, 2, 457.33, 32.0, 10, 9], ["2026-07-04", 18, 416.53, 18, 0, 416.53, 0.0, 9, 9], ["2026-07-05", 31, 733.02, 31, 0, 733.02, 0.0, 13, 18], ["2026-07-06", 13, 304.55, 12, 1, 285.7, 18.85, 4, 9], ["2026-07-07", 15, 327.67, 15, 0, 327.67, 0.0, 6, 8], ["2026-07-08", 13, 342.62, 13, 0, 342.62, 0.0, 4, 9], ["2026-07-09", 10, 277.4, 10, 0, 277.4, 0.0, 1, 9], ["2026-07-10", 14, 364.02, 13, 1, 345.11, 18.91, 2, 12], ["2026-07-11", 9, 233.3, 9, 0, 233.3, 0.0, 4, 5], ["2026-07-12", 14, 343.6, 14, 0, 343.6, 0.0, 2, 12], ["2026-07-13", 5, 127.13, 4, 1, 112.0, 15.13, 3, 2], ["2026-07-14", 8, 202.2, 8, 0, 202.2, 0.0, 4, 4], ["2026-07-15", 8, 219.8, 8, 0, 219.8, 0.0, 0, 6], ["2026-07-16", 6, 134.4, 6, 0, 134.4, 0.0, 2, 4], ["2026-07-17", 7, 155.98, 7, 0, 155.98, 0.0, 1, 6], ["2026-07-18", 8, 209.68, 7, 1, 194.23, 15.45, 1, 7], ["2026-07-19", 9, 223.54, 8, 1, 208.09, 15.45, 1, 8], ["2026-07-20", 5, 126.67, 4, 1, 107.35, 19.32, 0, 5], ["2026-07-21", 10, 252.0, 10, 0, 252.0, 0.0, 2, 6], ["2026-07-22", 6, 150.82, 5, 1, 131.7, 19.12, 2, 4], ["2026-07-23", 6, 142.12, 4, 2, 106.4, 35.72, 0, 6], ["2026-07-24", 8, 208.21, 8, 0, 208.21, 0.0, 1, 7], ["2026-07-25", 7, 177.32, 6, 1, 159.3, 18.02, 1, 6], ["2026-07-26", 7, 172.63, 5, 2, 134.4, 38.23, 2, 5], ["2026-07-27", 8, 170.37, 7, 1, 155.03, 15.34, 1, 7], ["2026-07-28", 9, 233.67, 8, 1, 217.09, 16.58, 0, 9], ["2026-07-29", 9, 218.04, 8, 1, 198.96, 19.08, 1, 7], ["2026-07-30", 5, 112.12, 5, 0, 112.12, 0.0, 0, 5], ["2026-07-31", 12, 315.58, 12, 0, 315.58, 0.0, 2, 10], ["2026-08-01", 10, 248.77, 8, 2, 210.1, 38.67, 5, 4], ["2026-08-02", 7, 191.8, 7, 0, 191.8, 0.0, 2, 5], ["2026-08-03", 9, 243.44, 9, 0, 243.44, 0.0, 3, 6], ["2026-08-04", 4, 90.2, 4, 0, 90.2, 0.0, 1, 3], ["2026-08-05", 3, 79.8, 3, 0, 79.8, 0.0, 0, 3], ["2026-08-06", 7, 158.2, 7, 0, 158.2, 0.0, 2, 5], ["2026-08-07", 3, 49.2, 3, 0, 49.2, 0.0, 1, 2], ["2026-08-08", 18, 463.79, 15, 3, 405.6, 58.19, 4, 13], ["2026-08-09", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-08-10", 7, 177.01, 7, 0, 177.01, 0.0, 3, 4], ["2026-08-11", 7, 179.75, 6, 1, 160.19, 19.56, 3, 4], ["2026-08-12", 4, 106.81, 4, 0, 106.81, 0.0, 1, 3], ["2026-08-13", 10, 209.6, 10, 0, 209.6, 0.0, 3, 7], ["2026-08-14", 7, 181.2, 7, 0, 181.2, 0.0, 3, 4], ["2026-08-15", 5, 138.33, 5, 0, 138.33, 0.0, 3, 1], ["2026-08-16", 14, 360.13, 14, 0, 360.13, 0.0, 7, 7], ["2026-08-17", 3, 74.0, 3, 0, 74.0, 0.0, 1, 2], ["2026-08-18", 2, 51.0, 2, 0, 51.0, 0.0, 1, 1], ["2026-08-19", 5, 121.05, 4, 1, 103.8, 17.25, 1, 4], ["2026-08-20", 10, 258.1, 10, 0, 258.1, 0.0, 1, 9], ["2026-08-21", 2, 53.2, 2, 0, 53.2, 0.0, 0, 2], ["2026-08-22", 18, 459.87, 18, 0, 459.87, 0.0, 4, 13], ["2026-08-23", 12, 304.33, 12, 0, 304.33, 0.0, 0, 12], ["2026-08-24", 3, 72.34, 3, 0, 72.34, 0.0, 0, 2], ["2026-08-26", 4, 103.6, 4, 0, 103.6, 0.0, 1, 3], ["2026-08-27", 5, 134.4, 5, 0, 134.4, 0.0, 2, 3], ["2026-08-28", 3, 81.4, 3, 0, 81.4, 0.0, 0, 3], ["2026-08-29", 4, 100.34, 4, 0, 100.34, 0.0, 0, 4], ["2026-08-30", 13, 338.11, 12, 1, 320.09, 18.02, 3, 9], ["2026-08-31", 1, 26.05, 1, 0, 26.05, 0.0, 1, 0], ["2026-09-01", 3, 82.29, 3, 0, 82.29, 0.0, 1, 2], ["2026-09-02", 10, 256.85, 9, 1, 240.72, 16.13, 2, 8], ["2026-09-03", 9, 243.59, 8, 1, 224.0, 19.59, 3, 6], ["2026-09-04", 1, 26.15, 1, 0, 26.15, 0.0, 0, 1], ["2026-09-05", 3, 70.68, 3, 0, 70.68, 0.0, 2, 1], ["2026-09-06", 8, 205.36, 8, 0, 205.36, 0.0, 1, 6], ["2026-09-07", 4, 108.63, 4, 0, 108.63, 0.0, 0, 4], ["2026-09-08", 3, 72.92, 2, 1, 56.0, 16.92, 1, 2], ["2026-09-09", 4, 94.27, 4, 0, 94.27, 0.0, 1, 3], ["2026-09-10", 1, 25.17, 1, 0, 25.17, 0.0, 0, 1], ["2026-09-11", 3, 73.62, 3, 0, 73.62, 0.0, 2, 1], ["2026-09-12", 2, 46.54, 2, 0, 46.54, 0.0, 1, 1], ["2026-09-13", 4, 108.5, 4, 0, 108.5, 0.0, 0, 4], ["2026-09-14", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-09-15", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-16", 5, 110.03, 3, 2, 79.55, 30.48, 1, 3], ["2026-09-17", 6, 151.34, 6, 0, 151.34, 0.0, 1, 5], ["2026-09-18", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-19", 3, 82.25, 3, 0, 82.25, 0.0, 2, 1], ["2026-09-20", 4, 108.72, 4, 0, 108.72, 0.0, 0, 4], ["2026-09-21", 2, 56.0, 2, 0, 56.0, 0.0, 2, 0], ["2026-09-22", 4, 81.8, 4, 0, 81.8, 0.0, 1, 3], ["2026-09-23", 1, 22.81, 1, 0, 22.81, 0.0, 0, 1], ["2026-09-24", 2, 51.93, 2, 0, 51.93, 0.0, 0, 2], ["2026-09-25", 3, 72.8, 3, 0, 72.8, 0.0, 1, 2], ["2026-09-26", 1, 26.15, 1, 0, 26.15, 0.0, 0, 1], ["2026-09-27", 3, 65.81, 3, 0, 65.81, 0.0, 0, 2], ["2026-09-28", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-09-29", 2, 50.4, 2, 0, 50.4, 0.0, 1, 1], ["2026-09-30", 4, 96.94, 3, 1, 81.82, 15.12, 1, 3], ["2026-10-01", 2, 44.8, 2, 0, 44.8, 0.0, 0, 1], ["2026-10-02", 4, 82.3, 4, 0, 82.3, 0.0, 0, 4], ["2026-10-03", 4, 101.58, 4, 0, 101.58, 0.0, 1, 3], ["2026-10-04", 2, 52.59, 2, 0, 52.59, 0.0, 0, 2], ["2026-10-05", 7, 147.52, 6, 1, 128.8, 18.72, 0, 6], ["2026-10-06", 1, 27.36, 1, 0, 27.36, 0.0, 0, 1], ["2026-10-07", 3, 81.4, 3, 0, 81.4, 0.0, 2, 1], ["2026-10-08", 2, 41.91, 2, 0, 41.91, 0.0, 1, 1], ["2026-10-09", 3, 80.72, 3, 0, 80.72, 0.0, 1, 2], ["2026-10-10", 9, 229.45, 9, 0, 229.45, 0.0, 4, 5], ["2026-10-11", 12, 302.4, 12, 0, 302.4, 0.0, 2, 10], ["2026-10-13", 3, 82.62, 3, 0, 82.62, 0.0, 1, 2], ["2026-10-14", 5, 120.04, 5, 0, 120.04, 0.0, 2, 2], ["2026-10-15", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-10-16", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-17", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-10-18", 3, 75.14, 3, 0, 75.14, 0.0, 0, 3], ["2026-10-19", 2, 46.88, 2, 0, 46.88, 0.0, 0, 2], ["2026-10-20", 6, 145.6, 6, 0, 145.6, 0.0, 1, 5], ["2026-10-21", 4, 112.0, 4, 0, 112.0, 0.0, 3, 0], ["2026-10-22", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-23", 1, 26.25, 1, 0, 26.25, 0.0, 1, 0], ["2026-10-24", 4, 101.82, 3, 1, 82.44, 19.38, 2, 2], ["2026-10-25", 3, 73.08, 2, 1, 54.97, 18.11, 0, 3], ["2026-10-26", 6, 158.2, 6, 0, 158.2, 0.0, 0, 5], ["2026-10-27", 2, 45.24, 2, 0, 45.24, 0.0, 1, 1], ["2026-10-28", 2, 51.8, 2, 0, 51.8, 0.0, 0, 2], ["2026-10-29", 4, 112.0, 4, 0, 112.0, 0.0, 1, 2], ["2026-10-30", 1, 26.7, 1, 0, 26.7, 0.0, 0, 1], ["2026-10-31", 1, 26.29, 1, 0, 26.29, 0.0, 0, 1], ["2026-11-01", 6, 146.86, 5, 1, 127.4, 19.46, 3, 3], ["2026-11-02", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-11-03", 3, 80.36, 3, 0, 80.36, 0.0, 0, 3], ["2026-11-04", 2, 53.65, 2, 0, 53.65, 0.0, 1, 1], ["2026-11-05", 5, 140.0, 5, 0, 140.0, 0.0, 0, 5], ["2026-11-06", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-11-07", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-11-08", 3, 79.1, 3, 0, 79.1, 0.0, 0, 3], ["2026-11-09", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-11-10", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-11-11", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2]],
+        "TVG5950": [["2026-04-30", 13, 337.09, 13, 0, 337.09, 0.0, 4, 9], ["2026-05-01", 545, 13978.09, 517, 28, 13460.17, 517.92, 81, 450], ["2026-05-02", 739, 19193.6, 718, 21, 18782.35, 411.25, 100, 621], ["2026-05-03", 455, 11760.75, 432, 23, 11319.59, 441.16, 92, 353], ["2026-05-04", 396, 10089.92, 370, 26, 9591.51, 498.41, 83, 303], ["2026-05-05", 546, 13991.69, 531, 15, 13707.88, 283.81, 103, 426], ["2026-05-06", 414, 10554.76, 388, 26, 10062.39, 492.37, 103, 302], ["2026-05-07", 354, 8889.62, 334, 20, 8511.96, 377.66, 109, 240], ["2026-05-08", 437, 11176.08, 421, 16, 10872.63, 303.45, 135, 295], ["2026-05-09", 419, 10527.71, 398, 21, 10135.39, 392.32, 134, 282], ["2026-05-10", 560, 14201.09, 533, 27, 13706.43, 494.66, 174, 382], ["2026-05-11", 410, 10530.77, 398, 12, 10302.33, 228.44, 106, 296], ["2026-05-12", 288, 7101.73, 264, 24, 6657.1, 444.63, 119, 167], ["2026-05-13", 312, 7801.83, 293, 19, 7448.34, 353.49, 97, 212], ["2026-05-14", 312, 7714.46, 283, 29, 7155.34, 559.12, 90, 217], ["2026-05-15", 274, 6773.12, 258, 16, 6475.05, 298.07, 86, 182], ["2026-05-16", 348, 8640.4, 317, 31, 8080.44, 559.96, 120, 224], ["2026-05-17", 331, 8357.05, 306, 25, 7902.04, 455.01, 108, 212], ["2026-05-18", 321, 7857.61, 297, 24, 7408.86, 448.75, 114, 199], ["2026-05-19", 311, 7803.78, 290, 21, 7402.49, 401.29, 125, 180], ["2026-05-20", 258, 6575.63, 248, 10, 6386.32, 189.31, 104, 152], ["2026-05-21", 264, 6552.55, 246, 18, 6216.79, 335.76, 99, 161], ["2026-05-22", 382, 9655.41, 354, 28, 9133.35, 522.06, 146, 232], ["2026-05-23", 386, 9579.9, 356, 30, 9036.26, 543.64, 158, 221], ["2026-05-24", 426, 10748.72, 394, 32, 10152.52, 596.2, 192, 227], ["2026-05-25", 505, 12858.57, 492, 13, 12638.72, 219.85, 221, 282], ["2026-05-26", 277, 6736.16, 265, 12, 6510.37, 225.79, 124, 149], ["2026-05-27", 223, 5472.11, 208, 15, 5215.85, 256.26, 81, 138], ["2026-05-28", 187, 4573.61, 183, 4, 4502.14, 71.47, 70, 115], ["2026-05-29", 224, 5537.68, 208, 16, 5283.08, 254.6, 74, 142], ["2026-05-30", 181, 4374.53, 167, 14, 4109.74, 264.79, 68, 107], ["2026-05-31", 184, 4691.89, 171, 13, 4456.56, 235.33, 85, 98], ["2026-06-01", 201, 4865.97, 192, 9, 4720.98, 144.99, 77, 121], ["2026-06-02", 182, 4422.1, 174, 8, 4275.23, 146.87, 70, 109], ["2026-06-03", 203, 4909.17, 190, 13, 4693.57, 215.6, 73, 119], ["2026-06-04", 159, 3721.53, 157, 2, 3689.84, 31.69, 64, 92], ["2026-06-05", 185, 4642.08, 180, 5, 4552.96, 89.12, 74, 109], ["2026-06-06", 150, 3716.78, 142, 8, 3586.29, 130.49, 61, 88], ["2026-06-07", 153, 3898.79, 146, 7, 3773.92, 124.87, 63, 83], ["2026-06-08", 192, 4879.18, 185, 7, 4765.3, 113.88, 70, 118], ["2026-06-09", 104, 2490.9, 97, 7, 2365.69, 125.21, 47, 55], ["2026-06-10", 103, 2552.28, 98, 5, 2456.17, 96.11, 34, 67], ["2026-06-11", 119, 2987.89, 116, 3, 2937.22, 50.67, 49, 67], ["2026-06-12", 127, 3149.73, 124, 3, 3095.3, 54.43, 41, 78], ["2026-06-13", 270, 6457.68, 260, 10, 6279.06, 178.62, 90, 171], ["2026-06-14", 321, 7915.61, 310, 11, 7724.33, 191.28, 95, 216], ["2026-06-15", 96, 2354.92, 90, 6, 2242.38, 112.54, 42, 53], ["2026-06-16", 88, 2147.96, 88, 0, 2147.96, 0.0, 14, 73], ["2026-06-17", 92, 2295.38, 92, 0, 2295.38, 0.0, 38, 52], ["2026-06-18", 113, 2823.3, 110, 3, 2765.84, 57.46, 68, 45], ["2026-06-19", 133, 3394.38, 127, 6, 3296.31, 98.07, 66, 65], ["2026-06-20", 205, 5333.29, 204, 1, 5318.1, 15.19, 118, 83], ["2026-06-21", 225, 5865.75, 221, 4, 5798.34, 67.41, 116, 105], ["2026-06-22", 98, 2423.29, 96, 2, 2389.14, 34.15, 48, 48], ["2026-06-23", 96, 2393.71, 94, 2, 2360.33, 33.38, 36, 56], ["2026-06-24", 56, 1255.42, 54, 2, 1221.44, 33.98, 17, 36], ["2026-06-25", 68, 1597.19, 64, 4, 1528.31, 68.88, 27, 38], ["2026-06-26", 57, 1324.71, 54, 3, 1274.78, 49.93, 20, 36], ["2026-06-27", 56, 1400.15, 54, 2, 1366.14, 34.01, 17, 37], ["2026-06-28", 61, 1593.34, 59, 2, 1561.26, 32.08, 25, 35], ["2026-06-29", 48, 1177.76, 45, 3, 1124.92, 52.84, 15, 32], ["2026-06-30", 73, 1807.88, 71, 2, 1770.25, 37.63, 26, 46], ["2026-07-01", 121, 2736.9, 114, 7, 2626.05, 110.85, 40, 77], ["2026-07-02", 96, 2168.68, 96, 0, 2168.68, 0.0, 33, 62], ["2026-07-03", 129, 3024.95, 129, 0, 3024.95, 0.0, 55, 72], ["2026-07-04", 129, 3057.62, 129, 0, 3057.62, 0.0, 41, 86], ["2026-07-05", 196, 4673.78, 196, 0, 4673.78, 0.0, 59, 133], ["2026-07-06", 59, 1516.04, 59, 0, 1516.04, 0.0, 27, 31], ["2026-07-07", 74, 1876.21, 74, 0, 1876.21, 0.0, 22, 50], ["2026-07-08", 78, 2059.37, 78, 0, 2059.37, 0.0, 31, 44], ["2026-07-09", 69, 1747.91, 69, 0, 1747.91, 0.0, 20, 46], ["2026-07-10", 105, 2746.14, 105, 0, 2746.14, 0.0, 33, 71], ["2026-07-11", 76, 1957.56, 76, 0, 1957.56, 0.0, 22, 54], ["2026-07-12", 69, 1790.42, 69, 0, 1790.42, 0.0, 20, 49], ["2026-07-13", 66, 1714.19, 66, 0, 1714.19, 0.0, 18, 48], ["2026-07-14", 67, 1478.46, 67, 0, 1478.46, 0.0, 15, 47], ["2026-07-15", 45, 1161.92, 45, 0, 1161.92, 0.0, 6, 39], ["2026-07-16", 61, 1552.83, 61, 0, 1552.83, 0.0, 13, 46], ["2026-07-17", 62, 1392.28, 62, 0, 1392.28, 0.0, 18, 39], ["2026-07-18", 70, 1831.12, 70, 0, 1831.12, 0.0, 18, 51], ["2026-07-19", 60, 1570.88, 60, 0, 1570.88, 0.0, 16, 41], ["2026-07-20", 69, 1766.88, 69, 0, 1766.88, 0.0, 13, 53], ["2026-07-21", 66, 1629.38, 66, 0, 1629.38, 0.0, 11, 54], ["2026-07-22", 67, 1694.13, 67, 0, 1694.13, 0.0, 11, 55], ["2026-07-23", 70, 1788.57, 70, 0, 1788.57, 0.0, 19, 49], ["2026-07-24", 89, 2246.76, 89, 0, 2246.76, 0.0, 20, 67], ["2026-07-25", 78, 2021.57, 78, 0, 2021.57, 0.0, 18, 59], ["2026-07-26", 84, 2190.62, 84, 0, 2190.62, 0.0, 11, 72], ["2026-07-27", 70, 1831.74, 70, 0, 1831.74, 0.0, 12, 55], ["2026-07-28", 82, 1998.44, 82, 0, 1998.44, 0.0, 17, 65], ["2026-07-29", 66, 1703.28, 66, 0, 1703.28, 0.0, 12, 54], ["2026-07-30", 45, 1138.77, 45, 0, 1138.77, 0.0, 13, 32], ["2026-07-31", 64, 1624.63, 64, 0, 1624.63, 0.0, 22, 41], ["2026-08-01", 44, 1147.99, 44, 0, 1147.99, 0.0, 9, 35], ["2026-08-02", 80, 2064.2, 80, 0, 2064.2, 0.0, 18, 62], ["2026-08-03", 32, 805.77, 32, 0, 805.77, 0.0, 5, 27], ["2026-08-04", 53, 1311.34, 53, 0, 1311.34, 0.0, 14, 38], ["2026-08-05", 47, 1245.06, 47, 0, 1245.06, 0.0, 12, 35], ["2026-08-06", 42, 1101.97, 42, 0, 1101.97, 0.0, 6, 34], ["2026-08-07", 39, 968.67, 39, 0, 968.67, 0.0, 12, 27], ["2026-08-08", 74, 1943.64, 74, 0, 1943.64, 0.0, 23, 50], ["2026-08-09", 102, 2635.6, 102, 0, 2635.6, 0.0, 27, 74], ["2026-08-10", 49, 1139.09, 49, 0, 1139.09, 0.0, 15, 31], ["2026-08-11", 38, 913.41, 38, 0, 913.41, 0.0, 13, 24], ["2026-08-12", 44, 1126.01, 44, 0, 1126.01, 0.0, 9, 33], ["2026-08-13", 44, 1071.58, 44, 0, 1071.58, 0.0, 14, 29], ["2026-08-14", 39, 986.12, 39, 0, 986.12, 0.0, 7, 32], ["2026-08-15", 52, 1382.3, 52, 0, 1382.3, 0.0, 16, 34], ["2026-08-16", 50, 1327.54, 50, 0, 1327.54, 0.0, 16, 34], ["2026-08-17", 46, 1138.56, 46, 0, 1138.56, 0.0, 18, 27], ["2026-08-18", 59, 1522.52, 59, 0, 1522.52, 0.0, 17, 39], ["2026-08-19", 41, 1059.96, 41, 0, 1059.96, 0.0, 11, 30], ["2026-08-20", 65, 1705.18, 65, 0, 1705.18, 0.0, 19, 42], ["2026-08-21", 45, 1129.47, 45, 0, 1129.47, 0.0, 13, 32], ["2026-08-22", 86, 2207.94, 86, 0, 2207.94, 0.0, 23, 61], ["2026-08-23", 68, 1783.32, 66, 2, 1747.26, 36.06, 10, 54], ["2026-08-24", 47, 1194.54, 46, 1, 1177.31, 17.23, 11, 35], ["2026-08-25", 40, 953.51, 39, 1, 934.61, 18.9, 12, 26], ["2026-08-26", 48, 1283.02, 48, 0, 1283.02, 0.0, 16, 31], ["2026-08-27", 61, 1587.8, 61, 0, 1587.8, 0.0, 19, 41], ["2026-08-28", 52, 1299.61, 50, 2, 1260.18, 39.43, 18, 32], ["2026-08-29", 49, 1273.37, 49, 0, 1273.37, 0.0, 12, 34], ["2026-08-30", 69, 1793.36, 68, 1, 1777.65, 15.71, 19, 50], ["2026-08-31", 58, 1411.83, 57, 1, 1396.08, 15.75, 17, 39], ["2026-09-01", 44, 985.25, 42, 2, 949.82, 35.43, 11, 33], ["2026-09-02", 67, 1722.89, 65, 2, 1687.31, 35.58, 16, 51], ["2026-09-03", 44, 1045.48, 44, 0, 1045.48, 0.0, 17, 26], ["2026-09-04", 46, 1195.63, 45, 1, 1175.69, 19.94, 11, 32], ["2026-09-05", 53, 1318.86, 51, 2, 1285.78, 33.08, 15, 38], ["2026-09-06", 82, 2116.88, 79, 3, 2062.56, 54.32, 22, 57], ["2026-09-07", 112, 2808.44, 105, 7, 2683.19, 125.25, 38, 74], ["2026-09-08", 26, 633.91, 26, 0, 633.91, 0.0, 7, 18], ["2026-09-09", 24, 601.4, 24, 0, 601.4, 0.0, 7, 17], ["2026-09-10", 34, 829.21, 34, 0, 829.21, 0.0, 8, 26], ["2026-09-11", 45, 1164.83, 44, 1, 1144.93, 19.9, 14, 28], ["2026-09-12", 49, 1220.96, 48, 1, 1202.13, 18.83, 17, 31], ["2026-09-13", 60, 1569.67, 59, 1, 1549.88, 19.79, 24, 34], ["2026-09-14", 29, 680.05, 29, 0, 680.05, 0.0, 8, 20], ["2026-09-15", 34, 873.49, 34, 0, 873.49, 0.0, 8, 25], ["2026-09-16", 36, 936.32, 36, 0, 936.32, 0.0, 12, 24], ["2026-09-17", 31, 801.25, 30, 1, 785.58, 15.67, 7, 23], ["2026-09-18", 27, 712.24, 27, 0, 712.24, 0.0, 9, 18], ["2026-09-19", 27, 707.0, 27, 0, 707.0, 0.0, 8, 19], ["2026-09-20", 41, 1078.3, 41, 0, 1078.3, 0.0, 13, 25], ["2026-09-21", 29, 723.73, 29, 0, 723.73, 0.0, 7, 22], ["2026-09-22", 35, 862.28, 35, 0, 862.28, 0.0, 3, 32], ["2026-09-23", 44, 1141.32, 44, 0, 1141.32, 0.0, 10, 32], ["2026-09-24", 25, 676.01, 25, 0, 676.01, 0.0, 7, 18], ["2026-09-25", 28, 760.22, 28, 0, 760.22, 0.0, 7, 21], ["2026-09-26", 40, 1016.19, 40, 0, 1016.19, 0.0, 12, 27], ["2026-09-27", 50, 1259.73, 49, 1, 1240.75, 18.98, 15, 35], ["2026-09-28", 35, 914.69, 32, 3, 862.52, 52.17, 9, 25], ["2026-09-29", 42, 1057.01, 40, 2, 1022.91, 34.1, 10, 30], ["2026-09-30", 36, 864.94, 35, 1, 849.85, 15.09, 12, 20], ["2026-10-01", 30, 756.78, 28, 2, 722.75, 34.03, 14, 15], ["2026-10-02", 33, 858.52, 30, 3, 806.08, 52.44, 11, 21], ["2026-10-03", 36, 895.38, 34, 2, 861.67, 33.71, 12, 23], ["2026-10-04", 43, 1127.73, 39, 4, 1053.54, 74.19, 14, 29], ["2026-10-05", 34, 922.82, 33, 1, 904.11, 18.71, 7, 26], ["2026-10-06", 8, 202.79, 6, 2, 165.37, 37.42, 4, 4], ["2026-10-07", 1, 18.76, 0, 1, 0.0, 18.76, 1, 0], ["2026-10-10", 2, 33.58, 0, 2, 0.0, 33.58, 0, 2], ["2026-10-11", 1, 15.25, 0, 1, 0.0, 15.25, 0, 1], ["2026-10-12", 2, 31.76, 0, 2, 0.0, 31.76, 1, 1], ["2026-10-16", 1, 18.84, 0, 1, 0.0, 18.84, 0, 1], ["2026-10-17", 2, 30.18, 0, 2, 0.0, 30.18, 0, 2], ["2026-10-18", 1, 18.96, 0, 1, 0.0, 18.96, 0, 1], ["2026-10-22", 1, 19.27, 0, 1, 0.0, 19.27, 1, 0], ["2026-10-23", 1, 19.29, 0, 1, 0.0, 19.29, 1, 0], ["2026-10-24", 1, 15.51, 0, 1, 0.0, 15.51, 1, 0], ["2026-10-31", 1, 15.6, 0, 1, 0.0, 15.6, 1, 0], ["2026-11-02", 3, 18.49, 0, 3, 0.0, 18.49, 0, 2], ["2026-11-03", 1, 15.57, 0, 1, 0.0, 15.57, 1, 0], ["2026-11-05", 15, 394.9, 15, 0, 394.9, 0.0, 1, 11], ["2026-11-06", 48, 1306.08, 48, 0, 1306.08, 0.0, 9, 36], ["2026-11-07", 33, 873.77, 33, 0, 873.77, 0.0, 8, 24], ["2026-11-08", 26, 685.4, 26, 0, 685.4, 0.0, 4, 20], ["2026-11-09", 15, 402.6, 15, 0, 402.6, 0.0, 1, 14], ["2026-11-10", 15, 401.79, 15, 0, 401.79, 0.0, 4, 11], ["2026-11-11", 33, 872.22, 32, 1, 853.46, 18.76, 6, 26]],
+        "TVG5960": [["2026-04-30", 7, 163.51, 4, 3, 103.9, 59.61, 1, 5], ["2026-05-01", 163, 4239.53, 152, 11, 4041.39, 198.14, 19, 140], ["2026-05-02", 197, 5183.38, 191, 6, 5070.89, 112.49, 14, 179], ["2026-05-03", 123, 3137.17, 117, 6, 3022.95, 114.22, 19, 103], ["2026-05-04", 104, 2657.22, 98, 6, 2545.09, 112.13, 27, 77], ["2026-05-05", 123, 3168.3, 116, 7, 3042.02, 126.28, 17, 105], ["2026-05-06", 120, 3034.72, 110, 10, 2860.87, 173.85, 24, 92], ["2026-05-07", 202, 5231.9, 195, 7, 5101.43, 130.47, 30, 170], ["2026-05-08", 199, 5153.28, 195, 4, 5073.52, 79.76, 47, 150], ["2026-05-09", 159, 3871.84, 137, 22, 3491.53, 380.31, 46, 111], ["2026-05-10", 158, 3879.19, 140, 18, 3543.7, 335.49, 43, 113], ["2026-05-11", 186, 4838.54, 175, 11, 4635.54, 203.0, 47, 137], ["2026-05-12", 180, 4441.46, 164, 16, 4153.6, 287.86, 60, 119], ["2026-05-13", 192, 4862.03, 180, 12, 4646.69, 215.34, 61, 129], ["2026-05-14", 178, 4509.75, 166, 12, 4274.7, 235.05, 51, 124], ["2026-05-15", 192, 4896.48, 176, 16, 4591.72, 304.76, 59, 131], ["2026-05-16", 193, 4779.04, 174, 19, 4425.43, 353.61, 57, 133], ["2026-05-17", 210, 5407.03, 195, 15, 5129.77, 277.26, 59, 149], ["2026-05-18", 175, 4414.81, 167, 8, 4263.87, 150.94, 49, 121], ["2026-05-19", 177, 4502.19, 166, 11, 4312.59, 189.6, 54, 123], ["2026-05-20", 193, 4813.15, 182, 11, 4601.97, 211.18, 66, 127], ["2026-05-21", 197, 4911.18, 185, 12, 4689.81, 221.37, 77, 119], ["2026-05-22", 149, 3666.44, 137, 12, 3457.56, 208.88, 60, 87], ["2026-05-23", 156, 3858.94, 144, 12, 3640.77, 218.17, 82, 73], ["2026-05-24", 156, 3881.08, 142, 14, 3634.3, 246.78, 79, 77], ["2026-05-25", 200, 5125.26, 188, 12, 4906.89, 218.37, 91, 108], ["2026-05-26", 173, 4369.56, 165, 8, 4226.12, 143.44, 53, 118], ["2026-05-27", 158, 3914.48, 150, 8, 3784.8, 129.68, 48, 110], ["2026-05-28", 148, 3693.3, 144, 4, 3622.74, 70.56, 41, 105], ["2026-05-29", 124, 3090.42, 117, 7, 2963.59, 126.83, 43, 81], ["2026-05-30", 137, 3342.15, 130, 7, 3233.34, 108.81, 55, 79], ["2026-05-31", 133, 3374.4, 126, 7, 3252.92, 121.48, 53, 77], ["2026-06-01", 152, 3732.63, 147, 5, 3663.43, 69.2, 44, 104], ["2026-06-02", 161, 4034.02, 159, 2, 3994.27, 39.75, 42, 115], ["2026-06-03", 149, 3696.82, 141, 8, 3550.24, 146.58, 56, 91], ["2026-06-04", 148, 3466.66, 141, 7, 3352.3, 114.36, 50, 96], ["2026-06-05", 118, 3042.69, 114, 4, 2974.8, 67.89, 40, 76], ["2026-06-06", 59, 1422.2, 56, 3, 1372.31, 49.89, 25, 33], ["2026-06-07", 69, 1731.53, 64, 5, 1647.55, 83.98, 29, 38], ["2026-06-08", 171, 4316.65, 167, 4, 4238.37, 78.28, 49, 121], ["2026-06-09", 83, 2081.89, 81, 2, 2044.15, 37.74, 26, 57], ["2026-06-10", 49, 1239.28, 46, 3, 1189.43, 49.85, 20, 28], ["2026-06-11", 90, 2337.39, 86, 4, 2259.08, 78.31, 52, 35], ["2026-06-12", 95, 2433.66, 88, 7, 2343.26, 90.4, 55, 36], ["2026-06-13", 134, 3220.29, 120, 14, 2964.02, 256.27, 65, 67], ["2026-06-14", 140, 3324.54, 132, 8, 3184.83, 139.71, 65, 72], ["2026-06-15", 55, 1384.94, 50, 5, 1295.22, 89.72, 29, 26], ["2026-06-16", 44, 1010.79, 37, 7, 913.6, 97.19, 16, 28], ["2026-06-17", 44, 1034.58, 40, 4, 969.14, 65.44, 16, 27], ["2026-06-18", 52, 1277.96, 48, 4, 1204.81, 73.15, 34, 18], ["2026-06-19", 67, 1718.33, 64, 3, 1665.04, 53.29, 27, 39], ["2026-06-20", 99, 2508.6, 92, 7, 2384.65, 123.95, 56, 41], ["2026-06-21", 70, 1810.48, 68, 2, 1776.33, 34.15, 34, 35], ["2026-06-22", 43, 1105.72, 42, 1, 1090.54, 15.18, 20, 23], ["2026-06-23", 40, 954.52, 37, 3, 905.39, 49.13, 18, 21], ["2026-06-24", 29, 755.52, 29, 0, 755.52, 0.0, 14, 15], ["2026-06-25", 23, 571.38, 22, 1, 555.42, 15.96, 13, 9], ["2026-06-26", 25, 620.23, 23, 2, 590.0, 30.23, 11, 13], ["2026-06-27", 33, 839.09, 30, 3, 787.36, 51.73, 5, 25], ["2026-06-28", 47, 1229.52, 44, 3, 1175.47, 54.05, 11, 35], ["2026-06-29", 25, 584.3, 22, 3, 528.27, 56.03, 11, 14], ["2026-06-30", 27, 713.29, 27, 0, 713.29, 0.0, 8, 18], ["2026-07-01", 65, 1489.57, 58, 7, 1376.57, 113.0, 19, 44], ["2026-07-02", 55, 1310.46, 53, 2, 1279.41, 31.05, 22, 33], ["2026-07-03", 73, 1679.17, 67, 6, 1584.03, 95.14, 36, 36], ["2026-07-04", 67, 1575.54, 61, 6, 1480.3, 95.24, 26, 39], ["2026-07-05", 110, 2561.29, 102, 8, 2432.8, 128.49, 47, 62], ["2026-07-06", 54, 1350.0, 52, 2, 1316.13, 33.87, 24, 30], ["2026-07-07", 41, 1080.51, 38, 3, 1027.87, 52.64, 14, 25], ["2026-07-08", 51, 1356.0, 49, 2, 1322.03, 33.97, 18, 33], ["2026-07-09", 50, 1223.33, 46, 4, 1151.46, 71.87, 16, 33], ["2026-07-10", 47, 1210.38, 44, 3, 1165.06, 45.32, 13, 34], ["2026-07-11", 54, 1428.55, 54, 0, 1428.55, 0.0, 10, 44], ["2026-07-12", 56, 1473.99, 54, 2, 1436.81, 37.18, 15, 40], ["2026-07-13", 52, 1263.09, 46, 6, 1155.0, 108.09, 19, 32], ["2026-07-14", 42, 1081.4, 40, 2, 1047.09, 34.31, 10, 31], ["2026-07-15", 29, 703.03, 27, 2, 668.58, 34.45, 6, 23], ["2026-07-16", 22, 567.03, 21, 1, 547.82, 19.21, 4, 18], ["2026-07-17", 30, 711.49, 30, 0, 711.49, 0.0, 4, 21], ["2026-07-18", 36, 918.32, 34, 2, 884.46, 33.86, 10, 24], ["2026-07-19", 41, 1023.35, 41, 0, 1023.35, 0.0, 6, 35], ["2026-07-20", 35, 841.8, 34, 1, 826.35, 15.45, 4, 30], ["2026-07-21", 44, 1104.03, 42, 2, 1085.06, 18.97, 7, 36], ["2026-07-22", 43, 1127.14, 42, 1, 1107.91, 19.23, 6, 36], ["2026-07-23", 49, 1262.77, 49, 0, 1262.77, 0.0, 5, 43], ["2026-07-24", 26, 679.83, 26, 0, 679.83, 0.0, 6, 20], ["2026-07-25", 33, 878.97, 33, 0, 878.97, 0.0, 5, 26], ["2026-07-26", 33, 893.66, 33, 0, 893.66, 0.0, 5, 27], ["2026-07-27", 31, 769.16, 31, 0, 769.16, 0.0, 4, 27], ["2026-07-28", 49, 1191.57, 49, 0, 1191.57, 0.0, 6, 43], ["2026-07-29", 34, 878.31, 34, 0, 878.31, 0.0, 2, 30], ["2026-07-30", 29, 758.02, 29, 0, 758.02, 0.0, 8, 21], ["2026-07-31", 25, 641.3, 25, 0, 641.3, 0.0, 4, 20], ["2026-08-01", 23, 601.4, 23, 0, 601.4, 0.0, 7, 16], ["2026-08-02", 38, 958.76, 38, 0, 958.76, 0.0, 8, 28], ["2026-08-03", 21, 546.28, 21, 0, 546.28, 0.0, 7, 13], ["2026-08-04", 19, 478.28, 19, 0, 478.28, 0.0, 4, 15], ["2026-08-05", 18, 461.53, 18, 0, 461.53, 0.0, 8, 9], ["2026-08-06", 14, 375.99, 14, 0, 375.99, 0.0, 1, 13], ["2026-08-07", 14, 379.63, 14, 0, 379.63, 0.0, 5, 9], ["2026-08-08", 32, 871.01, 32, 0, 871.01, 0.0, 6, 25], ["2026-08-09", 37, 956.58, 37, 0, 956.58, 0.0, 11, 25], ["2026-08-10", 27, 675.66, 27, 0, 675.66, 0.0, 8, 14], ["2026-08-11", 10, 234.64, 10, 0, 234.64, 0.0, 3, 7], ["2026-08-12", 24, 608.76, 24, 0, 608.76, 0.0, 7, 17], ["2026-08-13", 26, 681.91, 26, 0, 681.91, 0.0, 10, 15], ["2026-08-14", 20, 529.74, 20, 0, 529.74, 0.0, 8, 12], ["2026-08-15", 28, 729.72, 28, 0, 729.72, 0.0, 8, 20], ["2026-08-16", 41, 1067.25, 41, 0, 1067.25, 0.0, 10, 30], ["2026-08-17", 33, 886.07, 33, 0, 886.07, 0.0, 9, 22], ["2026-08-18", 33, 882.88, 33, 0, 882.88, 0.0, 12, 20], ["2026-08-19", 23, 573.02, 23, 0, 573.02, 0.0, 5, 18], ["2026-08-20", 27, 684.59, 25, 2, 650.2, 34.39, 9, 18], ["2026-08-21", 21, 444.17, 13, 8, 301.37, 142.8, 5, 15], ["2026-08-22", 49, 1233.43, 48, 1, 1217.33, 16.1, 12, 35], ["2026-08-23", 39, 972.92, 39, 0, 972.92, 0.0, 9, 28], ["2026-08-24", 32, 787.97, 29, 3, 732.0, 55.97, 12, 19], ["2026-08-25", 25, 616.27, 23, 2, 577.4, 38.87, 8, 17], ["2026-08-26", 32, 750.85, 32, 0, 750.85, 0.0, 11, 21], ["2026-08-27", 36, 911.35, 35, 1, 891.59, 19.76, 12, 24], ["2026-08-28", 34, 843.95, 34, 0, 843.95, 0.0, 9, 25], ["2026-08-29", 34, 878.73, 33, 1, 861.88, 16.85, 11, 22], ["2026-08-30", 47, 1212.73, 44, 3, 1158.15, 54.58, 14, 33], ["2026-08-31", 33, 815.95, 32, 1, 800.2, 15.75, 9, 24], ["2026-09-01", 33, 807.2, 33, 0, 807.2, 0.0, 13, 20], ["2026-09-02", 53, 1321.63, 52, 1, 1304.59, 17.04, 22, 30], ["2026-09-03", 22, 579.44, 21, 1, 563.77, 15.67, 6, 16], ["2026-09-04", 27, 653.61, 25, 2, 617.72, 35.89, 8, 19], ["2026-09-05", 30, 801.11, 29, 1, 781.17, 19.94, 8, 22], ["2026-09-06", 48, 1267.84, 48, 0, 1267.84, 0.0, 9, 37], ["2026-09-07", 48, 1272.98, 46, 2, 1237.26, 35.72, 15, 33], ["2026-09-08", 21, 535.05, 20, 1, 518.13, 16.92, 7, 12], ["2026-09-09", 16, 406.37, 16, 0, 406.37, 0.0, 5, 10], ["2026-09-10", 23, 590.39, 22, 1, 570.38, 20.01, 9, 14], ["2026-09-11", 22, 572.08, 21, 1, 554.19, 17.89, 7, 13], ["2026-09-12", 28, 720.59, 28, 0, 720.59, 0.0, 6, 21], ["2026-09-13", 17, 457.05, 16, 1, 437.95, 19.1, 3, 14], ["2026-09-14", 15, 383.71, 15, 0, 383.71, 0.0, 2, 12], ["2026-09-15", 15, 396.57, 14, 1, 378.85, 17.72, 5, 10], ["2026-09-16", 18, 454.83, 17, 1, 435.21, 19.62, 7, 11], ["2026-09-17", 21, 493.2, 21, 0, 493.2, 0.0, 3, 18], ["2026-09-18", 9, 224.0, 8, 1, 205.49, 18.51, 1, 8], ["2026-09-19", 6, 148.74, 5, 1, 129.36, 19.38, 2, 4], ["2026-09-20", 14, 375.32, 14, 0, 375.32, 0.0, 2, 11], ["2026-09-21", 10, 262.85, 10, 0, 262.85, 0.0, 3, 7], ["2026-09-22", 13, 311.95, 13, 0, 311.95, 0.0, 4, 8], ["2026-09-23", 15, 393.61, 15, 0, 393.61, 0.0, 1, 13], ["2026-09-24", 19, 515.97, 19, 0, 515.97, 0.0, 6, 12], ["2026-09-25", 20, 508.68, 17, 3, 455.37, 53.31, 2, 18], ["2026-09-26", 13, 315.04, 13, 0, 315.04, 0.0, 4, 9], ["2026-09-27", 12, 291.2, 12, 0, 291.2, 0.0, 3, 9], ["2026-09-28", 8, 205.55, 8, 0, 205.55, 0.0, 3, 5], ["2026-09-29", 20, 489.19, 20, 0, 489.19, 0.0, 6, 13], ["2026-09-30", 17, 422.22, 15, 2, 388.27, 33.95, 7, 10], ["2026-10-01", 13, 335.13, 12, 1, 316.4, 18.73, 6, 7], ["2026-10-02", 27, 703.86, 23, 4, 636.44, 67.42, 8, 18], ["2026-10-03", 23, 554.72, 20, 3, 506.03, 48.69, 7, 16], ["2026-10-04", 28, 728.93, 26, 2, 695.21, 33.72, 3, 25], ["2026-10-05", 21, 478.47, 19, 2, 441.49, 36.98, 6, 14], ["2026-10-06", 24, 579.5, 21, 3, 527.99, 51.51, 5, 19], ["2026-10-07", 15, 379.49, 14, 1, 360.84, 18.65, 3, 12], ["2026-10-08", 30, 776.97, 29, 1, 758.21, 18.76, 8, 20], ["2026-10-09", 22, 529.93, 21, 1, 511.24, 18.69, 7, 15], ["2026-10-10", 41, 987.07, 38, 3, 933.71, 53.36, 7, 32], ["2026-10-11", 80, 1975.43, 76, 4, 1904.43, 71.0, 17, 61], ["2026-10-12", 14, 308.69, 13, 1, 292.81, 15.88, 4, 9], ["2026-10-13", 15, 374.73, 15, 0, 374.73, 0.0, 5, 9], ["2026-10-14", 19, 495.72, 19, 0, 495.72, 0.0, 7, 12], ["2026-10-15", 20, 530.61, 20, 0, 530.61, 0.0, 9, 9], ["2026-10-16", 16, 419.72, 15, 1, 401.75, 17.97, 1, 13], ["2026-10-17", 22, 572.91, 22, 0, 572.91, 0.0, 5, 17], ["2026-10-18", 32, 816.91, 32, 0, 816.91, 0.0, 9, 22], ["2026-10-19", 12, 330.4, 12, 0, 330.4, 0.0, 3, 7], ["2026-10-20", 16, 395.22, 16, 0, 395.22, 0.0, 8, 8], ["2026-10-21", 17, 444.56, 17, 0, 444.56, 0.0, 1, 14], ["2026-10-22", 16, 330.71, 15, 1, 311.42, 19.29, 6, 8], ["2026-10-23", 15, 390.62, 15, 0, 390.62, 0.0, 4, 10], ["2026-10-24", 22, 574.57, 21, 1, 556.07, 18.5, 5, 17], ["2026-10-25", 16, 428.2, 16, 0, 428.2, 0.0, 3, 12], ["2026-10-26", 15, 375.38, 14, 1, 356.0, 19.38, 2, 13], ["2026-10-27", 10, 201.13, 10, 0, 201.13, 0.0, 2, 7], ["2026-10-28", 20, 497.84, 20, 0, 497.84, 0.0, 6, 14], ["2026-10-29", 11, 298.37, 10, 1, 279.07, 19.3, 3, 7], ["2026-10-30", 17, 439.48, 17, 0, 439.48, 0.0, 3, 14], ["2026-10-31", 16, 425.19, 16, 0, 425.19, 0.0, 3, 12], ["2026-11-01", 27, 712.65, 25, 2, 673.73, 38.92, 3, 23], ["2026-11-02", 12, 313.59, 11, 1, 294.13, 19.46, 5, 7], ["2026-11-03", 10, 261.66, 9, 1, 242.2, 19.46, 3, 7], ["2026-11-04", 19, 512.74, 19, 0, 512.74, 0.0, 4, 14], ["2026-11-05", 14, 315.42, 14, 0, 315.42, 0.0, 1, 13], ["2026-11-06", 8, 181.54, 8, 0, 181.54, 0.0, 1, 7], ["2026-11-07", 11, 293.89, 11, 0, 293.89, 0.0, 2, 9], ["2026-11-08", 9, 235.58, 9, 0, 235.58, 0.0, 1, 8], ["2026-11-09", 8, 206.46, 7, 1, 187.33, 19.13, 3, 5], ["2026-11-10", 7, 123.44, 6, 1, 104.4, 19.04, 2, 5], ["2026-11-11", 16, 376.98, 15, 1, 358.22, 18.76, 1, 15]],
+        "TVG5970": [["2026-04-30", 2, 55.15, 2, 0, 55.15, 0.0, 0, 2], ["2026-05-01", 61, 1580.79, 60, 1, 1560.39, 20.4, 11, 48], ["2026-05-02", 78, 2016.94, 76, 2, 1975.66, 41.28, 13, 63], ["2026-05-03", 40, 1011.86, 37, 3, 953.25, 58.61, 7, 31], ["2026-05-04", 37, 932.97, 35, 2, 900.48, 32.49, 12, 24], ["2026-05-05", 42, 1110.65, 40, 2, 1069.58, 41.07, 8, 33], ["2026-05-06", 19, 510.3, 19, 0, 510.3, 0.0, 3, 16], ["2026-05-07", 26, 686.87, 25, 1, 666.3, 20.57, 7, 15], ["2026-05-08", 24, 634.83, 24, 0, 634.83, 0.0, 7, 16], ["2026-05-09", 37, 919.49, 36, 1, 899.1, 20.39, 16, 20], ["2026-05-10", 43, 1103.4, 41, 2, 1068.14, 35.26, 14, 29], ["2026-05-11", 37, 964.34, 37, 0, 964.34, 0.0, 16, 20], ["2026-05-12", 25, 647.27, 23, 2, 613.69, 33.58, 8, 15], ["2026-05-13", 20, 495.02, 19, 1, 474.75, 20.27, 8, 12], ["2026-05-14", 19, 455.09, 18, 1, 434.82, 20.27, 5, 14], ["2026-05-15", 22, 554.86, 20, 2, 514.48, 40.38, 8, 14], ["2026-05-16", 23, 589.7, 22, 1, 573.61, 16.09, 11, 12], ["2026-05-17", 22, 542.24, 22, 0, 542.24, 0.0, 8, 14], ["2026-05-18", 28, 713.69, 28, 0, 713.69, 0.0, 10, 17], ["2026-05-19", 16, 381.95, 15, 1, 365.86, 16.09, 5, 10], ["2026-05-20", 24, 618.19, 23, 1, 598.12, 20.07, 11, 11], ["2026-05-21", 18, 445.73, 17, 1, 428.7, 17.03, 7, 11], ["2026-05-22", 31, 745.45, 29, 2, 707.93, 37.52, 13, 15], ["2026-05-23", 21, 521.18, 21, 0, 521.18, 0.0, 7, 14], ["2026-05-24", 28, 719.92, 27, 1, 700.04, 19.88, 10, 18], ["2026-05-25", 24, 627.49, 24, 0, 627.49, 0.0, 13, 11], ["2026-05-26", 20, 507.65, 18, 2, 471.77, 35.88, 7, 13], ["2026-05-27", 19, 507.34, 18, 1, 487.39, 19.95, 7, 11], ["2026-05-28", 19, 462.81, 17, 2, 423.1, 39.71, 10, 9], ["2026-05-29", 17, 418.22, 15, 2, 382.62, 35.6, 6, 11], ["2026-05-30", 15, 343.03, 14, 1, 325.07, 17.96, 7, 8], ["2026-05-31", 10, 248.36, 9, 1, 232.4, 15.96, 5, 5], ["2026-06-01", 13, 308.3, 11, 2, 276.44, 31.86, 7, 6], ["2026-06-02", 13, 289.36, 12, 1, 276.33, 13.03, 2, 11], ["2026-06-03", 23, 527.03, 22, 1, 511.18, 15.85, 7, 10], ["2026-06-04", 15, 355.1, 15, 0, 355.1, 0.0, 7, 8], ["2026-06-05", 18, 465.68, 18, 0, 465.68, 0.0, 9, 9], ["2026-06-06", 11, 266.43, 11, 0, 266.43, 0.0, 4, 6], ["2026-06-07", 10, 259.65, 10, 0, 259.65, 0.0, 3, 7], ["2026-06-08", 16, 432.27, 16, 0, 432.27, 0.0, 8, 7], ["2026-06-09", 10, 223.63, 9, 1, 207.99, 15.64, 3, 5], ["2026-06-10", 5, 134.61, 5, 0, 134.61, 0.0, 3, 2], ["2026-06-11", 9, 207.32, 9, 0, 207.32, 0.0, 4, 4], ["2026-06-12", 11, 275.63, 11, 0, 275.63, 0.0, 4, 6], ["2026-06-13", 22, 502.84, 22, 0, 502.84, 0.0, 5, 16], ["2026-06-14", 30, 625.38, 30, 0, 625.38, 0.0, 13, 16], ["2026-06-15", 5, 137.31, 5, 0, 137.31, 0.0, 2, 3], ["2026-06-16", 4, 101.4, 4, 0, 101.4, 0.0, 3, 1], ["2026-06-17", 10, 260.51, 10, 0, 260.51, 0.0, 7, 3], ["2026-06-18", 9, 245.0, 9, 0, 245.0, 0.0, 5, 4], ["2026-06-19", 13, 341.81, 13, 0, 341.81, 0.0, 2, 11], ["2026-06-20", 13, 302.1, 13, 0, 302.1, 0.0, 4, 8], ["2026-06-21", 11, 293.22, 11, 0, 293.22, 0.0, 4, 7], ["2026-06-22", 12, 254.8, 12, 0, 254.8, 0.0, 4, 8], ["2026-06-23", 9, 242.2, 9, 0, 242.2, 0.0, 2, 5], ["2026-06-24", 4, 109.5, 4, 0, 109.5, 0.0, 1, 3], ["2026-06-25", 4, 110.19, 4, 0, 110.19, 0.0, 2, 2], ["2026-06-26", 4, 104.73, 4, 0, 104.73, 0.0, 2, 2], ["2026-06-27", 2, 44.8, 2, 0, 44.8, 0.0, 1, 1], ["2026-06-28", 5, 134.4, 5, 0, 134.4, 0.0, 1, 4], ["2026-06-29", 8, 206.85, 8, 0, 206.85, 0.0, 1, 6], ["2026-06-30", 7, 180.98, 7, 0, 180.98, 0.0, 3, 4], ["2026-07-01", 10, 243.87, 10, 0, 243.87, 0.0, 2, 7], ["2026-07-02", 15, 353.96, 15, 0, 353.96, 0.0, 4, 11], ["2026-07-03", 12, 286.11, 12, 0, 286.11, 0.0, 3, 8], ["2026-07-04", 20, 477.38, 20, 0, 477.38, 0.0, 6, 13], ["2026-07-05", 14, 336.38, 14, 0, 336.38, 0.0, 3, 11], ["2026-07-06", 4, 100.8, 4, 0, 100.8, 0.0, 2, 1], ["2026-07-07", 5, 124.81, 5, 0, 124.81, 0.0, 3, 2], ["2026-07-08", 10, 264.21, 10, 0, 264.21, 0.0, 2, 8], ["2026-07-09", 9, 242.92, 8, 1, 224.0, 18.92, 2, 7], ["2026-07-10", 9, 233.73, 8, 1, 214.82, 18.91, 2, 7], ["2026-07-11", 14, 365.5, 14, 0, 365.5, 0.0, 2, 12], ["2026-07-12", 8, 190.6, 8, 0, 190.6, 0.0, 1, 6], ["2026-07-13", 6, 162.4, 6, 0, 162.4, 0.0, 0, 6], ["2026-07-14", 7, 155.48, 7, 0, 155.48, 0.0, 2, 5], ["2026-07-15", 4, 112.0, 4, 0, 112.0, 0.0, 1, 3], ["2026-07-16", 13, 328.43, 12, 1, 309.22, 19.21, 2, 8], ["2026-07-17", 15, 308.71, 15, 0, 308.71, 0.0, 3, 6], ["2026-07-18", 7, 166.46, 6, 1, 150.98, 15.48, 1, 6], ["2026-07-19", 7, 157.3, 7, 0, 157.3, 0.0, 1, 6], ["2026-07-20", 11, 294.79, 11, 0, 294.79, 0.0, 1, 10], ["2026-07-21", 4, 99.08, 4, 0, 99.08, 0.0, 0, 4], ["2026-07-22", 6, 162.4, 6, 0, 162.4, 0.0, 3, 3], ["2026-07-23", 9, 202.45, 7, 2, 168.0, 34.45, 1, 7], ["2026-07-24", 6, 159.6, 6, 0, 159.6, 0.0, 4, 2], ["2026-07-25", 13, 325.43, 12, 1, 308.18, 17.25, 2, 11], ["2026-07-26", 10, 256.83, 10, 0, 256.83, 0.0, 3, 7], ["2026-07-27", 8, 208.11, 7, 1, 189.0, 19.11, 1, 7], ["2026-07-28", 11, 260.45, 10, 1, 242.98, 17.47, 3, 8], ["2026-07-29", 13, 336.64, 12, 1, 317.56, 19.08, 2, 11], ["2026-07-30", 6, 158.73, 6, 0, 158.73, 0.0, 1, 5], ["2026-07-31", 8, 195.1, 8, 0, 195.1, 0.0, 3, 5], ["2026-08-01", 3, 81.2, 3, 0, 81.2, 0.0, 1, 2], ["2026-08-02", 13, 326.63, 13, 0, 326.63, 0.0, 0, 13], ["2026-08-03", 5, 102.33, 5, 0, 102.33, 0.0, 1, 4], ["2026-08-04", 7, 181.04, 7, 0, 181.04, 0.0, 1, 6], ["2026-08-05", 5, 126.0, 5, 0, 126.0, 0.0, 1, 4], ["2026-08-06", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-08-07", 2, 47.6, 2, 0, 47.6, 0.0, 2, 0], ["2026-08-08", 9, 239.7, 8, 1, 221.2, 18.5, 3, 6], ["2026-08-09", 12, 303.04, 11, 1, 284.53, 18.51, 4, 8], ["2026-08-10", 6, 162.4, 6, 0, 162.4, 0.0, 1, 5], ["2026-08-11", 3, 72.66, 3, 0, 72.66, 0.0, 1, 2], ["2026-08-12", 6, 148.58, 5, 1, 132.92, 15.66, 3, 3], ["2026-08-13", 3, 70.9, 3, 0, 70.9, 0.0, 0, 3], ["2026-08-14", 4, 107.38, 4, 0, 107.38, 0.0, 0, 4], ["2026-08-15", 7, 177.78, 7, 0, 177.78, 0.0, 4, 3], ["2026-08-16", 5, 137.87, 5, 0, 137.87, 0.0, 1, 4], ["2026-08-17", 3, 72.82, 3, 0, 72.82, 0.0, 1, 2], ["2026-08-18", 7, 165.4, 7, 0, 165.4, 0.0, 2, 5], ["2026-08-19", 3, 74.53, 3, 0, 74.53, 0.0, 0, 3], ["2026-08-20", 8, 224.0, 8, 0, 224.0, 0.0, 2, 5], ["2026-08-21", 4, 112.0, 4, 0, 112.0, 0.0, 1, 3], ["2026-08-22", 9, 246.96, 9, 0, 246.96, 0.0, 2, 6], ["2026-08-23", 8, 211.06, 8, 0, 211.06, 0.0, 2, 6], ["2026-08-24", 8, 149.58, 8, 0, 149.58, 0.0, 1, 7], ["2026-08-25", 4, 99.06, 4, 0, 99.06, 0.0, 1, 3], ["2026-08-26", 5, 135.06, 5, 0, 135.06, 0.0, 2, 3], ["2026-08-27", 1, 22.4, 1, 0, 22.4, 0.0, 1, 0], ["2026-08-28", 3, 76.55, 3, 0, 76.55, 0.0, 2, 1], ["2026-08-29", 4, 99.69, 4, 0, 99.69, 0.0, 1, 3], ["2026-08-30", 2, 50.4, 2, 0, 50.4, 0.0, 0, 2], ["2026-08-31", 6, 157.17, 6, 0, 157.17, 0.0, 2, 4], ["2026-09-01", 2, 48.52, 2, 0, 48.52, 0.0, 1, 1], ["2026-09-02", 27, 676.23, 27, 0, 676.23, 0.0, 5, 22], ["2026-09-03", 5, 121.37, 5, 0, 121.37, 0.0, 2, 3], ["2026-09-04", 10, 231.0, 10, 0, 231.0, 0.0, 2, 7], ["2026-09-05", 5, 132.14, 5, 0, 132.14, 0.0, 1, 4], ["2026-09-06", 7, 182.45, 6, 1, 162.6, 19.85, 2, 5], ["2026-09-07", 10, 232.71, 9, 1, 212.86, 19.85, 4, 6], ["2026-09-08", 6, 156.8, 6, 0, 156.8, 0.0, 4, 2], ["2026-09-09", 16, 415.28, 16, 0, 415.28, 0.0, 2, 12], ["2026-09-10", 15, 360.24, 13, 2, 325.92, 34.32, 1, 14], ["2026-09-11", 4, 98.85, 4, 0, 98.85, 0.0, 1, 3], ["2026-09-12", 3, 74.2, 3, 0, 74.2, 0.0, 1, 2], ["2026-09-13", 5, 127.95, 5, 0, 127.95, 0.0, 1, 4], ["2026-09-14", 5, 105.7, 5, 0, 105.7, 0.0, 2, 3], ["2026-09-15", 7, 185.4, 7, 0, 185.4, 0.0, 1, 6], ["2026-09-16", 12, 315.08, 12, 0, 315.08, 0.0, 2, 8], ["2026-09-17", 1, 25.2, 1, 0, 25.2, 0.0, 1, 0], ["2026-09-18", 2, 45.21, 2, 0, 45.21, 0.0, 0, 2], ["2026-09-19", 3, 74.99, 3, 0, 74.99, 0.0, 0, 3], ["2026-09-20", 5, 102.81, 5, 0, 102.81, 0.0, 1, 4], ["2026-09-21", 7, 183.01, 7, 0, 183.01, 0.0, 3, 3], ["2026-09-22", 3, 79.93, 3, 0, 79.93, 0.0, 1, 2], ["2026-09-23", 5, 119.61, 5, 0, 119.61, 0.0, 0, 5], ["2026-09-24", 2, 50.4, 2, 0, 50.4, 0.0, 0, 2], ["2026-09-25", 1, 23.67, 1, 0, 23.67, 0.0, 0, 1], ["2026-09-26", 7, 170.63, 6, 1, 152.51, 18.12, 2, 5], ["2026-09-27", 8, 204.68, 7, 1, 187.6, 17.08, 1, 6], ["2026-09-28", 5, 113.18, 4, 1, 98.0, 15.18, 3, 2], ["2026-09-29", 6, 137.12, 6, 0, 137.12, 0.0, 0, 5], ["2026-10-01", 2, 53.41, 2, 0, 53.41, 0.0, 0, 2], ["2026-10-02", 5, 127.4, 5, 0, 127.4, 0.0, 1, 4], ["2026-10-03", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-10-04", 6, 162.4, 6, 0, 162.4, 0.0, 4, 2], ["2026-10-05", 5, 120.54, 4, 1, 103.7, 16.84, 0, 5], ["2026-10-06", 4, 94.93, 4, 0, 94.93, 0.0, 0, 4], ["2026-10-07", 5, 104.28, 5, 0, 104.28, 0.0, 1, 4], ["2026-10-08", 1, 17.63, 1, 0, 17.63, 0.0, 0, 1], ["2026-10-09", 3, 72.82, 2, 1, 56.0, 16.82, 2, 1], ["2026-10-10", 2, 40.07, 1, 1, 22.4, 17.67, 1, 1], ["2026-10-11", 13, 328.21, 13, 0, 328.21, 0.0, 4, 9], ["2026-10-12", 3, 77.0, 3, 0, 77.0, 0.0, 0, 3], ["2026-10-13", 4, 107.8, 4, 0, 107.8, 0.0, 1, 2], ["2026-10-14", 3, 70.93, 2, 1, 54.11, 16.82, 0, 3], ["2026-10-15", 3, 78.43, 3, 0, 78.43, 0.0, 0, 3], ["2026-10-16", 4, 101.96, 3, 1, 83.12, 18.84, 3, 1], ["2026-10-17", 3, 82.16, 3, 0, 82.16, 0.0, 1, 2], ["2026-10-18", 5, 126.57, 4, 1, 110.46, 16.11, 0, 5], ["2026-10-19", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-10-20", 7, 179.2, 7, 0, 179.2, 0.0, 3, 4], ["2026-10-21", 3, 84.0, 3, 0, 84.0, 0.0, 1, 1], ["2026-10-22", 4, 109.2, 4, 0, 109.2, 0.0, 2, 2], ["2026-10-23", 3, 79.71, 3, 0, 79.71, 0.0, 0, 3], ["2026-10-24", 2, 50.24, 2, 0, 50.24, 0.0, 0, 2], ["2026-10-25", 12, 298.62, 10, 2, 262.51, 36.11, 1, 10], ["2026-10-26", 5, 133.28, 5, 0, 133.28, 0.0, 3, 2], ["2026-10-27", 1, 22.4, 1, 0, 22.4, 0.0, 1, 0], ["2026-10-28", 2, 50.4, 2, 0, 50.4, 0.0, 0, 2], ["2026-10-29", 2, 47.6, 2, 0, 47.6, 0.0, 0, 2], ["2026-10-30", 4, 94.9, 3, 1, 75.45, 19.45, 1, 3], ["2026-10-31", 2, 50.4, 2, 0, 50.4, 0.0, 2, 0], ["2026-11-01", 2, 46.0, 2, 0, 46.0, 0.0, 0, 1], ["2026-11-02", 5, 131.6, 5, 0, 131.6, 0.0, 1, 4], ["2026-11-03", 3, 68.1, 2, 1, 49.49, 18.61, 0, 3], ["2026-11-04", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-11-05", 2, 45.56, 1, 1, 28.0, 17.56, 0, 2], ["2026-11-06", 3, 72.13, 3, 0, 72.13, 0.0, 0, 3], ["2026-11-07", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-11-08", 4, 112.0, 4, 0, 112.0, 0.0, 0, 2], ["2026-11-09", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-11-10", 1, 25.2, 1, 0, 25.2, 0.0, 0, 1], ["2026-11-11", 3, 74.2, 3, 0, 74.2, 0.0, 1, 2]],
+        "TVG5910": [["2026-05-01", 64, 1673.02, 59, 5, 1577.73, 95.29, 11, 53], ["2026-05-02", 86, 2235.05, 83, 3, 2178.33, 56.72, 11, 75], ["2026-05-03", 62, 1653.42, 61, 1, 1636.98, 16.44, 17, 45], ["2026-05-04", 43, 1065.63, 40, 3, 1009.01, 56.62, 12, 31], ["2026-05-05", 79, 2057.84, 75, 4, 1983.99, 73.85, 19, 55], ["2026-05-06", 48, 1208.98, 45, 3, 1154.61, 54.37, 20, 28], ["2026-05-07", 51, 1302.08, 50, 1, 1281.61, 20.47, 15, 36], ["2026-05-08", 58, 1495.53, 57, 1, 1475.06, 20.47, 26, 31], ["2026-05-09", 47, 1164.72, 45, 2, 1129.36, 35.36, 23, 23], ["2026-05-10", 64, 1614.72, 64, 0, 1614.72, 0.0, 30, 33], ["2026-05-11", 38, 945.48, 38, 0, 945.48, 0.0, 16, 22], ["2026-05-12", 32, 800.97, 30, 2, 763.87, 37.1, 8, 24], ["2026-05-13", 34, 863.93, 32, 2, 826.49, 37.44, 8, 26], ["2026-05-14", 36, 867.3, 30, 6, 754.04, 113.26, 16, 19], ["2026-05-15", 30, 749.81, 28, 2, 719.69, 30.12, 10, 20], ["2026-05-16", 45, 1144.38, 44, 1, 1124.26, 20.12, 14, 31], ["2026-05-17", 44, 1099.59, 39, 5, 1004.98, 94.61, 21, 23], ["2026-05-18", 37, 959.53, 36, 1, 939.45, 20.08, 12, 25], ["2026-05-19", 36, 899.38, 34, 2, 859.15, 40.23, 17, 19], ["2026-05-20", 38, 994.78, 37, 1, 974.74, 20.04, 14, 24], ["2026-05-21", 29, 717.45, 27, 2, 681.38, 36.07, 10, 19], ["2026-05-22", 42, 1098.65, 41, 1, 1082.69, 15.96, 12, 28], ["2026-05-23", 30, 762.6, 29, 1, 746.64, 15.96, 12, 16], ["2026-05-24", 34, 890.94, 33, 1, 871.06, 19.88, 11, 23], ["2026-05-25", 61, 1537.47, 59, 2, 1501.65, 35.82, 23, 38], ["2026-05-26", 25, 647.65, 24, 1, 631.72, 15.93, 14, 11], ["2026-05-27", 17, 441.24, 16, 1, 424.28, 16.96, 11, 6], ["2026-05-28", 23, 619.1, 23, 0, 619.1, 0.0, 5, 17], ["2026-05-29", 34, 881.66, 32, 2, 843.36, 38.3, 9, 25], ["2026-05-30", 27, 707.86, 27, 0, 707.86, 0.0, 13, 14], ["2026-05-31", 20, 522.31, 19, 1, 502.36, 19.95, 5, 14], ["2026-06-01", 24, 631.83, 23, 1, 611.88, 19.95, 9, 15], ["2026-06-02", 22, 553.82, 21, 1, 535.69, 18.13, 6, 16], ["2026-06-03", 27, 683.47, 24, 3, 627.52, 55.95, 10, 17], ["2026-06-04", 16, 391.33, 16, 0, 391.33, 0.0, 8, 8], ["2026-06-05", 24, 559.19, 23, 1, 543.45, 15.74, 9, 14], ["2026-06-06", 11, 282.09, 10, 1, 262.36, 19.73, 5, 6], ["2026-06-07", 26, 632.17, 26, 0, 632.17, 0.0, 11, 14], ["2026-06-08", 26, 670.67, 23, 3, 616.43, 54.24, 8, 17], ["2026-06-09", 9, 246.4, 9, 0, 246.4, 0.0, 5, 3], ["2026-06-10", 12, 309.91, 12, 0, 309.91, 0.0, 4, 7], ["2026-06-11", 15, 361.8, 14, 1, 344.84, 16.96, 8, 6], ["2026-06-12", 19, 516.1, 19, 0, 516.1, 0.0, 7, 12], ["2026-06-13", 32, 783.88, 31, 1, 768.34, 15.54, 8, 22], ["2026-06-14", 48, 1041.1, 48, 0, 1041.1, 0.0, 14, 31], ["2026-06-15", 15, 393.73, 14, 1, 378.15, 15.58, 4, 11], ["2026-06-16", 10, 253.47, 8, 2, 217.83, 35.64, 2, 7], ["2026-06-17", 16, 402.32, 13, 3, 344.19, 58.13, 7, 8], ["2026-06-18", 12, 281.5, 12, 0, 281.5, 0.0, 10, 2], ["2026-06-19", 8, 207.2, 8, 0, 207.2, 0.0, 4, 4], ["2026-06-20", 21, 548.42, 21, 0, 548.42, 0.0, 7, 14], ["2026-06-21", 25, 662.87, 25, 0, 662.87, 0.0, 10, 15], ["2026-06-22", 10, 269.05, 10, 0, 269.05, 0.0, 3, 5], ["2026-06-23", 11, 264.39, 11, 0, 264.39, 0.0, 2, 9], ["2026-06-24", 6, 161.0, 6, 0, 161.0, 0.0, 2, 3], ["2026-06-25", 7, 166.99, 6, 1, 151.97, 15.02, 1, 6], ["2026-06-26", 4, 76.89, 4, 0, 76.89, 0.0, 2, 2], ["2026-06-27", 10, 255.4, 9, 1, 237.04, 18.36, 4, 6], ["2026-06-28", 7, 190.88, 7, 0, 190.88, 0.0, 2, 4], ["2026-06-29", 10, 264.04, 10, 0, 264.04, 0.0, 1, 9], ["2026-06-30", 11, 295.09, 10, 1, 280.0, 15.09, 4, 4], ["2026-07-01", 15, 341.72, 13, 2, 309.83, 31.89, 6, 9], ["2026-07-02", 10, 238.38, 10, 0, 238.38, 0.0, 4, 6], ["2026-07-03", 10, 239.88, 10, 0, 239.88, 0.0, 3, 6], ["2026-07-04", 11, 252.37, 10, 1, 236.33, 16.04, 2, 9], ["2026-07-05", 30, 716.42, 30, 0, 716.42, 0.0, 7, 22], ["2026-07-06", 6, 141.91, 6, 0, 141.91, 0.0, 3, 3], ["2026-07-07", 4, 106.82, 4, 0, 106.82, 0.0, 1, 3], ["2026-07-08", 8, 198.5, 8, 0, 198.5, 0.0, 1, 7], ["2026-07-09", 8, 179.12, 8, 0, 179.12, 0.0, 2, 6], ["2026-07-10", 10, 257.7, 10, 0, 257.7, 0.0, 1, 9], ["2026-07-11", 10, 259.93, 10, 0, 259.93, 0.0, 3, 7], ["2026-07-12", 9, 231.43, 8, 1, 213.4, 18.03, 2, 7], ["2026-07-13", 12, 307.33, 11, 1, 291.25, 16.08, 5, 7], ["2026-07-14", 5, 126.9, 5, 0, 126.9, 0.0, 1, 4], ["2026-07-15", 5, 134.4, 5, 0, 134.4, 0.0, 2, 3], ["2026-07-16", 4, 103.6, 4, 0, 103.6, 0.0, 0, 4], ["2026-07-17", 17, 347.91, 17, 0, 347.91, 0.0, 1, 11], ["2026-07-18", 12, 330.84, 12, 0, 330.84, 0.0, 2, 9], ["2026-07-19", 10, 272.22, 10, 0, 272.22, 0.0, 3, 7], ["2026-07-20", 9, 213.84, 9, 0, 213.84, 0.0, 3, 6], ["2026-07-21", 8, 210.63, 7, 1, 195.12, 15.51, 1, 7], ["2026-07-22", 3, 79.8, 3, 0, 79.8, 0.0, 1, 2], ["2026-07-23", 6, 147.45, 6, 0, 147.45, 0.0, 1, 5], ["2026-07-24", 5, 130.06, 5, 0, 130.06, 0.0, 0, 5], ["2026-07-25", 10, 271.6, 10, 0, 271.6, 0.0, 0, 9], ["2026-07-26", 5, 134.4, 5, 0, 134.4, 0.0, 3, 2], ["2026-07-27", 9, 239.61, 8, 1, 220.5, 19.11, 5, 4], ["2026-07-28", 11, 285.25, 11, 0, 285.25, 0.0, 4, 6], ["2026-07-29", 14, 366.76, 14, 0, 366.76, 0.0, 2, 11], ["2026-07-30", 6, 162.4, 6, 0, 162.4, 0.0, 2, 3], ["2026-07-31", 8, 219.8, 8, 0, 219.8, 0.0, 2, 5], ["2026-08-01", 3, 70.63, 3, 0, 70.63, 0.0, 0, 3], ["2026-08-02", 10, 272.76, 10, 0, 272.76, 0.0, 0, 9], ["2026-08-03", 9, 245.26, 9, 0, 245.26, 0.0, 2, 7], ["2026-08-04", 4, 93.4, 4, 0, 93.4, 0.0, 1, 3], ["2026-08-05", 3, 78.4, 3, 0, 78.4, 0.0, 3, 0], ["2026-08-06", 7, 182.42, 7, 0, 182.42, 0.0, 2, 5], ["2026-08-07", 5, 133.06, 5, 0, 133.06, 0.0, 2, 1], ["2026-08-08", 7, 190.4, 7, 0, 190.4, 0.0, 2, 5], ["2026-08-09", 6, 147.6, 6, 0, 147.6, 0.0, 1, 5], ["2026-08-10", 7, 189.16, 7, 0, 189.16, 0.0, 3, 4], ["2026-08-11", 5, 129.16, 5, 0, 129.16, 0.0, 1, 4], ["2026-08-12", 7, 186.89, 7, 0, 186.89, 0.0, 3, 4], ["2026-08-13", 4, 105.35, 4, 0, 105.35, 0.0, 2, 2], ["2026-08-14", 2, 50.4, 2, 0, 50.4, 0.0, 1, 1], ["2026-08-15", 5, 133.53, 5, 0, 133.53, 0.0, 0, 5], ["2026-08-16", 3, 81.41, 3, 0, 81.41, 0.0, 0, 3], ["2026-08-17", 4, 106.4, 4, 0, 106.4, 0.0, 2, 2], ["2026-08-18", 6, 156.05, 6, 0, 156.05, 0.0, 2, 4], ["2026-08-19", 2, 56.0, 2, 0, 56.0, 0.0, 1, 1], ["2026-08-20", 4, 106.4, 4, 0, 106.4, 0.0, 1, 3], ["2026-08-21", 2, 46.65, 1, 1, 28.0, 18.65, 1, 1], ["2026-08-22", 5, 136.53, 5, 0, 136.53, 0.0, 1, 4], ["2026-08-23", 6, 163.8, 6, 0, 163.8, 0.0, 0, 6], ["2026-08-24", 7, 181.03, 7, 0, 181.03, 0.0, 2, 5], ["2026-08-25", 6, 154.27, 6, 0, 154.27, 0.0, 2, 4], ["2026-08-26", 3, 78.62, 3, 0, 78.62, 0.0, 0, 3], ["2026-08-27", 6, 165.79, 6, 0, 165.79, 0.0, 0, 5], ["2026-08-28", 5, 134.4, 5, 0, 134.4, 0.0, 1, 4], ["2026-08-29", 5, 133.0, 5, 0, 133.0, 0.0, 1, 4], ["2026-08-30", 8, 194.38, 7, 1, 178.67, 15.71, 2, 6], ["2026-08-31", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-01", 8, 205.7, 8, 0, 205.7, 0.0, 2, 6], ["2026-09-02", 9, 239.84, 9, 0, 239.84, 0.0, 3, 6], ["2026-09-03", 5, 134.4, 5, 0, 134.4, 0.0, 2, 3], ["2026-09-04", 5, 124.45, 5, 0, 124.45, 0.0, 1, 4], ["2026-09-06", 15, 390.73, 15, 0, 390.73, 0.0, 4, 10], ["2026-09-07", 11, 290.92, 11, 0, 290.92, 0.0, 3, 6], ["2026-09-08", 4, 106.4, 4, 0, 106.4, 0.0, 2, 2], ["2026-09-09", 4, 101.11, 4, 0, 101.11, 0.0, 1, 3], ["2026-09-10", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-11", 2, 50.4, 2, 0, 50.4, 0.0, 2, 0], ["2026-09-12", 4, 84.0, 4, 0, 84.0, 0.0, 0, 4], ["2026-09-13", 6, 153.19, 6, 0, 153.19, 0.0, 1, 5], ["2026-09-14", 5, 129.4, 5, 0, 129.4, 0.0, 1, 3], ["2026-09-15", 3, 84.0, 3, 0, 84.0, 0.0, 2, 1], ["2026-09-16", 3, 79.8, 3, 0, 79.8, 0.0, 0, 3], ["2026-09-17", 3, 82.21, 3, 0, 82.21, 0.0, 2, 1], ["2026-09-18", 3, 78.4, 3, 0, 78.4, 0.0, 1, 2], ["2026-09-19", 6, 112.0, 6, 0, 112.0, 0.0, 1, 4], ["2026-09-20", 4, 96.69, 4, 0, 96.69, 0.0, 1, 3], ["2026-09-21", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-09-22", 2, 41.64, 1, 1, 23.0, 18.64, 0, 2], ["2026-09-23", 3, 74.2, 3, 0, 74.2, 0.0, 1, 2], ["2026-09-24", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-09-25", 3, 78.4, 3, 0, 78.4, 0.0, 2, 1], ["2026-09-26", 2, 53.5, 2, 0, 53.5, 0.0, 0, 2], ["2026-09-27", 1, 23.8, 1, 0, 23.8, 0.0, 0, 1], ["2026-09-28", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-09-29", 6, 168.0, 6, 0, 168.0, 0.0, 1, 5], ["2026-09-30", 1, 22.4, 1, 0, 22.4, 0.0, 0, 1], ["2026-10-01", 3, 84.0, 3, 0, 84.0, 0.0, 3, 0], ["2026-10-02", 2, 54.23, 2, 0, 54.23, 0.0, 1, 1], ["2026-10-03", 8, 214.39, 8, 0, 214.39, 0.0, 2, 5], ["2026-10-04", 4, 112.0, 4, 0, 112.0, 0.0, 1, 3], ["2026-10-06", 3, 79.0, 3, 0, 79.0, 0.0, 0, 3], ["2026-10-07", 8, 207.58, 8, 0, 207.58, 0.0, 2, 6], ["2026-10-08", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-09", 4, 106.4, 4, 0, 106.4, 0.0, 0, 4], ["2026-10-10", 5, 130.2, 5, 0, 130.2, 0.0, 0, 4], ["2026-10-11", 10, 231.2, 9, 1, 215.32, 15.88, 3, 7], ["2026-10-12", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-13", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-14", 4, 106.08, 4, 0, 106.08, 0.0, 3, 1], ["2026-10-15", 1, 28.0, 1, 0, 28.0, 0.0, 0, 1], ["2026-10-16", 2, 54.9, 2, 0, 54.9, 0.0, 0, 2], ["2026-10-17", 5, 125.63, 5, 0, 125.63, 0.0, 1, 4], ["2026-10-18", 4, 99.05, 4, 0, 99.05, 0.0, 0, 4], ["2026-10-19", 2, 50.4, 2, 0, 50.4, 0.0, 1, 1], ["2026-10-20", 1, 28.0, 1, 0, 28.0, 0.0, 1, 0], ["2026-10-21", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-22", 3, 78.31, 3, 0, 78.31, 0.0, 0, 3], ["2026-10-23", 3, 84.0, 3, 0, 84.0, 0.0, 1, 1], ["2026-10-24", 4, 107.44, 4, 0, 107.44, 0.0, 0, 4], ["2026-10-25", 5, 130.39, 4, 1, 111.01, 19.38, 1, 4], ["2026-10-26", 3, 75.71, 3, 0, 75.71, 0.0, 0, 3], ["2026-10-27", 6, 161.42, 6, 0, 161.42, 0.0, 1, 5], ["2026-10-28", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-29", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-30", 2, 56.0, 2, 0, 56.0, 0.0, 0, 2], ["2026-10-31", 3, 81.41, 3, 0, 81.41, 0.0, 1, 2], ["2026-11-01", 5, 114.73, 5, 0, 114.73, 0.0, 1, 4], ["2026-11-02", 3, 75.46, 2, 1, 56.0, 19.46, 1, 2], ["2026-11-03", 5, 98.99, 5, 0, 98.99, 0.0, 0, 5], ["2026-11-04", 6, 156.8, 6, 0, 156.8, 0.0, 2, 4], ["2026-11-05", 9, 173.81, 9, 0, 173.81, 0.0, 0, 4], ["2026-11-06", 1, 0.0, 1, 0, 0.0, 0.0, 0, 1], ["2026-11-07", 5, 132.5, 5, 0, 132.5, 0.0, 1, 4], ["2026-11-08", 2, 52.43, 2, 0, 52.43, 0.0, 0, 2], ["2026-11-09", 2, 54.71, 2, 0, 54.71, 0.0, 0, 2], ["2026-11-10", 4, 105.05, 4, 0, 105.05, 0.0, 1, 3], ["2026-11-11", 2, 50.4, 2, 0, 50.4, 0.0, 2, 0]]
       },
       "planBySku": {
         "TVG5950": [["2026-05-01", 411], ["2026-05-02", 433], ["2026-05-03", 419], ["2026-05-04", 244], ["2026-05-05", 176], ["2026-05-06", 173], ["2026-05-07", 227], ["2026-05-08", 195], ["2026-05-09", 280], ["2026-05-10", 284], ["2026-05-11", 134], ["2026-05-12", 101], ["2026-05-13", 105], ["2026-05-14", 144], ["2026-05-15", 129], ["2026-05-16", 149], ["2026-05-17", 158], ["2026-05-18", 100], ["2026-05-19", 79], ["2026-05-20", 84], ["2026-05-21", 119], ["2026-05-22", 109], ["2026-05-23", 129], ["2026-05-24", 139], ["2026-05-25", 90], ["2026-05-26", 72], ["2026-05-27", 78], ["2026-05-28", 111], ["2026-05-29", 103], ["2026-05-30", 123], ["2026-05-31", 134], ["2026-06-01", 87], ["2026-06-02", 70], ["2026-06-03", 76], ["2026-06-04", 109], ["2026-06-05", 101], ["2026-06-06", 157], ["2026-06-07", 172], ["2026-06-08", 86], ["2026-06-09", 69], ["2026-06-10", 75], ["2026-06-11", 108], ["2026-06-12", 101], ["2026-06-13", 121], ["2026-06-14", 132], ["2026-06-15", 86], ["2026-06-16", 69], ["2026-06-17", 75], ["2026-06-18", 108], ["2026-06-19", 101], ["2026-06-20", 156], ["2026-06-21", 171], ["2026-06-22", 86], ["2026-06-23", 69], ["2026-06-24", 75], ["2026-06-25", 108], ["2026-06-26", 101], ["2026-06-27", 120], ["2026-06-28", 131], ["2026-06-29", 86], ["2026-06-30", 69], ["2026-07-01", 75], ["2026-07-02", 108], ["2026-07-03", 131], ["2026-07-04", 156], ["2026-07-05", 171], ["2026-07-06", 86], ["2026-07-07", 69], ["2026-07-08", 75], ["2026-07-09", 108], ["2026-07-10", 101], ["2026-07-11", 120], ["2026-07-12", 131], ["2026-07-13", 86], ["2026-07-14", 69], ["2026-07-15", 75], ["2026-07-16", 108], ["2026-07-17", 101], ["2026-07-18", 156], ["2026-07-19", 171], ["2026-07-20", 86], ["2026-07-21", 69], ["2026-07-22", 97], ["2026-07-23", 108], ["2026-07-24", 101], ["2026-07-25", 120], ["2026-07-26", 131], ["2026-07-27", 86], ["2026-07-28", 69], ["2026-07-29", 75], ["2026-07-30", 108], ["2026-07-31", 101], ["2026-08-01", 156], ["2026-08-02", 171], ["2026-08-03", 86], ["2026-08-04", 69], ["2026-08-05", 75], ["2026-08-06", 108], ["2026-08-07", 101], ["2026-08-08", 120], ["2026-08-09", 131], ["2026-08-10", 86], ["2026-08-11", 69], ["2026-08-12", 75], ["2026-08-13", 108], ["2026-08-14", 101], ["2026-08-15", 156], ["2026-08-16", 171], ["2026-08-17", 86], ["2026-08-18", 69], ["2026-08-19", 75], ["2026-08-20", 108], ["2026-08-21", 101], ["2026-08-22", 120], ["2026-08-23", 131], ["2026-08-24", 86], ["2026-08-25", 89], ["2026-08-26", 75], ["2026-08-27", 108], ["2026-08-28", 101]],
-        "TVG5920": [["2026-05-01", 380], ["2026-05-02", 389], ["2026-05-03", 330], ["2026-05-04", 176], ["2026-05-05", 148], ["2026-05-06", 126], ["2026-05-07", 155], ["2026-05-08", 118], ["2026-05-09", 172], ["2026-05-10", 161], ["2026-05-11", 74], ["2026-05-12", 68], ["2026-05-13", 64], ["2026-05-14", 87], ["2026-05-15", 72], ["2026-05-16", 88], ["2026-05-17", 89], ["2026-05-18", 56], ["2026-05-19", 55], ["2026-05-20", 54], ["2026-05-21", 75], ["2026-05-22", 64], ["2026-05-23", 80], ["2026-05-24", 82], ["2026-05-25", 53], ["2026-05-26", 52], ["2026-05-27", 52], ["2026-05-28", 73], ["2026-05-29", 63], ["2026-05-30", 79], ["2026-05-31", 81], ["2026-06-01", 52], ["2026-06-02", 52], ["2026-06-03", 52], ["2026-06-04", 73], ["2026-06-05", 63], ["2026-06-06", 102], ["2026-06-07", 105], ["2026-06-08", 52], ["2026-06-09", 52], ["2026-06-10", 51], ["2026-06-11", 73], ["2026-06-12", 63], ["2026-06-13", 79], ["2026-06-14", 81], ["2026-06-15", 52], ["2026-06-16", 52], ["2026-06-17", 51], ["2026-06-18", 73], ["2026-06-19", 63], ["2026-06-20", 102], ["2026-06-21", 105], ["2026-06-22", 52], ["2026-06-23", 52], ["2026-06-24", 51], ["2026-06-25", 73], ["2026-06-26", 63], ["2026-06-27", 79], ["2026-06-28", 81], ["2026-06-29", 52], ["2026-06-30", 52], ["2026-07-01", 51], ["2026-07-02", 73], ["2026-07-03", 81], ["2026-07-04", 102], ["2026-07-05", 105], ["2026-07-06", 52], ["2026-07-07", 52], ["2026-07-08", 51], ["2026-07-09", 73], ["2026-07-10", 63], ["2026-07-11", 79], ["2026-07-12", 81], ["2026-07-13", 52], ["2026-07-14", 52], ["2026-07-15", 51], ["2026-07-16", 73], ["2026-07-17", 63], ["2026-07-18", 102], ["2026-07-19", 105], ["2026-07-20", 52], ["2026-07-21", 52], ["2026-07-22", 67], ["2026-07-23", 73], ["2026-07-24", 63], ["2026-07-25", 79], ["2026-07-26", 81], ["2026-07-27", 52], ["2026-07-28", 52], ["2026-07-29", 51], ["2026-07-30", 73], ["2026-07-31", 63], ["2026-08-01", 102], ["2026-08-02", 105], ["2026-08-03", 52], ["2026-08-04", 52], ["2026-08-05", 51], ["2026-08-06", 73], ["2026-08-07", 63], ["2026-08-08", 79], ["2026-08-09", 81], ["2026-08-10", 52], ["2026-08-11", 52], ["2026-08-12", 51], ["2026-08-13", 73], ["2026-08-14", 63], ["2026-08-15", 102], ["2026-08-16", 105], ["2026-08-17", 52], ["2026-08-18", 52], ["2026-08-19", 51], ["2026-08-20", 73], ["2026-08-21", 63], ["2026-08-22", 79], ["2026-08-23", 81], ["2026-08-24", 52], ["2026-08-25", 67], ["2026-08-26", 51], ["2026-08-27", 73], ["2026-08-28", 63]],
-        "TVG5890": [["2026-05-01", 192], ["2026-05-02", 188], ["2026-05-03", 173], ["2026-05-04", 84], ["2026-05-05", 78], ["2026-05-06", 67], ["2026-05-07", 76], ["2026-05-08", 68], ["2026-05-09", 92], ["2026-05-10", 92], ["2026-05-11", 37], ["2026-05-12", 37], ["2026-05-13", 34], ["2026-05-14", 42], ["2026-05-15", 41], ["2026-05-16", 46], ["2026-05-17", 48], ["2026-05-18", 27], ["2026-05-19", 28], ["2026-05-20", 27], ["2026-05-21", 35], ["2026-05-22", 35], ["2026-05-23", 40], ["2026-05-24", 43], ["2026-05-25", 25], ["2026-05-26", 26], ["2026-05-27", 26], ["2026-05-28", 33], ["2026-05-29", 33], ["2026-05-30", 39], ["2026-05-31", 42], ["2026-06-01", 24], ["2026-06-02", 26], ["2026-06-03", 25], ["2026-06-04", 33], ["2026-06-05", 33], ["2026-06-06", 50], ["2026-06-07", 55], ["2026-06-08", 24], ["2026-06-09", 26], ["2026-06-10", 25], ["2026-06-11", 33], ["2026-06-12", 33], ["2026-06-13", 38], ["2026-06-14", 42], ["2026-06-15", 24], ["2026-06-16", 26], ["2026-06-17", 25], ["2026-06-18", 33], ["2026-06-19", 33], ["2026-06-20", 50], ["2026-06-21", 55], ["2026-06-22", 24], ["2026-06-23", 26], ["2026-06-24", 25], ["2026-06-25", 33], ["2026-06-26", 33], ["2026-06-27", 38], ["2026-06-28", 42], ["2026-06-29", 24], ["2026-06-30", 26], ["2026-07-01", 25], ["2026-07-02", 33], ["2026-07-03", 43], ["2026-07-04", 50], ["2026-07-05", 55], ["2026-07-06", 24], ["2026-07-07", 26], ["2026-07-08", 25], ["2026-07-09", 33], ["2026-07-10", 33], ["2026-07-11", 38], ["2026-07-12", 42], ["2026-07-13", 24], ["2026-07-14", 26], ["2026-07-15", 25], ["2026-07-16", 33], ["2026-07-17", 33], ["2026-07-18", 50], ["2026-07-19", 55], ["2026-07-20", 24], ["2026-07-21", 26], ["2026-07-22", 33], ["2026-07-23", 33], ["2026-07-24", 33], ["2026-07-25", 38], ["2026-07-26", 42], ["2026-07-27", 24], ["2026-07-28", 26], ["2026-07-29", 25], ["2026-07-30", 33], ["2026-07-31", 33], ["2026-08-01", 50], ["2026-08-02", 55], ["2026-08-03", 24], ["2026-08-04", 26], ["2026-08-05", 25], ["2026-08-06", 33], ["2026-08-07", 33], ["2026-08-08", 38], ["2026-08-09", 42], ["2026-08-10", 24], ["2026-08-11", 26], ["2026-08-12", 25], ["2026-08-13", 33], ["2026-08-14", 33], ["2026-08-15", 50], ["2026-08-16", 55], ["2026-08-17", 24], ["2026-08-18", 26], ["2026-08-19", 25], ["2026-08-20", 33], ["2026-08-21", 33], ["2026-08-22", 38], ["2026-08-23", 42], ["2026-08-24", 24], ["2026-08-25", 34], ["2026-08-26", 25], ["2026-08-27", 33], ["2026-08-28", 33]],
-        "TVG5940": [["2026-05-01", 66], ["2026-05-02", 75], ["2026-05-03", 78], ["2026-05-04", 61], ["2026-05-05", 49], ["2026-05-06", 59], ["2026-05-07", 54], ["2026-05-08", 58], ["2026-05-09", 86], ["2026-05-10", 90], ["2026-05-11", 55], ["2026-05-12", 44], ["2026-05-13", 53], ["2026-05-14", 49], ["2026-05-15", 52], ["2026-05-16", 60], ["2026-05-17", 63], ["2026-05-18", 50], ["2026-05-19", 40], ["2026-05-20", 49], ["2026-05-21", 45], ["2026-05-22", 48], ["2026-05-23", 56], ["2026-05-24", 58], ["2026-05-25", 46], ["2026-05-26", 38], ["2026-05-27", 45], ["2026-05-28", 42], ["2026-05-29", 45], ["2026-05-30", 52], ["2026-05-31", 55], ["2026-06-01", 44], ["2026-06-02", 36], ["2026-06-03", 43], ["2026-06-04", 40], ["2026-06-05", 43], ["2026-06-06", 65], ["2026-06-07", 69], ["2026-06-08", 42], ["2026-06-09", 34], ["2026-06-10", 41], ["2026-06-11", 39], ["2026-06-12", 42], ["2026-06-13", 48], ["2026-06-14", 51], ["2026-06-15", 41], ["2026-06-16", 33], ["2026-06-17", 40], ["2026-06-18", 38], ["2026-06-19", 41], ["2026-06-20", 61], ["2026-06-21", 65], ["2026-06-22", 40], ["2026-06-23", 32], ["2026-06-24", 39], ["2026-06-25", 37], ["2026-06-26", 40], ["2026-06-27", 46], ["2026-06-28", 49], ["2026-06-29", 39], ["2026-06-30", 32], ["2026-07-01", 39], ["2026-07-02", 36], ["2026-07-03", 51], ["2026-07-04", 59], ["2026-07-05", 63], ["2026-07-06", 39], ["2026-07-07", 32], ["2026-07-08", 38], ["2026-07-09", 36], ["2026-07-10", 39], ["2026-07-11", 45], ["2026-07-12", 48], ["2026-07-13", 38], ["2026-07-14", 31], ["2026-07-15", 38], ["2026-07-16", 36], ["2026-07-17", 39], ["2026-07-18", 58], ["2026-07-19", 62], ["2026-07-20", 38], ["2026-07-21", 31], ["2026-07-22", 49], ["2026-07-23", 35], ["2026-07-24", 38], ["2026-07-25", 45], ["2026-07-26", 47], ["2026-07-27", 38], ["2026-07-28", 31], ["2026-07-29", 38], ["2026-07-30", 35], ["2026-07-31", 38], ["2026-08-01", 58], ["2026-08-02", 61], ["2026-08-03", 38], ["2026-08-04", 31], ["2026-08-05", 37], ["2026-08-06", 35], ["2026-08-07", 38], ["2026-08-08", 44], ["2026-08-09", 47], ["2026-08-10", 38], ["2026-08-11", 31], ["2026-08-12", 37], ["2026-08-13", 35], ["2026-08-14", 38], ["2026-08-15", 58], ["2026-08-16", 61], ["2026-08-17", 38], ["2026-08-18", 31], ["2026-08-19", 37], ["2026-08-20", 35], ["2026-08-21", 38], ["2026-08-22", 44], ["2026-08-23", 47], ["2026-08-24", 38], ["2026-08-25", 40], ["2026-08-26", 37], ["2026-08-27", 35], ["2026-08-28", 38]],
         "TVG5960": [["2026-05-01", 384], ["2026-05-02", 375], ["2026-05-03", 346], ["2026-05-04", 169], ["2026-05-05", 157], ["2026-05-06", 133], ["2026-05-07", 152], ["2026-05-08", 135], ["2026-05-09", 185], ["2026-05-10", 183], ["2026-05-11", 74], ["2026-05-12", 75], ["2026-05-13", 69], ["2026-05-14", 84], ["2026-05-15", 81], ["2026-05-16", 91], ["2026-05-17", 96], ["2026-05-18", 54], ["2026-05-19", 57], ["2026-05-20", 55], ["2026-05-21", 70], ["2026-05-22", 69], ["2026-05-23", 80], ["2026-05-24", 87], ["2026-05-25", 49], ["2026-05-26", 53], ["2026-05-27", 52], ["2026-05-28", 67], ["2026-05-29", 67], ["2026-05-30", 78], ["2026-05-31", 85], ["2026-06-01", 48], ["2026-06-02", 52], ["2026-06-03", 51], ["2026-06-04", 66], ["2026-06-05", 66], ["2026-06-06", 100], ["2026-06-07", 109], ["2026-06-08", 48], ["2026-06-09", 52], ["2026-06-10", 51], ["2026-06-11", 66], ["2026-06-12", 66], ["2026-06-13", 77], ["2026-06-14", 84], ["2026-06-15", 48], ["2026-06-16", 52], ["2026-06-17", 51], ["2026-06-18", 66], ["2026-06-19", 66], ["2026-06-20", 100], ["2026-06-21", 109], ["2026-06-22", 48], ["2026-06-23", 52], ["2026-06-24", 51], ["2026-06-25", 66], ["2026-06-26", 66], ["2026-06-27", 77], ["2026-06-28", 84], ["2026-06-29", 48], ["2026-06-30", 52], ["2026-07-01", 51], ["2026-07-02", 66], ["2026-07-03", 86], ["2026-07-04", 100], ["2026-07-05", 109], ["2026-07-06", 48], ["2026-07-07", 52], ["2026-07-08", 51], ["2026-07-09", 66], ["2026-07-10", 66], ["2026-07-11", 77], ["2026-07-12", 84], ["2026-07-13", 48], ["2026-07-14", 52], ["2026-07-15", 51], ["2026-07-16", 66], ["2026-07-17", 66], ["2026-07-18", 100], ["2026-07-19", 109], ["2026-07-20", 48], ["2026-07-21", 52], ["2026-07-22", 66], ["2026-07-23", 66], ["2026-07-24", 66], ["2026-07-25", 77], ["2026-07-26", 84], ["2026-07-27", 48], ["2026-07-28", 52], ["2026-07-29", 51], ["2026-07-30", 66], ["2026-07-31", 66], ["2026-08-01", 100], ["2026-08-02", 109], ["2026-08-03", 48], ["2026-08-04", 52], ["2026-08-05", 51], ["2026-08-06", 66], ["2026-08-07", 66], ["2026-08-08", 77], ["2026-08-09", 84], ["2026-08-10", 48], ["2026-08-11", 52], ["2026-08-12", 51], ["2026-08-13", 66], ["2026-08-14", 66], ["2026-08-15", 100], ["2026-08-16", 109], ["2026-08-17", 48], ["2026-08-18", 52], ["2026-08-19", 51], ["2026-08-20", 66], ["2026-08-21", 66], ["2026-08-22", 77], ["2026-08-23", 84], ["2026-08-24", 48], ["2026-08-25", 67], ["2026-08-26", 51], ["2026-08-27", 66], ["2026-08-28", 66]],
+        "TVG5880": [["2026-05-01", 389], ["2026-05-02", 376], ["2026-05-03", 298], ["2026-05-04", 157], ["2026-05-05", 130], ["2026-05-06", 101], ["2026-05-07", 132], ["2026-05-08", 111], ["2026-05-09", 154], ["2026-05-10", 135], ["2026-05-11", 61], ["2026-05-12", 56], ["2026-05-13", 48], ["2026-05-14", 70], ["2026-05-15", 65], ["2026-05-16", 75], ["2026-05-17", 71], ["2026-05-18", 45], ["2026-05-19", 43], ["2026-05-20", 40], ["2026-05-21", 59], ["2026-05-22", 57], ["2026-05-23", 68], ["2026-05-24", 66], ["2026-05-25", 42], ["2026-05-26", 41], ["2026-05-27", 38], ["2026-05-28", 58], ["2026-05-29", 56], ["2026-05-30", 67], ["2026-05-31", 65], ["2026-06-01", 41], ["2026-06-02", 41], ["2026-06-03", 38], ["2026-06-04", 57], ["2026-06-05", 55], ["2026-06-06", 86], ["2026-06-07", 84], ["2026-06-08", 41], ["2026-06-09", 41], ["2026-06-10", 38], ["2026-06-11", 57], ["2026-06-12", 55], ["2026-06-13", 66], ["2026-06-14", 65], ["2026-06-15", 41], ["2026-06-16", 41], ["2026-06-17", 38], ["2026-06-18", 57], ["2026-06-19", 55], ["2026-06-20", 86], ["2026-06-21", 84], ["2026-06-22", 41], ["2026-06-23", 41], ["2026-06-24", 38], ["2026-06-25", 57], ["2026-06-26", 55], ["2026-06-27", 66], ["2026-06-28", 65], ["2026-06-29", 41], ["2026-06-30", 41], ["2026-07-01", 38], ["2026-07-02", 57], ["2026-07-03", 72], ["2026-07-04", 86], ["2026-07-05", 84], ["2026-07-06", 41], ["2026-07-07", 41], ["2026-07-08", 38], ["2026-07-09", 57], ["2026-07-10", 55], ["2026-07-11", 66], ["2026-07-12", 65], ["2026-07-13", 41], ["2026-07-14", 41], ["2026-07-15", 38], ["2026-07-16", 57], ["2026-07-17", 55], ["2026-07-18", 86], ["2026-07-19", 84], ["2026-07-20", 41], ["2026-07-21", 41], ["2026-07-22", 49], ["2026-07-23", 57], ["2026-07-24", 55], ["2026-07-25", 66], ["2026-07-26", 65], ["2026-07-27", 41], ["2026-07-28", 41], ["2026-07-29", 38], ["2026-07-30", 57], ["2026-07-31", 55], ["2026-08-01", 86], ["2026-08-02", 84], ["2026-08-03", 41], ["2026-08-04", 41], ["2026-08-05", 38], ["2026-08-06", 57], ["2026-08-07", 55], ["2026-08-08", 66], ["2026-08-09", 65], ["2026-08-10", 41], ["2026-08-11", 41], ["2026-08-12", 38], ["2026-08-13", 57], ["2026-08-14", 55], ["2026-08-15", 86], ["2026-08-16", 84], ["2026-08-17", 41], ["2026-08-18", 41], ["2026-08-19", 38], ["2026-08-20", 57], ["2026-08-21", 55], ["2026-08-22", 66], ["2026-08-23", 65], ["2026-08-24", 41], ["2026-08-25", 53], ["2026-08-26", 38], ["2026-08-27", 57], ["2026-08-28", 55]],
         "TVG5900": [["2026-05-01", 51], ["2026-05-02", 78], ["2026-05-03", 78], ["2026-05-04", 44], ["2026-05-05", 38], ["2026-05-06", 35], ["2026-05-07", 60], ["2026-05-08", 34], ["2026-05-09", 69], ["2026-05-10", 71], ["2026-05-11", 31], ["2026-05-12", 28], ["2026-05-13", 26], ["2026-05-14", 46], ["2026-05-15", 26], ["2026-05-16", 42], ["2026-05-17", 43], ["2026-05-18", 25], ["2026-05-19", 23], ["2026-05-20", 21], ["2026-05-21", 39], ["2026-05-22", 23], ["2026-05-23", 36], ["2026-05-24", 38], ["2026-05-25", 22], ["2026-05-26", 20], ["2026-05-27", 20], ["2026-05-28", 36], ["2026-05-29", 21], ["2026-05-30", 34], ["2026-05-31", 36], ["2026-06-01", 21], ["2026-06-02", 19], ["2026-06-03", 19], ["2026-06-04", 34], ["2026-06-05", 20], ["2026-06-06", 42], ["2026-06-07", 45], ["2026-06-08", 21], ["2026-06-09", 19], ["2026-06-10", 18], ["2026-06-11", 33], ["2026-06-12", 20], ["2026-06-13", 32], ["2026-06-14", 34], ["2026-06-15", 20], ["2026-06-16", 19], ["2026-06-17", 18], ["2026-06-18", 33], ["2026-06-19", 20], ["2026-06-20", 41], ["2026-06-21", 44], ["2026-06-22", 20], ["2026-06-23", 19], ["2026-06-24", 18], ["2026-06-25", 33], ["2026-06-26", 20], ["2026-06-27", 32], ["2026-06-28", 34], ["2026-06-29", 20], ["2026-06-30", 19], ["2026-07-01", 18], ["2026-07-02", 33], ["2026-07-03", 25], ["2026-07-04", 41], ["2026-07-05", 44], ["2026-07-06", 20], ["2026-07-07", 19], ["2026-07-08", 18], ["2026-07-09", 33], ["2026-07-10", 20], ["2026-07-11", 32], ["2026-07-12", 34], ["2026-07-13", 20], ["2026-07-14", 19], ["2026-07-15", 18], ["2026-07-16", 33], ["2026-07-17", 20], ["2026-07-18", 41], ["2026-07-19", 44], ["2026-07-20", 20], ["2026-07-21", 19], ["2026-07-22", 23], ["2026-07-23", 33], ["2026-07-24", 20], ["2026-07-25", 32], ["2026-07-26", 34], ["2026-07-27", 20], ["2026-07-28", 19], ["2026-07-29", 18], ["2026-07-30", 33], ["2026-07-31", 19], ["2026-08-01", 41], ["2026-08-02", 44], ["2026-08-03", 20], ["2026-08-04", 19], ["2026-08-05", 18], ["2026-08-06", 33], ["2026-08-07", 19], ["2026-08-08", 32], ["2026-08-09", 34], ["2026-08-10", 20], ["2026-08-11", 19], ["2026-08-12", 18], ["2026-08-13", 33], ["2026-08-14", 19], ["2026-08-15", 41], ["2026-08-16", 44], ["2026-08-17", 20], ["2026-08-18", 19], ["2026-08-19", 18], ["2026-08-20", 33], ["2026-08-21", 19], ["2026-08-22", 32], ["2026-08-23", 34], ["2026-08-24", 20], ["2026-08-25", 24], ["2026-08-26", 18], ["2026-08-27", 33], ["2026-08-28", 19]],
-        "TVG5910": [["2026-05-01", 191], ["2026-05-02", 162], ["2026-05-03", 123], ["2026-05-04", 59], ["2026-05-05", 46], ["2026-05-06", 46], ["2026-05-07", 54], ["2026-05-08", 41], ["2026-05-09", 57], ["2026-05-10", 53], ["2026-05-11", 24], ["2026-05-12", 23], ["2026-05-13", 27], ["2026-05-14", 36], ["2026-05-15", 31], ["2026-05-16", 35], ["2026-05-17", 36], ["2026-05-18", 22], ["2026-05-19", 22], ["2026-05-20", 26], ["2026-05-21", 35], ["2026-05-22", 30], ["2026-05-23", 35], ["2026-05-24", 35], ["2026-05-25", 22], ["2026-05-26", 21], ["2026-05-27", 26], ["2026-05-28", 35], ["2026-05-29", 30], ["2026-05-30", 35], ["2026-05-31", 35], ["2026-06-01", 22], ["2026-06-02", 21], ["2026-06-03", 26], ["2026-06-04", 35], ["2026-06-05", 30], ["2026-06-06", 45], ["2026-06-07", 46], ["2026-06-08", 22], ["2026-06-09", 21], ["2026-06-10", 26], ["2026-06-11", 35], ["2026-06-12", 30], ["2026-06-13", 35], ["2026-06-14", 35], ["2026-06-15", 22], ["2026-06-16", 21], ["2026-06-17", 26], ["2026-06-18", 35], ["2026-06-19", 30], ["2026-06-20", 45], ["2026-06-21", 46], ["2026-06-22", 22], ["2026-06-23", 21], ["2026-06-24", 26], ["2026-06-25", 35], ["2026-06-26", 30], ["2026-06-27", 35], ["2026-06-28", 35], ["2026-06-29", 22], ["2026-06-30", 21], ["2026-07-01", 26], ["2026-07-02", 35], ["2026-07-03", 39], ["2026-07-04", 45], ["2026-07-05", 46], ["2026-07-06", 22], ["2026-07-07", 21], ["2026-07-08", 26], ["2026-07-09", 35], ["2026-07-10", 30], ["2026-07-11", 35], ["2026-07-12", 35], ["2026-07-13", 22], ["2026-07-14", 21], ["2026-07-15", 26], ["2026-07-16", 35], ["2026-07-17", 30], ["2026-07-18", 45], ["2026-07-19", 46], ["2026-07-20", 22], ["2026-07-21", 21], ["2026-07-22", 34], ["2026-07-23", 35], ["2026-07-24", 30], ["2026-07-25", 35], ["2026-07-26", 35], ["2026-07-27", 22], ["2026-07-28", 21], ["2026-07-29", 26], ["2026-07-30", 35], ["2026-07-31", 30], ["2026-08-01", 45], ["2026-08-02", 46], ["2026-08-03", 22], ["2026-08-04", 21], ["2026-08-05", 26], ["2026-08-06", 35], ["2026-08-07", 30], ["2026-08-08", 35], ["2026-08-09", 35], ["2026-08-10", 22], ["2026-08-11", 21], ["2026-08-12", 26], ["2026-08-13", 35], ["2026-08-14", 30], ["2026-08-15", 45], ["2026-08-16", 46], ["2026-08-17", 22], ["2026-08-18", 21], ["2026-08-19", 26], ["2026-08-20", 35], ["2026-08-21", 30], ["2026-08-22", 35], ["2026-08-23", 35], ["2026-08-24", 22], ["2026-08-25", 28], ["2026-08-26", 26], ["2026-08-27", 35], ["2026-08-28", 30]],
+        "TVG5890": [["2026-05-01", 192], ["2026-05-02", 188], ["2026-05-03", 173], ["2026-05-04", 84], ["2026-05-05", 78], ["2026-05-06", 67], ["2026-05-07", 76], ["2026-05-08", 68], ["2026-05-09", 92], ["2026-05-10", 92], ["2026-05-11", 37], ["2026-05-12", 37], ["2026-05-13", 34], ["2026-05-14", 42], ["2026-05-15", 41], ["2026-05-16", 46], ["2026-05-17", 48], ["2026-05-18", 27], ["2026-05-19", 28], ["2026-05-20", 27], ["2026-05-21", 35], ["2026-05-22", 35], ["2026-05-23", 40], ["2026-05-24", 43], ["2026-05-25", 25], ["2026-05-26", 26], ["2026-05-27", 26], ["2026-05-28", 33], ["2026-05-29", 33], ["2026-05-30", 39], ["2026-05-31", 42], ["2026-06-01", 24], ["2026-06-02", 26], ["2026-06-03", 25], ["2026-06-04", 33], ["2026-06-05", 33], ["2026-06-06", 50], ["2026-06-07", 55], ["2026-06-08", 24], ["2026-06-09", 26], ["2026-06-10", 25], ["2026-06-11", 33], ["2026-06-12", 33], ["2026-06-13", 38], ["2026-06-14", 42], ["2026-06-15", 24], ["2026-06-16", 26], ["2026-06-17", 25], ["2026-06-18", 33], ["2026-06-19", 33], ["2026-06-20", 50], ["2026-06-21", 55], ["2026-06-22", 24], ["2026-06-23", 26], ["2026-06-24", 25], ["2026-06-25", 33], ["2026-06-26", 33], ["2026-06-27", 38], ["2026-06-28", 42], ["2026-06-29", 24], ["2026-06-30", 26], ["2026-07-01", 25], ["2026-07-02", 33], ["2026-07-03", 43], ["2026-07-04", 50], ["2026-07-05", 55], ["2026-07-06", 24], ["2026-07-07", 26], ["2026-07-08", 25], ["2026-07-09", 33], ["2026-07-10", 33], ["2026-07-11", 38], ["2026-07-12", 42], ["2026-07-13", 24], ["2026-07-14", 26], ["2026-07-15", 25], ["2026-07-16", 33], ["2026-07-17", 33], ["2026-07-18", 50], ["2026-07-19", 55], ["2026-07-20", 24], ["2026-07-21", 26], ["2026-07-22", 33], ["2026-07-23", 33], ["2026-07-24", 33], ["2026-07-25", 38], ["2026-07-26", 42], ["2026-07-27", 24], ["2026-07-28", 26], ["2026-07-29", 25], ["2026-07-30", 33], ["2026-07-31", 33], ["2026-08-01", 50], ["2026-08-02", 55], ["2026-08-03", 24], ["2026-08-04", 26], ["2026-08-05", 25], ["2026-08-06", 33], ["2026-08-07", 33], ["2026-08-08", 38], ["2026-08-09", 42], ["2026-08-10", 24], ["2026-08-11", 26], ["2026-08-12", 25], ["2026-08-13", 33], ["2026-08-14", 33], ["2026-08-15", 50], ["2026-08-16", 55], ["2026-08-17", 24], ["2026-08-18", 26], ["2026-08-19", 25], ["2026-08-20", 33], ["2026-08-21", 33], ["2026-08-22", 38], ["2026-08-23", 42], ["2026-08-24", 24], ["2026-08-25", 34], ["2026-08-26", 25], ["2026-08-27", 33], ["2026-08-28", 33]],
         "TVG5930": [["2026-05-01", 106], ["2026-05-02", 107], ["2026-05-03", 98], ["2026-05-04", 88], ["2026-05-05", 71], ["2026-05-06", 68], ["2026-05-07", 63], ["2026-05-08", 63], ["2026-05-09", 85], ["2026-05-10", 79], ["2026-05-11", 55], ["2026-05-12", 46], ["2026-05-13", 44], ["2026-05-14", 42], ["2026-05-15", 43], ["2026-05-16", 45], ["2026-05-17", 43], ["2026-05-18", 40], ["2026-05-19", 33], ["2026-05-20", 33], ["2026-05-21", 32], ["2026-05-22", 33], ["2026-05-23", 35], ["2026-05-24", 34], ["2026-05-25", 32], ["2026-05-26", 27], ["2026-05-27", 28], ["2026-05-28", 27], ["2026-05-29", 28], ["2026-05-30", 30], ["2026-05-31", 30], ["2026-06-01", 28], ["2026-06-02", 25], ["2026-06-03", 25], ["2026-06-04", 24], ["2026-06-05", 26], ["2026-06-06", 37], ["2026-06-07", 36], ["2026-06-08", 27], ["2026-06-09", 23], ["2026-06-10", 24], ["2026-06-11", 23], ["2026-06-12", 25], ["2026-06-13", 27], ["2026-06-14", 27], ["2026-06-15", 26], ["2026-06-16", 22], ["2026-06-17", 23], ["2026-06-18", 23], ["2026-06-19", 24], ["2026-06-20", 35], ["2026-06-21", 34], ["2026-06-22", 25], ["2026-06-23", 22], ["2026-06-24", 23], ["2026-06-25", 23], ["2026-06-26", 24], ["2026-06-27", 26], ["2026-06-28", 26], ["2026-06-29", 25], ["2026-06-30", 22], ["2026-07-01", 23], ["2026-07-02", 22], ["2026-07-03", 31], ["2026-07-04", 34], ["2026-07-05", 34], ["2026-07-06", 25], ["2026-07-07", 22], ["2026-07-08", 23], ["2026-07-09", 22], ["2026-07-10", 24], ["2026-07-11", 26], ["2026-07-12", 26], ["2026-07-13", 25], ["2026-07-14", 22], ["2026-07-15", 22], ["2026-07-16", 22], ["2026-07-17", 24], ["2026-07-18", 34], ["2026-07-19", 34], ["2026-07-20", 25], ["2026-07-21", 22], ["2026-07-22", 29], ["2026-07-23", 22], ["2026-07-24", 24], ["2026-07-25", 26], ["2026-07-26", 26], ["2026-07-27", 25], ["2026-07-28", 22], ["2026-07-29", 22], ["2026-07-30", 22], ["2026-07-31", 24], ["2026-08-01", 34], ["2026-08-02", 34], ["2026-08-03", 25], ["2026-08-04", 22], ["2026-08-05", 22], ["2026-08-06", 22], ["2026-08-07", 24], ["2026-08-08", 26], ["2026-08-09", 26], ["2026-08-10", 25], ["2026-08-11", 22], ["2026-08-12", 22], ["2026-08-13", 22], ["2026-08-14", 24], ["2026-08-15", 34], ["2026-08-16", 34], ["2026-08-17", 25], ["2026-08-18", 22], ["2026-08-19", 22], ["2026-08-20", 22], ["2026-08-21", 24], ["2026-08-22", 26], ["2026-08-23", 26], ["2026-08-24", 25], ["2026-08-25", 28], ["2026-08-26", 22], ["2026-08-27", 22], ["2026-08-28", 24]],
         "TVG5970": [["2026-05-01", 84], ["2026-05-02", 95], ["2026-05-03", 100], ["2026-05-04", 78], ["2026-05-05", 68], ["2026-05-06", 75], ["2026-05-07", 72], ["2026-05-08", 77], ["2026-05-09", 113], ["2026-05-10", 119], ["2026-05-11", 72], ["2026-05-12", 62], ["2026-05-13", 69], ["2026-05-14", 67], ["2026-05-15", 72], ["2026-05-16", 81], ["2026-05-17", 86], ["2026-05-18", 67], ["2026-05-19", 59], ["2026-05-20", 65], ["2026-05-21", 63], ["2026-05-22", 68], ["2026-05-23", 77], ["2026-05-24", 82], ["2026-05-25", 64], ["2026-05-26", 56], ["2026-05-27", 62], ["2026-05-28", 60], ["2026-05-29", 65], ["2026-05-30", 74], ["2026-05-31", 79], ["2026-06-01", 62], ["2026-06-02", 54], ["2026-06-03", 60], ["2026-06-04", 59], ["2026-06-05", 63], ["2026-06-06", 94], ["2026-06-07", 99], ["2026-06-08", 60], ["2026-06-09", 53], ["2026-06-10", 59], ["2026-06-11", 57], ["2026-06-12", 62], ["2026-06-13", 71], ["2026-06-14", 75], ["2026-06-15", 59], ["2026-06-16", 52], ["2026-06-17", 58], ["2026-06-18", 56], ["2026-06-19", 61], ["2026-06-20", 90], ["2026-06-21", 96], ["2026-06-22", 58], ["2026-06-23", 51], ["2026-06-24", 57], ["2026-06-25", 56], ["2026-06-26", 60], ["2026-06-27", 69], ["2026-06-28", 73], ["2026-06-29", 58], ["2026-06-30", 51], ["2026-07-01", 57], ["2026-07-02", 55], ["2026-07-03", 78], ["2026-07-04", 89], ["2026-07-05", 94], ["2026-07-06", 57], ["2026-07-07", 50], ["2026-07-08", 56], ["2026-07-09", 55], ["2026-07-10", 59], ["2026-07-11", 68], ["2026-07-12", 72], ["2026-07-13", 57], ["2026-07-14", 50], ["2026-07-15", 56], ["2026-07-16", 54], ["2026-07-17", 59], ["2026-07-18", 88], ["2026-07-19", 93], ["2026-07-20", 57], ["2026-07-21", 50], ["2026-07-22", 72], ["2026-07-23", 54], ["2026-07-24", 59], ["2026-07-25", 67], ["2026-07-26", 72], ["2026-07-27", 57], ["2026-07-28", 50], ["2026-07-29", 56], ["2026-07-30", 54], ["2026-07-31", 59], ["2026-08-01", 87], ["2026-08-02", 93], ["2026-08-03", 57], ["2026-08-04", 50], ["2026-08-05", 56], ["2026-08-06", 54], ["2026-08-07", 59], ["2026-08-08", 67], ["2026-08-09", 71], ["2026-08-10", 56], ["2026-08-11", 50], ["2026-08-12", 55], ["2026-08-13", 54], ["2026-08-14", 59], ["2026-08-15", 87], ["2026-08-16", 93], ["2026-08-17", 56], ["2026-08-18", 50], ["2026-08-19", 55], ["2026-08-20", 54], ["2026-08-21", 58], ["2026-08-22", 67], ["2026-08-23", 71], ["2026-08-24", 56], ["2026-08-25", 64], ["2026-08-26", 55], ["2026-08-27", 54], ["2026-08-28", 58]],
-        "TVG5880": [["2026-05-01", 389], ["2026-05-02", 376], ["2026-05-03", 298], ["2026-05-04", 157], ["2026-05-05", 130], ["2026-05-06", 101], ["2026-05-07", 132], ["2026-05-08", 111], ["2026-05-09", 154], ["2026-05-10", 135], ["2026-05-11", 61], ["2026-05-12", 56], ["2026-05-13", 48], ["2026-05-14", 70], ["2026-05-15", 65], ["2026-05-16", 75], ["2026-05-17", 71], ["2026-05-18", 45], ["2026-05-19", 43], ["2026-05-20", 40], ["2026-05-21", 59], ["2026-05-22", 57], ["2026-05-23", 68], ["2026-05-24", 66], ["2026-05-25", 42], ["2026-05-26", 41], ["2026-05-27", 38], ["2026-05-28", 58], ["2026-05-29", 56], ["2026-05-30", 67], ["2026-05-31", 65], ["2026-06-01", 41], ["2026-06-02", 41], ["2026-06-03", 38], ["2026-06-04", 57], ["2026-06-05", 55], ["2026-06-06", 86], ["2026-06-07", 84], ["2026-06-08", 41], ["2026-06-09", 41], ["2026-06-10", 38], ["2026-06-11", 57], ["2026-06-12", 55], ["2026-06-13", 66], ["2026-06-14", 65], ["2026-06-15", 41], ["2026-06-16", 41], ["2026-06-17", 38], ["2026-06-18", 57], ["2026-06-19", 55], ["2026-06-20", 86], ["2026-06-21", 84], ["2026-06-22", 41], ["2026-06-23", 41], ["2026-06-24", 38], ["2026-06-25", 57], ["2026-06-26", 55], ["2026-06-27", 66], ["2026-06-28", 65], ["2026-06-29", 41], ["2026-06-30", 41], ["2026-07-01", 38], ["2026-07-02", 57], ["2026-07-03", 72], ["2026-07-04", 86], ["2026-07-05", 84], ["2026-07-06", 41], ["2026-07-07", 41], ["2026-07-08", 38], ["2026-07-09", 57], ["2026-07-10", 55], ["2026-07-11", 66], ["2026-07-12", 65], ["2026-07-13", 41], ["2026-07-14", 41], ["2026-07-15", 38], ["2026-07-16", 57], ["2026-07-17", 55], ["2026-07-18", 86], ["2026-07-19", 84], ["2026-07-20", 41], ["2026-07-21", 41], ["2026-07-22", 49], ["2026-07-23", 57], ["2026-07-24", 55], ["2026-07-25", 66], ["2026-07-26", 65], ["2026-07-27", 41], ["2026-07-28", 41], ["2026-07-29", 38], ["2026-07-30", 57], ["2026-07-31", 55], ["2026-08-01", 86], ["2026-08-02", 84], ["2026-08-03", 41], ["2026-08-04", 41], ["2026-08-05", 38], ["2026-08-06", 57], ["2026-08-07", 55], ["2026-08-08", 66], ["2026-08-09", 65], ["2026-08-10", 41], ["2026-08-11", 41], ["2026-08-12", 38], ["2026-08-13", 57], ["2026-08-14", 55], ["2026-08-15", 86], ["2026-08-16", 84], ["2026-08-17", 41], ["2026-08-18", 41], ["2026-08-19", 38], ["2026-08-20", 57], ["2026-08-21", 55], ["2026-08-22", 66], ["2026-08-23", 65], ["2026-08-24", 41], ["2026-08-25", 53], ["2026-08-26", 38], ["2026-08-27", 57], ["2026-08-28", 55]]
+        "TVG5940": [["2026-05-01", 66], ["2026-05-02", 75], ["2026-05-03", 78], ["2026-05-04", 61], ["2026-05-05", 49], ["2026-05-06", 59], ["2026-05-07", 54], ["2026-05-08", 58], ["2026-05-09", 86], ["2026-05-10", 90], ["2026-05-11", 55], ["2026-05-12", 44], ["2026-05-13", 53], ["2026-05-14", 49], ["2026-05-15", 52], ["2026-05-16", 60], ["2026-05-17", 63], ["2026-05-18", 50], ["2026-05-19", 40], ["2026-05-20", 49], ["2026-05-21", 45], ["2026-05-22", 48], ["2026-05-23", 56], ["2026-05-24", 58], ["2026-05-25", 46], ["2026-05-26", 38], ["2026-05-27", 45], ["2026-05-28", 42], ["2026-05-29", 45], ["2026-05-30", 52], ["2026-05-31", 55], ["2026-06-01", 44], ["2026-06-02", 36], ["2026-06-03", 43], ["2026-06-04", 40], ["2026-06-05", 43], ["2026-06-06", 65], ["2026-06-07", 69], ["2026-06-08", 42], ["2026-06-09", 34], ["2026-06-10", 41], ["2026-06-11", 39], ["2026-06-12", 42], ["2026-06-13", 48], ["2026-06-14", 51], ["2026-06-15", 41], ["2026-06-16", 33], ["2026-06-17", 40], ["2026-06-18", 38], ["2026-06-19", 41], ["2026-06-20", 61], ["2026-06-21", 65], ["2026-06-22", 40], ["2026-06-23", 32], ["2026-06-24", 39], ["2026-06-25", 37], ["2026-06-26", 40], ["2026-06-27", 46], ["2026-06-28", 49], ["2026-06-29", 39], ["2026-06-30", 32], ["2026-07-01", 39], ["2026-07-02", 36], ["2026-07-03", 51], ["2026-07-04", 59], ["2026-07-05", 63], ["2026-07-06", 39], ["2026-07-07", 32], ["2026-07-08", 38], ["2026-07-09", 36], ["2026-07-10", 39], ["2026-07-11", 45], ["2026-07-12", 48], ["2026-07-13", 38], ["2026-07-14", 31], ["2026-07-15", 38], ["2026-07-16", 36], ["2026-07-17", 39], ["2026-07-18", 58], ["2026-07-19", 62], ["2026-07-20", 38], ["2026-07-21", 31], ["2026-07-22", 49], ["2026-07-23", 35], ["2026-07-24", 38], ["2026-07-25", 45], ["2026-07-26", 47], ["2026-07-27", 38], ["2026-07-28", 31], ["2026-07-29", 38], ["2026-07-30", 35], ["2026-07-31", 38], ["2026-08-01", 58], ["2026-08-02", 61], ["2026-08-03", 38], ["2026-08-04", 31], ["2026-08-05", 37], ["2026-08-06", 35], ["2026-08-07", 38], ["2026-08-08", 44], ["2026-08-09", 47], ["2026-08-10", 38], ["2026-08-11", 31], ["2026-08-12", 37], ["2026-08-13", 35], ["2026-08-14", 38], ["2026-08-15", 58], ["2026-08-16", 61], ["2026-08-17", 38], ["2026-08-18", 31], ["2026-08-19", 37], ["2026-08-20", 35], ["2026-08-21", 38], ["2026-08-22", 44], ["2026-08-23", 47], ["2026-08-24", 38], ["2026-08-25", 40], ["2026-08-26", 37], ["2026-08-27", 35], ["2026-08-28", 38]],
+        "TVG5920": [["2026-05-01", 380], ["2026-05-02", 389], ["2026-05-03", 330], ["2026-05-04", 176], ["2026-05-05", 148], ["2026-05-06", 126], ["2026-05-07", 155], ["2026-05-08", 118], ["2026-05-09", 172], ["2026-05-10", 161], ["2026-05-11", 74], ["2026-05-12", 68], ["2026-05-13", 64], ["2026-05-14", 87], ["2026-05-15", 72], ["2026-05-16", 88], ["2026-05-17", 89], ["2026-05-18", 56], ["2026-05-19", 55], ["2026-05-20", 54], ["2026-05-21", 75], ["2026-05-22", 64], ["2026-05-23", 80], ["2026-05-24", 82], ["2026-05-25", 53], ["2026-05-26", 52], ["2026-05-27", 52], ["2026-05-28", 73], ["2026-05-29", 63], ["2026-05-30", 79], ["2026-05-31", 81], ["2026-06-01", 52], ["2026-06-02", 52], ["2026-06-03", 52], ["2026-06-04", 73], ["2026-06-05", 63], ["2026-06-06", 102], ["2026-06-07", 105], ["2026-06-08", 52], ["2026-06-09", 52], ["2026-06-10", 51], ["2026-06-11", 73], ["2026-06-12", 63], ["2026-06-13", 79], ["2026-06-14", 81], ["2026-06-15", 52], ["2026-06-16", 52], ["2026-06-17", 51], ["2026-06-18", 73], ["2026-06-19", 63], ["2026-06-20", 102], ["2026-06-21", 105], ["2026-06-22", 52], ["2026-06-23", 52], ["2026-06-24", 51], ["2026-06-25", 73], ["2026-06-26", 63], ["2026-06-27", 79], ["2026-06-28", 81], ["2026-06-29", 52], ["2026-06-30", 52], ["2026-07-01", 51], ["2026-07-02", 73], ["2026-07-03", 81], ["2026-07-04", 102], ["2026-07-05", 105], ["2026-07-06", 52], ["2026-07-07", 52], ["2026-07-08", 51], ["2026-07-09", 73], ["2026-07-10", 63], ["2026-07-11", 79], ["2026-07-12", 81], ["2026-07-13", 52], ["2026-07-14", 52], ["2026-07-15", 51], ["2026-07-16", 73], ["2026-07-17", 63], ["2026-07-18", 102], ["2026-07-19", 105], ["2026-07-20", 52], ["2026-07-21", 52], ["2026-07-22", 67], ["2026-07-23", 73], ["2026-07-24", 63], ["2026-07-25", 79], ["2026-07-26", 81], ["2026-07-27", 52], ["2026-07-28", 52], ["2026-07-29", 51], ["2026-07-30", 73], ["2026-07-31", 63], ["2026-08-01", 102], ["2026-08-02", 105], ["2026-08-03", 52], ["2026-08-04", 52], ["2026-08-05", 51], ["2026-08-06", 73], ["2026-08-07", 63], ["2026-08-08", 79], ["2026-08-09", 81], ["2026-08-10", 52], ["2026-08-11", 52], ["2026-08-12", 51], ["2026-08-13", 73], ["2026-08-14", 63], ["2026-08-15", 102], ["2026-08-16", 105], ["2026-08-17", 52], ["2026-08-18", 52], ["2026-08-19", 51], ["2026-08-20", 73], ["2026-08-21", 63], ["2026-08-22", 79], ["2026-08-23", 81], ["2026-08-24", 52], ["2026-08-25", 67], ["2026-08-26", 51], ["2026-08-27", 73], ["2026-08-28", 63]],
+        "TVG5910": [["2026-05-01", 191], ["2026-05-02", 162], ["2026-05-03", 123], ["2026-05-04", 59], ["2026-05-05", 46], ["2026-05-06", 46], ["2026-05-07", 54], ["2026-05-08", 41], ["2026-05-09", 57], ["2026-05-10", 53], ["2026-05-11", 24], ["2026-05-12", 23], ["2026-05-13", 27], ["2026-05-14", 36], ["2026-05-15", 31], ["2026-05-16", 35], ["2026-05-17", 36], ["2026-05-18", 22], ["2026-05-19", 22], ["2026-05-20", 26], ["2026-05-21", 35], ["2026-05-22", 30], ["2026-05-23", 35], ["2026-05-24", 35], ["2026-05-25", 22], ["2026-05-26", 21], ["2026-05-27", 26], ["2026-05-28", 35], ["2026-05-29", 30], ["2026-05-30", 35], ["2026-05-31", 35], ["2026-06-01", 22], ["2026-06-02", 21], ["2026-06-03", 26], ["2026-06-04", 35], ["2026-06-05", 30], ["2026-06-06", 45], ["2026-06-07", 46], ["2026-06-08", 22], ["2026-06-09", 21], ["2026-06-10", 26], ["2026-06-11", 35], ["2026-06-12", 30], ["2026-06-13", 35], ["2026-06-14", 35], ["2026-06-15", 22], ["2026-06-16", 21], ["2026-06-17", 26], ["2026-06-18", 35], ["2026-06-19", 30], ["2026-06-20", 45], ["2026-06-21", 46], ["2026-06-22", 22], ["2026-06-23", 21], ["2026-06-24", 26], ["2026-06-25", 35], ["2026-06-26", 30], ["2026-06-27", 35], ["2026-06-28", 35], ["2026-06-29", 22], ["2026-06-30", 21], ["2026-07-01", 26], ["2026-07-02", 35], ["2026-07-03", 39], ["2026-07-04", 45], ["2026-07-05", 46], ["2026-07-06", 22], ["2026-07-07", 21], ["2026-07-08", 26], ["2026-07-09", 35], ["2026-07-10", 30], ["2026-07-11", 35], ["2026-07-12", 35], ["2026-07-13", 22], ["2026-07-14", 21], ["2026-07-15", 26], ["2026-07-16", 35], ["2026-07-17", 30], ["2026-07-18", 45], ["2026-07-19", 46], ["2026-07-20", 22], ["2026-07-21", 21], ["2026-07-22", 34], ["2026-07-23", 35], ["2026-07-24", 30], ["2026-07-25", 35], ["2026-07-26", 35], ["2026-07-27", 22], ["2026-07-28", 21], ["2026-07-29", 26], ["2026-07-30", 35], ["2026-07-31", 30], ["2026-08-01", 45], ["2026-08-02", 46], ["2026-08-03", 22], ["2026-08-04", 21], ["2026-08-05", 26], ["2026-08-06", 35], ["2026-08-07", 30], ["2026-08-08", 35], ["2026-08-09", 35], ["2026-08-10", 22], ["2026-08-11", 21], ["2026-08-12", 26], ["2026-08-13", 35], ["2026-08-14", 30], ["2026-08-15", 45], ["2026-08-16", 46], ["2026-08-17", 22], ["2026-08-18", 21], ["2026-08-19", 26], ["2026-08-20", 35], ["2026-08-21", 30], ["2026-08-22", 35], ["2026-08-23", 35], ["2026-08-24", 22], ["2026-08-25", 28], ["2026-08-26", 26], ["2026-08-27", 35], ["2026-08-28", 30]]
       },
       "pdp": [],
       "crossSell": [],
       "crossSellBySku": [],
       "categoryCustomers": {
         "category": "Lip",
-        "total": 58147,
-        "existingCategory": 28828,
-        "newToCategory": 29319,
+        "total": 58201,
+        "existingCategory": 28857,
+        "newToCategory": 29344,
         "byVariant": [
-          {
-            "sku": "TVG5960",
-            "name": "Joan",
-            "newToCategory": 5344,
-            "existingCategory": 5270
-          },
-          {
-            "sku": "TVG5910",
-            "name": "Linda",
-            "newToCategory": 1122,
-            "existingCategory": 1252
-          },
-          {
-            "sku": "TVG5940",
-            "name": "Kathy",
-            "newToCategory": 1164,
-            "existingCategory": 1387
-          },
           {
             "sku": "TVG5970",
             "name": "Kackie",
-            "newToCategory": 809,
-            "existingCategory": 974
-          },
-          {
-            "sku": "TVG5950",
-            "name": "Ragan",
-            "newToCategory": 9856,
-            "existingCategory": 10065
-          },
-          {
-            "sku": "TVG5890",
-            "name": "Michelle",
-            "newToCategory": 4449,
-            "existingCategory": 4716
-          },
-          {
-            "sku": "TVG5880",
-            "name": "Ilene",
-            "newToCategory": 5950,
-            "existingCategory": 5808
+            "newToCategory": 810,
+            "existingCategory": 976
           },
           {
             "sku": "TVG5930",
@@ -17476,19 +17573,55 @@ window.DASHBOARD_DATA = {
             "existingCategory": 1277
           },
           {
-            "sku": "TVG5920",
-            "name": "Kaisa",
-            "newToCategory": 3949,
-            "existingCategory": 3765
+            "sku": "TVG5950",
+            "name": "Ragan",
+            "newToCategory": 9870,
+            "existingCategory": 10079
+          },
+          {
+            "sku": "TVG5910",
+            "name": "Linda",
+            "newToCategory": 1124,
+            "existingCategory": 1252
+          },
+          {
+            "sku": "TVG5940",
+            "name": "Kathy",
+            "newToCategory": 1164,
+            "existingCategory": 1389
+          },
+          {
+            "sku": "TVG5880",
+            "name": "Ilene",
+            "newToCategory": 5950,
+            "existingCategory": 5809
           },
           {
             "sku": "TVG5900",
             "name": "Rosa",
-            "newToCategory": 3398,
-            "existingCategory": 2647
+            "newToCategory": 3400,
+            "existingCategory": 2651
+          },
+          {
+            "sku": "TVG5920",
+            "name": "Kaisa",
+            "newToCategory": 3951,
+            "existingCategory": 3770
+          },
+          {
+            "sku": "TVG5960",
+            "name": "Joan",
+            "newToCategory": 5348,
+            "existingCategory": 5280
+          },
+          {
+            "sku": "TVG5890",
+            "name": "Michelle",
+            "newToCategory": 4451,
+            "existingCategory": 4722
           }
         ],
-        "daily": [["2026-04-30", 9, 25], ["2026-05-01", 465, 875], ["2026-05-02", 598, 1248], ["2026-05-03", 483, 760], ["2026-05-04", 447, 567], ["2026-05-05", 506, 780], ["2026-05-06", 472, 564], ["2026-05-07", 520, 607], ["2026-05-08", 650, 615], ["2026-05-09", 651, 678], ["2026-05-10", 771, 792], ["2026-05-11", 539, 542], ["2026-05-12", 502, 459], ["2026-05-13", 541, 492], ["2026-05-14", 504, 488], ["2026-05-15", 466, 467], ["2026-05-16", 569, 524], ["2026-05-17", 614, 473], ["2026-05-18", 509, 450], ["2026-05-19", 542, 453], ["2026-05-20", 550, 404], ["2026-05-21", 486, 448], ["2026-05-22", 619, 533], ["2026-05-23", 606, 484], ["2026-05-24", 716, 482], ["2026-05-25", 903, 609], ["2026-05-26", 437, 300], ["2026-05-27", 357, 281], ["2026-05-28", 369, 316], ["2026-05-29", 342, 311], ["2026-05-30", 327, 246], ["2026-05-31", 281, 224], ["2026-06-01", 344, 296], ["2026-06-02", 333, 285], ["2026-06-03", 338, 293], ["2026-06-04", 334, 254], ["2026-06-05", 329, 235], ["2026-06-06", 232, 178], ["2026-06-07", 260, 187], ["2026-06-08", 402, 330], ["2026-06-09", 228, 161], ["2026-06-10", 174, 134], ["2026-06-11", 231, 142], ["2026-06-12", 304, 154], ["2026-06-13", 448, 303], ["2026-06-14", 495, 438], ["2026-06-15", 209, 135], ["2026-06-16", 144, 128], ["2026-06-17", 152, 153], ["2026-06-18", 212, 107], ["2026-06-19", 197, 168], ["2026-06-20", 335, 211], ["2026-06-21", 373, 227], ["2026-06-22", 166, 125], ["2026-06-23", 150, 112], ["2026-06-24", 99, 93], ["2026-06-25", 95, 90], ["2026-06-26", 68, 60], ["2026-06-27", 74, 101], ["2026-06-28", 94, 95], ["2026-06-29", 68, 85], ["2026-06-30", 113, 92], ["2026-07-01", 165, 207], ["2026-07-02", 164, 170], ["2026-07-03", 222, 183], ["2026-07-04", 190, 196], ["2026-07-05", 328, 306], ["2026-07-06", 131, 102], ["2026-07-07", 118, 118], ["2026-07-08", 137, 165], ["2026-07-09", 109, 143], ["2026-07-10", 140, 178], ["2026-07-11", 154, 207], ["2026-07-12", 127, 167], ["2026-07-13", 115, 125], ["2026-07-14", 89, 111], ["2026-07-15", 76, 92], ["2026-07-16", 68, 108], ["2026-07-17", 91, 114], ["2026-07-18", 111, 133], ["2026-07-19", 105, 138], ["2026-07-20", 92, 154], ["2026-07-21", 87, 166], ["2026-07-22", 79, 165], ["2026-07-23", 103, 149], ["2026-07-24", 93, 169], ["2026-07-25", 115, 178], ["2026-07-26", 106, 170], ["2026-07-27", 84, 131], ["2026-07-28", 134, 168], ["2026-07-29", 83, 141], ["2026-07-30", 43, 69], ["2026-07-31", 66, 80], ["2026-08-01", 49, 75], ["2026-08-02", 79, 107], ["2026-08-03", 41, 53], ["2026-08-04", 47, 75], ["2026-08-05", 54, 56], ["2026-08-06", 50, 59], ["2026-08-07", 48, 55], ["2026-08-08", 85, 123], ["2026-08-09", 106, 138], ["2026-08-10", 52, 68], ["2026-08-11", 44, 59], ["2026-08-12", 52, 65], ["2026-08-13", 56, 65], ["2026-08-14", 48, 62], ["2026-08-15", 52, 47], ["2026-08-16", 58, 58], ["2026-08-17", 55, 54], ["2026-08-18", 60, 76], ["2026-08-19", 52, 78], ["2026-08-20", 68, 67], ["2026-08-21", 50, 51], ["2026-08-22", 85, 98], ["2026-08-23", 54, 108], ["2026-08-24", 49, 61], ["2026-08-25", 49, 46], ["2026-08-26", 51, 61], ["2026-08-27", 58, 53], ["2026-08-28", 55, 53], ["2026-08-29", 53, 52], ["2026-08-30", 73, 82], ["2026-08-31", 48, 57], ["2026-09-01", 45, 53], ["2026-09-02", 87, 83], ["2026-09-03", 55, 47], ["2026-09-04", 37, 52], ["2026-09-05", 38, 62], ["2026-09-06", 75, 90], ["2026-09-07", 96, 115], ["2026-09-08", 35, 33], ["2026-09-09", 25, 43], ["2026-09-10", 29, 50], ["2026-09-11", 38, 40], ["2026-09-12", 37, 56], ["2026-09-13", 52, 54], ["2026-09-14", 25, 36], ["2026-09-15", 33, 34], ["2026-09-16", 43, 40], ["2026-09-17", 40, 65], ["2026-09-18", 41, 40], ["2026-09-19", 35, 44], ["2026-09-20", 46, 55], ["2026-09-21", 36, 38], ["2026-09-22", 25, 56], ["2026-09-23", 38, 75], ["2026-09-24", 24, 46], ["2026-09-25", 28, 43], ["2026-09-26", 34, 64], ["2026-09-27", 56, 56], ["2026-09-28", 32, 38], ["2026-09-29", 42, 60], ["2026-09-30", 33, 33], ["2026-10-01", 49, 27], ["2026-10-02", 47, 39], ["2026-10-03", 43, 50], ["2026-10-04", 45, 67], ["2026-10-05", 32, 46], ["2026-10-06", 30, 23], ["2026-10-07", 31, 46], ["2026-10-08", 28, 38], ["2026-10-09", 25, 26], ["2026-10-10", 34, 69], ["2026-10-11", 78, 129], ["2026-10-12", 24, 24], ["2026-10-13", 10, 19], ["2026-10-14", 18, 28], ["2026-10-15", 15, 21], ["2026-10-16", 17, 27], ["2026-10-17", 27, 44], ["2026-10-18", 38, 53], ["2026-10-19", 13, 18], ["2026-10-20", 25, 22], ["2026-10-21", 13, 28], ["2026-10-22", 17, 25], ["2026-10-23", 17, 19], ["2026-10-24", 18, 53], ["2026-10-25", 22, 31], ["2026-10-26", 21, 28], ["2026-10-27", 10, 28], ["2026-10-28", 22, 28], ["2026-10-29", 13, 16], ["2026-10-30", 24, 21], ["2026-10-31", 15, 23], ["2026-11-01", 23, 51], ["2026-11-02", 24, 31], ["2026-11-03", 19, 26], ["2026-11-04", 22, 30], ["2026-11-05", 15, 36], ["2026-11-06", 27, 41], ["2026-11-07", 35, 42], ["2026-11-08", 20, 36], ["2026-11-09", 21, 24], ["2026-11-10", 21, 27]]
+        "daily": [["2026-04-30", 9, 25], ["2026-05-01", 465, 875], ["2026-05-02", 598, 1248], ["2026-05-03", 483, 760], ["2026-05-04", 447, 567], ["2026-05-05", 506, 780], ["2026-05-06", 472, 564], ["2026-05-07", 520, 607], ["2026-05-08", 650, 615], ["2026-05-09", 651, 678], ["2026-05-10", 771, 792], ["2026-05-11", 539, 542], ["2026-05-12", 502, 459], ["2026-05-13", 541, 492], ["2026-05-14", 504, 488], ["2026-05-15", 466, 467], ["2026-05-16", 569, 524], ["2026-05-17", 614, 473], ["2026-05-18", 509, 450], ["2026-05-19", 542, 453], ["2026-05-20", 550, 404], ["2026-05-21", 486, 448], ["2026-05-22", 619, 533], ["2026-05-23", 606, 484], ["2026-05-24", 716, 482], ["2026-05-25", 903, 609], ["2026-05-26", 437, 300], ["2026-05-27", 357, 281], ["2026-05-28", 369, 316], ["2026-05-29", 342, 311], ["2026-05-30", 327, 246], ["2026-05-31", 281, 224], ["2026-06-01", 344, 296], ["2026-06-02", 333, 285], ["2026-06-03", 338, 293], ["2026-06-04", 334, 254], ["2026-06-05", 329, 235], ["2026-06-06", 232, 178], ["2026-06-07", 260, 187], ["2026-06-08", 402, 330], ["2026-06-09", 228, 161], ["2026-06-10", 174, 134], ["2026-06-11", 231, 142], ["2026-06-12", 304, 154], ["2026-06-13", 448, 303], ["2026-06-14", 495, 438], ["2026-06-15", 209, 135], ["2026-06-16", 144, 128], ["2026-06-17", 152, 153], ["2026-06-18", 212, 107], ["2026-06-19", 197, 168], ["2026-06-20", 335, 211], ["2026-06-21", 373, 227], ["2026-06-22", 166, 125], ["2026-06-23", 150, 112], ["2026-06-24", 99, 93], ["2026-06-25", 95, 90], ["2026-06-26", 68, 60], ["2026-06-27", 74, 101], ["2026-06-28", 94, 95], ["2026-06-29", 68, 85], ["2026-06-30", 113, 92], ["2026-07-01", 165, 207], ["2026-07-02", 164, 170], ["2026-07-03", 222, 183], ["2026-07-04", 190, 196], ["2026-07-05", 328, 306], ["2026-07-06", 131, 102], ["2026-07-07", 118, 118], ["2026-07-08", 137, 165], ["2026-07-09", 109, 143], ["2026-07-10", 140, 178], ["2026-07-11", 154, 207], ["2026-07-12", 127, 167], ["2026-07-13", 115, 125], ["2026-07-14", 89, 111], ["2026-07-15", 76, 92], ["2026-07-16", 68, 108], ["2026-07-17", 91, 114], ["2026-07-18", 111, 133], ["2026-07-19", 105, 138], ["2026-07-20", 92, 154], ["2026-07-21", 87, 166], ["2026-07-22", 79, 165], ["2026-07-23", 103, 149], ["2026-07-24", 93, 169], ["2026-07-25", 115, 178], ["2026-07-26", 106, 170], ["2026-07-27", 84, 131], ["2026-07-28", 134, 168], ["2026-07-29", 83, 141], ["2026-07-30", 43, 69], ["2026-07-31", 66, 80], ["2026-08-01", 49, 75], ["2026-08-02", 79, 107], ["2026-08-03", 41, 53], ["2026-08-04", 47, 75], ["2026-08-05", 54, 56], ["2026-08-06", 50, 59], ["2026-08-07", 48, 55], ["2026-08-08", 85, 123], ["2026-08-09", 106, 138], ["2026-08-10", 52, 68], ["2026-08-11", 44, 59], ["2026-08-12", 52, 65], ["2026-08-13", 56, 65], ["2026-08-14", 48, 62], ["2026-08-15", 52, 47], ["2026-08-16", 58, 58], ["2026-08-17", 55, 54], ["2026-08-18", 60, 76], ["2026-08-19", 52, 78], ["2026-08-20", 68, 67], ["2026-08-21", 50, 51], ["2026-08-22", 85, 98], ["2026-08-23", 54, 108], ["2026-08-24", 49, 61], ["2026-08-25", 49, 46], ["2026-08-26", 51, 61], ["2026-08-27", 58, 53], ["2026-08-28", 55, 53], ["2026-08-29", 53, 52], ["2026-08-30", 73, 82], ["2026-08-31", 48, 57], ["2026-09-01", 45, 53], ["2026-09-02", 87, 83], ["2026-09-03", 55, 47], ["2026-09-04", 37, 52], ["2026-09-05", 38, 62], ["2026-09-06", 75, 90], ["2026-09-07", 96, 115], ["2026-09-08", 35, 33], ["2026-09-09", 25, 43], ["2026-09-10", 29, 50], ["2026-09-11", 38, 40], ["2026-09-12", 37, 56], ["2026-09-13", 52, 54], ["2026-09-14", 25, 36], ["2026-09-15", 33, 34], ["2026-09-16", 43, 40], ["2026-09-17", 40, 65], ["2026-09-18", 41, 40], ["2026-09-19", 35, 44], ["2026-09-20", 46, 55], ["2026-09-21", 36, 38], ["2026-09-22", 25, 56], ["2026-09-23", 38, 75], ["2026-09-24", 24, 46], ["2026-09-25", 28, 43], ["2026-09-26", 34, 64], ["2026-09-27", 56, 56], ["2026-09-28", 32, 38], ["2026-09-29", 42, 60], ["2026-09-30", 33, 33], ["2026-10-01", 49, 27], ["2026-10-02", 47, 39], ["2026-10-03", 43, 50], ["2026-10-04", 45, 67], ["2026-10-05", 32, 46], ["2026-10-06", 30, 23], ["2026-10-07", 31, 46], ["2026-10-08", 28, 38], ["2026-10-09", 25, 26], ["2026-10-10", 34, 69], ["2026-10-11", 78, 129], ["2026-10-12", 24, 24], ["2026-10-13", 10, 19], ["2026-10-14", 18, 28], ["2026-10-15", 15, 21], ["2026-10-16", 17, 27], ["2026-10-17", 27, 44], ["2026-10-18", 38, 53], ["2026-10-19", 13, 18], ["2026-10-20", 25, 22], ["2026-10-21", 13, 28], ["2026-10-22", 17, 25], ["2026-10-23", 17, 19], ["2026-10-24", 18, 53], ["2026-10-25", 22, 31], ["2026-10-26", 21, 28], ["2026-10-27", 10, 28], ["2026-10-28", 22, 28], ["2026-10-29", 13, 16], ["2026-10-30", 24, 21], ["2026-10-31", 15, 23], ["2026-11-01", 23, 51], ["2026-11-02", 23, 31], ["2026-11-03", 19, 26], ["2026-11-04", 22, 30], ["2026-11-05", 15, 36], ["2026-11-06", 26, 41], ["2026-11-07", 35, 42], ["2026-11-08", 20, 36], ["2026-11-09", 21, 24], ["2026-11-10", 21, 27], ["2026-11-11", 28, 43]]
       }
     },
     {
@@ -17501,40 +17634,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "3 Products \u00b7 Silver Grey",
       "accent": "#C9A84C",
       "summary": {
-        "netSales": 267367.04,
-        "units": 11941,
-        "orders": 10326,
+        "netSales": 268188.1,
+        "units": 11977,
+        "orders": 10359,
         "aov": 25.89,
-        "newCustomers": 3758,
-        "retCustomers": 5633,
-        "totalCustomers": 9391,
+        "newCustomers": 3770,
+        "retCustomers": 5650,
+        "totalCustomers": 9420,
         "newPct": 40.0,
         "retPct": 60.0,
         "planUnits": 27773,
-        "pctToPlanUnits": 43.0,
+        "pctToPlanUnits": 43.1,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 98923.0,
-        "retCustomerRevenue": 168444.04,
+        "newCustomerRevenue": 99226.3,
+        "retCustomerRevenue": 168961.8,
         "pdpViews": 0,
         "pdpAtcRate": 0,
         "pdpCvr": 0
       },
       "regions": {
         "us": {
-          "units": 11513,
-          "netSales": 261018.82,
-          "orders": 9960
+          "units": 11546,
+          "netSales": 261794.98,
+          "orders": 9990
         },
         "ca": {
-          "units": 428,
-          "netSales": 6348.22,
-          "orders": 366
+          "units": 431,
+          "netSales": 6393.12,
+          "orders": 369
         }
       },
       "trafficStart": "2026-06-08",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [],
         "monthly": []
@@ -18034,17 +18167,17 @@ window.DASHBOARD_DATA = {
           "product": "Instant Brow Fix\u2122 Semi-Permanent Eyebrow Gel",
           "shade": "Semi-Perm. Gel",
           "color": "#6B7A8D",
-          "netSales": 139172.13,
-          "units": 6336,
-          "orders": 6091,
-          "newCustomers": 2568,
-          "retCustomers": 3152,
-          "usUnits": 6073,
-          "caUnits": 263,
-          "usNetSales": 135339.54,
-          "caNetSales": 3832.59,
+          "netSales": 139672.46,
+          "units": 6359,
+          "orders": 6113,
+          "newCustomers": 2577,
+          "retCustomers": 3163,
+          "usUnits": 6093,
+          "caUnits": 266,
+          "usNetSales": 135794.97,
+          "caNetSales": 3877.49,
           "planUnits": 9861,
-          "pctToPlanUnits": 64.3,
+          "pctToPlanUnits": 64.5,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -18058,8 +18191,8 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 9861,
-          "pctToGoalUnits": 64.3,
-          "unitsToGoal": 3525,
+          "pctToGoalUnits": 64.5,
+          "unitsToGoal": 3502,
           "planEndDate": "2026-10-05",
           "weeksOfStock": null,
           "decayCurveOOS": null,
@@ -18071,17 +18204,17 @@ window.DASHBOARD_DATA = {
           "product": "Instant Brow Fix\u2122 Quick Fill Eyebrow Pencil",
           "shade": "Quick Fill Pencil",
           "color": "#4B5563",
-          "netSales": 68618.92,
-          "units": 2882,
-          "orders": 2722,
-          "newCustomers": 786,
-          "retCustomers": 1756,
-          "usUnits": 2759,
+          "netSales": 68799.25,
+          "units": 2889,
+          "orders": 2728,
+          "newCustomers": 787,
+          "retCustomers": 1759,
+          "usUnits": 2766,
           "caUnits": 123,
-          "usNetSales": 66704.74,
+          "usNetSales": 66885.07,
           "caNetSales": 1914.18,
           "planUnits": 4535,
-          "pctToPlanUnits": 63.6,
+          "pctToPlanUnits": 63.7,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -18095,8 +18228,8 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 4535,
-          "pctToGoalUnits": 63.6,
-          "unitsToGoal": 1653,
+          "pctToGoalUnits": 63.7,
+          "unitsToGoal": 1646,
           "planEndDate": "2026-10-05",
           "weeksOfStock": null,
           "decayCurveOOS": null,
@@ -18108,14 +18241,14 @@ window.DASHBOARD_DATA = {
           "product": "Infinity Waterproof\u2122 Eyebrow Liner",
           "shade": "Waterproof Liner",
           "color": "#9CA3AF",
-          "netSales": 59575.99,
-          "units": 2723,
-          "orders": 2444,
-          "newCustomers": 734,
-          "retCustomers": 1501,
-          "usUnits": 2681,
+          "netSales": 59716.39,
+          "units": 2729,
+          "orders": 2450,
+          "newCustomers": 736,
+          "retCustomers": 1505,
+          "usUnits": 2687,
           "caUnits": 42,
-          "usNetSales": 58974.54,
+          "usNetSales": 59114.94,
           "caNetSales": 601.45,
           "planUnits": 13377,
           "pctToPlanUnits": 20.4,
@@ -18133,7 +18266,7 @@ window.DASHBOARD_DATA = {
           "caEstOOSDate": null,
           "planTotalUnits": 13377,
           "pctToGoalUnits": 20.4,
-          "unitsToGoal": 10654,
+          "unitsToGoal": 10648,
           "planEndDate": "2026-10-05",
           "weeksOfStock": null,
           "decayCurveOOS": null,
@@ -18146,7 +18279,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "new-to-category",
             "title": "52% of buyers are new to Brow",
-            "detail": "4,915 of 9,391 buyers had not purchased this category before."
+            "detail": "4,931 of 9,420 buyers had not purchased this category before."
           }
         ]
       },
@@ -20490,6 +20623,21 @@ window.DASHBOARD_DATA = {
           "cumPlanUnits": 27773,
           "newCustomers": 14,
           "retCustomers": 15
+        },
+        {
+          "date": "2026-11-11",
+          "units": 36,
+          "netSales": 821.06,
+          "usUnits": 33,
+          "caUnits": 3,
+          "usNetSales": 776.16,
+          "caNetSales": 44.9,
+          "cumUnits": 11977,
+          "cumSales": 268188.13,
+          "planUnits": null,
+          "cumPlanUnits": 27773,
+          "newCustomers": 14,
+          "retCustomers": 19
         }
       ],
       "dailySkuColumns": [
@@ -20504,44 +20652,44 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TVG6680": [["2026-06-08", 13, 322.36, 13, 0, 322.36, 0.0, 1, 11], ["2026-06-09", 58, 1389.1, 52, 6, 1284.11, 104.99, 8, 48], ["2026-06-10", 89, 2149.38, 86, 3, 2096.83, 52.55, 25, 59], ["2026-06-11", 116, 2883.55, 112, 4, 2813.72, 69.83, 22, 89], ["2026-06-12", 87, 2140.32, 83, 4, 2074.22, 66.1, 35, 50], ["2026-06-13", 102, 2533.12, 100, 2, 2498.37, 34.75, 45, 54], ["2026-06-14", 107, 2606.29, 102, 5, 2530.58, 75.71, 51, 53], ["2026-06-15", 88, 2165.29, 85, 3, 2118.9, 46.39, 28, 54], ["2026-06-16", 47, 1134.91, 44, 3, 1089.89, 45.02, 22, 22], ["2026-06-17", 28, 704.84, 28, 0, 704.84, 0.0, 9, 18], ["2026-06-18", 25, 620.34, 24, 1, 603.3, 17.04, 9, 15], ["2026-06-19", 28, 654.58, 26, 2, 627.31, 27.27, 11, 15], ["2026-06-20", 61, 1383.28, 55, 6, 1292.13, 91.15, 9, 51], ["2026-06-21", 55, 1322.98, 53, 2, 1291.65, 31.33, 15, 37], ["2026-06-22", 23, 536.28, 22, 1, 519.3, 16.98, 3, 16], ["2026-06-23", 19, 469.51, 18, 1, 452.59, 16.92, 5, 14], ["2026-06-24", 16, 387.8, 16, 0, 387.8, 0.0, 3, 11], ["2026-06-25", 29, 726.54, 29, 0, 726.54, 0.0, 6, 15], ["2026-06-26", 11, 228.19, 9, 2, 195.91, 32.28, 4, 7], ["2026-06-27", 10, 248.3, 9, 1, 231.4, 16.9, 2, 7], ["2026-06-28", 9, 223.6, 9, 0, 223.6, 0.0, 2, 7], ["2026-06-29", 10, 228.8, 10, 0, 228.8, 0.0, 4, 6], ["2026-06-30", 20, 503.95, 20, 0, 503.95, 0.0, 5, 15], ["2026-07-01", 35, 728.74, 29, 6, 643.07, 85.67, 8, 25], ["2026-07-02", 25, 559.79, 24, 1, 546.33, 13.46, 3, 18], ["2026-07-03", 36, 789.21, 35, 1, 775.74, 13.47, 8, 26], ["2026-07-04", 34, 755.25, 33, 1, 740.9, 14.35, 2, 31], ["2026-07-05", 53, 1128.96, 47, 6, 1040.91, 88.05, 12, 40], ["2026-07-06", 16, 389.78, 15, 1, 374.6, 15.18, 3, 12], ["2026-07-07", 13, 298.47, 13, 0, 298.47, 0.0, 3, 10], ["2026-07-08", 15, 373.97, 14, 1, 357.14, 16.83, 2, 12], ["2026-07-09", 19, 449.1, 19, 0, 449.1, 0.0, 3, 16], ["2026-07-10", 14, 344.5, 14, 0, 344.5, 0.0, 4, 10], ["2026-07-11", 20, 454.3, 20, 0, 454.3, 0.0, 4, 14], ["2026-07-12", 17, 414.23, 17, 0, 414.23, 0.0, 2, 14], ["2026-07-13", 11, 260.2, 11, 0, 260.2, 0.0, 5, 6], ["2026-07-14", 18, 450.42, 17, 1, 433.39, 17.03, 3, 13], ["2026-07-15", 12, 291.49, 11, 1, 274.3, 17.19, 5, 6], ["2026-07-16", 14, 336.27, 12, 2, 301.9, 34.37, 7, 6], ["2026-07-17", 11, 257.09, 10, 1, 243.28, 13.81, 5, 6], ["2026-07-18", 16, 379.17, 15, 1, 361.92, 17.25, 6, 10], ["2026-07-19", 19, 465.7, 19, 0, 465.7, 0.0, 5, 13], ["2026-07-20", 12, 291.6, 12, 0, 291.6, 0.0, 3, 7], ["2026-07-21", 14, 348.91, 14, 0, 348.91, 0.0, 3, 11], ["2026-07-22", 15, 378.79, 15, 0, 378.79, 0.0, 3, 11], ["2026-07-23", 15, 382.31, 15, 0, 382.31, 0.0, 2, 13], ["2026-07-24", 16, 386.98, 15, 1, 371.55, 15.43, 5, 10], ["2026-07-25", 18, 415.89, 16, 2, 388.45, 27.44, 3, 12], ["2026-07-26", 17, 407.73, 15, 2, 373.53, 34.2, 1, 15], ["2026-07-27", 13, 301.26, 13, 0, 301.26, 0.0, 5, 8], ["2026-07-28", 9, 208.0, 9, 0, 208.0, 0.0, 4, 5], ["2026-07-29", 10, 252.75, 10, 0, 252.75, 0.0, 5, 5], ["2026-07-30", 19, 435.12, 18, 1, 421.44, 13.68, 3, 14], ["2026-07-31", 21, 476.59, 19, 2, 443.32, 33.27, 5, 15], ["2026-08-01", 21, 502.39, 21, 0, 502.39, 0.0, 10, 7], ["2026-08-02", 43, 996.54, 41, 2, 974.66, 21.88, 9, 32], ["2026-08-03", 10, 240.56, 10, 0, 240.56, 0.0, 2, 8], ["2026-08-04", 10, 230.75, 10, 0, 230.75, 0.0, 1, 8], ["2026-08-05", 14, 343.81, 13, 1, 327.8, 16.01, 5, 8], ["2026-08-06", 15, 362.78, 15, 0, 362.78, 0.0, 9, 4], ["2026-08-07", 12, 284.58, 11, 1, 267.23, 17.35, 8, 4], ["2026-08-08", 41, 902.87, 41, 0, 902.87, 0.0, 11, 23], ["2026-08-09", 46, 988.1, 45, 1, 974.13, 13.97, 10, 33], ["2026-08-10", 13, 315.86, 13, 0, 315.86, 0.0, 3, 9], ["2026-08-11", 13, 313.63, 13, 0, 313.63, 0.0, 1, 11], ["2026-08-12", 11, 255.0, 11, 0, 255.0, 0.0, 4, 7], ["2026-08-13", 17, 392.69, 15, 2, 359.29, 33.4, 8, 8], ["2026-08-14", 18, 444.01, 18, 0, 444.01, 0.0, 9, 7], ["2026-08-15", 11, 215.8, 11, 0, 215.8, 0.0, 7, 4], ["2026-08-16", 12, 284.16, 11, 1, 266.5, 17.66, 3, 9], ["2026-08-17", 11, 260.2, 11, 0, 260.2, 0.0, 5, 5], ["2026-08-18", 14, 333.74, 14, 0, 333.74, 0.0, 7, 7], ["2026-08-19", 12, 274.68, 12, 0, 274.68, 0.0, 6, 5], ["2026-08-20", 10, 253.13, 10, 0, 253.13, 0.0, 4, 6], ["2026-08-21", 8, 198.74, 8, 0, 198.74, 0.0, 4, 4], ["2026-08-22", 10, 246.1, 10, 0, 246.1, 0.0, 3, 7], ["2026-08-23", 9, 225.54, 9, 0, 225.54, 0.0, 3, 6], ["2026-08-24", 12, 274.9, 12, 0, 274.9, 0.0, 5, 7], ["2026-08-25", 15, 361.72, 15, 0, 361.72, 0.0, 5, 10], ["2026-08-26", 16, 411.24, 16, 0, 411.24, 0.0, 3, 13], ["2026-08-27", 9, 225.28, 9, 0, 225.28, 0.0, 4, 4], ["2026-08-28", 14, 329.36, 14, 0, 329.36, 0.0, 5, 9], ["2026-08-29", 14, 310.13, 12, 2, 274.65, 35.48, 5, 6], ["2026-08-30", 18, 403.18, 14, 4, 338.4, 64.78, 2, 13], ["2026-08-31", 13, 301.6, 13, 0, 301.6, 0.0, 4, 8], ["2026-09-01", 13, 323.78, 12, 1, 306.17, 17.61, 6, 7], ["2026-09-02", 15, 354.56, 14, 1, 336.9, 17.66, 5, 10], ["2026-09-03", 13, 306.8, 13, 0, 306.8, 0.0, 3, 10], ["2026-09-04", 17, 439.4, 17, 0, 439.4, 0.0, 8, 9], ["2026-09-05", 17, 434.4, 17, 0, 434.4, 0.0, 5, 11], ["2026-09-06", 20, 474.4, 19, 1, 460.19, 14.21, 5, 14], ["2026-09-07", 14, 351.75, 13, 1, 333.99, 17.76, 1, 12], ["2026-09-08", 13, 310.11, 13, 0, 310.11, 0.0, 3, 9], ["2026-09-09", 8, 199.83, 7, 1, 182.0, 17.83, 2, 5], ["2026-09-10", 15, 380.31, 15, 0, 380.31, 0.0, 4, 11], ["2026-09-11", 7, 158.0, 7, 0, 158.0, 0.0, 0, 6], ["2026-09-12", 11, 272.5, 10, 1, 254.8, 17.7, 1, 10], ["2026-09-13", 17, 412.7, 15, 2, 382.6, 30.1, 5, 11], ["2026-09-14", 7, 165.54, 7, 0, 165.54, 0.0, 2, 5], ["2026-09-15", 8, 208.0, 8, 0, 208.0, 0.0, 1, 7], ["2026-09-16", 14, 336.28, 14, 0, 336.28, 0.0, 4, 10], ["2026-09-17", 13, 331.16, 13, 0, 331.16, 0.0, 1, 11], ["2026-09-18", 8, 167.72, 7, 1, 153.4, 14.32, 2, 5], ["2026-09-19", 8, 191.73, 8, 0, 191.73, 0.0, 3, 4], ["2026-09-20", 19, 447.67, 18, 1, 447.67, 0.0, 3, 15], ["2026-09-21", 6, 148.2, 6, 0, 148.2, 0.0, 3, 3], ["2026-09-22", 16, 368.08, 15, 1, 352.0, 16.08, 3, 11], ["2026-09-23", 18, 443.45, 18, 0, 443.45, 0.0, 8, 9], ["2026-09-24", 11, 246.81, 11, 0, 246.81, 0.0, 4, 6], ["2026-09-25", 7, 140.4, 7, 0, 140.4, 0.0, 4, 3], ["2026-09-26", 9, 217.98, 9, 0, 217.98, 0.0, 2, 7], ["2026-09-27", 8, 177.6, 7, 1, 161.45, 16.15, 2, 6], ["2026-09-28", 15, 372.2, 15, 0, 372.2, 0.0, 4, 9], ["2026-09-29", 6, 150.8, 6, 0, 150.8, 0.0, 2, 4], ["2026-09-30", 13, 317.2, 13, 0, 317.2, 0.0, 6, 6], ["2026-10-01", 7, 161.96, 7, 0, 161.96, 0.0, 3, 4], ["2026-10-02", 3, 52.0, 3, 0, 52.0, 0.0, 0, 3], ["2026-10-03", 51, 1179.15, 50, 1, 1164.08, 15.07, 7, 36], ["2026-10-04", 47, 1092.95, 45, 2, 1067.01, 25.94, 8, 33], ["2026-10-05", 6, 136.5, 6, 0, 136.5, 0.0, 3, 2], ["2026-10-06", 6, 145.6, 6, 0, 145.6, 0.0, 4, 2], ["2026-10-07", 8, 198.9, 8, 0, 198.9, 0.0, 3, 5], ["2026-10-08", 14, 337.66, 14, 0, 337.66, 0.0, 0, 11], ["2026-10-09", 8, 202.44, 8, 0, 202.44, 0.0, 3, 5], ["2026-10-10", 15, 343.89, 15, 0, 343.89, 0.0, 6, 8], ["2026-10-11", 12, 287.23, 12, 0, 287.23, 0.0, 2, 10], ["2026-10-12", 3, 78.0, 3, 0, 78.0, 0.0, 1, 2], ["2026-10-13", 4, 98.8, 4, 0, 98.8, 0.0, 1, 3], ["2026-10-14", 12, 255.68, 11, 1, 241.88, 13.8, 3, 6], ["2026-10-15", 6, 122.4, 6, 0, 122.4, 0.0, 2, 4], ["2026-10-16", 4, 93.6, 4, 0, 93.6, 0.0, 3, 1], ["2026-10-17", 18, 430.27, 17, 1, 416.86, 13.41, 6, 12], ["2026-10-18", 12, 286.8, 12, 0, 286.8, 0.0, 3, 7], ["2026-10-19", 11, 281.0, 11, 0, 281.0, 0.0, 1, 8], ["2026-10-20", 10, 234.08, 10, 0, 234.08, 0.0, 3, 6], ["2026-10-21", 4, 84.82, 3, 1, 67.6, 17.22, 2, 2], ["2026-10-22", 6, 154.71, 6, 0, 154.71, 0.0, 0, 6], ["2026-10-23", 4, 104.0, 4, 0, 104.0, 0.0, 2, 1], ["2026-10-24", 10, 243.37, 9, 1, 227.5, 15.87, 2, 8], ["2026-10-25", 2, 41.8, 2, 0, 41.8, 0.0, 1, 1], ["2026-10-26", 8, 180.77, 7, 1, 166.9, 13.87, 1, 6], ["2026-10-27", 6, 146.92, 6, 0, 146.92, 0.0, 0, 6], ["2026-10-28", 5, 130.0, 5, 0, 130.0, 0.0, 2, 3], ["2026-10-29", 7, 160.67, 6, 1, 143.4, 17.27, 2, 5], ["2026-10-30", 7, 175.5, 7, 0, 175.5, 0.0, 2, 5], ["2026-10-31", 11, 245.39, 7, 4, 175.61, 69.78, 6, 4], ["2026-11-01", 12, 272.92, 9, 3, 224.74, 48.18, 2, 9], ["2026-11-02", 7, 147.8, 7, 0, 147.8, 0.0, 1, 6], ["2026-11-03", 2, 26.0, 1, 1, 26.0, 0.0, 1, 1], ["2026-11-04", 8, 189.99, 6, 2, 156.0, 33.99, 5, 3], ["2026-11-05", 7, 176.9, 7, 0, 176.9, 0.0, 1, 6], ["2026-11-06", 10, 226.25, 9, 1, 212.3, 13.95, 3, 7], ["2026-11-07", 4, 104.0, 4, 0, 104.0, 0.0, 0, 3], ["2026-11-08", 7, 177.0, 7, 0, 177.0, 0.0, 1, 6], ["2026-11-09", 5, 126.1, 5, 0, 126.1, 0.0, 1, 4], ["2026-11-10", 7, 176.8, 7, 0, 176.8, 0.0, 2, 5]],
-        "TVG6690": [["2026-06-08", 20, 452.98, 20, 0, 452.98, 0.0, 6, 14], ["2026-06-09", 108, 2136.36, 107, 1, 2119.9, 16.46, 30, 77], ["2026-06-10", 93, 2055.57, 87, 6, 1971.44, 84.13, 25, 64], ["2026-06-11", 117, 2675.53, 114, 3, 2626.18, 49.35, 22, 91], ["2026-06-12", 81, 1760.12, 71, 10, 1608.7, 151.42, 18, 57], ["2026-06-13", 86, 1879.14, 79, 7, 1772.69, 106.45, 36, 48], ["2026-06-14", 119, 2712.55, 112, 7, 2604.71, 107.84, 38, 75], ["2026-06-15", 51, 1136.33, 47, 4, 1077.51, 58.82, 15, 34], ["2026-06-16", 62, 1409.49, 59, 3, 1363.84, 45.65, 12, 45], ["2026-06-17", 45, 941.67, 39, 6, 861.6, 80.07, 19, 25], ["2026-06-18", 51, 1100.97, 43, 8, 977.56, 123.41, 26, 23], ["2026-06-19", 55, 1183.0, 47, 8, 1068.32, 114.68, 31, 21], ["2026-06-20", 89, 1992.82, 82, 7, 1892.69, 100.13, 54, 33], ["2026-06-21", 114, 2576.58, 109, 5, 2500.6, 75.98, 55, 54], ["2026-06-22", 37, 818.0, 37, 0, 818.0, 0.0, 15, 21], ["2026-06-23", 27, 617.88, 27, 0, 617.88, 0.0, 16, 10], ["2026-06-24", 46, 1042.03, 45, 1, 1029.31, 12.72, 16, 27], ["2026-06-25", 25, 570.19, 25, 0, 570.19, 0.0, 13, 11], ["2026-06-26", 23, 487.9, 20, 3, 443.6, 44.3, 12, 10], ["2026-06-27", 22, 434.77, 21, 1, 418.88, 15.89, 13, 9], ["2026-06-28", 17, 387.4, 17, 0, 387.4, 0.0, 7, 7], ["2026-06-29", 20, 465.6, 20, 0, 465.6, 0.0, 8, 11], ["2026-06-30", 30, 673.14, 28, 2, 644.7, 28.44, 22, 8], ["2026-07-01", 63, 1247.19, 57, 6, 1164.54, 82.65, 29, 33], ["2026-07-02", 60, 1165.16, 54, 6, 1100.19, 64.97, 23, 33], ["2026-07-03", 78, 1553.82, 74, 4, 1499.92, 53.9, 37, 41], ["2026-07-04", 97, 1883.0, 86, 11, 1733.53, 149.47, 41, 50], ["2026-07-05", 94, 1895.53, 91, 3, 1855.06, 40.47, 45, 49], ["2026-07-06", 41, 887.51, 39, 2, 860.53, 26.98, 25, 16], ["2026-07-07", 26, 572.62, 25, 1, 556.8, 15.82, 18, 7], ["2026-07-08", 41, 853.73, 34, 7, 754.51, 99.22, 26, 12], ["2026-07-09", 45, 1011.94, 40, 5, 932.28, 79.66, 18, 25], ["2026-07-10", 34, 736.07, 33, 1, 723.33, 12.74, 11, 21], ["2026-07-11", 30, 631.09, 26, 4, 567.33, 63.76, 17, 12], ["2026-07-12", 35, 794.68, 33, 2, 762.83, 31.85, 24, 9], ["2026-07-13", 27, 595.95, 23, 4, 537.54, 58.41, 14, 13], ["2026-07-14", 25, 574.2, 24, 1, 561.19, 13.01, 8, 15], ["2026-07-15", 21, 466.74, 19, 2, 437.81, 28.93, 10, 11], ["2026-07-16", 87, 2018.99, 84, 3, 1976.93, 42.06, 19, 64], ["2026-07-17", 67, 1557.34, 66, 1, 1544.86, 12.48, 20, 44], ["2026-07-18", 42, 974.25, 41, 1, 959.7, 14.55, 13, 28], ["2026-07-19", 54, 1270.28, 53, 1, 1257.27, 13.01, 16, 37], ["2026-07-20", 68, 1532.26, 68, 0, 1532.26, 0.0, 19, 47], ["2026-07-21", 56, 1298.4, 56, 0, 1298.4, 0.0, 19, 35], ["2026-07-22", 54, 1231.32, 54, 0, 1231.32, 0.0, 18, 36], ["2026-07-23", 45, 999.66, 43, 2, 967.46, 32.2, 18, 27], ["2026-07-24", 44, 976.37, 41, 3, 927.97, 48.4, 12, 30], ["2026-07-25", 53, 1212.66, 51, 2, 1181.17, 31.49, 15, 37], ["2026-07-26", 53, 1184.31, 52, 1, 1168.22, 16.09, 18, 34], ["2026-07-27", 30, 655.75, 29, 1, 639.66, 16.09, 9, 19], ["2026-07-28", 39, 866.93, 39, 0, 866.93, 0.0, 13, 25], ["2026-07-29", 43, 993.6, 43, 0, 993.6, 0.0, 14, 26], ["2026-07-30", 26, 560.39, 25, 1, 547.51, 12.88, 9, 17], ["2026-07-31", 68, 1501.32, 65, 3, 1453.36, 47.96, 27, 39], ["2026-08-01", 38, 813.11, 34, 4, 748.0, 65.11, 16, 22], ["2026-08-02", 57, 1287.76, 56, 1, 1271.48, 16.28, 21, 35], ["2026-08-03", 27, 607.7, 25, 2, 575.19, 32.51, 14, 12], ["2026-08-04", 24, 554.3, 24, 0, 554.3, 0.0, 11, 11], ["2026-08-05", 18, 403.14, 16, 2, 370.7, 32.44, 4, 14], ["2026-08-06", 26, 584.9, 26, 0, 584.9, 0.0, 15, 10], ["2026-08-07", 16, 337.93, 15, 1, 321.6, 16.33, 9, 7], ["2026-08-08", 66, 1107.27, 64, 2, 1087.73, 19.54, 22, 42], ["2026-08-09", 78, 1368.43, 74, 4, 1315.84, 52.59, 33, 39], ["2026-08-10", 29, 627.72, 27, 2, 595.59, 32.13, 14, 14], ["2026-08-11", 34, 771.77, 34, 0, 771.77, 0.0, 16, 17], ["2026-08-12", 20, 456.94, 20, 0, 456.94, 0.0, 10, 9], ["2026-08-13", 26, 542.36, 25, 1, 525.88, 16.48, 12, 13], ["2026-08-14", 25, 546.65, 25, 0, 546.65, 0.0, 13, 11], ["2026-08-15", 20, 472.6, 19, 1, 456.0, 16.6, 9, 11], ["2026-08-16", 23, 518.58, 22, 1, 501.96, 16.62, 7, 14], ["2026-08-17", 22, 469.35, 21, 1, 455.09, 14.26, 6, 14], ["2026-08-18", 20, 429.98, 18, 2, 400.06, 29.92, 10, 9], ["2026-08-19", 25, 557.15, 25, 0, 557.15, 0.0, 16, 7], ["2026-08-20", 25, 568.7, 25, 0, 568.7, 0.0, 12, 12], ["2026-08-21", 12, 280.7, 12, 0, 280.7, 0.0, 7, 5], ["2026-08-22", 23, 516.64, 22, 1, 499.69, 16.95, 13, 10], ["2026-08-23", 29, 647.22, 28, 1, 633.72, 13.5, 13, 16], ["2026-08-24", 18, 415.36, 18, 0, 415.36, 0.0, 8, 9], ["2026-08-25", 22, 493.1, 22, 0, 493.1, 0.0, 11, 10], ["2026-08-26", 22, 487.65, 22, 0, 487.65, 0.0, 11, 11], ["2026-08-27", 17, 385.95, 17, 0, 385.95, 0.0, 4, 13], ["2026-08-28", 30, 661.29, 30, 0, 661.29, 0.0, 16, 11], ["2026-08-29", 24, 541.88, 24, 0, 541.88, 0.0, 10, 14], ["2026-08-30", 48, 1057.01, 46, 2, 1026.33, 30.68, 16, 30], ["2026-08-31", 32, 719.4, 32, 0, 719.4, 0.0, 18, 12], ["2026-09-01", 25, 554.4, 25, 0, 554.4, 0.0, 16, 8], ["2026-09-02", 56, 1266.8, 54, 2, 1233.56, 33.24, 27, 24], ["2026-09-03", 52, 1149.19, 51, 1, 1132.4, 16.79, 25, 25], ["2026-09-04", 40, 915.08, 40, 0, 915.08, 0.0, 27, 12], ["2026-09-05", 59, 1323.69, 57, 2, 1290.19, 33.5, 33, 25], ["2026-09-06", 74, 1642.8, 69, 5, 1574.32, 68.48, 30, 42], ["2026-09-07", 80, 1805.98, 75, 5, 1734.02, 71.96, 41, 34], ["2026-09-08", 37, 838.28, 36, 1, 823.2, 15.08, 22, 14], ["2026-09-09", 45, 1005.56, 43, 2, 972.0, 33.56, 16, 25], ["2026-09-10", 51, 1160.47, 51, 0, 1160.47, 0.0, 25, 23], ["2026-09-11", 34, 780.16, 34, 0, 780.16, 0.0, 11, 22], ["2026-09-12", 32, 740.44, 30, 2, 710.4, 30.04, 14, 18], ["2026-09-13", 49, 1133.95, 49, 0, 1133.95, 0.0, 20, 27], ["2026-09-14", 30, 680.18, 29, 1, 663.6, 16.58, 16, 14], ["2026-09-15", 34, 800.77, 34, 0, 800.77, 0.0, 12, 22], ["2026-09-16", 46, 1004.7, 44, 2, 1004.7, 0.0, 17, 25], ["2026-09-17", 53, 1230.51, 53, 0, 1230.51, 0.0, 23, 26], ["2026-09-18", 42, 913.94, 41, 1, 897.6, 16.34, 23, 19], ["2026-09-19", 43, 970.2, 43, 0, 970.2, 0.0, 21, 21], ["2026-09-20", 54, 1208.57, 54, 0, 1208.57, 0.0, 19, 30], ["2026-09-21", 48, 1132.01, 48, 0, 1132.01, 0.0, 25, 21], ["2026-09-22", 46, 992.66, 46, 0, 992.66, 0.0, 22, 22], ["2026-09-23", 65, 1482.64, 65, 0, 1482.64, 0.0, 29, 30], ["2026-09-24", 46, 1049.47, 46, 0, 1049.47, 0.0, 29, 17], ["2026-09-25", 53, 1191.76, 52, 1, 1175.71, 16.05, 33, 18], ["2026-09-26", 54, 1216.49, 52, 2, 1190.18, 26.31, 26, 26], ["2026-09-27", 46, 1038.34, 44, 2, 1006.38, 31.96, 30, 15], ["2026-09-28", 36, 794.1, 35, 1, 781.31, 12.79, 26, 8], ["2026-09-29", 47, 1043.95, 45, 2, 1013.2, 30.75, 24, 20], ["2026-09-30", 36, 787.2, 36, 0, 787.2, 0.0, 18, 17], ["2026-10-01", 27, 566.83, 26, 1, 554.09, 12.74, 13, 14], ["2026-10-02", 29, 636.62, 28, 1, 624.0, 12.62, 14, 13], ["2026-10-03", 112, 2181.21, 110, 2, 2157.53, 23.68, 29, 70], ["2026-10-04", 94, 1931.28, 92, 2, 1900.56, 30.72, 23, 60], ["2026-10-05", 32, 711.8, 31, 1, 699.2, 12.6, 14, 16], ["2026-10-06", 26, 612.44, 26, 0, 612.44, 0.0, 15, 9], ["2026-10-07", 19, 435.56, 19, 0, 435.56, 0.0, 7, 11], ["2026-10-08", 19, 416.42, 19, 0, 416.42, 0.0, 11, 7], ["2026-10-09", 26, 566.44, 21, 5, 489.98, 76.46, 13, 13], ["2026-10-10", 38, 825.63, 37, 1, 809.9, 15.73, 8, 29], ["2026-10-11", 56, 1236.34, 56, 0, 1236.34, 0.0, 21, 33], ["2026-10-12", 23, 513.75, 22, 1, 501.16, 12.59, 8, 14], ["2026-10-13", 18, 402.54, 17, 1, 386.81, 15.73, 7, 11], ["2026-10-14", 31, 675.05, 30, 1, 659.31, 15.74, 13, 16], ["2026-10-15", 19, 440.1, 19, 0, 440.1, 0.0, 9, 9], ["2026-10-16", 17, 361.2, 17, 0, 361.2, 0.0, 10, 6], ["2026-10-17", 40, 904.83, 39, 1, 890.1, 14.73, 19, 19], ["2026-10-18", 46, 1025.56, 42, 4, 967.93, 57.63, 17, 27], ["2026-10-19", 18, 417.6, 18, 0, 417.6, 0.0, 7, 11], ["2026-10-20", 19, 413.34, 18, 1, 397.2, 16.14, 12, 6], ["2026-10-21", 13, 242.0, 13, 0, 242.0, 0.0, 7, 6], ["2026-10-22", 21, 426.73, 21, 0, 426.73, 0.0, 8, 13], ["2026-10-23", 25, 539.52, 24, 1, 523.2, 16.32, 15, 7], ["2026-10-24", 28, 595.02, 25, 3, 547.44, 47.58, 7, 19], ["2026-10-25", 20, 436.03, 18, 2, 403.39, 32.64, 13, 6], ["2026-10-26", 13, 294.96, 13, 0, 294.96, 0.0, 4, 9], ["2026-10-27", 18, 385.33, 18, 0, 385.33, 0.0, 9, 8], ["2026-10-28", 18, 410.22, 18, 0, 410.22, 0.0, 8, 9], ["2026-10-29", 16, 333.55, 14, 2, 304.8, 28.75, 10, 6], ["2026-10-30", 19, 409.07, 19, 0, 409.07, 0.0, 11, 6], ["2026-10-31", 22, 507.14, 21, 1, 490.72, 16.42, 6, 16], ["2026-11-01", 30, 697.05, 30, 0, 697.05, 0.0, 17, 12], ["2026-11-02", 30, 681.76, 29, 1, 665.37, 16.39, 8, 21], ["2026-11-03", 33, 715.69, 31, 2, 699.3, 16.39, 15, 17], ["2026-11-04", 23, 532.8, 23, 0, 532.8, 0.0, 11, 11], ["2026-11-05", 18, 414.45, 16, 2, 381.6, 32.85, 4, 11], ["2026-11-06", 14, 323.94, 14, 0, 323.94, 0.0, 1, 12], ["2026-11-07", 18, 410.18, 16, 2, 377.82, 32.36, 9, 9], ["2026-11-08", 19, 426.86, 17, 2, 397.94, 28.92, 10, 9], ["2026-11-09", 21, 470.45, 19, 2, 439.88, 30.57, 9, 11], ["2026-11-10", 15, 344.91, 14, 1, 328.8, 16.11, 7, 7]],
-        "TVG6710": [["2026-06-08", 12, 271.18, 12, 0, 271.18, 0.0, 0, 12], ["2026-06-09", 45, 678.46, 44, 1, 662.0, 16.46, 4, 34], ["2026-06-10", 29, 631.65, 27, 2, 604.4, 27.25, 9, 18], ["2026-06-11", 67, 1542.04, 66, 1, 1525.55, 16.49, 9, 50], ["2026-06-12", 39, 884.18, 38, 1, 867.83, 16.35, 6, 26], ["2026-06-13", 50, 1112.45, 48, 2, 1081.39, 31.06, 11, 31], ["2026-06-14", 36, 816.9, 36, 0, 816.9, 0.0, 8, 27], ["2026-06-15", 14, 318.0, 14, 0, 318.0, 0.0, 2, 12], ["2026-06-16", 11, 253.99, 10, 1, 237.6, 16.39, 4, 6], ["2026-06-17", 11, 247.5, 11, 0, 247.5, 0.0, 3, 8], ["2026-06-18", 14, 316.8, 14, 0, 316.8, 0.0, 3, 10], ["2026-06-19", 5, 114.0, 5, 0, 114.0, 0.0, 1, 4], ["2026-06-20", 27, 607.28, 26, 1, 594.5, 12.78, 5, 20], ["2026-06-21", 31, 705.88, 30, 1, 689.9, 15.98, 5, 25], ["2026-06-22", 16, 372.0, 16, 0, 372.0, 0.0, 6, 9], ["2026-06-23", 7, 140.66, 7, 0, 140.66, 0.0, 3, 4], ["2026-06-24", 19, 439.2, 19, 0, 439.2, 0.0, 5, 7], ["2026-06-25", 9, 196.25, 8, 1, 183.6, 12.65, 2, 7], ["2026-06-26", 3, 67.2, 3, 0, 67.2, 0.0, 2, 1], ["2026-06-27", 11, 254.4, 11, 0, 254.4, 0.0, 2, 7], ["2026-06-28", 6, 132.29, 5, 1, 116.4, 15.89, 1, 4], ["2026-06-29", 5, 115.2, 5, 0, 115.2, 0.0, 1, 4], ["2026-06-30", 18, 414.25, 18, 0, 414.25, 0.0, 4, 12], ["2026-07-01", 17, 335.04, 16, 1, 324.0, 11.04, 4, 11], ["2026-07-02", 14, 284.83, 13, 1, 271.36, 13.47, 1, 12], ["2026-07-03", 24, 479.7, 23, 1, 466.8, 12.9, 4, 18], ["2026-07-04", 45, 903.35, 42, 3, 861.68, 41.67, 3, 36], ["2026-07-05", 28, 564.64, 28, 0, 564.64, 0.0, 3, 23], ["2026-07-06", 12, 252.08, 11, 1, 238.3, 13.78, 2, 9], ["2026-07-07", 19, 402.76, 19, 0, 402.76, 0.0, 10, 8], ["2026-07-08", 10, 222.58, 10, 0, 222.58, 0.0, 3, 7], ["2026-07-09", 11, 241.42, 10, 1, 225.49, 15.93, 7, 4], ["2026-07-10", 9, 206.4, 9, 0, 206.4, 0.0, 3, 5], ["2026-07-11", 9, 196.2, 9, 0, 196.2, 0.0, 2, 5], ["2026-07-12", 10, 208.8, 10, 0, 208.8, 0.0, 5, 5], ["2026-07-13", 12, 265.63, 11, 1, 249.6, 16.03, 7, 5], ["2026-07-14", 7, 163.2, 7, 0, 163.2, 0.0, 2, 4], ["2026-07-15", 17, 367.93, 15, 2, 339.55, 28.38, 5, 10], ["2026-07-16", 29, 644.48, 28, 1, 631.54, 12.94, 14, 13], ["2026-07-17", 17, 384.29, 17, 0, 384.29, 0.0, 7, 10], ["2026-07-18", 13, 272.05, 13, 0, 272.05, 0.0, 5, 7], ["2026-07-19", 15, 329.84, 14, 1, 315.2, 14.64, 2, 12], ["2026-07-20", 12, 268.5, 12, 0, 268.5, 0.0, 5, 6], ["2026-07-21", 33, 746.4, 33, 0, 746.4, 0.0, 12, 18], ["2026-07-22", 19, 417.53, 19, 0, 417.53, 0.0, 7, 12], ["2026-07-23", 18, 410.42, 18, 0, 410.42, 0.0, 4, 14], ["2026-07-24", 29, 624.45, 28, 1, 609.92, 14.53, 11, 17], ["2026-07-25", 24, 548.36, 23, 1, 532.22, 16.14, 9, 14], ["2026-07-26", 20, 435.43, 19, 1, 422.24, 13.19, 8, 11], ["2026-07-27", 18, 414.41, 18, 0, 414.41, 0.0, 10, 8], ["2026-07-28", 24, 539.13, 23, 1, 526.27, 12.86, 6, 14], ["2026-07-29", 15, 333.1, 15, 0, 333.1, 0.0, 6, 9], ["2026-07-30", 23, 524.73, 22, 1, 508.63, 16.1, 6, 12], ["2026-07-31", 26, 603.31, 25, 1, 587.07, 16.24, 8, 17], ["2026-08-01", 29, 678.9, 29, 0, 678.9, 0.0, 14, 12], ["2026-08-02", 40, 916.21, 40, 0, 916.21, 0.0, 12, 25], ["2026-08-03", 20, 438.76, 18, 2, 412.75, 26.01, 9, 11], ["2026-08-04", 6, 128.18, 5, 1, 115.2, 12.98, 4, 2], ["2026-08-05", 18, 410.3, 18, 0, 410.3, 0.0, 11, 7], ["2026-08-06", 69, 1590.68, 67, 2, 1560.0, 30.68, 53, 11], ["2026-08-07", 40, 913.76, 40, 0, 913.76, 0.0, 31, 8], ["2026-08-08", 85, 1720.76, 84, 1, 1710.99, 9.77, 51, 23], ["2026-08-09", 70, 1263.98, 70, 0, 1263.98, 0.0, 26, 33], ["2026-08-10", 20, 430.9, 20, 0, 430.9, 0.0, 8, 10], ["2026-08-11", 15, 343.1, 15, 0, 343.1, 0.0, 8, 7], ["2026-08-12", 24, 549.1, 24, 0, 549.1, 0.0, 9, 12], ["2026-08-13", 11, 238.77, 11, 0, 238.77, 0.0, 1, 9], ["2026-08-14", 12, 268.8, 12, 0, 268.8, 0.0, 3, 8], ["2026-08-15", 15, 330.0, 15, 0, 330.0, 0.0, 6, 8], ["2026-08-16", 15, 337.67, 15, 0, 337.67, 0.0, 8, 5], ["2026-08-17", 15, 347.52, 15, 0, 347.52, 0.0, 2, 11], ["2026-08-18", 21, 488.12, 21, 0, 488.12, 0.0, 7, 12], ["2026-08-19", 16, 372.78, 16, 0, 372.78, 0.0, 8, 7], ["2026-08-20", 5, 110.4, 5, 0, 110.4, 0.0, 2, 3], ["2026-08-21", 10, 223.09, 9, 1, 211.1, 11.99, 3, 7], ["2026-08-22", 10, 232.7, 10, 0, 232.7, 0.0, 1, 6], ["2026-08-23", 8, 161.39, 8, 0, 161.39, 0.0, 2, 4], ["2026-08-24", 5, 110.0, 5, 0, 110.0, 0.0, 1, 3], ["2026-08-25", 21, 475.44, 21, 0, 475.44, 0.0, 4, 12], ["2026-08-26", 26, 573.8, 26, 0, 573.8, 0.0, 4, 18], ["2026-08-27", 8, 183.96, 8, 0, 183.96, 0.0, 2, 5], ["2026-08-28", 7, 163.2, 7, 0, 163.2, 0.0, 1, 5], ["2026-08-29", 10, 223.78, 10, 0, 223.78, 0.0, 3, 7], ["2026-08-30", 23, 501.2, 23, 0, 501.2, 0.0, 5, 17], ["2026-08-31", 18, 427.2, 18, 0, 427.2, 0.0, 4, 13], ["2026-09-01", 11, 253.56, 11, 0, 253.56, 0.0, 1, 9], ["2026-09-02", 13, 269.51, 13, 0, 269.51, 0.0, 4, 9], ["2026-09-03", 12, 244.86, 12, 0, 244.86, 0.0, 4, 8], ["2026-09-04", 13, 310.37, 13, 0, 310.37, 0.0, 3, 9], ["2026-09-05", 15, 334.8, 15, 0, 334.8, 0.0, 6, 8], ["2026-09-06", 29, 681.07, 29, 0, 681.07, 0.0, 4, 23], ["2026-09-07", 29, 671.36, 29, 0, 671.36, 0.0, 7, 18], ["2026-09-08", 8, 162.13, 8, 0, 162.13, 0.0, 1, 6], ["2026-09-09", 9, 186.0, 9, 0, 186.0, 0.0, 2, 6], ["2026-09-10", 14, 318.86, 14, 0, 318.86, 0.0, 2, 9], ["2026-09-11", 12, 283.2, 12, 0, 283.2, 0.0, 4, 8], ["2026-09-12", 9, 212.4, 9, 0, 212.4, 0.0, 0, 6], ["2026-09-13", 20, 465.5, 20, 0, 465.5, 0.0, 2, 13], ["2026-09-14", 9, 195.2, 9, 0, 195.2, 0.0, 0, 9], ["2026-09-15", 15, 355.2, 15, 0, 355.2, 0.0, 3, 8], ["2026-09-16", 16, 350.27, 16, 0, 350.27, 0.0, 3, 8], ["2026-09-17", 9, 208.76, 9, 0, 208.76, 0.0, 1, 7], ["2026-09-18", 7, 158.4, 7, 0, 158.4, 0.0, 1, 5], ["2026-09-19", 17, 387.4, 17, 0, 387.4, 0.0, 3, 10], ["2026-09-20", 18, 415.34, 18, 0, 415.34, 0.0, 4, 11], ["2026-09-21", 10, 232.7, 10, 0, 232.7, 0.0, 3, 7], ["2026-09-22", 13, 261.45, 13, 0, 261.45, 0.0, 2, 9], ["2026-09-23", 15, 337.2, 15, 0, 337.2, 0.0, 3, 11], ["2026-09-24", 10, 211.2, 10, 0, 211.2, 0.0, 4, 6], ["2026-09-25", 16, 360.51, 16, 0, 360.51, 0.0, 5, 9], ["2026-09-26", 18, 406.67, 18, 0, 406.67, 0.0, 5, 11], ["2026-09-27", 15, 355.87, 15, 0, 355.87, 0.0, 2, 10], ["2026-09-28", 8, 160.82, 8, 0, 160.82, 0.0, 1, 7], ["2026-09-29", 11, 257.58, 11, 0, 257.58, 0.0, 4, 6], ["2026-09-30", 10, 230.4, 10, 0, 230.4, 0.0, 5, 4], ["2026-10-01", 8, 172.2, 8, 0, 172.2, 0.0, 1, 6], ["2026-10-02", 9, 204.0, 9, 0, 204.0, 0.0, 2, 7], ["2026-10-03", 64, 1165.28, 63, 1, 1151.1, 14.18, 7, 46], ["2026-10-04", 62, 1144.65, 62, 0, 1144.65, 0.0, 8, 42], ["2026-10-05", 12, 238.43, 11, 1, 225.83, 12.6, 1, 10], ["2026-10-06", 18, 395.99, 18, 0, 395.99, 0.0, 1, 16], ["2026-10-07", 10, 230.4, 10, 0, 230.4, 0.0, 5, 4], ["2026-10-08", 8, 181.41, 8, 0, 181.41, 0.0, 2, 6], ["2026-10-09", 7, 160.84, 7, 0, 160.84, 0.0, 1, 6], ["2026-10-10", 25, 535.22, 25, 0, 535.22, 0.0, 3, 13], ["2026-10-11", 31, 670.47, 31, 0, 670.47, 0.0, 3, 21], ["2026-10-12", 7, 160.11, 7, 0, 160.11, 0.0, 3, 4], ["2026-10-13", 2, 24.0, 2, 0, 24.0, 0.0, 1, 1], ["2026-10-14", 8, 187.69, 8, 0, 187.69, 0.0, 2, 5], ["2026-10-15", 10, 228.9, 10, 0, 228.9, 0.0, 2, 7], ["2026-10-16", 5, 107.7, 5, 0, 107.7, 0.0, 0, 4], ["2026-10-17", 24, 524.15, 24, 0, 524.15, 0.0, 4, 16], ["2026-10-18", 17, 398.3, 17, 0, 398.3, 0.0, 2, 15], ["2026-10-19", 8, 179.7, 8, 0, 179.7, 0.0, 4, 4], ["2026-10-20", 7, 168.0, 7, 0, 168.0, 0.0, 2, 4], ["2026-10-21", 8, 168.0, 8, 0, 168.0, 0.0, 4, 3], ["2026-10-22", 15, 356.67, 15, 0, 356.67, 0.0, 1, 10], ["2026-10-23", 15, 355.2, 15, 0, 355.2, 0.0, 6, 7], ["2026-10-24", 16, 374.4, 16, 0, 374.4, 0.0, 5, 9], ["2026-10-25", 13, 300.85, 12, 1, 284.53, 16.32, 2, 10], ["2026-10-26", 13, 288.61, 13, 0, 288.61, 0.0, 2, 9], ["2026-10-27", 6, 138.55, 6, 0, 138.55, 0.0, 1, 5], ["2026-10-28", 4, 89.53, 4, 0, 89.53, 0.0, 1, 3], ["2026-10-29", 12, 262.75, 11, 1, 247.0, 15.75, 3, 6], ["2026-10-30", 6, 134.26, 6, 0, 134.26, 0.0, 3, 3], ["2026-10-31", 15, 356.88, 15, 0, 356.88, 0.0, 1, 11], ["2026-11-01", 14, 319.2, 14, 0, 319.2, 0.0, 4, 10], ["2026-11-02", 17, 402.77, 17, 0, 402.77, 0.0, 4, 12], ["2026-11-03", 5, 117.5, 5, 0, 117.5, 0.0, 2, 3], ["2026-11-04", 8, 144.0, 8, 0, 144.0, 0.0, 4, 4], ["2026-11-05", 8, 188.8, 8, 0, 188.8, 0.0, 2, 4], ["2026-11-06", 9, 178.8, 9, 0, 178.8, 0.0, 2, 7], ["2026-11-07", 7, 139.86, 7, 0, 139.86, 0.0, 0, 5], ["2026-11-08", 3, 72.0, 3, 0, 72.0, 0.0, 1, 2], ["2026-11-09", 8, 184.8, 8, 0, 184.8, 0.0, 3, 4], ["2026-11-10", 12, 269.3, 12, 0, 269.3, 0.0, 6, 6]]
+        "TVG6680": [["2026-06-08", 13, 322.36, 13, 0, 322.36, 0.0, 1, 11], ["2026-06-09", 58, 1389.1, 52, 6, 1284.11, 104.99, 8, 48], ["2026-06-10", 89, 2149.38, 86, 3, 2096.83, 52.55, 25, 59], ["2026-06-11", 116, 2883.55, 112, 4, 2813.72, 69.83, 22, 89], ["2026-06-12", 87, 2140.32, 83, 4, 2074.22, 66.1, 35, 50], ["2026-06-13", 102, 2533.12, 100, 2, 2498.37, 34.75, 45, 54], ["2026-06-14", 107, 2606.29, 102, 5, 2530.58, 75.71, 51, 53], ["2026-06-15", 88, 2165.29, 85, 3, 2118.9, 46.39, 28, 54], ["2026-06-16", 47, 1134.91, 44, 3, 1089.89, 45.02, 22, 22], ["2026-06-17", 28, 704.84, 28, 0, 704.84, 0.0, 9, 18], ["2026-06-18", 25, 620.34, 24, 1, 603.3, 17.04, 9, 15], ["2026-06-19", 28, 654.58, 26, 2, 627.31, 27.27, 11, 15], ["2026-06-20", 61, 1383.28, 55, 6, 1292.13, 91.15, 9, 51], ["2026-06-21", 55, 1322.98, 53, 2, 1291.65, 31.33, 15, 37], ["2026-06-22", 23, 536.28, 22, 1, 519.3, 16.98, 3, 16], ["2026-06-23", 19, 469.51, 18, 1, 452.59, 16.92, 5, 14], ["2026-06-24", 16, 387.8, 16, 0, 387.8, 0.0, 3, 11], ["2026-06-25", 29, 726.54, 29, 0, 726.54, 0.0, 6, 15], ["2026-06-26", 11, 228.19, 9, 2, 195.91, 32.28, 4, 7], ["2026-06-27", 10, 248.3, 9, 1, 231.4, 16.9, 2, 7], ["2026-06-28", 9, 223.6, 9, 0, 223.6, 0.0, 2, 7], ["2026-06-29", 10, 228.8, 10, 0, 228.8, 0.0, 4, 6], ["2026-06-30", 20, 503.95, 20, 0, 503.95, 0.0, 5, 15], ["2026-07-01", 35, 728.74, 29, 6, 643.07, 85.67, 8, 25], ["2026-07-02", 25, 559.79, 24, 1, 546.33, 13.46, 3, 18], ["2026-07-03", 36, 789.21, 35, 1, 775.74, 13.47, 8, 26], ["2026-07-04", 34, 755.25, 33, 1, 740.9, 14.35, 2, 31], ["2026-07-05", 53, 1128.96, 47, 6, 1040.91, 88.05, 12, 40], ["2026-07-06", 16, 389.78, 15, 1, 374.6, 15.18, 3, 12], ["2026-07-07", 13, 298.47, 13, 0, 298.47, 0.0, 3, 10], ["2026-07-08", 15, 373.97, 14, 1, 357.14, 16.83, 2, 12], ["2026-07-09", 19, 449.1, 19, 0, 449.1, 0.0, 3, 16], ["2026-07-10", 14, 344.5, 14, 0, 344.5, 0.0, 4, 10], ["2026-07-11", 20, 454.3, 20, 0, 454.3, 0.0, 4, 14], ["2026-07-12", 17, 414.23, 17, 0, 414.23, 0.0, 2, 14], ["2026-07-13", 11, 260.2, 11, 0, 260.2, 0.0, 5, 6], ["2026-07-14", 18, 450.42, 17, 1, 433.39, 17.03, 3, 13], ["2026-07-15", 12, 291.49, 11, 1, 274.3, 17.19, 5, 6], ["2026-07-16", 14, 336.27, 12, 2, 301.9, 34.37, 7, 6], ["2026-07-17", 11, 257.09, 10, 1, 243.28, 13.81, 5, 6], ["2026-07-18", 16, 379.17, 15, 1, 361.92, 17.25, 6, 10], ["2026-07-19", 19, 465.7, 19, 0, 465.7, 0.0, 5, 13], ["2026-07-20", 12, 291.6, 12, 0, 291.6, 0.0, 3, 7], ["2026-07-21", 14, 348.91, 14, 0, 348.91, 0.0, 3, 11], ["2026-07-22", 15, 378.79, 15, 0, 378.79, 0.0, 3, 11], ["2026-07-23", 15, 382.31, 15, 0, 382.31, 0.0, 2, 13], ["2026-07-24", 16, 386.98, 15, 1, 371.55, 15.43, 5, 10], ["2026-07-25", 18, 415.89, 16, 2, 388.45, 27.44, 3, 12], ["2026-07-26", 17, 407.73, 15, 2, 373.53, 34.2, 1, 15], ["2026-07-27", 13, 301.26, 13, 0, 301.26, 0.0, 5, 8], ["2026-07-28", 9, 208.0, 9, 0, 208.0, 0.0, 4, 5], ["2026-07-29", 10, 252.75, 10, 0, 252.75, 0.0, 5, 5], ["2026-07-30", 19, 435.12, 18, 1, 421.44, 13.68, 3, 14], ["2026-07-31", 21, 476.59, 19, 2, 443.32, 33.27, 5, 15], ["2026-08-01", 21, 502.39, 21, 0, 502.39, 0.0, 10, 7], ["2026-08-02", 43, 996.54, 41, 2, 974.66, 21.88, 9, 32], ["2026-08-03", 10, 240.56, 10, 0, 240.56, 0.0, 2, 8], ["2026-08-04", 10, 230.75, 10, 0, 230.75, 0.0, 1, 8], ["2026-08-05", 14, 343.81, 13, 1, 327.8, 16.01, 5, 8], ["2026-08-06", 15, 362.78, 15, 0, 362.78, 0.0, 9, 4], ["2026-08-07", 12, 284.58, 11, 1, 267.23, 17.35, 8, 4], ["2026-08-08", 41, 902.87, 41, 0, 902.87, 0.0, 11, 23], ["2026-08-09", 46, 988.1, 45, 1, 974.13, 13.97, 10, 33], ["2026-08-10", 13, 315.86, 13, 0, 315.86, 0.0, 3, 9], ["2026-08-11", 13, 313.63, 13, 0, 313.63, 0.0, 1, 11], ["2026-08-12", 11, 255.0, 11, 0, 255.0, 0.0, 4, 7], ["2026-08-13", 17, 392.69, 15, 2, 359.29, 33.4, 8, 8], ["2026-08-14", 18, 444.01, 18, 0, 444.01, 0.0, 9, 7], ["2026-08-15", 11, 215.8, 11, 0, 215.8, 0.0, 7, 4], ["2026-08-16", 12, 284.16, 11, 1, 266.5, 17.66, 3, 9], ["2026-08-17", 11, 260.2, 11, 0, 260.2, 0.0, 5, 5], ["2026-08-18", 14, 333.74, 14, 0, 333.74, 0.0, 7, 7], ["2026-08-19", 12, 274.68, 12, 0, 274.68, 0.0, 6, 5], ["2026-08-20", 10, 253.13, 10, 0, 253.13, 0.0, 4, 6], ["2026-08-21", 8, 198.74, 8, 0, 198.74, 0.0, 4, 4], ["2026-08-22", 10, 246.1, 10, 0, 246.1, 0.0, 3, 7], ["2026-08-23", 9, 225.54, 9, 0, 225.54, 0.0, 3, 6], ["2026-08-24", 12, 274.9, 12, 0, 274.9, 0.0, 5, 7], ["2026-08-25", 15, 361.72, 15, 0, 361.72, 0.0, 5, 10], ["2026-08-26", 16, 411.24, 16, 0, 411.24, 0.0, 3, 13], ["2026-08-27", 9, 225.28, 9, 0, 225.28, 0.0, 4, 4], ["2026-08-28", 14, 329.36, 14, 0, 329.36, 0.0, 5, 9], ["2026-08-29", 14, 310.13, 12, 2, 274.65, 35.48, 5, 6], ["2026-08-30", 18, 403.18, 14, 4, 338.4, 64.78, 2, 13], ["2026-08-31", 13, 301.6, 13, 0, 301.6, 0.0, 4, 8], ["2026-09-01", 13, 323.78, 12, 1, 306.17, 17.61, 6, 7], ["2026-09-02", 15, 354.56, 14, 1, 336.9, 17.66, 5, 10], ["2026-09-03", 13, 306.8, 13, 0, 306.8, 0.0, 3, 10], ["2026-09-04", 17, 439.4, 17, 0, 439.4, 0.0, 8, 9], ["2026-09-05", 17, 434.4, 17, 0, 434.4, 0.0, 5, 11], ["2026-09-06", 20, 474.4, 19, 1, 460.19, 14.21, 5, 14], ["2026-09-07", 14, 351.75, 13, 1, 333.99, 17.76, 1, 12], ["2026-09-08", 13, 310.11, 13, 0, 310.11, 0.0, 3, 9], ["2026-09-09", 8, 199.83, 7, 1, 182.0, 17.83, 2, 5], ["2026-09-10", 15, 380.31, 15, 0, 380.31, 0.0, 4, 11], ["2026-09-11", 7, 158.0, 7, 0, 158.0, 0.0, 0, 6], ["2026-09-12", 11, 272.5, 10, 1, 254.8, 17.7, 1, 10], ["2026-09-13", 17, 412.7, 15, 2, 382.6, 30.1, 5, 11], ["2026-09-14", 7, 165.54, 7, 0, 165.54, 0.0, 2, 5], ["2026-09-15", 8, 208.0, 8, 0, 208.0, 0.0, 1, 7], ["2026-09-16", 14, 336.28, 14, 0, 336.28, 0.0, 4, 10], ["2026-09-17", 13, 331.16, 13, 0, 331.16, 0.0, 1, 11], ["2026-09-18", 8, 167.72, 7, 1, 153.4, 14.32, 2, 5], ["2026-09-19", 8, 191.73, 8, 0, 191.73, 0.0, 3, 4], ["2026-09-20", 19, 447.67, 18, 1, 447.67, 0.0, 3, 15], ["2026-09-21", 6, 148.2, 6, 0, 148.2, 0.0, 3, 3], ["2026-09-22", 16, 368.08, 15, 1, 352.0, 16.08, 3, 11], ["2026-09-23", 18, 443.45, 18, 0, 443.45, 0.0, 8, 9], ["2026-09-24", 11, 246.81, 11, 0, 246.81, 0.0, 4, 6], ["2026-09-25", 7, 140.4, 7, 0, 140.4, 0.0, 4, 3], ["2026-09-26", 9, 217.98, 9, 0, 217.98, 0.0, 2, 7], ["2026-09-27", 8, 177.6, 7, 1, 161.45, 16.15, 2, 6], ["2026-09-28", 15, 372.2, 15, 0, 372.2, 0.0, 4, 9], ["2026-09-29", 6, 150.8, 6, 0, 150.8, 0.0, 2, 4], ["2026-09-30", 13, 317.2, 13, 0, 317.2, 0.0, 6, 6], ["2026-10-01", 7, 161.96, 7, 0, 161.96, 0.0, 3, 4], ["2026-10-02", 3, 52.0, 3, 0, 52.0, 0.0, 0, 3], ["2026-10-03", 51, 1179.15, 50, 1, 1164.08, 15.07, 7, 36], ["2026-10-04", 47, 1092.95, 45, 2, 1067.01, 25.94, 8, 33], ["2026-10-05", 6, 136.5, 6, 0, 136.5, 0.0, 3, 2], ["2026-10-06", 6, 145.6, 6, 0, 145.6, 0.0, 4, 2], ["2026-10-07", 8, 198.9, 8, 0, 198.9, 0.0, 3, 5], ["2026-10-08", 14, 337.66, 14, 0, 337.66, 0.0, 0, 11], ["2026-10-09", 8, 202.44, 8, 0, 202.44, 0.0, 3, 5], ["2026-10-10", 15, 343.89, 15, 0, 343.89, 0.0, 6, 8], ["2026-10-11", 12, 287.23, 12, 0, 287.23, 0.0, 2, 10], ["2026-10-12", 3, 78.0, 3, 0, 78.0, 0.0, 1, 2], ["2026-10-13", 4, 98.8, 4, 0, 98.8, 0.0, 1, 3], ["2026-10-14", 12, 255.68, 11, 1, 241.88, 13.8, 3, 6], ["2026-10-15", 6, 122.4, 6, 0, 122.4, 0.0, 2, 4], ["2026-10-16", 4, 93.6, 4, 0, 93.6, 0.0, 3, 1], ["2026-10-17", 18, 430.27, 17, 1, 416.86, 13.41, 6, 12], ["2026-10-18", 12, 286.8, 12, 0, 286.8, 0.0, 3, 7], ["2026-10-19", 11, 281.0, 11, 0, 281.0, 0.0, 1, 8], ["2026-10-20", 10, 234.08, 10, 0, 234.08, 0.0, 3, 6], ["2026-10-21", 4, 84.82, 3, 1, 67.6, 17.22, 2, 2], ["2026-10-22", 6, 154.71, 6, 0, 154.71, 0.0, 0, 6], ["2026-10-23", 4, 104.0, 4, 0, 104.0, 0.0, 2, 1], ["2026-10-24", 10, 243.37, 9, 1, 227.5, 15.87, 2, 8], ["2026-10-25", 2, 41.8, 2, 0, 41.8, 0.0, 1, 1], ["2026-10-26", 8, 180.77, 7, 1, 166.9, 13.87, 1, 6], ["2026-10-27", 6, 146.92, 6, 0, 146.92, 0.0, 0, 6], ["2026-10-28", 5, 130.0, 5, 0, 130.0, 0.0, 2, 3], ["2026-10-29", 7, 160.67, 6, 1, 143.4, 17.27, 2, 5], ["2026-10-30", 7, 175.5, 7, 0, 175.5, 0.0, 2, 5], ["2026-10-31", 11, 245.39, 7, 4, 175.61, 69.78, 6, 4], ["2026-11-01", 12, 272.92, 9, 3, 224.74, 48.18, 2, 9], ["2026-11-02", 7, 147.8, 7, 0, 147.8, 0.0, 1, 6], ["2026-11-03", 2, 26.0, 1, 1, 26.0, 0.0, 1, 1], ["2026-11-04", 8, 189.99, 6, 2, 156.0, 33.99, 5, 3], ["2026-11-05", 7, 176.9, 7, 0, 176.9, 0.0, 1, 6], ["2026-11-06", 10, 226.25, 9, 1, 212.3, 13.95, 3, 7], ["2026-11-07", 4, 104.0, 4, 0, 104.0, 0.0, 0, 3], ["2026-11-08", 7, 177.0, 7, 0, 177.0, 0.0, 1, 6], ["2026-11-09", 5, 126.1, 5, 0, 126.1, 0.0, 1, 4], ["2026-11-10", 7, 176.8, 7, 0, 176.8, 0.0, 2, 5], ["2026-11-11", 7, 180.33, 7, 0, 180.33, 0.0, 2, 4]],
+        "TVG6690": [["2026-06-08", 20, 452.98, 20, 0, 452.98, 0.0, 6, 14], ["2026-06-09", 108, 2136.36, 107, 1, 2119.9, 16.46, 30, 77], ["2026-06-10", 93, 2055.57, 87, 6, 1971.44, 84.13, 25, 64], ["2026-06-11", 117, 2675.53, 114, 3, 2626.18, 49.35, 22, 91], ["2026-06-12", 81, 1760.12, 71, 10, 1608.7, 151.42, 18, 57], ["2026-06-13", 86, 1879.14, 79, 7, 1772.69, 106.45, 36, 48], ["2026-06-14", 119, 2712.55, 112, 7, 2604.71, 107.84, 38, 75], ["2026-06-15", 51, 1136.33, 47, 4, 1077.51, 58.82, 15, 34], ["2026-06-16", 62, 1409.49, 59, 3, 1363.84, 45.65, 12, 45], ["2026-06-17", 45, 941.67, 39, 6, 861.6, 80.07, 19, 25], ["2026-06-18", 51, 1100.97, 43, 8, 977.56, 123.41, 26, 23], ["2026-06-19", 55, 1183.0, 47, 8, 1068.32, 114.68, 31, 21], ["2026-06-20", 89, 1992.82, 82, 7, 1892.69, 100.13, 54, 33], ["2026-06-21", 114, 2576.58, 109, 5, 2500.6, 75.98, 55, 54], ["2026-06-22", 37, 818.0, 37, 0, 818.0, 0.0, 15, 21], ["2026-06-23", 27, 617.88, 27, 0, 617.88, 0.0, 16, 10], ["2026-06-24", 46, 1042.03, 45, 1, 1029.31, 12.72, 16, 27], ["2026-06-25", 25, 570.19, 25, 0, 570.19, 0.0, 13, 11], ["2026-06-26", 23, 487.9, 20, 3, 443.6, 44.3, 12, 10], ["2026-06-27", 22, 434.77, 21, 1, 418.88, 15.89, 13, 9], ["2026-06-28", 17, 387.4, 17, 0, 387.4, 0.0, 7, 7], ["2026-06-29", 20, 465.6, 20, 0, 465.6, 0.0, 8, 11], ["2026-06-30", 30, 673.14, 28, 2, 644.7, 28.44, 22, 8], ["2026-07-01", 63, 1247.19, 57, 6, 1164.54, 82.65, 29, 33], ["2026-07-02", 60, 1165.16, 54, 6, 1100.19, 64.97, 23, 33], ["2026-07-03", 78, 1553.82, 74, 4, 1499.92, 53.9, 37, 41], ["2026-07-04", 97, 1883.0, 86, 11, 1733.53, 149.47, 41, 50], ["2026-07-05", 94, 1895.53, 91, 3, 1855.06, 40.47, 45, 49], ["2026-07-06", 41, 887.51, 39, 2, 860.53, 26.98, 25, 16], ["2026-07-07", 26, 572.62, 25, 1, 556.8, 15.82, 18, 7], ["2026-07-08", 41, 853.73, 34, 7, 754.51, 99.22, 26, 12], ["2026-07-09", 45, 1011.94, 40, 5, 932.28, 79.66, 18, 25], ["2026-07-10", 34, 736.07, 33, 1, 723.33, 12.74, 11, 21], ["2026-07-11", 30, 631.09, 26, 4, 567.33, 63.76, 17, 12], ["2026-07-12", 35, 794.68, 33, 2, 762.83, 31.85, 24, 9], ["2026-07-13", 27, 595.95, 23, 4, 537.54, 58.41, 14, 13], ["2026-07-14", 25, 574.2, 24, 1, 561.19, 13.01, 8, 15], ["2026-07-15", 21, 466.74, 19, 2, 437.81, 28.93, 10, 11], ["2026-07-16", 87, 2018.99, 84, 3, 1976.93, 42.06, 19, 64], ["2026-07-17", 67, 1557.34, 66, 1, 1544.86, 12.48, 20, 44], ["2026-07-18", 42, 974.25, 41, 1, 959.7, 14.55, 13, 28], ["2026-07-19", 54, 1270.28, 53, 1, 1257.27, 13.01, 16, 37], ["2026-07-20", 68, 1532.26, 68, 0, 1532.26, 0.0, 19, 47], ["2026-07-21", 56, 1298.4, 56, 0, 1298.4, 0.0, 19, 35], ["2026-07-22", 54, 1231.32, 54, 0, 1231.32, 0.0, 18, 36], ["2026-07-23", 45, 999.66, 43, 2, 967.46, 32.2, 18, 27], ["2026-07-24", 44, 976.37, 41, 3, 927.97, 48.4, 12, 30], ["2026-07-25", 53, 1212.66, 51, 2, 1181.17, 31.49, 15, 37], ["2026-07-26", 53, 1184.31, 52, 1, 1168.22, 16.09, 18, 34], ["2026-07-27", 30, 655.75, 29, 1, 639.66, 16.09, 9, 19], ["2026-07-28", 39, 866.93, 39, 0, 866.93, 0.0, 13, 25], ["2026-07-29", 43, 993.6, 43, 0, 993.6, 0.0, 14, 26], ["2026-07-30", 26, 560.39, 25, 1, 547.51, 12.88, 9, 17], ["2026-07-31", 68, 1501.32, 65, 3, 1453.36, 47.96, 27, 39], ["2026-08-01", 38, 813.11, 34, 4, 748.0, 65.11, 16, 22], ["2026-08-02", 57, 1287.76, 56, 1, 1271.48, 16.28, 21, 35], ["2026-08-03", 27, 607.7, 25, 2, 575.19, 32.51, 14, 12], ["2026-08-04", 24, 554.3, 24, 0, 554.3, 0.0, 11, 11], ["2026-08-05", 18, 403.14, 16, 2, 370.7, 32.44, 4, 14], ["2026-08-06", 26, 584.9, 26, 0, 584.9, 0.0, 15, 10], ["2026-08-07", 16, 337.93, 15, 1, 321.6, 16.33, 9, 7], ["2026-08-08", 66, 1107.27, 64, 2, 1087.73, 19.54, 22, 42], ["2026-08-09", 78, 1368.43, 74, 4, 1315.84, 52.59, 33, 39], ["2026-08-10", 29, 627.72, 27, 2, 595.59, 32.13, 14, 14], ["2026-08-11", 34, 771.77, 34, 0, 771.77, 0.0, 16, 17], ["2026-08-12", 20, 456.94, 20, 0, 456.94, 0.0, 10, 9], ["2026-08-13", 26, 542.36, 25, 1, 525.88, 16.48, 12, 13], ["2026-08-14", 25, 546.65, 25, 0, 546.65, 0.0, 13, 11], ["2026-08-15", 20, 472.6, 19, 1, 456.0, 16.6, 9, 11], ["2026-08-16", 23, 518.58, 22, 1, 501.96, 16.62, 7, 14], ["2026-08-17", 22, 469.35, 21, 1, 455.09, 14.26, 6, 14], ["2026-08-18", 20, 429.98, 18, 2, 400.06, 29.92, 10, 9], ["2026-08-19", 25, 557.15, 25, 0, 557.15, 0.0, 16, 7], ["2026-08-20", 25, 568.7, 25, 0, 568.7, 0.0, 12, 12], ["2026-08-21", 12, 280.7, 12, 0, 280.7, 0.0, 7, 5], ["2026-08-22", 23, 516.64, 22, 1, 499.69, 16.95, 13, 10], ["2026-08-23", 29, 647.22, 28, 1, 633.72, 13.5, 13, 16], ["2026-08-24", 18, 415.36, 18, 0, 415.36, 0.0, 8, 9], ["2026-08-25", 22, 493.1, 22, 0, 493.1, 0.0, 11, 10], ["2026-08-26", 22, 487.65, 22, 0, 487.65, 0.0, 11, 11], ["2026-08-27", 17, 385.95, 17, 0, 385.95, 0.0, 4, 13], ["2026-08-28", 30, 661.29, 30, 0, 661.29, 0.0, 16, 11], ["2026-08-29", 24, 541.88, 24, 0, 541.88, 0.0, 10, 14], ["2026-08-30", 48, 1057.01, 46, 2, 1026.33, 30.68, 16, 30], ["2026-08-31", 32, 719.4, 32, 0, 719.4, 0.0, 18, 12], ["2026-09-01", 25, 554.4, 25, 0, 554.4, 0.0, 16, 8], ["2026-09-02", 56, 1266.8, 54, 2, 1233.56, 33.24, 27, 24], ["2026-09-03", 52, 1149.19, 51, 1, 1132.4, 16.79, 25, 25], ["2026-09-04", 40, 915.08, 40, 0, 915.08, 0.0, 27, 12], ["2026-09-05", 59, 1323.69, 57, 2, 1290.19, 33.5, 33, 25], ["2026-09-06", 74, 1642.8, 69, 5, 1574.32, 68.48, 30, 42], ["2026-09-07", 80, 1805.98, 75, 5, 1734.02, 71.96, 41, 34], ["2026-09-08", 37, 838.28, 36, 1, 823.2, 15.08, 22, 14], ["2026-09-09", 45, 1005.56, 43, 2, 972.0, 33.56, 16, 25], ["2026-09-10", 51, 1160.47, 51, 0, 1160.47, 0.0, 25, 23], ["2026-09-11", 34, 780.16, 34, 0, 780.16, 0.0, 11, 22], ["2026-09-12", 32, 740.44, 30, 2, 710.4, 30.04, 14, 18], ["2026-09-13", 49, 1133.95, 49, 0, 1133.95, 0.0, 20, 27], ["2026-09-14", 30, 680.18, 29, 1, 663.6, 16.58, 16, 14], ["2026-09-15", 34, 800.77, 34, 0, 800.77, 0.0, 12, 22], ["2026-09-16", 46, 1004.7, 44, 2, 1004.7, 0.0, 17, 25], ["2026-09-17", 53, 1230.51, 53, 0, 1230.51, 0.0, 23, 26], ["2026-09-18", 42, 913.94, 41, 1, 897.6, 16.34, 23, 19], ["2026-09-19", 43, 970.2, 43, 0, 970.2, 0.0, 21, 21], ["2026-09-20", 54, 1208.57, 54, 0, 1208.57, 0.0, 19, 30], ["2026-09-21", 48, 1132.01, 48, 0, 1132.01, 0.0, 25, 21], ["2026-09-22", 46, 992.66, 46, 0, 992.66, 0.0, 22, 22], ["2026-09-23", 65, 1482.64, 65, 0, 1482.64, 0.0, 29, 30], ["2026-09-24", 46, 1049.47, 46, 0, 1049.47, 0.0, 29, 17], ["2026-09-25", 53, 1191.76, 52, 1, 1175.71, 16.05, 33, 18], ["2026-09-26", 54, 1216.49, 52, 2, 1190.18, 26.31, 26, 26], ["2026-09-27", 46, 1038.34, 44, 2, 1006.38, 31.96, 30, 15], ["2026-09-28", 36, 794.1, 35, 1, 781.31, 12.79, 26, 8], ["2026-09-29", 47, 1043.95, 45, 2, 1013.2, 30.75, 24, 20], ["2026-09-30", 36, 787.2, 36, 0, 787.2, 0.0, 18, 17], ["2026-10-01", 27, 566.83, 26, 1, 554.09, 12.74, 13, 14], ["2026-10-02", 29, 636.62, 28, 1, 624.0, 12.62, 14, 13], ["2026-10-03", 112, 2181.21, 110, 2, 2157.53, 23.68, 29, 70], ["2026-10-04", 94, 1931.28, 92, 2, 1900.56, 30.72, 23, 60], ["2026-10-05", 32, 711.8, 31, 1, 699.2, 12.6, 14, 16], ["2026-10-06", 26, 612.44, 26, 0, 612.44, 0.0, 15, 9], ["2026-10-07", 19, 435.56, 19, 0, 435.56, 0.0, 7, 11], ["2026-10-08", 19, 416.42, 19, 0, 416.42, 0.0, 11, 7], ["2026-10-09", 26, 566.44, 21, 5, 489.98, 76.46, 13, 13], ["2026-10-10", 38, 825.63, 37, 1, 809.9, 15.73, 8, 29], ["2026-10-11", 56, 1236.34, 56, 0, 1236.34, 0.0, 21, 33], ["2026-10-12", 23, 513.75, 22, 1, 501.16, 12.59, 8, 14], ["2026-10-13", 18, 402.54, 17, 1, 386.81, 15.73, 7, 11], ["2026-10-14", 31, 675.05, 30, 1, 659.31, 15.74, 13, 16], ["2026-10-15", 19, 440.1, 19, 0, 440.1, 0.0, 9, 9], ["2026-10-16", 17, 361.2, 17, 0, 361.2, 0.0, 10, 6], ["2026-10-17", 40, 904.83, 39, 1, 890.1, 14.73, 19, 19], ["2026-10-18", 46, 1025.56, 42, 4, 967.93, 57.63, 17, 27], ["2026-10-19", 18, 417.6, 18, 0, 417.6, 0.0, 7, 11], ["2026-10-20", 19, 413.34, 18, 1, 397.2, 16.14, 12, 6], ["2026-10-21", 13, 242.0, 13, 0, 242.0, 0.0, 7, 6], ["2026-10-22", 21, 426.73, 21, 0, 426.73, 0.0, 8, 13], ["2026-10-23", 25, 539.52, 24, 1, 523.2, 16.32, 15, 7], ["2026-10-24", 28, 595.02, 25, 3, 547.44, 47.58, 7, 19], ["2026-10-25", 20, 436.03, 18, 2, 403.39, 32.64, 13, 6], ["2026-10-26", 13, 294.96, 13, 0, 294.96, 0.0, 4, 9], ["2026-10-27", 18, 385.33, 18, 0, 385.33, 0.0, 9, 8], ["2026-10-28", 18, 410.22, 18, 0, 410.22, 0.0, 8, 9], ["2026-10-29", 16, 333.55, 14, 2, 304.8, 28.75, 10, 6], ["2026-10-30", 19, 409.07, 19, 0, 409.07, 0.0, 11, 6], ["2026-10-31", 22, 507.14, 21, 1, 490.72, 16.42, 6, 16], ["2026-11-01", 30, 697.05, 30, 0, 697.05, 0.0, 17, 12], ["2026-11-02", 30, 681.76, 29, 1, 665.37, 16.39, 8, 21], ["2026-11-03", 33, 715.69, 31, 2, 699.3, 16.39, 15, 17], ["2026-11-04", 23, 532.8, 23, 0, 532.8, 0.0, 11, 11], ["2026-11-05", 18, 414.45, 16, 2, 381.6, 32.85, 4, 11], ["2026-11-06", 14, 323.94, 14, 0, 323.94, 0.0, 1, 12], ["2026-11-07", 18, 410.18, 16, 2, 377.82, 32.36, 9, 9], ["2026-11-08", 19, 426.86, 17, 2, 397.94, 28.92, 10, 9], ["2026-11-09", 21, 470.45, 19, 2, 439.88, 30.57, 9, 11], ["2026-11-10", 15, 344.91, 14, 1, 328.8, 16.11, 7, 7], ["2026-11-11", 23, 500.33, 20, 3, 455.43, 44.9, 10, 12]],
+        "TVG6710": [["2026-06-08", 12, 271.18, 12, 0, 271.18, 0.0, 0, 12], ["2026-06-09", 45, 678.46, 44, 1, 662.0, 16.46, 4, 34], ["2026-06-10", 29, 631.65, 27, 2, 604.4, 27.25, 9, 18], ["2026-06-11", 67, 1542.04, 66, 1, 1525.55, 16.49, 9, 50], ["2026-06-12", 39, 884.18, 38, 1, 867.83, 16.35, 6, 26], ["2026-06-13", 50, 1112.45, 48, 2, 1081.39, 31.06, 11, 31], ["2026-06-14", 36, 816.9, 36, 0, 816.9, 0.0, 8, 27], ["2026-06-15", 14, 318.0, 14, 0, 318.0, 0.0, 2, 12], ["2026-06-16", 11, 253.99, 10, 1, 237.6, 16.39, 4, 6], ["2026-06-17", 11, 247.5, 11, 0, 247.5, 0.0, 3, 8], ["2026-06-18", 14, 316.8, 14, 0, 316.8, 0.0, 3, 10], ["2026-06-19", 5, 114.0, 5, 0, 114.0, 0.0, 1, 4], ["2026-06-20", 27, 607.28, 26, 1, 594.5, 12.78, 5, 20], ["2026-06-21", 31, 705.88, 30, 1, 689.9, 15.98, 5, 25], ["2026-06-22", 16, 372.0, 16, 0, 372.0, 0.0, 6, 9], ["2026-06-23", 7, 140.66, 7, 0, 140.66, 0.0, 3, 4], ["2026-06-24", 19, 439.2, 19, 0, 439.2, 0.0, 5, 7], ["2026-06-25", 9, 196.25, 8, 1, 183.6, 12.65, 2, 7], ["2026-06-26", 3, 67.2, 3, 0, 67.2, 0.0, 2, 1], ["2026-06-27", 11, 254.4, 11, 0, 254.4, 0.0, 2, 7], ["2026-06-28", 6, 132.29, 5, 1, 116.4, 15.89, 1, 4], ["2026-06-29", 5, 115.2, 5, 0, 115.2, 0.0, 1, 4], ["2026-06-30", 18, 414.25, 18, 0, 414.25, 0.0, 4, 12], ["2026-07-01", 17, 335.04, 16, 1, 324.0, 11.04, 4, 11], ["2026-07-02", 14, 284.83, 13, 1, 271.36, 13.47, 1, 12], ["2026-07-03", 24, 479.7, 23, 1, 466.8, 12.9, 4, 18], ["2026-07-04", 45, 903.35, 42, 3, 861.68, 41.67, 3, 36], ["2026-07-05", 28, 564.64, 28, 0, 564.64, 0.0, 3, 23], ["2026-07-06", 12, 252.08, 11, 1, 238.3, 13.78, 2, 9], ["2026-07-07", 19, 402.76, 19, 0, 402.76, 0.0, 10, 8], ["2026-07-08", 10, 222.58, 10, 0, 222.58, 0.0, 3, 7], ["2026-07-09", 11, 241.42, 10, 1, 225.49, 15.93, 7, 4], ["2026-07-10", 9, 206.4, 9, 0, 206.4, 0.0, 3, 5], ["2026-07-11", 9, 196.2, 9, 0, 196.2, 0.0, 2, 5], ["2026-07-12", 10, 208.8, 10, 0, 208.8, 0.0, 5, 5], ["2026-07-13", 12, 265.63, 11, 1, 249.6, 16.03, 7, 5], ["2026-07-14", 7, 163.2, 7, 0, 163.2, 0.0, 2, 4], ["2026-07-15", 17, 367.93, 15, 2, 339.55, 28.38, 5, 10], ["2026-07-16", 29, 644.48, 28, 1, 631.54, 12.94, 14, 13], ["2026-07-17", 17, 384.29, 17, 0, 384.29, 0.0, 7, 10], ["2026-07-18", 13, 272.05, 13, 0, 272.05, 0.0, 5, 7], ["2026-07-19", 15, 329.84, 14, 1, 315.2, 14.64, 2, 12], ["2026-07-20", 12, 268.5, 12, 0, 268.5, 0.0, 5, 6], ["2026-07-21", 33, 746.4, 33, 0, 746.4, 0.0, 12, 18], ["2026-07-22", 19, 417.53, 19, 0, 417.53, 0.0, 7, 12], ["2026-07-23", 18, 410.42, 18, 0, 410.42, 0.0, 4, 14], ["2026-07-24", 29, 624.45, 28, 1, 609.92, 14.53, 11, 17], ["2026-07-25", 24, 548.36, 23, 1, 532.22, 16.14, 9, 14], ["2026-07-26", 20, 435.43, 19, 1, 422.24, 13.19, 8, 11], ["2026-07-27", 18, 414.41, 18, 0, 414.41, 0.0, 10, 8], ["2026-07-28", 24, 539.13, 23, 1, 526.27, 12.86, 6, 14], ["2026-07-29", 15, 333.1, 15, 0, 333.1, 0.0, 6, 9], ["2026-07-30", 23, 524.73, 22, 1, 508.63, 16.1, 6, 12], ["2026-07-31", 26, 603.31, 25, 1, 587.07, 16.24, 8, 17], ["2026-08-01", 29, 678.9, 29, 0, 678.9, 0.0, 14, 12], ["2026-08-02", 40, 916.21, 40, 0, 916.21, 0.0, 12, 25], ["2026-08-03", 20, 438.76, 18, 2, 412.75, 26.01, 9, 11], ["2026-08-04", 6, 128.18, 5, 1, 115.2, 12.98, 4, 2], ["2026-08-05", 18, 410.3, 18, 0, 410.3, 0.0, 11, 7], ["2026-08-06", 69, 1590.68, 67, 2, 1560.0, 30.68, 53, 11], ["2026-08-07", 40, 913.76, 40, 0, 913.76, 0.0, 31, 8], ["2026-08-08", 85, 1720.76, 84, 1, 1710.99, 9.77, 51, 23], ["2026-08-09", 70, 1263.98, 70, 0, 1263.98, 0.0, 26, 33], ["2026-08-10", 20, 430.9, 20, 0, 430.9, 0.0, 8, 10], ["2026-08-11", 15, 343.1, 15, 0, 343.1, 0.0, 8, 7], ["2026-08-12", 24, 549.1, 24, 0, 549.1, 0.0, 9, 12], ["2026-08-13", 11, 238.77, 11, 0, 238.77, 0.0, 1, 9], ["2026-08-14", 12, 268.8, 12, 0, 268.8, 0.0, 3, 8], ["2026-08-15", 15, 330.0, 15, 0, 330.0, 0.0, 6, 8], ["2026-08-16", 15, 337.67, 15, 0, 337.67, 0.0, 8, 5], ["2026-08-17", 15, 347.52, 15, 0, 347.52, 0.0, 2, 11], ["2026-08-18", 21, 488.12, 21, 0, 488.12, 0.0, 7, 12], ["2026-08-19", 16, 372.78, 16, 0, 372.78, 0.0, 8, 7], ["2026-08-20", 5, 110.4, 5, 0, 110.4, 0.0, 2, 3], ["2026-08-21", 10, 223.09, 9, 1, 211.1, 11.99, 3, 7], ["2026-08-22", 10, 232.7, 10, 0, 232.7, 0.0, 1, 6], ["2026-08-23", 8, 161.39, 8, 0, 161.39, 0.0, 2, 4], ["2026-08-24", 5, 110.0, 5, 0, 110.0, 0.0, 1, 3], ["2026-08-25", 21, 475.44, 21, 0, 475.44, 0.0, 4, 12], ["2026-08-26", 26, 573.8, 26, 0, 573.8, 0.0, 4, 18], ["2026-08-27", 8, 183.96, 8, 0, 183.96, 0.0, 2, 5], ["2026-08-28", 7, 163.2, 7, 0, 163.2, 0.0, 1, 5], ["2026-08-29", 10, 223.78, 10, 0, 223.78, 0.0, 3, 7], ["2026-08-30", 23, 501.2, 23, 0, 501.2, 0.0, 5, 17], ["2026-08-31", 18, 427.2, 18, 0, 427.2, 0.0, 4, 13], ["2026-09-01", 11, 253.56, 11, 0, 253.56, 0.0, 1, 9], ["2026-09-02", 13, 269.51, 13, 0, 269.51, 0.0, 4, 9], ["2026-09-03", 12, 244.86, 12, 0, 244.86, 0.0, 4, 8], ["2026-09-04", 13, 310.37, 13, 0, 310.37, 0.0, 3, 9], ["2026-09-05", 15, 334.8, 15, 0, 334.8, 0.0, 6, 8], ["2026-09-06", 29, 681.07, 29, 0, 681.07, 0.0, 4, 23], ["2026-09-07", 29, 671.36, 29, 0, 671.36, 0.0, 7, 18], ["2026-09-08", 8, 162.13, 8, 0, 162.13, 0.0, 1, 6], ["2026-09-09", 9, 186.0, 9, 0, 186.0, 0.0, 2, 6], ["2026-09-10", 14, 318.86, 14, 0, 318.86, 0.0, 2, 9], ["2026-09-11", 12, 283.2, 12, 0, 283.2, 0.0, 4, 8], ["2026-09-12", 9, 212.4, 9, 0, 212.4, 0.0, 0, 6], ["2026-09-13", 20, 465.5, 20, 0, 465.5, 0.0, 2, 13], ["2026-09-14", 9, 195.2, 9, 0, 195.2, 0.0, 0, 9], ["2026-09-15", 15, 355.2, 15, 0, 355.2, 0.0, 3, 8], ["2026-09-16", 16, 350.27, 16, 0, 350.27, 0.0, 3, 8], ["2026-09-17", 9, 208.76, 9, 0, 208.76, 0.0, 1, 7], ["2026-09-18", 7, 158.4, 7, 0, 158.4, 0.0, 1, 5], ["2026-09-19", 17, 387.4, 17, 0, 387.4, 0.0, 3, 10], ["2026-09-20", 18, 415.34, 18, 0, 415.34, 0.0, 4, 11], ["2026-09-21", 10, 232.7, 10, 0, 232.7, 0.0, 3, 7], ["2026-09-22", 13, 261.45, 13, 0, 261.45, 0.0, 2, 9], ["2026-09-23", 15, 337.2, 15, 0, 337.2, 0.0, 3, 11], ["2026-09-24", 10, 211.2, 10, 0, 211.2, 0.0, 4, 6], ["2026-09-25", 16, 360.51, 16, 0, 360.51, 0.0, 5, 9], ["2026-09-26", 18, 406.67, 18, 0, 406.67, 0.0, 5, 11], ["2026-09-27", 15, 355.87, 15, 0, 355.87, 0.0, 2, 10], ["2026-09-28", 8, 160.82, 8, 0, 160.82, 0.0, 1, 7], ["2026-09-29", 11, 257.58, 11, 0, 257.58, 0.0, 4, 6], ["2026-09-30", 10, 230.4, 10, 0, 230.4, 0.0, 5, 4], ["2026-10-01", 8, 172.2, 8, 0, 172.2, 0.0, 1, 6], ["2026-10-02", 9, 204.0, 9, 0, 204.0, 0.0, 2, 7], ["2026-10-03", 64, 1165.28, 63, 1, 1151.1, 14.18, 7, 46], ["2026-10-04", 62, 1144.65, 62, 0, 1144.65, 0.0, 8, 42], ["2026-10-05", 12, 238.43, 11, 1, 225.83, 12.6, 1, 10], ["2026-10-06", 18, 395.99, 18, 0, 395.99, 0.0, 1, 16], ["2026-10-07", 10, 230.4, 10, 0, 230.4, 0.0, 5, 4], ["2026-10-08", 8, 181.41, 8, 0, 181.41, 0.0, 2, 6], ["2026-10-09", 7, 160.84, 7, 0, 160.84, 0.0, 1, 6], ["2026-10-10", 25, 535.22, 25, 0, 535.22, 0.0, 3, 13], ["2026-10-11", 31, 670.47, 31, 0, 670.47, 0.0, 3, 21], ["2026-10-12", 7, 160.11, 7, 0, 160.11, 0.0, 3, 4], ["2026-10-13", 2, 24.0, 2, 0, 24.0, 0.0, 1, 1], ["2026-10-14", 8, 187.69, 8, 0, 187.69, 0.0, 2, 5], ["2026-10-15", 10, 228.9, 10, 0, 228.9, 0.0, 2, 7], ["2026-10-16", 5, 107.7, 5, 0, 107.7, 0.0, 0, 4], ["2026-10-17", 24, 524.15, 24, 0, 524.15, 0.0, 4, 16], ["2026-10-18", 17, 398.3, 17, 0, 398.3, 0.0, 2, 15], ["2026-10-19", 8, 179.7, 8, 0, 179.7, 0.0, 4, 4], ["2026-10-20", 7, 168.0, 7, 0, 168.0, 0.0, 2, 4], ["2026-10-21", 8, 168.0, 8, 0, 168.0, 0.0, 4, 3], ["2026-10-22", 15, 356.67, 15, 0, 356.67, 0.0, 1, 10], ["2026-10-23", 15, 355.2, 15, 0, 355.2, 0.0, 6, 7], ["2026-10-24", 16, 374.4, 16, 0, 374.4, 0.0, 5, 9], ["2026-10-25", 13, 300.85, 12, 1, 284.53, 16.32, 2, 10], ["2026-10-26", 13, 288.61, 13, 0, 288.61, 0.0, 2, 9], ["2026-10-27", 6, 138.55, 6, 0, 138.55, 0.0, 1, 5], ["2026-10-28", 4, 89.53, 4, 0, 89.53, 0.0, 1, 3], ["2026-10-29", 12, 262.75, 11, 1, 247.0, 15.75, 3, 6], ["2026-10-30", 6, 134.26, 6, 0, 134.26, 0.0, 3, 3], ["2026-10-31", 15, 356.88, 15, 0, 356.88, 0.0, 1, 11], ["2026-11-01", 14, 319.2, 14, 0, 319.2, 0.0, 4, 10], ["2026-11-02", 17, 402.77, 17, 0, 402.77, 0.0, 4, 12], ["2026-11-03", 5, 117.5, 5, 0, 117.5, 0.0, 2, 3], ["2026-11-04", 8, 144.0, 8, 0, 144.0, 0.0, 4, 4], ["2026-11-05", 8, 188.8, 8, 0, 188.8, 0.0, 2, 4], ["2026-11-06", 9, 178.8, 9, 0, 178.8, 0.0, 2, 7], ["2026-11-07", 7, 139.86, 7, 0, 139.86, 0.0, 0, 5], ["2026-11-08", 3, 72.0, 3, 0, 72.0, 0.0, 1, 2], ["2026-11-09", 8, 184.8, 8, 0, 184.8, 0.0, 3, 4], ["2026-11-10", 12, 269.3, 12, 0, 269.3, 0.0, 6, 6], ["2026-11-11", 6, 140.4, 6, 0, 140.4, 0.0, 2, 4]]
       },
       "planBySku": {
         "TVG6710": [["2026-06-08", 114], ["2026-06-09", 364], ["2026-06-10", 311], ["2026-06-11", 241], ["2026-06-12", 222], ["2026-06-13", 193], ["2026-06-14", 175], ["2026-06-15", 104], ["2026-06-16", 81], ["2026-06-17", 95], ["2026-06-18", 88], ["2026-06-19", 104], ["2026-06-20", 140], ["2026-06-21", 151], ["2026-06-22", 100], ["2026-06-23", 79], ["2026-06-24", 94], ["2026-06-25", 87], ["2026-06-26", 104], ["2026-06-27", 107], ["2026-06-28", 116], ["2026-06-29", 100], ["2026-06-30", 79], ["2026-07-01", 94], ["2026-07-02", 87], ["2026-07-03", 135], ["2026-07-04", 140], ["2026-07-05", 151], ["2026-07-06", 100], ["2026-07-07", 79], ["2026-07-08", 94], ["2026-07-09", 87], ["2026-07-10", 104], ["2026-07-11", 107], ["2026-07-12", 116], ["2026-07-13", 100], ["2026-07-14", 79], ["2026-07-15", 94], ["2026-07-16", 87], ["2026-07-17", 104], ["2026-07-18", 140], ["2026-07-19", 151], ["2026-07-20", 100], ["2026-07-21", 79], ["2026-07-22", 122], ["2026-07-23", 87], ["2026-07-24", 104], ["2026-07-25", 107], ["2026-07-26", 116], ["2026-07-27", 100], ["2026-07-28", 79], ["2026-07-29", 94], ["2026-07-30", 87], ["2026-07-31", 104], ["2026-08-01", 140], ["2026-08-02", 151], ["2026-08-03", 100], ["2026-08-04", 79], ["2026-08-05", 94], ["2026-08-06", 87], ["2026-08-07", 104], ["2026-08-08", 107], ["2026-08-09", 116], ["2026-08-10", 100], ["2026-08-11", 79], ["2026-08-12", 94], ["2026-08-13", 87], ["2026-08-14", 104], ["2026-08-15", 140], ["2026-08-16", 151], ["2026-08-17", 100], ["2026-08-18", 79], ["2026-08-19", 94], ["2026-08-20", 87], ["2026-08-21", 104], ["2026-08-22", 107], ["2026-08-23", 116], ["2026-08-24", 100], ["2026-08-25", 103], ["2026-08-26", 94], ["2026-08-27", 87], ["2026-08-28", 104], ["2026-08-29", 107], ["2026-08-30", 116], ["2026-08-31", 100], ["2026-09-01", 79], ["2026-09-02", 94], ["2026-09-03", 87], ["2026-09-04", 104], ["2026-09-05", 140], ["2026-09-06", 151], ["2026-09-07", 130], ["2026-09-08", 79], ["2026-09-09", 94], ["2026-09-10", 87], ["2026-09-11", 104], ["2026-09-12", 107], ["2026-09-13", 116], ["2026-09-14", 100], ["2026-09-15", 79], ["2026-09-16", 94], ["2026-09-17", 87], ["2026-09-18", 104], ["2026-09-19", 140], ["2026-09-20", 151], ["2026-09-21", 100], ["2026-09-22", 79], ["2026-09-23", 94], ["2026-09-24", 87], ["2026-09-25", 104], ["2026-09-26", 107], ["2026-09-27", 116], ["2026-09-28", 100], ["2026-09-29", 79], ["2026-09-30", 94], ["2026-10-01", 87], ["2026-10-02", 104], ["2026-10-03", 140], ["2026-10-04", 151], ["2026-10-05", 100]],
-        "TVG6680": [["2026-06-08", 40], ["2026-06-09", 118], ["2026-06-10", 124], ["2026-06-11", 112], ["2026-06-12", 96], ["2026-06-13", 119], ["2026-06-14", 114], ["2026-06-15", 73], ["2026-06-16", 78], ["2026-06-17", 86], ["2026-06-18", 79], ["2026-06-19", 66], ["2026-06-20", 118], ["2026-06-21", 113], ["2026-06-22", 61], ["2026-06-23", 65], ["2026-06-24", 72], ["2026-06-25", 66], ["2026-06-26", 55], ["2026-06-27", 76], ["2026-06-28", 73], ["2026-06-29", 51], ["2026-06-30", 55], ["2026-07-01", 60], ["2026-07-02", 55], ["2026-07-03", 60], ["2026-07-04", 83], ["2026-07-05", 80], ["2026-07-06", 43], ["2026-07-07", 46], ["2026-07-08", 51], ["2026-07-09", 46], ["2026-07-10", 39], ["2026-07-11", 54], ["2026-07-12", 52], ["2026-07-13", 37], ["2026-07-14", 39], ["2026-07-15", 43], ["2026-07-16", 39], ["2026-07-17", 33], ["2026-07-18", 60], ["2026-07-19", 58], ["2026-07-20", 31], ["2026-07-21", 33], ["2026-07-22", 48], ["2026-07-23", 34], ["2026-07-24", 29], ["2026-07-25", 39], ["2026-07-26", 38], ["2026-07-27", 27], ["2026-07-28", 29], ["2026-07-29", 32], ["2026-07-30", 29], ["2026-07-31", 25], ["2026-08-01", 44], ["2026-08-02", 43], ["2026-08-03", 23], ["2026-08-04", 25], ["2026-08-05", 28], ["2026-08-06", 25], ["2026-08-07", 22], ["2026-08-08", 30], ["2026-08-09", 29], ["2026-08-10", 20], ["2026-08-11", 22], ["2026-08-12", 24], ["2026-08-13", 22], ["2026-08-14", 19], ["2026-08-15", 34], ["2026-08-16", 33], ["2026-08-17", 18], ["2026-08-18", 19], ["2026-08-19", 21], ["2026-08-20", 20], ["2026-08-21", 17], ["2026-08-22", 23], ["2026-08-23", 23], ["2026-08-24", 16], ["2026-08-25", 22], ["2026-08-26", 19], ["2026-08-27", 18], ["2026-08-28", 15], ["2026-08-29", 21], ["2026-08-30", 20], ["2026-08-31", 14], ["2026-09-01", 16], ["2026-09-02", 17], ["2026-09-03", 16], ["2026-09-04", 14], ["2026-09-05", 25], ["2026-09-06", 24], ["2026-09-07", 17], ["2026-09-08", 14], ["2026-09-09", 16], ["2026-09-10", 15], ["2026-09-11", 13], ["2026-09-12", 17], ["2026-09-13", 17], ["2026-09-14", 12], ["2026-09-15", 13], ["2026-09-16", 15], ["2026-09-17", 14], ["2026-09-18", 12], ["2026-09-19", 21], ["2026-09-20", 21], ["2026-09-21", 11], ["2026-09-22", 12], ["2026-09-23", 14], ["2026-09-24", 13], ["2026-09-25", 11], ["2026-09-26", 15], ["2026-09-27", 15], ["2026-09-28", 11], ["2026-09-29", 11], ["2026-09-30", 13], ["2026-10-01", 12], ["2026-10-02", 10], ["2026-10-03", 19], ["2026-10-04", 18], ["2026-10-05", 10]],
-        "TVG6690": [["2026-06-08", 90], ["2026-06-09", 177], ["2026-06-10", 160], ["2026-06-11", 136], ["2026-06-12", 138], ["2026-06-13", 122], ["2026-06-14", 104], ["2026-06-15", 92], ["2026-06-16", 68], ["2026-06-17", 73], ["2026-06-18", 70], ["2026-06-19", 84], ["2026-06-20", 106], ["2026-06-21", 98], ["2026-06-22", 84], ["2026-06-23", 65], ["2026-06-24", 70], ["2026-06-25", 68], ["2026-06-26", 82], ["2026-06-27", 81], ["2026-06-28", 75], ["2026-06-29", 84], ["2026-06-30", 64], ["2026-07-01", 70], ["2026-07-02", 68], ["2026-07-03", 106], ["2026-07-04", 105], ["2026-07-05", 97], ["2026-07-06", 83], ["2026-07-07", 64], ["2026-07-08", 70], ["2026-07-09", 68], ["2026-07-10", 82], ["2026-07-11", 81], ["2026-07-12", 75], ["2026-07-13", 83], ["2026-07-14", 64], ["2026-07-15", 70], ["2026-07-16", 68], ["2026-07-17", 82], ["2026-07-18", 105], ["2026-07-19", 97], ["2026-07-20", 83], ["2026-07-21", 64], ["2026-07-22", 91], ["2026-07-23", 68], ["2026-07-24", 82], ["2026-07-25", 81], ["2026-07-26", 75], ["2026-07-27", 83], ["2026-07-28", 64], ["2026-07-29", 70], ["2026-07-30", 68], ["2026-07-31", 82], ["2026-08-01", 105], ["2026-08-02", 97], ["2026-08-03", 83], ["2026-08-04", 64], ["2026-08-05", 70], ["2026-08-06", 68], ["2026-08-07", 82], ["2026-08-08", 81], ["2026-08-09", 75], ["2026-08-10", 83], ["2026-08-11", 64], ["2026-08-12", 70], ["2026-08-13", 68], ["2026-08-14", 82], ["2026-08-15", 105], ["2026-08-16", 97], ["2026-08-17", 83], ["2026-08-18", 64], ["2026-08-19", 70], ["2026-08-20", 68], ["2026-08-21", 82], ["2026-08-22", 81], ["2026-08-23", 75], ["2026-08-24", 83], ["2026-08-25", 83], ["2026-08-26", 70], ["2026-08-27", 68], ["2026-08-28", 82], ["2026-08-29", 81], ["2026-08-30", 75], ["2026-08-31", 83], ["2026-09-01", 64], ["2026-09-02", 70], ["2026-09-03", 68], ["2026-09-04", 82], ["2026-09-05", 105], ["2026-09-06", 97], ["2026-09-07", 109], ["2026-09-08", 64], ["2026-09-09", 70], ["2026-09-10", 68], ["2026-09-11", 82], ["2026-09-12", 81], ["2026-09-13", 75], ["2026-09-14", 83], ["2026-09-15", 64], ["2026-09-16", 70], ["2026-09-17", 68], ["2026-09-18", 82], ["2026-09-19", 105], ["2026-09-20", 97], ["2026-09-21", 83], ["2026-09-22", 64], ["2026-09-23", 70], ["2026-09-24", 68], ["2026-09-25", 82], ["2026-09-26", 81], ["2026-09-27", 75], ["2026-09-28", 83], ["2026-09-29", 64], ["2026-09-30", 70], ["2026-10-01", 68], ["2026-10-02", 82], ["2026-10-03", 105], ["2026-10-04", 97], ["2026-10-05", 83]]
+        "TVG6690": [["2026-06-08", 90], ["2026-06-09", 177], ["2026-06-10", 160], ["2026-06-11", 136], ["2026-06-12", 138], ["2026-06-13", 122], ["2026-06-14", 104], ["2026-06-15", 92], ["2026-06-16", 68], ["2026-06-17", 73], ["2026-06-18", 70], ["2026-06-19", 84], ["2026-06-20", 106], ["2026-06-21", 98], ["2026-06-22", 84], ["2026-06-23", 65], ["2026-06-24", 70], ["2026-06-25", 68], ["2026-06-26", 82], ["2026-06-27", 81], ["2026-06-28", 75], ["2026-06-29", 84], ["2026-06-30", 64], ["2026-07-01", 70], ["2026-07-02", 68], ["2026-07-03", 106], ["2026-07-04", 105], ["2026-07-05", 97], ["2026-07-06", 83], ["2026-07-07", 64], ["2026-07-08", 70], ["2026-07-09", 68], ["2026-07-10", 82], ["2026-07-11", 81], ["2026-07-12", 75], ["2026-07-13", 83], ["2026-07-14", 64], ["2026-07-15", 70], ["2026-07-16", 68], ["2026-07-17", 82], ["2026-07-18", 105], ["2026-07-19", 97], ["2026-07-20", 83], ["2026-07-21", 64], ["2026-07-22", 91], ["2026-07-23", 68], ["2026-07-24", 82], ["2026-07-25", 81], ["2026-07-26", 75], ["2026-07-27", 83], ["2026-07-28", 64], ["2026-07-29", 70], ["2026-07-30", 68], ["2026-07-31", 82], ["2026-08-01", 105], ["2026-08-02", 97], ["2026-08-03", 83], ["2026-08-04", 64], ["2026-08-05", 70], ["2026-08-06", 68], ["2026-08-07", 82], ["2026-08-08", 81], ["2026-08-09", 75], ["2026-08-10", 83], ["2026-08-11", 64], ["2026-08-12", 70], ["2026-08-13", 68], ["2026-08-14", 82], ["2026-08-15", 105], ["2026-08-16", 97], ["2026-08-17", 83], ["2026-08-18", 64], ["2026-08-19", 70], ["2026-08-20", 68], ["2026-08-21", 82], ["2026-08-22", 81], ["2026-08-23", 75], ["2026-08-24", 83], ["2026-08-25", 83], ["2026-08-26", 70], ["2026-08-27", 68], ["2026-08-28", 82], ["2026-08-29", 81], ["2026-08-30", 75], ["2026-08-31", 83], ["2026-09-01", 64], ["2026-09-02", 70], ["2026-09-03", 68], ["2026-09-04", 82], ["2026-09-05", 105], ["2026-09-06", 97], ["2026-09-07", 109], ["2026-09-08", 64], ["2026-09-09", 70], ["2026-09-10", 68], ["2026-09-11", 82], ["2026-09-12", 81], ["2026-09-13", 75], ["2026-09-14", 83], ["2026-09-15", 64], ["2026-09-16", 70], ["2026-09-17", 68], ["2026-09-18", 82], ["2026-09-19", 105], ["2026-09-20", 97], ["2026-09-21", 83], ["2026-09-22", 64], ["2026-09-23", 70], ["2026-09-24", 68], ["2026-09-25", 82], ["2026-09-26", 81], ["2026-09-27", 75], ["2026-09-28", 83], ["2026-09-29", 64], ["2026-09-30", 70], ["2026-10-01", 68], ["2026-10-02", 82], ["2026-10-03", 105], ["2026-10-04", 97], ["2026-10-05", 83]],
+        "TVG6680": [["2026-06-08", 40], ["2026-06-09", 118], ["2026-06-10", 124], ["2026-06-11", 112], ["2026-06-12", 96], ["2026-06-13", 119], ["2026-06-14", 114], ["2026-06-15", 73], ["2026-06-16", 78], ["2026-06-17", 86], ["2026-06-18", 79], ["2026-06-19", 66], ["2026-06-20", 118], ["2026-06-21", 113], ["2026-06-22", 61], ["2026-06-23", 65], ["2026-06-24", 72], ["2026-06-25", 66], ["2026-06-26", 55], ["2026-06-27", 76], ["2026-06-28", 73], ["2026-06-29", 51], ["2026-06-30", 55], ["2026-07-01", 60], ["2026-07-02", 55], ["2026-07-03", 60], ["2026-07-04", 83], ["2026-07-05", 80], ["2026-07-06", 43], ["2026-07-07", 46], ["2026-07-08", 51], ["2026-07-09", 46], ["2026-07-10", 39], ["2026-07-11", 54], ["2026-07-12", 52], ["2026-07-13", 37], ["2026-07-14", 39], ["2026-07-15", 43], ["2026-07-16", 39], ["2026-07-17", 33], ["2026-07-18", 60], ["2026-07-19", 58], ["2026-07-20", 31], ["2026-07-21", 33], ["2026-07-22", 48], ["2026-07-23", 34], ["2026-07-24", 29], ["2026-07-25", 39], ["2026-07-26", 38], ["2026-07-27", 27], ["2026-07-28", 29], ["2026-07-29", 32], ["2026-07-30", 29], ["2026-07-31", 25], ["2026-08-01", 44], ["2026-08-02", 43], ["2026-08-03", 23], ["2026-08-04", 25], ["2026-08-05", 28], ["2026-08-06", 25], ["2026-08-07", 22], ["2026-08-08", 30], ["2026-08-09", 29], ["2026-08-10", 20], ["2026-08-11", 22], ["2026-08-12", 24], ["2026-08-13", 22], ["2026-08-14", 19], ["2026-08-15", 34], ["2026-08-16", 33], ["2026-08-17", 18], ["2026-08-18", 19], ["2026-08-19", 21], ["2026-08-20", 20], ["2026-08-21", 17], ["2026-08-22", 23], ["2026-08-23", 23], ["2026-08-24", 16], ["2026-08-25", 22], ["2026-08-26", 19], ["2026-08-27", 18], ["2026-08-28", 15], ["2026-08-29", 21], ["2026-08-30", 20], ["2026-08-31", 14], ["2026-09-01", 16], ["2026-09-02", 17], ["2026-09-03", 16], ["2026-09-04", 14], ["2026-09-05", 25], ["2026-09-06", 24], ["2026-09-07", 17], ["2026-09-08", 14], ["2026-09-09", 16], ["2026-09-10", 15], ["2026-09-11", 13], ["2026-09-12", 17], ["2026-09-13", 17], ["2026-09-14", 12], ["2026-09-15", 13], ["2026-09-16", 15], ["2026-09-17", 14], ["2026-09-18", 12], ["2026-09-19", 21], ["2026-09-20", 21], ["2026-09-21", 11], ["2026-09-22", 12], ["2026-09-23", 14], ["2026-09-24", 13], ["2026-09-25", 11], ["2026-09-26", 15], ["2026-09-27", 15], ["2026-09-28", 11], ["2026-09-29", 11], ["2026-09-30", 13], ["2026-10-01", 12], ["2026-10-02", 10], ["2026-10-03", 19], ["2026-10-04", 18], ["2026-10-05", 10]]
       },
       "pdp": [],
       "crossSell": [],
       "crossSellBySku": [],
       "categoryCustomers": {
         "category": "Brow",
-        "total": 9391,
-        "existingCategory": 4476,
-        "newToCategory": 4915,
+        "total": 9420,
+        "existingCategory": 4489,
+        "newToCategory": 4931,
         "byVariant": [
-          {
-            "sku": "TVG6680",
-            "name": "Brow Pencil",
-            "newToCategory": 1141,
-            "existingCategory": 1401
-          },
           {
             "sku": "TVG6690",
             "name": "Brow Gel",
-            "newToCategory": 3274,
-            "existingCategory": 2446
+            "newToCategory": 3285,
+            "existingCategory": 2455
+          },
+          {
+            "sku": "TVG6680",
+            "name": "Brow Pencil",
+            "newToCategory": 1143,
+            "existingCategory": 1403
           },
           {
             "sku": "TVG6710",
             "name": "Brow Liner",
-            "newToCategory": 938,
-            "existingCategory": 1297
+            "newToCategory": 941,
+            "existingCategory": 1300
           }
         ],
-        "daily": [["2026-06-08", 9, 30], ["2026-06-09", 59, 106], ["2026-06-10", 77, 100], ["2026-06-11", 75, 163], ["2026-06-12", 89, 83], ["2026-06-13", 112, 96], ["2026-06-14", 129, 103], ["2026-06-15", 66, 71], ["2026-06-16", 44, 53], ["2026-06-17", 37, 39], ["2026-06-18", 43, 40], ["2026-06-19", 47, 32], ["2026-06-20", 86, 74], ["2026-06-21", 88, 83], ["2026-06-22", 28, 34], ["2026-06-23", 28, 24], ["2026-06-24", 30, 32], ["2026-06-25", 25, 25], ["2026-06-26", 20, 13], ["2026-06-27", 18, 19], ["2026-06-28", 13, 13], ["2026-06-29", 16, 14], ["2026-06-30", 31, 29], ["2026-07-01", 49, 53], ["2026-07-02", 40, 44], ["2026-07-03", 58, 68], ["2026-07-04", 62, 88], ["2026-07-05", 82, 79], ["2026-07-06", 37, 25], ["2026-07-07", 32, 18], ["2026-07-08", 35, 25], ["2026-07-09", 35, 30], ["2026-07-10", 28, 22], ["2026-07-11", 29, 21], ["2026-07-12", 33, 21], ["2026-07-13", 24, 18], ["2026-07-14", 15, 28], ["2026-07-15", 22, 21], ["2026-07-16", 61, 58], ["2026-07-17", 41, 46], ["2026-07-18", 37, 29], ["2026-07-19", 36, 46], ["2026-07-20", 43, 41], ["2026-07-21", 45, 48], ["2026-07-22", 37, 47], ["2026-07-23", 34, 40], ["2026-07-24", 33, 44], ["2026-07-25", 38, 42], ["2026-07-26", 39, 42], ["2026-07-27", 25, 28], ["2026-07-28", 26, 36], ["2026-07-29", 30, 27], ["2026-07-30", 24, 35], ["2026-07-31", 50, 56], ["2026-08-01", 48, 31], ["2026-08-02", 58, 66], ["2026-08-03", 28, 20], ["2026-08-04", 16, 20], ["2026-08-05", 21, 23], ["2026-08-06", 79, 14], ["2026-08-07", 51, 15], ["2026-08-08", 90, 68], ["2026-08-09", 77, 75], ["2026-08-10", 29, 24], ["2026-08-11", 28, 26], ["2026-08-12", 28, 19], ["2026-08-13", 26, 24], ["2026-08-14", 29, 19], ["2026-08-15", 27, 13], ["2026-08-16", 23, 19], ["2026-08-17", 14, 26], ["2026-08-18", 25, 24], ["2026-08-19", 34, 13], ["2026-08-20", 20, 12], ["2026-08-21", 17, 11], ["2026-08-22", 18, 18], ["2026-08-23", 24, 18], ["2026-08-24", 17, 14], ["2026-08-25", 23, 24], ["2026-08-26", 22, 35], ["2026-08-27", 15, 14], ["2026-08-28", 24, 17], ["2026-08-29", 17, 22], ["2026-08-30", 31, 44], ["2026-08-31", 31, 19], ["2026-09-01", 23, 19], ["2026-09-02", 40, 33], ["2026-09-03", 38, 29], ["2026-09-04", 39, 25], ["2026-09-05", 48, 34], ["2026-09-06", 48, 59], ["2026-09-07", 52, 53], ["2026-09-08", 32, 20], ["2026-09-09", 25, 29], ["2026-09-10", 37, 32], ["2026-09-11", 20, 26], ["2026-09-12", 23, 25], ["2026-09-13", 37, 31], ["2026-09-14", 23, 20], ["2026-09-15", 22, 27], ["2026-09-16", 32, 34], ["2026-09-17", 36, 30], ["2026-09-18", 28, 21], ["2026-09-19", 36, 23], ["2026-09-20", 36, 41], ["2026-09-21", 38, 20], ["2026-09-22", 36, 27], ["2026-09-23", 49, 36], ["2026-09-24", 41, 20], ["2026-09-25", 44, 23], ["2026-09-26", 39, 33], ["2026-09-27", 43, 19], ["2026-09-28", 37, 18], ["2026-09-29", 34, 20], ["2026-09-30", 32, 18], ["2026-10-01", 18, 22], ["2026-10-02", 19, 19], ["2026-10-03", 50, 110], ["2026-10-04", 57, 91], ["2026-10-05", 20, 24], ["2026-10-06", 25, 20], ["2026-10-07", 17, 15], ["2026-10-08", 14, 21], ["2026-10-09", 24, 15], ["2026-10-10", 28, 36], ["2026-10-11", 36, 47], ["2026-10-12", 17, 14], ["2026-10-13", 11, 12], ["2026-10-14", 20, 19], ["2026-10-15", 14, 17], ["2026-10-16", 12, 11], ["2026-10-17", 32, 39], ["2026-10-18", 32, 32], ["2026-10-19", 10, 19], ["2026-10-20", 19, 12], ["2026-10-21", 16, 6], ["2026-10-22", 13, 19], ["2026-10-23", 21, 14], ["2026-10-24", 15, 29], ["2026-10-25", 18, 11], ["2026-10-26", 10, 17], ["2026-10-27", 15, 13], ["2026-10-28", 14, 9], ["2026-10-29", 19, 11], ["2026-10-30", 16, 11], ["2026-10-31", 16, 27], ["2026-11-01", 27, 21], ["2026-11-02", 19, 28], ["2026-11-03", 19, 16], ["2026-11-04", 22, 14], ["2026-11-05", 9, 16], ["2026-11-06", 10, 18], ["2026-11-07", 13, 12], ["2026-11-08", 16, 11], ["2026-11-09", 12, 17], ["2026-11-10", 15, 14]]
+        "daily": [["2026-06-08", 9, 30], ["2026-06-09", 59, 106], ["2026-06-10", 77, 100], ["2026-06-11", 75, 163], ["2026-06-12", 89, 83], ["2026-06-13", 112, 96], ["2026-06-14", 129, 103], ["2026-06-15", 66, 71], ["2026-06-16", 44, 53], ["2026-06-17", 37, 39], ["2026-06-18", 43, 40], ["2026-06-19", 47, 32], ["2026-06-20", 86, 74], ["2026-06-21", 88, 83], ["2026-06-22", 28, 34], ["2026-06-23", 28, 24], ["2026-06-24", 30, 32], ["2026-06-25", 25, 25], ["2026-06-26", 20, 13], ["2026-06-27", 18, 19], ["2026-06-28", 13, 13], ["2026-06-29", 16, 14], ["2026-06-30", 31, 29], ["2026-07-01", 49, 53], ["2026-07-02", 40, 44], ["2026-07-03", 58, 68], ["2026-07-04", 62, 88], ["2026-07-05", 82, 79], ["2026-07-06", 37, 25], ["2026-07-07", 32, 18], ["2026-07-08", 35, 25], ["2026-07-09", 35, 30], ["2026-07-10", 28, 22], ["2026-07-11", 29, 21], ["2026-07-12", 33, 21], ["2026-07-13", 24, 18], ["2026-07-14", 15, 28], ["2026-07-15", 22, 21], ["2026-07-16", 61, 58], ["2026-07-17", 41, 46], ["2026-07-18", 37, 29], ["2026-07-19", 36, 46], ["2026-07-20", 43, 41], ["2026-07-21", 45, 48], ["2026-07-22", 37, 47], ["2026-07-23", 34, 40], ["2026-07-24", 33, 44], ["2026-07-25", 38, 42], ["2026-07-26", 39, 42], ["2026-07-27", 25, 28], ["2026-07-28", 26, 36], ["2026-07-29", 30, 27], ["2026-07-30", 24, 35], ["2026-07-31", 50, 56], ["2026-08-01", 48, 31], ["2026-08-02", 58, 66], ["2026-08-03", 28, 20], ["2026-08-04", 16, 20], ["2026-08-05", 21, 23], ["2026-08-06", 79, 14], ["2026-08-07", 51, 15], ["2026-08-08", 90, 68], ["2026-08-09", 77, 75], ["2026-08-10", 29, 24], ["2026-08-11", 28, 26], ["2026-08-12", 28, 19], ["2026-08-13", 26, 24], ["2026-08-14", 29, 19], ["2026-08-15", 27, 13], ["2026-08-16", 23, 19], ["2026-08-17", 14, 26], ["2026-08-18", 25, 24], ["2026-08-19", 34, 13], ["2026-08-20", 20, 12], ["2026-08-21", 17, 11], ["2026-08-22", 18, 18], ["2026-08-23", 24, 18], ["2026-08-24", 17, 14], ["2026-08-25", 23, 24], ["2026-08-26", 22, 35], ["2026-08-27", 15, 14], ["2026-08-28", 24, 17], ["2026-08-29", 17, 22], ["2026-08-30", 31, 44], ["2026-08-31", 31, 19], ["2026-09-01", 23, 19], ["2026-09-02", 40, 33], ["2026-09-03", 38, 29], ["2026-09-04", 39, 25], ["2026-09-05", 48, 34], ["2026-09-06", 48, 59], ["2026-09-07", 52, 53], ["2026-09-08", 32, 20], ["2026-09-09", 25, 29], ["2026-09-10", 37, 32], ["2026-09-11", 20, 26], ["2026-09-12", 23, 25], ["2026-09-13", 37, 31], ["2026-09-14", 23, 20], ["2026-09-15", 22, 27], ["2026-09-16", 32, 34], ["2026-09-17", 36, 30], ["2026-09-18", 28, 21], ["2026-09-19", 36, 23], ["2026-09-20", 36, 41], ["2026-09-21", 38, 20], ["2026-09-22", 36, 27], ["2026-09-23", 49, 36], ["2026-09-24", 41, 20], ["2026-09-25", 44, 23], ["2026-09-26", 39, 33], ["2026-09-27", 43, 19], ["2026-09-28", 37, 18], ["2026-09-29", 34, 20], ["2026-09-30", 32, 18], ["2026-10-01", 18, 22], ["2026-10-02", 19, 19], ["2026-10-03", 50, 110], ["2026-10-04", 57, 91], ["2026-10-05", 20, 24], ["2026-10-06", 25, 20], ["2026-10-07", 17, 15], ["2026-10-08", 14, 21], ["2026-10-09", 24, 15], ["2026-10-10", 28, 36], ["2026-10-11", 36, 47], ["2026-10-12", 17, 14], ["2026-10-13", 11, 12], ["2026-10-14", 20, 19], ["2026-10-15", 14, 17], ["2026-10-16", 12, 11], ["2026-10-17", 32, 39], ["2026-10-18", 32, 32], ["2026-10-19", 10, 19], ["2026-10-20", 19, 12], ["2026-10-21", 16, 6], ["2026-10-22", 13, 19], ["2026-10-23", 21, 14], ["2026-10-24", 15, 29], ["2026-10-25", 18, 11], ["2026-10-26", 10, 17], ["2026-10-27", 15, 13], ["2026-10-28", 14, 9], ["2026-10-29", 19, 11], ["2026-10-30", 16, 11], ["2026-10-31", 16, 27], ["2026-11-01", 27, 21], ["2026-11-02", 19, 28], ["2026-11-03", 19, 16], ["2026-11-04", 22, 14], ["2026-11-05", 9, 16], ["2026-11-06", 10, 18], ["2026-11-07", 13, 12], ["2026-11-08", 16, 11], ["2026-11-09", 12, 17], ["2026-11-10", 15, 14], ["2026-11-11", 18, 15]]
       }
     },
     {
@@ -20554,40 +20702,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "3 Shades \u00b7 Liquid Lash\u2122",
       "accent": "#6B4C8A",
       "summary": {
-        "netSales": 2954428.02,
-        "units": 126994,
-        "orders": 107452,
-        "aov": 27.5,
-        "newCustomers": 32521,
-        "retCustomers": 67031,
-        "totalCustomers": 99552,
+        "netSales": 2961775.03,
+        "units": 127301,
+        "orders": 107721,
+        "aov": 27.49,
+        "newCustomers": 32642,
+        "retCustomers": 67138,
+        "totalCustomers": 99780,
         "newPct": 32.7,
         "retPct": 67.3,
         "planUnits": 47610,
-        "pctToPlanUnits": 266.7,
+        "pctToPlanUnits": 267.4,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 906505.47,
-        "retCustomerRevenue": 2047922.55,
+        "newCustomerRevenue": 909794.77,
+        "retCustomerRevenue": 2051980.26,
         "pdpViews": 0,
         "pdpAtcRate": 0,
         "pdpCvr": 0
       },
       "regions": {
         "us": {
-          "units": 121517,
-          "netSales": 2859557.31,
-          "orders": 103002
+          "units": 121812,
+          "netSales": 2866699.99,
+          "orders": 103261
         },
         "ca": {
-          "units": 5477,
-          "netSales": 94870.71,
-          "orders": 4450
+          "units": 5489,
+          "netSales": 95075.04,
+          "orders": 4460
         }
       },
       "trafficStart": "2026-04-07",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [],
         "monthly": []
@@ -21091,17 +21239,17 @@ window.DASHBOARD_DATA = {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "shade": "Deep Purple",
           "color": "#4A1E6B",
-          "netSales": 1304273.11,
-          "units": 55908,
-          "orders": 53722,
-          "newCustomers": 18356,
-          "retCustomers": 33736,
-          "usUnits": 53539,
-          "caUnits": 2369,
-          "usNetSales": 1263510.64,
-          "caNetSales": 40762.47,
+          "netSales": 1308589.93,
+          "units": 56089,
+          "orders": 53892,
+          "newCustomers": 18445,
+          "retCustomers": 33805,
+          "usUnits": 53714,
+          "caUnits": 2375,
+          "usNetSales": 1267727.02,
+          "caNetSales": 40862.91,
           "planUnits": 18056,
-          "pctToPlanUnits": 309.6,
+          "pctToPlanUnits": 310.6,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -21115,7 +21263,7 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 18056,
-          "pctToGoalUnits": 309.6,
+          "pctToGoalUnits": 310.6,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null,
@@ -21128,17 +21276,17 @@ window.DASHBOARD_DATA = {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "shade": "Deep Green",
           "color": "#1B4D3E",
-          "netSales": 832449.02,
-          "units": 35776,
-          "orders": 34795,
-          "newCustomers": 10581,
-          "retCustomers": 23054,
-          "usUnits": 34016,
-          "caUnits": 1760,
-          "usNetSales": 801790.08,
-          "caNetSales": 30658.94,
+          "netSales": 834131.02,
+          "units": 35846,
+          "orders": 34858,
+          "newCustomers": 10598,
+          "retCustomers": 23091,
+          "usUnits": 34082,
+          "caUnits": 1764,
+          "usNetSales": 803401.57,
+          "caNetSales": 30729.45,
           "planUnits": 13135,
-          "pctToPlanUnits": 272.4,
+          "pctToPlanUnits": 272.9,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -21152,7 +21300,7 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 13135,
-          "pctToGoalUnits": 272.4,
+          "pctToGoalUnits": 272.9,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null,
@@ -21165,17 +21313,17 @@ window.DASHBOARD_DATA = {
           "product": "Liquid Lash\u2122 Extensions Tubing Mascara",
           "shade": "Deep Navy",
           "color": "#1C3A5C",
-          "netSales": 817705.9,
-          "units": 35310,
-          "orders": 34165,
-          "newCustomers": 8867,
-          "retCustomers": 23342,
-          "usUnits": 33962,
-          "caUnits": 1348,
-          "usNetSales": 794256.59,
-          "caNetSales": 23449.31,
+          "netSales": 819054.08,
+          "units": 35366,
+          "orders": 34219,
+          "newCustomers": 8888,
+          "retCustomers": 23364,
+          "usUnits": 34016,
+          "caUnits": 1350,
+          "usNetSales": 795571.4,
+          "caNetSales": 23482.68,
           "planUnits": 16419,
-          "pctToPlanUnits": 215.1,
+          "pctToPlanUnits": 215.4,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -21189,7 +21337,7 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 16419,
-          "pctToGoalUnits": 215.1,
+          "pctToGoalUnits": 215.4,
           "unitsToGoal": 0,
           "planEndDate": "2026-08-05",
           "weeksOfStock": null,
@@ -21203,7 +21351,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "new-to-category",
             "title": "40% of buyers are new to Mascara",
-            "detail": "39,658 of 99,552 buyers had not purchased this category before."
+            "detail": "39,787 of 99,780 buyers had not purchased this category before."
           }
         ]
       },
@@ -24390,17 +24538,17 @@ window.DASHBOARD_DATA = {
         },
         {
           "date": "2026-11-05",
-          "units": 330,
-          "netSales": 7323.02,
-          "usUnits": 319,
+          "units": 329,
+          "netSales": 7302.22,
+          "usUnits": 318,
           "caUnits": 11,
-          "usNetSales": 7129.39,
+          "usNetSales": 7108.59,
           "caNetSales": 193.63,
-          "cumUnits": 125520,
-          "cumSales": 2920075.04,
+          "cumUnits": 125519,
+          "cumSales": 2920054.24,
           "planUnits": null,
           "cumPlanUnits": 47610,
-          "newCustomers": 110,
+          "newCustomers": 109,
           "retCustomers": 142
         },
         {
@@ -24411,8 +24559,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 12,
           "usNetSales": 5712.57,
           "caNetSales": 217.45,
-          "cumUnits": 125773,
-          "cumSales": 2926005.06,
+          "cumUnits": 125772,
+          "cumSales": 2925984.26,
           "planUnits": null,
           "cumPlanUnits": 47610,
           "newCustomers": 78,
@@ -24421,13 +24569,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-07",
           "units": 314,
-          "netSales": 7323.18,
+          "netSales": 7318.73,
           "usUnits": 300,
           "caUnits": 14,
-          "usNetSales": 7087.09,
+          "usNetSales": 7082.64,
           "caNetSales": 236.09,
-          "cumUnits": 126087,
-          "cumSales": 2933328.24,
+          "cumUnits": 126086,
+          "cumSales": 2933302.99,
           "planUnits": null,
           "cumPlanUnits": 47610,
           "newCustomers": 94,
@@ -24441,8 +24589,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 15,
           "usNetSales": 7793.1,
           "caNetSales": 245.58,
-          "cumUnits": 126431,
-          "cumSales": 2941366.92,
+          "cumUnits": 126430,
+          "cumSales": 2941341.67,
           "planUnits": null,
           "cumPlanUnits": 47610,
           "newCustomers": 125,
@@ -24456,8 +24604,8 @@ window.DASHBOARD_DATA = {
           "caUnits": 10,
           "usNetSales": 6440.71,
           "caNetSales": 152.93,
-          "cumUnits": 126719,
-          "cumSales": 2947960.56,
+          "cumUnits": 126718,
+          "cumSales": 2947935.31,
           "planUnits": null,
           "cumPlanUnits": 47610,
           "newCustomers": 94,
@@ -24471,12 +24619,27 @@ window.DASHBOARD_DATA = {
           "caUnits": 8,
           "usNetSales": 6329.57,
           "caNetSales": 137.95,
-          "cumUnits": 126994,
-          "cumSales": 2954428.08,
+          "cumUnits": 126993,
+          "cumSales": 2954402.83,
           "planUnits": null,
           "cumPlanUnits": 47610,
           "newCustomers": 111,
           "retCustomers": 135
+        },
+        {
+          "date": "2026-11-11",
+          "units": 308,
+          "netSales": 7372.26,
+          "usUnits": 296,
+          "caUnits": 12,
+          "usNetSales": 7167.93,
+          "caNetSales": 204.33,
+          "cumUnits": 127301,
+          "cumSales": 2961775.09,
+          "planUnits": null,
+          "cumPlanUnits": 47610,
+          "newCustomers": 127,
+          "retCustomers": 141
         }
       ],
       "dailySkuColumns": [
@@ -24491,9 +24654,9 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TVG6370": [["2026-04-07", 51, 1187.9, 51, 0, 1187.9, 0.0, 10, 41], ["2026-04-08", 747, 17312.05, 693, 54, 16385.95, 926.1, 112, 603], ["2026-04-09", 815, 19512.57, 782, 33, 18937.56, 575.01, 118, 670], ["2026-04-10", 452, 10550.09, 424, 28, 10051.19, 498.9, 83, 358], ["2026-04-11", 599, 13797.61, 552, 47, 12985.52, 812.09, 144, 444], ["2026-04-12", 818, 18829.34, 751, 67, 17709.61, 1119.73, 172, 624], ["2026-04-13", 398, 9273.43, 379, 19, 8938.77, 334.66, 98, 286], ["2026-04-14", 333, 7642.39, 311, 22, 7267.81, 374.58, 102, 228], ["2026-04-15", 461, 10796.73, 434, 27, 10334.89, 461.84, 113, 337], ["2026-04-16", 444, 10305.69, 414, 30, 9781.32, 524.37, 115, 320], ["2026-04-17", 420, 9888.46, 391, 29, 9366.14, 522.32, 107, 302], ["2026-04-18", 357, 8351.83, 330, 27, 7885.66, 466.17, 96, 255], ["2026-04-19", 440, 10336.58, 415, 25, 9897.06, 439.52, 127, 297], ["2026-04-20", 463, 10730.43, 438, 25, 10291.6, 438.83, 123, 324], ["2026-04-21", 357, 8340.09, 340, 17, 8032.69, 307.4, 93, 258], ["2026-04-22", 363, 8420.4, 343, 20, 8070.26, 350.14, 118, 238], ["2026-04-23", 353, 8073.26, 328, 25, 7619.3, 453.96, 110, 235], ["2026-04-24", 299, 6969.07, 287, 12, 6761.96, 207.11, 80, 210], ["2026-04-25", 427, 9569.44, 395, 32, 9020.28, 549.16, 128, 291], ["2026-04-26", 649, 14803.32, 618, 31, 14280.72, 522.6, 177, 453], ["2026-04-27", 273, 6269.24, 258, 15, 5994.78, 274.46, 74, 191], ["2026-04-28", 229, 5274.59, 223, 6, 5163.72, 110.87, 60, 166], ["2026-04-29", 232, 5293.65, 218, 14, 5041.78, 251.87, 60, 167], ["2026-04-30", 193, 4433.09, 176, 17, 4122.59, 310.5, 46, 142], ["2026-05-01", 227, 5145.74, 215, 12, 4922.57, 223.17, 50, 167], ["2026-05-02", 300, 6950.36, 285, 15, 6681.94, 268.42, 54, 228], ["2026-05-03", 293, 6730.22, 278, 15, 6467.08, 263.14, 65, 212], ["2026-05-04", 181, 4168.68, 175, 6, 4054.62, 114.06, 41, 137], ["2026-05-05", 175, 3961.3, 167, 8, 3817.33, 143.97, 43, 130], ["2026-05-06", 201, 4385.77, 185, 16, 4117.23, 268.54, 52, 144], ["2026-05-07", 178, 4094.69, 166, 12, 3879.69, 215.0, 50, 125], ["2026-05-08", 141, 3191.94, 135, 6, 3087.94, 104.0, 34, 102], ["2026-05-09", 400, 8994.98, 370, 30, 8488.66, 506.32, 78, 311], ["2026-05-10", 376, 8565.77, 354, 22, 8176.98, 388.79, 90, 280], ["2026-05-11", 109, 2511.46, 103, 6, 2400.61, 110.85, 25, 76], ["2026-05-12", 93, 2045.46, 85, 8, 1894.86, 150.6, 31, 61], ["2026-05-13", 97, 2250.13, 93, 4, 2179.19, 70.94, 18, 78], ["2026-05-14", 77, 1728.36, 72, 5, 1637.66, 90.7, 18, 56], ["2026-05-15", 87, 1971.3, 84, 3, 1916.26, 55.04, 17, 68], ["2026-05-16", 190, 4396.49, 180, 10, 4218.69, 177.8, 30, 149], ["2026-05-17", 125, 2873.42, 115, 10, 2706.33, 167.09, 37, 87], ["2026-05-18", 146, 3357.3, 137, 9, 3199.77, 157.53, 29, 115], ["2026-05-19", 124, 2741.05, 120, 4, 2670.61, 70.44, 35, 86], ["2026-05-20", 112, 2560.13, 106, 6, 2450.71, 109.42, 36, 72], ["2026-05-21", 115, 2611.4, 112, 3, 2572.37, 39.03, 34, 76], ["2026-05-22", 342, 7905.95, 315, 27, 7440.9, 465.05, 79, 251], ["2026-05-23", 254, 5882.5, 233, 21, 5535.37, 347.13, 50, 198], ["2026-05-24", 270, 6372.34, 258, 12, 6164.16, 208.18, 75, 187], ["2026-05-25", 322, 7652.14, 322, 0, 7652.14, 0.0, 69, 243], ["2026-05-26", 96, 2211.35, 96, 0, 2211.35, 0.0, 32, 62], ["2026-05-27", 80, 1828.4, 80, 0, 1828.4, 0.0, 20, 58], ["2026-05-28", 93, 2137.83, 93, 0, 2137.83, 0.0, 25, 65], ["2026-05-29", 109, 2491.25, 109, 0, 2491.25, 0.0, 24, 79], ["2026-05-30", 77, 1825.58, 77, 0, 1825.58, 0.0, 23, 50], ["2026-05-31", 89, 2123.4, 89, 0, 2123.4, 0.0, 26, 60], ["2026-06-01", 133, 3001.97, 133, 0, 3001.97, 0.0, 28, 102], ["2026-06-02", 119, 2850.38, 119, 0, 2850.38, 0.0, 26, 82], ["2026-06-03", 137, 3192.28, 137, 0, 3192.28, 0.0, 31, 99], ["2026-06-04", 84, 1886.11, 84, 0, 1886.11, 0.0, 23, 55], ["2026-06-05", 123, 2859.58, 123, 0, 2859.58, 0.0, 19, 99], ["2026-06-06", 154, 3662.3, 154, 0, 3662.3, 0.0, 52, 95], ["2026-06-07", 112, 2643.18, 112, 0, 2643.18, 0.0, 26, 81], ["2026-06-08", 142, 3320.61, 142, 0, 3320.61, 0.0, 26, 112], ["2026-06-09", 88, 1994.74, 88, 0, 1994.74, 0.0, 22, 63], ["2026-06-10", 123, 2794.46, 123, 0, 2794.46, 0.0, 25, 93], ["2026-06-11", 123, 2844.07, 123, 0, 2844.07, 0.0, 26, 92], ["2026-06-12", 105, 2429.04, 105, 0, 2429.04, 0.0, 26, 78], ["2026-06-13", 194, 4695.78, 194, 0, 4695.78, 0.0, 41, 147], ["2026-06-14", 209, 5042.11, 209, 0, 5042.11, 0.0, 35, 168], ["2026-06-15", 130, 3027.94, 130, 0, 3027.94, 0.0, 23, 103], ["2026-06-16", 100, 2260.49, 100, 0, 2260.49, 0.0, 23, 76], ["2026-06-17", 134, 3110.15, 134, 0, 3110.15, 0.0, 31, 100], ["2026-06-18", 111, 2614.08, 111, 0, 2614.08, 0.0, 32, 77], ["2026-06-19", 85, 2055.9, 85, 0, 2055.9, 0.0, 27, 54], ["2026-06-20", 222, 5257.1, 222, 0, 5257.1, 0.0, 49, 163], ["2026-06-21", 211, 5042.12, 211, 0, 5042.12, 0.0, 42, 164], ["2026-06-22", 125, 2944.27, 125, 0, 2944.27, 0.0, 28, 90], ["2026-06-23", 93, 2104.57, 93, 0, 2104.57, 0.0, 22, 71], ["2026-06-24", 78, 1779.69, 78, 0, 1779.69, 0.0, 13, 60], ["2026-06-25", 76, 1804.2, 76, 0, 1804.2, 0.0, 17, 58], ["2026-06-26", 83, 1843.83, 83, 0, 1843.83, 0.0, 25, 51], ["2026-06-27", 149, 3615.84, 149, 0, 3615.84, 0.0, 30, 115], ["2026-06-28", 95, 2240.28, 95, 0, 2240.28, 0.0, 21, 71], ["2026-06-29", 109, 2591.81, 109, 0, 2591.81, 0.0, 30, 77], ["2026-06-30", 104, 2446.21, 104, 0, 2446.21, 0.0, 20, 80], ["2026-07-01", 222, 4850.53, 222, 0, 4850.53, 0.0, 32, 175], ["2026-07-02", 191, 4131.92, 191, 0, 4131.92, 0.0, 33, 147], ["2026-07-03", 278, 6159.0, 278, 0, 6159.0, 0.0, 43, 217], ["2026-07-04", 270, 5937.29, 270, 0, 5937.29, 0.0, 38, 215], ["2026-07-05", 370, 8141.75, 370, 0, 8141.75, 0.0, 52, 301], ["2026-07-06", 94, 2188.9, 94, 0, 2188.9, 0.0, 23, 70], ["2026-07-07", 85, 2024.95, 85, 0, 2024.95, 0.0, 20, 60], ["2026-07-08", 107, 2447.9, 107, 0, 2447.9, 0.0, 25, 75], ["2026-07-09", 93, 2149.27, 93, 0, 2149.27, 0.0, 17, 70], ["2026-07-10", 134, 3074.69, 134, 0, 3074.69, 0.0, 25, 103], ["2026-07-11", 126, 2909.78, 126, 0, 2909.78, 0.0, 26, 95], ["2026-07-12", 93, 2215.39, 93, 0, 2215.39, 0.0, 32, 56], ["2026-07-13", 81, 1838.91, 81, 0, 1838.91, 0.0, 18, 61], ["2026-07-14", 87, 1980.31, 87, 0, 1980.31, 0.0, 21, 59], ["2026-07-15", 103, 2391.25, 103, 0, 2391.25, 0.0, 28, 69], ["2026-07-16", 102, 2442.43, 102, 0, 2442.43, 0.0, 21, 77], ["2026-07-17", 107, 2468.96, 107, 0, 2468.96, 0.0, 28, 70], ["2026-07-18", 115, 2687.62, 115, 0, 2687.62, 0.0, 30, 80], ["2026-07-19", 109, 2505.7, 109, 0, 2505.7, 0.0, 31, 76], ["2026-07-20", 90, 2093.84, 90, 0, 2093.84, 0.0, 22, 60], ["2026-07-21", 149, 3487.48, 149, 0, 3487.48, 0.0, 35, 103], ["2026-07-22", 135, 3147.11, 135, 0, 3147.11, 0.0, 35, 98], ["2026-07-23", 122, 2808.26, 122, 0, 2808.26, 0.0, 23, 96], ["2026-07-24", 159, 3743.12, 159, 0, 3743.12, 0.0, 28, 122], ["2026-07-25", 142, 3347.37, 142, 0, 3347.37, 0.0, 34, 101], ["2026-07-26", 202, 4844.48, 202, 0, 4844.48, 0.0, 48, 145], ["2026-07-27", 112, 2521.13, 112, 0, 2521.13, 0.0, 29, 80], ["2026-07-28", 114, 2620.91, 114, 0, 2620.91, 0.0, 22, 89], ["2026-07-29", 106, 2471.45, 106, 0, 2471.45, 0.0, 27, 78], ["2026-07-30", 89, 2101.22, 89, 0, 2101.22, 0.0, 33, 53], ["2026-07-31", 149, 3538.37, 149, 0, 3538.37, 0.0, 44, 104], ["2026-08-01", 150, 3540.06, 150, 0, 3540.06, 0.0, 38, 107], ["2026-08-02", 8, 202.8, 8, 0, 202.8, 0.0, 0, 8], ["2026-08-05", 138, 3335.1, 138, 0, 3335.1, 0.0, 27, 104], ["2026-08-06", 191, 4446.66, 191, 0, 4446.66, 0.0, 44, 140], ["2026-08-07", 140, 3258.07, 140, 0, 3258.07, 0.0, 36, 92], ["2026-08-08", 337, 7418.0, 337, 0, 7418.0, 0.0, 65, 264], ["2026-08-09", 384, 8348.53, 384, 0, 8348.53, 0.0, 64, 304], ["2026-08-10", 110, 2444.46, 100, 10, 2268.55, 175.91, 30, 71], ["2026-08-11", 166, 3752.74, 147, 19, 3425.8, 326.94, 46, 112], ["2026-08-12", 144, 3219.0, 130, 14, 2964.17, 254.83, 45, 96], ["2026-08-13", 153, 3556.56, 142, 11, 3370.29, 186.27, 58, 93], ["2026-08-14", 130, 2959.94, 126, 4, 2894.29, 65.65, 52, 77], ["2026-08-15", 138, 3246.7, 131, 7, 3131.66, 115.04, 56, 78], ["2026-08-16", 149, 3489.08, 140, 9, 3332.87, 156.21, 53, 90], ["2026-08-17", 128, 2998.66, 123, 5, 2907.99, 90.67, 48, 80], ["2026-08-18", 134, 3073.57, 131, 3, 3018.55, 55.02, 39, 93], ["2026-08-19", 126, 2934.32, 116, 10, 2754.03, 180.29, 42, 79], ["2026-08-20", 160, 3707.88, 156, 4, 3636.34, 71.54, 50, 103], ["2026-08-21", 107, 2458.73, 102, 5, 2368.33, 90.4, 31, 75], ["2026-08-22", 141, 3261.1, 133, 8, 3139.9, 121.2, 42, 93], ["2026-08-23", 175, 4096.21, 167, 8, 3946.89, 149.32, 47, 120], ["2026-08-24", 125, 2885.49, 117, 8, 2752.19, 133.3, 28, 93], ["2026-08-25", 140, 3249.45, 131, 9, 3080.16, 169.29, 38, 98], ["2026-08-26", 146, 3380.63, 135, 11, 3189.91, 190.72, 43, 97], ["2026-08-27", 94, 2193.24, 91, 3, 2137.53, 55.71, 32, 58], ["2026-08-28", 117, 2764.79, 113, 4, 2693.16, 71.63, 39, 74], ["2026-08-29", 144, 3394.15, 136, 8, 3255.85, 138.3, 36, 106], ["2026-08-30", 204, 4909.76, 200, 4, 4839.82, 69.94, 53, 144], ["2026-08-31", 116, 2700.28, 109, 7, 2572.78, 127.5, 36, 74], ["2026-09-01", 102, 2321.74, 99, 3, 2283.36, 38.38, 25, 74], ["2026-09-02", 114, 2717.68, 110, 4, 2645.71, 71.97, 29, 81], ["2026-09-03", 93, 2267.11, 92, 1, 2248.04, 19.07, 34, 58], ["2026-09-04", 123, 2915.7, 118, 5, 2827.38, 88.32, 50, 71], ["2026-09-05", 204, 4827.89, 193, 11, 4629.46, 198.43, 58, 144], ["2026-09-06", 291, 6891.72, 274, 17, 6584.73, 306.99, 77, 204], ["2026-09-07", 309, 7352.96, 293, 16, 7069.2, 283.76, 97, 199], ["2026-09-08", 85, 2003.15, 80, 5, 1915.95, 87.2, 36, 48], ["2026-09-09", 89, 1975.41, 85, 4, 1901.69, 73.72, 36, 50], ["2026-09-10", 95, 2191.55, 92, 3, 2135.4, 56.15, 41, 50], ["2026-09-11", 80, 1883.35, 77, 3, 1833.08, 50.27, 27, 51], ["2026-09-12", 112, 2631.92, 111, 1, 2612.66, 19.26, 44, 65], ["2026-09-13", 163, 3829.75, 157, 6, 3723.37, 106.38, 47, 111], ["2026-09-14", 96, 2138.52, 89, 7, 2003.76, 134.76, 41, 50], ["2026-09-15", 99, 2364.46, 97, 2, 2328.25, 36.21, 41, 48], ["2026-09-16", 107, 2550.94, 105, 2, 2516.61, 34.33, 37, 65], ["2026-09-17", 78, 1822.25, 78, 0, 1822.25, 0.0, 40, 37], ["2026-09-18", 78, 1869.19, 74, 4, 1797.28, 71.91, 27, 51], ["2026-09-19", 87, 2049.56, 79, 8, 1903.22, 146.34, 32, 52], ["2026-09-20", 153, 3641.97, 149, 4, 3575.88, 66.09, 58, 90], ["2026-09-21", 99, 2378.9, 97, 2, 2345.01, 33.89, 42, 52], ["2026-09-22", 101, 2320.58, 98, 3, 2273.0, 47.58, 40, 61], ["2026-09-23", 133, 3088.91, 129, 4, 3018.55, 70.36, 37, 90], ["2026-09-24", 94, 2212.19, 90, 4, 2141.85, 70.34, 41, 51], ["2026-09-25", 91, 2146.85, 86, 5, 2063.26, 83.59, 30, 58], ["2026-09-26", 117, 2751.04, 115, 2, 2716.83, 34.21, 53, 60], ["2026-09-27", 137, 3197.47, 132, 5, 3133.65, 63.82, 52, 83], ["2026-09-28", 105, 2513.31, 104, 1, 2498.16, 15.15, 42, 61], ["2026-09-29", 116, 2760.1, 114, 2, 2723.21, 36.89, 43, 65], ["2026-09-30", 87, 2049.45, 86, 1, 2034.76, 14.69, 46, 39], ["2026-10-01", 91, 2066.51, 87, 4, 1995.18, 71.33, 42, 48], ["2026-10-02", 86, 1971.36, 84, 2, 1935.89, 35.47, 30, 54], ["2026-10-03", 111, 2645.26, 107, 4, 2575.99, 69.27, 35, 67], ["2026-10-04", 130, 3128.32, 124, 6, 3032.89, 95.43, 39, 85], ["2026-10-05", 84, 1925.72, 77, 7, 1814.57, 111.15, 25, 56], ["2026-10-06", 78, 1838.42, 74, 4, 1768.84, 69.58, 24, 52], ["2026-10-07", 92, 2115.08, 91, 1, 2098.74, 16.34, 24, 61], ["2026-10-08", 81, 1918.53, 78, 3, 1864.67, 53.86, 28, 52], ["2026-10-09", 71, 1600.09, 67, 4, 1534.06, 66.03, 29, 42], ["2026-10-10", 194, 4355.13, 179, 15, 4106.65, 248.48, 41, 144], ["2026-10-11", 259, 5837.66, 244, 15, 5595.4, 242.26, 63, 185], ["2026-10-12", 82, 1914.02, 82, 0, 1914.02, 0.0, 24, 53], ["2026-10-13", 66, 1495.42, 64, 2, 1462.69, 32.73, 24, 40], ["2026-10-14", 89, 2152.34, 88, 1, 2134.14, 18.2, 27, 56], ["2026-10-15", 72, 1654.32, 72, 0, 1654.32, 0.0, 31, 38], ["2026-10-16", 72, 1622.0, 70, 2, 1592.64, 29.36, 30, 38], ["2026-10-17", 152, 3580.6, 138, 14, 3325.79, 254.81, 35, 108], ["2026-10-18", 163, 3818.47, 153, 10, 3648.18, 170.29, 53, 104], ["2026-10-19", 64, 1463.98, 63, 1, 1447.02, 16.96, 19, 44], ["2026-10-20", 68, 1609.4, 66, 2, 1575.82, 33.58, 20, 45], ["2026-10-21", 54, 1260.62, 53, 1, 1241.88, 18.74, 24, 29], ["2026-10-22", 45, 1012.34, 41, 4, 941.68, 70.66, 16, 27], ["2026-10-23", 67, 1617.2, 65, 2, 1579.63, 37.57, 22, 41], ["2026-10-24", 88, 2022.7, 83, 5, 1929.39, 93.31, 25, 60], ["2026-10-25", 83, 1955.36, 77, 6, 1857.52, 97.84, 35, 44], ["2026-10-26", 73, 1649.13, 69, 4, 1580.65, 68.48, 18, 51], ["2026-10-27", 52, 1171.27, 50, 2, 1141.14, 30.13, 18, 30], ["2026-10-28", 54, 1217.33, 53, 1, 1198.51, 18.82, 17, 34], ["2026-10-29", 53, 1247.01, 53, 0, 1247.01, 0.0, 22, 31], ["2026-10-30", 57, 1352.13, 56, 1, 1335.08, 17.05, 16, 37], ["2026-10-31", 69, 1653.13, 67, 2, 1619.0, 34.13, 26, 42], ["2026-11-01", 123, 2977.01, 120, 3, 2922.73, 54.28, 34, 85], ["2026-11-02", 56, 1266.35, 53, 3, 1214.63, 51.72, 21, 33], ["2026-11-03", 74, 1730.48, 70, 4, 1654.64, 75.84, 18, 50], ["2026-11-04", 80, 1866.62, 78, 2, 1832.74, 33.88, 23, 53], ["2026-11-05", 77, 1696.07, 74, 3, 1644.61, 51.46, 22, 42], ["2026-11-06", 64, 1530.27, 63, 1, 1511.29, 18.98, 19, 44], ["2026-11-07", 63, 1440.9, 63, 0, 1440.9, 0.0, 16, 45], ["2026-11-08", 83, 1895.83, 77, 6, 1804.23, 91.6, 28, 53], ["2026-11-09", 65, 1465.44, 63, 2, 1435.67, 29.77, 22, 42], ["2026-11-10", 53, 1220.17, 52, 1, 1203.4, 16.77, 29, 24]],
-        "TVG6380": [["2026-04-07", 62, 1475.11, 60, 2, 1442.66, 32.45, 10, 48], ["2026-04-08", 1421, 33368.37, 1344, 77, 32054.09, 1314.28, 265, 1058], ["2026-04-09", 2141, 51217.99, 2069, 72, 49974.0, 1243.99, 462, 1558], ["2026-04-10", 1314, 30840.7, 1253, 61, 29765.7, 1075.0, 379, 890], ["2026-04-11", 1836, 42694.58, 1753, 83, 41265.94, 1428.64, 523, 1254], ["2026-04-12", 1928, 44753.13, 1838, 90, 43206.85, 1546.28, 514, 1346], ["2026-04-13", 934, 21751.07, 886, 48, 20936.67, 814.4, 301, 597], ["2026-04-14", 784, 18202.46, 745, 39, 17530.27, 672.19, 233, 521], ["2026-04-15", 1126, 26390.62, 1069, 57, 25429.59, 961.03, 331, 770], ["2026-04-16", 1350, 31639.54, 1293, 57, 30647.25, 992.29, 388, 908], ["2026-04-17", 1141, 27010.91, 1098, 43, 26252.86, 758.05, 349, 744], ["2026-04-18", 1050, 24796.84, 1000, 50, 23908.64, 888.2, 360, 651], ["2026-04-19", 1139, 26846.18, 1092, 47, 26009.13, 837.05, 339, 752], ["2026-04-20", 855, 19977.67, 813, 42, 19248.08, 729.59, 286, 543], ["2026-04-21", 895, 21088.21, 863, 32, 20517.54, 570.67, 322, 547], ["2026-04-22", 986, 23302.02, 959, 27, 22855.64, 446.38, 375, 581], ["2026-04-23", 848, 19975.42, 845, 3, 19923.83, 51.59, 339, 478], ["2026-04-24", 702, 16295.11, 702, 0, 16295.11, 0.0, 288, 396], ["2026-04-25", 1175, 27302.06, 1175, 0, 27302.06, 0.0, 427, 720], ["2026-04-26", 1339, 30947.02, 1339, 0, 30947.02, 0.0, 425, 872], ["2026-04-27", 706, 16458.57, 706, 0, 16458.57, 0.0, 229, 459], ["2026-04-28", 629, 14820.15, 629, 0, 14820.15, 0.0, 145, 463], ["2026-04-29", 454, 10669.8, 454, 0, 10669.8, 0.0, 128, 313], ["2026-04-30", 431, 10169.93, 431, 0, 10169.93, 0.0, 103, 312], ["2026-05-01", 487, 11278.71, 487, 0, 11278.71, 0.0, 132, 335], ["2026-05-02", 544, 12807.23, 544, 0, 12807.23, 0.0, 135, 387], ["2026-05-03", 181, 4188.67, 181, 0, 4188.67, 0.0, 37, 134], ["2026-05-09", 1, 26.0, 1, 0, 26.0, 0.0, 0, 1], ["2026-06-03", 1, 24.7, 1, 0, 24.7, 0.0, 0, 1], ["2026-07-26", 298, 7185.42, 298, 0, 7185.42, 0.0, 58, 191], ["2026-07-27", 353, 8340.57, 339, 14, 8110.43, 230.14, 93, 214], ["2026-07-28", 309, 7004.56, 278, 31, 6490.73, 513.83, 69, 208], ["2026-07-29", 238, 5619.4, 224, 14, 5377.97, 241.43, 57, 158], ["2026-07-30", 225, 5265.62, 209, 16, 4994.07, 271.55, 59, 147], ["2026-07-31", 403, 9490.29, 392, 11, 9296.92, 193.37, 104, 272], ["2026-08-01", 288, 6732.75, 274, 14, 6491.66, 241.09, 89, 181], ["2026-08-02", 428, 10057.07, 408, 20, 9719.16, 337.91, 112, 300], ["2026-08-03", 178, 4126.14, 169, 9, 3968.9, 157.24, 60, 99], ["2026-08-04", 199, 4638.63, 192, 7, 4520.23, 118.4, 85, 106], ["2026-08-05", 511, 12030.74, 497, 14, 11786.97, 243.77, 106, 360], ["2026-08-06", 434, 10148.33, 413, 21, 9812.2, 336.13, 144, 263], ["2026-08-07", 305, 6971.97, 288, 17, 6685.51, 286.46, 98, 191], ["2026-08-08", 669, 14536.48, 637, 32, 14036.67, 499.81, 164, 468], ["2026-08-09", 841, 17979.68, 791, 50, 17101.95, 877.73, 189, 596], ["2026-08-10", 281, 6316.79, 264, 17, 6046.76, 270.03, 110, 154], ["2026-08-11", 331, 7771.8, 321, 10, 7594.56, 177.24, 116, 193], ["2026-08-12", 329, 7734.25, 316, 13, 7512.75, 221.5, 130, 194], ["2026-08-13", 364, 8490.03, 342, 22, 8111.88, 378.15, 158, 198], ["2026-08-14", 385, 8898.82, 366, 19, 8566.56, 332.26, 168, 198], ["2026-08-15", 372, 8789.63, 362, 10, 8617.63, 172.0, 160, 202], ["2026-08-16", 414, 9632.71, 387, 27, 9168.85, 463.86, 174, 225], ["2026-08-17", 360, 8411.91, 338, 22, 8023.95, 387.96, 135, 208], ["2026-08-18", 378, 8898.59, 366, 12, 8685.78, 212.81, 140, 230], ["2026-08-19", 309, 7097.81, 286, 23, 6713.76, 384.05, 127, 170], ["2026-08-20", 363, 8445.26, 342, 21, 8070.75, 374.51, 141, 210], ["2026-08-21", 315, 7264.2, 297, 18, 6949.91, 314.29, 152, 154], ["2026-08-22", 344, 8070.72, 325, 19, 7726.72, 344.0, 145, 192], ["2026-08-23", 399, 9260.56, 378, 21, 8874.66, 385.9, 139, 250], ["2026-08-24", 260, 6050.63, 249, 11, 5871.21, 179.42, 99, 152], ["2026-08-25", 272, 6275.73, 256, 16, 5977.82, 297.91, 102, 162], ["2026-08-26", 278, 6464.07, 268, 10, 6289.15, 174.92, 93, 179], ["2026-08-27", 281, 6628.16, 270, 11, 6432.79, 195.37, 114, 162], ["2026-08-28", 264, 6209.21, 251, 13, 5977.24, 231.97, 102, 156], ["2026-08-29", 257, 5971.8, 238, 19, 5633.65, 338.15, 92, 158], ["2026-08-30", 385, 9022.88, 366, 19, 8697.57, 325.31, 125, 245], ["2026-08-31", 223, 5003.41, 210, 13, 4784.68, 218.73, 83, 132], ["2026-09-01", 223, 5179.36, 210, 13, 4947.12, 232.24, 91, 121], ["2026-09-02", 297, 7004.66, 282, 15, 6737.06, 267.6, 122, 164], ["2026-09-03", 234, 5535.55, 227, 7, 5411.36, 124.19, 95, 130], ["2026-09-04", 274, 6497.93, 264, 10, 6326.57, 171.36, 112, 150], ["2026-09-05", 481, 11270.56, 442, 39, 10595.35, 675.21, 167, 296], ["2026-09-06", 641, 15325.2, 602, 39, 14640.23, 684.97, 197, 417], ["2026-09-07", 642, 15139.11, 597, 45, 14343.34, 795.77, 222, 392], ["2026-09-08", 186, 4382.02, 180, 6, 4277.33, 104.69, 84, 94], ["2026-09-09", 192, 4519.07, 185, 7, 4392.74, 126.33, 81, 103], ["2026-09-10", 209, 4999.31, 201, 8, 4854.08, 145.23, 78, 128], ["2026-09-11", 233, 5435.66, 219, 14, 5185.25, 250.41, 99, 129], ["2026-09-12", 288, 6841.96, 270, 18, 6525.98, 315.98, 134, 146], ["2026-09-13", 379, 8972.73, 352, 27, 8491.96, 480.77, 142, 220], ["2026-09-14", 204, 4741.85, 192, 12, 4535.32, 206.53, 80, 119], ["2026-09-15", 206, 4734.38, 193, 13, 4512.49, 221.89, 106, 94], ["2026-09-16", 256, 6106.9, 249, 7, 5983.65, 123.25, 108, 143], ["2026-09-17", 191, 4491.59, 185, 6, 4385.15, 106.44, 98, 85], ["2026-09-18", 190, 4332.52, 174, 16, 4055.43, 277.09, 81, 102], ["2026-09-19", 212, 4951.29, 198, 14, 4702.91, 248.38, 87, 121], ["2026-09-20", 388, 9158.74, 369, 19, 8822.33, 336.41, 154, 214], ["2026-09-21", 241, 5671.17, 226, 15, 5404.31, 266.86, 123, 113], ["2026-09-22", 245, 5640.43, 233, 12, 5440.27, 200.16, 100, 137], ["2026-09-23", 327, 7695.23, 308, 19, 7351.69, 343.54, 113, 206], ["2026-09-24", 257, 5973.78, 246, 11, 5782.17, 191.61, 114, 139], ["2026-09-25", 243, 5718.32, 232, 11, 5528.26, 190.06, 107, 127], ["2026-09-26", 343, 8049.47, 331, 12, 7846.16, 203.31, 143, 192], ["2026-09-27", 334, 7746.59, 315, 19, 7468.28, 278.31, 153, 177], ["2026-09-28", 228, 5235.16, 209, 19, 4906.72, 328.44, 102, 119], ["2026-09-29", 322, 7398.34, 299, 23, 7006.37, 391.97, 140, 167], ["2026-09-30", 234, 5413.75, 219, 15, 5169.28, 244.47, 111, 117], ["2026-10-01", 262, 5997.88, 248, 14, 5777.9, 219.98, 120, 130], ["2026-10-02", 212, 4867.2, 196, 16, 4598.98, 268.22, 91, 120], ["2026-10-03", 247, 5783.69, 229, 18, 5487.97, 295.72, 97, 139], ["2026-10-04", 284, 6623.15, 266, 18, 6337.02, 286.13, 111, 165], ["2026-10-05", 195, 4487.35, 182, 13, 4266.87, 220.48, 83, 104], ["2026-10-06", 204, 4667.58, 189, 15, 4412.54, 255.04, 66, 130], ["2026-10-07", 219, 5195.61, 214, 5, 5108.46, 87.15, 83, 124], ["2026-10-08", 222, 5172.79, 213, 9, 5015.5, 157.29, 90, 121], ["2026-10-09", 221, 4895.77, 207, 14, 4717.23, 178.54, 93, 121], ["2026-10-10", 347, 7823.29, 328, 19, 7518.06, 305.23, 116, 213], ["2026-10-11", 469, 10612.45, 444, 25, 10202.79, 409.66, 154, 295], ["2026-10-12", 194, 4496.59, 187, 7, 4381.08, 115.51, 66, 116], ["2026-10-13", 149, 3474.75, 138, 11, 3279.18, 195.57, 82, 61], ["2026-10-14", 195, 4467.4, 189, 6, 4365.49, 101.91, 85, 106], ["2026-10-15", 165, 3729.56, 159, 6, 3641.61, 87.95, 59, 102], ["2026-10-16", 164, 3741.25, 158, 6, 3643.88, 97.37, 63, 97], ["2026-10-17", 350, 8191.65, 327, 23, 7787.25, 404.4, 123, 215], ["2026-10-18", 390, 9128.98, 365, 25, 8703.83, 425.15, 125, 252], ["2026-10-19", 133, 3091.17, 123, 10, 2923.89, 167.28, 40, 85], ["2026-10-20", 140, 3183.39, 128, 12, 2985.67, 197.72, 48, 87], ["2026-10-21", 138, 3217.67, 130, 8, 3083.55, 134.12, 53, 82], ["2026-10-22", 119, 2792.01, 116, 3, 2735.71, 56.3, 47, 64], ["2026-10-23", 129, 3015.22, 120, 9, 2863.78, 151.44, 52, 73], ["2026-10-24", 220, 5265.23, 212, 8, 5121.13, 144.1, 65, 142], ["2026-10-25", 175, 4130.23, 163, 12, 3910.57, 219.66, 69, 98], ["2026-10-26", 128, 2882.56, 118, 10, 2704.66, 177.9, 57, 68], ["2026-10-27", 137, 2971.78, 131, 6, 2866.09, 105.69, 57, 80], ["2026-10-28", 139, 3269.19, 132, 7, 3143.93, 125.26, 58, 73], ["2026-10-29", 118, 2711.19, 116, 2, 2676.83, 34.36, 45, 68], ["2026-10-30", 125, 3032.08, 123, 2, 3000.51, 31.57, 51, 71], ["2026-10-31", 150, 3570.14, 143, 7, 3442.09, 128.05, 55, 91], ["2026-11-01", 221, 5178.99, 209, 12, 4959.21, 219.78, 73, 142], ["2026-11-02", 124, 2811.56, 118, 6, 2713.89, 97.67, 49, 73], ["2026-11-03", 130, 3055.82, 124, 6, 2946.12, 109.7, 45, 77], ["2026-11-04", 135, 3116.57, 129, 6, 3012.56, 104.01, 54, 74], ["2026-11-05", 155, 3482.09, 151, 4, 3411.83, 70.26, 66, 64], ["2026-11-06", 137, 3235.61, 131, 6, 3124.85, 110.76, 55, 78], ["2026-11-07", 173, 4058.24, 164, 9, 3907.55, 150.69, 66, 102], ["2026-11-08", 188, 4402.42, 181, 7, 4285.59, 116.83, 87, 94], ["2026-11-09", 146, 3450.17, 141, 5, 3362.4, 87.77, 58, 81], ["2026-11-10", 156, 3674.76, 151, 5, 3589.32, 85.44, 68, 80]],
-        "TVG6390": [["2026-04-07", 42, 979.25, 40, 2, 946.85, 32.4, 5, 33], ["2026-04-08", 1264, 29548.68, 1207, 57, 28555.92, 992.76, 181, 1024], ["2026-04-09", 1073, 25328.62, 1002, 71, 24102.98, 1225.64, 180, 870], ["2026-04-10", 639, 14804.64, 595, 44, 14027.44, 777.2, 148, 476], ["2026-04-11", 739, 16956.41, 674, 65, 15809.41, 1147.0, 156, 561], ["2026-04-12", 1042, 24011.32, 976, 66, 22871.77, 1139.55, 252, 761], ["2026-04-13", 531, 12223.97, 497, 34, 11625.53, 598.44, 145, 373], ["2026-04-14", 465, 10789.71, 441, 24, 10363.86, 425.85, 133, 325], ["2026-04-15", 531, 12359.07, 503, 28, 11848.71, 510.36, 155, 361], ["2026-04-16", 547, 12777.46, 522, 25, 12334.17, 443.29, 136, 400], ["2026-04-17", 461, 10776.71, 430, 31, 10206.13, 570.58, 136, 311], ["2026-04-18", 440, 10257.75, 411, 29, 9760.99, 496.76, 141, 288], ["2026-04-19", 502, 11774.73, 474, 28, 11271.3, 503.43, 164, 329], ["2026-04-20", 457, 10644.74, 419, 38, 9954.87, 689.87, 137, 307], ["2026-04-21", 380, 8834.63, 354, 26, 8360.73, 473.9, 134, 235], ["2026-04-22", 399, 9376.18, 385, 14, 9133.96, 242.22, 152, 243], ["2026-04-23", 375, 8604.1, 348, 27, 8114.09, 490.01, 130, 239], ["2026-04-24", 321, 7383.47, 301, 20, 7023.65, 359.82, 120, 195], ["2026-04-25", 553, 12561.84, 520, 33, 11978.04, 583.8, 185, 359], ["2026-04-26", 587, 13340.69, 540, 47, 12508.96, 831.73, 189, 386], ["2026-04-27", 347, 8057.51, 334, 13, 7827.9, 229.61, 101, 242], ["2026-04-28", 255, 5793.82, 245, 10, 5606.89, 186.93, 75, 169], ["2026-04-29", 203, 4676.66, 202, 1, 4660.8, 15.86, 57, 140], ["2026-04-30", 218, 5186.02, 218, 0, 5186.02, 0.0, 65, 151], ["2026-05-01", 219, 5072.31, 219, 0, 5072.31, 0.0, 55, 162], ["2026-05-02", 218, 5134.92, 218, 0, 5134.92, 0.0, 38, 176], ["2026-05-03", 252, 5874.57, 252, 0, 5874.57, 0.0, 67, 176], ["2026-05-04", 181, 4148.43, 181, 0, 4148.43, 0.0, 43, 134], ["2026-05-05", 166, 3829.52, 166, 0, 3829.52, 0.0, 51, 111], ["2026-05-06", 154, 3520.99, 154, 0, 3520.99, 0.0, 55, 94], ["2026-05-07", 157, 3586.0, 157, 0, 3586.0, 0.0, 47, 109], ["2026-05-08", 99, 2290.12, 99, 0, 2290.12, 0.0, 36, 60], ["2026-05-09", 344, 7958.93, 344, 0, 7958.93, 0.0, 83, 253], ["2026-05-10", 309, 7132.73, 309, 0, 7132.73, 0.0, 86, 219], ["2026-05-11", 114, 2608.34, 114, 0, 2608.34, 0.0, 33, 77], ["2026-05-12", 81, 1762.33, 81, 0, 1762.33, 0.0, 17, 62], ["2026-05-13", 93, 2157.32, 93, 0, 2157.32, 0.0, 25, 63], ["2026-05-14", 70, 1473.43, 70, 0, 1473.43, 0.0, 20, 49], ["2026-05-15", 97, 2226.14, 97, 0, 2226.14, 0.0, 32, 65], ["2026-05-16", 154, 3605.36, 154, 0, 3605.36, 0.0, 36, 113], ["2026-05-17", 122, 2834.62, 122, 0, 2834.62, 0.0, 31, 90], ["2026-05-18", 140, 3208.92, 140, 0, 3208.92, 0.0, 37, 95], ["2026-05-19", 87, 1956.56, 87, 0, 1956.56, 0.0, 35, 52], ["2026-05-20", 98, 2248.26, 98, 0, 2248.26, 0.0, 38, 57], ["2026-05-21", 89, 2057.1, 89, 0, 2057.1, 0.0, 31, 58], ["2026-05-22", 255, 6020.04, 255, 0, 6020.04, 0.0, 69, 177], ["2026-05-23", 230, 5383.97, 230, 0, 5383.97, 0.0, 60, 163], ["2026-05-24", 213, 5024.5, 213, 0, 5024.5, 0.0, 60, 148], ["2026-05-25", 314, 7476.36, 314, 0, 7476.36, 0.0, 81, 227], ["2026-05-26", 82, 1843.09, 82, 0, 1843.09, 0.0, 24, 56], ["2026-05-27", 66, 1543.19, 66, 0, 1543.19, 0.0, 20, 45], ["2026-05-28", 90, 2133.85, 90, 0, 2133.85, 0.0, 27, 58], ["2026-05-29", 58, 1300.0, 58, 0, 1300.0, 0.0, 20, 37], ["2026-05-30", 81, 1898.46, 81, 0, 1898.46, 0.0, 22, 51], ["2026-05-31", 76, 1737.43, 76, 0, 1737.43, 0.0, 22, 49], ["2026-06-01", 103, 2398.34, 103, 0, 2398.34, 0.0, 22, 79], ["2026-06-02", 98, 2106.3, 98, 0, 2106.3, 0.0, 30, 65], ["2026-06-03", 108, 2469.48, 108, 0, 2469.48, 0.0, 29, 72], ["2026-06-04", 87, 1933.16, 87, 0, 1933.16, 0.0, 30, 55], ["2026-06-05", 104, 2423.8, 104, 0, 2423.8, 0.0, 24, 77], ["2026-06-06", 111, 2607.07, 111, 0, 2607.07, 0.0, 31, 75], ["2026-06-07", 109, 2622.12, 109, 0, 2622.12, 0.0, 27, 78], ["2026-06-08", 222, 5246.63, 222, 0, 5246.63, 0.0, 31, 181], ["2026-06-09", 130, 3074.96, 130, 0, 3074.96, 0.0, 55, 72], ["2026-06-10", 97, 2199.55, 97, 0, 2199.55, 0.0, 34, 63], ["2026-06-11", 185, 4325.58, 185, 0, 4325.58, 0.0, 50, 121], ["2026-06-12", 112, 2609.27, 112, 0, 2609.27, 0.0, 33, 75], ["2026-06-13", 221, 5356.38, 221, 0, 5356.38, 0.0, 47, 168], ["2026-06-14", 366, 8808.87, 366, 0, 8808.87, 0.0, 68, 290], ["2026-06-15", 364, 8675.16, 364, 0, 8675.16, 0.0, 39, 313], ["2026-06-16", 137, 3251.09, 137, 0, 3251.09, 0.0, 19, 111], ["2026-07-29", 76, 1681.72, 62, 14, 1432.94, 248.78, 13, 57], ["2026-07-30", 177, 4087.08, 159, 18, 3777.76, 309.32, 49, 113], ["2026-07-31", 239, 5526.93, 224, 15, 5266.06, 260.87, 49, 176], ["2026-08-01", 175, 4044.96, 155, 20, 3707.04, 337.92, 47, 118], ["2026-08-02", 256, 5911.57, 242, 14, 5672.29, 239.28, 69, 181], ["2026-08-03", 91, 2023.72, 83, 8, 1892.89, 130.83, 32, 55], ["2026-08-04", 83, 1860.65, 79, 4, 1794.98, 65.67, 31, 52], ["2026-08-05", 266, 6347.07, 254, 12, 6148.2, 198.87, 56, 201], ["2026-08-06", 246, 5550.57, 215, 31, 5011.14, 539.43, 78, 158], ["2026-08-07", 159, 3619.19, 134, 25, 3195.08, 424.11, 51, 105], ["2026-08-08", 368, 7664.91, 313, 55, 6770.37, 894.54, 86, 263], ["2026-08-09", 452, 9576.74, 398, 54, 8645.86, 930.88, 104, 330], ["2026-08-10", 151, 3396.39, 126, 25, 2973.23, 423.16, 47, 99], ["2026-08-11", 148, 3348.96, 128, 20, 3015.1, 333.86, 44, 99], ["2026-08-12", 158, 3549.29, 130, 28, 3068.17, 481.12, 49, 105], ["2026-08-13", 161, 3763.7, 143, 18, 3459.39, 304.31, 62, 94], ["2026-08-14", 170, 3903.73, 149, 21, 3529.5, 374.23, 57, 108], ["2026-08-15", 193, 4501.35, 176, 17, 4200.83, 300.52, 60, 116], ["2026-08-16", 182, 4215.1, 158, 24, 3791.66, 423.44, 79, 100], ["2026-08-17", 162, 3739.17, 144, 18, 3406.14, 333.03, 52, 107], ["2026-08-18", 166, 3863.99, 157, 9, 3707.67, 156.32, 58, 103], ["2026-08-19", 137, 3091.33, 121, 16, 2810.28, 281.05, 49, 85], ["2026-08-20", 182, 4169.16, 167, 15, 3897.95, 271.21, 59, 120], ["2026-08-21", 160, 3804.52, 153, 7, 3680.0, 124.52, 57, 97], ["2026-08-22", 188, 4449.3, 174, 14, 4206.39, 242.91, 75, 110], ["2026-08-23", 242, 5723.78, 232, 10, 5534.84, 188.94, 67, 163], ["2026-08-24", 216, 5063.78, 201, 15, 4792.77, 271.01, 64, 148], ["2026-08-25", 250, 5990.61, 238, 12, 5775.8, 214.81, 89, 156], ["2026-08-26", 266, 6386.2, 256, 10, 6228.34, 157.86, 80, 179], ["2026-08-27", 237, 5664.38, 234, 3, 5617.65, 46.73, 67, 163], ["2026-08-28", 266, 6357.82, 259, 7, 6230.73, 127.09, 81, 173], ["2026-08-29", 257, 6075.02, 244, 13, 5844.97, 230.05, 74, 176], ["2026-08-30", 300, 7173.48, 289, 11, 6973.65, 199.83, 89, 206], ["2026-08-31", 205, 4885.57, 195, 10, 4701.95, 183.62, 74, 129], ["2026-09-01", 196, 4690.92, 191, 5, 4602.66, 88.26, 62, 126], ["2026-09-02", 223, 5264.43, 214, 9, 5111.01, 153.42, 93, 122], ["2026-09-03", 177, 4196.25, 170, 7, 4071.21, 125.04, 60, 113], ["2026-09-04", 194, 4604.75, 185, 9, 4449.88, 154.87, 66, 120], ["2026-09-05", 308, 7312.36, 283, 25, 6877.67, 434.69, 113, 184], ["2026-09-06", 373, 9013.79, 347, 26, 8541.28, 472.51, 132, 232], ["2026-09-07", 410, 9727.38, 380, 30, 9193.26, 534.12, 145, 252], ["2026-09-08", 146, 3534.18, 141, 5, 3445.02, 89.16, 66, 76], ["2026-09-09", 127, 2949.5, 120, 7, 2827.13, 122.37, 58, 69], ["2026-09-10", 155, 3706.95, 151, 4, 3636.96, 69.99, 45, 105], ["2026-09-11", 138, 3228.57, 137, 1, 3209.19, 19.38, 40, 98], ["2026-09-12", 173, 4193.33, 167, 6, 4091.24, 102.09, 75, 92], ["2026-09-13", 256, 6100.19, 246, 10, 5918.63, 181.56, 111, 140], ["2026-09-14", 155, 3732.26, 150, 5, 3656.38, 75.88, 68, 85], ["2026-09-15", 118, 2803.5, 112, 6, 2700.11, 103.39, 55, 57], ["2026-09-16", 148, 3587.87, 140, 8, 3443.36, 144.51, 66, 79], ["2026-09-17", 119, 2798.81, 114, 5, 2714.9, 83.91, 56, 60], ["2026-09-18", 119, 2823.38, 115, 4, 2756.81, 66.57, 55, 58], ["2026-09-19", 94, 2224.72, 89, 5, 2136.03, 88.69, 41, 50], ["2026-09-20", 216, 5229.61, 211, 5, 5141.94, 87.67, 88, 120], ["2026-09-21", 116, 2733.42, 110, 6, 2648.45, 84.97, 56, 59], ["2026-09-22", 125, 2996.51, 123, 2, 2963.29, 33.22, 55, 68], ["2026-09-23", 141, 3300.63, 133, 8, 3158.09, 142.54, 59, 80], ["2026-09-24", 113, 2676.11, 109, 4, 2612.92, 63.19, 53, 58], ["2026-09-25", 118, 2754.61, 113, 5, 2665.6, 89.01, 61, 54], ["2026-09-26", 175, 4012.77, 161, 14, 3777.71, 235.06, 88, 83], ["2026-09-27", 152, 3512.98, 144, 8, 3371.18, 141.8, 64, 86], ["2026-09-28", 123, 2812.28, 111, 12, 2607.32, 204.96, 59, 61], ["2026-09-29", 137, 3147.71, 124, 13, 2916.86, 230.85, 62, 70], ["2026-09-30", 109, 2589.74, 107, 2, 2560.36, 29.38, 46, 61], ["2026-10-01", 117, 2714.74, 113, 4, 2664.08, 50.66, 44, 68], ["2026-10-02", 119, 2754.73, 110, 9, 2605.62, 149.11, 52, 62], ["2026-10-03", 123, 2937.1, 119, 4, 2865.99, 71.11, 43, 77], ["2026-10-04", 156, 3723.61, 147, 9, 3592.09, 131.52, 56, 92], ["2026-10-05", 83, 1953.06, 79, 4, 1886.92, 66.14, 27, 54], ["2026-10-06", 79, 1874.79, 76, 3, 1823.83, 50.96, 33, 46], ["2026-10-07", 80, 1864.33, 76, 4, 1797.04, 67.29, 20, 58], ["2026-10-08", 122, 2858.26, 115, 7, 2745.91, 112.35, 55, 66], ["2026-10-09", 126, 2849.08, 122, 4, 2781.22, 67.86, 46, 78], ["2026-10-10", 225, 5093.74, 216, 9, 4947.96, 145.78, 59, 162], ["2026-10-11", 280, 6350.56, 269, 11, 6171.21, 179.35, 85, 186], ["2026-10-12", 154, 3666.5, 150, 4, 3598.28, 68.22, 46, 98], ["2026-10-13", 112, 2616.28, 110, 2, 2587.18, 29.1, 46, 64], ["2026-10-14", 127, 2977.46, 126, 1, 2962.9, 14.56, 54, 72], ["2026-10-15", 84, 1923.58, 83, 1, 1905.26, 18.32, 32, 49], ["2026-10-16", 83, 1884.33, 79, 4, 1825.61, 58.72, 39, 41], ["2026-10-17", 157, 3721.03, 149, 8, 3580.66, 140.37, 53, 100], ["2026-10-18", 182, 4233.2, 175, 7, 4120.14, 113.06, 77, 99], ["2026-10-19", 71, 1685.44, 69, 2, 1650.02, 35.42, 34, 37], ["2026-10-20", 72, 1715.18, 70, 2, 1677.87, 37.31, 20, 49], ["2026-10-21", 70, 1640.02, 65, 5, 1550.84, 89.18, 29, 39], ["2026-10-22", 68, 1533.97, 65, 3, 1478.71, 55.26, 30, 37], ["2026-10-23", 63, 1475.54, 55, 8, 1335.84, 139.7, 30, 31], ["2026-10-24", 80, 1885.94, 76, 4, 1817.83, 68.11, 29, 51], ["2026-10-25", 76, 1774.04, 74, 2, 1737.58, 36.46, 33, 41], ["2026-10-26", 65, 1518.78, 63, 2, 1481.89, 36.89, 16, 43], ["2026-10-27", 52, 1123.65, 46, 6, 1023.24, 100.41, 18, 33], ["2026-10-28", 57, 1317.75, 55, 2, 1282.02, 35.73, 20, 36], ["2026-10-29", 41, 966.5, 41, 0, 966.5, 0.0, 18, 21], ["2026-10-30", 53, 1290.11, 51, 2, 1257.91, 32.2, 23, 26], ["2026-10-31", 71, 1714.31, 65, 6, 1604.31, 110.0, 23, 46], ["2026-11-01", 96, 2279.93, 92, 4, 2206.04, 73.89, 38, 58], ["2026-11-02", 59, 1350.99, 54, 5, 1271.41, 79.58, 21, 37], ["2026-11-03", 64, 1498.6, 60, 4, 1422.76, 75.84, 24, 34], ["2026-11-04", 92, 2083.01, 87, 5, 1988.03, 94.98, 28, 62], ["2026-11-05", 98, 2144.86, 94, 4, 2072.95, 71.91, 30, 48], ["2026-11-06", 52, 1164.14, 47, 5, 1076.43, 87.71, 14, 37], ["2026-11-07", 78, 1824.04, 73, 5, 1738.64, 85.4, 20, 57], ["2026-11-08", 73, 1740.43, 71, 2, 1703.28, 37.15, 23, 49], ["2026-11-09", 77, 1678.04, 74, 3, 1642.64, 35.4, 24, 47], ["2026-11-10", 66, 1572.59, 64, 2, 1536.85, 35.74, 25, 41]]
+        "TVG6370": [["2026-04-07", 51, 1187.9, 51, 0, 1187.9, 0.0, 10, 41], ["2026-04-08", 747, 17312.05, 693, 54, 16385.95, 926.1, 112, 603], ["2026-04-09", 815, 19512.57, 782, 33, 18937.56, 575.01, 118, 670], ["2026-04-10", 452, 10550.09, 424, 28, 10051.19, 498.9, 83, 358], ["2026-04-11", 599, 13797.61, 552, 47, 12985.52, 812.09, 144, 444], ["2026-04-12", 818, 18829.34, 751, 67, 17709.61, 1119.73, 172, 624], ["2026-04-13", 398, 9273.43, 379, 19, 8938.77, 334.66, 98, 286], ["2026-04-14", 333, 7642.39, 311, 22, 7267.81, 374.58, 102, 228], ["2026-04-15", 461, 10796.73, 434, 27, 10334.89, 461.84, 113, 337], ["2026-04-16", 444, 10305.69, 414, 30, 9781.32, 524.37, 115, 320], ["2026-04-17", 420, 9888.46, 391, 29, 9366.14, 522.32, 107, 302], ["2026-04-18", 357, 8351.83, 330, 27, 7885.66, 466.17, 96, 255], ["2026-04-19", 440, 10336.58, 415, 25, 9897.06, 439.52, 127, 297], ["2026-04-20", 463, 10730.43, 438, 25, 10291.6, 438.83, 123, 324], ["2026-04-21", 357, 8340.09, 340, 17, 8032.69, 307.4, 93, 258], ["2026-04-22", 363, 8420.4, 343, 20, 8070.26, 350.14, 118, 238], ["2026-04-23", 353, 8073.26, 328, 25, 7619.3, 453.96, 110, 235], ["2026-04-24", 299, 6969.07, 287, 12, 6761.96, 207.11, 80, 210], ["2026-04-25", 427, 9569.44, 395, 32, 9020.28, 549.16, 128, 291], ["2026-04-26", 649, 14803.32, 618, 31, 14280.72, 522.6, 177, 453], ["2026-04-27", 273, 6269.24, 258, 15, 5994.78, 274.46, 74, 191], ["2026-04-28", 229, 5274.59, 223, 6, 5163.72, 110.87, 60, 166], ["2026-04-29", 232, 5293.65, 218, 14, 5041.78, 251.87, 60, 167], ["2026-04-30", 193, 4433.09, 176, 17, 4122.59, 310.5, 46, 142], ["2026-05-01", 227, 5145.74, 215, 12, 4922.57, 223.17, 50, 167], ["2026-05-02", 300, 6950.36, 285, 15, 6681.94, 268.42, 54, 228], ["2026-05-03", 293, 6730.22, 278, 15, 6467.08, 263.14, 65, 212], ["2026-05-04", 181, 4168.68, 175, 6, 4054.62, 114.06, 41, 137], ["2026-05-05", 175, 3961.3, 167, 8, 3817.33, 143.97, 43, 130], ["2026-05-06", 201, 4385.77, 185, 16, 4117.23, 268.54, 52, 144], ["2026-05-07", 178, 4094.69, 166, 12, 3879.69, 215.0, 50, 125], ["2026-05-08", 141, 3191.94, 135, 6, 3087.94, 104.0, 34, 102], ["2026-05-09", 400, 8994.98, 370, 30, 8488.66, 506.32, 78, 311], ["2026-05-10", 376, 8565.77, 354, 22, 8176.98, 388.79, 90, 280], ["2026-05-11", 109, 2511.46, 103, 6, 2400.61, 110.85, 25, 76], ["2026-05-12", 93, 2045.46, 85, 8, 1894.86, 150.6, 31, 61], ["2026-05-13", 97, 2250.13, 93, 4, 2179.19, 70.94, 18, 78], ["2026-05-14", 77, 1728.36, 72, 5, 1637.66, 90.7, 18, 56], ["2026-05-15", 87, 1971.3, 84, 3, 1916.26, 55.04, 17, 68], ["2026-05-16", 190, 4396.49, 180, 10, 4218.69, 177.8, 30, 149], ["2026-05-17", 125, 2873.42, 115, 10, 2706.33, 167.09, 37, 87], ["2026-05-18", 146, 3357.3, 137, 9, 3199.77, 157.53, 29, 115], ["2026-05-19", 124, 2741.05, 120, 4, 2670.61, 70.44, 35, 86], ["2026-05-20", 112, 2560.13, 106, 6, 2450.71, 109.42, 36, 72], ["2026-05-21", 115, 2611.4, 112, 3, 2572.37, 39.03, 34, 76], ["2026-05-22", 342, 7905.95, 315, 27, 7440.9, 465.05, 79, 251], ["2026-05-23", 254, 5882.5, 233, 21, 5535.37, 347.13, 50, 198], ["2026-05-24", 270, 6372.34, 258, 12, 6164.16, 208.18, 75, 187], ["2026-05-25", 322, 7652.14, 322, 0, 7652.14, 0.0, 69, 243], ["2026-05-26", 96, 2211.35, 96, 0, 2211.35, 0.0, 32, 62], ["2026-05-27", 80, 1828.4, 80, 0, 1828.4, 0.0, 20, 58], ["2026-05-28", 93, 2137.83, 93, 0, 2137.83, 0.0, 25, 65], ["2026-05-29", 109, 2491.25, 109, 0, 2491.25, 0.0, 24, 79], ["2026-05-30", 77, 1825.58, 77, 0, 1825.58, 0.0, 23, 50], ["2026-05-31", 89, 2123.4, 89, 0, 2123.4, 0.0, 26, 60], ["2026-06-01", 133, 3001.97, 133, 0, 3001.97, 0.0, 28, 102], ["2026-06-02", 119, 2850.38, 119, 0, 2850.38, 0.0, 26, 82], ["2026-06-03", 137, 3192.28, 137, 0, 3192.28, 0.0, 31, 99], ["2026-06-04", 84, 1886.11, 84, 0, 1886.11, 0.0, 23, 55], ["2026-06-05", 123, 2859.58, 123, 0, 2859.58, 0.0, 19, 99], ["2026-06-06", 154, 3662.3, 154, 0, 3662.3, 0.0, 52, 95], ["2026-06-07", 112, 2643.18, 112, 0, 2643.18, 0.0, 26, 81], ["2026-06-08", 142, 3320.61, 142, 0, 3320.61, 0.0, 26, 112], ["2026-06-09", 88, 1994.74, 88, 0, 1994.74, 0.0, 22, 63], ["2026-06-10", 123, 2794.46, 123, 0, 2794.46, 0.0, 25, 93], ["2026-06-11", 123, 2844.07, 123, 0, 2844.07, 0.0, 26, 92], ["2026-06-12", 105, 2429.04, 105, 0, 2429.04, 0.0, 26, 78], ["2026-06-13", 194, 4695.78, 194, 0, 4695.78, 0.0, 41, 147], ["2026-06-14", 209, 5042.11, 209, 0, 5042.11, 0.0, 35, 168], ["2026-06-15", 130, 3027.94, 130, 0, 3027.94, 0.0, 23, 103], ["2026-06-16", 100, 2260.49, 100, 0, 2260.49, 0.0, 23, 76], ["2026-06-17", 134, 3110.15, 134, 0, 3110.15, 0.0, 31, 100], ["2026-06-18", 111, 2614.08, 111, 0, 2614.08, 0.0, 32, 77], ["2026-06-19", 85, 2055.9, 85, 0, 2055.9, 0.0, 27, 54], ["2026-06-20", 222, 5257.1, 222, 0, 5257.1, 0.0, 49, 163], ["2026-06-21", 211, 5042.12, 211, 0, 5042.12, 0.0, 42, 164], ["2026-06-22", 125, 2944.27, 125, 0, 2944.27, 0.0, 28, 90], ["2026-06-23", 93, 2104.57, 93, 0, 2104.57, 0.0, 22, 71], ["2026-06-24", 78, 1779.69, 78, 0, 1779.69, 0.0, 13, 60], ["2026-06-25", 76, 1804.2, 76, 0, 1804.2, 0.0, 17, 58], ["2026-06-26", 83, 1843.83, 83, 0, 1843.83, 0.0, 25, 51], ["2026-06-27", 149, 3615.84, 149, 0, 3615.84, 0.0, 30, 115], ["2026-06-28", 95, 2240.28, 95, 0, 2240.28, 0.0, 21, 71], ["2026-06-29", 109, 2591.81, 109, 0, 2591.81, 0.0, 30, 77], ["2026-06-30", 104, 2446.21, 104, 0, 2446.21, 0.0, 20, 80], ["2026-07-01", 222, 4850.53, 222, 0, 4850.53, 0.0, 32, 175], ["2026-07-02", 191, 4131.92, 191, 0, 4131.92, 0.0, 33, 147], ["2026-07-03", 278, 6159.0, 278, 0, 6159.0, 0.0, 43, 217], ["2026-07-04", 270, 5937.29, 270, 0, 5937.29, 0.0, 38, 215], ["2026-07-05", 370, 8141.75, 370, 0, 8141.75, 0.0, 52, 301], ["2026-07-06", 94, 2188.9, 94, 0, 2188.9, 0.0, 23, 70], ["2026-07-07", 85, 2024.95, 85, 0, 2024.95, 0.0, 20, 60], ["2026-07-08", 107, 2447.9, 107, 0, 2447.9, 0.0, 25, 75], ["2026-07-09", 93, 2149.27, 93, 0, 2149.27, 0.0, 17, 70], ["2026-07-10", 134, 3074.69, 134, 0, 3074.69, 0.0, 25, 103], ["2026-07-11", 126, 2909.78, 126, 0, 2909.78, 0.0, 26, 95], ["2026-07-12", 93, 2215.39, 93, 0, 2215.39, 0.0, 32, 56], ["2026-07-13", 81, 1838.91, 81, 0, 1838.91, 0.0, 18, 61], ["2026-07-14", 87, 1980.31, 87, 0, 1980.31, 0.0, 21, 59], ["2026-07-15", 103, 2391.25, 103, 0, 2391.25, 0.0, 28, 69], ["2026-07-16", 102, 2442.43, 102, 0, 2442.43, 0.0, 21, 77], ["2026-07-17", 107, 2468.96, 107, 0, 2468.96, 0.0, 28, 70], ["2026-07-18", 115, 2687.62, 115, 0, 2687.62, 0.0, 30, 80], ["2026-07-19", 109, 2505.7, 109, 0, 2505.7, 0.0, 31, 76], ["2026-07-20", 90, 2093.84, 90, 0, 2093.84, 0.0, 22, 60], ["2026-07-21", 149, 3487.48, 149, 0, 3487.48, 0.0, 35, 103], ["2026-07-22", 135, 3147.11, 135, 0, 3147.11, 0.0, 35, 98], ["2026-07-23", 122, 2808.26, 122, 0, 2808.26, 0.0, 23, 96], ["2026-07-24", 159, 3743.12, 159, 0, 3743.12, 0.0, 28, 122], ["2026-07-25", 142, 3347.37, 142, 0, 3347.37, 0.0, 34, 101], ["2026-07-26", 202, 4844.48, 202, 0, 4844.48, 0.0, 48, 145], ["2026-07-27", 112, 2521.13, 112, 0, 2521.13, 0.0, 29, 80], ["2026-07-28", 114, 2620.91, 114, 0, 2620.91, 0.0, 22, 89], ["2026-07-29", 106, 2471.45, 106, 0, 2471.45, 0.0, 27, 78], ["2026-07-30", 89, 2101.22, 89, 0, 2101.22, 0.0, 33, 53], ["2026-07-31", 149, 3538.37, 149, 0, 3538.37, 0.0, 44, 104], ["2026-08-01", 150, 3540.06, 150, 0, 3540.06, 0.0, 38, 107], ["2026-08-02", 8, 202.8, 8, 0, 202.8, 0.0, 0, 8], ["2026-08-05", 138, 3335.1, 138, 0, 3335.1, 0.0, 27, 104], ["2026-08-06", 191, 4446.66, 191, 0, 4446.66, 0.0, 44, 140], ["2026-08-07", 140, 3258.07, 140, 0, 3258.07, 0.0, 36, 92], ["2026-08-08", 337, 7418.0, 337, 0, 7418.0, 0.0, 65, 264], ["2026-08-09", 384, 8348.53, 384, 0, 8348.53, 0.0, 64, 304], ["2026-08-10", 110, 2444.46, 100, 10, 2268.55, 175.91, 30, 71], ["2026-08-11", 166, 3752.74, 147, 19, 3425.8, 326.94, 46, 112], ["2026-08-12", 144, 3219.0, 130, 14, 2964.17, 254.83, 45, 96], ["2026-08-13", 153, 3556.56, 142, 11, 3370.29, 186.27, 58, 93], ["2026-08-14", 130, 2959.94, 126, 4, 2894.29, 65.65, 52, 77], ["2026-08-15", 138, 3246.7, 131, 7, 3131.66, 115.04, 56, 78], ["2026-08-16", 149, 3489.08, 140, 9, 3332.87, 156.21, 53, 90], ["2026-08-17", 128, 2998.66, 123, 5, 2907.99, 90.67, 48, 80], ["2026-08-18", 134, 3073.57, 131, 3, 3018.55, 55.02, 39, 93], ["2026-08-19", 126, 2934.32, 116, 10, 2754.03, 180.29, 42, 79], ["2026-08-20", 160, 3707.88, 156, 4, 3636.34, 71.54, 50, 103], ["2026-08-21", 107, 2458.73, 102, 5, 2368.33, 90.4, 31, 75], ["2026-08-22", 141, 3261.1, 133, 8, 3139.9, 121.2, 42, 93], ["2026-08-23", 175, 4096.21, 167, 8, 3946.89, 149.32, 47, 120], ["2026-08-24", 125, 2885.49, 117, 8, 2752.19, 133.3, 28, 93], ["2026-08-25", 140, 3249.45, 131, 9, 3080.16, 169.29, 38, 98], ["2026-08-26", 146, 3380.63, 135, 11, 3189.91, 190.72, 43, 97], ["2026-08-27", 94, 2193.24, 91, 3, 2137.53, 55.71, 32, 58], ["2026-08-28", 117, 2764.79, 113, 4, 2693.16, 71.63, 39, 74], ["2026-08-29", 144, 3394.15, 136, 8, 3255.85, 138.3, 36, 106], ["2026-08-30", 204, 4909.76, 200, 4, 4839.82, 69.94, 53, 144], ["2026-08-31", 116, 2700.28, 109, 7, 2572.78, 127.5, 36, 74], ["2026-09-01", 102, 2321.74, 99, 3, 2283.36, 38.38, 25, 74], ["2026-09-02", 114, 2717.68, 110, 4, 2645.71, 71.97, 29, 81], ["2026-09-03", 93, 2267.11, 92, 1, 2248.04, 19.07, 34, 58], ["2026-09-04", 123, 2915.7, 118, 5, 2827.38, 88.32, 50, 71], ["2026-09-05", 204, 4827.89, 193, 11, 4629.46, 198.43, 58, 144], ["2026-09-06", 291, 6891.72, 274, 17, 6584.73, 306.99, 77, 204], ["2026-09-07", 309, 7352.96, 293, 16, 7069.2, 283.76, 97, 199], ["2026-09-08", 85, 2003.15, 80, 5, 1915.95, 87.2, 36, 48], ["2026-09-09", 89, 1975.41, 85, 4, 1901.69, 73.72, 36, 50], ["2026-09-10", 95, 2191.55, 92, 3, 2135.4, 56.15, 41, 50], ["2026-09-11", 80, 1883.35, 77, 3, 1833.08, 50.27, 27, 51], ["2026-09-12", 112, 2631.92, 111, 1, 2612.66, 19.26, 44, 65], ["2026-09-13", 163, 3829.75, 157, 6, 3723.37, 106.38, 47, 111], ["2026-09-14", 96, 2138.52, 89, 7, 2003.76, 134.76, 41, 50], ["2026-09-15", 99, 2364.46, 97, 2, 2328.25, 36.21, 41, 48], ["2026-09-16", 107, 2550.94, 105, 2, 2516.61, 34.33, 37, 65], ["2026-09-17", 78, 1822.25, 78, 0, 1822.25, 0.0, 40, 37], ["2026-09-18", 78, 1869.19, 74, 4, 1797.28, 71.91, 27, 51], ["2026-09-19", 87, 2049.56, 79, 8, 1903.22, 146.34, 32, 52], ["2026-09-20", 153, 3641.97, 149, 4, 3575.88, 66.09, 58, 90], ["2026-09-21", 99, 2378.9, 97, 2, 2345.01, 33.89, 42, 52], ["2026-09-22", 101, 2320.58, 98, 3, 2273.0, 47.58, 40, 61], ["2026-09-23", 133, 3088.91, 129, 4, 3018.55, 70.36, 37, 90], ["2026-09-24", 94, 2212.19, 90, 4, 2141.85, 70.34, 41, 51], ["2026-09-25", 91, 2146.85, 86, 5, 2063.26, 83.59, 30, 58], ["2026-09-26", 117, 2751.04, 115, 2, 2716.83, 34.21, 53, 60], ["2026-09-27", 137, 3197.47, 132, 5, 3133.65, 63.82, 52, 83], ["2026-09-28", 105, 2513.31, 104, 1, 2498.16, 15.15, 42, 61], ["2026-09-29", 116, 2760.1, 114, 2, 2723.21, 36.89, 43, 65], ["2026-09-30", 87, 2049.45, 86, 1, 2034.76, 14.69, 46, 39], ["2026-10-01", 91, 2066.51, 87, 4, 1995.18, 71.33, 42, 48], ["2026-10-02", 86, 1971.36, 84, 2, 1935.89, 35.47, 30, 54], ["2026-10-03", 111, 2645.26, 107, 4, 2575.99, 69.27, 35, 67], ["2026-10-04", 130, 3128.32, 124, 6, 3032.89, 95.43, 39, 85], ["2026-10-05", 84, 1925.72, 77, 7, 1814.57, 111.15, 25, 56], ["2026-10-06", 78, 1838.42, 74, 4, 1768.84, 69.58, 24, 52], ["2026-10-07", 92, 2115.08, 91, 1, 2098.74, 16.34, 24, 61], ["2026-10-08", 81, 1918.53, 78, 3, 1864.67, 53.86, 28, 52], ["2026-10-09", 71, 1600.09, 67, 4, 1534.06, 66.03, 29, 42], ["2026-10-10", 194, 4355.13, 179, 15, 4106.65, 248.48, 41, 144], ["2026-10-11", 259, 5837.66, 244, 15, 5595.4, 242.26, 63, 185], ["2026-10-12", 82, 1914.02, 82, 0, 1914.02, 0.0, 24, 53], ["2026-10-13", 66, 1495.42, 64, 2, 1462.69, 32.73, 24, 40], ["2026-10-14", 89, 2152.34, 88, 1, 2134.14, 18.2, 27, 56], ["2026-10-15", 72, 1654.32, 72, 0, 1654.32, 0.0, 31, 38], ["2026-10-16", 72, 1622.0, 70, 2, 1592.64, 29.36, 30, 38], ["2026-10-17", 152, 3580.6, 138, 14, 3325.79, 254.81, 35, 108], ["2026-10-18", 163, 3818.47, 153, 10, 3648.18, 170.29, 53, 104], ["2026-10-19", 64, 1463.98, 63, 1, 1447.02, 16.96, 19, 44], ["2026-10-20", 68, 1609.4, 66, 2, 1575.82, 33.58, 20, 45], ["2026-10-21", 54, 1260.62, 53, 1, 1241.88, 18.74, 24, 29], ["2026-10-22", 45, 1012.34, 41, 4, 941.68, 70.66, 16, 27], ["2026-10-23", 67, 1617.2, 65, 2, 1579.63, 37.57, 22, 41], ["2026-10-24", 88, 2022.7, 83, 5, 1929.39, 93.31, 25, 60], ["2026-10-25", 83, 1955.36, 77, 6, 1857.52, 97.84, 35, 44], ["2026-10-26", 73, 1649.13, 69, 4, 1580.65, 68.48, 18, 51], ["2026-10-27", 52, 1171.27, 50, 2, 1141.14, 30.13, 18, 30], ["2026-10-28", 54, 1217.33, 53, 1, 1198.51, 18.82, 17, 34], ["2026-10-29", 53, 1247.01, 53, 0, 1247.01, 0.0, 22, 31], ["2026-10-30", 57, 1352.13, 56, 1, 1335.08, 17.05, 16, 37], ["2026-10-31", 69, 1653.13, 67, 2, 1619.0, 34.13, 26, 42], ["2026-11-01", 123, 2977.01, 120, 3, 2922.73, 54.28, 34, 85], ["2026-11-02", 56, 1266.35, 53, 3, 1214.63, 51.72, 21, 33], ["2026-11-03", 74, 1730.48, 70, 4, 1654.64, 75.84, 18, 50], ["2026-11-04", 80, 1866.62, 78, 2, 1832.74, 33.88, 23, 53], ["2026-11-05", 77, 1696.07, 74, 3, 1644.61, 51.46, 22, 42], ["2026-11-06", 64, 1530.27, 63, 1, 1511.29, 18.98, 19, 44], ["2026-11-07", 63, 1440.9, 63, 0, 1440.9, 0.0, 16, 45], ["2026-11-08", 83, 1895.83, 77, 6, 1804.23, 91.6, 28, 53], ["2026-11-09", 65, 1465.44, 63, 2, 1435.67, 29.77, 22, 42], ["2026-11-10", 53, 1220.17, 52, 1, 1203.4, 16.77, 29, 24], ["2026-11-11", 56, 1348.18, 54, 2, 1314.81, 33.37, 22, 32]],
+        "TVG6380": [["2026-04-07", 62, 1475.11, 60, 2, 1442.66, 32.45, 10, 48], ["2026-04-08", 1421, 33368.37, 1344, 77, 32054.09, 1314.28, 265, 1058], ["2026-04-09", 2141, 51217.99, 2069, 72, 49974.0, 1243.99, 462, 1558], ["2026-04-10", 1314, 30840.7, 1253, 61, 29765.7, 1075.0, 379, 890], ["2026-04-11", 1836, 42694.58, 1753, 83, 41265.94, 1428.64, 523, 1254], ["2026-04-12", 1928, 44753.13, 1838, 90, 43206.85, 1546.28, 514, 1346], ["2026-04-13", 934, 21751.07, 886, 48, 20936.67, 814.4, 301, 597], ["2026-04-14", 784, 18202.46, 745, 39, 17530.27, 672.19, 233, 521], ["2026-04-15", 1126, 26390.62, 1069, 57, 25429.59, 961.03, 331, 770], ["2026-04-16", 1350, 31639.54, 1293, 57, 30647.25, 992.29, 388, 908], ["2026-04-17", 1141, 27010.91, 1098, 43, 26252.86, 758.05, 349, 744], ["2026-04-18", 1050, 24796.84, 1000, 50, 23908.64, 888.2, 360, 651], ["2026-04-19", 1139, 26846.18, 1092, 47, 26009.13, 837.05, 339, 752], ["2026-04-20", 855, 19977.67, 813, 42, 19248.08, 729.59, 286, 543], ["2026-04-21", 895, 21088.21, 863, 32, 20517.54, 570.67, 322, 547], ["2026-04-22", 986, 23302.02, 959, 27, 22855.64, 446.38, 375, 581], ["2026-04-23", 848, 19975.42, 845, 3, 19923.83, 51.59, 339, 478], ["2026-04-24", 702, 16295.11, 702, 0, 16295.11, 0.0, 288, 396], ["2026-04-25", 1175, 27302.06, 1175, 0, 27302.06, 0.0, 427, 720], ["2026-04-26", 1339, 30947.02, 1339, 0, 30947.02, 0.0, 425, 872], ["2026-04-27", 706, 16458.57, 706, 0, 16458.57, 0.0, 229, 459], ["2026-04-28", 629, 14820.15, 629, 0, 14820.15, 0.0, 145, 463], ["2026-04-29", 454, 10669.8, 454, 0, 10669.8, 0.0, 128, 313], ["2026-04-30", 431, 10169.93, 431, 0, 10169.93, 0.0, 103, 312], ["2026-05-01", 487, 11278.71, 487, 0, 11278.71, 0.0, 132, 335], ["2026-05-02", 544, 12807.23, 544, 0, 12807.23, 0.0, 135, 387], ["2026-05-03", 181, 4188.67, 181, 0, 4188.67, 0.0, 37, 134], ["2026-05-09", 1, 26.0, 1, 0, 26.0, 0.0, 0, 1], ["2026-06-03", 1, 24.7, 1, 0, 24.7, 0.0, 0, 1], ["2026-07-26", 298, 7185.42, 298, 0, 7185.42, 0.0, 58, 191], ["2026-07-27", 353, 8340.57, 339, 14, 8110.43, 230.14, 93, 214], ["2026-07-28", 309, 7004.56, 278, 31, 6490.73, 513.83, 69, 208], ["2026-07-29", 238, 5619.4, 224, 14, 5377.97, 241.43, 57, 158], ["2026-07-30", 225, 5265.62, 209, 16, 4994.07, 271.55, 59, 147], ["2026-07-31", 403, 9490.29, 392, 11, 9296.92, 193.37, 104, 272], ["2026-08-01", 288, 6732.75, 274, 14, 6491.66, 241.09, 89, 181], ["2026-08-02", 428, 10057.07, 408, 20, 9719.16, 337.91, 112, 300], ["2026-08-03", 178, 4126.14, 169, 9, 3968.9, 157.24, 60, 99], ["2026-08-04", 199, 4638.63, 192, 7, 4520.23, 118.4, 85, 106], ["2026-08-05", 511, 12030.74, 497, 14, 11786.97, 243.77, 106, 360], ["2026-08-06", 434, 10148.33, 413, 21, 9812.2, 336.13, 144, 263], ["2026-08-07", 305, 6971.97, 288, 17, 6685.51, 286.46, 98, 191], ["2026-08-08", 669, 14536.48, 637, 32, 14036.67, 499.81, 164, 468], ["2026-08-09", 841, 17979.68, 791, 50, 17101.95, 877.73, 189, 596], ["2026-08-10", 281, 6316.79, 264, 17, 6046.76, 270.03, 110, 154], ["2026-08-11", 331, 7771.8, 321, 10, 7594.56, 177.24, 116, 193], ["2026-08-12", 329, 7734.25, 316, 13, 7512.75, 221.5, 130, 194], ["2026-08-13", 364, 8490.03, 342, 22, 8111.88, 378.15, 158, 198], ["2026-08-14", 385, 8898.82, 366, 19, 8566.56, 332.26, 168, 198], ["2026-08-15", 372, 8789.63, 362, 10, 8617.63, 172.0, 160, 202], ["2026-08-16", 414, 9632.71, 387, 27, 9168.85, 463.86, 174, 225], ["2026-08-17", 360, 8411.91, 338, 22, 8023.95, 387.96, 135, 208], ["2026-08-18", 378, 8898.59, 366, 12, 8685.78, 212.81, 140, 230], ["2026-08-19", 309, 7097.81, 286, 23, 6713.76, 384.05, 127, 170], ["2026-08-20", 363, 8445.26, 342, 21, 8070.75, 374.51, 141, 210], ["2026-08-21", 315, 7264.2, 297, 18, 6949.91, 314.29, 152, 154], ["2026-08-22", 344, 8070.72, 325, 19, 7726.72, 344.0, 145, 192], ["2026-08-23", 399, 9260.56, 378, 21, 8874.66, 385.9, 139, 250], ["2026-08-24", 260, 6050.63, 249, 11, 5871.21, 179.42, 99, 152], ["2026-08-25", 272, 6275.73, 256, 16, 5977.82, 297.91, 102, 162], ["2026-08-26", 278, 6464.07, 268, 10, 6289.15, 174.92, 93, 179], ["2026-08-27", 281, 6628.16, 270, 11, 6432.79, 195.37, 114, 162], ["2026-08-28", 264, 6209.21, 251, 13, 5977.24, 231.97, 102, 156], ["2026-08-29", 257, 5971.8, 238, 19, 5633.65, 338.15, 92, 158], ["2026-08-30", 385, 9022.88, 366, 19, 8697.57, 325.31, 125, 245], ["2026-08-31", 223, 5003.41, 210, 13, 4784.68, 218.73, 83, 132], ["2026-09-01", 223, 5179.36, 210, 13, 4947.12, 232.24, 91, 121], ["2026-09-02", 297, 7004.66, 282, 15, 6737.06, 267.6, 122, 164], ["2026-09-03", 234, 5535.55, 227, 7, 5411.36, 124.19, 95, 130], ["2026-09-04", 274, 6497.93, 264, 10, 6326.57, 171.36, 112, 150], ["2026-09-05", 481, 11270.56, 442, 39, 10595.35, 675.21, 167, 296], ["2026-09-06", 641, 15325.2, 602, 39, 14640.23, 684.97, 197, 417], ["2026-09-07", 642, 15139.11, 597, 45, 14343.34, 795.77, 222, 392], ["2026-09-08", 186, 4382.02, 180, 6, 4277.33, 104.69, 84, 94], ["2026-09-09", 192, 4519.07, 185, 7, 4392.74, 126.33, 81, 103], ["2026-09-10", 209, 4999.31, 201, 8, 4854.08, 145.23, 78, 128], ["2026-09-11", 233, 5435.66, 219, 14, 5185.25, 250.41, 99, 129], ["2026-09-12", 288, 6841.96, 270, 18, 6525.98, 315.98, 134, 146], ["2026-09-13", 379, 8972.73, 352, 27, 8491.96, 480.77, 142, 220], ["2026-09-14", 204, 4741.85, 192, 12, 4535.32, 206.53, 80, 119], ["2026-09-15", 206, 4734.38, 193, 13, 4512.49, 221.89, 106, 94], ["2026-09-16", 256, 6106.9, 249, 7, 5983.65, 123.25, 108, 143], ["2026-09-17", 191, 4491.59, 185, 6, 4385.15, 106.44, 98, 85], ["2026-09-18", 190, 4332.52, 174, 16, 4055.43, 277.09, 81, 102], ["2026-09-19", 212, 4951.29, 198, 14, 4702.91, 248.38, 87, 121], ["2026-09-20", 388, 9158.74, 369, 19, 8822.33, 336.41, 154, 214], ["2026-09-21", 241, 5671.17, 226, 15, 5404.31, 266.86, 123, 113], ["2026-09-22", 245, 5640.43, 233, 12, 5440.27, 200.16, 100, 137], ["2026-09-23", 327, 7695.23, 308, 19, 7351.69, 343.54, 113, 206], ["2026-09-24", 257, 5973.78, 246, 11, 5782.17, 191.61, 114, 139], ["2026-09-25", 243, 5718.32, 232, 11, 5528.26, 190.06, 107, 127], ["2026-09-26", 343, 8049.47, 331, 12, 7846.16, 203.31, 143, 192], ["2026-09-27", 334, 7746.59, 315, 19, 7468.28, 278.31, 153, 177], ["2026-09-28", 228, 5235.16, 209, 19, 4906.72, 328.44, 102, 119], ["2026-09-29", 322, 7398.34, 299, 23, 7006.37, 391.97, 140, 167], ["2026-09-30", 234, 5413.75, 219, 15, 5169.28, 244.47, 111, 117], ["2026-10-01", 262, 5997.88, 248, 14, 5777.9, 219.98, 120, 130], ["2026-10-02", 212, 4867.2, 196, 16, 4598.98, 268.22, 91, 120], ["2026-10-03", 247, 5783.69, 229, 18, 5487.97, 295.72, 97, 139], ["2026-10-04", 284, 6623.15, 266, 18, 6337.02, 286.13, 111, 165], ["2026-10-05", 195, 4487.35, 182, 13, 4266.87, 220.48, 83, 104], ["2026-10-06", 204, 4667.58, 189, 15, 4412.54, 255.04, 66, 130], ["2026-10-07", 219, 5195.61, 214, 5, 5108.46, 87.15, 83, 124], ["2026-10-08", 222, 5172.79, 213, 9, 5015.5, 157.29, 90, 121], ["2026-10-09", 221, 4895.77, 207, 14, 4717.23, 178.54, 93, 121], ["2026-10-10", 347, 7823.29, 328, 19, 7518.06, 305.23, 116, 213], ["2026-10-11", 469, 10612.45, 444, 25, 10202.79, 409.66, 154, 295], ["2026-10-12", 194, 4496.59, 187, 7, 4381.08, 115.51, 66, 116], ["2026-10-13", 149, 3474.75, 138, 11, 3279.18, 195.57, 82, 61], ["2026-10-14", 195, 4467.4, 189, 6, 4365.49, 101.91, 85, 106], ["2026-10-15", 165, 3729.56, 159, 6, 3641.61, 87.95, 59, 102], ["2026-10-16", 164, 3741.25, 158, 6, 3643.88, 97.37, 63, 97], ["2026-10-17", 350, 8191.65, 327, 23, 7787.25, 404.4, 123, 215], ["2026-10-18", 390, 9128.98, 365, 25, 8703.83, 425.15, 125, 252], ["2026-10-19", 133, 3091.17, 123, 10, 2923.89, 167.28, 40, 85], ["2026-10-20", 140, 3183.39, 128, 12, 2985.67, 197.72, 48, 87], ["2026-10-21", 138, 3217.67, 130, 8, 3083.55, 134.12, 53, 82], ["2026-10-22", 119, 2792.01, 116, 3, 2735.71, 56.3, 47, 64], ["2026-10-23", 129, 3015.22, 120, 9, 2863.78, 151.44, 52, 73], ["2026-10-24", 220, 5265.23, 212, 8, 5121.13, 144.1, 65, 142], ["2026-10-25", 175, 4130.23, 163, 12, 3910.57, 219.66, 69, 98], ["2026-10-26", 128, 2882.56, 118, 10, 2704.66, 177.9, 57, 68], ["2026-10-27", 137, 2971.78, 131, 6, 2866.09, 105.69, 57, 80], ["2026-10-28", 139, 3269.19, 132, 7, 3143.93, 125.26, 58, 73], ["2026-10-29", 118, 2711.19, 116, 2, 2676.83, 34.36, 45, 68], ["2026-10-30", 125, 3032.08, 123, 2, 3000.51, 31.57, 51, 71], ["2026-10-31", 150, 3570.14, 143, 7, 3442.09, 128.05, 55, 91], ["2026-11-01", 221, 5178.99, 209, 12, 4959.21, 219.78, 73, 142], ["2026-11-02", 124, 2811.56, 118, 6, 2713.89, 97.67, 49, 73], ["2026-11-03", 130, 3055.82, 124, 6, 2946.12, 109.7, 45, 77], ["2026-11-04", 135, 3116.57, 129, 6, 3012.56, 104.01, 54, 74], ["2026-11-05", 154, 3461.29, 150, 4, 3391.03, 70.26, 65, 64], ["2026-11-06", 137, 3235.61, 131, 6, 3124.85, 110.76, 55, 78], ["2026-11-07", 173, 4058.24, 164, 9, 3907.55, 150.69, 66, 102], ["2026-11-08", 188, 4402.42, 181, 7, 4285.59, 116.83, 87, 94], ["2026-11-09", 146, 3450.17, 141, 5, 3362.4, 87.77, 58, 81], ["2026-11-10", 156, 3674.76, 151, 5, 3589.32, 85.44, 68, 80], ["2026-11-11", 182, 4337.63, 176, 6, 4237.18, 100.45, 93, 77]],
+        "TVG6390": [["2026-04-07", 42, 979.25, 40, 2, 946.85, 32.4, 5, 33], ["2026-04-08", 1264, 29548.68, 1207, 57, 28555.92, 992.76, 181, 1024], ["2026-04-09", 1073, 25328.62, 1002, 71, 24102.98, 1225.64, 180, 870], ["2026-04-10", 639, 14804.64, 595, 44, 14027.44, 777.2, 148, 476], ["2026-04-11", 739, 16956.41, 674, 65, 15809.41, 1147.0, 156, 561], ["2026-04-12", 1042, 24011.32, 976, 66, 22871.77, 1139.55, 252, 761], ["2026-04-13", 531, 12223.97, 497, 34, 11625.53, 598.44, 145, 373], ["2026-04-14", 465, 10789.71, 441, 24, 10363.86, 425.85, 133, 325], ["2026-04-15", 531, 12359.07, 503, 28, 11848.71, 510.36, 155, 361], ["2026-04-16", 547, 12777.46, 522, 25, 12334.17, 443.29, 136, 400], ["2026-04-17", 461, 10776.71, 430, 31, 10206.13, 570.58, 136, 311], ["2026-04-18", 440, 10257.75, 411, 29, 9760.99, 496.76, 141, 288], ["2026-04-19", 502, 11774.73, 474, 28, 11271.3, 503.43, 164, 329], ["2026-04-20", 457, 10644.74, 419, 38, 9954.87, 689.87, 137, 307], ["2026-04-21", 380, 8834.63, 354, 26, 8360.73, 473.9, 134, 235], ["2026-04-22", 399, 9376.18, 385, 14, 9133.96, 242.22, 152, 243], ["2026-04-23", 375, 8604.1, 348, 27, 8114.09, 490.01, 130, 239], ["2026-04-24", 321, 7383.47, 301, 20, 7023.65, 359.82, 120, 195], ["2026-04-25", 553, 12561.84, 520, 33, 11978.04, 583.8, 185, 359], ["2026-04-26", 587, 13340.69, 540, 47, 12508.96, 831.73, 189, 386], ["2026-04-27", 347, 8057.51, 334, 13, 7827.9, 229.61, 101, 242], ["2026-04-28", 255, 5793.82, 245, 10, 5606.89, 186.93, 75, 169], ["2026-04-29", 203, 4676.66, 202, 1, 4660.8, 15.86, 57, 140], ["2026-04-30", 218, 5186.02, 218, 0, 5186.02, 0.0, 65, 151], ["2026-05-01", 219, 5072.31, 219, 0, 5072.31, 0.0, 55, 162], ["2026-05-02", 218, 5134.92, 218, 0, 5134.92, 0.0, 38, 176], ["2026-05-03", 252, 5874.57, 252, 0, 5874.57, 0.0, 67, 176], ["2026-05-04", 181, 4148.43, 181, 0, 4148.43, 0.0, 43, 134], ["2026-05-05", 166, 3829.52, 166, 0, 3829.52, 0.0, 51, 111], ["2026-05-06", 154, 3520.99, 154, 0, 3520.99, 0.0, 55, 94], ["2026-05-07", 157, 3586.0, 157, 0, 3586.0, 0.0, 47, 109], ["2026-05-08", 99, 2290.12, 99, 0, 2290.12, 0.0, 36, 60], ["2026-05-09", 344, 7958.93, 344, 0, 7958.93, 0.0, 83, 253], ["2026-05-10", 309, 7132.73, 309, 0, 7132.73, 0.0, 86, 219], ["2026-05-11", 114, 2608.34, 114, 0, 2608.34, 0.0, 33, 77], ["2026-05-12", 81, 1762.33, 81, 0, 1762.33, 0.0, 17, 62], ["2026-05-13", 93, 2157.32, 93, 0, 2157.32, 0.0, 25, 63], ["2026-05-14", 70, 1473.43, 70, 0, 1473.43, 0.0, 20, 49], ["2026-05-15", 97, 2226.14, 97, 0, 2226.14, 0.0, 32, 65], ["2026-05-16", 154, 3605.36, 154, 0, 3605.36, 0.0, 36, 113], ["2026-05-17", 122, 2834.62, 122, 0, 2834.62, 0.0, 31, 90], ["2026-05-18", 140, 3208.92, 140, 0, 3208.92, 0.0, 37, 95], ["2026-05-19", 87, 1956.56, 87, 0, 1956.56, 0.0, 35, 52], ["2026-05-20", 98, 2248.26, 98, 0, 2248.26, 0.0, 38, 57], ["2026-05-21", 89, 2057.1, 89, 0, 2057.1, 0.0, 31, 58], ["2026-05-22", 255, 6020.04, 255, 0, 6020.04, 0.0, 69, 177], ["2026-05-23", 230, 5383.97, 230, 0, 5383.97, 0.0, 60, 163], ["2026-05-24", 213, 5024.5, 213, 0, 5024.5, 0.0, 60, 148], ["2026-05-25", 314, 7476.36, 314, 0, 7476.36, 0.0, 81, 227], ["2026-05-26", 82, 1843.09, 82, 0, 1843.09, 0.0, 24, 56], ["2026-05-27", 66, 1543.19, 66, 0, 1543.19, 0.0, 20, 45], ["2026-05-28", 90, 2133.85, 90, 0, 2133.85, 0.0, 27, 58], ["2026-05-29", 58, 1300.0, 58, 0, 1300.0, 0.0, 20, 37], ["2026-05-30", 81, 1898.46, 81, 0, 1898.46, 0.0, 22, 51], ["2026-05-31", 76, 1737.43, 76, 0, 1737.43, 0.0, 22, 49], ["2026-06-01", 103, 2398.34, 103, 0, 2398.34, 0.0, 22, 79], ["2026-06-02", 98, 2106.3, 98, 0, 2106.3, 0.0, 30, 65], ["2026-06-03", 108, 2469.48, 108, 0, 2469.48, 0.0, 29, 72], ["2026-06-04", 87, 1933.16, 87, 0, 1933.16, 0.0, 30, 55], ["2026-06-05", 104, 2423.8, 104, 0, 2423.8, 0.0, 24, 77], ["2026-06-06", 111, 2607.07, 111, 0, 2607.07, 0.0, 31, 75], ["2026-06-07", 109, 2622.12, 109, 0, 2622.12, 0.0, 27, 78], ["2026-06-08", 222, 5246.63, 222, 0, 5246.63, 0.0, 31, 181], ["2026-06-09", 130, 3074.96, 130, 0, 3074.96, 0.0, 55, 72], ["2026-06-10", 97, 2199.55, 97, 0, 2199.55, 0.0, 34, 63], ["2026-06-11", 185, 4325.58, 185, 0, 4325.58, 0.0, 50, 121], ["2026-06-12", 112, 2609.27, 112, 0, 2609.27, 0.0, 33, 75], ["2026-06-13", 221, 5356.38, 221, 0, 5356.38, 0.0, 47, 168], ["2026-06-14", 366, 8808.87, 366, 0, 8808.87, 0.0, 68, 290], ["2026-06-15", 364, 8675.16, 364, 0, 8675.16, 0.0, 39, 313], ["2026-06-16", 137, 3251.09, 137, 0, 3251.09, 0.0, 19, 111], ["2026-07-29", 76, 1681.72, 62, 14, 1432.94, 248.78, 13, 57], ["2026-07-30", 177, 4087.08, 159, 18, 3777.76, 309.32, 49, 113], ["2026-07-31", 239, 5526.93, 224, 15, 5266.06, 260.87, 49, 176], ["2026-08-01", 175, 4044.96, 155, 20, 3707.04, 337.92, 47, 118], ["2026-08-02", 256, 5911.57, 242, 14, 5672.29, 239.28, 69, 181], ["2026-08-03", 91, 2023.72, 83, 8, 1892.89, 130.83, 32, 55], ["2026-08-04", 83, 1860.65, 79, 4, 1794.98, 65.67, 31, 52], ["2026-08-05", 266, 6347.07, 254, 12, 6148.2, 198.87, 56, 201], ["2026-08-06", 246, 5550.57, 215, 31, 5011.14, 539.43, 78, 158], ["2026-08-07", 159, 3619.19, 134, 25, 3195.08, 424.11, 51, 105], ["2026-08-08", 368, 7664.91, 313, 55, 6770.37, 894.54, 86, 263], ["2026-08-09", 452, 9576.74, 398, 54, 8645.86, 930.88, 104, 330], ["2026-08-10", 151, 3396.39, 126, 25, 2973.23, 423.16, 47, 99], ["2026-08-11", 148, 3348.96, 128, 20, 3015.1, 333.86, 44, 99], ["2026-08-12", 158, 3549.29, 130, 28, 3068.17, 481.12, 49, 105], ["2026-08-13", 161, 3763.7, 143, 18, 3459.39, 304.31, 62, 94], ["2026-08-14", 170, 3903.73, 149, 21, 3529.5, 374.23, 57, 108], ["2026-08-15", 193, 4501.35, 176, 17, 4200.83, 300.52, 60, 116], ["2026-08-16", 182, 4215.1, 158, 24, 3791.66, 423.44, 79, 100], ["2026-08-17", 162, 3739.17, 144, 18, 3406.14, 333.03, 52, 107], ["2026-08-18", 166, 3863.99, 157, 9, 3707.67, 156.32, 58, 103], ["2026-08-19", 137, 3091.33, 121, 16, 2810.28, 281.05, 49, 85], ["2026-08-20", 182, 4169.16, 167, 15, 3897.95, 271.21, 59, 120], ["2026-08-21", 160, 3804.52, 153, 7, 3680.0, 124.52, 57, 97], ["2026-08-22", 188, 4449.3, 174, 14, 4206.39, 242.91, 75, 110], ["2026-08-23", 242, 5723.78, 232, 10, 5534.84, 188.94, 67, 163], ["2026-08-24", 216, 5063.78, 201, 15, 4792.77, 271.01, 64, 148], ["2026-08-25", 250, 5990.61, 238, 12, 5775.8, 214.81, 89, 156], ["2026-08-26", 266, 6386.2, 256, 10, 6228.34, 157.86, 80, 179], ["2026-08-27", 237, 5664.38, 234, 3, 5617.65, 46.73, 67, 163], ["2026-08-28", 266, 6357.82, 259, 7, 6230.73, 127.09, 81, 173], ["2026-08-29", 257, 6075.02, 244, 13, 5844.97, 230.05, 74, 176], ["2026-08-30", 300, 7173.48, 289, 11, 6973.65, 199.83, 89, 206], ["2026-08-31", 205, 4885.57, 195, 10, 4701.95, 183.62, 74, 129], ["2026-09-01", 196, 4690.92, 191, 5, 4602.66, 88.26, 62, 126], ["2026-09-02", 223, 5264.43, 214, 9, 5111.01, 153.42, 93, 122], ["2026-09-03", 177, 4196.25, 170, 7, 4071.21, 125.04, 60, 113], ["2026-09-04", 194, 4604.75, 185, 9, 4449.88, 154.87, 66, 120], ["2026-09-05", 308, 7312.36, 283, 25, 6877.67, 434.69, 113, 184], ["2026-09-06", 373, 9013.79, 347, 26, 8541.28, 472.51, 132, 232], ["2026-09-07", 410, 9727.38, 380, 30, 9193.26, 534.12, 145, 252], ["2026-09-08", 146, 3534.18, 141, 5, 3445.02, 89.16, 66, 76], ["2026-09-09", 127, 2949.5, 120, 7, 2827.13, 122.37, 58, 69], ["2026-09-10", 155, 3706.95, 151, 4, 3636.96, 69.99, 45, 105], ["2026-09-11", 138, 3228.57, 137, 1, 3209.19, 19.38, 40, 98], ["2026-09-12", 173, 4193.33, 167, 6, 4091.24, 102.09, 75, 92], ["2026-09-13", 256, 6100.19, 246, 10, 5918.63, 181.56, 111, 140], ["2026-09-14", 155, 3732.26, 150, 5, 3656.38, 75.88, 68, 85], ["2026-09-15", 118, 2803.5, 112, 6, 2700.11, 103.39, 55, 57], ["2026-09-16", 148, 3587.87, 140, 8, 3443.36, 144.51, 66, 79], ["2026-09-17", 119, 2798.81, 114, 5, 2714.9, 83.91, 56, 60], ["2026-09-18", 119, 2823.38, 115, 4, 2756.81, 66.57, 55, 58], ["2026-09-19", 94, 2224.72, 89, 5, 2136.03, 88.69, 41, 50], ["2026-09-20", 216, 5229.61, 211, 5, 5141.94, 87.67, 88, 120], ["2026-09-21", 116, 2733.42, 110, 6, 2648.45, 84.97, 56, 59], ["2026-09-22", 125, 2996.51, 123, 2, 2963.29, 33.22, 55, 68], ["2026-09-23", 141, 3300.63, 133, 8, 3158.09, 142.54, 59, 80], ["2026-09-24", 113, 2676.11, 109, 4, 2612.92, 63.19, 53, 58], ["2026-09-25", 118, 2754.61, 113, 5, 2665.6, 89.01, 61, 54], ["2026-09-26", 175, 4012.77, 161, 14, 3777.71, 235.06, 88, 83], ["2026-09-27", 152, 3512.98, 144, 8, 3371.18, 141.8, 64, 86], ["2026-09-28", 123, 2812.28, 111, 12, 2607.32, 204.96, 59, 61], ["2026-09-29", 137, 3147.71, 124, 13, 2916.86, 230.85, 62, 70], ["2026-09-30", 109, 2589.74, 107, 2, 2560.36, 29.38, 46, 61], ["2026-10-01", 117, 2714.74, 113, 4, 2664.08, 50.66, 44, 68], ["2026-10-02", 119, 2754.73, 110, 9, 2605.62, 149.11, 52, 62], ["2026-10-03", 123, 2937.1, 119, 4, 2865.99, 71.11, 43, 77], ["2026-10-04", 156, 3723.61, 147, 9, 3592.09, 131.52, 56, 92], ["2026-10-05", 83, 1953.06, 79, 4, 1886.92, 66.14, 27, 54], ["2026-10-06", 79, 1874.79, 76, 3, 1823.83, 50.96, 33, 46], ["2026-10-07", 80, 1864.33, 76, 4, 1797.04, 67.29, 20, 58], ["2026-10-08", 122, 2858.26, 115, 7, 2745.91, 112.35, 55, 66], ["2026-10-09", 126, 2849.08, 122, 4, 2781.22, 67.86, 46, 78], ["2026-10-10", 225, 5093.74, 216, 9, 4947.96, 145.78, 59, 162], ["2026-10-11", 280, 6350.56, 269, 11, 6171.21, 179.35, 85, 186], ["2026-10-12", 154, 3666.5, 150, 4, 3598.28, 68.22, 46, 98], ["2026-10-13", 112, 2616.28, 110, 2, 2587.18, 29.1, 46, 64], ["2026-10-14", 127, 2977.46, 126, 1, 2962.9, 14.56, 54, 72], ["2026-10-15", 84, 1923.58, 83, 1, 1905.26, 18.32, 32, 49], ["2026-10-16", 83, 1884.33, 79, 4, 1825.61, 58.72, 39, 41], ["2026-10-17", 157, 3721.03, 149, 8, 3580.66, 140.37, 53, 100], ["2026-10-18", 182, 4233.2, 175, 7, 4120.14, 113.06, 77, 99], ["2026-10-19", 71, 1685.44, 69, 2, 1650.02, 35.42, 34, 37], ["2026-10-20", 72, 1715.18, 70, 2, 1677.87, 37.31, 20, 49], ["2026-10-21", 70, 1640.02, 65, 5, 1550.84, 89.18, 29, 39], ["2026-10-22", 68, 1533.97, 65, 3, 1478.71, 55.26, 30, 37], ["2026-10-23", 63, 1475.54, 55, 8, 1335.84, 139.7, 30, 31], ["2026-10-24", 80, 1885.94, 76, 4, 1817.83, 68.11, 29, 51], ["2026-10-25", 76, 1774.04, 74, 2, 1737.58, 36.46, 33, 41], ["2026-10-26", 65, 1518.78, 63, 2, 1481.89, 36.89, 16, 43], ["2026-10-27", 52, 1123.65, 46, 6, 1023.24, 100.41, 18, 33], ["2026-10-28", 57, 1317.75, 55, 2, 1282.02, 35.73, 20, 36], ["2026-10-29", 41, 966.5, 41, 0, 966.5, 0.0, 18, 21], ["2026-10-30", 53, 1290.11, 51, 2, 1257.91, 32.2, 23, 26], ["2026-10-31", 71, 1714.31, 65, 6, 1604.31, 110.0, 23, 46], ["2026-11-01", 96, 2279.93, 92, 4, 2206.04, 73.89, 38, 58], ["2026-11-02", 59, 1350.99, 54, 5, 1271.41, 79.58, 21, 37], ["2026-11-03", 64, 1498.6, 60, 4, 1422.76, 75.84, 24, 34], ["2026-11-04", 92, 2083.01, 87, 5, 1988.03, 94.98, 28, 62], ["2026-11-05", 98, 2144.86, 94, 4, 2072.95, 71.91, 30, 48], ["2026-11-06", 52, 1164.14, 47, 5, 1076.43, 87.71, 14, 37], ["2026-11-07", 78, 1819.59, 73, 5, 1734.19, 85.4, 20, 57], ["2026-11-08", 73, 1740.43, 71, 2, 1703.28, 37.15, 23, 49], ["2026-11-09", 77, 1678.04, 74, 3, 1642.64, 35.4, 24, 47], ["2026-11-10", 66, 1572.59, 64, 2, 1536.85, 35.74, 25, 41], ["2026-11-11", 70, 1686.45, 66, 4, 1615.94, 70.51, 17, 46]]
       },
       "planBySku": {
         "TVG6390": [["2026-04-07", 10], ["2026-04-08", 240], ["2026-04-09", 222], ["2026-04-10", 330], ["2026-04-11", 552], ["2026-04-12", 534], ["2026-04-13", 231], ["2026-04-14", 195], ["2026-04-15", 197], ["2026-04-16", 182], ["2026-04-17", 271], ["2026-04-18", 349], ["2026-04-19", 338], ["2026-04-20", 191], ["2026-04-21", 161], ["2026-04-22", 163], ["2026-04-23", 150], ["2026-04-24", 224], ["2026-04-25", 375], ["2026-04-26", 363], ["2026-04-27", 158], ["2026-04-28", 133], ["2026-04-29", 135], ["2026-04-30", 125], ["2026-05-01", 186], ["2026-05-02", 240], ["2026-05-03", 232], ["2026-05-04", 131], ["2026-05-05", 111], ["2026-05-06", 112], ["2026-05-07", 104], ["2026-05-08", 155], ["2026-05-09", 260], ["2026-05-10", 252], ["2026-05-11", 110], ["2026-05-12", 93], ["2026-05-13", 94], ["2026-05-14", 87], ["2026-05-15", 130], ["2026-05-16", 168], ["2026-05-17", 163], ["2026-05-18", 92], ["2026-05-19", 78], ["2026-05-20", 79], ["2026-05-21", 74], ["2026-05-22", 110], ["2026-05-23", 142], ["2026-05-24", 138], ["2026-05-25", 78], ["2026-05-26", 66], ["2026-05-27", 67], ["2026-05-28", 63], ["2026-05-29", 94], ["2026-05-30", 121], ["2026-05-31", 118], ["2026-06-01", 67], ["2026-06-02", 57], ["2026-06-03", 58], ["2026-06-04", 54], ["2026-06-05", 80], ["2026-06-06", 136], ["2026-06-07", 132], ["2026-06-08", 58], ["2026-06-09", 49], ["2026-06-10", 50], ["2026-06-11", 47], ["2026-06-12", 70], ["2026-06-13", 91], ["2026-06-14", 89], ["2026-06-15", 50], ["2026-06-16", 43], ["2026-06-17", 44], ["2026-06-18", 41], ["2026-06-19", 61], ["2026-06-20", 104], ["2026-06-21", 101], ["2026-06-22", 44], ["2026-06-23", 38], ["2026-06-24", 39], ["2026-06-25", 36], ["2026-06-26", 54], ["2026-06-27", 71], ["2026-06-28", 69], ["2026-06-29", 40], ["2026-06-30", 34], ["2026-07-01", 35], ["2026-07-02", 32], ["2026-07-03", 63], ["2026-07-04", 83], ["2026-07-05", 81], ["2026-07-06", 36], ["2026-07-07", 31], ["2026-07-08", 31], ["2026-07-09", 29], ["2026-07-10", 44], ["2026-07-11", 58], ["2026-07-12", 57], ["2026-07-13", 32], ["2026-07-14", 28], ["2026-07-15", 29], ["2026-07-16", 27], ["2026-07-17", 41], ["2026-07-18", 69], ["2026-07-19", 68], ["2026-07-20", 30], ["2026-07-21", 26], ["2026-07-22", 34], ["2026-07-23", 25], ["2026-07-24", 38], ["2026-07-25", 49], ["2026-07-26", 49], ["2026-07-27", 28], ["2026-07-28", 24], ["2026-07-29", 25], ["2026-07-30", 23], ["2026-07-31", 35], ["2026-08-01", 60], ["2026-08-02", 59], ["2026-08-03", 26], ["2026-08-04", 23], ["2026-08-05", 23]],
@@ -24505,30 +24668,30 @@ window.DASHBOARD_DATA = {
       "crossSellBySku": [],
       "categoryCustomers": {
         "category": "Mascara",
-        "total": 99552,
-        "existingCategory": 59894,
-        "newToCategory": 39658,
+        "total": 99780,
+        "existingCategory": 59993,
+        "newToCategory": 39787,
         "byVariant": [
           {
             "sku": "TVG6370",
             "name": "Oceanne",
-            "newToCategory": 10820,
-            "existingCategory": 21389
+            "newToCategory": 10841,
+            "existingCategory": 21411
           },
           {
             "sku": "TVG6380",
             "name": "Iris",
-            "newToCategory": 22185,
-            "existingCategory": 29907
+            "newToCategory": 22279,
+            "existingCategory": 29971
           },
           {
             "sku": "TVG6390",
             "name": "Ivy",
-            "newToCategory": 13112,
-            "existingCategory": 20523
+            "newToCategory": 13134,
+            "existingCategory": 20555
           }
         ],
-        "daily": [["2026-04-07", 33, 91], ["2026-04-08", 634, 1807], ["2026-04-09", 852, 2251], ["2026-04-10", 683, 1215], ["2026-04-11", 966, 1659], ["2026-04-12", 1075, 2016], ["2026-04-13", 580, 901], ["2026-04-14", 498, 774], ["2026-04-15", 651, 1056], ["2026-04-16", 757, 1134], ["2026-04-17", 686, 961], ["2026-04-18", 631, 863], ["2026-04-19", 682, 988], ["2026-04-20", 592, 795], ["2026-04-21", 564, 777], ["2026-04-22", 677, 766], ["2026-04-23", 583, 702], ["2026-04-24", 516, 595], ["2026-04-25", 792, 1068], ["2026-04-26", 885, 1302], ["2026-04-27", 462, 637], ["2026-04-28", 343, 574], ["2026-04-29", 272, 482], ["2026-04-30", 246, 463], ["2026-05-01", 270, 497], ["2026-05-02", 278, 607], ["2026-05-03", 199, 410], ["2026-05-04", 103, 221], ["2026-05-05", 117, 199], ["2026-05-06", 115, 207], ["2026-05-07", 109, 207], ["2026-05-08", 82, 137], ["2026-05-09", 201, 489], ["2026-05-10", 205, 436], ["2026-05-11", 67, 129], ["2026-05-12", 51, 112], ["2026-05-13", 47, 129], ["2026-05-14", 43, 89], ["2026-05-15", 58, 112], ["2026-05-16", 73, 231], ["2026-05-17", 76, 154], ["2026-05-18", 82, 172], ["2026-05-19", 77, 126], ["2026-05-20", 82, 115], ["2026-05-21", 69, 120], ["2026-05-22", 166, 371], ["2026-05-23", 132, 313], ["2026-05-24", 148, 288], ["2026-05-25", 163, 419], ["2026-05-26", 61, 102], ["2026-05-27", 49, 83], ["2026-05-28", 60, 98], ["2026-05-29", 53, 95], ["2026-05-30", 45, 89], ["2026-05-31", 54, 96], ["2026-06-01", 61, 155], ["2026-06-02", 69, 126], ["2026-06-03", 70, 143], ["2026-06-04", 58, 96], ["2026-06-05", 57, 151], ["2026-06-06", 88, 150], ["2026-06-07", 63, 133], ["2026-06-08", 81, 238], ["2026-06-09", 78, 120], ["2026-06-10", 66, 134], ["2026-06-11", 89, 182], ["2026-06-12", 71, 128], ["2026-06-13", 107, 264], ["2026-06-14", 138, 392], ["2026-06-15", 107, 332], ["2026-06-16", 57, 159], ["2026-06-17", 36, 95], ["2026-06-18", 35, 74], ["2026-06-19", 29, 52], ["2026-06-20", 59, 153], ["2026-06-21", 51, 155], ["2026-06-22", 31, 87], ["2026-06-23", 28, 65], ["2026-06-24", 15, 58], ["2026-06-25", 20, 55], ["2026-06-26", 27, 49], ["2026-06-27", 42, 103], ["2026-06-28", 23, 69], ["2026-06-29", 34, 73], ["2026-06-30", 20, 80], ["2026-07-01", 43, 164], ["2026-07-02", 41, 139], ["2026-07-03", 56, 204], ["2026-07-04", 49, 204], ["2026-07-05", 68, 285], ["2026-07-06", 26, 67], ["2026-07-07", 23, 57], ["2026-07-08", 34, 66], ["2026-07-09", 22, 65], ["2026-07-10", 32, 96], ["2026-07-11", 33, 88], ["2026-07-12", 35, 53], ["2026-07-13", 19, 60], ["2026-07-14", 23, 57], ["2026-07-15", 34, 63], ["2026-07-16", 28, 70], ["2026-07-17", 32, 66], ["2026-07-18", 38, 72], ["2026-07-19", 37, 70], ["2026-07-20", 25, 57], ["2026-07-21", 40, 98], ["2026-07-22", 44, 89], ["2026-07-23", 27, 92], ["2026-07-24", 37, 113], ["2026-07-25", 44, 91], ["2026-07-26", 124, 294], ["2026-07-27", 138, 252], ["2026-07-28", 116, 255], ["2026-07-29", 109, 244], ["2026-07-30", 138, 243], ["2026-07-31", 215, 454], ["2026-08-01", 187, 325], ["2026-08-02", 205, 422], ["2026-08-03", 90, 137], ["2026-08-04", 118, 137], ["2026-08-05", 207, 483], ["2026-08-06", 269, 412], ["2026-08-07", 183, 312], ["2026-08-08", 324, 783], ["2026-08-09", 389, 973], ["2026-08-10", 191, 243], ["2026-08-11", 207, 322], ["2026-08-12", 236, 305], ["2026-08-13", 277, 304], ["2026-08-14", 264, 301], ["2026-08-15", 264, 319], ["2026-08-16", 297, 329], ["2026-08-17", 232, 310], ["2026-08-18", 243, 336], ["2026-08-19", 219, 264], ["2026-08-20", 245, 351], ["2026-08-21", 258, 238], ["2026-08-22", 271, 302], ["2026-08-23", 282, 404], ["2026-08-24", 214, 301], ["2026-08-25", 241, 334], ["2026-08-26", 227, 359], ["2026-08-27", 225, 294], ["2026-08-28", 237, 320], ["2026-08-29", 212, 344], ["2026-08-30", 289, 480], ["2026-08-31", 201, 261], ["2026-09-01", 191, 256], ["2026-09-02", 243, 299], ["2026-09-03", 201, 239], ["2026-09-04", 238, 269], ["2026-09-05", 345, 513], ["2026-09-06", 403, 701], ["2026-09-07", 469, 683], ["2026-09-08", 180, 170], ["2026-09-09", 169, 184], ["2026-09-10", 180, 215], ["2026-09-11", 172, 216], ["2026-09-12", 259, 236], ["2026-09-13", 302, 386], ["2026-09-14", 191, 209], ["2026-09-15", 201, 153], ["2026-09-16", 204, 225], ["2026-09-17", 193, 144], ["2026-09-18", 161, 171], ["2026-09-19", 158, 189], ["2026-09-20", 310, 339], ["2026-09-21", 216, 180], ["2026-09-22", 181, 219], ["2026-09-23", 218, 300], ["2026-09-24", 196, 206], ["2026-09-25", 187, 189], ["2026-09-26", 281, 272], ["2026-09-27", 260, 277], ["2026-09-28", 195, 192], ["2026-09-29", 249, 238], ["2026-09-30", 201, 165], ["2026-10-01", 209, 198], ["2026-10-02", 178, 200], ["2026-10-03", 181, 225], ["2026-10-04", 215, 276], ["2026-10-05", 132, 174], ["2026-10-06", 138, 177], ["2026-10-07", 144, 192], ["2026-10-08", 188, 191], ["2026-10-09", 186, 177], ["2026-10-10", 246, 412], ["2026-10-11", 305, 532], ["2026-10-12", 149, 219], ["2026-10-13", 150, 135], ["2026-10-14", 174, 185], ["2026-10-15", 132, 152], ["2026-10-16", 136, 149], ["2026-10-17", 216, 359], ["2026-10-18", 268, 381], ["2026-10-19", 93, 136], ["2026-10-20", 106, 142], ["2026-10-21", 99, 132], ["2026-10-22", 96, 107], ["2026-10-23", 98, 122], ["2026-10-24", 131, 212], ["2026-10-25", 137, 152], ["2026-10-26", 93, 137], ["2026-10-27", 96, 120], ["2026-10-28", 89, 124], ["2026-10-29", 86, 101], ["2026-10-30", 81, 118], ["2026-10-31", 98, 153], ["2026-11-01", 145, 248], ["2026-11-02", 94, 114], ["2026-11-03", 93, 140], ["2026-11-04", 104, 162], ["2026-11-05", 119, 133], ["2026-11-06", 94, 126], ["2026-11-07", 113, 164], ["2026-11-08", 148, 160], ["2026-11-09", 107, 140], ["2026-11-10", 119, 127]]
+        "daily": [["2026-04-07", 33, 91], ["2026-04-08", 634, 1807], ["2026-04-09", 852, 2251], ["2026-04-10", 683, 1215], ["2026-04-11", 966, 1659], ["2026-04-12", 1075, 2016], ["2026-04-13", 580, 901], ["2026-04-14", 498, 774], ["2026-04-15", 651, 1056], ["2026-04-16", 757, 1134], ["2026-04-17", 686, 961], ["2026-04-18", 631, 863], ["2026-04-19", 682, 988], ["2026-04-20", 592, 795], ["2026-04-21", 564, 777], ["2026-04-22", 677, 766], ["2026-04-23", 583, 702], ["2026-04-24", 516, 595], ["2026-04-25", 792, 1068], ["2026-04-26", 885, 1302], ["2026-04-27", 462, 637], ["2026-04-28", 343, 574], ["2026-04-29", 272, 482], ["2026-04-30", 246, 463], ["2026-05-01", 270, 497], ["2026-05-02", 278, 607], ["2026-05-03", 199, 410], ["2026-05-04", 103, 221], ["2026-05-05", 117, 199], ["2026-05-06", 115, 207], ["2026-05-07", 109, 207], ["2026-05-08", 82, 137], ["2026-05-09", 201, 489], ["2026-05-10", 205, 436], ["2026-05-11", 67, 129], ["2026-05-12", 51, 112], ["2026-05-13", 47, 129], ["2026-05-14", 43, 89], ["2026-05-15", 58, 112], ["2026-05-16", 73, 231], ["2026-05-17", 76, 154], ["2026-05-18", 82, 172], ["2026-05-19", 77, 126], ["2026-05-20", 82, 115], ["2026-05-21", 69, 120], ["2026-05-22", 166, 371], ["2026-05-23", 132, 313], ["2026-05-24", 148, 288], ["2026-05-25", 163, 419], ["2026-05-26", 61, 102], ["2026-05-27", 49, 83], ["2026-05-28", 60, 98], ["2026-05-29", 53, 95], ["2026-05-30", 45, 89], ["2026-05-31", 54, 96], ["2026-06-01", 61, 155], ["2026-06-02", 69, 126], ["2026-06-03", 70, 143], ["2026-06-04", 58, 96], ["2026-06-05", 57, 151], ["2026-06-06", 88, 150], ["2026-06-07", 63, 133], ["2026-06-08", 81, 238], ["2026-06-09", 78, 120], ["2026-06-10", 66, 134], ["2026-06-11", 89, 182], ["2026-06-12", 71, 128], ["2026-06-13", 107, 264], ["2026-06-14", 138, 392], ["2026-06-15", 107, 332], ["2026-06-16", 57, 159], ["2026-06-17", 36, 95], ["2026-06-18", 35, 74], ["2026-06-19", 29, 52], ["2026-06-20", 59, 153], ["2026-06-21", 51, 155], ["2026-06-22", 31, 87], ["2026-06-23", 28, 65], ["2026-06-24", 15, 58], ["2026-06-25", 20, 55], ["2026-06-26", 27, 49], ["2026-06-27", 42, 103], ["2026-06-28", 23, 69], ["2026-06-29", 34, 73], ["2026-06-30", 20, 80], ["2026-07-01", 43, 164], ["2026-07-02", 41, 139], ["2026-07-03", 56, 204], ["2026-07-04", 49, 204], ["2026-07-05", 68, 285], ["2026-07-06", 26, 67], ["2026-07-07", 23, 57], ["2026-07-08", 34, 66], ["2026-07-09", 22, 65], ["2026-07-10", 32, 96], ["2026-07-11", 33, 88], ["2026-07-12", 35, 53], ["2026-07-13", 19, 60], ["2026-07-14", 23, 57], ["2026-07-15", 34, 63], ["2026-07-16", 28, 70], ["2026-07-17", 32, 66], ["2026-07-18", 38, 72], ["2026-07-19", 37, 70], ["2026-07-20", 25, 57], ["2026-07-21", 40, 98], ["2026-07-22", 44, 89], ["2026-07-23", 27, 92], ["2026-07-24", 37, 113], ["2026-07-25", 44, 91], ["2026-07-26", 124, 294], ["2026-07-27", 138, 252], ["2026-07-28", 116, 255], ["2026-07-29", 109, 244], ["2026-07-30", 138, 243], ["2026-07-31", 215, 454], ["2026-08-01", 187, 325], ["2026-08-02", 205, 422], ["2026-08-03", 90, 137], ["2026-08-04", 118, 137], ["2026-08-05", 207, 483], ["2026-08-06", 269, 412], ["2026-08-07", 183, 312], ["2026-08-08", 324, 783], ["2026-08-09", 389, 973], ["2026-08-10", 191, 243], ["2026-08-11", 207, 322], ["2026-08-12", 236, 305], ["2026-08-13", 277, 304], ["2026-08-14", 264, 301], ["2026-08-15", 264, 319], ["2026-08-16", 297, 329], ["2026-08-17", 232, 310], ["2026-08-18", 243, 336], ["2026-08-19", 219, 264], ["2026-08-20", 245, 351], ["2026-08-21", 258, 238], ["2026-08-22", 271, 302], ["2026-08-23", 282, 404], ["2026-08-24", 214, 301], ["2026-08-25", 241, 334], ["2026-08-26", 227, 359], ["2026-08-27", 225, 294], ["2026-08-28", 237, 320], ["2026-08-29", 212, 344], ["2026-08-30", 289, 480], ["2026-08-31", 201, 261], ["2026-09-01", 191, 256], ["2026-09-02", 243, 299], ["2026-09-03", 201, 239], ["2026-09-04", 238, 269], ["2026-09-05", 345, 513], ["2026-09-06", 403, 701], ["2026-09-07", 469, 683], ["2026-09-08", 180, 170], ["2026-09-09", 169, 184], ["2026-09-10", 180, 215], ["2026-09-11", 172, 216], ["2026-09-12", 259, 236], ["2026-09-13", 302, 386], ["2026-09-14", 191, 209], ["2026-09-15", 201, 153], ["2026-09-16", 204, 225], ["2026-09-17", 193, 144], ["2026-09-18", 161, 171], ["2026-09-19", 158, 189], ["2026-09-20", 310, 339], ["2026-09-21", 216, 180], ["2026-09-22", 181, 219], ["2026-09-23", 218, 300], ["2026-09-24", 196, 206], ["2026-09-25", 187, 189], ["2026-09-26", 281, 272], ["2026-09-27", 260, 277], ["2026-09-28", 195, 192], ["2026-09-29", 249, 238], ["2026-09-30", 201, 165], ["2026-10-01", 209, 198], ["2026-10-02", 178, 200], ["2026-10-03", 181, 225], ["2026-10-04", 215, 276], ["2026-10-05", 132, 174], ["2026-10-06", 138, 177], ["2026-10-07", 144, 192], ["2026-10-08", 188, 191], ["2026-10-09", 186, 177], ["2026-10-10", 246, 412], ["2026-10-11", 305, 532], ["2026-10-12", 149, 219], ["2026-10-13", 150, 135], ["2026-10-14", 174, 185], ["2026-10-15", 132, 152], ["2026-10-16", 136, 149], ["2026-10-17", 216, 359], ["2026-10-18", 268, 381], ["2026-10-19", 93, 136], ["2026-10-20", 106, 142], ["2026-10-21", 99, 132], ["2026-10-22", 96, 107], ["2026-10-23", 98, 122], ["2026-10-24", 131, 212], ["2026-10-25", 137, 152], ["2026-10-26", 93, 137], ["2026-10-27", 96, 120], ["2026-10-28", 89, 124], ["2026-10-29", 86, 101], ["2026-10-30", 81, 118], ["2026-10-31", 98, 153], ["2026-11-01", 145, 248], ["2026-11-02", 94, 114], ["2026-11-03", 93, 140], ["2026-11-04", 104, 162], ["2026-11-05", 118, 133], ["2026-11-06", 94, 126], ["2026-11-07", 113, 164], ["2026-11-08", 148, 160], ["2026-11-09", 107, 140], ["2026-11-10", 119, 127], ["2026-11-11", 139, 129]]
       }
     },
     {
@@ -24541,40 +24704,40 @@ window.DASHBOARD_DATA = {
       "subtitle": "2 Shades \u00b7 Slate Grey \u00b7 Brilliant Eye Brightener\u2122",
       "accent": "#6B7A8D",
       "summary": {
-        "netSales": 592517.7,
-        "units": 25775,
-        "orders": 21896,
-        "aov": 27.06,
-        "newCustomers": 3527,
-        "retCustomers": 17461,
-        "totalCustomers": 20988,
+        "netSales": 594192.62,
+        "units": 25852,
+        "orders": 21966,
+        "aov": 27.05,
+        "newCustomers": 3541,
+        "retCustomers": 17510,
+        "totalCustomers": 21051,
         "newPct": 16.8,
         "retPct": 83.2,
         "planUnits": 29011,
-        "pctToPlanUnits": 88.8,
+        "pctToPlanUnits": 89.1,
         "subscriptionOrders": 0,
         "subscriptionUnits": 0,
         "subscriptionRevenue": null,
-        "newCustomerRevenue": 94917.65,
-        "retCustomerRevenue": 497600.05,
+        "newCustomerRevenue": 95202.42,
+        "retCustomerRevenue": 498990.2,
         "pdpViews": 0,
         "pdpAtcRate": 0,
         "pdpCvr": 0
       },
       "regions": {
         "us": {
-          "units": 24394,
-          "netSales": 570118.41,
-          "orders": 20764
+          "units": 24467,
+          "netSales": 571723.52,
+          "orders": 20830
         },
         "ca": {
-          "units": 1381,
-          "netSales": 22399.29,
-          "orders": 1132
+          "units": 1385,
+          "netSales": 22469.1,
+          "orders": 1136
         }
       },
       "trafficStart": "2026-06-17",
-      "trafficEnd": "2026-11-08",
+      "trafficEnd": "2026-11-09",
       "traffic": {
         "byChannel": [],
         "monthly": []
@@ -25074,17 +25237,17 @@ window.DASHBOARD_DATA = {
           "product": "Brilliant Eye Brightener\u2122",
           "shade": "Slate Grey Metallic",
           "color": "#94A3B8",
-          "netSales": 315184.44,
-          "units": 13701,
-          "orders": 13209,
-          "newCustomers": 2039,
-          "retCustomers": 10778,
-          "usUnits": 13003,
-          "caUnits": 698,
-          "usNetSales": 303859.72,
-          "caNetSales": 11324.72,
+          "netSales": 316210.69,
+          "units": 13748,
+          "orders": 13255,
+          "newCustomers": 2049,
+          "retCustomers": 10811,
+          "usUnits": 13048,
+          "caUnits": 700,
+          "usNetSales": 304852.23,
+          "caNetSales": 11358.46,
           "planUnits": 16164,
-          "pctToPlanUnits": 84.8,
+          "pctToPlanUnits": 85.1,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -25098,8 +25261,8 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 16164,
-          "pctToGoalUnits": 84.8,
-          "unitsToGoal": 2463,
+          "pctToGoalUnits": 85.1,
+          "unitsToGoal": 2416,
           "planEndDate": "2026-10-14",
           "weeksOfStock": null,
           "decayCurveOOS": "2027-10-23",
@@ -25111,17 +25274,17 @@ window.DASHBOARD_DATA = {
           "product": "Brilliant Eye Brightener\u2122",
           "shade": "Slate Grey Matte",
           "color": "#4A5568",
-          "netSales": 277333.26,
-          "units": 12074,
-          "orders": 11832,
-          "newCustomers": 1980,
-          "retCustomers": 9557,
-          "usUnits": 11391,
-          "caUnits": 683,
-          "usNetSales": 266258.69,
-          "caNetSales": 11074.57,
+          "netSales": 277981.94,
+          "units": 12104,
+          "orders": 11862,
+          "newCustomers": 1984,
+          "retCustomers": 9580,
+          "usUnits": 11419,
+          "caUnits": 685,
+          "usNetSales": 266871.29,
+          "caNetSales": 11110.65,
           "planUnits": 12847,
-          "pctToPlanUnits": 94.0,
+          "pctToPlanUnits": 94.2,
           "inventoryUnits": null,
           "runRateUnitsPerDay": 0.0,
           "daysToOOS": null,
@@ -25135,8 +25298,8 @@ window.DASHBOARD_DATA = {
           "usEstOOSDate": null,
           "caEstOOSDate": null,
           "planTotalUnits": 12847,
-          "pctToGoalUnits": 94.0,
-          "unitsToGoal": 773,
+          "pctToGoalUnits": 94.2,
+          "unitsToGoal": 743,
           "planEndDate": "2026-10-14",
           "weeksOfStock": null,
           "decayCurveOOS": null,
@@ -25149,7 +25312,7 @@ window.DASHBOARD_DATA = {
           {
             "key": "new-to-category",
             "title": "25% of buyers are new to Eyeshadow",
-            "detail": "5,152 of 20,988 buyers had not purchased this category before."
+            "detail": "5,168 of 21,051 buyers had not purchased this category before."
           }
         ]
       },
@@ -27197,13 +27360,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-10-31",
           "units": 79,
-          "netSales": 1815.53,
+          "netSales": 1812.31,
           "usUnits": 75,
           "caUnits": 4,
-          "usNetSales": 1744.82,
+          "usNetSales": 1741.6,
           "caNetSales": 70.71,
           "cumUnits": 24947,
-          "cumSales": 573884.68,
+          "cumSales": 573881.46,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 12,
@@ -27218,7 +27381,7 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1983.93,
           "caNetSales": 101.39,
           "cumUnits": 25037,
-          "cumSales": 575970.0,
+          "cumSales": 575966.78,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 13,
@@ -27233,7 +27396,7 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1155.46,
           "caNetSales": 103.7,
           "cumUnits": 25095,
-          "cumSales": 577229.16,
+          "cumSales": 577225.94,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 11,
@@ -27242,13 +27405,13 @@ window.DASHBOARD_DATA = {
         {
           "date": "2026-11-03",
           "units": 79,
-          "netSales": 1719.79,
+          "netSales": 1718.71,
           "usUnits": 74,
           "caUnits": 5,
-          "usNetSales": 1647.85,
+          "usNetSales": 1646.77,
           "caNetSales": 71.94,
           "cumUnits": 25174,
-          "cumSales": 578948.95,
+          "cumSales": 578944.65,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 11,
@@ -27263,7 +27426,7 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2697.18,
           "caNetSales": 103.67,
           "cumUnits": 25301,
-          "cumSales": 581749.8,
+          "cumSales": 581745.5,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 20,
@@ -27278,7 +27441,7 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1872.41,
           "caNetSales": 65.67,
           "cumUnits": 25385,
-          "cumSales": 583687.88,
+          "cumSales": 583683.58,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 12,
@@ -27293,7 +27456,7 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1387.9,
           "caNetSales": 132.05,
           "cumUnits": 25453,
-          "cumSales": 585207.83,
+          "cumSales": 585203.53,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 8,
@@ -27308,7 +27471,7 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1933.46,
           "caNetSales": 33.49,
           "cumUnits": 25539,
-          "cumSales": 587174.78,
+          "cumSales": 587170.48,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 12,
@@ -27323,7 +27486,7 @@ window.DASHBOARD_DATA = {
           "usNetSales": 2208.7,
           "caNetSales": 63.41,
           "cumUnits": 25637,
-          "cumSales": 589446.89,
+          "cumSales": 589442.59,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 16,
@@ -27338,7 +27501,7 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1509.41,
           "caNetSales": 36.2,
           "cumUnits": 25707,
-          "cumSales": 590992.5,
+          "cumSales": 590988.2,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 12,
@@ -27353,11 +27516,26 @@ window.DASHBOARD_DATA = {
           "usNetSales": 1494.59,
           "caNetSales": 30.61,
           "cumUnits": 25775,
-          "cumSales": 592517.7,
+          "cumSales": 592513.4,
           "planUnits": null,
           "cumPlanUnits": 29011,
           "newCustomers": 11,
           "retCustomers": 50
+        },
+        {
+          "date": "2026-11-11",
+          "units": 77,
+          "netSales": 1679.22,
+          "usUnits": 73,
+          "caUnits": 4,
+          "usNetSales": 1609.41,
+          "caNetSales": 69.81,
+          "cumUnits": 25852,
+          "cumSales": 594192.62,
+          "planUnits": null,
+          "cumPlanUnits": 29011,
+          "newCustomers": 15,
+          "retCustomers": 55
         }
       ],
       "dailySkuColumns": [
@@ -27372,8 +27550,8 @@ window.DASHBOARD_DATA = {
         "retCustomers"
       ],
       "dailyBySku": {
-        "TVG4770": [["2026-06-17", 726, 17283.82, 688, 38, 16672.52, 611.3, 76, 577], ["2026-06-18", 568, 13404.35, 545, 23, 13018.64, 385.71, 38, 491], ["2026-06-19", 280, 6610.38, 261, 19, 6295.72, 314.66, 35, 234], ["2026-06-20", 381, 8890.33, 360, 21, 8543.91, 346.42, 52, 313], ["2026-06-21", 342, 8022.01, 322, 20, 7691.38, 330.63, 48, 284], ["2026-06-22", 171, 4038.46, 159, 12, 3830.1, 208.36, 21, 142], ["2026-06-23", 165, 3876.9, 158, 7, 3765.0, 111.9, 34, 123], ["2026-06-24", 197, 4645.7, 186, 11, 4475.41, 170.29, 46, 142], ["2026-06-25", 175, 4130.39, 167, 8, 3999.34, 131.05, 31, 141], ["2026-06-26", 174, 3990.33, 163, 11, 3805.16, 185.17, 37, 132], ["2026-06-27", 150, 3568.9, 145, 5, 3485.89, 83.01, 35, 112], ["2026-06-28", 147, 3457.22, 140, 7, 3346.45, 110.77, 32, 113], ["2026-06-29", 144, 3332.65, 140, 4, 3268.46, 64.19, 31, 106], ["2026-06-30", 162, 3843.87, 156, 6, 3744.69, 99.18, 31, 124], ["2026-07-01", 254, 5329.91, 225, 29, 4887.74, 442.17, 38, 200], ["2026-07-02", 202, 4346.77, 189, 13, 4151.12, 195.65, 39, 154], ["2026-07-03", 241, 5224.04, 232, 9, 5088.38, 135.66, 31, 202], ["2026-07-04", 239, 5080.89, 212, 27, 4672.05, 408.84, 21, 210], ["2026-07-05", 283, 6098.64, 259, 24, 5725.6, 373.04, 26, 246], ["2026-07-06", 131, 2966.85, 124, 7, 2845.6, 121.25, 19, 110], ["2026-07-07", 102, 2447.55, 100, 2, 2414.78, 32.77, 15, 86], ["2026-07-08", 172, 3997.03, 159, 13, 3796.48, 200.55, 24, 140], ["2026-07-09", 200, 4779.36, 191, 9, 4626.5, 152.86, 25, 166], ["2026-07-10", 151, 3651.2, 147, 4, 3589.88, 61.32, 21, 115], ["2026-07-11", 164, 3869.07, 152, 12, 3672.22, 196.85, 30, 128], ["2026-07-12", 190, 4513.53, 186, 4, 4450.82, 62.71, 32, 152], ["2026-07-13", 173, 4086.85, 165, 8, 3966.39, 120.46, 21, 147], ["2026-07-14", 150, 3519.43, 148, 2, 3485.82, 33.61, 17, 131], ["2026-07-15", 131, 3133.75, 123, 8, 2995.5, 138.25, 14, 113], ["2026-07-16", 111, 2578.7, 109, 2, 2545.22, 33.48, 9, 96], ["2026-07-17", 97, 2179.3, 95, 2, 2145.68, 33.62, 15, 75], ["2026-07-18", 79, 1797.55, 72, 7, 1680.32, 117.23, 13, 65], ["2026-07-19", 78, 1793.88, 74, 4, 1724.85, 69.03, 11, 66], ["2026-07-20", 75, 1754.19, 73, 2, 1721.25, 32.94, 6, 64], ["2026-07-21", 86, 1907.85, 80, 6, 1813.49, 94.36, 7, 74], ["2026-07-22", 64, 1497.12, 63, 1, 1479.74, 17.38, 9, 53], ["2026-07-23", 68, 1469.83, 64, 4, 1398.99, 70.84, 11, 57], ["2026-07-24", 131, 3015.47, 119, 12, 2819.59, 195.88, 21, 106], ["2026-07-25", 86, 1975.2, 79, 7, 1861.35, 113.85, 13, 70], ["2026-07-26", 141, 3132.88, 128, 13, 2920.16, 212.72, 22, 119], ["2026-07-27", 57, 1353.02, 54, 3, 1303.26, 49.76, 4, 51], ["2026-07-28", 72, 1614.32, 70, 2, 1581.19, 33.13, 9, 62], ["2026-07-29", 63, 1401.25, 59, 4, 1336.73, 64.52, 12, 50], ["2026-07-30", 77, 1781.16, 74, 3, 1728.64, 52.52, 10, 66], ["2026-07-31", 113, 2628.86, 110, 3, 2595.21, 33.65, 14, 96], ["2026-08-01", 93, 2132.55, 89, 4, 2060.65, 71.9, 9, 80], ["2026-08-02", 183, 4154.81, 173, 10, 3994.89, 159.92, 27, 156], ["2026-08-03", 51, 1200.91, 50, 1, 1186.1, 14.81, 9, 42], ["2026-08-04", 52, 1232.05, 50, 2, 1197.13, 34.92, 9, 43], ["2026-08-05", 61, 1368.33, 59, 2, 1335.49, 32.84, 13, 48], ["2026-08-06", 63, 1426.12, 60, 3, 1375.76, 50.36, 15, 46], ["2026-08-07", 54, 1266.88, 52, 2, 1234.47, 32.41, 14, 39], ["2026-08-08", 183, 3933.59, 181, 2, 3896.62, 36.97, 16, 162], ["2026-08-09", 249, 5216.86, 232, 17, 4971.16, 245.7, 34, 206], ["2026-08-10", 49, 1120.72, 45, 4, 1046.73, 73.99, 9, 39], ["2026-08-11", 47, 1122.52, 46, 1, 1103.97, 18.55, 7, 37], ["2026-08-12", 52, 1208.33, 51, 1, 1189.78, 18.55, 7, 40], ["2026-08-13", 56, 1322.17, 53, 3, 1272.11, 50.06, 16, 38], ["2026-08-14", 46, 1001.13, 42, 4, 931.57, 69.56, 10, 35], ["2026-08-15", 45, 1038.67, 42, 3, 1003.94, 34.73, 9, 36], ["2026-08-16", 46, 1075.35, 43, 3, 1028.61, 46.74, 15, 29], ["2026-08-17", 46, 1078.22, 45, 1, 1061.35, 16.87, 6, 40], ["2026-08-18", 61, 1461.53, 57, 4, 1393.32, 68.21, 10, 47], ["2026-08-19", 44, 1044.94, 40, 4, 980.4, 64.54, 6, 35], ["2026-08-20", 49, 1112.62, 45, 4, 1045.63, 66.99, 6, 41], ["2026-08-21", 48, 1109.84, 44, 4, 1039.62, 70.22, 4, 43], ["2026-08-22", 40, 867.37, 36, 4, 807.44, 59.93, 11, 28], ["2026-08-23", 60, 1371.45, 58, 2, 1336.79, 34.66, 12, 48], ["2026-08-24", 46, 985.52, 46, 0, 985.52, 0.0, 10, 35], ["2026-08-25", 37, 846.12, 36, 1, 827.38, 18.74, 9, 27], ["2026-08-26", 45, 987.24, 41, 4, 922.53, 64.71, 11, 33], ["2026-08-27", 40, 917.99, 39, 1, 899.27, 18.72, 10, 30], ["2026-08-28", 41, 939.9, 40, 1, 924.21, 15.69, 4, 34], ["2026-08-29", 35, 835.67, 35, 0, 835.67, 0.0, 3, 30], ["2026-08-30", 75, 1696.61, 68, 7, 1584.92, 111.69, 8, 65], ["2026-08-31", 51, 1134.84, 47, 4, 1067.58, 67.26, 6, 43], ["2026-09-01", 40, 932.08, 38, 2, 898.52, 33.56, 8, 31], ["2026-09-02", 56, 1315.42, 54, 2, 1279.89, 35.53, 6, 48], ["2026-09-03", 38, 910.5, 37, 1, 895.13, 15.37, 7, 30], ["2026-09-04", 53, 1245.74, 52, 1, 1226.85, 18.89, 8, 44], ["2026-09-05", 84, 1934.43, 76, 8, 1796.58, 137.85, 17, 65], ["2026-09-06", 128, 3020.72, 118, 10, 2859.78, 160.94, 20, 104], ["2026-09-07", 134, 3122.5, 126, 8, 2983.11, 139.39, 20, 107], ["2026-09-08", 30, 700.59, 27, 3, 649.66, 50.93, 3, 26], ["2026-09-09", 34, 819.25, 34, 0, 819.25, 0.0, 6, 28], ["2026-09-10", 35, 818.49, 35, 0, 818.49, 0.0, 6, 29], ["2026-09-11", 32, 761.98, 32, 0, 761.98, 0.0, 4, 28], ["2026-09-12", 35, 826.91, 35, 0, 826.91, 0.0, 5, 29], ["2026-09-13", 79, 1868.65, 76, 3, 1814.29, 54.36, 14, 65], ["2026-09-14", 25, 517.02, 24, 1, 501.72, 15.3, 6, 19], ["2026-09-15", 28, 670.94, 26, 2, 633.64, 37.3, 3, 24], ["2026-09-16", 40, 916.12, 36, 4, 842.2, 73.92, 9, 29], ["2026-09-17", 26, 603.67, 24, 2, 570.23, 33.44, 7, 19], ["2026-09-18", 39, 920.6, 38, 1, 902.24, 18.36, 5, 31], ["2026-09-19", 62, 1453.59, 62, 0, 1453.59, 0.0, 17, 41], ["2026-09-20", 83, 1944.89, 82, 1, 1926.52, 18.37, 13, 70], ["2026-09-21", 39, 913.78, 37, 2, 880.75, 33.03, 10, 29], ["2026-09-22", 44, 1023.48, 44, 0, 1023.48, 0.0, 4, 38], ["2026-09-23", 105, 2481.96, 99, 6, 2380.27, 101.69, 12, 90], ["2026-09-24", 59, 1418.75, 58, 1, 1400.6, 18.15, 7, 52], ["2026-09-25", 51, 1184.24, 51, 0, 1184.24, 0.0, 8, 42], ["2026-09-26", 56, 1329.2, 53, 3, 1276.13, 53.07, 15, 41], ["2026-09-27", 57, 1303.39, 54, 3, 1256.64, 46.75, 16, 39], ["2026-09-28", 30, 671.06, 27, 3, 617.12, 53.94, 4, 26], ["2026-09-29", 64, 1515.49, 60, 4, 1447.35, 68.14, 9, 53], ["2026-09-30", 56, 1317.26, 53, 3, 1269.04, 48.22, 8, 44], ["2026-10-01", 28, 649.44, 26, 2, 613.62, 35.82, 6, 22], ["2026-10-02", 33, 742.04, 33, 0, 742.04, 0.0, 6, 23], ["2026-10-03", 31, 740.11, 31, 0, 740.11, 0.0, 3, 25], ["2026-10-04", 32, 757.45, 31, 1, 743.27, 14.18, 7, 24], ["2026-10-05", 24, 516.21, 22, 2, 485.67, 30.54, 9, 15], ["2026-10-06", 21, 517.11, 21, 0, 517.11, 0.0, 3, 18], ["2026-10-07", 21, 496.4, 20, 1, 478.63, 17.77, 4, 17], ["2026-10-08", 20, 471.2, 18, 2, 435.72, 35.48, 4, 16], ["2026-10-09", 41, 979.8, 40, 1, 962.1, 17.7, 10, 29], ["2026-10-10", 76, 1712.25, 73, 3, 1678.62, 33.63, 8, 68], ["2026-10-11", 135, 3058.36, 126, 9, 2915.88, 142.48, 18, 110], ["2026-10-12", 31, 687.11, 31, 0, 687.11, 0.0, 6, 24], ["2026-10-13", 18, 375.7, 18, 0, 375.7, 0.0, 1, 17], ["2026-10-14", 71, 1608.86, 67, 4, 1544.83, 64.03, 15, 55], ["2026-10-15", 51, 1160.96, 50, 1, 1145.99, 14.97, 8, 41], ["2026-10-16", 56, 1274.95, 54, 2, 1239.24, 35.71, 9, 45], ["2026-10-17", 103, 2393.53, 98, 5, 2309.18, 84.35, 12, 79], ["2026-10-18", 91, 2016.21, 87, 4, 1953.52, 62.69, 21, 69], ["2026-10-19", 38, 877.03, 38, 0, 877.03, 0.0, 8, 30], ["2026-10-20", 34, 783.24, 32, 2, 750.5, 32.74, 10, 20], ["2026-10-21", 45, 950.91, 44, 1, 936.32, 14.59, 10, 34], ["2026-10-22", 34, 797.64, 34, 0, 797.64, 0.0, 10, 23], ["2026-10-23", 38, 874.54, 37, 1, 859.65, 14.89, 6, 30], ["2026-10-24", 92, 2069.24, 87, 5, 1986.21, 83.03, 17, 75], ["2026-10-25", 73, 1672.89, 70, 3, 1623.2, 49.69, 15, 56], ["2026-10-26", 49, 1137.9, 49, 0, 1137.9, 0.0, 3, 46], ["2026-10-27", 45, 1019.26, 44, 1, 1000.94, 18.32, 9, 35], ["2026-10-28", 40, 906.01, 39, 1, 889.53, 16.48, 4, 35], ["2026-10-29", 42, 929.36, 38, 4, 861.92, 67.44, 4, 38], ["2026-10-30", 39, 908.71, 39, 0, 908.71, 0.0, 4, 35], ["2026-10-31", 50, 1145.62, 47, 3, 1093.38, 52.24, 10, 38], ["2026-11-01", 59, 1367.93, 56, 3, 1317.23, 50.7, 11, 48], ["2026-11-02", 40, 868.24, 37, 3, 819.55, 48.69, 8, 30], ["2026-11-03", 55, 1173.56, 52, 3, 1138.53, 35.03, 9, 44], ["2026-11-04", 84, 1877.82, 82, 2, 1845.28, 32.54, 13, 68], ["2026-11-05", 62, 1451.12, 59, 3, 1403.93, 47.19, 5, 57], ["2026-11-06", 44, 988.99, 37, 7, 872.84, 116.15, 6, 37], ["2026-11-07", 58, 1302.61, 57, 1, 1287.32, 15.29, 8, 48], ["2026-11-08", 60, 1375.98, 58, 2, 1344.02, 31.96, 14, 46], ["2026-11-09", 40, 873.61, 39, 1, 855.53, 18.08, 8, 32], ["2026-11-10", 44, 980.19, 44, 0, 980.19, 0.0, 10, 33]],
-        "TVG6640": [["2026-06-17", 517, 12277.25, 483, 34, 11717.95, 559.3, 46, 452], ["2026-06-18", 672, 16123.11, 654, 18, 15816.39, 306.72, 59, 594], ["2026-06-19", 324, 7802.54, 312, 12, 7598.87, 203.67, 51, 267], ["2026-06-20", 508, 12082.72, 492, 16, 11829.45, 253.27, 82, 414], ["2026-06-21", 505, 12132.59, 486, 19, 11821.73, 310.86, 72, 416], ["2026-06-22", 171, 4044.64, 164, 7, 3930.33, 114.31, 32, 137], ["2026-06-23", 169, 3951.24, 159, 10, 3794.79, 156.45, 32, 134], ["2026-06-24", 215, 5222.35, 207, 8, 5093.09, 129.26, 51, 158], ["2026-06-25", 212, 5074.94, 198, 14, 4845.88, 229.06, 44, 162], ["2026-06-26", 211, 4908.66, 198, 13, 4686.83, 221.83, 51, 158], ["2026-06-27", 219, 5334.13, 216, 3, 5286.18, 47.95, 65, 151], ["2026-06-28", 207, 5009.09, 201, 6, 4914.45, 94.64, 52, 150], ["2026-06-29", 187, 4518.32, 183, 4, 4453.0, 65.32, 49, 132], ["2026-06-30", 149, 3501.09, 139, 10, 3341.83, 159.26, 32, 114], ["2026-07-01", 307, 6411.43, 272, 35, 5884.37, 527.06, 47, 253], ["2026-07-02", 236, 5082.89, 223, 13, 4887.94, 194.95, 37, 191], ["2026-07-03", 271, 5850.25, 261, 10, 5698.48, 151.77, 28, 240], ["2026-07-04", 267, 5636.27, 237, 30, 5177.31, 458.96, 32, 227], ["2026-07-05", 356, 7715.94, 333, 23, 7356.93, 359.01, 43, 306], ["2026-07-06", 137, 3122.75, 125, 12, 2926.58, 196.17, 21, 115], ["2026-07-07", 135, 3214.78, 126, 9, 3061.32, 153.46, 14, 117], ["2026-07-08", 139, 3155.62, 123, 16, 2888.15, 267.47, 21, 115], ["2026-07-09", 114, 2639.36, 103, 11, 2454.6, 184.76, 20, 93], ["2026-07-10", 72, 1667.14, 63, 9, 1516.63, 150.51, 8, 62], ["2026-07-11", 100, 2251.76, 85, 15, 2004.94, 246.82, 15, 80], ["2026-07-12", 87, 2023.4, 79, 8, 1887.22, 136.18, 14, 72], ["2026-07-13", 78, 1716.88, 70, 8, 1583.48, 133.4, 8, 69], ["2026-07-14", 82, 1905.77, 80, 2, 1872.16, 33.61, 13, 68], ["2026-07-15", 65, 1396.4, 53, 12, 1191.1, 205.3, 12, 53], ["2026-07-16", 73, 1629.03, 70, 3, 1580.99, 48.04, 12, 61], ["2026-07-17", 76, 1666.24, 70, 6, 1565.39, 100.85, 20, 47], ["2026-07-18", 68, 1551.04, 64, 4, 1480.93, 70.11, 11, 56], ["2026-07-19", 72, 1649.96, 67, 5, 1570.01, 79.95, 10, 60], ["2026-07-20", 66, 1472.41, 62, 4, 1421.17, 51.24, 14, 50], ["2026-07-21", 60, 1399.99, 55, 5, 1319.34, 80.65, 5, 52], ["2026-07-22", 66, 1483.41, 63, 3, 1441.42, 41.99, 15, 47], ["2026-07-23", 52, 1161.84, 49, 3, 1111.34, 50.5, 13, 37], ["2026-07-24", 99, 2320.36, 94, 5, 2235.25, 85.11, 14, 82], ["2026-07-25", 69, 1614.2, 67, 2, 1582.6, 31.6, 9, 56], ["2026-07-26", 114, 2576.37, 106, 8, 2447.27, 129.1, 16, 97], ["2026-07-27", 47, 1088.12, 44, 3, 1038.55, 49.57, 6, 39], ["2026-07-28", 66, 1553.39, 64, 2, 1520.26, 33.13, 10, 55], ["2026-07-29", 50, 1180.51, 46, 4, 1110.17, 70.34, 8, 42], ["2026-07-30", 49, 1102.3, 48, 1, 1086.91, 15.39, 7, 41], ["2026-07-31", 79, 1783.71, 76, 3, 1736.15, 47.56, 13, 65], ["2026-08-01", 62, 1400.86, 58, 4, 1327.62, 73.24, 6, 55], ["2026-08-02", 133, 3015.68, 128, 5, 2947.82, 67.86, 24, 109], ["2026-08-03", 38, 855.1, 36, 2, 821.97, 33.13, 9, 28], ["2026-08-04", 38, 856.81, 36, 2, 823.94, 32.87, 8, 30], ["2026-08-05", 50, 1188.2, 49, 1, 1171.26, 16.94, 6, 43], ["2026-08-06", 59, 1332.79, 54, 5, 1249.35, 83.44, 13, 43], ["2026-08-07", 49, 1159.76, 47, 2, 1126.69, 33.07, 10, 39], ["2026-08-08", 159, 3212.34, 150, 9, 3094.72, 117.62, 16, 140], ["2026-08-09", 201, 4047.09, 187, 14, 3843.66, 203.43, 26, 172], ["2026-08-10", 46, 1008.8, 45, 1, 997.71, 11.09, 6, 37], ["2026-08-11", 37, 860.25, 36, 1, 841.7, 18.55, 6, 28], ["2026-08-12", 44, 948.89, 41, 3, 901.31, 47.58, 13, 31], ["2026-08-13", 47, 1030.94, 45, 2, 995.71, 35.23, 18, 29], ["2026-08-14", 35, 764.48, 34, 1, 745.96, 18.52, 8, 27], ["2026-08-15", 40, 914.75, 40, 0, 914.75, 0.0, 13, 26], ["2026-08-16", 49, 1181.94, 48, 1, 1163.25, 18.69, 11, 37], ["2026-08-17", 44, 977.17, 43, 1, 960.3, 16.87, 7, 37], ["2026-08-18", 69, 1629.22, 67, 2, 1595.27, 33.95, 12, 56], ["2026-08-19", 45, 1017.1, 42, 3, 961.0, 56.1, 8, 36], ["2026-08-20", 54, 1238.79, 53, 1, 1220.08, 18.71, 12, 42], ["2026-08-21", 46, 993.56, 37, 9, 850.23, 143.33, 9, 36], ["2026-08-22", 26, 588.42, 21, 5, 500.52, 87.9, 6, 20], ["2026-08-23", 55, 1289.65, 52, 3, 1236.01, 53.64, 10, 45], ["2026-08-24", 42, 942.82, 42, 0, 942.82, 0.0, 5, 37], ["2026-08-25", 35, 820.74, 34, 1, 802.86, 17.88, 4, 31], ["2026-08-26", 53, 1219.06, 50, 3, 1166.62, 52.44, 14, 38], ["2026-08-27", 29, 651.41, 28, 1, 632.73, 18.68, 6, 23], ["2026-08-28", 41, 973.91, 39, 2, 939.54, 34.37, 8, 32], ["2026-08-29", 36, 847.1, 35, 1, 832.07, 15.03, 5, 31], ["2026-08-30", 73, 1710.42, 70, 3, 1656.47, 53.95, 15, 57], ["2026-08-31", 38, 838.38, 38, 0, 838.38, 0.0, 7, 29], ["2026-09-01", 33, 762.59, 32, 1, 743.94, 18.65, 8, 25], ["2026-09-02", 47, 1078.66, 47, 0, 1078.66, 0.0, 5, 42], ["2026-09-03", 43, 946.5, 38, 5, 862.48, 84.02, 9, 32], ["2026-09-04", 35, 854.35, 35, 0, 854.35, 0.0, 7, 28], ["2026-09-05", 64, 1445.04, 58, 6, 1345.73, 99.31, 18, 46], ["2026-09-06", 92, 2168.9, 86, 6, 2065.71, 103.19, 13, 79], ["2026-09-07", 115, 2713.8, 105, 10, 2538.81, 174.99, 20, 92], ["2026-09-08", 40, 944.85, 38, 2, 925.97, 18.88, 10, 28], ["2026-09-09", 35, 768.45, 33, 2, 733.72, 34.73, 7, 27], ["2026-09-10", 28, 631.52, 27, 1, 612.57, 18.95, 5, 23], ["2026-09-11", 28, 643.7, 26, 2, 609.85, 33.85, 7, 21], ["2026-09-12", 40, 949.28, 38, 2, 914.82, 34.46, 2, 37], ["2026-09-13", 58, 1344.97, 53, 5, 1256.71, 88.26, 12, 46], ["2026-09-14", 22, 469.48, 19, 3, 424.77, 44.71, 3, 19], ["2026-09-15", 29, 680.3, 29, 0, 680.3, 0.0, 5, 24], ["2026-09-16", 37, 854.56, 35, 2, 817.39, 37.17, 9, 28], ["2026-09-17", 29, 630.53, 28, 1, 611.98, 18.55, 5, 24], ["2026-09-18", 27, 588.37, 27, 0, 588.37, 0.0, 5, 22], ["2026-09-19", 41, 974.06, 41, 0, 974.06, 0.0, 12, 28], ["2026-09-20", 62, 1445.51, 57, 5, 1361.0, 84.51, 16, 45], ["2026-09-21", 26, 591.01, 26, 0, 591.01, 0.0, 9, 17], ["2026-09-22", 40, 890.5, 37, 3, 842.91, 47.59, 8, 32], ["2026-09-23", 91, 2092.71, 88, 3, 2044.88, 47.83, 16, 73], ["2026-09-24", 39, 938.69, 39, 0, 938.69, 0.0, 5, 34], ["2026-09-25", 41, 964.35, 39, 2, 930.94, 33.41, 9, 31], ["2026-09-26", 67, 1515.07, 65, 2, 1479.05, 36.02, 15, 51], ["2026-09-27", 48, 1114.03, 43, 5, 1028.56, 85.47, 11, 37], ["2026-09-28", 37, 843.89, 31, 6, 749.74, 94.15, 12, 24], ["2026-09-29", 39, 916.86, 38, 1, 898.92, 17.94, 4, 35], ["2026-09-30", 42, 966.29, 37, 5, 884.69, 81.6, 4, 37], ["2026-10-01", 35, 819.51, 32, 3, 767.63, 51.88, 8, 26], ["2026-10-02", 26, 577.29, 24, 2, 548.9, 28.39, 3, 22], ["2026-10-03", 22, 482.02, 21, 1, 467.84, 14.18, 5, 17], ["2026-10-04", 36, 831.13, 33, 3, 780.78, 50.35, 7, 29], ["2026-10-05", 22, 490.73, 19, 3, 444.6, 46.13, 3, 18], ["2026-10-06", 25, 589.19, 24, 1, 571.47, 17.72, 2, 22], ["2026-10-07", 20, 449.74, 19, 1, 432.07, 17.67, 5, 15], ["2026-10-08", 22, 474.17, 21, 1, 459.06, 15.11, 6, 16], ["2026-10-09", 23, 543.13, 23, 0, 543.13, 0.0, 9, 14], ["2026-10-10", 51, 1141.46, 47, 4, 1075.81, 65.65, 7, 42], ["2026-10-11", 89, 1965.88, 86, 3, 1918.09, 47.79, 10, 79], ["2026-10-12", 23, 527.03, 22, 1, 509.33, 17.7, 8, 15], ["2026-10-13", 10, 220.63, 10, 0, 220.63, 0.0, 0, 10], ["2026-10-14", 27, 652.51, 27, 0, 652.51, 0.0, 4, 23], ["2026-10-15", 23, 516.59, 23, 0, 516.59, 0.0, 6, 17], ["2026-10-16", 11, 237.01, 11, 0, 237.01, 0.0, 1, 10], ["2026-10-17", 33, 757.05, 29, 4, 692.54, 64.51, 3, 30], ["2026-10-18", 32, 709.74, 31, 1, 694.65, 15.09, 7, 25], ["2026-10-19", 24, 517.65, 22, 2, 488.76, 28.89, 5, 19], ["2026-10-20", 17, 372.85, 17, 0, 372.85, 0.0, 3, 13], ["2026-10-21", 19, 370.85, 19, 0, 370.85, 0.0, 3, 16], ["2026-10-22", 16, 382.25, 15, 1, 363.99, 18.26, 0, 15], ["2026-10-23", 16, 350.93, 14, 2, 321.36, 29.57, 4, 12], ["2026-10-24", 29, 678.48, 26, 3, 627.08, 51.4, 3, 26], ["2026-10-25", 35, 802.7, 31, 4, 733.86, 68.84, 7, 25], ["2026-10-26", 25, 600.94, 25, 0, 600.94, 0.0, 5, 19], ["2026-10-27", 28, 616.7, 27, 1, 598.39, 18.31, 9, 19], ["2026-10-28", 15, 368.37, 14, 1, 351.89, 16.48, 4, 11], ["2026-10-29", 23, 533.23, 21, 2, 496.37, 36.86, 0, 23], ["2026-10-30", 20, 459.17, 20, 0, 459.17, 0.0, 2, 18], ["2026-10-31", 29, 669.91, 28, 1, 651.44, 18.47, 5, 23], ["2026-11-01", 31, 717.4, 28, 3, 666.7, 50.7, 5, 26], ["2026-11-02", 18, 390.92, 14, 4, 335.91, 55.01, 3, 15], ["2026-11-03", 24, 546.24, 22, 2, 509.32, 36.92, 3, 21], ["2026-11-04", 43, 923.04, 39, 4, 851.9, 71.14, 10, 33], ["2026-11-05", 22, 486.96, 20, 2, 468.48, 18.48, 7, 14], ["2026-11-06", 24, 530.96, 23, 1, 515.06, 15.9, 3, 21], ["2026-11-07", 28, 664.34, 27, 1, 646.14, 18.2, 5, 23], ["2026-11-08", 38, 896.13, 36, 2, 864.68, 31.45, 5, 31], ["2026-11-09", 30, 672.01, 29, 1, 653.88, 18.13, 6, 24], ["2026-11-10", 24, 545.01, 22, 2, 514.4, 30.61, 2, 21]]
+        "TVG4770": [["2026-06-17", 726, 17283.82, 688, 38, 16672.52, 611.3, 76, 577], ["2026-06-18", 568, 13404.35, 545, 23, 13018.64, 385.71, 38, 491], ["2026-06-19", 280, 6610.38, 261, 19, 6295.72, 314.66, 35, 234], ["2026-06-20", 381, 8890.33, 360, 21, 8543.91, 346.42, 52, 313], ["2026-06-21", 342, 8022.01, 322, 20, 7691.38, 330.63, 48, 284], ["2026-06-22", 171, 4038.46, 159, 12, 3830.1, 208.36, 21, 142], ["2026-06-23", 165, 3876.9, 158, 7, 3765.0, 111.9, 34, 123], ["2026-06-24", 197, 4645.7, 186, 11, 4475.41, 170.29, 46, 142], ["2026-06-25", 175, 4130.39, 167, 8, 3999.34, 131.05, 31, 141], ["2026-06-26", 174, 3990.33, 163, 11, 3805.16, 185.17, 37, 132], ["2026-06-27", 150, 3568.9, 145, 5, 3485.89, 83.01, 35, 112], ["2026-06-28", 147, 3457.22, 140, 7, 3346.45, 110.77, 32, 113], ["2026-06-29", 144, 3332.65, 140, 4, 3268.46, 64.19, 31, 106], ["2026-06-30", 162, 3843.87, 156, 6, 3744.69, 99.18, 31, 124], ["2026-07-01", 254, 5329.91, 225, 29, 4887.74, 442.17, 38, 200], ["2026-07-02", 202, 4346.77, 189, 13, 4151.12, 195.65, 39, 154], ["2026-07-03", 241, 5224.04, 232, 9, 5088.38, 135.66, 31, 202], ["2026-07-04", 239, 5080.89, 212, 27, 4672.05, 408.84, 21, 210], ["2026-07-05", 283, 6098.64, 259, 24, 5725.6, 373.04, 26, 246], ["2026-07-06", 131, 2966.85, 124, 7, 2845.6, 121.25, 19, 110], ["2026-07-07", 102, 2447.55, 100, 2, 2414.78, 32.77, 15, 86], ["2026-07-08", 172, 3997.03, 159, 13, 3796.48, 200.55, 24, 140], ["2026-07-09", 200, 4779.36, 191, 9, 4626.5, 152.86, 25, 166], ["2026-07-10", 151, 3651.2, 147, 4, 3589.88, 61.32, 21, 115], ["2026-07-11", 164, 3869.07, 152, 12, 3672.22, 196.85, 30, 128], ["2026-07-12", 190, 4513.53, 186, 4, 4450.82, 62.71, 32, 152], ["2026-07-13", 173, 4086.85, 165, 8, 3966.39, 120.46, 21, 147], ["2026-07-14", 150, 3519.43, 148, 2, 3485.82, 33.61, 17, 131], ["2026-07-15", 131, 3133.75, 123, 8, 2995.5, 138.25, 14, 113], ["2026-07-16", 111, 2578.7, 109, 2, 2545.22, 33.48, 9, 96], ["2026-07-17", 97, 2179.3, 95, 2, 2145.68, 33.62, 15, 75], ["2026-07-18", 79, 1797.55, 72, 7, 1680.32, 117.23, 13, 65], ["2026-07-19", 78, 1793.88, 74, 4, 1724.85, 69.03, 11, 66], ["2026-07-20", 75, 1754.19, 73, 2, 1721.25, 32.94, 6, 64], ["2026-07-21", 86, 1907.85, 80, 6, 1813.49, 94.36, 7, 74], ["2026-07-22", 64, 1497.12, 63, 1, 1479.74, 17.38, 9, 53], ["2026-07-23", 68, 1469.83, 64, 4, 1398.99, 70.84, 11, 57], ["2026-07-24", 131, 3015.47, 119, 12, 2819.59, 195.88, 21, 106], ["2026-07-25", 86, 1975.2, 79, 7, 1861.35, 113.85, 13, 70], ["2026-07-26", 141, 3132.88, 128, 13, 2920.16, 212.72, 22, 119], ["2026-07-27", 57, 1353.02, 54, 3, 1303.26, 49.76, 4, 51], ["2026-07-28", 72, 1614.32, 70, 2, 1581.19, 33.13, 9, 62], ["2026-07-29", 63, 1401.25, 59, 4, 1336.73, 64.52, 12, 50], ["2026-07-30", 77, 1781.16, 74, 3, 1728.64, 52.52, 10, 66], ["2026-07-31", 113, 2628.86, 110, 3, 2595.21, 33.65, 14, 96], ["2026-08-01", 93, 2132.55, 89, 4, 2060.65, 71.9, 9, 80], ["2026-08-02", 183, 4154.81, 173, 10, 3994.89, 159.92, 27, 156], ["2026-08-03", 51, 1200.91, 50, 1, 1186.1, 14.81, 9, 42], ["2026-08-04", 52, 1232.05, 50, 2, 1197.13, 34.92, 9, 43], ["2026-08-05", 61, 1368.33, 59, 2, 1335.49, 32.84, 13, 48], ["2026-08-06", 63, 1426.12, 60, 3, 1375.76, 50.36, 15, 46], ["2026-08-07", 54, 1266.88, 52, 2, 1234.47, 32.41, 14, 39], ["2026-08-08", 183, 3933.59, 181, 2, 3896.62, 36.97, 16, 162], ["2026-08-09", 249, 5216.86, 232, 17, 4971.16, 245.7, 34, 206], ["2026-08-10", 49, 1120.72, 45, 4, 1046.73, 73.99, 9, 39], ["2026-08-11", 47, 1122.52, 46, 1, 1103.97, 18.55, 7, 37], ["2026-08-12", 52, 1208.33, 51, 1, 1189.78, 18.55, 7, 40], ["2026-08-13", 56, 1322.17, 53, 3, 1272.11, 50.06, 16, 38], ["2026-08-14", 46, 1001.13, 42, 4, 931.57, 69.56, 10, 35], ["2026-08-15", 45, 1038.67, 42, 3, 1003.94, 34.73, 9, 36], ["2026-08-16", 46, 1075.35, 43, 3, 1028.61, 46.74, 15, 29], ["2026-08-17", 46, 1078.22, 45, 1, 1061.35, 16.87, 6, 40], ["2026-08-18", 61, 1461.53, 57, 4, 1393.32, 68.21, 10, 47], ["2026-08-19", 44, 1044.94, 40, 4, 980.4, 64.54, 6, 35], ["2026-08-20", 49, 1112.62, 45, 4, 1045.63, 66.99, 6, 41], ["2026-08-21", 48, 1109.84, 44, 4, 1039.62, 70.22, 4, 43], ["2026-08-22", 40, 867.37, 36, 4, 807.44, 59.93, 11, 28], ["2026-08-23", 60, 1371.45, 58, 2, 1336.79, 34.66, 12, 48], ["2026-08-24", 46, 985.52, 46, 0, 985.52, 0.0, 10, 35], ["2026-08-25", 37, 846.12, 36, 1, 827.38, 18.74, 9, 27], ["2026-08-26", 45, 987.24, 41, 4, 922.53, 64.71, 11, 33], ["2026-08-27", 40, 917.99, 39, 1, 899.27, 18.72, 10, 30], ["2026-08-28", 41, 939.9, 40, 1, 924.21, 15.69, 4, 34], ["2026-08-29", 35, 835.67, 35, 0, 835.67, 0.0, 3, 30], ["2026-08-30", 75, 1696.61, 68, 7, 1584.92, 111.69, 8, 65], ["2026-08-31", 51, 1134.84, 47, 4, 1067.58, 67.26, 6, 43], ["2026-09-01", 40, 932.08, 38, 2, 898.52, 33.56, 8, 31], ["2026-09-02", 56, 1315.42, 54, 2, 1279.89, 35.53, 6, 48], ["2026-09-03", 38, 910.5, 37, 1, 895.13, 15.37, 7, 30], ["2026-09-04", 53, 1245.74, 52, 1, 1226.85, 18.89, 8, 44], ["2026-09-05", 84, 1934.43, 76, 8, 1796.58, 137.85, 17, 65], ["2026-09-06", 128, 3020.72, 118, 10, 2859.78, 160.94, 20, 104], ["2026-09-07", 134, 3122.5, 126, 8, 2983.11, 139.39, 20, 107], ["2026-09-08", 30, 700.59, 27, 3, 649.66, 50.93, 3, 26], ["2026-09-09", 34, 819.25, 34, 0, 819.25, 0.0, 6, 28], ["2026-09-10", 35, 818.49, 35, 0, 818.49, 0.0, 6, 29], ["2026-09-11", 32, 761.98, 32, 0, 761.98, 0.0, 4, 28], ["2026-09-12", 35, 826.91, 35, 0, 826.91, 0.0, 5, 29], ["2026-09-13", 79, 1868.65, 76, 3, 1814.29, 54.36, 14, 65], ["2026-09-14", 25, 517.02, 24, 1, 501.72, 15.3, 6, 19], ["2026-09-15", 28, 670.94, 26, 2, 633.64, 37.3, 3, 24], ["2026-09-16", 40, 916.12, 36, 4, 842.2, 73.92, 9, 29], ["2026-09-17", 26, 603.67, 24, 2, 570.23, 33.44, 7, 19], ["2026-09-18", 39, 920.6, 38, 1, 902.24, 18.36, 5, 31], ["2026-09-19", 62, 1453.59, 62, 0, 1453.59, 0.0, 17, 41], ["2026-09-20", 83, 1944.89, 82, 1, 1926.52, 18.37, 13, 70], ["2026-09-21", 39, 913.78, 37, 2, 880.75, 33.03, 10, 29], ["2026-09-22", 44, 1023.48, 44, 0, 1023.48, 0.0, 4, 38], ["2026-09-23", 105, 2481.96, 99, 6, 2380.27, 101.69, 12, 90], ["2026-09-24", 59, 1418.75, 58, 1, 1400.6, 18.15, 7, 52], ["2026-09-25", 51, 1184.24, 51, 0, 1184.24, 0.0, 8, 42], ["2026-09-26", 56, 1329.2, 53, 3, 1276.13, 53.07, 15, 41], ["2026-09-27", 57, 1303.39, 54, 3, 1256.64, 46.75, 16, 39], ["2026-09-28", 30, 671.06, 27, 3, 617.12, 53.94, 4, 26], ["2026-09-29", 64, 1515.49, 60, 4, 1447.35, 68.14, 9, 53], ["2026-09-30", 56, 1317.26, 53, 3, 1269.04, 48.22, 8, 44], ["2026-10-01", 28, 649.44, 26, 2, 613.62, 35.82, 6, 22], ["2026-10-02", 33, 742.04, 33, 0, 742.04, 0.0, 6, 23], ["2026-10-03", 31, 740.11, 31, 0, 740.11, 0.0, 3, 25], ["2026-10-04", 32, 757.45, 31, 1, 743.27, 14.18, 7, 24], ["2026-10-05", 24, 516.21, 22, 2, 485.67, 30.54, 9, 15], ["2026-10-06", 21, 517.11, 21, 0, 517.11, 0.0, 3, 18], ["2026-10-07", 21, 496.4, 20, 1, 478.63, 17.77, 4, 17], ["2026-10-08", 20, 471.2, 18, 2, 435.72, 35.48, 4, 16], ["2026-10-09", 41, 979.8, 40, 1, 962.1, 17.7, 10, 29], ["2026-10-10", 76, 1712.25, 73, 3, 1678.62, 33.63, 8, 68], ["2026-10-11", 135, 3058.36, 126, 9, 2915.88, 142.48, 18, 110], ["2026-10-12", 31, 687.11, 31, 0, 687.11, 0.0, 6, 24], ["2026-10-13", 18, 375.7, 18, 0, 375.7, 0.0, 1, 17], ["2026-10-14", 71, 1608.86, 67, 4, 1544.83, 64.03, 15, 55], ["2026-10-15", 51, 1160.96, 50, 1, 1145.99, 14.97, 8, 41], ["2026-10-16", 56, 1274.95, 54, 2, 1239.24, 35.71, 9, 45], ["2026-10-17", 103, 2393.53, 98, 5, 2309.18, 84.35, 12, 79], ["2026-10-18", 91, 2016.21, 87, 4, 1953.52, 62.69, 21, 69], ["2026-10-19", 38, 877.03, 38, 0, 877.03, 0.0, 8, 30], ["2026-10-20", 34, 783.24, 32, 2, 750.5, 32.74, 10, 20], ["2026-10-21", 45, 950.91, 44, 1, 936.32, 14.59, 10, 34], ["2026-10-22", 34, 797.64, 34, 0, 797.64, 0.0, 10, 23], ["2026-10-23", 38, 874.54, 37, 1, 859.65, 14.89, 6, 30], ["2026-10-24", 92, 2069.24, 87, 5, 1986.21, 83.03, 17, 75], ["2026-10-25", 73, 1672.89, 70, 3, 1623.2, 49.69, 15, 56], ["2026-10-26", 49, 1137.9, 49, 0, 1137.9, 0.0, 3, 46], ["2026-10-27", 45, 1019.26, 44, 1, 1000.94, 18.32, 9, 35], ["2026-10-28", 40, 906.01, 39, 1, 889.53, 16.48, 4, 35], ["2026-10-29", 42, 929.36, 38, 4, 861.92, 67.44, 4, 38], ["2026-10-30", 39, 908.71, 39, 0, 908.71, 0.0, 4, 35], ["2026-10-31", 50, 1142.4, 47, 3, 1090.16, 52.24, 10, 38], ["2026-11-01", 59, 1367.93, 56, 3, 1317.23, 50.7, 11, 48], ["2026-11-02", 40, 868.24, 37, 3, 819.55, 48.69, 8, 30], ["2026-11-03", 55, 1172.48, 52, 3, 1137.45, 35.03, 9, 44], ["2026-11-04", 84, 1877.82, 82, 2, 1845.28, 32.54, 13, 68], ["2026-11-05", 62, 1451.12, 59, 3, 1403.93, 47.19, 5, 57], ["2026-11-06", 44, 988.99, 37, 7, 872.84, 116.15, 6, 37], ["2026-11-07", 58, 1302.61, 57, 1, 1287.32, 15.29, 8, 48], ["2026-11-08", 60, 1375.98, 58, 2, 1344.02, 31.96, 14, 46], ["2026-11-09", 40, 873.61, 39, 1, 855.53, 18.08, 8, 32], ["2026-11-10", 44, 980.19, 44, 0, 980.19, 0.0, 10, 33], ["2026-11-11", 47, 1030.54, 45, 2, 996.81, 33.73, 11, 35]],
+        "TVG6640": [["2026-06-17", 517, 12277.25, 483, 34, 11717.95, 559.3, 46, 452], ["2026-06-18", 672, 16123.11, 654, 18, 15816.39, 306.72, 59, 594], ["2026-06-19", 324, 7802.54, 312, 12, 7598.87, 203.67, 51, 267], ["2026-06-20", 508, 12082.72, 492, 16, 11829.45, 253.27, 82, 414], ["2026-06-21", 505, 12132.59, 486, 19, 11821.73, 310.86, 72, 416], ["2026-06-22", 171, 4044.64, 164, 7, 3930.33, 114.31, 32, 137], ["2026-06-23", 169, 3951.24, 159, 10, 3794.79, 156.45, 32, 134], ["2026-06-24", 215, 5222.35, 207, 8, 5093.09, 129.26, 51, 158], ["2026-06-25", 212, 5074.94, 198, 14, 4845.88, 229.06, 44, 162], ["2026-06-26", 211, 4908.66, 198, 13, 4686.83, 221.83, 51, 158], ["2026-06-27", 219, 5334.13, 216, 3, 5286.18, 47.95, 65, 151], ["2026-06-28", 207, 5009.09, 201, 6, 4914.45, 94.64, 52, 150], ["2026-06-29", 187, 4518.32, 183, 4, 4453.0, 65.32, 49, 132], ["2026-06-30", 149, 3501.09, 139, 10, 3341.83, 159.26, 32, 114], ["2026-07-01", 307, 6411.43, 272, 35, 5884.37, 527.06, 47, 253], ["2026-07-02", 236, 5082.89, 223, 13, 4887.94, 194.95, 37, 191], ["2026-07-03", 271, 5850.25, 261, 10, 5698.48, 151.77, 28, 240], ["2026-07-04", 267, 5636.27, 237, 30, 5177.31, 458.96, 32, 227], ["2026-07-05", 356, 7715.94, 333, 23, 7356.93, 359.01, 43, 306], ["2026-07-06", 137, 3122.75, 125, 12, 2926.58, 196.17, 21, 115], ["2026-07-07", 135, 3214.78, 126, 9, 3061.32, 153.46, 14, 117], ["2026-07-08", 139, 3155.62, 123, 16, 2888.15, 267.47, 21, 115], ["2026-07-09", 114, 2639.36, 103, 11, 2454.6, 184.76, 20, 93], ["2026-07-10", 72, 1667.14, 63, 9, 1516.63, 150.51, 8, 62], ["2026-07-11", 100, 2251.76, 85, 15, 2004.94, 246.82, 15, 80], ["2026-07-12", 87, 2023.4, 79, 8, 1887.22, 136.18, 14, 72], ["2026-07-13", 78, 1716.88, 70, 8, 1583.48, 133.4, 8, 69], ["2026-07-14", 82, 1905.77, 80, 2, 1872.16, 33.61, 13, 68], ["2026-07-15", 65, 1396.4, 53, 12, 1191.1, 205.3, 12, 53], ["2026-07-16", 73, 1629.03, 70, 3, 1580.99, 48.04, 12, 61], ["2026-07-17", 76, 1666.24, 70, 6, 1565.39, 100.85, 20, 47], ["2026-07-18", 68, 1551.04, 64, 4, 1480.93, 70.11, 11, 56], ["2026-07-19", 72, 1649.96, 67, 5, 1570.01, 79.95, 10, 60], ["2026-07-20", 66, 1472.41, 62, 4, 1421.17, 51.24, 14, 50], ["2026-07-21", 60, 1399.99, 55, 5, 1319.34, 80.65, 5, 52], ["2026-07-22", 66, 1483.41, 63, 3, 1441.42, 41.99, 15, 47], ["2026-07-23", 52, 1161.84, 49, 3, 1111.34, 50.5, 13, 37], ["2026-07-24", 99, 2320.36, 94, 5, 2235.25, 85.11, 14, 82], ["2026-07-25", 69, 1614.2, 67, 2, 1582.6, 31.6, 9, 56], ["2026-07-26", 114, 2576.37, 106, 8, 2447.27, 129.1, 16, 97], ["2026-07-27", 47, 1088.12, 44, 3, 1038.55, 49.57, 6, 39], ["2026-07-28", 66, 1553.39, 64, 2, 1520.26, 33.13, 10, 55], ["2026-07-29", 50, 1180.51, 46, 4, 1110.17, 70.34, 8, 42], ["2026-07-30", 49, 1102.3, 48, 1, 1086.91, 15.39, 7, 41], ["2026-07-31", 79, 1783.71, 76, 3, 1736.15, 47.56, 13, 65], ["2026-08-01", 62, 1400.86, 58, 4, 1327.62, 73.24, 6, 55], ["2026-08-02", 133, 3015.68, 128, 5, 2947.82, 67.86, 24, 109], ["2026-08-03", 38, 855.1, 36, 2, 821.97, 33.13, 9, 28], ["2026-08-04", 38, 856.81, 36, 2, 823.94, 32.87, 8, 30], ["2026-08-05", 50, 1188.2, 49, 1, 1171.26, 16.94, 6, 43], ["2026-08-06", 59, 1332.79, 54, 5, 1249.35, 83.44, 13, 43], ["2026-08-07", 49, 1159.76, 47, 2, 1126.69, 33.07, 10, 39], ["2026-08-08", 159, 3212.34, 150, 9, 3094.72, 117.62, 16, 140], ["2026-08-09", 201, 4047.09, 187, 14, 3843.66, 203.43, 26, 172], ["2026-08-10", 46, 1008.8, 45, 1, 997.71, 11.09, 6, 37], ["2026-08-11", 37, 860.25, 36, 1, 841.7, 18.55, 6, 28], ["2026-08-12", 44, 948.89, 41, 3, 901.31, 47.58, 13, 31], ["2026-08-13", 47, 1030.94, 45, 2, 995.71, 35.23, 18, 29], ["2026-08-14", 35, 764.48, 34, 1, 745.96, 18.52, 8, 27], ["2026-08-15", 40, 914.75, 40, 0, 914.75, 0.0, 13, 26], ["2026-08-16", 49, 1181.94, 48, 1, 1163.25, 18.69, 11, 37], ["2026-08-17", 44, 977.17, 43, 1, 960.3, 16.87, 7, 37], ["2026-08-18", 69, 1629.22, 67, 2, 1595.27, 33.95, 12, 56], ["2026-08-19", 45, 1017.1, 42, 3, 961.0, 56.1, 8, 36], ["2026-08-20", 54, 1238.79, 53, 1, 1220.08, 18.71, 12, 42], ["2026-08-21", 46, 993.56, 37, 9, 850.23, 143.33, 9, 36], ["2026-08-22", 26, 588.42, 21, 5, 500.52, 87.9, 6, 20], ["2026-08-23", 55, 1289.65, 52, 3, 1236.01, 53.64, 10, 45], ["2026-08-24", 42, 942.82, 42, 0, 942.82, 0.0, 5, 37], ["2026-08-25", 35, 820.74, 34, 1, 802.86, 17.88, 4, 31], ["2026-08-26", 53, 1219.06, 50, 3, 1166.62, 52.44, 14, 38], ["2026-08-27", 29, 651.41, 28, 1, 632.73, 18.68, 6, 23], ["2026-08-28", 41, 973.91, 39, 2, 939.54, 34.37, 8, 32], ["2026-08-29", 36, 847.1, 35, 1, 832.07, 15.03, 5, 31], ["2026-08-30", 73, 1710.42, 70, 3, 1656.47, 53.95, 15, 57], ["2026-08-31", 38, 838.38, 38, 0, 838.38, 0.0, 7, 29], ["2026-09-01", 33, 762.59, 32, 1, 743.94, 18.65, 8, 25], ["2026-09-02", 47, 1078.66, 47, 0, 1078.66, 0.0, 5, 42], ["2026-09-03", 43, 946.5, 38, 5, 862.48, 84.02, 9, 32], ["2026-09-04", 35, 854.35, 35, 0, 854.35, 0.0, 7, 28], ["2026-09-05", 64, 1445.04, 58, 6, 1345.73, 99.31, 18, 46], ["2026-09-06", 92, 2168.9, 86, 6, 2065.71, 103.19, 13, 79], ["2026-09-07", 115, 2713.8, 105, 10, 2538.81, 174.99, 20, 92], ["2026-09-08", 40, 944.85, 38, 2, 925.97, 18.88, 10, 28], ["2026-09-09", 35, 768.45, 33, 2, 733.72, 34.73, 7, 27], ["2026-09-10", 28, 631.52, 27, 1, 612.57, 18.95, 5, 23], ["2026-09-11", 28, 643.7, 26, 2, 609.85, 33.85, 7, 21], ["2026-09-12", 40, 949.28, 38, 2, 914.82, 34.46, 2, 37], ["2026-09-13", 58, 1344.97, 53, 5, 1256.71, 88.26, 12, 46], ["2026-09-14", 22, 469.48, 19, 3, 424.77, 44.71, 3, 19], ["2026-09-15", 29, 680.3, 29, 0, 680.3, 0.0, 5, 24], ["2026-09-16", 37, 854.56, 35, 2, 817.39, 37.17, 9, 28], ["2026-09-17", 29, 630.53, 28, 1, 611.98, 18.55, 5, 24], ["2026-09-18", 27, 588.37, 27, 0, 588.37, 0.0, 5, 22], ["2026-09-19", 41, 974.06, 41, 0, 974.06, 0.0, 12, 28], ["2026-09-20", 62, 1445.51, 57, 5, 1361.0, 84.51, 16, 45], ["2026-09-21", 26, 591.01, 26, 0, 591.01, 0.0, 9, 17], ["2026-09-22", 40, 890.5, 37, 3, 842.91, 47.59, 8, 32], ["2026-09-23", 91, 2092.71, 88, 3, 2044.88, 47.83, 16, 73], ["2026-09-24", 39, 938.69, 39, 0, 938.69, 0.0, 5, 34], ["2026-09-25", 41, 964.35, 39, 2, 930.94, 33.41, 9, 31], ["2026-09-26", 67, 1515.07, 65, 2, 1479.05, 36.02, 15, 51], ["2026-09-27", 48, 1114.03, 43, 5, 1028.56, 85.47, 11, 37], ["2026-09-28", 37, 843.89, 31, 6, 749.74, 94.15, 12, 24], ["2026-09-29", 39, 916.86, 38, 1, 898.92, 17.94, 4, 35], ["2026-09-30", 42, 966.29, 37, 5, 884.69, 81.6, 4, 37], ["2026-10-01", 35, 819.51, 32, 3, 767.63, 51.88, 8, 26], ["2026-10-02", 26, 577.29, 24, 2, 548.9, 28.39, 3, 22], ["2026-10-03", 22, 482.02, 21, 1, 467.84, 14.18, 5, 17], ["2026-10-04", 36, 831.13, 33, 3, 780.78, 50.35, 7, 29], ["2026-10-05", 22, 490.73, 19, 3, 444.6, 46.13, 3, 18], ["2026-10-06", 25, 589.19, 24, 1, 571.47, 17.72, 2, 22], ["2026-10-07", 20, 449.74, 19, 1, 432.07, 17.67, 5, 15], ["2026-10-08", 22, 474.17, 21, 1, 459.06, 15.11, 6, 16], ["2026-10-09", 23, 543.13, 23, 0, 543.13, 0.0, 9, 14], ["2026-10-10", 51, 1141.46, 47, 4, 1075.81, 65.65, 7, 42], ["2026-10-11", 89, 1965.88, 86, 3, 1918.09, 47.79, 10, 79], ["2026-10-12", 23, 527.03, 22, 1, 509.33, 17.7, 8, 15], ["2026-10-13", 10, 220.63, 10, 0, 220.63, 0.0, 0, 10], ["2026-10-14", 27, 652.51, 27, 0, 652.51, 0.0, 4, 23], ["2026-10-15", 23, 516.59, 23, 0, 516.59, 0.0, 6, 17], ["2026-10-16", 11, 237.01, 11, 0, 237.01, 0.0, 1, 10], ["2026-10-17", 33, 757.05, 29, 4, 692.54, 64.51, 3, 30], ["2026-10-18", 32, 709.74, 31, 1, 694.65, 15.09, 7, 25], ["2026-10-19", 24, 517.65, 22, 2, 488.76, 28.89, 5, 19], ["2026-10-20", 17, 372.85, 17, 0, 372.85, 0.0, 3, 13], ["2026-10-21", 19, 370.85, 19, 0, 370.85, 0.0, 3, 16], ["2026-10-22", 16, 382.25, 15, 1, 363.99, 18.26, 0, 15], ["2026-10-23", 16, 350.93, 14, 2, 321.36, 29.57, 4, 12], ["2026-10-24", 29, 678.48, 26, 3, 627.08, 51.4, 3, 26], ["2026-10-25", 35, 802.7, 31, 4, 733.86, 68.84, 7, 25], ["2026-10-26", 25, 600.94, 25, 0, 600.94, 0.0, 5, 19], ["2026-10-27", 28, 616.7, 27, 1, 598.39, 18.31, 9, 19], ["2026-10-28", 15, 368.37, 14, 1, 351.89, 16.48, 4, 11], ["2026-10-29", 23, 533.23, 21, 2, 496.37, 36.86, 0, 23], ["2026-10-30", 20, 459.17, 20, 0, 459.17, 0.0, 2, 18], ["2026-10-31", 29, 669.91, 28, 1, 651.44, 18.47, 5, 23], ["2026-11-01", 31, 717.4, 28, 3, 666.7, 50.7, 5, 26], ["2026-11-02", 18, 390.92, 14, 4, 335.91, 55.01, 3, 15], ["2026-11-03", 24, 546.24, 22, 2, 509.32, 36.92, 3, 21], ["2026-11-04", 43, 923.04, 39, 4, 851.9, 71.14, 10, 33], ["2026-11-05", 22, 486.96, 20, 2, 468.48, 18.48, 7, 14], ["2026-11-06", 24, 530.96, 23, 1, 515.06, 15.9, 3, 21], ["2026-11-07", 28, 664.34, 27, 1, 646.14, 18.2, 5, 23], ["2026-11-08", 38, 896.13, 36, 2, 864.68, 31.45, 5, 31], ["2026-11-09", 30, 672.01, 29, 1, 653.88, 18.13, 6, 24], ["2026-11-10", 24, 545.01, 22, 2, 514.4, 30.61, 2, 21], ["2026-11-11", 30, 648.68, 28, 2, 612.6, 36.08, 5, 25]]
       },
       "planBySku": {
         "TVG6640": [["2026-06-17", 194], ["2026-06-18", 213], ["2026-06-19", 234], ["2026-06-20", 283], ["2026-06-21", 255], ["2026-06-22", 151], ["2026-06-23", 123], ["2026-06-24", 123], ["2026-06-25", 140], ["2026-06-26", 158], ["2026-06-27", 151], ["2026-06-28", 140], ["2026-06-29", 111], ["2026-06-30", 93], ["2026-07-01", 95], ["2026-07-02", 110], ["2026-07-03", 166], ["2026-07-04", 162], ["2026-07-05", 153], ["2026-07-06", 95], ["2026-07-07", 81], ["2026-07-08", 84], ["2026-07-09", 99], ["2026-07-10", 116], ["2026-07-11", 114], ["2026-07-12", 109], ["2026-07-13", 89], ["2026-07-14", 76], ["2026-07-15", 80], ["2026-07-16", 94], ["2026-07-17", 111], ["2026-07-18", 143], ["2026-07-19", 137], ["2026-07-20", 86], ["2026-07-21", 74], ["2026-07-22", 101], ["2026-07-23", 92], ["2026-07-24", 109], ["2026-07-25", 109], ["2026-07-26", 104], ["2026-07-27", 85], ["2026-07-28", 73], ["2026-07-29", 77], ["2026-07-30", 92], ["2026-07-31", 108], ["2026-08-01", 140], ["2026-08-02", 135], ["2026-08-03", 85], ["2026-08-04", 73], ["2026-08-05", 77], ["2026-08-06", 91], ["2026-08-07", 108], ["2026-08-08", 108], ["2026-08-09", 103], ["2026-08-10", 85], ["2026-08-11", 73], ["2026-08-12", 77], ["2026-08-13", 91], ["2026-08-14", 108], ["2026-08-15", 140], ["2026-08-16", 134], ["2026-08-17", 85], ["2026-08-18", 73], ["2026-08-19", 77], ["2026-08-20", 91], ["2026-08-21", 108], ["2026-08-22", 107], ["2026-08-23", 103], ["2026-08-24", 85], ["2026-08-25", 95], ["2026-08-26", 77], ["2026-08-27", 91], ["2026-08-28", 108], ["2026-08-29", 107], ["2026-08-30", 103], ["2026-08-31", 85], ["2026-09-01", 73], ["2026-09-02", 77], ["2026-09-03", 91], ["2026-09-04", 108], ["2026-09-05", 140], ["2026-09-06", 134], ["2026-09-07", 110], ["2026-09-08", 73], ["2026-09-09", 77], ["2026-09-10", 91], ["2026-09-11", 108], ["2026-09-12", 107], ["2026-09-13", 103], ["2026-09-14", 85], ["2026-09-15", 73], ["2026-09-16", 77], ["2026-09-17", 91], ["2026-09-18", 108], ["2026-09-19", 140], ["2026-09-20", 134], ["2026-09-21", 85], ["2026-09-22", 73], ["2026-09-23", 77], ["2026-09-24", 91], ["2026-09-25", 108], ["2026-09-26", 107], ["2026-09-27", 103], ["2026-09-28", 85], ["2026-09-29", 73], ["2026-09-30", 77], ["2026-10-01", 91], ["2026-10-02", 108], ["2026-10-03", 140], ["2026-10-04", 134], ["2026-10-05", 85], ["2026-10-06", 73], ["2026-10-07", 77], ["2026-10-08", 91], ["2026-10-09", 108], ["2026-10-10", 107], ["2026-10-11", 103], ["2026-10-12", 85], ["2026-10-13", 73], ["2026-10-14", 77]],
@@ -27384,24 +27562,24 @@ window.DASHBOARD_DATA = {
       "crossSellBySku": [],
       "categoryCustomers": {
         "category": "Eyeshadow",
-        "total": 20988,
-        "existingCategory": 15836,
-        "newToCategory": 5152,
+        "total": 21051,
+        "existingCategory": 15883,
+        "newToCategory": 5168,
         "byVariant": [
           {
             "sku": "TVG4770",
             "name": "Mila",
-            "newToCategory": 2943,
-            "existingCategory": 9874
+            "newToCategory": 2954,
+            "existingCategory": 9906
           },
           {
             "sku": "TVG6640",
             "name": "Hoda",
-            "newToCategory": 2924,
-            "existingCategory": 8613
+            "newToCategory": 2929,
+            "existingCategory": 8635
           }
         ],
-        "daily": [["2026-06-17", 160, 743], ["2026-06-18", 140, 774], ["2026-06-19", 98, 382], ["2026-06-20", 174, 545], ["2026-06-21", 161, 531], ["2026-06-22", 77, 206], ["2026-06-23", 76, 196], ["2026-06-24", 109, 222], ["2026-06-25", 93, 230], ["2026-06-26", 96, 219], ["2026-06-27", 100, 210], ["2026-06-28", 100, 188], ["2026-06-29", 81, 195], ["2026-06-30", 69, 191], ["2026-07-01", 119, 337], ["2026-07-02", 107, 259], ["2026-07-03", 82, 360], ["2026-07-04", 96, 329], ["2026-07-05", 116, 427], ["2026-07-06", 57, 168], ["2026-07-07", 54, 156], ["2026-07-08", 63, 195], ["2026-07-09", 72, 191], ["2026-07-10", 42, 146], ["2026-07-11", 69, 148], ["2026-07-12", 55, 178], ["2026-07-13", 44, 172], ["2026-07-14", 44, 154], ["2026-07-15", 44, 123], ["2026-07-16", 29, 122], ["2026-07-17", 43, 90], ["2026-07-18", 32, 93], ["2026-07-19", 21, 106], ["2026-07-20", 31, 84], ["2026-07-21", 24, 96], ["2026-07-22", 28, 80], ["2026-07-23", 28, 77], ["2026-07-24", 51, 147], ["2026-07-25", 27, 109], ["2026-07-26", 52, 172], ["2026-07-27", 12, 75], ["2026-07-28", 30, 92], ["2026-07-29", 29, 73], ["2026-07-30", 26, 86], ["2026-07-31", 37, 132], ["2026-08-01", 26, 110], ["2026-08-02", 70, 204], ["2026-08-03", 19, 55], ["2026-08-04", 25, 61], ["2026-08-05", 28, 73], ["2026-08-06", 36, 68], ["2026-08-07", 30, 62], ["2026-08-08", 46, 259], ["2026-08-09", 76, 319], ["2026-08-10", 21, 62], ["2026-08-11", 17, 57], ["2026-08-12", 22, 59], ["2026-08-13", 30, 60], ["2026-08-14", 23, 54], ["2026-08-15", 27, 48], ["2026-08-16", 24, 59], ["2026-08-17", 20, 63], ["2026-08-18", 27, 84], ["2026-08-19", 16, 64], ["2026-08-20", 23, 69], ["2026-08-21", 21, 62], ["2026-08-22", 23, 38], ["2026-08-23", 26, 79], ["2026-08-24", 17, 66], ["2026-08-25", 14, 49], ["2026-08-26", 25, 61], ["2026-08-27", 19, 44], ["2026-08-28", 17, 55], ["2026-08-29", 10, 57], ["2026-08-30", 28, 109], ["2026-08-31", 16, 63], ["2026-09-01", 21, 46], ["2026-09-02", 16, 77], ["2026-09-03", 17, 53], ["2026-09-04", 21, 59], ["2026-09-05", 38, 89], ["2026-09-06", 52, 155], ["2026-09-07", 50, 162], ["2026-09-08", 20, 42], ["2026-09-09", 16, 49], ["2026-09-10", 16, 43], ["2026-09-11", 14, 39], ["2026-09-12", 12, 55], ["2026-09-13", 31, 94], ["2026-09-14", 12, 33], ["2026-09-15", 14, 40], ["2026-09-16", 23, 45], ["2026-09-17", 14, 40], ["2026-09-18", 13, 45], ["2026-09-19", 27, 62], ["2026-09-20", 33, 99], ["2026-09-21", 17, 42], ["2026-09-22", 15, 59], ["2026-09-23", 38, 136], ["2026-09-24", 21, 66], ["2026-09-25", 19, 62], ["2026-09-26", 32, 79], ["2026-09-27", 30, 65], ["2026-09-28", 26, 35], ["2026-09-29", 21, 71], ["2026-09-30", 19, 66], ["2026-10-01", 18, 41], ["2026-10-02", 16, 32], ["2026-10-03", 11, 37], ["2026-10-04", 18, 46], ["2026-10-05", 12, 23], ["2026-10-06", 8, 32], ["2026-10-07", 12, 24], ["2026-10-08", 10, 29], ["2026-10-09", 19, 39], ["2026-10-10", 27, 85], ["2026-10-11", 35, 163], ["2026-10-12", 19, 29], ["2026-10-13", 4, 23], ["2026-10-14", 23, 71], ["2026-10-15", 18, 52], ["2026-10-16", 13, 49], ["2026-10-17", 22, 94], ["2026-10-18", 33, 80], ["2026-10-19", 14, 45], ["2026-10-20", 13, 29], ["2026-10-21", 14, 44], ["2026-10-22", 16, 30], ["2026-10-23", 12, 34], ["2026-10-24", 30, 85], ["2026-10-25", 24, 70], ["2026-10-26", 11, 59], ["2026-10-27", 19, 44], ["2026-10-28", 10, 40], ["2026-10-29", 9, 51], ["2026-10-30", 9, 47], ["2026-10-31", 17, 50], ["2026-11-01", 17, 66], ["2026-11-02", 15, 37], ["2026-11-03", 16, 56], ["2026-11-04", 28, 86], ["2026-11-05", 16, 63], ["2026-11-06", 13, 46], ["2026-11-07", 16, 64], ["2026-11-08", 18, 69], ["2026-11-09", 20, 41], ["2026-11-10", 14, 47]]
+        "daily": [["2026-06-17", 160, 743], ["2026-06-18", 140, 774], ["2026-06-19", 98, 382], ["2026-06-20", 174, 545], ["2026-06-21", 161, 531], ["2026-06-22", 77, 206], ["2026-06-23", 76, 196], ["2026-06-24", 109, 222], ["2026-06-25", 93, 230], ["2026-06-26", 96, 219], ["2026-06-27", 100, 210], ["2026-06-28", 100, 188], ["2026-06-29", 81, 195], ["2026-06-30", 69, 191], ["2026-07-01", 119, 337], ["2026-07-02", 107, 259], ["2026-07-03", 82, 360], ["2026-07-04", 96, 329], ["2026-07-05", 116, 427], ["2026-07-06", 57, 168], ["2026-07-07", 54, 156], ["2026-07-08", 63, 195], ["2026-07-09", 72, 191], ["2026-07-10", 42, 146], ["2026-07-11", 69, 148], ["2026-07-12", 55, 178], ["2026-07-13", 44, 172], ["2026-07-14", 44, 154], ["2026-07-15", 44, 123], ["2026-07-16", 29, 122], ["2026-07-17", 43, 90], ["2026-07-18", 32, 93], ["2026-07-19", 21, 106], ["2026-07-20", 31, 84], ["2026-07-21", 24, 96], ["2026-07-22", 28, 80], ["2026-07-23", 28, 77], ["2026-07-24", 51, 147], ["2026-07-25", 27, 109], ["2026-07-26", 52, 172], ["2026-07-27", 12, 75], ["2026-07-28", 30, 92], ["2026-07-29", 29, 73], ["2026-07-30", 26, 86], ["2026-07-31", 37, 132], ["2026-08-01", 26, 110], ["2026-08-02", 70, 204], ["2026-08-03", 19, 55], ["2026-08-04", 25, 61], ["2026-08-05", 28, 73], ["2026-08-06", 36, 68], ["2026-08-07", 30, 62], ["2026-08-08", 46, 259], ["2026-08-09", 76, 319], ["2026-08-10", 21, 62], ["2026-08-11", 17, 57], ["2026-08-12", 22, 59], ["2026-08-13", 30, 60], ["2026-08-14", 23, 54], ["2026-08-15", 27, 48], ["2026-08-16", 24, 59], ["2026-08-17", 20, 63], ["2026-08-18", 27, 84], ["2026-08-19", 16, 64], ["2026-08-20", 23, 69], ["2026-08-21", 21, 62], ["2026-08-22", 23, 38], ["2026-08-23", 26, 79], ["2026-08-24", 17, 66], ["2026-08-25", 14, 49], ["2026-08-26", 25, 61], ["2026-08-27", 19, 44], ["2026-08-28", 17, 55], ["2026-08-29", 10, 57], ["2026-08-30", 28, 109], ["2026-08-31", 16, 63], ["2026-09-01", 21, 46], ["2026-09-02", 16, 77], ["2026-09-03", 17, 53], ["2026-09-04", 21, 59], ["2026-09-05", 38, 89], ["2026-09-06", 52, 155], ["2026-09-07", 50, 162], ["2026-09-08", 20, 42], ["2026-09-09", 16, 49], ["2026-09-10", 16, 43], ["2026-09-11", 14, 39], ["2026-09-12", 12, 55], ["2026-09-13", 31, 94], ["2026-09-14", 12, 33], ["2026-09-15", 14, 40], ["2026-09-16", 23, 45], ["2026-09-17", 14, 40], ["2026-09-18", 13, 45], ["2026-09-19", 27, 62], ["2026-09-20", 33, 99], ["2026-09-21", 17, 42], ["2026-09-22", 15, 59], ["2026-09-23", 38, 136], ["2026-09-24", 21, 66], ["2026-09-25", 19, 62], ["2026-09-26", 32, 79], ["2026-09-27", 30, 65], ["2026-09-28", 26, 35], ["2026-09-29", 21, 71], ["2026-09-30", 19, 66], ["2026-10-01", 18, 41], ["2026-10-02", 16, 32], ["2026-10-03", 11, 37], ["2026-10-04", 18, 46], ["2026-10-05", 12, 23], ["2026-10-06", 8, 32], ["2026-10-07", 12, 24], ["2026-10-08", 10, 29], ["2026-10-09", 19, 39], ["2026-10-10", 27, 85], ["2026-10-11", 35, 163], ["2026-10-12", 19, 29], ["2026-10-13", 4, 23], ["2026-10-14", 23, 71], ["2026-10-15", 18, 52], ["2026-10-16", 13, 49], ["2026-10-17", 22, 94], ["2026-10-18", 33, 80], ["2026-10-19", 14, 45], ["2026-10-20", 13, 29], ["2026-10-21", 14, 44], ["2026-10-22", 16, 30], ["2026-10-23", 12, 34], ["2026-10-24", 30, 85], ["2026-10-25", 24, 70], ["2026-10-26", 11, 59], ["2026-10-27", 19, 44], ["2026-10-28", 10, 40], ["2026-10-29", 9, 51], ["2026-10-30", 9, 47], ["2026-10-31", 17, 50], ["2026-11-01", 17, 66], ["2026-11-02", 15, 37], ["2026-11-03", 16, 56], ["2026-11-04", 28, 86], ["2026-11-05", 16, 63], ["2026-11-06", 13, 46], ["2026-11-07", 16, 64], ["2026-11-08", 18, 69], ["2026-11-09", 20, 41], ["2026-11-10", 14, 47], ["2026-11-11", 18, 52]]
       }
     }
   ],
@@ -27471,7 +27649,7 @@ window.DASHBOARD_DATA = {
       "asanaUrl": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989540333570"
     },
     {
-      "name": "Holiday Phase 3: Cyber 6 Begins",
+      "name": "Holiday Phase 3: Cyber 5 Begins",
       "launchDate": "2026-11-25",
       "internalDate": null,
       "trackedId": null,
@@ -27520,11 +27698,35 @@ window.DASHBOARD_DATA = {
     },
     {
       "name": "Holiday Phase 4: Ecomm Bag GWP Drops",
-      "launchDate": "2026-12-02",
+      "launchDate": "2026-12-01",
       "internalDate": null,
       "trackedId": null,
       "section": "GTM Campaigns",
       "asanaUrl": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693251"
+    },
+    {
+      "name": "[US/CA] 12/1 to 12/13 | December GWP: free Deluxe Makeup Bag over $200 (US) / free Holiday Gift Bag over C$75 (CA)",
+      "launchDate": "2026-12-13",
+      "internalDate": null,
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989375745890"
+    },
+    {
+      "name": "[US/CA] 12/15 | SURPRISE! 20% Off Sitewide + Free Shipping, Today Only",
+      "launchDate": "2026-12-15",
+      "internalDate": null,
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1220236390454164"
+    },
+    {
+      "name": "[US/CA] 12/18 to 12/20 | Free shipping to the holiday cutoff",
+      "launchDate": "2026-12-20",
+      "internalDate": null,
+      "trackedId": null,
+      "section": "GTM Campaigns",
+      "asanaUrl": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989607707163"
     }
   ],
   "calendar": {
@@ -27571,7 +27773,7 @@ window.DASHBOARD_DATA = {
         "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989540333570"
       },
       {
-        "name": "Holiday Phase 3: Cyber 6 Begins",
+        "name": "Holiday Phase 3: Cyber 5 Begins",
         "launch_date": "2026-11-25",
         "section": "GTM Campaigns",
         "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260273"
@@ -27608,9 +27810,27 @@ window.DASHBOARD_DATA = {
       },
       {
         "name": "Holiday Phase 4: Ecomm Bag GWP Drops",
-        "launch_date": "2026-12-02",
+        "launch_date": "2026-12-01",
         "section": "GTM Campaigns",
         "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693251"
+      },
+      {
+        "name": "[US/CA] 12/1 to 12/13 | December GWP: free Deluxe Makeup Bag over $200 (US) / free Holiday Gift Bag over C$75 (CA)",
+        "launch_date": "2026-12-13",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989375745890"
+      },
+      {
+        "name": "[US/CA] 12/15 | SURPRISE! 20% Off Sitewide + Free Shipping, Today Only",
+        "launch_date": "2026-12-15",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1220236390454164"
+      },
+      {
+        "name": "[US/CA] 12/18 to 12/20 | Free shipping to the holiday cutoff",
+        "launch_date": "2026-12-20",
+        "section": "GTM Campaigns",
+        "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989607707163"
       }
     ],
     "configWithoutLink": [

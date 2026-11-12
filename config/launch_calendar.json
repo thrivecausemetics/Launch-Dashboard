@@ -90,8 +90,8 @@
       "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989540333570"
     },
     {
-      "name": "Holiday Phase 3: Cyber 6 Begins",
-      "slug": "holiday-phase-3-cyber-6-begins",
+      "name": "Holiday Phase 3: Cyber 5 Begins",
+      "slug": "holiday-phase-3-cyber-5-begins",
       "launch_date": "2026-11-25",
       "internal_date": null,
       "section": "GTM Campaigns",
@@ -152,12 +152,42 @@
     {
       "name": "Holiday Phase 4: Ecomm Bag GWP Drops",
       "slug": "holiday-phase-4-ecomm-bag-gwp-drops",
-      "launch_date": "2026-12-02",
+      "launch_date": "2026-12-01",
       "internal_date": null,
       "section": "GTM Campaigns",
       "completed": false,
       "asana_gid": "1219335039693251",
       "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693251"
+    },
+    {
+      "name": "[US/CA] 12/1 to 12/13 | December GWP: free Deluxe Makeup Bag over $200 (US) / free Holiday Gift Bag over C$75 (CA)",
+      "slug": "us-ca-12-1-to-12-13-december-gwp-free-deluxe-makeup-bag-over-200-us-free-holiday-gift-bag-over-c-75-ca",
+      "launch_date": "2026-12-13",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1219989375745890",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989375745890"
+    },
+    {
+      "name": "[US/CA] 12/15 | SURPRISE! 20% Off Sitewide + Free Shipping, Today Only",
+      "slug": "us-ca-12-15-surprise-20-off-sitewide-free-shipping-today-only",
+      "launch_date": "2026-12-15",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1220236390454164",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1220236390454164"
+    },
+    {
+      "name": "[US/CA] 12/18 to 12/20 | Free shipping to the holiday cutoff",
+      "slug": "us-ca-12-18-to-12-20-free-shipping-to-the-holiday-cutoff",
+      "launch_date": "2026-12-20",
+      "internal_date": null,
+      "section": "GTM Campaigns",
+      "completed": false,
+      "asana_gid": "1219989607707163",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989607707163"
     }
   ],
   "learnings_by_gid": {},
@@ -202,7 +232,7 @@
       "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989540333570"
     },
     {
-      "name": "Holiday Phase 3: Cyber 6 Begins",
+      "name": "Holiday Phase 3: Cyber 5 Begins",
       "launch_date": "2026-11-25",
       "section": "GTM Campaigns",
       "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1216777821260273"
@@ -239,9 +269,27 @@
     },
     {
       "name": "Holiday Phase 4: Ecomm Bag GWP Drops",
-      "launch_date": "2026-12-02",
+      "launch_date": "2026-12-01",
       "section": "GTM Campaigns",
       "asana_url": "https://app.asana.com/1/15251267373658/project/1216777821260255/task/1219335039693251"
+    },
+    {
+      "name": "[US/CA] 12/1 to 12/13 | December GWP: free Deluxe Makeup Bag over $200 (US) / free Holiday Gift Bag over C$75 (CA)",
+      "launch_date": "2026-12-13",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989375745890"
+    },
+    {
+      "name": "[US/CA] 12/15 | SURPRISE! 20% Off Sitewide + Free Shipping, Today Only",
+      "launch_date": "2026-12-15",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1220236390454164"
+    },
+    {
+      "name": "[US/CA] 12/18 to 12/20 | Free shipping to the holiday cutoff",
+      "launch_date": "2026-12-20",
+      "section": "GTM Campaigns",
+      "asana_url": "https://app.asana.com/1/15251267373658/project/1120057103120203/task/1219989607707163"
     }
   ],
   "config_without_asana_gid": [
