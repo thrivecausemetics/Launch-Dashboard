@@ -5,11 +5,17 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-12",
+  "lastRun": "2026-11-13",
   "rulesVersion": 2,
   "lastDigest": "2026-11-09",
-  "dataCutoff": "2026-11-11",
+  "dataCutoff": "2026-11-12",
   "alerts": {
+    "gap|[US/CA] 11/14 to 11/15 | Free Set + Blur Powder Puff with any holiday set": {
+      "rank": -1,
+      "title": "[US/CA] 11/14 to 11/15 | Free Set + Blur Powder Puff with any holiday set is live but not on the dashboard",
+      "firstSeen": "2026-11-13",
+      "lastPosted": "2026-11-13"
+    },
     "berry-collection|oos:ca:TVG4560": {
       "rank": 0,
       "title": "Rosa (EmpowerMatte\u2122 Precision Lipstick Crayon) is out of stock in Canada (.ca)",
@@ -36,13 +42,13 @@
     },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~14 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~13 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-09"
     },
     "eyeshadow-quads|oos-soon:ca:TVG6700": {
       "rank": 1,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~17 days",
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~16 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-09"
     },
@@ -70,6 +76,12 @@
       "firstSeen": "2026-11-05",
       "lastPosted": "2026-11-09"
     },
+    "beb-grace-hope|pacing": {
+      "rank": 4,
+      "title": "The whole launch is pacing behind plan",
+      "firstSeen": "2026-11-13",
+      "lastPosted": "2026-11-13"
+    },
     "psl-pout-hero|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
@@ -77,7 +89,5 @@
       "lastPosted": "2026-11-09"
     }
   },
-  "resolvedToday": [
-    "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~20 days"
-  ]
+  "resolvedToday": []
 }
