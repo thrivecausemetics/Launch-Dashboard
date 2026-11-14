@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-13",
+  "lastRun": "2026-11-14",
   "rulesVersion": 2,
   "lastDigest": "2026-11-09",
-  "dataCutoff": "2026-11-12",
+  "dataCutoff": "2026-11-13",
   "alerts": {
     "gap|[US/CA] 11/14 to 11/15 | Free Set + Blur Powder Puff with any holiday set": {
       "rank": -1,
@@ -48,7 +48,7 @@
     },
     "eyeshadow-quads|oos-soon:ca:TVG6700": {
       "rank": 1,
-      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~16 days",
+      "title": "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~11 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-09"
     },
