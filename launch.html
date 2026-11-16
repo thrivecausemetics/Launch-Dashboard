@@ -262,6 +262,7 @@
     <div class="tab" data-tab="landing">Landing Page</div>
     <div class="tab" data-tab="pdp">PDP Health</div>
     <div class="tab" data-tab="crosssells">Cross-Sells &amp; Pairings</div>
+    <div class="tab" data-tab="bundles">Bundles</div>
     <div class="tab" data-tab="category">Category Customers</div>
     <div class="tab" data-tab="upcoming">Upcoming Launches</div>
     <div class="tab" data-tab="learnings">Launch Learnings</div>
@@ -387,6 +388,7 @@
 
   <!-- CROSS-SELLS -->
   <div id="panel-crosssells" style="display:none"></div>
+  <div id="panel-bundles" style="display:none"></div>
 
   <!-- CATEGORY CUSTOMERS -->
   <div id="panel-category" style="display:none"></div>
@@ -409,6 +411,7 @@
           <li><strong>GA4_BQ_STG.BASE_LANDING_PAGE_STG2</strong> — GA4 landing page sessions, CVR, revenue</li>
           <li><strong>UTS.PRODUCT_PAGE</strong> — Unified Traffic Schema: PDP views, add-to-cart, purchases by SKU</li>
           <li><strong>DRP.PRODUCT_AFFINITY_SETS</strong> — Product affinity / basket co-occurrence pairs</li>
+          <li><strong>SHOPIFY order lines, line properties and discount allocations</strong> — Bundles tab: which launch units sold inside a bundle (a line with a <code>set</code> property) and what they netted after the set discount</li>
           <li><strong>USS.ORDER_LINE_ITEMS</strong> — Recharge subscription orders</li>
           <li><strong>GSHEETS.SKU_LAUNCH_DAY_FORECAST</strong> — Daily unit plan from Google Sheets (falls back to the committed snapshot in config/plan_fallback.json when the schema isn't granted)</li>
           <li><strong>UOS.INVENTORY_LEVELS</strong> — Available units per SKU per fulfillment location, latest sync (behind the Est. OOS projection)</li>
@@ -442,7 +445,8 @@
         <ul>
           <li>Traffic data is <strong>site-wide</strong>, not launch-specific</li>
           <li>PDP Health data is launch-SKU filtered via UTS.PRODUCT_PAGE</li>
-          <li>Cross-sell pairs sourced from DRP.PRODUCT_AFFINITY_SETS (same-cart basket analysis, launch SKU as primary)</li>
+          <li>Cross-sell pairs sourced from DRP.PRODUCT_AFFINITY_SETS (same-cart basket analysis, launch SKU as primary). Bundles don't appear there: a bundle's components are lines of the same product family, which that table excludes. The Bundles tab covers them.</li>
+          <li>Bundles tab revenue uses Shopify discount allocations, which include the bundle's set discount. The Overview reads UOS, whose discount mostly misses it, so for launches that sell in bundles the Overview's net sales run slightly higher. The tab shows the gap.</li>
           <li>Subscription counts include true Recharge subscription lines only (one-time purchases excluded); USS has no order dates, so totals are all-time</li>
           <li>A source that isn't granted to the refresh's Snowflake user shows as empty with a note, and fills in automatically on the next refresh once access is granted</li>
           <li>Figures can differ from earlier manual snapshots by a low single-digit % (USD conversion, first-order-based new/returning, plan window)</li>
@@ -1157,6 +1161,20 @@ const EXPORTS = {
       columns: ['Paired Product', 'SKU', 'Pair Count'],
       rows: rows.map(r => [r.product, r.sku, r.pairs]) };
   },
+  'bundles-by-bundle': () => {
+    const b = LOADED.bundleSplit || { byBundle: [], bySku: [], totals: {} };
+    const skus = b.bySku.map(x => x.sku);
+    return { slug: 'bundles', title: 'Bundles carrying the launch', filters: LAUNCH_WIDE,
+      columns: ['Bundle', 'Units', 'Pct of Launch Units', ...skus.map(k => k + ' Units'), 'US Units', 'CA Units', 'Net Sales USD', 'Net per Unit USD'],
+      rows: b.byBundle.map(r => [r.name, r.units, b.totals.units ? (r.units / b.totals.units * 100).toFixed(1) : '',
+        ...skus.map(k => r.bySku[k] || 0), r.usUnits, r.caUnits, r.net, r.units ? (r.net / r.units).toFixed(2) : '']) };
+  },
+  'bundles-by-shade': () => {
+    const b = LOADED.bundleSplit || { bySku: [] };
+    return { slug: 'bundles-by-shade', title: 'Launch units in bundles by shade', filters: LAUNCH_WIDE,
+      columns: ['SKU', 'Variant', 'Units', 'Units in Bundles', 'Pct in Bundles', 'Top Bundle'],
+      rows: b.bySku.map(x => [x.sku, x.name, x.units, x.bundleUnits, x.share != null ? (x.share * 100).toFixed(1) : '', x.topBundle || '']) };
+  },
   'category-variants': () => ({
     slug: 'category-customers', title: 'Category Customers by Variant', filters: LAUNCH_WIDE,
     columns: ['SKU', 'Variant', 'New to Category', 'Existing Category', 'Pct New to Category'],
@@ -1862,6 +1880,68 @@ function renderCrossSells(d) {
   });
 }
 
+
+/* ── BUNDLES TAB ──
+   How much of the launch sold inside bundles (Shopify lines with a `set`
+   property), which bundles, and what those units netted after the set
+   discount. Same logic as the Bundles Performance Hub. */
+function renderBundles(d) {
+  const panel = document.getElementById('panel-bundles');
+  const b = d.bundleSplit;
+  const head = `<div class="section-title">Bundles · ${d.name} · ${fmt.date(d.launchDate)} – ${fmt.date(META.dataCutoff)}</div>`;
+  if (!b) {
+    panel.innerHTML = head + `<p class="data-note">${d.state === 'archived'
+      ? 'Not collected for archived launches.'
+      : 'Bundle data arrives with the next daily refresh.'}</p>`;
+    return;
+  }
+  const t = b.totals, shades = d.byVariant || [];
+  const nameOf = sku => (shades.find(v => v.sku === sku) || {}).name || sku;
+  const colorOf = sku => (shades.find(v => v.sku === sku) || {}).color || '#3A9E98';
+  const skus = b.bySku.map(x => x.sku);
+  const overviewNet = d.summary ? d.summary.netSales : null;
+  const gap = overviewNet && t.net ? (overviewNet / t.net - 1) * 100 : null;
+  const maxUnits = b.byBundle.length ? b.byBundle[0].units : 1;
+  panel.innerHTML = head + `
+    <div class="kpi-row1" style="margin-bottom:18px">
+      <div class="kpi-card c-teal"><div class="kpi-label">Sold inside bundles</div><div class="kpi-value">${fmt.pct(t.share * 100)}</div><div class="kpi-sub">${fmt.num(t.bundleUnits)} of ${fmt.num(t.units)} units</div></div>
+      <div class="kpi-card c-gold"><div class="kpi-label">Top bundle</div><div class="kpi-value" style="font-size:14px">${b.byBundle[0] ? b.byBundle[0].name : '—'}</div><div class="kpi-sub">${b.byBundle[0] ? fmt.num(b.byBundle[0].units) + ' units · ' + fmt.pct(b.byBundle[0].units / t.units * 100) + ' of all launch units' : 'No bundle sales yet'}</div></div>
+      <div class="kpi-card c-navy"><div class="kpi-label">Net per unit</div><div class="kpi-value">${t.netPerUnitBundled != null ? fmt.cur2(t.netPerUnitBundled) : '—'}</div><div class="kpi-sub">in a bundle vs ${t.netPerUnitStandalone != null ? fmt.cur2(t.netPerUnitStandalone) : '—'} on its own</div></div>
+      <div class="kpi-card c-green"><div class="kpi-label">Set discount given</div><div class="kpi-value">${fmt.cur(t.setDiscount)}</div><div class="kpi-sub">on ${fmt.num(t.bundleUnits)} bundled units</div></div>
+    </div>
+    <div class="table-card">
+      <div class="table-hdr split"><h3>Bundles carrying ${d.name}</h3>${exportBtn('bundles-by-bundle')}</div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Bundle</th><th class="r">Units</th><th class="r">% of launch units</th>${skus.map(k => `<th class="r">${nameOf(k)}</th>`).join('')}<th class="r">US / CA</th><th class="r">Net sales</th><th class="r">Net / unit</th><th></th></tr></thead>
+        <tbody>${b.byBundle.map(r => `<tr>
+          <td>${r.name}</td>
+          <td class="r"><strong>${fmt.num(r.units)}</strong></td>
+          <td class="r">${fmt.pct(r.units / t.units * 100)}</td>
+          ${skus.map(k => `<td class="r">${r.bySku[k] ? fmt.num(r.bySku[k]) : '—'}</td>`).join('')}
+          <td class="r">${fmt.num(r.usUnits)} / ${fmt.num(r.caUnits)}</td>
+          <td class="r">${fmt.cur(r.net)}</td>
+          <td class="r">${fmt.cur2(r.units ? r.net / r.units : 0)}</td>
+          <td style="min-width:120px"><div style="background:var(--border);border-radius:3px;height:8px;overflow:hidden"><div style="background:#3A9E98;height:100%;width:${(r.units / maxUnits * 100).toFixed(0)}%;border-radius:3px"></div></div></td>
+        </tr>`).join('') || `<tr><td colspan="${7 + skus.length}" class="r">No bundle sales yet.</td></tr>`}
+        <tr style="font-weight:600;border-top:2px solid var(--tc-teal, #3A9E98)"><td>Sold on its own</td><td class="r">${fmt.num(t.standaloneUnits)}</td><td class="r">${fmt.pct(t.standaloneUnits / t.units * 100)}</td>${skus.map(k => { const x = b.bySku.find(y => y.sku === k); return `<td class="r">${fmt.num(x.units - x.bundleUnits)}</td>`; }).join('')}<td></td><td class="r">${fmt.cur(t.netStandalone)}</td><td class="r">${t.netPerUnitStandalone != null ? fmt.cur2(t.netPerUnitStandalone) : '—'}</td><td></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="table-card">
+      <div class="table-hdr split"><h3>By shade</h3>${exportBtn('bundles-by-shade')}</div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Shade</th><th>SKU</th><th class="r">Units</th><th class="r">In bundles</th><th class="r">% in bundles</th><th>Top bundle</th></tr></thead>
+        <tbody>${b.bySku.map(x => `<tr>
+          <td><span class="dot" style="display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;background:${colorOf(x.sku)}"></span>${nameOf(x.sku)}</td>
+          <td><code style="font-size:12px;background:var(--bg);padding:2px 6px;border-radius:4px">${x.sku}</code></td>
+          <td class="r">${fmt.num(x.units)}</td><td class="r">${fmt.num(x.bundleUnits)}</td>
+          <td class="r"><strong>${fmt.pct(x.share * 100)}</strong></td><td>${x.topBundle || '—'}</td>
+        </tr>`).join('')}</tbody>
+      </table></div>
+    </div>
+    <p class="data-note">Source: Shopify order lines, line properties and discount allocations via Snowflake DAASITY_DB. A unit is "in a bundle" when its order line carries a <code>set</code> property; bundles are grouped by the product page they were bought from. Net = price − every discount allocated to the line (including the set discount) − refunds, in USD. Cancelled, voided and test orders are excluded.${gap != null ? ` The Overview reads Daasity UOS, whose discount mostly misses the set discount, so its net sales (${fmt.cur(overviewNet)}) run ${gap.toFixed(1)}% above this tab's ${fmt.cur(t.net)}.` : ''} Units here include refunded lines, so totals can differ from the Overview by a fraction of a percent.</p>`;
+}
+
 /* ── CATEGORY CUSTOMERS TAB ── */
 function renderCategory(d) {
   const panel = document.getElementById('panel-category');
@@ -2180,7 +2260,9 @@ function init() {
       if (d.state === 'live') {
         renderPDP(d);
         renderCrossSells(d);
+        renderBundles(d);
       } else {
+        renderBundles(d);
         // Not queried for archived launches; say which, rather than leaving
         // two tabs blank.
         for (const [id, label] of [['pdp', 'PDP Health'], ['crosssells', 'Cross-Sells & Pairings']]) {

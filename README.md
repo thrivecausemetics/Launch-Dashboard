@@ -8,7 +8,7 @@ data-refresh pipeline from Snowflake `DAASITY_DB`.
 | File | Purpose |
 |---|---|
 | `index.html` | Launch Intelligence Hub — cards for live / pending / upcoming launches |
-| `launch.html?id=<launch-id>` | Per-launch dashboard (8 tabs: Overview, Traffic Sources, Landing Page, PDP Health, Cross-Sells & Pairings, Category Customers, Upcoming Launches, Data Guide) |
+| `launch.html?id=<launch-id>` | Per-launch dashboard (tabs: Overview, Traffic Sources, Landing Page, PDP Health, Cross-Sells & Pairings, Bundles, Category Customers, Upcoming Launches, Launch Learnings, Data Guide) |
 | `data.js` | **Generated** data file consumed by both pages (`window.DASHBOARD_DATA`) |
 
 ## How data flows
