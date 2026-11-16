@@ -456,6 +456,142 @@ GROUP BY 1
 """
 
 
+def q_bundle_split(skus):
+    """Launch units split by how they sold: on their own, or as a component
+    inside a bundle (a Shopify order line with a 'set' property), per bundle
+    and region.
+
+    Reads the SHOPIFY schema rather than UOS on purpose: the bundle's set
+    discount sits in ORDER_LINE_ITEM__DISCOUNT_ALLOCATIONS, which UOS
+    DISCOUNT_AMOUNT mostly misses, so NET_USD here is what customers paid.
+    Same logic as the Bundles Performance Hub
+    (thrivecausemetics/bundles-performance-dashboard). UOS is used for the
+    CAD->USD rate only. Dates are Pacific, matching UOS ORDER_DATE.
+    """
+    in_list = sku_list_sql(skus)
+    return f"""
+WITH launch_lines AS (
+  SELECT li.ORDER_LINE_ID, li.SKU, li.QUANTITY, li.PRICE, o.SHOP_ID, o.CURRENCY
+  FROM {SRC_DB}.SHOPIFY.ORDER_LINE_ITEMS li
+  JOIN {SRC_DB}.SHOPIFY.ORDERS o ON o.ORDER_ID = li.ORDER_ID
+  WHERE li.SKU IN ({in_list})
+    AND o.FINANCIAL_STATUS NOT IN ('voided', 'pending')
+    AND o.CANCELLED_AT IS NULL
+    AND COALESCE(o.TEST_ORDER, FALSE) = FALSE
+    AND CONVERT_TIMEZONE('UTC', 'America/Los_Angeles', o.CREATED_AT)::DATE
+        BETWEEN %(launch_date)s AND %(cutoff)s
+),
+props AS (
+  SELECT ORDER_LINE_ID,
+         MAX(IFF(NAME = 'set',  VALUE, NULL)) AS SET_NAME,
+         MAX(IFF(NAME = '_url', VALUE, NULL)) AS SET_URL
+  FROM {SRC_DB}.SHOPIFY.ORDER_LINE_ITEM_PROPERTIES
+  WHERE NAME IN ('set', '_url')
+    AND ORDER_LINE_ID IN (SELECT ORDER_LINE_ID FROM launch_lines)
+  GROUP BY ORDER_LINE_ID
+),
+alloc AS (
+  SELECT al.ORDER_LINE_ID,
+         SUM(IFF(da.TITLE = 'Set Discount', al.AMOUNT, 0)) AS SET_DISC,
+         SUM(al.AMOUNT)                                    AS ALL_DISC
+  FROM {SRC_DB}.SHOPIFY.ORDER_LINE_ITEM__DISCOUNT_ALLOCATIONS al
+  LEFT JOIN {SRC_DB}.SHOPIFY.ORDER_DISCOUNT_APPLICATIONS da
+    ON da.ORDER_ID = al.ORDER_ID AND da.DISCOUNT_APPLICATION_INDEX = al.DISCOUNT_APPLICATION_INDEX
+  WHERE al.ORDER_LINE_ID IN (SELECT ORDER_LINE_ID FROM launch_lines)
+  GROUP BY al.ORDER_LINE_ID
+),
+refunds AS (
+  SELECT LINE_ITEM_ID AS ORDER_LINE_ID, SUM(SUBTOTAL) AS REFUNDED
+  FROM {SRC_DB}.SHOPIFY.REFUND_LINE_ITEMS
+  WHERE LINE_ITEM_ID IN (SELECT ORDER_LINE_ID FROM launch_lines)
+  GROUP BY 1
+)
+SELECT ll.SKU,
+       IFF(ll.SHOP_ID = 'thrive-causemetics-canada', 'CA', 'US') AS REGION,
+       -- NULL bundle = sold on its own. Bundles are keyed by the product
+       -- handle they were bought from, as in the Bundles hub.
+       IFF(p.SET_NAME IS NULL, NULL,
+           COALESCE(LOWER(REGEXP_SUBSTR(p.SET_URL, '/products/([^/?#]+)', 1, 1, 'e', 1)), p.SET_NAME)) AS BUNDLE,
+       MAX(p.SET_NAME)                                                    AS SET_NAME,
+       SUM(ll.QUANTITY)                                                   AS UNITS,
+       SUM(COALESCE(a.SET_DISC, 0) * COALESCE(fx.FX, IFF(ll.CURRENCY = 'USD', 1, NULL))) AS SET_DISC_USD,
+       SUM((ll.PRICE * ll.QUANTITY - COALESCE(a.ALL_DISC, 0) - COALESCE(r.REFUNDED, 0))
+           * COALESCE(fx.FX, IFF(ll.CURRENCY = 'USD', 1, NULL)))                         AS NET_USD
+FROM launch_lines ll
+LEFT JOIN props p   ON p.ORDER_LINE_ID = ll.ORDER_LINE_ID
+LEFT JOIN alloc a   ON a.ORDER_LINE_ID = ll.ORDER_LINE_ID
+LEFT JOIN refunds r ON r.ORDER_LINE_ID = ll.ORDER_LINE_ID
+LEFT JOIN (
+  SELECT TRY_TO_NUMBER(STORE_ORDER_LINE_ID) AS ORDER_LINE_ID, MAX(CURRENCY_CONVERSION_RATE) AS FX
+  FROM {SRC_DB}.UOS.ORDER_LINE_ITEMS
+  WHERE SKU IN ({in_list})
+  GROUP BY 1
+) fx ON fx.ORDER_LINE_ID = ll.ORDER_LINE_ID
+GROUP BY 1, 2, 3
+"""
+
+
+def summarize_bundle_split(rows, sku_meta):
+    """Rows from q_bundle_split -> the Bundles tab's numbers.
+
+    Returns None when nothing sold, so the page can say so instead of drawing
+    zeros. Shares are of all launch units in this query, which counts refunded
+    lines' units (net subtracts the refund) and so can differ from the
+    Overview's units by a fraction of a percent.
+    """
+    if not rows:
+        return None
+    t = {"units": 0, "bundleUnits": 0, "net": 0.0, "netBundled": 0.0, "setDiscount": 0.0}
+    by_bundle, by_sku, by_name = {}, {}, {}
+    for r in rows:
+        units, net = int(r["UNITS"] or 0), float(r["NET_USD"] or 0)
+        sku, bundle = r["SKU"], r["BUNDLE"]
+        t["units"] += units
+        t["net"] += net
+        t["setDiscount"] += float(r["SET_DISC_USD"] or 0)
+        s = by_sku.setdefault(sku, {"units": 0, "bundleUnits": 0, "bundles": {}})
+        s["units"] += units
+        if bundle is None:
+            continue
+        t["bundleUnits"] += units
+        t["netBundled"] += net
+        s["bundleUnits"] += units
+        # Grouped by name as well as handle: a few Canadian pages carry a typo
+        # in their handle (buildyour-own-set-5) for the same bundle.
+        bundle = by_name.setdefault(r["SET_NAME"] or bundle, bundle)
+        s["bundles"][bundle] = s["bundles"].get(bundle, 0) + units
+        b = by_bundle.setdefault(bundle, {"bundle": bundle, "name": r["SET_NAME"] or bundle, "units": 0,
+                                          "net": 0.0, "usUnits": 0, "caUnits": 0, "bySku": {}})
+        b["units"] += units
+        b["net"] += net
+        b["usUnits" if r["REGION"] == "US" else "caUnits"] += units
+        b["bySku"][sku] = b["bySku"].get(sku, 0) + units
+    alone_units = t["units"] - t["bundleUnits"]
+    alone_net = t["net"] - t["netBundled"]
+    names = {b: v["name"] for b, v in by_bundle.items()}
+    return {
+        "totals": {
+            "units": t["units"], "bundleUnits": t["bundleUnits"], "standaloneUnits": alone_units,
+            "share": round(t["bundleUnits"] / t["units"], 4) if t["units"] else None,
+            "net": round(t["net"], 2), "netBundled": round(t["netBundled"], 2),
+            "netStandalone": round(alone_net, 2),
+            "netPerUnitBundled": round(t["netBundled"] / t["bundleUnits"], 2) if t["bundleUnits"] else None,
+            "netPerUnitStandalone": round(alone_net / alone_units, 2) if alone_units else None,
+            "setDiscount": round(t["setDiscount"], 2),
+        },
+        "byBundle": sorted(
+            ({**b, "net": round(b["net"], 2)} for b in by_bundle.values()),
+            key=lambda b: -b["units"]),
+        "bySku": [
+            {"sku": sku, "name": (sku_meta.get(sku) or {}).get("name", sku), "units": v["units"],
+             "bundleUnits": v["bundleUnits"],
+             "share": round(v["bundleUnits"] / v["units"], 4) if v["units"] else None,
+             "topBundle": names.get(max(v["bundles"], key=v["bundles"].get)) if v["bundles"] else None}
+            for sku, v in sorted(by_sku.items(), key=lambda kv: -kv[1]["units"])
+        ],
+    }
+
+
 def q_cross_sell(skus):
     c = COLS["affinity"]
     in_list = sku_list_sql(skus)
@@ -955,6 +1091,7 @@ SIGNAL_RULES = {
     "recentBehindPct": 85,    # recent units below this share of recent plan
     "recentAheadPct": 115,
     "minRecentPlanUnits": 50,  # ignore attainment on a plan too small to mean anything
+    "bundleShareMin": 0.10,   # say "sells inside bundles" from this share of units
     # Per-rule cap. Without it one rule fires five near-identical lines and
     # crowds every other signal type out of the group.
     "maxPerRule": 2,
@@ -1050,7 +1187,8 @@ def _stock_signals(by_variant, R):
 
 
 def compute_signals(by_variant, pdp, daily, plan_daily, cross_sell, cc,
-                    daily_by_sku=None, plan_by_sku=None, pdp_windows=None):
+                    daily_by_sku=None, plan_by_sku=None, pdp_windows=None,
+                    bundle_split=None):
     """Returns {"attention": [...], "working": [...]}, attention ranked.
 
     Every attention signal carries an `action` — the alert is only worth
@@ -1166,6 +1304,23 @@ def compute_signals(by_variant, pdp, daily, plan_daily, cross_sell, cc,
                       "placement is the obvious test.",
         })
 
+    # Bundles are the pairing the basket table above cannot see: a bundle's
+    # components arrive as separate order lines of the same product family,
+    # which the affinity table excludes. Worth saying once a launch sells a
+    # meaningful share that way.
+    bt = (bundle_split or {}).get("totals") or {}
+    if (bt.get("share") or 0) >= R["bundleShareMin"] and bundle_split.get("byBundle"):
+        top_b = bundle_split["byBundle"][0]
+        per_b, per_s = bt.get("netPerUnitBundled"), bt.get("netPerUnitStandalone")
+        price = (f" Bundled units net ${per_b:.2f} each vs ${per_s:.2f} on their own."
+                 if per_b is not None and per_s is not None else "")
+        working.append({
+            "key": "bundles",
+            "title": f"{bt['share'] * 100:.0f}% of units sell inside bundles",
+            "detail": f"Mostly the {top_b['name']} ({_num(top_b['units'])} units).{price} "
+                      "See the Bundles tab.",
+        })
+
     if cc and (cc.get("total") or 0) > 0:
         pct = cc["newToCategory"] / cc["total"] * 100
         working.append({
@@ -1260,6 +1415,9 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
         pdp_window_rows = safe_fetch(f"{lid}.pdp_windows (UTS)",
                                      lambda: rows(cur, q_pdp_windows(skus), params), [], key="uts")
         cross_rows = safe_fetch(f"{lid}.cross_sell (DRP)", lambda: rows(cur, q_cross_sell(skus), params), [], key="drp")
+        bundle_split = summarize_bundle_split(safe_fetch(
+            f"{lid}.bundle_split (SHOPIFY)", lambda: rows(cur, q_bundle_split(skus), params),
+            [], key="shopify"), sku_meta)
         cross_sku_rows = safe_fetch(f"{lid}.cross_sell_by_sku (DRP)",
                                     lambda: rows(cur, q_cross_sell_by_sku(skus), params), [], key="drp")
         subs_row = safe_fetch(f"{lid}.subscriptions (USS)", lambda: rows(cur, q_subs(skus), {})[0],
@@ -1280,6 +1438,7 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
     else:
         pdp_rows, cross_rows, cross_sku_rows, inv_rows, trail_rows = [], [], [], [], []
         pdp_window_rows = []
+        bundle_split = None
         subs_row = {"SUB_ORDERS": 0, "SUB_UNITS": 0, "SUB_REVENUE": None}
         traffic, landing = {"byChannel": [], "monthly": []}, []
     plan_detail = safe_fetch(f"{lid}.plan (GSHEETS)",
@@ -1544,7 +1703,8 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
                           "recentViews": int(r["RECENT_VIEWS"] or 0),
                           "recentAtc": int(r["RECENT_ATC"] or 0),
                           "priorViews": int(r["PRIOR_VIEWS"] or 0),
-                          "priorAtc": int(r["PRIOR_ATC"] or 0)} for r in pdp_window_rows]),
+                          "priorAtc": int(r["PRIOR_ATC"] or 0)} for r in pdp_window_rows],
+            bundle_split=bundle_split),
         "dailySales": daily,
         # Per-SKU daily series, so a shade filter can rebuild the daily trend,
         # the daily table and the new-vs-returning trend from the same numbers
@@ -1566,6 +1726,9 @@ def build_launch(cur, lc, cutoff, ga_cutoff, full=True):
             for r in cross_sku_rows
         ],
         "categoryCustomers": cc,
+        # Standalone vs inside-a-bundle split for the Bundles tab (None for
+        # archived launches, which skip the per-tab detail).
+        "bundleSplit": bundle_split,
     }
 
 
@@ -1823,6 +1986,7 @@ def main():
             if not is_archived:
                 queries += [
                     ("pdp", q_pdp(skus)), ("cross_sell", q_cross_sell(skus)),
+                    ("bundle_split", q_bundle_split(skus)),
                     ("cross_sell_by_sku", q_cross_sell_by_sku(skus)),
                     ("subs", q_subs(skus)), ("inventory", q_inventory(skus)),
                     ("trailing_units", q_trailing_units(skus)),
