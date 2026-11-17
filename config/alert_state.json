@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-16",
+  "lastRun": "2026-11-17",
   "rulesVersion": 2,
   "lastDigest": "2026-11-16",
-  "dataCutoff": "2026-11-15",
+  "dataCutoff": "2026-11-16",
   "alerts": {
     "gap|[US/CA] 11/14 to 11/15 | Free Set + Blur Powder Puff with any holiday set": {
       "rank": -1,
@@ -42,14 +42,8 @@
     },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~11 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~10 days",
       "firstSeen": "2026-11-01",
-      "lastPosted": "2026-11-16"
-    },
-    "berry-collection|oos-soon:us:TVG407": {
-      "rank": 1,
-      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) runs out in US (.com) in ~21 days",
-      "firstSeen": "2026-11-16",
       "lastPosted": "2026-11-16"
     },
     "eyeshadow-quads|oos-soon:ca:TVG6700": {
@@ -95,5 +89,7 @@
       "lastPosted": "2026-11-16"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) runs out in US (.com) in ~21 days"
+  ]
 }
