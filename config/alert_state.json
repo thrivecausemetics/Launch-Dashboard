@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-17",
+  "lastRun": "2026-11-18",
   "rulesVersion": 2,
   "lastDigest": "2026-11-16",
-  "dataCutoff": "2026-11-16",
+  "dataCutoff": "2026-11-17",
   "alerts": {
     "gap|[US/CA] 11/14 to 11/15 | Free Set + Blur Powder Puff with any holiday set": {
       "rank": -1,
@@ -89,7 +89,5 @@
       "lastPosted": "2026-11-16"
     }
   },
-  "resolvedToday": [
-    "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) runs out in US (.com) in ~21 days"
-  ]
+  "resolvedToday": []
 }
