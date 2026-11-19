@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-18",
+  "lastRun": "2026-11-19",
   "rulesVersion": 2,
   "lastDigest": "2026-11-16",
-  "dataCutoff": "2026-11-17",
+  "dataCutoff": "2026-11-18",
   "alerts": {
     "gap|[US/CA] 11/14 to 11/15 | Free Set + Blur Powder Puff with any holiday set": {
       "rank": -1,
@@ -40,9 +40,15 @@
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-11-16"
     },
+    "beb-grace-hope|oos-soon:us:TVG6660": {
+      "rank": 1,
+      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~20 days",
+      "firstSeen": "2026-11-19",
+      "lastPosted": "2026-11-19"
+    },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~10 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~9 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-16"
     },
