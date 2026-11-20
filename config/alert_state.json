@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-19",
+  "lastRun": "2026-11-20",
   "rulesVersion": 2,
   "lastDigest": "2026-11-16",
-  "dataCutoff": "2026-11-18",
+  "dataCutoff": "2026-11-19",
   "alerts": {
     "gap|[US/CA] 11/14 to 11/15 | Free Set + Blur Powder Puff with any holiday set": {
       "rank": -1,
@@ -42,13 +42,13 @@
     },
     "beb-grace-hope|oos-soon:us:TVG6660": {
       "rank": 1,
-      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~20 days",
+      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~18 days",
       "firstSeen": "2026-11-19",
       "lastPosted": "2026-11-19"
     },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~9 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~8 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-16"
     },
@@ -76,18 +76,6 @@
       "firstSeen": "2026-11-05",
       "lastPosted": "2026-11-16"
     },
-    "eyeshadow-quads|recent-behind:TVG6720": {
-      "rank": 3,
-      "title": "Cool Neutrals (Focus Eyeshadow\u2122 Palette) is behind plan over the last 7 days",
-      "firstSeen": "2026-11-05",
-      "lastPosted": "2026-11-16"
-    },
-    "beb-grace-hope|pacing": {
-      "rank": 4,
-      "title": "The whole launch is pacing behind plan",
-      "firstSeen": "2026-11-13",
-      "lastPosted": "2026-11-16"
-    },
     "psl-pout-hero|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
@@ -95,5 +83,8 @@
       "lastPosted": "2026-11-16"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "Cool Neutrals (Focus Eyeshadow\u2122 Palette) is behind plan over the last 7 days",
+    "The whole launch is pacing behind plan"
+  ]
 }
