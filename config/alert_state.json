@@ -5,10 +5,10 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-23",
+  "lastRun": "2026-11-24",
   "rulesVersion": 2,
   "lastDigest": "2026-11-23",
-  "dataCutoff": "2026-11-22",
+  "dataCutoff": "2026-11-23",
   "alerts": {
     "gap|[US/CA] 11/14 to 11/15 | Free Set + Blur Powder Puff with any holiday set": {
       "rank": -1,
@@ -42,7 +42,7 @@
     },
     "beb-grace-hope|oos-soon:us:TVG6660": {
       "rank": 1,
-      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~14 days",
+      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~12 days",
       "firstSeen": "2026-11-19",
       "lastPosted": "2026-11-23"
     },
@@ -54,7 +54,7 @@
     },
     "berry-collection|oos-soon:us:TVG407": {
       "rank": 1,
-      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) runs out in US (.com) in ~19 days",
+      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) runs out in US (.com) in ~18 days",
       "firstSeen": "2026-11-21",
       "lastPosted": "2026-11-23"
     },
@@ -83,7 +83,5 @@
       "lastPosted": "2026-11-23"
     }
   },
-  "resolvedToday": [
-    "Warm Neutrals (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~8 days"
-  ]
+  "resolvedToday": []
 }
