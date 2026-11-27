@@ -5,11 +5,23 @@
     "standing alert is not re-posted every morning. Delete an entry to",
     "make that alert fire again on the next run."
   ],
-  "lastRun": "2026-11-26",
+  "lastRun": "2026-11-27",
   "rulesVersion": 2,
   "lastDigest": "2026-11-23",
-  "dataCutoff": "2026-11-25",
+  "dataCutoff": "2026-11-26",
   "alerts": {
+    "gap|Black Friday": {
+      "rank": -1,
+      "title": "Black Friday is live but not on the dashboard",
+      "firstSeen": "2026-11-27",
+      "lastPosted": "2026-11-27"
+    },
+    "gap|IRL Black Friday Event": {
+      "rank": -1,
+      "title": "IRL Black Friday Event is live but not on the dashboard",
+      "firstSeen": "2026-11-27",
+      "lastPosted": "2026-11-27"
+    },
     "gap|[US/CA] 11/26 to 11/30 Cyber 5 | 20% off Sitewide + FREE Shipping + free full size BEB (Pick your Shade) at $85 / C$120": {
       "rank": -1,
       "title": "[US/CA] 11/26 to 11/30 Cyber 5 | 20% off Sitewide + FREE Shipping + free full size BEB (Pick your Shade) at $85 / C$120 is live but not on the dashboard",
@@ -52,21 +64,39 @@
       "firstSeen": "2026-09-09",
       "lastPosted": "2026-11-23"
     },
+    "beb-grace-hope|oos-soon:ca:TVG6670": {
+      "rank": 1,
+      "title": "Grace (Brilliant Eye Brightener\u2122) runs out in Canada (.ca) in ~21 days",
+      "firstSeen": "2026-11-27",
+      "lastPosted": "2026-11-27"
+    },
+    "beb-grace-hope|oos-soon:ca:TVG6660": {
+      "rank": 1,
+      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in Canada (.ca) in ~19 days",
+      "firstSeen": "2026-11-27",
+      "lastPosted": "2026-11-27"
+    },
     "beb-grace-hope|oos-soon:us:TVG6660": {
       "rank": 1,
-      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~11 days",
+      "title": "Hope (Brilliant Eye Brightener\u2122) runs out in US (.com) in ~6 days",
       "firstSeen": "2026-11-19",
       "lastPosted": "2026-11-23"
     },
+    "eyeshadow-quads-drop-2|oos-soon:ca:TVG6740": {
+      "rank": 1,
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in Canada (.ca) in ~12 days",
+      "firstSeen": "2026-11-27",
+      "lastPosted": "2026-11-27"
+    },
     "eyeshadow-quads-drop-2|oos-soon:us:TVG6740": {
       "rank": 1,
-      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~8 days",
+      "title": "Signature Plums (Focus Eyeshadow\u2122 Palette) runs out in US (.com) in ~2 days",
       "firstSeen": "2026-11-01",
       "lastPosted": "2026-11-23"
     },
     "berry-collection|oos-soon:us:TVG407": {
       "rank": 1,
-      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) runs out in US (.com) in ~15 days",
+      "title": "Liliana (Sheer Strength\u00ae Lip-Plumping Peptide Gloss) runs out in US (.com) in ~4 days",
       "firstSeen": "2026-11-21",
       "lastPosted": "2026-11-23"
     },
@@ -82,12 +112,6 @@
       "firstSeen": "2026-09-24",
       "lastPosted": "2026-11-23"
     },
-    "lasting-mark-lip-stain|recent-behind:TVG7230": {
-      "rank": 3,
-      "title": "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days",
-      "firstSeen": "2026-11-05",
-      "lastPosted": "2026-11-23"
-    },
     "psl-pout-hero|pacing": {
       "rank": 4,
       "title": "The whole launch is pacing behind plan",
@@ -95,5 +119,7 @@
       "lastPosted": "2026-11-23"
     }
   },
-  "resolvedToday": []
+  "resolvedToday": [
+    "Li (Lasting Mark\u2122 Lip-Defining Stain) is behind plan over the last 7 days"
+  ]
 }
